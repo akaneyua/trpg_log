@@ -1,0 +1,464 @@
+<!DOCTYPE html>
+<title>セッションログまとめ</title>
+<html>
+
+<head>
+  <meta http-equiv="content-type" charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css">
+  <style>
+    body {
+      /*上下方向にはみ出した要素ををスクロールさせる*/
+      overflow-y: scroll;
+      /*スクロールバー非表示（IE・Edge）*/
+      -ms-overflow-style: none;
+      /*スクロールバー非表示（Firefox）*/
+      scrollbar-width: none;
+      /* margin: 0 auto; */
+      animation: bgchange 20s ease infinite;
+      /*変化の時間を変更したい場合は20sの部分を好きな時間に変更*/
+      font-family:  "ヒラギノ角ゴ ProN W3", sans-serif;
+    }
+
+    @keyframes bgchange {
+	0% {
+	  background: #88ff44;
+	}
+
+	/*変化させたい色*/
+	25% {
+	  background: #ffbe55;
+	}
+
+	/*変化させたい色*/
+	50% {
+	  background: #6afbd5;
+	}
+
+	/*変化させたい色*/
+	75% {
+	  background: #a58cff;
+	}
+
+	/*変化させたい色*/
+	90% {
+	  background: #d593ff;
+	}
+
+	/*変化させたい色*/
+	100% {
+	  background: #88ff44;
+	}
+
+      /*変化させたい色*/
+    }
+
+    /*スクロールバー非表示（Chrome・Safari）*/
+    body::-webkit-scrollbar {
+      display: none;
+    }
+
+    /*========= 画面遷移のためのCSS ===============*/
+
+    /*画面遷移アニメーション*/
+    .splashbg {
+      display: none;
+      content: "";
+      position: fixed;
+      transform: scale(100);
+      background-color: #333;
+      /*伸びる背景色の設定*/
+      z-index: 999;
+      /*丸のスタートの形状*/
+      top: calc(50% - 1rem);
+      /*50%から円の半径を引いた値*/
+      left: calc(50% - 1rem);
+      /*50%から円の半径を引いた値*/
+      width: 2rem;
+      height: 2rem;
+    }
+
+    /*bodyにappearクラスがついたら出現*/
+    body.appear .splashbg {
+      display: block;
+      border-radius: 50%;
+      animation-name: PageAnime;
+      animation-duration: 1s;
+      animation-fill-mode: forwards;
+    }
+
+    @keyframes PageAnime {
+      0% {
+        /*丸のスタート位置と形状*/
+        transform: scale(100);
+
+      }
+
+      100% {
+        /*丸の終了位置と形状*/
+        transform: scale(0);
+        display: none;
+        /*終了時は消える*/
+      }
+    }
+
+    /*画面遷移の後現れるコンテンツ設定*/
+    #container {
+      opacity: 0;
+      /*はじめは透過0に*/
+    }
+
+    /*bodyにappearクラスがついたら出現*/
+    body.appear #container {
+      animation-name: PageAnimeAppear;
+      animation-duration: 1s;
+      animation-delay: 0.8s;
+      animation-fill-mode: forwards;
+      opacity: 0;
+    }
+
+    @keyframes PageAnimeAppear {
+      0% {
+        opacity: 0;
+      }
+
+      100% {
+        opacity: 1;
+      }
+    }
+
+    header {
+      color: #fff;
+      text-shadow: #33333358 0 0 10px;
+    }
+
+    .box {
+      color: #fff;
+      padding: 40px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+      /* background: url('./img/ライブ画像.jpg')no-repeat center; */
+    }
+
+    .links {
+      position: relative;
+      display: flex;
+      flex-flow: column;
+      gap: 1rem;
+    }
+
+    canvas {
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      width: 100%;
+    }
+
+    /*矢印が右に移動して背景がつく*/
+
+    .btnarrow5 {
+      /*矢印の基点とするためrelativeを指定*/
+      position: relative;
+      /*ボタンの形状*/
+      border: 1px solid #fff;
+      padding: 8px 30px;
+      display: inline-block;
+      text-align: center;
+      text-decoration: none;
+      color: #fff;
+      text-shadow: #33333381 0 0 10px;
+      outline: none;
+      /*アニメーションの指定*/
+      transition: all .2s linear;
+      z-index: 10;
+    }
+
+    .btnarrow5:hover {
+      background: #333;
+      color: #fff;
+    }
+
+    /*矢印と下線の形状*/
+    .btnarrow5::before {
+      content: "";
+      /*絶対配置で下線の位置を決める*/
+      position: absolute;
+      top: 50%;
+      right: -26px;
+      /*下線の形状*/
+      width: 40px;
+      height: 1px;
+      background: #fff;
+      /*アニメーションの指定*/
+      transition: all .2s linear;
+    }
+
+    .btnarrow5::after {
+      content: "";
+      /*絶対配置で矢印の位置を決める*/
+      position: absolute;
+      top: 20%;
+      right: -21px;
+      /*矢印の形状*/
+      width: 1px;
+      height: 12px;
+      background: #fff;
+      transform: skewX(45deg);
+      /*アニメーションの指定*/
+      transition: all .2s linear;
+    }
+
+    /*hoverした際の移動*/
+    .btnarrow5:hover::before {
+      right: -30px;
+    }
+
+    .btnarrow5:hover::after {
+      right: -25px;
+    }
+
+
+    /*スクロールダウン全体の場所*/
+.scrolldown2{
+    /*描画位置※位置は適宜調整してください*/
+	position:absolute;
+	bottom:10px;
+	right:10%;
+}
+
+/*Scrollテキストの描写*/
+.scrolldown2 span{
+    /*描画位置*/
+	position: absolute;
+	left:10px;
+	bottom:10px;
+    /*テキストの形状*/
+	color: #eee;
+	font-size: 0.7rem;
+	letter-spacing: 0.05em;
+	/*縦書き設定*/
+	-ms-writing-mode: tb-rl;
+    -webkit-writing-mode: vertical-rl;
+    writing-mode: vertical-rl;
+}
+
+/* 丸の描写 */
+.scrolldown2:before {
+    content: "";
+    /*描画位置*/
+    position: absolute;
+    bottom:0;
+    left:-4px;
+    /*丸の形状*/
+	width:10px;
+	height:10px;
+	border-radius: 50%;
+	background:#eee;
+    /*丸の動き1.6秒かけて透過し、永遠にループ*/
+	animation:
+		circlemove 1.6s ease-in-out infinite,
+		cirlemovehide 1.6s ease-out infinite;
+}
+
+/*下からの距離が変化して丸の全体が上から下に動く*/
+@keyframes circlemove{
+      0%{bottom:45px;}
+     100%{bottom:-5px;}
+ }
+
+/*上から下にかけて丸が透過→不透明→透過する*/
+@keyframes cirlemovehide{
+      0%{opacity:0}
+     50%{opacity:1;}
+    80%{opacity:0.9;}
+	100%{opacity:0;}
+ }
+
+/* 線の描写 */
+.scrolldown2:after{
+	content:"";
+    /*描画位置*/
+	position: absolute;
+	bottom:0;
+	left:0;
+    /*線の形状*/
+	width:2px;
+	height: 50px;
+	background:#eee;
+}
+  </style>
+</head>
+
+<body>
+  <!-- <div class="wrap-bg-sp"><div class="bg"><div class="inner cd-bg-0"></div></div> -->
+
+  <div class="splashbg"></div>
+  <!---画面遷移用-->
+  <div id="container">
+
+    <header id="header">
+      <h1>TRPG LOG's</h1>
+    </header>
+
+    <main>
+
+      <section class="box">
+
+        <div class="links">
+          <a href="./log_html/log_shinobi.html" class="btnarrow5">シノビガミ</a>
+          <a href="./log_html/log_futari.html" class="btnarrow5">フタリソウサ</a>
+          <a href="./log_html/log_CoC.html" class="btnarrow5">CoC</a>
+          <a href="./log_html/log_NW.html" class="btnarrow5">ナイトウィザード</a>
+          <a href="./log_html/log_skynortu.html" class="btnarrow5">歯車の塔のスカイノーツ</a>
+          <a href="./log_html/log_katamiti.html" class="btnarrow5">片道勇者TRPG</a>
+          <a href="./log_html/log_etc.html" class="btnarrow5">その他TRPG</a>
+        </div>
+        <div class="scrolldown2"><span>Scroll</span></div>
+        <div><canvas id="waveCanvas"></canvas></div>
+
+      </section>
+      <!--/container-->
+  </div>
+  </main>
+  <!-- </div> -->
+  <!-- <footer id="footer">
+        <small>&copy; Copyright </small> 
+        </footer> -->
+<script src="https://code.jquery.com/jquery-3.6.3.min.js"></script>
+<script>
+  var unit = 100,
+    canvasList, // キャンバスの配列
+    info = {}, // 全キャンバス共通の描画情報
+    colorList; // 各キャンバスの色情報
+
+  /**
+   * Init function.
+   * 
+   * Initialize variables and begin the animation.
+   */
+  function init() {
+    info.seconds = 0;
+    info.t = 0;
+    canvasList = [];
+    colorList = [];
+    // canvas1個めの色指定
+    canvasList.push(document.getElementById("waveCanvas"));
+    colorList.push(['#fff', '#fff', '#fff', '#fff', '#fff']);//重ねる波線の色設定
+
+
+    // 各キャンバスの初期化
+    for (var canvasIndex in canvasList) {
+      var canvas = canvasList[canvasIndex];
+      canvas.width = document.documentElement.clientWidth; //Canvasのwidthをウィンドウの幅に合わせる
+      canvas.height = 200;//波の高さ
+      canvas.contextCache = canvas.getContext("2d");
+    }
+    // 共通の更新処理呼び出し
+    update();
+  }
+
+  function update() {
+    for (var canvasIndex in canvasList) {
+      var canvas = canvasList[canvasIndex];
+      // 各キャンバスの描画
+      draw(canvas, colorList[canvasIndex]);
+    }
+    // 共通の描画情報の更新
+    info.seconds = info.seconds + .014;
+    info.t = info.seconds * Math.PI;
+    // 自身の再起呼び出し
+    setTimeout(update, 35);
+  }
+
+  /**
+   * Draw animation function.
+   * 
+   * This function draws one frame of the animation, waits 20ms, and then calls
+   * itself again.
+   */
+  function draw(canvas, color) {
+    // 対象のcanvasのコンテキストを取得
+    var context = canvas.contextCache;
+    // キャンバスの描画をクリア
+    context.clearRect(0, 0, canvas.width, canvas.height);
+
+    //波線を描画 drawWave(canvas, color[数字（波の数を0から数えて指定）], 透過, 波の幅のzoom,波の開始位置の遅れ )
+    drawWave(canvas, color[0], 0.8, 3, 0);
+    drawWave(canvas, color[1], 0.5, 4, 0);
+    drawWave(canvas, color[2], 0.3, 1.6, 0);
+    drawWave(canvas, color[3], 0.2, 3, 100);
+    drawWave(canvas, color[4], 0.5, 1.6, 250);
+  }
+
+  /**
+  * 波を描画
+  * drawWave(色, 不透明度, 波の幅のzoom, 波の開始位置の遅れ)
+  */
+  function drawWave(canvas, color, alpha, zoom, delay) {
+    var context = canvas.contextCache;
+    context.strokeStyle = color;//線の色
+    context.lineWidth = 1;//線の幅
+    context.globalAlpha = alpha;
+    context.beginPath(); //パスの開始
+    drawSine(canvas, info.t / 0.5, zoom, delay);
+    context.stroke(); //線
+  }
+
+  /**
+   * Function to draw sine
+   * 
+   * The sine curve is drawn in 10px segments starting at the origin. 
+   * drawSine(時間, 波の幅のzoom, 波の開始位置の遅れ)
+   */
+  function drawSine(canvas, t, zoom, delay) {
+    var xAxis = Math.floor(canvas.height / 2);
+    var yAxis = 0;
+    var context = canvas.contextCache;
+    // Set the initial x and y, starting at 0,0 and translating to the origin on
+    // the canvas.
+    var x = t; //時間を横の位置とする
+    var y = Math.sin(x) / zoom;
+    context.moveTo(yAxis, unit * y + xAxis); //スタート位置にパスを置く
+
+    // Loop to draw segments (横幅の分、波を描画)
+    for (i = yAxis; i <= canvas.width + 10; i += 10) {
+      x = t + (-yAxis + i) / unit / zoom;
+      y = Math.sin(x - delay) / 3;
+      context.lineTo(i, unit * y + xAxis);
+    }
+  }
+
+
+  //スクロールした際の動きを関数でまとめる
+function ScrollAnime() {
+    var windowHeight = $(window).height();
+    var bodyHeight = $('body').height();
+    if (bodyHeight >= windowHeight){
+        $('.scrolldown2').show();
+    }else{
+        $('.scrolldown2').hide();
+    }
+}
+
+  $(window).on('load', function () {
+
+    ScrollAnime();/* スクロールした際の動きの関数を呼ぶ*/
+    $('body').addClass('appear');//フェードアウト後bodyにappearクラス付与
+
+
+    //=====ここまでローディングエリア（splashエリア）を1.5秒でフェードアウトした後に動かしたいJSをまとめる
+
+    //=====ここから背景が伸びた後に動かしたいJSをまとめたい場合は
+    $('.splashbg').on('animationend', function () {
+      //この中に動かしたいJSを記載
+      init();
+    });
+    //=====ここまで背景が伸びた後に動かしたいJSをまとめる
+
+  });
+</script>
+</body>
+
+</html>
