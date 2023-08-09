@@ -11,39 +11,6 @@ body {
 	font-family:  "ヒラギノ角ゴ ProN W3", sans-serif;
   }
 
-  @keyframes bgchange {
-	0% {
-	  background: #88ff44;
-	}
-
-	/*変化させたい色*/
-	25% {
-	  background: #ffbe55;
-	}
-
-	/*変化させたい色*/
-	50% {
-	  background: #6afbd5;
-	}
-
-	/*変化させたい色*/
-	75% {
-	  background: #a58cff;
-	}
-
-	/*変化させたい色*/
-	90% {
-	  background: #d593ff;
-	}
-
-	/*変化させたい色*/
-	100% {
-	  background: #88ff44;
-	}
-
-	/*変化させたい色*/
-  }
-
   /*スクロールバー非表示（Chrome・Safari）*/
   body::-webkit-scrollbar {
 	display: none;
@@ -314,7 +281,7 @@ body {
     left: -120%;
 	width:100%;
     height: 100vh;/*ナビの高さ*/
-	background:#ff975e;
+	background:#e0c22d;
     /*動き*/
 	transition: all 0.6s;
 }
@@ -402,8 +369,8 @@ opacity: 1;
 .openbtn{
 	position:fixed;
     z-index: 9999;/*ボタンを最前面に*/
-	top:0;
-	left: 0;
+	top:0.67rem;
+	left: 0.67rem;
 	cursor: pointer;
     width: 50px;
     height:100vh;
@@ -470,3 +437,35 @@ opacity: 1;
 }
     
 }
+
+body {
+	background-color: #1c4ba9;
+	height: 100%;
+	/*高さを100%にして描画エリアをとる*/
+	margin: 0 auto;
+  }
+
+  #particles-js {
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	background-color: #1c4ba9;
+	background-image: url("http://vincentgarreau.com/particles.js/assets/img/kbLd9vb_new.gif");
+	background-repeat: no-repeat;
+	background-size: 60%;
+	background-position: 0 75%;
+  }
+
+  #wrapper {
+	position: relative;
+	/*描画を#particles-jsよりも上にするためposition:relative;を指定*/
+	z-index: 1;
+	/*z-indexの数字を大きくすることで描画を#particles-jsよりも上に*/
+	width: 100%;
+	height: 100%;
+  }
+
+  h1 {
+	margin-top: 0;
+	padding: 0.67em;
+  }

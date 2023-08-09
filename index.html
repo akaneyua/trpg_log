@@ -17,40 +17,7 @@
       /* margin: 0 auto; */
       animation: bgchange 20s ease infinite;
       /*変化の時間を変更したい場合は20sの部分を好きな時間に変更*/
-      font-family:  "ヒラギノ角ゴ ProN W3", sans-serif;
-    }
-
-    @keyframes bgchange {
-	0% {
-	  background: #88ff44;
-	}
-
-	/*変化させたい色*/
-	25% {
-	  background: #ffbe55;
-	}
-
-	/*変化させたい色*/
-	50% {
-	  background: #6afbd5;
-	}
-
-	/*変化させたい色*/
-	75% {
-	  background: #a58cff;
-	}
-
-	/*変化させたい色*/
-	90% {
-	  background: #d593ff;
-	}
-
-	/*変化させたい色*/
-	100% {
-	  background: #88ff44;
-	}
-
-      /*変化させたい色*/
+      font-family: "ヒラギノ角ゴ ProN W3", sans-serif;
     }
 
     /*スクロールバー非表示（Chrome・Safari）*/
@@ -221,73 +188,121 @@
 
 
     /*スクロールダウン全体の場所*/
-.scrolldown2{
-    /*描画位置※位置は適宜調整してください*/
-	position:absolute;
-	bottom:10px;
-	right:10%;
-}
+    .scrolldown2 {
+      /*描画位置※位置は適宜調整してください*/
+      position: absolute;
+      bottom: 10px;
+      right: 10%;
+    }
 
-/*Scrollテキストの描写*/
-.scrolldown2 span{
-    /*描画位置*/
-	position: absolute;
-	left:10px;
-	bottom:10px;
-    /*テキストの形状*/
-	color: #eee;
-	font-size: 0.7rem;
-	letter-spacing: 0.05em;
-	/*縦書き設定*/
-	-ms-writing-mode: tb-rl;
-    -webkit-writing-mode: vertical-rl;
-    writing-mode: vertical-rl;
-}
+    /*Scrollテキストの描写*/
+    .scrolldown2 span {
+      /*描画位置*/
+      position: absolute;
+      left: 10px;
+      bottom: 10px;
+      /*テキストの形状*/
+      color: #eee;
+      font-size: 0.7rem;
+      letter-spacing: 0.05em;
+      /*縦書き設定*/
+      -ms-writing-mode: tb-rl;
+      -webkit-writing-mode: vertical-rl;
+      writing-mode: vertical-rl;
+    }
 
-/* 丸の描写 */
-.scrolldown2:before {
-    content: "";
-    /*描画位置*/
-    position: absolute;
-    bottom:0;
-    left:-4px;
-    /*丸の形状*/
-	width:10px;
-	height:10px;
-	border-radius: 50%;
-	background:#eee;
-    /*丸の動き1.6秒かけて透過し、永遠にループ*/
-	animation:
-		circlemove 1.6s ease-in-out infinite,
-		cirlemovehide 1.6s ease-out infinite;
-}
+    /* 丸の描写 */
+    .scrolldown2:before {
+      content: "";
+      /*描画位置*/
+      position: absolute;
+      bottom: 0;
+      left: -4px;
+      /*丸の形状*/
+      width: 10px;
+      height: 10px;
+      border-radius: 50%;
+      background: #eee;
+      /*丸の動き1.6秒かけて透過し、永遠にループ*/
+      animation:
+        circlemove 1.6s ease-in-out infinite,
+        cirlemovehide 1.6s ease-out infinite;
+    }
 
-/*下からの距離が変化して丸の全体が上から下に動く*/
-@keyframes circlemove{
-      0%{bottom:45px;}
-     100%{bottom:-5px;}
- }
+    /*下からの距離が変化して丸の全体が上から下に動く*/
+    @keyframes circlemove {
+      0% {
+        bottom: 45px;
+      }
 
-/*上から下にかけて丸が透過→不透明→透過する*/
-@keyframes cirlemovehide{
-      0%{opacity:0}
-     50%{opacity:1;}
-    80%{opacity:0.9;}
-	100%{opacity:0;}
- }
+      100% {
+        bottom: -5px;
+      }
+    }
 
-/* 線の描写 */
-.scrolldown2:after{
-	content:"";
-    /*描画位置*/
-	position: absolute;
-	bottom:0;
-	left:0;
-    /*線の形状*/
-	width:2px;
-	height: 50px;
-	background:#eee;
-}
+    /*上から下にかけて丸が透過→不透明→透過する*/
+    @keyframes cirlemovehide {
+      0% {
+        opacity: 0
+      }
+
+      50% {
+        opacity: 1;
+      }
+
+      80% {
+        opacity: 0.9;
+      }
+
+      100% {
+        opacity: 0;
+      }
+    }
+
+    /* 線の描写 */
+    .scrolldown2:after {
+      content: "";
+      /*描画位置*/
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      /*線の形状*/
+      width: 2px;
+      height: 50px;
+      background: #eee;
+    }
+
+    body {
+      background-color: #1c4ba9;
+      height: 100%;
+      /*高さを100%にして描画エリアをとる*/
+      margin: 0 auto;
+    }
+
+    #particles-js {
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      background-color: #1c4ba9;
+      background-image: url("http://vincentgarreau.com/particles.js/assets/img/kbLd9vb_new.gif");
+      background-repeat: no-repeat;
+      background-size: 60%;
+      background-position: 0 75%;
+    }
+
+    #wrapper {
+      position: relative;
+      /*描画を#particles-jsよりも上にするためposition:relative;を指定*/
+      z-index: 1;
+      /*z-indexの数字を大きくすることで描画を#particles-jsよりも上に*/
+      width: 100%;
+      height: 100%;
+    }
+
+    h1 {
+      margin-top: 0;
+      padding: 0.67em;
+    }
   </style>
 </head>
 
@@ -297,165 +312,127 @@
   <div class="splashbg"></div>
   <!---画面遷移用-->
   <div id="container">
+    <div id="particles-js"></div>
+    <div id="wrapper">
+      <header id="header">
+        <h1>常闇のカオス人密室</h1>
+      </header>
 
-    <header id="header">
-      <h1>常闇のカオス人密室</h1>
-    </header>
+      <main>
 
-    <main>
+        <section class="box">
 
-      <section class="box">
+          <div class="links">
+            <a href="./log_html/log_CoC.html" class="btnarrow5">CoC</a>
+            <a href="./log_html/log_shinobi.html" class="btnarrow5">シノビガミ</a>
+            <a href="./log_html/log_emo.html" class="btnarrow5">エモクロア</a>
+            <a href="./log_html/log_etc.html" class="btnarrow5">その他TRPG</a>
+          </div>
+          <div class="scrolldown2"><span>Scroll</span></div>
 
-        <div class="links">
-          <a href="./log_html/log_CoC.html" class="btnarrow5">CoC</a>
-          <a href="./log_html/log_shinobi.html" class="btnarrow5">シノビガミ</a>
-          <a href="./log_html/log_emo.html" class="btnarrow5">エモクロア</a>
-          <a href="./log_html/log_etc.html" class="btnarrow5">その他TRPG</a>
-        </div>
-        <div class="scrolldown2"><span>Scroll</span></div>
-        <div><canvas id="waveCanvas"></canvas></div>
 
-      </section>
-      <!--/container-->
+
+        </section>
+        <!--/container-->
+      </main>
+      <!--/wrapper-->
+    </div>
   </div>
-  </main>
   <!-- </div> -->
   <!-- <footer id="footer">
         <small>&copy; Copyright </small> 
         </footer> -->
-<script src="https://code.jquery.com/jquery-3.6.3.min.js"></script>
-<script>
-  var unit = 100,
-    canvasList, // キャンバスの配列
-    info = {}, // 全キャンバス共通の描画情報
-    colorList; // 各キャンバスの色情報
-
-  /**
-   * Init function.
-   * 
-   * Initialize variables and begin the animation.
-   */
-  function init() {
-    info.seconds = 0;
-    info.t = 0;
-    canvasList = [];
-    colorList = [];
-    // canvas1個めの色指定
-    canvasList.push(document.getElementById("waveCanvas"));
-    colorList.push(['#fff', '#fff', '#fff', '#fff', '#fff']);//重ねる波線の色設定
-
-
-    // 各キャンバスの初期化
-    for (var canvasIndex in canvasList) {
-      var canvas = canvasList[canvasIndex];
-      canvas.width = document.documentElement.clientWidth; //Canvasのwidthをウィンドウの幅に合わせる
-      canvas.height = 200;//波の高さ
-      canvas.contextCache = canvas.getContext("2d");
-    }
-    // 共通の更新処理呼び出し
-    update();
-  }
-
-  function update() {
-    for (var canvasIndex in canvasList) {
-      var canvas = canvasList[canvasIndex];
-      // 各キャンバスの描画
-      draw(canvas, colorList[canvasIndex]);
-    }
-    // 共通の描画情報の更新
-    info.seconds = info.seconds + .014;
-    info.t = info.seconds * Math.PI;
-    // 自身の再起呼び出し
-    setTimeout(update, 35);
-  }
-
-  /**
-   * Draw animation function.
-   * 
-   * This function draws one frame of the animation, waits 20ms, and then calls
-   * itself again.
-   */
-  function draw(canvas, color) {
-    // 対象のcanvasのコンテキストを取得
-    var context = canvas.contextCache;
-    // キャンバスの描画をクリア
-    context.clearRect(0, 0, canvas.width, canvas.height);
-
-    //波線を描画 drawWave(canvas, color[数字（波の数を0から数えて指定）], 透過, 波の幅のzoom,波の開始位置の遅れ )
-    drawWave(canvas, color[0], 0.8, 3, 0);
-    drawWave(canvas, color[1], 0.5, 4, 0);
-    drawWave(canvas, color[2], 0.3, 1.6, 0);
-    drawWave(canvas, color[3], 0.2, 3, 100);
-    drawWave(canvas, color[4], 0.5, 1.6, 250);
-  }
-
-  /**
-  * 波を描画
-  * drawWave(色, 不透明度, 波の幅のzoom, 波の開始位置の遅れ)
-  */
-  function drawWave(canvas, color, alpha, zoom, delay) {
-    var context = canvas.contextCache;
-    context.strokeStyle = color;//線の色
-    context.lineWidth = 1;//線の幅
-    context.globalAlpha = alpha;
-    context.beginPath(); //パスの開始
-    drawSine(canvas, info.t / 0.5, zoom, delay);
-    context.stroke(); //線
-  }
-
-  /**
-   * Function to draw sine
-   * 
-   * The sine curve is drawn in 10px segments starting at the origin. 
-   * drawSine(時間, 波の幅のzoom, 波の開始位置の遅れ)
-   */
-  function drawSine(canvas, t, zoom, delay) {
-    var xAxis = Math.floor(canvas.height / 2);
-    var yAxis = 0;
-    var context = canvas.contextCache;
-    // Set the initial x and y, starting at 0,0 and translating to the origin on
-    // the canvas.
-    var x = t; //時間を横の位置とする
-    var y = Math.sin(x) / zoom;
-    context.moveTo(yAxis, unit * y + xAxis); //スタート位置にパスを置く
-
-    // Loop to draw segments (横幅の分、波を描画)
-    for (i = yAxis; i <= canvas.width + 10; i += 10) {
-      x = t + (-yAxis + i) / unit / zoom;
-      y = Math.sin(x - delay) / 3;
-      context.lineTo(i, unit * y + xAxis);
-    }
-  }
-
-
-  //スクロールした際の動きを関数でまとめる
-function ScrollAnime() {
-    var windowHeight = $(window).height();
-    var bodyHeight = $('body').height();
-    if (bodyHeight >= windowHeight){
-        $('.scrolldown2').show();
-    }else{
-        $('.scrolldown2').hide();
-    }
-}
-
-  $(window).on('load', function () {
-
-    ScrollAnime();/* スクロールした際の動きの関数を呼ぶ*/
-    $('body').addClass('appear');//フェードアウト後bodyにappearクラス付与
-
-
-    //=====ここまでローディングエリア（splashエリア）を1.5秒でフェードアウトした後に動かしたいJSをまとめる
-
-    //=====ここから背景が伸びた後に動かしたいJSをまとめたい場合は
-    $('.splashbg').on('animationend', function () {
-      //この中に動かしたいJSを記載
-      init();
+  <script src="https://code.jquery.com/jquery-3.6.3.min.js"></script>
+  <script src="http://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
+  <script>
+    particlesJS("particles-js", {
+      particles: {
+        number: { value: 100, density: { enable: false, value_area: 800 } },
+        color: { value: "#ffffff" },
+        shape: {
+          type: "star",
+          stroke: { width: 0, color: "#000000" },
+          polygon: { nb_sides: 5 },
+          image: {
+            src: "http://wiki.lexisnexis.com/academic/images/f/fb/Itunes_podcast_icon_300.jpg",
+            width: 100,
+            height: 100,
+          },
+        },
+        opacity: {
+          value: 0.5,
+          random: false,
+          anim: { enable: false, speed: 1, opacity_min: 0.1, sync: false },
+        },
+        size: {
+          value: 4,
+          random: true,
+          anim: { enable: false, speed: 40, size_min: 0.1, sync: false },
+        },
+        line_linked: {
+          enable: false,
+          distance: 150,
+          color: "#ffffff",
+          opacity: 0.4,
+          width: 1,
+        },
+        move: {
+          enable: true,
+          speed: 14,
+          direction: "left",
+          random: false,
+          straight: true,
+          out_mode: "out",
+          bounce: false,
+          attract: { enable: false, rotateX: 600, rotateY: 1200 },
+        },
+      },
+      interactivity: {
+        detect_on: "canvas",
+        events: {
+          onhover: { enable: false, mode: "grab" },
+          onclick: { enable: true, mode: "repulse" },
+          resize: true,
+        },
+        modes: {
+          grab: { distance: 200, line_linked: { opacity: 1 } },
+          bubble: { distance: 400, size: 40, duration: 2, opacity: 8, speed: 3 },
+          repulse: { distance: 200, duration: 0.4 },
+          push: { particles_nb: 4 },
+          remove: { particles_nb: 2 },
+        },
+      },
+      retina_detect: true,
     });
-    //=====ここまで背景が伸びた後に動かしたいJSをまとめる
 
-  });
-</script>
+    //スクロールした際の動きを関数でまとめる
+    function ScrollAnime() {
+      var windowHeight = $(window).height();
+      var bodyHeight = $('body').height();
+      if (bodyHeight >= windowHeight) {
+        $('.scrolldown2').show();
+      } else {
+        $('.scrolldown2').hide();
+      }
+    }
+
+    $(window).on('load', function () {
+
+      ScrollAnime();/* スクロールした際の動きの関数を呼ぶ*/
+      $('body').addClass('appear');//フェードアウト後bodyにappearクラス付与
+
+
+      //=====ここまでローディングエリア（splashエリア）を1.5秒でフェードアウトした後に動かしたいJSをまとめる
+
+      //=====ここから背景が伸びた後に動かしたいJSをまとめたい場合は
+      $('.splashbg').on('animationend', function () {
+        //この中に動かしたいJSを記載
+        init();
+      });
+      //=====ここまで背景が伸びた後に動かしたいJSをまとめる
+
+    });
+  </script>
 </body>
 
 </html>
