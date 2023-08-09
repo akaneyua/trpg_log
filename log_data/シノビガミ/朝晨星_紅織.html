@@ -1,0 +1,5484 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<title>log</title>
+<meta http-equiv="content-type" charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+<link rel="stylesheet" href="../logCon_Respon.css">
+<style>
+    /* main css */
+    .bg-inner.bg1{background:url('./朝晨星_紅織画像/背景.png') no-repeat center/cover;}
+    
+    /* member */
+.san p{border:2px solid rgb(224, 224, 224);box-shadow:5px 5px 0 rgb(224, 224, 224);}
+.san p:after{border-right-color:rgb(224, 224, 224);}
+.san span{background:rgb(224, 224, 224);color:#000;}
+.san:before{content:'';background-image:url('./朝晨星_紅織画像/san.png');background-size:contain;background-repeat:no-repeat;background-position:center center;width:90px;height:90px;}
+.san_hohoemi:before{content:'';background-image:url('./朝晨星_紅織画像/san hohoemi.png');background-size:contain;background-repeat:no-repeat;background-position:center center;width:90px;height:90px;}
+.san_huse:before{content:'';background-image:url('./朝晨星_紅織画像/san huse.png');background-size:contain;background-repeat:no-repeat;background-position:center center;width:90px;height:90px;}
+.san_ikari:before{content:'';background-image:url('./朝晨星_紅織画像/san ikari.png');background-size:contain;background-repeat:no-repeat;background-position:center center;width:90px;height:90px;}
+.karai p{border:2px solid rgb(255, 87, 34);box-shadow:5px 5px 0 rgb(255, 87, 34);}
+.karai p:after{border-left-color:rgb(255, 87, 34);}
+.karai span{background:rgb(255, 87, 34);color:#000;}
+.karai:before{content:'';background-image:url('./朝晨星_紅織画像/PC290.png');background-size:contain;background-repeat:no-repeat;background-position:center center;width:90px;height:90px;}
+.karai_zensin:before{content:'';background-image:url('./朝晨星_紅織画像/香雷.png');background-size:contain;background-repeat:no-repeat;background-position:center center;width:90px;height:90px;}
+.syoubusya p{border:2px solid rgb(233, 30, 99);box-shadow:5px 5px 0 rgb(233, 30, 99);}
+.syoubusya p:after{border-right-color:rgb(233, 30, 99);}
+.syoubusya span{background:rgb(233, 30, 99);color:#000;}
+.syoubusya:before{content:'';background-image:url('./朝晨星_紅織画像/PC1 90.png');background-size:contain;background-repeat:no-repeat;background-position:center center;width:90px;height:90px;}
+.syoubusya_namami:before{content:'';background-image:url('./朝晨星_紅織画像/PC190.png');background-size:contain;background-repeat:no-repeat;background-position:center center;width:90px;height:90px;}
+.syoubusya_ougi:before{content:'';background-image:url('./朝晨星_紅織画像/ougi.png');background-size:contain;background-repeat:no-repeat;background-position:center center;width:90px;height:90px;}
+.syoubusya_henkei:before{content:'';background-image:url('./朝晨星_紅織画像/変形90.png');background-size:contain;background-repeat:no-repeat;background-position:center center;width:90px;height:90px;}
+.syoubusya_bakuha:before{content:'';background-image:url('./朝晨星_紅織画像/1691218664151.png');background-size:contain;background-repeat:no-repeat;background-position:center center;width:90px;height:90px;}
+.syoubusya_guruguru:before{content:'';background-image:url('./朝晨星_紅織画像/58190_sHdPp1aQ.png');background-size:contain;background-repeat:no-repeat;background-position:center center;width:90px;height:90px;}
+.bou p{border:2px solid rgb(139, 195, 74);box-shadow:5px 5px 0 rgb(139, 195, 74);}
+.bou p:after{border-left-color:rgb(139, 195, 74);}
+.bou span{background:rgb(139, 195, 74);color:#fff;}
+.bou:before{content:'';background-image:url('./朝晨星_紅織画像/PC390.png');background-size:contain;background-repeat:no-repeat;background-position:center center;width:90px;height:90px;}
+.bou_zensin:before{content:'';background-image:url('./朝晨星_紅織画像/4f28bd6a3caf71d8.png');background-size:contain;background-repeat:no-repeat;background-position:center center;width:90px;height:90px;}
+.mem5 p{border:2px solid rgb(136, 136, 136);box-shadow:5px 5px 0 rgb(136, 136, 136);}
+.mem5 p:after{border-right-color:rgb(136, 136, 136);}
+.mem5 span{background:rgb(136, 136, 136);color:#fff;}
+.mem5:before{content:'';background-image:url('./朝晨星_紅織画像/5.png');background-size:contain;background-repeat:no-repeat;background-position:center center;width:90px;height:90px;}
+.hasuba p{border:2px solid rgb(136, 136, 136);box-shadow:5px 5px 0 rgb(136, 136, 136);}
+.hasuba p:after{border-left-color:rgb(136, 136, 136);}
+.hasuba span{background:rgb(136, 136, 136);color:#fff;}
+.hasuba:before{content:'';background-image:url('./朝晨星_紅織画像/15.png');background-size:contain;background-repeat:no-repeat;background-position:center center;width:90px;height:90px;}
+.sabumarin p{border:2px solid rgb(136, 136, 136);box-shadow:5px 5px 0 rgb(136, 136, 136);}
+.sabumarin p:after{border-right-color:rgb(136, 136, 136);}
+.sabumarin span{background:rgb(136, 136, 136);color:#fff;}
+.sabumarin:before{content:'';background-image:url('./朝晨星_紅織画像/魚雷爆発90.png');background-size:contain;background-repeat:no-repeat;background-position:center center;width:90px;height:90px;}
+.sabumarin_nakami:before{content:'';background-image:url('./朝晨星_紅織画像/16.png');background-size:contain;background-repeat:no-repeat;background-position:center center;width:90px;height:90px;}
+    
+    @media only screen and (max-width: 768px) {
+        .san p:after{border-right-color:rgb(224, 224, 224);border-left-color:transparent;}
+        .karai p:after{border-right-color:rgb(255, 87, 34);border-left-color:transparent;}
+        .syoubusya p:after{border-right-color:rgb(233, 30, 99);border-left-color:transparent;}
+        .bou p:after{border-right-color:rgb(139, 195, 74);border-left-color:transparent;}
+        .mem5 p:after{border-right-color:rgb(136, 136, 136);border-left-color:transparent;}
+        .hasuba p:after{border-right-color:rgb(136, 136, 136);border-left-color:transparent;}
+        .sabumarin p:after{border-right-color:rgb(136, 136, 136);border-left-color:transparent;}
+    
+        .san:before,.karai:before,.syoubusya:before,
+        .bou:before,.mem5:before,.hasuba:before,.sabumarin:before{width:70px;height:70px;}
+    }
+</style>
+</head>
+<body>
+    <p id="page-top"><a href="#"><i class="page-top__arrow"></i></a></p>
+	<div class="leftwhite"></div>
+	<div class="rightwhite"></div>
+	<div class="bg-sp">
+    <div class="bg-over"><div class="bg-inner bg1"></div></div>
+	<div class="log">
+    
+        <div class="kp">
+
+            巨星墜つ――<br>春風がまだ寒さを孕む季節、天光流が頭領"朱赫"がその命を終えた。<br>この知らせは瞬く間に広がり、忍界を賑わせると同時にある疑問が囁かれた。<br>門外不出の究極奥義【超新星】は誰に継承されたのかと。
+      </div>
+      <div class="kp">
+      
+            時を同じくして日本海沖、結界により巧妙に隠された小群島、始星源。<br>天光流の手ほどきを受けた継承資格者達がこの地を目指し上陸を待ちわびていた。
+      </div>
+      <div class="kp">
+      
+            忍術バトルRPG シノビガミ<br>『朝晨星』
+      </div>
+      <div class="kp">
+      
+            命瞬き、星を紡ぐ。<br>
+      
+            ――――――――――――――――――――――――
+            ―――――――――――――――――――――――
+            
+      </div>
+      <div class="kp">
+      
+            ――１隻の小舟が湖に浮かんでいる。
+      </div>
+      <div class="kp">
+      
+            舟を操る女性は器用に舵を取りながら、行く手を阻む岩山を軽やかにかわし、霧の中を進む。<br>この舟に乗って何日経ったのだろう。師の訃報を知ったあなた達は、事情を知る姉弟子のもとを訪ねた。<br>彼女はあなたたち３人が揃ったのを確認するや否や船に乗るよう捲し立て、気が付けばこの通り波に揺られている状況だ。<br>大した説明もされず、我慢の限界を迎えようという頃、姉弟子"参宿七"から声がかかる。
+      </div>
+      <div class="san left">
+      <span>参 宿七</span>
+      <p>
+      
+            「――見えましたね。あなたたち！起きなさい！いつまで寝ているのですか！」
+      </p>
+      </div>
+      <div class="san left">
+      <span>参 宿七</span>
+      <p>
+      〇"参宿七"[サン スゥチィ]<br>流派：天光流[てんこうりゅう]<br>
+              秘密〇：感情〇：居所×<br>
+              あなたは光を掲げる者だ。<br>
+              あなたは天光流頭領"朱赫"の一番弟子である。<br>
+      かねてより天光流に師事し、数多くの弟妹弟子と共に研鑽の日々を送っていた。
+      <br><br>
+      師が息を引き取る間際、奥義継承の儀式を執り行う水先人を託された。
+      その意を汲んだあなたは、初めに訪れた3人の弟子を連れ、"始星源"へと向かった。
+      <br><br>
+      あなたの使命は『奥義継承の儀式を執り行うこと』だ
+              
+            
+      </p>
+      </div>
+      <div class="karai right">
+      <span>香雷</span>
+      <p>
+      
+            「ついたのか」
+      </p>
+      </div>
+      <div class="karai karai_zensin right">
+      <span>香雷</span>
+      <p>
+      〇PC2 香雷[カライ]<br>流派：隠忍の血統/血社<br>
+              あなたは探求する者だ。<br>
+              あなたは天光流の下で兄弟弟子と共に師事していた経験がある。
+      一連の教えを受けた後、師の言いつけに従い修行の旅を続けていた。
+      <br>
+      『老星死す時、新星好光に瞬かん』
+      <br>
+      そんな折、師匠"朱赫"の訃報を知る事となる。
+      以前より伝えられていた通り、嘗ての修行の地"始星源"へ向かう為、水先人の下を訪ねた。
+      <br>
+      あなたの使命は『【超新星】を継ぐこと』だ<br><br>
+              [設定]<br>かわいいと強さを常に探求している<br>
+      しかし最近かわいいが多種多様すぎてよくわからなくなりつつもある。
+      <br>
+      「とある書物によると“かわいい”は何物にも勝る最強らしい。ならば“かわいい”を知るもまた修行」
+      <br>
+      「“かっこいい”と“かわいい”ならば
+      どちらがつよいので？…なるほど、それは両立するのか。ならばかっこよくてかわいいを目指そう」
+      <br>
+      名前は渦雷から
+            
+      </p>
+      </div>
+      <div class="syoubusya left">
+      <span>蒋 虻紗</span>
+      <p>
+      
+            「うごっ」
+      </p>
+      </div>
+      <div class="syoubusya left">
+      <span>蒋 虻紗</span>
+      <p>
+      〇PC1 蒋 虻紗[ショウ ボウシャ]<br>流派：斜歯忍軍/指矩班<br>
+              あなたは焼き焦がす者だ。<br>
+              あなたは天光流の下で兄弟弟子と共に師事していた経験がある。
+      一連の教えを受けた後、師の言いつけに従い修行の旅を続けていた。
+      <br>
+      『老星死す時、新星好光に瞬かん』
+      <br>
+      そんな折、師匠"朱赫"の訃報を知る事となる。
+      以前より伝えられていた通り、嘗ての修行の地"始星源"へ向かう為、水先人の下を訪ねた。
+      <br>
+      あなたの使命は『【超新星】を継ぐこと』だ<br><br>
+              [設定]<br>斜歯忍軍、指矩班の研究主任。<br>
+              自身が開発に携わった、斜歯忍軍の脅威の科学技術で作られた絡繰鎧を身に纏い戦う
+           
+      </p>
+      </div>
+      <div class="bou right">
+      <span>愛宕 小太郎坊</span>
+      <p>
+      
+            「どこに？」
+      </p>
+      </div>
+      <div class="bou bou_zensin right">
+      <span>愛宕 小太郎坊</span>
+      <p>
+      〇PC3 愛宕 小太郎坊[アタゴ コタロウボウ]<br>
+              流派：ハグレモノ/世界忍者連合<br>
+              あなたは煌めく者だ。<br>
+              あなたは天光流の下で兄弟弟子と共に師事していた経験がある。
+      一連の教えを受けた後、師の言いつけに従い修行の旅を続けていた。
+      <br>
+      『老星死す時、新星好光に瞬かん』
+      <br>
+      そんな折、師匠"朱赫"の訃報を知る事となる。
+      以前より伝えられていた通り、嘗ての修行の地"始星源"へ向かう為、水先人の下を訪ねた。
+      <br>
+      あなたの使命は『【超新星】を継ぐこと』だ<br><br>
+              [設定]<br>「ワシ、天狗だもん。そのうち大天狗になって山にだって化けるもん」
+              <br>
+              かつて門下に拾われた拾い子。その頃はただの人間であり、小太郎と名付けられ育てられて素直な忍者へと育った。<br>
+              だが、門下を離れ修行として旅をするうち、ある日子供と間違われて天狗にさらわれ、天狗としての能力を授けられる。<br>
+              天狗たちを見るうちに忍者より天狗の方がかっこよくない？と思うようになり、天狗の能力を授かってからは文字通り若干天狗になっている。<br>
+              愛宕山の大天狗である太郎坊に憧れていつか仕えるのだと夢見ている。<br>
+              とにかくつよくなりたいので超新星でもなんでも欲しい。<br>
+              <br>
+              見た目年齢は12～14歳くらいだが実年齢は二十歳越えている(元々小さかったが天狗になってから肉体的な時間経過がゆっくりになった)。<br>
+              身長は147cmほど。伸ばしたり縮んだりもできそう
+              <br>
+              サンスゥチィのことは「姉さま」と呼び慕っている。<br>
+              朱赫のことは「お師(さま)」と呼んでいた。
+             
+      </p>
+      </div>
+      <div class="san left">
+      <span>参 宿七</span>
+      <p>
+      
+            「まったく。……懐かしき修行の地ですよ」
+      </p>
+      </div>
+      <div class="syoubusya left">
+      <span>蒋 虻紗</span>
+      <p>
+      
+            「なんじゃここは。狭いんじゃが」
+      </p>
+      </div>
+      <div class="san left">
+      <span>参 宿七</span>
+      <p>
+      
+            「貴方がまた大きくなったからですよ」
+      </p>
+      </div>
+      <div class="syoubusya left">
+      <span>蒋 虻紗</span>
+      <p>
+      
+            「そうか。これも修行の成果じゃったか！」
+      </p>
+      </div>
+      <div class="kp">
+      
+            船外に出ると、見覚えのある切り立った山々が目に映る。ここは始星源。天光流が保有する絶海の秘境だ。<br>川沿いにしばらく進むと、かつての賑わいが感じられる廃墟が姿を現した。<br>そこから伸びる桟橋に舟を寄せ、着船する。
+      </div>
+      <div class="san left">
+      <span>参 宿七</span>
+      <p>
+      
+            「さて貴方達、師匠からもらった頂戴した振り子は持っていますね？」
+      </p>
+      </div>
+      <div class="syoubusya left">
+      <span>蒋 虻紗</span>
+      <p>
+      
+            「それより下りれんのじゃが」
+      </p>
+      </div>
+      <div class="san left">
+      <span>参 宿七</span>
+      <p>
+      
+            「それは、『冬星の振り子』です。天光流が奥義【超新星】の継承の鍵になりますよ」
+      </p>
+      </div>
+      <div class="karai right">
+      <span>香雷</span>
+      <p>
+      
+            「あぁ。でこってきた」
+      </p>
+      </div>
+      <div class="san left">
+      <span>参 宿七</span>
+      <p>
+      
+            「ほら、手を貸しますから」
+      </p>
+      </div>
+      <div class="bou right">
+      <span>愛宕 小太郎坊</span>
+      <p>
+      
+            「この……とがったやつか！」
+      </p>
+      </div>
+      <div class="syoubusya left">
+      <span>蒋 虻紗</span>
+      <p>
+      
+            「すまんのぉ」
+      </p>
+      </div>
+      <div class="san left">
+      <span>参 宿七</span>
+      <p>
+      
+            「蒋、貴方も振り子は中にしまい込んでいますね？」
+      </p>
+      </div>
+      <div class="san left">
+      <span>参 宿七</span>
+      <p>
+      
+            「振り子を所持しているということは、貴方達には見込みがあるということです」
+      </p>
+      </div>
+      <div class="san left">
+      <span>参 宿七</span>
+      <p>
+      
+            「……この儀式について、私もすべてを知っているわけではありません。ですが過酷なものであることは違いないでしょう」
+      </p>
+      </div>
+      <div class="syoubusya left">
+      <span>蒋 虻紗</span>
+      <p>
+      
+            「どこに置いたかのう」
+      </p>
+      </div>
+      <div class="san left">
+      <span>参 宿七</span>
+      <p>
+      
+            「その中にあるのは私は見逃しませんよ」
+      </p>
+      </div>
+      <div class="syoubusya syoubusya_namami left">
+      <span>蒋 虻紗</span>
+      <p>
+      
+            「あったぞ。これか」
+      </p>
+      </div>
+      <div class="san left">
+      <span>参 宿七</span>
+      <p>
+      
+            「それです。それ」
+      </p>
+      </div>
+      <div class="karai right">
+      <span>香雷</span>
+      <p>
+      
+            「ここを去ってからただ過ごしてきたわけではない。どんな過酷なものだろうが問題ないだろう」
+      </p>
+      </div>
+      <div class="bou right">
+      <span>愛宕 小太郎坊</span>
+      <p>
+      
+            「ふ、ふん。こわくなんかないし。わし天狗だもん」
+      </p>
+      </div>
+      <div class="san san_huse left">
+      <span>参 宿七</span>
+      <p>
+      
+            「率直に言ってしまえば、私としては不安です。貴方達のような、まだ幼い――」
+      </p>
+      </div>
+      <div class="kp">
+      
+            彼女は不安な表情で何かを言いよどむ。その言葉を飲み込むと、冷静に話を続けた。
+      </div>
+      <div class="san left">
+      <span>参 宿七</span>
+      <p>
+      
+            「――儀式はこの地で行い、振り子がすべて導くと聞いています」
+      </p>
+      </div>
+      <div class="san left">
+      <span>参 宿七</span>
+      <p>
+      
+            「まずは『冬星の振り子』について探るといいでしょう」
+      </p>
+      </div>
+      <div class="san left">
+      <span>参 宿七</span>
+      <p>
+      
+            「この儀式が終わるまで何人たりとも始星源から出ることは叶いません」
+      </p>
+      </div>
+      <div class="bou right">
+      <span>愛宕 小太郎坊</span>
+      <p>
+      
+            「エッ？でれないの……？」
+      </p>
+      </div>
+      <div class="san left">
+      <span>参 宿七</span>
+      <p>
+      
+            「はい。完遂するまでここから船は出せませんよ」
+      </p>
+      </div>
+      <div class="bou right">
+      <span>愛宕 小太郎坊</span>
+      <p>
+      
+            「おやつすみかに置いてきてしまったんじゃが！！」
+      </p>
+      </div>
+      <div class="syoubusya left">
+      <span>蒋 虻紗</span>
+      <p>
+      
+            「なんじゃと」
+      </p>
+      </div>
+      <div class="karai right">
+      <span>香雷</span>
+      <p>
+      
+            「案ずるな天狗の、早々に終わらせればいいこと」
+      </p>
+      </div>
+      <div class="san left">
+      <span>参 宿七</span>
+      <p>
+      
+            「すべてが終わってから取りに行きなさい」
+      </p>
+      </div>
+      <div class="bou right">
+      <span>愛宕 小太郎坊</span>
+      <p>
+      
+            「わしのだいふく……ま、まぁ？からいのの言う通り、はよ終わらせればいいっていうか？」
+      </p>
+      </div>
+      <div class="san left">
+      <span>参 宿七</span>
+      <p>
+      
+            「私は儀式の邪魔にならないように、この地を移動しながら隠れています」
+      </p>
+      </div>
+      <div class="san left">
+      <span>参 宿七</span>
+      <p>
+      
+            「基本的には儀式は当事者以外の者が手を加えてはならないのでね。」
+      </p>
+      </div>
+      <div class="san left">
+      <span>参 宿七</span>
+      <p>
+      
+            「わかりましたか」
+      </p>
+      </div>
+      <div class="karai right">
+      <span>香雷</span>
+      <p>
+      
+            「理解した。しかし久方ぶりにあなたとも手合わせをしたいものだが」
+      </p>
+      </div>
+      <div class="bou right">
+      <span>愛宕 小太郎坊</span>
+      <p>
+      
+            「姉さまもいてくれんのか……からいのとしょうぼうしゃと取り残されるんか……」
+      </p>
+      </div>
+      <div class="san left">
+      <span>参 宿七</span>
+      <p>
+      
+            「全て終わったあとに手合わせをしましょうね」
+      </p>
+      </div>
+      <div class="karai right">
+      <span>香雷</span>
+      <p>
+      
+            「！約束だからな。早く終わらせるぞ天狗の！鎧の！」
+      </p>
+      </div>
+      <div class="san left">
+      <span>参 宿七</span>
+      <p>
+      
+            「……質問がないのならば、行きなさい」
+      </p>
+      </div>
+      <div class="bou right">
+      <span>愛宕 小太郎坊</span>
+      <p>
+      
+            「ふ、ふん！造作もないわい！いくもん！」
+      </p>
+      </div>
+      <div class="bou right">
+      <span>愛宕 小太郎坊</span>
+      <p>
+      
+            （おなごしかおらん、こわぁ……）
+      </p>
+      </div>
+      <div class="syoubusya left">
+      <span>蒋 虻紗</span>
+      <p>
+      
+            「結局何をやれば継承できるんじゃ？」
+      </p>
+      </div>
+      <div class="san left">
+      <span>参 宿七</span>
+      <p>
+      
+            「それは振り子が教えてくれるでしょう」
+      </p>
+      </div>
+      <div class="san left">
+      <span>参 宿七</span>
+      <p>
+      
+            「迷ったならば振り子に導かれなさい」
+      </p>
+      </div>
+      <div class="syoubusya left">
+      <span>蒋 虻紗</span>
+      <p>
+      
+            「そうか……」
+      </p>
+      </div>
+      <div class="san left">
+      <span>参 宿七</span>
+      <p>
+      
+            「……行きましたか」
+      </p>
+      </div>
+      <div class="san san_huse left">
+      <span>参 宿七</span>
+      <p>
+      
+            「どうか、どうか皆……」
+      </p>
+      </div>
+      <div class="kp">
+      
+            試練に挑む弟妹弟子の後姿を、彼女は不安な表情を浮かべて見送った。
+      </div>
+      <div class="kp">
+      
+            ――――――――――――――――――――――――
+      </div>
+      <div class="kp">
+      
+            ――――――――――――――――――――――――
+      </div>
+      <div class="kp">
+      
+            1サイクル目
+      </div>
+      <div class="karai right">
+      <span>香雷</span>
+      <p>
+      
+            d66 (D66) ＞ 15
+            
+      </p>
+      </div>
+      <div class="bou right">
+      <span>愛宕 小太郎坊</span>
+      <p>
+      
+            ｄ66 (D66) ＞ 55
+            
+      </p>
+      </div>
+      <div class="syoubusya left">
+      <span>蒋 虻紗</span>
+      <p>
+      
+            d66 (D66) ＞ 44
+            
+      </p>
+      </div>
+      <div class="bou right">
+      <span>愛宕 小太郎坊</span>
+      <p>
+      
+            BT 戦場表(1) ＞ 平地:特になし。
+            
+      </p>
+      </div>
+      <div class="kp">
+      
+            渓流、水の流れが穏やかで木々の合間に小鳥の鳴き声が聞こえる。
+      </div>
+      <div class="bou right">
+      <span>愛宕 小太郎坊</span>
+      <p>
+      
+            ねぇさまがいってたからひとりでプライズ調べる
+      </p>
+      </div>
+      
+      <div class="mem5 left">
+            <span>プライズ：冬星の振り子</span>
+            <p>
+                  所持：PC全員<br>
+                  秘密〇<br>
+                   天光流にて一人前と認められた弟子に渡されるペンデュラム。<br>
+                  歩みに迷いが生じた時、進むべき道を指し示してくれる。<br>
+                  
+                  所持しているプレイヤーは下記の効果を使用できる。<br>
+                  ●自身のドラマシーンに補助判定を行うことでPC1人の【居所】を取得できる。<br>
+                  
+                  ※『冬星の振り子』の効果は各プレイヤー１サイクルに１度しか使用できない。
+                
+            </p>
+            </div>
+      <div class="kp">
+      
+            登場PC:PC3のみ
+      </div>
+      <div class="bou right">
+      <span>愛宕 小太郎坊</span>
+      <p>
+      
+            「このとんがったやつをしらべたらなんかわかるんじゃろ……んぬぬぬ……」握りしめて見つめています
+      </p>
+      </div>
+      <div class="bou right">
+      <span>愛宕 小太郎坊</span>
+      <p>
+      
+            2D6&gt;=5 （判定：第六感） (2D6&gt;=5) ＞ 9[3,6] ＞ 9 ＞ 成功
+            
+      </p>
+      </div>
+      <div class="mem5 left">
+            <span>■プライズ『冬星の振り子』</span>
+            <p>
+            ※公開情報（この秘密を誰かが獲得した場合、全体に公開する）<br><br>下記の条件の内、３つを１度でも満たした場合、奥義【超新星】の情報を獲得する。（この獲得による情報共有はされず、受け渡しもできない）<br><br>・この秘密を最初に公開情報にする。<br>・戦果を２回獲得する。（クライマックス含む）<br>・戦闘を５回行う。（クライマックス含む）<br>・自分が誰かに対しマイナスの感情を２つ獲得する。<br>・誰かからプラスの感情を１つ獲得される。<br><br>◇クライマックス戦闘にて、攻撃の代わりに下記のいずれかで判定を行い、成功する。<br>・《仕込み》<br>・《手練》<br>・《隠蔽術》<br>・《罠術》<br>・《暗号術》<br>・《封術》<br>※それぞれ別々の達成条件としてカウントする。１度成功したら同じものはカウントしない。<br><br>また、条件を満たしたPCのプライズ『冬星の振り子』に下記の効果を追加する。<br>●クライマックスフェイズに１度だけ、いつでも使用できる。<br>自身の奥義を、自身が【情報】を獲得している別の奥義に変更する事ができる。
+                
+            </p>
+            </div>
+      <div class="bou right">
+      <span>愛宕 小太郎坊</span>
+      <p>
+      
+            しょうぼうしゃさんの居所を調べる
+      </p>
+      </div>
+      <div class="bou right">
+      <span>愛宕 小太郎坊</span>
+      <p>
+      
+            2D6&gt;=5 （判定：生存術） (2D6&gt;=5) ＞ 9[3,6] ＞ 9 ＞ 成功
+            
+      </p>
+      </div>
+      <div class="kp">
+      
+            1サイクル目1人目終了
+      </div>
+      <div class="kp">
+      
+            2人目
+      </div>
+      <div class="syoubusya left">
+      <span>蒋 虻紗</span>
+      <p>
+      
+            BT 戦場表(4) ＞ 悪天候:嵐や吹雪、ミサイルの雨など。この戦場では、すべての攻撃忍法の間合が１上昇する。
+            
+      </p>
+      </div>
+      <div class="kp">
+      
+            霧がより濃くなってきた、一寸先すら見えない。距離の感覚が狂いそうだ
+      </div>
+      <div class="syoubusya left">
+      <span>蒋 虻紗</span>
+      <p>
+      
+            始星源を調べる
+      </p>
+      </div>
+      <div class="mem5 left">
+            <span>◆ハンドアウト：始星源[しせいげん]</span>
+            <p>
+                  秘密〇：感情×：居所×<br>
+                  日本海沖にある小群島。切り立った岩山が立ち並び、常に霞に覆われている。<br>
+          どこかの大陸から切り取られて来たかのような、異質な空気を感じとれる。<br>
+          その所在は結界によって秘匿され、特殊な手順を踏まないとたどり着けない。<br>
+                
+            </p>
+      </div>
+      <div class="kp">
+      
+            登場人物：PC1、PC3
+      </div>
+      <div class="syoubusya left">
+      <span>蒋 虻紗</span>
+      <p>
+      
+            「何も見えん」
+      </p>
+      </div>
+      <div class="bou right">
+      <span>愛宕 小太郎坊</span>
+      <p>
+      
+            「……のゎ！！あかいのおった」
+      </p>
+      </div>
+      <div class="syoubusya left">
+      <span>蒋 虻紗</span>
+      <p>
+      
+            「なんじゃ、いたのか」
+      </p>
+      </div>
+      <div class="bou right">
+      <span>愛宕 小太郎坊</span>
+      <p>
+      
+            「おおお、おってわるいか」
+      </p>
+      </div>
+      <div class="syoubusya left">
+      <span>蒋 虻紗</span>
+      <p>
+      
+            「わしになんのようじゃ？」
+      </p>
+      </div>
+      <div class="bou right">
+      <span>愛宕 小太郎坊</span>
+      <p>
+      
+            「え？偶然会っただけ……ちがうし！しょうぼうしゃのもってるなんか……よこせし！」
+      </p>
+      </div>
+      <div class="bou right">
+      <span>愛宕 小太郎坊</span>
+      <p>
+      
+            「知ってることはけし！ジャンプしてみろ！！」
+      </p>
+      </div>
+      <div class="syoubusya left">
+      <span>蒋 虻紗</span>
+      <p>
+      
+            「うわあ、なにするんじゃ！このスケベが！」
+      </p>
+      </div>
+      <div class="bou right">
+      <span>愛宕 小太郎坊</span>
+      <p>
+      
+            「え！？す、スケベ！？わしが！？！？」
+      </p>
+      </div>
+      <div class="bou right">
+      <span>愛宕 小太郎坊</span>
+      <p>
+      
+            「こんなにいたいけな天狗なのに！？」
+      </p>
+      </div>
+      <div class="syoubusya left">
+      <span>蒋 虻紗</span>
+      <p>
+      
+            「さっきなにか視線を感じたが、よからぬことをかんがえておったのじゃな！」
+      </p>
+      </div>
+      <div class="bou right">
+      <span>愛宕 小太郎坊</span>
+      <p>
+      
+            「え！？ち、ちがうし！！なんか情報とかあったらくれないかな～って思っておっただけだし！！」
+      </p>
+      </div>
+      <div class="bou right">
+      <span>愛宕 小太郎坊</span>
+      <p>
+      
+            「ね？なかよくしょ？なぁ？」
+      </p>
+      </div>
+      <div class="syoubusya left">
+      <span>蒋 虻紗</span>
+      <p>
+      
+            「問答無用！」火術で始星源ごと焼き焦がす
+      </p>
+      </div>
+      <div class="syoubusya left">
+      <span>蒋 虻紗</span>
+      <p>
+      
+            SG@12#2&gt;=5 （判定：火術） (SG@12#2&gt;=5) ＞ 7[1,6] ＞ 7 ＞ 成功
+            
+      </p>
+      </div>
+      <div class="bou right">
+      <span>愛宕 小太郎坊</span>
+      <p>
+      
+            「ぼぁ！！にゃ、にゃにをする！？」
+      </p>
+      </div>
+      <div class="bou right">
+      <span>愛宕 小太郎坊</span>
+      <p>
+      
+            「わしの羽とふわふわがちりちりのこげこげになってしもたじゃろが！！」
+      </p>
+      </div>
+      <div class="syoubusya left">
+      <span>蒋 虻紗</span>
+      <p>
+      
+            「ぬおお！なんじゃこれは！」
+      </p>
+      </div>
+      <div class="syoubusya left">
+      <span>蒋 虻紗</span>
+      <p>
+      
+            「逃げるぞ！」
+      </p>
+      </div>
+      <div class="bou right">
+      <span>愛宕 小太郎坊</span>
+      <p>
+      
+            「なんだ！！おしえろ！！」
+      </p>
+      </div>
+      <div class="bou right">
+      <span>愛宕 小太郎坊</span>
+      <p>
+      
+            「エぇ！？なんでぇ！？」
+      </p>
+      </div>
+      <div class="syoubusya left">
+      <span>蒋 虻紗</span>
+      <p>
+      
+            「ついてくるでないわすとーかー！」
+      </p>
+      </div>
+      <div class="bou right">
+      <span>愛宕 小太郎坊</span>
+      <p>
+      
+            「ち、ちがうし！！わしストーカーじゃないし！！おまえがでけーだけだし！！」
+      </p>
+      </div>
+      <div class="syoubusya left">
+      <span>蒋 虻紗</span>
+      <p>
+      
+            香雷の【居所】を調べる
+      </p>
+      </div>
+      <div class="syoubusya left">
+      <span>蒋 虻紗</span>
+      <p>
+      
+            SG@12#2&gt;=5 （判定：調査術） (SG@12#2&gt;=5) ＞ 7[2,5] ＞ 7 ＞ 成功
+            
+      </p>
+      </div>
+      <div class="kp">
+      
+            2人目終了
+      </div>
+      <div class="kp">
+      
+            3人目
+      </div>
+      <div class="karai right">
+      <span>香雷</span>
+      <p>
+      
+            BT 戦場表(5) ＞ 雑踏:人混みや教室、渋滞中の車道など。この戦場では、この戦場では、行為判定のとき、ファンブル値が１上昇する。
+            
+      </p>
+      </div>
+      <div class="kp">
+      
+            嘗ての栄華が伺える廃墟郡。時たまに囁き声が聞こえてくる……
+      </div>
+      <div class="kp">
+      
+            登場PC：PC2、PC1
+      </div>
+      <div class="karai right">
+      <span>香雷</span>
+      <p>
+      
+            「鎧の、なにか儀式についてわかったか」
+      </p>
+      </div>
+      <div class="syoubusya left">
+      <span>蒋 虻紗</span>
+      <p>
+      
+            「そ、それはもうばっちりじゃ」
+      </p>
+      </div>
+      <div class="karai right">
+      <span>香雷</span>
+      <p>
+      
+            「ほう、さすが早いな。天狗のは喜ぶだろうが…私は久方ぶりのこの地でもうすこし刀を振るいたい思いもある…。どうだ、折角あったんだ、手合わせでもしないか」
+      </p>
+      </div>
+      <div class="syoubusya left">
+      <span>蒋 虻紗</span>
+      <p>
+      
+            「随分と戦いが好きなようじゃのぅ」
+      </p>
+      </div>
+      <div class="karai right">
+      <span>香雷</span>
+      <p>
+      
+            「なに、奮ってこその力だろう。ならばお前の修行の成果はなんのための力というのだ？」
+      </p>
+      </div>
+      <div class="syoubusya left">
+      <span>蒋 虻紗</span>
+      <p>
+      
+            「戦いは手段じゃ。修行は手札を増やすために過ぎん」
+      </p>
+      </div>
+      <div class="syoubusya left">
+      <span>蒋 虻紗</span>
+      <p>
+      
+            「どうしても戦いたいなら【高所】の時にまた来るがよい」
+      </p>
+      </div>
+      <div class="karai right">
+      <span>香雷</span>
+      <p>
+      
+            「…鎧のは戦いの先に見るものがあるのか。いいさ、その時を楽しみにしていよう。その時にその手段の先を垣間見ることもできよう」
+      </p>
+      </div>
+      <div class="karai right">
+      <span>香雷</span>
+      <p>
+      
+            2D6&gt;=5 （判定：死霊術） (2D6&gt;=5) ＞ 6[2,4] ＞ 6 ＞ 成功
+            
+      </p>
+      </div>
+      <div class="karai right">
+      <span>香雷</span>
+      <p>
+      
+            ET 感情表(4) ＞ 忠誠（プラス）／侮蔑（マイナス）
+            
+      </p>
+      </div>
+      <div class="syoubusya left">
+      <span>蒋 虻紗</span>
+      <p>
+      
+            et 感情表(6) ＞ 狂信（プラス）／殺意（マイナス）
+            
+      </p>
+      </div>
+      <div class="syoubusya left">
+      <span>蒋 虻紗</span>
+      <p>
+      
+            「ぬああああ！またかあああ！！」
+      </p>
+      </div>
+      <div class="karai right">
+      <span>香雷</span>
+      <p>
+      
+            戦闘の方向性の違いに侮蔑で
+            
+      </p>
+      </div>
+      <div class="syoubusya left">
+      <span>蒋 虻紗</span>
+      <p>
+      
+            「おまえなにをやっておるんじゃ！！」
+      </p>
+      </div>
+      <div class="syoubusya left">
+      <span>蒋 虻紗</span>
+      <p>
+      
+            殺意で
+      </p>
+      </div>
+      <div class="syoubusya left">
+      <span>蒋 虻紗</span>
+      <p>
+      
+            逃げます
+      </p>
+      </div>
+      <div class="karai right">
+      <span>香雷</span>
+      <p>
+      
+            「にぎやかでよいだろう？それではな」
+      </p>
+      </div>
+      <div class="syoubusya left">
+      <span>蒋 虻紗</span>
+      <p>
+      
+            「ばかものー！」
+      </p>
+      </div>
+      <div class="karai right">
+      <span>香雷</span>
+      <p>
+      
+            補助判定でしょうぼうしゃちゃんの居所をさぐる
+      </p>
+      </div>
+      <div class="karai right">
+      <span>香雷</span>
+      <p>
+      
+            2D6&gt;=5 （判定：調査術） (2D6&gt;=5) ＞ 10[4,6] ＞ 10 ＞ 成功
+            
+      </p>
+      </div>
+      <div class="kp">
+      
+            3人目終了
+      </div>
+      <div class="kp">
+      
+            1サイクル目が終了しました
+      </div>
+      <div class="kp">
+      
+            ――――――――――――――――――――――――
+      </div>
+      <div class="kp">
+      
+            ――――――――――――――――――――――――
+      </div>
+      
+      <div class="kp">
+      
+            2サイクル目に入ります
+      </div>
+      <div class="bou right">
+      <span>愛宕 小太郎坊</span>
+      <p>
+      
+            ｄ66 (D66) ＞ 16
+            
+      </p>
+      </div>
+      <div class="karai right">
+      <span>香雷</span>
+      <p>
+      
+            d66 (D66) ＞ 34
+            
+      </p>
+      </div>
+      <div class="syoubusya left">
+      <span>蒋 虻紗</span>
+      <p>
+      
+            ｄ６６ (D66) ＞ 33
+            
+      </p>
+      </div>
+      <div class="karai right">
+      <span>香雷</span>
+      <p>
+      
+            BT 戦場表(2) ＞ 水中:海や川や、プール、血の池地獄など。この戦場では、回避判定にマイナス２の修正がつく。
+            
+      </p>
+      </div>
+      <div class="kp">
+      
+            宝流湖、産学の合間にできた美しい翠緑色の川を小舟で進む。
+      </div>
+      <div class="karai right">
+      <span>香雷</span>
+      <p>
+      
+            しょうぼうしゃちゃんに戦闘をしかけます
+      </p>
+      </div>
+      <div class="kp">
+      
+            戦闘：PC2、PC1
+      </div>
+      <div class="kp">
+      
+            戦闘開始！！
+      </div>
+      <div class="karai right">
+      <span>香雷</span>
+      <p>
+      
+            「気が変わった。鎧の、やはり一度刃を交わそうじゃないか」
+      </p>
+      </div>
+      <div class="kp">
+      
+            プロットオープン
+      </div>
+      <div class="mem5 left">
+      <span>system</span>
+      <p>
+      
+            [ 蒋 虻紗 ] がダイスシンボルを公開。出目は 6 です。
+      </p>
+      </div>
+      <div class="mem5 left">
+      <span>system</span>
+      <p>
+      
+            [ 香雷 ] がダイスシンボルを公開。出目は 3 です。
+      </p>
+      </div>
+      <div class="syoubusya left">
+      <span>蒋 虻紗</span>
+      <p>
+      
+            パス
+      </p>
+      </div>
+      <div class="karai right">
+      <span>香雷</span>
+      <p>
+      
+            流星雨します
+      </p>
+      </div>
+      <div class="karai right">
+      <span>香雷</span>
+      <p>
+      
+            2D6&gt;=5 （判定：召喚術） (2D6&gt;=5) ＞ 2[1,1] ＞ 2 ＞ ファンブル
+            
+      </p>
+      </div>
+      <div class="kp">
+      
+            2ラウンド目（最終）
+      </div>
+      <div class="kp">
+      
+            プロットオープン
+      </div>
+      <div class="mem5 left">
+      <span>system</span>
+      <p>
+      
+            [ 香雷 ] がダイスシンボルを公開。出目は 3 です。
+      </p>
+      </div>
+      <div class="mem5 left">
+      <span>system</span>
+      <p>
+      
+            [ 蒋 虻紗 ] がダイスシンボルを公開。出目は 6 です。
+      </p>
+      </div>
+      <div class="syoubusya left">
+      <span>蒋 虻紗</span>
+      <p>
+      
+            パス
+      </p>
+      </div>
+      <div class="karai right">
+      <span>香雷</span>
+      <p>
+      
+            流星雨
+      </p>
+      </div>
+      <div class="karai right">
+      <span>香雷</span>
+      <p>
+      
+            2D6&gt;=5 （判定：召喚術） (2D6&gt;=5) ＞ 11[5,6] ＞ 11 ＞ 成功
+            
+      </p>
+      </div>
+      <div class="karai right">
+      <span>香雷</span>
+      <p>
+      
+            2D6&gt;=5 （判定：召喚術） (2D6&gt;=5) ＞ 8[3,5] ＞ 8 ＞ 成功
+            
+      </p>
+      </div>
+      <div class="syoubusya left">
+      <span>蒋 虻紗</span>
+      <p>
+      
+            SG@12#6-2&gt;=8 （判定：野戦術） (SG-2@12#6&gt;=8) ＞ 8[4,4]-2 ＞ 6 ＞ 失敗
+            
+      </p>
+      </div>
+      <div class="mem5 left">
+      <span>system</span>
+      <p>
+      
+            [ 蒋 虻紗 ] 頑健 : 2 → 1
+      </p>
+      </div>
+      <div class="karai right">
+      <span>香雷</span>
+      <p>
+      
+            「つまらんな」
+      </p>
+      </div>
+      <div class="kp">
+      
+            戦闘終了！！
+      </div>
+      <div class="syoubusya left">
+      <span>蒋 虻紗</span>
+      <p>
+      
+            「ぬおおお！」
+      </p>
+      </div>
+      <div class="syoubusya left">
+      <span>蒋 虻紗</span>
+      <p>
+      
+            「卑怯者ー！」
+      </p>
+      </div>
+      <div class="kp">
+      
+            勝者：PC2
+      </div>
+      <div class="kp">
+      
+            戦果どうぞ
+      </div>
+      <div class="karai right">
+      <span>香雷</span>
+      <p>
+      
+            しょうぼうしゃちゃんの秘密を
+      </p>
+      </div>
+      <div class="karai right">
+      <span>香雷</span>
+      <p>
+      
+            「やはり同じ修行を経た輩だろうと見たものは違うか…」
+      </p>
+      </div>
+      <div class="kp">
+      
+            1人目終了
+      </div>
+      <div class="kp">
+      
+            2人目
+      </div>
+      <div class="syoubusya left">
+      <span>蒋 虻紗</span>
+      <p>
+      
+            BT 戦場表(5) ＞ 雑踏:人混みや教室、渋滞中の車道など。この戦場では、この戦場では、行為判定のとき、ファンブル値が１上昇する。
+            
+      </p>
+      </div>
+      <div class="kp">
+      
+            嘗ての栄華が伺える廃墟郡。時たまに囁き声が聞こえてくる……
+      </div>
+      <div class="syoubusya syoubusya_namami left">
+      <span>蒋 虻紗</span>
+      <p>
+      
+            「どっちから借りを返すかのぉ」
+      </p>
+      </div>
+      <div class="syoubusya syoubusya_namami left">
+      <span>蒋 虻紗</span>
+      <p>
+      
+            choice[香雷,小太郎坊 ] (choice[香雷,小太郎坊]) ＞ 小太郎坊
+            
+      </p>
+      </div>
+      <div class="syoubusya left">
+      <span>蒋 虻紗</span>
+      <p>
+      
+            「お前からじゃー！」
+      </p>
+      </div>
+      <div class="syoubusya left">
+      <span>蒋 虻紗</span>
+      <p>
+      
+            小太郎坊と戦闘
+      </p>
+      </div>
+      <div class="karai right">
+      <span>香雷</span>
+      <p>
+      
+            乱入します！
+      </p>
+      </div>
+      <div class="kp">
+      
+            戦闘：PC1、PC3 乱入：PC2
+      </div>
+      <div class="kp">
+      
+            戦闘開始！！
+      </div>
+      <div class="syoubusya left">
+      <span>蒋 虻紗</span>
+      <p>
+      
+            「鴨がネギをもってきおったか！」
+      </p>
+      </div>
+      <div class="syoubusya left">
+      <span>蒋 虻紗</span>
+      <p>
+      
+            【峠牙】自分がシーンプレイヤーなら、戦闘開始時に、その戦場を「高所」にすることができる。戦闘中、現在の戦場が「高所」の場合、このキャラクターの攻撃に対する回避判定やこのキャラクターの使用する奥義に対して奥義破り判定を行う場合、マイナス2の修正がつく。
+      </p>
+      </div>
+      <div class="kp">
+      
+            切り立った山々を見下ろす。霧に阻まれて下界の様子は伺えない。
+      </div>
+      <div class="karai right">
+      <span>香雷</span>
+      <p>
+      
+            「私も混ぜろ」
+      </p>
+      </div>
+      <div class="syoubusya left">
+      <span>蒋 虻紗</span>
+      <p>
+      
+            「貴様らにわしの真の力を見せてやろう！」
+      </p>
+      </div>
+      <div class="bou right">
+      <span>愛宕 小太郎坊</span>
+      <p>
+      
+            「うわ～……こいつら、こわ～……」
+      </p>
+      </div>
+      <div class="bou right">
+      <span>愛宕 小太郎坊</span>
+      <p>
+      
+            「っち、ちがうし！ちがうな！こわくないし！きさまらに引いておるだけだし！！」
+      </p>
+      </div>
+      <div class="syoubusya left">
+      <span>蒋 虻紗</span>
+      <p>
+      
+            ｶﾞｷｰﾝ!ｺﾞｷｰﾝ!
+      </p>
+      </div>
+      <div class="karai right">
+      <span>香雷</span>
+      <p>
+      
+            「戦場で引くな。追われたいのか」
+      </p>
+      </div>
+      <div class="syoubusya syoubusya_henkei left">
+      <span>蒋 虻紗</span>
+      <p>
+      
+            ｶﾞｼｬｰﾝ!「さあ！貴様らの最後だ！」
+      </p>
+      </div>
+      <div class="bou right">
+      <span>愛宕 小太郎坊</span>
+      <p>
+      
+            「そういう引くじゃないが……なんだこいつら……」
+      </p>
+      </div>
+      <div class="kp">
+      
+            プロットオープン
+      </div>
+      <div class="mem5 left">
+      <span>system</span>
+      <p>
+      
+            [ 香雷 ] がダイスシンボルを公開。出目は 4 です。
+      </p>
+      </div>
+      <div class="mem5 left">
+      <span>system</span>
+      <p>
+      
+            [ 愛宕 小太郎坊 ] がダイスシンボルを公開。出目は 4 です。
+      </p>
+      </div>
+      <div class="mem5 left">
+      <span>system</span>
+      <p>
+      
+            [ 蒋 虻紗 ] がダイスシンボルを公開。出目は 2 です。
+      </p>
+      </div>
+      <div class="bou right">
+      <span>愛宕 小太郎坊</span>
+      <p>
+      
+            ｄ66 (D66) ＞ 33
+            
+      </p>
+      </div>
+      <div class="karai right">
+      <span>香雷</span>
+      <p>
+      
+            d66 (D66) ＞ 15
+            
+      </p>
+      </div>
+      <div class="bou right">
+      <span>愛宕 小太郎坊</span>
+      <p>
+      
+            からいさんに夜叉
+      </p>
+      </div>
+      <div class="bou right">
+      <span>愛宕 小太郎坊</span>
+      <p>
+      
+            SG-2&gt;=5 （判定：異形化） (SG-2@12#2&gt;=5) ＞ 7[3,4]-2 ＞ 5 ＞ 成功
+            
+      </p>
+      </div>
+      <div class="bou right">
+      <span>愛宕 小太郎坊</span>
+      <p>
+      
+            「天狗に手を出すとこうなるんだぞ！」
+      </p>
+      </div>
+      <div class="karai right">
+      <span>香雷</span>
+      <p>
+      
+            2D6&gt;=6 （判定：召喚術） (2D6&gt;=6) ＞ 7[3,4] ＞ 7 ＞ 成功
+            
+      </p>
+      </div>
+      <div class="karai right">
+      <span>香雷</span>
+      <p>
+      
+            「はははっ甘い！」
+      </p>
+      </div>
+      <div class="bou right">
+      <span>愛宕 小太郎坊</span>
+      <p>
+      
+            「む……」
+      </p>
+      </div>
+      <div class="karai right">
+      <span>香雷</span>
+      <p>
+      
+            流星雨
+      </p>
+      </div>
+      <div class="karai right">
+      <span>香雷</span>
+      <p>
+      
+            2D6&gt;=5 （判定：召喚術） (2D6&gt;=5) ＞ 8[4,4] ＞ 8 ＞ 成功
+            
+      </p>
+      </div>
+      <div class="karai right">
+      <span>香雷</span>
+      <p>
+      
+            2D6&gt;=5 （判定：召喚術） (2D6&gt;=5) ＞ 6[2,4] ＞ 6 ＞ 成功
+            
+      </p>
+      </div>
+      <div class="syoubusya syoubusya_henkei left">
+      <span>蒋 虻紗</span>
+      <p>
+      
+            SG@12#2&gt;=8 （判定：野戦術） (SG@12#2&gt;=8) ＞ 8[2,6] ＞ 8 ＞ 成功
+            
+      </p>
+      </div>
+      <div class="bou right">
+      <span>愛宕 小太郎坊</span>
+      <p>
+      
+            SG&gt;=6 （判定：異形化） (SG@12#2&gt;=6) ＞ 3[1,2] ＞ 3 ＞ 失敗
+            
+      </p>
+      </div>
+      <div class="mem5 left">
+      <span>system</span>
+      <p>
+      
+            [ 愛宕 小太郎坊 ] 謀術 : 1 → 0
+      </p>
+      </div>
+      <div class="bou right">
+      <span>愛宕 小太郎坊</span>
+      <p>
+      
+            1ｄ6 (1D6) ＞ 5
+            
+      </p>
+      </div>
+      <div class="mem5 left">
+      <span>system</span>
+      <p>
+      
+            [ 愛宕 小太郎坊 ] 戦術 : 1 → 0
+      </p>
+      </div>
+      <div class="karai right">
+      <span>香雷</span>
+      <p>
+      
+            「まだぬるいな天狗の」
+      </p>
+      </div>
+      <div class="bou right">
+      <span>愛宕 小太郎坊</span>
+      <p>
+      
+            「うるさいわい！！ほんと忍者は礼儀がなっとらんな！！」
+      </p>
+      </div>
+      <div class="syoubusya syoubusya_henkei left">
+      <span>蒋 虻紗</span>
+      <p>
+      
+            「天狗が高所で泣いておるわー！」
+      </p>
+      </div>
+      <div class="syoubusya syoubusya_henkei left">
+      <span>蒋 虻紗</span>
+      <p>
+      
+            パス
+      </p>
+      </div>
+      <div class="kp">
+      
+            坊 脱落
+      </div>
+      <div class="kp">
+      
+            2ラウンド目
+      </div>
+      <div class="kp">
+      
+            プロットオープン
+      </div>
+      <div class="mem5 left">
+      <span>system</span>
+      <p>
+      
+            [ 蒋 虻紗 ] がダイスシンボルを公開。出目は 5 です。
+      </p>
+      </div>
+      <div class="mem5 left">
+      <span>system</span>
+      <p>
+      
+            [ 香雷 ] がダイスシンボルを公開。出目は 4 です。
+      </p>
+      </div>
+      <div class="syoubusya syoubusya_henkei left">
+      <span>蒋 虻紗</span>
+      <p>
+      
+            【砂縛】接近戦。間合内にいる自分よりプロット値が低いキャラクター一体を目標にできる。攻撃が成功すると、目標に接近戦ダメージを1点えることができる。命中判定に成功していたら、目標はラウンドの終了時にもう一度回避判定を行う。失敗すると、射撃戦ダメージを1点受ける。
+      </p>
+      </div>
+      <div class="syoubusya syoubusya_henkei left">
+      <span>蒋 虻紗</span>
+      <p>
+      
+            SG@12#5&gt;=5 （判定：野戦術） (SG@12#5&gt;=5) ＞ 5[1,4] ＞ 5 ＞ ファンブル
+            
+      </p>
+      </div>
+      <div class="syoubusya syoubusya_henkei left">
+      <span>蒋 虻紗</span>
+      <p>
+      
+            神通丸
+      </p>
+      </div>
+      <div class="mem5 left">
+      <span>system</span>
+      <p>
+      
+            [ 蒋 虻紗 ] 忍具 : 2 → 1
+      </p>
+      </div>
+      <div class="syoubusya syoubusya_henkei left">
+      <span>蒋 虻紗</span>
+      <p>
+      
+            SG@12#5-2&gt;=5 （判定：野戦術） (SG-2@12#5&gt;=5) ＞ 5[1,4]-2 ＞ 3 ＞ ファンブル
+            
+      </p>
+      </div>
+      <div class="syoubusya left">
+      <span>蒋 虻紗</span>
+      <p>
+      
+            「ぬあああああああ！！！」
+      </p>
+      </div>
+      <div class="mem5 left">
+      <span>system</span>
+      <p>
+      
+            [ 蒋 虻紗 ] 頑健 : 1 → 0
+      </p>
+      </div>
+      <div class="karai right">
+      <span>香雷</span>
+      <p>
+      
+            「ははは足場が悪かったなぁ？」
+      </p>
+      </div>
+      <div class="kp">
+      
+            戦闘終了！！
+      </div>
+      <div class="kp">
+      
+            勝者：PC2
+      </div>
+      <div class="karai right">
+      <span>香雷</span>
+      <p>
+      
+            天狗君に感情を
+      </p>
+      </div>
+      <div class="karai right">
+      <span>香雷</span>
+      <p>
+      
+            かわいかった天狗君に憧景をむけます
+      </p>
+      </div>
+      <div class="karai right">
+      <span>香雷</span>
+      <p>
+      
+            「まだまだ甘いが…なかなか良いかわいいを持ってるな」
+      </p>
+      </div>
+      <div class="kp">
+      
+            2人目終了
+      </div>
+      <div class="kp">
+      
+            3人目
+      </div>
+      <div class="syoubusya syoubusya_namami left">
+      <span>蒋 虻紗</span>
+      <p>
+      
+            「ぐはっ……なにがおこったんじゃ……」
+      </p>
+      </div>
+      <div class="bou right">
+      <span>愛宕 小太郎坊</span>
+      <p>
+      
+            BT 戦場表(4) ＞ 悪天候:嵐や吹雪、ミサイルの雨など。この戦場では、すべての攻撃忍法の間合が１上昇する。
+            
+      </p>
+      </div>
+      <div class="kp">
+      
+            霧がより濃くなってきた、一寸先すら見えない。距離の感覚が狂いそうだ
+      </div>
+      <div class="kp">
+      
+            登場：PC3、PC1、PC2
+      </div>
+      <div class="bou right">
+      <span>愛宕 小太郎坊</span>
+      <p>
+      
+            「ぶぁ……ひ、ひどいめにあった……野蛮人どもめ……」
+      </p>
+      </div>
+      <div class="syoubusya syoubusya_namami left">
+      <span>蒋 虻紗</span>
+      <p>
+      
+            「まったくじゃ……」
+      </p>
+      </div>
+      <div class="karai right">
+      <span>香雷</span>
+      <p>
+      
+            「甘いことを。修行の日を忘れたか」
+      </p>
+      </div>
+      <div class="bou right">
+      <span>愛宕 小太郎坊</span>
+      <p>
+      
+            「のぁ！！おる！！いる！！」
+      </p>
+      </div>
+      <div class="bou right">
+      <span>愛宕 小太郎坊</span>
+      <p>
+      
+            「すとーかー！！」
+      </p>
+      </div>
+      <div class="syoubusya syoubusya_namami left">
+      <span>蒋 虻紗</span>
+      <p>
+      
+            「またおまえか！」
+      </p>
+      </div>
+      <div class="bou right">
+      <span>愛宕 小太郎坊</span>
+      <p>
+      
+            「こっちのせりふじゃ！！」
+      </p>
+      </div>
+      <div class="karai right">
+      <span>香雷</span>
+      <p>
+      
+            「貴様たちもっと気配を捕らえるようになれ。基本だろう」
+      </p>
+      </div>
+      <div class="bou right">
+      <span>愛宕 小太郎坊</span>
+      <p>
+      
+            「ぐぬ……えらそうに……」
+      </p>
+      </div>
+      <div class="syoubusya syoubusya_namami left">
+      <span>蒋 虻紗</span>
+      <p>
+      
+            「少し勝ったからってえらそうにしおって」
+      </p>
+      </div>
+      <div class="karai right">
+      <span>香雷</span>
+      <p>
+      
+            「強いとかわいいは偉いのだ。まぁかわいさは貴様たちもなかなかだがな」
+      </p>
+      </div>
+      <div class="bou right">
+      <span>愛宕 小太郎坊</span>
+      <p>
+      
+            「うるさいわい！！えらいのは天狗なんだぞ！！」
+      </p>
+      </div>
+      <div class="karai right">
+      <span>香雷</span>
+      <p>
+      
+            「天狗はかわいいのか？」
+      </p>
+      </div>
+      <div class="bou right">
+      <span>愛宕 小太郎坊</span>
+      <p>
+      
+            「は？なにをいっておるのだ」
+      </p>
+      </div>
+      <div class="karai right">
+      <span>香雷</span>
+      <p>
+      
+            「かわいいは最強だと都の書物ではそう書かれていたのだ。曰くすべてのものに勝るものだと」
+      </p>
+      </div>
+      <div class="bou right">
+      <span>愛宕 小太郎坊</span>
+      <p>
+      
+            「はぁ」
+      </p>
+      </div>
+      <div class="karai right">
+      <span>香雷</span>
+      <p>
+      
+            「つまり天狗がかわいいのならばその偉さも認めざるは得ぬ」
+      </p>
+      </div>
+      <div class="bou right">
+      <span>愛宕 小太郎坊</span>
+      <p>
+      
+            「え！？いや最強なのは天狗だが！？え！？じゃあ天狗はかわいいということに……なる、のか！？」
+      </p>
+      </div>
+      <div class="syoubusya syoubusya_namami left">
+      <span>蒋 虻紗</span>
+      <p>
+      
+            「ならわしにも敬意を払わんかい」
+      </p>
+      </div>
+      <div class="karai right">
+      <span>香雷</span>
+      <p>
+      
+            「確かにその可愛さには敬意を払おう。しかしその戦いに対する考えに理解ができぬ。鎧のの見るものを己の目でみてからまた判断しようと思っている」
+      </p>
+      </div>
+      <div class="bou right">
+      <span>愛宕 小太郎坊</span>
+      <p>
+      
+            「なんなんじゃい……」
+      </p>
+      </div>
+      <div class="bou right">
+      <span>愛宕 小太郎坊</span>
+      <p>
+      
+            香雷ちゃんと感情
+      </p>
+      </div>
+      <div class="bou right">
+      <span>愛宕 小太郎坊</span>
+      <p>
+      
+            SG&gt;=5 （判定：第六感） (SG@12#2&gt;=5) ＞ 5[2,3] ＞ 5 ＞ 成功
+            
+      </p>
+      </div>
+      <div class="bou right">
+      <span>愛宕 小太郎坊</span>
+      <p>
+      
+            ET 感情表(3) ＞ 愛情（プラス）／妬み（マイナス）
+            
+      </p>
+      </div>
+      <div class="bou right">
+      <span>愛宕 小太郎坊</span>
+      <p>
+      
+            余裕なのが腹立つから妬みで
+      </p>
+      </div>
+      <div class="karai right">
+      <span>香雷</span>
+      <p>
+      
+            ET 感情表(3) ＞ 愛情（プラス）／妬み（マイナス）
+            
+      </p>
+      </div>
+      <div class="karai right">
+      <span>香雷</span>
+      <p>
+      
+            愛情もっとこ
+      </p>
+      </div>
+      <div class="karai right">
+      <span>香雷</span>
+      <p>
+      
+            かわいいね
+      </p>
+      </div>
+      <div class="bou right">
+      <span>愛宕 小太郎坊</span>
+      <p>
+      
+            からいちゃんの居場所を補助判定で
+      </p>
+      </div>
+      <div class="bou right">
+      <span>愛宕 小太郎坊</span>
+      <p>
+      
+            SG&gt;=5 （判定：生存術） (SG@12#2&gt;=5) ＞ 6[2,4] ＞ 6 ＞ 成功
+            
+      </p>
+      </div>
+      <div class="bou right">
+      <span>愛宕 小太郎坊</span>
+      <p>
+      
+            「よゆうしゃくしゃくしゃくしゃくしおって……なにがかわいいじゃ……つぎはまけんし……」
+      </p>
+      </div>
+      <div class="kp">
+      
+            3人目終了
+      </div>
+      <div class="kp">
+      
+            2サイクル目終了
+      </div>
+      <div class="kp">
+      
+            ――――――――――――――――――――――――
+      </div>
+      <div class="kp">
+      
+            ――――――――――――――――――――――――
+      </div>
+      <div class="kp">
+      
+            互いに傷つけあう３人を遠目に、影が一つ木々の合間に姿を隠し、その雄姿を見守っていた。
+      </div>
+      <div class="san san_huse left">
+      <span>参 宿七</span>
+      <p>
+      
+            「……」
+      </p>
+      </div>
+      <div class="kp">
+      
+            彼女は自身の手に目を落とす。そこには『冬星の振り子』が３つ握られていた。
+      </div>
+      <div class="san san_huse left">
+      <span>参 宿七</span>
+      <p>
+      
+            「師匠…私は、迷いません……いや、迷うわけにはいきません」
+      </p>
+      </div>
+      <div class="san san_huse left">
+      <span>参 宿七</span>
+      <p>
+      
+            「彼女らの……いえ、これは天光流を受け継ぐ者としての……覚悟、が」
+      </p>
+      </div>
+      <div class="kp">
+      
+            口籠り震えた声を発する。誰に聞かせるでもなく、己を奮い立たせるための言霊を。<br>脳裏に浮かぶのは自身の過去。親しかった兄弟弟子たちの姿。<br>しかし彼らはもう――いや、あるいは未だこの地にいるのかもしれない。<br>だが、自身の使命は彼らの為ではない。<br>あくまで彼女は天光流を継ぐ者としての努めを果たすだけだ。
+      </div>
+      <div class="san san_huse left">
+      <span>参 宿七</span>
+      <p>
+      
+            「蒋……、香雷……、坊……」
+      </p>
+      </div>
+      <div class="kp">
+      
+            手に収まる振り子を握りしめると、目を見開く。その顔に迷いはなかった。
+      </div>
+      <div class="kp">
+      
+            シーン終了
+      </div>
+      <div class="kp">
+      
+            ――――――――――――――――――――――――
+      </div>
+      <div class="kp">
+      
+            ――――――――――――――――――――――――
+      </div>
+      <div class="kp">
+            3サイクル目
+      </div>
+      <div class="karai right">
+      <span>香雷</span>
+      <p>
+      
+            d66 (D66) ＞ 14
+            
+      </p>
+      </div>
+      <div class="bou right">
+      <span>愛宕 小太郎坊</span>
+      <p>
+      
+            ｄ66 (D66) ＞ 55
+            
+      </p>
+      </div>
+      <div class="syoubusya left">
+      <span>蒋 虻紗</span>
+      <p>
+      
+            ｄ６６ (D66) ＞ 23
+            
+      </p>
+      </div>
+      <div class="kp">
+      
+            1人目
+      </div>
+      <div class="bou right">
+      <span>愛宕 小太郎坊</span>
+      <p>
+      
+            BT 戦場表(4) ＞ 悪天候:嵐や吹雪、ミサイルの雨など。この戦場では、すべての攻撃忍法の間合が１上昇する。
+            
+      </p>
+      </div>
+      <div class="kp">
+      
+            霧がより濃くなってきた、一寸先すら見えない。距離の感覚が狂いそうだ
+      </div>
+      <div class="kp">
+      
+            登場人物：PC3、PC1、PC2、NPC
+      </div>
+      <div class="bou right">
+      <span>愛宕 小太郎坊</span>
+      <p>
+      
+            「……あっ。姉さま！」
+      </p>
+      </div>
+      <div class="san left">
+      <span>参 宿七</span>
+      <p>
+      
+            「貴方達……」
+      </p>
+      </div>
+      <div class="bou right">
+      <span>愛宕 小太郎坊</span>
+      <p>
+      
+            「……お、おこてる？おこっておる？」
+      </p>
+      </div>
+      <div class="san san_hohoemi left">
+      <span>参 宿七</span>
+      <p>
+      
+            「いいえ、怒っていませんよ」
+      </p>
+      </div>
+      <div class="syoubusya left">
+      <span>蒋 虻紗</span>
+      <p>
+      
+            「なんじゃなんじゃ」
+      </p>
+      </div>
+      <div class="bou right">
+      <span>愛宕 小太郎坊</span>
+      <p>
+      
+            「叱られるのかと思った」
+      </p>
+      </div>
+      <div class="san left">
+      <span>参 宿七</span>
+      <p>
+      
+            「私は、頭ごなしに叱らないですよ」
+      </p>
+      </div>
+      <div class="karai right">
+      <span>香雷</span>
+      <p>
+      
+            「儀式には近づいているか？姉弟子様」
+      </p>
+      </div>
+      <div class="san left">
+      <span>参 宿七</span>
+      <p>
+      
+            「貴方達が進めるべきことですよ。やれていますか？」
+      </p>
+      </div>
+      <div class="bou right">
+      <span>愛宕 小太郎坊</span>
+      <p>
+      
+            「た、たぶん？」
+      </p>
+      </div>
+      <div class="syoubusya syoubusya_namami left">
+      <span>蒋 虻紗</span>
+      <p>
+      
+            「ま、まあまあじゃな」
+      </p>
+      </div>
+      <div class="san san_hohoemi left">
+      <span>参 宿七</span>
+      <p>
+      
+            「それならばよかったです」
+      </p>
+      </div>
+      <div class="karai right">
+      <span>香雷</span>
+      <p>
+      
+            「こうして集まっていると修行の日を思い出すな。私はまた互いに高めあう期間にしてもよいと思うが…天狗のは急いでるのだったな」
+      </p>
+      </div>
+      <div class="bou right">
+      <span>愛宕 小太郎坊</span>
+      <p>
+      
+            「はっ。そうだった。……忘れてなどおらんぞ！」
+      </p>
+      </div>
+      <div class="syoubusya syoubusya_namami left">
+      <span>蒋 虻紗</span>
+      <p>
+      
+            「そもそもなんでこんなことする必要があるんじゃ」
+      </p>
+      </div>
+      <div class="san left">
+      <span>参 宿七</span>
+      <p>
+      
+            「超新星を継ぐためというのを忘れているのですか？」
+      </p>
+      </div>
+      <div class="san left">
+      <span>参 宿七</span>
+      <p>
+      
+            「これは必要なことなのです。わかりますか？」
+      </p>
+      </div>
+      <div class="bou right">
+      <span>愛宕 小太郎坊</span>
+      <p>
+      
+            「全員ぼこぼこにして勝たないと継げないんか……」
+      </p>
+      </div>
+      <div class="san left">
+      <span>参 宿七</span>
+      <p>
+      
+            「強くなるために必要なことなのです」
+      </p>
+      </div>
+      <div class="bou right">
+      <span>愛宕 小太郎坊</span>
+      <p>
+      
+            「でも全員ぼこぼこにしたら一人しか継げんじゃろ？門下、ちいさくなっていくんじゃない？」
+      </p>
+      </div>
+      <div class="bou right">
+      <span>愛宕 小太郎坊</span>
+      <p>
+      
+            「蟲毒なの？」
+      </p>
+      </div>
+      <div class="san san_huse left">
+      <span>参 宿七</span>
+      <p>
+      
+            「奥義を継ぐ者は限られた存在なのです。それが貴方達全員出来るかもしれないし、出来ないかも知れない」
+      </p>
+      </div>
+      <div class="syoubusya syoubusya_namami left">
+      <span>蒋 虻紗</span>
+      <p>
+      
+            「朱赫＝燃える火の赤という名なのだから"焼き焦がす者"であるわしが後継者じゃないのか？」
+      </p>
+      </div>
+      <div class="san left">
+      <span>参 宿七</span>
+      <p>
+      
+            「これが天光流の教えだと、伝えてきたと思いますが…」
+      </p>
+      </div>
+      <div class="karai right">
+      <span>香雷</span>
+      <p>
+      
+            「強いものはまた強いものを呼びさらなる強さを得るのだろう。継いだもののもとにまた人は集まるだろう」
+      </p>
+      </div>
+      <div class="bou right">
+      <span>愛宕 小太郎坊</span>
+      <p>
+      
+            「でも廃れかけておるよ」
+      </p>
+      </div>
+      <div class="karai right">
+      <span>香雷</span>
+      <p>
+      
+            「広報がたりなかったんじゃないか。ゆーちゅーぶとやらを使おう」
+      </p>
+      </div>
+      <div class="san left">
+      <span>参 宿七</span>
+      <p>
+      
+            「師匠は師匠、貴方達は貴方達で技を継承するのです。」
+      </p>
+      </div>
+      <div class="bou right">
+      <span>愛宕 小太郎坊</span>
+      <p>
+      
+            「ふむ。……じゃあわしが超新星になったら、天狗のみんなに広めちゃろう」
+      </p>
+      </div>
+      <div class="san left">
+      <span>参 宿七</span>
+      <p>
+      
+            「裾を広げるつもりは、ありません。知る人ぞ知る存在であり続けるのです」
+      </p>
+      </div>
+      <div class="bou right">
+      <span>愛宕 小太郎坊</span>
+      <p>
+      
+            「えー？だめなの？そんな秘伝のらーめんみたいな……」
+      </p>
+      </div>
+      <div class="san left">
+      <span>参 宿七</span>
+      <p>
+      
+            「その秘伝があるからこそ我々がいるのですよ？」
+      </p>
+      </div>
+      <div class="karai right">
+      <span>香雷</span>
+      <p>
+      
+            「結局の所、継いだものが生かすも殺すも好きにできるってことだろう」
+      </p>
+      </div>
+      <div class="bou right">
+      <span>愛宕 小太郎坊</span>
+      <p>
+      
+            「むん……高みに上るのは厳しいってことかの」
+      </p>
+      </div>
+      <div class="syoubusya syoubusya_namami left">
+      <span>蒋 虻紗</span>
+      <p>
+      
+            「ここは中華と日本をつなぐらーめん島じゃったのかー」
+      </p>
+      </div>
+      <div class="san left">
+      <span>参 宿七</span>
+      <p>
+      
+            「そうですよ。だから、貴方達には頑張ってもらわなければなりません」
+      </p>
+      </div>
+      <div class="bou right">
+      <span>愛宕 小太郎坊</span>
+      <p>
+      
+            「ぼこぼこにすればいいんじゃな？らーめんのめんみたく」
+      </p>
+      </div>
+      <div class="san left">
+      <span>参 宿七</span>
+      <p>
+      
+            「ラーメンにこだわらないでください」
+      </p>
+      </div>
+      <div class="karai right">
+      <span>香雷</span>
+      <p>
+      
+            「日本と中華の拉麺は違うがな」
+      </p>
+      </div>
+      <div class="san left">
+      <span>参 宿七</span>
+      <p>
+      
+            「もっと柔軟に想像を広げてみてください」
+      </p>
+      </div>
+      <div class="bou right">
+      <span>愛宕 小太郎坊</span>
+      <p>
+      
+            「え？姉さま、らーめんきらい？」
+      </p>
+      </div>
+      <div class="san left">
+      <span>参 宿七</span>
+      <p>
+      
+            「いえ。好きですけど……」
+      </p>
+      </div>
+      <div class="syoubusya syoubusya_namami left">
+      <span>蒋 虻紗</span>
+      <p>
+      
+            「ちぢれてるやつかー」
+      </p>
+      </div>
+      <div class="bou right">
+      <span>愛宕 小太郎坊</span>
+      <p>
+      
+            「パスタとかうどんもってこと？そば？」
+      </p>
+      </div>
+      <div class="san left">
+      <span>参 宿七</span>
+      <p>
+      
+            「食べ物の話に拘らないでください」
+      </p>
+      </div>
+      <div class="karai right">
+      <span>香雷</span>
+      <p>
+      
+            「腹が減ってきたな。折角みな集まってるんだ、飯にでもするか」
+      </p>
+      </div>
+      <div class="karai right">
+      <span>香雷</span>
+      <p>
+      
+            「鎧のは火に近づくなよ」
+      </p>
+      </div>
+      <div class="syoubusya syoubusya_namami left">
+      <span>蒋 虻紗</span>
+      <p>
+      
+            「えー」
+      </p>
+      </div>
+      <div class="bou right">
+      <span>愛宕 小太郎坊</span>
+      <p>
+      
+            「こういうていたらくがよくないんか？姉さま」
+      </p>
+      </div>
+      <div class="san san_hohoemi left">
+      <span>参 宿七</span>
+      <p>
+      
+            「束の間の休息と思いましょう」
+      </p>
+      </div>
+      <div class="karai right">
+      <span>香雷</span>
+      <p>
+      
+            「魚か鳥でもだれかとってきてくれ」
+      </p>
+      </div>
+      <div class="san left">
+      <span>参 宿七</span>
+      <p>
+      
+            「貴方達は貴方達の速度で……」
+      </p>
+      </div>
+      <div class="syoubusya syoubusya_namami left">
+      <span>蒋 虻紗</span>
+      <p>
+      
+            「焼き魚かー」
+      </p>
+      </div>
+      <div class="bou right">
+      <span>愛宕 小太郎坊</span>
+      <p>
+      
+            「自分でとってこいし」
+      </p>
+      </div>
+      <div class="san left">
+      <span>参 宿七</span>
+      <p>
+      
+            「ふふっ」
+      </p>
+      </div>
+      <div class="karai right">
+      <span>香雷</span>
+      <p>
+      
+            「なんだ採れる自信がないのか」
+      </p>
+      </div>
+      <div class="bou right">
+      <span>愛宕 小太郎坊</span>
+      <p>
+      
+            「そ、そんなことないし！！とってくるし！！」
+      </p>
+      </div>
+      <div class="bou right">
+      <span>愛宕 小太郎坊</span>
+      <p>
+      
+            しょうぼうしゃちゃんに感情判定
+      </p>
+      </div>
+      <div class="bou right">
+      <span>愛宕 小太郎坊</span>
+      <p>
+      
+            SG&gt;=5 （判定：刀術） (SG@12#2&gt;=5) ＞ 7[1,6] ＞ 7 ＞ 成功
+            
+      </p>
+      </div>
+      <div class="bou right">
+      <span>愛宕 小太郎坊</span>
+      <p>
+      
+            ET 感情表(2) ＞ 友情（プラス）／怒り（マイナス）
+            
+      </p>
+      </div>
+      <div class="syoubusya syoubusya_namami left">
+      <span>蒋 虻紗</span>
+      <p>
+      
+            et 感情表(6) ＞ 狂信（プラス）／殺意（マイナス）
+            
+      </p>
+      </div>
+      <div class="bou right">
+      <span>愛宕 小太郎坊</span>
+      <p>
+      
+            怒りで
+      </p>
+      </div>
+      <div class="syoubusya syoubusya_namami left">
+      <span>蒋 虻紗</span>
+      <p>
+      
+            殺意で
+      </p>
+      </div>
+      <div class="syoubusya syoubusya_namami left">
+      <span>蒋 虻紗</span>
+      <p>
+      
+            「おいなんじゃこれは！」
+      </p>
+      </div>
+      <div class="syoubusya syoubusya_namami left">
+      <span>蒋 虻紗</span>
+      <p>
+      
+            「魚なのかこれは！」
+      </p>
+      </div>
+      <div class="bou right">
+      <span>愛宕 小太郎坊</span>
+      <p>
+      
+            「さかなだけど」
+      </p>
+      </div>
+      <div class="karai right">
+      <span>香雷</span>
+      <p>
+      
+            「毒がなきゃなんでもよかろう」
+      </p>
+      </div>
+      <div class="karai right">
+      <span>香雷</span>
+      <p>
+      
+            「きもかわ、というやつだな」
+      </p>
+      </div>
+      <div class="syoubusya syoubusya_namami left">
+      <span>蒋 虻紗</span>
+      <p>
+      
+            「天狗はこんなもの喰うのか」
+      </p>
+      </div>
+      <div class="bou right">
+      <span>愛宕 小太郎坊</span>
+      <p>
+      
+            「え？くわん……うなぎとか食べる」
+      </p>
+      </div>
+      <div class="syoubusya syoubusya_namami left">
+      <span>蒋 虻紗</span>
+      <p>
+      
+            「くわんものをよこすんじゃないわー！」
+      </p>
+      </div>
+      <div class="bou right">
+      <span>愛宕 小太郎坊</span>
+      <p>
+      
+            「ぶへっ！なげるんじゃない！せっかくとってきたのに！」
+      </p>
+      </div>
+      <div class="syoubusya syoubusya_namami left">
+      <span>蒋 虻紗</span>
+      <p>
+      
+            「うるさいわー！このたわけー」
+      </p>
+      </div>
+      <div class="karai right">
+      <span>香雷</span>
+      <p>
+      
+            「食べ物をそまつにするな」双方にげんこつします
+      </p>
+      </div>
+      <div class="san left">
+      <span>参 宿七</span>
+      <p>
+      
+            「まぁまぁ落ち着きなさい」
+      </p>
+      </div>
+      <div class="syoubusya syoubusya_namami left">
+      <span>蒋 虻紗</span>
+      <p>
+      
+            「ぐえ」
+      </p>
+      </div>
+      <div class="karai right">
+      <span>香雷</span>
+      <p>
+      
+            「姉弟子様甘やかすな。食は強さの基礎だ」
+      </p>
+      </div>
+      <div class="syoubusya syoubusya_namami left">
+      <span>蒋 虻紗</span>
+      <p>
+      
+            「食べなきゃ食べ物じゃないわい」
+      </p>
+      </div>
+      <div class="bou right">
+      <span>愛宕 小太郎坊</span>
+      <p>
+      
+            「いた！なんで姉さまじゃなくからいのに怒られんといかんのだ！」
+      </p>
+      </div>
+      <div class="karai right">
+      <span>香雷</span>
+      <p>
+      
+            「なんでも食わぬと強くなれぬだろう」
+      </p>
+      </div>
+      <div class="syoubusya syoubusya_namami left">
+      <span>蒋 虻紗</span>
+      <p>
+      
+            「じゃあこれはおまえにやろう」
+      </p>
+      </div>
+      <div class="karai right">
+      <span>香雷</span>
+      <p>
+      
+            「なんだ食わんのか。姉弟子様はいるか？」
+      </p>
+      </div>
+      <div class="san left">
+      <span>参 宿七</span>
+      <p>
+      
+            「では、いただきましょう」
+      </p>
+      </div>
+      <div class="bou right">
+      <span>愛宕 小太郎坊</span>
+      <p>
+      
+            「たべるの！？」
+      </p>
+      </div>
+      <div class="karai right">
+      <span>香雷</span>
+      <p>
+      
+            ふたりに向かってどことなくドヤ顔をする
+      </p>
+      </div>
+      <div class="san san_hohoemi left">
+      <span>参 宿七</span>
+      <p>
+      
+            「ふふっ」
+      </p>
+      </div>
+      <div class="bou right">
+      <span>愛宕 小太郎坊</span>
+      <p>
+      
+            「は、はらたつ！おいしょうぼうしゃ、からいのをぼこぼこにしろ！！」
+      </p>
+      </div>
+      <div class="syoubusya syoubusya_namami left">
+      <span>蒋 虻紗</span>
+      <p>
+      
+            「なんじゃあの顔」
+      </p>
+      </div>
+      <div class="syoubusya syoubusya_namami left">
+      <span>蒋 虻紗</span>
+      <p>
+      
+            「こんな子供をいびってたのしいかおまえは」
+      </p>
+      </div>
+      <div class="syoubusya syoubusya_namami left">
+      <span>蒋 虻紗</span>
+      <p>
+      
+            「おまえもわしに命令するな」
+      </p>
+      </div>
+      <div class="karai right">
+      <span>香雷</span>
+      <p>
+      
+            「同じ師に師事した同期の弟子として敬意をはらっているまでだが？」
+      </p>
+      </div>
+      <div class="bou right">
+      <span>愛宕 小太郎坊</span>
+      <p>
+      
+            「なんでじゃ！むかつくじゃろ！」
+      </p>
+      </div>
+      <div class="san left">
+      <span>参 宿七</span>
+      <p>
+      
+            「まぁまぁ」
+      </p>
+      </div>
+      <div class="syoubusya syoubusya_namami left">
+      <span>蒋 虻紗</span>
+      <p>
+      
+            「よかろう！ならばほんとうの敬意をおまえに教えてやる！」
+      </p>
+      </div>
+      <div class="kp">
+      
+            1人目終了
+      </div>
+      <div class="syoubusya syoubusya_namami left">
+      <span>蒋 虻紗</span>
+      <p>
+      
+            BT 戦場表(6) ＞ 極地:宇宙や深海、溶岩、魔界など。ゲームマスターは、ラウンドの終わりに１Ｄ６を振る。戦闘開始時からの経過ラウンド以下の目が出ると、この戦場にいると、接近戦ダメージを１点受ける。この戦場から脱落した者は、１Ｄ６を振り、変調表の結果を適用すること。
+            
+      </p>
+      </div>
+      <div class="kp">
+      
+            濁流が木々や土砂を巻き上げながら暴れ狂う。巻き込まれたらただでは済まないだろう。
+      </div>
+      <div class="syoubusya syoubusya_namami left">
+      <span>蒋 虻紗</span>
+      <p>
+      
+            香雷に戦闘！
+      </p>
+      </div>
+      <div class="karai right">
+      <span>香雷</span>
+      <p>
+      
+            「はは、ならば教えてもらおうか！」
+      </p>
+      </div>
+      <div class="kp">
+      
+            戦闘：PC1、PC2
+      </div>
+      <div class="kp">
+      
+            戦闘開始！！
+      </div>
+      <div class="syoubusya syoubusya_namami left">
+      <span>蒋 虻紗</span>
+      <p>
+      
+            「なんじゃあいつ！戦わないのか」
+      </p>
+      </div>
+      <div class="syoubusya syoubusya_namami left">
+      <span>蒋 虻紗</span>
+      <p>
+      
+            【峠牙】自分がシーンプレイヤーなら、戦闘開始時に、その戦場を「高所」にすることができる。戦闘中、現在の戦場が「高所」の場合、このキャラクターの攻撃に対する回避判定やこのキャラクターの使用する奥義に対して奥義破り判定を行う場合、マイナス2の修正がつく。
+      </p>
+      </div>
+      <div class="karai right">
+      <span>香雷</span>
+      <p>
+      
+            「まぁ見ることもまた修行。よく見ておくがいいさ」
+      </p>
+      </div>
+      <div class="kp">
+      
+            切り立った山々を見下ろす。霧に阻まれて下界の様子は伺えない。
+      </div>
+      <div class="kp">
+      
+            プロットオープン
+      </div>
+      <div class="mem5 left">
+      <span>system</span>
+      <p>
+      
+            [ 香雷 ] がダイスシンボルを公開。出目は 4 です。
+      </p>
+      </div>
+      <div class="mem5 left">
+      <span>system</span>
+      <p>
+      
+            [ 蒋 虻紗 ] がダイスシンボルを公開。出目は 5 です。
+      </p>
+      </div>
+      <div class="syoubusya syoubusya_henkei left">
+      <span>蒋 虻紗</span>
+      <p>
+      
+            【砂縛】接近戦。間合内にいる自分よりプロット値が低いキャラクター一体を目標にできる。攻撃が成功すると、目標に接近戦ダメージを1点えることができる。命中判定に成功していたら、目標はラウンドの終了時にもう一度回避判定を行う。失敗すると、射撃戦ダメージを1点受ける。
+      </p>
+      </div>
+      <div class="syoubusya syoubusya_henkei left">
+      <span>蒋 虻紗</span>
+      <p>
+      
+            SG@12#5-2&gt;=5 （判定：野戦術） (SG-2@12#5&gt;=5) ＞ 3[1,2]-2 ＞ 1 ＞ ファンブル
+            
+      </p>
+      </div>
+      <div class="san left">
+      <span>参 宿七</span>
+      <p>
+      
+            「おっと、蒋は砂縛で相手を縛り付けるっと決まらなかった！」
+      </p>
+      </div>
+      <div class="syoubusya syoubusya_guruguru left">
+      <span>蒋 虻紗</span>
+      <p>
+      
+            「ぬわあああああああ！！！」
+      </p>
+      </div>
+      <div class="syoubusya syoubusya_namami left">
+      <span>蒋 虻紗</span>
+      <p>
+      
+            １ｄ６ (1D6) ＞ 3
+            
+      </p>
+      </div>
+      <div class="bou right">
+      <span>愛宕 小太郎坊</span>
+      <p>
+      
+            「はげしいなぁ」
+      </p>
+      </div>
+      <div class="karai right">
+      <span>香雷</span>
+      <p>
+      
+            「なんかさっきも見たな」
+      </p>
+      </div>
+      <div class="mem5 left">
+      <span>system</span>
+      <p>
+      
+            [ 蒋 虻紗 ] 忍術 : 1 → 0
+      </p>
+      </div>
+      <div class="syoubusya syoubusya_namami left">
+      <span>蒋 虻紗</span>
+      <p>
+      
+            「なんでこうなるんじゃー！！」
+      </p>
+      </div>
+      <div class="san left">
+      <span>参 宿七</span>
+      <p>
+      
+            「自分の得意分野に持ち込むも、まだまだですね」
+      </p>
+      </div>
+      <div class="kp">
+      
+            戦闘終了！！
+      </div>
+      <div class="syoubusya syoubusya_namami left">
+      <span>蒋 虻紗</span>
+      <p>
+      
+            「ごはっ」
+      </p>
+      </div>
+      <div class="kp">
+      
+            勝者：PC2<br>戦果をどうぞ
+      </div>
+      <div class="karai right">
+      <span>香雷</span>
+      <p>
+      
+            「高所向かないんじゃないか？」
+      </p>
+      </div>
+      <div class="karai right">
+      <span>香雷</span>
+      <p>
+      
+            始星源の情報をもらおう
+      </p>
+      </div>
+      <div class="mem5 left">
+            <span>■HO『始星源』</span>
+            <p>
+                  始星源には多くの死霊怨霊が渦巻いている。<br>その正体は【超新星】の継承儀式を行った者のなれの果てだ。<br>継承儀式とは、それほど過酷極まるものなのだろうか？<br><br>天光流頭首は代々、見込みのある門下生をこの場所に連れてくると、<br>継承の儀と称し、奥義を用いた殺し合いを行わせた。<br>こうして命懸けで研ぎ澄まされた奥義こそ【超新星】なのである。
+                
+            </p>
+      </div>
+      <div class="kp">
+      
+            2人目終了
+      </div>
+      <div class="kp">
+      
+            3人目どうぞ
+      </div>
+      <div class="karai right">
+      <span>香雷</span>
+      <p>
+      
+            BT 戦場表(4) ＞ 悪天候:嵐や吹雪、ミサイルの雨など。この戦場では、すべての攻撃忍法の間合が１上昇する。
+            
+      </p>
+      </div>
+      <div class="kp">
+      
+            霧がより濃くなってきた、一寸先すら見えない。距離の感覚が狂いそうだ
+      </div>
+      <div class="kp">
+      
+            登場人物：PC2、PC1、PC3、NPC
+      </div>
+      <div class="karai right">
+      <span>香雷</span>
+      <p>
+      
+            「ほんとうの敬意とやらはどうしたんだ鎧の」
+      </p>
+      </div>
+      <div class="syoubusya syoubusya_namami left">
+      <span>蒋 虻紗</span>
+      <p>
+      
+            「ま、またこんどにしてやる」
+      </p>
+      </div>
+      <div class="syoubusya syoubusya_namami left">
+      <span>蒋 虻紗</span>
+      <p>
+      
+            「敵に塩を送るというやつじゃ」
+      </p>
+      </div>
+      <div class="bou right">
+      <span>愛宕 小太郎坊</span>
+      <p>
+      
+            「たよりにならんなしょうぼうしゃ……」
+      </p>
+      </div>
+      <div class="syoubusya syoubusya_namami left">
+      <span>蒋 虻紗</span>
+      <p>
+      
+            「だまれ！ちきんてんぐ！よくも逃げおったな！」
+      </p>
+      </div>
+      <div class="bou right">
+      <span>愛宕 小太郎坊</span>
+      <p>
+      
+            「うるさい！！ちきんはちきんでも烏じゃもん！ぼこぼこにされといてよく言うわ！」
+      </p>
+      </div>
+      <div class="san left">
+      <span>参 宿七</span>
+      <p>
+      
+            「蒋、また一から修行し直しますか？」
+      </p>
+      </div>
+      <div class="syoubusya syoubusya_namami left">
+      <span>蒋 虻紗</span>
+      <p>
+      
+            「ぼこぼこになどされとらんわ！少し転んだだけじゃ！」
+      </p>
+      </div>
+      <div class="san left">
+      <span>参 宿七</span>
+      <p>
+      
+            「転ぶ回数も以前と変わってませんよ？」
+      </p>
+      </div>
+      <div class="bou right">
+      <span>愛宕 小太郎坊</span>
+      <p>
+      
+            「もう一回修業した方がよいんじゃない？」
+      </p>
+      </div>
+      <div class="syoubusya syoubusya_namami left">
+      <span>蒋 虻紗</span>
+      <p>
+      
+            「わしは"焼き焦がす者"じゃぞ……朱赫に最も近いんじゃ！」
+      </p>
+      </div>
+      <div class="karai right">
+      <span>香雷</span>
+      <p>
+      
+            「ふ、これでは私が一番継承するのが近いのではないか？なぁ姉弟子様よ」
+      </p>
+      </div>
+      <div class="syoubusya syoubusya_namami left">
+      <span>蒋 虻紗</span>
+      <p>
+      
+            「転びさえしなければわしが最強じゃ！」
+      </p>
+      </div>
+      <div class="san left">
+      <span>参 宿七</span>
+      <p>
+      
+            「香雷もまだ不得手な所があるはずですよ？」
+      </p>
+      </div>
+      <div class="syoubusya syoubusya_namami left">
+      <span>蒋 虻紗</span>
+      <p>
+      
+            「気遣いとかかの」
+      </p>
+      </div>
+      <div class="bou right">
+      <span>愛宕 小太郎坊</span>
+      <p>
+      
+            「そうだそうだ」
+      </p>
+      </div>
+      <div class="karai right">
+      <span>香雷</span>
+      <p>
+      
+            「食わず嫌いするからだろう。しかし姉弟子様、殺し合いに気遣いなど必要か？」
+      </p>
+      </div>
+      <div class="bou right">
+      <span>愛宕 小太郎坊</span>
+      <p>
+      
+            「はっ。やっぱり品のないやつ！」
+      </p>
+      </div>
+      <div class="san left">
+      <span>参 宿七</span>
+      <p>
+      
+            「自らを死の際に追い込み、高みへ望む、そこに至るには相手という存在が必要不可欠ですよ」
+      </p>
+      </div>
+      <div class="san left">
+      <span>参 宿七</span>
+      <p>
+      
+            「それを気遣いと呼ぶには少々考えづらい所がありますが」
+      </p>
+      </div>
+      <div class="karai right">
+      <span>香雷</span>
+      <p>
+      
+            「…なればこそ、やはり二人にはもっと強くなってもらわねばならぬのか。やはり飯だな。ほら食え貴様たち」
+      </p>
+      </div>
+      <div class="bou right">
+      <span>愛宕 小太郎坊</span>
+      <p>
+      
+            「なんでからいののつくった飯なんか食わねばならんのじゃ」
+      </p>
+      </div>
+      <div class="karai right">
+      <span>香雷</span>
+      <p>
+      
+            「気遣いだ。ほら鎧の塩まくならここに入れろ」
+      </p>
+      </div>
+      <div class="karai right">
+      <span>香雷</span>
+      <p>
+      
+            もちゃもちゃしながら天狗君の秘密を調査術でさぐります
+      </p>
+      </div>
+      <div class="karai right">
+      <span>香雷</span>
+      <p>
+      
+            2D6&gt;=5 （判定：調査術） (2D6&gt;=5) ＞ 6[2,4] ＞ 6 ＞ 成功
+            
+      </p>
+      </div>
+      <div class="mem5 left">
+            <span>PC3 秘密</span>
+            <p>
+                  あなたは嘗て姉弟子に尋ねたことがある。<br>何故この地を離れずに"朱赫"の下に居続けるのか。【超新星】は欲しくないのか？<br><br>すると彼女は珍しく、困ったような照れたような表情を浮かべて答えた。<br>曰く、【超新星】の継承に挑んだものの、失敗したという。<br>それ以降、奥義の情報を漏らさぬために"朱赫"の下で生きる事を言い渡されたそうだ。<br><br>その時の表情が、今も脳裏で煌めいている。<br>この想いを何と言うのか、その答えは【超新星】の中にある。
+                
+            </p>
+      </div>
+      
+      <div class="bou right">
+      <span>愛宕 小太郎坊</span>
+      <p>
+      
+            「気遣い……？気遣い……？」
+      </p>
+      </div>
+      <div class="kp">
+      
+            3人目終了
+      </div>
+      <div class="kp">
+      
+            3サイクル目終了
+      </div>
+      <div class="kp">
+      
+            ――――――――――――――――――――――――
+      </div>
+      <div class="kp">
+      
+            ――――――――――――――――――――――――
+      </div>
+      <div class="kp">
+      
+            クライマックスフェイズ
+      </div>
+      <div class="kp">
+      
+            PC達の間には一触即発の気配が流れ出す。
+      </div>
+      <div class="kp">
+      
+            じりじりと互いをけん制し合い、今にも襲い掛かろうという瞬間――
+      </div>
+      <div class="kp">
+      
+            突如、姉弟子"参宿七"が姿を現す。
+      </div>
+      <div class="kp">
+      
+            その表情は険しく、これまでとは異なっていた。
+      </div>
+      <div class="kp">
+      
+            嘗て修業をつけていた時――否、それ以上の気迫を感じる。
+      </div>
+      <div class="syoubusya syoubusya_namami left">
+      <span>蒋 虻紗</span>
+      <p>
+      
+            「な、なんじゃ」
+      </p>
+      </div>
+      <div class="san san_ikari left">
+      <span>参 宿七</span>
+      <p>
+      
+            「よく頑張ってきましたね、貴方達……。ですが、【超新星】は渡すわけにはいきません」
+      </p>
+      </div>
+      <div class="san san_ikari left">
+      <span>参 宿七</span>
+      <p>
+      
+            「これを継ぐべきは常に一人――ほかならぬ私こそがふさわしいのです！」
+      </p>
+      </div>
+      <div class="kp">
+      
+            彼女は懐から『冬星の振り子』を取り出し、３人に見せる。
+      </div>
+      <div class="syoubusya syoubusya_namami left">
+      <span>蒋 虻紗</span>
+      <p>
+      
+            「はあ?」
+      </p>
+      </div>
+      <div class="san san_ikari left">
+      <span>参 宿七</span>
+      <p>
+      
+            「貴方方には諦めてもらいます。嫌というなら―――」
+      </p>
+      </div>
+      <div class="karai right">
+      <span>香雷</span>
+      <p>
+      
+            「約束の手合わせがし合いで叶うとはな」
+      </p>
+      </div>
+      <div class="kp">
+      
+            言葉と同時に構えをとる。
+      </div>
+      <div class="kp">
+      
+            もはや拳で語るほかない。
+      </div>
+      <div class="san san_ikari left">
+      <span>参 宿七</span>
+      <p>
+      
+            「いざ――参りましょう！」
+      </p>
+      </div>
+      <div class="bou right">
+      <span>愛宕 小太郎坊</span>
+      <p>
+      
+            「姉さま、失敗したんじゃなかったん……？」
+      </p>
+      </div>
+      <div class="san san_ikari left">
+      <span>参 宿七</span>
+      <p>
+      
+            「私にはやらねばならぬのです――」
+      </p>
+      </div>
+      <div class="karai right">
+      <span>香雷</span>
+      <p>
+      
+            「何、やることは変わらない。最後に残るがふさわしいものということだろう」
+      </p>
+      </div>
+      <div class="bou right">
+      <span>愛宕 小太郎坊</span>
+      <p>
+      
+            「姉さまも倒さなきゃいけんってこと……？」
+      </p>
+      </div>
+      <div class="kp">
+      
+            戦闘開始！！
+      </div>
+      <div class="kp">
+      
+            プロットオープン
+      </div>
+      <div class="mem5 left">
+      <span>system</span>
+      <p>
+      
+            [ 参 宿七 ] がダイスシンボルを公開。出目は 5 です。
+      </p>
+      </div>
+      <div class="mem5 left">
+      <span>system</span>
+      <p>
+      
+            [ 香雷 ] がダイスシンボルを公開。出目は 4 です。
+      </p>
+      </div>
+      <div class="mem5 left">
+      <span>system</span>
+      <p>
+      
+            [ 愛宕 小太郎坊 ] がダイスシンボルを公開。出目は 4 です。
+      </p>
+      </div>
+      <div class="mem5 left">
+      <span>system</span>
+      <p>
+      
+            [ 蒋 虻紗 ] がダイスシンボルを公開。出目は 5 です。
+      </p>
+      </div>
+      <div class="san san_ikari left">
+      <span>参 宿七</span>
+      <p>
+      
+            D66 (D66) ＞ 12
+            
+      </p>
+      </div>
+      <div class="syoubusya left">
+      <span>蒋 虻紗</span>
+      <p>
+      
+            ｄ６６ (D66) ＞ 34
+            
+      </p>
+      </div>
+      <div class="syoubusya left">
+      <span>蒋 虻紗</span>
+      <p>
+      
+            【砂縛】接近戦。間合内にいる自分よりプロット値が低いキャラクター一体を目標にできる。攻撃が成功すると、目標に接近戦ダメージを1点えることができる。命中判定に成功していたら、目標はラウンドの終了時にもう一度回避判定を行う。失敗すると、射撃戦ダメージを1点受ける。
+      </p>
+      </div>
+      <div class="syoubusya left">
+      <span>蒋 虻紗</span>
+      <p>
+      
+            対象:香雷
+      </p>
+      </div>
+      <div class="syoubusya left">
+      <span>蒋 虻紗</span>
+      <p>
+      
+            SG@12#5&gt;=5 （判定：野戦術） (SG@12#5&gt;=5) ＞ 9[4,5] ＞ 9 ＞ 成功
+            
+      </p>
+      </div>
+      <div class="karai right">
+      <span>香雷</span>
+      <p>
+      
+            2D6&gt;=6 （判定：死霊術） (2D6&gt;=6) ＞ 7[3,4] ＞ 7 ＞ 成功
+            
+      </p>
+      </div>
+      <div class="san san_ikari left">
+      <span>参 宿七</span>
+      <p>
+      
+            海原[ｳﾅﾊﾞﾗ]<br>攻撃する代わりに使用可能。判定に成功すると、戦場を[水中]に変更する。<br>また、自身より低いプロットにいるキャラクターは全員《水中》で判定を行い、失敗した場合、射撃戦ダメージ１点を受ける。
+      </p>
+      </div>
+      <div class="san san_ikari left">
+      <span>参 宿七</span>
+      <p>
+      
+            SG@12#5&gt;=5 （判定：水術） (SG@12#5&gt;=5) ＞ 2[1,1] ＞ 2 ＞ ファンブル
+            
+      </p>
+      </div>
+      <div class="syoubusya left">
+      <span>蒋 虻紗</span>
+      <p>
+      
+            「姉弟子も転んでおるのー！」
+      </p>
+      </div>
+      <div class="san left">
+      <span>参 宿七</span>
+      <p>
+      
+            「くっ。こんなところに石が……」
+      </p>
+      </div>
+      <div class="karai right">
+      <span>香雷</span>
+      <p>
+      
+            d66 (D66) ＞ 15
+            
+      </p>
+      </div>
+      
+      <div class="bou right">
+      <span>愛宕 小太郎坊</span>
+      <p>
+      
+            ｄ66 (D66) ＞ 11
+            
+      </p>
+      </div>
+      <div class="karai right">
+      <span>香雷</span>
+      <p>
+      
+            姉弟子に山茶花します
+      </p>
+      </div>
+      <div class="karai right">
+      <span>香雷</span>
+      <p>
+      
+            2D6&gt;=5 （判定：用兵術） (2D6&gt;=5) ＞ 10[4,6] ＞ 10 ＞ 成功
+            
+      </p>
+      </div>
+      <div class="karai right">
+      <span>香雷</span>
+      <p>
+      
+            gwt 戦国変調表(6) ＞ 野望:この変調を受けた者は、命中判定にプラス１、それ以外のあらゆる行為判定にマイナス１の修正がつく。この効果は累積しない。サイクルの終了時に、《憑依術》の判定を行い、成功するとこの効果は無効化される。
+            
+      </p>
+      </div>
+      <div class="karai right">
+      <span>香雷</span>
+      <p>
+      
+            gwt 戦国変調表(3) ＞ 猛毒:この変調を受けた者は、戦闘に参加した時、ラウンドの終了時にサイコロを１個振る。その目が奇数だったら、【生命力】を１点減少する。この効果は累積する。サイクルの終了時に、《毒術》の判定を行い、成功するとこの効果は無効化される。
+            
+      </p>
+      </div>
+      <div class="karai right">
+      <span>香雷</span>
+      <p>
+      
+            「油断するなよ姉弟子様」
+      </p>
+      </div>
+      
+      <div class="san san_ikari left">
+            <span>参 宿七</span>
+            <p>
+            
+                  「くっ。」
+            </p>
+      </div>
+      
+      <div class="bou right">
+      <span>愛宕 小太郎坊</span>
+      <p>
+      
+            姉さまに【夜叉】
+      </p>
+      </div>
+      <div class="bou right">
+      <span>愛宕 小太郎坊</span>
+      <p>
+      
+            SG&gt;=5 （判定：異形化） (SG@12#2&gt;=5) ＞ 6[1,5] ＞ 6 ＞ 成功
+            
+      </p>
+      </div>
+      <div class="mem5 left">
+      <span>system</span>
+      <p>
+      
+            [ 参 宿七 ] 生命力 : 8 → 6
+      </p>
+      </div>
+      <div class="bou right">
+      <span>愛宕 小太郎坊</span>
+      <p>
+      
+            「姉さまごめんなさい……でもぉ、姉さまが本気でやれっていったし！」
+      </p>
+      </div>
+      <div class="karai right">
+      <span>香雷</span>
+      <p>
+      
+            2D6&gt;=6 （判定：死霊術 (2D6&gt;=6) ＞ 11[5,6] ＞ 11 ＞ 成功
+            
+      </p>
+      </div>
+      <div class="san san_huse left">
+      <span>参 宿七</span>
+      <p>
+      
+            「いいのですっ」
+      </p>
+      </div>
+      <div class="san left">
+      <span>参 宿七</span>
+      <p>
+      
+            猛毒判定
+      </p>
+      </div>
+      <div class="san left">
+      <span>参 宿七</span>
+      <p>
+      
+            1D6 (1D6) ＞ 6
+            
+      </p>
+      </div>
+      <div class="kp">
+      
+            2ラウンド目
+      </div>
+      <div class="karai right">
+      <span>香雷</span>
+      <p>
+      
+            「一筋縄ではいかぬか」
+      </p>
+      </div>
+      <div class="kp">
+      
+            プロットオープン
+      </div>
+      <div class="mem5 left">
+      <span>system</span>
+      <p>
+      
+            [ 蒋 虻紗 ] がダイスシンボルを公開。出目は 1 です。
+      </p>
+      </div>
+      <div class="mem5 left">
+      <span>system</span>
+      <p>
+      
+            [ 香雷 ] がダイスシンボルを公開。出目は 3 です。
+      </p>
+      </div>
+      <div class="mem5 left">
+      <span>system</span>
+      <p>
+      
+            [ 参 宿七 ] がダイスシンボルを公開。出目は 4 です。
+      </p>
+      </div>
+      <div class="mem5 left">
+      <span>system</span>
+      <p>
+      
+            [ 愛宕 小太郎坊 ] がダイスシンボルを公開。出目は 4 です。
+      </p>
+      </div>
+      <div class="san left">
+      <span>参 宿七</span>
+      <p>
+      
+            D66 (D66) ＞ 11
+            
+      </p>
+      </div>
+      <div class="bou right">
+      <span>愛宕 小太郎坊</span>
+      <p>
+      
+            ｄ66 (D66) ＞ 55
+            
+      </p>
+      </div>
+      <div class="bou right">
+      <span>愛宕 小太郎坊</span>
+      <p>
+      
+            姉さまに夜叉
+      </p>
+      </div>
+      <div class="bou right">
+      <span>愛宕 小太郎坊</span>
+      <p>
+      
+            SG&gt;=5 （判定：異形化） (SG@12#2&gt;=5) ＞ 8[2,6] ＞ 8 ＞ 成功
+            
+      </p>
+      </div>
+      <div class="san left">
+      <span>参 宿七</span>
+      <p>
+      
+            SG@12#4-1&gt;=9 （判定：野戦術） (SG-1@12#4&gt;=9) ＞ 8[3,5]-1 ＞ 7 ＞ 失敗
+            
+      </p>
+      </div>
+      <div class="mem5 left">
+      <span>system</span>
+      <p>
+      
+            [ 参 宿七 ] 生命力 : 6 → 4
+      </p>
+      </div>
+      <div class="san san_huse left">
+      <span>参 宿七</span>
+      <p>
+      
+            「くっ」
+      </p>
+      </div>
+      <div class="san left">
+      <span>参 宿七</span>
+      <p>
+      
+            「やりますね。坊」
+      </p>
+      </div>
+      <div class="bou right">
+      <span>愛宕 小太郎坊</span>
+      <p>
+      
+            「姉さま、わし強くなったじゃろ？」
+      </p>
+      </div>
+      <div class="san san_ikari left">
+      <span>参 宿七</span>
+      <p>
+      
+            「――見ていなさい。これが私の力です」
+      </p>
+      </div>
+      <div class="san san_ikari left">
+      <span>参 宿七</span>
+      <p>
+      
+            奥義！！
+      </p>
+      </div>
+      <div class="san san_ikari left">
+      <span>参 宿七</span>
+      <p>
+      
+            《明けの明星[ｱｹﾉﾐｮｳｼﾞｮｳ]》<br>指定特技　：水術（火術）<br>エフェクト：追加忍法/澄し/複合奥義<br>①地獄[ｲﾝﾍﾙﾉ]<br>②天国[ﾊﾟﾗｲｿ]（使用不可）<br><br>(強)澄し:この奥義による攻撃忍法は自動成功となる。<br>(弱)複合奥義:この奥義を奥義破りする際、もう一つの特技でも判定を行える。（回避などは通常通り）<br>効果・演出：空気中の水分を操り、霧を発生させる水遁。<br>灼熱の熱気を体内から放ち、火花を散らす火遁。<br>両者を組み合わせ霧の中で光を乱反射させる複合奥義。
+      </p>
+      </div>
+      <div class="san san_ikari left">
+      <span>参 宿七</span>
+      <p>
+      
+            地獄[ｲﾝﾍﾙﾉ]<br>接近戦。自身と同じプロット以外の間合い内にいる全員を対象にする。接近戦ダメージ１点、射撃戦ダメージ１点を与える。
+      </p>
+      </div>
+      <div class="karai right">
+      <span>香雷</span>
+      <p>
+      
+            2D6&gt;=6 （判定：火術） (2D6&gt;=6) ＞ 8[3,5] ＞ 8 ＞ 成功
+            
+      </p>
+      </div>
+      <div class="san left">
+      <span>参 宿七</span>
+      <p>
+      
+            揺音[ﾕﾘﾈ]<br>このキャラクターが奥義を使用した際、同じシーンに登場しているキャラクターは見切り判定を行い、成功しなければ奥義の【情報】を獲得できない。
+      </p>
+      </div>
+      <div class="san left">
+      <span>参 宿七</span>
+      <p>
+      
+            秘中の秘：《呪術》<br>このキャラクターの奥義に対して見切り判定を行う場合、《呪術》の判定に成功する必要がある。また、その判定には-2の修正がつく。
+      </p>
+      </div>
+      <div class="karai right">
+      <span>香雷</span>
+      <p>
+      
+            2D6&gt;=11 （判定：用兵術） (2D6&gt;=11) ＞ 6[1,5] ＞ 6 ＞ 失敗
+            
+      </p>
+      </div>
+      <div class="syoubusya left">
+      <span>蒋 虻紗</span>
+      <p>
+      
+            SG@12#5&gt;=9 （判定：経済力） (SG@12#5&gt;=9) ＞ 6[1,5] ＞ 6 ＞ 失敗
+            
+      </p>
+      </div>
+      <div class="karai right">
+      <span>香雷</span>
+      <p>
+      
+            流星雨します
+      </p>
+      </div>
+      <div class="karai right">
+      <span>香雷</span>
+      <p>
+      
+            2D6&gt;=5 （判定：召喚術） (2D6&gt;=5) ＞ 8[2,6] ＞ 8 ＞ 成功
+            
+      </p>
+      </div>
+      <div class="san left">
+      <span>参 宿七</span>
+      <p>
+      
+            SG@12#4-1&gt;=8 （判定：野戦術） (SG-1@12#4&gt;=8) ＞ 7[2,5]-1 ＞ 6 ＞ 失敗
+            
+      </p>
+      </div>
+      <div class="bou right">
+      <span>愛宕 小太郎坊</span>
+      <p>
+      
+            SG&gt;=6 （判定：異形化） (SG@12#2&gt;=6) ＞ 7[3,4] ＞ 7 ＞ 成功
+            
+      </p>
+      </div>
+      <div class="syoubusya left">
+      <span>蒋 虻紗</span>
+      <p>
+      
+            SG@12#1&gt;=8 （判定：野戦術） (SG@12#1&gt;=8) ＞ 9[4,5] ＞ 9 ＞ 成功
+            
+      </p>
+      </div>
+      <div class="mem5 left">
+      <span>system</span>
+      <p>
+      
+            [ 参 宿七 ] 生命力 : 4 → 3
+      </p>
+      </div>
+      <div class="syoubusya left">
+      <span>蒋 虻紗</span>
+      <p>
+      
+            《仕込み》
+      </p>
+      </div>
+      <div class="syoubusya left">
+      <span>蒋 虻紗</span>
+      <p>
+      
+            SG@12#1&gt;=5 （判定：衣装術） (SG@12#1&gt;=5) ＞ 7[2,5] ＞ 7 ＞ 成功
+            
+      </p>
+      </div>
+      <div class="san left">
+      <span>参 宿七</span>
+      <p>
+      
+            猛毒判定
+      </p>
+      </div>
+      <div class="san left">
+      <span>参 宿七</span>
+      <p>
+      
+            1D6 (1D6) ＞ 6
+            
+      </p>
+      </div>
+      <div class="kp">
+      
+            3ラウンド目
+      </div>
+      <div class="kp">
+      
+            プロットオープン
+      </div>
+      <div class="mem5 left">
+      <span>system</span>
+      <p>
+      
+            [ 香雷 ] がダイスシンボルを公開。出目は 4 です。
+      </p>
+      </div>
+      <div class="mem5 left">
+      <span>system</span>
+      <p>
+      
+            [ 愛宕 小太郎坊 ] がダイスシンボルを公開。出目は 4 です。
+      </p>
+      </div>
+      <div class="mem5 left">
+      <span>system</span>
+      <p>
+      
+            [ 参 宿七 ] がダイスシンボルを公開。出目は 3 です。
+      </p>
+      </div>
+      <div class="mem5 left">
+      <span>system</span>
+      <p>
+      
+            [ 蒋 虻紗 ] がダイスシンボルを公開。出目は 1 です。
+      </p>
+      </div>
+      <div class="bou right">
+      <span>愛宕 小太郎坊</span>
+      <p>
+      
+            ｄ66 (D66) ＞ 36
+            
+      </p>
+      </div>
+      <div class="karai right">
+      <span>香雷</span>
+      <p>
+      
+            d66 (D66) ＞ 55
+            
+      </p>
+      </div>
+      <div class="karai right">
+      <span>香雷</span>
+      <p>
+      
+            流星雨
+      </p>
+      </div>
+      <div class="karai right">
+      <span>香雷</span>
+      <p>
+      
+            2D6&gt;=5 （判定：召喚術） (2D6&gt;=5) ＞ 7[3,4] ＞ 7 ＞ 成功
+            
+      </p>
+      </div>
+      <div class="bou right">
+      <span>愛宕 小太郎坊</span>
+      <p>
+      
+            SG&gt;=6 （判定：異形化） (SG@12#2&gt;=6) ＞ 3[1,2] ＞ 3 ＞ 失敗
+            
+      </p>
+      </div>
+      <div class="syoubusya left">
+      <span>蒋 虻紗</span>
+      <p>
+      
+            SG@12#1&gt;=8 （判定：野戦術） (SG@12#1&gt;=8) ＞ 9[3,6] ＞ 9 ＞ 成功
+            
+      </p>
+      </div>
+      <div class="karai right">
+      <span>香雷</span>
+      <p>
+      
+            2D6&gt;=5 （判定：召喚術） (2D6&gt;=5) ＞ 4[2,2] ＞ 4 ＞ 失敗
+            
+      </p>
+      </div>
+      <div class="san left">
+      <span>参 宿七</span>
+      <p>
+      
+            SG@12#3-1&gt;=8 （判定：野戦術 (SG-1@12#3&gt;=8) ＞ 10[4,6]-1 ＞ 9 ＞ 成功
+            
+      </p>
+      </div>
+      <div class="karai right">
+      <span>香雷</span>
+      <p>
+      
+            神通丸使って回避やりなおします
+      </p>
+      </div>
+      <div class="mem5 left">
+      <span>system</span>
+      <p>
+      
+            [ 香雷 ] 忍具 : 4 → 3
+      </p>
+      </div>
+      <div class="mem5 left">
+      <span>system</span>
+      <p>
+      
+            [ 愛宕 小太郎坊 ] 体術 : 1 → 0
+      </p>
+      </div>
+      <div class="karai right">
+      <span>香雷</span>
+      <p>
+      
+            2D6&gt;=5 （判定：召喚術） (2D6&gt;=5) ＞ 10[4,6] ＞ 10 ＞ 成功
+            
+      </p>
+      </div>
+      <div class="bou right">
+      <span>愛宕 小太郎坊</span>
+      <p>
+      
+            からいちゃんに夜叉
+      </p>
+      </div>
+      <div class="bou right">
+      <span>愛宕 小太郎坊</span>
+      <p>
+      
+            SG-2&gt;=5 （判定：異形化） (SG-2@12#2&gt;=5) ＞ 10[4,6]-2 ＞ 8 ＞ 成功
+            
+      </p>
+      </div>
+      <div class="karai right">
+      <span>香雷</span>
+      <p>
+      
+            2D6&gt;=6 （判定：召喚術） (2D6&gt;=6) ＞ 2[1,1] ＞ 2 ＞ ファンブル
+            
+      </p>
+      </div>
+      <div class="karai right">
+      <span>香雷</span>
+      <p>
+      
+            1d6 (1D6) ＞ 4
+            
+      </p>
+      </div>
+      <div class="karai right">
+      <span>香雷</span>
+      <p>
+      
+            1d5 (1D5) ＞ 3
+            
+      </p>
+      </div>
+      <div class="syoubusya left">
+      <span>蒋 虻紗</span>
+      <p>
+      
+            「転ぶのをみるのは愉快じゃのー」
+      </p>
+      </div>
+      <div class="mem5 left">
+      <span>system</span>
+      <p>
+      
+            [ 香雷 ] 器術 : 1 → 0
+      </p>
+      </div>
+      <div class="mem5 left">
+      <span>system</span>
+      <p>
+      
+            [ 香雷 ] 謀術 : 1 → 0
+      </p>
+      </div>
+      <div class="san left">
+      <span>参 宿七</span>
+      <p>
+      
+            「貴方達も、まだまだですね」
+      </p>
+      </div>
+      <div class="mem5 left">
+      <span>system</span>
+      <p>
+      
+            [ 香雷 ] 器術 : 0 → 1
+      </p>
+      </div>
+      <div class="mem5 left">
+      <span>system</span>
+      <p>
+      
+            [ 香雷 ] 忍術 : 1 → 0
+      </p>
+      </div>
+      <div class="san left">
+      <span>参 宿七</span>
+      <p>
+      
+            「ふぅ」
+      </p>
+      </div>
+      <div class="san san_ikari left">
+      <span>参 宿七</span>
+      <p>
+      
+            「まだまだいきますよ！」
+      </p>
+      </div>
+      <div class="san san_ikari left">
+      <span>参 宿七</span>
+      <p>
+      
+            奥義！！
+      </p>
+      </div>
+      <div class="san san_ikari left">
+      <span>参 宿七</span>
+      <p>
+      
+            《明けの明星[ｱｹﾉﾐｮｳｼﾞｮｳ]》<br>指定特技　：水術（火術）<br>エフェクト：追加忍法/澄し/複合奥義<br>①地獄[ｲﾝﾍﾙﾉ]<br>②天国[ﾊﾟﾗｲｿ]（使用不可）<br><br>(強)澄し:この奥義による攻撃忍法は自動成功となる。<br>(弱)複合奥義:この奥義を奥義破りする際、もう一つの特技でも判定を行える。（回避などは通常通り）<br>効果・演出：空気中の水分を操り、霧を発生させる水遁。<br>灼熱の熱気を体内から放ち、火花を散らす火遁。<br>両者を組み合わせ霧の中で光を乱反射させる複合奥義。
+      </p>
+      </div>
+      <div class="san san_ikari left">
+      <span>参 宿七</span>
+      <p>
+      
+            地獄[ｲﾝﾍﾙﾉ] 水術<br>接近戦。自身と同じプロット以外の間合い内にいる全員を対象にする。接近戦ダメージ１点、射撃戦ダメージ１点を与える。
+      </p>
+      </div>
+      <div class="syoubusya left">
+      <span>蒋 虻紗</span>
+      <p>
+      
+            SG@12#1&gt;=6 （判定：火術） (SG@12#1&gt;=6) ＞ 7[3,4] ＞ 7 ＞ 成功
+            
+      </p>
+      </div>
+      <div class="karai right">
+      <span>香雷</span>
+      <p>
+      
+            1d6 (1D6) ＞ 2
+            
+      </p>
+      </div>
+      <div class="bou right">
+      <span>愛宕 小太郎坊</span>
+      <p>
+      
+            RCT ランダム分野表(2) ＞ 体術
+            
+      </p>
+      </div>
+      <div class="syoubusya left">
+      <span>蒋 虻紗</span>
+      <p>
+      
+            「"焼き焦がす者"であるわしにこのような技は効かん」
+      </p>
+      </div>
+      <div class="mem5 left">
+      <span>system</span>
+      <p>
+      
+            [ 愛宕 小太郎坊 ] 器術 : 1 → 0
+      </p>
+      </div>
+      <div class="san left">
+      <span>参 宿七</span>
+      <p>
+      
+            「流石ですね、蒋」
+      </p>
+      </div>
+      <div class="mem5 left">
+      <span>system</span>
+      <p>
+      
+            [ 香雷 ] 器術 : 1 → 0
+      </p>
+      </div>
+      <div class="syoubusya left">
+      <span>蒋 虻紗</span>
+      <p>
+      
+            「ところで"焼き焦がす者"ってなんじゃ？」
+      </p>
+      </div>
+      <div class="mem5 left">
+      <span>system</span>
+      <p>
+      
+            [ 愛宕 小太郎坊 ] 忍術 : 1 → 0
+      </p>
+      </div>
+      <div class="san left">
+      <span>参 宿七</span>
+      <p>
+      
+            「それは貴方がわかっているでしょう」
+      </p>
+      </div>
+      <div class="mem5 left">
+      <span>system</span>
+      <p>
+      
+            [ 香雷 ] 体術 : 1 → 0
+      </p>
+      </div>
+      <div class="bou right">
+      <span>愛宕 小太郎坊</span>
+      <p>
+      
+            奥義！！
+      </p>
+      </div>
+      <div class="bou right">
+      <span>愛宕 小太郎坊</span>
+      <p>
+      
+            ■奥義<br>《天狗の麦飯》<br>指定特技　：兵糧術<br>エフェクト：不死身/定め(回復する【生命力】の値が、5から【不死身】を使用した回数を引いた値(最初に使ったときに回復する【生命力】の値は4点）になる)/回復変種(好きな変調二種を選び、その【不死身】を使用したとき、選んだもの以外の変調は回復できなくなる。故障/呪い)<br>効果・演出：緑藻の一種。日本特産で、富士山など火山性の高山の地表に生える。灰褐色のゼラチン質に富む塊状をなし、冬に繁殖。これを食べて修験者が飢えをしのいだといわれる。飯砂。<br>これを食べることによって小太郎坊は太郎坊へと進化し、小太郎坊は烏天狗から大天狗になれるのだ！(半分思い込みである)
+      </p>
+      </div>
+      <div class="mem5 left">
+      <span>system</span>
+      <p>
+      
+            [ 愛宕 小太郎坊 ] 器術 : 0 → 1
+      </p>
+      </div>
+      <div class="mem5 left">
+      <span>system</span>
+      <p>
+      
+            [ 愛宕 小太郎坊 ] 体術 : 0 → 1
+      </p>
+      </div>
+      <div class="mem5 left">
+      <span>system</span>
+      <p>
+      
+            [ 愛宕 小太郎坊 ] 忍術 : 0 → 1
+      </p>
+      </div>
+      <div class="mem5 left">
+      <span>system</span>
+      <p>
+      
+            [ 愛宕 小太郎坊 ] 戦術 : 0 → 1
+      </p>
+      </div>
+      <div class="syoubusya left">
+      <span>蒋 虻紗</span>
+      <p>
+      
+            《罠術》
+      </p>
+      </div>
+      <div class="syoubusya left">
+      <span>蒋 虻紗</span>
+      <p>
+      
+            SG@12#1&gt;=5 （判定：調査術） (SG@12#1&gt;=5) ＞ 9[4,5] ＞ 9 ＞ 成功
+            
+      </p>
+      </div>
+      <div class="san left">
+      <span>参 宿七</span>
+      <p>
+      
+            猛毒判定
+      </p>
+      </div>
+      <div class="san left">
+      <span>参 宿七</span>
+      <p>
+      
+            1D6 (1D6) ＞ 2
+            
+      </p>
+      </div>
+      <div class="kp">
+      
+            4ラウンド目
+      </div>
+      <div class="kp">
+      
+            プロットオープン
+      </div>
+      <div class="mem5 left">
+      <span>system</span>
+      <p>
+      
+            [ 香雷 ] がダイスシンボルを公開。出目は 3 です。
+      </p>
+      </div>
+      <div class="mem5 left">
+      <span>system</span>
+      <p>
+      
+            [ 愛宕 小太郎坊 ] がダイスシンボルを公開。出目は 3 です。
+      </p>
+      </div>
+      <div class="mem5 left">
+      <span>system</span>
+      <p>
+      
+            [ 蒋 虻紗 ] がダイスシンボルを公開。出目は 6 です。
+      </p>
+      </div>
+      <div class="mem5 left">
+      <span>system</span>
+      <p>
+      
+            [ 参 宿七 ] がダイスシンボルを公開。出目は 4 です。
+      </p>
+      </div>
+      <div class="syoubusya left">
+      <span>蒋 虻紗</span>
+      <p>
+      
+            【砂縛】接近戦。間合内にいる自分よりプロット値が低いキャラクター一体を目標にできる。攻撃が成功すると、目標に接近戦ダメージを1点えることができる。命中判定に成功していたら、目標はラウンドの終了時にもう一度回避判定を行う。失敗すると、射撃戦ダメージを1点受ける。
+      </p>
+      </div>
+      <div class="syoubusya left">
+      <span>蒋 虻紗</span>
+      <p>
+      
+            対象:参 宿七 
+      </p>
+      </div>
+      <div class="syoubusya left">
+      <span>蒋 虻紗</span>
+      <p>
+      
+            SG@12#1&gt;=5 （判定：野戦術） (SG@12#1&gt;=5) ＞ 7[1,6] ＞ 7 ＞ 成功
+            
+      </p>
+      </div>
+      <div class="san left">
+      <span>参 宿七</span>
+      <p>
+      
+            SG@12#4-1&gt;=5 （判定：野戦術） (SG-1@12#4&gt;=5) ＞ 4[2,2]-1 ＞ 3 ＞ ファンブル
+            
+      </p>
+      </div>
+      <div class="mem5 left">
+      <span>system</span>
+      <p>
+      
+            [ 参 宿七 ] 生命力 : 3 → 2
+      </p>
+      </div>
+      <div class="syoubusya left">
+      <span>蒋 虻紗</span>
+      <p>
+      
+            「くらえ姉弟子！」
+      </p>
+      </div>
+      <div class="san left">
+      <span>参 宿七</span>
+      <p>
+      
+            「やりますねっ」
+      </p>
+      </div>
+      <div class="san san_huse left">
+      <span>参 宿七</span>
+      <p>
+      
+            「わかりました」
+      </p>
+      </div>
+      <div class="san san_ikari left">
+      <span>参 宿七</span>
+      <p>
+      
+            「――喰らいなさい。私の煌めきを」
+      </p>
+      </div>
+      <div class="san san_ikari left">
+      <span>参 宿七</span>
+      <p>
+      
+            奥義！！
+      </p>
+      </div>
+      <div class="san san_ikari left">
+      <span>参 宿七</span>
+      <p>
+      
+            《超新星[ﾁｮｳｼﾝｾｲ ｲﾀﾗｽﾞ]》<br>指定特技　：呪術<br>エフェクト：範囲攻撃／撃ち／発動条件<br><br>(強)撃ち:射撃戦ダメージを１点追加。<br>(弱)発動条件:生命点が３点以下にならないと使用不可能。<br>効果・演出："一撃にてあらゆる敵を滅し<br>無数の攻撃をも防ぎ<br>どのような傷さえ苦にせず<br>如何なる困難さえ突破し<br>相対する者の試みを挫く<br><br>天上天下 並ぶ者無し<br><br>其れ即ち 並びて二つと同じ技に非ず<br>命紡ぎ星は巡る<br>これぞ正しく 超新星"
+      </p>
+      </div>
+      <div class="bou right">
+      <span>愛宕 小太郎坊</span>
+      <p>
+      
+            SG&gt;=10 （判定：第六感） (SG@12#2&gt;=10) ＞ 5[2,3] ＞ 5 ＞ 失敗
+            
+      </p>
+      </div>
+      <div class="syoubusya left">
+      <span>蒋 虻紗</span>
+      <p>
+      
+            SG@12#6&gt;=5 （判定：経済力） (SG@12#6&gt;=5) ＞ 9[3,6] ＞ 9 ＞ 成功
+            
+      </p>
+      </div>
+      <div class="san san_hohoemi left">
+      <span>参 宿七</span>
+      <p>
+      
+            「蒋……やりますね」
+      </p>
+      </div>
+      <div class="san left">
+      <span>参 宿七</span>
+      <p>
+      
+            揺音[ﾕﾘﾈ]<br>秘中の秘：《呪術》
+      </p>
+      </div>
+      <div class="syoubusya left">
+      <span>蒋 虻紗</span>
+      <p>
+      
+            「これが【超新星】かー？調子抜けじゃのー」
+      </p>
+      </div>
+      <div class="karai right">
+      <span>香雷</span>
+      <p>
+      
+            2D6&gt;=11 （判定：用兵術） (2D6&gt;=11) ＞ 11[5,6] ＞ 11 ＞ 成功
+            
+      </p>
+      </div>
+      <div class="bou right">
+      <span>愛宕 小太郎坊</span>
+      <p>
+      
+            ｄ66 (D66) ＞ 25
+            
+      </p>
+      </div>
+      <div class="karai right">
+      <span>香雷</span>
+      <p>
+      
+            「あれが…超新星…」
+      </p>
+      </div>
+      <div class="karai right">
+      <span>香雷</span>
+      <p>
+      
+            d66 (D66) ＞ 46
+            
+      </p>
+      </div>
+      <div class="karai right">
+      <span>香雷</span>
+      <p>
+      
+            奥義！！
+      </p>
+      </div>
+      <div class="karai right">
+      <span>香雷</span>
+      <p>
+      
+            《劫火招来》<br>指定特技　：召喚術<br>エフェクト：範囲攻撃/撃ち/回数制限<br>効果・演出：雲外より呼び寄せたる劫火。終焉を齎す炎はすべてを焼き尽くす
+      </p>
+      </div>
+      <div class="mem5 left">
+      <span>system</span>
+      <p>
+      
+            [ 参 宿七 ] 生命力 : 2 → 0
+      </p>
+      </div>
+      <div class="mem5 left">
+      <span>system</span>
+      <p>
+      
+            [ 蒋 虻紗 ] 体術 : 1 → 0
+      </p>
+      </div>
+      <div class="mem5 left">
+      <span>system</span>
+      <p>
+      
+            [ 蒋 虻紗 ] 妖術 : 1 → 0
+      </p>
+      </div>
+      <div class="mem5 left">
+      <span>system</span>
+      <p>
+      
+            [ 愛宕 小太郎坊 ] 体術 : 1 → 0
+      </p>
+      </div>
+      <div class="mem5 left">
+      <span>system</span>
+      <p>
+      
+            [ 蒋 虻紗 ] 謀術 : 1 → 0
+      </p>
+      </div>
+      <div class="mem5 left">
+      <span>system</span>
+      <p>
+      
+            [ 愛宕 小太郎坊 ] 忍術 : 1 → 0
+      </p>
+      </div>
+      <div class="mem5 left">
+      <span>system</span>
+      <p>
+      
+            [ 愛宕 小太郎坊 ] 戦術 : 1 → 0
+      </p>
+      </div>
+      <div class="karai right">
+      <span>香雷</span>
+      <p>
+      
+            「こんなものか超新星は…」
+      </p>
+      </div>
+      <div class="bou right">
+      <span>愛宕 小太郎坊</span>
+      <p>
+      
+            兵糧丸一個食べます
+      </p>
+      </div>
+      <div class="mem5 left">
+      <span>system</span>
+      <p>
+      
+            [ 愛宕 小太郎坊 ] 体術 : 0 → 1
+      </p>
+      </div>
+      <div class="mem5 left">
+      <span>system</span>
+      <p>
+      
+            [ 愛宕 小太郎坊 ] 忍具 : 2 → 1
+      </p>
+      </div>
+      <div class="san left">
+      <span>参 宿七</span>
+      <p>
+      
+            「やりますね……香雷」
+      </p>
+      </div>
+      <div class="san san_huse left">
+      <span>参 宿七</span>
+      <p>
+      
+            「――ですが、私だけがここで生き延びるのも偲びありません」
+      </p>
+      </div>
+      <div class="san san_huse left">
+      <span>参 宿七</span>
+      <p>
+      
+            「ですので、私は――」
+      </p>
+      </div>
+      <div class="san san_huse left">
+      <span>参 宿七</span>
+      <p>
+      
+            「最期の花を咲かせましょう」
+      </p>
+      </div>
+      <div class="san san_ikari left">
+      <span>参 宿七</span>
+      <p>
+      
+            最期の一撃を使用します
+      </p>
+      </div>
+      <div class="san san_ikari left">
+      <span>参 宿七</span>
+      <p>
+      
+            《超新星[ﾁｮｳｼﾝｾｲ ｲﾀﾗｽﾞ]》<br>指定特技　：呪術<br>エフェクト：範囲攻撃／撃ち／発動条件<br><br>(強)撃ち:射撃戦ダメージを１点追加。<br>(弱)発動条件:生命点が３点以下にならないと使用不可能。<br>効果・演出："一撃にてあらゆる敵を滅し<br>無数の攻撃をも防ぎ<br>どのような傷さえ苦にせず<br>如何なる困難さえ突破し<br>相対する者の試みを挫く<br><br>天上天下 並ぶ者無し<br><br>其れ即ち 並びて二つと同じ技に非ず<br>命紡ぎ星は巡る<br>これぞ正しく 超新星"
+      </p>
+      </div>
+      <div class="bou right">
+      <span>愛宕 小太郎坊</span>
+      <p>
+      
+            土壇場で兵糧丸食べます
+      </p>
+      </div>
+      <div class="mem5 left">
+      <span>system</span>
+      <p>
+      
+            [ 愛宕 小太郎坊 ] 忍術 : 0 → 1
+      </p>
+      </div>
+      <div class="mem5 left">
+      <span>system</span>
+      <p>
+      
+            [ 愛宕 小太郎坊 ] 忍具 : 1 → 0
+      </p>
+      </div>
+      <div class="bou right">
+      <span>愛宕 小太郎坊</span>
+      <p>
+      
+            SG&gt;=10 （判定：第六感） (SG@12#2&gt;=10) ＞ 10[5,5] ＞ 10 ＞ 成功
+            
+      </p>
+      </div>
+      <div class="syoubusya left">
+      <span>蒋 虻紗</span>
+      <p>
+      
+            SG@12#6&gt;=5 （判定：野戦術） (SG@12#6&gt;=5) ＞ 3[1,2] ＞ 3 ＞ ファンブル
+            
+      </p>
+      </div>
+      <div class="san san_hohoemi left">
+      <span>参 宿七</span>
+      <p>
+      
+            「ふふっ、私は……あの域には到達できないのですねっ…」
+      </p>
+      </div>
+      <div class="bou right">
+      <span>愛宕 小太郎坊</span>
+      <p>
+      
+            「姉さまぁ……」
+      </p>
+      </div>
+      <div class="karai right">
+      <span>香雷</span>
+      <p>
+      
+            刀をぎゅっと握って見送る
+      </p>
+      </div>
+      <div class="kp">
+      
+            姉弟子は、ふらつきながら崖の方へと倒れていく
+      </div>
+      <div class="kp">
+      
+            その顔は、何か納得のいったかのような満ちている顔をしていた――
+      </div>
+      <div class="syoubusya syoubusya_namami left">
+      <span>蒋 虻紗</span>
+      <p>
+      
+            「姉弟子……とんだ無駄死にをしおって……！」
+      </p>
+      </div>
+      <div class="bou right">
+      <span>愛宕 小太郎坊</span>
+      <p>
+      
+            「姉さま……」
+      </p>
+      </div>
+      <div class="bou right">
+      <span>愛宕 小太郎坊</span>
+      <p>
+      
+            からいさんに夜叉
+      </p>
+      </div>
+      <div class="bou right">
+      <span>愛宕 小太郎坊</span>
+      <p>
+      
+            SG&gt;=5 （判定：異形化） (SG@12#2&gt;=5) ＞ 8[4,4] ＞ 8 ＞ 成功
+            
+      </p>
+      </div>
+      <div class="karai right">
+      <span>香雷</span>
+      <p>
+      
+            2D6&gt;=6 （判定：召喚術） (2D6&gt;=6) ＞ 9[3,6] ＞ 9 ＞ 成功
+            
+      </p>
+      </div>
+      <div class="kp">
+      
+            5ラウンド目
+      </div>
+      <div class="kp">
+      
+            プロットオープン
+      </div>
+      <div class="mem5 left">
+      <span>system</span>
+      <p>
+      
+            [ 香雷 ] がダイスシンボルを公開。出目は 4 です。
+      </p>
+      </div>
+      <div class="mem5 left">
+      <span>system</span>
+      <p>
+      
+            [ 蒋 虻紗 ] がダイスシンボルを公開。出目は 6 です。
+      </p>
+      </div>
+      <div class="mem5 left">
+      <span>system</span>
+      <p>
+      
+            [ 愛宕 小太郎坊 ] がダイスシンボルを公開。出目は 3 です。
+      </p>
+      </div>
+      <div class="syoubusya left">
+      <span>蒋 虻紗</span>
+      <p>
+      
+            奥義！！
+      </p>
+      </div>
+      <div class="syoubusya syoubusya_ougi left">
+      <span>蒋 虻紗</span>
+      <p>
+      
+            ■奥義<br>《タワーリングインフェルノ》<br>指定特技　：火術<br>エフェクト：追加忍法:この奥義を修得したとき、自分が修得可能な攻撃忍法およびサポート忍法の中から、好きな二種類を選ぶ。この奥義を使用すると、その忍法のいずれか一つを使用できる。この奥義の使用タイミングは、使用する忍法のものと同じになり、その忍法にコストがあれば、それと同じだけコストも必要になる。また、この奥義を使用するとき、その忍法の指定特技は、この奥義の指定特技と同じものになる。<br>/巡らし:【巡らし】が追加された奥義の持ち主は、【追加忍法】で使用できるようになる攻撃忍法かサポート忍法を、自分の流派以外の流派忍法の中から一つたけ選ぶことができるようになる（秘伝忍法からは選ぷことができない)。<br>/回数制限：【回数制限】が追加された奥義は、一回のセッションで二度しか使用できなくなる。【回数制限】が追加されたのが【追加忍法】の場合は、【追加忍法】で使用できる忍法を、一回のセッションでそれぞれ二度ずつしか使用できなくなる。<br>効果・演出：アメリカ・サンフランシスコの新名所、138階建のグラスタワーが落成式を迎えた。ビルの設計者はダグ・ロバーツ（ポール・ニューマン）。社長はジェームズ（ジム）・ダンカン（ウィリアム・ホールデン）である。ロバーツはこの仕事を最後に、婚約者のスーザン（フェイ・ダナウェイ）と砂漠で生活をするために退職を志願しているが、社長はそれを引き留め続けている。<br><br>最上階の会場に300名の来賓を招いた落成式が始まる頃、ビル地下室の発電機が故障したため、主任技師らは予備の発電機を始動させた。実はこの時、予備の発電機を動かしたことで小さな火花が走り配線に移ると同時に、81階にある物置室の配電盤のヒューズが火を発し、燃えながら床に落ちた絶縁体の破片が、マットをくすぶらせ始めた。
+      </p>
+      </div>
+      <div class="syoubusya syoubusya_ougi left">
+      <span>蒋 虻紗</span>
+      <p>
+      
+            【幻夢殿】戦闘中、自分が攻撃する代わりに使用できる。指定そのシーンを目標に選ぶ。指定特技の判定に成功したら、「戦場表」の中から好きな二つの戦場を選ぶ。目標の戦場を、忍法の使用者が選んだ二つの効果が両方適用される特殊な戦場に変更することができる。
+      </p>
+      </div>
+      <div class="syoubusya syoubusya_ougi left">
+      <span>蒋 虻紗</span>
+      <p>
+      
+            高所、雑踏
+      </p>
+      </div>
+      <div class="syoubusya syoubusya_ougi left">
+      <span>蒋 虻紗</span>
+      <p>
+      
+            SG@12#6&gt;=5 （判定：火術） (SG@12#6&gt;=5) ＞ 6[2,4] ＞ 6 ＞ ファンブル
+            
+      </p>
+      </div>
+      <div class="mem5 left">
+      <span>system</span>
+      <p>
+      
+            [ 蒋 虻紗 ] 忍具 : 1 → 0
+      </p>
+      </div>
+      <div class="syoubusya left">
+      <span>蒋 虻紗</span>
+      <p>
+      
+            SG@12#6&gt;=5 （判定：火術） (SG@12#6&gt;=5) ＞ 6[3,3] ＞ 6 ＞ ファンブル
+            
+      </p>
+      </div>
+      <div class="karai right">
+      <span>香雷</span>
+      <p>
+      
+            流星雨
+      </p>
+      </div>
+      <div class="karai right">
+      <span>香雷</span>
+      <p>
+      
+            SG#4&gt;=5 （判定：召喚術 (SG@12#4&gt;=5) ＞ 7[1,6] ＞ 7 ＞ 成功
+            
+      </p>
+      </div>
+      <div class="mem5 left">
+      <span>system</span>
+      <p>
+      
+            [ 蒋 虻紗 ] 戦術 : 1 → 0
+      </p>
+      </div>
+      <div class="karai right">
+      <span>香雷</span>
+      <p>
+      
+            SG#4&gt;=5 （判定：召喚術 (SG@12#4&gt;=5) ＞ 8[2,6] ＞ 8 ＞ 成功
+            
+      </p>
+      </div>
+      <div class="karai right">
+      <span>香雷</span>
+      <p>
+      
+            吸精つかいます
+      </p>
+      </div>
+      <div class="karai right">
+      <span>香雷</span>
+      <p>
+      
+            SG#4&gt;=5 （判定：死霊術） (SG@12#4&gt;=5) ＞ 8[3,5] ＞ 8 ＞ 成功
+            
+      </p>
+      </div>
+      <div class="bou right">
+      <span>愛宕 小太郎坊</span>
+      <p>
+      
+            SG&gt;=6 （判定：異形化） (SG@12#2&gt;=6) ＞ 8[2,6] ＞ 8 ＞ 成功
+            
+      </p>
+      </div>
+      <div class="mem5 left">
+      <span>system</span>
+      <p>
+      
+            [ 香雷 ] 器術 : 0 → 1
+      </p>
+      </div>
+      <div class="bou right">
+      <span>愛宕 小太郎坊</span>
+      <p>
+      
+            からいさんに夜叉
+      </p>
+      </div>
+      <div class="bou right">
+      <span>愛宕 小太郎坊</span>
+      <p>
+      
+            SG&gt;=5 （判定：異形化） (SG@12#2&gt;=5) ＞ 6[2,4] ＞ 6 ＞ 成功
+            
+      </p>
+      </div>
+      <div class="karai right">
+      <span>香雷</span>
+      <p>
+      
+            SG#4&gt;=6 （判定：召喚術） (SG@12#4&gt;=6) ＞ 11[5,6] ＞ 11 ＞ 成功
+            
+      </p>
+      </div>
+      <div class="karai right">
+      <span>香雷</span>
+      <p>
+      
+            「姉弟子の覚悟の前にその刃鈍ったか」
+      </p>
+      </div>
+      <div class="kp">
+      
+            6ラウンド目
+      </div>
+      <div class="bou right">
+      <span>愛宕 小太郎坊</span>
+      <p>
+      
+            「はぁ！？なんで！？」
+      </p>
+      </div>
+      <div class="syoubusya left">
+      <span>蒋 虻紗</span>
+      <p>
+      
+            「おう、そうじゃそうじゃ」
+      </p>
+      </div>
+      <div class="kp">
+      
+            プロットオープン
+      </div>
+      <div class="mem5 left">
+      <span>system</span>
+      <p>
+      
+            [ 香雷 ] がダイスシンボルを公開。出目は 4 です。
+      </p>
+      </div>
+      <div class="mem5 left">
+      <span>system</span>
+      <p>
+      
+            [ 愛宕 小太郎坊 ] がダイスシンボルを公開。出目は 3 です。
+      </p>
+      </div>
+      <div class="mem5 left">
+      <span>system</span>
+      <p>
+      
+            [ 蒋 虻紗 ] がダイスシンボルを公開。出目は 6 です。
+      </p>
+      </div>
+      <div class="syoubusya left">
+      <span>蒋 虻紗</span>
+      <p>
+      
+            奥義！！
+      </p>
+      </div>
+      <div class="syoubusya syoubusya_ougi left">
+      <span>蒋 虻紗</span>
+      <p>
+      
+            ■奥義<br>《タワーリングインフェルノ》<br>指定特技　：火術<br>エフェクト：追加忍法:この奥義を修得したとき、自分が修得可能な攻撃忍法およびサポート忍法の中から、好きな二種類を選ぶ。この奥義を使用すると、その忍法のいずれか一つを使用できる。この奥義の使用タイミングは、使用する忍法のものと同じになり、その忍法にコストがあれば、それと同じだけコストも必要になる。また、この奥義を使用するとき、その忍法の指定特技は、この奥義の指定特技と同じものになる。<br>/巡らし:【巡らし】が追加された奥義の持ち主は、【追加忍法】で使用できるようになる攻撃忍法かサポート忍法を、自分の流派以外の流派忍法の中から一つたけ選ぶことができるようになる（秘伝忍法からは選ぷことができない)。<br>/回数制限：【回数制限】が追加された奥義は、一回のセッションで二度しか使用できなくなる。【回数制限】が追加されたのが【追加忍法】の場合は、【追加忍法】で使用できる忍法を、一回のセッションでそれぞれ二度ずつしか使用できなくなる。<br>効果・演出：スーザンと将来に向けて話し合っていたロバーツのもとに、電気系統の異常の連絡が入る。報告を受けたロバーツは、ウィル・ギディング（ノーマン・バートン）とともに、電気系統を点検する。配線工事が自分の設計通りに行われておらずひどい手抜きであり、配線の規格も設計したものより細いことに気付き憤然となった。ダンカンの娘パティ（スーザン・ブレイクリー）の夫で、ビル建設の責任者のロジャー・シモンズ（リチャード・チェンバレン）が、予算を減らすために行った電気系統工事の手抜きと配線の規格落ちが原因となり、81階の物置室でボヤ火災が発生していたのである。ロバーツはロジャーに工事の手抜きを責めたが、ロジャーは建築法の規定範囲内で問題ないと突っぱねた。ロジャーは、経費の切り詰めを義父のオーナーから迫られて、高層ビルでは大きな規格の配線でないと熱が生じることに配慮せず、電気配線で手抜きをしたのであった。
+      </p>
+      </div>
+      <div class="syoubusya syoubusya_ougi left">
+      <span>蒋 虻紗</span>
+      <p>
+      
+            【幻夢殿】戦闘中、自分が攻撃する代わりに使用できる。指定そのシーンを目標に選ぶ。指定特技の判定に成功したら、「戦場表」の中から好きな二つの戦場を選ぶ。目標の戦場を、忍法の使用者が選んだ二つの効果が両方適用される特殊な戦場に変更することができる。
+      </p>
+      </div>
+      <div class="karai right">
+      <span>香雷</span>
+      <p>
+      
+            SG#4&gt;=5 （判定：火術） (SG@12#4&gt;=5) ＞ 5[2,3] ＞ 5 ＞ 成功
+            
+      </p>
+      </div>
+      <div class="karai right">
+      <span>香雷</span>
+      <p>
+      
+            流星雨
+      </p>
+      </div>
+      <div class="karai right">
+      <span>香雷</span>
+      <p>
+      
+            SG#4&gt;=5 （判定：召喚術） (SG@12#4&gt;=5) ＞ 5[1,4] ＞ 5 ＞ 成功
+            
+      </p>
+      </div>
+      <div class="mem5 left">
+      <span>system</span>
+      <p>
+      
+            [ 香雷 ] 器術 : 1 → 0
+      </p>
+      </div>
+      <div class="kp">
+      
+            【刃隠】効果
+      </div>
+      <div class="syoubusya left">
+      <span>蒋 虻紗</span>
+      <p>
+      
+            回想シーン
+      </p>
+      </div>
+      <div class="syoubusya syoubusya_namami left">
+      <span>蒋 虻紗</span>
+      <p>
+      
+            「なんの用じゃ？Dr.斜歯」
+      </p>
+      </div>
+      <div class="hasuba right">
+      <span>Dr.斜歯</span>
+      <p>
+      
+            「蒋。あなたへの任務は、天光流に伝わる究極奥義【超新星】を手に入れることです」
+      </p>
+      </div>
+      <div class="hasuba right">
+      <span>Dr.斜歯</span>
+      <p>
+      
+            「あなたの妹、佐部間 凛(ｻﾌﾞﾏ ﾘﾝ)は人工神器を巡る戦いに失敗しました。あなたには期待していますよ」
+      </p>
+      </div>
+      <div class="sabumarin left">
+      <span>佐部間 凛</span>
+      <p>
+      
+            『『ぐああああああああ！！』』
+      </p>
+      </div>
+      <div class="sabumarin sabumarin_nakami left">
+      <span>佐部間 凛</span>
+      <p>
+      
+            『待ってくれ！僕は泳げないんだ！』
+      </p>
+      </div>
+      <div class="syoubusya syoubusya_namami left">
+      <span>蒋 虻紗</span>
+      <p>
+      
+            「わしをあんな所で逆凪して敗北するちんちくりんと一緒にするでないわ」
+      </p>
+      </div>
+      <div class="syoubusya left">
+      <span>蒋 虻紗</span>
+      <p>
+      PC1 秘密<br>
+            あなたは元々、究極とまで呼ばれる奥義に興味を持ち、天光流の門を叩いた。<br>口伝に伝えられるその技は従来の常識をはるかに凌駕している。<br>世に伝え広めれば、まさしく超新星となるだろう。<br><br>しかし、一人前と認められ巣立ちを迎えようとも、一向に【超新星】の詳細を掴めず苛立ちと焦りを覚えた。<br>いくら想い焦がそうとも、手中に得られないそれに、興味は増すばかりだった。<br><br>そして今回、いよいよその機会が巡ってきたのだ。<br><br>あなたの【本当の使命】は『【超新星】の情報を持ち帰ること』だ。
+      </p>
+      </div>
+      <div class="syoubusya left">
+      <span>蒋 虻紗</span>
+      <p>
+      
+            SG@12#6+3&gt;=14 （判定：火術） (SG+3@12#6&gt;=14) ＞ 9[4,5]+3 ＞ 12 ＞ 失敗
+            
+      </p>
+      </div>
+      <div class="mem5 left">
+      <span>system</span>
+      <p>
+      
+            [ 蒋 虻紗 ] 器術 : 1 → 0
+      </p>
+      </div>
+      <div class="karai right">
+      <span>香雷</span>
+      <p>
+      
+            吸精も…
+      </p>
+      </div>
+      <div class="syoubusya syoubusya_bakuha left">
+      <span>蒋 虻紗</span>
+      <p>
+      
+            「ぐああああああああ！」
+      </p>
+      </div>
+      <div class="karai right">
+      <span>香雷</span>
+      <p>
+      
+            SG#4&gt;=5 （判定：死霊術） (SG@12#4&gt;=5) ＞ 7[1,6] ＞ 7 ＞ 成功
+            
+      </p>
+      </div>
+      <div class="mem5 left">
+      <span>system</span>
+      <p>
+      
+            [ 香雷 ] 器術 : 0 → 1
+      </p>
+      </div>
+      <div class="karai right">
+      <span>香雷</span>
+      <p>
+      
+            ごちそうさまでした
+      </p>
+      </div>
+      <div class="karai right">
+      <span>香雷</span>
+      <p>
+      
+            「さぁ、あとは貴様だけだ。天狗の、これ以上私を失望させてくれるなよ」
+      </p>
+      </div>
+      <div class="bou right">
+      <span>愛宕 小太郎坊</span>
+      <p>
+      
+            「なんなんだぁおまえぇ……」
+      </p>
+      </div>
+      <div class="bou right">
+      <span>愛宕 小太郎坊</span>
+      <p>
+      
+            からいさんに夜叉
+      </p>
+      </div>
+      <div class="bou right">
+      <span>愛宕 小太郎坊</span>
+      <p>
+      
+            SG-2&gt;=5 （判定：異形化） (SG-2@12#2&gt;=5) ＞ 5[1,4]-2 ＞ 3 ＞ 失敗
+            
+      </p>
+      </div>
+      <div class="kp">
+      
+            7ラウンド目
+      </div>
+      <div class="kp">
+      
+            プロットオープン
+      </div>
+      <div class="mem5 left">
+      <span>system</span>
+      <p>
+      
+            [ 香雷 ] がダイスシンボルを公開。出目は 1 です。
+      </p>
+      </div>
+      <div class="mem5 left">
+      <span>system</span>
+      <p>
+      
+            [ 愛宕 小太郎坊 ] がダイスシンボルを公開。出目は 3 です。
+      </p>
+      </div>
+      <div class="bou right">
+      <span>愛宕 小太郎坊</span>
+      <p>
+      
+            切り札使って生存術にして
+      </p>
+      </div>
+      <div class="mem5 left">
+            <span></span>
+            <p>
+                  自分の【奥義】の【情報】を自分以外の誰かが獲得したら、それ以降、好きなタイミングで使用することができる。自分の奥義の指定特技を、自分の修得している特技の中から、好きな別の一つに変更することができる。この効果は、一回のセッションに一度しか使用できない。
+            </p>
+      </div>
+      <div class="bou right">
+      <span>愛宕 小太郎坊</span>
+      <p>
+      
+            奥義！！
+      </p>
+      </div>
+      <div class="bou right">
+      <span>愛宕 小太郎坊</span>
+      <p>
+      
+            ■奥義<br>《天狗の麦飯》<br>指定特技　：生存術<br>エフェクト：不死身/定め(回復する【生命力】の値が、5から【不死身】を使用した回数を引いた値(最初に使ったときに回復する【生命力】の値は4点）になる)/回復変種(好きな変調二種を選び、その【不死身】を使用したとき、選んだもの以外の変調は回復できなくなる。故障/呪い)<br>効果・演出：緑藻の一種。日本特産で、富士山など火山性の高山の地表に生える。灰褐色のゼラチン質に富む塊状をなし、冬に繁殖。これを食べて修験者が飢えをしのいだといわれる。飯砂。<br>これを食べることによって小太郎坊は太郎坊へと進化し、小太郎坊は烏天狗から大天狗になれるのだ！(半分思い込みである)
+      </p>
+      </div>
+      <div class="karai right">
+            <span>香雷</span>
+            <p>
+            
+                  やぶります
+            </p>
+            </div>
+      <div class="karai right">
+      <span>香雷</span>
+      <p>
+      
+            SG#1&gt;=10 （判定：火術） (SG@12#1&gt;=10) ＞ 10[5,5] ＞ 10 ＞ 成功
+            
+      </p>
+      </div>
+      
+      <div class="karai right">
+      <span>香雷</span>
+      <p>
+      
+            奥義！！
+      </p>
+      </div>
+      <div class="karai right">
+      <span>香雷</span>
+      <p>
+      
+            《劫火招来》<br>指定特技　：召喚術<br>エフェクト：範囲攻撃/撃ち/回数制限<br>効果・演出：雲外より呼び寄せたる劫火。終焉を齎す炎はすべてを焼き尽くす
+      </p>
+      </div>
+      <div class="bou right">
+      <span>愛宕 小太郎坊</span>
+      <p>
+      
+            奥義破り
+      </p>
+      </div>
+      <div class="bou right">
+      <span>愛宕 小太郎坊</span>
+      <p>
+      
+            SG&gt;=6 （判定：異形化） (SG@12#2&gt;=6) ＞ 7[3,4] ＞ 7 ＞ 成功
+            
+      </p>
+      </div>
+      <div class="kp">
+      
+            8ラウンド目
+      </div>
+      <div class="kp">
+      
+            プロットオープン
+      </div>
+      <div class="mem5 left">
+      <span>system</span>
+      <p>
+      
+            [ 香雷 ] がダイスシンボルを公開。出目は 1 です。
+      </p>
+      </div>
+      <div class="mem5 left">
+      <span>system</span>
+      <p>
+      
+            [ 愛宕 小太郎坊 ] がダイスシンボルを公開。出目は 3 です。
+      </p>
+      </div>
+      <div class="bou right">
+      <span>愛宕 小太郎坊</span>
+      <p>
+      
+            奥義！！
+      </p>
+      </div>
+      <div class="bou right">
+      <span>愛宕 小太郎坊</span>
+      <p>
+      
+            ■奥義<br>《超新星[ﾁｮｳｼﾝｾｲ]》<br>指定特技　：生存術<br>エフェクト：不死身/定め(回復する【生命力】の値が、5から【不死身】を使用した回数を引いた値(最初に使ったときに回復する【生命力】の値は4点）になる)/回復変種(好きな変調二種を選び、その【不死身】を使用したとき、選んだもの以外の変調は回復できなくなる。故障/呪い)<br>効果・演出：緑藻の一種。日本特産で、富士山など火山性の高山の地表に生える。灰褐色のゼラチン質に富む塊状をなし、冬に繁殖。これを食べて修験者が飢えをしのいだといわれる。飯砂。<br>これを食べることによって小太郎坊は太郎坊へと進化し、小太郎坊は烏天狗から大天狗になれるのだ！(半分思い込みである)<br><br>"天上天下 並ぶ者無し<br><br>其れ即ち 並びて二つと同じ技に非ず<br>命紡ぎ星は巡る<br>これぞ正しく 超新星"<br>
+      </p>
+      </div>
+      <div class="mem5 left">
+      <span>system</span>
+      <p>
+      
+            [ 愛宕 小太郎坊 ] 謀術 : 0 → 1
+      </p>
+      </div>
+      <div class="mem5 left">
+      <span>system</span>
+      <p>
+      
+            [ 愛宕 小太郎坊 ] 戦術 : 0 → 1
+      </p>
+      </div>
+      <div class="bou right">
+      <span>愛宕 小太郎坊</span>
+      <p>
+      
+            「ちゃんと継いだぞ姉さま！！」
+      </p>
+      </div>
+      <div class="karai right">
+      <span>香雷</span>
+      <p>
+      
+            謀術回復して罠術をつかいます
+      </p>
+      </div>
+      <div class="mem5 left">
+      <span>system</span>
+      <p>
+      
+            [ 香雷 ] 謀術 : 0 → 1
+      </p>
+      </div>
+      <div class="mem5 left">
+      <span>system</span>
+      <p>
+      
+            [ 香雷 ] 忍具 : 3 → 2
+      </p>
+      </div>
+      <div class="karai right">
+      <span>香雷</span>
+      <p>
+      
+            SG#1&gt;=6 （判定：調査術） (SG@12#1&gt;=6) ＞ 2[1,1] ＞ 2 ＞ 失敗
+            
+      </p>
+      </div>
+      <div class="mem5 left">
+      <span>system</span>
+      <p>
+      
+            [ 香雷 ] 忍具 : 2 → 1
+      </p>
+      </div>
+      <div class="karai right">
+      <span>香雷</span>
+      <p>
+      
+            SG#1&gt;=6 （判定：調査術） (SG@12#1&gt;=6) ＞ 7[3,4] ＞ 7 ＞ 成功
+            
+      </p>
+      </div>
+      <div class="mem5 left">
+            <span></span>
+            <p>
+                  ※PCには下記を送る<br><br>同名の奥義はエフェクト、読み方にかかわらず、同じものとして扱い、【情報】を所持してるキャラクターは奥義破りを試みることができる。<br><br><br>■奥義<br>《超新星[ﾁｮｳｼﾝｾｲ]》<br>指定特技　：変更前の元々の奥義と同じ<br>エフェクト：変更前の元々のエフェクト、強み、弱みと同様<br>（回数制限や不死身の回数はリセットされる）<br><br>効果・演出：<br>変更前の元々の奥義に下記の文章と追加する。<br><br>"天上天下 並ぶ者無し<br><br>其れ即ち 並びて二つと同じ技に非ず<br>命紡ぎ星は巡る<br>これぞ正しく 超新星"
+            </p>
+      </div>
+      <div class="kp">
+      
+            
+      </div>
+      <div class="karai right">
+      <span>香雷</span>
+      <p>
+      
+            「これが、超新星か…同じ形ではなかったのだな」
+      </p>
+      </div>
+      <div class="kp">
+      
+            9ラウンド目
+      </div>
+      <div class="kp">
+      
+            プロットオープン
+      </div>
+      <div class="mem5 left">
+      <span>system</span>
+      <p>
+      
+            [ 香雷 ] がダイスシンボルを公開。出目は 1 です。
+      </p>
+      </div>
+      <div class="mem5 left">
+      <span>system</span>
+      <p>
+      
+            [ 愛宕 小太郎坊 ] がダイスシンボルを公開。出目は 2 です。
+      </p>
+      </div>
+      <div class="bou right">
+      <span>愛宕 小太郎坊</span>
+      <p>
+      
+            からいさんに夜叉
+      </p>
+      </div>
+      <div class="bou right">
+      <span>愛宕 小太郎坊</span>
+      <p>
+      
+            SG-2&gt;=5 （判定：異形化） (SG-2@12#2&gt;=5) ＞ 5[1,4]-2 ＞ 3 ＞ 失敗
+            
+      </p>
+      </div>
+      <div class="karai right">
+      <span>香雷</span>
+      <p>
+      
+            奥義！！
+      </p>
+      </div>
+      <div class="karai right">
+      <span>香雷</span>
+      <p>
+      
+            《超新星[ﾁｮｳｼﾝｾｲ》<br>指定特技　：召喚術<br>エフェクト：範囲攻撃/撃ち/回数制限<br>効果・演出：雲外より呼び寄せたる劫火。終焉を齎す炎はすべてを焼き尽くす<br>天上天下 並ぶ者無し<br><br>其れ即ち 並びて二つと同じ技に非ず<br>命紡ぎ星は巡る<br>これぞ正しく 超新星
+      </p>
+      </div>
+      <div class="bou right">
+      <span>愛宕 小太郎坊</span>
+      <p>
+      
+            奥義破り
+      </p>
+      </div>
+      <div class="bou right">
+      <span>愛宕 小太郎坊</span>
+      <p>
+      
+            回想切ります
+      </p>
+      </div>
+      <div class="bou right">
+      <span>愛宕 小太郎坊</span>
+      <p>
+      
+            師みたいな、そして姉さまみたいな、そんな忍者になりたくて旅をしていた。<br>けれど、天狗にさらわれて見た先は、知らないことだらけだった。<br>異国の言葉、異国の文化。未知の道具、未知の術。<br>元々天狗っていうのは、中国で、凶事を知らせる流星のことだったらしい。<br>大気圏に突入して地表近くまで落下した火球は、空中で爆発して大きな音を響かせるから、これを、咆哮を上げて天を駆け降りる、犬の姿に見立てたんだって。天狗は天から地上へと災禍をもたらす凶星として恐れられたんだって。<br>忍者より天狗のほうが強くない？かっこよくない？<br>天狗になっていつか、愛宕山の太郎坊さまにもいろいろ教わるのだ。<br>小太郎は煌めく者だから、天狗として「超新星」になれば、姉さまが何を考えてるのかわかるかもしれないし。<br>だから小太郎は、小太郎坊になったのだった。
+      </p>
+      </div>
+      <div class="bou right">
+      <span>愛宕 小太郎坊</span>
+      <p>
+      
+            秘密<br>あなたは嘗て姉弟子に尋ねたことがある。<br>何故この地を離れずに"朱赫"の下に居続けるのか。【超新星】は欲しくないのか？<br>すると彼女は珍しく、困ったような照れたような表情を浮かべて答えた。<br>曰く、【超新星】の継承に挑んだものの、失敗したという。<br>それ以降、奥義の情報を漏らさぬために"朱赫"の下で生きる事を言い渡されたそうだ。<br>その時の表情が、今も脳裏で煌めいている。<br>この想いを何と言うのか、その答えは【超新星】の中にある。
+      </p>
+      </div>
+      <div class="bou right">
+      <span>愛宕 小太郎坊</span>
+      <p>
+      
+            SG+3&gt;=6 （判定：異形化） (SG+3@12#2&gt;=6) ＞ 5[1,4]+3 ＞ 8 ＞ 成功
+            
+      </p>
+      </div>
+      <div class="bou right">
+      <span>愛宕 小太郎坊</span>
+      <p>
+      
+            脱落します
+      </p>
+      </div>
+      <div class="kp">
+      
+            戦闘終了！！
+      </div>
+      <div class="kp">
+      
+            勝者：PC2
+      </div>
+      <div class="kp">
+      
+            戦果をどうぞ
+      </div>
+      <div class="karai right">
+      <span>香雷</span>
+      <p>
+      
+            天狗くんからプライズを
+      </p>
+      </div>
+      <div class="kp">
+      
+            貴方は、勝ち残った。それは、貴方の望む結果、またはそうではないかもしれない
+      </div>
+      <div class="karai right">
+      <span>香雷</span>
+      <p>
+      
+            奪ったプライズながめつつ
+      </p>
+      </div>
+      <div class="karai right">
+      <span>香雷</span>
+      <p>
+      
+            「こんなものなのか、究極の奥義は。…なんとむなしいものか。私が長く目指したものは、こんなあっけないものだったのか。…あぁ虚しい。本当の強者はどこにいるのだろうか」
+      </p>
+      </div>
+      <div class="karai right">
+      <span>香雷</span>
+      <p>
+      
+            さらに修行の旅にでます
+      </p>
+      </div>
+      <div class="bou right">
+      <span>愛宕 小太郎坊</span>
+      <p>
+      
+            「姉さまのことをわるくいうなぁ……いつかみんな倒してやるからなぁ……」姉さまの亡骸のそばで
+      </p>
+      </div>
+      <div class="karai right">
+      <span>香雷</span>
+      <p>
+      
+            PC2<br>あなたは探求する者だ。<br>PC2 秘密<br><br>あなたはひたすらに強さを探求し続けている。<br>天光流に入ったのも【超新星】を継ぐためではない、破るためだ。<br>その為に姉弟子の目を盗んで"朱赫"との一騎打ちを行った。<br>だが"朱赫"は老い、終ぞ【超新星】を放つことなくこの世を去る事となった。<br>つまり、あなたが"朱赫"を殺したのだ。<br><br>だが、これでは勝ったとは言えない。<br>究極奥義を正面から切伏せ、己が最強を証明するのだ。<br><br>あなたの【本当の使命】は『【超新星】の奥義破りに成功すること』<br>あるいは『【超新星】の奥義を取得したものをこの手で倒すこと』だ。
+      </p>
+      </div>
+      <div class="bou right">
+      <span>愛宕 小太郎坊</span>
+      <p>
+      
+            「姉さま、弔うからね……」多分誰も手伝ってくれないので一人で死体ずるずるして埋めてペンデュラムだけ形見として引き取ります
+      </p>
+      </div>
+      <div class="bou right">
+      <span>愛宕 小太郎坊</span>
+      <p>
+      
+            「いってきます姉さま」
+      </p>
+      </div>
+      <div class="mem5 left">
+            <span>■NPC『参宿七』秘密</span>
+            <p>
+                  あなたはかつて、【超新星】継承の儀式を行ったことがある。<br>しかし、儀式は失敗し奥義を受け継ぐことはできなかった。<br>それ以降、師匠の下で飼い殺しにされていたが、奇しくもチャンスが巡ってきた。<br>以前は成し遂げる事叶わなかった、奥義修得の最終条件。<br>今ならそのことに迷いはない――筈だ。<br><br>あなたの本当の使命は『【超新星】を継ぐこと』だ。<br><br>※このキャラクターが戦闘に勝利した場合、他のキャラクターが持つすべてのプライズ『冬星の振り子』と【超新星】の情報は失われる。
+            </p>
+      </div>
+      <div class="kp">
+      
+            ――彼は歩き出す
+      </div>
+      <div class="kp">
+      
+            大事なものをしまい込み
+      </div>
+      <div class="kp">
+      
+            姉弟子の思いをかかえこみ
+      </div>
+      <div class="kp">
+      
+            彼はどこへ向かうのか
+      </div>
+      <div class="syoubusya left">
+      <span>蒋 虻紗</span>
+      <p>
+      
+            「……」
+      </p>
+      </div>
+      <div class="syoubusya left">
+      <span>蒋 虻紗</span>
+      <p>
+      
+            「なんとか……手に入れたぞ……【超新星】を……」
+      </p>
+      </div>
+      <div class="kp">
+      
+            少女は任務に成功し、束の間の安堵をする。<br>ただし、これを手にするのにいかほどの思いを感じたか誰も知らない。
+      </div>
+      <div class="kp">
+      
+            ――――――――――――――――――――――――
+      </div>
+      <div class="kp">
+      
+            昔、乱世に生まれ戦で成長し、作り上げられた流派があった
+      </div>
+      <div class="kp">
+      
+            【超新星】。それは、数多の人間をも巻き込む戦いが繰り広げられる
+      </div>
+      <div class="kp">
+      
+            ある者は言った。
+      </div>
+      <div class="kp">
+      
+            "一撃にてあらゆる敵を滅し<br>無数の攻撃をも防ぎ<br>どのような傷さえ苦にせず<br>如何なる困難さえ突破し<br>相対する者の試みを挫く<br><br>天上天下並ぶ者無し"
+      </div>
+      <div class="kp">
+      
+            その真実は、今も誰かに引き継がれている。
+      </div>
+      <div class="kp">
+      
+            そして、それを破った者は戦いへと馳せ参じていくのである
+      </div>
+      <div class="kp">
+      
+            ――――――――――――――――――――――――
+      </div>
+      <div class="kp">
+      
+            朝晨星 完
+      </div>
+      <div class="mem5 left">
+      <span>system</span>
+      <p>
+      
+            [ 香雷 ] がダイスシンボルを公開。出目は 3 です。
+      </p>
+      </div>
+      <div class="mem5 left">
+      <span>system</span>
+      <p>
+      
+            [ 蒋 虻紗 ] がダイスシンボルを公開。出目は 3 です。
+      </p>
+      </div>
+      <div class="mem5 left">
+      <span>system</span>
+      <p>
+      
+            [ GM ] がダイスシンボルを公開。出目は 1 です。
+      </p>
+      </div>
+      <div class="mem5 left">
+      <span>system</span>
+      <p>
+      
+            [ 愛宕 小太郎坊 ] がダイスシンボルを公開。出目は 1 です。
+      </p>
+      </div>
+      <div class="kp">
+      
+            PC1：1,1,1,0,2,3→8<br>PC2：0,1,1,1,0,3→6 <br>PC3：1,1,1,0,2,3→8
+      </div>
+      
+
+<br><br><br><br><br><br><br><br><br>
+</div></div>
+<script src="../logCon_Respon.js"></script>
+</body></html>
