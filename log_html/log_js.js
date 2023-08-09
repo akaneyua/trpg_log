@@ -84,7 +84,7 @@ function readCsv(data) {
           this[0] +
           "/" +
           this[1] +
-          '" class="btnarrow5 iframe-open">' +
+          '" class="btnarrow5">' +
           this[2] +
           "</a>";
       }
