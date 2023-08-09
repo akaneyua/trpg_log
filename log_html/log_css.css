@@ -1,0 +1,472 @@
+body {
+	/*上下方向にはみ出した要素ををスクロールさせる*/
+	overflow-y: scroll;
+	/*スクロールバー非表示（IE・Edge）*/
+	-ms-overflow-style: none;
+	/*スクロールバー非表示（Firefox）*/
+	scrollbar-width: none;
+	/* margin: 0 auto; */
+	animation: bgchange 20s ease infinite;
+	/*変化の時間を変更したい場合は20sの部分を好きな時間に変更*/
+	font-family:  "ヒラギノ角ゴ ProN W3", sans-serif;
+  }
+
+  @keyframes bgchange {
+	0% {
+	  background: #88ff44;
+	}
+
+	/*変化させたい色*/
+	25% {
+	  background: #ffbe55;
+	}
+
+	/*変化させたい色*/
+	50% {
+	  background: #6afbd5;
+	}
+
+	/*変化させたい色*/
+	75% {
+	  background: #a58cff;
+	}
+
+	/*変化させたい色*/
+	90% {
+	  background: #d593ff;
+	}
+
+	/*変化させたい色*/
+	100% {
+	  background: #88ff44;
+	}
+
+	/*変化させたい色*/
+  }
+
+  /*スクロールバー非表示（Chrome・Safari）*/
+  body::-webkit-scrollbar {
+	display: none;
+  }
+
+  /*========= 画面遷移のためのCSS ===============*/
+
+  /*画面遷移アニメーション*/
+  .splashbg {
+	display: none;
+  }
+
+  /*bodyにappearクラスがついたら出現*/
+  body.appear .splashbg {
+	display: block;
+	content: "";
+	position: fixed;
+	z-index: 999;
+	width: 100%;
+	height: 100vh;
+	top: 0;
+	left: 0;
+	transform: scaleX(0);
+	background-color: #333;
+	/*伸びる背景色の設定*/
+	animation-name: PageAnime;
+	animation-duration: 1.2s;
+	animation-timing-function: ease-in-out;
+	animation-fill-mode: forwards;
+  }
+
+  @keyframes PageAnime {
+	0% {
+	  transform-origin: left;
+	  transform: scaleX(0);
+	}
+
+	50% {
+	  transform-origin: left;
+	  transform: scaleX(1);
+	}
+
+	50.001% {
+	  transform-origin: right;
+	}
+
+	100% {
+	  transform-origin: right;
+	  transform: scaleX(0);
+	}
+  }
+
+  /*画面遷移の後現れるコンテンツ設定*/
+  #container {
+	opacity: 0;
+	/*はじめは透過0に*/
+  }
+
+  /*bodyにappearクラスがついたら出現*/
+  body.appear #container {
+	animation-name: PageAnimeAppear;
+	animation-duration: 1s;
+	animation-delay: 0.8s;
+	animation-fill-mode: forwards;
+	opacity: 0;
+  }
+
+  @keyframes PageAnimeAppear {
+	0% {
+	  opacity: 0;
+	}
+
+	100% {
+	  opacity: 1;
+	}
+  }
+
+  header {
+	color: #fff;
+	text-shadow: #33333358 0 0 10px;
+	padding: 0 0 0 70px;
+
+  }
+
+  .box {
+	color: #fff;
+	padding: 40px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	text-align: center;
+  }
+
+  .links {
+	position: relative;
+	display: flex;
+	flex-flow: column;
+	gap: 1rem;
+  }
+
+  canvas {
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	width: 100%;
+  }
+
+  /*矢印が右に移動して背景がつく*/
+
+  .btnarrow5 {
+	/*矢印の基点とするためrelativeを指定*/
+	position: relative;
+	/*ボタンの形状*/
+	border: 1px solid #fff;
+	padding: 8px 30px;
+	display: inline-block;
+	text-align: center;
+	text-decoration: none;
+	color: #fff;
+	text-shadow: #33333381 0 0 10px;
+	outline: none;
+	/*アニメーションの指定*/
+	transition: all .2s linear;
+	z-index: 10;
+  }
+
+  .btnarrow5:hover {
+	background: #333;
+	color: #fff;
+  }
+
+  /*矢印と下線の形状*/
+  .btnarrow5::before {
+	content: "";
+	/*絶対配置で下線の位置を決める*/
+	position: absolute;
+	top: 50%;
+	right: -26px;
+	/*下線の形状*/
+	width: 40px;
+	height: 1px;
+	background: #fff;
+	/*アニメーションの指定*/
+	transition: all .2s linear;
+  }
+
+  .btnarrow5::after {
+	content: "";
+	/*絶対配置で矢印の位置を決める*/
+	position: absolute;
+	top: 20%;
+	right: -21px;
+	/*矢印の形状*/
+	width: 1px;
+	height: 12px;
+	background: #fff;
+	transform: skewX(45deg);
+	/*アニメーションの指定*/
+	transition: all .2s linear;
+  }
+
+  /*hoverした際の移動*/
+  .btnarrow5:hover::before {
+	right: -30px;
+  }
+
+  .btnarrow5:hover::after {
+	right: -25px;
+  }
+
+  
+/*スクロールダウン全体の場所*/
+.scrolldown2{
+    /*描画位置※位置は適宜調整してください*/
+	position:absolute;
+	bottom:10px;
+	right:10%;
+}
+
+/*Scrollテキストの描写*/
+.scrolldown2 span{
+    /*描画位置*/
+	position: absolute;
+	left:10px;
+	bottom:10px;
+    /*テキストの形状*/
+	color: #eee;
+	font-size: 0.7rem;
+	letter-spacing: 0.05em;
+	/*縦書き設定*/
+	-ms-writing-mode: tb-rl;
+    -webkit-writing-mode: vertical-rl;
+    writing-mode: vertical-rl;
+}
+
+/* 丸の描写 */
+.scrolldown2:before {
+    content: "";
+    /*描画位置*/
+    position: absolute;
+    bottom:0;
+    left:-4px;
+    /*丸の形状*/
+	width:10px;
+	height:10px;
+	border-radius: 50%;
+	background:#eee;
+    /*丸の動き1.6秒かけて透過し、永遠にループ*/
+	animation:
+		circlemove 1.6s ease-in-out infinite,
+		cirlemovehide 1.6s ease-out infinite;
+}
+
+/*下からの距離が変化して丸の全体が上から下に動く*/
+@keyframes circlemove{
+      0%{bottom:45px;}
+     100%{bottom:-5px;}
+ }
+
+/*上から下にかけて丸が透過→不透明→透過する*/
+@keyframes cirlemovehide{
+      0%{opacity:0}
+     50%{opacity:1;}
+    80%{opacity:0.9;}
+	100%{opacity:0;}
+ }
+
+/* 線の描写 */
+.scrolldown2:after{
+	content:"";
+    /*描画位置*/
+	position: absolute;
+	bottom:0;
+	left:0;
+    /*線の形状*/
+	width:2px;
+	height: 50px;
+	background:#eee;
+}
+
+/*全て共通：hideエリアをはじめは非表示*/
+.hide-area{
+	display: none;
+}
+
+/*全て共通：モーダルのボタンの色を変更したい場合*/
+.modaal-close:after, 
+.modaal-close:before{
+	background:#ccc;	
+}
+
+.modaal-close:focus:after,
+.modaal-close:focus:before,
+.modaal-close:hover:after,
+.modaal-close:hover:before{
+	background:#666;
+}
+
+/*========= ナビゲーションのためのCSS ===============*/
+
+/*アクティブになったエリア*/
+#g-nav{
+    /*position:fixed;にし、z-indexの数値を大きくして前面へ*/
+    position:fixed;
+    z-index: 999;
+    /*ナビのスタート位置と形状*/
+	top:0;
+    left: -120%;
+	width:100%;
+    height: 100vh;/*ナビの高さ*/
+	background:#ff975e;
+    /*動き*/
+	transition: all 0.6s;
+}
+
+/*アクティブクラスがついたら位置を0に*/
+#g-nav.panelactive{
+    left: 0;
+}
+
+/*ナビゲーションの縦スクロール*/
+#g-nav.panelactive #g-nav-list{
+    /*ナビの数が増えた場合縦スクロール*/
+    position: fixed;
+    z-index: 999; 
+    width:100%;
+    height: 100vh;/*表示する高さ*/
+    overflow: auto;
+    -webkit-overflow-scrolling: touch;
+}
+
+/*ナビゲーション*/
+#g-nav ul {
+    /*ナビゲーション天地中央揃え*/
+	padding-left: 0px;
+    position: absolute;
+    z-index: 999;
+    top:50%;
+    left:50%;
+    transform: translate(-50%,-50%);
+}
+
+/*背景が出現後にナビゲーションを表示*/
+#g-nav.panelactive ul {
+    opacity:1;
+}
+
+/* 背景が出現後にナビゲーション li を表示※レイアウトによって調整してください。不必要なら削除*/
+#g-nav.panelactive ul li{
+animation-name:gnaviAnime;
+animation-duration:1s;
+animation-delay:.5s;/*0.5 秒遅らせて出現*/
+animation-fill-mode:forwards;
+opacity:0;
+}
+@keyframes gnaviAnime{
+0% {
+opacity: 0;
+}
+100% {
+opacity: 1;
+}
+}
+
+
+/*リストのレイアウト設定*/
+#g-nav li{
+	text-align: center; 
+	list-style: none;
+}
+
+#g-nav li a{
+	color: #ffffff;
+	text-decoration: none;
+	padding:10px;
+	display: block;
+	text-transform: uppercase;
+	letter-spacing: 0.1em;
+	font-weight: bold;
+}
+
+#g-nav li a:hover{
+	color: #333;
+}
+
+#g-nav ul > * + * {
+    border-top: dashed  2px #ffffff;
+  }
+
+.offlink{
+	color: #808080 !important;
+	pointer-events: none
+}
+
+/*========= ボタンのためのCSS ===============*/
+.openbtn{
+	position:fixed;
+    z-index: 9999;/*ボタンを最前面に*/
+	top:0;
+	left: 0;
+	cursor: pointer;
+    width: 50px;
+    height:100vh;
+    /* background:#ffffff00; */
+    border-right:1px solid #fff;
+}
+	
+/*×に変化*/	
+.openbtn span{
+    display: inline-block;
+    transition: all .4s;
+    position: absolute;
+    left: 14px;
+    height: 3px;
+    border-radius: 2px;
+	background-color: #fff;
+  	width: 45%;
+  }
+
+.openbtn span:nth-of-type(1) {
+    top:45vh;	
+}
+
+.openbtn span:nth-of-type(2) {
+    top:46vh;
+}
+
+.openbtn span:nth-of-type(3) {
+    top:47vh;
+}
+
+/*activeクラスが付与されると1・3番目の要素が2番目の要素と同じ位置になり一本線に*/
+
+.openbtn.active span:nth-of-type(1) ,
+.openbtn.active span:nth-of-type(3){
+    top:46vh;
+}
+
+@media screen and (max-width:960px) {
+ .openbtn{
+    width: 60px;
+    height: 60px;
+     border:none;
+}
+    
+.openbtn span:nth-of-type(1) {
+    top: 19px;
+    left: 15px;
+}
+    
+.openbtn span:nth-of-type(2) {
+    top: 28px;
+    left: 15px;
+}
+
+.openbtn span:nth-of-type(3) {
+    top: 37px;
+    left: 15px;
+}
+    
+.openbtn.active span:nth-of-type(1) ,
+.openbtn.active span:nth-of-type(3){
+    top:28px;
+}
+    
+}

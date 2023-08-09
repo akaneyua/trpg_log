@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<title>TRPG セッションログ</title>
+<html>
+
+<head>
+  <meta http-equiv="content-type" charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css">
+  <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/Modaal/0.4.4/css/modaal.min.css">
+  <link rel="stylesheet" href="log_css.css">
+</head>
+
+<body>
+  <div class="splashbg"></div>
+  <!---画面遷移用-->
+  <div id="container">
+
+    <div class="openbtn"><span></span><span></span><span></span></div>
+    <nav id="g-nav">
+      <div id="g-nav-list"><!--ナビの数が増えた場合縦スクロールするためのdiv※不要なら削除-->
+        <ul>
+          <li><a href="../log_html/log_CoC.html">CoC</a></li>
+          <li><a href="../log_html/log_shinobi.html">シノビガミ</a></li>
+          <li><a href="../log_html/log_emo.html">エモクロア</a></li>
+          <li><a href="../log_html/log_etc.html" class="offlink">その他TRPG</a></li>
+        </ul>
+      </div>
+    </nav>
+    <div class="circle-bg"></div>
+
+    <header id="header">
+      <h1>その他TRPG</h1>
+    </header>
+
+    <main>
+
+      <section class="box">
+
+        <div class="links" id="loglist"></div> <!-- メインコンテンツ -->
+        <div class="scrolldown2"><span>Scroll</span></div>
+        <div><canvas id="waveCanvas"></canvas></div>
+
+      </section>
+      <!--/container-->
+  </div>
+  </main>
+  <!-- </div> -->
+  <!-- <footer id="footer">
+        <small>&copy; Copyright </small> 
+        </footer> -->
+<script src="https://code.jquery.com/jquery-3.6.3.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-csv/1.0.11/jquery.csv.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/Modaal/0.4.4/js/modaal.min.js"></script>
+<script src="log_js.js"></script>
+</body>
+
+</html>
