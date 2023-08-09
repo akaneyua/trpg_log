@@ -1,0 +1,5532 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<title>log</title>
+<meta http-equiv="content-type" charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+<link rel="stylesheet" href="../logCon_Respon.css">
+<style>
+    /* main css */
+    .bg-inner.bg1{background:url('./断罪画像/3aaad7b3dfaea51e.png') no-repeat center/cover;}
+    
+    /* member */
+.hittou p{border:2px solid rgb(136, 136, 136);box-shadow:5px 5px 0 rgb(136, 136, 136);}
+.hittou p:after{border-right-color:rgb(136, 136, 136);}
+.hittou span{background:rgb(136, 136, 136);color:#fff;}
+.hittou:before{content:'';background-image:url('1.png');background-size:contain;background-repeat:no-repeat;background-position:center center;width:90px;height:90px;}
+.saou p{border:2px solid rgb(172, 7, 20);box-shadow:5px 5px 0 rgb(172, 7, 20);}
+.saou p:after{border-left-color:rgb(172, 7, 20);}
+.saou span{background:rgb(172, 7, 20);color:#fff;}
+.saou:before{content:'';background-image:url('./断罪画像/PC1.png');background-size:contain;background-repeat:no-repeat;background-position:center center;width:90px;height:90px;}
+.saou_tatie:before{content:'';background-image:url('./断罪画像/4f6d303547a1f299.png');background-size:contain;background-repeat:no-repeat;background-position:center center;width:90px;height:90px;}
+.sansita p{border:2px solid rgb(136, 136, 136);box-shadow:5px 5px 0 rgb(136, 136, 136);}
+.sansita p:after{border-right-color:rgb(136, 136, 136);}
+.sansita span{background:rgb(136, 136, 136);color:#fff;}
+.sansita:before{content:'';background-image:url('./断罪画像/.png');background-size:contain;background-repeat:no-repeat;background-position:center center;width:90px;height:90px;}
+.kyokutyou p{border:2px solid rgb(121, 85, 72);box-shadow:5px 5px 0 rgb(121, 85, 72);}
+.kyokutyou p:after{border-left-color:rgb(121, 85, 72);}
+.kyokutyou span{background:rgb(121, 85, 72);color:#fff;}
+.kyokutyou:before{content:'';background-image:url('./断罪画像/局長.png');background-size:contain;background-repeat:no-repeat;background-position:center center;width:90px;height:90px;}
+.yabe p{border:2px solid rgb(197, 176, 151);box-shadow:5px 5px 0 rgb(197, 176, 151);}
+.yabe p:after{border-right-color:rgb(197, 176, 151);}
+.yabe span{background:rgb(197, 176, 151);color:#fff;}
+.yabe:before{content:'';background-image:url('./断罪画像/PC3.png');background-size:contain;background-repeat:no-repeat;background-position:center center;width:90px;height:90px;}
+.yabe_tatie:before{content:'';background-image:url('./断罪画像/FD6F9D8D-81BB-4A67-8DF6-526D5BE62272.png');background-size:contain;background-repeat:no-repeat;background-position:center center;width:90px;height:90px;}
+.lulu p{border:2px solid rgb(0, 113, 186);box-shadow:5px 5px 0 rgb(0, 113, 186);}
+.lulu p:after{border-left-color:rgb(0, 113, 186);}
+.lulu span{background:rgb(0, 113, 186);color:#fff;}
+.lulu:before{content:'';background-image:url('./断罪画像/PC2.png');background-size:contain;background-repeat:no-repeat;background-position:center center;width:90px;height:90px;}
+.azusa p{border:2px solid rgb(138, 196, 63);box-shadow:5px 5px 0 rgb(138, 196, 63);}
+.azusa p:after{border-right-color:rgb(138, 196, 63);}
+.azusa span{background:rgb(138, 196, 63);color:#fff;}
+.azusa:before{content:'';background-image:url('./断罪画像/PC4.png');background-size:contain;background-repeat:no-repeat;background-position:center center;width:90px;height:90px;}
+.azusa_neko:before{content:'';background-image:url('./断罪画像/nneko.png');background-size:contain;background-repeat:no-repeat;background-position:center center;width:90px;height:90px;}
+.kaede p{border:2px solid rgb(158, 158, 158);box-shadow:5px 5px 0 rgb(158, 158, 158);}
+.kaede p:after{border-left-color:rgb(158, 158, 158);}
+.kaede span{background:rgb(158, 158, 158);color:#fff;}
+.kaede:before{content:'';background-image:url('./断罪画像/望月カエデ.png');background-size:contain;background-repeat:no-repeat;background-position:center center;width:90px;height:90px;}
+.onnna p{border:2px solid rgb(136, 136, 136);box-shadow:5px 5px 0 rgb(136, 136, 136);}
+.onnna p:after{border-right-color:rgb(136, 136, 136);}
+.onnna span{background:rgb(136, 136, 136);color:#fff;}
+.onnna:before{content:'';background-image:url('./断罪画像/.png');background-size:contain;background-repeat:no-repeat;background-position:center center;width:90px;height:90px;}
+    
+    @media only screen and (max-width: 768px) {
+        .hittou p:after{border-right-color:rgb(136, 136, 136);border-left-color:transparent;}
+        .saou p:after{border-right-color:rgb(172, 7, 20);border-left-color:transparent;}
+        .sansita p:after{border-right-color:rgb(136, 136, 136);border-left-color:transparent;}
+        .kyokutyou p:after{border-right-color:rgb(121, 85, 72);border-left-color:transparent;}
+        .yabe p:after{border-right-color:rgb(197, 176, 151);border-left-color:transparent;}
+        .lulu p:after{border-right-color:rgb(0, 113, 186);border-left-color:transparent;}
+        .azusa p:after{border-right-color:rgb(138, 196, 63);border-left-color:transparent;}
+        .kaede p:after{border-right-color:rgb(136, 136, 136);border-left-color:transparent;}
+        .onnna p:after{border-right-color:rgb(136, 136, 136);border-left-color:transparent;}
+
+
+        .hittou:before,.saou:before,.sansita:before,
+        .kyokutyou:before,.yabe:before,.lulu:before
+        .azusa:before,.kaede:before,.onnna:before{width:70px;height:70px;}
+    }
+</style>
+</head>
+<body>
+    <p id="page-top"><a href="#"><i class="page-top__arrow"></i></a></p>
+	<div class="leftwhite"></div>
+	<div class="rightwhite"></div>
+	<div class="bg-sp">
+    <div class="bg-over"><div class="bg-inner bg1"></div></div>
+	<div class="log">
+    
+    <div class="kp LtoR-early">
+
+        <br>シノビの世界を騒がせる連続殺忍鬼《下忍殺し》の正体がついに判明する。<br><br>逃走する《下忍殺し》に対し、六大流派はついに本格的な捕縛作戦を執り行うことを決め、各流派から選りすぐりの精鋭を集めた。<br><br>捕縛の命を受けたシノビ達の刃が、《下忍殺し》を追い詰める。<br><br>忍術バトルRPG　シノビガミ―忍神―<br>『断罪』<br><br>――誰がシノビを裁くのか
+  </div>
+  <div class="kp LtoR-early">
+  
+        -導入-
+  </div>
+  <div class="kp LtoR-early">
+  
+        PC1 犬屋敷
+  </div>
+  <div class="kp LtoR-early">
+  
+        暗い部屋の中に、むせ返るような血の匂いが充満している。<br>あなたの足元には夥しい数の下忍の死体が転がっている。突如部屋の扉が乱暴に開け放たれ、ライトがあなたの顔を照らす。
+  </div>
+  <div class="hittou left">
+  <span>ヒットウ</span>
+  <p>
+  
+        「貴様！下忍殺しめ！逃さん！」
+  </p>
+  </div>
+  <div class="saou right">
+  <span>犬屋敷 紗桜</span>
+  <p>
+  
+        「…」
+  </p>
+  </div>
+  <div class="sansita left">
+  <span>サンシタ</span>
+  <p>
+  
+        「」（夥しい死体）
+  </p>
+  </div>
+  <div class="hittou left">
+  <span>ヒットウ</span>
+  <p>
+  
+        「ここで始末してくれる！！」
+  </p>
+  </div>
+  <div class="hittou left">
+  <span>ヒットウ</span>
+  <p>
+  
+        中忍達があなたに飛びかかる。
+  </p>
+  </div>
+  <div class="saou right">
+  <span>犬屋敷 紗桜</span>
+  <p>
+  
+        「…やかましい上にむさくるしいな」
+  </p>
+  </div>
+  <div class="saou right">
+  <span>犬屋敷 紗桜</span>
+  <p>
+  
+        めんどくさそうにまきます
+  </p>
+  </div>
+  <div class="hittou left">
+  <span>ヒットウ</span>
+  <p>
+  
+        「何！？どこへ消えた！？」
+  </p>
+  </div>
+  <div class="hittou left">
+  <span>ヒットウ</span>
+  <p>
+  
+        「おのれ……者共！探せ！」
+  </p>
+  </div>
+  <div class="kp LtoR-early">
+  
+        あなたはそれをやり過ごしその場を逃げ出した。
+  </div>
+  <div class="saou saou_tatie right">
+        <span>犬屋敷 紗桜</span>
+        <p>
+        
+              ■PC1犬屋敷 紗桜[イヌヤシキ サオウ]<br>
+  流派：隠忍の血統<br>
+  　夥しい下忍の死体が散らばる中に立っているあなたを、ライトが照らす。<br>
+  「貴様下忍殺しだな！」と襲い掛かる中忍をやり過ごし、あなたはその場を逃げ出す。<br>
+  
+  　あなたは『下忍殺し』と呼ばれ最近シノビ界隈を騒がせている連続殺人鬼であり、
+  各流派から選出された精鋭に追われている。<br>
+  　あなたの使命は『クライマックス終了まで逃げ切ること』である。<br>
+   <br>
+   [設定]<br>
+   犬上家を家元とする分家一家の次男<br>
+  自我が強く無意識に人を煽る言い方をしがち。<br>
+  
+  学校では放課後にクラス全員で逃走中をするくらいには普通の学生をしている。<br>
+  
+  NPC１の望月カエデとは幼馴染。<br>
+  
+  「お前が俺に鬼事で勝てたことないだろ」<br>
+  「無駄吠えが過ぎる犬は飼い主の格を下げてるだけだよね」<br>
+  </p>
+        </div>
+  <div class="kp LtoR-early">
+  
+        PC1導入-終了-
+  
+        
+  </div>
+  <div class="kp LtoR-early">
+  
+        ――――――――――――――――――――――――
+  </div>
+  <div class="kp LtoR-early">
+  
+        その他-導入-
+  </div>
+  <div class="kp LtoR-early">
+  
+        あなた達は公安隠密局の局長、麻生雅人に呼び出される。
+  </div>
+  <div class="kyokutyou right">
+  <span>”局長”麻生 雅人</span>
+  <p>
+  
+        「……来たか」
+  </p>
+  </div>
+  <div class="kyokutyou right">
+  <span>”局長”麻生 雅人</span>
+  <p>
+  
+        「君たちを呼び出したのは他でもない、下忍殺しの正体がついに判明した。」
+  </p>
+  </div>
+  <div class="yabe left">
+  <span>矢部 照彦</span>
+  <p>
+  
+        「なんやまた面倒な事件抱えてはりますなぁ」
+  </p>
+  </div>
+  <div class="lulu right">
+  <span>御薬袋 縷々</span>
+  <p>
+  
+        「薬以外の仕事なんて久しぶりだわ～」
+  </p>
+  </div>
+  <div class="azusa left">
+  <span>六条 阿豆佐</span>
+  <p>
+  
+        牛乳を飲んでる
+  </p>
+  </div>
+  <div class="kyokutyou right">
+  <span>”局長”麻生 雅人</span>
+  <p>
+  
+        「奴は追手を振り切り今も逃亡を続けており、いつ表の世界に害をなすかわからん」
+  </p>
+  </div>
+  <div class="kyokutyou right">
+  <span>”局長”麻生 雅人</span>
+  <p>
+  
+        「なによりシノビの不始末は内々に処理したい。奴を追うのに最もふさわしいと思う物を集めたつもりだ」
+  </p>
+  </div>
+  <div class="kyokutyou right">
+  <span>”局長”麻生 雅人</span>
+  <p>
+  
+        「必ずや奴を捕らえ断罪せよ」
+  </p>
+  </div>
+  <div class="lulu right">
+  <span>御薬袋 縷々</span>
+  <p>
+  
+        「はーい」
+  </p>
+  </div>
+  <div class="kyokutyou right">
+  <span>”局長”麻生 雅人</span>
+  <p>
+  
+        「やつの名は犬屋敷 紗桜、この男だ」
+  </p>
+  </div>
+  <div class="azusa left">
+  <span>六条 阿豆佐</span>
+  <p>
+  
+        「うーん、わかった！」
+  </p>
+  </div>
+  <div class="yabe left">
+  <span>矢部 照彦</span>
+  <p>
+  
+        「はぁ。少年やないですか」
+  </p>
+  </div>
+  <div class="kyokutyou right">
+  <span>”局長”麻生 雅人</span>
+  <p>
+  
+        「シノビに年齢は関係ないのは周知の事実だが？」
+  </p>
+  </div>
+  <div class="lulu right">
+  <span>御薬袋 縷々</span>
+  <p>
+  
+        「関係ないよねー」歳の差だけは感じてる
+  </p>
+  </div>
+  <div class="yabe left">
+  <span>矢部 照彦</span>
+  <p>
+  
+        「……まぁちみっちゃいのもなんぼかおるのがこの界隈ですわな」
+  </p>
+  </div>
+  <div class="azusa left">
+  <span>六条 阿豆佐</span>
+  <p>
+  
+        ぐびぐび
+  </p>
+  </div>
+  <div class="kyokutyou right">
+  <span>”局長”麻生 雅人</span>
+  <p>
+  
+        「……それと、協力者を紹介しておく」
+  </p>
+  </div>
+  <div class="kyokutyou right">
+  <span>”局長”麻生 雅人</span>
+  <p>
+  
+        「彼女は犬屋敷の捕縛に協力してくれる望月さんだ。君たちに同行してもらうのでよろしく頼む」
+  </p>
+  </div>
+  <div class="kaede right">
+  <span>望月 カエデ</span>
+  <p>
+  
+        「望月カエデです。彼があんなに恐ろしい事をしたなんて信じられませんが……事実なら、なんとしても罪を償わせたいと思います。皆さんよろしくお願い致します」
+  </p>
+  </div>
+  <div class="lulu right">
+  <span>御薬袋 縷々</span>
+  <p>
+  
+        「よろしくねー」
+  </p>
+  </div>
+  <div class="yabe left">
+  <span>矢部 照彦</span>
+  <p>
+  
+        「よろしゅうなぁ。なんや今回はちみっちゃいのが多いことで」
+  </p>
+  </div>
+  <div class="kyokutyou right">
+  <span>”局長”麻生 雅人</span>
+  <p>
+  
+        「なにか聞きたいことはあるか？」
+  </p>
+  </div>
+  <div class="lulu right">
+  <span>御薬袋 縷々</span>
+  <p>
+  
+        「え？」って見ておく
+  </p>
+  </div>
+  <div class="azusa left">
+  <span>六条 阿豆佐</span>
+  <p>
+  
+        「よろしくねー！」
+  </p>
+  </div>
+  <div class="yabe left">
+  <span>矢部 照彦</span>
+  <p>
+  
+        「まぁおばは……なんでもありませんわ」
+  </p>
+  </div>
+  <div class="lulu right">
+  <span>御薬袋 縷々</span>
+  <p>
+  
+        じぃー
+  </p>
+  </div>
+  <div class="yabe left">
+  <span>矢部 照彦</span>
+  <p>
+  
+        「おなごならみんなちみっちゃいようなもんですわなぁ」
+  </p>
+  </div>
+  <div class="azusa left">
+  <span>六条 阿豆佐</span>
+  <p>
+  
+        「！？」殺気を感じる
+  </p>
+  </div>
+  <div class="yabe left">
+  <span>矢部 照彦</span>
+  <p>
+  
+        「で、居場所とかはわかってはるんですか？」
+  </p>
+  </div>
+  <div class="lulu right">
+  <span>御薬袋 縷々</span>
+  <p>
+  
+        「年上には気をつけてね？」
+  </p>
+  </div>
+  <div class="kyokutyou right">
+  <span>”局長”麻生 雅人</span>
+  <p>
+  
+        「それを調べるのが君の仕事だが？矢部君」
+  </p>
+  </div>
+  <div class="yabe left">
+  <span>矢部 照彦</span>
+  <p>
+  
+        「すんませんな、お姉様には気を付けますわ……」
+  </p>
+  </div>
+  <div class="lulu right">
+  <span>御薬袋 縷々</span>
+  <p>
+  
+        よしよし、と満足気
+  </p>
+  </div>
+  <div class="yabe left">
+  <span>矢部 照彦</span>
+  <p>
+  
+        「そうやったな。これは失礼」
+  </p>
+  </div>
+  <div class="kyokutyou right">
+  <span>”局長”麻生 雅人</span>
+  <p>
+  
+        「……問題はないようだな、早急に事を進めてくれたまえ」
+  </p>
+  </div>
+  <div class="azusa left">
+  <span>六条 阿豆佐</span>
+  <p>
+  
+        「で、どこにいるんだっけ？」
+  </p>
+  </div>
+  <div class="lulu right">
+  <span>御薬袋 縷々</span>
+  <p>
+  
+        「さっさと行ってこいってことだね」
+  </p>
+  </div>
+  <div class="yabe left">
+  <span>矢部 照彦</span>
+  <p>
+  
+        「相変わらず人づかいが荒いことやなぁ」
+  </p>
+  </div>
+  <div class="azusa left">
+  <span>六条 阿豆佐</span>
+  <p>
+  
+        「あれ？おじさーん？」
+  </p>
+  </div>
+  <div class="yabe left">
+  <span>矢部 照彦</span>
+  <p>
+  
+        「お嬢ちゃん、俺の上司が失礼ですまんなぁ」
+  </p>
+  </div>
+  <div class="azusa left">
+  <span>六条 阿豆佐</span>
+  <p>
+  
+        「げにんがりどこー？」
+  </p>
+  </div>
+  <div class="lulu right">
+  <span>御薬袋 縷々</span>
+  <p>
+  
+        「探しにいこっか」
+  </p>
+  </div>
+  <div class="kaede right">
+  <span>望月 カエデ</span>
+  <p>
+  
+        「……では、私も」（一礼してその場をあとにする）
+  </p>
+  </div>
+  <div class="lulu right">
+        <span>御薬袋 縷々</span>
+        <p>■PC2 御薬袋 縷々[ミナイ ルル]<br>
+              流派：斜歯忍軍/大槌群<br>
+              　あなたは上層部に呼び出され、《下忍殺し》と呼ばれる連続殺忍鬼であるPC1を捕らえるように命令される。<br>
+  
+              　あなたは上層部の命を受け《下忍殺し》を追っている。罪のない下忍を殺めるなんて許せない。<br>
+              　あなたの使命は『クライマックス終了までに《下忍殺し》を倒すこと』である。<br>
+              （自らの手で生命点を0にする必要はない）<br>
+              <br>
+              [設定]<br>
+              背負子を背負い、全国を練り歩く、薬売り。<br>
+              のんびりしている性格。<br>
+  
+              昔は、家庭に薬と届けて使った分を薬代として受け取る文化があったそうだ。<br>
+              今もそれを続けているのです。<br>
+              ロリコン<br>
+        </p>
+  </div>
+  <div class="yabe yabe_tatie left">
+        <span>矢部 照彦</span>
+        <p>■PC3 矢部 照彦[ヤベ テルヒコ]<br>
+              流派：比良坂機関/公安隠密局<br>
+              　あなたは上層部に呼び出され、《下忍殺し》と呼ばれる連続殺忍鬼であるPC1を捕らえるように命令される。<br>
+  
+              　あなたは上層部の命を受け《下忍殺し》を追っている。罪のない下忍を殺めるなんて許せない。<br>
+              　あなたの使命は『クライマックス終了までに《下忍殺し》を倒すこと』である。<br>
+              （自らの手で生命点を0にする必要はない）<br>
+              <br>
+              [設定] <br>    
+              国家の犬だがクソ不真面目。<br>
+              「やめてぇな」と言いつつずるずるいるタイプ。<br>
+  
+              「みんな仲良くやろや？なぁ？」<br>
+  
+              クソ適当でちゃらんぽらんな男<br>
+              関西弁でミステリアス、うさんくさいともいう<br>
+              要領がよく話好きで器用、詭弁が得意<br>
+              手先も器用<br>
+              <br>
+  
+              ヘビースモーカー  <br>
+        </p>
+  </div>
+    <div class="azusa left">
+        <span>六条 阿豆佐</span>
+           <p>■PC4六条 阿豆佐[ロクジョウ アズサ]<br>
+             流派：ハグレモノ/ブレーメン<br>
+             　あなたは上層部に呼び出され、《下忍殺し》と呼ばれる連続殺忍鬼であるPC1を捕らえるように命令される。<br>
+  
+             　あなたは上層部の命を受け《下忍殺し》を追っている。罪のない下忍を殺めるなんて許せない。<br>
+             　あなたの使命は『クライマックス終了までに《下忍殺し》を倒すこと』である。<br>
+             （自らの手で生命点を0にする必要はない）<br>
+             <br>
+             [設定] <br>       
+             ちびっこネコミミくのいちめいた忍者。わるい下忍狩りを倒す使命を下され、がんばる。        
+             </p>
+        </div>
+  <div class="kp LtoR-early">
+  
+        -導入終了-
+  
+  </div>
+  
+  <div class="kp LtoR-early">
+  
+        ――――――――――――――――――――――――
+  </div>
+  <div class="kp LtoR-early">
+  
+        メインフェイズ
+  </div>
+  <div class="kp LtoR-early">
+  
+        １シーン目-矢部-
+  </div>
+  <div class="yabe left">
+        <span>矢部 照彦</span>
+        <p>tkst 東京シーン表(6) ＞ 霞が関。この場に集う情報は、忍者にとっても価値が高いものだ。道を行く人々の中にも、役人や警察官が目につく。
+        
+  </p>
+  </div>
+  <div class="kp LtoR-early">
+  
+        登場人物：矢部、犬屋敷
+  </div>
+  <div class="yabe left">
+  <span>矢部 照彦</span>
+  <p>
+  
+        「どーも、こんちは。偶然やなぁ」
+  </p>
+  </div>
+  <div class="saou right">
+  <span>犬屋敷 紗桜</span>
+  <p>
+  
+        「…なにあんた」
+  </p>
+  </div>
+  <div class="yabe left">
+  <span>矢部 照彦</span>
+  <p>
+  
+        「はは。怪しいお兄さんですんませんなぁ」
+  </p>
+  </div>
+  <div class="saou right">
+  <span>犬屋敷 紗桜</span>
+  <p>
+  
+        「謝られてもこまるんだけど。不審者がこんな大通りにおれに何の用」
+  </p>
+  </div>
+  <div class="yabe left">
+  <span>矢部 照彦</span>
+  <p>
+  
+        「そりゃそうやな。かしこいお坊ちゃんやでほんま。ちょっとな、ある少年について調べとんねん。おにーさんの仕事に協力してくれへん？」
+  </p>
+  </div>
+  <div class="yabe left">
+  <span>矢部 照彦</span>
+  <p>
+  
+        「だるいからはよ済ませてしまいたいんやわ」
+  </p>
+  </div>
+  <div class="saou right">
+  <span>犬屋敷 紗桜</span>
+  <p>
+  
+        「やだよ。へんなアンケは他あたって」
+  </p>
+  </div>
+  <div class="yabe left">
+  <span>矢部 照彦</span>
+  <p>
+  
+        「アンケなぁ。今日日の若いこぉは警戒心強くてかなわんわ。あんな、おにーさん、ヒラサカやねん。そんでも、協力してくれんか？」
+  </p>
+  </div>
+  <div class="yabe left">
+  <span>矢部 照彦</span>
+  <p>
+  
+        2D6&gt;=5 （判定：調査術） (2D6&gt;=5) ＞ 11[5,6] ＞ 11 ＞ 成功
+        
+  </p>
+  </div>
+  <div class="saou right">
+  <span>犬屋敷 紗桜</span>
+  <p>
+  
+        「…平坂ね。ほんと俺らより犬くせぇやつらだよな」
+  </p>
+  </div>
+  <div class="yabe left">
+  <span>矢部 照彦</span>
+  <p>
+  
+        「そーやねん聞いてくれん？ほんま面倒やねんわんわんわんわんて嗅ぎまわらなあかんのほんまうざいねんわかるぅ？」
+  </p>
+  </div>
+  <div class="saou right">
+  <span>犬屋敷 紗桜</span>
+  <p>
+  
+        「嗅ぎまわられるほうがうぜぇっての。…もういくから俺」
+  </p>
+  </div>
+  <div class="yabe left">
+  <span>矢部 照彦</span>
+  <p>
+  
+        「あぁ、すんませんなぁ。なんかあったらまたよろしくさん」
+  </p>
+  </div>
+  <div class="azusa left">
+  <span>六条 阿豆佐</span>
+  <p>
+  
+        【猫の道】
+  </p>
+  </div>
+  <div class="kp LtoR-early">
+  
+        [ 六条　阿豆佐 ] 戦術 : 1 → 0
+  </div>
+  <div class="azusa left">
+  <span>六条 阿豆佐</span>
+  <p>
+  
+        2D6&gt;=5 （判定：調査術） (2D6&gt;=5) ＞ 10[4,6] ＞ 10 ＞ 成功
+        
+  </p>
+  </div>
+  <div class="azusa left">
+  <span>六条 阿豆佐</span>
+  <p>
+  
+        <br>犬屋敷　紗桜 の【居所】を《憑依術》
+  </p>
+  </div>
+  <div class="azusa left">
+  <span>六条 阿豆佐</span>
+  <p>
+  
+        2D6-2&gt;=5 （判定：憑依術） (2D6-2&gt;=5) ＞ 6[1,5]-2 ＞ 4 ＞ 失敗
+        
+  </p>
+  </div>
+  <div class="azusa left">
+  <span>六条 阿豆佐</span>
+  <p>
+  
+        2D6-2&gt;=5 （判定：憑依術） (2D6-2&gt;=5) ＞ 4[2,2]-2 ＞ 2 ＞ 失敗
+        
+  </p>
+  </div>
+  <div class="azusa left">
+  <span>六条 阿豆佐</span>
+  <p>
+  
+        神通丸
+  </p>
+  </div>
+  <div class="azusa left">
+  <span>六条 阿豆佐</span>
+  <p>
+  
+        2D6-2&gt;=5 （判定：憑依術） (2D6-2&gt;=5) ＞ 8[3,5]-2 ＞ 6 ＞ 成功
+        
+  </p>
+  </div>
+  <div class="azusa left">
+  <span>六条 阿豆佐</span>
+  <p>
+  
+        「ヨシ！！」
+  </p>
+  </div>
+  <div class="kp LtoR-early">
+  
+        シーン終了
+  </div>
+  <div class="kp LtoR-early">
+  
+        ２シーン目-御薬袋 -
+  </div>
+  <div class="lulu right">
+  <span>御薬袋 縷々</span>
+  <p>
+  
+        tkst 東京シーン表(3) ＞ 靖国神社。東京の中とも思えぬ、緑で満ちた場所だ。今は観光客もおらず、奇妙に静かだ……。
+        
+  </p>
+  </div>
+  <div class="kp LtoR-early">
+  
+        登場人物：犬屋敷以外
+  </div>
+  <div class="lulu right">
+  <span>御薬袋 縷々</span>
+  <p>
+  
+        「こういうのって色々な場所探すですよね」
+  </p>
+  </div>
+  <div class="lulu right">
+  <span>御薬袋 縷々</span>
+  <p>
+  
+        「ってことで班分けして探してみませんか？」
+  </p>
+  </div>
+  <div class="azusa left">
+  <span>六条 阿豆佐</span>
+  <p>
+  
+        「あたし見つけたよ！」
+  </p>
+  </div>
+  <div class="lulu right">
+  <span>御薬袋 縷々</span>
+  <p>
+  
+        「さすが」
+  </p>
+  </div>
+  <div class="kaede right">
+  <span>望月 カエデ</span>
+  <p>
+  
+        「班分け……？」
+  </p>
+  </div>
+  <div class="kaede right">
+  <span>望月 カエデ</span>
+  <p>
+  
+        「……！」
+  </p>
+  </div>
+  <div class="lulu right">
+  <span>御薬袋 縷々</span>
+  <p>
+  
+        「四人で同じ場所より二人で別々の方が効率よくない？」
+  </p>
+  </div>
+  <div class="yabe left">
+  <span>矢部 照彦</span>
+  <p>
+  
+        「どいつもこいつも仕事はようてやになるわ……」
+  </p>
+  </div>
+  <div class="azusa left">
+  <span>六条 阿豆佐</span>
+  <p>
+  
+        「げにんがり の いどころみつけたよ！」
+  </p>
+  </div>
+  <div class="yabe left">
+  <span>矢部 照彦</span>
+  <p>
+  
+        「なんでそんなやる気あるんみんな……」
+  </p>
+  </div>
+  <div class="yabe left">
+  <span>矢部 照彦</span>
+  <p>
+  
+        「もっとゆっくりでええやない？みんな仲ようしよ？」
+  </p>
+  </div>
+  <div class="lulu right">
+  <span>御薬袋 縷々</span>
+  <p>
+  
+        「この間にも色々事件起こるじゃないですかー」
+  </p>
+  </div>
+  <div class="azusa left">
+  <span>六条 阿豆佐</span>
+  <p>
+  
+        「おじさんはなんでやるきないの？？」
+  </p>
+  </div>
+  <div class="kaede right">
+  <span>望月 カエデ</span>
+  <p>
+  
+        「居所を見つけたの？」（目線を合わせる）
+  </p>
+  </div>
+  <div class="yabe left">
+  <span>矢部 照彦</span>
+  <p>
+  
+        「面倒やからや」
+  </p>
+  </div>
+  <div class="azusa left">
+  <span>六条 阿豆佐</span>
+  <p>
+  
+        「うん！」
+  </p>
+  </div>
+  <div class="azusa left">
+  <span>六条 阿豆佐</span>
+  <p>
+  
+        「えぇ…」
+  </p>
+  </div>
+  <div class="kaede right">
+  <span>望月 カエデ</span>
+  <p>
+  
+        「……お姉さんに教えてくれる？」
+  </p>
+  </div>
+  <div class="yabe left">
+  <span>矢部 照彦</span>
+  <p>
+  
+        「すまんなぁ見本にならんあんちゃんで……」
+  </p>
+  </div>
+  <div class="lulu right">
+  <span>御薬袋 縷々</span>
+  <p>
+  
+        「情報共有する？」
+  </p>
+  </div>
+  <div class="azusa left">
+  <span>六条 阿豆佐</span>
+  <p>
+  
+        「うん！」
+  </p>
+  </div>
+  <div class="yabe left">
+  <span>矢部 照彦</span>
+  <p>
+  
+        「仲ようしとってええなぁ」ニコニコ
+  </p>
+  </div>
+  <div class="lulu right">
+  <span>御薬袋 縷々</span>
+  <p>
+  
+        じゃみんなでそこらへんを捜索しながらで、六条さんに感情判定を
+  </p>
+  </div>
+  <div class="lulu right">
+  <span>御薬袋 縷々</span>
+  <p>
+  
+        歩法で
+  </p>
+  </div>
+  <div class="lulu right">
+  <span>御薬袋 縷々</span>
+  <p>
+  
+        2D6&gt;=5 （判定：歩法） (2D6&gt;=5) ＞ 8[2,6] ＞ 8 ＞ 成功
+        
+  </p>
+  </div>
+  <div class="azusa left">
+  <span>六条 阿豆佐</span>
+  <p>
+  
+        et 感情表(1) ＞ 共感（プラス）／不信（マイナス）
+        
+  </p>
+  </div>
+  <div class="lulu right">
+  <span>御薬袋 縷々</span>
+  <p>
+  
+        ET 感情表(3) ＞ 愛情（プラス）／妬み（マイナス）
+        
+  </p>
+  </div>
+  <div class="azusa left">
+  <span>六条 阿豆佐</span>
+  <p>
+  
+        共感
+  </p>
+  </div>
+  <div class="lulu right">
+  <span>御薬袋 縷々</span>
+  <p>
+  
+        愛情じゃ
+  </p>
+  </div>
+  <div class="azusa left">
+  <span>六条 阿豆佐</span>
+  <p>
+  
+        「じゃあ いどころあげる！」
+  </p>
+  </div>
+  <div class="azusa left">
+  <span>六条 阿豆佐</span>
+  <p>
+  
+        「おじさんもいる？」
+  </p>
+  </div>
+  <div class="yabe left">
+  <span>矢部 照彦</span>
+  <p>
+  
+        おにーさんはちみっちゃいの三人の後ろをぶらぶら歩っている
+  </p>
+  </div>
+  <div class="yabe left">
+  <span>矢部 照彦</span>
+  <p>
+  
+        「おお。ほんま？ええの？気前のええお嬢ちゃんやなぁ」
+  </p>
+  </div>
+  <div class="azusa left">
+  <span>六条 阿豆佐</span>
+  <p>
+  
+        「おじさんがもってるひみつちょーだい」
+  </p>
+  </div>
+  <div class="lulu right">
+  <span>御薬袋 縷々</span>
+  <p>
+  
+        「あ、知ってるの？なになに？」
+  </p>
+  </div>
+  <div class="kaede right">
+  <span>望月 カエデ</span>
+  <p>
+  
+        「矢部さんも何かご存知なんですか……？」
+  </p>
+  </div>
+  <div class="yabe left">
+  <span>矢部 照彦</span>
+  <p>
+  
+        「はん。抜け目ないお嬢ちゃんやでほんま……小っちゃくても忍者やな……」
+  </p>
+  </div>
+  <div class="yabe left">
+  <span>矢部 照彦</span>
+  <p>
+  
+        「なーんも知らんで？ろくな情報もっとらんし」
+  </p>
+  </div>
+  <div class="azusa left">
+  <span>六条 阿豆佐</span>
+  <p>
+  
+        「じゃあ じょうほうあげる」
+  </p>
+  </div>
+  <div class="yabe left">
+  <span>矢部 照彦</span>
+  <p>
+  
+        「なんの？なんの情報？」
+  </p>
+  </div>
+  <div class="azusa left">
+  <span>六条 阿豆佐</span>
+  <p>
+  
+        御薬袋 縷々と矢部 照彦に犬屋敷　紗桜の【居所】を共有
+  </p>
+  </div>
+  <div class="azusa left">
+  <span>六条 阿豆佐</span>
+  <p>
+  
+        「おじさん げにんがりのひみつちょうだい！」
+  </p>
+  </div>
+  <div class="lulu right">
+  <span>御薬袋 縷々</span>
+  <p>
+  
+        「気になる気になる」
+  </p>
+  </div>
+  <div class="kaede right">
+  <span>望月 カエデ</span>
+  <p>
+  
+        「ありがとう、あずさちゃん」
+  </p>
+  </div>
+  <div class="yabe left">
+  <span>矢部 照彦</span>
+  <p>
+  
+        「だーかーら知らんて。知らん知らん。おじさん嘘つきませんー」
+  </p>
+  </div>
+  <div class="azusa left">
+  <span>六条 阿豆佐</span>
+  <p>
+  
+        「うそつきー！！」
+  </p>
+  </div>
+  <div class="lulu right">
+  <span>御薬袋 縷々</span>
+  <p>
+  
+        「うそつきー」
+  </p>
+  </div>
+  <div class="lulu right">
+  <span>御薬袋 縷々</span>
+  <p>
+  
+        六条さんの背後から
+  </p>
+  </div>
+  <div class="yabe left">
+  <span>矢部 照彦</span>
+  <p>
+  
+        （おばさんまで一緒になってほんま……）
+  </p>
+  </div>
+  <div class="kaede right">
+  <span>望月 カエデ</span>
+  <p>
+  
+        「え？……う、うそつきー！」
+  </p>
+  </div>
+  <div class="yabe left">
+  <span>矢部 照彦</span>
+  <p>
+  
+        「お姉様ぁ。小っちゃい子らに変な大人ん姿見せるのやめーや……」
+  </p>
+  </div>
+  <div class="lulu right">
+  <span>御薬袋 縷々</span>
+  <p>
+  
+        「じゃ、かわいいお嬢さんにはお土産を」って感じでプレゼント
+  </p>
+  </div>
+  <div class="lulu right">
+  <span>御薬袋 縷々</span>
+  <p>
+  
+        以上で
+  </p>
+  </div>
+  <div class="kaede right">
+  <span>望月 カエデ</span>
+  <p>
+  
+        「え？あ、どうも……」
+  </p>
+  </div>
+  <div class="yabe left">
+  <span>矢部 照彦</span>
+  <p>
+  
+        「え？俺には？」
+  </p>
+  </div>
+  <div class="lulu right">
+  <span>御薬袋 縷々</span>
+  <p>
+  
+        「え？」
+  </p>
+  </div>
+  <div class="yabe left">
+  <span>矢部 照彦</span>
+  <p>
+  
+        「え？」
+  </p>
+  </div>
+  <div class="kp LtoR-early">
+  
+        シーン終了
+  </div>
+  <div class="kp LtoR-early">
+  
+        3シーン目-六条-
+  </div>
+  <div class="azusa left">
+  <span>六条 阿豆佐</span>
+  <p>
+  
+        犬屋敷　紗桜に戦闘を仕掛ける
+  </p>
+  </div>
+  <div class="azusa left">
+  <span>六条 阿豆佐</span>
+  <p>
+  
+        bt 戦場表(1) ＞ 平地:特になし。
+        
+  </p>
+  </div>
+  <div class="kp LtoR-early">
+  
+        戦闘乱入
+  </div>
+  <div class="kp LtoR-early">
+  
+        1d6 (1D6) ＞ 4
+        
+  </div>
+  <div class="kp LtoR-early">
+  
+        2d6 (2D6) ＞ 7[3,4] ＞ 7
+        
+  </div>
+  <div class="yabe left">
+  <span>矢部 照彦</span>
+  <p>
+  
+        2D6&gt;=7 （判定：記憶術） (2D6&gt;=7) ＞ 9[3,6] ＞ 9 ＞ 成功
+        
+  </p>
+  </div>
+  <div class="azusa left">
+  <span>六条 阿豆佐</span>
+  <p>
+  
+        「げにんがりかくごー！」
+  </p>
+  </div>
+  <div class="kp LtoR-early">
+  
+        [ 犬屋敷　紗桜 ] がダイスシンボルを公開。出目は 2 です。
+  </div>
+  <div class="kp LtoR-early">
+  
+        [ 矢部 照彦 ] がダイスシンボルを公開。出目は 1 です。
+  </div>
+  <div class="kp LtoR-early">
+  
+        [ 六条　阿豆佐 ] がダイスシンボルを公開。出目は 5 です。
+  </div>
+  <div class="kp LtoR-early">
+  
+        [ 御薬袋 縷々 ] がダイスシンボルを公開。出目は 3 です。
+  </div>
+  <div class="azusa left">
+  <span>六条 阿豆佐</span>
+  <p>
+  
+        【影分身の術】
+  </p>
+  </div>
+  <div class="azusa left">
+  <span>六条 阿豆佐</span>
+  <p>
+  
+        2D6&gt;=5 （判定：分身の術） (2D6&gt;=5) ＞ 7[3,4] ＞ 7 ＞ 成功
+        
+  </p>
+  </div>
+  <div class="kp LtoR-early">
+  
+        [ 御薬袋 縷々 ] がダイスシンボルを公開。出目は 2 です。
+  </div>
+  <div class="kp LtoR-early">
+  
+        [ 六条　阿豆佐 ] がダイスシンボルを公開。出目は 6 です。
+  </div>
+  <div class="kp LtoR-early">
+  
+        [ 矢部 照彦 ] がダイスシンボルを公開。出目は 4 です。
+  </div>
+  <div class="kp LtoR-early">
+  
+        [ 犬屋敷　紗桜 ] がダイスシンボルを公開。出目は 4 です。
+  </div>
+  <div class="kp LtoR-early">
+  
+        [ 六条　阿豆佐 ] がダイスシンボルを公開。出目は 1 です。
+  </div>
+  <div class="azusa left">
+  <span>六条 阿豆佐</span>
+  <p>
+  
+        6を選択
+  </p>
+  </div>
+  <div class="kp LtoR-early">
+  
+        1ラウンド目
+  </div>
+  <div class="azusa left">
+  <span>六条 阿豆佐</span>
+  <p>
+  
+        飛傘
+  </p>
+  </div>
+  <div class="azusa left">
+  <span>六条 阿豆佐</span>
+  <p>
+  
+        2D6&gt;=5 （判定：登術） (2D6&gt;=5) ＞ 9[4,5] ＞ 9 ＞ 成功
+        
+  </p>
+  </div>
+  <div class="azusa left">
+  <span>六条 阿豆佐</span>
+  <p>
+  
+        怪鳥
+  </p>
+  </div>
+  <div class="azusa left">
+  <span>六条 阿豆佐</span>
+  <p>
+  
+         犬屋敷　紗桜へ
+  </p>
+  </div>
+  <div class="azusa left">
+  <span>六条 阿豆佐</span>
+  <p>
+  
+        2D6&gt;=5 （判定：登術） (2D6&gt;=5) ＞ 6[1,5] ＞ 6 ＞ 成功
+        
+  </p>
+  </div>
+  <div class="azusa left">
+  <span>六条 阿豆佐</span>
+  <p>
+  
+        神通丸
+  </p>
+  </div>
+  <div class="azusa left">
+  <span>六条 阿豆佐</span>
+  <p>
+  
+        2D6&gt;=5 （判定：登術） (2D6&gt;=5) ＞ 8[2,6] ＞ 8 ＞ 成功
+        
+  </p>
+  </div>
+  <div class="saou right">
+  <span>犬屋敷 紗桜</span>
+  <p>
+  
+        2D6&gt;=9 （判定：針術） (2D6&gt;=9) ＞ 7[2,5] ＞ 7 ＞ 失敗
+        
+  </p>
+  </div>
+  <div class="azusa left">
+  <span>六条 阿豆佐</span>
+  <p>
+  
+        「いっけー！」
+  </p>
+  </div>
+  <div class="kp LtoR-early">
+  
+        [ 犬屋敷　紗桜 ] 頑健 : 2 → 1
+  </div>
+  <div class="azusa left">
+  <span>六条 阿豆佐</span>
+  <p>
+  
+        「おじさん？」
+  </p>
+  </div>
+  <div class="lulu right">
+  <span>御薬袋 縷々</span>
+  <p>
+  
+        「どうしたい？」
+  </p>
+  </div>
+  <div class="yabe left">
+  <span>矢部 照彦</span>
+  <p>
+  
+        「なに？どうしたいてなに？」
+  </p>
+  </div>
+  <div class="yabe left">
+  <span>矢部 照彦</span>
+  <p>
+  
+        「自分ら怖いねんけど」
+  </p>
+  </div>
+  <div class="lulu right">
+  <span>御薬袋 縷々</span>
+  <p>
+  
+        「情報、ほしいな？持ってないの？あとでちょうだいよ？ね？ね？」
+  </p>
+  </div>
+  <div class="azusa left">
+  <span>六条 阿豆佐</span>
+  <p>
+  
+        「さっきの敵意はなぁに？」
+  </p>
+  </div>
+  <div class="yabe left">
+  <span>矢部 照彦</span>
+  <p>
+  
+        「お姉様キャラ崩壊しとるがな……」
+  </p>
+  </div>
+  <div class="lulu right">
+  <span>御薬袋 縷々</span>
+  <p>
+  
+        呪礫を矢部君に
+  </p>
+  </div>
+  <div class="yabe left">
+  <span>矢部 照彦</span>
+  <p>
+  
+        「どうせなら腕試ししよかと思っただけやん……逃げてええ？」
+  </p>
+  </div>
+  <div class="yabe left">
+  <span>矢部 照彦</span>
+  <p>
+  
+        「いや、なんで？」
+  </p>
+  </div>
+  <div class="azusa left">
+  <span>六条 阿豆佐</span>
+  <p>
+  
+        「きのせいだったかなー？」
+  </p>
+  </div>
+  <div class="lulu right">
+  <span>御薬袋 縷々</span>
+  <p>
+  
+        2D6&gt;=5 （判定：仕込み） (2D6&gt;=5) ＞ 9[4,5] ＞ 9 ＞ 成功
+        
+  </p>
+  </div>
+  <div class="yabe left">
+  <span>矢部 照彦</span>
+  <p>
+  
+        2D6&gt;=8 （判定：手練） (2D6&gt;=8) ＞ 8[2,6] ＞ 8 ＞ 成功
+        
+  </p>
+  </div>
+  <div class="yabe left">
+  <span>矢部 照彦</span>
+  <p>
+  
+        「なんなん！？こわぁ」
+  </p>
+  </div>
+  <div class="lulu right">
+  <span>御薬袋 縷々</span>
+  <p>
+  
+        遁甲符を
+  </p>
+  </div>
+  <div class="yabe left">
+  <span>矢部 照彦</span>
+  <p>
+  
+        「仲ようしよ？」
+  </p>
+  </div>
+  <div class="yabe left">
+  <span>矢部 照彦</span>
+  <p>
+  
+        2D6&gt;=8 （判定：手練） (2D6&gt;=8) ＞ 5[2,3] ＞ 5 ＞ 失敗
+        
+  </p>
+  </div>
+  <div class="azusa left">
+  <span>六条 阿豆佐</span>
+  <p>
+  
+        「おねえさんすごーい！」
+  </p>
+  </div>
+  <div class="kp LtoR-early">
+  
+        [ 矢部 照彦 ] 妖術 : 1 → 0
+  </div>
+  <div class="kp LtoR-early">
+  
+        1ラウンド目終了
+  </div>
+  <div class="yabe left">
+  <span>矢部 照彦</span>
+  <p>
+  
+        「俺なんかしたかねぇ……」
+  </p>
+  </div>
+  <div class="lulu right">
+  <span>御薬袋 縷々</span>
+  <p>
+  
+        勝者になりたい？
+  </p>
+  </div>
+  <div class="azusa left">
+  <span>六条 阿豆佐</span>
+  <p>
+  
+        「おねえさんは かったらどうするの？」
+  </p>
+  </div>
+  <div class="lulu right">
+  <span>御薬袋 縷々</span>
+  <p>
+  
+        「どっちかの秘密ほしいなー」
+  </p>
+  </div>
+  <div class="azusa left">
+  <span>六条 阿豆佐</span>
+  <p>
+  
+        「あたしもー」
+  </p>
+  </div>
+  <div class="lulu right">
+  <span>御薬袋 縷々</span>
+  <p>
+  
+        「続ける？」
+  </p>
+  </div>
+  <div class="lulu right">
+  <span>御薬袋 縷々</span>
+  <p>
+  
+        「相手の秘密くれるならいいけど」
+  </p>
+  </div>
+  <div class="azusa left">
+  <span>六条 阿豆佐</span>
+  <p>
+  
+        「じゃあやめる」
+  </p>
+  </div>
+  <div class="azusa left">
+  <span>六条 阿豆佐</span>
+  <p>
+  
+        脱落する
+  </p>
+  </div>
+  <div class="lulu right">
+  <span>御薬袋 縷々</span>
+  <p>
+  
+        じゃ、犬屋敷 紗桜の秘密を戴きます
+  </p>
+  </div>
+  <div class="kp LtoR-early">
+  
+        勝者：御薬袋
+  </div>
+  <div class="kp LtoR-early">
+  
+        シーン終了
+  </div>
+  <div class="kp LtoR-early">
+  
+        4シーン目-犬屋敷-
+  </div>
+  <div class="saou right">
+  <span>犬屋敷 紗桜</span>
+  <p>
+  
+        tkst 東京シーン表(6) ＞ 霞が関。この場に集う情報は、忍者にとっても価値が高いものだ。道を行く人々の中にも、役人や警察官が目につく。
+        
+  </p>
+  </div>
+  <div class="saou right">
+  <span>犬屋敷 紗桜</span>
+  <p>
+  
+        矢部くんに情報判定変装術
+  </p>
+  </div>
+  <div class="saou right">
+  <span>犬屋敷 紗桜</span>
+  <p>
+  
+        2D6&gt;=5 （判定：変装術） (2D6&gt;=5) ＞ 5[1,4] ＞ 5 ＞ 成功
+        
+  </p>
+  </div>
+  <div class="yabe left">
+  <span>矢部 照彦</span>
+  <p>
+  
+        無面目
+  </p>
+  </div>
+  <div class="yabe left">
+  <span>矢部 照彦</span>
+  <p>
+  
+        2D6&gt;=5 （判定：隠蔽術） (2D6&gt;=5) ＞ 5[2,3] ＞ 5 ＞ 成功
+        
+  </p>
+  </div>
+  <div class="yabe left">
+  <span>矢部 照彦</span>
+  <p>
+  
+        神通丸
+  </p>
+  </div>
+  <div class="yabe left">
+  <span>矢部 照彦</span>
+  <p>
+  
+        2D6&gt;=5 （判定：隠蔽術） (2D6&gt;=5) ＞ 11[5,6] ＞ 11 ＞ 成功
+        
+  </p>
+  </div>
+  <div class="saou right">
+  <span>犬屋敷 紗桜</span>
+  <p>
+  
+        「そこのお兄さん！いまお暇ですかぁ？」
+  </p>
+  </div>
+  <div class="yabe left">
+  <span>矢部 照彦</span>
+  <p>
+  
+        「おお。なんやお姉ちゃん、カワイイなぁ。俺になんか用？」
+  </p>
+  </div>
+  <div class="saou right">
+  <span>犬屋敷 紗桜</span>
+  <p>
+  
+        「いまぁ、そこのお店でカップル割しててぇ、お暇だったらご一緒しません？」
+  </p>
+  </div>
+  <div class="yabe left">
+  <span>矢部 照彦</span>
+  <p>
+  
+        「カップルわりぃ？お姉ちゃん、俺と何の話するん？たいっくつな仕事の話しか出てこんでぇ」
+  </p>
+  </div>
+  <div class="saou right">
+  <span>犬屋敷 紗桜</span>
+  <p>
+  
+        「お兄さん見た目に反して真面目なんだぁ！えーききたぁい」
+  </p>
+  </div>
+  <div class="yabe left">
+  <span>矢部 照彦</span>
+  <p>
+  
+        「ほんまぁ？やめとうてやめとうてしゃあないねんけど、やめるのもだるいねんなぁ……愚痴付きおうてくれるぅ？」
+  </p>
+  </div>
+  <div class="saou right">
+  <span>犬屋敷 紗桜</span>
+  <p>
+  
+        「きくきく！私結構聞き上手だよぉ」
+  </p>
+  </div>
+  <div class="yabe left">
+  <span>矢部 照彦</span>
+  <p>
+  
+        「ノリのいいお姉ちゃんやなぁ。よぉし、おごったるで」
+  </p>
+  </div>
+  <div class="kp LtoR-early">
+  
+        得るものはなかった……
+  </div>
+  <div class="kp LtoR-early">
+  
+        シーン終了
+  </div>
+  
+  <div class="kp LtoR-early">
+  
+        ――――――――――――――――――――――――
+  </div>
+  
+  <div class="kp LtoR-early">
+  
+        マスターシーン
+  </div>
+  <div class="saou right">
+  <span>犬屋敷 紗桜</span>
+  <p>
+  
+        「っち…」
+  </p>
+  </div>
+  <div class="kaede right">
+  <span>望月 カエデ</span>
+  <p>
+  
+        「紗桜！」
+  </p>
+  </div>
+  <div class="saou right">
+  <span>犬屋敷 紗桜</span>
+  <p>
+  
+        「…かえで」
+  </p>
+  </div>
+  <div class="kaede right">
+  <span>望月 カエデ</span>
+  <p>
+  
+        「……無事だったんだね」
+  </p>
+  </div>
+  <div class="saou right">
+  <span>犬屋敷 紗桜</span>
+  <p>
+  
+        「…なんの用だよ」
+  </p>
+  </div>
+  <div class="kaede right">
+  <span>望月 カエデ</span>
+  <p>
+  
+        「……紗桜、自首しよ？逃げても追われるだけだよ」
+  </p>
+  </div>
+  <div class="saou right">
+  <span>犬屋敷 紗桜</span>
+  <p>
+  
+        「俺がやりましたって？」
+  </p>
+  </div>
+  <div class="kaede right">
+  <span>望月 カエデ</span>
+  <p>
+  
+        「……そう、なの？」
+  </p>
+  </div>
+  <div class="saou right">
+  <span>犬屋敷 紗桜</span>
+  <p>
+  
+        「…おまえはそう思ってんだろ」
+  </p>
+  </div>
+  <div class="kaede right">
+  <span>望月 カエデ</span>
+  <p>
+  
+        「私は……ッ！」
+  </p>
+  </div>
+  <div class="kaede right">
+  <span>望月 カエデ</span>
+  <p>
+  
+        「”局長”は紗桜を逃がす気はないみたいだよ……？」
+  </p>
+  </div>
+  <div class="saou right">
+  <span>犬屋敷 紗桜</span>
+  <p>
+  
+        「…俺が足早いの知ってるだろ。つかまらねぇよ、俺は誰にも」
+  </p>
+  </div>
+  <div class="saou right">
+  <span>犬屋敷 紗桜</span>
+  <p>
+  
+        「お前にもな」
+  </p>
+  </div>
+  <div class="kaede right">
+  <span>望月 カエデ</span>
+  <p>
+  
+        「そんなッ……！馬鹿にしてるの！？これは遊びじゃ……」
+  </p>
+  </div>
+  <div class="saou right">
+  <span>犬屋敷 紗桜</span>
+  <p>
+  
+        「…遊びだよ。命をかけたな。」
+  </p>
+  </div>
+  <div class="saou right">
+  <span>犬屋敷 紗桜</span>
+  <p>
+  
+        立ち去ります
+  </p>
+  </div>
+  <div class="kaede right">
+  <span>望月 カエデ</span>
+  <p>
+  
+        「紗桜……ッ！」
+  </p>
+  </div>
+  <div class="kaede right">
+  <span>望月 カエデ</span>
+  <p>
+  
+        et 感情表(5) ＞ 憧憬（プラス）／劣等感（マイナス）
+        
+  </p>
+  </div>
+  <div class="kp LtoR-early">
+  
+        シーン終了
+  </div>
+  
+  <div class="kp LtoR-early">
+  
+        ――――――――――――――――――――――――
+  </div>
+  
+  <div class="kp LtoR-early">
+  
+        ――――――――――――――――――――――――
+  </div>
+  <div class="kp LtoR-early">
+  
+        2サイクル目
+  </div>
+  <div class="kp LtoR-early">
+  
+        choice[犬屋敷,御薬袋,矢部,六条] (choice[犬屋敷,御薬袋,矢部,六条]) ＞ 御薬袋
+        
+  </div>
+  <div class="kp LtoR-early">
+  
+        5シーン目-御薬袋-
+  </div>
+  <div class="lulu right">
+  <span>御薬袋 縷々</span>
+  <p>
+  
+        六条さんの秘密にいきます
+  </p>
+  </div>
+  <div class="lulu right">
+  <span>御薬袋 縷々</span>
+  <p>
+  
+        tkst 東京シーン表(10) ＞ 神田古書街。多くの古書店が軒を連ねている。軒先に積まれた本の山にさえ、追い求める謎や、深遠な知識が埋もれていそうな気がする。
+        
+  </p>
+  </div>
+  <div class="lulu right">
+  <span>御薬袋 縷々</span>
+  <p>
+  
+        六条さんの年代は何の本がいいのかって感じで聞き取りをするために呼び出した…？
+  </p>
+  </div>
+  <div class="kp LtoR-early">
+  
+        登場人物：御薬袋、六条
+  </div>
+  <div class="lulu right">
+  <span>御薬袋 縷々</span>
+  <p>
+  
+        「六条さんはどんな本をみてるの？」
+  </p>
+  </div>
+  <div class="azusa left">
+  <span>六条 阿豆佐</span>
+  <p>
+  
+        「えーと、はたらくくるま図鑑」
+  </p>
+  </div>
+  <div class="lulu right">
+  <span>御薬袋 縷々</span>
+  <p>
+  
+        「車かー。スポーツカーとかクラシックカーとかロマンあるやつあるよねー」
+  </p>
+  </div>
+  <div class="lulu right">
+  <span>御薬袋 縷々</span>
+  <p>
+  
+        「それにしても、下忍殺しはいったいどこにいるんだろうねー」
+  </p>
+  </div>
+  <div class="lulu right">
+  <span>御薬袋 縷々</span>
+  <p>
+  
+        なんて言いながら、六条さんを調査術で
+  </p>
+  </div>
+  <div class="lulu right">
+  <span>御薬袋 縷々</span>
+  <p>
+  
+        2D6&gt;=5 （判定：調査術） (2D6&gt;=5) ＞ 9[3,6] ＞ 9 ＞ 成功
+        
+  </p>
+  </div>
+  <div class="azusa left">
+  <span>六条 阿豆佐</span>
+  <p>
+  
+        （！？）
+  </p>
+  </div>
+  <div class="lulu right">
+  <span>御薬袋 縷々</span>
+  <p>
+  
+        「（そっかー。そっかー）」
+  </p>
+  </div>
+  <div class="lulu right">
+  <span>御薬袋 縷々</span>
+  <p>
+  
+        いい子だなぁって思いながら頭を撫でるわ
+  </p>
+  </div>
+  <div class="lulu right">
+  <span>御薬袋 縷々</span>
+  <p>
+  
+        小さい子かわいい
+  </p>
+  </div>
+  <div class="azusa left">
+  <span>六条 阿豆佐</span>
+  <p>
+  
+        「？？？」
+  </p>
+  </div>
+  <div class="lulu right">
+  <span>御薬袋 縷々</span>
+  <p>
+  
+        何もせずに終了します
+  </p>
+  </div>
+  <div class="kp LtoR-early">
+  
+        シーン終了
+  </div>
+  <div class="kp LtoR-early">
+  
+        6シーン目-矢部-
+  </div>
+  <div class="kp LtoR-early">
+  
+        choice[犬屋敷,矢部,六条] (choice[犬屋敷,矢部,六条]) ＞ 矢部
+        
+  </div>
+  <div class="yabe left">
+  <span>矢部 照彦</span>
+  <p>
+  
+        tkst 東京シーン表(7) ＞ 渋谷駅前の雑踏。大型屋外ヴィジョンが見下ろす中で、大勢の若者たちが行き交っている。
+        
+  </p>
+  </div>
+  <div class="yabe left">
+  <span>矢部 照彦</span>
+  <p>
+  
+        犬屋敷くんと偶然会う
+  </p>
+  </div>
+  <div class="kp LtoR-early">
+  
+        登場人物：犬屋敷、矢部
+  </div>
+  <div class="yabe left">
+  <span>矢部 照彦</span>
+  <p>
+  
+        「お。奇遇やな。よく会うなほんま」
+  </p>
+  </div>
+  <div class="yabe left">
+  <span>矢部 照彦</span>
+  <p>
+  
+        マックであったのかもしれない
+  </p>
+  </div>
+  <div class="saou right">
+  <span>犬屋敷 紗桜</span>
+  <p>
+  
+        「うわ…でた」
+  </p>
+  </div>
+  <div class="yabe left">
+  <span>矢部 照彦</span>
+  <p>
+  
+        「どない？男同士でだべってみん？」強引に隣に座ってくる
+  </p>
+  </div>
+  <div class="saou right">
+  <span>犬屋敷 紗桜</span>
+  <p>
+  
+        （一人用に座ればよかった）
+  </p>
+  </div>
+  <div class="yabe left">
+  <span>矢部 照彦</span>
+  <p>
+  
+        「なんや、あからさまにうざいっちゅー顔しとるなぁ。こないだの戦いで脱落したもん同士、仲ようしよや」
+  </p>
+  </div>
+  <div class="saou right">
+  <span>犬屋敷 紗桜</span>
+  <p>
+  
+        「…けんか売ってんの？一緒にしないでくれない」
+  </p>
+  </div>
+  <div class="yabe left">
+  <span>矢部 照彦</span>
+  <p>
+  
+        「おおこわ。素直になりいや、そのほうが少年はかわいいで」
+  </p>
+  </div>
+  <div class="saou right">
+  <span>犬屋敷 紗桜</span>
+  <p>
+  
+        「きも…かえっていいか」
+  </p>
+  </div>
+  <div class="yabe left">
+  <span>矢部 照彦</span>
+  <p>
+  
+        「まてまて、聞きたいことあるねん。おば……お姉様のことなんか知っとらん？なんかなあ、うさんくさいねんあの人……」
+  </p>
+  </div>
+  <div class="saou right">
+  <span>犬屋敷 紗桜</span>
+  <p>
+  
+        「あんたより胡散臭い人しらないんだけど」
+  </p>
+  </div>
+  <div class="yabe left">
+  <span>矢部 照彦</span>
+  <p>
+  
+        「ほんまにぃ？俺より胡散臭いやつなんてぎょうさんおるでぇ。俺で慣れとき、な？」
+  </p>
+  </div>
+  <div class="saou right">
+  <span>犬屋敷 紗桜</span>
+  <p>
+  
+        「…ほんとに何しに来たんだ」
+  </p>
+  </div>
+  <div class="yabe left">
+  <span>矢部 照彦</span>
+  <p>
+  
+        御薬袋 縷々を調査
+  </p>
+  </div>
+  <div class="yabe left">
+  <span>矢部 照彦</span>
+  <p>
+  
+        2D6&gt;=5 （判定：流言の術） (2D6&gt;=5) ＞ 10[5,5] ＞ 10 ＞ 成功
+        
+  </p>
+  </div>
+  <div class="yabe left">
+  <span>矢部 照彦</span>
+  <p>
+  
+        「若いんと駄弁るのも仕事のうちなんや」
+  </p>
+  </div>
+  <div class="azusa left">
+  <span>六条 阿豆佐</span>
+  <p>
+  
+        【猫の道】
+  </p>
+  </div>
+  <div class="kp LtoR-early">
+  
+        [ 六条　阿豆佐 ] 妖術 : 1 → 0
+  </div>
+  <div class="azusa left">
+  <span>六条 阿豆佐</span>
+  <p>
+  
+        2D6&gt;=5 （判定：調査術） (2D6&gt;=5) ＞ 11[5,6] ＞ 11 ＞ 成功
+        
+  </p>
+  </div>
+  <div class="azusa left">
+  <span>六条 阿豆佐</span>
+  <p>
+  
+        <br>御薬袋 縷々の【秘密】を調査
+  </p>
+  </div>
+  <div class="azusa left">
+  <span>六条 阿豆佐</span>
+  <p>
+  
+        2D6&gt;=5 （判定：登術） (2D6&gt;=5) ＞ 7[1,6] ＞ 7 ＞ 成功
+        
+  </p>
+  </div>
+  <div class="azusa left">
+  <span>六条 阿豆佐</span>
+  <p>
+  
+        「そうなんだぁ……」
+  </p>
+  </div>
+  <div class="kp LtoR-early">
+  
+        シーン終了
+  </div>
+  <div class="kp LtoR-early">
+  
+        7シーン目-犬屋敷-
+  </div>
+  <div class="saou right">
+  <span>犬屋敷 紗桜</span>
+  <p>
+  
+        tkst 東京シーン表(11) ＞ 山谷のドヤ街。日雇い労働者が集う管理宿泊施設の多いこの場所は、身を隠すにはうってつけだ。
+        
+  </p>
+  </div>
+  <div class="kp LtoR-early">
+  
+        登場人物：犬屋敷
+  </div>
+  <div class="saou right">
+  <span>犬屋敷 紗桜</span>
+  <p>
+  
+        ルルちゃんの秘密を身を顰めつつ千里眼します
+  </p>
+  </div>
+  <div class="saou right">
+  <span>犬屋敷 紗桜</span>
+  <p>
+  
+        2D6&gt;=5 （判定：千里眼の術） (2D6&gt;=5) ＞ 9[4,5] ＞ 9 ＞ 成功
+        
+  </p>
+  </div>
+  <div class="kp LtoR-early">
+  
+        シーン終了
+  </div>
+  <div class="kp LtoR-early">
+  
+        8シーン目-六条-
+  </div>
+  <div class="azusa left">
+  <span>六条 阿豆佐</span>
+  <p>
+  
+        犬屋敷　紗桜に戦闘
+  </p>
+  </div>
+  <div class="lulu right">
+  <span>御薬袋 縷々</span>
+  <p>
+  
+        戦闘乱入します
+  </p>
+  </div>
+  <div class="kp LtoR-early">
+  
+        戦闘乱入
+  </div>
+  <div class="yabe left">
+  <span>矢部 照彦</span>
+  <p>
+  
+        高みの見物で
+  </p>
+  </div>
+  <div class="kp LtoR-early">
+  
+        登場人物：矢部、望月以外
+  </div>
+  <div class="azusa left">
+  <span>六条 阿豆佐</span>
+  <p>
+  
+        ｂｔ 戦場表(1) ＞ 平地:特になし。
+        
+  </p>
+  </div>
+  <div class="kp LtoR-early">
+  
+        1ラウンド目プロット
+  </div>
+  <div class="azusa left">
+  <span>六条 阿豆佐</span>
+  <p>
+  
+        「あ、お姉さん来た」
+  </p>
+  </div>
+  <div class="lulu right">
+  <span>御薬袋 縷々</span>
+  <p>
+  
+        「やっほー」
+  </p>
+  </div>
+  <div class="azusa left">
+  <span>六条 阿豆佐</span>
+  <p>
+  
+        「おじさんは来なかったか」
+  </p>
+  </div>
+  <div class="saou right">
+  <span>犬屋敷 紗桜</span>
+  <p>
+  
+        「またあんたらか」
+  </p>
+  </div>
+  <div class="azusa left">
+  <span>六条 阿豆佐</span>
+  <p>
+  
+        「にせものは用はないんだよね」
+  </p>
+  </div>
+  <div class="azusa left">
+  <span>六条 阿豆佐</span>
+  <p>
+  
+        影分身
+  </p>
+  </div>
+  <div class="azusa left">
+  <span>六条 阿豆佐</span>
+  <p>
+  
+        2D6&gt;=5 （判定：分身の術） (2D6&gt;=5) ＞ 12[6,6] ＞ 12 ＞ スペシャル(【生命力】1点か変調一つを回復)
+        
+  </p>
+  </div>
+  <div class="kp LtoR-early">
+  
+        [ 六条　阿豆佐 ] 妖術 : 0 → 1
+  </div>
+  <div class="kp LtoR-early">
+  
+        [ 御薬袋 縷々 ] がダイスシンボルを公開。出目は 3 です。
+  </div>
+  <div class="kp LtoR-early">
+  
+        [ 六条　阿豆佐 ] がダイスシンボルを公開。出目は 6 です。
+  </div>
+  <div class="kp LtoR-early">
+  
+        [ 六条　阿豆佐 ] がダイスシンボルを公開。出目は 1 です。
+  </div>
+  <div class="kp LtoR-early">
+  
+        [ 犬屋敷　紗桜 ] がダイスシンボルを公開。出目は 3 です。
+  </div>
+  <div class="azusa left">
+  <span>六条 阿豆佐</span>
+  <p>
+  
+        6を選択
+  </p>
+  </div>
+  <div class="azusa left">
+  <span>六条 阿豆佐</span>
+  <p>
+  
+        飛傘
+  </p>
+  </div>
+  <div class="azusa left">
+  <span>六条 阿豆佐</span>
+  <p>
+  
+        2D6&gt;=5 （判定：登術） (2D6&gt;=5) ＞ 3[1,2] ＞ 3 ＞ 失敗
+        
+  </p>
+  </div>
+  <div class="azusa left">
+  <span>六条 阿豆佐</span>
+  <p>
+  
+        「ありゃ」
+  </p>
+  </div>
+  <div class="azusa left">
+  <span>六条 阿豆佐</span>
+  <p>
+  
+        「まって偽物！」
+  </p>
+  </div>
+  <div class="saou right">
+  <span>犬屋敷 紗桜</span>
+  <p>
+  
+        「んだよイカれちび」
+  </p>
+  </div>
+  <div class="azusa left">
+  <span>六条 阿豆佐</span>
+  <p>
+  
+        「この戦闘は他の二人を釣るためなんだ」
+  </p>
+  </div>
+  <div class="lulu right">
+  <span>御薬袋 縷々</span>
+  <p>
+  
+        「私見学人」
+  </p>
+  </div>
+  <div class="azusa left">
+  <span>六条 阿豆佐</span>
+  <p>
+  
+        「おっさんが釣れればよかったんだけど」
+  </p>
+  </div>
+  <div class="saou right">
+  <span>犬屋敷 紗桜</span>
+  <p>
+  
+        「まっさきに俺を殺しに来ていて？ましな嘘つけよ」
+  </p>
+  </div>
+  <div class="lulu right">
+  <span>御薬袋 縷々</span>
+  <p>
+  
+        今回何もしません
+  </p>
+  </div>
+  <div class="azusa left">
+  <span>六条 阿豆佐</span>
+  <p>
+  
+        「証明しようとおもったけど攻撃届かなかったんだ」
+  </p>
+  </div>
+  <div class="lulu right">
+  <span>御薬袋 縷々</span>
+  <p>
+  
+        「でも、さっき攻撃…」
+  </p>
+  </div>
+  <div class="lulu right">
+  <span>御薬袋 縷々</span>
+  <p>
+  
+        ちなみに、
+  </p>
+  </div>
+  <div class="lulu right">
+  <span>御薬袋 縷々</span>
+  <p>
+  
+        二人になったら戦闘脱落するよ？
+  </p>
+  </div>
+  <div class="azusa left">
+  <span>六条 阿豆佐</span>
+  <p>
+  
+        「自分が攻撃した理由は教えたけど、あっちは知らないよね？」
+  </p>
+  </div>
+  <div class="lulu right">
+  <span>御薬袋 縷々</span>
+  <p>
+  
+        「私もあの男の人目的だったけど、今回目的なくなったし、離れてもいいけど…攻撃して来たら…次はわからないね？」
+  </p>
+  </div>
+  <div class="lulu right">
+  <span>御薬袋 縷々</span>
+  <p>
+  
+        「それに今まで君に攻撃してないよ？」
+  </p>
+  </div>
+  <div class="saou right">
+  <span>犬屋敷 紗桜</span>
+  <p>
+  
+        「うさんくせぇやつしかいねぇな鬼役は。とりあえずうごけねぇガキがさきだ」
+  </p>
+  </div>
+  <div class="azusa left">
+  <span>六条 阿豆佐</span>
+  <p>
+  
+        「後悔するぞー！！」
+  </p>
+  </div>
+  <div class="saou right">
+  <span>犬屋敷 紗桜</span>
+  <p>
+  
+        血旋渦をあずさちゃんに
+  </p>
+  </div>
+  <div class="saou right">
+  <span>犬屋敷 紗桜</span>
+  <p>
+  
+        2D6&gt;=5 （判定：異形化） (2D6&gt;=5) ＞ 8[2,6] ＞ 8 ＞ 成功
+        
+  </p>
+  </div>
+  <div class="saou right">
+  <span>犬屋敷 紗桜</span>
+  <p>
+  
+        2D6&gt;=5 （判定：針術） (2D6&gt;=5) ＞ 10[5,5] ＞ 10 ＞ 成功
+        
+  </p>
+  </div>
+  <div class="azusa left">
+  <span>六条 阿豆佐</span>
+  <p>
+  
+        １ｄ６ (1D6) ＞ 5
+        
+  </p>
+  </div>
+  <div class="azusa left">
+  <span>六条 阿豆佐</span>
+  <p>
+  
+        １ｄ６ (1D6) ＞ 5
+        
+  </p>
+  </div>
+  <div class="kp LtoR-early">
+  
+        [ 六条　阿豆佐 ] 妖術 : 1 → 0
+  </div>
+  <div class="kp LtoR-early">
+  
+        [ 六条　阿豆佐 ] 謀術 : 1 → 0
+  </div>
+  <div class="kp LtoR-early">
+  
+        1ラウンド目終了
+  </div>
+  <div class="lulu right">
+  <span>御薬袋 縷々</span>
+  <p>
+  
+        脱落しまーす
+  </p>
+  </div>
+  <div class="azusa left">
+  <span>六条 阿豆佐</span>
+  <p>
+  
+        「子供は話を聞かないー！」
+  </p>
+  </div>
+  <div class="kp LtoR-early">
+  
+        勝者：犬屋敷
+  </div>
+  <div class="saou right">
+  <span>犬屋敷 紗桜</span>
+  <p>
+  
+        あずさちゃんの情報をいただきます
+  </p>
+  </div>
+  <div class="kp LtoR-early">
+  
+        2サイクル目
+  </div>
+  
+  <div class="kp LtoR-early">
+  
+        ――――――――――――――――――――――――
+  </div>
+  
+  <div class="kp LtoR-early">
+  
+        マスターシーン
+  </div>
+  <div class="kp LtoR-early">
+  
+        犬屋敷以外のPCは呼び出されます
+  </div>
+  <div class="hittou left">
+  <span>ヒットウ</span>
+  <p>
+  
+        「貴公らが局長の用意した精鋭か……」
+  </p>
+  </div>
+  <div class="azusa left">
+  <span>六条 阿豆佐</span>
+  <p>
+  
+        「……」
+  </p>
+  </div>
+  <div class="lulu right">
+  <span>御薬袋 縷々</span>
+  <p>
+  
+        「あなただぁれ？」
+  </p>
+  </div>
+  <div class="yabe left">
+  <span>矢部 照彦</span>
+  <p>
+  
+        「なんやねんほんま……」
+  </p>
+  </div>
+  <div class="hittou left">
+  <span>ヒットウ</span>
+  <p>
+  
+        「我らは局長の用意した追手部隊！」
+  </p>
+  </div>
+  <div class="hittou left">
+  <span>ヒットウ</span>
+  <p>
+  
+        「貴様らの手腕！見事であった！おかげでやつの居所を知ることができた……」
+  </p>
+  </div>
+  <div class="lulu right">
+  <span>御薬袋 縷々</span>
+  <p>
+  
+        「え…あ、はい」
+  </p>
+  </div>
+  <div class="hittou left">
+  <span>ヒットウ</span>
+  <p>
+  
+        「今から全員で奴、《下忍殺し》を断罪せよと命を下されている」
+  </p>
+  </div>
+  <div class="azusa left">
+  <span>六条 阿豆佐</span>
+  <p>
+  
+        「とっくに調べ終わって二度襲撃してるけど……」
+  </p>
+  </div>
+  <div class="yabe left">
+  <span>矢部 照彦</span>
+  <p>
+  
+        「なんで追手部隊なんかおるねん……信用されてへんのか？」
+  </p>
+  </div>
+  <div class="lulu right">
+  <span>御薬袋 縷々</span>
+  <p>
+  
+        「なんか手柄を取られる感じ半端ない」
+  </p>
+  </div>
+  <div class="hittou left">
+  <span>ヒットウ</span>
+  <p>
+  
+        「局長は慎重なお方だ……それは貴公も理解しているだろう？」
+  </p>
+  </div>
+  <div class="hittou left">
+  <span>ヒットウ</span>
+  <p>
+  
+        「無論、貴公らも最後までやりきってもらう……異論はないな？」
+  </p>
+  </div>
+  <div class="yabe left">
+  <span>矢部 照彦</span>
+  <p>
+  
+        「それは局長の都合やろが……部下の顔立てるんも覚えてほしいもんやな」
+  </p>
+  </div>
+  <div class="hittou left">
+  <span>ヒットウ</span>
+  <p>
+  
+        「フッ……愚痴は終わったあとにしろ」
+  </p>
+  </div>
+  <div class="lulu right">
+  <span>御薬袋 縷々</span>
+  <p>
+  
+        「文句は愚痴に入るのかな？」
+  </p>
+  </div>
+  <div class="hittou left">
+  <span>ヒットウ</span>
+  <p>
+  
+        「では……ム？望月カエデはどうした？」
+  </p>
+  </div>
+  <div class="yabe left">
+  <span>矢部 照彦</span>
+  <p>
+  
+        「わーったわーった。いつものこっちゃ」
+  </p>
+  </div>
+  <div class="azusa left">
+  <span>六条 阿豆佐</span>
+  <p>
+  
+        「知らなーい」
+  </p>
+  </div>
+  <div class="yabe left">
+  <span>矢部 照彦</span>
+  <p>
+  
+        「お嬢ちゃん？知らんな……来てへんの？」
+  </p>
+  </div>
+  <div class="lulu right">
+  <span>御薬袋 縷々</span>
+  <p>
+  
+        「呼び出した人が聞かないでよ」
+  </p>
+  </div>
+  <div class="hittou left">
+  <span>ヒットウ</span>
+  <p>
+  
+        「いや、呼び出したのは望月カエデだ……」
+  </p>
+  </div>
+  <div class="lulu right">
+  <span>御薬袋 縷々</span>
+  <p>
+  
+        「えー知らない誰かだったよー」
+  </p>
+  </div>
+  <div class="hittou left">
+  <span>ヒットウ</span>
+  <p>
+  
+        「……しまった！望月は犬屋敷に肩入れしている節があると聞かされていた！！」
+  </p>
+  </div>
+  <div class="hittou left">
+  <span>ヒットウ</span>
+  <p>
+  
+        「まずい！逃げられるぞ！」
+  </p>
+  </div>
+  <div class="yabe left">
+  <span>矢部 照彦</span>
+  <p>
+  
+        「ほん。なんでそんな子ぉこんな任務に立てるんや……かわいそやろ」
+  </p>
+  </div>
+  <div class="hittou left">
+  <span>ヒットウ</span>
+  <p>
+  
+        「であえであえ！！行くぞ者共！」
+  </p>
+  </div>
+  <div class="lulu right">
+  <span>御薬袋 縷々</span>
+  <p>
+  
+        「なぜリーダー面されているのだろうか」
+  </p>
+  </div>
+  <div class="yabe left">
+  <span>矢部 照彦</span>
+  <p>
+  
+        「自分に仕切られると腹立つなぁ」
+  </p>
+  </div>
+  <div class="azusa left">
+  <span>六条 阿豆佐</span>
+  <p>
+  
+        「……」
+  </p>
+  </div>
+  <div class="kp LtoR-early">
+  
+        一人、逃げ回る犬屋敷の前に望月が現れる
+  </div>
+  <div class="kaede right">
+  <span>望月 カエデ</span>
+  <p>
+  
+        「紗桜！」
+  </p>
+  </div>
+  <div class="kaede right">
+  <span>望月 カエデ</span>
+  <p>
+  
+        「早くここから逃げて！紗桜を処理するための追手がもう来てる！」
+  </p>
+  </div>
+  <div class="saou right">
+  <span>犬屋敷 紗桜</span>
+  <p>
+  
+        「なんで…」
+  </p>
+  </div>
+  <div class="kaede right">
+  <span>望月 カエデ</span>
+  <p>
+  
+        「私は……紗桜の事信じてるから」
+  </p>
+  </div>
+  <div class="kaede right">
+  <span>望月 カエデ</span>
+  <p>
+  
+        「だから早く……逃げて！殺されるわ！」
+  </p>
+  </div>
+  <div class="saou right">
+  <span>犬屋敷 紗桜</span>
+  <p>
+  
+        「…ばか！言ったろ俺は誰にも捕まらない！！お前があぶねぇんだよ！」
+  </p>
+  </div>
+  <div class="kp LtoR-early">
+  
+        近くの窓ガラスが砕け、怪しげな忍者のエントリーだ！
+  </div>
+  <div class="hittou left">
+  <span>ヒットウ</span>
+  <p>
+  
+        「ドーモ＝《下忍殺し》サン、ハイクは詠んだか？」
+  </p>
+  </div>
+  <div class="saou right">
+  <span>犬屋敷 紗桜</span>
+  <p>
+  
+        「んな古くせぇ事誰がするか時代遅れども！」
+  </p>
+  </div>
+  <div class="kaede right">
+  <span>望月 カエデ</span>
+  <p>
+  
+        「ッ！紗桜！」ヒットウの顔面にパンチを繰り出す
+  </p>
+  </div>
+  <div class="hittou left">
+  <span>ヒットウ</span>
+  <p>
+  
+        「グワァー！！」
+  </p>
+  </div>
+  <div class="kaede right">
+  <span>望月 カエデ</span>
+  <p>
+  
+        「抑えとくから！早く！」
+  </p>
+  </div>
+  <div class="saou right">
+  <span>犬屋敷 紗桜</span>
+  <p>
+  
+        「ふざけんな！お前にんなことされたくない！さっさと退け！」
+  </p>
+  </div>
+  <div class="kaede right">
+  <span>望月 カエデ</span>
+  <p>
+  
+        「…うるさいッ！たまには言うことを聞いて！」
+  </p>
+  </div>
+  <div class="lulu right">
+  <span>御薬袋 縷々</span>
+  <p>
+  
+        「どうもー薬屋でーす」
+  </p>
+  </div>
+  <div class="yabe left">
+  <span>矢部 照彦</span>
+  <p>
+  
+        「……っと。いい感じのとこ失礼するわ」
+  </p>
+  </div>
+  <div class="azusa left">
+  <span>六条 阿豆佐</span>
+  <p>
+  
+        「そいつは下忍殺しじゃないぞ！」
+  </p>
+  </div>
+  <div class="hittou left">
+  <span>ヒットウ</span>
+  <p>
+  
+        「グッ……貴公ら！望月は裏切った！今のうちに《下忍殺し》を断罪しろ！！」
+  </p>
+  </div>
+  <div class="yabe left">
+  <span>矢部 照彦</span>
+  <p>
+  
+        「フツーこういう時にこうやってくるんは、追いつめられとる奴の味方やねんけど」
+  </p>
+  </div>
+  <div class="lulu right">
+  <span>御薬袋 縷々</span>
+  <p>
+  
+        「えっ、格好つけてるような事言わないでよ」
+  </p>
+  </div>
+  <div class="yabe left">
+  <span>矢部 照彦</span>
+  <p>
+  
+        「みんな、誰の味方なん？仲ようしよや」
+  </p>
+  </div>
+  <div class="saou right">
+  <span>犬屋敷 紗桜</span>
+  <p>
+  
+        「ちがう！こいつは俺を殺しに来ただけだ！関係ない！」
+  </p>
+  </div>
+  <div class="lulu right">
+  <span>御薬袋 縷々</span>
+  <p>
+  
+        「じゃ、こっちとそっちとあっちで三陣営と」
+  </p>
+  </div>
+  <div class="yabe left">
+  <span>矢部 照彦</span>
+  <p>
+  
+        「はは。お熱いことやなぁ……女の子かばって、ほんまえらいわ」
+  </p>
+  </div>
+  <div class="kaede right">
+  <span>望月 カエデ</span>
+  <p>
+  
+        「紗桜……」
+  </p>
+  </div>
+  <div class="hittou left">
+  <span>ヒットウ</span>
+  <p>
+  
+        「ええい！シノビにとって【使命】こそ最優先！貴公ら！任せたぞ！」
+  </p>
+  </div>
+  <div class="azusa left">
+  <span>六条 阿豆佐</span>
+  <p>
+  
+        「麻生はこいつを偽物と知っていて処分しようとしている……」
+  </p>
+  </div>
+  <div class="yabe left">
+  <span>矢部 照彦</span>
+  <p>
+  
+        「はよふたりで逃げぇ。……と言いたいとこやねんけど、そうは問屋がおろさへんみたいでな」
+  </p>
+  </div>
+  <div class="lulu right">
+  <span>御薬袋 縷々</span>
+  <p>
+  
+        「そうそう。あ、そっちのシノビさんはどうでもいいわ」
+  </p>
+  </div>
+  <div class="azusa left">
+  <span>六条 阿豆佐</span>
+  <p>
+  
+        「身内の犯行を隠すために、、、犯人はお前だ矢部 照彦！！！」
+  </p>
+  </div>
+  <div class="yabe left">
+  <span>矢部 照彦</span>
+  <p>
+  
+        「！？なんで？なんでそうなるん！？」
+  </p>
+  </div>
+  <div class="lulu right">
+  <span>御薬袋 縷々</span>
+  <p>
+  
+        「え、そうだったのー！？」
+  </p>
+  </div>
+  <div class="yabe left">
+  <span>矢部 照彦</span>
+  <p>
+  
+        「お兄さんびっくりやわ……なんでそうなるん……思考回路から教えてほしいわ……」
+  </p>
+  </div>
+  <div class="azusa left">
+  <span>六条 阿豆佐</span>
+  <p>
+  
+        「そうだからだ！！お前を『断罪』するッ！！！」
+  </p>
+  </div>
+  <div class="yabe left">
+  <span>矢部 照彦</span>
+  <p>
+  
+        「うわー人の話聞かんお嬢ちゃんやな……仲ようしよ思とったのに」
+  </p>
+  </div>
+  <div class="lulu right">
+  <span>御薬袋 縷々</span>
+  <p>
+  
+        「あっちが終わる前にこっちを終わらせときます？」
+  </p>
+  </div>
+  <div class="yabe left">
+  <span>矢部 照彦</span>
+  <p>
+  
+        「俺が下忍殺しなわけないやん。んなことしたら首飛ぶだけじゃ済まされへんのやで？」
+  </p>
+  </div>
+  <div class="yabe left">
+  <span>矢部 照彦</span>
+  <p>
+  
+        「んなことしてみい、左遷で済めばええけどな、……考えるだけで恐ろしいわ」
+  </p>
+  </div>
+  <div class="lulu right">
+  <span>御薬袋 縷々</span>
+  <p>
+  
+        「私は全国行脚だからどうでもいいわー」
+  </p>
+  </div>
+  <div class="azusa left">
+  <span>六条 阿豆佐</span>
+  <p>
+  
+        「じゃあ犬屋敷が下忍殺し……？」
+  </p>
+  </div>
+  <div class="yabe left">
+  <span>矢部 照彦</span>
+  <p>
+  
+        「すまんな、こちとらヒラサカの犬で社畜やねん」
+  </p>
+  </div>
+  <div class="saou right">
+  <span>犬屋敷 紗桜</span>
+  <p>
+  
+        「…だれでもいい。邪魔する奴を殺すだけだ」
+  </p>
+  </div>
+  <div class="kp LtoR-early">
+  
+        戦闘開始
+  </div>
+  <div class="yabe left">
+  <span>矢部 照彦</span>
+  <p>
+  
+        「せやなぁ。面倒やけど……それが忍者らしいんとちゃうか」
+  </p>
+  </div>
+  <div class="azusa left">
+  <span>六条 阿豆佐</span>
+  <p>
+  
+        「いやお前しかいない！」
+  </p>
+  </div>
+  <div class="yabe left">
+  <span>矢部 照彦</span>
+  <p>
+  
+        「なんでや……なんでそうなるんやほんま」
+  </p>
+  </div>
+  <div class="kp LtoR-early">
+  
+        1ラウンド目
+  </div>
+  <div class="azusa left">
+  <span>六条 阿豆佐</span>
+  <p>
+  
+        影分身
+  </p>
+  </div>
+  <div class="azusa left">
+  <span>六条 阿豆佐</span>
+  <p>
+  
+        2D6&gt;=5 （判定：分身の術） (2D6&gt;=5) ＞ 7[3,4] ＞ 7 ＞ 成功
+        
+  </p>
+  </div>
+  <div class="kp LtoR-early">
+  
+        [ 六条　阿豆佐 ] がダイスシンボルを公開。出目は 6 です。
+  </div>
+  <div class="kp LtoR-early">
+  
+        [ 御薬袋 縷々 ] がダイスシンボルを公開。出目は 4 です。
+  </div>
+  <div class="kp LtoR-early">
+  
+        [ 犬屋敷　紗桜 ] がダイスシンボルを公開。出目は 3 です。
+  </div>
+  <div class="kp LtoR-early">
+  
+        [ 矢部 照彦 ] がダイスシンボルを公開。出目は 4 です。
+  </div>
+  <div class="kp LtoR-early">
+  
+        [ 六条　阿豆佐 ] がダイスシンボルを公開。出目は 3 です。
+  </div>
+  <div class="azusa left">
+  <span>六条 阿豆佐</span>
+  <p>
+  
+        飛傘
+  </p>
+  </div>
+  <div class="azusa left">
+  <span>六条 阿豆佐</span>
+  <p>
+  
+        2D6&gt;=5 （判定：登術） (2D6&gt;=5) ＞ 10[4,6] ＞ 10 ＞ 成功
+        
+  </p>
+  </div>
+  <div class="azusa left">
+  <span>六条 阿豆佐</span>
+  <p>
+  
+        待機
+  </p>
+  </div>
+  <div class="lulu right">
+  <span>御薬袋 縷々</span>
+  <p>
+  
+        六条さんに呪礫を
+  </p>
+  </div>
+  <div class="lulu right">
+  <span>御薬袋 縷々</span>
+  <p>
+  
+        2D6&gt;=5 （判定：仕込み） (2D6&gt;=5) ＞ 6[2,4] ＞ 6 ＞ 成功
+        
+  </p>
+  </div>
+  <div class="azusa left">
+  <span>六条 阿豆佐</span>
+  <p>
+  
+        2D6&gt;=8 （判定：登術） (2D6&gt;=8) ＞ 8[3,5] ＞ 8 ＞ 成功
+        
+  </p>
+  </div>
+  <div class="lulu right">
+  <span>御薬袋 縷々</span>
+  <p>
+  
+        遁甲符いこっか
+  </p>
+  </div>
+  <div class="azusa left">
+  <span>六条 阿豆佐</span>
+  <p>
+  
+        2D6&gt;=8 （判定：登術） (2D6&gt;=8) ＞ 3[1,2] ＞ 3 ＞ 失敗
+        
+  </p>
+  </div>
+  <div class="kp LtoR-early">
+  
+        [ 六条　阿豆佐 ] 器術 : 1 → 0
+  </div>
+  <div class="kp LtoR-early">
+  
+        [ 六条　阿豆佐 ] 体術 : 1 → 0
+  </div>
+  <div class="kp LtoR-early">
+  
+        [ 六条　阿豆佐 ] 忍術 : 1 → 0
+  </div>
+  <div class="azusa left">
+  <span>六条 阿豆佐</span>
+  <p>
+  
+        奥義！！
+  </p>
+  </div>
+  <div class="azusa left">
+  <span>六条 阿豆佐</span>
+  <p>
+  
+        ■奥義<br>《ヨシ！》<br>指定特技　：伝達術<br>エフェクト：不死身：いつでも使用できる。1D6からセッション中にこの奥義を使用した回数を引いた値（最低0、最初の使用時は1D6から1を引いた値）だけ自分の【生命力】を回復し、すべての変調を回復することができる。/目覚め：【目覚め】が追加された【不死身】によって【生命力】が回復すると、その奥義の効果を使ったシーンの間は、自分の攻撃が成功すると、通常の効果に加え、追加で接近戦ダメージを1点与えることができるようになる。/体質異常：【体質異常】が追加された【不死身】では、変調を回復することができなくなる。また、【体質異常】が追加された【不死身】を習得しているキャラクターは「兵糧丸」を使用しても効果が発生しなくなる。<br>効果・演出：ヨシ！！！！！
+  </p>
+  </div>
+  <div class="azusa left">
+  <span>六条 阿豆佐</span>
+  <p>
+  
+        1d6 (1D6) ＞ 6
+        
+  </p>
+  </div>
+  <div class="kp LtoR-early">
+  
+        [ 六条　阿豆佐 ] 器術 : 0 → 1
+  </div>
+  <div class="kp LtoR-early">
+  
+        [ 六条　阿豆佐 ] 体術 : 0 → 1
+  </div>
+  <div class="kp LtoR-early">
+  
+        [ 六条　阿豆佐 ] 忍術 : 0 → 1
+  </div>
+  <div class="kp LtoR-early">
+  
+        [ 六条　阿豆佐 ] 謀術 : 0 → 1
+  </div>
+  <div class="kp LtoR-early">
+  
+        [ 六条　阿豆佐 ] 妖術 : 0 → 1
+  </div>
+  <div class="kp LtoR-early">
+  
+        [ 六条　阿豆佐 ] 戦術 : 0 → 1
+  </div>
+  <div class="kp LtoR-early">
+  
+        [ 六条　阿豆佐 ] 謀術 : 0 → 1
+  </div>
+  <div class="kp LtoR-early">
+  
+        [ 六条　阿豆佐 ] 戦術 : 1 → 0
+  </div>
+  <div class="yabe left">
+  <span>矢部 照彦</span>
+  <p>
+  
+        大祓を六条さんと犬屋敷くんに
+  </p>
+  </div>
+  <div class="yabe left">
+  <span>矢部 照彦</span>
+  <p>
+  
+        2D6&gt;=5 （判定：流言の術） (2D6&gt;=5) ＞ 5[2,3] ＞ 5 ＞ 成功
+        
+  </p>
+  </div>
+  <div class="yabe left">
+  <span>矢部 照彦</span>
+  <p>
+  
+        揺らしを犬屋敷くんに
+  </p>
+  </div>
+  <div class="azusa left">
+  <span>六条 阿豆佐</span>
+  <p>
+  
+        2D6&gt;=7 （判定：分身の術） (2D6&gt;=7) ＞ 2[1,1] ＞ 2 ＞ ファンブル
+        
+  </p>
+  </div>
+  <div class="saou right">
+  <span>犬屋敷 紗桜</span>
+  <p>
+  
+        2D6&gt;=9 （判定：変装術） (2D6&gt;=9) ＞ 6[2,4] ＞ 6 ＞ 失敗
+        
+  </p>
+  </div>
+  <div class="kp LtoR-early">
+  
+        [ 犬屋敷　紗桜 ] 頑健 : 1 → 0
+  </div>
+  <div class="azusa left">
+  <span>六条 阿豆佐</span>
+  <p>
+  
+        ｗｔ 変調表(3) ＞ 重傷:次の自分の手番に行動すると、ランダムな特技分野１つの【生命力】に１点ダメージ。１サイクルの終了時に、《生存術》で成功すると無効化される。
+        
+  </p>
+  </div>
+  <div class="yabe left">
+  <span>矢部 照彦</span>
+  <p>
+  
+        wt 変調表(2) ＞ マヒ:修得済み特技がランダムに１つ使用不能になる。１サイクルの終了時に、《身体操術》で成功するとこの効果は無効化される。
+        
+  </p>
+  </div>
+  <div class="saou right">
+  <span>犬屋敷 紗桜</span>
+  <p>
+  
+        1ｄ6 (1D6) ＞ 4
+        
+  </p>
+  </div>
+  <div class="azusa left">
+  <span>六条 阿豆佐</span>
+  <p>
+  
+        1d6 (1D6) ＞ 6
+        
+  </p>
+  </div>
+  <div class="yabe left">
+  <span>矢部 照彦</span>
+  <p>
+  
+        
+  </p>
+  </div>
+  <div class="yabe left">
+  <span>矢部 照彦</span>
+  <p>
+  
+        「……こんなもんかいな、と！」
+  </p>
+  </div>
+  <div class="saou right">
+  <span>犬屋敷 紗桜</span>
+  <p>
+  
+        兵糧丸使用。麻痺治療
+  </p>
+  </div>
+  <div class="saou right">
+  <span>犬屋敷 紗桜</span>
+  <p>
+  
+        奥義！！
+  </p>
+  </div>
+  <div class="saou right">
+  <span>犬屋敷 紗桜</span>
+  <p>
+  
+        《狼桜牙》<br>指定特技　：異形化<br>エフェクト：範囲攻撃/撃ち/回数制限<br>効果・演出：異形と化した四肢で周囲を薙ぎ倒す。その姿は狼の牙の如く苛烈に赤い桜を舞い踊らせる。<br> 
+  </p>
+  </div>
+  <div class="azusa left">
+  <span>六条 阿豆佐</span>
+  <p>
+  
+        「やっとわかってくれたか」
+  </p>
+  </div>
+  <div class="saou right">
+  <span>犬屋敷 紗桜</span>
+  <p>
+  
+        矢部さんとるるちゃんへ
+  </p>
+  </div>
+  <div class="azusa left">
+  <span>六条 阿豆佐</span>
+  <p>
+  
+        「いままでのことは水に流してやろう」
+  </p>
+  </div>
+  <div class="kp LtoR-early">
+  
+        [ 御薬袋 縷々 ] 妖術 : 1 → 0
+  </div>
+  <div class="kp LtoR-early">
+  
+        [ 御薬袋 縷々 ] 忍術 : 1 → 0
+  </div>
+  <div class="kp LtoR-early">
+  
+        [ 御薬袋 縷々 ] 体術 : 1 → 0
+  </div>
+  <div class="kp LtoR-early">
+  
+        [ 矢部 照彦 ] 器術 : 1 → 0
+  </div>
+  <div class="kp LtoR-early">
+  
+        [ 矢部 照彦 ] 体術 : 1 → 0
+  </div>
+  <div class="saou right">
+  <span>犬屋敷 紗桜</span>
+  <p>
+  
+        「邪魔しないならそれでいい」
+  </p>
+  </div>
+  <div class="kp LtoR-early">
+  
+        [ 矢部 照彦 ] 戦術 : 1 → 0
+  </div>
+  <div class="azusa left">
+  <span>六条 阿豆佐</span>
+  <p>
+  
+        「ふん」
+  </p>
+  </div>
+  <div class="lulu right">
+  <span>御薬袋 縷々</span>
+  <p>
+  
+        「いったいなぁ。もう」
+  </p>
+  </div>
+  <div class="yabe left">
+  <span>矢部 照彦</span>
+  <p>
+  
+        「なかなかやるやん……」
+  </p>
+  </div>
+  <div class="yabe left">
+  <span>矢部 照彦</span>
+  <p>
+  
+        奥義！！
+  </p>
+  </div>
+  <div class="yabe left">
+  <span>矢部 照彦</span>
+  <p>
+  
+        ■奥義<br>《詭弁論者のイカサマ 》<br>指定特技　：記憶術<br>エフェクト：不死身／目覚め(1点以上回復するとそのシーンの間攻撃が成功したときさらに接近戦ダメージ+1)／体質異常(変調が回復できなくなり、兵糧丸使用不可になる)<br>効果・演出：死んだと思われたそれは、何度でもぬるりと生き返る。<br>しかしそれは、本当に確かなものだろうか。<br>詭弁論者のイカサマではなかったか。<br>
+  </p>
+  </div>
+  <div class="yabe left">
+  <span>矢部 照彦</span>
+  <p>
+  
+        1ｄ6 (1D6) ＞ 6
+        
+  </p>
+  </div>
+  <div class="kp LtoR-early">
+  
+        [ 矢部 照彦 ] 器術 : 0 → 1
+  </div>
+  <div class="kp LtoR-early">
+  
+        [ 矢部 照彦 ] 体術 : 0 → 1
+  </div>
+  <div class="kp LtoR-early">
+  
+        [ 矢部 照彦 ] 戦術 : 0 → 1
+  </div>
+  <div class="kp LtoR-early">
+  
+        [ 矢部 照彦 ] 妖術 : 0 → 1
+  </div>
+  <div class="kp LtoR-early">
+  
+        1ラウンド目終了
+  </div>
+  <div class="kp LtoR-early">
+  
+        2ラウンド目
+  </div>
+  <div class="azusa left">
+  <span>六条 阿豆佐</span>
+  <p>
+  
+        影分身
+  </p>
+  </div>
+  <div class="azusa left">
+  <span>六条 阿豆佐</span>
+  <p>
+  
+        2D6&gt;=5 （判定：分身の術） (2D6&gt;=5) ＞ 2[1,1] ＞ 2 ＞ ファンブル
+        
+  </p>
+  </div>
+  <div class="azusa left">
+  <span>六条 阿豆佐</span>
+  <p>
+  
+        ｆｔ ファンブル表(3) ＞ 情報が漏れる！　このゲームであなたが獲得した【秘密】は、他のキャラクター全員の知るところとなる。
+        
+  </p>
+  </div>
+  <div class="kp LtoR-early">
+  
+        [ 六条　阿豆佐 ] がダイスシンボルを公開。出目は 3 です。
+  </div>
+  <div class="kp LtoR-early">
+  
+        [ 犬屋敷　紗桜 ] がダイスシンボルを公開。出目は 2 です。
+  </div>
+  <div class="kp LtoR-early">
+  
+        [ 御薬袋 縷々 ] がダイスシンボルを公開。出目は 5 です。
+  </div>
+  <div class="kp LtoR-early">
+  
+        [ 矢部 照彦 ] がダイスシンボルを公開。出目は 4 です。
+  </div>
+  <div class="lulu right">
+  <span>御薬袋 縷々</span>
+  <p>
+  
+        六条さんに呪礫
+  </p>
+  </div>
+  <div class="lulu right">
+  <span>御薬袋 縷々</span>
+  <p>
+  
+        2D6&gt;=5 （判定：仕込み） (2D6&gt;=5) ＞ 9[4,5] ＞ 9 ＞ 成功
+        
+  </p>
+  </div>
+  <div class="azusa left">
+  <span>六条 阿豆佐</span>
+  <p>
+  
+        2D6&gt;=8 （判定：登術） (2D6&gt;=8) ＞ 6[2,4] ＞ 6 ＞ 失敗
+        
+  </p>
+  </div>
+  <div class="kp LtoR-early">
+  
+        [ 六条　阿豆佐 ] 妖術 : 1 → 0
+  </div>
+  <div class="yabe left">
+  <span>矢部 照彦</span>
+  <p>
+  
+        大祓を六条さんと犬屋敷くんに
+  </p>
+  </div>
+  <div class="yabe left">
+  <span>矢部 照彦</span>
+  <p>
+  
+        2D6&gt;=5 （判定：流言の術） (2D6&gt;=5) ＞ 4[2,2] ＞ 4 ＞ 失敗
+        
+  </p>
+  </div>
+  <div class="azusa left">
+  <span>六条 阿豆佐</span>
+  <p>
+  
+        怪鳥を本物に
+  </p>
+  </div>
+  <div class="azusa left">
+  <span>六条 阿豆佐</span>
+  <p>
+  
+        2D6&gt;=5 （判定：登術） (2D6&gt;=5) ＞ 7[3,4] ＞ 7 ＞ 成功
+        
+  </p>
+  </div>
+  <div class="yabe left">
+  <span>矢部 照彦</span>
+  <p>
+  
+        1ｄ6 (1D6) ＞ 4
+        
+  </p>
+  </div>
+  <div class="kp LtoR-early">
+  
+        [ 矢部 照彦 ] 謀術 : 1 → 0
+  </div>
+  <div class="yabe left">
+  <span>矢部 照彦</span>
+  <p>
+  
+        1ｄ6 (1D6) ＞ 1
+        
+  </p>
+  </div>
+  <div class="azusa left">
+  <span>六条 阿豆佐</span>
+  <p>
+  
+        「ヨシ！」
+  </p>
+  </div>
+  <div class="kp LtoR-early">
+  
+        [ 矢部 照彦 ] 器術 : 1 → 0
+  </div>
+  <div class="yabe left">
+  <span>矢部 照彦</span>
+  <p>
+  
+        「……幼女がきらいになりそうやわ」
+  </p>
+  </div>
+  <div class="saou right">
+  <span>犬屋敷 紗桜</span>
+  <p>
+  
+        矢部君ねらい
+  </p>
+  </div>
+  <div class="saou right">
+  <span>犬屋敷 紗桜</span>
+  <p>
+  
+        2D6&gt;=5 （判定：針術） (2D6&gt;=5) ＞ 8[4,4] ＞ 8 ＞ 成功
+        
+  </p>
+  </div>
+  <div class="saou right">
+  <span>犬屋敷 紗桜</span>
+  <p>
+  
+        2D6&gt;=5 （判定：異形化） (2D6&gt;=5) ＞ 6[2,4] ＞ 6 ＞ 成功
+        
+  </p>
+  </div>
+  <div class="yabe left">
+  <span>矢部 照彦</span>
+  <p>
+  
+        1ｄ6 (1D6) ＞ 1
+        
+  </p>
+  </div>
+  <div class="saou right">
+  <span>犬屋敷 紗桜</span>
+  <p>
+  
+        痛打からの血旋渦
+  </p>
+  </div>
+  <div class="yabe left">
+  <span>矢部 照彦</span>
+  <p>
+  
+        1ｄ6 (1D6) ＞ 5
+        
+  </p>
+  </div>
+  <div class="kp LtoR-early">
+  
+        [ 矢部 照彦 ] 戦術 : 1 → 0
+  </div>
+  <div class="kp LtoR-early">
+  
+        [ 矢部 照彦 ] 妖術 : 1 → 0
+  </div>
+  <div class="yabe left">
+  <span>矢部 照彦</span>
+  <p>
+  
+        奥義！！
+  </p>
+  </div>
+  <div class="yabe left">
+  <span>矢部 照彦</span>
+  <p>
+  
+        ■奥義<br>《詭弁論者のイカサマ 》<br>指定特技　：記憶術<br>エフェクト：不死身／目覚め(1点以上回復するとそのシーンの間攻撃が成功したときさらに接近戦ダメージ+1)／体質異常(変調が回復できなくなり、兵糧丸使用不可になる)<br>効果・演出：死んだと思われたそれは、何度でもぬるりと生き返る。<br>しかしそれは、本当に確かなものだろうか。<br>詭弁論者のイカサマではなかったか。<br>
+  </p>
+  </div>
+  <div class="saou right">
+  <span>犬屋敷 紗桜</span>
+  <p>
+  
+        2D6&gt;=8 （判定：変装術） (2D6&gt;=8) ＞ 2[1,1] ＞ 2 ＞ ファンブル
+        
+  </p>
+  </div>
+  <div class="azusa left">
+  <span>六条 阿豆佐</span>
+  <p>
+  
+        2D6&gt;=9 （判定：走法） (2D6&gt;=9) ＞ 6[1,5] ＞ 6 ＞ 失敗
+        
+  </p>
+  </div>
+  <div class="azusa left">
+  <span>六条 阿豆佐</span>
+  <p>
+  
+        回想シーン＋３点
+  </p>
+  </div>
+  <div class="azusa left">
+  <span>六条 阿豆佐</span>
+  <p>
+  
+        「お前だけは許さない！」
+  </p>
+  </div>
+  <div class="azusa left">
+  <span>六条 阿豆佐</span>
+  <p>
+  
+        ■PC4：【秘密】<br>------------------------<br>　あなたは《下忍殺し》に大切な人を奪われている。自らの手で復讐を遂げなければ気がすまない。<br>　あなたの本当の使命は『自らの手で《下忍殺し》の生命力を削った上で倒すこと』である。
+  </p>
+  </div>
+  <div class="azusa left">
+  <span>六条 阿豆佐</span>
+  <p>
+  
+        「お前は大切な命を奪った！」
+  </p>
+  </div>
+  <div class="yabe left">
+  <span>矢部 照彦</span>
+  <p>
+  
+        「俺？俺に言うとる？」
+  </p>
+  </div>
+  <div class="azusa left">
+  <span>六条 阿豆佐</span>
+  <p>
+  
+        「そうだ下忍殺し！！」
+  </p>
+  </div>
+  <div class="yabe left">
+  <span>矢部 照彦</span>
+  <p>
+  
+        「ほんまに？理由は？」
+  </p>
+  </div>
+  <div class="azusa left">
+  <span>六条 阿豆佐</span>
+  <p>
+  
+        「お、お前しかいないからだ！」
+  </p>
+  </div>
+  <div class="yabe left">
+  <span>矢部 照彦</span>
+  <p>
+  
+        「声震えとるで」
+  </p>
+  </div>
+  <div class="azusa left">
+  <span>六条 阿豆佐</span>
+  <p>
+  
+        「仇はとらせてもらう！」
+  </p>
+  </div>
+  <div class="yabe left">
+  <span>矢部 照彦</span>
+  <p>
+  
+        「誰の？覚えないんやけど」
+  </p>
+  </div>
+  <div class="azusa left">
+  <span>六条 阿豆佐</span>
+  <p>
+  
+        「この自分の仇をだ！！！！」
+  </p>
+  </div>
+  <div class="yabe left">
+  <span>矢部 照彦</span>
+  <p>
+  
+        「やから、自分のだれが下忍殺しにやられたんや」
+  </p>
+  </div>
+  <div class="azusa left">
+  <span>六条 阿豆佐</span>
+  <p>
+  
+        ーーーーー自分は忍猫の下忍だった……<br>
+  </p>
+  </div>
+  <div class="azusa left">
+  <span>六条 阿豆佐</span>
+  <p>
+  
+        ある日下忍狩りの噂が耳に入った。
+  </p>
+  </div>
+  <div class="azusa left">
+  <span>六条 阿豆佐</span>
+  <p>
+  
+        「返り討ちにすればヨシ！！！」
+  </p>
+  </div>
+  <div class="azusa left">
+  <span>六条 阿豆佐</span>
+  <p>
+  
+        自分は死んだ
+  </p>
+  </div>
+  <div class="azusa left">
+  <span>六条 阿豆佐</span>
+  <p>
+  
+        だがその高潔な魂は現世に留まっていた！
+  </p>
+  </div>
+  <div class="azusa left">
+  <span>六条 阿豆佐</span>
+  <p>
+  
+        そして幸運の女神が現れたーー
+  </p>
+  </div>
+  <div class="onnna left">
+  <span>おんなのこ</span>
+  <p>
+  
+        「猫ちゃん……？大丈夫……？」
+  </p>
+  </div>
+  <div class="azusa left">
+  <span>六条 阿豆佐</span>
+  <p>
+  
+        自分はこの女の子に憑依した
+  </p>
+  </div>
+  <div class="azusa azusa_neko left">
+  <span>六条 阿豆佐</span>
+  <p>
+  
+        「ヨシ！」
+  </p>
+  </div>
+  <div class="azusa azusa_neko left">
+  <span>六条 阿豆佐</span>
+  <p>
+  
+        人間の体を得た自分は中忍となった
+  </p>
+  </div>
+  <div class="azusa azusa_neko left">
+  <span>六条 阿豆佐</span>
+  <p>
+  
+        そして誓った。あの邪悪な下忍殺しをなんとしても『断罪』してやると！！！
+  </p>
+  </div>
+  <div class="azusa left">
+  <span>六条 阿豆佐</span>
+  <p>
+  
+        回想終わり
+  </p>
+  </div>
+  <div class="azusa left">
+  <span>六条 阿豆佐</span>
+  <p>
+  
+        「お前だけは殺す！！！」
+  </p>
+  </div>
+  <div class="yabe left">
+  <span>矢部 照彦</span>
+  <p>
+  
+        「いや俺かわからんやんけ……」
+  </p>
+  </div>
+  <div class="yabe left">
+  <span>矢部 照彦</span>
+  <p>
+  
+        「濡れ衣だったらどうするん？なぁ？」
+  </p>
+  </div>
+  <div class="azusa left">
+  <span>六条 阿豆佐</span>
+  <p>
+  
+        「黙れ！お前が下忍殺し！！」
+  </p>
+  </div>
+  <div class="azusa left">
+  <span>六条 阿豆佐</span>
+  <p>
+  
+        奥義！！
+  </p>
+  </div>
+  <div class="azusa left">
+  <span>六条 阿豆佐</span>
+  <p>
+  
+        ■奥義<br>《ヨシ！》<br>指定特技　：伝達術<br>エフェクト：不死身：いつでも使用できる。1D6からセッション中にこの奥義を使用した回数を引いた値（最低0、最初の使用時は1D6から1を引いた値）だけ自分の【生命力】を回復し、すべての変調を回復することができる。/目覚め：【目覚め】が追加された【不死身】によって【生命力】が回復すると、その奥義の効果を使ったシーンの間は、自分の攻撃が成功すると、通常の効果に加え、追加で接近戦ダメージを1点与えることができるようになる。/体質異常：【体質異常】が追加された【不死身】では、変調を回復することができなくなる。また、【体質異常】が追加された【不死身】を習得しているキャラクターは「兵糧丸」を使用しても効果が発生しなくなる。<br>効果・演出：ヨシ！！！！！
+  </p>
+  </div>
+  <div class="azusa left">
+  <span>六条 阿豆佐</span>
+  <p>
+  
+        ヨシ！！！！！！！！！！！！
+  </p>
+  </div>
+  <div class="lulu right">
+  <span>御薬袋 縷々</span>
+  <p>
+  
+        奥義破り 経済力で
+  </p>
+  </div>
+  <div class="lulu right">
+  <span>御薬袋 縷々</span>
+  <p>
+  
+        2D6&gt;=8 （判定：経済力） (2D6&gt;=8) ＞ 4[1,3] ＞ 4 ＞ 失敗
+        
+  </p>
+  </div>
+  <div class="azusa left">
+  <span>六条 阿豆佐</span>
+  <p>
+  
+        「ヨシ！！」
+  </p>
+  </div>
+  <div class="azusa left">
+  <span>六条 阿豆佐</span>
+  <p>
+  
+        １ｄ６ (1D6) ＞ 5
+        
+  </p>
+  </div>
+  <div class="kp LtoR-early">
+  
+        [ 六条　阿豆佐 ] 戦術 : 0 → 1
+  </div>
+  <div class="kp LtoR-early">
+  
+        [ 六条　阿豆佐 ] 妖術 : 0 → 1
+  </div>
+  <div class="azusa left">
+  <span>六条 阿豆佐</span>
+  <p>
+  
+        「ヨシ！！！！！！」
+  </p>
+  </div>
+  <div class="kp LtoR-early">
+  
+        2ラウンド目終了
+  </div>
+  <div class="azusa left">
+  <span>六条 阿豆佐</span>
+  <p>
+  
+        誘導
+  </p>
+  </div>
+  <div class="azusa left">
+  <span>六条 阿豆佐</span>
+  <p>
+  
+        2D6&gt;=5 （判定：走法） (2D6&gt;=5) ＞ 4[1,3] ＞ 4 ＞ 失敗
+        
+  </p>
+  </div>
+  <div class="kp LtoR-early">
+  
+        3ラウンド目
+  </div>
+  <div class="azusa left">
+  <span>六条 阿豆佐</span>
+  <p>
+  
+        影分身
+  </p>
+  </div>
+  <div class="azusa left">
+  <span>六条 阿豆佐</span>
+  <p>
+  
+        2D6&gt;=5 （判定：分身の術） (2D6&gt;=5) ＞ 5[2,3] ＞ 5 ＞ 成功
+        
+  </p>
+  </div>
+  <div class="kp LtoR-early">
+  
+        [ 犬屋敷　紗桜 ] がダイスシンボルを3 に変更しました。
+  </div>
+  <div class="kp LtoR-early">
+  
+        一方その頃――
+  </div>
+  <div class="hittou left">
+  <span>ヒットウ</span>
+  <p>
+  
+        「お、おのれ……！こうなれば全員道連れに……！」
+  </p>
+  </div>
+  <div class="kaede right">
+  <span>望月 カエデ</span>
+  <p>
+  
+        「！？何する気！？」
+  </p>
+  </div>
+  <div class="hittou left">
+  <span>ヒットウ</span>
+  <p>
+  
+        「わが最大奥義……サヨナラ自爆大殺法にてこの場所ごと更地にしてくれるわ！」
+  </p>
+  </div>
+  <div class="kaede right">
+  <span>望月 カエデ</span>
+  <p>
+  
+        「！？」
+  </p>
+  </div>
+  <div class="kp LtoR-early">
+  
+        [ 六条　阿豆佐 ] がダイスシンボルを公開。出目は 6 です。
+  </div>
+  <div class="kp LtoR-early">
+  
+        [ 犬屋敷　紗桜 ] がダイスシンボルを公開。出目は 4 です。
+  </div>
+  <div class="kp LtoR-early">
+  
+        [ 御薬袋 縷々 ] がダイスシンボルを公開。出目は 2 です。
+  </div>
+  <div class="kp LtoR-early">
+  
+        [ 矢部 照彦 ] がダイスシンボルを公開。出目は 4 です。
+  </div>
+  <div class="kp LtoR-early">
+  
+        [ 六条　阿豆佐 ] がダイスシンボルを公開。出目は 3 です。
+  </div>
+  <div class="azusa left">
+  <span>六条 阿豆佐</span>
+  <p>
+  
+        ６
+  </p>
+  </div>
+  <div class="azusa left">
+  <span>六条 阿豆佐</span>
+  <p>
+  
+        「早く片付けて彼女を救うぞ！犬屋敷！」
+  </p>
+  </div>
+  <div class="saou right">
+  <span>犬屋敷 紗桜</span>
+  <p>
+  
+        「指図すんな猫！今だけだお前に合わせんのは！」
+  </p>
+  </div>
+  <div class="azusa left">
+  <span>六条 阿豆佐</span>
+  <p>
+  
+        矢部氏に怪鳥
+  </p>
+  </div>
+  <div class="azusa left">
+  <span>六条 阿豆佐</span>
+  <p>
+  
+        2D6&gt;=5 （判定：登術） (2D6&gt;=5) ＞ 7[3,4] ＞ 7 ＞ 成功
+        
+  </p>
+  </div>
+  <div class="azusa left">
+  <span>六条 阿豆佐</span>
+  <p>
+  
+        「ヨシ！！」
+  </p>
+  </div>
+  <div class="yabe left">
+  <span>矢部 照彦</span>
+  <p>
+  
+        2D6&gt;=11 （判定：手練） (2D6&gt;=11) ＞ 9[3,6] ＞ 9 ＞ 失敗
+        
+  </p>
+  </div>
+  <div class="azusa left">
+  <span>六条 阿豆佐</span>
+  <p>
+  
+        「ヨシ！！」
+  </p>
+  </div>
+  <div class="yabe left">
+  <span>矢部 照彦</span>
+  <p>
+  
+        奥義！！
+  </p>
+  </div>
+  <div class="yabe left">
+  <span>矢部 照彦</span>
+  <p>
+  
+        ■奥義<br>《詭弁論者のイカサマ 》<br>指定特技　：記憶術<br>エフェクト：不死身／目覚め(1点以上回復するとそのシーンの間攻撃が成功したときさらに接近戦ダメージ+1)／体質異常(変調が回復できなくなり、兵糧丸使用不可になる)<br>効果・演出：死んだと思われたそれは、何度でもぬるりと生き返る。<br>しかしそれは、本当に確かなものだろうか。<br>詭弁論者のイカサマではなかったか。
+  </p>
+  </div>
+  <div class="azusa left">
+  <span>六条 阿豆佐</span>
+  <p>
+  
+        2D6&gt;=9 （判定：走法） (2D6&gt;=9) ＞ 10[4,6] ＞ 10 ＞ 成功
+        
+  </p>
+  </div>
+  <div class="azusa left">
+  <span>六条 阿豆佐</span>
+  <p>
+  
+        「ヨシ！！！！！」
+  </p>
+  </div>
+  <div class="yabe left">
+  <span>矢部 照彦</span>
+  <p>
+  
+        六条ちゃんに遁甲符使用
+  </p>
+  </div>
+  <div class="azusa left">
+  <span>六条 阿豆佐</span>
+  <p>
+  
+        2D6&gt;=9 （判定：走法） (2D6&gt;=9) ＞ 6[2,4] ＞ 6 ＞ 失敗
+        
+  </p>
+  </div>
+  <div class="saou right">
+  <span>犬屋敷 紗桜</span>
+  <p>
+  
+        2D6&gt;=8 （判定：変装術） (2D6&gt;=8) ＞ 9[3,6] ＞ 9 ＞ 成功
+        
+  </p>
+  </div>
+  <div class="yabe left">
+  <span>矢部 照彦</span>
+  <p>
+  
+        回想シーン＋３
+  </p>
+  </div>
+  <div class="yabe left">
+  <span>矢部 照彦</span>
+  <p>
+  
+        ■PC3：【秘密】<br>------------------------<br>　あなたは実は本物の《下忍殺し》である。暇潰しに下忍を殺していたら騒ぎになってしまったので、PC1を罠に嵌め濡れ衣を着せた。<br>　あなたの本当の使命は『この秘密を見たＰＣをすべて倒すこと』である。<br>（自らの手で生命力を0にする必要はない）<br>
+  </p>
+  </div>
+  <div class="azusa left">
+  <span>六条 阿豆佐</span>
+  <p>
+  
+        「お前じゃねえか！！！」
+  </p>
+  </div>
+  <div class="lulu right">
+  <span>御薬袋 縷々</span>
+  <p>
+  
+        「わぁ」
+  </p>
+  </div>
+  <div class="saou right">
+  <span>犬屋敷 紗桜</span>
+  <p>
+  
+        「てめぇ…っ」
+  </p>
+  </div>
+  <div class="azusa left">
+  <span>六条 阿豆佐</span>
+  <p>
+  
+        「許さない……っ！」
+  </p>
+  </div>
+  <div class="yabe left">
+  <span>矢部 照彦</span>
+  <p>
+  
+        「ばれてしもてはしゃあないなぁ……そうや俺や。ここでばらしたら俺は目的を達成できんなるなぁ……みんな血気盛んでかなわんわ。下忍どもとは大違いや」
+  </p>
+  </div>
+  <div class="lulu right">
+  <span>御薬袋 縷々</span>
+  <p>
+  
+        「わぁわぁわぁ」
+  </p>
+  </div>
+  <div class="azusa left">
+  <span>六条 阿豆佐</span>
+  <p>
+  
+        「おのれ比良坂……ぁっ！」
+  </p>
+  </div>
+  <div class="yabe left">
+  <span>矢部 照彦</span>
+  <p>
+  
+        ーーーーーーーー回想
+  </p>
+  </div>
+  <div class="yabe left">
+  <span>矢部 照彦</span>
+  <p>
+  
+        彼の足元には血だまりができている。胸元をつかんでいた下忍を、まるでゴミでも放るように彼はぽいと血だまりに投げ捨てた。
+  </p>
+  </div>
+  <div class="sansita left">
+  <span>サンシタ</span>
+  <p>
+  
+        「ザッケ……」
+  </p>
+  </div>
+  <div class="azusa left">
+  <span>六条 阿豆佐</span>
+  <p>
+  
+        「」
+  </p>
+  </div>
+  <div class="yabe left">
+  <span>矢部 照彦</span>
+  <p>
+  
+        「ざこがなんぼ死んでも大して変わりないやろ？殺されるようなざこ生きとってもしゃあない思うねんなぁ……。俺の“みんな”いうんは、ちゃんと仕事できるつよぉい奴だけやで」
+  </p>
+  </div>
+  <div class="yabe left">
+  <span>矢部 照彦</span>
+  <p>
+  
+        「ちゃんと仕事できるつよぉい奴が仲良うしとったら、仕事も円滑に進むやん？ヘボを殺して何が悪いんや。将来の足手まといを俺が始末したっただけやで。幸せに思いぃ」
+  </p>
+  </div>
+  <div class="yabe left">
+  <span>矢部 照彦</span>
+  <p>
+  
+        「俺に始末されて死ぬか、将来任務失敗して死ぬか、どっちがええんやろな？どっちが傷浅い思う？」
+  </p>
+  </div>
+  <div class="yabe left">
+  <span>矢部 照彦</span>
+  <p>
+  
+        「おもろいなほんま自分ら。ええ目やな。おぉ、ええぞ、俺を恨んでくれたらええ。ほいですっきりするんやったらそんでええねん」
+  </p>
+  </div>
+  <div class="yabe left">
+  <span>矢部 照彦</span>
+  <p>
+  
+        「みんな仲良うしとったら、俺みたいなあぶれもんおらんくてすむのになぁ……お前らみたいな出来損ない、殺さんくて済むのになぁ……かわいそうになぁ……もっと仕事できたらよかったのになぁ」
+  </p>
+  </div>
+  <div class="yabe left">
+  <span>矢部 照彦</span>
+  <p>
+  
+        「ちょうどいい暇が潰せたで。それだけでも、存在価値あったかもしれんな？なぁ？よかったなぁ、ここで死ねることで存在理由できたやん」
+  </p>
+  </div>
+  <div class="azusa left">
+  <span>六条 阿豆佐</span>
+  <p>
+  
+        「仕事ができないから殺した……だと……?」
+  </p>
+  </div>
+  <div class="sansita left">
+  <span>サンシタ</span>
+  <p>
+  
+        「ワッザ……」
+  </p>
+  </div>
+  <div class="azusa left">
+  <span>六条 阿豆佐</span>
+  <p>
+  
+        「そんなことで……」
+  </p>
+  </div>
+  <div class="yabe left">
+  <span>矢部 照彦</span>
+  <p>
+  
+        血だまりの中の頭をぐりぐりと革靴で踏みにじりながら、彼は自嘲気味に言う。
+  </p>
+  </div>
+  <div class="azusa left">
+  <span>六条 阿豆佐</span>
+  <p>
+  
+        「…………」
+  </p>
+  </div>
+  <div class="yabe left">
+  <span>矢部 照彦</span>
+  <p>
+  
+        「ええなぁ、存在意義があって……俺はなんもないからなぁ……からっぽに血ぃ塗ったところで、あかぁなるだけやからなぁ……」
+  </p>
+  </div>
+  <div class="yabe left">
+  <span>矢部 照彦</span>
+  <p>
+  
+        「……あかんな、見つこうたらクビやな……ったく、自分らみたいな雑魚でも、死体処理せなあかんの、ほんま、バグっとるで。自分らで消えてくれんかなぁ」
+  </p>
+  </div>
+  <div class="yabe left">
+  <span>矢部 照彦</span>
+  <p>
+  
+        「……バレてしもた時用に、濡れ衣かぶせるやつ、みつくろっとこか。はぁ～思いついてまったから仕事増えた。はぁ……」
+  </p>
+  </div>
+  <div class="yabe left">
+  <span>矢部 照彦</span>
+  <p>
+  
+        血の臭いが充満する中に、タバコの煙がふわふわと浮遊する。<br>彼のこの姿を見たものは、誰もいない。
+  </p>
+  </div>
+  <div class="yabe left">
+  <span>矢部 照彦</span>
+  <p>
+  
+        ーーーーーーーーーーー回想終了
+  </p>
+  </div>
+  <div class="azusa left">
+  <span>六条 阿豆佐</span>
+  <p>
+  
+        「……っ！！！」
+  </p>
+  </div>
+  <div class="saou right">
+  <span>犬屋敷 紗桜</span>
+  <p>
+  
+        「ふざけやがって…っ」
+  </p>
+  </div>
+  <div class="azusa left">
+  <span>六条 阿豆佐</span>
+  <p>
+  
+        「お前は！！こんなことをして何もおもわないのか！！？」
+  </p>
+  </div>
+  <div class="yabe left">
+  <span>矢部 照彦</span>
+  <p>
+  
+        「なんやその顔。かわいらしいことやなほんま。罪もない女の子に憑りついて自分こそなんも思わんのんか？おめでたい頭やな」
+  </p>
+  </div>
+  <div class="yabe left">
+  <span>矢部 照彦</span>
+  <p>
+  
+        「俺は仕事の邪魔にならん奴は巻き込まん。無能なのが悪いんや」
+  </p>
+  </div>
+  <div class="lulu right">
+  <span>御薬袋 縷々</span>
+  <p>
+  
+        「うっわ、最高」（ﾎﾞｿﾎﾞｿ
+  </p>
+  </div>
+  <div class="azusa left">
+  <span>六条 阿豆佐</span>
+  <p>
+  
+        「自分が……無能……？」
+  </p>
+  </div>
+  <div class="yabe left">
+  <span>矢部 照彦</span>
+  <p>
+  
+        「忍者なんかになったのが運の尽きやろ、自分みたいなんは……まぁ、そのしぶとさ、粘り強さだけは褒めたってもええ」
+  </p>
+  </div>
+  <div class="yabe left">
+  <span>矢部 照彦</span>
+  <p>
+  
+        犬屋敷と六条に大祓
+  </p>
+  </div>
+  <div class="azusa left">
+  <span>六条 阿豆佐</span>
+  <p>
+  
+        「なんとしてもこいつを倒すぞ！犬屋敷！！」
+  </p>
+  </div>
+  <div class="yabe left">
+  <span>矢部 照彦</span>
+  <p>
+  
+        2D6&gt;=6 （判定：隠蔽術） (2D6&gt;=6) ＞ 2[1,1] ＞ 2 ＞ ファンブル
+        
+  </p>
+  </div>
+  <div class="saou right">
+  <span>犬屋敷 紗桜</span>
+  <p>
+  
+        「あたりまえだ！！！」
+  </p>
+  </div>
+  <div class="saou right">
+  <span>犬屋敷 紗桜</span>
+  <p>
+  
+        2D6&gt;=5 （判定：針術） (2D6&gt;=5) ＞ 6[1,5] ＞ 6 ＞ 成功
+        
+  </p>
+  </div>
+  <div class="saou right">
+  <span>犬屋敷 紗桜</span>
+  <p>
+  
+        2D6&gt;=5 （判定：針術） (2D6&gt;=5) ＞ 12[6,6] ＞ 12 ＞ スペシャル(【生命力】1点か変調一つを回復)
+        
+  </p>
+  </div>
+  <div class="saou right">
+  <span>犬屋敷 紗桜</span>
+  <p>
+  
+        矢部くんに痛打と接近戦
+  </p>
+  </div>
+  <div class="kp LtoR-early">
+  
+        [ 犬屋敷　紗桜 ] 頑健 : 0 → 1
+  </div>
+  <div class="yabe left">
+  <span>矢部 照彦</span>
+  <p>
+  
+        2D6&gt;=7 （判定：手練） (2D6&gt;=7) ＞ 2[1,1] ＞ 2 ＞ ファンブル
+        
+  </p>
+  </div>
+  <div class="azusa left">
+  <span>六条 阿豆佐</span>
+  <p>
+  
+        「！？いや待てよけろ矢部！」
+  </p>
+  </div>
+  <div class="lulu right">
+  <span>御薬袋 縷々</span>
+  <p>
+  
+        「え、え？」
+  </p>
+  </div>
+  <div class="saou right">
+  <span>犬屋敷 紗桜</span>
+  <p>
+  
+        1ｄ6 (1D6) ＞ 4
+        
+  </p>
+  </div>
+  <div class="azusa left">
+  <span>六条 阿豆佐</span>
+  <p>
+  
+        「自分の手で殺せない！」
+  </p>
+  </div>
+  <div class="kp LtoR-early">
+  
+        [ 矢部 照彦 ] 体術 : 1 → 0
+  </div>
+  <div class="kp LtoR-early">
+  
+        [ 矢部 照彦 ] 忍術 : 1 → 0
+  </div>
+  <div class="saou right">
+  <span>犬屋敷 紗桜</span>
+  <p>
+  
+        「しねぇえええ！！！」
+  </p>
+  </div>
+  <div class="azusa left">
+  <span>六条 阿豆佐</span>
+  <p>
+  
+        「まだしぬなぁあああ！！！」
+  </p>
+  </div>
+  <div class="yabe left">
+  <span>矢部 照彦</span>
+  <p>
+  
+        「はっ。無能は死ぬ……俺が言うたことや、自分だけ特別扱いはせん。俺は死ぬんやな、お前らに殺されて……存在理由、できたやろか？なぁ、自分らにとって、俺は……」
+  </p>
+  </div>
+  <div class="yabe left">
+  <span>矢部 照彦</span>
+  <p>
+  
+        「意味、あったか……？」倒れる
+  </p>
+  </div>
+  <div class="lulu right">
+  <span>御薬袋 縷々</span>
+  <p>
+  
+        犬屋敷くんに呪礫で
+  </p>
+  </div>
+  <div class="lulu right">
+  <span>御薬袋 縷々</span>
+  <p>
+  
+        2D6&gt;=5 （判定：仕込み） (2D6&gt;=5) ＞ 6[2,4] ＞ 6 ＞ 成功
+        
+  </p>
+  </div>
+  <div class="saou right">
+  <span>犬屋敷 紗桜</span>
+  <p>
+  
+        2D6&gt;=6 （判定：針術） (2D6&gt;=6) ＞ 4[1,3] ＞ 4 ＞ 失敗
+        
+  </p>
+  </div>
+  <div class="saou right">
+  <span>犬屋敷 紗桜</span>
+  <p>
+  
+        神通丸使用
+  </p>
+  </div>
+  <div class="saou right">
+  <span>犬屋敷 紗桜</span>
+  <p>
+  
+        2D6&gt;=6 （判定：針術） (2D6&gt;=6) ＞ 7[2,5] ＞ 7 ＞ 成功
+        
+  </p>
+  </div>
+  <div class="saou right">
+  <span>犬屋敷 紗桜</span>
+  <p>
+  
+        2D6&gt;=5 （判定：針術） (2D6&gt;=5) ＞ 6[1,5] ＞ 6 ＞ 成功
+        
+  </p>
+  </div>
+  <div class="saou right">
+  <span>犬屋敷 紗桜</span>
+  <p>
+  
+        返し技
+  </p>
+  </div>
+  <div class="kp LtoR-early">
+  
+        [ 御薬袋 縷々 ] 謀術 : 1 → 0
+  </div>
+  <div class="kp LtoR-early">
+  
+        3ラウンド目終了
+  </div>
+  <div class="kp LtoR-early">
+  
+        4ラウンド目
+  </div>
+  <div class="azusa left">
+  <span>六条 阿豆佐</span>
+  <p>
+  
+        影分身
+  </p>
+  </div>
+  <div class="hittou left">
+  <span>ヒットウ</span>
+  <p>
+  
+        「おのれ……矢部！！許せん！」
+  </p>
+  </div>
+  <div class="azusa left">
+  <span>六条 阿豆佐</span>
+  <p>
+  
+        2D6&gt;=5 （判定：分身の術） (2D6&gt;=5) ＞ 11[5,6] ＞ 11 ＞ 成功
+        
+  </p>
+  </div>
+  <div class="kaede right">
+  <span>望月 カエデ</span>
+  <p>
+  
+        「はぁ……はぁ……ようやくわかった…？」
+  </p>
+  </div>
+  <div class="hittou left">
+  <span>ヒットウ</span>
+  <p>
+  
+        「我が身もろとも亡き下忍たちの跡を追わせてやる！！」
+  </p>
+  </div>
+  <div class="yabe left">
+  <span>矢部 照彦</span>
+  <p>
+  
+        （まだや、あきらめんな、がんばりやお姉様……あんたみたいなんおったん、知らんかったんやで）
+  </p>
+  </div>
+  <div class="kaede right">
+  <span>望月 カエデ</span>
+  <p>
+  
+        「！？なんで！？」
+  </p>
+  </div>
+  <div class="kp LtoR-early">
+  
+        [ 犬屋敷　紗桜 ] がダイスシンボルを公開。出目は 3 です。
+  </div>
+  <div class="kp LtoR-early">
+  
+        [ 御薬袋 縷々 ] がダイスシンボルを公開。出目は 6 です。
+  </div>
+  <div class="kp LtoR-early">
+  
+        [ 六条　阿豆佐 ] がダイスシンボルを公開。出目は 5 です。
+  </div>
+  <div class="kp LtoR-early">
+  
+        [ 六条　阿豆佐 ] がダイスシンボルを公開。出目は 3 です。
+  </div>
+  <div class="azusa left">
+  <span>六条 阿豆佐</span>
+  <p>
+  
+        ３
+  </p>
+  </div>
+  <div class="saou right">
+  <span>犬屋敷 紗桜</span>
+  <p>
+  
+        2D6&gt;=5 （判定：針術） (2D6&gt;=5) ＞ 10[5,5] ＞ 10 ＞ 成功
+        
+  </p>
+  </div>
+  <div class="saou right">
+  <span>犬屋敷 紗桜</span>
+  <p>
+  
+        2D6&gt;=5 （判定：異形化） (2D6&gt;=5) ＞ 9[3,6] ＞ 9 ＞ 成功
+        
+  </p>
+  </div>
+  <div class="lulu right">
+  <span>御薬袋 縷々</span>
+  <p>
+  
+        2D6&gt;=6 （判定：兵糧術） (2D6&gt;=6) ＞ 10[4,6] ＞ 10 ＞ 成功
+        
+  </p>
+  </div>
+  <div class="saou right">
+  <span>犬屋敷 紗桜</span>
+  <p>
+  
+        るるちゃんに痛打血旋渦
+  </p>
+  </div>
+  <div class="azusa left">
+  <span>六条 阿豆佐</span>
+  <p>
+  
+        待機
+  </p>
+  </div>
+  <div class="kp LtoR-early">
+  
+        4ラウンド目終了
+  </div>
+  <div class="saou right">
+  <span>犬屋敷 紗桜</span>
+  <p>
+  
+        「ッチ…こざかしい女」
+  </p>
+  </div>
+  <div class="hittou left">
+  <span>ヒットウ</span>
+  <p>
+  
+        「輝け！！我がボディ！！」
+  </p>
+  </div>
+  <div class="kaede right">
+  <span>望月 カエデ</span>
+  <p>
+  
+        「ッ！紗桜避けて！」
+  </p>
+  </div>
+  <div class="azusa left">
+  <span>六条 阿豆佐</span>
+  <p>
+  
+        「なぜあんな奴に心酔する！」
+  </p>
+  </div>
+  <div class="hittou left">
+  <span>ヒットウ</span>
+  <p>
+  
+        「サ　ヨ　ナ　ラ　！！」
+  </p>
+  </div>
+  <div class="saou right">
+  <span>犬屋敷 紗桜</span>
+  <p>
+  
+        「先に帰っとけカエデ！！」
+  </p>
+  </div>
+  <div class="kp LtoR-early">
+  
+        戦場が極所に固定されました
+  </div>
+  <div class="kp LtoR-early">
+  
+        1d6 (1D6) ＞ 1
+        
+  </div>
+  <div class="azusa left">
+  <span>六条 阿豆佐</span>
+  <p>
+  
+        １ｄ６ (1D6) ＞ 2
+        
+  </p>
+  </div>
+  <div class="lulu right">
+  <span>御薬袋 縷々</span>
+  <p>
+  
+        1D6 (1D6) ＞ 2
+        
+  </p>
+  </div>
+  <div class="saou right">
+  <span>犬屋敷 紗桜</span>
+  <p>
+  
+        1ｄ6 (1D6) ＞ 5
+        
+  </p>
+  </div>
+  <div class="kp LtoR-early">
+  
+        [ 犬屋敷　紗桜 ] 頑健 : 1 → 0
+  </div>
+  <div class="kp LtoR-early">
+  
+        [ 御薬袋 縷々 ] 器術 : 1 → 0
+  </div>
+  <div class="kp LtoR-early">
+  
+        [ 六条　阿豆佐 ] 体術 : 1 → 0
+  </div>
+  <div class="kp LtoR-early">
+  
+        5ラウンド目
+  </div>
+  <div class="azusa left">
+  <span>六条 阿豆佐</span>
+  <p>
+  
+        影分身　2D6&gt;=5 （判定：分身の術）
+  </p>
+  </div>
+  <div class="azusa left">
+  <span>六条 阿豆佐</span>
+  <p>
+  
+        2D6&gt;=5 （判定：分身の術） (2D6&gt;=5) ＞ 8[3,5] ＞ 8 ＞ 成功
+        
+  </p>
+  </div>
+  <div class="kp LtoR-early">
+  
+        [ 犬屋敷　紗桜 ] がダイスシンボルを公開。出目は 4 です。
+  </div>
+  <div class="kp LtoR-early">
+  
+        [ 御薬袋 縷々 ] がダイスシンボルを公開。出目は 4 です。
+  </div>
+  <div class="kp LtoR-early">
+  
+        [ 六条　阿豆佐 ] がダイスシンボルを公開。出目は 5 です。
+  </div>
+  <div class="kp LtoR-early">
+  
+        [ 六条　阿豆佐 ] がダイスシンボルを公開。出目は 3 です。
+  </div>
+  <div class="azusa left">
+  <span>六条 阿豆佐</span>
+  <p>
+  
+        5
+  </p>
+  </div>
+  <div class="azusa left">
+  <span>六条 阿豆佐</span>
+  <p>
+  
+        御薬袋 縷々に怪鳥
+  </p>
+  </div>
+  <div class="azusa left">
+  <span>六条 阿豆佐</span>
+  <p>
+  
+        2D6&gt;=5 （判定：登術） (2D6&gt;=5) ＞ 5[1,4] ＞ 5 ＞ 成功
+        
+  </p>
+  </div>
+  <div class="azusa left">
+  <span>六条 阿豆佐</span>
+  <p>
+  
+        逆凪
+  </p>
+  </div>
+  <div class="saou right">
+  <span>犬屋敷 紗桜</span>
+  <p>
+  
+        2D6&gt;=5 （判定：針術） (2D6&gt;=5) ＞ 8[4,4] ＞ 8 ＞ 成功
+        
+  </p>
+  </div>
+  <div class="saou right">
+  <span>犬屋敷 紗桜</span>
+  <p>
+  
+        2D6&gt;=5 （判定：針術） (2D6&gt;=5) ＞ 5[1,4] ＞ 5 ＞ 成功
+        
+  </p>
+  </div>
+  <div class="saou right">
+  <span>犬屋敷 紗桜</span>
+  <p>
+  
+        るるちゃんに痛打の接近戦
+  </p>
+  </div>
+  <div class="lulu right">
+  <span>御薬袋 縷々</span>
+  <p>
+  
+        2D6&gt;=14 （判定：用兵術） (2D6&gt;=14) ＞ 9[4,5] ＞ 9 ＞ 失敗
+        
+  </p>
+  </div>
+  <div class="lulu right">
+  <span>御薬袋 縷々</span>
+  <p>
+  
+        2D6&gt;=14 （判定：用兵術） (2D6&gt;=14) ＞ 3[1,2] ＞ 3 ＞ 失敗
+        
+  </p>
+  </div>
+  <div class="lulu right">
+  <span>御薬袋 縷々</span>
+  <p>
+  
+        奥義！！
+  </p>
+  </div>
+  <div class="lulu right">
+  <span>御薬袋 縷々</span>
+  <p>
+  
+        ■奥義<br>《兵戈槍攘 -へいかそうじょう-》<br>指定特技　：用兵術<br>エフェクト：クリティカルヒット/乱れ/射程低下<br>効果・演出：兵を呼び寄せ一斉射撃。<br>様々な攻撃手段で相手に支障を与える。<br><br>クリティカルヒット：自分のプロット値から1以内にいるキャラクター一人を目標に選ぶ。ランダムに特技分野四つを選び、目標の【生命力】を失わせる。<br>乱れ：目標に選んだキャラクターに、ランダムに選んだ変調一つを与えることができる。<br>射程低下：通常のものよりプロットの範囲が1狭い位置にいるキャラクターしか目標に選べなくなる。<br><br>・意味・<br>戦闘が激しいさま。<br>兵の武器が乱れ動くという意味から。<br>「兵戈」は”ほこ”のことから武器という意味。<br>「槍攘」は乱れ動く様子。
+  </p>
+  </div>
+  <div class="lulu right">
+  <span>御薬袋 縷々</span>
+  <p>
+  
+        回想シーンつっこんで
+  </p>
+  </div>
+  <div class="lulu right">
+  <span>御薬袋 縷々</span>
+  <p>
+  
+        六条さんだと思ってラブラブしてたのに、まさか矢部さんだったなんて！
+  </p>
+  </div>
+  <div class="lulu right">
+  <span>御薬袋 縷々</span>
+  <p>
+  
+        そんな、理想と現実が違うなんて…
+  </p>
+  </div>
+  <div class="lulu right">
+  <span>御薬袋 縷々</span>
+  <p>
+  
+        そんな…そんな…
+  </p>
+  </div>
+  <div class="azusa left">
+  <span>六条 阿豆佐</span>
+  <p>
+  
+        「そうだったのか…」
+  </p>
+  </div>
+  <div class="lulu right">
+  <span>御薬袋 縷々</span>
+  <p>
+  
+        「私は六条さんの方がよかった！」
+  </p>
+  </div>
+  <div class="azusa left">
+  <span>六条 阿豆佐</span>
+  <p>
+  
+        「悪いね……」
+  </p>
+  </div>
+  <div class="lulu right">
+  <span>御薬袋 縷々</span>
+  <p>
+  
+        「くっ…推しが…来ない」
+  </p>
+  </div>
+  <div class="lulu right">
+  <span>御薬袋 縷々</span>
+  <p>
+  
+        縷々は推しが来なかったのでガックリとして戦闘脱落します
+  </p>
+  </div>
+  <div class="kp LtoR-early">
+  
+        [ 御薬袋 縷々 ] 戦術 : 1 → 0
+  </div>
+  <div class="saou right">
+  <span>犬屋敷 紗桜</span>
+  <p>
+  
+        ４ｄ６ (4D6) ＞ 15[2,3,5,5] ＞ 15
+        
+  </p>
+  </div>
+  <div class="kp LtoR-early">
+  
+        [ 犬屋敷　紗桜 ] 体術 : 1 → 0
+  </div>
+  <div class="kp LtoR-early">
+  
+        [ 犬屋敷　紗桜 ] 忍術 : 1 → 0
+  </div>
+  <div class="kp LtoR-early">
+  
+        [ 犬屋敷　紗桜 ] 戦術 : 1 → 0
+  </div>
+  <div class="kp LtoR-early">
+  
+        [ 犬屋敷　紗桜 ] 謀術 : 1 → 0
+  </div>
+  <div class="lulu right">
+  <span>御薬袋 縷々</span>
+  <p>
+  
+        wt 変調表(3) ＞ 重傷:次の自分の手番に行動すると、ランダムな特技分野１つの【生命力】に１点ダメージ。１サイクルの終了時に、《生存術》で成功すると無効化される。
+        
+  </p>
+  </div>
+  <div class="kp LtoR-early">
+  
+        ５ラウンド目
+  </div>
+  <div class="kp LtoR-early">
+  
+        1d6 (1D6) ＞ 1
+        
+  </div>
+  <div class="azusa left">
+  <span>六条 阿豆佐</span>
+  <p>
+  
+        「自分はどうせなら勝ちたいけどどうする？」
+  </p>
+  </div>
+  <div class="saou right">
+  <span>犬屋敷 紗桜</span>
+  <p>
+  
+        「おれは追いかけられてから逃げただけだ」
+  </p>
+  </div>
+  <div class="kp LtoR-early">
+  
+        勝者：六条
+  </div>
+  <div class="azusa left">
+  <span>六条 阿豆佐</span>
+  <p>
+  
+        賞品：有能勝者への矢部からの妬み
+  </p>
+  </div>
+  <div class="azusa left">
+  <span>六条 阿豆佐</span>
+  <p>
+  
+        「ヨシ！！！！！」
+  </p>
+  </div>
+  <div class="kp LtoR-early">
+  
+        シーン終了
+  </div>
+  
+  <div class="kp LtoR-early">
+  
+        ――――――――――――――――――――――――
+  </div>
+  
+  <div class="kp LtoR-early">
+  
+        エンディング
+  </div>
+  <div class="yabe left">
+  <span>矢部 照彦</span>
+  <p>
+  
+        「あーあ！！ばかばかし！！ほんま妬ましいわ自分みたいなん！！霊になってまで成したいことがあるのはええなぁ！！」大の字で
+  </p>
+  </div>
+  <div class="lulu right">
+  <span>御薬袋 縷々</span>
+  <p>
+  
+        「推しが推しが違った…」
+  </p>
+  </div>
+  <div class="azusa left">
+  <span>六条 阿豆佐</span>
+  <p>
+  
+        「悪は滅んだ……」
+  </p>
+  </div>
+  <div class="yabe left">
+  <span>矢部 照彦</span>
+  <p>
+  
+        矢部逮捕
+  </p>
+  </div>
+  <div class="kyokutyou right">
+  <span>”局長”麻生 雅人</span>
+  <p>
+  
+        「矢部、策は尽きたか」
+  </p>
+  </div>
+  <div class="yabe left">
+  <span>矢部 照彦</span>
+  <p>
+  
+        「はぁ。局長」
+  </p>
+  </div>
+  <div class="kyokutyou right">
+  <span>”局長”麻生 雅人</span>
+  <p>
+  
+        「便宜は図ってやったがつもりだったがな」
+  </p>
+  </div>
+  <div class="yabe left">
+  <span>矢部 照彦</span>
+  <p>
+  
+        「まさか雑魚死人が蘇っとるなんて誰も思わんのですわ」
+  </p>
+  </div>
+  <div class="yabe left">
+  <span>矢部 照彦</span>
+  <p>
+  
+        「すいませんねぇ。意図を組み通れない雑魚で」
+  </p>
+  </div>
+  <div class="kyokutyou right">
+  <span>”局長”麻生 雅人</span>
+  <p>
+  
+        「あらゆる状況を予測し、どのような事態にも対応できるように周到な準備をする……」
+  </p>
+  </div>
+  <div class="kyokutyou right">
+  <span>”局長”麻生 雅人</span>
+  <p>
+  
+        「そんな簡単なこともワシのもとで学べなかったのか？」
+  </p>
+  </div>
+  <div class="kyokutyou right">
+  <span>”局長”麻生 雅人</span>
+  <p>
+  
+        「悪いが、これ以上無能をかばう気はない……連れて行け」
+  </p>
+  </div>
+  <div class="yabe left">
+  <span>矢部 照彦</span>
+  <p>
+  
+        「ある程度は網はっとったつもりだったんですがねぇ……」
+  </p>
+  </div>
+  <div class="yabe left">
+  <span>矢部 照彦</span>
+  <p>
+  
+        「ま、無能は無能ですわ。言い訳の余地もあらへん。ほんまに死なんかっただけめっけもんや思とりますよ」
+  </p>
+  </div>
+  <div class="kyokutyou right">
+  <span>”局長”麻生 雅人</span>
+  <p>
+  
+        「ツメが甘いというのだ……」
+  </p>
+  </div>
+  <div class="hittou left">
+  <span>ヒットウ</span>
+  <p>
+  
+        「ﾊｧ……ﾊｧ……（瀕死）矢部ェ！来い！」
+  </p>
+  </div>
+  <div class="yabe left">
+  <span>矢部 照彦</span>
+  <p>
+  
+        「はぁい。わかっとりますんなこと……あ？うるさいんや自分俺に殺されるような奴俺より雑魚なんやから黙っとき」
+  </p>
+  </div>
+  <div class="kyokutyou right">
+  <span>”局長”麻生 雅人</span>
+  <p>
+  
+        「自身の素性を隠し通すだけではなく、信望者がいるならそいつを利用すべきだった……」
+  </p>
+  </div>
+  <div class="yabe left">
+  <span>矢部 照彦</span>
+  <p>
+  
+        「あんなロリコンおばさんが信奉者なんて予想……あかんな、言い訳にしかならへん」
+  </p>
+  </div>
+  <div class="kyokutyou right">
+  <span>”局長”麻生 雅人</span>
+  <p>
+  
+        「牢屋で自身を見つめ直せ」
+  </p>
+  </div>
+  <div class="kaede right">
+  <span>望月 カエデ</span>
+  <p>
+  
+        「……局長」
+  </p>
+  </div>
+  <div class="yabe left">
+  <span>矢部 照彦</span>
+  <p>
+  
+        「はいはい。わかっとりますぅ……せや、俺はクビですか？」
+  </p>
+  </div>
+  <div class="kyokutyou right">
+  <span>”局長”麻生 雅人</span>
+  <p>
+  
+        「君か……見ての通り犬屋敷は無罪だ、もう追われることはない」
+  </p>
+  </div>
+  <div class="kyokutyou right">
+  <span>”局長”麻生 雅人</span>
+  <p>
+  
+        「自分で考えろ」
+  </p>
+  </div>
+  <div class="kaede right">
+  <span>望月 カエデ</span>
+  <p>
+  
+        「局長は……わかっていたんですね？」
+  </p>
+  </div>
+  <div class="yabe left">
+  <span>矢部 照彦</span>
+  <p>
+  
+        「はーい……（これはどうや？戻ってきても俺の椅子はあるんか？）」
+  </p>
+  </div>
+  <div class="kyokutyou right">
+  <span>”局長”麻生 雅人</span>
+  <p>
+  
+        「それを言って何になる？重要なのは《下忍殺し》が断罪されたという事実だ」
+  </p>
+  </div>
+  <div class="yabe left">
+  <span>矢部 照彦</span>
+  <p>
+  
+        （……ま、戻ってきたところで、俺の評判はがた落ちやろし……辞めてもうちょい賢く立ち回ろかな）
+  </p>
+  </div>
+  <div class="kyokutyou right">
+  <span>”局長”麻生 雅人</span>
+  <p>
+  
+        「望月くん、君も覚えておくといい。真にすぐれた策謀というのはそれが明るみに出た時点ですでに結末が変わることはない」
+  </p>
+  </div>
+  <div class="yabe left">
+  <span>矢部 照彦</span>
+  <p>
+  
+        （忍者なんてろくなもんやないけど……今更一般人にも戻れんしな。俺が死んでも変わりはいくらでもおるヒラサカより、なんか、ほかにあるやろ……）
+  </p>
+  </div>
+  <div class="kyokutyou right">
+  <span>”局長”麻生 雅人</span>
+  <p>
+  
+        「小悪党のその場しのぎとは違うということだ……今回の件で君が学ぶべき事柄だ」
+  </p>
+  </div>
+  <div class="kaede right">
+  <span>望月 カエデ</span>
+  <p>
+  
+        「失礼します……」
+  </p>
+  </div>
+  <div class="yabe left">
+  <span>矢部 照彦</span>
+  <p>
+  
+        「ははっ。小悪党。俺には似合いの称号ですわ」
+  </p>
+  </div>
+  <div class="hittou left">
+  <span>ヒットウ</span>
+  <p>
+  
+        「ﾊｧ……ﾊｧ……（瀕死）オラッ！さっさと歩け！」
+  </p>
+  </div>
+  
+  <div class="yabe left">
+  <span>矢部 照彦</span>
+  <p>
+  
+        「しょせんペテン師の詭弁論者の域を出んかったってことやな……」
+  </p>
+  </div>
+  <div class="kp LtoR-early">
+  
+        シーン終了
+  </div>
+  
+  <div class="kp LtoR-early">
+  
+        ――――――――――――――――――――――――
+  </div>
+  
+  <div class="kp LtoR-early">
+  
+        エンディング2
+  </div>
+  <div class="saou right">
+  <span>犬屋敷 紗桜</span>
+  <p>
+  
+        「…終わったのか」
+  </p>
+  </div>
+  <div class="kaede right">
+  <span>望月 カエデ</span>
+  <p>
+  
+        「紗桜……」
+  </p>
+  </div>
+  <div class="kaede right">
+  <span>望月 カエデ</span>
+  <p>
+  
+        「……よかった」
+  </p>
+  </div>
+  <div class="saou right">
+  <span>犬屋敷 紗桜</span>
+  <p>
+  
+        「…お前昔からへんなこと信じやすいの、直せよ」
+  </p>
+  </div>
+  <div class="saou right">
+  <span>犬屋敷 紗桜</span>
+  <p>
+  
+        「お前まで危なくなるんだから」
+  </p>
+  </div>
+  <div class="kaede right">
+  <span>望月 カエデ</span>
+  <p>
+  
+        「む！昔から疑われるようなことばっかりしてるのはそっちじゃん！」
+  </p>
+  </div>
+  <div class="saou right">
+  <span>犬屋敷 紗桜</span>
+  <p>
+  
+        「だからってお前が俺を守らなくてもいいんだよ」
+  </p>
+  </div>
+  <div class="kaede right">
+  <span>望月 カエデ</span>
+  <p>
+  
+        「そっちだって……」
+  </p>
+  </div>
+  <div class="kp LtoR-early">
+  
+        ――二人の間を寒風が通る、まだまだ寒い季節が続きそうだ
+  </div>
+  <div class="saou right">
+  <span>犬屋敷 紗桜</span>
+  <p>
+  
+        「…助かったのは確かだけど。でも次は！俺が守る側だからな」
+  </p>
+  </div>
+  <div class="kaede right">
+  <span>望月 カエデ</span>
+  <p>
+  
+        「！」
+  </p>
+  </div>
+  <div class="saou right">
+  <span>犬屋敷 紗桜</span>
+  <p>
+  
+        「守られるだけじゃないって、俺の強さもみてたろ」
+  </p>
+  </div>
+  <div class="kaede right">
+  <span>望月 カエデ</span>
+  <p>
+  
+        「それは…っ！……そうかも知れないけど……」
+  </p>
+  </div>
+  <div class="kaede right">
+  <span>望月 カエデ</span>
+  <p>
+  
+        「……結局、いつまでも捕まえられないのかな（ﾎﾞｿｯ）」
+  </p>
+  </div>
+  <div class="saou right">
+  <span>犬屋敷 紗桜</span>
+  <p>
+  
+        「…帰ろうぜ」
+  </p>
+  </div>
+  <div class="kaede right">
+  <span>望月 カエデ</span>
+  <p>
+  
+        「……あっ」
+  </p>
+  </div>
+  <div class="saou right">
+  <span>犬屋敷 紗桜</span>
+  <p>
+  
+        そのまま背を向けて公園をあとにする
+  </p>
+  </div>
+  <div class="kaede right">
+  <span>望月 カエデ</span>
+  <p>
+  
+        「もう……待ってよ！！紗桜！」
+  </p>
+  </div>
+  <div class="kp LtoR-early">
+  
+        二人はその場を後にする。静寂だけがその場に残されていた――
+  </div>
+  <div class="kp LtoR-early">
+  
+        シーン終了
+  </div>
+  
+  <div class="kp LtoR-early">
+  
+        ――――――――――――――――――――――――
+  </div>
+  
+  
+  <div class="kp LtoR-early">
+  
+        [ 六条　阿豆佐 ] がダイスシンボルを公開。出目は 1 です。
+  </div>
+  <div class="kp LtoR-early">
+  
+        [ 犬屋敷　紗桜 ] がダイスシンボルを公開。出目は 3 です。
+  </div>
+  <div class="kp LtoR-early">
+  
+        [ 御薬袋 縷々 ] がダイスシンボルを公開。出目は 4 です。
+  </div>
+  <div class="kp LtoR-early">
+  
+        [ 矢部 照彦 ] がダイスシンボルを公開。出目は 1 です。
+  </div>
+  <div class="azusa left">
+  <span>六条 阿豆佐</span>
+  <p>
+  
+        功績点:６
+  </p>
+  </div>
+  <div class="yabe left">
+  <span>矢部 照彦</span>
+  <p>
+  
+        功績点3
+  </p>
+  </div>
+  <div class="lulu right">
+  <span>御薬袋 縷々</span>
+  <p>
+  
+        功績点3
+  </p>
+  </div>
+  <div class="saou right">
+  <span>犬屋敷 紗桜</span>
+  <p>
+  
+        功績点7
+  </p>
+  </div>
+  <div class="kp LtoR-early">
+  
+        ■NPC1：望月カエデ<br>------------------------<br>　あなたはPC1の関係者である。PC1を捕縛するため、他のPCたちに協力者として同行している。<br>　あなたの使命は『PC1を力づくでも自首させること』である。<br>■NPC1：望月カエデ【秘密】<br>------------------------<br>　あなたは麻生が「PC1が抵抗するようなら殺しても構わない」と言ってるのを聞いてしまい焦っている。<br>　あなたの本当の使命は『PC1をクライマックスで脱落させないこと』である。<br>
+  </div>
+
+<br><br><br><br><br><br><br><br><br>
+</div></div>
+<script src="../logCon_Respon.js"></script>
+</body></html>
