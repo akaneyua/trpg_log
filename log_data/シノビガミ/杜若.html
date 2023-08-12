@@ -1,0 +1,6911 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<title>log</title>
+<meta http-equiv="content-type" charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+<link rel="stylesheet" href="../logCon_Respon.css">
+<style>
+    /* main css */
+    .bg-inner.bg1{background:url('./杜若画像/jyuutaku00.jpg') no-repeat center/cover;}
+    
+    /* member */
+    .meiga p{border:2px solid rgb(136, 136, 136);box-shadow:5px 5px 0 rgb(136, 136, 136);}
+    .meiga p:after{border-right-color:rgb(136, 136, 136);}
+    .meiga span{background:rgb(136, 136, 136);color:#fff;}
+    .meiga:before{content:'';background-image:url('./杜若画像/明賀\ 翠.png');background-size:contain;background-repeat:no-repeat;background-position:center center;width:90px;height:90px;}
+    .zarame p{border:2px solid rgb(255, 87, 34);box-shadow:5px 5px 0 rgb(255, 87, 34);}
+    .zarame p:after{border-left-color:rgb(255, 87, 34);}
+    .zarame span{background:rgb(255, 87, 34);color:#000;}
+    .zarame:before{content:'';background-image:url('./杜若画像/三盆糖\ ざらめ.png');background-size:contain;background-repeat:no-repeat;background-position:center center;width:90px;height:90px;}
+    .menou p{border:2px solid rgb(63, 81, 181);box-shadow:5px 5px 0 rgb(63, 81, 181);}
+    .menou p:after{border-right-color:rgb(63, 81, 181);}
+    .menou span{background:rgb(63, 81, 181);color:#fff;}
+    .menou:before{content:'';background-image:url('./杜若画像/瑪瑙.png');background-size:contain;background-repeat:no-repeat;background-position:center center;width:90px;height:90px;}
+    .komaba p{border:2px solid rgb(63, 152, 119);box-shadow:5px 5px 0 rgb(63, 152, 119);}
+    .komaba p:after{border-left-color:rgb(63, 152, 119);}
+    .komaba span{background:rgb(63, 152, 119);color:#fff;}
+    .komaba:before{content:'';background-image:url('./杜若画像/駒場\ 駆.png');background-size:contain;background-repeat:no-repeat;background-position:center center;width:90px;height:90px;}
+    .kakitubata p{border:2px solid rgb(136, 136, 136);box-shadow:5px 5px 0 rgb(136, 136, 136);}
+    .kakitubata p:after{border-right-color:rgb(136, 136, 136);}
+    .kakitubata span{background:rgb(136, 136, 136);color:#fff;}
+    .kakitubata:before{content:'';background-image:url('./杜若画像/杜若\ 早苗.png');background-size:contain;background-repeat:no-repeat;background-position:center center;width:90px;height:90px;}
+    .mem6 p{border:2px solid rgb(136, 136, 136);box-shadow:5px 5px 0 rgb(136, 136, 136);}
+    .mem6 p:after{border-left-color:rgb(136, 136, 136);}
+    .mem6 span{background:rgb(136, 136, 136);color:#fff;}
+    .mem6:before{content:'';background-image:url('6.png');background-size:contain;background-repeat:no-repeat;background-position:center center;width:90px;height:90px;}
+    .mem7 p{border:2px solid rgb(136, 136, 136);box-shadow:5px 5px 0 rgb(136, 136, 136);}
+    .mem7 p:after{border-right-color:rgb(136, 136, 136);}
+    .mem7 span{background:rgb(136, 136, 136);color:#fff;}
+    .mem7:before{content:'';background-image:url('7.png');background-size:contain;background-repeat:no-repeat;background-position:center center;width:90px;height:90px;}
+    .mem8 p{border:2px solid rgb(136, 136, 136);box-shadow:5px 5px 0 rgb(136, 136, 136);}
+    .mem8 p:after{border-left-color:rgb(136, 136, 136);}
+    .mem8 span{background:rgb(136, 136, 136);color:#fff;}
+    .mem8:before{content:'';background-image:url('8.png');background-size:contain;background-repeat:no-repeat;background-position:center center;width:90px;height:90px;}
+    .mem9 p{border:2px solid rgb(136, 136, 136);box-shadow:5px 5px 0 rgb(136, 136, 136);}
+    .mem9 p:after{border-right-color:rgb(136, 136, 136);}
+    .mem9 span{background:rgb(136, 136, 136);color:#fff;}
+    .mem9:before{content:'';background-image:url('9.png');background-size:contain;background-repeat:no-repeat;background-position:center center;width:90px;height:90px;}
+    .mem10 p{border:2px solid rgb(136, 136, 136);box-shadow:5px 5px 0 rgb(136, 136, 136);}
+    .mem10 p:after{border-left-color:rgb(136, 136, 136);}
+    .mem10 span{background:rgb(136, 136, 136);color:#fff;}
+    .mem10:before{content:'';background-image:url('10.png');background-size:contain;background-repeat:no-repeat;background-position:center center;width:90px;height:90px;}
+ 
+    @media only screen and (max-width: 768px) {
+        .meiga p:after{border-right-color:rgb(136, 136, 136);border-left-color:transparent;}
+        .zarame p:after{border-right-color:rgb(255, 87, 34);border-left-color:transparent;}
+        .menou p:after{border-right-color:rgb(63, 81, 181);border-left-color:transparent;}
+        .komaba p:after{border-right-color:rgb(63, 152, 119);border-left-color:transparent;}
+        .kakitubata p:after{border-right-color:rgb(136, 136, 136);border-left-color:transparent;}
+        .mem6 p:after{border-right-color:rgb(136, 136, 136);border-left-color:transparent;}
+        .mem7 p:after{border-right-color:rgb(136, 136, 136);border-left-color:transparent;}
+        .mem8:before p:after{border-right-color:rgb(136, 136, 136);border-left-color:transparent;}
+        .mem9:before p:after{border-right-color:rgb(136, 136, 136);border-left-color:transparent;}
+        .mem10 p:after{border-right-color:rgb(136, 136, 136);border-left-color:transparent;}
+        
+        .meiga:before,.zarame:before,.menou:before,
+        .komaba:before,.kakitubata:before,.mem6:before,.mem7:before
+        .mem8:before,.mem9:before,.mem10:before{width:70px;height:70px;}
+    }
+</style>
+</head>
+<body>
+    <p id="page-top"><a href="#"><i class="page-top__arrow"></i></a></p>
+	<div class="leftwhite"></div>
+	<div class="rightwhite"></div>
+	<div class="bg-sp">
+    <div class="bg-over"><div class="bg-inner bg1"></div></div>
+	<div class="log">
+    
+        <div class="leftwhite"></div>
+        <div class="rightwhite"></div>
+        <div class="log">
+        
+        <div class="kp">
+        
+              シノビガミシナリオ「五月雨滴る杜若」
+        </div>
+        <div class="kp">
+        
+              始めます
+        </div>
+        <div class="kp">
+        
+              杜若家は裏の世界や政界にも影響力のある一族である。<br>杜若家には頭が上がらない政治家もいるという話だ。<br>その影響力を疎む輩は少なくはない。<br>プライズ「皐月札」、シノビの世界に伝わる神器、その力を宿すとされる四枚の札。それは杜若家の当主が所持し、代々これを守護している。このプライズこそが杜若家が影響力をもつ所以である。<br>最近、どうやらその権威の象徴たる「皐月札」を狙う者がいるという噂が立った。<br>杜若家当主、杜若早苗は「皐月札」を守るため、使用人兼護衛として新たに数名を雇った。
+        </div>
+        <div class="kp">
+        
+              あなたたちは屋敷の広間に集められた。全員が使用人兼護衛として雇われた者たちだ。あまりの屋敷の大きさに面食らったものもいるだろう
+        </div>
+        <div class="meiga left">
+        <span>明賀 翠</span>
+        <p>
+        
+              「初めまして。あなた方が今日から新しく入る使用人ですね。」
+        </p>
+        </div>
+        <div class="kp">
+        
+              あなたたちの前に一人の男が現れる。
+        </div>
+        <div class="meiga left">
+        <span>明賀 翠</span>
+        <p>
+        
+              「いやあ、腕の立つ使用人が少しの間休職ということになりまして、少し人手が足りなかったので助かります。<br>おっと、申し遅れました。使用人の[明賀翠(メイガスイ)]と申します。私のことはバイトリーダーのようなものだと思っていただければと思います。これからよろしくお願いします」
+        </p>
+        </div>
+        <div class="meiga left">
+        <span>明賀 翠</span>
+        <p>
+        
+              「ぜひ自己紹介をそちらの方から。」
+        </p>
+        </div>
+        <div class="zarame right">
+        <span>三盆糖 ざらめ</span>
+        <p>
+        
+              「あ、あたし？はーい、あたし、三盆糖ざらめっていいます。メイドさんのお仕事は初めてなので、楽しもうと思いまぁす！よろしくお願いしまーす」
+        </p>
+        </div>
+        <div class="zarame right">
+        <span>三盆糖 ざらめ</span>
+        <p>
+        ・PC１ 三盆糖 ざらめ<br>
+                流派：鞍馬神流/バヨネット<br><br>
+                杜若家が雇った使用人の一人。
+                あなたは杜若早苗の友人であるため、使用人の勧誘が来た。
+                <br>仕事とはいえ使用人は少し楽しそうである。
+                <br>あなたの使命は
+                <br>「使用人ロールプレイを楽しむこと」
+                 <br><br>[設定]<br>
+                《銀弾のお転婆嬢》<br>
+        
+                早苗とは親友で仕事を探していると言ったら勧誘がきた。
+                <br>早苗に負けず劣らずのお嬢様だがおてんばで家を出てふらふらといろんな仕事をしたりして回っている。
+                <br>銃の使い手。
+                
+              
+        </p>
+        </div>
+        <div class="menou left">
+        <span>瑪瑙</span>
+        <p>
+        
+              「はい！本日より働かせていただきます瑪瑙と申します。家事や雑務や汚れ仕事までなんでもお任せあれ！給料のうちなら時間外も働けまぁす！どうぞよろしくお願いいたします！」
+        </p>
+        </div>
+        <div class="menou left">
+        <span>瑪瑙</span>
+        <p>
+        ・PC2 瑪瑙<br>
+                流派：比良坂機関/公安隠密局<br>
+                <br>杜若家が雇った使用人の一人。
+               <br> あなたはお金が欲しくて高額報酬のこの職に応募した。
+                <br>あなたの使命は
+                <br>「給料の上がりそうなロールプレイをすること」
+                <br>である。<br>
+                また、あなたはPC3とは友人関係であり、生活に困っているPC3にこの仕事を紹介した。<br><br>
+                [設定]<br>
+                金を稼ぐことがライフワークと言っている。
+                <br>色んなところでバイトしており、今回の仕事もその延長で応募した。
+                <br>スタイルは仕事によって使い分ける。私服は髪を下ろして中華っぽい服を着ている。
+                <br>態度も人によって変えるが雇い主には低姿勢で笑顔を絶やさない。保険の営業感ある。多分やったことある。
+              
+        </p>
+        </div>
+        <div class="komaba right">
+        <span>駒場 駆</span>
+        <p>
+        
+              「駒場駆でっす！とにかくお金が欲しいです！<br>飲食事務現場接客色々やってるんで！役立つはずでっす！よろっす！」
+        </p>
+        </div>
+        <div class="komaba right">
+        <span>駒場 駆</span>
+        <p>
+        ・PC3 駒場 駆<br>
+                流派：斜歯忍軍<br>
+                <br>杜若家が雇った使用人の一人
+               <br> あなたはPC2の友人である。
+               <br>生活に余裕のないあなたはPC2に誘われ、高額報酬のこの仕事にともに参加することにした。しっかり「皐月札」を護衛しなければ。
+                <br>あなたの使命は
+                <br>「杜若家外部の人間に「皐月札」を奪われないこと」
+                <br>である。<br><br>
+                [設定]<br>
+                生活のため あらゆる仕事をしてきたモーレツアルバイター。
+                <br>兄弟が多く、面倒見がとてもいい。
+                <br>真面目でよく働く。どこに行っても働いてるなお前。
+                <br>とはいえ 趣味・バイトみたいなものなので わりと楽しくやっている。
+              
+        </p>
+        </div>
+        <div class="meiga left">
+        <span>明賀 翠</span>
+        <p>
+        
+              「ではみなさん、これからよろしくお願いします」
+        </p>
+        </div>
+        <div class="kakitubata left">
+        <span>杜若 早苗</span>
+        <p>
+        
+              「あら、皆様お揃いなのね」
+        </p>
+        </div>
+        <div class="kp">
+        
+              扉があき、そんなセリフとともに一人の女性が現れた
+        </div>
+        <div class="meiga left">
+        <span>明賀 翠</span>
+        <p>
+        
+              「おや早苗様、いかがなさいました？」
+        </p>
+        </div>
+        <div class="kakitubata left">
+        <span>杜若 早苗</span>
+        <p>
+        
+              「今日から新しい方々が入るのでしょう？挨拶をするのは当主として当然のことではなくて？」
+        </p>
+        </div>
+        <div class="kakitubata left">
+        <span>杜若 早苗</span>
+        <p>
+        
+              「改めまして、私が杜若家現当主、杜若早苗です。<br>最近この「皐月札」が狙われているといううわさがありまして、皆様にはどうかこれを守っていただきたく思います。」
+        </p>
+        </div>
+        <div class="kp">
+        
+              彼女は花が描かれた四枚の札を見せる。
+        </div>
+        <div class="kakitubata left">
+        <span>杜若 早苗</span>
+        <p>
+        
+              彼女は花が描かれた四枚の札を見せる。
+        </p>
+        </div>
+        <div class="meiga left">
+        <span>明賀 翠</span>
+        <p>
+        
+              「ではみなさんには明日から働いていただきます。それぞれの部屋を用意していますので、今日はお休みください。ではまた明日」
+        </p>
+        </div>
+        <div class="kp">
+        
+              あなたたちはそれぞれの部屋に案内され、各自休息をとる。
+        </div>
+        <div class="kp">
+        
+              その夜、非通知からの着信が届く
+        </div>
+        <div class="mem6 right">
+        <span>？？？</span>
+        <p>
+        
+              「潜入はできたようだな。上出来だ。必ず「皐月札」をわが手中に。<br>頼んだぞお前たち」
+        </p>
+        </div>
+        <div class="kp">
+        
+              静かに振り出した雨が、闇夜に忍ぶ足音を消していく。
+        </div>
+        <div class="kp">
+        
+              3サイクル
+        </div>
+        <div class="kp">
+        
+              調べられるのは<br>PC3人<br>NPC2人<br>プライズ「皐月札」
+        </div>
+        <div class="meiga left">
+        <span>明賀 翠</span>
+        <p>
+        ・使命<br>
+                杜若家に仕える使用人でありPC達の統括担当である。
+                <br>明賀翠の使命は
+                <br>「杜若早苗と「皐月札」の守護」
+                である。
+                <br>秘密：〇
+                <br>感情：〇
+                <br>居所：〇
+        </p>
+        </div>
+        <div class="kakitubata left">
+        <span>杜若 早苗</span>
+        <p>
+        ・使命<br>
+                杜若家の現当主であり、プライズ「皐月札」を所持している。
+                <br>杜若早苗の使命はは
+                <br>「所持している「皐月札」を奪われないこと」
+                である。
+                <br>秘密：〇
+                <br>感情：〇
+                <br>居所：〇
+        </p>
+        </div>
+        <div class="kp">
+        
+              1サイクル目一人目
+        </div>
+        <div class="zarame right">
+        <span>三盆糖 ざらめ</span>
+        <p>
+        
+              ざらめいきます
+        </p>
+        </div>
+        <div class="zarame right">
+        <span>三盆糖 ざらめ</span>
+        <p>
+        
+              MST 館シーン表(12) ＞ 一族の納骨堂がある。冷気と瘴気に満ちたその場所に、奇妙な叫びが届く。遠くの鳥のさえずりか？それとも死者の恨みの声か……？
+              
+        </p>
+        </div>
+        <div class="zarame right">
+        <span>三盆糖 ざらめ</span>
+        <p>
+        
+              早苗お嬢様呼び出す
+        </p>
+        </div>
+        <div class="kp">
+        
+              登場キャラ 三盆糖ざらめ・杜若早苗
+        </div>
+        <div class="zarame right">
+        <span>三盆糖 ざらめ</span>
+        <p>
+        
+              「早苗ー！雇ってくれてありがとー」
+        </p>
+        </div>
+        <div class="kakitubata left">
+        <span>杜若 早苗</span>
+        <p>
+        
+              「ざらめも引き受けてくれてありがとう」
+        </p>
+        </div>
+        <div class="zarame right">
+        <span>三盆糖 ざらめ</span>
+        <p>
+        
+              「いいよいいよー。やれること探してたし」
+        </p>
+        </div>
+        <div class="kakitubata left">
+        <span>杜若 早苗</span>
+        <p>
+        
+              「それならよかったわ」
+        </p>
+        </div>
+        <div class="zarame right">
+        <span>三盆糖 ざらめ</span>
+        <p>
+        
+              皐月札調べます
+        </p>
+        </div>
+        <div class="zarame right">
+        <span>三盆糖 ざらめ</span>
+        <p>
+        
+              2D6&gt;=5 （判定：経済力） (2D6&gt;=5) ＞ 9[4,5] ＞ 9 ＞ 成功
+              
+        </p>
+        </div>
+        <div class="mem7 left">
+            <span> </span>
+            <p>
+            皐月札の秘密<br>杜若早苗が持っている皐月札はニセモノである。<br>では、一体ホンモノはどこにあるのだろう…
+            </p>
+            </div>
+        <div class="zarame right">
+        <span>三盆糖 ざらめ</span>
+        <p>
+        
+              「……ふんふん。まー、だよねー。ありがと早苗」
+        </p>
+        </div>
+        <div class="kakitubata left">
+        <span>杜若 早苗</span>
+        <p>
+        
+              「？どういたしまして、が正解かしら？」
+        </p>
+        </div>
+        <div class="zarame right">
+        <span>三盆糖 ざらめ</span>
+        <p>
+        
+              「ん－ん。ふふ、考えてみりゃそりゃそうだよねー」
+        </p>
+        </div>
+        <div class="kakitubata left">
+        <span>杜若 早苗</span>
+        <p>
+        
+              「？？？」
+        </p>
+        </div>
+        <div class="zarame right">
+        <span>三盆糖 ざらめ</span>
+        <p>
+        
+              「じゃあ、明日からよろしくお願いいたしますわ、早苗お嬢様♪」
+        </p>
+        </div>
+        <div class="kakitubata left">
+        <span>杜若 早苗</span>
+        <p>
+        
+              「こちらこそよろしくお願いしますね、三盆糖さん」
+        </p>
+        </div>
+        <div class="zarame right">
+        <span>三盆糖 ざらめ</span>
+        <p>
+        
+              シーン終了
+        </p>
+        </div>
+        <div class="kp">
+        
+              1サイクル目 2人目
+        </div>
+        <div class="menou left">
+        <span>瑪瑙</span>
+        <p>
+        
+              MST 館シーン表(8) ＞ 食堂。染み一つないテーブルクロスに覆われた長い食卓。その上は年代物の燭台や花で飾られている。
+              
+        </p>
+        </div>
+        <div class="kp">
+        
+              登場キャラ：瑪瑙 三盆糖ざらめ 駒場駆
+        </div>
+        <div class="menou left">
+        <span>瑪瑙</span>
+        <p>
+        
+              「おはようございます！いやあ本日から同じ職場で働く同士、仲良くしてくださいね！」
+        </p>
+        </div>
+        <div class="zarame right">
+        <span>三盆糖 ざらめ</span>
+        <p>
+        
+              「朝から元気ねぇ……ん、仲良くしてね！」
+        </p>
+        </div>
+        <div class="komaba right">
+        <span>駒場 駆</span>
+        <p>
+        
+              「（もりもり）おはっす！（むしゃむしゃ）ここはごはんを腹いっぱい食べれて（がつがつ）最高っすね！」
+        </p>
+        </div>
+        <div class="menou left">
+        <span>瑪瑙</span>
+        <p>
+        
+              「駒場くんとは前の職場以来ですね。またよろしくおねがいしますね！三盆糖さんはこういった仕事は初めて、とおっしゃっていましたが…何かご縁でも？」
+        </p>
+        </div>
+        <div class="zarame right">
+        <span>三盆糖 ざらめ</span>
+        <p>
+        
+              「そんなにお腹すいてるの？お腹すきすきなの？じゃあ、あたしのソーセージもあげるー。……あぁ、あたし、早苗……じゃなかった、早苗お嬢様とお友達なの。だから誘ってもらったんだー」
+        </p>
+        </div>
+        <div class="menou left">
+        <span>瑪瑙</span>
+        <p>
+        
+              「ご主人様とご縁があったんですね！それはすばらしいですね！私は経験だけはありますので何かあったらなんでも聞いてください！（お近づきになりたいですね！）」
+        </p>
+        </div>
+        <div class="komaba right">
+        <span>駒場 駆</span>
+        <p>
+        
+              「栄養素ォー！あざっす!!（ばくばく）」
+        </p>
+        </div>
+        <div class="menou left">
+        <span>瑪瑙</span>
+        <p>
+        
+              「駒場くんもやる気に満ち溢れていますね！！」
+        </p>
+        </div>
+        <div class="zarame right">
+        <span>三盆糖 ざらめ</span>
+        <p>
+        
+              （これやる気なのかしら……）
+        </p>
+        </div>
+        <div class="menou left">
+        <span>瑪瑙</span>
+        <p>
+        
+              2D6&gt;=5 （判定：対人術） (2D6&gt;=5) ＞ 5[1,4] ＞ 5 ＞ 成功
+              
+        </p>
+        </div>
+        <div class="menou left">
+        <span>瑪瑙</span>
+        <p>
+        
+              ET 感情表(5) ＞ 憧憬（プラス）／劣等感（マイナス）
+              
+        </p>
+        </div>
+        <div class="zarame right">
+        <span>三盆糖 ざらめ</span>
+        <p>
+        
+              ET 感情表(1) ＞ 共感（プラス）／不信（マイナス）
+              
+        </p>
+        </div>
+        <div class="menou left">
+        <span>瑪瑙</span>
+        <p>
+        
+              （職場とトップとコネクションがあるなんてうらやましいですね）憧憬（プラス）
+        </p>
+        </div>
+        <div class="zarame right">
+        <span>三盆糖 ざらめ</span>
+        <p>
+        
+              （なぁんかうさんくさくなぁい？）不信（マイナス）
+        </p>
+        </div>
+        <div class="menou left">
+        <span>瑪瑙</span>
+        <p>
+        
+              シーン終了
+        </p>
+        </div>
+        <div class="kp">
+        
+              1サイクル目 3人目
+        </div>
+        <div class="komaba right">
+        <span>駒場 駆</span>
+        <p>
+        
+              駆！行くよ！
+        </p>
+        </div>
+        <div class="komaba right">
+        <span>駒場 駆</span>
+        <p>
+        
+              MST 館シーン表(8) ＞ 食堂。染み一つないテーブルクロスに覆われた長い食卓。その上は年代物の燭台や花で飾られている。
+              
+        </p>
+        </div>
+        <div class="komaba right">
+        <span>駒場 駆</span>
+        <p>
+        
+              「ところで瑪瑙パイセン 何で僕を誘ってくれたんすか？（ばくばく）」
+        </p>
+        </div>
+        <div class="kp">
+        
+              継続三人登板
+        </div>
+        <div class="menou left">
+        <span>瑪瑙</span>
+        <p>
+        
+              「駒場くんお金に困ってるって言ってましたでしょう？今回のお話なかなかいい条件でしたし、駒場くんは気もよく回るお人ですからね。よい人材を紹介したと私の好感度もあが…こほん。いやぜひまたご一緒にお仕事したかったのもありまして！！」
+        </p>
+        </div>
+        <div class="komaba right">
+        <span>駒場 駆</span>
+        <p>
+        
+              「パイセン神ぃ〜！<br>顔潰さないように しっかり札を守るっすよ！（もしゃもしゃ）」
+        </p>
+        </div>
+        <div class="zarame right">
+        <span>三盆糖 ざらめ</span>
+        <p>
+        
+              （なんかやる気あるけどヤバい人たち……？）
+        </p>
+        </div>
+        <div class="komaba right">
+        <span>駒場 駆</span>
+        <p>
+        
+              感情判定を瑪瑙パイセンに
+        </p>
+        </div>
+        <div class="komaba right">
+        <span>駒場 駆</span>
+        <p>
+        
+              SG&gt;=5 （判定：対人術 (SG@12#2&gt;=5) ＞ 5[2,3] ＞ 5 ＞ 成功
+              
+        </p>
+        </div>
+        <div class="menou left">
+        <span>瑪瑙</span>
+        <p>
+        
+              ET 感情表(1) ＞ 共感（プラス）／不信（マイナス）
+              
+        </p>
+        </div>
+        <div class="komaba right">
+        <span>駒場 駆</span>
+        <p>
+        
+              ET 感情表(6) ＞ 狂信（プラス）／殺意（マイナス）
+              
+        </p>
+        </div>
+        <div class="menou left">
+        <span>瑪瑙</span>
+        <p>
+        
+              （やはりいい給料のでる職場はやる気がでますね！！） 共感（プラス）
+        </p>
+        </div>
+        <div class="komaba right">
+        <span>駒場 駆</span>
+        <p>
+        
+              （めっちゃいい仕事くれる瑪瑙パイセン神！生きる！）狂信（プラス）
+        </p>
+        </div>
+        <div class="komaba right">
+        <span>駒場 駆</span>
+        <p>
+        
+              シーン終了
+        </p>
+        </div>
+        <div class="kp">
+        
+              マスターシーン
+        </div>
+        <div class="kakitubata left">
+        <span>杜若 早苗</span>
+        <p>
+        
+              choice[三盆糖 ざらめ,瑪瑙,駒場 駆] (choice[三盆糖 ざらめ,瑪瑙,駒場 駆]) ＞ 三盆糖 ざらめ
+              
+        </p>
+        </div>
+        <div class="kakitubata left">
+        <span>杜若 早苗</span>
+        <p>
+        
+              ざらめちゃんに感情を結びに行きます。
+        </p>
+        </div>
+        <div class="kakitubata left">
+        <span>杜若 早苗</span>
+        <p>
+        
+              MST 館シーン表(8) ＞ 食堂。染み一つないテーブルクロスに覆われた長い食卓。その上は年代物の燭台や花で飾られている。
+              
+        </p>
+        </div>
+        <div class="zarame right">
+        <span>三盆糖 ざらめ</span>
+        <p>
+        
+              「はい、早苗お嬢様。お呼びでしょーか？」
+        </p>
+        </div>
+        <div class="kakitubata left">
+        <span>杜若 早苗</span>
+        <p>
+        
+              「ちょっと話がしたくてね」
+        </p>
+        </div>
+        <div class="kakitubata left">
+        <span>杜若 早苗</span>
+        <p>
+        
+              「どう、慣れそう？」
+        </p>
+        </div>
+        <div class="zarame right">
+        <span>三盆糖 ざらめ</span>
+        <p>
+        
+              「うん、だい……はい、大丈夫そうです！お気にかけてくださってありがとうございます！」
+        </p>
+        </div>
+        <div class="kakitubata left">
+        <span>杜若 早苗</span>
+        <p>
+        
+              「ならよかったわ」
+        </p>
+        </div>
+        <div class="kakitubata left">
+        <span>杜若 早苗</span>
+        <p>
+        
+              では、対人術で感情判定を
+        </p>
+        </div>
+        <div class="kakitubata left">
+        <span>杜若 早苗</span>
+        <p>
+        
+              2D6&gt;=5 （判定：対人術） (2D6&gt;=5) ＞ 6[1,5] ＞ 6 ＞ 成功
+              
+        </p>
+        </div>
+        <div class="kakitubata left">
+        <span>杜若 早苗</span>
+        <p>
+        
+              et 感情表(2) ＞ 友情（プラス）／怒り（マイナス）
+              
+        </p>
+        </div>
+        <div class="zarame right">
+        <span>三盆糖 ざらめ</span>
+        <p>
+        
+              ET 感情表(5) ＞ 憧憬（プラス）／劣等感（マイナス）
+              
+        </p>
+        </div>
+        <div class="kakitubata left">
+        <span>杜若 早苗</span>
+        <p>
+        
+              もちろん友情ですわぁ
+        </p>
+        </div>
+        <div class="zarame right">
+        <span>三盆糖 ざらめ</span>
+        <p>
+        
+              憧憬かなぁ
+        </p>
+        </div>
+        <div class="kakitubata left">
+        <span>杜若 早苗</span>
+        <p>
+        
+              マスターシーン終了ですわぁ
+        </p>
+        </div>
+        <div class="kp">
+        
+            ――――――――――――――――――――――――
+        </div>
+        <div class="kp">
+        
+              2サイクル目 1人目
+        </div>
+        <div class="menou left">
+        <span>瑪瑙</span>
+        <p>
+        
+              ｍｓｔ 館シーン表(8) ＞ 食堂。染み一つないテーブルクロスに覆われた長い食卓。その上は年代物の燭台や花で飾られている。
+              
+        </p>
+        </div>
+        <div class="menou left">
+        <span>瑪瑙</span>
+        <p>
+        
+              全員いなくなった後駒田君の秘密を探ります
+        </p>
+        </div>
+        <div class="kp">
+        
+              登場キャラ：瑪瑙
+        </div>
+        <div class="menou left">
+        <span>瑪瑙</span>
+        <p>
+        
+              『内偵』調査術
+        </p>
+        </div>
+        <div class="mem7 left">
+        <span>解説</span>
+        <p>
+        
+              内定とは！<br>情報判定の時にサイコロなしで成功できる。ただし達成値が必要な時は達成値が10になる
+        </p>
+        </div>
+        <div class="mem7 left">
+            <span> </span>
+            <p>
+            ◆PC３の使命<br>あなたは本当に生活が苦しい。両親は体も弱く兄弟も多い。自分が家族を守らねばならないがお金がない。<br>そんな中この仕事を紹介してくれたPC２にはとても感謝している。しっかり稼いで家族においしいものを食べさせてやらねば。<br>あなたの本当の使命は表のものである。<br>なお―――
+            </p>
+            </div>
+        <div class="menou left">
+        <span>瑪瑙</span>
+        <p>
+        
+              沈黙
+        </p>
+        </div>
+        <div class="mem7 left">
+        <span>解説</span>
+        <p>
+        
+              沈黙とは！<br>指定特技に成功すると自分に対して感情を持っている相手に対して情報共有を無効化できる。またこの忍法を取得している相手に対して奥義破りの判定にマイナス1
+        </p>
+        </div>
+        <div class="menou left">
+        <span>瑪瑙</span>
+        <p>
+        
+              2D6&gt;=5 （判定：調査術） (2D6&gt;=5) ＞ 6[3,3] ＞ 6 ＞ 成功
+              
+        </p>
+        </div>
+        <div class="menou left">
+        <span>瑪瑙</span>
+        <p>
+        
+              「なるほどね」
+        </p>
+        </div>
+        <div class="menou left">
+        <span>瑪瑙</span>
+        <p>
+        
+              シーン終了
+        </p>
+        </div>
+        <div class="kp">
+        
+              2サイクル目 2人目
+        </div>
+        <div class="zarame right">
+        <span>三盆糖 ざらめ</span>
+        <p>
+        
+              ざらめ行きます
+        </p>
+        </div>
+        <div class="zarame right">
+        <span>三盆糖 ざらめ</span>
+        <p>
+        
+              MST 館シーン表(8) ＞ 食堂。染み一つないテーブルクロスに覆われた長い食卓。その上は年代物の燭台や花で飾られている。
+              
+        </p>
+        </div>
+        <div class="kp">
+        
+              登場人物：三盆糖 ざらめ 駒場 駆
+        </div>
+        <div class="zarame right">
+        <span>三盆糖 ざらめ</span>
+        <p>
+        
+              「駒場くん、どぉ？慣れたぁ？」
+        </p>
+        </div>
+        <div class="komaba right">
+        <span>駒場 駆</span>
+        <p>
+        
+              「はい！狙われてる割には何も無いし ごはんも美味しいし お給金もたんまりで！最高っすね！」
+        </p>
+        </div>
+        <div class="zarame right">
+        <span>三盆糖 ざらめ</span>
+        <p>
+        
+              「わぁプラス思考ー。まだお腹すいてたりする？」
+        </p>
+        </div>
+        <div class="komaba right">
+        <span>駒場 駆</span>
+        <p>
+        
+              「いっぱいでも 詰め込むっす！」
+        </p>
+        </div>
+        <div class="zarame right">
+        <span>三盆糖 ざらめ</span>
+        <p>
+        
+              「ホント―？お嬢様とおやつ食べようかと思ってるんだけど、何か作ったら味見してくれるー？」
+        </p>
+        </div>
+        <div class="komaba right">
+        <span>駒場 駆</span>
+        <p>
+        
+              「!!!是非ッッ!!!」
+        </p>
+        </div>
+        <div class="zarame right">
+        <span>三盆糖 ざらめ</span>
+        <p>
+        
+              兵糧術でおいしいものの代わりに情報を引き出す
+        </p>
+        </div>
+        <div class="zarame right">
+        <span>三盆糖 ざらめ</span>
+        <p>
+        
+              2D6&gt;=5 （判定：兵糧術） (2D6&gt;=5) ＞ 6[1,5] ＞ 6 ＞ 成功
+              
+        </p>
+        </div>
+        <div class="mem7 left">
+            <span> </span>
+            <p>
+            ◆PC３の使命<br>あなたは本当に生活が苦しい。両親は体も弱く兄弟も多い。自分が家族を守らねばならないがお金がない。<br>そんな中この仕事を紹介してくれたPC２にはとても感謝している。しっかり稼いで家族においしいものを食べさせてやらねば。<br>あなたの本当の使命は表のものである。<br>なお―――
+            </p>
+            </div>
+        <div class="zarame right">
+        <span>三盆糖 ざらめ</span>
+        <p>
+        
+              「ふんふん。……駒場くんとは仲良くできそー」
+        </p>
+        </div>
+        <div class="komaba right">
+        <span>駒場 駆</span>
+        <p>
+        
+              「うっま!!美食神!!!」
+        </p>
+        </div>
+        <div class="zarame right">
+        <span>三盆糖 ざらめ</span>
+        <p>
+        
+              「聞いてないねえ―」
+        </p>
+        </div>
+        <div class="komaba right">
+        <span>駒場 駆</span>
+        <p>
+        
+              「これ作り方教えてもらっていいっすか？」
+        </p>
+        </div>
+        <div class="zarame right">
+        <span>三盆糖 ざらめ</span>
+        <p>
+        
+              「いいよー。ゼリエースだよー」
+        </p>
+        </div>
+        <div class="komaba right">
+        <span>駒場 駆</span>
+        <p>
+        
+              「ゼリエース！こんなかんたんに食の極みに到れるんすね！あざっす！」
+        </p>
+        </div>
+        <div class="zarame right">
+        <span>三盆糖 ざらめ</span>
+        <p>
+        
+              「かんたんだよねー。こんなんでよかったらいつでもつくるよー」
+        </p>
+        </div>
+        <div class="komaba right">
+        <span>駒場 駆</span>
+        <p>
+        
+              「ッッッシャス!!!!!」
+        </p>
+        </div>
+        <div class="zarame right">
+        <span>三盆糖 ざらめ</span>
+        <p>
+        
+              「勢いすごー」ケラケラ
+        </p>
+        </div>
+        <div class="zarame right">
+        <span>三盆糖 ざらめ</span>
+        <p>
+        
+              シーン終了
+        </p>
+        </div>
+        <div class="komaba right">
+        <span>駒場 駆</span>
+        <p>
+        
+              駆！いきます！
+        </p>
+        </div>
+        <div class="kp">
+        
+              2サイクル 3人目
+        </div>
+        <div class="komaba right">
+        <span>駒場 駆</span>
+        <p>
+        
+              mst 館シーン表(7) ＞ エントランスホール。古い柱時計の時報が響く中、館の主の肖像画が、あなたを見下ろしている。
+              
+        </p>
+        </div>
+        <div class="komaba right">
+        <span>駒場 駆</span>
+        <p>
+        
+              明賀さんを探ろうかな
+        </p>
+        </div>
+        <div class="kp">
+        
+              登場キャラ：駒場 駆
+        </div>
+        <div class="komaba right">
+        <span>駒場 駆</span>
+        <p>
+        
+              「そーいやリーダーどんな人かわかんねーや！<br>ちょっとつついたろ！」
+        </p>
+        </div>
+        <div class="komaba right">
+        <span>駒場 駆</span>
+        <p>
+        
+              分身に探ってもらって 本体は絵画鑑賞を楽しみます！
+        </p>
+        </div>
+        <div class="komaba right">
+        <span>駒場 駆</span>
+        <p>
+        
+              SG&gt;=5 （判定：分身の術） (SG@12#2&gt;=5) ＞ 2[1,1] ＞ 2 ＞ ファンブル
+              
+        </p>
+        </div>
+        <div class="komaba right">
+        <span>駒場 駆</span>
+        <p>
+        
+              ft ファンブル表(2) ＞ しまった！　好きな忍具を１つ失ってしまう。
+              
+        </p>
+        </div>
+        <div class="mem8 right">
+        <span>system</span>
+        <p>
+        
+              [ 駒場 駆 ] 忍具 : 2 → 1
+        </p>
+        </div>
+        <div class="komaba right">
+        <span>駒場 駆</span>
+        <p>
+        
+              遁甲符をなくした！
+        </p>
+        </div>
+        <div class="komaba right">
+        <span>駒場 駆</span>
+        <p>
+        
+              シーンおしまい！
+        </p>
+        </div>
+        <div class="kp">
+        
+              マスターシーン
+        </div>
+        <div class="meiga left">
+        <span>明賀 翠</span>
+        <p>
+        
+              choice[三盆糖 ざらめ,瑪瑙,駒場 駆] (choice[三盆糖 ざらめ,瑪瑙,駒場 駆]) ＞ 三盆糖 ざらめ
+              
+        </p>
+        </div>
+        <div class="kp">
+        
+              登場キャラ：明賀翠 三盆糖 ざらめ
+        </div>
+        <div class="meiga left">
+        <span>明賀 翠</span>
+        <p>
+        
+              「確か、貴方は早苗お嬢様とお知り合いだった、三盆糖さんですよね」
+        </p>
+        </div>
+        <div class="zarame right">
+        <span>三盆糖 ざらめ</span>
+        <p>
+        
+              「あ、はいそうです。ざらめと申します」
+        </p>
+        </div>
+        <div class="meiga left">
+        <span>明賀 翠</span>
+        <p>
+        
+              「どうですか、仕事には慣れましたか？」
+        </p>
+        </div>
+        <div class="zarame right">
+        <span>三盆糖 ざらめ</span>
+        <p>
+        
+              「はい！なんとかー。メイドさんのお仕事って、大変ですけど楽しいですねー」
+        </p>
+        </div>
+        <div class="meiga left">
+        <span>明賀 翠</span>
+        <p>
+        
+              「それはよかったです。本題の皐月札の護衛もよろしくお願いしますね」
+        </p>
+        </div>
+        <div class="zarame right">
+        <span>三盆糖 ざらめ</span>
+        <p>
+        
+              「はぁい！まかしてくださーい」
+        </p>
+        </div>
+        <div class="meiga left">
+        <span>明賀 翠</span>
+        <p>
+        
+              衣装術で新しいメイド服を新調します！！
+        </p>
+        </div>
+        <div class="meiga left">
+        <span>明賀 翠</span>
+        <p>
+        
+              2D6&gt;=5 （判定：衣装術） (2D6&gt;=5) ＞ 10[4,6] ＞ 10 ＞ 成功
+              
+        </p>
+        </div>
+        <div class="meiga left">
+        <span>明賀 翠</span>
+        <p>
+        
+              「今のメイド服が汚れたらこちらの服もご利用ください」
+        </p>
+        </div>
+        <div class="zarame right">
+        <span>三盆糖 ざらめ</span>
+        <p>
+        
+              「わぁい！ありがとうございまーす！かわいー」
+        </p>
+        </div>
+        <div class="meiga left">
+        <span>明賀 翠</span>
+        <p>
+        
+              et 感情表(4) ＞ 忠誠（プラス）／侮蔑（マイナス）
+              
+        </p>
+        </div>
+        <div class="zarame right">
+        <span>三盆糖 ざらめ</span>
+        <p>
+        
+              ET 感情表(6) ＞ 狂信（プラス）／殺意（マイナス）
+              
+        </p>
+        </div>
+        <div class="meiga left">
+        <span>明賀 翠</span>
+        <p>
+        
+              忠誠を誓っておきましょう
+        </p>
+        </div>
+        <div class="zarame right">
+        <span>三盆糖 ざらめ</span>
+        <p>
+        
+              狂信（プラス）
+        </p>
+        </div>
+        <div class="zarame right">
+        <span>三盆糖 ざらめ</span>
+        <p>
+        
+              1ｄ3 (1D3) ＞ 1
+              
+        </p>
+        </div>
+        <div class="zarame right">
+        <span>三盆糖 ざらめ</span>
+        <p>
+        
+              瑪瑙くんへの不信感がなくなる
+        </p>
+        </div>
+        <div class="mem7 left">
+        <span>解説</span>
+        <p>
+        
+              背景目撃者！<br>この背景の持ち主は、二人までにしか【感情】を持つことができない。【感情】を獲得したキャラクターが三人以上になった場合。【感情】をなくすキャラクターをランダムに選び、【感情】を持っているキャラクターが二人になるように調整する。
+        </p>
+        </div>
+        <div class="kp">
+        
+              マスターシーン終了です
+        </div>
+        <div class="kp">
+        
+            ――――――――――――――――――――――――
+        </div>
+        <div class="kp">
+        
+              3サイクル目 一人目
+        </div>
+        <div class="komaba right">
+        <span>駒場 駆</span>
+        <p>
+        
+              駆！はたらけ！
+        </p>
+        </div>
+        <div class="komaba right">
+        <span>駒場 駆</span>
+        <p>
+        
+              mst 館シーン表(6) ＞ あなたに割り当てられた寝室。ベッドは柔らかく、調度品も高級なものばかりだが……。
+              
+        </p>
+        </div>
+        <div class="kp">
+        
+              登場キャラ：駒場 駆
+        </div>
+        <div class="komaba right">
+        <span>駒場 駆</span>
+        <p>
+        
+              分身を早苗様に派遣して探ってもらうよ！<br>本体は熟睡するよ！
+        </p>
+        </div>
+        <div class="komaba right">
+        <span>駒場 駆</span>
+        <p>
+        
+              SG&gt;=5 （判定：分身の術） (SG@12#2&gt;=5) ＞ 4[1,3] ＞ 4 ＞ 失敗
+              
+        </p>
+        </div>
+        <div class="komaba right">
+        <span>駒場 駆</span>
+        <p>
+        
+              はたらかない。
+        </p>
+        </div>
+        <div class="komaba right">
+        <span>駒場 駆</span>
+        <p>
+        
+              めちゃくちゃいい寝具を堪能して シーンおしまい！
+        </p>
+        </div>
+        <div class="kp">
+        
+              3サイクル目 2人目
+        </div>
+        <div class="zarame right">
+        <span>三盆糖 ざらめ</span>
+        <p>
+        
+              ざらめ行きます
+        </p>
+        </div>
+        <div class="kp">
+        
+              登場人物：三盆糖 ざらめ 明賀翠
+        </div>
+        <div class="zarame right">
+        <span>三盆糖 ざらめ</span>
+        <p>
+        
+              MST 館シーン表(10) ＞ 戯れに遊戯室へ入ってみた。そこには撞球台やダーツの的、何組かのトランプが散らばっているポーカーテーブルがあった。
+              
+        </p>
+        </div>
+        <div class="zarame right">
+        <span>三盆糖 ざらめ</span>
+        <p>
+        
+              「明賀さん！助けてくださいー！」
+        </p>
+        </div>
+        <div class="meiga left">
+        <span>明賀 翠</span>
+        <p>
+        
+              「な、なにをやってるんですか」
+        </p>
+        </div>
+        <div class="zarame right">
+        <span>三盆糖 ざらめ</span>
+        <p>
+        
+              2D6&gt;=5 （判定：壊器術） (2D6&gt;=5) ＞ 11[5,6] ＞ 11 ＞ 成功
+              
+        </p>
+        </div>
+        <div class="zarame right">
+        <span>三盆糖 ざらめ</span>
+        <p>
+        
+              「なんかこれ壊れちゃって……どうしたらいいですかー！？」
+        </p>
+        </div>
+        <div class="mem7 left">
+            <span> </span>
+            <p>
+            政治家「伊豆」の腹心である。<br>杜若の使用人として潜入している。<br>「伊豆」から新たに腹心を派遣したという連絡が入った。<br>杜若の護衛もいるため易々と「皐月札」が手に入るとは思っていないが、容赦はしない。<br>明賀翠の本当の使命は<br>『杜若の人間の殲滅』<br>である。
+            </p>
+            </div>
+        <div class="meiga left">
+        <span>明賀 翠</span>
+        <p>
+        
+              「あぁ…。怪我をしてしまいますからここは自分が片付けます。三盆糖さんは他の事をしていて大丈夫ですよ」
+        </p>
+        </div>
+        <div class="zarame right">
+        <span>三盆糖 ざらめ</span>
+        <p>
+        
+              「あぁう、ごめんなさぁい……」
+        </p>
+        </div>
+        <div class="meiga left">
+        <span>明賀 翠</span>
+        <p>
+        
+              「だ、大丈夫ですよ。怪我してないですか？」
+        </p>
+        </div>
+        <div class="zarame right">
+        <span>三盆糖 ざらめ</span>
+        <p>
+        
+              「あ、怪我はしてないです！すみません、お忙しいのにー……」
+        </p>
+        </div>
+        <div class="meiga left">
+        <span>明賀 翠</span>
+        <p>
+        
+              「大丈夫ですよ」
+        </p>
+        </div>
+        <div class="zarame right">
+        <span>三盆糖 ざらめ</span>
+        <p>
+        
+              （明賀くんのこと知れたし……なるほどね。あとはあのひと……）
+        </p>
+        </div>
+        <div class="zarame right">
+        <span>三盆糖 ざらめ</span>
+        <p>
+        
+              稽古→時雨で
+        </p>
+        </div>
+        <div class="zarame right">
+        <span>三盆糖 ざらめ</span>
+        <p>
+        
+              シーン終了
+        </p>
+        </div>
+        <div class="mem7 left">
+        <span>解説</span>
+        <p>
+        
+              背景稽古とは！<br>自分がシーンプレイヤー時のドラマシーンに使用できる。自分の修得している攻撃忍法の中から、判定が必要なものを一つ選ぶ。そのセッションの間、一度だけ、その攻撃忍法を使用するときに、その指定特技の判定に自動的に成功したことにすることができる。この効果は、一回のセッションに一度しか使用できない。
+        </p>
+        </div>
+        <div class="kp">
+        
+              3サイクル目 3人目
+        </div>
+        <div class="menou left">
+        <span>瑪瑙</span>
+        <p>
+        
+              ｍｓｔ 館シーン表(10) ＞ 戯れに遊戯室へ入ってみた。そこには撞球台やダーツの的、何組かのトランプが散らばっているポーカーテーブルがあった。
+              
+        </p>
+        </div>
+        <div class="kp">
+        
+              登場キャラ：三盆糖 ざらめ 瑪瑙 明賀翠
+        </div>
+        <div class="menou left">
+        <span>瑪瑙</span>
+        <p>
+        
+              「ものすごい音がしましたがどうなさいました？！」
+        </p>
+        </div>
+        <div class="meiga left">
+        <span>明賀 翠</span>
+        <p>
+        
+              「少々台が古かったようで…」
+        </p>
+        </div>
+        <div class="zarame right">
+        <span>三盆糖 ざらめ</span>
+        <p>
+        
+              「ごめんなさい、あたしが壊しちゃって……」
+        </p>
+        </div>
+        <div class="menou left">
+        <span>瑪瑙</span>
+        <p>
+        
+              「おやおや…お怪我は？」
+        </p>
+        </div>
+        <div class="zarame right">
+        <span>三盆糖 ざらめ</span>
+        <p>
+        
+              「大丈夫ですー！」
+        </p>
+        </div>
+        <div class="menou left">
+        <span>瑪瑙</span>
+        <p>
+        
+              「そうでしたか！なによりです！それにしてもすごい壊れ方を…」
+        </p>
+        </div>
+        <div class="menou left">
+        <span>瑪瑙</span>
+        <p>
+        
+              内偵でざらめちゃんの秘密さぐります
+        </p>
+        </div>
+        <div class="menou left">
+        <span>瑪瑙</span>
+        <p>
+        
+              調査術
+        </p>
+        </div>
+        <div class="mem7 left">
+            <span> </span>
+            <p>
+            ◆PC１の秘密<br>あなたは「杜若早苗」本人であり、プライズ「皐月札」を所持している。<br>現在は影武者があなたの代わりを務めている。杜若家、そして「皐月札」を守るため、あなたは使用人を装っている。<br>あなたの本当の使命は<br>『プライズ「皐月札」をクライマックスフェイズ終了時に所持していること』<br>である。
+            </p>
+        </div>
+        <div class="menou left">
+        <span>瑪瑙</span>
+        <p>
+        
+              沈黙
+        </p>
+        </div>
+        <div class="menou left">
+        <span>瑪瑙</span>
+        <p>
+        
+              2D6&gt;=5 （判定：調査術） (2D6&gt;=5) ＞ 2[1,1] ＞ 2 ＞ ファンブル
+              
+        </p>
+        </div>
+        <div class="menou left">
+        <span>瑪瑙</span>
+        <p>
+        
+              ｆｔ ファンブル表(3) ＞ 情報が漏れる！　このゲームであなたが獲得した【秘密】は、他のキャラクター全員の知るところとなる。
+              
+        </p>
+        </div>
+        
+        <div class="zarame right">
+        <span>三盆糖 ざらめ</span>
+        <p>
+        
+              （この男……何を考えてるのかしら）
+        </p>
+        </div>
+        <div class="menou left">
+        <span>瑪瑙</span>
+        <p>
+        
+              （やべ）
+        </p>
+        </div>
+        <div class="mem7 left">
+            <span> </span>
+            <p>
+            明賀翠の秘密<br>政治家「伊豆」の腹心である。<br>杜若の使用人として潜入している。<br>「伊豆」から新たに腹心を派遣したという連絡が入った。<br>杜若の護衛もいるため易々と「皐月札」が手に入るとは思っていないが、容赦はしない。<br>明賀翠の本当の使命は<br>『杜若の人間の殲滅』<br>である。
+            </p>
+            </div>
+        <div class="zarame right">
+        <span>三盆糖 ざらめ</span>
+        <p>
+        
+              （まずいな……この男、怪しいのに……）
+        </p>
+        </div>
+        <div class="komaba right">
+        <span>駒場 駆</span>
+        <p>
+        
+              （zzz……）
+        </p>
+        </div>
+        <div class="zarame right">
+        <span>三盆糖 ざらめ</span>
+        <p>
+        
+              「んふふ、すみません、あたし、怪力なもので―」にこっ
+        </p>
+        </div>
+        <div class="menou left">
+        <span>瑪瑙</span>
+        <p>
+        
+              「力があることは素晴らしいですね！」
+        </p>
+        </div>
+        <div class="zarame right">
+        <span>三盆糖 ざらめ</span>
+        <p>
+        
+              「ふふふ、ありがとうございます♡」
+        </p>
+        </div>
+        <div class="zarame right">
+        <span>三盆糖 ざらめ</span>
+        <p>
+        
+              （どうにかしないといけないわね）
+        </p>
+        </div>
+        <div class="menou left">
+        <span>瑪瑙</span>
+        <p>
+        
+              （あーしくった…ぽい…なぁ）
+        </p>
+        </div>
+        <div class="menou left">
+        <span>瑪瑙</span>
+        <p>
+        
+              「じゃあ大丈夫そうですし私は持ち場にもどりますね！」
+        </p>
+        </div>
+        <div class="menou left">
+        <span>瑪瑙</span>
+        <p>
+        
+              シーン終了
+        </p>
+        </div>
+        <div class="kp">
+        
+              マスターシーン
+        </div>
+        <div class="kakitubata left">
+        <span>杜若 早苗</span>
+        <p>
+        
+              choice[三盆糖 ざらめ,瑪瑙,駒場 駆] (choice[三盆糖 ざらめ,瑪瑙,駒場 駆]) ＞ 瑪瑙
+              
+        </p>
+        </div>
+        <div class="kakitubata left">
+        <span>杜若 早苗</span>
+        <p>
+        
+              感情を結びに行きますわ
+        </p>
+        </div>
+        <div class="kakitubata left">
+        <span>杜若 早苗</span>
+        <p>
+        
+              mst 館シーン表(7) ＞ エントランスホール。古い柱時計の時報が響く中、館の主の肖像画が、あなたを見下ろしている。
+              
+        </p>
+        </div>
+        <div class="kakitubata left">
+        <span>杜若 早苗</span>
+        <p>
+        
+              「瑪瑙さん、仕事には慣れましたか？」
+        </p>
+        </div>
+        <div class="menou left">
+        <span>瑪瑙</span>
+        <p>
+        
+              「はあい！皆さんよくしていただいてますからね！」
+        </p>
+        </div>
+        <div class="kakitubata left">
+        <span>杜若 早苗</span>
+        <p>
+        
+              「それはよかったですわ」
+        </p>
+        </div>
+        <div class="menou left">
+        <span>瑪瑙</span>
+        <p>
+        
+              「お嬢様はこれからお散歩に？御供いたしますよ」
+        </p>
+        </div>
+        <div class="kakitubata left">
+        <span>杜若 早苗</span>
+        <p>
+        
+              「ありがとうございますわ」
+        </p>
+        </div>
+        <div class="kakitubata left">
+        <span>杜若 早苗</span>
+        <p>
+        
+              散歩ということで歩法で感情判定しましょう
+        </p>
+        </div>
+        <div class="kakitubata left">
+        <span>杜若 早苗</span>
+        <p>
+        
+              2D6&gt;=5 （判定：歩法） (2D6&gt;=5) ＞ 5[1,4] ＞ 5 ＞ 成功
+              
+        </p>
+        </div>
+        <div class="kakitubata left">
+        <span>杜若 早苗</span>
+        <p>
+        
+              et 感情表(2) ＞ 友情（プラス）／怒り（マイナス）
+              
+        </p>
+        </div>
+        <div class="menou left">
+        <span>瑪瑙</span>
+        <p>
+        
+              ET 感情表(2) ＞ 友情（プラス）／怒り（マイナス）
+              
+        </p>
+        </div>
+        <div class="kakitubata left">
+        <span>杜若 早苗</span>
+        <p>
+        
+              友情にします
+        </p>
+        </div>
+        <div class="menou left">
+        <span>瑪瑙</span>
+        <p>
+        
+              1d2 (1D2) ＞ 2
+              
+        </p>
+        </div>
+        <div class="menou left">
+        <span>瑪瑙</span>
+        <p>
+        
+              (この人別に偉い人じゃなかったな…）
+        </p>
+        </div>
+        <div class="menou left">
+        <span>瑪瑙</span>
+        <p>
+        
+              怒り
+        </p>
+        </div>
+        <div class="kp">
+        
+              マスターシーン終了です
+        </div>
+        <div class="kp">
+        
+            ――――――――――――――――――――――――
+        </div>
+        <div class="kp">
+        
+              4サイクル目を追加します
+        </div>
+        <div class="kp">
+        
+              4サイクル目 1人目
+        </div>
+        <div class="komaba right">
+        <span>駒場 駆</span>
+        <p>
+        
+              はたらく…
+        </p>
+        </div>
+        <div class="komaba right">
+        <span>駒場 駆</span>
+        <p>
+        
+              mst 館シーン表(8) ＞ 食堂。染み一つないテーブルクロスに覆われた長い食卓。その上は年代物の燭台や花で飾られている。
+              
+        </p>
+        </div>
+        <div class="komaba right">
+        <span>駒場 駆</span>
+        <p>
+        
+              早苗様をよびます
+        </p>
+        </div>
+        <div class="kp">
+        
+              登場キャラ：駒場 駆 杜若 早苗
+        </div>
+        <div class="komaba right">
+        <span>駒場 駆</span>
+        <p>
+        
+              「早苗様ー！調子はどうですかー？<br>僕は何も無さすぎて腹ペコっす！」
+        </p>
+        </div>
+        <div class="kakitubata left">
+        <span>杜若 早苗</span>
+        <p>
+        
+              「そう、平和なのはいいことですわ」
+        </p>
+        </div>
+        <div class="kakitubata left">
+        <span>杜若 早苗</span>
+        <p>
+        
+              「しかし、いついかなる時に敵が現れるかわかりませんから、気をつけねばなりませんね」
+        </p>
+        </div>
+        <div class="komaba right">
+        <span>駒場 駆</span>
+        <p>
+        
+              「そこでっすね！今までどんな敵が来たか聞いてもいっすか？<br>僕 人数だけは出せるんで！」
+        </p>
+        </div>
+        <div class="kakitubata left">
+        <span>杜若 早苗</span>
+        <p>
+        
+              「様々な人数が来てますわね」
+        </p>
+        </div>
+        <div class="komaba right">
+        <span>駒場 駆</span>
+        <p>
+        
+              「これくらいっすかね？」<br>全力分身秘密探り！
+        </p>
+        </div>
+        <div class="komaba right">
+        <span>駒場 駆</span>
+        <p>
+        
+              SG&gt;=5 （判定：分身の術） (SG@12#2&gt;=5) ＞ 7[1,6] ＞ 7 ＞ 成功
+              
+        </p>
+        </div>
+        <div class="mem7 left">
+            <span> </span>
+            <p>
+            杜若 早苗の秘密<br>本名は菖蒲紫恵(アヤメ シエ)。<br>杜若家の分家、菖蒲家の者である。<br>とある政治家が「皐月札」を狙っているという噂を聞き、自信を影武者にして使用人を新たに雇う形で間者をおびき出すことにした。<br>また、彼女の持つプライズ「皐月札」は実際は「皐月札(偽)」である。<br>菖蒲紫恵の本当の使命は<br>『杜若早苗、および「皐月札」を守ること』<br>である。
+            </p>
+            </div>
+        <div class="kakitubata left">
+        <span>杜若 早苗</span>
+        <p>
+        
+              「あらすごいわね。この調子で頑張ってもらえるかしら？」
+        </p>
+        </div>
+        <div class="komaba right">
+        <span>駒場 駆</span>
+        <p>
+        
+              「っす！僕がみんなを守るっすよ！」
+        </p>
+        </div>
+        <div class="komaba right">
+        <span>駒場 駆</span>
+        <p>
+        
+              シーン終了！
+        </p>
+        </div>
+        <div class="kp">
+        
+              4サイクル目 2人目
+        </div>
+        <div class="zarame right">
+        <span>三盆糖 ざらめ</span>
+        <p>
+        
+              ざらめいきます
+        </p>
+        </div>
+        <div class="zarame right">
+        <span>三盆糖 ざらめ</span>
+        <p>
+        
+              MST 館シーン表(5) ＞ あなたは階段でふと足を止めた。何者かの足音が近づいているようだ。
+              
+        </p>
+        </div>
+        <div class="kp">
+        
+              登場キャラ：三盆糖 ざらめ 駒場 駆
+        </div>
+        <div class="zarame right">
+        <span>三盆糖 ざらめ</span>
+        <p>
+        
+              経済力で他の使用人から瑪瑙くんに探りを入れるように仕向けたい
+        </p>
+        </div>
+        <div class="zarame right">
+        <span>三盆糖 ざらめ</span>
+        <p>
+        
+              2D6&gt;=5 （判定：経済力） (2D6&gt;=5) ＞ 9[4,5] ＞ 9 ＞ 成功
+              
+        </p>
+        </div>
+        <div class="menou left">
+        <span>瑪瑙</span>
+        <p>
+        
+              無面目します
+        </p>
+        </div>
+        <div class="mem7 left">
+        <span>解説</span>
+        <p>
+        
+              無面目とは！<br>誰かが情報判定に成功し己の秘密を獲得しようとしたときに使用。成功すると情報を隠蔽できる。ただし目標が同じシーンにいた場合判定にマイナス2
+        </p>
+        </div>
+        <div class="menou left">
+        <span>瑪瑙</span>
+        <p>
+        
+              2D6&gt;=5 （判定：隠蔽術） (2D6&gt;=5) ＞ 8[4,4] ＞ 8 ＞ 成功
+              
+        </p>
+        </div>
+        <div class="zarame right">
+        <span>三盆糖 ざらめ</span>
+        <p>
+        
+              （そう簡単にはわかんない、か）
+        </p>
+        </div>
+        <div class="zarame right">
+        <span>三盆糖 ざらめ</span>
+        <p>
+        
+              「ね、駒場くん。あたしたち、協力するべきじゃない？」
+        </p>
+        </div>
+        <div class="komaba right">
+        <span>駒場 駆</span>
+        <p>
+        
+              「それはそっすよ！大事な御札っすもん！」
+        </p>
+        </div>
+        <div class="zarame right">
+        <span>三盆糖 ざらめ</span>
+        <p>
+        
+              「ちょー、声おっき。まぁいいやぁ。……ちょーっと瑪瑙くんの情報引き出すのに失敗しちゃったんだけど、早苗お嬢様の……あ、あたしじゃない方のね、情報って、教えてくれたり、しない？」
+        </p>
+        </div>
+        <div class="komaba right">
+        <span>駒場 駆</span>
+        <p>
+        
+              「瑪瑙パイセンミステリアスっすもんね！<br>むしろ共有されてないのが不思議っす！ペラペラ！」<br>共有します！
+        </p>
+        </div>
+        <div class="komaba right">
+        <span>駒場 駆</span>
+        <p>
+        
+              「そんなわけなんで！頼ってもらっていいっすよ！」
+        </p>
+        </div>
+        <div class="zarame right">
+        <span>三盆糖 ざらめ</span>
+        <p>
+        
+              「ありがとー！……なーるほどね、やっぱりか。紫恵にお礼言っとかなきゃ……駒場くん、いいこ！ぎゅー！」
+        </p>
+        </div>
+        <div class="komaba right">
+        <span>駒場 駆</span>
+        <p>
+        
+              「へへっ！ぎゅーっ！」
+        </p>
+        </div>
+        <div class="zarame right">
+        <span>三盆糖 ざらめ</span>
+        <p>
+        
+              「あ！照れない！これはこれでかわいい！ぎゅー！」
+        </p>
+        </div>
+        <div class="komaba right">
+        <span>駒場 駆</span>
+        <p>
+        
+              「？ よくわかんないっすけど 改めてよろしくっす！」
+        </p>
+        </div>
+        <div class="zarame right">
+        <span>三盆糖 ざらめ</span>
+        <p>
+        
+              「うん！よろしくー！」
+        </p>
+        </div>
+        <div class="zarame right">
+        <span>三盆糖 ざらめ</span>
+        <p>
+        
+              シーン終了
+        </p>
+        </div>
+        <div class="kp">
+        
+              4サイクル目 3人目
+        </div>
+        <div class="menou left">
+        <span>瑪瑙</span>
+        <p>
+        
+              ｍｓｔ 館シーン表(5) ＞ あなたは階段でふと足を止めた。何者かの足音が近づいているようだ。
+              
+        </p>
+        </div>
+        <div class="kp">
+        
+              登場キャラ：瑪瑙 明賀翠
+        </div>
+        <div class="menou left">
+        <span>瑪瑙</span>
+        <p>
+        
+              「おや…明賀さん」
+        </p>
+        </div>
+        <div class="meiga left">
+        <span>明賀 翠</span>
+        <p>
+        
+              「あ、瑪瑙さん」
+        </p>
+        </div>
+        <div class="menou left">
+        <span>瑪瑙</span>
+        <p>
+        
+              「今お嬢様とお散歩してお部屋にお送りしてきたところなんです。なにかお手伝いできることなどは？」
+        </p>
+        </div>
+        <div class="meiga left">
+        <span>明賀 翠</span>
+        <p>
+        
+              「今日の仕事は一通り終わっております。お嬢様のお散歩に付き添っていただきありがとうございます」
+        </p>
+        </div>
+        <div class="menou left">
+        <span>瑪瑙</span>
+        <p>
+        
+              「さすがでいらっしゃいますね！では本日の業務は終了でしょうか？…それにしても、本日も平和な一日でしたね」
+        </p>
+        </div>
+        <div class="meiga left">
+        <span>明賀 翠</span>
+        <p>
+        
+              「そうですね。皐月札を盗む輩も来ませんでしたし…」
+        </p>
+        </div>
+        <div class="menou left">
+        <span>瑪瑙</span>
+        <p>
+        
+              「…本当に狙っている方がいらっしゃるんでしょうかね」
+        </p>
+        </div>
+        <div class="meiga left">
+        <span>明賀 翠</span>
+        <p>
+        
+              「さぁ、どこまでが本当なのか自分にはわかりかねますが、本当だと思い覚悟しておかなければこの仕事は成り立ちません」
+        </p>
+        </div>
+        <div class="menou left">
+        <span>瑪瑙</span>
+        <p>
+        
+              「…おっしゃる通りです！！いや勉強になりますぅ！」
+        </p>
+        </div>
+        <div class="menou left">
+        <span>瑪瑙</span>
+        <p>
+        
+              2D6&gt;=5 （判定：対人術） (2D6&gt;=5) ＞ 5[1,4] ＞ 5 ＞ 成功
+              
+        </p>
+        </div>
+        <div class="menou left">
+        <span>瑪瑙</span>
+        <p>
+        
+              ＥＴ 感情表(3) ＞ 愛情（プラス）／妬み（マイナス）
+              
+        </p>
+        </div>
+        <div class="meiga left">
+        <span>明賀 翠</span>
+        <p>
+        
+              et 感情表(1) ＞ 共感（プラス）／不信（マイナス）
+              
+        </p>
+        </div>
+        <div class="meiga left">
+        <span>明賀 翠</span>
+        <p>
+        
+              共感ですね
+        </p>
+        </div>
+        <div class="menou left">
+        <span>瑪瑙</span>
+        <p>
+        
+              （…仕事ができるやつはいいですね）妬み
+        </p>
+        </div>
+        <div class="menou left">
+        <span>瑪瑙</span>
+        <p>
+        
+              シーン終了
+        </p>
+        </div>
+        <div class="kp">
+        
+              マスターシーン
+        </div>
+        <div class="meiga left">
+        <span>明賀 翠</span>
+        <p>
+        
+              choice[三盆糖 ざらめ,瑪瑙,駒場 駆] (choice[三盆糖 ざらめ,瑪瑙,駒場 駆]) ＞ 瑪瑙
+              
+        </p>
+        </div>
+        <div class="meiga left">
+        <span>明賀 翠</span>
+        <p>
+        
+              瑪瑙くんに感情判定をしに行きます
+        </p>
+        </div>
+        <div class="meiga left">
+        <span>明賀 翠</span>
+        <p>
+        
+              場面は引き続き
+        </p>
+        </div>
+        <div class="menou left">
+        <span>瑪瑙</span>
+        <p>
+        
+              「…まだなにか？」
+        </p>
+        </div>
+        <div class="meiga left">
+        <span>明賀 翠</span>
+        <p>
+        
+              「明日の仕事内容なのですが」
+        </p>
+        </div>
+        <div class="meiga left">
+        <span>明賀 翠</span>
+        <p>
+        
+              「貴方には、お嬢様についていただこうかと思いまして」
+        </p>
+        </div>
+        <div class="meiga left">
+        <span>明賀 翠</span>
+        <p>
+        
+              「今日も散歩に付き添っていただいたらしいので」
+        </p>
+        </div>
+        <div class="menou left">
+        <span>瑪瑙</span>
+        <p>
+        
+              「それでしたらお任せください！」
+        </p>
+        </div>
+        <div class="meiga left">
+        <span>明賀 翠</span>
+        <p>
+        
+              「では、よろしくお願いしますね。」
+        </p>
+        </div>
+        <div class="meiga left">
+        <span>明賀 翠</span>
+        <p>
+        
+              言霊術で感情判定だ
+        </p>
+        </div>
+        <div class="meiga left">
+        <span>明賀 翠</span>
+        <p>
+        
+              2D6&gt;=5 （判定：言霊術） (2D6&gt;=5) ＞ 7[1,6] ＞ 7 ＞ 成功
+              
+        </p>
+        </div>
+        <div class="meiga left">
+        <span>明賀 翠</span>
+        <p>
+        
+              et 感情表(3) ＞ 愛情（プラス）／妬み（マイナス）
+              
+        </p>
+        </div>
+        <div class="menou left">
+        <span>瑪瑙</span>
+        <p>
+        
+              ET 感情表(6) ＞ 狂信（プラス）／殺意（マイナス）
+              
+        </p>
+        </div>
+        <div class="meiga left">
+        <span>明賀 翠</span>
+        <p>
+        
+              愛情かなぁ
+        </p>
+        </div>
+        <div class="menou left">
+        <span>瑪瑙</span>
+        <p>
+        
+              同じ所属ってことで狂信のほうにしようかな
+        </p>
+        </div>
+        <div class="menou left">
+        <span>瑪瑙</span>
+        <p>
+        
+               狂信（プラス）
+        </p>
+        </div>
+        <div class="menou left">
+        <span>瑪瑙</span>
+        <p>
+        
+              「お任せを！」
+        </p>
+        </div>
+        <div class="meiga left">
+        <span>明賀 翠</span>
+        <p>
+        
+              「お願いしますね」
+        </p>
+        </div>
+        <div class="kp">
+        
+              マスターシーン終了です
+        </div>
+        <div class="kp">
+        
+            ――――――――――――――――――――――――
+        </div>
+        <div class="kp">
+        
+              クライマックスフェイズ
+        </div>
+        <div class="kp">
+        
+              緩やかに降り出した雨はやがて激しくなる
+        </div>
+        <div class="kp">
+        
+              軒から水が地に打ち付ける。屋敷の防音に問題はないが、シノビたるあなたたちに耳には僅かな水音さえも届く。
+        </div>
+        <div class="kp">
+        
+              それに混じる太刀音とて、例外ではない。
+        </div>
+        <div class="kp">
+        
+              あなたたちは音の発生地に急ぐだろう。
+        </div>
+        <div class="meiga left">
+        <span>明賀 翠</span>
+        <p>
+        
+              「おやおや、みなさんお揃いで。もうお休みになられたと思っていました」
+        </p>
+        </div>
+        <div class="kp">
+        
+              部屋の中には刀を持った明賀翠と、刀と共に倒れ伏す杜若早苗の姿があった
+        </div>
+        <div class="meiga left">
+        <span>明賀 翠</span>
+        <p>
+        
+              「どうやら、彼女の持つ「皐月札」は偽物のようですねぇ」
+        </p>
+        </div>
+        <div class="meiga left">
+        <span>明賀 翠</span>
+        <p>
+        
+              「シノビとはいえ無駄な殺生は好みません。おとなしく「皐月札」を渡していただきたいところですが……」
+        </p>
+        </div>
+        <div class="meiga left">
+        <span>明賀 翠</span>
+        <p>
+        
+              「そう簡単には渡してくれないようです。……仕方ない。実力行使といきましょう」
+        </p>
+        </div>
+        <div class="kp">
+        
+              ということで戦闘が開始となります
+        </div>
+        <div class="kp">
+        
+              プロットを決めたいですね
+        </div>
+        <div class="zarame right">
+        <span>三盆糖 ざらめ</span>
+        <p>
+        
+              （敵はふたり……かな？駒場くんは大丈夫だとして……）
+        </p>
+        </div>
+        <div class="komaba right">
+        <span>駒場 駆</span>
+        <p>
+        
+              （やっべ！殺さなきゃ！）
+        </p>
+        </div>
+        <div class="menou left">
+        <span>瑪瑙</span>
+        <p>
+        
+              （さぁ…どううごくか）
+        </p>
+        </div>
+        <div class="mem8 right">
+        <span>system</span>
+        <p>
+        
+              [ 明賀 翠 ] がダイスシンボルを公開。出目は 4 です。
+        </p>
+        </div>
+        <div class="mem8 right">
+        <span>system</span>
+        <p>
+        
+              [ 三盆糖 ざらめ ] がダイスシンボルを公開。出目は 4 です。
+        </p>
+        </div>
+        <div class="mem8 right">
+        <span>system</span>
+        <p>
+        
+              [ 瑪瑙 ] がダイスシンボルを公開。出目は 2 です。
+        </p>
+        </div>
+        <div class="mem8 right">
+        <span>system</span>
+        <p>
+        
+              [ 駒場 駆 ] がダイスシンボルを公開。出目は 2 です。
+        </p>
+        </div>
+        <div class="meiga left">
+        <span>明賀 翠</span>
+        <p>
+        
+              D66 (D66) ＞ 34
+              
+        </p>
+        </div>
+        <div class="zarame right">
+        <span>三盆糖 ざらめ</span>
+        <p>
+        
+              ｄ66 (D66) ＞ 35
+              
+        </p>
+        </div>
+        <div class="zarame right">
+        <span>三盆糖 ざらめ</span>
+        <p>
+        
+              時雨を明賀くんに
+        </p>
+        </div>
+        <div class="mem7 left">
+        <span>解説</span>
+        <p>
+        
+              時雨とは！<br>射撃戦。間合内の好きなキャラクターを二人まで目標にできる。攻撃が成功すると、目標に射撃戦ダメージを1点与えることができる。
+        </p>
+        </div>
+        <div class="zarame right">
+        <span>三盆糖 ざらめ</span>
+        <p>
+        
+              2D6&gt;=5 （判定：砲術） (2D6&gt;=5) ＞ 5[2,3] ＞ 5 ＞ 成功
+              
+        </p>
+        </div>
+        <div class="meiga left">
+        <span>明賀 翠</span>
+        <p>
+        
+              SG@12#4&gt;=6 （判定：潜伏術） (SG@12#4&gt;=6) ＞ 7[3,4] ＞ 7 ＞ 成功
+              
+        </p>
+        </div>
+        <div class="meiga left">
+        <span>明賀 翠</span>
+        <p>
+        
+              痛打をします。
+        </p>
+        </div>
+        <div class="zarame right">
+        <span>三盆糖 ざらめ</span>
+        <p>
+        
+              「ちっ！避けられちゃった」
+        </p>
+        </div>
+        <div class="mem7 left">
+        <span>解説</span>
+        <p>
+        
+              痛打とは！<br>自分の命中判定の前に使用できる。指定特技の判定に成功すると、その攻撃によるダメージを1点上昇することができる。この効果によって上昇するダメージは、各攻撃忍法の最初に書いてあるもののみである。
+        </p>
+        </div>
+        <div class="meiga left">
+        <span>明賀 翠</span>
+        <p>
+        
+              SG@12#4&gt;=5 （判定：衣装術） (SG@12#4&gt;=5) ＞ 5[1,4] ＞ 5 ＞ 成功
+              
+        </p>
+        </div>
+        <div class="meiga left">
+        <span>明賀 翠</span>
+        <p>
+        
+              接近戦攻撃をざらめちゃんに
+        </p>
+        </div>
+        <div class="meiga left">
+        <span>明賀 翠</span>
+        <p>
+        
+              SG@12#4&gt;=5 （判定：潜伏術） (SG@12#4&gt;=5) ＞ 7[3,4] ＞ 7 ＞ 成功
+              
+        </p>
+        </div>
+        <div class="zarame right">
+        <span>三盆糖 ざらめ</span>
+        <p>
+        
+              2D6&gt;=6 （判定：砲術） (2D6&gt;=6) ＞ 6[3,3] ＞ 6 ＞ 成功
+              
+        </p>
+        </div>
+        <div class="meiga left">
+        <span>明賀 翠</span>
+        <p>
+        
+              「避けられましたか」
+        </p>
+        </div>
+        <div class="zarame right">
+        <span>三盆糖 ざらめ</span>
+        <p>
+        
+              「あたんないよー！」
+        </p>
+        </div>
+        <div class="kp">
+        
+              では2にいるお二方
+        </div>
+        <div class="menou left">
+        <span>瑪瑙</span>
+        <p>
+        
+              ｄ66 (D66) ＞ 13
+              
+        </p>
+        </div>
+        <div class="komaba right">
+        <span>駒場 駆</span>
+        <p>
+        
+              d66 (D66) ＞ 24
+              
+        </p>
+        </div>
+        <div class="komaba right">
+        <span>駒場 駆</span>
+        <p>
+        
+              翠くんに 鎖陣を！
+        </p>
+        </div>
+        <div class="mem7 left">
+        <span>解説</span>
+        <p>
+        
+              鎖陣とは！<br>射撃戦。攻撃に成功すると、目標に射撃戦ダメージを1点与え、それ以降、戦闘が終了するまで目標が行う回避判定にマイナス1の修正がつく（最大マイナス3まで）
+        </p>
+        </div>
+        <div class="komaba right">
+        <span>駒場 駆</span>
+        <p>
+        
+              SG&gt;=5 （判定：縄術） (SG@12#2&gt;=5) ＞ 5[2,3] ＞ 5 ＞ 成功
+              
+        </p>
+        </div>
+        <div class="meiga left">
+        <span>明賀 翠</span>
+        <p>
+        
+              SG@12#4&gt;=6 （判定：衣装術） (SG@12#4&gt;=6) ＞ 11[5,6] ＞ 11 ＞ 成功
+              
+        </p>
+        </div>
+        <div class="komaba right">
+        <span>駒場 駆</span>
+        <p>
+        
+              「うっわはっや！困るんすけどー！」
+        </p>
+        </div>
+        <div class="meiga left">
+        <span>明賀 翠</span>
+        <p>
+        
+              「危ないですねぇ」
+        </p>
+        </div>
+        <div class="menou left">
+        <span>瑪瑙</span>
+        <p>
+        
+              ざらめちゃんに雀蜂
+        </p>
+        </div>
+        <div class="mem7 left">
+        <span>解説</span>
+        <p>
+        
+              雀蜂とは！<br>集団戦。命中率が11となる。攻撃が成功すると目標に集団戦ダメージ1。命中判定がスペシャルの場合はさらに射撃戦ダメージ2
+        </p>
+        </div>
+        <div class="menou left">
+        <span>瑪瑙</span>
+        <p>
+        
+              2D6&gt;=5 （判定：人脈） (2D6&gt;=5) ＞ 4[1,3] ＞ 4 ＞ 失敗
+              
+        </p>
+        </div>
+        <div class="meiga left">
+        <span>明賀 翠</span>
+        <p>
+        
+              遁甲符を撃ちます
+        </p>
+        </div>
+        <div class="mem7 left">
+        <span>解説</span>
+        <p>
+        
+              遁甲符！<br>自分以外の誰かが行為判定のサイコロを振ったときに使用できる。そのサイコロを振り直すことができる。
+        </p>
+        </div>
+        <div class="menou left">
+        <span>瑪瑙</span>
+        <p>
+        
+              2D6&gt;=5 （判定：人脈） (2D6&gt;=5) ＞ 10[4,6] ＞ 10 ＞ 成功
+              
+        </p>
+        </div>
+        <div class="menou left">
+        <span>瑪瑙</span>
+        <p>
+        
+              「…助かります」
+        </p>
+        </div>
+        <div class="zarame right">
+        <span>三盆糖 ざらめ</span>
+        <p>
+        
+              2D6&gt;=7 （判定：経済力） (2D6&gt;=7) ＞ 7[2,5] ＞ 7 ＞ 成功
+              
+        </p>
+        </div>
+        <div class="komaba right">
+        <span>駒場 駆</span>
+        <p>
+        
+              「瑪瑙パイセン何やってるんすか!!???」
+        </p>
+        </div>
+        <div class="zarame right">
+        <span>三盆糖 ざらめ</span>
+        <p>
+        
+              「あは！そうだよねー。残念ながら、瑪瑙さんは敵っぽいよ？」
+        </p>
+        </div>
+        <div class="komaba right">
+        <span>駒場 駆</span>
+        <p>
+        
+              「そんなぁ!!」
+        </p>
+        </div>
+        <div class="meiga left">
+        <span>明賀 翠</span>
+        <p>
+        
+              「なるほどぉ」
+        </p>
+        </div>
+        <div class="menou left">
+        <span>瑪瑙</span>
+        <p>
+        
+              「駒場くん、君はまっすぐすぎて忍者には向きませんよ。お部屋に戻って眠りなさい。またいい仕事を紹介してあげますから」
+        </p>
+        </div>
+        <div class="kp">
+        
+              2ラウンド目
+        </div>
+        <div class="kp">
+        
+              プロットをしてください
+        </div>
+        <div class="mem8 right">
+        <span>system</span>
+        <p>
+        
+              [ 明賀 翠 ] がダイスシンボルを公開。出目は 3 です。
+        </p>
+        </div>
+        <div class="mem8 right">
+        <span>system</span>
+        <p>
+        
+              [ 駒場 駆 ] がダイスシンボルを公開。出目は 3 です。
+        </p>
+        </div>
+        <div class="mem8 right">
+        <span>system</span>
+        <p>
+        
+              [ 三盆糖 ざらめ ] がダイスシンボルを公開。出目は 4 です。
+        </p>
+        </div>
+        <div class="mem8 right">
+        <span>system</span>
+        <p>
+        
+              [ 瑪瑙 ] がダイスシンボルを公開。出目は 2 です。
+        </p>
+        </div>
+        <div class="kp">
+        
+              はい4の方から
+        </div>
+        <div class="zarame right">
+        <span>三盆糖 ざらめ</span>
+        <p>
+        
+              明賀くんに奥義
+        </p>
+        </div>
+        <div class="zarame right">
+        <span>三盆糖 ざらめ</span>
+        <p>
+        
+              奥義！！
+        </p>
+        </div>
+        <div class="zarame right">
+        <span>三盆糖 ざらめ</span>
+        <p>
+        
+              ■奥義<br>《方寸狙撃》<br>指定特技　：砲術<br>エフェクト：クリティカルヒット/伸ばし/威力低下<br>効果・演出：「方寸」とは、文字通り一寸四方を表すが、古くは人のこころは心の臓一寸に宿るとして「こころ」の意も秘める。<br>その銃撃は、誰しもに簡単に扱える軽快さながら、野にかくれた君子のような枯淡な風格で、あなたの心臓を狙い撃つ。
+        </p>
+        </div>
+        <div class="mem7 left">
+        <span>解説</span>
+        <p>
+        
+              この奥義は！<br>クリティカルヒット：プロット値から1以内にいるキャラクター一人を目標に選ぶ。ランダムに特技分野四つを選び、目標の【生命力】を失わせる。<br>伸ばし：通常よりもプロット値が1広い位置にいるキャラクターを目標に選ぶことができる。<br>威力低下：失わせることのできる【生命力】の値が1点減少する。
+        </p>
+        </div>
+        <div class="mem8 right">
+        <span>system</span>
+        <p>
+        
+              [ 明賀 翠 ] 生命 : 6 → 3
+        </p>
+        </div>
+        <div class="meiga left">
+        <span>明賀 翠</span>
+        <p>
+        
+              「っ！！」
+        </p>
+        </div>
+        <div class="zarame right">
+        <span>三盆糖 ざらめ</span>
+        <p>
+        
+              「ほらほら！札ほしいんでしょ！？」
+        </p>
+        </div>
+        <div class="meiga left">
+        <span>明賀 翠</span>
+        <p>
+        
+              「なかなかやりますねっ」
+        </p>
+        </div>
+        <div class="kp">
+        
+              では3の方々
+        </div>
+        <div class="meiga left">
+        <span>明賀 翠</span>
+        <p>
+        
+              D66 (D66) ＞ 34
+              
+        </p>
+        </div>
+        <div class="komaba right">
+        <span>駒場 駆</span>
+        <p>
+        
+              d66 (D66) ＞ 24
+              
+        </p>
+        </div>
+        <div class="meiga left">
+        <span>明賀 翠</span>
+        <p>
+        
+              では、痛打をします
+        </p>
+        </div>
+        <div class="meiga left">
+        <span>明賀 翠</span>
+        <p>
+        
+              SG@12#3&gt;=5 （判定：衣装術） (SG@12#3&gt;=5) ＞ 7[2,5] ＞ 7 ＞ 成功
+              
+        </p>
+        </div>
+        <div class="meiga left">
+        <span>明賀 翠</span>
+        <p>
+        
+              射撃戦攻撃をざらめさんに
+        </p>
+        </div>
+        <div class="meiga left">
+        <span>明賀 翠</span>
+        <p>
+        
+              SG@12#3&gt;=5 （判定：第六感） (SG@12#3&gt;=5) ＞ 8[2,6] ＞ 8 ＞ 成功
+              
+        </p>
+        </div>
+        <div class="komaba right">
+        <span>駒場 駆</span>
+        <p>
+        
+              護衛を!
+        </p>
+        </div>
+        <div class="mem7 left">
+        <span>解説</span>
+        <p>
+        
+              護衛とは！<br>間合内の誰かが攻撃を受け、その命中判定が成功したとき、攻撃を受けた者の同意があれば、使用できる。指定特技の判定に攻撃を受けるキャラクターの代わりに、自分が回避判定を行い、それに成功すると攻撃を無効化することができる。
+        </p>
+        </div>
+        <div class="komaba right">
+        <span>駒場 駆</span>
+        <p>
+        
+              SG&gt;=5 （判定：分身の術） (SG@12#2&gt;=5) ＞ 5[1,4] ＞ 5 ＞ 成功
+              
+        </p>
+        </div>
+        <div class="meiga left">
+        <span>明賀 翠</span>
+        <p>
+        
+              いやそれは違うよ
+        </p>
+        </div>
+        <div class="meiga left">
+        <span>明賀 翠</span>
+        <p>
+        
+              奥義！！
+        </p>
+        </div>
+        <div class="meiga left">
+        <span>明賀 翠</span>
+        <p>
+        
+              ■奥義<br>《虚色の嘘憑》<br>指定特技　：言霊術<br>エフェクト：判定妨害<br>効果・演出：返り血まやかす偽りの　紅纏うは嘘の色
+        </p>
+        </div>
+        <div class="meiga left">
+        <span>明賀 翠</span>
+        <p>
+        
+              4の出目を1に
+        </p>
+        </div>
+        <div class="mem7 left">
+        <span>解説</span>
+        <p>
+        
+              なんと、駒場君は逆凪に
+        </p>
+        </div>
+        <div class="komaba right">
+        <span>駒場 駆</span>
+        <p>
+        
+              「あぁぁざらめさあぁぁ!!!!」
+        </p>
+        </div>
+        <div class="zarame right">
+        <span>三盆糖 ざらめ</span>
+        <p>
+        
+              2D6&gt;=7 （判定：経済力） (2D6&gt;=7) ＞ 12[6,6] ＞ 12 ＞ スペシャル(【生命力】1点か変調一つを回復)
+              
+        </p>
+        </div>
+        <div class="zarame right">
+        <span>三盆糖 ざらめ</span>
+        <p>
+        
+              「だいじょーぶ！！ありがとねー！」
+        </p>
+        </div>
+        <div class="komaba right">
+        <span>駒場 駆</span>
+        <p>
+        
+              瑪瑙パイセンに鎖陣を！
+        </p>
+        </div>
+        <div class="komaba right">
+        <span>駒場 駆</span>
+        <p>
+        
+              SG&gt;=5 （判定：縄術） (SG@12#2&gt;=5) ＞ 11[5,6] ＞ 11 ＞ 成功
+              
+        </p>
+        </div>
+        <div class="meiga left">
+        <span>明賀 翠</span>
+        <p>
+        
+              試しに囮方
+        </p>
+        </div>
+        <div class="mem7 left">
+        <span>解説</span>
+        <p>
+        
+              囮方とは！<br>間合内のキャラクターが、攻撃の目標になったときに使用できる（このとき、自分がその攻撃の目標になっていたら使用できない）。攻撃の目標になったキャラクター一体を目標に選ぶ。指定特技の判定に成功すると、その攻撃の目標を、目標から自分に変更する。
+        </p>
+        </div>
+        <div class="menou left">
+        <span>瑪瑙</span>
+        <p>
+        
+              狂信あげます
+        </p>
+        </div>
+        <div class="meiga left">
+        <span>明賀 翠</span>
+        <p>
+        
+              SG@12#3+1&gt;=7 （判定：変装術） (SG+1@12#3&gt;=7) ＞ 8[3,5]+1 ＞ 9 ＞ 成功
+              
+        </p>
+        </div>
+        <div class="meiga left">
+        <span>明賀 翠</span>
+        <p>
+        
+              SG@12#3&gt;=6 （判定：衣装術） (SG@12#3&gt;=6) ＞ 6[2,4] ＞ 6 ＞ 成功
+              
+        </p>
+        </div>
+        <div class="menou left">
+        <span>瑪瑙</span>
+        <p>
+        
+              「どちらも倒れるわけにはいかないんじゃないですか？先輩」
+        </p>
+        </div>
+        <div class="meiga left">
+        <span>明賀 翠</span>
+        <p>
+        
+              「まだまだですね」
+        </p>
+        </div>
+        <div class="komaba right">
+        <span>駒場 駆</span>
+        <p>
+        
+              「僕だってねぇ！忍者なんすよぉ！僕からやれよぉ！」
+        </p>
+        </div>
+        <div class="menou left">
+        <span>瑪瑙</span>
+        <p>
+        
+              雀蜂を駒場くんに
+        </p>
+        </div>
+        <div class="menou left">
+        <span>瑪瑙</span>
+        <p>
+        
+              「命は何よりも高いものって知ってるでしょう。」
+        </p>
+        </div>
+        <div class="menou left">
+        <span>瑪瑙</span>
+        <p>
+        
+              2D6&gt;=5 （判定：人脈） (2D6&gt;=5) ＞ 2[1,1] ＞ 2 ＞ ファンブル
+              
+        </p>
+        </div>
+        <div class="meiga left">
+        <span>明賀 翠</span>
+        <p>
+        
+              遁甲符
+        </p>
+        </div>
+        <div class="menou left">
+        <span>瑪瑙</span>
+        <p>
+        
+              2D6&gt;=5 （判定：人脈） (2D6&gt;=5) ＞ 5[2,3] ＞ 5 ＞ 成功
+              
+        </p>
+        </div>
+        <div class="meiga left">
+        <span>明賀 翠</span>
+        <p>
+        
+              「危ないですねぇ」
+        </p>
+        </div>
+        <div class="menou left">
+        <span>瑪瑙</span>
+        <p>
+        
+              「…すこしおとなしくしててください」
+        </p>
+        </div>
+        <div class="komaba right">
+        <span>駒場 駆</span>
+        <p>
+        
+              「嫌っす!!!!!」
+        </p>
+        </div>
+        <div class="menou left">
+        <span>瑪瑙</span>
+        <p>
+        
+              GWT 戦国変調表(4) ＞ 飢餓:戦闘に参加した時、ラウンドの終了時にサイコロを1つ振る(猛毒と共用)。偶数だったら【生命力】を1減少。サイクル終了時に〈兵糧術〉判定し成功すると無効化。
+              
+        </p>
+        </div>
+        <div class="menou left">
+        <span>瑪瑙</span>
+        <p>
+        
+              「…本当に…忍びに向いていない」
+        </p>
+        </div>
+        <div class="kp">
+        
+              飢餓の判定どうぞ
+        </div>
+        <div class="zarame right">
+        <span>三盆糖 ざらめ</span>
+        <p>
+        
+              「それはあなたが決めることじゃないでしょー！」
+        </p>
+        </div>
+        <div class="komaba right">
+        <span>駒場 駆</span>
+        <p>
+        
+              1d6 (1D6) ＞ 3
+              
+        </p>
+        </div>
+        <div class="kp">
+        
+              では次のラウンドです
+        </div>
+        <div class="kp">
+        
+              3ラウンド目
+        </div>
+        <div class="kp">
+        
+              プロットどうぞ
+        </div>
+        <div class="mem8 right">
+        <span>system</span>
+        <p>
+        
+              [ 駒場 駆 ] がダイスシンボルを公開。出目は 3 です。
+        </p>
+        </div>
+        <div class="mem8 right">
+        <span>system</span>
+        <p>
+        
+              [ 三盆糖 ざらめ ] がダイスシンボルを公開。出目は 4 です。
+        </p>
+        </div>
+        <div class="mem8 right">
+        <span>system</span>
+        <p>
+        
+              [ 明賀 翠 ] がダイスシンボルを公開。出目は 4 です。
+        </p>
+        </div>
+        <div class="mem8 right">
+        <span>system</span>
+        <p>
+        
+              [ 瑪瑙 ] がダイスシンボルを公開。出目は 2 です。
+        </p>
+        </div>
+        <div class="meiga left">
+        <span>明賀 翠</span>
+        <p>
+        
+              D66 (D66) ＞ 25
+              
+        </p>
+        </div>
+        <div class="zarame right">
+        <span>三盆糖 ざらめ</span>
+        <p>
+        
+              ｄ66 (D66) ＞ 15
+              
+        </p>
+        </div>
+        <div class="meiga left">
+        <span>明賀 翠</span>
+        <p>
+        
+              痛打からの射撃戦
+        </p>
+        </div>
+        <div class="meiga left">
+        <span>明賀 翠</span>
+        <p>
+        
+              SG@12#4&gt;=5 （判定：衣装術） (SG@12#4&gt;=5) ＞ 4[1,3] ＞ 4 ＞ ファンブル
+              
+        </p>
+        </div>
+        <div class="meiga left">
+        <span>明賀 翠</span>
+        <p>
+        
+              はい
+        </p>
+        </div>
+        <div class="zarame right">
+        <span>三盆糖 ざらめ</span>
+        <p>
+        
+              時雨を明賀くんと瑪瑙くんに
+        </p>
+        </div>
+        <div class="zarame right">
+        <span>三盆糖 ざらめ</span>
+        <p>
+        
+              2D6&gt;=5 （判定：砲術） (2D6&gt;=5) ＞ 11[5,6] ＞ 11 ＞ 成功
+              
+        </p>
+        </div>
+        <div class="menou left">
+        <span>瑪瑙</span>
+        <p>
+        
+              2D6&gt;=6 （判定：手裏剣術） (2D6&gt;=6) ＞ 7[2,5] ＞ 7 ＞ 成功
+              
+        </p>
+        </div>
+        <div class="meiga left">
+        <span>明賀 翠</span>
+        <p>
+        
+              SG@12#4&gt;=6 （判定：潜伏術） (SG@12#4&gt;=6) ＞ 5[1,4] ＞ 5 ＞ 失敗
+              
+        </p>
+        </div>
+        <div class="mem8 right">
+        <span>system</span>
+        <p>
+        
+              [ 明賀 翠 ] 生命 : 3 → 2
+        </p>
+        </div>
+        <div class="meiga left">
+        <span>明賀 翠</span>
+        <p>
+        
+              はい
+        </p>
+        </div>
+        <div class="zarame right">
+        <span>三盆糖 ざらめ</span>
+        <p>
+        
+              「うーん。まぁよし！」
+        </p>
+        </div>
+        <div class="komaba right">
+        <span>駒場 駆</span>
+        <p>
+        
+              翠くんを縛るよ！
+        </p>
+        </div>
+        <div class="komaba right">
+        <span>駒場 駆</span>
+        <p>
+        
+              SG&gt;=5 （判定：縄術） (SG@12#2&gt;=5) ＞ 6[3,3] ＞ 6 ＞ 成功
+              
+        </p>
+        </div>
+        <div class="meiga left">
+        <span>明賀 翠</span>
+        <p>
+        
+              逆凪してても奥義は打てる
+        </p>
+        </div>
+        <div class="meiga left">
+        <span>明賀 翠</span>
+        <p>
+        
+              奥義！！
+        </p>
+        </div>
+        <div class="meiga left">
+        <span>明賀 翠</span>
+        <p>
+        
+              ■奥義<br>《虚色の嘘憑》<br>指定特技　：言霊術<br>エフェクト：判定妨害<br>効果・演出：返り血まやかす偽りの　紅纏うは嘘の色<br> 
+        </p>
+        </div>
+        <div class="meiga left">
+        <span>明賀 翠</span>
+        <p>
+        
+              3を1に
+        </p>
+        </div>
+        <div class="komaba right">
+        <span>駒場 駆</span>
+        <p>
+        
+              破れろ！
+        </p>
+        </div>
+        <div class="mem7 left">
+        <span>解説</span>
+        <p>
+        
+              駒場君は魔界工学を持っている！
+        </p>
+        </div>
+        <div class="mem7 left">
+        <span>解説</span>
+        <p>
+        
+              魔界工学とは！<br>自分が行為判定を行うときに何かの特技で代用を行う場合、「器術」の分野と「妖術」の分野がつながっているものとして扱う。
+        </p>
+        </div>
+        <div class="komaba right">
+        <span>駒場 駆</span>
+        <p>
+        
+              縄+魔界工学！
+        </p>
+        </div>
+        <div class="komaba right">
+        <span>駒場 駆</span>
+        <p>
+        
+              SG&gt;=7 （判定：縄術） (SG@12#2&gt;=7) ＞ 6[3,3] ＞ 6 ＞ 失敗
+              
+        </p>
+        </div>
+        <div class="komaba right">
+        <span>駒場 駆</span>
+        <p>
+        
+              神通丸を！使います！
+        </p>
+        </div>
+        <div class="mem8 right">
+        <span>system</span>
+        <p>
+        
+              [ 駒場 駆 ] 忍具 : 1 → 0
+        </p>
+        </div>
+        <div class="mem7 left">
+        <span>解説</span>
+        <p>
+        
+              神通丸！<br>自分が行為判定のサイコロを振ったときに使用できる。そのサイコロを振り直すことができる。
+        </p>
+        </div>
+        <div class="komaba right">
+        <span>駒場 駆</span>
+        <p>
+        
+              SG&gt;=7 （判定：縄術） (SG@12#2&gt;=7) ＞ 8[4,4] ＞ 8 ＞ 成功
+              
+        </p>
+        </div>
+        <div class="mem8 right">
+        <span>system</span>
+        <p>
+        
+              [ 明賀 翠 ] 生命 : 2 → 1
+        </p>
+        </div>
+        <div class="komaba right">
+        <span>駒場 駆</span>
+        <p>
+        
+              「逃さないっすよおぉぉ!!」
+        </p>
+        </div>
+        <div class="meiga left">
+        <span>明賀 翠</span>
+        <p>
+        
+              「ぐっ」
+        </p>
+        </div>
+        <div class="zarame right">
+        <span>三盆糖 ざらめ</span>
+        <p>
+        
+              「つよいよー！ちゃんと忍者向いてるよー！」
+        </p>
+        </div>
+        <div class="kp">
+        
+              では、2の方
+        </div>
+        <div class="komaba right">
+        <span>駒場 駆</span>
+        <p>
+        
+              「っしゃあ!!!」
+        </p>
+        </div>
+        <div class="menou left">
+        <span>瑪瑙</span>
+        <p>
+        
+              ざらめさんに雀蜂
+        </p>
+        </div>
+        <div class="menou left">
+        <span>瑪瑙</span>
+        <p>
+        
+              2D6&gt;=5 （判定：人脈） (2D6&gt;=5) ＞ 10[4,6] ＞ 10 ＞ 成功
+              
+        </p>
+        </div>
+        <div class="zarame right">
+        <span>三盆糖 ざらめ</span>
+        <p>
+        
+              2D6&gt;=7 （判定：経済力） (2D6&gt;=7) ＞ 12[6,6] ＞ 12 ＞ スペシャル(【生命力】1点か変調一つを回復)
+              
+        </p>
+        </div>
+        <div class="menou left">
+        <span>瑪瑙</span>
+        <p>
+        
+              「チッ…」
+        </p>
+        </div>
+        <div class="zarame right">
+        <span>三盆糖 ざらめ</span>
+        <p>
+        
+              「舌打ち！お行儀が悪いわよ！」
+        </p>
+        </div>
+        <div class="kp">
+        
+              では飢餓の判定どうぞ
+        </div>
+        <div class="menou left">
+        <span>瑪瑙</span>
+        <p>
+        
+              「空耳では？お嬢様が叫ぶのもお行儀が悪いですよ」
+        </p>
+        </div>
+        <div class="komaba right">
+        <span>駒場 駆</span>
+        <p>
+        
+              1d6 (1D6) ＞ 4
+              
+        </p>
+        </div>
+        <div class="zarame right">
+        <span>三盆糖 ざらめ</span>
+        <p>
+        
+              「まー。ああ言えばこう言う」
+        </p>
+        </div>
+        <div class="kp">
+        
+              飢餓：この変調を受けた者は、戦闘に参加したとき、ラウンドの終了時にサイコロを1個振る。その目が偶数だったら、【生命力】を1点減少する。この効果は累積する。サイクル終了時に《兵糧術》の判定を行い、成功するとこの効果は無効化される。
+        </div>
+        <div class="mem8 right">
+        <span>system</span>
+        <p>
+        
+              [ 駒場 駆 ] 妖術 : 1 → 0
+        </p>
+        </div>
+        <div class="kp">
+        
+              4ラウンド目
+        </div>
+        <div class="mem8 right">
+        <span>system</span>
+        <p>
+        
+              [ 駒場 駆 ] がダイスシンボルを公開。出目は 3 です。
+        </p>
+        </div>
+        <div class="mem8 right">
+        <span>system</span>
+        <p>
+        
+              [ 明賀 翠 ] がダイスシンボルを公開。出目は 3 です。
+        </p>
+        </div>
+        <div class="mem8 right">
+        <span>system</span>
+        <p>
+        
+              [ 三盆糖 ざらめ ] がダイスシンボルを公開。出目は 4 です。
+        </p>
+        </div>
+        <div class="mem8 right">
+        <span>system</span>
+        <p>
+        
+              [ 瑪瑙 ] がダイスシンボルを公開。出目は 2 です。
+        </p>
+        </div>
+        <div class="zarame right">
+        <span>三盆糖 ざらめ</span>
+        <p>
+        
+              時雨を明賀くんと瑪瑙くんに
+        </p>
+        </div>
+        <div class="zarame right">
+        <span>三盆糖 ざらめ</span>
+        <p>
+        
+              2D6&gt;=5 （判定：砲術） (2D6&gt;=5) ＞ 8[3,5] ＞ 8 ＞ 成功
+              
+        </p>
+        </div>
+        <div class="meiga left">
+        <span>明賀 翠</span>
+        <p>
+        
+              その判定待ってもらおう
+        </p>
+        </div>
+        <div class="meiga left">
+        <span>明賀 翠</span>
+        <p>
+        
+              奥義！！
+        </p>
+        </div>
+        <div class="meiga left">
+        <span>明賀 翠</span>
+        <p>
+        
+              ■奥義<br>《虚色の嘘憑》<br>指定特技　：言霊術<br>エフェクト：判定妨害<br>効果・演出：返り血まやかす偽りの　紅纏うは嘘の色
+        </p>
+        </div>
+        <div class="komaba right">
+        <span>駒場 駆</span>
+        <p>
+        
+              奥義を破ろう！
+        </p>
+        </div>
+        <div class="komaba right">
+        <span>駒場 駆</span>
+        <p>
+        
+              SG&gt;=7（判定：縄術）
+        </p>
+        </div>
+        <div class="komaba right">
+        <span>駒場 駆</span>
+        <p>
+        
+              SG&gt;=7 （判定：縄術） (SG@12#2&gt;=7) ＞ 9[3,6] ＞ 9 ＞ 成功
+              
+        </p>
+        </div>
+        <div class="komaba right">
+        <span>駒場 駆</span>
+        <p>
+        
+              「させないっすよぉ！」
+        </p>
+        </div>
+        <div class="menou left">
+        <span>瑪瑙</span>
+        <p>
+        
+              2D6&gt;=6 （判定：手裏剣術） (2D6&gt;=6) ＞ 6[1,5] ＞ 6 ＞ 成功
+              
+        </p>
+        </div>
+        <div class="meiga left">
+        <span>明賀 翠</span>
+        <p>
+        
+              SG@12#3&gt;=6 （判定：潜伏術） (SG@12#3&gt;=6) ＞ 10[5,5] ＞ 10 ＞ 成功
+              
+        </p>
+        </div>
+        <div class="zarame right">
+        <span>三盆糖 ざらめ</span>
+        <p>
+        
+              「あーっ通らなかった！」
+        </p>
+        </div>
+        <div class="komaba right">
+        <span>駒場 駆</span>
+        <p>
+        
+              d66 (D66) ＞ 14
+              
+        </p>
+        </div>
+        <div class="meiga left">
+            <span>明賀 翠</span>
+            <p>
+            
+                  D66 (D66) ＞ 23
+            </p>
+            </div>
+        <div class="meiga left">
+        <span>明賀 翠</span>
+        <p>
+        
+              痛打だ！
+        </p>
+        </div>
+        <div class="meiga left">
+        <span>明賀 翠</span>
+        <p>
+        
+              SG@12#3&gt;=5 （判定：衣装術） (SG@12#3&gt;=5) ＞ 6[2,4] ＞ 6 ＞ 成功
+              
+        </p>
+        </div>
+        <div class="meiga left">
+        <span>明賀 翠</span>
+        <p>
+        
+              接近戦を駒場くんだぁ！
+        </p>
+        </div>
+        <div class="meiga left">
+        <span>明賀 翠</span>
+        <p>
+        
+              SG@12#3&gt;=5 （判定：潜伏術） (SG@12#3&gt;=5) ＞ 11[5,6] ＞ 11 ＞ 成功
+              
+        </p>
+        </div>
+        <div class="komaba right">
+        <span>駒場 駆</span>
+        <p>
+        
+              避けたい！
+        </p>
+        </div>
+        <div class="komaba right">
+        <span>駒場 駆</span>
+        <p>
+        
+              SG&gt;=8 （判定：火術） (SG@12#2&gt;=8) ＞ 2[1,1] ＞ 2 ＞ ファンブル
+              
+        </p>
+        </div>
+        <div class="kp">
+        
+              では痛打込みで2点接近戦ダメージです
+        </div>
+        <div class="mem7 left">
+        <span>解説</span>
+        <p>
+        
+              接近戦ダメージとは！<br>ランダムで特技欄が減るぞ
+        </p>
+        </div>
+        <div class="komaba right">
+        <span>駒場 駆</span>
+        <p>
+        
+              1d6 (1D6) ＞ 1
+              
+        </p>
+        </div>
+        <div class="komaba right">
+        <span>駒場 駆</span>
+        <p>
+        
+              1d6 (1D6) ＞ 4
+              
+        </p>
+        </div>
+        <div class="mem8 right">
+        <span>system</span>
+        <p>
+        
+              [ 駒場 駆 ] 器術 : 1 → 0
+        </p>
+        </div>
+        <div class="mem8 right">
+        <span>system</span>
+        <p>
+        
+              [ 駒場 駆 ] 謀術 : 1 → 0
+        </p>
+        </div>
+        <div class="komaba right">
+        <span>駒場 駆</span>
+        <p>
+        
+              奥義！！
+        </p>
+        </div>
+        <div class="komaba right">
+        <span>駒場 駆</span>
+        <p>
+        
+              ■奥義<br>《駆にいちゃんが助けあぁぁぁぁ!!!》<br>指定特技　：火術<br>エフェクト：不死身/目覚め/回数制限<br>効果・演出：アルバイターは体が資本！<br>今日も死ぬまで働きます！<br> 
+        </p>
+        </div>
+        <div class="mem7 left">
+        <span>解説</span>
+        <p>
+        
+              この奥義は！<br>不死身：いつでも使用できる。1D6からセッション中にこの奥義を使用した回数を引いた値だけ自分の生命力を回復し、すべての変調を回復することができる。<br>目覚め：その奥義の効果を使ったシーンの間は、自分の攻撃が成功すると、通常の効果に加え、追加で接近戦ダメージを1点与えることができるようになる。この効果は累積しない。<br>回数制限：一回のセッションに二度までしか使用できない。
+        </p>
+        </div>
+        <div class="komaba right">
+        <span>駒場 駆</span>
+        <p>
+        
+              1d6 (1D6) ＞ 1
+              
+        </p>
+        </div>
+        <div class="kp">
+        
+              じゃ駒場くん
+        </div>
+        <div class="mem8 right">
+        <span>system</span>
+        <p>
+        
+              [ 駒場 駆 ] 器術 : 0 → 1
+        </p>
+        </div>
+        <div class="komaba right">
+        <span>駒場 駆</span>
+        <p>
+        
+              鎖陣！
+        </p>
+        </div>
+        <div class="komaba right">
+        <span>駒場 駆</span>
+        <p>
+        
+              SG&gt;=7 （判定：縄術） (SG@12#2&gt;=7) ＞ 8[3,5] ＞ 8 ＞ 成功
+              
+        </p>
+        </div>
+        <div class="meiga left">
+        <span>明賀 翠</span>
+        <p>
+        
+              感情修正、ください
+        </p>
+        </div>
+        <div class="menou left">
+        <span>瑪瑙</span>
+        <p>
+        
+              狂信あげます
+        </p>
+        </div>
+        <div class="meiga left">
+        <span>明賀 翠</span>
+        <p>
+        
+              SG@12#3+0&gt;=6 （判定：衣装術） (SG@12#3&gt;=6) ＞ 10[4,6] ＞ 10 ＞ 成功
+              
+        </p>
+        </div>
+        <div class="meiga left">
+            <span>明賀 翠</span>
+            <p>
+            
+                  「あぶなかった…」
+                  
+            </p>
+            </div>
+        <div class="menou left">
+        <span>瑪瑙</span>
+        <p>
+        
+              雀蜂を駒場くんに
+        </p>
+        </div>
+        <div class="menou left">
+        <span>瑪瑙</span>
+        <p>
+        
+              2D6&gt;=5 （判定：人脈） (2D6&gt;=5) ＞ 2[1,1] ＞ 2 ＞ ファンブル
+              
+        </p>
+        </div>
+        <div class="komaba right">
+        <span>駒場 駆</span>
+        <p>
+        
+              「なんでなんすか 瑪瑙パイセン!!」
+        </p>
+        </div>
+        <div class="menou left">
+        <span>瑪瑙</span>
+        <p>
+        
+              「…さっさと帰りなさい！！！」
+        </p>
+        </div>
+        <div class="komaba right">
+        <span>駒場 駆</span>
+        <p>
+        
+              「帰らない!!!」
+        </p>
+        </div>
+        <div class="kp">
+        
+              次のラウンドになりますね
+        </div>
+        <div class="menou left">
+        <span>瑪瑙</span>
+        <p>
+        
+              「この…っ君は…っ」
+        </p>
+        </div>
+        <div class="komaba right">
+        <span>駒場 駆</span>
+        <p>
+        
+              「絶対に守るんす！いくら瑪瑙パイセンでも!!」
+        </p>
+        </div>
+        <div class="mem8 right">
+        <span>system</span>
+        <p>
+        
+              [ 駒場 駆 ] 器術 : 1 → 0
+        </p>
+        </div>
+        <div class="kp">
+        
+              5ラウンド目
+        </div>
+        <div class="mem8 right">
+        <span>system</span>
+        <p>
+        
+              [ 明賀 翠 ] がダイスシンボルを公開。出目は 1 です。
+        </p>
+        </div>
+        <div class="mem8 right">
+        <span>system</span>
+        <p>
+        
+              [ 駒場 駆 ] がダイスシンボルを公開。出目は 3 です。
+        </p>
+        </div>
+        <div class="mem8 right">
+        <span>system</span>
+        <p>
+        
+              [ 三盆糖 ざらめ ] がダイスシンボルを公開。出目は 4 です。
+        </p>
+        </div>
+        <div class="mem8 right">
+        <span>system</span>
+        <p>
+        
+              [ 瑪瑙 ] がダイスシンボルを公開。出目は 2 です。
+        </p>
+        </div>
+        <div class="zarame right">
+        <span>三盆糖 ざらめ</span>
+        <p>
+        
+              奥義を瑪瑙くんに
+        </p>
+        </div>
+        <div class="zarame right">
+        <span>三盆糖 ざらめ</span>
+        <p>
+        
+              奥義！！
+        </p>
+        </div>
+        <div class="zarame right">
+        <span>三盆糖 ざらめ</span>
+        <p>
+        
+              ■奥義<br>《方寸狙撃》<br>指定特技　：砲術<br>エフェクト：クリティカルヒット/伸ばし/威力低下<br>効果・演出：「方寸」とは、文字通り一寸四方を表すが、古くは人のこころは心の臓一寸に宿るとして「こころ」の意も秘める。<br>その銃撃は、誰しもに簡単に扱える軽快さながら、野にかくれた君子のような枯淡な風格で、あなたの心臓を狙い撃つ。
+        </p>
+        </div>
+        <div class="meiga left">
+        <span>明賀 翠</span>
+        <p>
+        
+              感情修正をします
+        </p>
+        </div>
+        <div class="menou left">
+        <span>瑪瑙</span>
+        <p>
+        
+              SG+1&gt;=6 （判定：手裏剣術） (SG+1@12#2&gt;=6) ＞ 5[1,4]+1 ＞ 6 ＞ 成功
+              
+        </p>
+        </div>
+        <div class="zarame right">
+        <span>三盆糖 ざらめ</span>
+        <p>
+        
+              「あーっまたかわす！」
+        </p>
+        </div>
+        <div class="menou left">
+        <span>瑪瑙</span>
+        <p>
+        
+              「…割に合わない仕事ですねっ」
+        </p>
+        </div>
+        <div class="komaba right">
+        <span>駒場 駆</span>
+        <p>
+        
+              奥義！！
+        </p>
+        </div>
+        <div class="komaba right">
+        <span>駒場 駆</span>
+        <p>
+        
+              ■奥義<br>《駆にいちゃんが助けあぁぁぁぁ!!!》<br>指定特技　：火術<br>エフェクト：不死身/目覚め/回数制限<br>効果・演出：アルバイターは体が資本！<br>今日も死ぬまで働きます！
+        </p>
+        </div>
+        <div class="meiga left">
+        <span>明賀 翠</span>
+        <p>
+        
+              奥義破りをします！
+        </p>
+        </div>
+        <div class="meiga left">
+        <span>明賀 翠</span>
+        <p>
+        
+              感情をください
+        </p>
+        </div>
+        <div class="menou left">
+        <span>瑪瑙</span>
+        <p>
+        
+              狂信あげます
+        </p>
+        </div>
+        <div class="meiga left">
+        <span>明賀 翠</span>
+        <p>
+        
+              SG@12#2+1&gt;=8 （判定：潜伏術） (SG+1@12#2&gt;=8) ＞ 5[2,3]+1 ＞ 6 ＞ 失敗
+              
+        </p>
+        </div>
+        <div class="menou left">
+        <span>瑪瑙</span>
+        <p>
+        
+              奥義やぶり！
+        </p>
+        </div>
+        <div class="menou left">
+        <span>瑪瑙</span>
+        <p>
+        
+              2D6&gt;=8 （判定：手裏剣術） (2D6&gt;=8) ＞ 6[2,4] ＞ 6 ＞ 失敗
+              
+        </p>
+        </div>
+        <div class="komaba right">
+        <span>駒場 駆</span>
+        <p>
+        
+              1d6 (1D6) ＞ 3
+              
+        </p>
+        </div>
+        <div class="mem8 right">
+        <span>system</span>
+        <p>
+        
+              [ 駒場 駆 ] 器術 : 0 → 1
+        </p>
+        </div>
+        <div class="komaba right">
+        <span>駒場 駆</span>
+        <p>
+        
+              翠くんを縛るよ！
+        </p>
+        </div>
+        <div class="komaba right">
+        <span>駒場 駆</span>
+        <p>
+        
+              SG&gt;=7 （判定：縄術） (SG@12#2&gt;=7) ＞ 6[1,5] ＞ 6 ＞ 失敗
+              
+        </p>
+        </div>
+        <div class="meiga left">
+        <span>明賀 翠</span>
+        <p>
+        
+              ちょっとまって
+        </p>
+        </div>
+        <div class="meiga left">
+        <span>明賀 翠</span>
+        <p>
+        
+              奥義！！
+        </p>
+        </div>
+        <div class="meiga left">
+        <span>明賀 翠</span>
+        <p>
+        
+              ■奥義<br>《虚色の嘘憑》<br>指定特技　：言霊術<br>エフェクト：判定妨害<br>効果・演出：返り血まやかす偽りの　紅纏うは嘘の色
+        </p>
+        </div>
+        <div class="komaba right">
+        <span>駒場 駆</span>
+        <p>
+        
+              奥義破り！
+        </p>
+        </div>
+        <div class="komaba right">
+        <span>駒場 駆</span>
+        <p>
+        
+              SG&gt;=7 （判定：縄術） (SG@12#2&gt;=7) ＞ 5[2,3] ＞ 5 ＞ 失敗
+              
+        </p>
+        </div>
+        <div class="zarame right">
+        <span>三盆糖 ざらめ</span>
+        <p>
+        
+              奥義破り
+        </p>
+        </div>
+        <div class="zarame right">
+        <span>三盆糖 ざらめ</span>
+        <p>
+        
+              回想
+        </p>
+        </div>
+        <div class="zarame right">
+        <span>三盆糖 ざらめ</span>
+        <p>
+        
+              あの日見たものを、『わたし』はよく覚えていない。<br>忍神。そう呼ばれるものらしい。<br>あれを見たことで、『わたし』の中に“あたし”が生まれた。<br>今まで見なかったことにしてきた、もう一人の自分。<br>『わたし』と“あたし”は、あれを見たことで、杜若家の当主になった。<br>経験値を買われて。皐月札を守るために。
+        </p>
+        </div>
+        <div class="zarame right">
+        <span>三盆糖 ざらめ</span>
+        <p>
+        
+              でも、“あたし”は外に出たい。<br>『わたし』は、家を守らなければならないと思っている。<br>『わたし』と“あたし”は、話し合った。<br>その結果、『わたし』は“あたし”となって、外から家を守ることにした。<br>“ざらめ”と『早苗』は仲良しだから。<br>“あたし”はあなた、あなたは『わたし』。<br>性質は全然違うけど、“あたし”と『わたし』は友達だから。<br>あなたのしたいことは、叶えてあげる。
+        </p>
+        </div>
+        <div class="zarame right">
+        <span>三盆糖 ざらめ</span>
+        <p>
+        
+              ◆PC１の秘密<br>あなたは「杜若早苗」本人であり、プライズ「皐月札」を所持している。<br>現在は影武者があなたの代わりを務めている。杜若家、そして「皐月札」を守るため、あなたは使用人を装っている。<br>あなたの本当の使命は<br>『プライズ「皐月札」をクライマックスフェイズ終了時に所持していること』<br>である。
+        </p>
+        </div>
+        <div class="zarame right">
+        <span>三盆糖 ざらめ</span>
+        <p>
+        
+              SG+3&gt;=12 （判定：歩法） (SG+3@12#2&gt;=12) ＞ 8[2,6]+3 ＞ 11 ＞ 失敗
+              
+        </p>
+        </div>
+        <div class="zarame right">
+        <span>三盆糖 ざらめ</span>
+        <p>
+        
+              「ごめん！だめだった！」
+        </p>
+        </div>
+        <div class="komaba right">
+        <span>駒場 駆</span>
+        <p>
+        
+              「ざらめさんも札も無事！<br>なーんも問題ないっすね!!」
+        </p>
+        </div>
+        <div class="meiga left">
+        <span>明賀 翠</span>
+        <p>
+        
+              5を1にします。逆凪です
+        </p>
+        </div>
+        <div class="komaba right">
+        <span>駒場 駆</span>
+        <p>
+        
+              「やれよぉ！僕は丸腰っすよぉ！」
+        </p>
+        </div>
+        <div class="menou left">
+        <span>瑪瑙</span>
+        <p>
+        
+              ざらめさんに雀蜂
+        </p>
+        </div>
+        <div class="menou left">
+        <span>瑪瑙</span>
+        <p>
+        
+              2D6&gt;=5 （判定：人脈） (2D6&gt;=5) ＞ 6[3,3] ＞ 6 ＞ 成功
+              
+        </p>
+        </div>
+        <div class="zarame right">
+        <span>三盆糖 ざらめ</span>
+        <p>
+        
+              2D6&gt;=7 （判定：経済力） (2D6&gt;=7) ＞ 5[2,3] ＞ 5 ＞ 失敗
+              
+        </p>
+        </div>
+        <div class="menou left">
+        <span>瑪瑙</span>
+        <p>
+        
+              「いいからそこで転がっていなさい！」
+        </p>
+        </div>
+        <div class="menou left">
+        <span>瑪瑙</span>
+        <p>
+        
+              GWT 戦国変調表(2) ＞ 火達磨:ファンブル値が1上昇し、ファンブル時に1点の近接ダメージを受ける。シーン終了時に無効化。
+              
+        </p>
+        </div>
+        <div class="komaba right">
+        <span>駒場 駆</span>
+        <p>
+        
+              「瑪瑙さんのよわむし！丸腰をスルーなんてほんとに忍びなんすかぁ!!」
+        </p>
+        </div>
+        <div class="zarame right">
+        <span>三盆糖 ざらめ</span>
+        <p>
+        
+              兵糧丸を使って変調を回復します
+        </p>
+        </div>
+        <div class="mem8 right">
+        <span>system</span>
+        <p>
+        
+              [ 三盆糖 ざらめ ] 忍具 : 2 → 1
+        </p>
+        </div>
+        <div class="menou left">
+        <span>瑪瑙</span>
+        <p>
+        
+              「……黙ってろ！！」
+        </p>
+        </div>
+        <div class="komaba right">
+        <span>駒場 駆</span>
+        <p>
+        
+              「ばーか！ばーか！なぞなぞおじさん！」
+        </p>
+        </div>
+        <div class="zarame right">
+        <span>三盆糖 ざらめ</span>
+        <p>
+        
+              「あたしは転がらないよ？」
+        </p>
+        </div>
+        <div class="meiga left">
+        <span>明賀 翠</span>
+        <p>
+        
+              痛打
+        </p>
+        </div>
+        <div class="meiga left">
+        <span>明賀 翠</span>
+        <p>
+        
+              SG@12#2&gt;=5 （判定：衣装術） (SG@12#2&gt;=5) ＞ 7[2,5] ＞ 7 ＞ 成功
+              
+        </p>
+        </div>
+        <div class="meiga left">
+        <span>明賀 翠</span>
+        <p>
+        
+              射撃戦攻撃を駒場君に
+        </p>
+        </div>
+        <div class="menou left">
+        <span>瑪瑙</span>
+        <p>
+        
+              「貴女さえ倒せれば私はそれでいいのに…」
+        </p>
+        </div>
+        <div class="meiga left">
+        <span>明賀 翠</span>
+        <p>
+        
+              SG@12#2&gt;=5 （判定：第六感） (SG@12#2&gt;=5) ＞ 4[1,3] ＞ 4 ＞ 失敗
+              
+        </p>
+        </div>
+        <div class="meiga left">
+        <span>明賀 翠</span>
+        <p>
+        
+              「くそぅ」
+        </p>
+        </div>
+        <div class="zarame right">
+        <span>三盆糖 ざらめ</span>
+        <p>
+        
+              「瑪瑙くん、にこにこしてるより今のほうが生き生きしてるよー」
+        </p>
+        </div>
+        <div class="kp">
+        
+              6ラウンド目
+        </div>
+        <div class="mem8 right">
+        <span>system</span>
+        <p>
+        
+              [ 明賀 翠 ] がダイスシンボルを公開。出目は 2 です。
+        </p>
+        </div>
+        <div class="mem8 right">
+        <span>system</span>
+        <p>
+        
+              [ 三盆糖 ざらめ ] がダイスシンボルを公開。出目は 4 です。
+        </p>
+        </div>
+        <div class="mem8 right">
+        <span>system</span>
+        <p>
+        
+              [ 駒場 駆 ] がダイスシンボルを公開。出目は 2 です。
+        </p>
+        </div>
+        <div class="mem8 right">
+        <span>system</span>
+        <p>
+        
+              [ 瑪瑙 ] がダイスシンボルを公開。出目は 2 です。
+        </p>
+        </div>
+        <div class="menou left">
+        <span>瑪瑙</span>
+        <p>
+        
+              「どいつもこいつも…っ」
+        </p>
+        </div>
+        <div class="zarame right">
+        <span>三盆糖 ざらめ</span>
+        <p>
+        
+              時雨を明賀くんと瑪瑙くんに
+        </p>
+        </div>
+        <div class="zarame right">
+        <span>三盆糖 ざらめ</span>
+        <p>
+        
+              2D6&gt;=5 （判定：砲術） (2D6&gt;=5) ＞ 5[2,3] ＞ 5 ＞ 成功
+              
+        </p>
+        </div>
+        <div class="meiga left">
+        <span>明賀 翠</span>
+        <p>
+        
+              奥義！！<br>
+        </p>
+        </div>
+        <div class="meiga left">
+        <span>明賀 翠</span>
+        <p>
+        
+              ■奥義<br>《虚色の嘘憑》<br>指定特技　：言霊術<br>エフェクト：判定妨害<br>効果・演出：返り血まやかす偽りの　紅纏うは嘘の色
+        </p>
+        </div>
+        <div class="komaba right">
+        <span>駒場 駆</span>
+        <p>
+        
+              破る！
+        </p>
+        </div>
+        <div class="komaba right">
+        <span>駒場 駆</span>
+        <p>
+        
+              SG&gt;=7 （判定：縄術） (SG@12#2&gt;=7) ＞ 7[3,4] ＞ 7 ＞ 成功
+              
+        </p>
+        </div>
+        <div class="menou left">
+        <span>瑪瑙</span>
+        <p>
+        
+              2D6&gt;=6 （判定：手裏剣術） (2D6&gt;=6) ＞ 7[3,4] ＞ 7 ＞ 成功
+              
+        </p>
+        </div>
+        <div class="meiga left">
+        <span>明賀 翠</span>
+        <p>
+        
+              感情修正ください
+        </p>
+        </div>
+        <div class="komaba right">
+        <span>駒場 駆</span>
+        <p>
+        
+              「ざらめさん！あとは頼むっすよぉ！」
+        </p>
+        </div>
+        <div class="menou left">
+        <span>瑪瑙</span>
+        <p>
+        
+              あげる
+        </p>
+        </div>
+        <div class="meiga left">
+        <span>明賀 翠</span>
+        <p>
+        
+              SG@12#2+0&gt;=6 （判定：潜伏術） (SG@12#2&gt;=6) ＞ 7[3,4] ＞ 7 ＞ 成功
+              
+        </p>
+        </div>
+        <div class="zarame right">
+        <span>三盆糖 ざらめ</span>
+        <p>
+        
+              「何言ってんのー！一緒に生き残るの！」
+        </p>
+        </div>
+        <div class="menou left">
+        <span>瑪瑙</span>
+        <p>
+        
+              ｄ66 (D66) ＞ 15
+              
+        </p>
+        </div>
+        <div class="komaba right">
+        <span>駒場 駆</span>
+        <p>
+        
+              d66 (D66) ＞ 35
+              
+        </p>
+        </div>
+        <div class="meiga left">
+        <span>明賀 翠</span>
+        <p>
+        
+              D66 (D66) ＞ 45
+              
+        </p>
+        </div>
+        <div class="meiga left">
+        <span>明賀 翠</span>
+        <p>
+        
+              痛打
+        </p>
+        </div>
+        <div class="meiga left">
+        <span>明賀 翠</span>
+        <p>
+        
+              SG@12#2+0&gt;=5 （判定：衣装術） (SG@12#2&gt;=5) ＞ 10[4,6] ＞ 10 ＞ 成功
+              
+        </p>
+        </div>
+        <div class="meiga left">
+        <span>明賀 翠</span>
+        <p>
+        
+              接近戦攻撃を駒場君に
+        </p>
+        </div>
+        <div class="meiga left">
+        <span>明賀 翠</span>
+        <p>
+        
+              SG@12#2+0&gt;=5 （判定：潜伏術） (SG@12#2&gt;=5) ＞ 8[4,4] ＞ 8 ＞ 成功
+              
+        </p>
+        </div>
+        <div class="komaba right">
+        <span>駒場 駆</span>
+        <p>
+        
+              回避を！
+        </p>
+        </div>
+        <div class="komaba right">
+        <span>駒場 駆</span>
+        <p>
+        
+              SG&gt;=8 （判定：火術） (SG@12#2&gt;=8) ＞ 8[3,5] ＞ 8 ＞ 成功
+              
+        </p>
+        </div>
+        <div class="meiga left">
+        <span>明賀 翠</span>
+        <p>
+        
+              「くっ」
+        </p>
+        </div>
+        <div class="komaba right">
+        <span>駒場 駆</span>
+        <p>
+        
+              翠くんを縛るよ！
+        </p>
+        </div>
+        <div class="komaba right">
+        <span>駒場 駆</span>
+        <p>
+        
+              SG&gt;=5 （判定：縄術） (SG@12#2&gt;=5) ＞ 5[1,4] ＞ 5 ＞ 成功
+              
+        </p>
+        </div>
+        <div class="meiga left">
+        <span>明賀 翠</span>
+        <p>
+        
+              SG@12#2-1&gt;=6 （判定：衣装術） (SG-1@12#2&gt;=6) ＞ 8[3,5]-1 ＞ 7 ＞ 成功
+              
+        </p>
+        </div>
+        <div class="meiga left">
+        <span>明賀 翠</span>
+        <p>
+        
+              「ふぅ」
+        </p>
+        </div>
+        <div class="komaba right">
+        <span>駒場 駆</span>
+        <p>
+        
+              「もっとちゃんと練習しとけばよかった！」
+        </p>
+        </div>
+        <div class="menou left">
+        <span>瑪瑙</span>
+        <p>
+        
+              ざらめさんに雀蜂
+        </p>
+        </div>
+        <div class="meiga left">
+        <span>明賀 翠</span>
+        <p>
+        
+              感情渡します
+        </p>
+        </div>
+        <div class="menou left">
+        <span>瑪瑙</span>
+        <p>
+        
+              SG+1&gt;=5 （判定：人脈） (SG+1@12#2&gt;=5) ＞ 9[3,6]+1 ＞ 10 ＞ 成功
+              
+        </p>
+        </div>
+        <div class="zarame right">
+        <span>三盆糖 ざらめ</span>
+        <p>
+        
+              2D6&gt;=7 （判定：経済力） (2D6&gt;=7) ＞ 11[5,6] ＞ 11 ＞ 成功
+              
+        </p>
+        </div>
+        <div class="kp">
+        
+              はーい
+        </div>
+        <div class="kp">
+        
+              7ラウンド目
+        </div>
+        <div class="mem8 right">
+        <span>system</span>
+        <p>
+        
+              [ 駒場 駆 ] がダイスシンボルを公開。出目は 2 です。
+        </p>
+        </div>
+        <div class="mem8 right">
+        <span>system</span>
+        <p>
+        
+              [ 明賀 翠 ] がダイスシンボルを公開。出目は 1 です。
+        </p>
+        </div>
+        <div class="mem8 right">
+        <span>system</span>
+        <p>
+        
+              [ 三盆糖 ざらめ ] がダイスシンボルを公開。出目は 4 です。
+        </p>
+        </div>
+        <div class="mem8 right">
+        <span>system</span>
+        <p>
+        
+              [ 瑪瑙 ] がダイスシンボルを公開。出目は 2 です。
+        </p>
+        </div>
+        <div class="zarame right">
+        <span>三盆糖 ざらめ</span>
+        <p>
+        
+              瑪瑙くんに奥義
+        </p>
+        </div>
+        <div class="zarame right">
+        <span>三盆糖 ざらめ</span>
+        <p>
+        
+              奥義！！
+        </p>
+        </div>
+        <div class="zarame right">
+        <span>三盆糖 ざらめ</span>
+        <p>
+        
+              ■奥義<br>《方寸狙撃》<br>指定特技　：砲術<br>エフェクト：クリティカルヒット/伸ばし/威力低下<br>効果・演出：「方寸」とは、文字通り一寸四方を表すが、古くは人のこころは心の臓一寸に宿るとして「こころ」の意も秘める。<br>その銃撃は、誰しもに簡単に扱える軽快さながら、野にかくれた君子のような枯淡な風格で、あなたの心臓を狙い撃つ。
+        </p>
+        </div>
+        <div class="menou left">
+        <span>瑪瑙</span>
+        <p>
+        
+              2D6&gt;=6 （判定：手裏剣術） (2D6&gt;=6) ＞ 7[3,4] ＞ 7 ＞ 成功
+              
+        </p>
+        </div>
+        <div class="menou left">
+        <span>瑪瑙</span>
+        <p>
+        
+              ｄ66 (D66) ＞ 23
+              
+        </p>
+        </div>
+        <div class="komaba right">
+        <span>駒場 駆</span>
+        <p>
+        
+              d66 (D66) ＞ 16
+              
+        </p>
+        </div>
+        <div class="menou left">
+        <span>瑪瑙</span>
+        <p>
+        
+              雀蜂ざらめさんに
+        </p>
+        </div>
+        <div class="meiga left">
+        <span>明賀 翠</span>
+        <p>
+        
+              感情プレゼント
+        </p>
+        </div>
+        <div class="menou left">
+        <span>瑪瑙</span>
+        <p>
+        
+              SG+1&gt;=5 （判定：人脈） (SG+1@12#2&gt;=5) ＞ 7[2,5]+1 ＞ 8 ＞ 成功
+              
+        </p>
+        </div>
+        <div class="komaba right">
+        <span>駒場 駆</span>
+        <p>
+        
+              護衛を！
+        </p>
+        </div>
+        <div class="komaba right">
+        <span>駒場 駆</span>
+        <p>
+        
+              SG&gt;=5 （判定：分身の術） (SG@12#2&gt;=5) ＞ 9[3,6] ＞ 9 ＞ 成功
+              
+        </p>
+        </div>
+        <div class="meiga left">
+        <span>明賀 翠</span>
+        <p>
+        
+              ごめんな
+        </p>
+        </div>
+        <div class="meiga left">
+        <span>明賀 翠</span>
+        <p>
+        
+              奥義！！
+        </p>
+        </div>
+        <div class="komaba right">
+        <span>駒場 駆</span>
+        <p>
+        
+              破る！
+        </p>
+        </div>
+        <div class="meiga left">
+        <span>明賀 翠</span>
+        <p>
+        
+              ■奥義<br>《虚色の嘘憑》<br>指定特技　：言霊術<br>エフェクト：判定妨害<br>効果・演出：返り血まやかす偽りの　紅纏うは嘘の色
+        </p>
+        </div>
+        <div class="komaba right">
+        <span>駒場 駆</span>
+        <p>
+        
+              SG&gt;=7 （判定：縄術） (SG@12#2&gt;=7) ＞ 9[3,6] ＞ 9 ＞ 成功
+              
+        </p>
+        </div>
+        <div class="komaba right">
+        <span>駒場 駆</span>
+        <p>
+        
+              「させないっす!!」
+        </p>
+        </div>
+        <div class="menou left">
+        <span>瑪瑙</span>
+        <p>
+        
+              「邪魔だ…っ」
+        </p>
+        </div>
+        <div class="komaba right">
+        <span>駒場 駆</span>
+        <p>
+        
+              接近戦を翠くんに！
+        </p>
+        </div>
+        <div class="komaba right">
+        <span>駒場 駆</span>
+        <p>
+        
+              SG&gt;=5 （判定：火術） (SG@12#2&gt;=5) ＞ 11[5,6] ＞ 11 ＞ 成功
+              
+        </p>
+        </div>
+        <div class="menou left">
+        <span>瑪瑙</span>
+        <p>
+        
+              感情あげまあす
+        </p>
+        </div>
+        <div class="meiga left">
+        <span>明賀 翠</span>
+        <p>
+        
+              SG@12#2+0&gt;=8 （判定：潜伏術） (SG@12#2&gt;=8) ＞ 8[2,6] ＞ 8 ＞ 成功
+              
+        </p>
+        </div>
+        <div class="meiga left">
+        <span>明賀 翠</span>
+        <p>
+        
+              痛打
+        </p>
+        </div>
+        <div class="meiga left">
+        <span>明賀 翠</span>
+        <p>
+        
+              SG@12#2+0&gt;=5 （判定：衣装術） (SG@12#2&gt;=5) ＞ 7[2,5] ＞ 7 ＞ 成功
+              
+        </p>
+        </div>
+        <div class="meiga left">
+        <span>明賀 翠</span>
+        <p>
+        
+              接近戦攻撃を駒場君に
+        </p>
+        </div>
+        <div class="meiga left">
+        <span>明賀 翠</span>
+        <p>
+        
+              SG@12#2+0&gt;=5 （判定：潜伏術） (SG@12#2&gt;=5) ＞ 9[4,5] ＞ 9 ＞ 成功
+              
+        </p>
+        </div>
+        <div class="komaba right">
+        <span>駒場 駆</span>
+        <p>
+        
+              よけたい。
+        </p>
+        </div>
+        <div class="komaba right">
+        <span>駒場 駆</span>
+        <p>
+        
+              SG&gt;=8 （判定：火術） (SG@12#2&gt;=8) ＞ 7[3,4] ＞ 7 ＞ 失敗
+              
+        </p>
+        </div>
+        <div class="komaba right">
+        <span>駒場 駆</span>
+        <p>
+        
+              1d6 (1D6) ＞ 6
+              
+        </p>
+        </div>
+        <div class="komaba right">
+        <span>駒場 駆</span>
+        <p>
+        
+              1d6 (1D6) ＞ 2
+              
+        </p>
+        </div>
+        <div class="mem8 right">
+        <span>system</span>
+        <p>
+        
+              [ 駒場 駆 ] 体術 : 1 → 0
+        </p>
+        </div>
+        <div class="mem8 right">
+        <span>system</span>
+        <p>
+        
+              [ 駒場 駆 ] 戦術 : 1 → 0
+        </p>
+        </div>
+        <div class="komaba right">
+        <span>駒場 駆</span>
+        <p>
+        
+              「ぐぅぅ…っ 帰ってくださいよぉ…！」
+        </p>
+        </div>
+        <div class="kp">
+        
+              次のラウンドです
+        </div>
+        <div class="kp">
+        
+              8ラウンド目
+        </div>
+        <div class="mem8 right">
+        <span>system</span>
+        <p>
+        
+              [ 瑪瑙 ] がダイスシンボルを公開。出目は 2 です。
+        </p>
+        </div>
+        <div class="mem8 right">
+        <span>system</span>
+        <p>
+        
+              [ 明賀 翠 ] がダイスシンボルを公開。出目は 1 です。
+        </p>
+        </div>
+        <div class="mem8 right">
+        <span>system</span>
+        <p>
+        
+              [ 駒場 駆 ] がダイスシンボルを公開。出目は 2 です。
+        </p>
+        </div>
+        <div class="mem8 right">
+        <span>system</span>
+        <p>
+        
+              [ 三盆糖 ざらめ ] がダイスシンボルを公開。出目は 4 です。
+        </p>
+        </div>
+        <div class="zarame right">
+        <span>三盆糖 ざらめ</span>
+        <p>
+        
+              明賀くんに雷火
+        </p>
+        </div>
+        <div class="zarame right">
+        <span>三盆糖 ざらめ</span>
+        <p>
+        
+              2D6&gt;=5 （判定：砲術） (2D6&gt;=5) ＞ 12[6,6] ＞ 12 ＞ スペシャル(【生命力】1点か変調一つを回復)
+              
+        </p>
+        </div>
+        <div class="zarame right">
+        <span>三盆糖 ざらめ</span>
+        <p>
+        
+              1ｄ6 (1D6) ＞ 3
+              
+        </p>
+        </div>
+        <div class="meiga left">
+        <span>明賀 翠</span>
+        <p>
+        
+              ……
+        </p>
+        </div>
+        <div class="meiga left">
+        <span>明賀 翠</span>
+        <p>
+        
+              ください
+        </p>
+        </div>
+        <div class="menou left">
+        <span>瑪瑙</span>
+        <p>
+        
+              あげます
+        </p>
+        </div>
+        <div class="meiga left">
+        <span>明賀 翠</span>
+        <p>
+        
+              SG@12#2-3&gt;=6 （判定：潜伏術） (SG-3@12#2&gt;=6) ＞ 12[6,6]-3 ＞ 9 ＞ スペシャル(【生命力】1点か変調一つを回復)
+              
+        </p>
+        </div>
+        <div class="mem8 right">
+        <span>system</span>
+        <p>
+        
+              [ 明賀 翠 ] 生命 : 1 → 2
+        </p>
+        </div>
+        <div class="menou left">
+        <span>瑪瑙</span>
+        <p>
+        
+              ｄ66 (D66) ＞ 36
+              
+        </p>
+        </div>
+        <div class="komaba right">
+        <span>駒場 駆</span>
+        <p>
+        
+              d66 (D66) ＞ 45
+              
+        </p>
+        </div>
+        <div class="komaba right">
+        <span>駒場 駆</span>
+        <p>
+        
+              鎖陣を！翠くんに！あたれ！
+        </p>
+        </div>
+        <div class="komaba right">
+        <span>駒場 駆</span>
+        <p>
+        
+              SG&gt;=5 （判定：縄術） (SG@12#2&gt;=5) ＞ 6[1,5] ＞ 6 ＞ 成功
+              
+        </p>
+        </div>
+        <div class="meiga left">
+        <span>明賀 翠</span>
+        <p>
+        
+              おっと
+        </p>
+        </div>
+        <div class="meiga left">
+        <span>明賀 翠</span>
+        <p>
+        
+              奥義！！
+        </p>
+        </div>
+        <div class="meiga left">
+        <span>明賀 翠</span>
+        <p>
+        
+              ■奥義<br>《虚色の嘘憑》<br>指定特技　：言霊術<br>エフェクト：判定妨害<br>効果・演出：返り血まやかす偽りの　紅纏うは嘘の色
+        </p>
+        </div>
+        <div class="komaba right">
+        <span>駒場 駆</span>
+        <p>
+        
+              やぶる！
+        </p>
+        </div>
+        <div class="komaba right">
+        <span>駒場 駆</span>
+        <p>
+        
+              SG&gt;=7 （判定：縄術） (SG@12#2&gt;=7) ＞ 3[1,2] ＞ 3 ＞ 失敗
+              
+        </p>
+        </div>
+        <div class="meiga left">
+        <span>明賀 翠</span>
+        <p>
+        
+              5を1にして逆凪に
+        </p>
+        </div>
+        <div class="menou left">
+        <span>瑪瑙</span>
+        <p>
+        
+              ざらめちゃんに雀蜂
+        </p>
+        </div>
+        <div class="meiga left">
+        <span>明賀 翠</span>
+        <p>
+        
+              感情さしあげます
+        </p>
+        </div>
+        <div class="menou left">
+        <span>瑪瑙</span>
+        <p>
+        
+              SG+1&gt;=5 （判定：人脈） (SG+1@12#2&gt;=5) ＞ 10[5,5]+1 ＞ 11 ＞ 成功
+              
+        </p>
+        </div>
+        <div class="komaba right">
+        <span>駒場 駆</span>
+        <p>
+        
+              「避けてくださいざらめさんーッ！」
+        </p>
+        </div>
+        <div class="zarame right">
+        <span>三盆糖 ざらめ</span>
+        <p>
+        
+              2D6&gt;=7 （判定：経済力） (2D6&gt;=7) ＞ 9[3,6] ＞ 9 ＞ 成功
+              
+        </p>
+        </div>
+        <div class="zarame right">
+        <span>三盆糖 ざらめ</span>
+        <p>
+        
+              「よけた！」
+        </p>
+        </div>
+        <div class="meiga left">
+        <span>明賀 翠</span>
+        <p>
+        
+              痛打
+        </p>
+        </div>
+        <div class="meiga left">
+        <span>明賀 翠</span>
+        <p>
+        
+              SG@12#2-3&gt;=5 （判定：衣装術） (SG-3@12#2&gt;=5) ＞ 2[1,1]-3 ＞ -1 ＞ ファンブル
+              
+        </p>
+        </div>
+        <div class="meiga left">
+        <span>明賀 翠</span>
+        <p>
+        
+              ただの失敗です
+        </p>
+        </div>
+        <div class="meiga left">
+        <span>明賀 翠</span>
+        <p>
+        
+              接近戦攻撃を駒場君に
+        </p>
+        </div>
+        <div class="komaba right">
+        <span>駒場 駆</span>
+        <p>
+        
+              よけたい…
+        </p>
+        </div>
+        <div class="meiga left">
+        <span>明賀 翠</span>
+        <p>
+        
+              SG@12#2&gt;=5 （判定：潜伏術） (SG@12#2&gt;=5) ＞ 10[4,6] ＞ 10 ＞ 成功
+              
+        </p>
+        </div>
+        <div class="komaba right">
+        <span>駒場 駆</span>
+        <p>
+        
+              回想を！
+        </p>
+        </div>
+        <div class="komaba right">
+        <span>駒場 駆</span>
+        <p>
+        
+               お 金 が な い ! <br>治療費食費光熱費税金忍器開発費！出ていくばかり！<br>それでも老後は楽して生きてやるんだからなあぁぁぁぁ！
+        </p>
+        </div>
+        <div class="komaba right">
+        <span>駒場 駆</span>
+        <p>
+        
+              あなたは本当に生活が苦しい。両親は体も弱く兄弟も多い。自分が家族を守らねばならないがお金がない。<br>そんな中この仕事を紹介してくれたPC２にはとても感謝している。しっかり稼いで家族においしいものを食べさせてやらねば。<br>あなたの本当の使命は表のものである。<br>なお―――
+        </p>
+        </div>
+        <div class="komaba right">
+        <span>駒場 駆</span>
+        <p>
+        
+              SG+3&gt;=8 （判定：火術） (SG+3@12#2&gt;=8) ＞ 7[2,5]+3 ＞ 10 ＞ 成功
+              
+        </p>
+        </div>
+        <div class="kp">
+        
+              このターンから極地になります
+        </div>
+        <div class="kp">
+        
+              9ラウンド目
+        </div>
+        <div class="mem8 right">
+        <span>system</span>
+        <p>
+        
+              [ 明賀 翠 ] がダイスシンボルを公開。出目は 4 です。
+        </p>
+        </div>
+        <div class="mem8 right">
+        <span>system</span>
+        <p>
+        
+              [ 駒場 駆 ] がダイスシンボルを公開。出目は 2 です。
+        </p>
+        </div>
+        <div class="mem8 right">
+        <span>system</span>
+        <p>
+        
+              [ 瑪瑙 ] がダイスシンボルを公開。出目は 2 です。
+        </p>
+        </div>
+        <div class="mem8 right">
+        <span>system</span>
+        <p>
+        
+              [ 三盆糖 ざらめ ] がダイスシンボルを公開。出目は 4 です。
+        </p>
+        </div>
+        <div class="zarame right">
+        <span>三盆糖 ざらめ</span>
+        <p>
+        
+              ｄ66 (D66) ＞ 45
+              
+        </p>
+        </div>
+        <div class="meiga left">
+        <span>明賀 翠</span>
+        <p>
+        
+              D66 (D66) ＞ 45
+              
+        </p>
+        </div>
+        <div class="meiga left">
+        <span>明賀 翠</span>
+        <p>
+        
+              D66 (D66) ＞ 24
+              
+        </p>
+        </div>
+        <div class="zarame right">
+        <span>三盆糖 ざらめ</span>
+        <p>
+        
+              ｄ66 (D66) ＞ 13
+              
+        </p>
+        </div>
+        <div class="meiga left">
+        <span>明賀 翠</span>
+        <p>
+        
+              痛打にゃ
+        </p>
+        </div>
+        <div class="meiga left">
+        <span>明賀 翠</span>
+        <p>
+        
+              SG@12#4&gt;=5 （判定：衣装術） (SG@12#4&gt;=5) ＞ 12[6,6] ＞ 12 ＞ スペシャル(【生命力】1点か変調一つを回復)
+              
+        </p>
+        </div>
+        <div class="mem8 right">
+        <span>system</span>
+        <p>
+        
+              [ 明賀 翠 ] 生命 : 2 → 3
+        </p>
+        </div>
+        <div class="meiga left">
+        <span>明賀 翠</span>
+        <p>
+        
+              接近戦攻撃をザラメさんに撃つのにゃ
+        </p>
+        </div>
+        <div class="meiga left">
+        <span>明賀 翠</span>
+        <p>
+        
+              SG@12#4&gt;=5 （判定：潜伏術） (SG@12#4&gt;=5) ＞ 7[1,6] ＞ 7 ＞ 成功
+              
+        </p>
+        </div>
+        <div class="zarame right">
+        <span>三盆糖 ざらめ</span>
+        <p>
+        
+              2D6&gt;=6 （判定：砲術） (2D6&gt;=6) ＞ 8[3,5] ＞ 8 ＞ 成功
+              
+        </p>
+        </div>
+        <div class="zarame right">
+        <span>三盆糖 ざらめ</span>
+        <p>
+        
+              明賀くんに奥義
+        </p>
+        </div>
+        <div class="zarame right">
+        <span>三盆糖 ざらめ</span>
+        <p>
+        
+              奥義！！
+        </p>
+        </div>
+        <div class="zarame right">
+        <span>三盆糖 ざらめ</span>
+        <p>
+        
+              ■奥義<br>《方寸狙撃》<br>指定特技　：砲術<br>エフェクト：クリティカルヒット/伸ばし/威力低下<br>効果・演出：「方寸」とは、文字通り一寸四方を表すが、古くは人のこころは心の臓一寸に宿るとして「こころ」の意も秘める。<br>その銃撃は、誰しもに簡単に扱える軽快さながら、野にかくれた君子のような枯淡な風格で、あなたの心臓を狙い撃つ。<br>
+        </p>
+        </div>
+        <div class="meiga left">
+        <span>明賀 翠</span>
+        <p>
+        
+              奥義破り
+        </p>
+        </div>
+        <div class="meiga left">
+        <span>明賀 翠</span>
+        <p>
+        
+              SG@12#4&gt;=6 （判定：潜伏術） (SG@12#4&gt;=6) ＞ 5[2,3] ＞ 5 ＞ 失敗
+              
+        </p>
+        </div>
+        <div class="menou left">
+        <span>瑪瑙</span>
+        <p>
+        
+              奥義破り
+        </p>
+        </div>
+        <div class="meiga left">
+        <span>明賀 翠</span>
+        <p>
+        
+              感情をあげます
+        </p>
+        </div>
+        <div class="menou left">
+        <span>瑪瑙</span>
+        <p>
+        
+              SG+1&gt;=6 （判定：手裏剣術） (SG+1@12#2&gt;=6) ＞ 7[2,5]+1 ＞ 8 ＞ 成功
+              
+        </p>
+        </div>
+        <div class="zarame right">
+        <span>三盆糖 ざらめ</span>
+        <p>
+        
+              「全然当たんない～」
+        </p>
+        </div>
+        <div class="komaba right">
+        <span>駒場 駆</span>
+        <p>
+        
+              d66 (D66) ＞ 16
+              
+        </p>
+        </div>
+        <div class="menou left">
+        <span>瑪瑙</span>
+        <p>
+        
+              ｄ66 (D66) ＞ 23
+              
+        </p>
+        </div>
+        <div class="menou left">
+        <span>瑪瑙</span>
+        <p>
+        
+              雀蜂をざらめちゃんに
+        </p>
+        </div>
+        <div class="menou left">
+        <span>瑪瑙</span>
+        <p>
+        
+              2D6&gt;=5 （判定：人脈） (2D6&gt;=5) ＞ 8[3,5] ＞ 8 ＞ 成功
+              
+        </p>
+        </div>
+        <div class="zarame right">
+        <span>三盆糖 ざらめ</span>
+        <p>
+        
+              2D6&gt;=7 （判定：経済力） (2D6&gt;=7) ＞ 10[4,6] ＞ 10 ＞ 成功
+              
+        </p>
+        </div>
+        <div class="meiga left">
+        <span>明賀 翠</span>
+        <p>
+        
+              奥義！！
+        </p>
+        </div>
+        <div class="meiga left">
+        <span>明賀 翠</span>
+        <p>
+        
+              ■奥義<br>《虚色の嘘憑》<br>指定特技　：言霊術<br>エフェクト：判定妨害<br>効果・演出：返り血まやかす偽りの　紅纏うは嘘の色
+        </p>
+        </div>
+        <div class="komaba right">
+        <span>駒場 駆</span>
+        <p>
+        
+              やぶり！
+        </p>
+        </div>
+        <div class="menou left">
+        <span>瑪瑙</span>
+        <p>
+        
+              「業務時間はとっくにすぎてんだよ」
+        </p>
+        </div>
+        <div class="komaba right">
+        <span>駒場 駆</span>
+        <p>
+        
+              SG&gt;=7 （判定：縄術） (SG@12#2&gt;=7) ＞ 8[2,6] ＞ 8 ＞ 成功
+              
+        </p>
+        </div>
+        <div class="zarame right">
+        <span>三盆糖 ざらめ</span>
+        <p>
+        
+              「うるさいなぁ。あたしだって業務時間過ぎてまでこんなことしてたくないよ」
+        </p>
+        </div>
+        <div class="komaba right">
+        <span>駒場 駆</span>
+        <p>
+        
+              「そんなんどーでもいいじゃないっすか！」
+        </p>
+        </div>
+        <div class="meiga left">
+        <span>明賀 翠</span>
+        <p>
+        
+              「……」
+        </p>
+        </div>
+        <div class="komaba right">
+        <span>駒場 駆</span>
+        <p>
+        
+              鎖陣を翠くんに！
+        </p>
+        </div>
+        <div class="menou left">
+        <span>瑪瑙</span>
+        <p>
+        
+              「たがが札くらいさっさと手放してしまえばいいものを」
+        </p>
+        </div>
+        <div class="komaba right">
+        <span>駒場 駆</span>
+        <p>
+        
+              SG&gt;=5 （判定：縄術） (SG@12#2&gt;=5) ＞ 11[5,6] ＞ 11 ＞ 成功
+              
+        </p>
+        </div>
+        <div class="meiga left">
+        <span>明賀 翠</span>
+        <p>
+        
+              感情ください
+        </p>
+        </div>
+        <div class="menou left">
+        <span>瑪瑙</span>
+        <p>
+        
+              あげます
+        </p>
+        </div>
+        <div class="meiga left">
+        <span>明賀 翠</span>
+        <p>
+        
+              SG@12#4+0&gt;=6 （判定：衣装術） (SG@12#4&gt;=6) ＞ 8[2,6] ＞ 8 ＞ 成功
+              
+        </p>
+        </div>
+        <div class="kp">
+        
+              極地の効果発動
+        </div>
+        <div class="komaba right">
+        <span>駒場 駆</span>
+        <p>
+        
+              「たかが札なら そっちが帰ってくださいよ！」
+        </p>
+        </div>
+        <div class="zarame right">
+        <span>三盆糖 ざらめ</span>
+        <p>
+        
+              「こういう大事さはあなたみたいなのにはわかんないでしょうね」
+        </p>
+        </div>
+        <div class="kp">
+        
+              全員1D6どうぞ
+        </div>
+        <div class="zarame right">
+        <span>三盆糖 ざらめ</span>
+        <p>
+        
+              1ｄ6 (1D6) ＞ 1
+              
+        </p>
+        </div>
+        <div class="menou left">
+        <span>瑪瑙</span>
+        <p>
+        
+              1ｄ6 (1D6) ＞ 6
+              
+        </p>
+        </div>
+        <div class="komaba right">
+        <span>駒場 駆</span>
+        <p>
+        
+              1d6 (1D6) ＞ 4
+              
+        </p>
+        </div>
+        <div class="mem8 right">
+        <span>system</span>
+        <p>
+        
+              [ 明賀 翠 ] 生命 : 3 → 2
+        </p>
+        </div>
+        <div class="mem8 right">
+        <span>system</span>
+        <p>
+        
+              [ 三盆糖 ざらめ ] 器術 : 1 → 0
+        </p>
+        </div>
+        <div class="mem8 right">
+        <span>system</span>
+        <p>
+        
+              [ 駒場 駆 ] 忍術 : 1 → 0
+        </p>
+        </div>
+        <div class="mem8 right">
+        <span>system</span>
+        <p>
+        
+              [ 瑪瑙 ] 妖術 : 1 → 0
+        </p>
+        </div>
+        <div class="kp">
+        
+              ではプロット準備
+        </div>
+        <div class="kp">
+        
+              10ラウンド目
+        </div>
+        <div class="menou left">
+        <span>瑪瑙</span>
+        <p>
+        
+              「わかんねぇよ。また金つんで返してもらえばいい」
+        </p>
+        </div>
+        <div class="zarame right">
+        <span>三盆糖 ざらめ</span>
+        <p>
+        
+              「そういう問題じゃないのよ」
+        </p>
+        </div>
+        <div class="mem8 right">
+        <span>system</span>
+        <p>
+        
+              [ 明賀 翠 ] がダイスシンボルを公開。出目は 4 です。
+        </p>
+        </div>
+        <div class="mem8 right">
+        <span>system</span>
+        <p>
+        
+              [ 駒場 駆 ] がダイスシンボルを公開。出目は 2 です。
+        </p>
+        </div>
+        <div class="mem8 right">
+        <span>system</span>
+        <p>
+        
+              [ 三盆糖 ざらめ ] がダイスシンボルを公開。出目は 4 です。
+        </p>
+        </div>
+        <div class="mem8 right">
+        <span>system</span>
+        <p>
+        
+              [ 瑪瑙 ] がダイスシンボルを公開。出目は 2 です。
+        </p>
+        </div>
+        <div class="meiga left">
+        <span>明賀 翠</span>
+        <p>
+        
+              D66 (D66) ＞ 16
+              
+        </p>
+        </div>
+        <div class="zarame right">
+        <span>三盆糖 ざらめ</span>
+        <p>
+        
+              ｄ66 (D66) ＞ 46
+              
+        </p>
+        </div>
+        <div class="zarame right">
+        <span>三盆糖 ざらめ</span>
+        <p>
+        
+              明賀くんに奥義
+        </p>
+        </div>
+        <div class="zarame right">
+        <span>三盆糖 ざらめ</span>
+        <p>
+        
+              奥義！！
+        </p>
+        </div>
+        <div class="zarame right">
+        <span>三盆糖 ざらめ</span>
+        <p>
+        
+              ■奥義<br>《方寸狙撃》<br>指定特技　：砲術<br>エフェクト：クリティカルヒット/伸ばし/威力低下<br>効果・演出：「方寸」とは、文字通り一寸四方を表すが、古くは人のこころは心の臓一寸に宿るとして「こころ」の意も秘める。<br>その銃撃は、誰しもに簡単に扱える軽快さながら、野にかくれた君子のような枯淡な風格で、あなたの心臓を狙い撃つ。<br>
+        </p>
+        </div>
+        <div class="meiga left">
+        <span>明賀 翠</span>
+        <p>
+        
+              奥義破り！
+        </p>
+        </div>
+        <div class="meiga left">
+        <span>明賀 翠</span>
+        <p>
+        
+              SG@12#4+0&gt;=6 （判定：潜伏術） (SG@12#4&gt;=6) ＞ 6[2,4] ＞ 6 ＞ 成功
+              
+        </p>
+        </div>
+        <div class="meiga left">
+        <span>明賀 翠</span>
+        <p>
+        
+              痛打
+        </p>
+        </div>
+        <div class="zarame right">
+        <span>三盆糖 ざらめ</span>
+        <p>
+        
+              「また！」
+        </p>
+        </div>
+        <div class="meiga left">
+        <span>明賀 翠</span>
+        <p>
+        
+              SG@12#4+0&gt;=5 （判定：衣装術） (SG@12#4&gt;=5) ＞ 7[1,6] ＞ 7 ＞ 成功
+              
+        </p>
+        </div>
+        <div class="meiga left">
+        <span>明賀 翠</span>
+        <p>
+        
+              接近戦攻撃をざらめさんに
+        </p>
+        </div>
+        <div class="meiga left">
+        <span>明賀 翠</span>
+        <p>
+        
+              SG@12#4+0&gt;=5 （判定：潜伏術） (SG@12#4&gt;=5) ＞ 6[1,5] ＞ 6 ＞ 成功
+              
+        </p>
+        </div>
+        <div class="zarame right">
+        <span>三盆糖 ざらめ</span>
+        <p>
+        
+              2D6&gt;=6 （判定：砲術） (2D6&gt;=6) ＞ 8[2,6] ＞ 8 ＞ 成功
+              
+        </p>
+        </div>
+        <div class="meiga left">
+        <span>明賀 翠</span>
+        <p>
+        
+              奥義！！
+        </p>
+        </div>
+        <div class="meiga left">
+        <span>明賀 翠</span>
+        <p>
+        
+              ■奥義<br>《虚色の嘘憑》<br>指定特技　：言霊術<br>エフェクト：判定妨害<br>効果・演出：返り血まやかす偽りの　紅纏うは嘘の色
+        </p>
+        </div>
+        <div class="komaba right">
+        <span>駒場 駆</span>
+        <p>
+        
+              やぶれろー！
+        </p>
+        </div>
+        <div class="komaba right">
+        <span>駒場 駆</span>
+        <p>
+        
+              SG&gt;=7 （判定：縄術） (SG@12#2&gt;=7) ＞ 9[3,6] ＞ 9 ＞ 成功
+              
+        </p>
+        </div>
+        <div class="komaba right">
+        <span>駒場 駆</span>
+        <p>
+        
+              d66 (D66) ＞ 34
+              
+        </p>
+        </div>
+        <div class="menou left">
+        <span>瑪瑙</span>
+        <p>
+        
+              ｄ66 (D66) ＞ 24
+              
+        </p>
+        </div>
+        <div class="komaba right">
+        <span>駒場 駆</span>
+        <p>
+        
+              いつもの
+        </p>
+        </div>
+        <div class="komaba right">
+        <span>駒場 駆</span>
+        <p>
+        
+              SG&gt;=5 （判定：縄術） (SG@12#2&gt;=5) ＞ 8[4,4] ＞ 8 ＞ 成功
+              
+        </p>
+        </div>
+        <div class="meiga left">
+        <span>明賀 翠</span>
+        <p>
+        
+              感情をください
+        </p>
+        </div>
+        <div class="menou left">
+        <span>瑪瑙</span>
+        <p>
+        
+              あげます
+        </p>
+        </div>
+        <div class="meiga left">
+        <span>明賀 翠</span>
+        <p>
+        
+              SG@12#4+0&gt;=6 （判定：衣装術） (SG@12#4&gt;=6) ＞ 7[3,4] ＞ 7 ＞ 成功
+              
+        </p>
+        </div>
+        <div class="meiga left">
+        <span>明賀 翠</span>
+        <p>
+        
+              感情あげます
+        </p>
+        </div>
+        <div class="menou left">
+        <span>瑪瑙</span>
+        <p>
+        
+              雀蜂ざらめさんに
+        </p>
+        </div>
+        <div class="menou left">
+        <span>瑪瑙</span>
+        <p>
+        
+              SG+1&gt;=5 （判定：人脈） (SG+1@12#2&gt;=5) ＞ 8[2,6]+1 ＞ 9 ＞ 成功
+              
+        </p>
+        </div>
+        <div class="zarame right">
+        <span>三盆糖 ざらめ</span>
+        <p>
+        
+              2D6&gt;=7 （判定：経済力） (2D6&gt;=7) ＞ 7[1,6] ＞ 7 ＞ 成功
+              
+        </p>
+        </div>
+        <div class="kp">
+        
+              極地ダメージをどうぞ
+        </div>
+        <div class="menou left">
+        <span>瑪瑙</span>
+        <p>
+        
+              1ｄ6 (1D6) ＞ 3
+              
+        </p>
+        </div>
+        <div class="zarame right">
+        <span>三盆糖 ざらめ</span>
+        <p>
+        
+              1ｄ6 (1D6) ＞ 5
+              
+        </p>
+        </div>
+        <div class="mem8 right">
+        <span>system</span>
+        <p>
+        
+              [ 明賀 翠 ] 生命 : 2 → 1
+        </p>
+        </div>
+        <div class="komaba right">
+        <span>駒場 駆</span>
+        <p>
+        
+              1d6 (1D6) ＞ 2
+              
+        </p>
+        </div>
+        <div class="mem8 right">
+        <span>system</span>
+        <p>
+        
+              [ 三盆糖 ざらめ ] 戦術 : 1 → 0
+        </p>
+        </div>
+        <div class="mem8 right">
+        <span>system</span>
+        <p>
+        
+              [ 瑪瑙 ] 忍術 : 1 → 0
+        </p>
+        </div>
+        <div class="mem8 right">
+        <span>system</span>
+        <p>
+        
+              [ 駒場 駆 ] 器術 : 1 → 0
+        </p>
+        </div>
+        <div class="komaba right">
+        <span>駒場 駆</span>
+        <p>
+        
+              「嫌だ嫌だぁ！まだ出来るんだぁ…！」<br>地べたで拳を握りしめつつ 動けなくなってます
+        </p>
+        </div>
+        <div class="meiga left">
+        <span>明賀 翠</span>
+        <p>
+        
+              ( ；∀；)
+        </p>
+        </div>
+        <div class="zarame right">
+        <span>三盆糖 ざらめ</span>
+        <p>
+        
+              「ごめんね！ちゃんと勝つから……！」
+        </p>
+        </div>
+        <div class="menou left">
+        <span>瑪瑙</span>
+        <p>
+        
+              「だから言ったんだ…さっさと帰ればよかったものを」
+        </p>
+        </div>
+        <div class="kp">
+        
+              では
+        </div>
+        <div class="kp">
+        
+              11ラウンド目
+        </div>
+        <div class="mem8 right">
+        <span>system</span>
+        <p>
+        
+              [ 明賀 翠 ] がダイスシンボルを公開。出目は 4 です。
+        </p>
+        </div>
+        <div class="mem8 right">
+        <span>system</span>
+        <p>
+        
+              [ 瑪瑙 ] がダイスシンボルを公開。出目は 2 です。
+        </p>
+        </div>
+        <div class="mem8 right">
+        <span>system</span>
+        <p>
+        
+              [ 三盆糖 ざらめ ] がダイスシンボルを公開。出目は 4 です。
+        </p>
+        </div>
+        <div class="meiga left">
+        <span>明賀 翠</span>
+        <p>
+        
+              D66 (D66) ＞ 25
+              
+        </p>
+        </div>
+        <div class="zarame right">
+        <span>三盆糖 ざらめ</span>
+        <p>
+        
+              ｄ66 (D66) ＞ 16
+              
+        </p>
+        </div>
+        <div class="meiga left">
+        <span>明賀 翠</span>
+        <p>
+        
+              痛打
+        </p>
+        </div>
+        <div class="meiga left">
+        <span>明賀 翠</span>
+        <p>
+        
+              SG@12#4+0&gt;=5 （判定：衣装術） (SG@12#4&gt;=5) ＞ 8[3,5] ＞ 8 ＞ 成功
+              
+        </p>
+        </div>
+        <div class="meiga left">
+        <span>明賀 翠</span>
+        <p>
+        
+              接近戦攻撃をするぜ
+        </p>
+        </div>
+        <div class="meiga left">
+        <span>明賀 翠</span>
+        <p>
+        
+              SG@12#4+0&gt;=5 （判定：潜伏術） (SG@12#4&gt;=5) ＞ 6[3,3] ＞ 6 ＞ 成功
+              
+        </p>
+        </div>
+        <div class="zarame right">
+        <span>三盆糖 ざらめ</span>
+        <p>
+        
+              2D6&gt;=6 （判定：砲術） (2D6&gt;=6) ＞ 6[1,5] ＞ 6 ＞ 成功
+              
+        </p>
+        </div>
+        <div class="meiga left">
+        <span>明賀 翠</span>
+        <p>
+        
+              奥義！！
+        </p>
+        </div>
+        <div class="meiga left">
+        <span>明賀 翠</span>
+        <p>
+        
+              ■奥義<br>《虚色の嘘憑》<br>指定特技　：言霊術<br>エフェクト：判定妨害<br>効果・演出：返り血まやかす偽りの　紅纏うは嘘の色
+        </p>
+        </div>
+        <div class="zarame right">
+        <span>三盆糖 ざらめ</span>
+        <p>
+        
+              奥義破り！
+        </p>
+        </div>
+        <div class="zarame right">
+        <span>三盆糖 ざらめ</span>
+        <p>
+        
+              2D6&gt;=12 （判定：歩法） (2D6&gt;=12) ＞ 12[6,6] ＞ 12 ＞ スペシャル(【生命力】1点か変調一つを回復)
+              
+        </p>
+        </div>
+        <div class="mem8 right">
+        <span>system</span>
+        <p>
+        
+              [ 三盆糖 ざらめ ] 器術 : 0 → 1
+        </p>
+        </div>
+        <div class="zarame right">
+        <span>三盆糖 ざらめ</span>
+        <p>
+        
+              瑪瑙くんに奥義
+        </p>
+        </div>
+        <div class="zarame right">
+        <span>三盆糖 ざらめ</span>
+        <p>
+        
+              奥義！！
+        </p>
+        </div>
+        <div class="zarame right">
+        <span>三盆糖 ざらめ</span>
+        <p>
+        
+              ■奥義<br>《方寸狙撃》<br>指定特技　：砲術<br>エフェクト：クリティカルヒット/伸ばし/威力低下<br>効果・演出：「方寸」とは、文字通り一寸四方を表すが、古くは人のこころは心の臓一寸に宿るとして「こころ」の意も秘める。<br>その銃撃は、誰しもに簡単に扱える軽快さながら、野にかくれた君子のような枯淡な風格で、あなたの心臓を狙い撃つ。<br> 
+        </p>
+        </div>
+        <div class="meiga left">
+        <span>明賀 翠</span>
+        <p>
+        
+              感情あげます
+        </p>
+        </div>
+        <div class="meiga left">
+        <span>明賀 翠</span>
+        <p>
+        
+              最後です
+        </p>
+        </div>
+        <div class="menou left">
+        <span>瑪瑙</span>
+        <p>
+        
+              SG+1&gt;=6 （判定：手裏剣術） (SG+1@12#2&gt;=6) ＞ 6[1,5]+1 ＞ 7 ＞ 成功
+              
+        </p>
+        </div>
+        <div class="menou left">
+        <span>瑪瑙</span>
+        <p>
+        
+              雀蜂をざらめちゃんに
+        </p>
+        </div>
+        <div class="menou left">
+        <span>瑪瑙</span>
+        <p>
+        
+              2D6&gt;=5 （判定：人脈） (2D6&gt;=5) ＞ 8[3,5] ＞ 8 ＞ 成功
+              
+        </p>
+        </div>
+        <div class="zarame right">
+        <span>三盆糖 ざらめ</span>
+        <p>
+        
+              2D6&gt;=7 （判定：経済力） (2D6&gt;=7) ＞ 6[1,5] ＞ 6 ＞ 失敗
+              
+        </p>
+        </div>
+        <div class="menou left">
+        <span>瑪瑙</span>
+        <p>
+        
+              ｇｗｔ 戦国変調表(6) ＞ 野望:命中判定に+1、それ以外の判定に-1。サイクル終了時に〈憑依術〉判定し成功すると無効化。
+              
+        </p>
+        </div>
+        <div class="kp">
+        
+              では極地ダメージです
+        </div>
+        <div class="menou left">
+        <span>瑪瑙</span>
+        <p>
+        
+              1ｄ6 (1D6) ＞ 6
+              
+        </p>
+        </div>
+        <div class="zarame right">
+        <span>三盆糖 ざらめ</span>
+        <p>
+        
+              1ｄ6 (1D6) ＞ 1
+              
+        </p>
+        </div>
+        <div class="meiga left">
+        <span>明賀 翠</span>
+        <p>
+        
+              「くそっ……」
+        </p>
+        </div>
+        <div class="meiga left">
+        <span>明賀 翠</span>
+        <p>
+        
+              倒れます
+        </p>
+        </div>
+        <div class="mem8 right">
+        <span>system</span>
+        <p>
+        
+              [ 明賀 翠 ] 生命 : 1 → 0
+        </p>
+        </div>
+        <div class="mem8 right">
+        <span>system</span>
+        <p>
+        
+              [ 三盆糖 ざらめ ] 器術 : 1 → 0
+        </p>
+        </div>
+        <div class="mem8 right">
+        <span>system</span>
+        <p>
+        
+              [ 瑪瑙 ] 器術 : 1 → 0
+        </p>
+        </div>
+        <div class="zarame right">
+        <span>三盆糖 ざらめ</span>
+        <p>
+        
+              「あと一人……ッ」
+        </p>
+        </div>
+        <div class="menou left">
+        <span>瑪瑙</span>
+        <p>
+        
+              「…くっそ」
+        </p>
+        </div>
+        <div class="kp">
+        
+              12ラウンド目
+        </div>
+        <div class="mem8 right">
+        <span>system</span>
+        <p>
+        
+              [ 瑪瑙 ] がダイスシンボルを公開。出目は 2 です。
+        </p>
+        </div>
+        <div class="mem8 right">
+        <span>system</span>
+        <p>
+        
+              [ 三盆糖 ざらめ ] がダイスシンボルを公開。出目は 4 です。
+        </p>
+        </div>
+        <div class="zarame right">
+        <span>三盆糖 ざらめ</span>
+        <p>
+        
+              奥義を瑪瑙くんに
+        </p>
+        </div>
+        <div class="zarame right">
+        <span>三盆糖 ざらめ</span>
+        <p>
+        
+              奥義！！
+        </p>
+        </div>
+        <div class="zarame right">
+        <span>三盆糖 ざらめ</span>
+        <p>
+        
+              ■奥義<br>《方寸狙撃》<br>指定特技　：砲術<br>エフェクト：クリティカルヒット/伸ばし/威力低下<br>効果・演出：「方寸」とは、文字通り一寸四方を表すが、古くは人のこころは心の臓一寸に宿るとして「こころ」の意も秘める。<br>その銃撃は、誰しもに簡単に扱える軽快さながら、野にかくれた君子のような枯淡な風格で、あなたの心臓を狙い撃つ。<br> 
+        </p>
+        </div>
+        <div class="menou left">
+        <span>瑪瑙</span>
+        <p>
+        
+              2D6&gt;=6 （判定：手裏剣術） (2D6&gt;=6) ＞ 12[6,6] ＞ 12 ＞ スペシャル(【生命力】1点か変調一つを回復)
+              
+        </p>
+        </div>
+        <div class="mem8 right">
+        <span>system</span>
+        <p>
+        
+              [ 瑪瑙 ] 忍術 : 0 → 1
+        </p>
+        </div>
+        <div class="menou left">
+        <span>瑪瑙</span>
+        <p>
+        
+              「あとはあなただけ…」
+        </p>
+        </div>
+        <div class="menou left">
+        <span>瑪瑙</span>
+        <p>
+        
+              雀鉢
+        </p>
+        </div>
+        <div class="menou left">
+        <span>瑪瑙</span>
+        <p>
+        
+              2D6&gt;=5 （判定：人脈） (2D6&gt;=5) ＞ 11[5,6] ＞ 11 ＞ 成功
+              
+        </p>
+        </div>
+        <div class="zarame right">
+        <span>三盆糖 ざらめ</span>
+        <p>
+        
+              SG-1&gt;=7 （判定：経済力） (SG-1@12#2&gt;=7) ＞ 9[3,6]-1 ＞ 8 ＞ 成功
+              
+        </p>
+        </div>
+        <div class="kp">
+        
+              極地ダメージどうぞ
+        </div>
+        <div class="zarame right">
+        <span>三盆糖 ざらめ</span>
+        <p>
+        
+              1ｄ6 (1D6) ＞ 4
+              
+        </p>
+        </div>
+        <div class="menou left">
+        <span>瑪瑙</span>
+        <p>
+        
+              1ｄ6 (1D6) ＞ 5
+              
+        </p>
+        </div>
+        <div class="mem8 right">
+        <span>system</span>
+        <p>
+        
+              [ 三盆糖 ざらめ ] 謀術 : 1 → 0
+        </p>
+        </div>
+        <div class="menou left">
+        <span>瑪瑙</span>
+        <p>
+        
+              兵糧丸で回復
+        </p>
+        </div>
+        <div class="mem8 right">
+        <span>system</span>
+        <p>
+        
+              [ 瑪瑙 ] 忍具 : 1 → 0
+        </p>
+        </div>
+        <div class="kp">
+        
+              13ラウンド目
+        </div>
+        <div class="mem8 right">
+        <span>system</span>
+        <p>
+        
+              [ 瑪瑙 ] がダイスシンボルを公開。出目は 2 です。
+        </p>
+        </div>
+        <div class="mem8 right">
+        <span>system</span>
+        <p>
+        
+              [ 三盆糖 ざらめ ] がダイスシンボルを公開。出目は 4 です。
+        </p>
+        </div>
+        <div class="zarame right">
+        <span>三盆糖 ざらめ</span>
+        <p>
+        
+              奥義！！
+        </p>
+        </div>
+        <div class="zarame right">
+        <span>三盆糖 ざらめ</span>
+        <p>
+        
+              ■奥義<br>《方寸狙撃》<br>指定特技　：砲術<br>エフェクト：クリティカルヒット/伸ばし/威力低下<br>効果・演出：「方寸」とは、文字通り一寸四方を表すが、古くは人のこころは心の臓一寸に宿るとして「こころ」の意も秘める。<br>その銃撃は、誰しもに簡単に扱える軽快さながら、野にかくれた君子のような枯淡な風格で、あなたの心臓を狙い撃つ。<br>
+        </p>
+        </div>
+        <div class="menou left">
+        <span>瑪瑙</span>
+        <p>
+        
+              2D6&gt;=6 （判定：手裏剣術） (2D6&gt;=6) ＞ 9[3,6] ＞ 9 ＞ 成功
+              
+        </p>
+        </div>
+        <div class="menou left">
+        <span>瑪瑙</span>
+        <p>
+        
+              「ここで退くわけにもいかないんだ」
+        </p>
+        </div>
+        <div class="menou left">
+        <span>瑪瑙</span>
+        <p>
+        
+              雀蜂
+        </p>
+        </div>
+        <div class="menou left">
+        <span>瑪瑙</span>
+        <p>
+        
+              2D6&gt;=5 （判定：人脈） (2D6&gt;=5) ＞ 10[5,5] ＞ 10 ＞ 成功
+              
+        </p>
+        </div>
+        <div class="zarame right">
+        <span>三盆糖 ざらめ</span>
+        <p>
+        
+              兵糧丸使って謀術回復します
+        </p>
+        </div>
+        <div class="mem8 right">
+        <span>system</span>
+        <p>
+        
+              [ 三盆糖 ざらめ ] 忍具 : 1 → 0
+        </p>
+        </div>
+        <div class="zarame right">
+        <span>三盆糖 ざらめ</span>
+        <p>
+        
+              SG-1&gt;=7 （判定：経済力） (SG-1@12#2&gt;=7) ＞ 6[1,5]-1 ＞ 5 ＞ 失敗
+              
+        </p>
+        </div>
+        <div class="menou left">
+        <span>瑪瑙</span>
+        <p>
+        
+              回想きります
+        </p>
+        </div>
+        <div class="menou left">
+        <span>瑪瑙</span>
+        <p>
+        
+              幼いころ任務に失敗し所属していた里から追放された。<br>まだ己一人で何もできない頃だ。任された仕事もただの囮のようなものだ。<br>それさえもできなかった俺は使えない駒として捨てられたんだろう。<br>そんなごみを拾って価値を付けた人がいた。その扱いは前と同じく駒ではあったが、その人は俺を息子と呼んだ。<br>こんな世界だ。義理や恩とかいうわけじゃない。けど、その人が俺にかけた価値くらい、返してからじゃないと。<br>それくらいの『親孝行』しないと。<br>俺はいつまでもゴミのまま、どこにもいけない。<br>今回の仕事で十分な金が貯まる。これで、おれは――――<br>
+        </p>
+        </div>
+        <div class="menou left">
+        <span>瑪瑙</span>
+        <p>
+        
+              あなたは政治家「伊豆」の腹心である。<br>身寄りのなかったあなたを「伊豆」は育ててくれた。親同然の「伊豆」のためにプライズ「皐月札」を持って帰らなければ<br>あなたの本当の使命は<br>『政治家の腹心の誰かがプライズ「皐月札」をクライマックスフェイズ終了時に所持していること』<br>である。
+        </p>
+        </div>
+        <div class="menou left">
+        <span>瑪瑙</span>
+        <p>
+        
+              GWT 戦国変調表(4) ＞ 飢餓:戦闘に参加した時、ラウンドの終了時にサイコロを1つ振る(猛毒と共用)。偶数だったら【生命力】を1減少。サイクル終了時に〈兵糧術〉判定し成功すると無効化。
+              
+        </p>
+        </div>
+        <div class="zarame right">
+        <span>三盆糖 ざらめ</span>
+        <p>
+        
+              1ｄ6 (1D6) ＞ 2
+              
+        </p>
+        </div>
+        <div class="mem8 right">
+        <span>system</span>
+        <p>
+        
+              [ 三盆糖 ざらめ ] 体術 : 1 → 0
+        </p>
+        </div>
+        <div class="kp">
+        
+              飢餓の判定をどうぞ
+        </div>
+        <div class="zarame right">
+        <span>三盆糖 ざらめ</span>
+        <p>
+        
+              1ｄ6 (1D6) ＞ 1
+              
+        </p>
+        </div>
+        <div class="kp">
+        
+              極地のダメージどうぞ
+        </div>
+        <div class="zarame right">
+        <span>三盆糖 ざらめ</span>
+        <p>
+        
+              1ｄ6 (1D6) ＞ 4
+              
+        </p>
+        </div>
+        <div class="menou left">
+        <span>瑪瑙</span>
+        <p>
+        
+              1ｄ6 (1D6) ＞ 6
+              
+        </p>
+        </div>
+        <div class="mem8 right">
+        <span>system</span>
+        <p>
+        
+              [ 瑪瑙 ] 忍術 : 1 → 0
+        </p>
+        </div>
+        <div class="kp">
+        
+              14ラウンド目
+        </div>
+        <div class="kp">
+        
+              プロットオープン
+        </div>
+        <div class="mem8 right">
+        <span>system</span>
+        <p>
+        
+              [ 三盆糖 ざらめ ] がダイスシンボルを公開。出目は 4 です。
+        </p>
+        </div>
+        <div class="mem8 right">
+        <span>system</span>
+        <p>
+        
+              [ 瑪瑙 ] がダイスシンボルを公開。出目は 2 です。
+        </p>
+        </div>
+        <div class="zarame right">
+        <span>三盆糖 ざらめ</span>
+        <p>
+        
+              雷火
+        </p>
+        </div>
+        <div class="mem7 left">
+        <span>解説</span>
+        <p>
+        
+              雷火とは、<br>射撃戦。この攻撃に対して回避判定を行う場合、攻撃を行ったキャラクターと目標のプロット値の差が、回避判定のマイナスの修正となる。攻撃が成功すると、目標に射撃戦ダメージを1点与えることができる。
+        </p>
+        </div>
+        <div class="mem7 left">
+        <span>解説</span>
+        <p>
+        
+              しかも野望で+1になってるぞ！
+        </p>
+        </div>
+        <div class="zarame right">
+        <span>三盆糖 ざらめ</span>
+        <p>
+        
+              SG-1&gt;=5 （判定：砲術） (SG-1@12#2&gt;=5) ＞ 7[2,5]-1 ＞ 6 ＞ 成功
+              
+        </p>
+        </div>
+        <div class="menou left">
+        <span>瑪瑙</span>
+        <p>
+        
+              2D6&gt;=5 （判定：手裏剣術） (2D6&gt;=5) ＞ 7[3,4] ＞ 7 ＞ 成功
+              
+        </p>
+        </div>
+        <div class="mem7 left">
+        <span>解説</span>
+        <p>
+        
+              大丈夫です
+        </p>
+        </div>
+        <div class="menou left">
+        <span>瑪瑙</span>
+        <p>
+        
+              雀蜂
+        </p>
+        </div>
+        <div class="menou left">
+        <span>瑪瑙</span>
+        <p>
+        
+              2D6&gt;=5 （判定：人脈 (2D6&gt;=5) ＞ 6[1,5] ＞ 6 ＞ 成功
+              
+        </p>
+        </div>
+        <div class="zarame right">
+        <span>三盆糖 ざらめ</span>
+        <p>
+        
+              SG-1&gt;=9 （判定：分身の術） (SG-1@12#2&gt;=9) ＞ 5[2,3]-1 ＞ 4 ＞ 失敗
+              
+        </p>
+        </div>
+        <div class="menou left">
+        <span>瑪瑙</span>
+        <p>
+        
+              GWT 戦国変調表(3) ＞ 猛毒:戦闘に参加した時、ラウンドの終了時にサイコロを1つ振る(飢餓と共用)。奇数だったら【生命力】を1減少。サイクル終了時に〈毒術〉判定し成功すると無効化。
+              
+        </p>
+        </div>
+        <div class="menou left">
+        <span>瑪瑙</span>
+        <p>
+        
+              奥義！！
+        </p>
+        </div>
+        <div class="menou left">
+        <span>瑪瑙</span>
+        <p>
+        
+              ■奥義<br>《廻る地獄も金次第》<br>指定特技　：医術<br>エフェクト：不死身／定め／回数制限<br>効果・演出：流れる血溜まりから呼ぶ声が、手招く腕が現れる。ーまだ応えてやるものか。その紅を華に踏み付ける。この定めさえ金次第で変えてみせた。<br>
+        </p>
+        </div>
+        <div class="mem7 left">
+        <span>解説</span>
+        <p>
+        
+              奥義！<br>不死身：いつでも使用できる。1D6からセッション中にこの奥義を使用した回数を引いた値だけ自分の生命力を回復し、すべての変調を回復することができる。<br>定め：回復する【生命力】の値が、5から【不死身】を使用した回数を引いた値になる。<br>回数制限：一回のセッションに二度までしか使用できない。
+        </p>
+        </div>
+        <div class="zarame right">
+        <span>三盆糖 ざらめ</span>
+        <p>
+        
+              1ｄ6 (1D6) ＞ 1
+              
+        </p>
+        </div>
+        <div class="mem8 right">
+        <span>system</span>
+        <p>
+        
+              [ 三盆糖 ざらめ ] 妖術 : 1 → 0
+        </p>
+        </div>
+        <div class="mem8 right">
+        <span>system</span>
+        <p>
+        
+              [ 瑪瑙 ] 器術 : 0 → 1
+        </p>
+        </div>
+        <div class="mem8 right">
+        <span>system</span>
+        <p>
+        
+              [ 瑪瑙 ] 忍術 : 0 → 1
+        </p>
+        </div>
+        <div class="mem8 right">
+        <span>system</span>
+        <p>
+        
+              [ 瑪瑙 ] 妖術 : 0 → 1
+        </p>
+        </div>
+        <div class="kp">
+        
+              極地のダメージをくらってください
+        </div>
+        <div class="menou left">
+        <span>瑪瑙</span>
+        <p>
+        
+              1ｄ6 (1D6) ＞ 6
+              
+        </p>
+        </div>
+        <div class="zarame right">
+        <span>三盆糖 ざらめ</span>
+        <p>
+        
+              1ｄ6 (1D6) ＞ 6
+              
+        </p>
+        </div>
+        <div class="mem8 right">
+        <span>system</span>
+        <p>
+        
+              [ 瑪瑙 ] 妖術 : 1 → 0
+        </p>
+        </div>
+        <div class="mem8 right">
+        <span>system</span>
+        <p>
+        
+              [ 三盆糖 ざらめ ] 忍術 : 1 → 0
+        </p>
+        </div>
+        <div class="kp">
+        
+              お疲れ様です
+        </div>
+        <div class="menou left">
+        <span>瑪瑙</span>
+        <p>
+        
+              「…これで…やっと」
+        </p>
+        </div>
+        <div class="kp">
+        
+              戦果をどうぞ
+        </div>
+        <div class="zarame right">
+        <span>三盆糖 ざらめ</span>
+        <p>
+        
+              「あーーーっ！！くやしい！！こんな胡散臭いやつに負けるなんて……」
+        </p>
+        </div>
+        <div class="menou left">
+        <span>瑪瑙</span>
+        <p>
+        
+              札もらいます
+        </p>
+        </div>
+        <div class="komaba right">
+        <span>駒場 駆</span>
+        <p>
+        
+              「ざらめさ… ごめんなさい…<br>みんなも… 不甲斐なくてごめん……」
+        </p>
+        </div>
+        <div class="zarame right">
+        <span>三盆糖 ざらめ</span>
+        <p>
+        
+              「駒場くんのせいじゃないよ……あたしが甘かっただけ……」
+        </p>
+        </div>
+        <div class="menou left">
+        <span>瑪瑙</span>
+        <p>
+        
+              「…は、で？誰が忍びに向いてなかったって？」
+        </p>
+        </div>
+        <div class="meiga left">
+        <span>明賀 翠</span>
+        <p>
+        
+              「瑪瑙さんお疲れ様です。では「皐月札」を」
+        </p>
+        </div>
+        <div class="kp">
+        
+              と、苦しそうに立ち上がりながら話しかけます
+        </div>
+        <div class="komaba right">
+        <span>駒場 駆</span>
+        <p>
+        
+              「かえして くださいよぉ……<br>それないと 困る人がいっぱいいるらしいんですよぉ……」
+        </p>
+        </div>
+        <div class="menou left">
+        <span>瑪瑙</span>
+        <p>
+        
+              「…俺が持って行ってもいいんだろ。これ」
+        </p>
+        </div>
+        <div class="zarame right">
+        <span>三盆糖 ざらめ</span>
+        <p>
+        
+              「本当にうるさい男たちね……あなたみたいなのが本当の使用人じゃなくてよかったわ」
+        </p>
+        </div>
+        <div class="meiga left">
+        <span>明賀 翠</span>
+        <p>
+        
+              「そうですね。では、参りましょう」
+        </p>
+        </div>
+        <div class="menou left">
+        <span>瑪瑙</span>
+        <p>
+        
+              （…一言くらい、くれっかな）
+        </p>
+        </div>
+        <div class="zarame right">
+        <span>三盆糖 ざらめ</span>
+        <p>
+        
+              「駒場くんは……あたしのとこにいてくれる……？」
+        </p>
+        </div>
+        <div class="komaba right">
+        <span>駒場 駆</span>
+        <p>
+        
+              「ぼく 役にたてませんでした  ごはんをたくさん食べただけです……っ<br>わあぁぁん!!」
+        </p>
+        </div>
+        <div class="komaba right">
+        <span>駒場 駆</span>
+        <p>
+        
+              「瑪瑙さんは 僕が穀潰しだって分かってたんです！だから！僕を！ここにぃ……っ」
+        </p>
+        </div>
+        <div class="zarame right">
+        <span>三盆糖 ざらめ</span>
+        <p>
+        
+              「いいんだよぉ……ご飯いっぱい食べてあたしのこと守ろうとしてくれるだけで、護衛としては十分だよ……」
+        </p>
+        </div>
+        <div class="zarame right">
+        <span>三盆糖 ざらめ</span>
+        <p>
+        
+              「ちゃんとお仕事できてたよぉ、えらいえらい」
+        </p>
+        </div>
+        <div class="meiga left">
+        <span>明賀 翠</span>
+        <p>
+        
+              「では、ごきげんよう」
+        </p>
+        </div>
+        <div class="kp">
+        
+              雨が激しさを増す。<br>庭園の杜若の茎は、食い荒らされていた。
+        </div>
+        <div class="kp">
+        
+              その年の夏の暑さを感じる頃に、例年のようなきれいな花は見られなかった。<br>そしてその年、とある蛾による被害が各地で頻発したとか
+        </div>
+        <div class="kp">
+        
+              個別エンディングへ
+        </div>
+        <div class="kp">
+        
+            ――――――――――――――――――――――――
+      </div>
+        <div class="menou left">
+        <span>瑪瑙</span>
+        <p>
+        
+              「…これで合ってんだろ。今回の」
+        </p>
+        </div>
+        <div class="mem6 right">
+        <span>？？？</span>
+        <p>
+        
+              「そうだ。よくやった」
+        </p>
+        </div>
+        <div class="menou left">
+        <span>瑪瑙</span>
+        <p>
+        
+              「…」
+        </p>
+        </div>
+        <div class="mem6 right">
+        <span>？？？</span>
+        <p>
+        
+              「くっくっくっ。これで」
+        </p>
+        </div>
+        <div class="menou left">
+        <span>瑪瑙</span>
+        <p>
+        
+              「…それで、もう一人で仕事しても平気だろ。だいぶ稼いだ。…今回はいくらか助けられもしたけど、一人でもう稼げる」
+        </p>
+        </div>
+        <div class="mem6 right">
+        <span>？？？</span>
+        <p>
+        
+              「そうか、それは残念だな。」
+        </p>
+        </div>
+        <div class="mem6 right">
+        <span>？？？</span>
+        <p>
+        
+              「お前はよく役目をはたしてくれた。これからは自由にするがいい」
+        </p>
+        </div>
+        <div class="menou left">
+        <span>瑪瑙</span>
+        <p>
+        
+              「…あぁ。じゃあまた。あんたの依頼なら、いつでも。まけはしないけど」
+        </p>
+        </div>
+        <div class="mem6 right">
+        <span>？？？</span>
+        <p>
+        
+              「そうか。次を期待しよう」
+        </p>
+        </div>
+        <div class="menou left">
+        <span>瑪瑙</span>
+        <p>
+        
+              「…あぁ」
+        </p>
+        </div>
+        <div class="menou left">
+        <span>瑪瑙</span>
+        <p>
+        
+              終わります！
+        </p>
+        </div>
+        <div class="kp">
+        
+              はい
+        </div>
+
+        <div class="kp">
+        
+            ――――――――――――――――――――――――
+      </div>
+        <div class="zarame right">
+        <span>三盆糖 ざらめ</span>
+        <p>
+        
+              「早苗。失敗しちゃった。ごめんね」
+        </p>
+        </div>
+        <div class="mem9 left">
+        <span>早苗</span>
+        <p>
+        
+              『仕方なかったわ。それに、奪われたものはまた、』
+        </p>
+        </div>
+        <div class="zarame right">
+        <span>三盆糖 ざらめ</span>
+        <p>
+        
+              「取り返せばいい。そうだね？」
+        </p>
+        </div>
+        <div class="mem9 left">
+        <span>早苗</span>
+        <p>
+        
+              『そう。よくわかっているわね。ざらめは『わたし』だものね』
+        </p>
+        </div>
+        <div class="zarame right">
+        <span>三盆糖 ざらめ</span>
+        <p>
+        
+              「そう。あたしは早苗、早苗はあたし……だから、もっと強くならなきゃ」
+        </p>
+        </div>
+        <div class="mem9 left">
+        <span>早苗</span>
+        <p>
+        
+              『かわいい用心棒だってこれからは一緒だもの。これから、もっと』
+        </p>
+        </div>
+        <div class="mem10 right">
+        <span>早苗/ざらめ</span>
+        <p>
+        
+              「『つよくなれる」』
+        </p>
+        </div>
+        <div class="mem9 left">
+        <span>早苗</span>
+        <p>
+        
+              『そうでしょう？』
+        </p>
+        </div>
+        <div class="zarame right">
+        <span>三盆糖 ざらめ</span>
+        <p>
+        
+              「そうだね」
+        </p>
+        </div>
+        <div class="mem10 right">
+        <span>早苗/ざらめ</span>
+        <p>
+        
+              「『ふたりなら、もっと強く――」』
+        </p>
+        </div>
+        <div class="mem10 right">
+        <span>早苗/ざらめ</span>
+        <p>
+        
+              終わりです
+        </p>
+        </div>
+
+        <div class="kp">
+        
+            ――――――――――――――――――――――――
+      </div>
+
+        <div class="komaba right">
+        <span>駒場 駆</span>
+        <p>
+        
+               く゛や゛し゛い゛!!!!!<br>インチキおじさんのこと 一切疑わなかった！<br>戦いも守るべき主人に任せっぱなしだった！<br>仕事だって対して出来てない！<br>何より インチキおじさんの思った通りの実力だったのが不甲斐ない!!!<br><br>今にみていろ瑪瑙さん！<br>近いうちに！必ず！強くなって地べたに這いつくばらせてやる！
+        </p>
+        </div>
+        <div class="komaba right">
+        <span>駒場 駆</span>
+        <p>
+        
+              「あぁぁぁぁ！悔しい！悔しいなぁぁ！」<br><br>そう大声で喚きながら 庭園の杜若を植え換えてます。<br>わりかしすぐにリベンジマッチに行くんじゃないかな
+        </p>
+        </div>
+        <div class="komaba right">
+        <span>駒場 駆</span>
+        <p>
+        
+              終了です！
+        </p>
+        </div>
+        <div class="kp">
+        
+              では、これにて五月雨滴る杜若を終了いたします
+        </div>
+        <div class="kp">
+        
+              お疲れさまでした
+        </div>
+
+        <div class="kp">
+        
+            ――――――――――――――――――――――――
+      </div>
+        <div class="kp">
+        
+              功績点配布
+        </div>
+        <div class="mem8 right">
+        <span>system</span>
+        <p>
+        
+              [ 瑪瑙 ] がダイスシンボルを公開。出目は 3 です。
+        </p>
+        </div>
+        <div class="mem8 right">
+        <span>system</span>
+        <p>
+        
+              [ 駒場 駆 ] がダイスシンボルを公開。出目は 2 です。
+        </p>
+        </div>
+        <div class="mem8 right">
+        <span>system</span>
+        <p>
+        
+              [ GM ] がダイスシンボルを公開。出目は 2 です。
+        </p>
+        </div>
+        <div class="mem8 right">
+        <span>system</span>
+        <p>
+        
+              [ 三盆糖 ざらめ ] がダイスシンボルを公開。出目は 3 です。
+        </p>
+        </div>
+        <div class="komaba right">
+        <span>駒場 駆</span>
+        <p>
+        
+              4
+        </p>
+        </div>
+        <div class="menou left">
+        <span>瑪瑙</span>
+        <p>
+        
+              功績点+7
+        </p>
+        </div>
+        <div class="zarame right">
+        <span>三盆糖 ざらめ</span>
+        <p>
+        
+              2
+        </p>
+        </div>
+        <div class="kp">
+        
+              はい。以上となります
+        </div>
+        <div class="menou left">
+        <span>瑪瑙</span>
+        <p>
+        
+              ありがとうございました！！
+        </p>
+        </div>
+        <div class="zarame right">
+        <span>三盆糖 ざらめ</span>
+        <p>
+        
+              ありがとうございました！！
+        </p>
+        </div>
+        <div class="komaba right">
+        <span>駒場 駆</span>
+        <p>
+        
+              ありがとうございました！！
+        </p>
+        </div>
+        <div class="kp">
+        
+              ◆PC３βの秘密<br>あなたはPC２の目的を知った。<br>それがよくないことであるのはわかっているが、自分の恩人のために動くことを否定できるだろうか。<br>だが間違いを正してやるのが友人ではなかろうか。でもそれはただの偽善なのでは。<br>そもそも正しさとは、正義とは……<br>あなたはクライマックスフェイズ前にPC３αのハンドアウトを破棄してもよい。<br>その場合あなたの本当の使命は<br>『PC２の使命が達成されること』<br>に変更される。<br>破棄しない場合、この秘密はないものとして扱う
+        </div>
+        </div>
+<br>
+</div></div>
+<script src="../logCon_Respon.js"></script>
+</body></html>
