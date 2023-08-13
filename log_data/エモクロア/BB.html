@@ -1,0 +1,3636 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<title>log</title>
+<meta http-equiv="content-type" charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+<link rel="stylesheet" href="../logCon_Respon.css">
+<style>
+    /* main css */
+    .bg-inner.bg1{background:url('./BB画像/kenkyuusitu00.jpg') no-repeat center/cover;}
+    
+    /* member */
+.mem1 p{border:2px solid rgb(255, 217, 0);box-shadow:5px 5px 0 rgb(255, 217, 0);}
+.mem1 p:after{border-right-color:rgb(255, 217, 0);}
+.mem1 span{background:rgb(255, 217, 0);color:#000;}
+.mem1:before{content:'';background-image:url('./BB画像/乱獅子雪華.png');background-size:contain;background-repeat:no-repeat;background-position:center center;width:90px;height:90px;}
+.mem2 p{border:2px solid rgb(244, 67, 54);box-shadow:5px 5px 0 rgb(244, 67, 54);}
+.mem2 p:after{border-left-color:rgb(244, 67, 54);}
+.mem2 span{background:rgb(244, 67, 54);color:#000;}
+.mem2:before{content:'';background-image:url('./BB画像/千金楽\ アリア.png');background-size:contain;background-repeat:no-repeat;background-position:center center;width:90px;height:90px;}
+.mem3 p{border:2px solid rgb(255, 152, 0);box-shadow:5px 5px 0 rgb(255, 152, 0);}
+.mem3 p:after{border-right-color:rgb(255, 152, 0);}
+.mem3 span{background:rgb(255, 152, 0);color:#000;}
+.mem3:before{content:'';background-image:url('./BB画像/加持\　千八香.png');background-size:contain;background-repeat:no-repeat;background-position:center center;width:90px;height:90px;}
+.mem4 p{border:2px solid rgb(136, 136, 136);box-shadow:5px 5px 0 rgb(136, 136, 136);}
+.mem4 p:after{border-left-color:rgb(136, 136, 136);}
+.mem4 span{background:rgb(136, 136, 136);color:#fff;}
+.mem4:before{content:'';background-image:url('4.png');background-size:contain;background-repeat:no-repeat;background-position:center center;width:90px;height:90px;}
+.mem5 p{border:2px solid rgb(136, 136, 136);box-shadow:5px 5px 0 rgb(136, 136, 136);}
+.mem5 p:after{border-right-color:rgb(136, 136, 136);}
+.mem5 span{background:rgb(136, 136, 136);color:#fff;}
+.mem5:before{content:'';background-image:url('5.png');background-size:contain;background-repeat:no-repeat;background-position:center center;width:90px;height:90px;}
+.mem6 p{border:2px solid rgb(136, 136, 136);box-shadow:5px 5px 0 rgb(136, 136, 136);}
+.mem6 p:after{border-left-color:rgb(136, 136, 136);}
+.mem6 span{background:rgb(136, 136, 136);color:#fff;}
+.mem6:before{content:'';background-image:url('6.png');background-size:contain;background-repeat:no-repeat;background-position:center center;width:90px;height:90px;}
+.mem7 p{border:2px solid rgb(136, 136, 136);box-shadow:5px 5px 0 rgb(136, 136, 136);}
+.mem7 p:after{border-right-color:rgb(136, 136, 136);}
+.mem7 span{background:rgb(136, 136, 136);color:#fff;}
+.mem7:before{content:'';background-image:url('7.png');background-size:contain;background-repeat:no-repeat;background-position:center center;width:90px;height:90px;}
+.mem8 p{border:2px solid rgb(136, 136, 136);box-shadow:5px 5px 0 rgb(136, 136, 136);}
+.mem8 p:after{border-left-color:rgb(136, 136, 136);}
+.mem8 span{background:rgb(136, 136, 136);color:#fff;}
+.mem8:before{content:'';background-image:url('8.png');background-size:contain;background-repeat:no-repeat;background-position:center center;width:90px;height:90px;}
+    
+    @media only screen and (max-width: 768px) {
+        .mem1 p:after{border-right-color:rgb(255, 217, 0);border-left-color:transparent;}
+        .mem2 p:after{border-right-color:rgb(244, 67, 54);border-left-color:transparent;}
+        .mem3 p:after{border-right-color:rgb(255, 152, 0);border-left-color:transparent;}
+        .mem4 p:after{border-right-color:rgb(136, 136, 136);border-left-color:transparent;}
+        .mem5 p:after{border-right-color:rgb(136, 136, 136);border-left-color:transparent;}
+        .mem6 p:after{border-right-color:rgb(136, 136, 136);border-left-color:transparent;}
+        .mem7 p:after{border-right-color:rgb(136, 136, 136);border-left-color:transparent;}
+        .mem8 p:after{border-right-color:rgb(136, 136, 136);border-left-color:transparent;}
+    
+        .mem1:before,.mem2:before,.mem3:before,
+        .mem4:before,.mem5:before,.mem6:before,.mem7:before,.mem8:before{width:70px;height:70px;}
+    }
+</style>
+</head>
+<body>
+    <p id="page-top"><a href="#"><i class="page-top__arrow"></i></a></p>
+	<div class="leftwhite"></div>
+	<div class="rightwhite"></div>
+	<div class="bg-sp">
+    <div class="bg-over"><div class="bg-inner bg1"></div></div>
+	<div class="log">
+    
+        <div class="kp">
+
+            共鳴者たちは、タイムマシンの動作テストのアルバイトに合格し、博物館へ向かっています。現在、タイムマシン研究は黎明期であり、あらゆる企業が研究に投資し、実用化を競っております。しかしながらタイムトラベルは、まだ倫理問題があったり、法整備が追い付いていなかったりと、なにかとトラブルが多い分野となっております。そのせいでアルバイト料は高額で、また、時を超えるという貴重な経験からお金に困っていない好奇心旺盛な者もアルバイト募集に応じるため、競争倍率は非常に高く、選ばれた共鳴者たちは幸運と言えるでしょう。
+            
+      </div>
+      <div class="mem1 left">
+      <span>乱獅子雪華</span>
+      <p>
+      
+            「ついったぞーーー！！」<br>
+      </p>
+      </div>
+      <div class="mem2 right">
+      <span>千金楽アリア</span>
+      <p>
+      
+            「ふぅ。選ばれてよかった」
+      </p>
+      </div>
+      <div class="mem3 left">
+      <span>加持千八香</span>
+      <p>
+      
+            「おまえらもえりゃばれたのか？」
+      </p>
+      </div>
+      <div class="mem2 right">
+      <span>千金楽アリア</span>
+      <p>
+      
+            「そうだよ」
+      </p>
+      </div>
+      <div class="mem1 left">
+      <span>乱獅子雪華</span>
+      <p>
+      
+            「おう！！私は乱獅子雪華だ！よろしくな！！」
+      </p>
+      </div>
+      <div class="mem2 right">
+      <span>千金楽アリア</span>
+      <p>
+      
+            「そっか。そうだね。自己紹介が正解だったか。私は千金楽アリアって言うんだ」
+      </p>
+      </div>
+      <div class="mem3 left">
+      <span>加持千八香</span>
+      <p>
+      
+            「あちゃしはかじちやか」
+      </p>
+      </div>
+      <div class="mem1 left">
+      <span>乱獅子雪華</span>
+      <p>
+      
+            「アリアリとチャカだな！」
+      </p>
+      </div>
+      <div class="mem2 right">
+      <span>千金楽アリア</span>
+      <p>
+      
+            「アリアリ？そう呼ばれるのか」
+      </p>
+      </div>
+      <div class="mem3 left">
+      <span>加持千八香</span>
+      <p>
+      
+            「しぇめてひりゃがなはちゅおんにしちぇくれにゃい！？」
+      </p>
+      </div>
+      <div class="mem2 right">
+      <span>千金楽アリア</span>
+      <p>
+      
+            「ならば、私は雪華と千八香と呼ぶべきかな？」
+      </p>
+      </div>
+      <div class="mem1 left">
+      <span>乱獅子雪華</span>
+      <p>
+      
+            「かっこいいぞ？チャカー」
+      </p>
+      </div>
+      <div class="mem1 left">
+      <span>乱獅子雪華</span>
+      <p>
+      
+            「いいぞー！」
+      </p>
+      </div>
+      <div class="mem3 left">
+      <span>加持千八香</span>
+      <p>
+      
+            「むぅ･･････」
+      </p>
+      </div>
+      <div class="mem2 right">
+      <span>千金楽アリア</span>
+      <p>
+      
+            「そう膨れなさんな。そういう子なんだろう」
+      </p>
+      </div>
+      <div class="mem3 left">
+      <span>加持千八香</span>
+      <p>
+      
+            「ぬぅ･･････」
+      </p>
+      </div>
+      <div class="mem1 left">
+      <span>乱獅子雪華</span>
+      <p>
+      
+            「かっこいいのになぁ～それよりもわくわくするな！いや…流行に目を光らせるのも花嫁修業！気合い入れていくぞ！」
+      </p>
+      </div>
+      <div class="mem2 right">
+      <span>千金楽アリア</span>
+      <p>
+      
+            「気合いはほどほどで。まぁ、楽しみではあるね」
+      </p>
+      </div>
+      <div class="mem3 left">
+      <span>加持千八香</span>
+      <p>
+      
+            「ちゃからって･･････がんばゆし･･････」
+      </p>
+      </div>
+      <div class="mem2 right">
+      <span>千金楽アリア</span>
+      <p>
+      
+            博物館に入ります
+      </p>
+      </div>
+      <div class="kp">
+      
+            地元の人であれば校外学習で来たことがあるかもしれません。現在は特別展示として巨大コハク展を行っているようで非常ににぎわっています。
+      <br>＜調査＞＜検索＞で詳細がわかります。
+            
+      </div>
+      <div class="mem2 right">
+      <span>千金楽アリア</span>
+      <p>
+      
+            1DM&lt;=4　(＊調査) (1DM&lt;=4) ＞ [5] ＞ 0 ＞ 成功数0 失敗!
+            
+      </p>
+      </div>
+      <div class="mem3 left">
+      <span>加持千八香</span>
+      <p>
+      
+            1DM&lt;=2　(＊調査) (1DM&lt;=2) ＞ [9] ＞ 0 ＞ 成功数0 失敗!
+            
+      </p>
+      </div>
+      <div class="mem1 left">
+      <span>乱獅子雪華</span>
+      <p>
+      
+            1DM&lt;=1　(＊調査) (1DM&lt;=1) ＞ [10] ＞ -1 ＞ 成功数-1 ファンブル!
+            
+      </p>
+      </div>
+      <div class="kp">
+      
+            ポスターやパンフレットによると、巨大コハクは松葉博士が最新機器を使って掘り当てたようです。最新式のソナーで場所を割り出し、身の丈以上の大きさコハク掘り出したと書いてあります。
+      </div>
+      <div class="mem2 right">
+      <span>千金楽アリア</span>
+      <p>
+      
+            ほほほう
+      </p>
+      </div>
+      <div class="mem3 left">
+      <span>加持千八香</span>
+      <p>
+      
+            「ありあ、こはくってにゃに？」覗き込んで
+      </p>
+      </div>
+      <div class="mem2 right">
+      <span>千金楽アリア</span>
+      <p>
+      
+            「琥珀っていうのはね、木の樹液が長年しみ出して固まったものだよ」
+      </p>
+      </div>
+      <div class="mem2 right">
+      <span>千金楽アリア</span>
+      <p>
+      
+            見えるようにしようか
+      </p>
+      </div>
+      <div class="mem3 left">
+      <span>加持千八香</span>
+      <p>
+      
+            「ふぅん。しょれがでっけーの？」
+      </p>
+      </div>
+      <div class="mem2 right">
+      <span>千金楽アリア</span>
+      <p>
+      
+            「身の丈以上ってのは普通じゃ出てこないだろうからね」
+      </p>
+      </div>
+      <div class="mem3 left">
+      <span>加持千八香</span>
+      <p>
+      
+            「でっけーのか･･････しょっか･･････」
+      </p>
+      </div>
+      <div class="mem1 left">
+      <span>乱獅子雪華</span>
+      <p>
+      
+            「おいてくぞー！」手ぶんぶん
+      </p>
+      </div>
+      <div class="mem2 right">
+      <span>千金楽アリア</span>
+      <p>
+      
+            「はいはい、今行くからね」
+      </p>
+      </div>
+      <div class="mem3 left">
+      <span>加持千八香</span>
+      <p>
+      
+            「あ、あ、まってまって！」
+      </p>
+      </div>
+      <div class="mem2 right">
+      <span>千金楽アリア</span>
+      <p>
+      
+            じゃ案内されるように奥に進んでいく感じですかね
+      </p>
+      </div>
+      <div class="kp">
+      
+            共鳴者たちが「松葉」と書かれた部屋へ案内されると、にこやかなおじいさんが出迎えてくれます。<br>＜知識＞＜ニュース＞＜事情通＞などでわかることがあります。
+            
+      </div>
+      <div class="mem2 right">
+      <span>千金楽アリア</span>
+      <p>
+      
+            1DM&lt;=4　(＊調査) (1DM&lt;=4) ＞ [8] ＞ 0 ＞ 成功数0 失敗!
+            
+      </p>
+      </div>
+      <div class="mem3 left">
+      <span>加持千八香</span>
+      <p>
+      
+            1DM&lt;=2　(＊調査) (1DM&lt;=2) ＞ [3] ＞ 0 ＞ 成功数0 失敗!
+            
+      </p>
+      </div>
+      <div class="kp">
+      
+            松葉博士は共鳴者たちをくたびれたソファに座るよう促すと、今回の依頼について詳しく説明します。
+            
+      </div>
+      <div class="mem4 right">
+      <span>松葉博士</span>
+      <p>
+      
+            やあやあ待っていたよ
+      </p>
+      </div>
+      <div class="mem1 left">
+      <span>乱獅子雪華</span>
+      <p>
+      
+            「待たせたな！」
+      </p>
+      </div>
+      <div class="mem2 right">
+      <span>千金楽アリア</span>
+      <p>
+      
+            「お待たせして申し訳ありません」
+      </p>
+      </div>
+      <div class="mem3 left">
+      <span>加持千八香</span>
+      <p>
+      
+            「まちゃせちゃな！」
+      </p>
+      </div>
+      <div class="mem4 right">
+      <span>松葉博士</span>
+      <p>
+      
+            君たちが乱獅子君に、千金良君に、加持君だな！
+      </p>
+      </div>
+      <div class="mem4 right">
+      <span>松葉博士</span>
+      <p>
+      
+            ｢わしは松葉じゃ、ここで研究をしておる。ついにタイムマシンの試作機が完成して、やっと実験許可がおりたんじゃ！｣博士は大興奮です
+      </p>
+      </div>
+      <div class="mem1 left">
+      <span>乱獅子雪華</span>
+      <p>
+      
+            「すごいな！！！」
+      </p>
+      </div>
+      <div class="mem2 right">
+      <span>千金楽アリア</span>
+      <p>
+      
+            「そうなんですか。それは楽しみですね」
+      </p>
+      </div>
+      <div class="mem3 left">
+      <span>加持千八香</span>
+      <p>
+      
+            「しょれで、ちゃかたちはにゃにしちゃらいいの？」
+      </p>
+      </div>
+      <div class="mem4 right">
+      <span>松葉博士</span>
+      <p>
+      
+            ｢では説明に入ろうかの。ちょっと長くなるぞい｣
+      </p>
+      </div>
+      <div class="mem2 right">
+      <span>千金楽アリア</span>
+      <p>
+      
+            「はーい」
+      </p>
+      </div>
+      <div class="mem1 left">
+      <span>乱獅子雪華</span>
+      <p>
+      
+            「どんとこい！」
+      </p>
+      </div>
+      <div class="mem3 left">
+      <span>加持千八香</span>
+      <p>
+      
+            「あい」
+      </p>
+      </div>
+      <div class="mem4 right">
+      <span>松葉博士</span>
+      <p>
+      
+            ｢まず今回行く時代じゃが、およそ8千年前にしようと思う。時代でいうと縄文時代じゃ｣
+      </p>
+      </div>
+      <div class="mem3 left">
+      <span>加持千八香</span>
+      <p>
+      
+            「はっしぇんにぇん！？」
+      </p>
+      </div>
+      <div class="mem1 left">
+      <span>乱獅子雪華</span>
+      <p>
+      
+            「土器つくってた時だっけ？」
+      </p>
+      </div>
+      <div class="mem4 right">
+      <span>松葉博士</span>
+      <p>
+      
+            ｢縄文土器じゃな。農作はまだやってなかった頃じゃ｣
+      </p>
+      </div>
+      <div class="mem4 right">
+      <span>松葉博士</span>
+      <p>
+      
+            ｢集落の位置はおおよそ分かっておるからそこを避けていけば当時の人に会うこともなかろう｣
+      </p>
+      </div>
+      <div class="mem2 right">
+      <span>千金楽アリア</span>
+      <p>
+      
+            「さすがに、会ったらまずいだろうしね」
+      </p>
+      </div>
+      <div class="mem3 left">
+      <span>加持千八香</span>
+      <p>
+      
+            「しょんなむかちにいってにゃにしゅるの･･････」
+      </p>
+      </div>
+      <div class="mem1 left">
+      <span>乱獅子雪華</span>
+      <p>
+      
+            「？あっちゃダメなのか？？」
+      </p>
+      </div>
+      <div class="mem2 right">
+      <span>千金楽アリア</span>
+      <p>
+      
+            「私たちの服装からして、文明が違うでしょ？誰だなんだっていろいろされちゃうかもよー？」
+      </p>
+      </div>
+      <div class="mem3 left">
+      <span>加持千八香</span>
+      <p>
+      
+            「いりょいりょ」
+      </p>
+      </div>
+      <div class="mem1 left">
+      <span>乱獅子雪華</span>
+      <p>
+      
+            「私は八千年時を超えても乱獅子雪華だぞ」
+      </p>
+      </div>
+      <div class="mem3 left">
+      <span>加持千八香</span>
+      <p>
+      
+            「やじゃ！こあい！あわにゃい！」
+      </p>
+      </div>
+      <div class="mem3 left">
+      <span>加持千八香</span>
+      <p>
+      
+            「せっか、ちゅよい･･････」
+      </p>
+      </div>
+      <div class="mem2 right">
+      <span>千金楽アリア</span>
+      <p>
+      
+            「雪華は、いろいろされても困らないのかぁ。すごいなぁ」
+      </p>
+      </div>
+      <div class="mem1 left">
+      <span>乱獅子雪華</span>
+      <p>
+      
+            「？」
+      </p>
+      </div>
+      <div class="mem3 left">
+      <span>加持千八香</span>
+      <p>
+      
+            「えりょどうじんみちゃいにゃことしゃれちゃうかもしれにゃいにょに･･････」
+      </p>
+      </div>
+      <div class="mem2 right">
+      <span>千金楽アリア</span>
+      <p>
+      
+            「あらー。そんなこと考えてなさったのぉ？」
+      </p>
+      </div>
+      <div class="mem3 left">
+      <span>加持千八香</span>
+      <p>
+      
+            「にゃ！！」
+      </p>
+      </div>
+      <div class="mem3 left">
+      <span>加持千八香</span>
+      <p>
+      
+            「はめりゃれちゃ！！ありあのいじある！！」
+      </p>
+      </div>
+      <div class="mem2 right">
+      <span>千金楽アリア</span>
+      <p>
+      
+            「まぁ、文明の違いで身ぐるみはがされそうとは思ったけどね」
+      </p>
+      </div>
+      <div class="mem3 left">
+      <span>加持千八香</span>
+      <p>
+      
+            「おんにゃきしみちゃいにしゃれる･･････？」
+      </p>
+      </div>
+      <div class="mem1 left">
+      <span>乱獅子雪華</span>
+      <p>
+      
+            （えりょどうじんはみぐるみを剝がされることなのだな）学び
+      </p>
+      </div>
+      <div class="mem3 left">
+      <span>加持千八香</span>
+      <p>
+      
+            「『ころしぇ！』っていわにゃきゃいけにゃい･･････？」
+      </p>
+      </div>
+      <div class="mem2 right">
+      <span>千金楽アリア</span>
+      <p>
+      
+            「それは言わなくていいやつ」
+      </p>
+      </div>
+      <div class="mem3 left">
+      <span>加持千八香</span>
+      <p>
+      
+            「あい」
+      </p>
+      </div>
+      <div class="mem4 right">
+      <span>松葉博士</span>
+      <p>
+      
+            ｢ま、まあ人には会わないようにするからの｣
+      </p>
+      </div>
+      <div class="mem4 right">
+      <span>松葉博士</span>
+      <p>
+      
+            ｢次にタイムマシンの仕組みじゃが、詳細は言えないが超スピードで走って時空を越えるタイプじゃ。バックトゥザフューチャーを想像してくれればよいぞ｣
+      </p>
+      </div>
+      <div class="mem2 right">
+      <span>千金楽アリア</span>
+      <p>
+      
+            「あ、なんか見たことが…」
+      </p>
+      </div>
+      <div class="mem3 left">
+      <span>加持千八香</span>
+      <p>
+      
+            「めっちゃはしゆの？あしはえてゆの？」
+      </p>
+      </div>
+      <div class="mem1 left">
+      <span>乱獅子雪華</span>
+      <p>
+      
+            「引き出しにはいるんじゃないんだな」
+      </p>
+      </div>
+      <div class="mem2 right">
+      <span>千金楽アリア</span>
+      <p>
+      
+            「それは違う知識」
+      </p>
+      </div>
+      <div class="mem3 left">
+      <span>加持千八香</span>
+      <p>
+      
+            「どりゃえもん」
+      </p>
+      </div>
+      <div class="mem4 right">
+      <span>松葉博士</span>
+      <p>
+      
+            ｢マシンは車型じゃ。わしが操縦するから、君たちは座ってくれてればええ。後程乗り心地や体調の変化など、色々レポートを出して貰うぞい｣
+      </p>
+      </div>
+      <div class="mem2 right">
+      <span>千金楽アリア</span>
+      <p>
+      
+            「つまり、博士も一緒に向かうということですか？」
+      </p>
+      </div>
+      <div class="mem3 left">
+      <span>加持千八香</span>
+      <p>
+      
+            「はかしぇもいってくれゆの！？」
+      </p>
+      </div>
+      <div class="mem4 right">
+      <span>松葉博士</span>
+      <p>
+      
+            ｢わしも行くぞい。知識の無い者が操縦できるほどマシンが賢くないんじゃ｣
+      </p>
+      </div>
+      <div class="mem3 left">
+      <span>加持千八香</span>
+      <p>
+      
+            「ましんばかにゃの？」
+      </p>
+      </div>
+      <div class="mem1 left">
+      <span>乱獅子雪華</span>
+      <p>
+      
+            「楽しみだな～！」
+      </p>
+      </div>
+      <div class="mem2 right">
+      <span>千金楽アリア</span>
+      <p>
+      
+            「何かあった際、対処するのは現地でと…なるほど。なるほど？」
+      </p>
+      </div>
+      <div class="mem4 right">
+      <span>松葉博士</span>
+      <p>
+      
+            ｢何も心配はいらん！今回は行ってちょっと見て帰ってくるだけだしの｣
+      </p>
+      </div>
+      <div class="mem2 right">
+      <span>千金楽アリア</span>
+      <p>
+      
+            「博士、それを何て言うかわかりますか？フラグです」
+      </p>
+      </div>
+      <div class="mem3 left">
+      <span>加持千八香</span>
+      <p>
+      
+            「こあぁい」
+      </p>
+      </div>
+      <div class="mem1 left">
+      <span>乱獅子雪華</span>
+      <p>
+      
+            「見てくるだけなら安心だな！」
+      </p>
+      </div>
+      <div class="mem3 left">
+      <span>加持千八香</span>
+      <p>
+      
+            「ほんちょに？ほんちょにしょうおもってゆ？」
+      </p>
+      </div>
+      <div class="mem1 left">
+      <span>乱獅子雪華</span>
+      <p>
+      
+            「博士もいくんだろ？時間旅行だな！」
+      </p>
+      </div>
+      <div class="mem2 right">
+      <span>千金楽アリア</span>
+      <p>
+      
+            「平和的でいいなー（棒読み）」
+      </p>
+      </div>
+      <div class="mem3 left">
+      <span>加持千八香</span>
+      <p>
+      
+            「りゃっかんちぇきだかりゃちゅよいのかなぁ」
+      </p>
+      </div>
+      <div class="mem2 right">
+      <span>千金楽アリア</span>
+      <p>
+      
+            「そうじゃないかな？」
+      </p>
+      </div>
+      <div class="mem3 left">
+      <span>加持千八香</span>
+      <p>
+      
+            「しょっかぁ･･････」
+      </p>
+      </div>
+      <div class="mem4 right">
+      <span>松葉博士</span>
+      <p>
+      
+            ｢準備がよければマシンに行くぞい｣<br>何か持ち物があれば申告してください
+      </p>
+      </div>
+      <div class="mem3 left">
+      <span>加持千八香</span>
+      <p>
+      
+            スマホ、筆記用具
+      </p>
+      </div>
+      <div class="mem2 right">
+      <span>千金楽アリア</span>
+      <p>
+      
+            スマホのみ
+      </p>
+      </div>
+      <div class="mem1 left">
+      <span>乱獅子雪華</span>
+      <p>
+      
+            スマホ
+      </p>
+      </div>
+      <div class="mem4 right">
+      <span>松葉博士</span>
+      <p>
+      
+            ｢ではマシンに行くぞい！｣
+      </p>
+      </div>
+      <div class="mem2 right">
+      <span>千金楽アリア</span>
+      <p>
+      
+            「はぁい」
+      </p>
+      </div>
+      <div class="mem3 left">
+      <span>加持千八香</span>
+      <p>
+      
+            「あい！」
+      </p>
+      </div>
+      <div class="mem1 left">
+      <span>乱獅子雪華</span>
+      <p>
+      
+            「よっしゃー！よろしくたのむ！」
+      </p>
+      </div>
+      <div class="kp">
+      
+            みなさんは靴底を掃いたり、服を粘着シートでコロコロしたり、除菌したりしてから、タイムマシンに乗り込みます。<br>タイムマシンは車のような形をしていますが窓がありません。
+      </div>
+      <div class="mem4 right">
+      <span>松葉博士</span>
+      <p>
+      
+            ｢では過去に出発じゃ｣
+      </p>
+      </div>
+      <div class="mem2 right">
+      <span>千金楽アリア</span>
+      <p>
+      
+            「おー」
+      </p>
+      </div>
+      <div class="mem1 left">
+      <span>乱獅子雪華</span>
+      <p>
+      
+            「おーーーー！！！」
+      </p>
+      </div>
+      <div class="mem3 left">
+      <span>加持千八香</span>
+      <p>
+      
+            「せっか、ありあ、あちゃしをまもっちぇね」二人の腕を掴んで
+      </p>
+      </div>
+      <div class="mem2 right">
+      <span>千金楽アリア</span>
+      <p>
+      
+            「いいよ」掴んでない方で頭撫でよ
+      </p>
+      </div>
+      <div class="mem1 left">
+      <span>乱獅子雪華</span>
+      <p>
+      
+            「まかせろ！！！」
+      </p>
+      </div>
+      <div class="kp">
+      
+            タイムマシンが超スピードで走りだし、外の様子を写し出すモニターが砂嵐に変わります。<br>タイムマシンは今まさに、時空の狭間にいます。<br>＜知覚＞＜聞き耳＞でわかることがあります。
+      </div>
+      <div class="mem1 left">
+      <span>乱獅子雪華</span>
+      <p>
+      
+            1DM&lt;=5　(＊知覚) (1DM&lt;=5) ＞ [5] ＞ 1 ＞ 成功数1 成功!
+            
+      </p>
+      </div>
+      <div class="mem3 left">
+      <span>加持千八香</span>
+      <p>
+      
+            2DM&lt;=6　（聞き耳） (2DM&lt;=6) ＞ [8, 9] ＞ 0 ＞ 成功数0 失敗!
+            
+      </p>
+      </div>
+      <div class="mem2 right">
+      <span>千金楽アリア</span>
+      <p>
+      
+            1DM&lt;=6 （聞き耳） (1DM&lt;=6) ＞ [7] ＞ 0 ＞ 成功数0 失敗!
+            
+      </p>
+      </div>
+      <div class="kp">
+      
+            全員、共鳴判定(強度６/上昇１)共鳴感情｢本能(欲望)｣
+      </div>
+      <div class="mem1 left">
+      <span>乱獅子雪華</span>
+      <p>
+      
+            1DM&lt;=6　(∞共鳴) (1DM&lt;=6) ＞ [1] ＞ 2 ＞ 成功数2 ダブル!
+            
+      </p>
+      </div>
+      <div class="mem2 right">
+      <span>千金楽アリア</span>
+      <p>
+      
+            {共鳴}DM&lt;=6　(∞共鳴)
+      </p>
+      </div>
+      <div class="mem2 right">
+      <span>千金楽アリア</span>
+      <p>
+      
+            1DM&lt;=6　(∞共鳴) (1DM&lt;=6) ＞ [10] ＞ -1 ＞ 成功数-1 ファンブル!
+            
+      </p>
+      </div>
+      <div class="mem3 left">
+      <span>加持千八香</span>
+      <p>
+      
+            2DM&lt;=6　(∞共鳴) (2DM&lt;=6) ＞ [6, 4] ＞ 2 ＞ 成功数2 ダブル!
+            
+      </p>
+      </div>
+      <div class="mem5 left">
+      <span>system</span>
+      <p>
+      
+            [ 乱獅子雪華 ] 共鳴値 : 1 → 2
+      </p>
+      </div>
+      <div class="mem5 left">
+      <span>system</span>
+      <p>
+      
+            [ 加持千八香 ] 共鳴値 : 1 → 2
+      </p>
+      </div>
+      <div class="kp">
+      
+            タイムマシンの右側から｢バンッ｣という音と、何かがぶつかったような衝撃。車体が大きく揺れ、共鳴者たちはこの時代から消失しました。
+      </div>
+      <div class="mem2 right">
+      <span>千金楽アリア</span>
+      <p>
+      
+            博士ー！？
+      </p>
+      </div>
+      <div class="kp">
+      
+            砂嵐だったモニターが外を写し出し、タイムトラベルは終了したようです。
+      </div>
+      <div class="mem4 right">
+      <span>松葉博士</span>
+      <p>
+      
+            ｢一体なんだったんじゃ…君たち、怪我はないかの｣
+      </p>
+      </div>
+      <div class="mem2 right">
+      <span>千金楽アリア</span>
+      <p>
+      
+            「怪我はないけど、フラグ回収じゃん」
+      </p>
+      </div>
+      <div class="mem3 left">
+      <span>加持千八香</span>
+      <p>
+      
+            「おわっちゃ･･････？」
+      </p>
+      </div>
+      <div class="mem1 left">
+      <span>乱獅子雪華</span>
+      <p>
+      
+            「おお…今のはなかなか衝撃的だったな…観光客向けにするなら直したほうがいいぞ」
+      </p>
+      </div>
+      <div class="mem4 right">
+      <span>松葉博士</span>
+      <p>
+      
+            ｢わしは機器をチェックしなければならん。君たち、すまないが外を確認してきてくれるかの｣<br>博士は緊張した面持ちです。
+      </p>
+      </div>
+      <div class="mem2 right">
+      <span>千金楽アリア</span>
+      <p>
+      
+            「しょうがないね」
+      </p>
+      </div>
+      <div class="mem1 left">
+      <span>乱獅子雪華</span>
+      <p>
+      
+            「わかった！」
+      </p>
+      </div>
+      <div class="mem3 left">
+      <span>加持千八香</span>
+      <p>
+      
+            「はかしぇあたしたちをおおいてかえりゃにゃい？」
+      </p>
+      </div>
+      <div class="mem4 right">
+      <span>松葉博士</span>
+      <p>
+      
+            ｢そんなことはせんよ！｣
+      </p>
+      </div>
+      <div class="mem1 left">
+      <span>乱獅子雪華</span>
+      <p>
+      
+            そとにぴょいっと出て二人に手を貸そう
+      </p>
+      </div>
+      <div class="mem1 left">
+      <span>乱獅子雪華</span>
+      <p>
+      
+            「出れるかー？」
+      </p>
+      </div>
+      <div class="mem2 right">
+      <span>千金楽アリア</span>
+      <p>
+      
+            「普通に出れるさ」
+      </p>
+      </div>
+      <div class="mem2 right">
+      <span>千金楽アリア</span>
+      <p>
+      
+            ぽいっと
+      </p>
+      </div>
+      <div class="mem3 left">
+      <span>加持千八香</span>
+      <p>
+      
+            「らいじょうぶ？やちょかちょんでこにゃい？」
+      </p>
+      </div>
+      <div class="mem1 left">
+      <span>乱獅子雪華</span>
+      <p>
+      
+            外を見渡してみる
+      </p>
+      </div>
+      <div class="kp">
+      
+            そこは小高い平原のようです
+      </div>
+      <div class="kp">
+      
+            共鳴判定(強度３/上昇１)共鳴感情｢本能(欲望)｣
+      </div>
+      <div class="mem1 left">
+      <span>乱獅子雪華</span>
+      <p>
+      
+            2DM&lt;=3　(∞共鳴) (2DM&lt;=3) ＞ [2, 10] ＞ 0 ＞ 成功数0 失敗!
+            
+      </p>
+      </div>
+      <div class="mem3 left">
+      <span>加持千八香</span>
+      <p>
+      
+            2DM&lt;=3　(∞共鳴) (2DM&lt;=3) ＞ [8, 10] ＞ -1 ＞ 成功数-1 ファンブル!
+            
+      </p>
+      </div>
+      <div class="mem2 right">
+      <span>千金楽アリア</span>
+      <p>
+      
+            1DM&lt;=3　(∞共鳴) (1DM&lt;=3) ＞ [5] ＞ 0 ＞ 成功数0 失敗!
+            
+      </p>
+      </div>
+      <div class="kp">
+      
+            ｢直感｣で1つ<br>｢調査｣で1つ<br>｢マッピング｣で1つ<br>｢知覚｣か｢毒見｣で1つ
+      </div>
+      <div class="mem1 left">
+      <span>乱獅子雪華</span>
+      <p>
+      
+            1DM&lt;=6　(毒見) (1DM&lt;=6) ＞ [7] ＞ 0 ＞ 成功数0 失敗!
+            
+      </p>
+      </div>
+      <div class="mem2 right">
+      <span>千金楽アリア</span>
+      <p>
+      
+            2DM&lt;=8　(直感) (2DM&lt;=8) ＞ [9, 5] ＞ 1 ＞ 成功数1 成功!
+            
+      </p>
+      </div>
+      <div class="mem3 left">
+      <span>加持千八香</span>
+      <p>
+      
+            1DM&lt;=4　(＊知覚) (1DM&lt;=4) ＞ [2] ＞ 1 ＞ 成功数1 成功!
+            
+      </p>
+      </div>
+      <div class="kp">
+      
+            ｢直感｣に成功<br>ここが縄文時代ではなく、もっと昔のように思えます
+      </div>
+      <div class="kp">
+      
+            ｢知覚｣に成功<br>空気が美味しいような、染み渡るような、酸素が濃いような感覚がします
+      </div>
+      <div class="mem1 left">
+      <span>乱獅子雪華</span>
+      <p>
+      
+            1DM&lt;=1　(＊調査) (1DM&lt;=1) ＞ [9] ＞ 0 ＞ 成功数0 失敗!
+            
+      </p>
+      </div>
+      <div class="mem2 right">
+      <span>千金楽アリア</span>
+      <p>
+      
+            2DM&lt;=7　(観察眼) (2DM&lt;=7) ＞ [1, 9] ＞ 2 ＞ 成功数2 ダブル!
+            
+      </p>
+      </div>
+      <div class="kp">
+      
+            ｢観察眼｣に成功<br>タイムマシンの右側面に何かがぶつかったような丸い跡を見つけます
+      </div>
+      <div class="mem1 left">
+      <span>乱獅子雪華</span>
+      <p>
+      
+            3DM&lt;=3　(洞察) (3DM&lt;=3) ＞ [9, 9, 8] ＞ 0 ＞ 成功数0 失敗!
+            
+      </p>
+      </div>
+      <div class="mem2 right">
+      <span>千金楽アリア</span>
+      <p>
+      
+            2DM&lt;=3　(洞察) (2DM&lt;=3) ＞ [10, 5] ＞ -1 ＞ 成功数-1 ファンブル!
+            
+      </p>
+      </div>
+      <div class="mem3 left">
+      <span>加持千八香</span>
+      <p>
+      
+            3DM&lt;=4　（洞察） (3DM&lt;=4) ＞ [2, 1, 1] ＞ 5 ＞ 成功数5 ミラクル!
+            
+      </p>
+      </div>
+      <div class="kp">
+      
+            ｢洞察｣に成功<br>ここまで空気が濃いここは、古生代であると思います
+      </div>
+      <div class="mem3 left">
+      <span>加持千八香</span>
+      <p>
+      
+            「くうきおいちい･･････！？にゃんかきもいにょいりゅ！！」
+      </p>
+      </div>
+      <div class="mem1 left">
+      <span>乱獅子雪華</span>
+      <p>
+      
+            「どうしたちゃか…うおおお？！巨大トンボ！！！」
+      </p>
+      </div>
+      <div class="mem2 right">
+      <span>千金楽アリア</span>
+      <p>
+      
+            「……はい？」
+      </p>
+      </div>
+      <div class="mem3 left">
+      <span>加持千八香</span>
+      <p>
+      
+            「ねぇねぇねぇねぇにゃんかきもくちぇでっけーにょいりゅにゃぁぁぁぁこにゃいで！！」
+      </p>
+      </div>
+      <div class="mem1 left">
+      <span>乱獅子雪華</span>
+      <p>
+      
+            「博士ーーー！網ないか網！縄でもいい！」
+      </p>
+      </div>
+      <div class="mem2 right">
+      <span>千金楽アリア</span>
+      <p>
+      
+            「虫嫌いにはホラーな光景だね」
+      </p>
+      </div>
+      <div class="mem3 left">
+      <span>加持千八香</span>
+      <p>
+      
+            「にゃぁぁぁぁぁ！！！」
+      </p>
+      </div>
+      <div class="mem3 left">
+      <span>加持千八香</span>
+      <p>
+      
+            「いやじゃ！！ちにたくにゃい！！」
+      </p>
+      </div>
+      <div class="mem2 right">
+      <span>千金楽アリア</span>
+      <p>
+      
+            「博士ー。これって出会っていいものなのかい？」
+      </p>
+      </div>
+      <div class="mem1 left">
+      <span>乱獅子雪華</span>
+      <p>
+      
+            「あれ持って帰って爺と父上にみせる！！」
+      </p>
+      </div>
+      <div class="mem2 right">
+      <span>千金楽アリア</span>
+      <p>
+      
+            「それは…」
+      </p>
+      </div>
+      <div class="mem3 left">
+      <span>加持千八香</span>
+      <p>
+      
+            「きゅわりぇりゅ！！きゅわれてちぬ！！」
+      </p>
+      </div>
+      <div class="mem2 right">
+      <span>千金楽アリア</span>
+      <p>
+      
+            「あ。写真とろ」
+      </p>
+      </div>
+      <div class="mem3 left">
+      <span>加持千八香</span>
+      <p>
+      
+            「にゃんでしょんにゃにれいしぇいにゃの！？」
+      </p>
+      </div>
+      <div class="mem2 right">
+      <span>千金楽アリア</span>
+      <p>
+      
+            スマホって使えますか？
+      </p>
+      </div>
+      <div class="kp">
+      
+            電波はありませんが写真はとれます
+      </div>
+      <div class="mem2 right">
+      <span>千金楽アリア</span>
+      <p>
+      
+            じゃGPSで場所検索も無理か
+      </p>
+      </div>
+      <div class="mem3 left">
+      <span>加持千八香</span>
+      <p>
+      
+            「にゃんであたちにむかっちぇくりゅの！？」
+      </p>
+      </div>
+      <div class="mem2 right">
+      <span>千金楽アリア</span>
+      <p>
+      
+            写真撮っておこ
+      </p>
+      </div>
+      <div class="kp">
+      
+            チャカは走ってますか？
+      </div>
+      <div class="mem1 left">
+      <span>乱獅子雪華</span>
+      <p>
+      
+            「あっ私も取る！じどりを教わったんだ！」
+      </p>
+      </div>
+      <div class="mem1 left">
+      <span>乱獅子雪華</span>
+      <p>
+      
+            皆を含めた情報量の多い自撮りをとる
+      </p>
+      </div>
+      <div class="mem3 left">
+      <span>加持千八香</span>
+      <p>
+      
+            「にゃあぁぁぁたしゅけりょ！！ばか！！」走って逃げてます
+      </p>
+      </div>
+      <div class="mem2 right">
+      <span>千金楽アリア</span>
+      <p>
+      
+            「あ。あまり離れない方がっ」
+      </p>
+      </div>
+      <div class="mem3 left">
+      <span>加持千八香</span>
+      <p>
+      
+            「ばかばかばか！！みんにゃにょげんだいっこ！！ちゃかよりしゃしんとりゅほうがだいじにゃの！？」
+      </p>
+      </div>
+      <div class="mem2 right">
+      <span>千金楽アリア</span>
+      <p>
+      
+            「危険はなさそうじゃないか」
+      </p>
+      </div>
+      <div class="mem2 right">
+      <span>千金楽アリア</span>
+      <p>
+      
+            「見た目がやばいだけで（ﾎﾞｿｯ」
+      </p>
+      </div>
+      <div class="mem3 left">
+      <span>加持千八香</span>
+      <p>
+      
+            「にぃぃぃきょわいぃぃぃありあにあげゆ！！あげゆかりゃ！！」
+      </p>
+      </div>
+      <div class="mem3 left">
+      <span>加持千八香</span>
+      <p>
+      
+            「あたちんとこにこにゃいで！！」
+      </p>
+      </div>
+      <div class="mem1 left">
+      <span>乱獅子雪華</span>
+      <p>
+      
+            「えっ私もほしい！」
+      </p>
+      </div>
+      <div class="mem3 left">
+      <span>加持千八香</span>
+      <p>
+      
+            「せっかにあげゆ！！あたちはいらにゃい！！」
+      </p>
+      </div>
+      <div class="kp">
+      
+            虫はどこかに去りました
+      </div>
+      <div class="mem2 right">
+      <span>千金楽アリア</span>
+      <p>
+      
+            「いなくなったみたいだよ」
+      </p>
+      </div>
+      <div class="mem1 left">
+      <span>乱獅子雪華</span>
+      <p>
+      
+            「あ～～…やっぱ網が必要だな」
+      </p>
+      </div>
+      <div class="mem3 left">
+      <span>加持千八香</span>
+      <p>
+      
+            「にゃぁぁぁぁ･･････」
+      </p>
+      </div>
+      <div class="kp">
+      
+            走り回るチャカの側に一人の老婆が現れます。ただ者ではない雰囲気を感じ、共鳴判定です
+      </div>
+      <div class="kp">
+      
+            共鳴判定(強度８/上昇１D３)共鳴感情｢本能(欲望)｣
+      </div>
+      <div class="mem1 left">
+      <span>乱獅子雪華</span>
+      <p>
+      
+            2DM&lt;=8　(∞共鳴) (2DM&lt;=8) ＞ [2, 7] ＞ 2 ＞ 成功数2 ダブル!
+            
+      </p>
+      </div>
+      <div class="mem2 right">
+      <span>千金楽アリア</span>
+      <p>
+      
+            1DM&lt;=8　(∞共鳴) (1DM&lt;=8) ＞ [1] ＞ 2 ＞ 成功数2 ダブル!
+            
+      </p>
+      </div>
+      <div class="mem1 left">
+      <span>乱獅子雪華</span>
+      <p>
+      
+            1ｄ3 (1D3) ＞ 3
+            
+      </p>
+      </div>
+      <div class="mem2 right">
+      <span>千金楽アリア</span>
+      <p>
+      
+            1D3 (1D3) ＞ 3
+            
+      </p>
+      </div>
+      <div class="mem3 left">
+      <span>加持千八香</span>
+      <p>
+      
+            2DM&lt;=8　(∞共鳴) (2DM&lt;=8) ＞ [6, 5] ＞ 2 ＞ 成功数2 ダブル!
+            
+      </p>
+      </div>
+      <div class="mem5 left">
+      <span>system</span>
+      <p>
+      
+            [ 乱獅子雪華 ] 共鳴値 : 2 → 5
+      </p>
+      </div>
+      <div class="mem5 left">
+      <span>system</span>
+      <p>
+      
+            [ 千金楽アリア ] 共鳴値 : 1 → 4
+      </p>
+      </div>
+      <div class="mem3 left">
+      <span>加持千八香</span>
+      <p>
+      
+            1d3 (1D3) ＞ 2
+            
+      </p>
+      </div>
+      <div class="mem5 left">
+      <span>system</span>
+      <p>
+      
+            [ 加持千八香 ] 共鳴値 : 2 → 4
+      </p>
+      </div>
+      <div class="mem3 left">
+      <span>加持千八香</span>
+      <p>
+      
+            「だりぇ！？」
+      </p>
+      </div>
+      <div class="mem2 right">
+      <span>千金楽アリア</span>
+      <p>
+      
+            「ひ、ひと…？」
+      </p>
+      </div>
+      <div class="mem1 left">
+      <span>乱獅子雪華</span>
+      <p>
+      
+            「ご婦人！！！！」
+      </p>
+      </div>
+      <div class="kp">
+      
+            戦闘です
+      </div>
+      <div class="kp">
+      
+            お婆さんはスキル｢並走行動｣を持っています。<br>お婆さんは自分の手番が無い代わりに、共鳴者一人一人の手番のときに一緒に行動してきます。<br>対抗判定を行い、お婆さんが勝利または引き分けの時に、お婆さん→共鳴者の順で攻撃します。
+      </div>
+      <div class="mem3 left">
+      <span>加持千八香</span>
+      <p>
+      
+            2DM&lt;=7　（ストレングス） (2DM&lt;=7) ＞ [1, 2] ＞ 3 ＞ 成功数3 トリプル!
+            
+      </p>
+      </div>
+      <div class="mem6 right">
+      <span>おばあさん</span>
+      <p>
+      
+            ３DM＜＝9　（鋭い投球） (3DM&lt;=9) ＞ [2, 4, 7] ＞ 3 ＞ 成功数3 トリプル!
+            
+      </p>
+      </div>
+      <div class="mem6 right">
+      <span>おばあさん</span>
+      <p>
+      
+            3D3 (3D3) ＞ 6[2,3,1] ＞ 6
+            
+      </p>
+      </div>
+      <div class="mem5 left">
+      <span>system</span>
+      <p>
+      
+            [ 加持千八香 ] HP : 15 → 9
+      </p>
+      </div>
+      <div class="mem3 left">
+      <span>加持千八香</span>
+      <p>
+      
+            「にゃにーーー！？」
+      </p>
+      </div>
+      <div class="mem3 left">
+      <span>加持千八香</span>
+      <p>
+      
+            2DM&lt;=7　（アクロバット） (2DM&lt;=7) ＞ [1, 1] ＞ 4 ＞ 成功数4 ミラクル!
+            
+      </p>
+      </div>
+      <div class="mem5 left">
+      <span>system</span>
+      <p>
+      
+            [ 加持千八香 ] HP : 9 → 16
+      </p>
+      </div>
+      <div class="mem5 left">
+      <span>system</span>
+      <p>
+      
+            [ 加持千八香 ] HP : 16 → 15
+      </p>
+      </div>
+      <div class="mem3 left">
+      <span>加持千八香</span>
+      <p>
+      
+            「にゃにもにょーーー！？」
+      </p>
+      </div>
+      <div class="mem1 left">
+      <span>乱獅子雪華</span>
+      <p>
+      
+            「すばらしい動きだ…！！」
+      </p>
+      </div>
+      <div class="mem2 right">
+      <span>千金楽アリア</span>
+      <p>
+      
+            「うわやっば」
+      </p>
+      </div>
+      <div class="mem2 right">
+      <span>千金楽アリア</span>
+      <p>
+      
+            3DM&lt;=9　(武術：CQC) (3DM&lt;=9) ＞ [10, 6, 3] ＞ 1 ＞ 成功数1 成功!
+            
+      </p>
+      </div>
+      <div class="mem6 right">
+      <span>おばあさん</span>
+      <p>
+      
+            ３DM＜＝9　（鋭い投球） (3DM&lt;=9) ＞ [7, 2, 3] ＞ 3 ＞ 成功数3 トリプル!
+            
+      </p>
+      </div>
+      <div class="mem6 right">
+      <span>おばあさん</span>
+      <p>
+      
+            3D3 (3D3) ＞ 6[2,3,1] ＞ 6
+            
+      </p>
+      </div>
+      <div class="mem5 left">
+      <span>system</span>
+      <p>
+      
+            [ 千金楽アリア ] HP : 16 → 10
+      </p>
+      </div>
+      <div class="mem2 right">
+      <span>千金楽アリア</span>
+      <p>
+      
+            1D3 (1D3) ＞ 2
+            
+      </p>
+      </div>
+      <div class="mem1 left">
+      <span>乱獅子雪華</span>
+      <p>
+      
+            3DM&lt;=8　(武術) (3DM&lt;=8) ＞ [6, 8, 1] ＞ 4 ＞ 成功数4 ミラクル!
+            
+      </p>
+      </div>
+      <div class="mem6 right">
+      <span>おばあさん</span>
+      <p>
+      
+            ３DM＜＝9　（鋭い投球） (3DM&lt;=9) ＞ [10, 10, 3] ＞ -1 ＞ 成功数-1 ファンブル!
+            
+      </p>
+      </div>
+      <div class="mem1 left">
+      <span>乱獅子雪華</span>
+      <p>
+      
+            5ｄ3 (5D3) ＞ 11[2,2,3,3,1] ＞ 11
+            
+      </p>
+      </div>
+      <div class="kp">
+      
+            戦闘終了です
+      </div>
+      <div class="mem1 left">
+      <span>乱獅子雪華</span>
+      <p>
+      
+            「なかなかやるなご婦人！！私ともお相手願おう！」
+      </p>
+      </div>
+      <div class="mem4 right">
+      <span>松葉博士</span>
+      <p>
+      
+            タイムマシンから博士がのんびり出てきます<br>｢君たち、順調かね？｣
+      </p>
+      </div>
+      <div class="mem2 right">
+      <span>千金楽アリア</span>
+      <p>
+      
+            博士！
+      </p>
+      </div>
+      <div class="mem2 right">
+      <span>千金楽アリア</span>
+      <p>
+      
+            博士！！
+      </p>
+      </div>
+      <div class="mem3 left">
+      <span>加持千八香</span>
+      <p>
+      
+            「はかしぇ！！しりゃんひちょがこうげきしちぇくりゅ！！」
+      </p>
+      </div>
+      <div class="mem1 left">
+      <span>乱獅子雪華</span>
+      <p>
+      
+            「遅いぞ！！虫がでてにげてご婦人がいてたたかってだな！」ごちゃごちゃ
+      </p>
+      </div>
+      <div class="mem2 right">
+      <span>千金楽アリア</span>
+      <p>
+      
+            「怪我人が出てるわけだが」
+      </p>
+      </div>
+      <div class="mem3 left">
+      <span>加持千八香</span>
+      <p>
+      
+            「にゃんかしりゃにゃいばばぁがぼーるでにゃぐっちぇきちゃ！！」
+      </p>
+      </div>
+      <div class="mem4 right">
+      <span>松葉博士</span>
+      <p>
+      
+            ｢何ぃ？人だって？｣<br>｢い、いかん！バスケばばあじゃ！！全員走らず急いでマシンに入るんじゃ！｣
+      </p>
+      </div>
+      <div class="mem2 right">
+      <span>千金楽アリア</span>
+      <p>
+      
+            「はぁ？」
+      </p>
+      </div>
+      <div class="mem4 right">
+      <span>松葉博士</span>
+      <p>
+      
+            博士は血相を変えます
+      </p>
+      </div>
+      <div class="mem3 left">
+      <span>加持千八香</span>
+      <p>
+      
+            「ばしゅけばばぁっちぇにゃに！？」
+      </p>
+      </div>
+      <div class="mem2 right">
+      <span>千金楽アリア</span>
+      <p>
+      
+            走らずに戻って来いなのｗｗ
+      </p>
+      </div>
+      <div class="mem1 left">
+      <span>乱獅子雪華</span>
+      <p>
+      
+            「有名人か？」
+      </p>
+      </div>
+      <div class="mem2 right">
+      <span>千金楽アリア</span>
+      <p>
+      
+            「どういうこと」
+      </p>
+      </div>
+      <div class="mem3 left">
+      <span>加持千八香</span>
+      <p>
+      
+            「はしっちゃだめにゃの！？にゃんで！？」
+      </p>
+      </div>
+      <div class="mem1 left">
+      <span>乱獅子雪華</span>
+      <p>
+      
+            おばあさんちらちらみつつマシンに向かう
+      </p>
+      </div>
+      <div class="mem2 right">
+      <span>千金楽アリア</span>
+      <p>
+      
+            怪我してるからゆっくり移動しよう
+      </p>
+      </div>
+      <div class="mem3 left">
+      <span>加持千八香</span>
+      <p>
+      
+            「にゃんでしょんにゃもんがいりゅっておちえてくりぇなかっちゃの！！」
+      </p>
+      </div>
+      <div class="mem3 left">
+      <span>加持千八香</span>
+      <p>
+      
+            いそぎながらあるく
+      </p>
+      </div>
+      <div class="kp">
+      
+            歩いて移動する共鳴者たちにお婆さんは無関心で、いつの間にか消えていました。
+      </div>
+      <div class="mem2 right">
+      <span>千金楽アリア</span>
+      <p>
+      
+            「一体なんだったんですかあれは」
+      </p>
+      </div>
+      <div class="mem3 left">
+      <span>加持千八香</span>
+      <p>
+      
+            「ほんちょよ！！」
+      </p>
+      </div>
+      <div class="mem1 left">
+      <span>乱獅子雪華</span>
+      <p>
+      
+            「あっ…消えた…なかなかの腕前だったからもう少し胸をかりたかったな」
+      </p>
+      </div>
+      <div class="mem3 left">
+      <span>加持千八香</span>
+      <p>
+      
+            「せっかにょばか！！」
+      </p>
+      </div>
+      <div class="mem4 right">
+      <span>松葉博士</span>
+      <p>
+      
+            ｢説明はするがまず治療をさせてくれんか｣
+      </p>
+      </div>
+      <div class="mem2 right">
+      <span>千金楽アリア</span>
+      <p>
+      
+            ほんそれ
+      </p>
+      </div>
+      <div class="mem1 left">
+      <span>乱獅子雪華</span>
+      <p>
+      
+            「なんでだよお」
+      </p>
+      </div>
+      <div class="mem3 left">
+      <span>加持千八香</span>
+      <p>
+      
+            「しんだりゃどうしゅるの！！」
+      </p>
+      </div>
+      <div class="mem2 right">
+      <span>千金楽アリア</span>
+      <p>
+      
+            「死にそうになった人がここにいるよ？」
+      </p>
+      </div>
+      <div class="mem1 left">
+      <span>乱獅子雪華</span>
+      <p>
+      
+            「戦わずして勝つことはできないだろう」
+      </p>
+      </div>
+      <div class="mem3 left">
+      <span>加持千八香</span>
+      <p>
+      
+            「ばしゅけばばあにころしゃれまちたってわけわかんにゃいでしょぉ！？」
+      </p>
+      </div>
+      <div class="mem4 right">
+      <span>松葉博士</span>
+      <p>
+      
+            ｢わしは医術をレベル３持っておる｣
+      </p>
+      </div>
+      <div class="mem1 left">
+      <span>乱獅子雪華</span>
+      <p>
+      
+            死因バスケか…
+      </p>
+      </div>
+      <div class="mem4 right">
+      <span>松葉博士</span>
+      <p>
+      
+            3DM&lt;=9　（医術） (3DM&lt;=9) ＞ [7, 6, 8] ＞ 3 ＞ 成功数3 トリプル!
+            
+      </p>
+      </div>
+      <div class="mem4 right">
+      <span>松葉博士</span>
+      <p>
+      
+            ３D3 (3D3) ＞ 4[1,1,2] ＞ 4
+            
+      </p>
+      </div>
+      <div class="mem5 left">
+      <span>system</span>
+      <p>
+      
+            [ 千金楽アリア ] HP : 10 → 14
+      </p>
+      </div>
+      <div class="mem4 right">
+      <span>松葉博士</span>
+      <p>
+      
+            ｢さっきのばばあについて説明していいかの｣
+      </p>
+      </div>
+      <div class="mem2 right">
+      <span>千金楽アリア</span>
+      <p>
+      
+            「しっかりと」
+      </p>
+      </div>
+      <div class="mem3 left">
+      <span>加持千八香</span>
+      <p>
+      
+            「おねがいしゅりゅの」
+      </p>
+      </div>
+      <div class="mem4 right">
+      <span>松葉博士</span>
+      <p>
+      
+            ｢あれはバスケばばあじゃ。マッハばばあやターボばばあの亜種の怪異じゃな。何か走るものの側に並走する形で現れる｣
+      </p>
+      </div>
+      <div class="mem3 left">
+      <span>加持千八香</span>
+      <p>
+      
+            「にゃんて？」
+      </p>
+      </div>
+      <div class="mem2 right">
+      <span>千金楽アリア</span>
+      <p>
+      
+            「こえぇ」
+      </p>
+      </div>
+      <div class="mem1 left">
+      <span>乱獅子雪華</span>
+      <p>
+      
+            「全部ばばあなのか」
+      </p>
+      </div>
+      <div class="mem3 left">
+      <span>加持千八香</span>
+      <p>
+      
+            「にゃに？にゃんでふつうにきいてりゅの」
+      </p>
+      </div>
+      <div class="mem4 right">
+      <span>松葉博士</span>
+      <p>
+      
+            ｢じじいも居るには居るが、レアじゃ｣
+      </p>
+      </div>
+      <div class="mem2 right">
+      <span>千金楽アリア</span>
+      <p>
+      
+            「じじいもいるの？」
+      </p>
+      </div>
+      <div class="mem3 left">
+      <span>加持千八香</span>
+      <p>
+      
+            「れあ」
+      </p>
+      </div>
+      <div class="mem2 right">
+      <span>千金楽アリア</span>
+      <p>
+      
+            「いるの！？」
+      </p>
+      </div>
+      <div class="mem1 left">
+      <span>乱獅子雪華</span>
+      <p>
+      
+            「あってみたいな！みんなさっきのご婦人とおんなじように強いのか？！」
+      </p>
+      </div>
+      <div class="mem2 right">
+      <span>千金楽アリア</span>
+      <p>
+      
+            「会いたくない」
+      </p>
+      </div>
+      <div class="mem3 left">
+      <span>加持千八香</span>
+      <p>
+      
+            「あちゃまおかしい」
+      </p>
+      </div>
+      <div class="mem4 right">
+      <span>松葉博士</span>
+      <p>
+      
+            ｢バスケばばあはばばあ族の中でも特に攻撃性が強い。殆どのばばあは並走するだけじゃ｣
+      </p>
+      </div>
+      <div class="mem2 right">
+      <span>千金楽アリア</span>
+      <p>
+      
+            「はぃ？」
+      </p>
+      </div>
+      <div class="mem3 left">
+      <span>加持千八香</span>
+      <p>
+      
+            「へいそうしゅりゅばばあ」
+      </p>
+      </div>
+      <div class="mem4 right">
+      <span>松葉博士</span>
+      <p>
+      
+            ｢きっとタイムマシンに並走してこの時代まで来てしまったんじゃな……｣
+      </p>
+      </div>
+      <div class="mem2 right">
+      <span>千金楽アリア</span>
+      <p>
+      
+            「待って、タイムマシンの速度に並走するの？どういうこと？」
+      </p>
+      </div>
+      <div class="mem3 left">
+      <span>加持千八香</span>
+      <p>
+      
+            「ばばあちゅれてきちゃったにょ！？」
+      </p>
+      </div>
+      <div class="mem2 right">
+      <span>千金楽アリア</span>
+      <p>
+      
+            「事故ったのもバスケばばあのせい？だったりするの？」
+      </p>
+      </div>
+      <div class="mem4 right">
+      <span>松葉博士</span>
+      <p>
+      
+            ｢その通りじゃ。そういえばこの辺りはどうじゃった。何か気づいたことはあるかの｣
+      </p>
+      </div>
+      <div class="mem2 right">
+      <span>千金楽アリア</span>
+      <p>
+      
+            「マシンの右側に何かぶつかったあとがあったよ」
+      </p>
+      </div>
+      <div class="mem1 left">
+      <span>乱獅子雪華</span>
+      <p>
+      
+            「そうだ博士！アミか縄ないか！！すっごいでっかい虫がいたんだ！」
+      </p>
+      </div>
+      <div class="mem3 left">
+      <span>加持千八香</span>
+      <p>
+      
+            「はかしぇがいっちぇちゃよりむかしだとおもう」
+      </p>
+      </div>
+      <div class="mem3 left">
+      <span>加持千八香</span>
+      <p>
+      
+            「でっけーむし」
+      </p>
+      </div>
+      <div class="mem4 right">
+      <span>松葉博士</span>
+      <p>
+      
+            ｢虫は連れて帰っちゃいかん｣
+      </p>
+      </div>
+      <div class="mem1 left">
+      <span>乱獅子雪華</span>
+      <p>
+      
+            「だめなのか…」しょも
+      </p>
+      </div>
+      <div class="mem2 right">
+      <span>千金楽アリア</span>
+      <p>
+      
+            「それで帰れるの？」
+      </p>
+      </div>
+      <div class="mem4 right">
+      <span>松葉博士</span>
+      <p>
+      
+            ｢ばばあをどうにかしない限り帰るのは難しいじゃろうな……｣
+      </p>
+      </div>
+      <div class="mem3 left">
+      <span>加持千八香</span>
+      <p>
+      
+            「あんにゃのげんだいにいたりゃおおしゃわぎよ」
+      </p>
+      </div>
+      <div class="mem2 right">
+      <span>千金楽アリア</span>
+      <p>
+      
+            「ばばあをどうにかせんといかんの？」
+      </p>
+      </div>
+      <div class="mem4 right">
+      <span>松葉博士</span>
+      <p>
+      
+            ｢本来なら怪異専門の組織に要請するんじゃが……自分たちで倒すしかあるまい｣
+      </p>
+      </div>
+      <div class="mem2 right">
+      <span>千金楽アリア</span>
+      <p>
+      
+            「どうやって倒すの？あれ」
+      </p>
+      </div>
+      <div class="mem2 right">
+      <span>千金楽アリア</span>
+      <p>
+      
+            「縄で捕まえるの？」
+      </p>
+      </div>
+      <div class="mem2 right">
+      <span>千金楽アリア</span>
+      <p>
+      
+            「縛り上げるの？」
+      </p>
+      </div>
+      <div class="mem3 left">
+      <span>加持千八香</span>
+      <p>
+      
+            「にゃんでしょういうひちょやとわにゃいの？」
+      </p>
+      </div>
+      <div class="mem2 right">
+      <span>千金楽アリア</span>
+      <p>
+      
+            「ゴール決めるの？」
+      </p>
+      </div>
+      <div class="mem4 right">
+      <span>松葉博士</span>
+      <p>
+      
+            ｢ドリブルしとるがバスケしてる訳ではないからのぅ｣
+      </p>
+      </div>
+      <div class="mem4 right">
+      <span>松葉博士</span>
+      <p>
+      
+            ｢ばばあに全く歯がたたなかったのかい？｣
+      </p>
+      </div>
+      <div class="mem2 right">
+      <span>千金楽アリア</span>
+      <p>
+      
+            バスケしてるわけじゃないのぉ
+      </p>
+      </div>
+      <div class="mem2 right">
+      <span>千金楽アリア</span>
+      <p>
+      
+            「一人だけいいの決めてましたよ」
+      </p>
+      </div>
+      <div class="mem1 left">
+      <span>乱獅子雪華</span>
+      <p>
+      
+            「手ごたえはあった！」
+      </p>
+      </div>
+      <div class="mem3 left">
+      <span>加持千八香</span>
+      <p>
+      
+            「せっかたおしぇる？」
+      </p>
+      </div>
+      <div class="mem1 left">
+      <span>乱獅子雪華</span>
+      <p>
+      
+            「殴れるなら倒せるだろう！」
+      </p>
+      </div>
+      <div class="mem2 right">
+      <span>千金楽アリア</span>
+      <p>
+      
+            「いうことが違うねぇ」
+      </p>
+      </div>
+      <div class="mem3 left">
+      <span>加持千八香</span>
+      <p>
+      
+            「やばんよ」
+      </p>
+      </div>
+      <div class="mem4 right">
+      <span>松葉博士</span>
+      <p>
+      
+            ｢頼もしいが、｢洞察｣で何か考えてみるのもよいぞ｣
+      </p>
+      </div>
+      <div class="mem2 right">
+      <span>千金楽アリア</span>
+      <p>
+      
+            がんばって
+      </p>
+      </div>
+      <div class="mem1 left">
+      <span>乱獅子雪華</span>
+      <p>
+      
+            3DM&lt;=3　(洞察) (3DM&lt;=3) ＞ [3, 4, 3] ＞ 2 ＞ 成功数2 ダブル!
+            
+      </p>
+      </div>
+      <div class="mem2 right">
+      <span>千金楽アリア</span>
+      <p>
+      
+            2DM&lt;=3　(洞察) (2DM&lt;=3) ＞ [4, 9] ＞ 0 ＞ 成功数0 失敗!
+            
+      </p>
+      </div>
+      <div class="mem3 left">
+      <span>加持千八香</span>
+      <p>
+      
+            3DM&lt;=4　（洞察） (3DM&lt;=4) ＞ [9, 4, 6] ＞ 1 ＞ 成功数1 成功!
+            
+      </p>
+      </div>
+      <div class="kp">
+      
+            ｢洞察｣に成功<br>素早い動きの秘密は、ここが平地であることに関係しそうです。<br>障害物が多い場所やでこぼこ道では真価を発揮できないかもしれません。
+      </div>
+      <div class="mem1 left">
+      <span>乱獅子雪華</span>
+      <p>
+      
+            「相手のフィールドにもっていかなければ勝てるかもな！」
+      </p>
+      </div>
+      <div class="mem4 right">
+      <span>松葉博士</span>
+      <p>
+      
+            ｢具体的にはばばあの判定値が半分になりそうじゃのう｣
+      </p>
+      </div>
+      <div class="mem2 right">
+      <span>千金楽アリア</span>
+      <p>
+      
+            「なるほど」
+      </p>
+      </div>
+      <div class="mem2 right">
+      <span>千金楽アリア</span>
+      <p>
+      
+            「具体的過ぎてやべえ」
+      </p>
+      </div>
+      <div class="mem1 left">
+      <span>乱獅子雪華</span>
+      <p>
+      
+            「近くに足場が悪そうな場所はあるだろうか」
+      </p>
+      </div>
+      <div class="mem3 left">
+      <span>加持千八香</span>
+      <p>
+      
+            「たいりゃじゃにゃければいいにょね」
+      </p>
+      </div>
+      <div class="mem4 right">
+      <span>松葉博士</span>
+      <p>
+      
+            ｢ここは平原なんじゃが、森に囲まれておるようじゃぞ｣
+      </p>
+      </div>
+      <div class="mem1 left">
+      <span>乱獅子雪華</span>
+      <p>
+      
+            「よし！森で討つか！」
+      </p>
+      </div>
+      <div class="mem2 right">
+      <span>千金楽アリア</span>
+      <p>
+      
+            「じゃ森までいけばいいのか」
+      </p>
+      </div>
+      <div class="mem3 left">
+      <span>加持千八香</span>
+      <p>
+      
+            「もり･････」
+      </p>
+      </div>
+      <div class="mem3 left">
+      <span>加持千八香</span>
+      <p>
+      
+            「にぇえでっけーむしもりにもいりゅよにぇ･･････？」
+      </p>
+      </div>
+      <div class="mem2 right">
+      <span>千金楽アリア</span>
+      <p>
+      
+            「大丈夫大丈夫。こっちが興味持たなければ何もしてこないよ。……たぶん」
+      </p>
+      </div>
+      <div class="mem3 left">
+      <span>加持千八香</span>
+      <p>
+      
+            「ほんちょ？」
+      </p>
+      </div>
+      <div class="mem2 right">
+      <span>千金楽アリア</span>
+      <p>
+      
+            「ほんとほんと」
+      </p>
+      </div>
+      <div class="mem3 left">
+      <span>加持千八香</span>
+      <p>
+      
+            「･･････むぅ」
+      </p>
+      </div>
+      <div class="mem1 left">
+      <span>乱獅子雪華</span>
+      <p>
+      
+            「さっきも襲ってこなかったからな。それにちゃか、虫とバスケばばあどっちがこわい？」
+      </p>
+      </div>
+      <div class="mem3 left">
+      <span>加持千八香</span>
+      <p>
+      
+            「どっちもこあいよ！！」
+      </p>
+      </div>
+      <div class="mem3 left">
+      <span>加持千八香</span>
+      <p>
+      
+            「にゃんでひかくしゅりゅの！？」
+      </p>
+      </div>
+      <div class="mem1 left">
+      <span>乱獅子雪華</span>
+      <p>
+      
+            「お・・・そうきたか…おかしいな私はこれで爺にまるめこまれたのに」
+      </p>
+      </div>
+      <div class="mem2 right">
+      <span>千金楽アリア</span>
+      <p>
+      
+            「雪華がまるめこまれたのかい」
+      </p>
+      </div>
+      <div class="mem3 left">
+      <span>加持千八香</span>
+      <p>
+      
+            「あたちせっかみちゃいにばかじゃにゃいもん！！」
+      </p>
+      </div>
+      <div class="mem1 left">
+      <span>乱獅子雪華</span>
+      <p>
+      
+            「いやあどうしてもいやなものくらい私にもあるぞ。ばかじゃないちゃかはどうしたらまるめこめるんだ？」
+      </p>
+      </div>
+      <div class="mem3 left">
+      <span>加持千八香</span>
+      <p>
+      
+            「まるめこもうとちないで！！」
+      </p>
+      </div>
+      <div class="mem1 left">
+      <span>乱獅子雪華</span>
+      <p>
+      
+            「まぁなんかあっても守ってやるから！博士もいるし！」
+      </p>
+      </div>
+      <div class="mem3 left">
+      <span>加持千八香</span>
+      <p>
+      
+            「･･････ほんちょ？」
+      </p>
+      </div>
+      <div class="mem2 right">
+      <span>千金楽アリア</span>
+      <p>
+      
+            「博士も一緒に来てくれますよね？」
+      </p>
+      </div>
+      <div class="mem4 right">
+      <span>松葉博士</span>
+      <p>
+      
+            ｢行くぞぉ！体力には自信がないがのぅ！｣
+      </p>
+      </div>
+      <div class="mem1 left">
+      <span>乱獅子雪華</span>
+      <p>
+      
+            「走らなければ攻撃されないんじゃないか？」
+      </p>
+      </div>
+      <div class="mem2 right">
+      <span>千金楽アリア</span>
+      <p>
+      
+            「走って狙われて、殉職だけはやめてくれよ」
+      </p>
+      </div>
+      <div class="mem4 right">
+      <span>松葉博士</span>
+      <p>
+      
+            ｢わしが死ぬと帰れんからのう｣
+      </p>
+      </div>
+      <div class="mem2 right">
+      <span>千金楽アリア</span>
+      <p>
+      
+            それなぁ
+      </p>
+      </div>
+      <div class="mem1 left">
+      <span>乱獅子雪華</span>
+      <p>
+      
+            「じゃあ作戦は博士とちゃかを守れだな！がんばるぞアリアリ！」
+      </p>
+      </div>
+      <div class="mem2 right">
+      <span>千金楽アリア</span>
+      <p>
+      
+            「がんばるぞぉ」
+      </p>
+      </div>
+      <div class="mem3 left">
+      <span>加持千八香</span>
+      <p>
+      
+            「しんじゃやら！！いきてて！！あたちたちのために！！」
+      </p>
+      </div>
+      <div class="mem3 left">
+      <span>加持千八香</span>
+      <p>
+      
+            「･･････あたち、やくたたず？」
+      </p>
+      </div>
+      <div class="mem2 right">
+      <span>千金楽アリア</span>
+      <p>
+      
+            「応援してくれるだけで頑張れるわ」
+      </p>
+      </div>
+      <div class="mem2 right">
+      <span>千金楽アリア</span>
+      <p>
+      
+            よしよししてる
+      </p>
+      </div>
+      <div class="mem1 left">
+      <span>乱獅子雪華</span>
+      <p>
+      
+            「私たちがピンチになったら助けてくれ！」
+      </p>
+      </div>
+      <div class="mem3 left">
+      <span>加持千八香</span>
+      <p>
+      
+            「･･････がんばゆ！」
+      </p>
+      </div>
+      <div class="mem1 left">
+      <span>乱獅子雪華</span>
+      <p>
+      
+            「よーっし！いざ！」
+      </p>
+      </div>
+      <div class="mem2 right">
+      <span>千金楽アリア</span>
+      <p>
+      
+            「出陣」
+      </p>
+      </div>
+      <div class="mem3 left">
+      <span>加持千八香</span>
+      <p>
+      
+            「しゅちゅじん！」
+      </p>
+      </div>
+      <div class="kp">
+      
+            一行は森に向かいます。<br>(チャカはストレングスLV２を持っています。そこら辺の木の棒でも攻撃力２の武器になるでしょう)<br>(全員幸運などで武器を見繕ってもいいです)
+      </div>
+      <div class="mem3 left">
+      <span>加持千八香</span>
+      <p>
+      
+            じゃあそこらへんの木の枝をもぐ
+      </p>
+      </div>
+      <div class="mem3 left">
+      <span>加持千八香</span>
+      <p>
+      
+            1DM&lt;=2　(＊幸運) (1DM&lt;=2) ＞ [3] ＞ 0 ＞ 成功数0 失敗!
+            
+      </p>
+      </div>
+      <div class="kp">
+      
+            走ればバスケばばあを呼べそうです
+      </div>
+      <div class="mem1 left">
+      <span>乱獅子雪華</span>
+      <p>
+      
+            はしります
+      </p>
+      </div>
+      <div class="mem1 left">
+      <span>乱獅子雪華</span>
+      <p>
+      
+            「来い！！！」
+      </p>
+      </div>
+      <div class="kp">
+      
+            ばばあです。<br>共鳴判定です。
+      </div>
+      <div class="kp">
+      
+            共鳴判定(強度８/上昇３)共鳴感情｢本能(欲望)｣
+      </div>
+      <div class="mem1 left">
+      <span>乱獅子雪華</span>
+      <p>
+      
+            5DM&lt;=8　(∞共鳴) (5DM&lt;=8) ＞ [6, 9, 10, 6, 8] ＞ 2 ＞ 成功数2 ダブル!
+            
+      </p>
+      </div>
+      <div class="mem2 right">
+      <span>千金楽アリア</span>
+      <p>
+      
+            4DM&lt;=8　(∞共鳴) (4DM&lt;=8) ＞ [6, 4, 9, 5] ＞ 3 ＞ 成功数3 トリプル!
+            
+      </p>
+      </div>
+      <div class="mem5 left">
+      <span>system</span>
+      <p>
+      
+            [ 乱獅子雪華 ] 共鳴値 : 5 → 8
+      </p>
+      </div>
+      <div class="mem3 left">
+      <span>加持千八香</span>
+      <p>
+      
+            4DM&lt;=8　(∞共鳴) (4DM&lt;=8) ＞ [8, 10, 7, 2] ＞ 2 ＞ 成功数2 ダブル!
+            
+      </p>
+      </div>
+      <div class="mem5 left">
+      <span>system</span>
+      <p>
+      
+            [ 千金楽アリア ] 共鳴値 : 4 → 7
+      </p>
+      </div>
+      <div class="mem2 right">
+      <span>千金楽アリア</span>
+      <p>
+      
+            1D6 (1D6) ＞ 4
+            
+      </p>
+      </div>
+      <div class="mem5 left">
+      <span>system</span>
+      <p>
+      
+            [ 加持千八香 ] 共鳴値 : 4 → 7
+      </p>
+      </div>
+      <div class="mem2 right">
+      <span>千金楽アリア</span>
+      <p>
+      
+            1D10 (1D10) ＞ 10
+            
+      </p>
+      </div>
+      <div class="kp">
+      
+            戦闘です
+      </div>
+      <div class="mem2 right">
+      <span>千金楽アリア</span>
+      <p>
+      
+            先に動きます。CQCで勝負だ
+      </p>
+      </div>
+      <div class="mem2 right">
+      <span>千金楽アリア</span>
+      <p>
+      
+            3DM&lt;=9　(武術：CQC) (3DM&lt;=9) ＞ [10, 4, 6] ＞ 1 ＞ 成功数1 成功!
+            
+      </p>
+      </div>
+      <div class="mem7 left">
+      <span>バスケばばあ</span>
+      <p>
+      
+            ３DM＜＝4　（鋭い投球） (3DM&lt;=4) ＞ [10, 7, 2] ＞ 0 ＞ 成功数0 失敗!
+            
+      </p>
+      </div>
+      <div class="mem2 right">
+      <span>千金楽アリア</span>
+      <p>
+      
+            1D3 (1D3) ＞ 2
+            
+      </p>
+      </div>
+      <div class="mem3 left">
+      <span>加持千八香</span>
+      <p>
+      
+            2DM&lt;=7　（ストレングス） (2DM&lt;=7) ＞ [1, 8] ＞ 2 ＞ 成功数2 ダブル!
+            
+      </p>
+      </div>
+      <div class="mem7 left">
+      <span>バスケばばあ</span>
+      <p>
+      
+            ３DM＜＝4　（鋭い投球） (3DM&lt;=4) ＞ [5, 2, 6] ＞ 1 ＞ 成功数1 成功!
+            
+      </p>
+      </div>
+      <div class="mem3 left">
+      <span>加持千八香</span>
+      <p>
+      
+            2d3+2 (2D3+2) ＞ 2[1,1]+2 ＞ 4
+            
+      </p>
+      </div>
+      <div class="mem1 left">
+      <span>乱獅子雪華</span>
+      <p>
+      
+            3DM&lt;=8　(武術) (3DM&lt;=8) ＞ [8, 10, 10] ＞ -1 ＞ 成功数-1 ファンブル!
+            
+      </p>
+      </div>
+      <div class="mem7 left">
+      <span>バスケばばあ</span>
+      <p>
+      
+            ３DM＜＝4　（鋭い投球） (3DM&lt;=4) ＞ [9, 4, 6] ＞ 1 ＞ 成功数1 成功!
+            
+      </p>
+      </div>
+      <div class="mem7 left">
+      <span>バスケばばあ</span>
+      <p>
+      
+            1D3 (1D3) ＞ 2
+            
+      </p>
+      </div>
+      <div class="mem5 left">
+      <span>system</span>
+      <p>
+      
+            [ 乱獅子雪華 ] HP : 15 → 13
+      </p>
+      </div>
+      <div class="mem1 left">
+      <span>乱獅子雪華</span>
+      <p>
+      
+            「ぐっ…私も動きづらいぞ森！」
+      </p>
+      </div>
+      <div class="mem2 right">
+      <span>千金楽アリア</span>
+      <p>
+      
+            3DM&lt;=9　(武術：CQC) (3DM&lt;=9) ＞ [2, 3, 7] ＞ 3 ＞ 成功数3 トリプル!
+            
+      </p>
+      </div>
+      <div class="mem7 left">
+      <span>バスケばばあ</span>
+      <p>
+      
+            ３DM＜＝4　（鋭い投球） (3DM&lt;=4) ＞ [9, 4, 7] ＞ 1 ＞ 成功数1 成功!
+            
+      </p>
+      </div>
+      <div class="mem2 right">
+      <span>千金楽アリア</span>
+      <p>
+      
+            3D3 (3D3) ＞ 6[3,1,2] ＞ 6
+            
+      </p>
+      </div>
+      <div class="mem2 right">
+      <span>千金楽アリア</span>
+      <p>
+      
+            「しゃっりゃー！」
+      </p>
+      </div>
+      <div class="mem3 left">
+      <span>加持千八香</span>
+      <p>
+      
+            2DM&lt;=7　（ストレングス） (2DM&lt;=7) ＞ [4, 7] ＞ 2 ＞ 成功数2 ダブル!
+            
+      </p>
+      </div>
+      <div class="mem7 left">
+      <span>バスケばばあ</span>
+      <p>
+      
+            ３DM＜＝4　（鋭い投球） (3DM&lt;=4) ＞ [6, 5, 7] ＞ 0 ＞ 成功数0 失敗!
+            
+      </p>
+      </div>
+      <div class="mem3 left">
+      <span>加持千八香</span>
+      <p>
+      
+            2d3+2 (2D3+2) ＞ 5[3,2]+2 ＞ 7
+            
+      </p>
+      </div>
+      <div class="kp">
+      
+            戦闘終了です
+      </div>
+      <div class="mem1 left">
+      <span>乱獅子雪華</span>
+      <p>
+      
+            「ちゃか！！！すごいぞ！！」
+      </p>
+      </div>
+      <div class="mem3 left">
+      <span>加持千八香</span>
+      <p>
+      
+            「にゃーーー！！」
+      </p>
+      </div>
+      <div class="mem2 right">
+      <span>千金楽アリア</span>
+      <p>
+      
+            「おぉー」
+      </p>
+      </div>
+      <div class="kp">
+      
+            バスケばばあは地に伏し、動かなくなりました
+      </div>
+      <div class="mem3 left">
+      <span>加持千八香</span>
+      <p>
+      
+            「･･････ちんだ？」
+      </p>
+      </div>
+      <div class="mem3 left">
+      <span>加持千八香</span>
+      <p>
+      
+            棒でつついてる
+      </p>
+      </div>
+      <div class="mem2 right">
+      <span>千金楽アリア</span>
+      <p>
+      
+            「ちなみに思ったんだけど、これは持ち帰った方がいいの？（バスケばばあの本体を見て）
+      </p>
+      </div>
+      <div class="mem4 right">
+      <span>松葉博士</span>
+      <p>
+      
+            ｢ばばあを格納するスペースがないから置いていくしかないのじゃ｣
+      </p>
+      </div>
+      <div class="mem1 left">
+      <span>乱獅子雪華</span>
+      <p>
+      
+            「二人に守られてしまったな！帰ったら修行しなければ！」
+      </p>
+      </div>
+      <div class="mem4 right">
+      <span>松葉博士</span>
+      <p>
+      
+            ｢まあ怪異は人が産み出したもの。人がいないと存在できん｣
+      </p>
+      </div>
+      <div class="mem3 left">
+      <span>加持千八香</span>
+      <p>
+      
+            「･･････ここひといにゃいよ？」
+      </p>
+      </div>
+      <div class="mem2 right">
+      <span>千金楽アリア</span>
+      <p>
+      
+            「これでタイムパラドックスが起こったりはしない？」
+      </p>
+      </div>
+      <div class="mem4 right">
+      <span>松葉博士</span>
+      <p>
+      
+            ｢まあ大丈夫じゃろ。ところで回復はいらんかの｣
+      </p>
+      </div>
+      <div class="mem1 left">
+      <span>乱獅子雪華</span>
+      <p>
+      
+            「頼む！」
+      </p>
+      </div>
+      <div class="mem4 right">
+      <span>松葉博士</span>
+      <p>
+      
+            3DM&lt;=9　（医術） (3DM&lt;=9) ＞ [2, 2, 10] ＞ 1 ＞ 成功数1 成功!
+            
+      </p>
+      </div>
+      <div class="mem4 right">
+      <span>松葉博士</span>
+      <p>
+      
+            1D3 (1D3) ＞ 3
+            
+      </p>
+      </div>
+      <div class="mem5 left">
+      <span>system</span>
+      <p>
+      
+            [ 乱獅子雪華 ] HP : 13 → 15
+      </p>
+      </div>
+      <div class="mem1 left">
+      <span>乱獅子雪華</span>
+      <p>
+      
+            「助かる！ありがとう！」
+      </p>
+      </div>
+      <div class="mem2 right">
+      <span>千金楽アリア</span>
+      <p>
+      
+            「私の時と扱いが違う…」
+      </p>
+      </div>
+      <div class="mem4 right">
+      <span>松葉博士</span>
+      <p>
+      
+            ｢千金楽君は回復はいらんかの｣
+      </p>
+      </div>
+      <div class="mem2 right">
+      <span>千金楽アリア</span>
+      <p>
+      
+            「いるー」
+      </p>
+      </div>
+      <div class="mem4 right">
+      <span>松葉博士</span>
+      <p>
+      
+            3DM&lt;=9　（医術） (3DM&lt;=9) ＞ [6, 7, 1] ＞ 4 ＞ 成功数4 ミラクル!
+            
+      </p>
+      </div>
+      <div class="mem4 right">
+      <span>松葉博士</span>
+      <p>
+      
+            ４D3 (4D3) ＞ 10[1,3,3,3] ＞ 10
+            
+      </p>
+      </div>
+      <div class="mem5 left">
+      <span>system</span>
+      <p>
+      
+            [ 千金楽アリア ] HP : 14 → 16
+      </p>
+      </div>
+      <div class="mem4 right">
+      <span>松葉博士</span>
+      <p>
+      
+            ｢さあ、元の時代に帰ろうじゃないか。加持君は枝を捨てておいておくれ｣
+      </p>
+      </div>
+      <div class="mem3 left">
+      <span>加持千八香</span>
+      <p>
+      
+            「あい」ぺってすてます
+      </p>
+      </div>
+      <div class="mem1 left">
+      <span>乱獅子雪華</span>
+      <p>
+      
+            「たのしかったな～縄文時代じゃなかったけど」
+      </p>
+      </div>
+      <div class="mem2 right">
+      <span>千金楽アリア</span>
+      <p>
+      
+            あ。記念にバスケットボールと森を撮影します
+      </p>
+      </div>
+      <div class="kp">
+      
+            きれいに撮れました
+      </div>
+      <div class="mem3 left">
+      <span>加持千八香</span>
+      <p>
+      
+            「ちゃかたち、ほんちょにかえれゆ？」
+      </p>
+      </div>
+      <div class="mem1 left">
+      <span>乱獅子雪華</span>
+      <p>
+      
+            「ひと？にあってもえりょどうじんにはならなかったしな！」
+      </p>
+      </div>
+      <div class="mem2 right">
+      <span>千金楽アリア</span>
+      <p>
+      
+            「あれは人と違うよ」
+      </p>
+      </div>
+      <div class="mem3 left">
+      <span>加持千八香</span>
+      <p>
+      
+            「ありぇにゃんだったの･･････？」
+      </p>
+      </div>
+      <div class="mem2 right">
+      <span>千金楽アリア</span>
+      <p>
+      
+            「ただ、バスケットボールを愛するばばあが一緒にタイムスリップしただけさ」
+      </p>
+      </div>
+      <div class="mem3 left">
+      <span>加持千八香</span>
+      <p>
+      
+            「かっこよくいっちぇもかっこよくにゃいわ！」
+      </p>
+      </div>
+      <div class="kp">
+      
+            一行は無事に現代へ帰ることができます。
+      </div>
+      <div class="kp">
+      
+            過去に行ったときのように靴底を掃いたりしてから松葉博士の研究室に戻ってきました。
+      </div>
+      <div class="mem1 left">
+      <span>乱獅子雪華</span>
+      <p>
+      
+            「帰還！」
+      </p>
+      </div>
+      <div class="mem3 left">
+      <span>加持千八香</span>
+      <p>
+      
+            「かえってきちゃ」
+      </p>
+      </div>
+      <div class="mem2 right">
+      <span>千金楽アリア</span>
+      <p>
+      
+            「ただいまー」
+      </p>
+      </div>
+      <div class="kp">
+      
+            すると、博物館の方が何やら騒ぎになっています
+      </div>
+      <div class="mem2 right">
+      <span>千金楽アリア</span>
+      <p>
+      
+            まさか、そんな
+      </p>
+      </div>
+      <div class="kp">
+      
+            博士たちが帰ってきたことに気がついた職員が一人松葉博士に近づいてきて何やら耳打ちします
+      </div>
+      <div class="mem2 right">
+      <span>千金楽アリア</span>
+      <p>
+      
+            1DM&lt;=6 （聞き耳） (1DM&lt;=6) ＞ [6] ＞ 1 ＞ 成功数1 成功!
+            
+      </p>
+      </div>
+      <div class="mem3 left">
+      <span>加持千八香</span>
+      <p>
+      
+            2DM&lt;=6　（聞き耳） (2DM&lt;=6) ＞ [9, 3] ＞ 1 ＞ 成功数1 成功!
+            
+      </p>
+      </div>
+      <div class="kp">
+      
+            ｢聞き耳｣に成功<br>断片的に聞こえてきました。<br>職員は｢特別……の中に………さんが………｣と言っています
+      </div>
+      <div class="mem2 right">
+      <span>千金楽アリア</span>
+      <p>
+      
+            琥珀の中にバスケばばあが？（乱視）
+      </p>
+      </div>
+      <div class="kp">
+      
+            博士はそれを聞いて、職員に何やら指示を出してから大急ぎで博物館の方へ行ってしまいました。
+      </div>
+      <div class="mem2 right">
+      <span>千金楽アリア</span>
+      <p>
+      
+            追いかけたいです
+      </p>
+      </div>
+      <div class="mem1 left">
+      <span>乱獅子雪華</span>
+      <p>
+      
+            「どうしたんだろ」おいかける
+      </p>
+      </div>
+      <div class="mem3 left">
+      <span>加持千八香</span>
+      <p>
+      
+            「ちょっとー！あたちたちどうちたらいいのー！？」おいかけます
+      </p>
+      </div>
+      <div class="kp">
+      
+            追いかけた先は博物館の特別展示｢巨大コハク展｣のブースです。<br>大きな布で隠すようにしてあり、博士はその布を捲って中に入っていきます。
+      </div>
+      <div class="mem2 right">
+      <span>千金楽アリア</span>
+      <p>
+      
+            一緒に入っていきましょう
+      </p>
+      </div>
+      <div class="mem3 left">
+      <span>加持千八香</span>
+      <p>
+      
+            いきます
+      </p>
+      </div>
+      <div class="mem1 left">
+      <span>乱獅子雪華</span>
+      <p>
+      
+            いきます
+      </p>
+      </div>
+      <div class="kp">
+      
+            共鳴者たちが布を捲って特別展示場に入ると、松葉博士が愕然とした様子で立っています。
+      </div>
+      <div class="mem4 right">
+      <span>松葉博士</span>
+      <p>
+      
+            ｢あ……あれは………｣
+      </p>
+      </div>
+      <div class="mem2 right">
+      <span>千金楽アリア</span>
+      <p>
+      
+            「だから、持って帰らなくていいの？って聞いたじゃん」
+      </p>
+      </div>
+      <div class="kp">
+      
+            博士が見つめる先には、彼が掘り出したという巨大コハク……いや、その中に閉じ込められているバスケばばあの姿がありました
+      </div>
+      <div class="mem1 left">
+      <span>乱獅子雪華</span>
+      <p>
+      
+            「おー！化石になってる！」
+      </p>
+      </div>
+      <div class="kp">
+      
+            バスケばばあは博士に共鳴します
+      </div>
+      <div class="mem2 right">
+      <span>千金楽アリア</span>
+      <p>
+      
+            「タイムパラドックスじゃん」
+      </p>
+      </div>
+      <div class="mem4 right">
+      <span>松葉博士</span>
+      <p>
+      
+            (1*2)DM&lt;=10　〈完全一致） (2DM&lt;=10) ＞ [9, 4] ＞ 2 ＞ 成功数2 ダブル!
+            
+      </p>
+      </div>
+      <div class="kp">
+      
+            松葉博士は逸脱します
+      </div>
+      <div class="mem2 right">
+      <span>千金楽アリア</span>
+      <p>
+      
+            はかせー！？
+      </p>
+      </div>
+      <div class="kp">
+      
+            マッハサイエンティストが特別展示場から消えたと思うと、展示場の外で｢いてっ｣と声がします
+      </div>
+      <div class="kp">
+      
+            展示場の外を確認しますか？
+      </div>
+      <div class="mem1 left">
+      <span>乱獅子雪華</span>
+      <p>
+      
+            いきます
+      </p>
+      </div>
+      <div class="mem2 right">
+      <span>千金楽アリア</span>
+      <p>
+      
+            これ見に行かないとね
+      </p>
+      </div>
+      <div class="mem3 left">
+      <span>加持千八香</span>
+      <p>
+      
+            いきます
+      </p>
+      </div>
+      <div class="kp">
+      
+            展示場の外では、職員が辺りを見回して首をかしげています。<br>｢直感｣か｢観察眼｣で分かることがあります
+      </div>
+      <div class="mem2 right">
+      <span>千金楽アリア</span>
+      <p>
+      
+            2DM&lt;=8　(直感) (2DM&lt;=8) ＞ [2, 5] ＞ 2 ＞ 成功数2 ダブル!
+            
+      </p>
+      </div>
+      <div class="mem3 left">
+      <span>加持千八香</span>
+      <p>
+      
+            1DM&lt;=6　（直感） (1DM&lt;=6) ＞ [4] ＞ 1 ＞ 成功数1 成功!
+            
+      </p>
+      </div>
+      <div class="kp">
+      
+            マッハサイエンティストが並走して、時を越えた攻撃を仕掛けたと思います
+      </div>
+      <div class="mem2 right">
+      <span>千金楽アリア</span>
+      <p>
+      
+            時を越えた攻撃かぁ
+      </p>
+      </div>
+      <div class="mem2 right">
+      <span>千金楽アリア</span>
+      <p>
+      
+            超越したかぁ
+      </p>
+      </div>
+      <div class="kp">
+      
+            ｢聞き耳｣｢洞察｣｢観察眼｣などで情報が出ます
+      </div>
+      <div class="mem1 left">
+      <span>乱獅子雪華</span>
+      <p>
+      
+            1DM&lt;=3　(洞察) (1DM&lt;=3) ＞ [5] ＞ 0 ＞ 成功数0 失敗!
+            
+      </p>
+      </div>
+      <div class="mem2 right">
+      <span>千金楽アリア</span>
+      <p>
+      
+            2DM&lt;=7　(観察眼) (2DM&lt;=7) ＞ [5, 10] ＞ 0 ＞ 成功数0 失敗!
+            
+      </p>
+      </div>
+      <div class="mem3 left">
+      <span>加持千八香</span>
+      <p>
+      
+            2DM&lt;=6　（聞き耳） (2DM&lt;=6) ＞ [2, 8] ＞ 1 ＞ 成功数1 成功!
+            
+      </p>
+      </div>
+      <div class="kp">
+      
+            ｢聞き耳｣に成功<br>この辺りには忙しく走り回る職員が多く、そこかしこで小さな悲鳴が聞こえます。<br>また、この騒ぎで来館者を外へ出している途中のようで非常に慌ただしいです。
+      </div>
+      <div class="kp">
+      
+            この騒動を収められるのは、事件の全容を知っている共鳴者たちしかいないでしょう。
+      </div>
+      <div class="mem2 right">
+      <span>千金楽アリア</span>
+      <p>
+      
+            走っておびき寄せてやるぐらいかな？
+      </p>
+      </div>
+      <div class="kp">
+      
+            戦闘です
+      </div>
+      <div class="mem3 left">
+      <span>加持千八香</span>
+      <p>
+      
+            「･･････とめなきゃだめ？」
+      </p>
+      </div>
+      <div class="mem2 right">
+      <span>千金楽アリア</span>
+      <p>
+      
+            「じゃないかな？迷惑でしょ？あれ」
+      </p>
+      </div>
+      <div class="mem3 left">
+      <span>加持千八香</span>
+      <p>
+      
+            「むーー･･････」
+      </p>
+      </div>
+      <div class="mem3 left">
+      <span>加持千八香</span>
+      <p>
+      
+            「ぼうにゃい」
+      </p>
+      </div>
+      <div class="mem3 left">
+      <span>加持千八香</span>
+      <p>
+      
+            1DM&lt;=2　(＊幸運) (1DM&lt;=2) ＞ [3] ＞ 0 ＞ 成功数0 失敗!
+            
+      </p>
+      </div>
+      <div class="mem3 left">
+      <span>加持千八香</span>
+      <p>
+      
+            「･･････はかしぇにゃぐっちゃらちょめれる？」
+      </p>
+      </div>
+      <div class="mem2 right">
+      <span>千金楽アリア</span>
+      <p>
+      
+            「とめれるんじゃない？」
+      </p>
+      </div>
+      <div class="mem1 left">
+      <span>乱獅子雪華</span>
+      <p>
+      
+            「とりあえず殴ってみよう」
+      </p>
+      </div>
+      <div class="mem2 right">
+      <span>千金楽アリア</span>
+      <p>
+      
+            「そうするかぁ」
+      </p>
+      </div>
+      <div class="mem1 left">
+      <span>乱獅子雪華</span>
+      <p>
+      
+            「博士がばばあのような怪異となってしまっているのなら応戦せねば私たちもあぶないだろう」
+      </p>
+      </div>
+      <div class="mem3 left">
+      <span>加持千八香</span>
+      <p>
+      
+            2DM&lt;=7　（ストレングス） (2DM&lt;=7) ＞ [4, 5] ＞ 2 ＞ 成功数2 ダブル!
+            
+      </p>
+      </div>
+      <div class="mem8 right">
+      <span>マッハサイエンティスト</span>
+      <p>
+      
+            1DM&lt;=5　（★奥義：時を超えた攻撃、ターン1） (1DM&lt;=5) ＞ [1] ＞ 2 ＞ 成功数2 ダブル!
+            
+      </p>
+      </div>
+      <div class="mem8 right">
+      <span>マッハサイエンティスト</span>
+      <p>
+      
+            2D6 (2D6) ＞ 6[1,5] ＞ 6
+            
+      </p>
+      </div>
+      <div class="mem5 left">
+      <span>system</span>
+      <p>
+      
+            [ 加持千八香 ] HP : 15 → 9
+      </p>
+      </div>
+      <div class="mem3 left">
+      <span>加持千八香</span>
+      <p>
+      
+            2d3 (2D3) ＞ 6[3,3] ＞ 6
+            
+      </p>
+      </div>
+      <div class="mem2 right">
+      <span>千金楽アリア</span>
+      <p>
+      
+            3DM&lt;=9　(武術：CQC) (3DM&lt;=9) ＞ [1, 2, 6] ＞ 4 ＞ 成功数4 ミラクル!
+            
+      </p>
+      </div>
+      <div class="mem8 right">
+      <span>マッハサイエンティスト</span>
+      <p>
+      
+            1DM&lt;=5　（★奥義：時を超えた攻撃、ターン1） (1DM&lt;=5) ＞ [1] ＞ 2 ＞ 成功数2 ダブル!
+            
+      </p>
+      </div>
+      <div class="mem2 right">
+      <span>千金楽アリア</span>
+      <p>
+      
+            4D3 (4D3) ＞ 10[3,3,2,2] ＞ 10
+            
+      </p>
+      </div>
+      <div class="mem8 right">
+      <span>マッハサイエンティスト</span>
+      <p>
+      
+            1DM&lt;=3　（＊生存） (1DM&lt;=3) ＞ [5] ＞ 0 ＞ 成功数0 失敗!
+            
+      </p>
+      </div>
+      <div class="mem2 right">
+      <span>千金楽アリア</span>
+      <p>
+      
+            縛ろう
+      </p>
+      </div>
+      <div class="kp">
+      
+            戦闘終了です
+      </div>
+      <div class="mem1 left">
+      <span>乱獅子雪華</span>
+      <p>
+      
+            「さすがだ！！」
+      </p>
+      </div>
+      <div class="mem3 left">
+      <span>加持千八香</span>
+      <p>
+      
+            「しゅごい･･････」
+      </p>
+      </div>
+      <div class="mem2 right">
+      <span>千金楽アリア</span>
+      <p>
+      
+            「ふぅ」
+      </p>
+      </div>
+      <div class="kp">
+      
+            突如として、武装した男たちが博物館になだれ込みます。そのうちの一人が何かを床に叩きつけると、白い煙が勢いよく吹き出します。<br>男は共鳴者たちに近づくと｢これは怪異を沈静化させる煙です。あなたたちに害はありません。……それにしても、怪異相手に生身でよく戦ったものだ｣と言ってしみじみ頷いています。<br>｢さあ、一度お帰りください。巻き込まれた民間人を日常に復帰させることも我々の仕事ですから｣<br>共鳴者たちは彼に言われるまま家に帰ることになります。
+      </div>
+      <div class="kp">
+      
+            数日後、共鳴者たちのもとに松葉博士から連絡がありました。内容はアルバイト料を振り込んだこと、タイムマシンにはまだ改善余地があること、そして<br>｢いやぁ心かけたね。まさか帰ってきた直後に倒れてしまうとは。健康には自信があったんだが｣<br>……ということでした。博士には怪異になっていた記憶はなく、今も研究に励んでいるようです。特別展示の巨大コハク展は通常通り開催され、博物館は何事もなく運営しています。<br>あなたたちが取り戻した日常は、今日も平和に過ぎていきます。
+      </div>
+      <div class="kp">
+      
+            エモクロアTRPG｢BB with THE TIME MACHIE｣終了です
+      </div>
+      <div class="mem1 left">
+      <span>乱獅子雪華</span>
+      <p>
+      
+            おつかれさまでした！！
+      </p>
+      </div>
+      <div class="mem2 right">
+      <span>千金楽アリア</span>
+      <p>
+      
+            おつかれさまでしたー！
+      </p>
+      </div>
+      <div class="mem3 left">
+      <span>加持千八香</span>
+      <p>
+      
+            おつかれさまでした！！
+      </p>
+      </div>
+      <div class="kp">
+      
+            残響｢タイムトラベラー｣を取得します
+      </div>
+      </div>
+
+<br><br><br><br>
+</div></div>
+<script src="../logCon_Respon.js"></script>
+</body></html>
