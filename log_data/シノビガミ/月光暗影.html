@@ -1,0 +1,3791 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<title>log</title>
+<meta http-equiv="content-type" charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+<link rel="stylesheet" href="../logCon_Respon.css">
+<style>
+    /* main css */
+    .bg-inner.bg1{background:url('./月光画像/nc247229.jpg') no-repeat center/cover;}
+    
+    /* member */
+    .mem1 p{border:2px solid rgb(63, 81, 181);box-shadow:5px 5px 0 rgb(63, 81, 181);}
+.mem1 p:after{border-right-color:rgb(63, 81, 181);}
+.mem1 span{background:rgb(63, 81, 181);color:#fff;}
+.mem1:before{content:'';background-image:url('./月光画像/13727222.png');background-size:contain;background-repeat:no-repeat;background-position:center center;width:90px;height:90px;}
+.mem2 p{border:2px solid rgb(156, 39, 176);box-shadow:5px 5px 0 rgb(156, 39, 176);}
+.mem2 p:after{border-left-color:rgb(156, 39, 176);}
+.mem2 span{background:rgb(156, 39, 176);color:#fff;}
+.mem2:before{content:'';background-image:url('./月光画像/瑞香.png');background-size:contain;background-repeat:no-repeat;background-position:center center;width:90px;height:90px;}
+.mem3 p{border:2px solid rgb(255, 87, 34);box-shadow:5px 5px 0 rgb(255, 87, 34);}
+.mem3 p:after{border-right-color:rgb(255, 87, 34);}
+.mem3 span{background:rgb(255, 87, 34);color:#000;}
+.mem3:before{content:'';background-image:url('./月光画像/b18eba95688ed81b5.png');background-size:contain;background-repeat:no-repeat;background-position:center center;width:90px;height:90px;}
+.mem4 p{border:2px solid rgb(136, 136, 136);box-shadow:5px 5px 0 rgb(136, 136, 136);}
+.mem4 p:after{border-left-color:rgb(136, 136, 136);}
+.mem4 span{background:rgb(136, 136, 136);color:#fff;}
+.mem4:before{content:'';background-image:url('4.png');background-size:contain;background-repeat:no-repeat;background-position:center center;width:90px;height:90px;}
+.mem5 p{border:2px solid rgb(136, 136, 136);box-shadow:5px 5px 0 rgb(136, 136, 136);}
+.mem5 p:after{border-right-color:rgb(136, 136, 136);}
+.mem5 span{background:rgb(136, 136, 136);color:#fff;}
+.mem5:before{content:'';background-image:url('5.png');background-size:contain;background-repeat:no-repeat;background-position:center center;width:90px;height:90px;}
+.mem6 p{border:2px solid rgb(136, 136, 136);box-shadow:5px 5px 0 rgb(136, 136, 136);}
+.mem6 p:after{border-left-color:rgb(136, 136, 136);}
+.mem6 span{background:rgb(136, 136, 136);color:#fff;}
+.mem6:before{content:'';background-image:url('6.png');background-size:contain;background-repeat:no-repeat;background-position:center center;width:90px;height:90px;}
+.mem7 p{border:2px solid rgb(136, 136, 136);box-shadow:5px 5px 0 rgb(136, 136, 136);}
+.mem7 p:after{border-right-color:rgb(136, 136, 136);}
+.mem7 span{background:rgb(136, 136, 136);color:#fff;}
+.mem7:before{content:'';background-image:url('7.png');background-size:contain;background-repeat:no-repeat;background-position:center center;width:90px;height:90px;}
+.mem8 p{border:2px solid rgb(136, 136, 136);box-shadow:5px 5px 0 rgb(136, 136, 136);}
+.mem8 p:after{border-left-color:rgb(136, 136, 136);}
+.mem8 span{background:rgb(136, 136, 136);color:#fff;}
+.mem8:before{content:'';background-image:url('8.png');background-size:contain;background-repeat:no-repeat;background-position:center center;width:90px;height:90px;}
+.mem9 p{border:2px solid rgb(136, 136, 136);box-shadow:5px 5px 0 rgb(136, 136, 136);}
+.mem9 p:after{border-right-color:rgb(136, 136, 136);}
+.mem9 span{background:rgb(136, 136, 136);color:#fff;}
+.mem9:before{content:'';background-image:url('9.png');background-size:contain;background-repeat:no-repeat;background-position:center center;width:90px;height:90px;}
+.mem10 p{border:2px solid rgb(136, 136, 136);box-shadow:5px 5px 0 rgb(136, 136, 136);}
+.mem10 p:after{border-left-color:rgb(136, 136, 136);}
+.mem10 span{background:rgb(136, 136, 136);color:#fff;}
+.mem10:before{content:'';background-image:url('10.png');background-size:contain;background-repeat:no-repeat;background-position:center center;width:90px;height:90px;}
+.mem11 p{border:2px solid rgb(136, 136, 136);box-shadow:5px 5px 0 rgb(136, 136, 136);}
+.mem11 p:after{border-right-color:rgb(136, 136, 136);}
+.mem11 span{background:rgb(136, 136, 136);color:#fff;}
+.mem11:before{content:'';background-image:url('./月光画像/download20230201005134.png');background-size:contain;background-repeat:no-repeat;background-position:center center;width:90px;height:90px;}
+    
+    @media only screen and (max-width: 768px) {
+        .mem1 p:after{border-right-color:rgb(63, 81, 181);border-left-color:transparent;}
+        .mem2 p:after{border-right-color:rgb(156, 39, 176);border-left-color:transparent;}
+        .mem3 p:after{border-right-color:rgb(255, 87, 34);border-left-color:transparent;}
+        .mem4 p:after{border-right-color:rgb(136, 136, 136);border-left-color:transparent;}
+        .mem5 p:after{border-right-color:rgb(136, 136, 136);border-left-color:transparent;}
+        .mem6 p:after{border-right-color:rgb(136, 136, 136);border-left-color:transparent;}
+        .mem7 p:after{border-right-color:rgb(136, 136, 136);border-left-color:transparent;}
+        .mem8 p:after{border-right-color:rgb(136, 136, 136);border-left-color:transparent;}
+        .mem9 p:after{border-right-color:rgb(136, 136, 136);border-left-color:transparent;}
+        .mem10 p:after{border-right-color:rgb(136, 136, 136);border-left-color:transparent;}
+        .mem11 p:after{border-right-color:rgb(136, 136, 136);border-left-color:transparent;}
+    
+        .mem1:before,.mem2:before,.mem3:before,
+        .mem4:before,.mem5:before,.mem6:before,
+        .mem7:before,.mem8:before,.mem9:before,
+        .mem10:before,.mem11:before{width:70px;height:70px;}
+    }
+</style>
+</head>
+<body>
+    <p id="page-top"><a href="#"><i class="page-top__arrow"></i></a></p>
+	<div class="leftwhite"></div>
+	<div class="rightwhite"></div>
+	<div class="bg-sp">
+    <div class="bg-over"><div class="bg-inner bg1"></div></div>
+	<div class="log">
+    
+        <div class="kp">
+
+            先日の事件の後、PC1の家は莫大な損害を得た。<br>何故なら強大な力を失ったからだ。<br>しかし、まだ復興は出来る。<br>それをするために――<br><br>また、独り立ちしたPC2はふらふらと自由に仕事をしている。<br>そんな中一つの仕事を受けるのだった…<br><br><br>『月光に渇きし暗影』<br><br>今宵向かうはどこへやら
+      </div>
+      <div class="kp">
+      
+            やっていきます
+      </div>
+      <div class="mem1 left">
+      <span>駒場 駆</span>
+      <p>
+      
+            やるぞ！
+      </p>
+      </div>
+      <div class="mem2 right">
+      <span>瑞香</span>
+      <p>
+      
+            お願いします！！
+      </p>
+      </div>
+      <div class="mem3 left">
+      <span>三盆糖 ざらめ</span>
+      <p>
+      
+            おねがいします！
+      </p>
+      </div>
+      <div class="kp">
+      
+            導入フェイズ1<br>登場PC：三盆糖 ざらめ、駒場 駆<br>
+      </div>
+      <div class="kp">
+      
+            貴方は、窮地に立たされていた。<br>貴方は、家の危機に立ち向かっていた。<br>貴方は何としてでも家を復興しなければと思った。<br>貴方の居場所を守るために。<br>自由になると思っていたが、居場所である家を守るためにも…、貴方は家の復興をしたいと思った。
+      </div>
+      <div class="mem3 left">
+      <span>三盆糖 ざらめ</span>
+      <p>
+      
+            「皆さん、ご迷惑をおかけしますが、今日も頑張っていただけるとありがたいです。よろしくお願いしますね」
+      </p>
+      </div>
+      <div class="mem4 right">
+      <span>家臣</span>
+      <p>
+      
+            「任せてください」
+      </p>
+      </div>
+      <div class="mem1 left">
+      <span>駒場 駆</span>
+      <p>
+      
+            「任せてくださいっす！<br>今日も修理していくっすよー！」<br>分身が仕事場に散ってます
+      </p>
+      </div>
+      <div class="mem4 right">
+      <span>家臣</span>
+      <p>
+      
+            「お、やる気満々だな」
+      </p>
+      </div>
+      <div class="mem3 left">
+      <span>三盆糖 ざらめ</span>
+      <p>
+      
+            「ふふ。ありがとうございます」
+      </p>
+      </div>
+      <div class="mem4 right">
+      <span>家臣</span>
+      <p>
+      
+            「俺たちも負けてられないぜ」<br>分身の術をして仕事を始める
+      </p>
+      </div>
+      <div class="kp">
+      
+            そんな話をしていると、一通の文がやってくる。
+      </div>
+      <div class="kp">
+      
+            何やら特殊な物が輸送されるというものだ。<br>そこには見知った名前もあった。
+      </div>
+      <div class="kp">
+      
+            ――瑪瑙
+      </div>
+      <div class="mem3 left">
+      <span>三盆糖 ざらめ</span>
+      <p>
+      
+            「……あら。仇敵の名前……」
+      </p>
+      </div>
+      <div class="mem3 left">
+      <span>三盆糖 ざらめ</span>
+      <p>
+      
+            「……これは、また嵐の予感かしら」
+      </p>
+      </div>
+      <div class="mem1 left">
+      <span>駒場 駆</span>
+      <p>
+      
+            「？ またどこか壊れそうっすかー？」
+      </p>
+      </div>
+      <div class="mem3 left">
+      <span>三盆糖 ざらめ</span>
+      <p>
+      
+            「いえ、なんでもないわ」
+      </p>
+      </div>
+      <div class="mem1 left">
+      <span>駒場 駆</span>
+      <p>
+      
+            「ならいいっすけど… 何か来たら次こそはとっちめてやるっすよ！」
+      </p>
+      </div>
+      <div class="mem3 left">
+        <span>三盆糖 ざらめ</span>
+        <p>
+        
+              PC1:三盆糖 ざらめ<br>
+              流派：鞍馬神流/バヨネット<br>
+              今やるべきことは家の復興の方が優先だ。<br>
+              貴方の使命は「家の復興」である。<br>
+              <br><br>
+              [設定]<br>
+              《杜若家当主》
+              杜若家のお嬢様であり、現当主でもある「早苗」のなかに、「ざらめ」というおてんば人格を飼っている
+              家の復興のため奮闘中。     
+        </p>
+        </div>
+      <div class="kp">
+      
+            導入1終了
+      </div>
+
+      <div class="kp">
+      
+            導入2<br>登場PC：瑞香
+      </div>
+      <div class="kp">
+      
+            貴方は、現在フリーで活動するシノビだ。<br>今では金銭を積めば依頼を受けるシノビだと知られている。
+      </div>
+      <div class="kp">
+      
+            そして、今回荷運びの依頼を受けた。
+      </div>
+      <div class="mem5 left">
+      <span>？？？</span>
+      <p>
+      
+            「今回の依頼はこの「八尺瓊勾玉」を護送する任務を引き受けてくれて感謝する」
+      </p>
+      </div>
+      <div class="mem2 right">
+      <span>瑞香</span>
+      <p>
+      
+            「いえいえ！こちらこそご依頼ありがとうございます！お代さえ頂ければなんなりと私にお任せください！」
+      </p>
+      </div>
+      <div class="mem5 left">
+      <span>？？？</span>
+      <p>
+      
+            「成功すれば、莫大な報酬がキミを待っている。期待しているからな」
+      </p>
+      </div>
+      <div class="mem2 right">
+      <span>瑞香</span>
+      <p>
+      
+            「ええ、ご安心を」
+      </p>
+      </div>
+      <div class="kp">
+      
+            そう、雇い主から言われた。<br>そう、貴方は仕事を遂行するだけだ。
+      </div>
+      <div class="mem2 right">
+      <span>瑞香</span>
+      <p>
+      PC1:瑞香<br>
+              流派：ハグレモノ/No.9<br>
+              現在は"親"の元を離れフリーで活動しているシノビだ。<br>
+              貴方は金銭を積まれれば仕事をこなすシノビとして知られている。<br>
+              現在、プライズ「八尺瓊勾玉」の護送任務を受けている。<br>
+              貴方の使命は「仕事の遂行」である。<br>
+              <br><br>
+              [設定]<br>
+              前に所属していたところから独立し、フリーで任務を受けている。<br>
+              守銭奴であることに変わりはなく、金を積まれればなんでもやる。<br>
+              忍びとして印象を残さないように名前や印象を任務ごとに変えている。<br>
+              けれど無意識の癖や感情を出してしまいがち。<br>
+              詰めが甘い。 <br>
+            
+      </p>
+      </div>
+      <div class="kp">
+      
+            導入2終了
+      </div>
+      <div class="kp">
+      
+            導入3<br>登場PC：駒場 駆
+      </div>
+      <div class="kp">
+      
+            貴方は心のどこかで思っている。<br>大切な友達だと思ってた人、その人から突き放すような言動、態度、攻撃をされた。<br>絶対に、次は負けない。<br>負けてなるもんか。
+      </div>
+      <div class="mem1 left">
+      <span>駒場 駆</span>
+      <p>
+      
+            「次は潰す次は縛る次は捩じ切る……」<br>分身相手に ひたすら縄術の訓練をしてます
+      </p>
+      </div>
+      <div class="mem1 left">
+      <span>駒場 駆</span>
+      <p>
+      
+            「次は！絶対に！認めさせる！」<br>ギチギチギチーッ
+      </p>
+      </div>
+      <div class="mem1 left">
+      <span>駒場 駆</span>
+      <p>
+      PC1:駒場 駆<br>
+              現在PC1に雇われているシノビだ。<br>
+              貴方は主の為に、お金の為に仕事を続けるのだ。<br>
+              だが、忘れられないのはあの時のPC2の存在だ。<br>
+              どうしても倒して、認めさせたい。<br>
+              貴方の使命は「PC2を戦闘脱落にする」だ。<br>
+              <br><br>
+              [設定]<br>
+              前回のシナリオでHO1三盆糖ざらめにそのまま雇われている使用人でシノビ。<br>
+              主の為に、あとお金の為に一生懸命働いている。前までのバイト先は分身がなんとかしてるかもしれない。<br>
+              だがHO2瑪瑙にコテンパンにされたことが忘れられない。<br>
+              近いうちにめっためたにして認めさせるぞ！<br>
+        
+      </p>
+      </div>
+      <div class="kp">
+      
+            導入3終了
+      </div>
+      <div class="kp">
+      ――――――――――――――――――――――――
+      </div>
+      <div class="kp">
+      
+            1サイクル目
+      </div>
+      <div class="mem2 right">
+      <span>瑞香</span>
+      <p>
+      
+            st シーン表(5) ＞ 世界の終わりのような暗黒。暗闇の中、お前達は密やかに囁く。
+            
+      </p>
+      </div>
+      <div class="kp">
+      
+            登場PC：瑞香、雇い主
+      </div>
+      <div class="mem2 right">
+      <span>瑞香</span>
+      <p>
+      
+            暗闇のなか雇い主と依頼について密談的な
+      </p>
+      </div>
+      <div class="mem2 right">
+      <span>瑞香</span>
+      <p>
+      
+            「お時間ありがとうございます！今回のご依頼について詳細をお聞きしておいた方が達成率もあがるとおもいまして！」
+      </p>
+      </div>
+      <div class="mem6 right">
+      <span>雇い主</span>
+      <p>
+      
+            「そうか」
+      </p>
+      </div>
+      <div class="mem2 right">
+      <span>瑞香</span>
+      <p>
+      
+            「護送任務、とのことでしたが狙ってくるものについては何か情報はありませんか？」
+      </p>
+      </div>
+      <div class="mem6 right">
+      <span>雇い主</span>
+      <p>
+      
+            「先ほども言ったが、八尺瓊勾玉だ。元は秘密裏に保管されていたが、ある事件で公になってしまった」
+      </p>
+      </div>
+      <div class="mem6 right">
+      <span>雇い主</span>
+      <p>
+      
+            「それは、一つで強大な力を持つ。扱いは慎重にするんだな」
+      </p>
+      </div>
+      <div class="mem2 right">
+      <span>瑞香</span>
+      <p>
+      
+            「ならば敵は全方位…きがぬけませんね」
+      </p>
+      </div>
+      <div class="mem2 right">
+      <span>瑞香</span>
+      <p>
+      
+            雇い主について調べるとき秘匿でこっちで調べた方がいいの？表でいきなり雇い主しらべていいの？
+      </p>
+      </div>
+      <div class="kp">
+      
+            表で「雇い主について調べます」でいいよぉ
+      </div>
+      <div class="kp">
+      
+            ぶっちゃけ、雇い主の名前も出しちゃっていいよぉ
+      </div>
+      <div class="mem2 right">
+      <span>瑞香</span>
+      <p>
+      
+            「そんな重要なお役目を！ありがとうございます！必ずやお守りして見せましょう」
+      </p>
+      </div>
+      <div class="mem6 right">
+      <span>雇い主</span>
+      <p>
+      
+            「あぁ、期待している」
+      </p>
+      </div>
+      <div class="mem2 right">
+      <span>瑞香</span>
+      <p>
+      
+            （…期待、ねぇ）
+      </p>
+      </div>
+      <div class="mem2 right">
+      <span>瑞香</span>
+      <p>
+      
+            雇い主の秘密を調査術で調べます
+      </p>
+      </div>
+      <div class="kp">
+      
+            はいどうぞ
+      </div>
+      <div class="mem2 right">
+      <span>瑞香</span>
+      <p>
+      
+            2D6&gt;=5 （判定：調査術） (2D6&gt;=5) ＞ 3[1,2] ＞ 3 ＞ 失敗
+            
+      </p>
+      </div>
+      <div class="mem2 right">
+      <span>瑞香</span>
+      <p>
+      
+            （…そんなかんたんにわかんねぇか）
+      </p>
+      </div>
+      <div class="kp">
+      
+            シーン終了
+      </div>
+      <div class="mem1 left">
+      <span>駒場 駆</span>
+      <p>
+      
+            いくよ！
+      </p>
+      </div>
+      <div class="mem1 left">
+      <span>駒場 駆</span>
+      <p>
+      
+            st シーン表(7) ＞ 清廉な気配が漂う森の中。鳥の囀りや、そよ風が樹々を通り過ぎる音が聞こえる。
+            
+      </p>
+      </div>
+      <div class="kp">
+      
+            登場人物：駒場 駆
+      </div>
+      <div class="mem1 left">
+      <span>駒場 駆</span>
+      <p>
+      
+            瑪瑙さんの秘密を調べに行くよ！
+      </p>
+      </div>
+      <div class="mem1 left">
+      <span>駒場 駆</span>
+      <p>
+      
+            分身を送り込みつつ 秘密を探るよ！
+      </p>
+      </div>
+      <div class="mem1 left">
+      <span>駒場 駆</span>
+      <p>
+      
+            2D6&gt;=5 （判定：分身の術） (2D6&gt;=5) ＞ 7[2,5] ＞ 7 ＞ 成功
+            
+      </p>
+      </div>
+      <div class="kp">
+      
+            では、秘密が取得できます
+      </div>
+      <div class="kp">
+      
+            そして、感情共有でざらめちゃんに届きます
+      </div>
+      <div class="mem7 left">
+        <span>秘密</span>
+        <p>
+        
+              PC2：秘密<br>貴方は知っている。<br>現在自分の手にしているプライズは偽物であるということを。<br>そして雇い主は自分を囮にしていることを。<br>それを許そうと思ったが、自分を駒のように扱われるのは少々癪に感じる。<br>貴方の本当の使命は「雇い主の戦闘脱落」である。<br>この秘密を知っている者は「雇い主」の秘密を調べることが出来る。
+        </p>
+        </div>
+        <div class="mem7 left">
+            <span>秘密</span>
+            <p>
+            
+      NPC：雇い主<br>八咫 鏡華。<br>PC2にプライズの護送をするように依頼をしている。<br>貴方の使命は「プライズが護送されるのを見守る」ことである。
+            </p>
+            </div>
+      <div class="mem1 left">
+      <span>駒場 駆</span>
+      <p>
+      
+            「なんか 厄介なことやらされてるっすね！ざまぁないっす！」
+      </p>
+      </div>
+      <div class="kp">
+      
+            シーン終了
+      </div>
+      <div class="kp">
+      
+            登場人物：三盆糖 ざらめ
+      </div>
+      <div class="mem3 left">
+      <span>三盆糖 ざらめ</span>
+      <p>
+      
+            ｓｔ シーン表(4) ＞ 眼下に広がる街並みを眺める。ここからなら街を一望できるが……。
+            
+      </p>
+      </div>
+      <div class="mem3 left">
+      <span>三盆糖 ざらめ</span>
+      <p>
+      
+            「……ふぅん。……そうねぇ……」
+      </p>
+      </div>
+      <div class="mem3 left">
+      <span>三盆糖 ざらめ</span>
+      <p>
+      
+            人脈で雇い主の秘密調べる
+      </p>
+      </div>
+      <div class="mem3 left">
+      <span>三盆糖 ざらめ</span>
+      <p>
+      
+            2D6&gt;=5 （判定：人脈） (2D6&gt;=5) ＞ 7[1,6] ＞ 7 ＞ 成功
+            
+      </p>
+      </div>
+      <div class="mem7 left">
+      <span>秘密</span>
+      <p>
+      
+            八咫 鏡華：秘密<br>プライズが狙われている事を知り、PC2を囮として自身でプライズを運ぶ事を選んだ。<br>シノビの事を道具と思い、自分自身も道具と思い込むことで事をなしている。<br>そして、仕事を遂行するためには悪逆非道なことを平気で行う。<br>本物のプライズ「八尺瓊勾玉」を所持している。<br>貴方の本当の使命は「プライズを確保しておく」ことである。<br><br>彼女は絶対に人を信用しない、信頼しない。<br>自分の事すら信用も信頼もしてない。
+      </p>
+      </div>
+      <div class="mem3 left">
+      <span>三盆糖 ざらめ</span>
+      <p>
+      
+            「……へぇ。なるほどね」
+      </p>
+      </div>
+      <div class="mem3 left">
+      <span>三盆糖 ざらめ</span>
+      <p>
+      
+            「こいつを……うん。わかった！」
+      </p>
+      </div>
+      <div class="kp">
+      
+            シーン終了
+      </div>
+      <div class="kp">
+      
+            1サイクル目終了
+      </div>
+      <div class="kp">
+      ――――――――――――――――――――――――
+            
+      </div>
+      <div class="kp">
+      
+            2サイクル目
+      </div>
+      <div class="kp">
+      
+            登場人物：三盆糖 ざらめ、駒場 駆
+      </div>
+      <div class="mem3 left">
+      <span>三盆糖 ざらめ</span>
+      <p>
+      
+            ｓｔ シーン表(9) ＞ 強い雨が降り出す。人々は、軒を求めて、大慌てて駆けだしていく。
+            
+      </p>
+      </div>
+      <div class="mem3 left">
+      <span>三盆糖 ざらめ</span>
+      <p>
+      
+            「駒場くん。ちょっと教えときたいことがあるんだけど、いい？」
+      </p>
+      </div>
+      <div class="mem1 left">
+      <span>駒場 駆</span>
+      <p>
+      
+            「？ なんっすか？」<br>傘持ってきた！
+      </p>
+      </div>
+      <div class="mem3 left">
+      <span>三盆糖 ざらめ</span>
+      <p>
+      
+            「えっとね、ちょっと情報を得てね……傘ありがと」
+      </p>
+      </div>
+      <div class="mem8 right">
+      <span>KP </span>
+      <p>
+      
+            駒場君。そんな時に貴方にメールが届く。
+      </p>
+      </div>
+      <div class="mem8 right">
+      <span>KP </span>
+      <p>
+      
+            「その情報を受け取るな」
+      </p>
+      </div>
+      <div class="mem8 right">
+      <span>KP </span>
+      <p>
+      
+            と
+      </p>
+      </div>
+      <div class="mem8 right">
+      <span>KP </span>
+      <p>
+      
+            背景人質のセッションに一度だけの指示を出すぜ
+      </p>
+      </div>
+      <div class="mem3 left">
+      <span>三盆糖 ざらめ</span>
+      <p>
+      
+            調査術で駒場くん調べる
+      </p>
+      </div>
+      <div class="mem3 left">
+      <span>三盆糖 ざらめ</span>
+      <p>
+      
+            2D6&gt;=5 （判定：調査術） (2D6&gt;=5) ＞ 9[4,5] ＞ 9 ＞ 成功
+            
+      </p>
+      </div>
+      <div class="mem7 left">
+      <span>秘密</span>
+      <p>
+      
+            PC3：秘密<br>推奨背景：弱点・人質<br>貴方はとある人物に家族を人質に取られてる。<br>そのものからプライズを守るように指示されている。<br>貴方の本当の使命は「プライズ「八尺瓊勾玉」を誰の手にも渡らせないこと」である。<br>なお、とある人物の秘密を知ると使命が追加される。
+      </p>
+      </div>
+      <div class="mem1 left">
+      <span>駒場 駆</span>
+      <p>
+      
+            秘密を聞く前に立ち去ることはできる？<br>
+      </p>
+      </div>
+      <div class="kp">
+      
+            いいですよ
+      </div>
+      <div class="mem1 left">
+      <span>駒場 駆</span>
+      <p>
+      
+            ありがとう！
+      </p>
+      </div>
+      <div class="kp">
+      
+            今回は話が聞けないってことで
+      </div>
+      <div class="mem3 left">
+      <span>三盆糖 ざらめ</span>
+      <p>
+      
+            これは駒場くんにもう一つ調べられる情報ができたってこと？
+      </p>
+      </div>
+      <div class="kp">
+      
+            いや、駒場くんがある情報を知った時に、新しい使命が追加される
+      </div>
+      <div class="mem1 left">
+      <span>駒場 駆</span>
+      <p>
+      
+            「あー……ごめんなさいざらめさんっ！」<br>急いで雇い主情報を駒聞かずに逃げます
+      </p>
+      </div>
+      <div class="mem1 left">
+      <span>駒場 駆</span>
+      <p>
+      
+            残念！
+      </p>
+      </div>
+      <div class="kp">
+      
+            情報の受け渡しは拒否されました。
+      </div>
+      <div class="mem3 left">
+      <span>三盆糖 ざらめ</span>
+      <p>
+      
+            「……ふぅん。そうね……知っておいてもいいと思ったんだけど」
+      </p>
+      </div>
+      <div class="kp">
+      
+            だから、調べるのはこれだけですね
+      </div>
+      <div class="mem3 left">
+      <span>三盆糖 ざらめ</span>
+      <p>
+      
+            もし情報が渡ってたら追加されたかもしれないってことかな
+      </p>
+      </div>
+      <div class="kp">
+      
+            そういうことですかね
+      </div>
+      <div class="mem3 left">
+      <span>三盆糖 ざらめ</span>
+      <p>
+      
+            「……まぁしょうがないか、どうにかしようね」
+      </p>
+      </div>
+      <div class="kp">
+      
+            シーン終了
+      </div>
+      <div class="kp">
+      
+            登場人物：瑞香
+      </div>
+      <div class="mem2 right">
+      <span>瑞香</span>
+      <p>
+      
+            st シーン表(5) ＞ 世界の終わりのような暗黒。暗闇の中、お前達は密やかに囁く。
+            
+      </p>
+      </div>
+      <div class="mem2 right">
+      <span>瑞香</span>
+      <p>
+      
+            もう一回調査術で雇い主調べたい
+      </p>
+      </div>
+      <div class="kp">
+      
+            どうぞん
+      </div>
+      <div class="mem2 right">
+      <span>瑞香</span>
+      <p>
+      
+            2D6&gt;=5 （判定：調査術） (2D6&gt;=5) ＞ 7[1,6] ＞ 7 ＞ 成功
+            
+      </p>
+      </div>
+      <div class="mem2 right">
+      <span>瑞香</span>
+      <p>
+      
+            「なるほど…まぁ、だよな」
+      </p>
+      </div>
+      <div class="mem2 right">
+      <span>瑞香</span>
+      <p>
+      
+            「こっち側は、これが普通だ」
+      </p>
+      </div>
+      <div class="kp">
+      
+            シーン終了
+      </div>
+      <div class="kp">
+      
+            登場人物：駒場 駆
+      </div>
+      <div class="mem1 left">
+      <span>駒場 駆</span>
+      <p>
+      
+            st シーン表(4) ＞ 眼下に広がる街並みを眺める。ここからなら街を一望できるが……。
+            
+      </p>
+      </div>
+      <div class="mem1 left">
+      <span>駒場 駆</span>
+      <p>
+      
+            プライズを 調査術で調べます！
+      </p>
+      </div>
+      <div class="mem1 left">
+      <span>駒場 駆</span>
+      <p>
+      
+            奥義！！
+      </p>
+      </div>
+      <div class="mem1 left">
+      <span>駒場 駆</span>
+      <p>
+      
+            ■奥義<br>《あのときとは違うんすよ！》<br>指定特技　：縄術<br>エフェクト：完全成功<br>効果・演出：あのときとは違うんすよ！<br><br>前回の出来事があまりにも悔しかった駆。<br>あれから毎日暇さえあれば縄使いの鍛錬を重ね、ご飯をよく食べ、ぐっすり眠ることで 絶対的な縄使いを極めたのだ！
+      </p>
+      </div>
+      <div class="kp">
+      
+            八尺瓊勾玉：秘密<br>忍神の神器の欠片という噂がされている。<br>このプライズと合わせてとある二つの神器が必要とされるらしいが、現在は情報が欠落している。<br>また単体だけでも強力な力を持っており、力を求めてシノビ達が狙う。
+      </div>
+      <div class="kp">
+      
+            感情共有でざらめちゃんに
+      </div>
+      <div class="kp">
+      
+            続編作ってシノビガミになってもいいのよ
+      </div>
+      <div class="mem3 left">
+      <span>三盆糖 ざらめ</span>
+      <p>
+      
+            ふぇ
+      </p>
+      </div>
+      <div class="mem1 left">
+      <span>駒場 駆</span>
+      <p>
+      
+            「やっぱ すごいヤツなんすね〜」
+      </p>
+      </div>
+      <div class="kp">
+      
+            シーン終了
+      </div>
+      <div class="kp">
+      
+            2サイクル目終了
+      </div>
+      <div class="kp">
+      
+            3サイクル目
+      </div>
+      <div class="kp">
+      
+            登場人物：瑞香、情報屋
+      </div>
+      <div class="mem2 right">
+      <span>瑞香</span>
+      <p>
+      
+            ｓｔ シーン表(8) ＞ 凄まじい人混み。喧噪。影の世界のことを知らない無邪気な人々の手柄話や無駄話が騒がしい。
+            
+      </p>
+      </div>
+      <div class="mem2 right">
+      <span>瑞香</span>
+      <p>
+      
+            「よぉ」
+      </p>
+      </div>
+      <div class="mem9 left">
+      <span>情報屋</span>
+      <p>
+      
+            「よぉ、旦那。らっしゃい」
+      </p>
+      </div>
+      <div class="mem2 right">
+      <span>瑞香</span>
+      <p>
+      
+            「今俺が受けてる任務についてなんかあるか」
+      </p>
+      </div>
+      <div class="mem9 left">
+      <span>情報屋</span>
+      <p>
+      
+            「そういや、旦那が前に潜入してた所のお嬢と使用人が旦那について調べてやしたぜ」
+      </p>
+      </div>
+      <div class="mem2 right">
+      <span>瑞香</span>
+      <p>
+      
+            「…まだつるんでんのかあそこ」
+      </p>
+      </div>
+      <div class="mem9 left">
+      <span>情報屋</span>
+      <p>
+      
+            「そうなんですかい？」
+      </p>
+      </div>
+
+      <div class="mem2 right">
+      <span>瑞香</span>
+      <p>
+      
+            「…前回慣れあってたみたいだからな。今回のアレ欲しがってんのか？」
+      </p>
+      </div>
+      <div class="kp">
+      
+        ちなみに、一回だけの発動だから次のターンで教えては出来るよ
+  </div>
+      <div class="mem1 left">
+      <span>駒場 駆</span>
+      <p>
+      
+            おっけ ありがとう！
+      </p>
+      </div>
+      <div class="mem9 left">
+      <span>情報屋</span>
+      <p>
+      
+            「あー、詳しくはわからんが、旦那が受けてる仕事のブツを調べてもいやしたぜ」
+      </p>
+      </div>
+      <div class="mem2 right">
+      <span>瑞香</span>
+      <p>
+      
+            「ふぅん。邪魔そうなら考えねぇとな…。わかった、もういい。報酬はいつものとこに」
+      </p>
+      </div>
+      <div class="mem9 left">
+      <span>情報屋</span>
+      <p>
+      
+            「お、さんきゅうな旦那。今後も御贔屓にー」
+      </p>
+      </div>
+      <div class="mem2 right">
+      <span>瑞香</span>
+      <p>
+      
+            調査術でざらめちゃんしらべます
+      </p>
+      </div>
+      <div class="mem2 right">
+      <span>瑞香</span>
+      <p>
+      
+            2D6&gt;=5 （判定：調査術） (2D6&gt;=5) ＞ 9[4,5] ＞ 9 ＞ 成功
+            
+      </p>
+      </div>
+      <div class="mem9 left">
+      <span>情報屋</span>
+      <p>
+      
+            三盆糖 ざらめ：秘密<br>実の所、家を守らなければと思ってはいるが復興の見込みが立っていない。<br>そんな所で、貴方はプライズ「八尺瓊勾玉（やさかにのまがたま）」の噂を聞く<br>何としてでもプライズが必要だ。<br>貴方の本当の使命は「プライズ「八尺瓊勾玉」の確保」である。
+      </p>
+      </div>
+      <div class="mem2 right">
+      <span>瑞香</span>
+      <p>
+      
+            「…へぇ」
+      </p>
+      </div>
+      <div class="kp">
+      
+            シーン終了
+      </div>
+      <div class="kp">
+      
+            登場人物：駒場 駆、三盆糖 ざらめ
+      </div>
+      <div class="mem1 left">
+      <span>駒場 駆</span>
+      <p>
+      
+            st シーン表(7) ＞ 清廉な気配が漂う森の中。鳥の囀りや、そよ風が樹々を通り過ぎる音が聞こえる。
+            
+      </p>
+      </div>
+      <div class="mem1 left">
+      <span>駒場 駆</span>
+      <p>
+      
+            「ざらめさんーっ この前はすみませんでしたーっ！<br>やっぱ教えてくれないっすか 前のことーっ！」<br>泣きつきます
+      </p>
+      </div>
+      <div class="mem3 left">
+      <span>三盆糖 ざらめ</span>
+      <p>
+      
+            「えーどーしよっかなーっ」
+      </p>
+      </div>
+      <div class="mem1 left">
+      <span>駒場 駆</span>
+      <p>
+      
+            「僕 あれからずっと気になってるんすよー！<br>気になりすぎて ご飯も2杯しか食べられないっすー！」
+      </p>
+      </div>
+      <div class="mem3 left">
+      <span>三盆糖 ざらめ</span>
+      <p>
+      
+            「うーんいっぱい食べるな―。しょうがないなぁ、いいよー」
+      </p>
+      </div>
+      <div class="mem1 left">
+      <span>駒場 駆</span>
+      <p>
+      
+            「やった！あざっす!!」
+      </p>
+      </div>
+      <div class="mem3 left">
+      <span>三盆糖 ざらめ</span>
+      <p>
+      
+            「じゃあ代わりに忍具ちょうだーい」
+      </p>
+      </div>
+      <div class="mem3 left">
+      <span>三盆糖 ざらめ</span>
+      <p>
+      
+            雇い主の情報を駒場くんにあげて忍具もらう
+      </p>
+      </div>
+      <div class="mem1 left">
+      <span>駒場 駆</span>
+      <p>
+      
+            「えぇ…… これ おいしくないっすよ……？<br>腹持ちは抜群っすけどぉ……」<br>しわしわの顔で忍具を渡します
+      </p>
+      </div>
+      <div class="mem10 right">
+      <span>system</span>
+      <p>
+      
+            [ 駒場 駆 ] 忍具 : 3 → 2
+      </p>
+      </div>
+      <div class="mem10 right">
+      <span>system</span>
+      <p>
+      
+            [ 三盆糖 ざらめ ] 忍具 : 2 → 3
+      </p>
+      </div>
+      <div class="mem7 left">
+        <span>秘密</span>
+        <p>
+        
+        PC3 駒場 駆<br>変更後の使命：<br>貴方は人質にしているであろう犯人――八咫鏡華の存在を知った。<br>素直に指示に従うのが一番人質が助かる方法だが、大本を断つのならそれもありだと感じる。<br>貴方は本当の使命を「八咫鏡華を自身の手で戦闘脱落にする」ことに変更することが可能である。<br>変更しない場合は秘密が本当の使命となる。
+        </p>
+        </div>
+      <div class="mem1 left">
+      <span>駒場 駆</span>
+      <p>
+      
+            雇い主を ぶっ殺します!!!!
+      </p>
+      </div>
+      <div class="kp">
+      
+            はい
+      </div>
+      <div class="mem3 left">
+      <span>三盆糖 ざらめ</span>
+      <p>
+      
+            「ありがとー。ふんふん……大変だったねぇ」
+      </p>
+      </div>
+      <div class="mem1 left">
+      <span>駒場 駆</span>
+      <p>
+      
+            「ほんと 申し訳ないっす…<br>ついでにこの子たち モフるっすか？」<br><br>鳥獣術を用いて ざらめさんの秘密を雑に探ろうか
+      </p>
+      </div>
+      <div class="kp">
+      
+            どうぞ
+      </div>
+      <div class="mem1 left">
+      <span>駒場 駆</span>
+      <p>
+      
+            2D6&gt;=7 （判定：兵糧術） (2D6&gt;=7) ＞ 4[1,3] ＞ 4 ＞ 失敗
+            
+      </p>
+      </div>
+      <div class="mem1 left">
+      <span>駒場 駆</span>
+      <p>
+      
+            「……遠いっす。」
+      </p>
+      </div>
+      <div class="mem3 left">
+      <span>三盆糖 ざらめ</span>
+      <p>
+      
+            「もふもふ～」
+      </p>
+      </div>
+      <div class="mem1 left">
+      <span>駒場 駆</span>
+      <p>
+      
+            「とにかく あざっした！<br>これで腹が決まったっす！」<br>やる気に満ちてます。
+      </p>
+      </div>
+      <div class="kp">
+      
+            シーン終了
+      </div>
+      <div class="kp">
+      
+            登場人物：三盆糖 ざらめ、瑞香
+      </div>
+      <div class="mem3 left">
+      <span>三盆糖 ざらめ</span>
+      <p>
+      
+            ｓｔ シーン表(8) ＞ 凄まじい人混み。喧噪。影の世界のことを知らない無邪気な人々の手柄話や無駄話が騒がしい。
+            
+      </p>
+      </div>
+      <div class="mem3 left">
+      <span>三盆糖 ざらめ</span>
+      <p>
+      
+            「……瑞香さん、でいいのかしら。今は」
+      </p>
+      </div>
+      <div class="mem2 right">
+      <span>瑞香</span>
+      <p>
+      
+            「お嬢様がなんの御用で？ご依頼でも？」
+      </p>
+      </div>
+      <div class="mem3 left">
+      <span>三盆糖 ざらめ</span>
+      <p>
+      
+            「あら、喧嘩っ早いのね。あなたにも損ではない情報を持ってきてあげたのに」
+      </p>
+      </div>
+      <div class="mem2 right">
+      <span>瑞香</span>
+      <p>
+      
+            「売れるものはなんでも取り扱ってるものでね。…情報とは？」
+      </p>
+      </div>
+      <div class="mem3 left">
+      <span>三盆糖 ざらめ</span>
+      <p>
+      
+            「うちの優秀な部下の情報。いるかしら？」
+      </p>
+      </div>
+      <div class="mem2 right">
+      <span>瑞香</span>
+      <p>
+      
+            「…へぇ？いいんですか？ダイジなお仲間なんでしょう？」
+      </p>
+      </div>
+      <div class="mem3 left">
+      <span>三盆糖 ざらめ</span>
+      <p>
+      
+            「言ったでしょ、あなたに損な情報じゃないって。あなたに知られることは、あの子にとっても損じゃないのよ。……気持ちの上では渡したくないかもしれないけどね」
+      </p>
+      </div>
+      <div class="mem2 right">
+      <span>瑞香</span>
+      <p>
+      
+            「…なんだよそれ。本当に理解できないな。…で？いくらだ」
+      </p>
+      </div>
+      <div class="mem3 left">
+      <span>三盆糖 ざらめ</span>
+      <p>
+      
+            「知ればわかるわ。戦力は多い方がいいでしょ。……まぁいいわ、今回はただで。つけね」
+      </p>
+      </div>
+      <div class="mem3 left">
+      <span>三盆糖 ざらめ</span>
+      <p>
+      
+            瑞香さんに駒場くんの情報渡す
+      </p>
+      </div>
+      <div class="mem2 right">
+      <span>瑞香</span>
+      <p>
+      
+            「ただより高いものはないってしらないのか？お嬢サマは。…はやめに返す」
+      </p>
+      </div>
+      <div class="mem3 left">
+      <span>三盆糖 ざらめ</span>
+      <p>
+      
+            「義理堅いことね。こっちにも損はないもの」
+      </p>
+      </div>
+      <div class="mem2 right">
+      <span>瑞香</span>
+      <p>
+      
+            「…は？」
+      </p>
+      </div>
+      <div class="mem3 left">
+      <span>三盆糖 ざらめ</span>
+      <p>
+      
+            「言ったでしょ、あなたにもあの子にも損はないって」
+      </p>
+      </div>
+      <div class="mem2 right">
+      <span>瑞香</span>
+      <p>
+      
+            「…ほんっと…だからさっさと足あらっとけばよかったんだ」
+      </p>
+      </div>
+      <div class="mem2 right">
+      <span>瑞香</span>
+      <p>
+      
+            「…あんたは、あいつの…いや、いい。礼は言わないからな」
+      </p>
+      </div>
+      <div class="mem3 left">
+      <span>三盆糖 ざらめ</span>
+      <p>
+      
+            「なによ。しょうがないでしょう、簡単に足が洗えたら苦労しないわ」
+      </p>
+      </div>
+      <div class="mem2 right">
+      <span>瑞香</span>
+      <p>
+      
+            「…あいつなら、まだ浅かっただろ。」
+      </p>
+      </div>
+      <div class="mem3 left">
+      <span>三盆糖 ざらめ</span>
+      <p>
+      
+            「それはどうかしらね。あの子になんかしたら……こうだから！」手を取ってぎゅううします
+      </p>
+      </div>
+      <div class="mem3 left">
+      <span>三盆糖 ざらめ</span>
+      <p>
+      
+            2D6&gt;=5 （判定：怪力） (2D6&gt;=5) ＞ 6[1,5] ＞ 6 ＞ 成功
+            
+      </p>
+      </div>
+      <div class="mem2 right">
+      <span>瑞香</span>
+      <p>
+      
+            「いっってぇ！はなせ怪力女！！！！」
+      </p>
+      </div>
+      <div class="mem3 left">
+      <span>三盆糖 ざらめ</span>
+      <p>
+      
+            et 感情表(5) ＞ 憧憬（プラス）／劣等感（マイナス）
+            
+      </p>
+      </div>
+      <div class="mem2 right">
+      <span>瑞香</span>
+      <p>
+      
+            et 感情表(6) ＞ 狂信（プラス）／殺意（マイナス）
+            
+      </p>
+      </div>
+      <div class="mem3 left">
+      <span>三盆糖 ざらめ</span>
+      <p>
+      
+            「いいわねぇフリーは気楽で……」プラスの憧憬で
+      </p>
+      </div>
+      <div class="mem2 right">
+      <span>瑞香</span>
+      <p>
+      
+            狂信で
+      </p>
+      </div>
+      <div class="mem2 right">
+      <span>瑞香</span>
+      <p>
+      
+            「もってるやつは弱点が増えるだけだろ。あいつも……あんたも」
+      </p>
+      </div>
+      <div class="mem3 left">
+      <span>三盆糖 ざらめ</span>
+      <p>
+      
+            「そう？考え方の問題よ、きっと」
+      </p>
+      </div>
+      <div class="mem2 right">
+      <span>瑞香</span>
+      <p>
+      
+            「…ふん」
+      </p>
+      </div>
+      <div class="kp">
+      
+            シーン終了
+      </div>
+      <div class="kp">
+      
+            3サイクル目終了
+      </div>
+      <div class="kp">
+      ――――――――――――――――――――――――
+            
+      </div>
+      <div class="kp">
+      
+            クライマックスフェイズ
+      </div>
+      <div class="kp">
+      
+            ST シーン表(5) ＞ 世界の終わりのような暗黒。暗闇の中、お前達は密やかに囁く。
+            
+      </div>
+      <div class="kp">
+      
+            暗闇の中、一人の女が歩いている。
+      </div>
+      <div class="kp">
+      
+            その背後には貴方達の姿があった。
+      </div>
+      <div class="kp">
+      
+            女は立ち止まり、振り返らずに口を開く。
+      </div>
+      <div class="mem11 left">
+      <span>八咫 鏡華</span>
+      <p>
+      
+            「なんのつもりだ？」
+      </p>
+      </div>
+      <div class="mem2 right">
+      <span>瑞香</span>
+      <p>
+      
+            「俺は任務を達成したいだけですよ」
+      </p>
+      </div>
+      <div class="mem1 left">
+      <span>駒場 駆</span>
+      <p>
+      
+            「僕も 仕事をしにきたっす！」
+      </p>
+      </div>
+      <div class="mem11 left">
+      <span>八咫 鏡華</span>
+      <p>
+      
+            「瑞香、お前は私とは別で動いてるはずだろう」
+      </p>
+      </div>
+      <div class="mem11 left">
+      <span>八咫 鏡華</span>
+      <p>
+      
+            「それに、二人は……何用だ」
+      </p>
+      </div>
+      <div class="mem1 left">
+      <span>駒場 駆</span>
+      <p>
+      
+            「ぶっ殺しにきたっす！」
+      </p>
+      </div>
+      <div class="mem2 right">
+      <span>瑞香</span>
+      <p>
+      
+            「俺の任務は八尺瓊勾玉の護送。でしたよね？あなたが持っているらしいので、受け取りに」
+      </p>
+      </div>
+      <div class="mem11 left">
+      <span>八咫 鏡華</span>
+      <p>
+      
+            「貴様……”アレ”がどうなってもいいのか」
+      </p>
+      </div>
+      <div class="mem3 left">
+      <span>三盆糖 ざらめ</span>
+      <p>
+      
+            「あなたの持ってるもの、もらおうと思って」
+      </p>
+      </div>
+      <div class="mem11 left">
+      <span>八咫 鏡華</span>
+      <p>
+      
+            「そうか、そうか。貴様ら全員、私の邪魔をするということか」
+      </p>
+      </div>
+      <div class="mem11 left">
+      <span>八咫 鏡華</span>
+      <p>
+      
+            「退けと言ったら、退くか？」
+      </p>
+      </div>
+      <div class="mem11 left">
+      <span>八咫 鏡華</span>
+      <p>
+      
+            「否、退かぬからおるのであろう」
+      </p>
+      </div>
+      <div class="mem3 left">
+      <span>三盆糖 ざらめ</span>
+      <p>
+      
+            「そりゃそうよ。でなきゃあんたなんかと対峙してない」
+      </p>
+      </div>
+      <div class="mem11 left">
+      <span>八咫 鏡華</span>
+      <p>
+      
+            「そうか、そうか」
+      </p>
+      </div>
+      <div class="mem11 left">
+      <span>八咫 鏡華</span>
+      <p>
+      
+            「――退け、人間。私の手を煩わせるなよ」
+      </p>
+      </div>
+      <div class="kp">
+      
+            戦闘開始
+      </div>
+      <div class="kp">
+      
+            1ラウンド目
+            
+      </div>
+      <div class="kp">
+      
+            プロットオープン
+      </div>
+      <div class="mem10 right">
+      <span>system</span>
+      <p>
+      
+            [ 瑞香(瑪瑙) ] がダイスシンボルを公開。出目は 6 です。
+      </p>
+      </div>
+      <div class="mem10 right">
+      <span>system</span>
+      <p>
+      
+            [ 駒場 駆 ] がダイスシンボルを公開。出目は 4 です。
+      </p>
+      </div>
+      <div class="mem10 right">
+      <span>system</span>
+      <p>
+      
+            [ 八咫 鏡華 ] がダイスシンボルを公開。出目は 5 です。
+      </p>
+      </div>
+      <div class="mem10 right">
+      <span>system</span>
+      <p>
+      
+            [ 三盆糖 ざらめ ] がダイスシンボルを公開。出目は 3 です。
+      </p>
+      </div>
+      <div class="mem2 right">
+      <span>瑞香</span>
+      <p>
+      
+            春香を以下全員に痛打いれずに
+      </p>
+      </div>
+      <div class="mem2 right">
+      <span>瑞香</span>
+      <p>
+      
+            2D6&gt;=5 （判定：香術） (2D6&gt;=5) ＞ 12[6,6] ＞ 12 ＞ スペシャル(【生命力】1点か変調一つを回復)
+            
+      </p>
+      </div>
+      <div class="mem2 right">
+      <span>瑞香</span>
+      <p>
+      
+            1ｄ6 (1D6) ＞ 4
+            
+      </p>
+      </div>
+      <div class="mem2 right">
+      <span>瑞香</span>
+      <p>
+      
+            「死にたくなけりゃ死ぬ気でよけろよ」射撃ダメージ
+      </p>
+      </div>
+      <div class="mem11 left">
+      <span>八咫 鏡華</span>
+      <p>
+      
+            2D6&gt;=8 （判定：遊芸） (2D6&gt;=8) ＞ 8[4,4] ＞ 8 ＞ 成功
+            
+      </p>
+      </div>
+      <div class="mem3 left">
+      <span>三盆糖 ざらめ</span>
+      <p>
+      
+            2D6&gt;=6 （判定：変装術） (2D6&gt;=6) ＞ 2[1,1] ＞ 2 ＞ ファンブル
+            
+      </p>
+      </div>
+      <div class="mem1 left">
+      <span>駒場 駆</span>
+      <p>
+      
+            2D6&gt;=6 （判定：分身の術） (2D6&gt;=6) ＞ 6[2,4] ＞ 6 ＞ 成功
+            
+      </p>
+      </div>
+      <div class="mem10 right">
+      <span>system</span>
+      <p>
+      
+            [ 三盆糖 ざらめ ] 妖術 : 1 → 0
+      </p>
+      </div>
+      <div class="mem10 right">
+      <span>system</span>
+      <p>
+      
+            [ 三盆糖 ざらめ ] 戦術 : 1 → 0
+      </p>
+      </div>
+      <div class="mem10 right">
+      <span>system</span>
+      <p>
+      
+            [ 三盆糖 ざらめ ] 謀術 : 1 → 0
+      </p>
+      </div>
+      <div class="mem1 left">
+      <span>駒場 駆</span>
+      <p>
+      
+            「ｱｯ 相変わらずっすね ミステリおじさんは！！」
+      </p>
+      </div>
+      <div class="mem11 left">
+      <span>八咫 鏡華</span>
+      <p>
+      
+            武極を瑞香に
+      </p>
+      </div>
+      <div class="mem2 right">
+      <span>瑞香</span>
+      <p>
+      
+            「・・・それ俺の事じゃねえよな？」
+      </p>
+      </div>
+      <div class="mem3 left">
+      <span>三盆糖 ざらめ</span>
+      <p>
+      
+            「いったいなぁ！あんたの照準くるってるんじゃないの！？」
+      </p>
+      </div>
+      <div class="mem11 left">
+      <span>八咫 鏡華</span>
+      <p>
+      
+            2D6&gt;=5 （判定：野戦術） (2D6&gt;=5) ＞ 5[1,4] ＞ 5 ＞ 成功
+            
+      </p>
+      </div>
+      <div class="mem2 right">
+      <span>瑞香</span>
+      <p>
+      
+            「おっせぇのが悪いんだろ。言ったろ死ぬ気でよけろって」
+      </p>
+      </div>
+      <div class="mem3 left">
+      <span>三盆糖 ざらめ</span>
+      <p>
+      
+            「あんたのそういうとこよ！借り返すって言ったのに！」
+      </p>
+      </div>
+      <div class="mem2 right">
+      <span>瑞香</span>
+      <p>
+      
+            2D6&gt;=8 （判定：調査術） (2D6&gt;=8) ＞ 11[5,6] ＞ 11 ＞ 成功
+            
+      </p>
+      </div>
+      <div class="mem11 left">
+      <span>八咫 鏡華</span>
+      <p>
+      
+            「流石にこの程度ではよけられるか」
+      </p>
+      </div>
+      <div class="mem2 right">
+      <span>瑞香</span>
+      <p>
+      
+            「いつ返すかはなんも言ってなかったろ！あのあとしばらく手はれたんだよ！」
+      </p>
+      </div>
+      <div class="mem1 left">
+      <span>駒場 駆</span>
+      <p>
+      
+            「（借りとは）」
+      </p>
+      </div>
+      <div class="mem1 left">
+      <span>駒場 駆</span>
+      <p>
+      
+            鎖陣を鏡華さんに！
+      </p>
+      </div>
+      <div class="mem1 left">
+      <span>駒場 駆</span>
+      <p>
+      
+            2D6&gt;=5 （判定：縄術） (2D6&gt;=5) ＞ 6[3,3] ＞ 6 ＞ 成功
+            
+      </p>
+      </div>
+      <div class="mem11 left">
+      <span>八咫 鏡華</span>
+      <p>
+      
+            SG@12#5&gt;=8 （判定：針術） (SG@12#5&gt;=8) ＞ 7[2,5] ＞ 7 ＞ 失敗
+            
+      </p>
+      </div>
+      <div class="mem10 right">
+      <span>system</span>
+      <p>
+      
+            [ 八咫 鏡華 ] 生命力 : 8 → 7
+      </p>
+      </div>
+      <div class="mem1 left">
+      <span>駒場 駆</span>
+      <p>
+      
+            「返せ！そのあとくたばれ！」
+      </p>
+      </div>
+      <div class="mem11 left">
+      <span>八咫 鏡華</span>
+      <p>
+      
+            「くそがっ」
+      </p>
+      </div>
+            <div class="mem3 left">
+      <span>三盆糖 ざらめ</span>
+      <p>
+      
+            奥義！！
+      </p>
+      </div>
+      <div class="mem3 left">
+      <span>三盆糖 ざらめ</span>
+      <p>
+      
+            ■奥義<br>《方寸銃撃》<br>指定特技　：砲術<br>エフェクト：範囲攻撃/撃ち/人数限定<br>効果・演出：「方寸」とは、文字通り一寸四方を表すが、古くは人のこころは心の臓一寸に宿るとして「こころ」の意も秘める。<br>その銃撃は、選ばれたもののみが扱える重厚さでもって、野にかくれた君子のような枯淡な風格で、周囲の心臓を残らず撃ち抜く。<br><br>鏡華さんに
+      </p>
+      </div>
+      <div class="mem11 left">
+      <span>八咫 鏡華</span>
+      <p>
+      
+            奥義！！
+      </p>
+      </div>
+      <div class="mem11 left">
+      <span>八咫 鏡華</span>
+      <p>
+      
+            《真経津鏡（まふつの かがみ）》<br>指定特技　：結界術<br>エフェクト：絶対防御/くらまし/防御低下<br>効果・演出：八咫ほどの神鏡が舞いだし、相手の攻撃を吸収する。<br><br>鏡華の周りを飛び回る神鏡。それはどれほど神々しいものか…
+      </p>
+      </div>
+      <div class="kp">
+      
+            では、1ラウンド目終了
+      </div>
+      <div class="mem11 left">
+        <span>八咫 鏡華</span>
+        <p>
+        
+              誘導を発動します
+        </p>
+        </div>
+        <div class="mem11 left">
+        <span>八咫 鏡華</span>
+        <p>
+        
+              SG@12#5&gt;=5 （判定：遊芸） (SG@12#5&gt;=5) ＞ 12[6,6] ＞ 12 ＞ スペシャル(【生命力】1点か変調一つを回復)
+              
+        </p>
+        </div>
+        <div class="mem10 right">
+        <span>system</span>
+        <p>
+        
+              [ 八咫 鏡華 ] 生命力 : 7 → 8
+        </p>
+        </div>
+        <div class="mem11 left">
+        <span>八咫 鏡華</span>
+        <p>
+        
+              高所を選択します
+        </p>
+        </div>
+        <div class="mem11 left">
+        <span>八咫 鏡華</span>
+        <p>
+        
+              「ここからは我が範囲」
+        </p>
+        </div>
+      <div class="kp">
+      
+            2ラウンド目
+      </div>
+      <div class="mem3 left">
+      <span>三盆糖 ざらめ</span>
+      <p>
+      
+            兵糧丸一個食べます
+      </p>
+      </div>
+      <div class="mem10 right">
+      <span>system</span>
+      <p>
+      
+            [ 三盆糖 ざらめ ] 忍具 : 3 → 2
+      </p>
+      </div>
+      <div class="mem10 right">
+      <span>system</span>
+      <p>
+      
+            [ 三盆糖 ざらめ ] 忍術 : 0 → 1
+      </p>
+      </div>
+      <div class="mem2 right">
+      <span>瑞香</span>
+      <p>
+      
+            鬼灯をつかいます
+      </p>
+      </div>
+      <div class="mem2 right">
+      <span>瑞香</span>
+      <p>
+      
+            2D6&gt;=5 （判定：火術） (2D6&gt;=5) ＞ 9[3,6] ＞ 9 ＞ 成功
+            
+      </p>
+      </div>
+      <div class="kp">
+      
+            プロットオープン
+      </div>
+      <div class="mem10 right">
+      <span>system</span>
+      <p>
+      
+            [ 駒場 駆 ] がダイスシンボルを公開。出目は 4 です。
+      </p>
+      </div>
+      <div class="mem10 right">
+      <span>system</span>
+      <p>
+      
+            [ 瑞香(瑪瑙) ] がダイスシンボルを公開。出目は 6 です。
+      </p>
+      </div>
+      <div class="mem10 right">
+      <span>system</span>
+      <p>
+      
+            [ 三盆糖 ざらめ ] がダイスシンボルを公開。出目は 3 です。
+      </p>
+      </div>
+      <div class="mem10 right">
+      <span>system</span>
+      <p>
+      
+            [ 八咫 鏡華 ] がダイスシンボルを公開。出目は 4 です。
+      </p>
+      </div>
+      <div class="mem10 right">
+      <span>system</span>
+      <p>
+      
+            [ 瑞香(瑪瑙) ] がダイスシンボルを公開。出目は 5 です。
+      </p>
+      </div>
+      <div class="kp">
+      
+            鬼灯：5
+      </div>
+      <div class="kp">
+      
+            6の人から
+      </div>
+      <div class="mem2 right">
+      <span>瑞香</span>
+      <p>
+      
+            奥義！！
+      </p>
+      </div>
+      <div class="mem2 right">
+      <span>瑞香</span>
+      <p>
+      
+            ■奥義<br>《地獄変相》<br>指定特技　：火術<br>エフェクト：範囲攻撃/乱れ/人数制限<br>効果・演出：己の周りに火を放つ。草も華も巻き込み燃え盛る場、それはまるで地獄のように。<br> 
+      </p>
+      </div>
+      <div class="mem2 right">
+      <span>瑞香</span>
+      <p>
+      
+            できょうかさん狙い
+      </p>
+      </div>
+      <div class="mem11 left">
+      <span>八咫 鏡華</span>
+      <p>
+      
+            「くっ」<br>受けます
+      </p>
+      </div>
+      <div class="mem10 right">
+      <span>system</span>
+      <p>
+      
+            [ 八咫 鏡華 ] 生命力 : 8 → 6
+      </p>
+      </div>
+      <div class="mem2 right">
+      <span>瑞香</span>
+      <p>
+      
+            ｗｔ 変調表(4) ＞ 行方不明:メインフェイズ中、自分以外がシーンプレイヤーのシーンに登場することができなくなる。この効果は累積しない。各サイクルの終了時に、《経済力》で行為判定を行い、成功するとこの変調は無効化される。
+            
+      </p>
+      </div>
+      <div class="mem1 left">
+      <span>駒場 駆</span>
+      <p>
+      
+            鎖陣を鏡華さんに！
+      </p>
+      </div>
+      <div class="mem1 left">
+      <span>駒場 駆</span>
+      <p>
+      
+            2D6&gt;=5 （判定：縄術） (2D6&gt;=5) ＞ 5[1,4] ＞ 5 ＞ 成功
+            
+      </p>
+      </div>
+      <div class="mem11 left">
+      <span>八咫 鏡華</span>
+      <p>
+      
+            SG@12#4-1&gt;=8 （判定：針術） (SG-1@12#4&gt;=8) ＞ 8[3,5]-1 ＞ 7 ＞ 失敗
+            
+      </p>
+      </div>
+      <div class="mem10 right">
+      <span>system</span>
+      <p>
+      
+            [ 八咫 鏡華 ] 生命力 : 6 → 5
+      </p>
+      </div>
+      <div class="mem11 left">
+      <span>八咫 鏡華</span>
+      <p>
+      
+            「くっ、足が…」
+      </p>
+      </div>
+      <div class="mem1 left">
+      <span>駒場 駆</span>
+      <p>
+      
+            「ザマミロっす！ばーか！ばーか！」
+      </p>
+      </div>
+      <div class="mem11 left">
+      <span>八咫 鏡華</span>
+      <p>
+      
+            「くそが！」
+      </p>
+      </div>
+      <div class="mem11 left">
+      <span>八咫 鏡華</span>
+      <p>
+      
+            奥義！！
+      </p>
+      </div>
+      <div class="mem11 left">
+      <span>八咫 鏡華</span>
+      <p>
+      
+            《八重垣剣（やえがきのつるぎ）》<br>指定特技　：刀術<br>エフェクト：範囲攻撃/伸ばし/回数制限<br>効果・演出：八つの刀が浮き出し、相手へと貫く。<br><br>鏡華の周りを浮遊する八つの刃。<br>それは、かつての伝説を思わせる刃だった。
+      </p>
+      </div>
+      <div class="mem11 left">
+      <span>八咫 鏡華</span>
+      <p>
+      
+            対象は全員
+      </p>
+      </div>
+      <div class="mem10 right">
+      <span>system</span>
+      <p>
+      
+            [ 瑞香(瑪瑙) ] 鍛錬 : 1 → 0
+      </p>
+      </div>
+      <div class="mem10 right">
+      <span>system</span>
+      <p>
+      
+            [ 駒場 駆 ] 鍛錬 : 1 → 0
+      </p>
+      </div>
+      <div class="mem10 right">
+      <span>system</span>
+      <p>
+      
+            [ 駒場 駆 ] 妖術 : 1 → 0
+      </p>
+      </div>
+      <div class="mem10 right">
+      <span>system</span>
+      <p>
+      
+            [ 瑞香(瑪瑙) ] 妖術 : 1 → 0
+      </p>
+      </div>
+      <div class="mem10 right">
+      <span>system</span>
+      <p>
+      
+            [ 三盆糖 ざらめ ] 忍術 : 1 → 0
+      </p>
+      </div>
+      <div class="mem10 right">
+      <span>system</span>
+      <p>
+      
+            [ 三盆糖 ざらめ ] 器術 : 1 → 0
+      </p>
+      </div>
+      <div class="mem3 left">
+      <span>三盆糖 ざらめ</span>
+      <p>
+      
+            兵糧丸二個たべます
+      </p>
+      </div>
+      <div class="mem10 right">
+      <span>system</span>
+      <p>
+      
+            [ 三盆糖 ざらめ ] 器術 : 0 → 1
+      </p>
+      </div>
+      <div class="mem10 right">
+      <span>system</span>
+      <p>
+      
+            [ 三盆糖 ざらめ ] 忍具 : 2 → 0
+      </p>
+      </div>
+      <div class="mem3 left">
+      <span>三盆糖 ざらめ</span>
+      <p>
+      
+            鏡華さんに雷火
+      </p>
+      </div>
+      <div class="mem3 left">
+      <span>三盆糖 ざらめ</span>
+      <p>
+      
+            2D6&gt;=5 （判定：砲術） (2D6&gt;=5) ＞ 5[1,4] ＞ 5 ＞ 成功
+            
+      </p>
+      </div>
+      <div class="mem11 left">
+      <span>八咫 鏡華</span>
+      <p>
+      
+            奥義！！
+      </p>
+      </div>
+      <div class="mem11 left">
+      <span>八咫 鏡華</span>
+      <p>
+      
+            《真経津鏡（まふつの かがみ）》<br>指定特技　：結界術<br>エフェクト：絶対防御/くらまし/防御低下<br>効果・演出：八咫ほどの神鏡が舞いだし、相手の攻撃を吸収する。<br><br>鏡華の周りを飛び回る神鏡。それはどれほど神々しいものか…。
+      </p>
+      </div>
+      <div class="mem2 right">
+      <span>瑞香</span>
+      <p>
+      
+            奥義破りチャレンジ
+      </p>
+      </div>
+      <div class="mem2 right">
+      <span>瑞香</span>
+      <p>
+      
+            SG-2&gt;=9 （判定：調査術） (SG-2@12#2&gt;=9) ＞ 6[1,5]-2 ＞ 4 ＞ 失敗
+            
+      </p>
+      </div>
+      <div class="kp">
+      
+            瑞香くん逆凪
+      </div>
+      <div class="kp">
+      
+            高所ダメ1点
+      </div>
+      <div class="mem2 right">
+      <span>瑞香</span>
+      <p>
+      
+            1ｄ6 (1D6) ＞ 2
+            
+      </p>
+      </div>
+      <div class="mem10 right">
+      <span>system</span>
+      <p>
+      
+            [ 瑞香(瑪瑙) ] 体術 : 1 → 0
+      </p>
+      </div>
+      <div class="mem10 right">
+      <span>system</span>
+      <p>
+      
+            [ 瑞香(瑪瑙) ] 忍具 : 2 → 1
+      </p>
+      </div>
+      <div class="mem10 right">
+      <span>system</span>
+      <p>
+      
+            [ 瑞香(瑪瑙) ] 体術 : 0 → 1
+      </p>
+      </div>
+      <div class="mem1 left">
+      <span>駒場 駆</span>
+      <p>
+      
+            奥義破り！
+      </p>
+      </div>
+      <div class="mem1 left">
+      <span>駒場 駆</span>
+      <p>
+      
+            SG+0&gt;=8 （判定：火術） (SG@12-2&gt;=8) ＞ 8[2,6]-2 ＞ 6 ＞ 失敗
+            
+      </p>
+      </div>
+      <div class="kp">
+      
+            奥義は通りました
+      </div>
+      <div class="kp">
+      
+            2ラウンド目終了
+      </div>
+      <div class="kp">
+      
+            3サウンド目
+      </div>
+      <div class="kp">
+      
+            プロットオープン
+      </div>
+      <div class="mem10 right">
+      <span>system</span>
+      <p>
+      
+            [ 瑞香(瑪瑙) ] がダイスシンボルを公開。出目は 5 です。
+      </p>
+      </div>
+      <div class="mem10 right">
+      <span>system</span>
+      <p>
+      
+            [ 駒場 駆 ] がダイスシンボルを公開。出目は 4 です。
+      </p>
+      </div>
+      <div class="mem10 right">
+      <span>system</span>
+      <p>
+      
+            [ 八咫 鏡華 ] がダイスシンボルを公開。出目は 6 です。
+      </p>
+      </div>
+      <div class="mem10 right">
+      <span>system</span>
+      <p>
+      
+            [ 三盆糖 ざらめ ] がダイスシンボルを公開。出目は 3 です。
+      </p>
+      </div>
+      <div class="mem11 left">
+      <span>八咫 鏡華</span>
+      <p>
+      
+            武極でざらめちゃん
+      </p>
+      </div>
+      <div class="mem11 left">
+      <span>八咫 鏡華</span>
+      <p>
+      
+            SG@12#6&gt;=5 （判定：野戦術） (SG@12#6&gt;=5) ＞ 4[1,3] ＞ 4 ＞ ファンブル
+            
+      </p>
+      </div>
+      <div class="mem11 left">
+      <span>八咫 鏡華</span>
+      <p>
+      
+            神通丸
+      </p>
+      </div>
+      <div class="mem10 right">
+      <span>system</span>
+      <p>
+      
+            [ 八咫 鏡華 ] 忍具 : 2 → 1
+      </p>
+      </div>
+      <div class="mem11 left">
+      <span>八咫 鏡華</span>
+      <p>
+      
+            SG@12#6&gt;=5 （判定：野戦術） (SG@12#6&gt;=5) ＞ 6[1,5] ＞ 6 ＞ ファンブル
+            
+      </p>
+      </div>
+      <div class="mem2 right">
+      <span>瑞香</span>
+      <p>
+      
+            きょうかちゃんに痛打からの接近戦
+      </p>
+      </div>
+      <div class="mem2 right">
+      <span>瑞香</span>
+      <p>
+      
+            2D6&gt;=5 （判定：火術） (2D6&gt;=5) ＞ 5[2,3] ＞ 5 ＞ 成功
+            
+      </p>
+      </div>
+      <div class="mem2 right">
+      <span>瑞香</span>
+      <p>
+      
+            2D6&gt;=5 （判定：身体操術） (2D6&gt;=5) ＞ 8[4,4] ＞ 8 ＞ 成功
+            
+      </p>
+      </div>
+      <div class="mem2 right">
+      <span>瑞香</span>
+      <p>
+      
+            1ｄ6 (1D6) ＞ 3
+            
+      </p>
+      </div>
+      <div class="mem10 right">
+      <span>system</span>
+      <p>
+      
+            [ 瑞香(瑪瑙) ] 忍術 : 1 → 0
+      </p>
+      </div>
+      <div class="mem1 left">
+      <span>駒場 駆</span>
+      <p>
+      
+            鎖陣を鏡華さんに！
+      </p>
+      </div>
+      <div class="mem2 right">
+      <span>瑞香</span>
+      <p>
+      
+            「ちっ足場が悪い…っ」
+      </p>
+      </div>
+      <div class="mem1 left">
+      <span>駒場 駆</span>
+      <p>
+      
+            SG&gt;=5 （判定：縄術） (SG@12#2&gt;=5) ＞ 7[1,6] ＞ 7 ＞ 成功
+            
+      </p>
+      </div>
+      <div class="mem10 right">
+      <span>system</span>
+      <p>
+      
+            [ 八咫 鏡華 ] 生命力 : 5 → 4
+      </p>
+      </div>
+      <div class="mem1 left">
+      <span>駒場 駆</span>
+      <p>
+      
+            「このままじゃ 死んじゃうっすねぇ！」
+      </p>
+      </div>
+      <div class="mem11 left">
+      <span>八咫 鏡華</span>
+      <p>
+      
+            「ち」
+      </p>
+      </div>
+      <div class="mem3 left">
+      <span>三盆糖 ざらめ</span>
+      <p>
+      
+            奥義！！
+      </p>
+      </div>
+      <div class="mem3 left">
+      <span>三盆糖 ざらめ</span>
+      <p>
+      
+            ■奥義<br>《方寸銃撃》<br>指定特技　：砲術<br>エフェクト：範囲攻撃/撃ち/人数限定<br>効果・演出：「方寸」とは、文字通り一寸四方を表すが、古くは人のこころは心の臓一寸に宿るとして「こころ」の意も秘める。<br>その銃撃は、選ばれたもののみが扱える重厚さでもって、野にかくれた君子のような枯淡な風格で、周囲の心臓を残らず撃ち抜く。<br> <br>鏡華さんに
+      </p>
+      </div>
+      <div class="mem11 left">
+      <span>八咫 鏡華</span>
+      <p>
+      
+            奥義！！
+      </p>
+      </div>
+      <div class="mem11 left">
+      <span>八咫 鏡華</span>
+      <p>
+      
+            《真経津鏡（まふつの かがみ）》<br>指定特技　：結界術<br>エフェクト：絶対防御/くらまし/防御低下<br>効果・演出：八咫ほどの神鏡が舞いだし、相手の攻撃を吸収する。<br><br>鏡華の周りを飛び回る神鏡。それはどれほど神々しいものか…。
+      </p>
+      </div>
+      <div class="mem1 left">
+      <span>駒場 駆</span>
+      <p>
+      
+            奥義！！
+      </p>
+      </div>
+      <div class="mem1 left">
+      <span>駒場 駆</span>
+      <p>
+      
+            奥義<br>《あのときとは違うんすよ！》<br>指定特技　：縄術<br>エフェクト：完全成功<br>効果・演出：あのときとは違うんすよ！<br><br>前回の出来事があまりにも悔しかった駆。<br>あれから毎日暇さえあれば縄使いの鍛錬を重ね、ご飯をよく食べ、ぐっすり眠ることで 絶対的な縄使いを極めたのだ！<br> 
+      </p>
+      </div>
+      <div class="mem10 right">
+      <span>system</span>
+      <p>
+      
+            [ 八咫 鏡華 ] 生命力 : 4 → 1
+      </p>
+      </div>
+      <div class="mem1 left">
+      <span>駒場 駆</span>
+      <p>
+      
+            「ざらめさーん！抑えたっすー！」
+      </p>
+      </div>
+         <div class="kp">
+      
+            3サイクル目終了
+      </div>
+      <div class="mem3 left">
+      <span>三盆糖 ざらめ</span>
+      <p>
+      
+            「えらぁい！！帰ったらいっぱいご飯食べようね！！」
+      </p>
+      </div>
+      <div class="kp">
+      
+            4ラウンド目
+      </div>
+      <div class="mem1 left">
+      <span>駒場 駆</span>
+      <p>
+      
+            「やったぁ！僕ゼリー食べたいっす！」
+      </p>
+      </div>
+      <div class="mem10 right">
+      <span>system</span>
+      <p>
+      
+            [ 瑞香(瑪瑙) ] 忍具 : 1 → 0
+      </p>
+      </div>
+      <div class="mem10 right">
+      <span>system</span>
+      <p>
+      
+            [ 瑞香(瑪瑙) ] 忍術 : 0 → 1
+      </p>
+      </div>
+      <div class="kp">
+      
+            プロットオープン
+      </div>
+      <div class="mem10 right">
+      <span>system</span>
+      <p>
+      
+            [ 瑞香(瑪瑙) ] がダイスシンボルを公開。出目は 6 です。
+      </p>
+      </div>
+      <div class="mem10 right">
+      <span>system</span>
+      <p>
+      
+            [ 駒場 駆 ] がダイスシンボルを公開。出目は 4 です。
+      </p>
+      </div>
+      <div class="mem10 right">
+      <span>system</span>
+      <p>
+      
+            [ 八咫 鏡華 ] がダイスシンボルを公開。出目は 5 です。
+      </p>
+      </div>
+      <div class="mem10 right">
+      <span>system</span>
+      <p>
+      
+            [ 三盆糖 ざらめ ] がダイスシンボルを公開。出目は 3 です。
+      </p>
+      </div>
+      <div class="mem2 right">
+      <span>瑞香</span>
+      <p>
+      
+            春香をつかいたい
+      </p>
+      </div>
+      <div class="mem2 right">
+      <span>瑞香</span>
+      <p>
+      
+            2D6&gt;=5 （判定：香術） (2D6&gt;=5) ＞ 6[1,5] ＞ 6 ＞ 成功
+            
+      </p>
+      </div>
+      <div class="mem2 right">
+      <span>瑞香</span>
+      <p>
+      
+            1ｄ6 (1D6) ＞ 6
+            
+      </p>
+      </div>
+      <div class="mem10 right">
+      <span>system</span>
+      <p>
+      
+            [ 瑞香(瑪瑙) ] 謀術 : 1 → 0
+      </p>
+      </div>
+      <div class="mem1 left">
+      <span>駒場 駆</span>
+      <p>
+      
+            「瑪瑙さん よくこれで僕を煽ったっすね！」
+      </p>
+      </div>
+      <div class="mem11 left">
+      <span>八咫 鏡華</span>
+      <p>
+      
+            武極をざらめちゃんに
+      </p>
+      </div>
+      <div class="mem2 right">
+      <span>瑞香</span>
+      <p>
+      
+            「はっうるせえよ」
+      </p>
+      </div>
+      <div class="mem11 left">
+      <span>八咫 鏡華</span>
+      <p>
+      
+            SG@12#5&gt;=5 （判定：野戦術） (SG@12#5&gt;=5) ＞ 8[2,6] ＞ 8 ＞ 成功
+            
+      </p>
+      </div>
+      <div class="mem1 left">
+      <span>駒場 駆</span>
+      <p>
+      
+            護衛をしたい！
+      </p>
+      </div>
+      <div class="kp">
+      
+            どうぞ
+      </div>
+      <div class="kp">
+      
+            どうぞどうぞ
+      </div>
+      <div class="mem1 left">
+      <span>駒場 駆</span>
+      <p>
+      
+            SG&gt;=6 （判定：分身の術） (SG@12#2&gt;=6) ＞ 8[3,5] ＞ 8 ＞ 成功
+            
+      </p>
+      </div>
+      <div class="mem11 left">
+      <span>八咫 鏡華</span>
+      <p>
+      
+            陽動を使用
+      </p>
+      </div>
+      <div class="mem11 left">
+      <span>八咫 鏡華</span>
+      <p>
+      
+            SG@12#5&gt;=5 （判定：暗号術） (SG@12#5&gt;=5) ＞ 8[2,6] ＞ 8 ＞ 成功
+            
+      </p>
+      </div>
+      <div class="mem11 left">
+      <span>八咫 鏡華</span>
+      <p>
+      
+            2D6 (2D6) ＞ 10[4,6] ＞ 10
+            
+      </p>
+      </div>
+      <div class="mem11 left">
+      <span>八咫 鏡華</span>
+      <p>
+      
+            暗号術で回避してください
+      </p>
+      </div>
+      <div class="mem1 left">
+      <span>駒場 駆</span>
+      <p>
+      
+            2D6&gt;=9 （判定：分身の術） (2D6&gt;=9) ＞ 3[1,2] ＞ 3 ＞ 失敗
+            
+      </p>
+      </div>
+      <div class="mem11 left">
+      <span>八咫 鏡華</span>
+      <p>
+      
+            WT 変調表(5) ＞ 忘却:修得している【感情】の中からランダムに一つを選び、その【感情】を持っていないものとして扱う。この効果は、修得している【感情】の数だけ累積する。各サイクルの終了時に、《記憶術》で行為判定を行い、成功するとこの変調はすべて無効化される。
+            
+      </p>
+      </div>
+      <div class="mem1 left">
+      <span>駒場 駆</span>
+      <p>
+      
+            1d6 (1D6) ＞ 5
+            
+      </p>
+      </div>
+      <div class="mem10 right">
+      <span>system</span>
+      <p>
+      
+            [ 駒場 駆 ] 戦術 : 1 → 0
+      </p>
+      </div>
+      <div class="mem1 left">
+      <span>駒場 駆</span>
+      <p>
+      
+            忍具を食べます
+      </p>
+      </div>
+      <div class="mem10 right">
+      <span>system</span>
+      <p>
+      
+            [ 駒場 駆 ] 忍具 : 2 → 1
+      </p>
+      </div>
+      <div class="mem10 right">
+      <span>system</span>
+      <p>
+      
+            [ 駒場 駆 ] 戦術 : 0 → 1
+      </p>
+      </div>
+      <div class="mem3 left">
+      <span>三盆糖 ざらめ</span>
+      <p>
+      
+            瑞香さんに雷火
+      </p>
+      </div>
+      <div class="mem2 right">
+      <span>瑞香</span>
+      <p>
+      
+            無我しよう
+      </p>
+      </div>
+      <div class="mem3 left">
+      <span>三盆糖 ざらめ</span>
+      <p>
+      
+            SG&gt;=5 （判定：砲術） (SG@12#2&gt;=5) ＞ 9[4,5] ＞ 9 ＞ 成功
+            
+      </p>
+      </div>
+      <div class="mem2 right">
+      <span>瑞香</span>
+      <p>
+      
+            2D6&gt;=5 （判定：第六感） (2D6&gt;=5) ＞ 8[3,5] ＞ 8 ＞ 成功
+            
+      </p>
+      </div>
+      <div class="mem2 right">
+      <span>瑞香</span>
+      <p>
+      
+            2D6&gt;=7 （判定：火術） (2D6&gt;=7) ＞ 5[1,4] ＞ 5 ＞ 失敗
+            
+      </p>
+      </div>
+      <div class="mem2 right">
+      <span>瑞香</span>
+      <p>
+      
+            「こんのくそ女！！狙ってんじゃねぇよ！」
+      </p>
+      </div>
+      <div class="mem3 left">
+      <span>三盆糖 ざらめ</span>
+      <p>
+      
+            「さっきあんたも同じことしたでしょうが！！」
+      </p>
+      </div>
+      <div class="mem1 left">
+      <span>駒場 駆</span>
+      <p>
+      
+            「瑪瑙さん またなんか企んでるんすか？（のんき）」
+      </p>
+      </div>
+      <div class="mem10 right">
+      <span>system</span>
+      <p>
+      
+            [ 瑞香(瑪瑙) ] 体術 : 1 → 0
+      </p>
+      </div>
+      <div class="mem10 right">
+      <span>system</span>
+      <p>
+      
+            [ 瑞香(瑪瑙) ] 戦術 : 1 → 0
+      </p>
+      </div>
+      <div class="kp">
+      
+            4ラウンド終了
+      </div>
+      <div class="kp">
+      
+            5ラウンド目
+      </div>
+      <div class="kp">
+      
+            プロットオープン
+      </div>
+      <div class="mem10 right">
+      <span>system</span>
+      <p>
+      
+            [ 瑞香(瑪瑙) ] がダイスシンボルを公開。出目は 6 です。
+      </p>
+      </div>
+      <div class="mem10 right">
+      <span>system</span>
+      <p>
+      
+            [ 駒場 駆 ] がダイスシンボルを公開。出目は 4 です。
+      </p>
+      </div>
+      <div class="mem10 right">
+      <span>system</span>
+      <p>
+      
+            [ 三盆糖 ざらめ ] がダイスシンボルを公開。出目は 3 です。
+      </p>
+      </div>
+      <div class="mem10 right">
+      <span>system</span>
+      <p>
+      
+            [ 八咫 鏡華 ] がダイスシンボルを公開。出目は 6 です。
+      </p>
+      </div>
+      <div class="mem11 left">
+      <span>八咫 鏡華</span>
+      <p>
+      
+            武極を駒場君に
+      </p>
+      </div>
+      <div class="mem11 left">
+      <span>八咫 鏡華</span>
+      <p>
+      
+            SG@12#6&gt;=5 （判定：野戦術） (SG@12#6&gt;=5) ＞ 6[2,4] ＞ 6 ＞ ファンブル
+            
+      </p>
+      </div>
+      <div class="mem2 right">
+      <span>瑞香</span>
+      <p>
+      
+            奥義！！
+      </p>
+      </div>
+      <div class="mem2 right">
+      <span>瑞香</span>
+      <p>
+      
+            ■奥義<br>《地獄変相》<br>指定特技　：火術<br>エフェクト：範囲攻撃/乱れ/人数制限<br>効果・演出：己の周りに火を放つ。草も華も巻き込み燃え盛る場、それはまるで地獄のように。<br> 
+      </p>
+      </div>
+      <div class="mem2 right">
+      <span>瑞香</span>
+      <p>
+      
+            きょうかさんとこまばくんに
+      </p>
+      </div>
+      <div class="mem1 left">
+      <span>駒場 駆</span>
+      <p>
+      
+            奥義破り！
+      </p>
+      </div>
+      <div class="mem1 left">
+      <span>駒場 駆</span>
+      <p>
+      
+            SG&gt;=5 （判定：火術） (SG@12#2&gt;=5) ＞ 10[5,5] ＞ 10 ＞ 成功
+            
+      </p>
+      </div>
+      <div class="mem2 right">
+      <span>瑞香</span>
+      <p>
+      
+            「…二回目はないか」
+      </p>
+      </div>
+      <div class="mem1 left">
+      <span>駒場 駆</span>
+      <p>
+      
+            鎖陣を鏡華さんに 奥義を使って打ちたい
+      </p>
+      </div>
+      <div class="mem1 left">
+      <span>駒場 駆</span>
+      <p>
+      
+            奥義！！
+      </p>
+      </div>
+      <div class="mem1 left">
+      <span>駒場 駆</span>
+      <p>
+      
+            奥義<br>《あのときとは違うんすよ！》<br>指定特技　：縄術<br>エフェクト：完全成功<br>効果・演出：あのときとは違うんすよ！<br><br>前回の出来事があまりにも悔しかった駆。<br>あれから毎日暇さえあれば縄使いの鍛錬を重ね、ご飯をよく食べ、ぐっすり眠ることで 絶対的な縄使いを極めたのだ！<br> 
+      </p>
+      </div>
+      <div class="mem11 left">
+      <span>八咫 鏡華</span>
+      <p>
+      
+            奥義！！
+      </p>
+      </div>
+      <div class="mem11 left">
+      <span>八咫 鏡華</span>
+      <p>
+      
+            《真経津鏡（まふつの かがみ）》<br>指定特技　：結界術<br>エフェクト：絶対防御/くらまし/防御低下<br>効果・演出：八咫ほどの神鏡が舞いだし、相手の攻撃を吸収する。<br><br>鏡華の周りを飛び回る神鏡。それはどれほど神々しいものか…。
+      </p>
+      </div>
+      <div class="mem1 left">
+      <span>駒場 駆</span>
+      <p>
+      
+            奥義破りたい！
+      </p>
+      </div>
+      <div class="mem1 left">
+      <span>駒場 駆</span>
+      <p>
+      
+            SG-2&gt;=8 （判定：火術） (SG-2@12#2&gt;=8) ＞ 7[3,4]-2 ＞ 5 ＞ 失敗
+            
+      </p>
+      </div>
+      <div class="mem2 right">
+      <span>瑞香</span>
+      <p>
+      
+            回想きります
+      </p>
+      </div>
+      <div class="mem2 right">
+      <span>瑞香</span>
+      <p>
+      
+            SG+1&gt;=14 （判定：火術） (SG+1@12#2&gt;=14) ＞ 12[6,6]+1 ＞ 13 ＞ スペシャル(【生命力】1点か変調一つを回復)
+            
+      </p>
+      </div>
+      <div class="mem2 right">
+      <span>瑞香</span>
+      <p>
+      
+            「…くっそ」
+      </p>
+      </div>
+      <div class="mem1 left">
+      <span>駒場 駆</span>
+      <p>
+      
+            真意が読めてないので ハテナが舞ってます
+      </p>
+      </div>
+      <div class="kp">
+      
+            結果：絶対防御が通りました。
+      </div>
+      <div class="mem3 left">
+      <span>三盆糖 ざらめ</span>
+      <p>
+      
+            駒場くんに雷火
+      </p>
+      </div>
+      <div class="mem3 left">
+      <span>三盆糖 ざらめ</span>
+      <p>
+      
+            2D6&gt;=5 （判定：砲術） (2D6&gt;=5) ＞ 12[6,6] ＞ 12 ＞ スペシャル(【生命力】1点か変調一つを回復)
+            
+      </p>
+      </div>
+      <div class="mem10 right">
+      <span>system</span>
+      <p>
+      
+            [ 三盆糖 ざらめ ] 謀術 : 0 → 1
+      </p>
+      </div>
+      <div class="mem1 left">
+      <span>駒場 駆</span>
+      <p>
+      
+            よけたい！
+      </p>
+      </div>
+      <div class="mem1 left">
+      <span>駒場 駆</span>
+      <p>
+      
+            SG&gt;=6 （判定：火術） (SG@12#2&gt;=6) ＞ 12[6,6] ＞ 12 ＞ スペシャル(【生命力】1点か変調一つを回復)
+            
+      </p>
+      </div>
+      <div class="mem10 right">
+      <span>system</span>
+      <p>
+      
+            [ 駒場 駆 ] 妖術 : 0 → 1
+      </p>
+      </div>
+      <div class="mem1 left">
+      <span>駒場 駆</span>
+      <p>
+      
+            「ﾜｧ!!!ざらめさん!!???」
+      </p>
+      </div>
+      <div class="kp">
+      
+            ５ラウンド目終了
+      </div>
+      <div class="kp">
+      
+            6ラウンド目
+      </div>
+      <div class="mem3 left">
+      <span>三盆糖 ざらめ</span>
+      <p>
+      
+            「ごめんね！？でも最終的には……だから！！」
+      </p>
+      </div>
+      <div class="kp">
+      
+            プロットオープン！
+      </div>
+      <div class="mem10 right">
+      <span>system</span>
+      <p>
+      
+            [ 瑞香(瑪瑙) ] がダイスシンボルを公開。出目は 6 です。
+      </p>
+      </div>
+      <div class="mem10 right">
+      <span>system</span>
+      <p>
+      
+            [ 三盆糖 ざらめ ] がダイスシンボルを公開。出目は 3 です。
+      </p>
+      </div>
+      <div class="mem10 right">
+      <span>system</span>
+      <p>
+      
+            [ 八咫 鏡華 ] がダイスシンボルを公開。出目は 6 です。
+      </p>
+      </div>
+      <div class="mem10 right">
+      <span>system</span>
+      <p>
+      
+            [ 駒場 駆 ] がダイスシンボルを公開。出目は 4 です。
+      </p>
+      </div>
+      <div class="mem2 right">
+      <span>瑞香</span>
+      <p>
+      
+            奥義！！
+      </p>
+      </div>
+      <div class="mem2 right">
+      <span>瑞香</span>
+      <p>
+      
+            ■奥義<br>《地獄変相》<br>指定特技　：火術<br>エフェクト：範囲攻撃/乱れ/人数制限<br>効果・演出：己の周りに火を放つ。草も華も巻き込み燃え盛る場、それはまるで地獄のように。<br> 
+      </p>
+      </div>
+      <div class="mem2 right">
+      <span>瑞香</span>
+      <p>
+      
+            きょうかちゃんと駒場君へ
+      </p>
+      </div>
+      <div class="mem1 left">
+      <span>駒場 駆</span>
+      <p>
+      
+            破りたし
+      </p>
+      </div>
+      <div class="mem1 left">
+      <span>駒場 駆</span>
+      <p>
+      
+            SG&gt;=5 （判定：火術） (SG@12#2&gt;=5) ＞ 5[1,4] ＞ 5 ＞ 成功
+            
+      </p>
+      </div>
+      <div class="mem11 left">
+      <span>八咫 鏡華</span>
+      <p>
+      
+            奥義！！
+      </p>
+      </div>
+      <div class="mem11 left">
+      <span>八咫 鏡華</span>
+      <p>
+      
+            《八重垣剣（やえがきのつるぎ）》<br>指定特技　：刀術<br>エフェクト：範囲攻撃/伸ばし/回数制限<br>効果・演出：八つの刀が浮き出し、相手へと貫く。<br><br>鏡華の周りを浮遊する八つの刃。<br>それは、かつての伝説を思わせる刃だった。
+      </p>
+      </div>
+      <div class="mem11 left">
+      <span>八咫 鏡華</span>
+      <p>
+      
+            全員対象
+      </p>
+      </div>
+      <div class="mem2 right">
+      <span>瑞香</span>
+      <p>
+      
+            2D6&gt;=7 （判定：第六感） (2D6&gt;=7) ＞ 8[4,4] ＞ 8 ＞ 成功
+            
+      </p>
+      </div>
+      <div class="mem11 left">
+      <span>八咫 鏡華</span>
+      <p>
+      
+            遁甲符
+      </p>
+      </div>
+      <div class="mem10 right">
+      <span>system</span>
+      <p>
+      
+            [ 八咫 鏡華 ] 忍具 : 1 → 0
+      </p>
+      </div>
+      <div class="mem2 right">
+      <span>瑞香</span>
+      <p>
+      
+            2D6&gt;=7 （判定：第六感） (2D6&gt;=7) ＞ 2[1,1] ＞ 2 ＞ ファンブル
+            
+      </p>
+      </div>
+      <div class="mem2 right">
+      <span>瑞香</span>
+      <p>
+      
+            1ｄ6 (1D6) ＞ 6
+            
+      </p>
+      </div>
+      <div class="mem10 right">
+      <span>system</span>
+      <p>
+      
+            [ 瑞香(瑪瑙) ] 器術 : 1 → 0
+      </p>
+      </div>
+      <div class="mem11 left">
+      <span>八咫 鏡華</span>
+      <p>
+      
+            破軍使います
+      </p>
+      </div>
+      <div class="mem11 left">
+      <span>八咫 鏡華</span>
+      <p>
+      
+            SG@12#6&gt;=5 （判定：人脈） (SG@12#6&gt;=5) ＞ 10[4,6] ＞ 10 ＞ 成功
+            
+      </p>
+      </div>
+      <div class="mem3 left">
+      <span>三盆糖 ざらめ</span>
+      <p>
+      
+            2D6&gt;=6 （判定：壊器術） (2D6&gt;=6) ＞ 10[5,5] ＞ 10 ＞ 成功
+            
+      </p>
+      </div>
+      <div class="mem11 left">
+      <span>八咫 鏡華</span>
+      <p>
+      
+            「くそっ」
+      </p>
+      </div>
+      <div class="mem3 left">
+      <span>三盆糖 ざらめ</span>
+      <p>
+      
+            「よし！！」
+      </p>
+      </div>
+      <div class="mem1 left">
+      <span>駒場 駆</span>
+      <p>
+      
+            奥義！！
+      </p>
+      </div>
+      <div class="mem1 left">
+      <span>駒場 駆</span>
+      <p>
+      
+            ■奥義<br>《あのときとは違うんすよ！》<br>指定特技　：縄術<br>エフェクト：完全成功<br>効果・演出：あのときとは違うんすよ！<br><br>前回の出来事があまりにも悔しかった駆。<br>あれから毎日暇さえあれば縄使いの鍛錬を重ね、ご飯をよく食べ、ぐっすり眠ることで 絶対的な縄使いを極めたのだ！<br> 
+      </p>
+      </div>
+      <div class="mem11 left">
+      <span>八咫 鏡華</span>
+      <p>
+      
+            奥義破り
+      </p>
+      </div>
+      <div class="mem11 left">
+      <span>八咫 鏡華</span>
+      <p>
+      
+            SG@12#6&gt;=8 （判定：針術） (SG@12#6&gt;=8) ＞ 8[4,4] ＞ 8 ＞ 成功
+            
+      </p>
+      </div>
+      <div class="mem1 left">
+      <span>駒場 駆</span>
+      <p>
+      
+            SG&gt;=5 （判定：縄術） (SG@12#2&gt;=5) ＞ 10[5,5] ＞ 10 ＞ 成功
+            
+      </p>
+      </div>
+      <div class="mem11 left">
+      <span>八咫 鏡華</span>
+      <p>
+      
+            SG@12#6-3&gt;=8 （判定：針術） (SG-3@12#6&gt;=8) ＞ 4[1,3]-3 ＞ 1 ＞ ファンブル
+            
+      </p>
+      </div>
+      <div class="mem11 left">
+      <span>八咫 鏡華</span>
+      <p>
+      
+            奥義！！
+      </p>
+      </div>
+      <div class="mem11 left">
+      <span>八咫 鏡華</span>
+      <p>
+      
+            《真経津鏡（まふつの かがみ）》<br>指定特技　：結界術<br>エフェクト：絶対防御/くらまし/防御低下<br>効果・演出：八咫ほどの神鏡が舞いだし、相手の攻撃を吸収する。<br><br>鏡華の周りを飛び回る神鏡。それはどれほど神々しいものか…
+      </p>
+      </div>
+      <div class="mem1 left">
+      <span>駒場 駆</span>
+      <p>
+      
+            奥義破り！
+      </p>
+      </div>
+      <div class="mem1 left">
+      <span>駒場 駆</span>
+      <p>
+      
+            SG-2&gt;=8 （判定：火術） (SG-2@12#2&gt;=8) ＞ 4[1,3]-2 ＞ 2 ＞ 失敗
+            
+      </p>
+      </div>
+      <div class="mem1 left">
+      <span>駒場 駆</span>
+      <p>
+      
+            1d6 (1D6) ＞ 3
+            
+      </p>
+      </div>
+      <div class="mem10 right">
+      <span>system</span>
+      <p>
+      
+            [ 駒場 駆 ] 忍術 : 1 → 0
+      </p>
+      </div>
+      <div class="mem1 left">
+      <span>駒場 駆</span>
+      <p>
+      
+            ごはん たべる！
+      </p>
+      </div>
+      <div class="mem10 right">
+      <span>system</span>
+      <p>
+      
+            [ 駒場 駆 ] 忍具 : 1 → 0
+      </p>
+      </div>
+      <div class="mem10 right">
+      <span>system</span>
+      <p>
+      
+            [ 駒場 駆 ] 忍術 : 0 → 1
+      </p>
+      </div>
+      <div class="mem3 left">
+      <span>三盆糖 ざらめ</span>
+      <p>
+      
+            攻撃放棄
+      </p>
+      </div>
+      <div class="kp">
+      
+            6ラウンド目終了
+      </div>
+      <div class="kp">
+      
+            7ラウンド目
+      </div>
+      <div class="kp">
+      
+            プロットオープン
+      </div>
+      <div class="mem10 right">
+      <span>system</span>
+      <p>
+      
+            [ 瑞香(瑪瑙) ] がダイスシンボルを公開。出目は 3 です。
+      </p>
+      </div>
+      <div class="mem10 right">
+      <span>system</span>
+      <p>
+      
+            [ 八咫 鏡華 ] がダイスシンボルを公開。出目は 6 です。
+      </p>
+      </div>
+      <div class="mem10 right">
+      <span>system</span>
+      <p>
+      
+            [ 三盆糖 ざらめ ] がダイスシンボルを公開。出目は 3 です。
+      </p>
+      </div>
+      <div class="mem10 right">
+      <span>system</span>
+      <p>
+      
+            [ 駒場 駆 ] がダイスシンボルを公開。出目は 5 です。
+      </p>
+      </div>
+      <div class="mem11 left">
+      <span>八咫 鏡華</span>
+      <p>
+      
+            武極を駒場君に
+      </p>
+      </div>
+      <div class="mem11 left">
+      <span>八咫 鏡華</span>
+      <p>
+      
+            SG@12#6&gt;=5 （判定：野戦術） (SG@12#6&gt;=5) ＞ 4[1,3] ＞ 4 ＞ ファンブル
+            
+      </p>
+      </div>
+      <div class="mem1 left">
+      <span>駒場 駆</span>
+      <p>
+      
+            鎖陣を！
+      </p>
+      </div>
+      <div class="mem1 left">
+      <span>駒場 駆</span>
+      <p>
+      
+            SG&gt;=5 （判定：縄術） (SG@12#2&gt;=5) ＞ 7[2,5] ＞ 7 ＞ 成功
+            
+      </p>
+      </div>
+      <div class="mem11 left">
+      <span>八咫 鏡華</span>
+      <p>
+      
+            奥義！！
+      </p>
+      </div>
+      <div class="mem11 left">
+      <span>八咫 鏡華</span>
+      <p>
+      
+            《真経津鏡（まふつの かがみ）》<br>指定特技　：結界術<br>エフェクト：絶対防御/くらまし/防御低下<br>効果・演出：八咫ほどの神鏡が舞いだし、相手の攻撃を吸収する。<br><br>鏡華の周りを飛び回る神鏡。それはどれほど神々しいものか…
+      </p>
+      </div>
+      <div class="mem1 left">
+      <span>駒場 駆</span>
+      <p>
+      
+            奥義！！
+      </p>
+      </div>
+      <div class="mem1 left">
+      <span>駒場 駆</span>
+      <p>
+      
+            奥義<br>《あのときとは違うんすよ！》<br>指定特技　：縄術<br>エフェクト：完全成功<br>効果・演出：あのときとは違うんすよ！<br><br>前回の出来事があまりにも悔しかった駆。<br>あれから毎日暇さえあれば縄使いの鍛錬を重ね、ご飯をよく食べ、ぐっすり眠ることで 絶対的な縄使いを極めたのだ！<br> 
+      </p>
+      </div>
+      <div class="mem11 left">
+      <span>八咫 鏡華</span>
+      <p>
+      
+            ダメージ食らって戦闘脱落
+      </p>
+      </div>
+      <div class="mem10 right">
+      <span>system</span>
+      <p>
+      
+            [ 八咫 鏡華 ] 生命力 : 1 → 0
+      </p>
+      </div>
+      <div class="mem2 right">
+      <span>瑞香</span>
+      <p>
+      
+            「…借りがあるしな、もうこっちは手ださねぇよ」
+      </p>
+      </div>
+      <div class="mem1 left">
+      <span>駒場 駆</span>
+      <p>
+      
+            「借りー？？」
+      </p>
+      </div>
+      <div class="mem2 right">
+      <span>瑞香</span>
+      <p>
+      
+            「お前には関係ない」
+      </p>
+      </div>
+      <div class="mem1 left">
+      <span>駒場 駆</span>
+      <p>
+      
+            「？？？」
+      </p>
+      </div>
+      <div class="mem3 left">
+      <span>三盆糖 ざらめ</span>
+      <p>
+      
+            「ごめんね、あとで話すよ」
+      </p>
+      </div>
+      <div class="mem3 left">
+      <span>三盆糖 ざらめ</span>
+      <p>
+      
+            攻撃放棄
+      </p>
+      </div>
+      <div class="mem2 right">
+      <span>瑞香</span>
+      <p>
+      
+            放棄、戦闘離脱
+      </p>
+      </div>
+      <div class="mem1 left">
+      <span>駒場 駆</span>
+      <p>
+      
+            帰ろう。離脱。
+      </p>
+      </div>
+      <div class="kp">
+      
+            7ラウンド終了
+      </div>
+      <div class="kp">
+      
+            離脱者どうぞ
+      </div>
+      <div class="mem2 right">
+      <span>瑞香</span>
+      <p>
+      
+            はあい
+      </p>
+      </div>
+      <div class="mem1 left">
+      <span>駒場 駆</span>
+      <p>
+      
+            はい！
+      </p>
+      </div>
+      <div class="kp">
+      
+            戦闘終了
+      </div>
+      <div class="kp">
+      
+            戦果を選んでください
+      </div>
+      <div class="kp">
+      
+            ざらめちゃん
+      </div>
+      <div class="mem3 left">
+      <span>三盆糖 ざらめ</span>
+      <p>
+      
+            プライズプリーズで
+      </p>
+      </div>
+      <div class="kp">
+      
+            では、貴方達は八咫鏡華を倒し、ある者は物を奪い、ある者は家族を助ける。
+      </div>
+      <div class="kp">
+      
+            そして、ある者は主人を見返した。
+      </div>
+      <div class="kp">
+      
+            そして、これから各々別の道を歩んでいくだろう。<br>それは、月明りに照らされながらも暗闇に生きる者達の物語――
+      </div>
+      <div class="kp">
+      
+            エンディング作ってる人どうぞ
+      </div>
+      <div class="kp">
+      ――――――――――――――――――――――――
+            
+      </div>
+      <div class="mem2 right">
+      <span>瑞香</span>
+      <p>
+      
+            「…チッ、ただ働きになっちまったじゃねぇか。…だから嫌なんだ。…もう会いたくねえな」
+      </p>
+      </div>
+      <div class="mem1 left">
+      <span>駒場 駆</span>
+      <p>
+      
+            「…何がしたかったんすか」<br>全く事態が飲み込めてません
+      </p>
+      </div>
+      <div class="mem3 left">
+      <span>三盆糖 ざらめ</span>
+      <p>
+      
+            「ごめんね、駒場くんのやらなきゃいけないこと、瑞香さんに教えちゃったの」
+      </p>
+      </div>
+      <div class="mem1 left">
+      <span>駒場 駆</span>
+      <p>
+      
+            「ｴ゛ｯ 味方だったんすか!!?<br>言ってくださいよもう！」
+      </p>
+      </div>
+      <div class="mem1 left">
+      <span>駒場 駆</span>
+      <p>
+      
+            「そも ズイコウって誰!!?」
+      </p>
+      </div>
+      <div class="mem2 right">
+      <span>瑞香</span>
+      <p>
+      
+            「勘違いしてんじゃねぇよ。お前を倒す理由がなかっただけだ。手間取らせやがって」
+      </p>
+      </div>
+      <div class="mem3 left">
+      <span>三盆糖 ざらめ</span>
+      <p>
+      
+            「あー、えーと、瑪瑙さん、この人」
+      </p>
+      </div>
+      <div class="mem2 right">
+      <span>瑞香</span>
+      <p>
+      
+            「名前使い分けんのは基本だろ。やっぱむいてねぇな忍び」
+      </p>
+      </div>
+      <div class="mem1 left">
+      <span>駒場 駆</span>
+      <p>
+      
+            「そんな！僕最初叩きのめそうと思ってたんすよ！？<br>でも なんか勝ちを譲ってくれた？ぽい？っすよね？」
+      </p>
+      </div>
+      <div class="mem1 left">
+      <span>駒場 駆</span>
+      <p>
+      
+            「つまり 恩人！<br>あざっす！！」
+      </p>
+      </div>
+      <div class="mem2 right">
+      <span>瑞香</span>
+      <p>
+      
+            「ハッお前に叩けるわけねぇだろばーか！慣れあってんじゃねぇよ！」
+      </p>
+      </div>
+      <div class="mem1 left">
+      <span>駒場 駆</span>
+      <p>
+      
+            「はぁー？できるっすけどー？<br>瑪瑙さんなんて 分身でボコボコっすけどー？」
+      </p>
+      </div>
+      <div class="mem2 right">
+      <span>瑞香</span>
+      <p>
+      
+            「やってみろよ？あまちゃんが何人いたって関係ねぇよ」
+      </p>
+      </div>
+      <div class="mem3 left">
+      <span>三盆糖 ざらめ</span>
+      <p>
+      
+            「まぁ……なんか、腐れ縁なんじゃない」
+      </p>
+      </div>
+      <div class="mem2 right">
+      <span>瑞香</span>
+      <p>
+      
+            「ふん、もう会わねぇよ。…こんな甘ちゃんが長生きできっかよ」
+      </p>
+      </div>
+      <div class="mem1 left">
+      <span>駒場 駆</span>
+      <p>
+      
+            「くらえ鯖折り」<br>感謝は受け取ってもらえなそうなので 鯖折りっぽいハグを食らわせます
+      </p>
+      </div>
+      <div class="mem2 right">
+      <span>瑞香</span>
+      <p>
+      
+            「うっわこっちくんな！てめぇはさっさとやることやってこいよ！俺は帰る！！」
+      </p>
+      </div>
+      <div class="mem2 right">
+      <span>瑞香</span>
+      <p>
+      
+            にげる
+      </p>
+      </div>
+      <div class="mem2 right">
+      <span>瑞香</span>
+      <p>
+      
+            （この筋肉主従が…）
+      </p>
+      </div>
+      <div class="mem3 left">
+      <span>三盆糖 ざらめ</span>
+      <p>
+      
+            「恩忘れないでよぉ！！」叫ぶ
+      </p>
+      </div>
+      <div class="mem2 right">
+      <span>瑞香</span>
+      <p>
+      
+            「玉ゆずったろ！チャラだばーか！」
+      </p>
+      </div>
+      <div class="mem1 left">
+      <span>駒場 駆</span>
+      <p>
+      
+            「困ったら助けるっすよー！<br>僕は返せてないっすからー！」
+      </p>
+      </div>
+      <div class="mem3 left">
+      <span>三盆糖 ざらめ</span>
+      <p>
+      
+            「あっそ！！元気でね！！」
+      </p>
+      </div>
+      <div class="mem2 right">
+      <span>瑞香</span>
+      <p>
+      
+            振り返らず消えます
+      </p>
+      </div>
+      <div class="mem1 left">
+      <span>駒場 駆</span>
+      <p>
+      
+            「ざらめさん！な～んで喋ったこと教えてくれないっすかー！<br>煽っちゃったじゃないっすかー！」
+      </p>
+      </div>
+      <div class="mem3 left">
+      <span>三盆糖 ざらめ</span>
+      <p>
+      
+            「えっだって、こないだ敵だったから……イヤかなって」
+      </p>
+      </div>
+      <div class="mem1 left">
+      <span>駒場 駆</span>
+      <p>
+      
+            「そりゃあ恥ずかしいっすけどぉ…人質取られたのは僕の落ち度っすからぁ…」
+      </p>
+      </div>
+      <div class="mem1 left">
+      <span>駒場 駆</span>
+      <p>
+      
+            「……人質!!!!!」<br>思い出して焦ってます
+      </p>
+      </div>
+      <div class="mem3 left">
+      <span>三盆糖 ざらめ</span>
+      <p>
+      
+            「駒場くんはいい子だねぇ……ほら、早く行ってきな！」
+      </p>
+      </div>
+      <div class="mem1 left">
+      <span>駒場 駆</span>
+      <p>
+      
+            「っす！無事を確認したらすぐ連絡するっす！」<br>急いで迎えに行きます！
+      </p>
+      </div>
+      <div class="mem3 left">
+      <span>三盆糖 ざらめ</span>
+      <p>
+      
+            「いってらっしゃーい！」
+      </p>
+      </div>
+      <div class="kp">
+      
+            それぞれはまた新たな道を歩み出した――
+      </div>
+      <div class="kp">
+      
+            これにて終了です
+      </div>
+      <div class="mem2 right">
+      <span>瑞香</span>
+      <p>
+      
+            おつかれさまでした！
+      </p>
+      </div>
+      <div class="mem1 left">
+      <span>駒場 駆</span>
+      <p>
+      
+            お疲れ様でしたーぁ！
+      </p>
+      </div>
+      <div class="mem3 left">
+      <span>三盆糖 ざらめ</span>
+      <p>
+      
+            おつかれさまでした～！
+      </p>
+      </div>
+      <div class="kp">
+      ――――――――――――――――――――――――
+            
+      </div>
+      <div class="kp">
+      
+            功績点
+      </div>
+      <div class="mem10 right">
+      <span>system</span>
+      <p>
+      
+            [ GM ] がダイスシンボルを公開。出目は 2 です。
+      </p>
+      </div>
+      <div class="mem10 right">
+      <span>system</span>
+      <p>
+      
+            [ 駒場 駆 ] がダイスシンボルを公開。出目は 2 です。
+      </p>
+      </div>
+      <div class="mem10 right">
+      <span>system</span>
+      <p>
+      
+            [ 瑞香(瑪瑙) ] がダイスシンボルを公開。出目は 1 です。
+      </p>
+      </div>
+      <div class="mem10 right">
+      <span>system</span>
+      <p>
+      
+            [ 三盆糖 ざらめ ] がダイスシンボルを公開。出目は 3 です。
+      </p>
+      </div>
+      <div class="kp">
+      
+            瑞香：8
+      </div>
+      <div class="kp">
+      
+            駒場 駆：7
+      </div>
+      <div class="kp">
+      
+            三盆糖 ざらめ：7
+      </div>
+      </div>
+
+<br><br><br><br><br><br><br><br><br>
+</div></div>
+<script src="../logCon_Respon.js"></script>
+</body></html>
