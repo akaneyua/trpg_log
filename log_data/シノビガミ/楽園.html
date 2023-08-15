@@ -1,0 +1,7547 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<title>log</title>
+<meta http-equiv="content-type" charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+<link rel="stylesheet" href="../logCon_Respon.css">
+<style>
+    /* main css */
+    .bg-inner.bg1{background:url('./楽園画像/R.jpg') no-repeat center/cover;}
+    
+    /* member */
+.mem1 p{border:2px solid rgb(201, 23, 30);box-shadow:5px 5px 0 rgb(201, 23, 30);}
+.mem1 p:after{border-right-color:rgb(201, 23, 30);}
+.mem1 span{background:rgb(201, 23, 30);color:#000;}
+.mem1:before{content:'';background-image:url('./楽園画像/暁月\ 来瞳.png');background-size:contain;background-repeat:no-repeat;background-position:center center;width:90px;height:90px;}
+.mem2 p{border:2px solid rgb(255, 153, 204);box-shadow:5px 5px 0 rgb(255, 153, 204);}
+.mem2 p:after{border-left-color:rgb(255, 153, 204);}
+.mem2 span{background:rgb(255, 153, 204);color:#000;}
+.mem2:before{content:'';background-image:url('./楽園画像/紫残花.png');background-size:contain;background-repeat:no-repeat;background-position:center center;width:90px;height:90px;}
+.mem3 p{border:2px solid rgb(255, 87, 34);box-shadow:5px 5px 0 rgb(255, 87, 34);}
+.mem3 p:after{border-right-color:rgb(255, 87, 34);}
+.mem3 span{background:rgb(255, 87, 34);color:#000;}
+.mem3:before{content:'';background-image:url('./楽園画像/市\ 穂焔.png');background-size:contain;background-repeat:no-repeat;background-position:center center;width:90px;height:90px;}
+.mem4 p{border:2px solid rgb(103, 58, 183);box-shadow:5px 5px 0 rgb(103, 58, 183);}
+.mem4 p:after{border-left-color:rgb(103, 58, 183);}
+.mem4 span{background:rgb(103, 58, 183);color:#fff;}
+.mem4:before{content:'';background-image:url('./楽園画像/小此木\ 天星.png');background-size:contain;background-repeat:no-repeat;background-position:center center;width:90px;height:90px;}
+.mem5 p{border:2px solid rgb(63, 81, 181);box-shadow:5px 5px 0 rgb(63, 81, 181);}
+.mem5 p:after{border-right-color:rgb(63, 81, 181);}
+.mem5 span{background:rgb(63, 81, 181);color:#fff;}
+.mem5:before{content:'';background-image:url('./楽園画像/小村博.png');background-size:contain;background-repeat:no-repeat;background-position:center center;width:90px;height:90px;}
+.mem6 p{border:2px solid rgb(0, 150, 136);box-shadow:5px 5px 0 rgb(0, 150, 136);}
+.mem6 p:after{border-left-color:rgb(0, 150, 136);}
+.mem6 span{background:rgb(0, 150, 136);color:#fff;}
+.mem6:before{content:'';background-image:url('./楽園画像/不施\ 誠.png');background-size:contain;background-repeat:no-repeat;background-position:center center;width:90px;height:90px;}
+.mem7 p{border:2px solid rgb(136, 136, 136);box-shadow:5px 5px 0 rgb(136, 136, 136);}
+.mem7 p:after{border-right-color:rgb(136, 136, 136);}
+.mem7 span{background:rgb(136, 136, 136);color:#fff;}
+.mem7:before{content:'';background-image:url('7.png');background-size:contain;background-repeat:no-repeat;background-position:center center;width:90px;height:90px;}
+.mem8 p{border:2px solid rgb(136, 136, 136);box-shadow:5px 5px 0 rgb(136, 136, 136);}
+.mem8 p:after{border-left-color:rgb(136, 136, 136);}
+.mem8 span{background:rgb(136, 136, 136);color:#fff;}
+.mem8:before{content:'';background-image:url('8.png');background-size:contain;background-repeat:no-repeat;background-position:center center;width:90px;height:90px;}
+.mem9 p{border:2px solid rgb(0, 250, 154);box-shadow:5px 5px 0 rgb(0, 250, 154);}
+.mem9 p:after{border-right-color:rgb(0, 250, 154);}
+.mem9 span{background:rgb(0, 250, 154);color:#000;}
+.mem9:before{content:'';background-image:url('./楽園画像/紫陽花.png');background-size:contain;background-repeat:no-repeat;background-position:center center;width:90px;height:90px;}
+.mem10 p{border:2px solid rgb(136, 136, 136);box-shadow:5px 5px 0 rgb(136, 136, 136);}
+.mem10 p:after{border-left-color:rgb(136, 136, 136);}
+.mem10 span{background:rgb(136, 136, 136);color:#fff;}
+.mem10:before{content:'';background-image:url('10.png');background-size:contain;background-repeat:no-repeat;background-position:center center;width:90px;height:90px;}
+.mem11 p{border:2px solid rgb(34, 34, 34);box-shadow:5px 5px 0 rgb(34, 34, 34);}
+.mem11 p:after{border-right-color:rgb(34, 34, 34);}
+.mem11 span{background:rgb(34, 34, 34);color:#fff;}
+.mem11:before{content:'';background-image:url('11.png');background-size:contain;background-repeat:no-repeat;background-position:center center;width:90px;height:90px;}
+.mem12 p{border:2px solid rgb(136, 136, 136);box-shadow:5px 5px 0 rgb(136, 136, 136);}
+.mem12 p:after{border-left-color:rgb(136, 136, 136);}
+.mem12 span{background:rgb(136, 136, 136);color:#fff;}
+.mem12:before{content:'';background-image:url('12.png');background-size:contain;background-repeat:no-repeat;background-position:center center;width:90px;height:90px;}
+    
+    @media only screen and (max-width: 768px) {
+        .mem1 p:after{border-right-color:rgb(201, 23, 30);border-left-color:transparent;}
+        .mem2 p:after{border-right-color:rgb(255, 153, 204);border-left-color:transparent;}
+        .mem3 p:after{border-right-color:rgb(255, 87, 34);border-left-color:transparent;}
+        .mem4 p:after{border-right-color:rgb(103, 58, 183);border-left-color:transparent;}
+        .mem5 p:after{border-right-color:rgb(63, 81, 181);border-left-color:transparent;}
+        .mem6 p:after{border-right-color:rgb(0, 150, 136);border-left-color:transparent;}
+        .mem7 p:after{border-right-color:rgb(136, 136, 136);border-left-color:transparent;}
+        .mem8 p:after{border-right-color:rgb(136, 136, 136);border-left-color:transparent;}
+        .mem9 p:after{border-right-color:rgb(0, 250, 154);border-left-color:transparent;}
+        .mem10 p:after{border-right-color:rgb(136, 136, 136);border-left-color:transparent;}
+        .mem11 p:after{border-right-color:rgb(34, 34, 34);border-left-color:transparent;}
+        .mem12 p:after{border-right-color:rgb(136, 136, 136);border-left-color:transparent;}
+    
+        .mem1:before,.mem2:before,.mem3:before,
+        .mem4:before,.mem5:before,.mem6:before
+        .mem7:before,.mem8:before,.mem9:before,
+        .mem10:before,.mem11:before,.mem12:before{width:70px;height:70px;}
+    }
+</style>
+</head>
+<body>
+    <p id="page-top"><a href="#"><i class="page-top__arrow"></i></a></p>
+	<div class="leftwhite"></div>
+	<div class="rightwhite"></div>
+	<div class="bg-sp">
+    <div class="bg-over"><div class="bg-inner bg1"></div></div>
+	<div class="log">
+    
+        <div class="kp LtoR-early">
+
+            楽園を始めていきたいと思います
+      </div>
+      <div class="kp LtoR-early">
+      
+            導入フェイズ
+      </div>
+      <div class="kp LtoR-early">
+      
+            貴方達は多忙な夏を過ごしていた。<br>討伐、潜入、諜報、忍獣の世話、訓練など多岐に渡る仕事があり、あらゆるところを奔走していた。<br>そんな夏を過ごし、まだ暑さの残る九月中旬頃の話である。<br>頭領から直々に命令が下る。その内容は六大流派の施設管理であった。<br>この施設は楽園と呼ばれており、警備の硬い避暑地として政治家や富豪に人気のあるリゾート地として知られている。<br>しかし頭領はこう続ける。
+      </div>
+      <div class="kp LtoR-early">
+      
+            「実のところ君は休みを取らなさすぎた。任務が大事なのはわかるが疲れが原因でミスをされても困る。よって施設管理という名目で休め」
+      </div>
+      <div class="kp LtoR-early">
+      
+            こうして君たちの少し遅い休暇が始まった。<br>そうこうして楽園に着くとロビーでチェックインをすることになる。チェックインが重なったプレイヤーたちは意気投合する。
+      </div>
+      <div class="mem1 left">
+      <span>暁月 来瞳</span>
+      <p>
+      
+            「こんにちは！みなさんもご旅行ですか？お一人？」
+      </p>
+      </div>
+      <div class="mem1 left">
+      <span>暁月 来瞳</span>
+      <p>
+      
+            「よかったら僕とお友達になってください！遊ぶときは友達多い方がいいんで＾＾」
+      </p>
+      </div>
+      <div class="mem2 right">
+      <span>紫残花</span>
+      <p>
+      
+            「……ボクと？」
+      </p>
+      </div>
+      <div class="mem1 left">
+      <span>暁月 来瞳</span>
+      <p>
+      
+            「そうです！そこの前髪の長いあなた！お名前は？」
+      </p>
+      </div>
+      <div class="mem2 right">
+      <span>紫残花</span>
+      <p>
+      
+            「名前……どうしようか」
+      </p>
+      </div>
+      <div class="mem2 right">
+      <span>紫残花</span>
+      <p>
+      
+            「……そうだね、僕は紫残花（さざんか）」
+      </p>
+      </div>
+      <div class="mem2 right">
+      <span>紫残花</span>
+      <p>
+      
+            「君は？学生さん？」
+      </p>
+      </div>
+      <div class="mem1 left">
+      <span>暁月 来瞳</span>
+      <p>
+      
+            「紫残花さん！よろしくです！<br>僕は暁月 来瞳、高校3年生！くるめくんでいいですよ！」
+      </p>
+      </div>
+      <div class="mem1 left">
+      <span>暁月 来瞳</span>
+      <p>
+      
+            「そこの髪の長いお兄さんと、ご機嫌なお兄さんは？」
+      </p>
+      </div>
+      <div class="mem3 left">
+      <span>市 穂焔</span>
+      <p>
+      
+            「あ、僕は市 穂焔といいます」
+      </p>
+      </div>
+      <div class="mem2 right">
+      <span>紫残花</span>
+      <p>
+      
+            「来瞳……くんか、よろしく」
+      </p>
+      </div>
+      <div class="mem4 right">
+      <span>小此木 天星</span>
+      <p>
+      
+            「元気いいねぇ！俺はオコノギってんだ。少年もバカンスかい？」
+      </p>
+      </div>
+      <div class="mem2 right">
+      <span>紫残花</span>
+      <p>
+      
+            「思ったより人が多いな……」
+      </p>
+      </div>
+      <div class="mem1 left">
+      <span>暁月 来瞳</span>
+      <p>
+      
+            「小此木さん！そうです！<br>僕らもバカンス、初めての海です！楽しみ＾＾」
+      </p>
+      </div>
+      <div class="mem2 right">
+      <span>紫残花</span>
+      <p>
+      
+            「……あぁ、そうだね。ボクもだ」
+      </p>
+      </div>
+      <div class="mem4 right">
+      <span>小此木 天星</span>
+      <p>
+      
+            「もしかして皆一人できてンの？せっかくのバカンスならさぁ、皆で遊びにいかねぇか！」
+      </p>
+      </div>
+      <div class="mem2 right">
+      <span>紫残花</span>
+      <p>
+      
+            「……ボクたちで？」
+      </p>
+      </div>
+      <div class="mem1 left">
+      <span>暁月 来瞳</span>
+      <p>
+      
+            「やった！賛成です！<br>僕たちもうお友達ですね！」小此木さんとも握手！紫残花さんとも握手！
+      </p>
+      </div>
+      <div class="mem2 right">
+      <span>紫残花</span>
+      <p>
+      
+            「……キミもそう思う？……そうだね」
+      </p>
+      </div>
+      <div class="mem3 left">
+      <span>市 穂焔</span>
+      <p>
+      
+            「遊び、って、あんまり、どうしていいかわからないんですが……」
+      </p>
+      </div>
+      <div class="mem3 left">
+      <span>市 穂焔</span>
+      <p>
+      
+            （さっきからスルーされてる気がするなぁと思っている）
+      </p>
+      </div>
+      <div class="mem4 right">
+      <span>小此木 天星</span>
+      <p>
+      
+            「若いのに負けずに思い切り遊ぶってのが休暇のだいご味だぜ、兄ちゃん！」
+      </p>
+      </div>
+      <div class="mem2 right">
+      <span>紫残花</span>
+      <p>
+      
+            「休暇か……うん、良い詩が書けそうだ」
+      </p>
+      </div>
+      <div class="mem1 left">
+      <span>暁月 来瞳</span>
+      <p>
+      
+            「穂焔さん、遊んだことないんですか？よかったら僕たちが教えてあげます！<br>海遊びは詳しくないんですけど……手遊びとかなら！」＾＾握手！！！！
+      </p>
+      </div>
+      <div class="mem3 left">
+      <span>市 穂焔</span>
+      <p>
+      
+            「え？えぇ、はい、教えていただけるのなら……」されるがまま
+      </p>
+      </div>
+      <div class="mem4 right">
+      <span>小此木 天星</span>
+      <p>
+      
+            「よっしゃ、決まったなら早速行こうぜ！」
+      </p>
+      </div>
+      <div class="kp LtoR-early">
+      
+            貴方たちに続き、割と有名な政治家の小村博がチェックインをする
+      </div>
+      <div class="mem5 left">
+      <span>小村博</span>
+      <p>
+      
+            「いやーバカンス楽しみだねぇ」
+      </p>
+      </div>
+      <div class="kp LtoR-early">
+      
+            とこの施設を楽しみにしていたことを同伴者と話しながら去っていく
+      </div>
+      <div class="kp LtoR-early">
+      
+            その後、PC たちはアクティビティや散策を楽しんでいると白衣の男に会う。<br>どうやら自然管理を任されている不施 誠というらしい。草花の論文でも知られている学者である。
+      </div>
+      <div class="mem6 right">
+      <span>不施 誠</span>
+      <p>
+      
+            「ここは自然豊かな土地だから色々りがいがあるね。よかったらこれを記念にあげよう」
+      </p>
+      </div>
+      <div class="kp LtoR-early">
+      
+            すると彼は青い花を植えられた鉢植えを見せてくれる。
+      </div>
+      <div class="mem6 right">
+      <span>不施 誠</span>
+      <p>
+      
+            「ここでしか見ることのできない花なんだ。青い花なんて自然界では奇跡の産物なんだよ！」
+      </p>
+      </div>
+      <div class="kp LtoR-early">
+      
+            興奮した様子で鉢植えを見せてくれる。
+      </div>
+      <div class="kp LtoR-early">
+      
+            ぜひ楽しんで言ってくれと言い彼は去っていった。<br>こうして君たちの休暇が始まるのであった。<br>全員の使命は休暇を満喫するである。<br>具体的にはアクティビティに参加や避暑地の散策である。
+      </div>
+      <div class="mem2 right">
+      <span>紫残花</span>
+      <p>
+      
+            「青い……花、綺麗だね」
+      </p>
+      </div>
+      <div class="mem1 left">
+      <span>暁月 来瞳</span>
+      <p>
+      
+            「すごい！初めてみました！ありがとうございます！」
+      </p>
+      </div>
+      <div class="mem3 left">
+      <span>市 穂焔</span>
+      <p>
+      
+            「へぇ……」
+      </p>
+      </div>
+      <div class="mem4 right">
+      <span>小此木 天星</span>
+      <p>
+      
+            「……綺麗だ」
+      </p>
+      </div>
+      <div class="mem2 right">
+      <span>紫残花</span>
+      <p>
+      
+            「だけどこの花……歪だ」
+      </p>
+      </div>
+      <div class="kp LtoR-early">
+      <br>
+        ――――――――――――――――――――――――<br><br>
+  </div>
+      <div class="kp LtoR-early">
+      
+            これから１サイクルがスタートとなります
+      </div>
+      <div class="kp LtoR-early">
+      
+            1サイクル目 小此木 天星
+      </div>
+      <div class="mem4 right">
+      <span>小此木 天星</span>
+      <p>
+      
+            2d6 (2D6) ＞ 3[1,2] ＞ 3
+            
+      </p>
+      </div>
+      <div class="kp LtoR-early">
+      
+            ラフティイング。穏やかな流れの中緑豊かな景色を堪能できる。
+      </div>
+      <div class="mem2 right">
+      <span>紫残花</span>
+      <p>
+      
+            「え？これやるの……？」
+      </p>
+      </div>
+      <div class="mem2 right">
+      <span>紫残花</span>
+      <p>
+      
+            「濡れちゃうよ」
+      </p>
+      </div>
+      <div class="mem1 left">
+      <span>暁月 来瞳</span>
+      <p>
+      
+            「川下りみたいなものです？楽しみ！＾＾」腕まくり
+      </p>
+      </div>
+      <div class="mem4 right">
+      <span>小此木 天星</span>
+      <p>
+      
+            「紫残花 さんはぬれるの苦手かい？ここいらは水がきれいで最高じゃないか？」
+      </p>
+      </div>
+      <div class="mem3 left">
+      <span>市 穂焔</span>
+      <p>
+      
+            「任務みたいなものだと思えば……」
+      </p>
+      </div>
+      <div class="mem1 left">
+      <span>暁月 来瞳</span>
+      <p>
+      
+            「紫残花さんは水が嫌い、穂焔さんは仕事が好き、覚えました！」
+      </p>
+      </div>
+      <div class="mem2 right">
+      <span>紫残花</span>
+      <p>
+      
+            「雅な風景を眺めるのは好きだよ？けど自分が流れるのはちょっと……」
+      </p>
+      </div>
+      <div class="mem3 left">
+      <span>市 穂焔</span>
+      <p>
+      
+            「え？仕事が好きなわけでは……」
+      </p>
+      </div>
+      <div class="mem1 left">
+      <span>暁月 来瞳</span>
+      <p>
+      
+            「あ、あれ？お仕事嫌いですか？ごめんなさい！<br>じゃあ、穂焔さんは何が好き？教えてください！」
+      </p>
+      </div>
+      <div class="mem3 left">
+      <span>市 穂焔</span>
+      <p>
+      
+            「嫌いでもないんですが、えぇと、あまり仕事以外やってこなかったもので」
+      </p>
+      </div>
+      <div class="mem1 left">
+      <span>暁月 来瞳</span>
+      <p>
+      
+            「あっ、何が好きかわからないんですか！じゃあこれから好きなものができたら教えてください」
+      </p>
+      </div>
+      <div class="mem1 left">
+      <span>暁月 来瞳</span>
+      <p>
+      
+            「僕が持ってたら差し上げます！＾＾」にこ！
+      </p>
+      </div>
+      <div class="mem4 right">
+      <span>小此木 天星</span>
+      <p>
+      
+            2D6&gt;=5 （判定：人脈） (2D6&gt;=5) ＞ 7[3,4] ＞ 7 ＞ 成功
+            
+      </p>
+      </div>
+      <div class="mem2 right">
+      <span>紫残花</span>
+      <p>
+      
+            ET 感情表(6) ＞ 狂信（プラス）／殺意（マイナス）
+            
+      </p>
+      </div>
+      <div class="mem4 right">
+      <span>小此木 天星</span>
+      <p>
+      
+            ET 感情表(5) ＞ 憧憬（プラス）／劣等感（マイナス）
+            
+      </p>
+      </div>
+      <div class="mem2 right">
+      <span>紫残花</span>
+      <p>
+      
+            choice[狂信,殺意] (choice[狂信,殺意]) ＞ 狂信
+            
+      </p>
+      </div>
+      <div class="mem2 right">
+      <span>紫残花</span>
+      <p>
+      
+            小此木→狂信
+      </p>
+      </div>
+      <div class="mem4 right">
+      <span>小此木 天星</span>
+      <p>
+      
+            紫残花 →憧憬
+      </p>
+      </div>
+      <div class="mem4 right">
+      <span>小此木 天星</span>
+      <p>
+      
+            「ま、もしぬれそうになったら俺が盾になりますとも！みんなで一緒にやりましょうぜ！」
+      </p>
+      </div>
+      <div class="mem2 right">
+      <span>紫残花</span>
+      <p>
+      
+            「え？ちょ、ちょっと！」
+      </p>
+      </div>
+      <div class="mem7 left">
+      <span>ナレーション</span>
+      <p>
+      
+            ー数分後ー
+      </p>
+      </div>
+      <div class="mem7 left">
+      <span>ナレーション</span>
+      <p>
+      
+            ４人は激流に飲まれていた
+      </p>
+      </div>
+      <div class="mem2 right">
+      <span>紫残花</span>
+      <p>
+      
+            「うわぁぁぁぁぁぁぁ！！」（必死
+      </p>
+      </div>
+      <div class="mem4 right">
+      <span>小此木 天星</span>
+      <p>
+      
+            「ハハハハハ！！！！」
+      </p>
+      </div>
+      <div class="mem1 left">
+      <span>暁月 来瞳</span>
+      <p>
+      
+            「早い早い！すごいですね〜〜！」キャッキャ
+      </p>
+      </div>
+      <div class="mem3 left">
+      <span>市 穂焔</span>
+      <p>
+      
+            「みなさん、アクティブ、ですねっ！？」
+      </p>
+      </div>
+      <div class="mem4 right">
+      <span>小此木 天星</span>
+      <p>
+      
+            「最高だぜ！完璧に！そう思うでしょう？サザンカサァン！」
+      </p>
+      </div>
+      <div class="mem2 right">
+      <span>紫残花</span>
+      <p>
+      
+            「落ちるッ！落ちるって！」
+      </p>
+      </div>
+      <div class="mem2 right">
+      <span>紫残花</span>
+      <p>
+      
+            「笑ってないで！キミがやればよかったじゃないかぁ！あぁあ！」
+      </p>
+      </div>
+      <div class="mem4 right">
+      <span>小此木 天星</span>
+      <p>
+      
+            「お任せ！」（落ちそうな紫残花 を支える）
+      </p>
+      </div>
+      <div class="mem2 right">
+      <span>紫残花</span>
+      <p>
+      
+            「わっ！は、離さないで！そのままでぇ！」
+      </p>
+      </div>
+      <div class="mem1 left">
+      <span>暁月 来瞳</span>
+      <p>
+      
+            「すごーい！みてください穂焔さん！<br>紫残花さんと小此木さんが一瞬であべっくになってます！」指差す
+      </p>
+      </div>
+      <div class="mem3 left">
+      <span>市 穂焔</span>
+      <p>
+      
+            「あべっく、って、古い言葉、知ってますね！？」
+      </p>
+      </div>
+      <div class="mem7 left">
+      <span>ナレーション</span>
+      <p>
+      
+            しばらくすると流れの穏やかなところに到着する
+      </p>
+      </div>
+      <div class="mem2 right">
+      <span>紫残花</span>
+      <p>
+      
+            「はぁ……はぁ……休暇で死ぬところだった」
+      </p>
+      </div>
+      <div class="mem4 right">
+      <span>小此木 天星</span>
+      <p>
+      
+            「こういうのは不慣れですかぁ！たまにはいいでしょう？俺はいつでもウェルカムですけど！」
+      </p>
+      </div>
+      <div class="mem2 right">
+      <span>紫残花</span>
+      <p>
+      
+            「でも、まぁ、うん…たまには、うんたまにはいい経験になったかな」（息切れ
+      </p>
+      </div>
+      <div class="mem4 right">
+      <span>小此木 天星</span>
+      <p>
+      
+            「・・・。」
+      </p>
+      </div>
+      <div class="mem2 right">
+      <span>紫残花</span>
+      <p>
+      
+            「あぁ、ありがとう小此木」
+      </p>
+      </div>
+      <div class="mem4 right">
+      <span>小此木 天星</span>
+      <p>
+      
+            「・・・・・・・。」
+      </p>
+      </div>
+      <div class="mem2 right">
+      <span>紫残花</span>
+      <p>
+      
+            「これもいい経験に……うん？」
+      </p>
+      </div>
+      <div class="mem2 right">
+      <span>紫残花</span>
+      <p>
+      
+            「な、なんだい？ボクの顔になにか……！見たのか！？」
+      </p>
+      </div>
+      <div class="mem4 right">
+      <span>小此木 天星</span>
+      <p>
+      
+            （青い花を眺めているときから思っていたが……。）
+      </p>
+      </div>
+      <div class="mem4 right">
+      <span>小此木 天星</span>
+      <p>
+      
+            （この心のざわめきはぁ！！）
+      </p>
+      </div>
+      <div class="mem4 right">
+      <span>小此木 天星</span>
+      <p>
+      
+            （こいつは！！ハートに来たってやつだぜ！完璧に！！）
+      </p>
+      </div>
+      <div class="mem2 right">
+      <span>紫残花</span>
+      <p>
+      
+            「な、なんとかいいたまえ！」
+      </p>
+      </div>
+      <div class="mem4 right">
+      <span>小此木 天星</span>
+      <p>
+      
+            「次に行きましょう！！↑↑」
+      </p>
+      </div>
+      <div class="mem4 right">
+      <span>小此木 天星</span>
+      <p>
+      
+            紫残花 の手を取り歩き出す
+      </p>
+      </div>
+      <div class="mem2 right">
+      <span>紫残花</span>
+      <p>
+      
+            「え？いや、ちょっと休憩！」
+      </p>
+      </div>
+      <div class="kp LtoR-early">
+      
+            じゃ次の方ー
+      </div>
+      <div class="kp LtoR-early">
+      
+            choice[暁月 来瞳,市 穂焔,紫残花] (choice[暁月 来瞳,市 穂焔,紫残花]) ＞ 市 穂焔
+            
+      </div>
+      <div class="mem3 left">
+      <span>市 穂焔</span>
+      <p>
+      
+            2ｄ6 (2D6) ＞ 7[1,6] ＞ 7
+            
+      </p>
+      </div>
+      <div class="kp LtoR-early">
+      
+            山の散策。豊かな草花や鳥たちのさえずりがあなたを歓迎しているようだ。
+      </div>
+      <div class="kp LtoR-early">
+      
+            1サイクル目 市 穂焔
+      </div>
+      <div class="mem3 left">
+      <span>市 穂焔</span>
+      <p>
+      
+            全員呼びます
+      </p>
+      </div>
+      <div class="mem3 left">
+      <span>市 穂焔</span>
+      <p>
+      
+            「ゆっくり歩いてちょっと休憩しましょう……」
+      </p>
+      </div>
+      <div class="mem3 left">
+      <span>市 穂焔</span>
+      <p>
+      
+            「気になってたんですよね、青い花のこと。ちょっと調べてみてもいいですか？」
+      </p>
+      </div>
+      <div class="mem2 right">
+      <span>紫残花</span>
+      <p>
+      
+            「好きにするといい...はぁ…つかれた……」
+      </p>
+      </div>
+      <div class="mem1 left">
+      <span>暁月 来瞳</span>
+      <p>
+      
+            「次は山ですね！＾＾」
+      </p>
+      </div>
+      <div class="mem2 right">
+      <span>紫残花</span>
+      <p>
+      
+            「景色がよく見える……鳥の声も聞こえる」
+      </p>
+      </div>
+      <div class="mem3 left">
+      <span>市 穂焔</span>
+      <p>
+      
+            「うーん、花を調べるよりあの詳しそうな人に聞いたほうがいいかな……」
+      </p>
+      </div>
+      <div class="mem3 left">
+      <span>市 穂焔</span>
+      <p>
+      
+            不施さんを調べたい
+      </p>
+      </div>
+      <div class="mem3 left">
+      <span>市 穂焔</span>
+      <p>
+      
+            2D6&gt;=5 （判定：分身の術） (2D6&gt;=5) ＞ 4[1,3] ＞ 4 ＞ 失敗
+            
+      </p>
+      </div>
+      <div class="mem3 left">
+      <span>市 穂焔</span>
+      <p>
+      
+            （よくわからない……）
+      </p>
+      </div>
+      <div class="mem2 right">
+      <span>紫残花</span>
+      <p>
+      
+            「鳥になるか…鳥になるか……向こうに答えは……」
+      </p>
+      </div>
+      <div class="mem2 right">
+      <span>紫残花</span>
+      <p>
+      
+            「こんな感じか……」ﾒﾓﾒﾓ
+      </p>
+      </div>
+      <div class="mem4 right">
+      <span>小此木 天星</span>
+      <p>
+      
+            「お、例の執筆活動の取材ですかい？」
+      </p>
+      </div>
+      <div class="mem2 right">
+      <span>紫残花</span>
+      <p>
+      
+            「あぁ、そうだよ。詩集とか出してるんだ」
+      </p>
+      </div>
+      <div class="mem2 right">
+      <span>紫残花</span>
+      <p>
+      
+            「知ってる？こういうの？」（本を出す
+      </p>
+      </div>
+      <div class="mem4 right">
+      <span>小此木 天星</span>
+      <p>
+      
+            「詩！それはいい！俺も詩が趣味でしてねぇ！ぜひ読ませていただこう！」
+      </p>
+      </div>
+      <div class="mem1 left">
+      <span>暁月 来瞳</span>
+      <p>
+      
+            「（逢い引きだ！）」
+      </p>
+      </div>
+      <div class="mem2 right">
+      <span>紫残花</span>
+      <p>
+      
+            「へぇ、そうなんだじゃあこれあげるよ」
+      </p>
+      </div>
+      <div class="mem2 right">
+      <span>紫残花</span>
+      <p>
+      
+            文庫本を渡す
+      </p>
+      </div>
+      <div class="mem2 right">
+      <span>紫残花</span>
+      <p>
+      
+            「よかったら後で感想を聞かせてくれよ」
+      </p>
+      </div>
+      <div class="mem3 left">
+      <span>市 穂焔</span>
+      <p>
+      
+            シーン終了
+      </p>
+      </div>
+      <div class="kp LtoR-early">
+      
+            次の方ー
+      </div>
+      <div class="kp LtoR-early">
+      
+            1サイクル目 暁月 来瞳
+      </div>
+      <div class="mem1 left">
+      <span>暁月 来瞳</span>
+      <p>
+      
+            2d6 (2D6) ＞ 11[5,6] ＞ 11
+            
+      </p>
+      </div>
+      <div class="kp LtoR-early">
+      
+            科学博物館。様々な動物や草花の資料や豆知識が書いてある。<br>ここの自然をより深く知ることができそうだ。
+      </div>
+      <div class="mem2 right">
+      <span>紫残花</span>
+      <p>
+      
+            「……」
+      </p>
+      </div>
+      <div class="mem1 left">
+      <span>暁月 来瞳</span>
+      <p>
+      
+            「面白そうですよ！さっきの山のことにもっと詳しくなるかもです！」
+      </p>
+      </div>
+      <div class="mem2 right">
+      <span>紫残花</span>
+      <p>
+      
+            「あぁ、そうだね確かに多い……さっきの彼の趣味かな……？」
+      </p>
+      </div>
+      <div class="mem3 left">
+      <span>市 穂焔</span>
+      <p>
+      
+            「そうですね、よく知れるといいんですが……」
+      </p>
+      </div>
+      <div class="mem1 left">
+      <span>暁月 来瞳</span>
+      <p>
+      
+            「みなさん勉強は嫌いですか？しなきゃだめですよ！<br>勉強する人は偉いです、きっとさっきのメガネの不施さんも偉いです！」
+      </p>
+      </div>
+      <div class="mem3 left">
+      <span>市 穂焔</span>
+      <p>
+      
+            「勉強は嫌いじゃないですけど、それでえらいかどうかは……」
+      </p>
+      </div>
+      <div class="mem4 right">
+      <span>小此木 天星</span>
+      <p>
+      
+            「見上げた心意気だな！少年、勉強イズ大事！探求こそ人生よ」
+      </p>
+      </div>
+      <div class="mem1 left">
+      <span>暁月 来瞳</span>
+      <p>
+      
+            「えっ、偉くないんですか！？<br>偉い人はみんな勉強しているって聞きました……」
+      </p>
+      </div>
+      <div class="mem3 left">
+      <span>市 穂焔</span>
+      <p>
+      
+            「えっあっ、もちろん、偉い人はみんな勉強してると思います！ただそれでえらくなれるとは限らないというか……」
+      </p>
+      </div>
+      <div class="mem1 left">
+      <span>暁月 来瞳</span>
+      <p>
+      
+            「やっぱり大事ですよね？勉強！それを聞いて安心です！」
+      </p>
+      </div>
+      <div class="mem1 left">
+      <span>暁月 来瞳</span>
+      <p>
+      
+            「……確かに、僕偉くなりたいわけではないかもです。みなさん頭いいですね！」
+      </p>
+      </div>
+      <div class="mem2 right">
+      <span>紫残花</span>
+      <p>
+      
+            「いい疑問だね暁月くん、勉強してるから偉いのか……それとも偉いから勉強しなくちゃいけないのか」
+      </p>
+      </div>
+      <div class="mem3 left">
+      <span>市 穂焔</span>
+      <p>
+      
+            「偉くても偉くなくても勉強はしたほうがいいものかと……」
+      </p>
+      </div>
+      <div class="mem2 right">
+      <span>紫残花</span>
+      <p>
+      
+            「あるいは偉いふりをする勉強をしてるのか……」
+      </p>
+      </div>
+      <div class="mem3 left">
+      <span>市 穂焔</span>
+      <p>
+      
+            「それは……虎の威を借る狐というか」
+      </p>
+      </div>
+      <div class="mem1 left">
+      <span>暁月 来瞳</span>
+      <p>
+      
+            「わ、わかんなくなっちゃいました……！！お、教えてください！<br>僕は勉強してていいんですよね？合ってます？？？」
+      </p>
+      </div>
+      <div class="mem3 left">
+      <span>市 穂焔</span>
+      <p>
+      
+            「べ、勉強はしたほうがいいです！」
+      </p>
+      </div>
+      <div class="mem2 right">
+      <span>紫残花</span>
+      <p>
+      
+            「ボクが言いたいのは何のために勉強するのか……目的と手段を間違えない方がいい」
+      </p>
+      </div>
+      <div class="mem2 right">
+      <span>紫残花</span>
+      <p>
+      
+            「……まぁそんな感じ」
+      </p>
+      </div>
+      <div class="mem3 left">
+      <span>市 穂焔</span>
+      <p>
+      
+            「それは、そうですね……」
+      </p>
+      </div>
+      <div class="mem1 left">
+      <span>暁月 来瞳</span>
+      <p>
+      
+            2D6&gt;=5 （判定：対人術） (2D6&gt;=5) ＞ 7[3,4] ＞ 7 ＞ 成功
+            
+      </p>
+      </div>
+      <div class="mem1 left">
+      <span>暁月 来瞳</span>
+      <p>
+      
+            ET 感情表(6) ＞ 狂信（プラス）／殺意（マイナス）
+            
+      </p>
+      </div>
+      <div class="mem3 left">
+      <span>市 穂焔</span>
+      <p>
+      
+            et 感情表(5) ＞ 憧憬（プラス）／劣等感（マイナス）
+            
+      </p>
+      </div>
+      <div class="mem1 left">
+      <span>暁月 来瞳</span>
+      <p>
+      
+            choice[1,2] (choice[1,2]) ＞ 2
+            
+      </p>
+      </div>
+      <div class="mem3 left">
+      <span>市 穂焔</span>
+      <p>
+      
+            choice[憧憬（プラス）,劣等感（マイナス）] (choice[憧憬(プラス),劣等感(マイナス)]) ＞ 憧憬(プラス)
+            
+      </p>
+      </div>
+      <div class="mem3 left">
+      <span>市 穂焔</span>
+      <p>
+      
+             来瞳くんへ憧憬(プラス)
+      </p>
+      </div>
+      <div class="mem1 left">
+      <span>暁月 来瞳</span>
+      <p>
+      
+            「よかった！じゃあ勉強します！僕は学生なので、いっぱい教えてください！」<br>穂焔くんと握手してにこー！！！
+      </p>
+      </div>
+      <div class="mem3 left">
+      <span>市 穂焔</span>
+      <p>
+      
+            「え？あ、はい、僕にできることなら……」
+      </p>
+      </div>
+      <div class="mem2 right">
+      <span>紫残花</span>
+      <p>
+      
+            「仲良きことは美しきかな……」ﾒﾓﾒﾓ
+      </p>
+      </div>
+      <div class="mem3 left">
+      <span>市 穂焔</span>
+      <p>
+      
+            （学生さんか……キラキラしていてうらやましい……）
+      </p>
+      </div>
+      <div class="mem1 left">
+      <span>暁月 来瞳</span>
+      <p>
+      
+            「えへへ、じゃあ頭がいい人みたいにメガネを買いましょう！<br>小此木さんが持ってるようなメガネがあっちのお店に売ってました！！」手を引いていきます
+      </p>
+      </div>
+      <div class="mem3 left">
+      <span>市 穂焔</span>
+      <p>
+      
+            「え？あ、あの、眼鏡をしているから頭がいいわけでは……」
+      </p>
+      </div>
+      <div class="mem4 right">
+      <span>小此木 天星</span>
+      <p>
+      
+            （こいつをわかってくれるたぁいいセンスだぜ）
+      </p>
+      </div>
+      <div class="mem1 left">
+      <span>暁月 来瞳</span>
+      <p>
+      
+            ここいらでシーン終了します〜〜〜！
+      </p>
+      </div>
+      <div class="kp LtoR-early">
+      
+            はい最後のかたー
+      </div>
+      <div class="kp LtoR-early">
+      
+            1サイクル目 紫残花
+      </div>
+      <div class="mem2 right">
+      <span>紫残花</span>
+      <p>
+      
+            2ｄ6 シーン (2D6) ＞ 4[1,3] ＞ 4
+            
+      </p>
+      </div>
+      <div class="kp LtoR-early">
+      
+            プール。流れるプールやスライダーなど一日中遊んでいられそうだ。
+      </div>
+      <div class="mem2 right">
+      <span>紫残花</span>
+      <p>
+      
+            登場：自分、天星
+      </p>
+      </div>
+      <div class="mem2 right">
+      <span>紫残花</span>
+      <p>
+      
+            「また水か……川もあるのにプールもあるんだね」
+      </p>
+      </div>
+      <div class="mem4 right">
+      <span>小此木 天星</span>
+      <p>
+      
+            「Fo！！しっかしそれでも誘えば来てくれるんだからお人がいい！」
+      </p>
+      </div>
+      <div class="mem2 right">
+      <span>紫残花</span>
+      <p>
+      
+            「……あれ？他の二人は？」
+      </p>
+      </div>
+      <div class="mem4 right">
+      <span>小此木 天星</span>
+      <p>
+      
+            「誘う前に２人でどっかにいってたみたいだったのでね！」
+      </p>
+      </div>
+      <div class="mem2 right">
+      <span>紫残花</span>
+      <p>
+      
+            「……そうか」
+      </p>
+      </div>
+      <div class="mem2 right">
+      <span>紫残花</span>
+      <p>
+      
+            「……うん、ちょうどよかったね」
+      </p>
+      </div>
+      <div class="mem4 right">
+      <span>小此木 天星</span>
+      <p>
+      
+            「ちょうどいい！？」
+      </p>
+      </div>
+      <div class="mem2 right">
+      <span>紫残花</span>
+      <p>
+      
+            「うん、ボクらも…キミのこと、もっと知りたかったし」
+      </p>
+      </div>
+      <div class="mem2 right">
+      <span>紫残花</span>
+      <p>
+      
+            情報判定→小此木
+      </p>
+      </div>
+      <div class="mem2 right">
+      <span>紫残花</span>
+      <p>
+      
+            2D6&gt;=5 （判定：調査術） (2D6&gt;=5) ＞ 7[1,6] ＞ 7 ＞ 成功
+            
+      </p>
+      </div>
+      <div class="mem4 right">
+      <span>小此木 天星</span>
+      <p>
+      
+            「……望むところですとも！」
+      </p>
+      </div>
+      <div class="mem2 right">
+      <span>紫残花</span>
+      <p>
+      
+            「……そう？」
+      </p>
+      </div>
+      <div class="mem4 right">
+      <span>小此木 天星</span>
+      <p>
+      
+            「ふむ…ところで、泳ぎは得意いですかぁ？」
+      </p>
+      </div>
+      <div class="mem2 right">
+      <span>紫残花</span>
+      <p>
+      
+            「泳ぎ？いや……全然」
+      </p>
+      </div>
+      <div class="mem2 right">
+      <span>紫残花</span>
+      <p>
+      
+            「水は苦手でね」
+      </p>
+      </div>
+      <div class="mem4 right">
+      <span>小此木 天星</span>
+      <p>
+      
+            「やはり、あのラフティングでの水への反応。」
+      </p>
+      </div>
+      <div class="mem2 right">
+      <span>紫残花</span>
+      <p>
+      
+            「……キミもボクのことを知りたいんだね」
+      </p>
+      </div>
+      <div class="mem4 right">
+      <span>小此木 天星</span>
+      <p>
+      
+            「苦手も、時に挑戦次第で克服できるものです。一緒に練習してみませんか？」
+      </p>
+      </div>
+      <div class="mem2 right">
+      <span>紫残花</span>
+      <p>
+      
+            「……いや、やめとくよ」
+      </p>
+      </div>
+      <div class="mem2 right">
+      <span>紫残花</span>
+      <p>
+      
+            「キミはやさしいね、出会った時から……」
+      </p>
+      </div>
+      <div class="mem2 right">
+      <span>紫残花</span>
+      <p>
+      
+            「どうしてボクに構うのかな？」
+      </p>
+      </div>
+      <div class="mem4 right">
+      <span>小此木 天星</span>
+      <p>
+      
+            「フフ・・・水着姿が見たかっただけですとも！。もしかしてばれてた？」
+      </p>
+      </div>
+      <div class="mem2 right">
+      <span>紫残花</span>
+      <p>
+      
+            「……いやわからないな」
+      </p>
+      </div>
+      <div class="mem2 right">
+      <span>紫残花</span>
+      <p>
+      
+            「キミのことも……ボクのことも…」
+      </p>
+      </div>
+      <div class="mem4 right">
+      <span>小此木 天星</span>
+      <p>
+      
+            「……。」
+      </p>
+      </div>
+      <div class="mem2 right">
+      <span>紫残花</span>
+      <p>
+      
+            「だから…ボクはもっと知りたいんだいろんなこと」
+      </p>
+      </div>
+      <div class="mem2 right">
+      <span>紫残花</span>
+      <p>
+      
+            「ボクの……ボクを埋めるために」
+      </p>
+      </div>
+      <div class="mem4 right">
+      <span>小此木 天星</span>
+      <p>
+      
+            「フフ……」
+      </p>
+      </div>
+      <div class="mem2 right">
+      <span>紫残花</span>
+      <p>
+      
+            赤眼→小此木
+      </p>
+      </div>
+      <div class="mem2 right">
+      <span>紫残花</span>
+      <p>
+      
+            2D6&gt;=5 （判定：絡繰術） (2D6&gt;=5) ＞ 10[5,5] ＞ 10 ＞ 成功
+            
+      </p>
+      </div>
+      <div class="mem4 right">
+      <span>小此木 天星</span>
+      <p>
+      
+            （そんなミステリアスなところも素敵だ！）
+      </p>
+      </div>
+      <div class="mem2 right">
+      <span>紫残花</span>
+      <p>
+      
+            「……だからキミも……協力してくれるよね？」
+      </p>
+      </div>
+      <div class="mem4 right">
+      <span>小此木 天星</span>
+      <p>
+      
+            「もちろん！！」<br>（このバカンスでその瞳を奪いたい）
+      </p>
+      </div>
+      <div class="mem7 left">
+      <span>ナレーション</span>
+      <p>
+      
+            小此木がそう答えた瞬間、辺りは静寂に包まれた
+      </p>
+      </div>
+      <div class="mem7 left">
+      <span>ナレーション</span>
+      <p>
+      
+            時が止まったかのような静寂、それは小此木の身のみに起きていることだと理解する
+      </p>
+      </div>
+      <div class="mem7 left">
+      <span>ナレーション</span>
+      <p>
+      
+            目の前の少女、紫残花の瞳術によるものだと理解した
+      </p>
+      </div>
+      <div class="mem7 left">
+      <span>ナレーション</span>
+      <p>
+      
+            身動き一つとれない、意識は深い眠りの中にいるようでいてはっきりと現状を理解できる
+      </p>
+      </div>
+      <div class="mem7 left">
+      <span>ナレーション</span>
+      <p>
+      
+            これは、彼女の忍術だ
+      </p>
+      </div>
+      <div class="mem7 left">
+      <span>ナレーション</span>
+      <p>
+      
+            ーー彼女が口を開き、言葉を紡ぐ
+      </p>
+      </div>
+      <div class="mem2 right">
+      <span>紫残花</span>
+      <p>
+      
+            「理解し難いといわれても他に道などない……物語は始まったばかりだ」
+      </p>
+      </div>
+      <div class="mem2 right">
+      <span>紫残花</span>
+      <p>
+      
+            奥義！！
+      </p>
+      </div>
+      <div class="mem2 right">
+      <span>紫残花</span>
+      <p>
+      
+            ■奥義<br>《ボクは盗む》<br>指定特技　：絡繰術<br>エフェクト：追加忍法：《闇神楽》<br>効果・演出：対象に赤眼を見せ、幻覚を引き起こし、<br>詩を聞かせて完全なる催眠状態へと陥れる。<br>気が付いた時には、既に大切な情報は盗まれた後だ。
+      </p>
+      </div>
+
+      <div class="mem8 right">
+      <span>system</span>
+      <p>
+      
+            [ 紫残花 ] 体術 : 1 → 0
+      </p>
+      </div>
+      <div class="mem2 right">
+      <span>紫残花</span>
+      <p>
+      
+            2D6&gt;=5 （判定：絡繰術） (2D6&gt;=5) ＞ 7[2,5] ＞ 7 ＞ 成功
+            
+      </p>
+      </div>
+      <div class="mem2 right">
+      <span>紫残花</span>
+      <p>
+      
+            「たどる記憶は数あれど、たどる道ならこれだけと、<br>　奪えるものは全て奪い、<br>　ただ一つを手にするためすべてを投げ捨て、<br>　その空欄を埋める為のよく出来た嘘をボクは盗む」
+      </p>
+      </div>
+      <div class="mem2 right">
+      <span>紫残花</span>
+      <p>
+      
+            2D6&gt;=5 （判定：瞳術） (2D6&gt;=5) ＞ 8[3,5] ＞ 8 ＞ 成功
+            
+      </p>
+      </div>
+      <div class="mem4 right">
+      <span>小此木 天星</span>
+      <p>
+      
+            「こいつは……！」
+      </p>
+      </div>
+      <div class="mem2 right">
+      <span>紫残花</span>
+      <p>
+      
+            「あぁ……！」
+      </p>
+      </div>
+      <div class="mem2 right">
+      <span>紫残花</span>
+      <p>
+      
+            「ボクの影よ。ボクらはずっとこのままだ……」
+      </p>
+      </div>
+      <div class="mem7 left">
+      <span>ナレーション</span>
+      <p>
+      
+            一人で何かを嘆くようにつぶやいた紫残花がその場を後にする
+      </p>
+      </div>
+      <div class="mem4 right">
+      <span>小此木 天星</span>
+      <p>
+      
+            「フフ、そのまがまがしさもまた…」
+      </p>
+      </div>
+      <div class="mem7 left">
+      <span>ナレーション</span>
+      <p>
+      
+            彼女が立ち去った後、小此木は自身の肉体が自由に動くことを自覚する
+      </p>
+      </div>
+      <div class="mem2 right">
+      <span>紫残花</span>
+      <p>
+      
+            シーン終了
+      </p>
+      </div>
+      <div class="kp LtoR-early">
+        <br>
+          ――――――――――――――――――――――――<br><br>
+    </div>
+      <div class="mem5 left">
+      <span>小村博</span>
+      <p>
+      
+            「ぐっ」
+      </p>
+      </div>
+      <div class="kp LtoR-early">
+      
+            政治家の小村博が体調不良を訴えリゾート地を去る。
+      </div>
+      <div class="kp LtoR-early">
+      
+            以降小村博の秘密を判定するときは‐2 の修正がかかる。
+      </div>
+      <div class="kp LtoR-early">
+      
+            マスターシーン終了です。
+      </div>
+      <div class="kp LtoR-early">
+        <br>
+          ――――――――――――――――――――――――<br><br>
+    </div>
+    <div class="kp LtoR-early">
+      
+        2サイクル目
+  </div>
+      <div class="kp LtoR-early">
+      
+            次はだれかな？
+      </div>
+      <div class="mem2 right">
+      <span>紫残花</span>
+      <p>
+      
+            我手番也！
+      </p>
+      </div>
+      <div class="mem2 right">
+      <span>紫残花</span>
+      <p>
+      
+            2d6　シーン (2D6) ＞ 6[2,4] ＞ 6
+            
+      </p>
+      </div>
+      <div class="kp LtoR-early">
+      
+            2サイクル目 紫残花
+      </div>
+      <div class="kp LtoR-early">
+      
+            温泉。日頃の疲れや戦いの傷が嘘みたいだ。マッサージもあるようだ。
+      </div>
+      <div class="mem2 right">
+      <span>紫残花</span>
+      <p>
+      
+            登場人物：来瞳
+      </p>
+      </div>
+      <div class="mem2 right">
+      <span>紫残花</span>
+      <p>
+      
+            「おや、キミは……」
+      </p>
+      </div>
+      <div class="mem2 right">
+      <span>紫残花</span>
+      <p>
+      
+            「来瞳くん……ここにいたのか」
+      </p>
+      </div>
+      <div class="mem1 left">
+      <span>暁月 来瞳</span>
+      <p>
+      
+            「紫残花さんこんばんは！いい夜ですね！」にこ
+      </p>
+      </div>
+      <div class="mem2 right">
+      <span>紫残花</span>
+      <p>
+      
+            「……あぁ、いい夜だ、キミによく似合ってる」
+      </p>
+      </div>
+      <div class="mem2 right">
+      <span>紫残花</span>
+      <p>
+      
+            「そういえばキミは学生だけど……一人？」
+      </p>
+      </div>
+      <div class="mem1 left">
+      <span>暁月 来瞳</span>
+      <p>
+      
+            「えへへ、僕は寂しがりやなので友達がついてきてくれてます。もしかして、見えてないですか？」
+      </p>
+      </div>
+      <div class="mem2 right">
+      <span>紫残花</span>
+      <p>
+      
+            「友達？……！」
+      </p>
+      </div>
+      <div class="mem2 right">
+      <span>紫残花</span>
+      <p>
+      
+            「……よくわからないな、キミも友達も」
+      </p>
+      </div>
+      <div class="mem1 left">
+      <span>暁月 来瞳</span>
+      <p>
+      
+            「実は、僕もよくわからないです。<br>でも友達ってそれでいいんですよね？よくわからなくても友達になっていいんですよね？」
+      </p>
+      </div>
+      <div class="mem1 left">
+      <span>暁月 来瞳</span>
+      <p>
+      
+            「一緒にいたければいればいい、離れたければ離れればいい。<br>友達って曖昧で弱い絆だけど、だから誰とでも友達にはなれるんです」
+      </p>
+      </div>
+      <div class="mem1 left">
+      <span>暁月 来瞳</span>
+      <p>
+      
+            「だから紫残花さんも僕の友達です。できれば一緒にいてほしいです、そのほうが楽しいです」
+      </p>
+      </div>
+      <div class="mem2 right">
+      <span>紫残花</span>
+      <p>
+      
+            「……そうだね、だってボクももっと……キミのこと、知りたい」
+      </p>
+      </div>
+      <div class="mem2 right">
+      <span>紫残花</span>
+      <p>
+      
+            情報判定→来瞳
+      </p>
+      </div>
+      <div class="mem2 right">
+      <span>紫残花</span>
+      <p>
+      
+            2D6&gt;=5 （判定：調査術） (2D6&gt;=5) ＞ 5[2,3] ＞ 5 ＞ 成功
+            
+      </p>
+      </div>
+      <div class="mem2 right">
+      <span>紫残花</span>
+      <p>
+      
+            「……」
+      </p>
+      </div>
+      <div class="mem2 right">
+      <span>紫残花</span>
+      <p>
+      
+            小箱のようなものを取り出し中身を取り出す
+      </p>
+      </div>
+      <div class="mem2 right">
+      <span>紫残花</span>
+      <p>
+      
+            それを手に取り匂いをかぐ
+      </p>
+      </div>
+      <div class="mem1 left">
+      <span>暁月 来瞳</span>
+      <p>
+      
+            「紫残花さん、僕のこと……わかりました？<br>どうですか？好きですか？嫌いになりました？」
+      </p>
+      </div>
+      <div class="mem2 right">
+      <span>紫残花</span>
+      <p>
+      
+            「…」
+      </p>
+      </div>
+      <div class="mem2 right">
+      <span>紫残花</span>
+      <p>
+      
+            「…」
+      </p>
+      </div>
+      <div class="mem2 right">
+      <span>紫残花</span>
+      <p>
+      
+            「…」
+      </p>
+      </div>
+      <div class="mem9 left">
+      <span>紫陽花</span>
+      <p>
+      
+            「うーんどうやろなぁ？」
+      </p>
+      </div>
+      <div class="mem9 left">
+      <span>紫陽花</span>
+      <p>
+      
+            「”好き”いうたら、うちのことも好いてくれるん？」
+      </p>
+      </div>
+      <div class="mem1 left">
+      <span>暁月 来瞳</span>
+      <p>
+      
+            「僕は好きですよ！<br>僕はみんな好きです。嫌いって、疲れちゃうので」にこ！
+      </p>
+      </div>
+      <div class="mem9 left">
+      <span>紫陽花</span>
+      <p>
+      
+            （スマホを弄ってどこかへ連絡する）
+      </p>
+      </div>
+      <div class="mem1 left">
+      <span>暁月 来瞳</span>
+      <p>
+      
+            「？　お友達ですか？それに、紫残花さん、さっきと雰囲気違いません？」
+      </p>
+      </div>
+      <div class="mem9 left">
+      <span>紫陽花</span>
+      <p>
+      
+            「そうなん？そら楽そうで羨ましいわぁ」
+      </p>
+      </div>
+      <div class="mem9 left">
+      <span>紫陽花</span>
+      <p>
+      
+            「うち？」
+      </p>
+      </div>
+      <div class="mem9 left">
+      <span>紫陽花</span>
+      <p>
+      
+            「わかるん？鋭いなぁボンは」
+      </p>
+      </div>
+      <div class="mem9 left">
+      <span>紫陽花</span>
+      <p>
+      
+            「せや、うちは紫陽花（はるか）……他のには内緒にしたってや」
+      </p>
+      </div>
+      <div class="mem9 left">
+      <span>紫陽花</span>
+      <p>
+      
+            「ボンが可愛いなってなぁ……変わってもらったんや」
+      </p>
+      </div>
+      <div class="mem1 left">
+      <span>暁月 来瞳</span>
+      <p>
+      
+            「紫陽花さん、ですね！<br>内緒なんですか？忍者ですもんね。でもみなさんも紫陽花さんとお話ししたいと思いますよ！お友達は多い方がいいですから！」
+      </p>
+      </div>
+      <div class="mem9 left">
+      <span>紫陽花</span>
+      <p>
+      
+            「ふふ、女は秘密が多いほうがええねん」
+      </p>
+      </div>
+      <div class="mem1 left">
+      <span>暁月 来瞳</span>
+      <p>
+      
+            「そうなんですか？勉強になります！」
+      </p>
+      </div>
+      <div class="mem9 left">
+      <span>紫陽花</span>
+      <p>
+      
+            「せやせや、やから勉強料ちょうだい」
+      </p>
+      </div>
+      <div class="mem1 left">
+      <span>暁月 来瞳</span>
+      <p>
+      
+            「勉強料？もしかして欲しいものあるんですか？さっきのメガネですか？」
+      </p>
+      </div>
+      <div class="mem9 left">
+      <span>紫陽花</span>
+      <p>
+      
+            「クスクス……欲しいのは……”それ”や」
+      </p>
+      </div>
+      <div class="mem9 left">
+      <span>紫陽花</span>
+      <p>
+      
+            赤眼→来瞳
+      </p>
+      </div>
+      <div class="mem9 left">
+      <span>紫陽花</span>
+      <p>
+      
+            2D6&gt;=5 （判定：絡繰術） (2D6&gt;=5) ＞ 8[2,6] ＞ 8 ＞ 成功
+            
+      </p>
+      </div>
+      <div class="mem9 left">
+      <span>紫陽花</span>
+      <p>
+      
+            奥義！！
+      </p>
+      </div>
+      <div class="mem9 left">
+      <span>紫陽花</span>
+      <p>
+      
+            ■奥義<br>《ボクは盗む》<br>指定特技　：絡繰術<br>エフェクト：追加忍法：《闇神楽》<br>効果・演出：対象に赤眼を見せ、幻覚を引き起こし、<br>詩を聞かせて完全なる催眠状態へと陥れる。<br>気が付いた時には、既に大切な情報は盗まれた後だ。
+      </p>
+      </div>
+      <div class="mem9 left">
+      <span>紫陽花</span>
+      <p>
+      
+            「理解し難いといわれても他に道などない、<br>　物語は始まったばかりだ」
+      </p>
+      </div>
+      <div class="mem8 right">
+      <span>system</span>
+      <p>
+      
+            [ 紫残花 ] 戦術 : 1 → 0
+      </p>
+      </div>
+      <div class="mem9 left">
+      <span>紫陽花</span>
+      <p>
+      
+            2D6&gt;=5 （判定：絡繰術） (2D6&gt;=5) ＞ 6[2,4] ＞ 6 ＞ 成功
+            
+      </p>
+      </div>
+      <div class="mem9 left">
+      <span>紫陽花</span>
+      <p>
+      
+            「理解し難いといわれても他に道などない、<br>　物語は始まったばかりだ」<br><br>「たどる記憶は数あれど、たどる道ならこれだけと、<br>　奪えるものは全て奪い、<br>　ただ一つを手にするためすべてを投げ捨て、<br>　その空欄を埋める為のよく出来た嘘をボクは盗む」
+      </p>
+      </div>
+      <div class="mem9 left">
+      <span>紫陽花</span>
+      <p>
+      
+            2D6&gt;=5 （判定：瞳術） (2D6&gt;=5) ＞ 8[3,5] ＞ 8 ＞ 成功
+            
+      </p>
+      </div>
+      <div class="mem9 left">
+      <span>紫陽花</span>
+      <p>
+      
+            「あら、可愛いねぇ」
+      </p>
+      </div>
+      <div class="mem9 left">
+      <span>紫陽花</span>
+      <p>
+      
+            「これでもう、うちのもんや」
+      </p>
+      </div>
+      <div class="mem9 left">
+      <span>紫陽花</span>
+      <p>
+      
+            「よかったねぇ紫残花……ようやく見つけられそうや」
+      </p>
+      </div>
+      <div class="mem9 left">
+      <span>紫陽花</span>
+      <p>
+      
+            2D6&gt;=5 （判定：絡繰術） (2D6&gt;=5) ＞ 6[2,4] ＞ 6 ＞ 成功
+            
+      </p>
+      </div>
+      <div class="mem1 left">
+      <span>暁月 来瞳</span>
+      <p>
+      
+            「わあ……すごい。<br>視ました？視ましたか？視たんですよね？どうでした？嫌いにならないですか？」
+      </p>
+      </div>
+      <div class="mem9 left">
+      <span>紫陽花</span>
+      <p>
+      
+            「嫌い？ならへんよぉ～」
+      </p>
+      </div>
+      <div class="mem9 left">
+      <span>紫陽花</span>
+      <p>
+      
+            「人間、一皮むけば皆同じ……醜い欲望のケダモノや」
+      </p>
+      </div>
+      <div class="mem9 left">
+      <span>紫陽花</span>
+      <p>
+      
+            「ほなな、ボン。またね」
+      </p>
+      </div>
+      <div class="mem1 left">
+      <span>暁月 来瞳</span>
+      <p>
+      
+            「ふふ！ええ、また会いましょうね、紫陽花さん」
+      </p>
+      </div>
+      <div class="mem9 left">
+      <span>紫陽花</span>
+      <p>
+      
+            シーン終了
+      </p>
+      </div>
+      <div class="kp LtoR-early">
+      
+            はい
+      </div>
+      <div class="kp LtoR-early">
+      
+            つぎのかたー
+      </div>
+      <div class="kp LtoR-early">
+      
+            choice[暁月 来瞳,市 穂焔,小此木 天星] (choice[暁月 来瞳,市 穂焔,小此木 天星]) ＞ 暁月 来瞳
+            
+      </div>
+      <div class="mem1 left">
+      <span>暁月 来瞳</span>
+      <p>
+      
+            2d6 (2D6) ＞ 8[3,5] ＞ 8
+            
+      </p>
+      </div>
+      <div class="kp LtoR-early">
+      
+            ふれあい広場。様々な動物たちと触れ合える。<br>時間によっては動物のショーもやっているようだ。
+      </div>
+      <div class="kp LtoR-early">
+      
+            2サイクル目 暁月 来瞳
+      </div>
+      <div class="mem1 left">
+      <span>暁月 来瞳</span>
+      <p>
+      
+            「おはようございます！今日は動物を見ましょう！動きますよ！すごいですよ！」
+      </p>
+      </div>
+      <div class="mem3 left">
+      <span>市 穂焔</span>
+      <p>
+      
+            「そりゃあ、動物ですからね……」
+      </p>
+      </div>
+      <div class="mem2 right">
+      <span>紫残花</span>
+      <p>
+      
+            「朝から元気だね」
+      </p>
+      </div>
+      <div class="mem4 right">
+      <span>小此木 天星</span>
+      <p>
+      
+            「朝は苦手ですか！生き物を観察するのも知見を広めるにはいいですぜ！」
+      </p>
+      </div>
+      <div class="mem1 left">
+      <span>暁月 来瞳</span>
+      <p>
+      
+            「僕、動物園ってきたことないんです！<br>学校には忍獣とかはいますけど、旧校舎は生きてる動物は少ないんですよねえ」
+      </p>
+      </div>
+      <div class="mem2 right">
+      <span>紫残花</span>
+      <p>
+      
+            「動物は……そんなに……」
+      </p>
+      </div>
+      <div class="mem3 left">
+      <span>市 穂焔</span>
+      <p>
+      
+            「生きてる動物は……？」
+      </p>
+      </div>
+      <div class="mem1 left">
+      <span>暁月 来瞳</span>
+      <p>
+      
+            「だから動いていてすごいです！かわいいですね！」
+      </p>
+      </div>
+      <div class="mem4 right">
+      <span>小此木 天星</span>
+      <p>
+      
+            「なんかひっかかるいいかたすんね…。」
+      </p>
+      </div>
+      <div class="mem1 left">
+      <span>暁月 来瞳</span>
+      <p>
+      
+            「？　そういえば、小此木さんみたいな服を着た子もいますね！」虎を指さしています
+      </p>
+      </div>
+      <div class="mem3 left">
+      <span>市 穂焔</span>
+      <p>
+      
+            「ちょっと、違くないですか……？」
+      </p>
+      </div>
+      <div class="mem1 left">
+      <span>暁月 来瞳</span>
+      <p>
+      
+            「大きくて派手でかっこいいです、そっくりですよ！」にこ〜〜〜〜
+      </p>
+      </div>
+      <div class="mem2 right">
+      <span>紫残花</span>
+      <p>
+      
+            「雰囲気ってことかな？興味深い捉え方だね」
+      </p>
+      </div>
+      <div class="mem3 left">
+      <span>市 穂焔</span>
+      <p>
+      
+            「な、なるほど、そういう？」
+      </p>
+      </div>
+      <div class="mem1 left">
+      <span>暁月 来瞳</span>
+      <p>
+      
+            2D6&gt;=5 （判定：対人術） (2D6&gt;=5) ＞ 9[3,6] ＞ 9 ＞ 成功
+            
+      </p>
+      </div>
+      <div class="mem4 right">
+      <span>小此木 天星</span>
+      <p>
+      
+            「トラ！そんな怖く見える？かっこいいけどね！」
+      </p>
+      </div>
+      <div class="mem1 left">
+      <span>暁月 来瞳</span>
+      <p>
+      
+            「でしょう？でも、メガネのおかげであの子も雰囲気近いです！」パンダ指さし
+      </p>
+      </div>
+      <div class="mem1 left">
+      <span>暁月 来瞳</span>
+      <p>
+      
+            ET 感情表(4) ＞ 忠誠（プラス）／侮蔑（マイナス）
+            
+      </p>
+      </div>
+      <div class="mem4 right">
+      <span>小此木 天星</span>
+      <p>
+      
+            ET 感情表(3) ＞ 愛情（プラス）／妬み（マイナス）
+            
+      </p>
+      </div>
+      <div class="mem1 left">
+      <span>暁月 来瞳</span>
+      <p>
+      
+            小此木さんへ忠誠取ります
+      </p>
+      </div>
+      <div class="mem4 right">
+      <span>小此木 天星</span>
+      <p>
+      
+            来瞳→愛情
+      </p>
+      </div>
+      <div class="mem1 left">
+      <span>暁月 来瞳</span>
+      <p>
+      
+            「僕、あの子もこの子もかっこよくてかわいいので好きです！<br>小此木さんも面白くてかっこいいので好きです！」
+      </p>
+      </div>
+      <div class="mem4 right">
+      <span>小此木 天星</span>
+      <p>
+      
+            「少年…。」
+      </p>
+      </div>
+      <div class="mem2 right">
+      <span>紫残花</span>
+      <p>
+      
+            「……いや、そういうのではないと思う」
+      </p>
+      </div>
+      <div class="mem4 right">
+      <span>小此木 天星</span>
+      <p>
+      
+            「最高にいいセンしてるぜ！とくにサングラスを分かってくれてるところがとてもいい！」
+      </p>
+      </div>
+      <div class="mem3 left">
+      <span>市 穂焔</span>
+      <p>
+      
+            「彼は誰にでも好きと言うタイプでしょうね……」
+      </p>
+      </div>
+      <div class="mem4 right">
+      <span>小此木 天星</span>
+      <p>
+      
+            「大学のやつらだーれも分かってくれねんだが、君は実に見込みがあるな！」
+      </p>
+      </div>
+      <div class="mem2 right">
+      <span>紫残花</span>
+      <p>
+      
+            「自身の客観視をしたうえでの発言……なのかも」
+      </p>
+      </div>
+      <div class="mem1 left">
+      <span>暁月 来瞳</span>
+      <p>
+      
+            「えへん！好きですか？僕のこと好きになりましたか？」
+      </p>
+      </div>
+      <div class="mem3 left">
+      <span>市 穂焔</span>
+      <p>
+      
+            「好きになってもらえるなら誰でもいいんでしょうか……」
+      </p>
+      </div>
+      <div class="mem4 right">
+      <span>小此木 天星</span>
+      <p>
+      
+            「もちろん、勉強も好きなんだろぉ、君みたいな優秀な子が家の大学にも来てくれたらなぁ！」
+      </p>
+      </div>
+      <div class="mem1 left">
+      <span>暁月 来瞳</span>
+      <p>
+      
+            「小此木さん、先生？白衣の人なんですね？<br>僕の学校にもいますよ！小此木さん、僕のところに転校します？」
+      </p>
+      </div>
+      <div class="mem1 left">
+      <span>暁月 来瞳</span>
+      <p>
+      
+            オバケめっちゃいるけど
+      </p>
+      </div>
+      <div class="mem4 right">
+      <span>小此木 天星</span>
+      <p>
+      
+            「…？おばけなんているわけねーだろ」
+      </p>
+      </div>
+      <div class="mem2 right">
+      <span>紫残花</span>
+      <p>
+      
+            「……そうだね、そう思う」
+      </p>
+      </div>
+      <div class="mem1 left">
+      <span>暁月 来瞳</span>
+      <p>
+      
+            「そうそう、おばけなんていません。<br>いるのは僕の友達だけです！いい子ですよ〜」
+      </p>
+      </div>
+      <div class="mem4 right">
+      <span>小此木 天星</span>
+      <p>
+      
+            「まぁ、高校もいいかもな！君たちみたいな若いのと触れ合うと刺激がたくさんもらえてるし！」
+      </p>
+      </div>
+      <div class="mem1 left">
+      <span>暁月 来瞳</span>
+      <p>
+      
+            「やった〜〜〜〜！楽しみです〜〜〜！！」にか〜〜〜〜
+      </p>
+      </div>
+      <div class="mem1 left">
+      <span>暁月 来瞳</span>
+      <p>
+      
+            シーン切ります
+      </p>
+      </div>
+      <div class="kp LtoR-early">
+      
+            はいー次の方ー
+      </div>
+      <div class="kp LtoR-early">
+      
+            2サイクル目 市 穂焔
+      </div>
+      <div class="mem3 left">
+      <span>市 穂焔</span>
+      <p>
+      
+            2ｄ6 (2D6) ＞ 4[1,3] ＞ 4
+            
+      </p>
+      </div>
+      <div class="kp LtoR-early">
+      
+            プール。流れるプールやスライダーなど一日中遊んでいられそうだ。
+      </div>
+      <div class="mem3 left">
+      <span>市 穂焔</span>
+      <p>
+      
+            全員呼ぶ
+      </p>
+      </div>
+      <div class="mem3 left">
+      <span>市 穂焔</span>
+      <p>
+      
+            「プール、どうです？川よりはましじゃないですか？」
+      </p>
+      </div>
+      <div class="mem2 right">
+      <span>紫残花</span>
+      <p>
+      
+            「プール……ボクは……」
+      </p>
+      </div>
+      <div class="mem3 left">
+      <span>市 穂焔</span>
+      <p>
+      
+            「ごめんなさい、水辺、苦手でしたっけ……」
+      </p>
+      </div>
+      <div class="mem1 left">
+      <span>暁月 来瞳</span>
+      <p>
+      
+            「プール！すごい！学校のより広いです！」
+      </p>
+      </div>
+      <div class="mem2 right">
+      <span>紫残花</span>
+      <p>
+      
+            「うん……え？けど……いや、やっぱりくよ」
+      </p>
+      </div>
+      <div class="mem3 left">
+      <span>市 穂焔</span>
+      <p>
+      
+            「僕も得意というわけではないのですが……」
+      </p>
+      </div>
+      <div class="mem4 right">
+      <span>小此木 天星</span>
+      <p>
+      
+            「少年は得意そうだな！泳ぎ！」
+      </p>
+      </div>
+      <div class="mem1 left">
+      <span>暁月 来瞳</span>
+      <p>
+      
+            「ふふ、泳ぐの大好きですよ！溺れたら助けてあげます！」
+      </p>
+      </div>
+      <div class="mem4 right">
+      <span>小此木 天星</span>
+      <p>
+      
+            「よっしゃ、泳ぎ勝負といこうぜ！」
+      </p>
+      </div>
+      <div class="mem1 left">
+      <span>暁月 来瞳</span>
+      <p>
+      
+            「小此木さんにだって負けませんよ〜！！」
+      </p>
+      </div>
+      <div class="mem3 left">
+      <span>市 穂焔</span>
+      <p>
+      
+            「勝負！？ぼ、僕は端っこで見てますね……」
+      </p>
+      </div>
+      <div class="mem4 right">
+      <span>小此木 天星</span>
+      <p>
+      
+            「じゃ、俺のナイスな泳ぎと肉体美、２人で見てくれよな！」
+      </p>
+      </div>
+      <div class="mem2 right">
+      <span>紫残花</span>
+      <p>
+      
+            「……ボクは着替えてくるね」
+      </p>
+      </div>
+      <div class="mem4 right">
+      <span>小此木 天星</span>
+      <p>
+      
+            「お！みずぎですかぁ！！」
+      </p>
+      </div>
+      <div class="mem3 left">
+      <span>市 穂焔</span>
+      <p>
+      
+            「は、はぁ……」
+      </p>
+      </div>
+      <div class="mem3 left">
+      <span>市 穂焔</span>
+      <p>
+      
+            不施さんに情報を調べる
+      </p>
+      </div>
+      <div class="mem2 right">
+      <span>紫残花</span>
+      <p>
+      
+            「はぁ、全く……」
+      </p>
+      </div>
+      <div class="mem3 left">
+      <span>市 穂焔</span>
+      <p>
+      
+            2D6&gt;=5 （判定：分身の術） (2D6&gt;=5) ＞ 8[3,5] ＞ 8 ＞ 成功
+            
+      </p>
+      </div>
+      <div class="mem9 left">
+      <span>紫陽花</span>
+      <p>
+      
+            「～♪」
+      </p>
+      </div>
+      <div class="mem9 left">
+      <span>紫陽花</span>
+      <p>
+      
+            「お待たせぇ～♪」
+      </p>
+      </div>
+      <div class="mem4 right">
+      <span>小此木 天星</span>
+      <p>
+      
+            「Ｆｏｏ！グレイト！！」
+      </p>
+      </div>
+      <div class="mem3 left">
+      <span>市 穂焔</span>
+      <p>
+      
+            さざんかちゃんに不施の情報あげるから小此木さんの情報くださいの交渉
+      </p>
+      </div>
+      <div class="mem9 left">
+      <span>紫陽花</span>
+      <p>
+      
+            「どうや？かわええ？」
+      </p>
+      </div>
+      <div class="mem4 right">
+      <span>小此木 天星</span>
+      <p>
+      
+            「美しいぜ…完璧ィ…↑水着ということは泳ぐおつもりですかぁ！？そうですよねえ」
+      </p>
+      </div>
+      <div class="mem9 left">
+      <span>紫陽花</span>
+      <p>
+      
+            「いや？着ただけ」
+      </p>
+      </div>
+      <div class="mem1 left">
+      <span>暁月 来瞳</span>
+      <p>
+      
+            「あれ？」紫陽花さんだな〜って見てる
+      </p>
+      </div>
+      <div class="mem3 left">
+      <span>市 穂焔</span>
+      <p>
+      
+            （あれ？紫残花さんの雰囲気が違う……）
+      </p>
+      </div>
+      <div class="mem4 right">
+      <span>小此木 天星</span>
+      <p>
+      
+            「ずっとみていたいが、男なら勝負は途中でなげだせねぇ。いっちょ大人の余裕見せてくるかね！完璧に！」
+      </p>
+      </div>
+      <div class="mem3 left">
+      <span>市 穂焔</span>
+      <p>
+      
+            小此木君に不施の情報あげるから小此木さんの情報くださいの交渉
+      </p>
+      </div>
+      <div class="mem1 left">
+      <span>暁月 来瞳</span>
+      <p>
+      
+            「あ！ちゃんとヨーイドンですよ！」
+      </p>
+      </div>
+      <div class="mem4 right">
+      <span>小此木 天星</span>
+      <p>
+      
+            「オッシャ！ﾖｲﾄﾞﾝ！！」ザバァ
+      </p>
+      </div>
+      <div class="mem9 left">
+      <span>紫陽花</span>
+      <p>
+      
+            「ほら～！がんばれがんばれ～」
+      </p>
+      </div>
+      <div class="mem9 left">
+      <span>紫陽花</span>
+      <p>
+      
+            「天星はん、勝ったらご褒美あげるで～」
+      </p>
+      </div>
+      <div class="mem3 left">
+      <span>市 穂焔</span>
+      <p>
+      
+            「紫残花さん？紫残花さん、ですか？」
+      </p>
+      </div>
+      <div class="mem9 left">
+      <span>紫陽花</span>
+      <p>
+      
+            「ん～？うち～？」
+      </p>
+      </div>
+      <div class="mem9 left">
+      <span>紫陽花</span>
+      <p>
+      
+            「せやで～？どないした？」
+      </p>
+      </div>
+      <div class="mem3 left">
+      <span>市 穂焔</span>
+      <p>
+      
+            「”僕”って言ってませんでした？」
+      </p>
+      </div>
+      <div class="mem3 left">
+      <span>市 穂焔</span>
+      <p>
+      
+            「それに、方言も……」
+      </p>
+      </div>
+      <div class="mem3 left">
+      <span>市 穂焔</span>
+      <p>
+      
+            「なかったですよね？」
+      </p>
+      </div>
+      <div class="mem9 left">
+      <span>紫陽花</span>
+      <p>
+      
+            「ん～？水着着たし、イメチェン？」
+      </p>
+      </div>
+      <div class="mem3 left">
+      <span>市 穂焔</span>
+      <p>
+      
+            「イメチェェン……」
+      </p>
+      </div>
+      <div class="mem9 left">
+      <span>紫陽花</span>
+      <p>
+      
+            「ダメ～？」
+      </p>
+      </div>
+      <div class="mem3 left">
+      <span>市 穂焔</span>
+      <p>
+      
+            「いえダメではないですけど、雰囲気が違いすぎて……」
+      </p>
+      </div>
+      <div class="mem9 left">
+      <span>紫陽花</span>
+      <p>
+      
+            「クスクス……かわいいなぁ、穂焔はん」
+      </p>
+      </div>
+      <div class="mem3 left">
+      <span>市 穂焔</span>
+      <p>
+      
+            「かわいいとは」
+      </p>
+      </div>
+      <div class="mem9 left">
+      <span>紫陽花</span>
+      <p>
+      
+            「知りたい？」
+      </p>
+      </div>
+      <div class="mem3 left">
+      <span>市 穂焔</span>
+      <p>
+      
+            「知りたくないといえば嘘になります」
+      </p>
+      </div>
+      <div class="mem3 left">
+      <span>市 穂焔</span>
+      <p>
+      
+            「いえ、かわいいがなにかではなくあなたの……」
+      </p>
+      </div>
+      <div class="mem9 left">
+      <span>紫陽花</span>
+      <p>
+      
+            「え～？穂焔はんすけべやなぁ～」
+      </p>
+      </div>
+      <div class="mem3 left">
+      <span>市 穂焔</span>
+      <p>
+      
+            「えぇ！？どうしてそうなるんですか」
+      </p>
+      </div>
+      <div class="mem9 left">
+      <span>紫陽花</span>
+      <p>
+      
+            「きゃ～！助けて～！襲われる～」
+      </p>
+      </div>
+      <div class="mem3 left">
+      <span>市 穂焔</span>
+      <p>
+      
+            「ちょっと……！？冤罪ですけど！？」
+      </p>
+      </div>
+      <div class="mem9 left">
+      <span>紫陽花</span>
+      <p>
+      
+            （二人のほうに駆け寄ってく）
+      </p>
+      </div>
+      <div class="mem1 left">
+      <span>暁月 来瞳</span>
+      <p>
+      
+            「どっちの勝ちかちゃんと見てました〜〜〜〜？？？」手振ってます
+      </p>
+      </div>
+      <div class="mem3 left">
+      <span>市 穂焔</span>
+      <p>
+      
+            「ぼ、僕はどちらかというと来瞳くんとなかよくしたいなぁというか……変な意味ではなく！」
+      </p>
+      </div>
+      <div class="mem3 left">
+      <span>市 穂焔</span>
+      <p>
+      
+            「見てませんでした！！」やけくそ
+      </p>
+      </div>
+      <div class="mem9 left">
+      <span>紫陽花</span>
+      <p>
+      
+            「多分引き分けやで～」
+      </p>
+      </div>
+      <div class="mem1 left">
+      <span>暁月 来瞳</span>
+      <p>
+      
+            「ええ〜〜〜！？じゃあも一回しましょう！ね！ね！」
+      </p>
+      </div>
+      <div class="mem3 left">
+      <span>市 穂焔</span>
+      <p>
+      
+            「仲良しで大変よろしいですね！！」
+      </p>
+      </div>
+      <div class="mem1 left">
+      <span>暁月 来瞳</span>
+      <p>
+      
+            「穂焔さんもあとで一緒に遊びましょうねーーっ！！！」
+      </p>
+      </div>
+      <div class="mem3 left">
+      <span>市 穂焔</span>
+      <p>
+      
+            「競争は！いやです！」
+      </p>
+      </div>
+      <div class="mem4 right">
+      <span>小此木 天星</span>
+      <p>
+      
+            「DAA！嘘だろ…泳ぎ自身大ありだったのにこれじゃ大人の面目丸つぶれだぜ…、しばらくそっとしといてくれ」
+      </p>
+      </div>
+      <div class="mem1 left">
+      <span>暁月 来瞳</span>
+      <p>
+      
+            「わかりました〜〜〜〜！！競争以外で遊びましょうね〜〜〜〜！！」
+      </p>
+      </div>
+      <div class="mem3 left">
+      <span>市 穂焔</span>
+      <p>
+      
+            「わかりましたよ！！」
+      </p>
+      </div>
+      <div class="mem3 left">
+      <span>市 穂焔</span>
+      <p>
+      
+            シーン終了で
+      </p>
+      </div>
+      <div class="kp LtoR-early">
+      
+            はい、最後の方ー
+      </div>
+      <div class="kp LtoR-early">
+      
+            2サイクル目 小此木 天星
+      </div>
+      <div class="mem4 right">
+      <span>小此木 天星</span>
+      <p>
+      
+            2d6 (2D6) ＞ 8[2,6] ＞ 8
+            
+      </p>
+      </div>
+      <div class="kp LtoR-early">
+      
+            ふれあい広場。様々な動物たちと触れ合える。<br>時間によっては動物のショーもやっているようだ。
+      </div>
+      <div class="mem4 right">
+      <span>小此木 天星</span>
+      <p>
+      
+            「ハァ、泳ぎは得意分野なんだがなぁ。紫残花 さんに応援されてあれじゃ、恰好つかねぇな」
+      </p>
+      </div>
+      <div class="mem4 right">
+      <span>小此木 天星</span>
+      <p>
+      
+            回想シーン（ひとつ前のシーン）
+      </p>
+      </div>
+      <div class="mem4 right">
+      <span>小此木 天星</span>
+      <p>
+      
+            「引き分けなんて負けみたいなもんだ、せっかくのご褒美おしかったぜ！」
+      </p>
+      </div>
+      <div class="mem4 right">
+      <span>小此木 天星</span>
+      <p>
+      
+            「このままじゃ男が廃るッ。代わりっちゃなんだが、紫残花 さん手伝い。なんでも一つ調べておくぜ？」
+      </p>
+      </div>
+      <div class="mem9 left">
+      <span>紫陽花</span>
+      <p>
+      
+            「あらぁ～流石旦那はん、男らしいわぁ」
+      </p>
+      </div>
+      <div class="mem9 left">
+      <span>紫陽花</span>
+      <p>
+      
+            「なら一つ、頼まれてくれへん？」
+      </p>
+      </div>
+      <div class="mem4 right">
+      <span>小此木 天星</span>
+      <p>
+      
+            「今度こそ完璧に！こなしてやるぜ！」
+      </p>
+      </div>
+      <div class="mem4 right">
+      <span>小此木 天星</span>
+      <p>
+      
+            回想終了
+      </p>
+      </div>
+      <div class="mem4 right">
+      <span>小此木 天星</span>
+      <p>
+      
+            「さって、昨日のこいつが紫残花 さんが気になる花か。いっちょ本気だすかね」
+      </p>
+      </div>
+      <div class="mem4 right">
+      <span>小此木 天星</span>
+      <p>
+      
+            ■奥義<br>《完璧主義》<br>指定特技　：意気<br>エフェクト：完全成功/くらまし/分野限定（体術）<br>奥義破り判定-2<br>効果・演出：病的な完璧主義は失敗を許さない。♡
+      </p>
+      </div>
+      <div class="mem4 right">
+      <span>小此木 天星</span>
+      <p>
+      
+            2D6&gt;=5 （判定：人脈） (2D6&gt;=5) ＞ 5[2,3] ＞ 5 ＞ 成功
+            
+      </p>
+      </div>
+      <div class="mem4 right">
+      <span>小此木 天星</span>
+      <p>
+      
+            「どうやら専門分野だったらしいが……。こいつは尋常じゃねぇな」
+      </p>
+      </div>
+      <div class="mem4 right">
+      <span>小此木 天星</span>
+      <p>
+      
+            シーン終了
+      </p>
+      </div>
+      <div class="kp LtoR-early">
+      
+            3サイクル目
+      </div>
+      <div class="kp LtoR-early">
+      
+            誰からいきますか？
+      </div>
+      <div class="kp LtoR-early">
+      
+            3サイクル目 市 穂焔
+      </div>
+      <div class="mem3 left">
+      <span>市 穂焔</span>
+      <p>
+      
+            2ｄ6 (2D6) ＞ 7[2,5] ＞ 7
+            
+      </p>
+      </div>
+      <div class="mem3 left">
+      <span>市 穂焔</span>
+      <p>
+      
+            全員呼びます
+      </p>
+      </div>
+      <div class="mem3 left">
+      <span>市 穂焔</span>
+      <p>
+      
+            「みなさんに教えてほしいことがあります」
+      </p>
+      </div>
+      <div class="mem2 right">
+      <span>紫残花</span>
+      <p>
+      
+            「……」
+      </p>
+      </div>
+      <div class="mem3 left">
+      <span>市 穂焔</span>
+      <p>
+      
+            「青い花のこと、誰か調べられたんでしょう？教えてくださいませんか……？」
+      </p>
+      </div>
+      <div class="mem2 right">
+      <span>紫残花</span>
+      <p>
+      
+            「……それなら、小此木さんが知ってるよ」
+      </p>
+      </div>
+      <div class="mem2 right">
+      <span>紫残花</span>
+      <p>
+      
+            「そんなに気になってたの？」
+      </p>
+      </div>
+      <div class="mem3 left">
+      <span>市 穂焔</span>
+      <p>
+      
+            「気になる、というか……そうですね、気になっていました」
+      </p>
+      </div>
+      <div class="mem3 left">
+      <span>市 穂焔</span>
+      <p>
+      
+            「紫残花さん、元に戻られましたね」
+      </p>
+      </div>
+      <div class="mem2 right">
+      <span>紫残花</span>
+      <p>
+      
+            「……」
+      </p>
+      </div>
+      <div class="mem2 right">
+      <span>紫残花</span>
+      <p>
+      
+            「ボクはボクだよ、何者でもないけどね」
+      </p>
+      </div>
+      <div class="mem1 left">
+      <span>暁月 来瞳</span>
+      <p>
+      
+            「このお花のこと、穂焔さんは知ってたんですか？」
+      </p>
+      </div>
+      <div class="mem3 left">
+      <span>市 穂焔</span>
+      <p>
+      
+            「…………」
+      </p>
+      </div>
+      <div class="mem3 left">
+      <span>市 穂焔</span>
+      <p>
+      
+            「どう思います？」
+      </p>
+      </div>
+      <div class="mem3 left">
+      <span>市 穂焔</span>
+      <p>
+      
+            「どう、見えていましたか」
+      </p>
+      </div>
+      <div class="mem1 left">
+      <span>暁月 来瞳</span>
+      <p>
+      
+            「とっても危ないし、僕が調べにきたのはこれだったので、教えて欲しかったです！<br>僕もそれを内緒にしていたのはごめんなさい……」
+      </p>
+      </div>
+      <div class="mem3 left">
+      <span>市 穂焔</span>
+      <p>
+      
+            「全く知らなかったといえば嘘になりますが、知らなかったことも多くありました。僕は、できれば、みなさんと協力がしたい。……紫残花さんだけ何をしたいのかわからないですが」
+      </p>
+      </div>
+      <div class="mem2 right">
+      <span>紫残花</span>
+      <p>
+      
+            「ボクはボクを知りたいだけだよ……ここに来たのは……言われたんだパパに」
+      </p>
+      </div>
+      <div class="mem1 left">
+      <span>暁月 来瞳</span>
+      <p>
+      
+            「僕もみなさんの事情は知らないけど、でもお手伝いしたり、お手伝いしてもらったりしたいです」
+      </p>
+      </div>
+      <div class="mem2 right">
+      <span>紫残花</span>
+      <p>
+      
+            「キミには色々教えてもらったからね……いいよ」
+      </p>
+      </div>
+      <div class="mem1 left">
+      <span>暁月 来瞳</span>
+      <p>
+      
+            「いいんですか！？嬉しいです！」にこー！
+      </p>
+      </div>
+      <div class="mem3 left">
+      <span>市 穂焔</span>
+      <p>
+      
+            「紫残花さんは協力してくれますか……？」
+      </p>
+      </div>
+      <div class="mem2 right">
+      <span>紫残花</span>
+      <p>
+      
+            「……キミのことはよく知らないな、だからはい、とは言えない」
+      </p>
+      </div>
+      <div class="mem2 right">
+      <span>紫残花</span>
+      <p>
+      
+            「だけど、お互い邪魔をしないことくらいはできそうだ」
+      </p>
+      </div>
+      <div class="mem3 left">
+      <span>市 穂焔</span>
+      <p>
+      
+            紫残花ちゃんの情報を調べる
+      </p>
+      </div>
+      <div class="mem3 left">
+      <span>市 穂焔</span>
+      <p>
+      
+            2D6&gt;=5 （判定：意気） (2D6&gt;=5) ＞ 5[2,3] ＞ 5 ＞ 成功
+            
+      </p>
+      </div>
+      <div class="mem2 right">
+      <span>紫残花</span>
+      <p>
+      
+            「……！」
+      </p>
+      </div>
+      <div class="mem3 left">
+      <span>市 穂焔</span>
+      <p>
+      
+            「……なるほど」
+      </p>
+      </div>
+      <div class="mem2 right">
+      <span>紫残花</span>
+      <p>
+      
+            「見たのか……！」
+      </p>
+      </div>
+      <div class="mem3 left">
+      <span>市 穂焔</span>
+      <p>
+      
+            「……仲良くできるか、ちょっとわからなくなりました」
+      </p>
+      </div>
+      <div class="mem2 right">
+      <span>紫残花</span>
+      <p>
+      
+            「ボクから……ボクを……！」
+      </p>
+      </div>
+      <div class="mem3 left">
+      <span>市 穂焔</span>
+      <p>
+      
+            「……任務の情報なんて、自分のごく一部じゃないですか」
+      </p>
+      </div>
+      <div class="mem2 right">
+      <span>紫残花</span>
+      <p>
+      
+            「ボクにはボクの……ほんの一部がボクだ！」
+      </p>
+      </div>
+      <div class="mem2 right">
+      <span>紫残花</span>
+      <p>
+      
+            「気安く決めつけるな！」
+      </p>
+      </div>
+      <div class="mem3 left">
+      <span>市 穂焔</span>
+      <p>
+      
+            「……まぁ、気持ちはわからなくはないですけど」
+      </p>
+      </div>
+      <div class="mem2 right">
+      <span>紫残花</span>
+      <p>
+      
+            （怒したんで退場）
+      </p>
+      </div>
+      <div class="mem1 left">
+      <span>暁月 来瞳</span>
+      <p>
+      
+            「け、喧嘩しちゃいました？仲直りのお手伝い、要りますか？」
+      </p>
+      </div>
+      <div class="mem3 left">
+      <span>市 穂焔</span>
+      <p>
+      
+            「仲直り……できるかどうか……敵ではないですが味方でもないことがわかってしまいましたから……」
+      </p>
+      </div>
+      <div class="mem1 left">
+      <span>暁月 来瞳</span>
+      <p>
+      
+            「そうですか……複雑ですね」
+      </p>
+      </div>
+      <div class="mem4 right">
+      <span>小此木 天星</span>
+      <p>
+      
+            「押しちゃいけないスイッチってやつかね…乙女の秘密ってのはうかつに踏み込んだら行けねぇと思うぜ、うん」
+      </p>
+      </div>
+      <div class="mem3 left">
+      <span>市 穂焔</span>
+      <p>
+      
+            「紳士でいられるなら何よりですが、そうはいかないことのほうが多いでしょう？」
+      </p>
+      </div>
+      <div class="mem3 left">
+      <span>市 穂焔</span>
+      <p>
+      
+            「……案外、僕と彼女は、似ているのかもしれませんけど」
+      </p>
+      </div>
+      <div class="mem3 left">
+      <span>市 穂焔</span>
+      <p>
+      
+            シーン終了で
+      </p>
+      </div>
+      <div class="kp LtoR-early">
+      
+            はい。次の方ー
+      </div>
+      <div class="kp LtoR-early">
+      
+            choice[暁月 来瞳,小此木 天星,紫残花] (choice[暁月 来瞳,小此木 天星,紫残花]) ＞ 紫残花
+            
+      </div>
+      <div class="mem2 right">
+      <span>紫残花</span>
+      <p>
+      
+            2d6 シーン (2D6) ＞ 4[1,3] ＞ 4
+            
+      </p>
+      </div>
+      <div class="kp LtoR-early">
+      
+            プール。流れるプールやスライダーなど一日中遊んでいられそうだ。
+      </div>
+      <div class="kp LtoR-early">
+      
+            3サイクル目 紫残花
+      </div>
+      <div class="mem9 left">
+      <span>紫陽花</span>
+      <p>
+      
+            「うちやで～」
+      </p>
+      </div>
+      <div class="mem9 left">
+      <span>紫陽花</span>
+      <p>
+      
+            「じゃん♪」
+      </p>
+      </div>
+      <div class="mem6 right">
+      <span>不施 誠</span>
+      <p>
+      
+            「あ、そのサングラス…よくお似合いで？」
+      </p>
+      </div>
+      <div class="mem9 left">
+      <span>紫陽花</span>
+      <p>
+      
+            「あ、そう？おおきに～」
+      </p>
+      </div>
+      <div class="mem9 left">
+      <span>紫陽花</span>
+      <p>
+      
+            「ところで～不施はんに聞きたいことあんねんけど……」
+      </p>
+      </div>
+      <div class="mem6 right">
+      <span>不施 誠</span>
+      <p>
+      
+            「なんでしょう？」
+      </p>
+      </div>
+      <div class="mem9 left">
+      <span>紫陽花</span>
+      <p>
+      
+            「いやな？うち、暇やったさかい……色々調べたんやけど……」
+      </p>
+      </div>
+      <div class="mem6 right">
+      <span>不施 誠</span>
+      <p>
+      
+            「な、なにを…ですか？」
+      </p>
+      </div>
+      <div class="mem9 left">
+      <span>紫陽花</span>
+      <p>
+      
+            「不施はん、おもろいもん持ってはりませんか？」
+      </p>
+      </div>
+      <div class="mem6 right">
+      <span>不施 誠</span>
+      <p>
+      
+            「それは、あなた方にあげた青い花かな？」
+      </p>
+      </div>
+      <div class="mem9 left">
+      <span>紫陽花</span>
+      <p>
+      
+            「そうそう♪それな、うちの大旦那はんが欲しがってましてな」
+      </p>
+      </div>
+      <div class="mem9 left">
+      <span>紫陽花</span>
+      <p>
+      
+            「うちとしてはそれ、タダでくれへんかな～って」
+      </p>
+      </div>
+      <div class="mem6 right">
+      <span>不施 誠</span>
+      <p>
+      
+            「それは…できない相談だね」
+      </p>
+      </div>
+      <div class="mem9 left">
+      <span>紫陽花</span>
+      <p>
+      
+            「えぇ～！なんでぇなんでぇ～？いいことしたるから頼むわぁ～」
+      </p>
+      </div>
+      <div class="mem6 right">
+      <span>不施 誠</span>
+      <p>
+      
+            「女性がそのようなことを言ってはいけないよ」
+      </p>
+      </div>
+      <div class="mem9 left">
+      <span>紫陽花</span>
+      <p>
+      
+            「けど……いいの？このままやとアンタ……死ぬで？」
+      </p>
+      </div>
+      <div class="mem6 right">
+      <span>不施 誠</span>
+      <p>
+      
+            「それは…どうかな？」
+      </p>
+      </div>
+      <div class="mem9 left">
+      <span>紫陽花</span>
+      <p>
+      
+            「あらぁ～！自信あるってこと？」
+      </p>
+      </div>
+      <div class="mem6 right">
+      <span>不施 誠</span>
+      <p>
+      
+            「君が今どういった状況かわかっているのかな？」
+      </p>
+      </div>
+      <div class="mem9 left">
+      <span>紫陽花</span>
+      <p>
+      
+            「わかるわかる～！ここに来る政治家さん達も同じ方法で始末したんやろ～？」
+      </p>
+      </div>
+      <div class="mem6 right">
+      <span>不施 誠</span>
+      <p>
+      
+            「くすっ。どうだろうね？」
+      </p>
+      </div>
+      <div class="mem9 left">
+      <span>紫陽花</span>
+      <p>
+      
+            「その、ご自慢のお花で……怖いわぁ～」
+      </p>
+      </div>
+      <div class="mem6 right">
+      <span>不施 誠</span>
+      <p>
+      
+            「君自身、どうすることもできないんじゃないかい？」
+      </p>
+      </div>
+      <div class="mem9 left">
+      <span>紫陽花</span>
+      <p>
+      
+            「どやろなぁ～……ここに来てからできた友達に一人、そういうの詳しい人がおんねん」
+      </p>
+      </div>
+      <div class="mem6 right">
+      <span>不施 誠</span>
+      <p>
+      
+            「そうなんだ」
+      </p>
+      </div>
+      <div class="mem9 left">
+      <span>紫陽花</span>
+      <p>
+      
+            「彼、毒は専門言うてはったわ」
+      </p>
+      </div>
+      <div class="mem6 right">
+      <span>不施 誠</span>
+      <p>
+      
+            「……」
+      </p>
+      </div>
+      <div class="mem9 left">
+      <span>紫陽花</span>
+      <p>
+      
+            「それに不施はんのこと捕まえに来たボンもおるし……」
+      </p>
+      </div>
+      <div class="mem6 right">
+      <span>不施 誠</span>
+      <p>
+      
+            「でも、結局は私を捕まえることはできないのではないかな？」
+      </p>
+      </div>
+      <div class="mem9 left">
+      <span>紫陽花</span>
+      <p>
+      
+            「あら、それでもまだ自信あるん？」
+      </p>
+      </div>
+      <div class="mem6 right">
+      <span>不施 誠</span>
+      <p>
+      
+            「できると思うけどね？」
+      </p>
+      </div>
+      <div class="mem9 left">
+      <span>紫陽花</span>
+      <p>
+      
+            「怖い怖い……ちょっとからかっただけやん」
+      </p>
+      </div>
+      <div class="mem9 left">
+      <span>紫陽花</span>
+      <p>
+      
+            「まぁええけど……うち、外れてもええで？」
+      </p>
+      </div>
+      <div class="mem6 right">
+      <span>不施 誠</span>
+      <p>
+      
+            「どういうことだい？」
+      </p>
+      </div>
+      <div class="mem9 left">
+      <span>紫陽花</span>
+      <p>
+      
+            「大旦那はんが欲しいのは研究データ……それさえくれればあんたに用はないっちゅう話や」
+      </p>
+      </div>
+      <div class="mem6 right">
+      <span>不施 誠</span>
+      <p>
+      
+            「これは、私の今後に必要なものだからね。その話だったら断らせてもらうよ」
+      </p>
+      </div>
+      <div class="mem9 left">
+      <span>紫陽花</span>
+      <p>
+      
+            「あら？コピーもできへんの？」
+      </p>
+      </div>
+      <div class="mem6 right">
+      <span>不施 誠</span>
+      <p>
+      
+            「これは唯一無二だからね」
+      </p>
+      </div>
+      <div class="mem9 left">
+      <span>紫陽花</span>
+      <p>
+      
+            「それでも言うこと聞いといたほうがええと思うけどなぁ……」
+      </p>
+      </div>
+      <div class="mem9 left">
+      <span>紫陽花</span>
+      <p>
+      
+            「……手順がかわるだけやし」
+      </p>
+      </div>
+      <div class="mem9 left">
+      <span>紫陽花</span>
+      <p>
+      
+            赤眼→不施
+      </p>
+      </div>
+      <div class="mem9 left">
+      <span>紫陽花</span>
+      <p>
+      
+            2D6&gt;=5 （判定：絡繰術） (2D6&gt;=5) ＞ 6[2,4] ＞ 6 ＞ 成功
+            
+      </p>
+      </div>
+      <div class="mem9 left">
+      <span>紫陽花</span>
+      <p>
+      
+            情報屋→不施
+      </p>
+      </div>
+      <div class="mem9 left">
+      <span>紫陽花</span>
+      <p>
+      
+            【居所】入手
+      </p>
+      </div>
+      <div class="mem9 left">
+      <span>紫陽花</span>
+      <p>
+      
+            情報判定→不施
+      </p>
+      </div>
+      <div class="mem9 left">
+      <span>紫陽花</span>
+      <p>
+      
+            奥義の情報
+      </p>
+      </div>
+      <div class="mem9 left">
+      <span>紫陽花</span>
+      <p>
+      
+            2D6&gt;=5 （判定：瞳術） (2D6&gt;=5) ＞ 6[3,3] ＞ 6 ＞ 成功
+            
+      </p>
+      </div>
+      <div class="mem9 left">
+      <span>紫陽花</span>
+      <p>
+      
+            1d2 (1D2) ＞ 1
+            
+      </p>
+      </div>
+      <div class="mem9 left">
+      <span>紫陽花</span>
+      <p>
+      
+            奥義！！
+      </p>
+      </div>
+      <div class="mem9 left">
+      <span>紫陽花</span>
+      <p>
+      
+            ■奥義<br>《ボクは盗む》<br>指定特技　：絡繰術<br>エフェクト：追加忍法：《闇神楽》<br>効果・演出：対象に赤眼を見せ、幻覚を引き起こし、<br>詩を聞かせて完全なる催眠状態へと陥れる。<br>気が付いた時には、既に大切な情報は盗まれた後だ。
+      </p>
+      </div>
+      <div class="mem8 right">
+      <span>system</span>
+      <p>
+      
+            [ 紫残花 ] 忍術 : 1 → 0
+      </p>
+      </div>
+      <div class="mem9 left">
+      <span>紫陽花</span>
+      <p>
+      
+            2D6&gt;=5 （判定：絡繰術） (2D6&gt;=5) ＞ 11[5,6] ＞ 11 ＞ 成功
+            
+      </p>
+      </div>
+      <div class="mem9 left">
+      <span>紫陽花</span>
+      <p>
+      
+            情報判定→不施
+      </p>
+      </div>
+      <div class="mem9 left">
+      <span>紫陽花</span>
+      <p>
+      
+            2D6&gt;=5 （判定：瞳術） (2D6&gt;=5) ＞ 9[4,5] ＞ 9 ＞ 成功
+            
+      </p>
+      </div>
+      <div class="mem9 left">
+      <span>紫陽花</span>
+      <p>
+      
+            沈黙
+      </p>
+      </div>
+      <div class="mem9 left">
+      <span>紫陽花</span>
+      <p>
+      
+            2D6&gt;=5 （判定：絡繰術） (2D6&gt;=5) ＞ 7[1,6] ＞ 7 ＞ 成功
+            
+      </p>
+      </div>
+      <div class="mem9 left">
+      <span>紫陽花</span>
+      <p>
+      
+            「……で、やるん？」
+      </p>
+      </div>
+      <div class="mem6 right">
+      <span>不施 誠</span>
+      <p>
+      
+            「くっ」
+      </p>
+      </div>
+      <div class="mem9 left">
+      <span>紫陽花</span>
+      <p>
+      
+            「……あ、もうええわ」
+      </p>
+      </div>
+      <div class="mem9 left">
+      <span>紫陽花</span>
+      <p>
+      
+            「今のその顔……もっと見たくなってきたわぁ」
+      </p>
+      </div>
+      <div class="mem9 left">
+      <span>紫陽花</span>
+      <p>
+      
+            「ほな、また」
+      </p>
+      </div>
+      <div class="mem6 right">
+      <span>不施 誠</span>
+      <p>
+      
+            「…」
+      </p>
+      </div>
+      <div class="mem9 left">
+      <span>紫陽花</span>
+      <p>
+      
+            シーン終了
+      </p>
+      </div>
+      <div class="kp LtoR-early">
+      
+            はい。次のかたー
+      </div>
+      <div class="kp LtoR-early">
+      
+            3サイクル目 小此木 天星
+      </div>
+      <div class="mem4 right">
+      <span>小此木 天星</span>
+      <p>
+      
+            2d6 (2D6) ＞ 7[1,6] ＞ 7
+            
+      </p>
+      </div>
+      <div class="kp LtoR-early">
+      
+            山の散策。豊かな草花や鳥たちのさえずりがあなたを歓迎しているようだ。
+      </div>
+      <div class="mem4 right">
+      <span>小此木 天星</span>
+      <p>
+      
+            「さてと、だいぶ面倒なことに巻き込まれたな」
+      </p>
+      </div>
+      <div class="mem4 right">
+      <span>小此木 天星</span>
+      <p>
+      
+            「紫残花 さんに渡しそびれちまったけど、まぁいきなり本陣に突っ込むこともさすがにないかね」
+      </p>
+      </div>
+      <div class="mem1 left">
+      <span>暁月 来瞳</span>
+      <p>
+      
+            「巻き込んじゃってごめんなさい。本当の本当に休暇を取ってたとしたらご迷惑でしたよね……」
+      </p>
+      </div>
+      <div class="mem3 left">
+      <span>市 穂焔</span>
+      <p>
+      
+            「……すみません、僕が……」
+      </p>
+      </div>
+      <div class="mem1 left">
+      <span>暁月 来瞳</span>
+      <p>
+      
+            「？　穂焔さんも謝るんですか？」
+      </p>
+      </div>
+      <div class="mem3 left">
+      <span>市 穂焔</span>
+      <p>
+      
+            「僕も、なんだかんだ任務では、あるので」
+      </p>
+      </div>
+      <div class="mem4 right">
+      <span>小此木 天星</span>
+      <p>
+      
+            「ま、きにすんなって。こういうごたごたも人の距離を詰めるにはいいスパイスになるかもしれねーしな！２人にほれ、これ」抗体アンプルを渡す
+      </p>
+      </div>
+      <div class="mem3 left">
+      <span>市 穂焔</span>
+      <p>
+      
+            「ありがとうございます……」
+      </p>
+      </div>
+      <div class="mem1 left">
+      <span>暁月 来瞳</span>
+      <p>
+      
+            「！　これ、すごいですね！どうして小此木さんがこれを？」
+      </p>
+      </div>
+      <div class="mem3 left">
+      <span>市 穂焔</span>
+      <p>
+      
+            じゃあ小此木さんの秘密を来瞳くんへ
+      </p>
+      </div>
+      <div class="mem4 right">
+      <span>小此木 天星</span>
+      <p>
+      
+            「毒物に関しては仕事で専攻してたことあるんでね。プロってわけよ。小此木製薬ってとこだな」
+      </p>
+      </div>
+      <div class="mem3 left">
+      <span>市 穂焔</span>
+      <p>
+      
+            「本当にありがとうございます、助かります……」
+      </p>
+      </div>
+      <div class="mem1 left">
+      <span>暁月 来瞳</span>
+      <p>
+      
+            「すごいすごい！これならあのお花もどうにかできるかもです！」キャッキャ
+      </p>
+      </div>
+      <div class="mem4 right">
+      <span>小此木 天星</span>
+      <p>
+      
+            「さて、関わっちまったからには完璧にことを収めるのがプロってもんだ。向こうの情報もそろそろ」
+      </p>
+      </div>
+      <div class="mem4 right">
+      <span>小此木 天星</span>
+      <p>
+      
+            電話が鳴る
+      </p>
+      </div>
+      <div class="mem4 right">
+      <span>小此木 天星</span>
+      <p>
+      
+            2D6&gt;=6 （判定：人脈） (2D6&gt;=6) ＞ 7[2,5] ＞ 7 ＞ 成功
+            
+      </p>
+      </div>
+      <div class="mem4 right">
+      <span>小此木 天星</span>
+      <p>
+      
+            「ふーん、やっぱだめだったか…、ま汚職してたなら同情できねぇな！」
+      </p>
+      </div>
+      <div class="mem1 left">
+      <span>暁月 来瞳</span>
+      <p>
+      
+            「あらあ、死んじゃったんですね」
+      </p>
+      </div>
+      <div class="mem3 left">
+      <span>市 穂焔</span>
+      <p>
+      
+            「一般人を……」
+      </p>
+      </div>
+      <div class="mem1 left">
+      <span>暁月 来瞳</span>
+      <p>
+      
+            「他にも死んじゃわないように、お花の対策、しなきゃですね！」
+      </p>
+      </div>
+      <div class="mem3 left">
+      <span>市 穂焔</span>
+      <p>
+      
+            「……そうですね」
+      </p>
+      </div>
+      <div class="mem4 right">
+      <span>小此木 天星</span>
+      <p>
+      
+            「ああ、まずは紫残花 さん探しに行かねーとな！」
+      </p>
+      </div>
+      <div class="mem4 right">
+      <span>小此木 天星</span>
+      <p>
+      
+            「ちゃんと仲直りしろよなー？」
+      </p>
+      </div>
+      <div class="mem3 left">
+      <span>市 穂焔</span>
+      <p>
+      
+            「えっ、しなきゃ、ダメですかね……？」
+      </p>
+      </div>
+      <div class="mem1 left">
+      <span>暁月 来瞳</span>
+      <p>
+      
+            「だって、多分悪いのって布施さんだけですもんね。僕、仲直りのお手伝いしますから！」
+      </p>
+      </div>
+      <div class="mem4 right">
+      <span>小此木 天星</span>
+      <p>
+      
+            「バカンス一緒に楽しんだ友達じゃねーか、大事にしようぜ！大人になると友達作んの苦労すんだからよ！」
+      </p>
+      </div>
+      <div class="mem3 left">
+      <span>市 穂焔</span>
+      <p>
+      
+            「うぅん、うーん、でも僕の目的と彼女の目的は同時には……」
+      </p>
+      </div>
+      <div class="mem3 left">
+      <span>市 穂焔</span>
+      <p>
+      
+            「友達……友達ですか」
+      </p>
+      </div>
+      <div class="mem1 left">
+      <span>暁月 来瞳</span>
+      <p>
+      
+            「大人になると友達作るの大変なんですか！？じゃあ僕子供のままでいいです！！」
+      </p>
+      </div>
+      <div class="mem3 left">
+      <span>市 穂焔</span>
+      <p>
+      
+            「来瞳くんはそのままでいてください……」
+      </p>
+      </div>
+      <div class="mem1 left">
+      <span>暁月 来瞳</span>
+      <p>
+      
+            「わかりました！穂焔さんもあんまり大人にならないでくださいね！」
+      </p>
+      </div>
+      <div class="mem3 left">
+      <span>市 穂焔</span>
+      <p>
+      
+            「え、いや、うぅん、はい……」
+      </p>
+      </div>
+      <div class="mem4 right">
+      <span>小此木 天星</span>
+      <p>
+      
+            シーン終了
+      </p>
+      </div>
+      <div class="kp LtoR-early">
+      
+            では最後の方ー
+      </div>
+      <div class="mem1 left">
+      <span>暁月 来瞳</span>
+      <p>
+      
+            2d6 (2D6) ＞ 7[2,5] ＞ 7
+            
+      </p>
+      </div>
+      <div class="mem1 left">
+      <span>暁月 来瞳</span>
+      <p>
+      
+            2d6 (2D6) ＞ 5[2,3] ＞ 5
+            
+      </p>
+      </div>
+      <div class="kp LtoR-early">
+      
+            テニスコート。初心者向けにスタッフが教えてくれるコースもあるようだ。<br>いい汗が流せそうだ。
+      </div>
+      <div class="kp LtoR-early">
+      
+            3サイクル目 暁月 来瞳
+      </div>
+      <div class="mem1 left">
+      <span>暁月 来瞳</span>
+      <p>
+      
+            「というわけで、仲直りです！一緒に遊びましょう！」
+      </p>
+      </div>
+      <div class="mem9 left">
+      <span>紫陽花</span>
+      <p>
+      
+            「もう……まだ拗ねてはるん？」
+      </p>
+      </div>
+      <div class="mem9 left">
+      <span>紫陽花</span>
+      <p>
+      
+            「けどなぁ……うち、一人じゃ何もできんし」
+      </p>
+      </div>
+      <div class="mem3 left">
+      <span>市 穂焔</span>
+      <p>
+      
+            「えっ、拗ねる？ぼ、僕が、ですか？」
+      </p>
+      </div>
+      <div class="mem4 right">
+      <span>小此木 天星</span>
+      <p>
+      
+            「お困りですかぁ！」
+      </p>
+      </div>
+      <div class="mem9 left">
+      <span>紫陽花</span>
+      <p>
+      
+            「あら、旦那はん元気そうやねぇ～」
+      </p>
+      </div>
+      <div class="mem9 left">
+      <span>紫陽花</span>
+      <p>
+      
+            「どないしたん？みんな集まって」
+      </p>
+      </div>
+      <div class="mem1 left">
+      <span>暁月 来瞳</span>
+      <p>
+      
+            「これからこの玉突きで遊ぶんです！はる……紫残花さんも遊びましょう！」
+      </p>
+      </div>
+      <div class="mem3 left">
+      <span>市 穂焔</span>
+      <p>
+      
+            「玉突き……」
+      </p>
+      </div>
+      <div class="mem9 left">
+      <span>紫陽花</span>
+      <p>
+      
+            「え～？嫌や」
+      </p>
+      </div>
+      <div class="mem1 left">
+      <span>暁月 来瞳</span>
+      <p>
+      
+            「ダメですか？遊んでくれないんですか？僕のこと嫌いになりました？玉突きが嫌いですか？」
+      </p>
+      </div>
+      <div class="mem9 left">
+      <span>紫陽花</span>
+      <p>
+      
+            「うち、バタバタしとうないし……見とりますわぁ～」
+      </p>
+      </div>
+      <div class="mem1 left">
+      <span>暁月 来瞳</span>
+      <p>
+      
+            「なんだ、そうだったんですね！じゃあ穂焔さん！遊びましょう！」にこ！
+      </p>
+      </div>
+      <div class="mem3 left">
+      <span>市 穂焔</span>
+      <p>
+      
+            「え、あ、はい……」
+      </p>
+      </div>
+      <div class="mem9 left">
+      <span>紫陽花</span>
+      <p>
+      
+            「はぁ……ボンは単純でかわえぇなぁ～」
+      </p>
+      </div>
+      <div class="mem4 right">
+      <span>小此木 天星</span>
+      <p>
+      
+            「残念だなァ、じゃ、２人で遊んでどうぞ！」
+      </p>
+      </div>
+      <div class="mem1 left">
+      <span>暁月 来瞳</span>
+      <p>
+      
+            「勝ち負け見ててくださいね〜〜〜！！！」
+      </p>
+      </div>
+      <div class="mem9 left">
+      <span>紫陽花</span>
+      <p>
+      
+            「見とる見とる～がんばれ～」
+      </p>
+      </div>
+      <div class="mem3 left">
+      <span>市 穂焔</span>
+      <p>
+      
+            「勝負事、自分でやるのは得意ではないんですが……」
+      </p>
+      </div>
+      <div class="mem1 left">
+      <span>暁月 来瞳</span>
+      <p>
+      
+            「じゃあ穂焔さん！この網？みたいなので玉を叩いて飛ばせばいいんですよね？<br>楽しくやりましょう！」
+      </p>
+      </div>
+      <div class="mem4 right">
+      <span>小此木 天星</span>
+      <p>
+      
+            「ま、苦手なこともなんとやらだ。たまにはやってみるのもいいもんよ！」
+      </p>
+      </div>
+      <div class="mem1 left">
+      <span>暁月 来瞳</span>
+      <p>
+      
+            2D6&gt;=5 （判定：手裏剣術） (2D6&gt;=5) ＞ 7[1,6] ＞ 7 ＞ 成功
+            
+      </p>
+      </div>
+      <div class="mem3 left">
+      <span>市 穂焔</span>
+      <p>
+      
+            「え、えぇと、こう、ですか？」
+      </p>
+      </div>
+      <div class="mem4 right">
+      <span>小此木 天星</span>
+      <p>
+      
+            「ああいってた割に穂焔君もいいセンしてるじゃん、ねぇ？」
+      </p>
+      </div>
+      <div class="mem9 left">
+      <span>紫陽花</span>
+      <p>
+      
+            「二人とも元気やなぁ～」
+      </p>
+      </div>
+      <div class="mem4 right">
+      <span>小此木 天星</span>
+      <p>
+      
+            「あ、そうそうこれ」抗体アンプルを渡す
+      </p>
+      </div>
+      <div class="mem1 left">
+      <span>暁月 来瞳</span>
+      <p>
+      
+            「お上手ですよ〜！僕も本気出しちゃいます〜〜〜！」
+      </p>
+      </div>
+      <div class="mem9 left">
+      <span>紫陽花</span>
+      <p>
+      
+            「あら、プレゼント？ありがと～」
+      </p>
+      </div>
+      <div class="mem3 left">
+      <span>市 穂焔</span>
+      <p>
+      
+            「あぁ、本気は出さないでください、手加減してください」
+      </p>
+      </div>
+      <div class="mem10 right">
+      <span>秘密</span>
+      <p>
+      
+            PC2<br>【秘密】<br>あなたはそれを知っている。その記録を抹消したはずなのにそれは目の前にあった。<br>あなたはメインフェイズ開始時に「青い花」の秘密を得る。あなたの本当の使命はそれを作り出したものを倒し、研究データのプライズを破棄することである。
+      </p>
+      </div>
+      <div class="mem10 right">
+      <span>秘密</span>
+      <p>
+      
+            ■奥義<br>《紫毒羅刹》<br>指定特技　：毒術<br>エフェクト：範囲攻撃<br>効果・演出：周囲に毒をばら撒く。
+      </p>
+      </div>
+      <div class="mem10 right">
+      <span>秘密</span>
+      <p>
+      
+            奥義2<br>《新緑の棺》<br>指定特技　：地の利<br>エフェクト：絶対防御<br>効果・演出：自身の周りに植物が出現し、術者を守る。
+      </p>
+      </div>
+      <div class="mem9 left">
+      <span>紫陽花</span>
+      <p>
+      
+            「ところで旦那はん……うちのこと、好き？」
+      </p>
+      </div>
+      <div class="mem4 right">
+      <span>小此木 天星</span>
+      <p>
+      
+            「！？！？？」
+      </p>
+      </div>
+      <div class="mem1 left">
+      <span>暁月 来瞳</span>
+      <p>
+      
+            「えっ！て、手加減……！<br>わかりました！頑張ります！！」
+      </p>
+      </div>
+      <div class="mem9 left">
+      <span>紫陽花</span>
+      <p>
+      
+            「ねぇ……どう？」
+      </p>
+      </div>
+      <div class="mem4 right">
+      <span>小此木 天星</span>
+      <p>
+      
+            「菜々なんですかぁ！ヤブカラスティック！スキデスネェ！！」
+      </p>
+      </div>
+      <div class="mem9 left">
+      <span>紫陽花</span>
+      <p>
+      
+            「ほんま？ありがとう～」
+      </p>
+      </div>
+      <div class="mem9 left">
+      <span>紫陽花</span>
+      <p>
+      
+            「ほんで、うち、欲しいものがあるんやけど……」
+      </p>
+      </div>
+      <div class="mem9 left">
+      <span>紫陽花</span>
+      <p>
+      
+            「うちに……取ってきてくれへん？」
+      </p>
+      </div>
+      <div class="mem4 right">
+      <span>小此木 天星</span>
+      <p>
+      
+            「アハァー…何がお望みで？」
+      </p>
+      </div>
+      <div class="mem9 left">
+      <span>紫陽花</span>
+      <p>
+      
+            「ちょっと耳かしてな……」
+      </p>
+      </div>
+      <div class="mem9 left">
+      <span>紫陽花</span>
+      <p>
+      
+            （耳元でささやく）
+      </p>
+      </div>
+      <div class="mem4 right">
+      <span>小此木 天星</span>
+      <p>
+      
+            「…！」
+      </p>
+      </div>
+      <div class="mem9 left">
+      <span>紫陽花</span>
+      <p>
+      
+            「”青い花の研究データ”」
+      </p>
+      </div>
+      <div class="mem9 left">
+      <span>紫陽花</span>
+      <p>
+      
+            「紫残花がほしがっとってなぁ……うち、叶えてやりたいんや」
+      </p>
+      </div>
+      <div class="mem9 left">
+      <span>紫陽花</span>
+      <p>
+      
+            「ねぇ、ダメぇ？」
+      </p>
+      </div>
+      <div class="mem4 right">
+      <span>小此木 天星</span>
+      <p>
+      
+            「デート一回！」
+      </p>
+      </div>
+      <div class="mem9 left">
+      <span>紫陽花</span>
+      <p>
+      
+            「デートぉ～？」
+      </p>
+      </div>
+      <div class="mem4 right">
+      <span>小此木 天星</span>
+      <p>
+      
+            「断るならこの話はなかったことに！なるかな！」
+      </p>
+      </div>
+      <div class="mem9 left">
+      <span>紫陽花</span>
+      <p>
+      
+            「……もう！いけず～」
+      </p>
+      </div>
+      <div class="mem9 left">
+      <span>紫陽花</span>
+      <p>
+      
+            「デートだけでええの？」（耳元）
+      </p>
+      </div>
+      <div class="mem9 left">
+      <span>紫陽花</span>
+      <p>
+      
+            「もっといいこと……したるからなぁ」（ささやく）
+      </p>
+      </div>
+      <div class="mem4 right">
+      <span>小此木 天星</span>
+      <p>
+      
+            「！？！」
+      </p>
+      </div>
+      <div class="mem4 right">
+      <span>小此木 天星</span>
+      <p>
+      
+            「デデデデートからでお付き合いからでお願いします」
+      </p>
+      </div>
+      <div class="mem9 left">
+      <span>紫陽花</span>
+      <p>
+      
+            「クスクス……そう？なら、頼むわぁ」
+      </p>
+      </div>
+      <div class="mem4 right">
+      <span>小此木 天星</span>
+      <p>
+      
+            「おまかせあれぇ！」
+      </p>
+      </div>
+      <div class="mem3 left">
+      <span>市 穂焔</span>
+      <p>
+      
+            「あぁ、ごめんなさい、僕に追える玉なら、いいので……っ」
+      </p>
+      </div>
+      <div class="mem1 left">
+      <span>暁月 来瞳</span>
+      <p>
+      
+            「穂焔さん、お早いから大丈夫ですよ！さ！もうひと勝負〜〜〜！！！」
+      </p>
+      </div>
+      <div class="mem3 left">
+      <span>市 穂焔</span>
+      <p>
+      
+            「はい、……えっ？もう一回？」
+      </p>
+      </div>
+      <div class="mem3 left">
+      <span>市 穂焔</span>
+      <p>
+      
+            「あの、僕ら、協力、できないですかね……っ？」
+      </p>
+      </div>
+      <div class="mem3 left">
+      <span>市 穂焔</span>
+      <p>
+      
+            「僕に、協力、してもらえませんかっ？」
+      </p>
+      </div>
+      <div class="mem1 left">
+      <span>暁月 来瞳</span>
+      <p>
+      
+            「？　協力？惜しみませんよ。僕、穂焔さんのお友達です！」
+      </p>
+      </div>
+      <div class="mem1 left">
+      <span>暁月 来瞳</span>
+      <p>
+      
+            「僕は、この花をどうにかするのが宿題です。<br>できれば、この世にないほうが回答が楽なので、消しちゃった方がいいですよね！」
+      </p>
+      </div>
+      <div class="mem3 left">
+      <span>市 穂焔</span>
+      <p>
+      
+            「紫残花、さんと、敵対してもっ？」
+      </p>
+      </div>
+      <div class="mem1 left">
+      <span>暁月 来瞳</span>
+      <p>
+      
+            「それが忍ですから！昨日の友は今日の敵、でしたっけ？」
+      </p>
+      </div>
+      <div class="mem3 left">
+      <span>市 穂焔</span>
+      <p>
+      
+            「若いと、考え方がシンプルで、体力があって、いいですねっ」
+      </p>
+      </div>
+      <div class="mem1 left">
+      <span>暁月 来瞳</span>
+      <p>
+      
+            「えへへ！一人じゃありません、だから……頑張りましょう！」にこ！
+      </p>
+      </div>
+      <div class="mem3 left">
+      <span>市 穂焔</span>
+      <p>
+      
+            「ありがとう、ございます！」
+      </p>
+      </div>
+      <div class="mem1 left">
+      <span>暁月 来瞳</span>
+      <p>
+      
+            シーン切ります！
+      </p>
+      </div>
+      <div class="kp LtoR-early">
+      
+            はい！
+      </div>
+      <div class="kp LtoR-early">
+      
+            2D6 (2D6) ＞ 8[3,5] ＞ 8
+            
+      </div>
+      <div class="kp LtoR-early">
+      
+            ふれあい広場。様々な動物たちと触れ合える。<br>時間によっては動物のショーもやっているようだ。
+      </div>
+      <div class="kp LtoR-early">
+      
+            山の散策。豊かな草花や鳥たちのさえずりがあなたを歓迎しているようだ。
+      </div>
+      <div class="kp LtoR-early">
+      ――――――――――――――――――――――――
+      </div>
+      <div class="kp LtoR-early">
+      
+            ＜クライマックスフェイズ＞
+      </div>
+      <div class="kp LtoR-early">
+      
+            あなた達は大気に満ちる毒素を感じる。<br>少し前までは賑わっていたこの場所も今はあなた達しかいない。いやあなた達以外にももう一人いた。
+      </div>
+      <div class="mem6 right">
+      <span>不施 誠</span>
+      <p>
+      
+            「うーん、おかしいな元気そうじゃないか」
+      </p>
+      </div>
+      <div class="kp LtoR-early">
+      
+            その声の主は不施 誠であった。
+      </div>
+      <div class="mem6 right">
+      <span>不施 誠</span>
+      <p>
+      
+            「この毒はシノビでもしんどいはずなんだけど。君たちは元気そうだね。計画の邪魔だからさっさと退場してほしいんだけど」
+      </p>
+      </div>
+      <div class="mem9 left">
+      <span>紫陽花</span>
+      <p>
+      
+            「その話……プールでせぇへんかった？」
+      </p>
+      </div>
+      <div class="mem6 right">
+      <span>不施 誠</span>
+      <p>
+      
+            「ま、計画といっても自然を守るために人間を殺すだけだけどねぇ」
+      </p>
+      </div>
+      <div class="mem6 right">
+      <span>不施 誠</span>
+      <p>
+      
+            「ま、それはそれ。これはこれ」
+      </p>
+      </div>
+      <div class="mem6 right">
+      <span>不施 誠</span>
+      <p>
+      
+            「自然を大切にとか言ってるくせに森や山を切りひらいて自然破壊をしてる人間なんてさ、矛盾の塊だよね。あっ、矛盾じゃなくて利己的なだけか」
+      </p>
+      </div>
+      <div class="mem3 left">
+      <span>市 穂焔</span>
+      <p>
+      
+            「じゃあ最後はあなたも死ぬんですか？」
+      </p>
+      </div>
+      <div class="mem6 right">
+      <span>不施 誠</span>
+      <p>
+      
+            「このままだと自然は人間の道具にされてしまう。人は自然の一部であるべきなのに」
+      </p>
+      </div>
+      <div class="mem6 right">
+      <span>不施 誠</span>
+      <p>
+      
+            「というわけで、人の全体数を減らして、自然を大切にできる人だけを育てていけばいいんだって思ったんだよね」
+      </p>
+      </div>
+      <div class="mem6 right">
+      <span>不施 誠</span>
+      <p>
+      
+            「もちろん、私は後者だよ」
+      </p>
+      </div>
+      <div class="mem6 right">
+      <span>不施 誠</span>
+      <p>
+      
+            「まぁ、君たちにはその資格はなさそうだから死んでくれる？」
+      </p>
+      </div>
+      <div class="mem9 left">
+      <span>紫陽花</span>
+      <p>
+      
+            「うちも花、好きやけどなぁ～」
+      </p>
+      </div>
+      <div class="mem1 left">
+      <span>暁月 来瞳</span>
+      <p>
+      
+            「自分なら大切にできると？それは浅はかです。<br>人間に絶対はありません。あなたが人を殺すならあなたも死ぬべきです」
+      </p>
+      </div>
+      <div class="kp LtoR-early">
+      
+            そう言い放つと戦闘態勢をとる。
+      </div>
+      <div class="mem3 left">
+      <span>市 穂焔</span>
+      <p>
+      
+            「自分の目的に沿わない人間は殺すと。短絡的で笑えてきますね」
+      </p>
+      </div>
+      <div class="mem9 left">
+      <span>紫陽花</span>
+      <p>
+      
+            「はぁ……怖い怖い……」
+      </p>
+      </div>
+      <div class="kp LtoR-early">
+      
+            戦闘開始
+      </div>
+      <div class="mem2 right">
+      <span>紫残花</span>
+      <p>
+      
+            「……」
+      </p>
+      </div>
+      <div class="mem2 right">
+      <span>紫残花</span>
+      <p>
+      
+            「……」
+      </p>
+      </div>
+      <div class="mem2 right">
+      <span>紫残花</span>
+      <p>
+      
+            「……」
+      </p>
+      </div>
+      <div class="mem2 right">
+      <span>紫残花</span>
+      <p>
+      
+            「ボクは……ボクを知りたい」
+      </p>
+      </div>
+      <div class="mem4 right">
+      <span>小此木 天星</span>
+      <p>
+      
+            「ま、自分の信念に忠実なのはそう変わんねぇか。だったら弱いほうが折れるだけよな」
+      </p>
+      </div>
+      <div class="mem6 right">
+      <span>不施 誠</span>
+      <p>
+      
+            奈落をします
+      </p>
+      </div>
+      <div class="mem6 right">
+      <span>不施 誠</span>
+      <p>
+      
+            2D6&gt;=5 （判定：掘削術） (2D6&gt;=5) ＞ 3[1,2] ＞ 3 ＞ 失敗
+            
+      </p>
+      </div>
+      <div class="mem3 left">
+      <span>市 穂焔</span>
+      <p>
+      
+            影分身使います
+      </p>
+      </div>
+      <div class="mem3 left">
+      <span>市 穂焔</span>
+      <p>
+      
+            2D6&gt;=5 （判定：分身の術） (2D6&gt;=5) ＞ 7[2,5] ＞ 7 ＞ 成功
+            
+      </p>
+      </div>
+      <div class="mem8 right">
+      <span>system</span>
+      <p>
+      
+            [ 紫残花 ] がダイスシンボルを公開。出目は 1 です。
+      </p>
+      </div>
+      <div class="mem8 right">
+      <span>system</span>
+      <p>
+      
+            [ 小此木 天星 ] がダイスシンボルを公開。出目は 6 です。
+      </p>
+      </div>
+      <div class="mem8 right">
+      <span>system</span>
+      <p>
+      
+            [ 不施 誠 ] がダイスシンボルを公開。出目は 5 です。
+      </p>
+      </div>
+      <div class="mem8 right">
+      <span>system</span>
+      <p>
+      
+            [ 暁月 来瞳 ] がダイスシンボルを公開。出目は 2 です。
+      </p>
+      </div>
+      <div class="mem8 right">
+      <span>system</span>
+      <p>
+      
+            [ 市 穂焔 ] がダイスシンボルを公開。出目は 4 です。
+      </p>
+      </div>
+      <div class="mem8 right">
+      <span>system</span>
+      <p>
+      
+            [ 市 穂焔 ] がダイスシンボルを公開。出目は 2 です。
+      </p>
+      </div>
+      <div class="mem3 left">
+      <span>市 穂焔</span>
+      <p>
+      
+            4で
+      </p>
+      </div>
+      <div class="mem4 right">
+      <span>小此木 天星</span>
+      <p>
+      
+            「炎天！」→誠
+      </p>
+      </div>
+      <div class="mem4 right">
+      <span>小此木 天星</span>
+      <p>
+      
+            ■奥義<br>《完璧主義》<br>指定特技　：意気<br>エフェクト：完全成功/くらまし/分野限定（体術）<br>奥義破り判定-2<br>効果・演出：病的な完璧主義は失敗を許さない。<br> ♡
+      </p>
+      </div>
+      <div class="mem6 right">
+      <span>不施 誠</span>
+      <p>
+      
+            穂焔に接近戦攻撃
+      </p>
+      </div>
+      <div class="mem6 right">
+      <span>不施 誠</span>
+      <p>
+      
+            2D6&gt;=5 （判定：毒術） (2D6&gt;=5) ＞ 12[6,6] ＞ 12 ＞ スペシャル(【生命力】1点か変調一つを回復)
+            
+      </p>
+      </div>
+      <div class="mem6 right">
+      <span>不施 誠</span>
+      <p>
+      
+            1D6 (1D6) ＞ 4
+            
+      </p>
+      </div>
+      <div class="mem3 left">
+      <span>市 穂焔</span>
+      <p>
+      
+            2D6+1&gt;=6 （判定：潜伏術） (2D6+1&gt;=6) ＞ 5[1,4]+1 ＞ 6 ＞ 成功
+            
+      </p>
+      </div>
+      <div class="mem3 left">
+      <span>市 穂焔</span>
+      <p>
+      
+            不施くんに吹火
+      </p>
+      </div>
+      <div class="mem3 left">
+      <span>市 穂焔</span>
+      <p>
+      
+            2D6&gt;=5 （判定：火術） (2D6&gt;=5) ＞ 6[1,5] ＞ 6 ＞ 成功
+            
+      </p>
+      </div>
+      <div class="mem6 right">
+      <span>不施 誠</span>
+      <p>
+      
+            2D6&gt;=8 （判定：仕込み） (2D6&gt;=8) ＞ 6[3,3] ＞ 6 ＞ 失敗
+            
+      </p>
+      </div>
+      <div class="mem8 right">
+      <span>system</span>
+      <p>
+      
+            [ 不施 誠 ] 頑健 : 6 → 5
+      </p>
+      </div>
+      <div class="mem1 left">
+      <span>暁月 来瞳</span>
+      <p>
+      
+            布施さんに花子
+      </p>
+      </div>
+      <div class="mem1 left">
+      <span>暁月 来瞳</span>
+      <p>
+      
+            2D6&gt;=5 （判定：対人術） (2D6&gt;=5) ＞ 7[1,6] ＞ 7 ＞ 成功
+            
+      </p>
+      </div>
+      <div class="mem6 right">
+      <span>不施 誠</span>
+      <p>
+      
+            2D6&gt;=9 （判定：地の利） (2D6&gt;=9) ＞ 12[6,6] ＞ 12 ＞ スペシャル(【生命力】1点か変調一つを回復)
+            
+      </p>
+      </div>
+      <div class="mem2 right">
+      <span>紫残花</span>
+      <p>
+      
+            「……ボクは……ボクの……！」
+      </p>
+      </div>
+      <div class="mem2 right">
+      <span>紫残花</span>
+      <p>
+      
+            「……ラーニング開始……code:暁月 来瞳」
+      </p>
+      </div>
+      <div class="mem2 right">
+      <span>紫残花</span>
+      <p>
+      
+            奥義！！
+      </p>
+      </div>
+      <div class="mem2 right">
+      <span>紫残花</span>
+      <p>
+      
+            ■奥義<br>《ボクは盗む》<br>指定特技　：絡繰術<br>エフェクト：追加忍法：《流転》<br>効果・演出：対象に赤眼を見せ、幻覚を引き起こし、<br>詩を聞かせて完全なる催眠状態へと陥れる。<br>気が付いた時には、既に大切な情報は盗まれた後だ。
+      </p>
+      </div>
+      <div class="mem2 right">
+      <span>紫残花</span>
+      <p>
+      
+            2D6&gt;=5 （判定：絡繰術） (2D6&gt;=5) ＞ 9[4,5] ＞ 9 ＞ 成功
+            
+      </p>
+      </div>
+      <div class="mem3 left">
+      <span>市 穂焔</span>
+      <p>
+      
+            奥義破り
+      </p>
+      </div>
+      <div class="mem3 left">
+      <span>市 穂焔</span>
+      <p>
+      
+            2D6&gt;=6 （判定：火術） (2D6&gt;=6) ＞ 9[3,6] ＞ 9 ＞ 成功
+            
+      </p>
+      </div>
+      <div class="mem2 right">
+      <span>紫残花</span>
+      <p>
+      
+            接近戦攻撃→来瞳
+      </p>
+      </div>
+      <div class="mem2 right">
+      <span>紫残花</span>
+      <p>
+      
+            2D6&gt;=5 （判定：絡繰術） (2D6&gt;=5) ＞ 10[5,5] ＞ 10 ＞ 成功
+            
+      </p>
+      </div>
+      <div class="mem1 left">
+      <span>暁月 来瞳</span>
+      <p>
+      
+            2D6&gt;=9 （判定：手裏剣術） (2D6&gt;=9) ＞ 7[3,4] ＞ 7 ＞ 失敗
+            
+      </p>
+      </div>
+      <div class="mem1 left">
+      <span>暁月 来瞳</span>
+      <p>
+      
+            1d6 (1D6) ＞ 6
+            
+      </p>
+      </div>
+      <div class="mem8 right">
+      <span>system</span>
+      <p>
+      
+            [ 暁月 来瞳 ] 妖術 : 1 → 0
+      </p>
+      </div>
+      <div class="mem4 right">
+      <span>小此木 天星</span>
+      <p>
+      
+            「オイオイ！こっち内でやりあってる場合かよ！」
+      </p>
+      </div>
+      <div class="mem2 right">
+      <span>紫残花</span>
+      <p>
+      
+            「キミも……ボクの邪魔をするの…？」
+      </p>
+      </div>
+      <div class="mem1 left">
+      <span>暁月 来瞳</span>
+      <p>
+      
+            「？　僕の邪魔をしようとしましたよね？」
+      </p>
+      </div>
+      <div class="mem1 left">
+      <span>暁月 来瞳</span>
+      <p>
+      
+            兵糧丸使います
+      </p>
+      </div>
+      <div class="mem1 left">
+      <span>暁月 来瞳</span>
+      <p>
+      
+            誘導使います！
+      </p>
+      </div>
+      <div class="mem8 right">
+      <span>system</span>
+      <p>
+      
+            [ 暁月 来瞳 ] 妖術 : 0 → 1
+      </p>
+      </div>
+      <div class="mem1 left">
+      <span>暁月 来瞳</span>
+      <p>
+      
+            2D6&gt;=5 （判定：結界術） (2D6&gt;=5) ＞ 10[4,6] ＞ 10 ＞ 成功
+            
+      </p>
+      </div>
+      <div class="mem1 left">
+      <span>暁月 来瞳</span>
+      <p>
+      
+            水中へGO
+      </p>
+      </div>
+      <div class="mem3 left">
+      <span>市 穂焔</span>
+      <p>
+      
+            影分身
+      </p>
+      </div>
+      <div class="mem3 left">
+      <span>市 穂焔</span>
+      <p>
+      
+            2D6&gt;=5 （判定：分身の術） (2D6&gt;=5) ＞ 3[1,2] ＞ 3 ＞ 失敗
+            
+      </p>
+      </div>
+      <div class="mem6 right">
+      <span>不施 誠</span>
+      <p>
+      
+            奈落
+      </p>
+      </div>
+      <div class="mem6 right">
+      <span>不施 誠</span>
+      <p>
+      
+            2D6&gt;=5 （判定：掘削術） (2D6&gt;=5) ＞ 6[2,4] ＞ 6 ＞ 成功
+            
+      </p>
+      </div>
+      <div class="mem2 right">
+      <span>紫残花</span>
+      <p>
+      
+            「嫌やなぁ……」
+      </p>
+      </div>
+      <div class="mem2 right">
+      <span>紫残花</span>
+      <p>
+      
+            「なんでボンはこの子の邪魔するん？ひどいわぁ」
+      </p>
+      </div>
+      <div class="mem8 right">
+      <span>system</span>
+      <p>
+      
+            [ 小此木 天星 ] がダイスシンボルを公開。出目は 6 です。
+      </p>
+      </div>
+      <div class="mem8 right">
+      <span>system</span>
+      <p>
+      
+            [ 暁月 来瞳 ] がダイスシンボルを公開。出目は 4 です。
+      </p>
+      </div>
+      <div class="mem8 right">
+      <span>system</span>
+      <p>
+      
+            [ 不施 誠 ] がダイスシンボルを公開。出目は 3 です。
+      </p>
+      </div>
+      <div class="mem8 right">
+      <span>system</span>
+      <p>
+      
+            [ 不施 誠 ] がダイスシンボルを公開。出目は 6 です。
+      </p>
+      </div>
+      <div class="mem8 right">
+      <span>system</span>
+      <p>
+      
+            [ 市 穂焔 ] がダイスシンボルを公開。出目は 4 です。
+      </p>
+      </div>
+      <div class="mem8 right">
+      <span>system</span>
+      <p>
+      
+            [ 紫残花 ] がダイスシンボルを公開。出目は 5 です。
+      </p>
+      </div>
+      <div class="mem4 right">
+      <span>小此木 天星</span>
+      <p>
+      
+            ■奥義<br>《完璧主義》<br>指定特技　：意気<br>エフェクト：完全成功/くらまし/分野限定（体術）<br>奥義破り判定-2<br>効果・演出：病的な完璧主義は失敗を許さない。
+      </p>
+      </div>
+      <div class="mem6 right">
+      <span>不施 誠</span>
+      <p>
+      
+            奥義破り
+      </p>
+      </div>
+      <div class="mem6 right">
+      <span>不施 誠</span>
+      <p>
+      
+            2D6&gt;=6 （判定：地の利） (2D6&gt;=6) ＞ 5[2,3] ＞ 5 ＞ 失敗
+            
+      </p>
+      </div>
+      <div class="mem4 right">
+      <span>小此木 天星</span>
+      <p>
+      
+            2D6&gt;=5 （判定：歩法） (2D6&gt;=5) ＞ 8[4,4] ＞ 8 ＞ 成功
+            
+      </p>
+      </div>
+      <div class="mem2 right">
+      <span>紫残花</span>
+      <p>
+      
+            「……ラーニング開始……」
+      </p>
+      </div>
+      <div class="mem2 right">
+      <span>紫残花</span>
+      <p>
+      
+            奥義！！
+      </p>
+      </div>
+      <div class="mem2 right">
+      <span>紫残花</span>
+      <p>
+      
+            ■奥義<br>《ボクは盗む》<br>指定特技　：絡繰術<br>エフェクト：追加忍法：《流転》<br>効果・演出：対象に赤眼を見せ、幻覚を引き起こし、<br>詩を聞かせて完全なる催眠状態へと陥れる。<br>気が付いた時には、既に大切な情報は盗まれた後だ。
+      </p>
+      </div>
+      <div class="mem2 right">
+      <span>紫残花</span>
+      <p>
+      
+            2D6&gt;=5 （判定：絡繰術） (2D6&gt;=5) ＞ 10[4,6] ＞ 10 ＞ 成功
+            
+      </p>
+      </div>
+      <div class="mem3 left">
+      <span>市 穂焔</span>
+      <p>
+      
+            2D6&gt;=6 （判定：火術） (2D6&gt;=6) ＞ 7[3,4] ＞ 7 ＞ 成功
+            
+      </p>
+      </div>
+      <div class="mem3 left">
+      <span>市 穂焔</span>
+      <p>
+      
+            奥義破りでした
+      </p>
+      </div>
+      <div class="mem2 right">
+      <span>紫残花</span>
+      <p>
+      
+            2D6&gt;=5 （判定：絡繰術）→穂焔 (2D6&gt;=5) ＞ 7[1,6] ＞ 7 ＞ 成功
+            
+      </p>
+      </div>
+      <div class="mem3 left">
+      <span>市 穂焔</span>
+      <p>
+      
+            2D6-1&gt;=6 （判定：火術） (2D6-1&gt;=6) ＞ 2[1,1]-1 ＞ 1 ＞ ファンブル
+            
+      </p>
+      </div>
+      <div class="mem3 left">
+      <span>市 穂焔</span>
+      <p>
+      
+            1ｄ6 (1D6) ＞ 6
+            
+      </p>
+      </div>
+      <div class="mem8 right">
+      <span>system</span>
+      <p>
+      
+            [ 市 穂焔 ] 妖術 : 1 → 0
+      </p>
+      </div>
+      <div class="mem2 right">
+      <span>紫残花</span>
+      <p>
+      
+            「ボ、ボクの邪魔をす……」
+      </p>
+      </div>
+      <div class="mem2 right">
+      <span>紫残花</span>
+      <p>
+      
+            「ギ……ギギ……」
+      </p>
+      </div>
+      <div class="mem4 right">
+      <span>小此木 天星</span>
+      <p>
+      
+            「最悪のチームワークだぜ…！」
+      </p>
+      </div>
+      <div class="mem2 right">
+      <span>紫残花</span>
+      <p>
+      
+            「あ～ぁ……ひどいわぁ」
+      </p>
+      </div>
+      <div class="mem1 left">
+      <span>暁月 来瞳</span>
+      <p>
+      
+            「友達って難しいですね……」
+      </p>
+      </div>
+      <div class="mem2 right">
+      <span>紫残花</span>
+      <p>
+      
+            「どうしてこないなことするん？」
+      </p>
+      </div>
+      <div class="mem3 left">
+      <span>市 穂焔</span>
+      <p>
+      
+            「……まぁ、こういうものです」
+      </p>
+      </div>
+      <div class="mem1 left">
+      <span>暁月 来瞳</span>
+      <p>
+      
+            布施さんに接近戦攻撃です
+      </p>
+      </div>
+      <div class="mem1 left">
+      <span>暁月 来瞳</span>
+      <p>
+      
+            2D6&gt;=5 （判定：人脈） (2D6&gt;=5) ＞ 4[1,3] ＞ 4 ＞ 失敗
+            
+      </p>
+      </div>
+      <div class="mem1 left">
+      <span>暁月 来瞳</span>
+      <p>
+      
+            1d6 (1D6) ＞ 1
+            
+      </p>
+      </div>
+      <div class="mem8 right">
+      <span>system</span>
+      <p>
+      
+            [ 暁月 来瞳 ] 器術 : 1 → 0
+      </p>
+      </div>
+      <div class="mem8 right">
+      <span>system</span>
+      <p>
+      
+            [ 暁月 来瞳 ] 忍術 : 1 → 0
+      </p>
+      </div>
+      <div class="mem2 right">
+      <span>紫残花</span>
+      <p>
+      
+            「キミら、ほんまに止めたいん？」
+      </p>
+      </div>
+      <div class="mem3 left">
+      <span>市 穂焔</span>
+      <p>
+      
+            奥義！！
+      </p>
+      </div>
+      <div class="mem3 left">
+      <span>市 穂焔</span>
+      <p>
+      
+            ■奥義<br>《流星火》<br>指定特技　：火術<br>エフェクト：範囲攻撃/伸ばし/威力低下<br>効果・演出：流星のようにその火は尾を引いて流れ落ちてくる。やがて点々と落ちた小さな火は炎となり、辺りを埋め尽くし焼き尽くすだろう。それは、まるで悲鳴のように。
+      </p>
+      </div>
+      <div class="mem3 left">
+      <span>市 穂焔</span>
+      <p>
+      
+            不施さんと紫残花さんに
+      </p>
+      </div>
+      <div class="mem8 right">
+      <span>system</span>
+      <p>
+      
+            [ 不施 誠 ] 頑健 : 5 → 4
+      </p>
+      </div>
+      <div class="mem8 right">
+      <span>system</span>
+      <p>
+      
+            [ 紫残花 ] 妖術 : 1 → 0
+      </p>
+      </div>
+      <div class="mem6 right">
+      <span>不施 誠</span>
+      <p>
+      
+            えっと
+      </p>
+      </div>
+      <div class="mem2 right">
+      <span>紫残花</span>
+      <p>
+      
+            「ぐっ……！」
+      </p>
+      </div>
+      <div class="mem6 right">
+      <span>不施 誠</span>
+      <p>
+      
+            痛打
+      </p>
+      </div>
+      <div class="mem6 right">
+      <span>不施 誠</span>
+      <p>
+      
+            2D6&gt;=5 （判定：仕込み） (2D6&gt;=5) ＞ 4[1,3] ＞ 4 ＞ 失敗
+            
+      </p>
+      </div>
+      <div class="mem2 right">
+      <span>紫残花</span>
+      <p>
+      
+            「あァ……ボぼぼくは…」
+      </p>
+      </div>
+      <div class="mem6 right">
+      <span>不施 誠</span>
+      <p>
+      
+            万華鏡
+      </p>
+      </div>
+      <div class="mem6 right">
+      <span>不施 誠</span>
+      <p>
+      
+            紫残花さんを
+      </p>
+      </div>
+      <div class="mem6 right">
+      <span>不施 誠</span>
+      <p>
+      
+            2D6-2&gt;=5 （判定：香術） (2D6-2&gt;=5) ＞ 5[1,4]-2 ＞ 3 ＞ 失敗
+            
+      </p>
+      </div>
+      <div class="mem3 left">
+      <span>市 穂焔</span>
+      <p>
+      
+            影分身
+      </p>
+      </div>
+      <div class="mem3 left">
+      <span>市 穂焔</span>
+      <p>
+      
+            2D6&gt;=5 （判定：分身の術） (2D6&gt;=5) ＞ 7[3,4] ＞ 7 ＞ 成功
+            
+      </p>
+      </div>
+      <div class="mem6 right">
+      <span>不施 誠</span>
+      <p>
+      
+            奈落
+      </p>
+      </div>
+      <div class="mem6 right">
+      <span>不施 誠</span>
+      <p>
+      
+            2D6&gt;=5 （判定：掘削術） (2D6&gt;=5) ＞ 9[4,5] ＞ 9 ＞ 成功
+            
+      </p>
+      </div>
+      <div class="mem8 right">
+      <span>system</span>
+      <p>
+      
+            [ 小此木 天星 ] がダイスシンボルを公開。出目は 5 です。
+      </p>
+      </div>
+      <div class="mem8 right">
+      <span>system</span>
+      <p>
+      
+            [ 紫残花 ] がダイスシンボルを公開。出目は 3 です。
+      </p>
+      </div>
+      <div class="mem8 right">
+      <span>system</span>
+      <p>
+      
+            [ 不施 誠 ] がダイスシンボルを公開。出目は 5 です。
+      </p>
+      </div>
+      <div class="mem8 right">
+      <span>system</span>
+      <p>
+      
+            [ 暁月 来瞳 ] がダイスシンボルを公開。出目は 1 です。
+      </p>
+      </div>
+      <div class="mem8 right">
+      <span>system</span>
+      <p>
+      
+            [ 不施 誠 ] がダイスシンボルを公開。出目は 4 です。
+      </p>
+      </div>
+      <div class="mem8 right">
+      <span>system</span>
+      <p>
+      
+            [ 市 穂焔 ] がダイスシンボルを公開。出目は 4 です。
+      </p>
+      </div>
+      <div class="mem8 right">
+      <span>system</span>
+      <p>
+      
+            [ 市 穂焔 ] がダイスシンボルを公開。出目は 3 です。
+      </p>
+      </div>
+      <div class="mem3 left">
+      <span>市 穂焔</span>
+      <p>
+      
+            3
+      </p>
+      </div>
+      <div class="mem6 right">
+      <span>不施 誠</span>
+      <p>
+      
+            土竜吼
+      </p>
+      </div>
+      <div class="mem6 right">
+      <span>不施 誠</span>
+      <p>
+      
+            紫残花
+      </p>
+      </div>
+      <div class="mem6 right">
+      <span>不施 誠</span>
+      <p>
+      
+            痛打
+      </p>
+      </div>
+      <div class="mem6 right">
+      <span>不施 誠</span>
+      <p>
+      
+            2D6&gt;=5 （判定：仕込み） (2D6&gt;=5) ＞ 8[2,6] ＞ 8 ＞ 成功
+            
+      </p>
+      </div>
+      <div class="mem6 right">
+      <span>不施 誠</span>
+      <p>
+      
+            2D6&gt;=5 （判定：掘削術） (2D6&gt;=5) ＞ 8[2,6] ＞ 8 ＞ 成功
+            
+      </p>
+      </div>
+      <div class="mem2 right">
+      <span>紫残花</span>
+      <p>
+      
+            回想シーン 判定+3
+      </p>
+      </div>
+      <div class="mem2 right">
+      <span>紫残花</span>
+      <p>
+      
+            「ボ、ボクは……」
+      </p>
+      </div>
+      <div class="mem2 right">
+      <span>紫残花</span>
+      <p>
+      
+            「落ち着きぃ？紫残花、大旦那はんも言ってたやろ？」
+      </p>
+      </div>
+      <div class="mem2 right">
+      <span>紫残花</span>
+      <p>
+      
+            PC4【秘密】<br>あなたは斜歯忍軍研究部に席を置くものである。<br>この休暇中に何かしら研究データを得て次の研究に役立てたい。<br>あなたの使命は研究データのプライズを獲得することである。<br>
+      </p>
+      </div>
+      <div class="mem7 left">
+      <span>ナレーション</span>
+      <p>
+      
+            リゾートに来る前、彼女は自分自身のアイデンティティに苦しんでいた
+      </p>
+      </div>
+      <div class="mem7 left">
+      <span>ナレーション</span>
+      <p>
+      
+            彼女はとある事情により作り出された斜歯の人造シノビ
+      </p>
+      </div>
+      <div class="mem7 left">
+      <span>ナレーション</span>
+      <p>
+      
+            しかし情報不足により暴走を起こし紫陽花という安定装置なしでは行動できなかったのだ
+      </p>
+      </div>
+      <div class="mem2 right">
+      <span>紫残花</span>
+      <p>
+      
+            「パパ……次の任務は……」
+      </p>
+      </div>
+         <div class="mem11 left">
+      <span>”パパ”</span>
+      <p>
+      
+            「紫残花、キミは休暇を取りなさい」
+      </p>
+      </div>
+      <div class="mem2 right">
+      <span>紫残花</span>
+      <p>
+      
+            「え？」
+      </p>
+      </div>
+      <div class="mem11 left">
+      <span>”パパ”</span>
+      <p>
+      
+            「私の友人に面白い試みをしている人がいます」
+      </p>
+      </div>
+      <div class="mem11 left">
+      <span>”パパ”</span>
+      <p>
+      
+            「彼のデータを得ればキミはまた、成長できるでしょう。」
+      </p>
+      </div>
+      <div class="mem2 right">
+      <span>紫残花</span>
+      <p>
+      
+            「ボクは……そうしたら”ボク”も”ボク”になれる？」
+      </p>
+      </div>
+      <div class="mem11 left">
+      <span>”パパ”</span>
+      <p>
+      
+            「えぇ……紫残花。キミはそこで…大事なものを得ることができるでしょう」
+      </p>
+      </div>
+      <div class="mem2 right">
+      <span>紫残花</span>
+      <p>
+      
+            「……うん、行ってくる」
+      </p>
+      </div>
+      <div class="mem11 left">
+      <span>”パパ”</span>
+      <p>
+      
+            「いってらっしゃい……紫残花（ハル）。」
+      </p>
+      </div>
+      <div class="mem11 left">
+      <span>”パパ”</span>
+      <p>
+      
+            「キミはそこで……”愛”を知ることができる……」
+      </p>
+      </div>
+      <div class="mem11 left">
+      <span>”パパ”</span>
+      <p>
+      
+            「……頼みましたよ。」
+      </p>
+      </div>
+      <div class="mem2 right">
+      <span>紫残花</span>
+      <p>
+      
+            回想シーン終了
+      </p>
+      </div>
+      <div class="mem2 right">
+      <span>紫残花</span>
+      <p>
+      
+            2D6+2&gt;=8 （判定：登術） (2D6+2&gt;=8) ＞ 8[3,5]+2 ＞ 10 ＞ 成功
+            
+      </p>
+      </div>
+      <div class="mem2 right">
+      <span>紫残花</span>
+      <p>
+      
+            「ボクは……そうだ、ボクはここで変わる……！」
+      </p>
+      </div>
+      <div class="mem2 right">
+      <span>紫残花</span>
+      <p>
+      
+            「ボクは……”ボク”になる」
+      </p>
+      </div>
+      <div class="mem4 right">
+      <span>小此木 天星</span>
+      <p>
+      
+            2D6&gt;=5 （判定：歩法） (2D6&gt;=5) ＞ 6[2,4] ＞ 6 ＞ 成功
+            
+      </p>
+      </div>
+      <div class="mem6 right">
+      <span>不施 誠</span>
+      <p>
+      
+            2D6-3&gt;=7 （判定：仕込み） (2D6-3&gt;=7) ＞ 12[6,6]-3 ＞ 9 ＞ スペシャル(【生命力】1点か変調一つを回復)
+            
+      </p>
+      </div>
+      <div class="mem8 right">
+      <span>system</span>
+      <p>
+      
+            [ 不施 誠 ] 頑健 : 4 → 5
+      </p>
+      </div>
+      <div class="mem2 right">
+      <span>紫残花</span>
+      <p>
+      
+            奥義！！
+      </p>
+      </div>
+      <div class="mem2 right">
+      <span>紫残花</span>
+      <p>
+      
+            2D6&gt;=5 （判定：絡繰術） (2D6&gt;=5) ＞ 6[2,4] ＞ 6 ＞ 成功
+            
+      </p>
+      </div>
+      <div class="mem6 right">
+      <span>不施 誠</span>
+      <p>
+      
+            奥義破り
+      </p>
+      </div>
+      <div class="mem6 right">
+      <span>不施 誠</span>
+      <p>
+      
+            2D6&gt;=9 （判定：仕込み） (2D6&gt;=9) ＞ 8[2,6] ＞ 8 ＞ 失敗
+            
+      </p>
+      </div>
+      <div class="mem2 right">
+      <span>紫残花</span>
+      <p>
+      
+            待機
+      </p>
+      </div>
+      <div class="mem2 right">
+      <span>紫残花</span>
+      <p>
+      
+            「ラーニング……code:暁月 来瞳」
+      </p>
+      </div>
+      <div class="mem3 left">
+      <span>市 穂焔</span>
+      <p>
+      
+            奥義！！
+      </p>
+      </div>
+      <div class="mem3 left">
+      <span>市 穂焔</span>
+      <p>
+      
+            不施くんに
+      </p>
+      </div>
+      <div class="mem8 right">
+      <span>system</span>
+      <p>
+      
+            [ 不施 誠 ] 頑健 : 5 → 4
+      </p>
+      </div>
+      <div class="mem1 left">
+      <span>暁月 来瞳</span>
+      <p>
+      
+            待機！
+      </p>
+      </div>
+      <div class="mem3 left">
+      <span>市 穂焔</span>
+      <p>
+      
+            影分身
+      </p>
+      </div>
+      <div class="mem6 right">
+      <span>不施 誠</span>
+      <p>
+      
+            奈落
+      </p>
+      </div>
+      <div class="mem6 right">
+      <span>不施 誠</span>
+      <p>
+      
+            2D6&gt;=5 （判定：掘削術） (2D6&gt;=5) ＞ 11[5,6] ＞ 11 ＞ 成功
+            
+      </p>
+      </div>
+      <div class="mem3 left">
+      <span>市 穂焔</span>
+      <p>
+      
+            2D6&gt;=5 （判定：分身の術） (2D6&gt;=5) ＞ 8[2,6] ＞ 8 ＞ 成功
+            
+      </p>
+      </div>
+      <div class="mem8 right">
+      <span>system</span>
+      <p>
+      
+            [ 小此木　天星 ] がダイスシンボルを公開。出目は 2 です。
+      </p>
+      </div>
+      <div class="mem8 right">
+      <span>system</span>
+      <p>
+      
+            [ 暁月 来瞳 ] がダイスシンボルを公開。出目は 2 です。
+      </p>
+      </div>
+      <div class="mem8 right">
+      <span>system</span>
+      <p>
+      
+            [ 紫残花 ] がダイスシンボルを公開。出目は 4 です。
+      </p>
+      </div>
+      <div class="mem8 right">
+      <span>system</span>
+      <p>
+      
+            [ 不施 誠 ] がダイスシンボルを公開。出目は 5 です。
+      </p>
+      </div>
+      <div class="mem8 right">
+      <span>system</span>
+      <p>
+      
+            [ 市 穂焔 ] がダイスシンボルを公開。出目は 4 です。
+      </p>
+      </div>
+      <div class="mem8 right">
+      <span>system</span>
+      <p>
+      
+            [ 不施 誠 ] がダイスシンボルを公開。出目は 3 です。
+      </p>
+      </div>
+      <div class="mem8 right">
+      <span>system</span>
+      <p>
+      
+            [ 市 穂焔 ] がダイスシンボルを公開。出目は 3 です。
+      </p>
+      </div>
+      <div class="mem6 right">
+      <span>不施 誠</span>
+      <p>
+      
+            紫残花に土竜吼
+      </p>
+      </div>
+      <div class="mem6 right">
+      <span>不施 誠</span>
+      <p>
+      
+            痛打
+      </p>
+      </div>
+      <div class="mem6 right">
+      <span>不施 誠</span>
+      <p>
+      
+            2D6&gt;=5 （判定：仕込み） (2D6&gt;=5) ＞ 6[1,5] ＞ 6 ＞ 成功
+            
+      </p>
+      </div>
+      <div class="mem6 right">
+      <span>不施 誠</span>
+      <p>
+      
+            2D6&gt;=5 （判定：掘削術） (2D6&gt;=5) ＞ 6[3,3] ＞ 6 ＞ 成功
+            
+      </p>
+      </div>
+      <div class="mem2 right">
+      <span>紫残花</span>
+      <p>
+      
+            2D6-1&gt;=8 （判定：登術） (2D6-1&gt;=8) ＞ 12[6,6]-1 ＞ 11 ＞ スペシャル(【生命力】1点か変調一つを回復)
+            
+      </p>
+      </div>
+      <div class="mem8 right">
+      <span>system</span>
+      <p>
+      
+            [ 紫残花 ] 妖術 : 0 → 1
+      </p>
+      </div>
+      <div class="mem3 left">
+      <span>市 穂焔</span>
+      <p>
+      
+            吹火をふせくんに
+      </p>
+      </div>
+      <div class="mem3 left">
+      <span>市 穂焔</span>
+      <p>
+      
+            2D6&gt;=5 （判定：火術） (2D6&gt;=5) ＞ 7[3,4] ＞ 7 ＞ 成功
+            
+      </p>
+      </div>
+      <div class="mem6 right">
+      <span>不施 誠</span>
+      <p>
+      
+            2D6-2&gt;=8 （判定：仕込み） (2D6-2&gt;=8) ＞ 5[1,4]-2 ＞ 3 ＞ 失敗
+            
+      </p>
+      </div>
+      <div class="mem8 right">
+      <span>system</span>
+      <p>
+      
+            [ 不施 誠 ] 頑健 : 4 → 3
+      </p>
+      </div>
+      <div class="mem8 right">
+      <span>system</span>
+      <p>
+      
+            [ 不施 誠 ] 頑健 : 3 → 1
+      </p>
+      </div>
+      <div class="mem2 right">
+      <span>紫残花</span>
+      <p>
+      
+            奥義！！
+      </p>
+      </div>
+      <div class="mem2 right">
+      <span>紫残花</span>
+      <p>
+      
+            ■奥義<br>《一冥様御案内！（ラーニング・アカツキ）》<br>指定特技　：人脈<br>エフェクト：クリティカルヒット/くらまし/発動条件<br>間合1の範囲一人に対して4点ダメージ。潰れる特技分野はランダムで選ぶ。<br>奥義破り判定に-2の修正をつける。<br>生命力が3点以下の場合のみ使用可能。<br>効果・演出：「ボクの影よ。ボクらはずっとこのままだ」<br>
+      </p>
+      </div>
+      <div class="mem6 right">
+      <span>不施 誠</span>
+      <p>
+      
+            奥義！！
+      </p>
+      </div>
+      <div class="mem6 right">
+      <span>不施 誠</span>
+      <p>
+      
+            《新緑の棺》<br>指定特技　：地の利<br>エフェクト：絶対防御<br>効果・演出：自身の周りに植物が出現し、術者を守る。
+      </p>
+      </div>
+      <div class="mem1 left">
+      <span>暁月 来瞳</span>
+      <p>
+      
+            奥義破り
+      </p>
+      </div>
+      <div class="mem1 left">
+      <span>暁月 来瞳</span>
+      <p>
+      
+            2D6&gt;=6 （判定：結界術） (2D6&gt;=6) ＞ 8[3,5] ＞ 8 ＞ 成功
+            
+      </p>
+      </div>
+      <div class="mem7 left">
+      <span>ナレーション</span>
+      <p>
+      
+            不施の視界が暗く染まる、何も見えない
+      </p>
+      </div>
+      <div class="mem7 left">
+      <span>ナレーション</span>
+      <p>
+      
+            奥に赤く揺らめく光が見える
+      </p>
+      </div>
+      <div class="mem7 left">
+      <span>ナレーション</span>
+      <p>
+      
+            ギギ……ギギギ……
+      </p>
+      </div>
+      <div class="mem7 left">
+      <span>ナレーション</span>
+      <p>
+      
+            機械のこすれるような何か怪物の鳴き声のような……ひどく耳ざわりな音が聞こえる
+      </p>
+      </div>
+      <div class="mem8 right">
+      <span>system</span>
+      <p>
+      
+            [ 不施 誠 ] 頑健 : 1 → 0
+      </p>
+      </div>
+      <div class="mem6 right">
+      <span>不施 誠</span>
+      <p>
+      
+            1D6 (1D6) ＞ 3
+            
+      </p>
+      </div>
+      <div class="mem6 right">
+      <span>不施 誠</span>
+      <p>
+      
+            1D6 (1D6) ＞ 1
+            
+      </p>
+      </div>
+      <div class="mem6 right">
+      <span>不施 誠</span>
+      <p>
+      
+            1D6 (1D6) ＞ 5
+            
+      </p>
+      </div>
+      <div class="mem7 left">
+      <span>ナレーション</span>
+      <p>
+      
+            ふと、背後に気配を感じる
+      </p>
+      </div>
+      <div class="mem8 right">
+      <span>system</span>
+      <p>
+      
+            [ 不施 誠 ] 器術 : 1 → 0
+      </p>
+      </div>
+      <div class="mem8 right">
+      <span>system</span>
+      <p>
+      
+            [ 不施 誠 ] 忍術 : 1 → 0
+      </p>
+      </div>
+      <div class="mem2 right">
+      <span>紫残花</span>
+      <p>
+      
+            「ミツケタ……」
+      </p>
+      </div>
+      <div class="mem8 right">
+      <span>system</span>
+      <p>
+      
+            [ 不施 誠 ] 戦術 : 1 → 0
+      </p>
+      </div>
+      <div class="mem4 right">
+      <span>小此木 天星</span>
+      <p>
+      
+            2D6&gt;=5 （判定：手裏剣術） (2D6&gt;=5) ＞ 7[2,5] ＞ 7 ＞ 成功
+            
+      </p>
+      </div>
+      <div class="mem6 right">
+      <span>不施 誠</span>
+      <p>
+      
+            2D6&gt;=10 （判定：毒術） (2D6&gt;=10) ＞ 4[1,3] ＞ 4 ＞ 失敗
+            
+      </p>
+      </div>
+      <div class="mem1 left">
+      <span>暁月 来瞳</span>
+      <p>
+      
+            布施くんに花子
+      </p>
+      </div>
+      <div class="mem1 left">
+      <span>暁月 来瞳</span>
+      <p>
+      
+            2D6&gt;=5 （判定：対人術） (2D6&gt;=5) ＞ 5[2,3] ＞ 5 ＞ 成功
+            
+      </p>
+      </div>
+      <div class="mem8 right">
+      <span>system</span>
+      <p>
+      
+            [ 不施 誠 ] 体術 : 1 → 0
+      </p>
+      </div>
+      <div class="mem1 left">
+      <span>暁月 来瞳</span>
+      <p>
+      
+            GWT 戦国変調表(3) ＞ 猛毒:戦闘に参加した時、ラウンドの終了時にサイコロを1つ振る(飢餓と共用)。奇数だったら【生命力】を1減少。サイクル終了時に〈毒術〉判定し成功すると無効化。
+            
+      </p>
+      </div>
+      <div class="mem8 right">
+      <span>system</span>
+      <p>
+      
+            [ 不施 誠 ] 妖術 : 1 → 0
+      </p>
+      </div>
+      <div class="mem6 right">
+      <span>不施 誠</span>
+      <p>
+      
+            1D6 (1D6) ＞ 4
+            
+      </p>
+      </div>
+      <div class="mem1 left">
+      <span>暁月 来瞳</span>
+      <p>
+      
+            誘導使います
+      </p>
+      </div>
+      <div class="mem1 left">
+      <span>暁月 来瞳</span>
+      <p>
+      
+            2D6&gt;=5 （判定：結界術） (2D6&gt;=5) ＞ 10[4,6] ＞ 10 ＞ 成功
+            
+      </p>
+      </div>
+      <div class="mem9 left">
+      <span>紫陽花</span>
+      <p>
+      
+            「ジギタリスの花言葉は……嘘と不誠実」
+      </p>
+      </div>
+      <div class="mem9 left">
+      <span>紫陽花</span>
+      <p>
+      
+            「ピッタリやなぁ～」
+      </p>
+      </div>
+      <div class="mem1 left">
+      <span>暁月 来瞳</span>
+      <p>
+      
+            極地へご案内だ
+      </p>
+      </div>
+      <div class="mem1 left">
+      <span>暁月 来瞳</span>
+      <p>
+      
+            「自然破壊、お嫌いなんですよね？」
+      </p>
+      </div>
+      <div class="mem3 left">
+      <span>市 穂焔</span>
+      <p>
+      
+            「仲間がいるってすごいんですね……」
+      </p>
+      </div>
+      <div class="mem6 right">
+      <span>不施 誠</span>
+      <p>
+      
+            1D6 (1D6) ＞ 6
+            
+      </p>
+      </div>
+      <div class="mem1 left">
+      <span>暁月 来瞳</span>
+      <p>
+      
+            「自然のために頑張るところ見せてくださいね！」
+      </p>
+      </div>
+      <div class="mem8 right">
+      <span>system</span>
+      <p>
+      
+            [ 暁月 来瞳 ] がダイスシンボルを公開。出目は 4 です。
+      </p>
+      </div>
+      <div class="mem8 right">
+      <span>system</span>
+      <p>
+      
+            [ 紫残花 ] がダイスシンボルを公開。出目は 5 です。
+      </p>
+      </div>
+      <div class="mem8 right">
+      <span>system</span>
+      <p>
+      
+            [ 不施 誠 ] がダイスシンボルを公開。出目は 3 です。
+      </p>
+      </div>
+      <div class="mem8 right">
+      <span>system</span>
+      <p>
+      
+            [ 市 穂焔 ] がダイスシンボルを公開。出目は 4 です。
+      </p>
+      </div>
+      <div class="mem8 right">
+      <span>system</span>
+      <p>
+      
+            [ 小此木 天星 ] がダイスシンボルを公開。出目は 6 です。
+      </p>
+      </div>
+      <div class="mem4 right">
+      <span>小此木 天星</span>
+      <p>
+      
+            2D6&gt;=5 （判定：歩法） (2D6&gt;=5) ＞ 6[1,5] ＞ 6 ＞ 成功
+            
+      </p>
+      </div>
+      <div class="mem4 right">
+      <span>小此木 天星</span>
+      <p>
+      
+            1d6 (1D6) ＞ 5
+            
+      </p>
+      </div>
+      <div class="mem2 right">
+      <span>紫残花</span>
+      <p>
+      
+            奥義！！
+      </p>
+      </div>
+      <div class="mem2 right">
+      <span>紫残花</span>
+      <p>
+      
+            ■奥義<br>《一冥様御案内！（ラーニング・アカツキ）》<br>指定特技　：人脈<br>エフェクト：クリティカルヒット/くらまし/発動条件<br>間合1の範囲一人に対して4点ダメージ。潰れる特技分野はランダムで選ぶ。<br>奥義破り判定に-2の修正をつける。<br>生命力が3点以下の場合のみ使用可能。<br>効果・演出：「ボクの影よ。ボクらはずっとこのままだ」
+      </p>
+      </div>
+      <div class="mem8 right">
+      <span>system</span>
+      <p>
+      
+            [ 小此木 天星 ] 器術 : 1 → 0
+      </p>
+      </div>
+      <div class="mem2 right">
+      <span>紫残花</span>
+      <p>
+      
+            →穂焔
+      </p>
+      </div>
+      <div class="mem8 right">
+      <span>system</span>
+      <p>
+      
+            [ 小此木 天星 ] 戦術 : 1 → 0
+      </p>
+      </div>
+      <div class="mem1 left">
+      <span>暁月 来瞳</span>
+      <p>
+      
+            奥義やぶり
+      </p>
+      </div>
+      <div class="mem1 left">
+      <span>暁月 来瞳</span>
+      <p>
+      
+            回想使います
+      </p>
+      </div>
+      <div class="mem1 left">
+      <span>暁月 来瞳</span>
+      <p>
+      
+            【秘密】<br>実はあなたは上層部から楽園に行ったものが不調を訴えそのまま帰らぬ人となる原因を探って欲し<br>いと依頼されている。<br>あなたの本当の使命は原因の究明、そして対策方法の発案である。<br>発案はクライマックスシーン終了後に問われる。部分達成で功績点は 2 点とする。<br>----------------------
+      </p>
+      </div>
+      <div class="mem1 left">
+      <span>暁月 来瞳</span>
+      <p>
+      
+            「僕の友達に何をするんですか？それ、僕のですよね？僕のこと嫌いですか？僕のことは嫌いでいいですよ」
+      </p>
+      </div>
+      <div class="mem1 left">
+      <span>暁月 来瞳</span>
+      <p>
+      
+            2D6&gt;=5 （判定：人脈） (2D6&gt;=5) ＞ 7[2,5] ＞ 7 ＞ 成功
+            
+      </p>
+      </div>
+      <div class="mem2 right">
+      <span>紫残花</span>
+      <p>
+      
+            「あらぁ～ボン、悪い子やねぇ～」
+      </p>
+      </div>
+      <div class="mem1 left">
+      <span>暁月 来瞳</span>
+      <p>
+      
+            「僕の友達をそんなことに使わないでください、僕のことはいいですけど、僕の友達は僕のものです」
+      </p>
+      </div>
+      <div class="mem2 right">
+      <span>紫残花</span>
+      <p>
+      
+            「うちとは、友達やあらへんの？」
+      </p>
+      </div>
+      <div class="mem2 right">
+      <span>紫残花</span>
+      <p>
+      
+            「悲しいわぁ～」
+      </p>
+      </div>
+      <div class="mem1 left">
+      <span>暁月 来瞳</span>
+      <p>
+      
+            紫残花さんに接近戦攻撃
+      </p>
+      </div>
+      <div class="mem1 left">
+      <span>暁月 来瞳</span>
+      <p>
+      
+            2D6&gt;=5 （判定：人脈） (2D6&gt;=5) ＞ 10[5,5] ＞ 10 ＞ 成功
+            
+      </p>
+      </div>
+      <div class="mem1 left">
+      <span>暁月 来瞳</span>
+      <p>
+      
+            「あれ、言いませんでしたっけ」
+      </p>
+      </div>
+      <div class="mem2 right">
+      <span>紫残花</span>
+      <p>
+      
+            2D6&gt;=10 （判定：瞳術） (2D6&gt;=10) ＞ 8[3,5] ＞ 8 ＞ 失敗
+            
+      </p>
+      </div>
+      <div class="mem2 right">
+      <span>紫残花</span>
+      <p>
+      
+            1ｄ6 (1D6) ＞ 5
+            
+      </p>
+      </div>
+      <div class="mem8 right">
+      <span>system</span>
+      <p>
+      
+            [ 紫残花 ] 謀術 : 1 → 0
+      </p>
+      </div>
+      <div class="mem1 left">
+      <span>暁月 来瞳</span>
+      <p>
+      
+            「友達って曖昧で弱い絆だけど、だから誰とでも友達にはなれるんです」
+      </p>
+      </div>
+      <div class="mem2 right">
+      <span>紫残花</span>
+      <p>
+      
+            「……？それって」
+      </p>
+      </div>
+      <div class="mem2 right">
+      <span>紫残花</span>
+      <p>
+      
+            「あんた、ほんとは友達おらへんの？」
+      </p>
+      </div>
+      <div class="mem2 right">
+      <span>紫残花</span>
+      <p>
+      
+            「かわいいねぇ～ボン……」
+      </p>
+      </div>
+      <div class="mem3 left">
+      <span>市 穂焔</span>
+      <p>
+      
+            吹火を紫残花ちゃんに
+      </p>
+      </div>
+      <div class="mem1 left">
+      <span>暁月 来瞳</span>
+      <p>
+      
+            「……いますよ？僕にも、友達」
+      </p>
+      </div>
+      <div class="mem3 left">
+      <span>市 穂焔</span>
+      <p>
+      
+            2D6&gt;=5 （判定：火術） (2D6&gt;=5) ＞ 5[2,3] ＞ 5 ＞ 成功
+            
+      </p>
+      </div>
+      <div class="mem2 right">
+      <span>紫残花</span>
+      <p>
+      
+            2D6&gt;=6 （判定：絡繰術） (2D6&gt;=6) ＞ 9[3,6] ＞ 9 ＞ 成功
+            
+      </p>
+      </div>
+      <div class="mem6 right">
+      <span>不施 誠</span>
+      <p>
+      
+            遁甲符
+      </p>
+      </div>
+      <div class="mem2 right">
+      <span>紫残花</span>
+      <p>
+      
+            2D6&gt;=6 （判定：絡繰術） (2D6&gt;=6) ＞ 8[2,6] ＞ 8 ＞ 成功
+            
+      </p>
+      </div>
+      <div class="mem6 right">
+      <span>不施 誠</span>
+      <p>
+      
+            来瞳に接近戦攻撃を
+      </p>
+      </div>
+      <div class="mem6 right">
+      <span>不施 誠</span>
+      <p>
+      
+            2D6&gt;=5 （判定：毒術） (2D6&gt;=5) ＞ 9[4,5] ＞ 9 ＞ 成功
+            
+      </p>
+      </div>
+      <div class="mem2 right">
+      <span>紫残花</span>
+      <p>
+      
+            「うるさい！ハイド！ボクはボクだ！」
+      </p>
+      </div>
+      <div class="mem1 left">
+      <span>暁月 来瞳</span>
+      <p>
+      
+            1d6 (1D6) ＞ 2
+            
+      </p>
+      </div>
+      <div class="mem8 right">
+      <span>system</span>
+      <p>
+      
+            [ 暁月 来瞳 ] 体術 : 1 → 0
+      </p>
+      </div>
+      <div class="kp LtoR-early">
+      
+            1D6 (1D6) ＞ 4
+            
+      </div>
+      <div class="mem2 right">
+      <span>紫残花</span>
+      <p>
+      
+            1ｄ6 (1D6) ＞ 6
+            
+      </p>
+      </div>
+      <div class="mem1 left">
+      <span>暁月 来瞳</span>
+      <p>
+      
+            「あはは、頭に血が上ってたみたいです。ありがとうございます」
+      </p>
+      </div>
+      <div class="mem4 right">
+      <span>小此木 天星</span>
+      <p>
+      
+            1d6 (1D6) ＞ 4
+            
+      </p>
+      </div>
+      <div class="mem3 left">
+      <span>市 穂焔</span>
+      <p>
+      
+            1ｄ6 (1D6) ＞ 5
+            
+      </p>
+      </div>
+      <div class="mem1 left">
+      <span>暁月 来瞳</span>
+      <p>
+      
+            1d6 (1D6) ＞ 6
+            
+      </p>
+      </div>
+      <div class="mem8 right">
+      <span>system</span>
+      <p>
+      
+            [ 紫残花 ] 妖術 : 1 → 0
+      </p>
+      </div>
+      <div class="mem8 right">
+      <span>system</span>
+      <p>
+      
+            [ 小此木 天星 ] 謀術 : 1 → 0
+      </p>
+      </div>
+      <div class="mem8 right">
+      <span>system</span>
+      <p>
+      
+            [ 暁月 来瞳 ] 妖術 : 1 → 0
+      </p>
+      </div>
+      <div class="mem8 right">
+      <span>system</span>
+      <p>
+      
+            [ 暁月 来瞳 ] 体術 : 0 → 1
+      </p>
+      </div>
+      <div class="mem2 right">
+      <span>紫残花</span>
+      <p>
+      
+            「こらあかんわ……」
+      </p>
+      </div>
+      <div class="mem8 right">
+      <span>system</span>
+      <p>
+      
+            [ 市 穂焔 ] 体術 : 1 → 0
+      </p>
+      </div>
+      <div class="mem8 right">
+      <span>system</span>
+      <p>
+      
+            [ 市 穂焔 ] 体術 : 0 → 1
+      </p>
+      </div>
+      <div class="mem8 right">
+      <span>system</span>
+      <p>
+      
+            [ 不施 誠 ] 謀術 : 1 → 0
+      </p>
+      </div>
+      <div class="mem8 right">
+      <span>system</span>
+      <p>
+      
+            [ 暁月 来瞳 ] がダイスシンボルを公開。出目は 3 です。
+      </p>
+      </div>
+      <div class="mem8 right">
+      <span>system</span>
+      <p>
+      
+            [ 紫残花 ] がダイスシンボルを公開。出目は 4 です。
+      </p>
+      </div>
+      <div class="mem8 right">
+      <span>system</span>
+      <p>
+      
+            [ 小此木 天星 ] がダイスシンボルを公開。出目は 6 です。
+      </p>
+      </div>
+      <div class="mem8 right">
+      <span>system</span>
+      <p>
+      
+            [ 市 穂焔 ] がダイスシンボルを公開。出目は 4 です。
+      </p>
+      </div>
+      <div class="mem4 right">
+      <span>小此木 天星</span>
+      <p>
+      
+            ■奥義<br>《完璧主義》<br>指定特技　：意気<br>エフェクト：完全成功/くらまし/分野限定（体術）<br>奥義破り判定-2<br>効果・演出：病的な完璧主義は失敗を許さない。<br> ♡
+      </p>
+      </div>
+      <div class="mem3 left">
+      <span>市 穂焔</span>
+      <p>
+      
+            奥義破り
+      </p>
+      </div>
+      <div class="mem3 left">
+      <span>市 穂焔</span>
+      <p>
+      
+            2D6-1&gt;=5 （判定：意気） (2D6-1&gt;=5) ＞ 7[2,5]-1 ＞ 6 ＞ 成功
+            
+      </p>
+      </div>
+      <div class="mem2 right">
+      <span>紫残花</span>
+      <p>
+      
+            奥義！！
+      </p>
+      </div>
+      <div class="mem2 right">
+      <span>紫残花</span>
+      <p>
+      
+            →穂焔
+      </p>
+      </div>
+      <div class="mem1 left">
+      <span>暁月 来瞳</span>
+      <p>
+      
+            奥義やぶり
+      </p>
+      </div>
+      <div class="mem1 left">
+      <span>暁月 来瞳</span>
+      <p>
+      
+            2D6-2&gt;=5 （判定：人脈） (2D6-2&gt;=5) ＞ 6[1,5]-2 ＞ 4 ＞ 失敗
+            
+      </p>
+      </div>
+      <div class="mem3 left">
+      <span>市 穂焔</span>
+      <p>
+      
+            奥義破り
+      </p>
+      </div>
+      <div class="mem3 left">
+      <span>市 穂焔</span>
+      <p>
+      
+            2D6&gt;=10 （判定：分身の術） (2D6&gt;=10) ＞ 5[2,3] ＞ 5 ＞ 失敗
+            
+      </p>
+      </div>
+      <div class="mem3 left">
+      <span>市 穂焔</span>
+      <p>
+      
+            1ｄ6 (1D6) ＞ 6
+            
+      </p>
+      </div>
+      <div class="mem8 right">
+      <span>system</span>
+      <p>
+      
+            [ 市 穂焔 ] 戦術 : 1 → 0
+      </p>
+      </div>
+      <div class="mem8 right">
+      <span>system</span>
+      <p>
+      
+            [ 市 穂焔 ] 謀術 : 1 → 0
+      </p>
+      </div>
+      <div class="mem8 right">
+      <span>system</span>
+      <p>
+      
+            [ 市 穂焔 ] 忍術 : 1 → 0
+      </p>
+      </div>
+      <div class="mem8 right">
+      <span>system</span>
+      <p>
+      
+            [ 市 穂焔 ] 体術 : 1 → 0
+      </p>
+      </div>
+      <div class="mem8 right">
+      <span>system</span>
+      <p>
+      
+            [ 市 穂焔 ] 忍術 : 0 → 1
+      </p>
+      </div>
+      <div class="mem3 left">
+      <span>市 穂焔</span>
+      <p>
+      
+            百燐
+      </p>
+      </div>
+      <div class="mem3 left">
+      <span>市 穂焔</span>
+      <p>
+      
+            2D6&gt;=5 （判定：火術） (2D6&gt;=5) ＞ 7[1,6] ＞ 7 ＞ 成功
+            
+      </p>
+      </div>
+      <div class="mem2 right">
+      <span>紫残花</span>
+      <p>
+      
+            2D6&gt;=6 （判定：絡繰術） (2D6&gt;=6) ＞ 6[2,4] ＞ 6 ＞ 成功
+            
+      </p>
+      </div>
+      <div class="mem1 left">
+      <span>暁月 来瞳</span>
+      <p>
+      
+            2D6&gt;=8 （判定：手裏剣術） (2D6&gt;=8) ＞ 8[4,4] ＞ 8 ＞ 成功
+            
+      </p>
+      </div>
+      <div class="mem4 right">
+      <span>小此木 天星</span>
+      <p>
+      
+            2D6&gt;=7 （判定：手裏剣術） (2D6&gt;=7) ＞ 7[2,5] ＞ 7 ＞ 成功
+            
+      </p>
+      </div>
+      <div class="mem1 left">
+      <span>暁月 来瞳</span>
+      <p>
+      
+            奥義！！
+      </p>
+      </div>
+      <div class="mem1 left">
+      <span>暁月 来瞳</span>
+      <p>
+      
+            ■奥義<br>《一冥様御案内！》<br>指定特技　：人脈<br>エフェクト：クリティカルヒット/くらまし/発動条件<br>間合1の範囲一人に対して4点ダメージ。潰れる特技分野はランダムで選ぶ。<br>奥義破り判定に-2の修正をつける。<br>生命力が3点以下の場合のみ使用可能。<br>効果・演出：「いちめいさま、ごあんない！」<br><br>背後から忍び寄り背中をどんと一押し。<br>前面に開いた死霊だらけの結界に押し込み、疑似的な百鬼夜行に巻き込む。<br>そのまま魂を引き摺り込みあの世の友達の仲間入り。<br>死にかけていないとこんなに沢山の友達を呼べないとのこと。<br> 
+      </p>
+      </div>
+      <div class="mem8 right">
+      <span>system</span>
+      <p>
+      
+            [ 紫残花 ] 妖術 : 0 → 1
+      </p>
+      </div>
+      <div class="mem8 right">
+      <span>system</span>
+      <p>
+      
+            [ 紫残花 ] 妖術 : 1 → 0
+      </p>
+      </div>
+      <div class="mem8 right">
+      <span>system</span>
+      <p>
+      
+            [ 紫残花 ] 忍術 : 0 → 1
+      </p>
+      </div>
+      <div class="mem2 right">
+      <span>紫残花</span>
+      <p>
+      
+            2D6-1&gt;=9 （判定：第六感） (2D6-1&gt;=9) ＞ 10[4,6]-1 ＞ 9 ＞ 成功
+            
+      </p>
+      </div>
+      <div class="mem1 left">
+      <span>暁月 来瞳</span>
+      <p>
+      
+            「視えました？視えましたか？僕の友達、友達！友達！」
+      </p>
+      </div>
+      <div class="kp LtoR-early">
+      
+            極地ダメージどぞ
+      </div>
+      <div class="mem1 left">
+      <span>暁月 来瞳</span>
+      <p>
+      
+            「かわいいでしょ？僕の、僕らの！」
+      </p>
+      </div>
+      <div class="mem1 left">
+      <span>暁月 来瞳</span>
+      <p>
+      
+            1d6 (1D6) ＞ 6
+            
+      </p>
+      </div>
+      <div class="mem3 left">
+      <span>市 穂焔</span>
+      <p>
+      
+            1ｄ6 (1D6) ＞ 1
+            
+      </p>
+      </div>
+      <div class="mem4 right">
+      <span>小此木 天星</span>
+      <p>
+      
+            1d6]
+      </p>
+      </div>
+      <div class="mem2 right">
+      <span>紫残花</span>
+      <p>
+      
+            「見えてたよ……この目は闇がよく見える……」
+      </p>
+      </div>
+      <div class="mem2 right">
+      <span>紫残花</span>
+      <p>
+      
+            1ｄ6 (1D6) ＞ 1
+            
+      </p>
+      </div>
+      <div class="mem8 right">
+      <span>system</span>
+      <p>
+      
+            [ 市 穂焔 ] 器術 : 1 → 0
+      </p>
+      </div>
+      <div class="mem8 right">
+      <span>system</span>
+      <p>
+      
+            [ 紫残花 ] 器術 : 1 → 0
+      </p>
+      </div>
+      <div class="mem8 right">
+      <span>system</span>
+      <p>
+      
+            [ 小此木 天星 ] 妖術 : 1 → 0
+      </p>
+      </div>
+      <div class="mem8 right">
+      <span>system</span>
+      <p>
+      
+            [ 暁月 来瞳 ] 謀術 : 1 → 0
+      </p>
+      </div>
+      <div class="mem8 right">
+      <span>system</span>
+      <p>
+      
+            [ 小此木 天星 ] がダイスシンボルを公開。出目は 1 です。
+      </p>
+      </div>
+      <div class="mem8 right">
+      <span>system</span>
+      <p>
+      
+            [ 暁月 来瞳 ] がダイスシンボルを公開。出目は 5 です。
+      </p>
+      </div>
+      <div class="mem8 right">
+      <span>system</span>
+      <p>
+      
+            [ 紫残花 ] がダイスシンボルを公開。出目は 1 です。
+      </p>
+      </div>
+      <div class="mem8 right">
+      <span>system</span>
+      <p>
+      
+            [ 市 穂焔 ] がダイスシンボルを公開。出目は 4 です。
+      </p>
+      </div>
+      <div class="mem3 left">
+      <span>市 穂焔</span>
+      <p>
+      
+            奥義！！
+      </p>
+      </div>
+      <div class="mem3 left">
+      <span>市 穂焔</span>
+      <p>
+      
+            ■奥義<br>《流星火》<br>指定特技　：火術<br>エフェクト：範囲攻撃/伸ばし/威力低下<br>効果・演出：流星のようにその火は尾を引いて流れ落ちてくる。やがて点々と落ちた小さな火は炎となり、辺りを埋め尽くし焼き尽くすだろう。それは、まるで悲鳴のように。<br> 
+      </p>
+      </div>
+      <div class="mem2 right">
+      <span>紫残花</span>
+      <p>
+      
+            2D6&gt;=17 （判定：第六感） (2D6&gt;=17) ＞ 8[2,6] ＞ 8 ＞ 失敗
+            
+      </p>
+      </div>
+      <div class="mem4 right">
+      <span>小此木 天星</span>
+      <p>
+      
+            回想シーン
+      </p>
+      </div>
+      <div class="mem4 right">
+      <span>小此木 天星</span>
+      <p>
+      
+            【秘密】<br>休暇を満喫することである。<br>「この休暇でつかんだ気持ちはは本物だぜ！オラァ！！」
+      </p>
+      </div>
+      <div class="mem4 right">
+      <span>小此木 天星</span>
+      <p>
+      
+            2D6&gt;=7 （判定：手裏剣術） (2D6&gt;=7) ＞ 7[3,4] ＞ 7 ＞ 成功
+            
+      </p>
+      </div>
+      <div class="mem2 right">
+      <span>紫残花</span>
+      <p>
+      
+            待機
+      </p>
+      </div>
+      <div class="mem4 right">
+      <span>小此木 天星</span>
+      <p>
+      
+            ■奥義<br>《完璧主義》<br>指定特技　：意気<br>エフェクト：完全成功/くらまし/分野限定（体術）<br>奥義破り判定-2<br>効果・演出：病的な完璧主義は失敗を許さない。<br> 
+      </p>
+      </div>
+      <div class="mem3 left">
+      <span>市 穂焔</span>
+      <p>
+      
+            回想します
+      </p>
+      </div>
+      <div class="mem3 left">
+      <span>市 穂焔</span>
+      <p>
+      
+            <br>【秘密】<br>あなたはそれを知っている。その記録を抹消したはずなのにそれは目の前にあった。<br>あなたはメインフェイズ開始時に「青い花」の秘密を得る。あなたの本当の使命はそれを作り出した<br>ものを倒し、研究データのプライズを破棄することである。
+            
+      </p>
+      </div>
+      <div class="mem3 left">
+      <span>市 穂焔</span>
+      <p>
+      
+            兄は斜歯忍軍に入ってすぐ任務で死亡しており、家族にも辛うじて知らされたが、穂焔はそれを自ら忘却した。<br>母にいなくなった兄と比べられ、お前はなぜダメなのだと言われ続けている。
+      </p>
+      </div>
+      <div class="mem12 right">
+      <span>母</span>
+      <p>
+      
+            「お前はもういいですから。とにかく、情報だけ抜いてきなさい。それができればまだここにいることを許しましょう。それができなければ、もうお前など知りません」
+      </p>
+      </div>
+      <div class="mem3 left">
+      <span>市 穂焔</span>
+      <p>
+      
+            「……わかりました、母様。がんばります」
+      </p>
+      </div>
+      <div class="mem3 left">
+      <span>市 穂焔</span>
+      <p>
+      
+            「……思い、出した」<br>「兄さんはとうに死んでたんだ……僕はそれを忘れた」<br>「兄さんなんて死んで当然だ！」<br>「……知らない、知らない知らない知らない、兄さんなんて知らない、僕は僕なんだから」
+      </p>
+      </div>
+      <div class="mem3 left">
+      <span>市 穂焔</span>
+      <p>
+      
+            「忍者も人間も嫌いだ、でも僕は不知火の末裔だから、どんなに忍者がいやでも、やめるわけにはいかないんだ」
+      </p>
+      </div>
+      <div class="mem3 left">
+      <span>市 穂焔</span>
+      <p>
+      
+            「勝たなければならない」
+      </p>
+      </div>
+      <div class="mem3 left">
+      <span>市 穂焔</span>
+      <p>
+      
+            「僕は最初からはぐれていた」<br>「皆みたいな優秀な忍者にはなれないんだ」<br>「だったらせめて、不知火らしく」<br>「僕だって忍者なんだ」
+      </p>
+      </div>
+      <div class="mem3 left">
+      <span>市 穂焔</span>
+      <p>
+      
+            「……だからなんだっていうんだ？」
+      </p>
+      </div>
+      <div class="mem3 left">
+      <span>市 穂焔</span>
+      <p>
+      
+            「……嫌だ！みんな燃えればいい、僕に近づくな！皆死ね！皆消えろ！うるさい！うるさいうるさいうるさい！僕に口出しするな！皆壊れてしまえ！……僕のせいでみんな燃えればいい」
+      </p>
+      </div>
+      <div class="mem3 left">
+      <span>市 穂焔</span>
+      <p>
+      
+            「でも負ける<br>僕は何にも勝てないまま終わる<br>……もう、それでいいか？……本当に？」
+      </p>
+      </div>
+      <div class="mem3 left">
+      <span>市 穂焔</span>
+      <p>
+      
+            「生きてってだれか言って」
+      </p>
+      </div>
+      <div class="mem3 left">
+      <span>市 穂焔</span>
+      <p>
+      
+            「愛してるってだれか言ってください」
+      </p>
+      </div>
+      <div class="mem3 left">
+      <span>市 穂焔</span>
+      <p>
+      
+            「死ぬ前に、どうか」
+      </p>
+      </div>
+      <div class="mem3 left">
+      <span>市 穂焔</span>
+      <p>
+      
+            「どうか……」
+      </p>
+      </div>
+      <div class="mem3 left">
+      <span>市 穂焔</span>
+      <p>
+      
+            以上
+      </p>
+      </div>
+      <div class="mem3 left">
+      <span>市 穂焔</span>
+      <p>
+      
+            2D6+4&gt;=7 （判定：潜伏術） (2D6+4&gt;=7) ＞ 6[2,4]+4 ＞ 10 ＞ 成功
+            
+      </p>
+      </div>
+      <div class="kp LtoR-early">
+      
+            極地ですね
+      </div>
+      <div class="mem2 right">
+      <span>紫残花</span>
+      <p>
+      
+            1d6 (1D6) ＞ 5
+            
+      </p>
+      </div>
+      <div class="mem1 left">
+      <span>暁月 来瞳</span>
+      <p>
+      
+            1d6 (1D6) ＞ 6
+            
+      </p>
+      </div>
+      <div class="mem8 right">
+      <span>system</span>
+      <p>
+      
+            [ 紫残花 ] 忍術 : 1 → 0
+      </p>
+      </div>
+      <div class="mem3 left">
+      <span>市 穂焔</span>
+      <p>
+      
+            1ｄ6 (1D6) ＞ 2
+            
+      </p>
+      </div>
+      <div class="mem8 right">
+      <span>system</span>
+      <p>
+      
+            [ 市 穂焔 ] 忍術 : 1 → 0
+      </p>
+      </div>
+      <div class="mem8 right">
+      <span>system</span>
+      <p>
+      
+            [ 暁月 来瞳 ] 戦術 : 1 → 0
+      </p>
+      </div>
+      <div class="mem4 right">
+      <span>小此木 天星</span>
+      <p>
+      
+            １ｄ６ (1D6) ＞ 1
+            
+      </p>
+      </div>
+      <div class="mem8 right">
+      <span>system</span>
+      <p>
+      
+            [ 小此木　天星 ] 忍術 : 1 → 0
+      </p>
+      </div>
+      <div class="mem2 right">
+      <span>紫残花</span>
+      <p>
+      
+            「ガッ……！ボ、ボクの……ボクは……あの子に」
+      </p>
+      </div>
+      <div class="mem3 left">
+      <span>市 穂焔</span>
+      <p>
+      
+            「……死にたくない死にたくない死にたくない……」
+      </p>
+      </div>
+      <div class="mem2 right">
+      <span>紫残花</span>
+      <p>
+      
+            「あ～ぁ、こらあかん」
+      </p>
+      </div>
+      <div class="mem1 left">
+      <span>暁月 来瞳</span>
+      <p>
+      
+            「……どうします？小此木さん。僕ら、どうしたらいいんでしょう」
+      </p>
+      </div>
+      <div class="mem1 left">
+      <span>暁月 来瞳</span>
+      <p>
+      
+            「僕は、穂焔さんのお友達なのであれをポイしたいんです。小此木さんは反対ですか？」
+      </p>
+      </div>
+      <div class="mem4 right">
+      <span>小此木 天星</span>
+      <p>
+      
+            「っとに、オッサンもうへとへとォ…。悪いな紫残花 さん、あいつらの覚悟見てたら…そこまでしてやりあう気になれねえよ」
+      </p>
+      </div>
+      <div class="mem1 left">
+      <span>暁月 来瞳</span>
+      <p>
+      
+            「そしたら、小此木さん……僕たちの代わりにあれを持っていてくれませんか？」
+      </p>
+      </div>
+      <div class="mem1 left">
+      <span>暁月 来瞳</span>
+      <p>
+      
+            「小此木さんなら、きっと布施さんみたいにならないです。穂焔さんもきっとあなたなら許してくれます」
+      </p>
+      </div>
+      <div class="mem2 right">
+      <span>紫残花</span>
+      <p>
+      
+            「ボ……ボクの”ボク”が……」
+      </p>
+      </div>
+      <div class="mem2 right">
+      <span>紫残花</span>
+      <p>
+      
+            「もう……」
+      </p>
+      </div>
+      <div class="mem1 left">
+      <span>暁月 来瞳</span>
+      <p>
+      
+            「紫残花さんには申し訳ないんですけど……あとで僕はちゃんと謝るので……」
+      </p>
+      </div>
+      <div class="mem4 right">
+      <span>小此木 天星</span>
+      <p>
+      
+            「これぇ…？頭に入ってたの…ォオン、良いけども…。」
+      </p>
+      </div>
+      <div class="mem3 left">
+      <span>市 穂焔</span>
+      <p>
+      
+            「もう帰る場所なんてない……」
+      </p>
+      </div>
+      <div class="mem2 right">
+      <span>紫残花</span>
+      <p>
+      
+            「まったく二人とも」
+      </p>
+      </div>
+      <div class="mem9 left">
+      <span>紫陽花</span>
+      <p>
+      
+            「いい加減にしなんし」
+      </p>
+      </div>
+      <div class="mem3 left">
+      <span>市 穂焔</span>
+      <p>
+      
+            「紫残花さんはいいじゃないですか、小此木さんがいるんですから……」
+      </p>
+      </div>
+      <div class="mem9 left">
+      <span>紫陽花</span>
+      <p>
+      
+            「自分がどうとか……自分はどうせとか…」
+      </p>
+      </div>
+      <div class="mem3 left">
+      <span>市 穂焔</span>
+      <p>
+      
+            「紫残花さんは……『ひとり』じゃないんでしょう？」
+      </p>
+      </div>
+      <div class="mem9 left">
+      <span>紫陽花</span>
+      <p>
+      
+            「せやで、あんたもな」
+      </p>
+      </div>
+      <div class="mem3 left">
+      <span>市 穂焔</span>
+      <p>
+      
+            「ご自分とお話しできるんでしょう……？」
+      </p>
+      </div>
+      <div class="mem3 left">
+      <span>市 穂焔</span>
+      <p>
+      
+            「……？」
+      </p>
+      </div>
+      <div class="mem9 left">
+      <span>紫陽花</span>
+      <p>
+      
+            「あんた、今まで一人だったのはわかるけど……そこのボンは？」
+      </p>
+      </div>
+      <div class="mem3 left">
+      <span>市 穂焔</span>
+      <p>
+      
+            「あ……」
+      </p>
+      </div>
+      <div class="mem1 left">
+      <span>暁月 来瞳</span>
+      <p>
+      
+            にこーっ！！
+      </p>
+      </div>
+      <div class="mem9 left">
+      <span>紫陽花</span>
+      <p>
+      
+            「この旅…休暇で、新しくできた縁は確かにあるんやないの？」
+      </p>
+      </div>
+      <div class="mem3 left">
+      <span>市 穂焔</span>
+      <p>
+      
+            「縁……ともだち。……友達ってなんですか？僕にはわからない。……来瞳くんはわかるんですか？」
+      </p>
+      </div>
+      <div class="mem1 left">
+      <span>暁月 来瞳</span>
+      <p>
+      
+            「あは、僕にもわからないんです」
+      </p>
+      </div>
+      <div class="mem1 left">
+      <span>暁月 来瞳</span>
+      <p>
+      
+            「でも、なりたいと思ったら友達、近づきたいと思ったら友達、それ以上になれるのも友達ですよ」
+      </p>
+      </div>
+      <div class="mem3 left">
+      <span>市 穂焔</span>
+      <p>
+      
+            「……わからないのに友達友達なんて言えるのは、どうして？」
+      </p>
+      </div>
+      <div class="mem9 left">
+      <span>紫陽花</span>
+      <p>
+      
+            「アハハ、また言うとるわ。ボンはかわええなぁ」
+      </p>
+      </div>
+      <div class="mem1 left">
+      <span>暁月 来瞳</span>
+      <p>
+      
+            「僕は人を好きでいたいんです。嫌いになるのなんて疲れちゃうし、友達がいっぱいいると嬉しい気持ちになるんですよ」
+      </p>
+      </div>
+      <div class="mem1 left">
+      <span>暁月 来瞳</span>
+      <p>
+      
+            「みんなと一緒に話してみて、遊んでみて、戦ってみて、どうでした？僕は楽しかったです！」
+      </p>
+      </div>
+      <div class="mem3 left">
+      <span>市 穂焔</span>
+      <p>
+      
+            「……楽し……かった……です」
+      </p>
+      </div>
+      <div class="mem1 left">
+      <span>暁月 来瞳</span>
+      <p>
+      
+            にこーーっっ！！！！
+      </p>
+      </div>
+      <div class="mem3 left">
+      <span>市 穂焔</span>
+      <p>
+      
+            「これが楽しいという感情で、合っているのか、わからないですけど……」
+      </p>
+      </div>
+      <div class="mem3 left">
+      <span>市 穂焔</span>
+      <p>
+      
+            「……これから……教えて、もらえますか」
+      </p>
+      </div>
+      <div class="mem3 left">
+      <span>市 穂焔</span>
+      <p>
+      
+            「勉強、大事なんでしょう……？」
+      </p>
+      </div>
+      <div class="mem1 left">
+      <span>暁月 来瞳</span>
+      <p>
+      
+            「もちろん！お友達ですから！<br>わからないこと、一緒に考えて勉強していきましょうね！」
+      </p>
+      </div>
+      <div class="mem3 left">
+      <span>市 穂焔</span>
+      <p>
+      
+            「人間とかかわることも……勉強、なんですね」
+      </p>
+      </div>
+      <div class="mem9 left">
+      <span>紫陽花</span>
+      <p>
+      
+            「じゃあ宿題やなぁ～。それがわかるまで、好きに生きてたらええ」
+      </p>
+      </div>
+      <div class="mem3 left">
+      <span>市 穂焔</span>
+      <p>
+      
+            「長い宿題になりそうです……」
+      </p>
+      </div>
+      <div class="mem1 left">
+      <span>暁月 来瞳</span>
+      <p>
+      
+            「あはは、頑張りましょうね！」
+      </p>
+      </div>
+      <div class="mem3 left">
+      <span>市 穂焔</span>
+      <p>
+      
+            「……よろしく、おねがい、します」
+      </p>
+      </div>
+      <div class="mem9 left">
+      <span>紫陽花</span>
+      <p>
+      
+            「じゃあ……ほな、またな～」
+      </p>
+      </div>
+      <div class="mem4 right">
+      <span>小此木 天星</span>
+      <p>
+      
+            「カーッこっぱずかしいぜ、おっさんが小言たれることにならなくてよかったぜ、説教ぽくなっちまうからな。」
+      </p>
+      </div>
+      <div class="mem4 right">
+      <span>小此木 天星</span>
+      <p>
+      
+            「ま、もう少し心のまま生きてみろってな……。ってこれは成功報酬だったんですかねぇ！サザンカサーン！！」紫残花 を追いかけ立ち去る。
+      </p>
+      </div>
+      <div class="kp LtoR-early">
+      
+            こうして、長いような短い事件は不施の死をもって幕を閉じることだろう。
+      </div>
+      <div class="kp LtoR-early">
+      
+            その後、各々のPCは事後対応に追われることになるかもしれないが、頭領から直々に休暇を命じられ改めて休暇を過ごすのであった。
+      </div>
+      <div class="kp LtoR-early">
+      
+            PC1 は上司によびだされ報告をするように言われる。
+      </div>
+      <div class="kp LtoR-early">
+      
+            では、まず体調不良の原因はなんでしょうか？
+      </div>
+      <div class="mem1 left">
+      <span>暁月 来瞳</span>
+      <p>
+      
+            「斜歯忍軍上忍、布施 誠の開発した人工植物によるものです。訪問者に毒を盛っていたわけですね」
+      </p>
+      </div>
+      <div class="kp LtoR-early">
+      
+            では、その毒に対して対策方法の発案はありますか？
+      </div>
+      <div class="mem1 left">
+      <span>暁月 来瞳</span>
+      <p>
+      
+            「布施 誠は死亡、開発データは信用できる友人に預けてあります。<br>人を救う側の人間ですから……きっと現在病状に伏せるものがいても彼は薬の開発ができる。<br>……悪用されることはきっとないでしょう、彼は布施のような賎民思想は持っていない。」
+      </p>
+      </div>
+      <div class="mem1 left">
+      <span>暁月 来瞳</span>
+      <p>
+      
+            「なので、今後同様の毒が出回ったら、僕が責任持って彼をここに引っ張り出してきます」
+      </p>
+      </div>
+      <div class="kp LtoR-early">
+      
+            わかりました。よく頑張りましたね。よい休暇をお過ごしください
+      </div>
+      <div class="kp LtoR-early">
+      
+            では、これにて「楽園」は終演となります。
+      </div>
+      <div class="kp LtoR-early">
+      
+            お疲れさまでした
+      </div>
+      </div>
+
+<br><br><br><br>
+</div></div>
+<script src="../logCon_Respon.js"></script>
+</body></html>
