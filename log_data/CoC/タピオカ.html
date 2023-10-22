@@ -1,0 +1,2718 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<title>log</title>
+<meta http-equiv="content-type" charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+<link rel="stylesheet" href="../logCon_Respon.css">
+<style>
+    /* main css */
+    .bg-inner.bg1{background:url('./タピオカ画像/park002_day.jpg') no-repeat center/cover;}
+    
+    /* member */
+    .mem1 p{border:2px solid rgb(146, 58, 33);box-shadow:5px 5px 0 rgb(146, 58, 33);}
+.mem1 p:after{border-right-color:rgb(146, 58, 33);}
+.mem1 span{background:rgb(146, 58, 33);color:#fff;}
+.mem1:before{content:'';background-image:url('./タピオカ画像/有栖.png');background-size:contain;background-repeat:no-repeat;background-position:center center;width:90px;height:90px;}
+.mem2 p{border:2px solid rgb(255, 243, 82);box-shadow:5px 5px 0 rgb(255, 243, 82);}
+.mem2 p:after{border-left-color:rgb(255, 243, 82);}
+.mem2 span{background:rgb(255, 243, 82);color:#000;}
+.mem2:before{content:'';background-image:url('./タピオカ画像/楓.png');background-size:contain;background-repeat:no-repeat;background-position:center center;width:90px;height:90px;}
+.mem3 p{border:2px solid rgb(136, 136, 136);box-shadow:5px 5px 0 rgb(136, 136, 136);}
+.mem3 p:after{border-right-color:rgb(136, 136, 136);}
+.mem3 span{background:rgb(136, 136, 136);color:#fff;}
+.mem3:before{content:'';background-image:url('3.png');background-size:contain;background-repeat:no-repeat;background-position:center center;width:90px;height:90px;}
+.mem4 p{border:2px solid rgb(136, 136, 136);box-shadow:5px 5px 0 rgb(136, 136, 136);}
+.mem4 p:after{border-left-color:rgb(136, 136, 136);}
+.mem4 span{background:rgb(136, 136, 136);color:#fff;}
+.mem4:before{content:'';background-image:url('4.png');background-size:contain;background-repeat:no-repeat;background-position:center center;width:90px;height:90px;}
+.mem5 p{border:2px solid rgb(136, 136, 136);box-shadow:5px 5px 0 rgb(136, 136, 136);}
+.mem5 p:after{border-right-color:rgb(136, 136, 136);}
+.mem5 span{background:rgb(136, 136, 136);color:#fff;}
+.mem5:before{content:'';background-image:url('5.png');background-size:contain;background-repeat:no-repeat;background-position:center center;width:90px;height:90px;}
+.mem6 p{border:2px solid rgb(136, 136, 136);box-shadow:5px 5px 0 rgb(136, 136, 136);}
+.mem6 p:after{border-left-color:rgb(136, 136, 136);}
+.mem6 span{background:rgb(136, 136, 136);color:#fff;}
+.mem6:before{content:'';background-image:url('6.png');background-size:contain;background-repeat:no-repeat;background-position:center center;width:90px;height:90px;}
+.mem7 p{border:2px solid rgb(136, 136, 136);box-shadow:5px 5px 0 rgb(136, 136, 136);}
+.mem7 p:after{border-right-color:rgb(136, 136, 136);}
+.mem7 span{background:rgb(136, 136, 136);color:#fff;}
+.mem7:before{content:'';background-image:url('7.png');background-size:contain;background-repeat:no-repeat;background-position:center center;width:90px;height:90px;}
+.mem8 p{border:2px solid rgb(136, 136, 136);box-shadow:5px 5px 0 rgb(136, 136, 136);}
+.mem8 p:after{border-left-color:rgb(136, 136, 136);}
+.mem8 span{background:rgb(136, 136, 136);color:#fff;}
+.mem8:before{content:'';background-image:url('8.png');background-size:contain;background-repeat:no-repeat;background-position:center center;width:90px;height:90px;}
+.mem9 p{border:2px solid rgb(136, 136, 136);box-shadow:5px 5px 0 rgb(136, 136, 136);}
+.mem9 p:after{border-right-color:rgb(136, 136, 136);}
+.mem9 span{background:rgb(136, 136, 136);color:#fff;}
+.mem9:before{content:'';background-image:url('9.png');background-size:contain;background-repeat:no-repeat;background-position:center center;width:90px;height:90px;}
+.mem10 p{border:2px solid rgb(136, 136, 136);box-shadow:5px 5px 0 rgb(136, 136, 136);}
+.mem10 p:after{border-left-color:rgb(136, 136, 136);}
+.mem10 span{background:rgb(136, 136, 136);color:#fff;}
+.mem10:before{content:'';background-image:url('10.png');background-size:contain;background-repeat:no-repeat;background-position:center center;width:90px;height:90px;}
+.mem11 p{border:2px solid rgb(136, 136, 136);box-shadow:5px 5px 0 rgb(136, 136, 136);}
+.mem11 p:after{border-right-color:rgb(136, 136, 136);}
+.mem11 span{background:rgb(136, 136, 136);color:#fff;}
+.mem11:before{content:'';background-image:url('11.png');background-size:contain;background-repeat:no-repeat;background-position:center center;width:90px;height:90px;}
+.mem12 p{border:2px solid rgb(136, 136, 136);box-shadow:5px 5px 0 rgb(136, 136, 136);}
+.mem12 p:after{border-left-color:rgb(136, 136, 136);}
+.mem12 span{background:rgb(136, 136, 136);color:#fff;}
+.mem12:before{content:'';background-image:url('12.png');background-size:contain;background-repeat:no-repeat;background-position:center center;width:90px;height:90px;}
+    
+    @media only screen and (max-width: 768px) {
+        .mem1 p:after{border-right-color:rg(146, 58, 33);border-left-color:transparent;}
+        .mem2 p:after{border-right-color:rgb(255, 243, 82);border-left-color:transparent;}
+        .mem3 p:after{border-right-color:rgb(136, 136, 136);border-left-color:transparent;}
+        .mem4 p:after{border-right-color:rgb(136, 136, 136);border-left-color:transparent;}
+        .mem5 p:after{border-right-color:rgb(136, 136, 136);border-left-color:transparent;}
+        .mem6 p:after{border-right-color:rgb(136, 136, 136);border-left-color:transparent;}
+        .mem7 p:after{border-right-color:rgb(136, 136, 136);border-left-color:transparent;}
+        .mem8 p:after{border-right-color:rgb(136, 136, 136);border-left-color:transparent;}
+        .mem9 p:after{border-right-color:rgb(136, 136, 136);border-left-color:transparent;}
+        .mem10 p:after{border-right-color:rgb(136, 136, 136);border-left-color:transparent;}
+        .mem11 p:after{border-right-color:rgb(136, 136, 136);border-left-color:transparent;}
+        .mem12 p:after{border-right-color:rgb(136, 136, 136);border-left-color:transparent;}
+    
+        .mem1:before,.mem2:before,.mem3:before,
+        .mem4:before,.mem5:before,.mem6:before,
+        .mem7:before,.mem8:before,.mem9:before,
+        .mem10:before,.mem11:before,.mem12:before{width:70px;height:70px;}
+    }
+</style>
+</head>
+<body>
+    <p id="page-top"><a href="#"><i class="page-top__arrow"></i></a></p>
+	<div class="leftwhite"></div>
+	<div class="rightwhite"></div>
+	<div class="bg-sp">
+    <div class="bg-over"><div class="bg-inner bg1"></div></div>
+	<div class="log">
+    
+        <div class="kp">
+
+            では「タピオカVS宇宙的恐怖」開始します
+      </div>
+      <div class="mem1 left">
+      <span>阿羅々木 有栖</span>
+      <p>
+      
+            いあいあー
+      </p>
+      </div>
+      <div class="mem2 right">
+      <span>中田 楓</span>
+      <p>
+      
+            いあいあ
+      </p>
+      </div>
+      <div class="kp">
+      
+            よく晴れた休日の昼下がり。あなたは、近所を散歩がてら公園の広場にいる。広場には、テーブルと椅子が並んだ食事エリアがあり、いくつかのキッチンカーが出店していた。ケバブやアイスクリーム、ホットドッグなどなど……。中でも、タピオカ屋には相変わらず行列ができている。タピオカを飲んで喜ぶ女子学生や子どもたちを見ると、あなたもタピオカを飲みたくなってくる。
+      </div>
+      <div class="mem1 left">
+      <span>阿羅々木 有栖</span>
+      <p>
+      
+            「いやぁ、いい天気だよねー」
+      </p>
+      </div>
+      <div class="mem2 right">
+      <span>中田 楓</span>
+      <p>
+      
+            「そうだねー。みて、タピオカだって！」
+      </p>
+      </div>
+      <div class="mem1 left">
+      <span>阿羅々木 有栖</span>
+      <p>
+      
+            「あ、ホントだ！行ってみる？タピる？」
+      </p>
+      </div>
+      <div class="mem2 right">
+      <span>中田 楓</span>
+      <p>
+      
+            「タピろう！あんまのんだことないんだよね」
+      </p>
+      </div>
+      <div class="mem1 left">
+      <span>阿羅々木 有栖</span>
+      <p>
+      
+            「よっしゃ！飲みにいきますか！」
+      </p>
+      </div>
+      <div class="mem2 right">
+      <span>中田 楓</span>
+      <p>
+      
+            「なんかお酒みたいだなー」
+      </p>
+      </div>
+      <div class="mem1 left">
+      <span>阿羅々木 有栖</span>
+      <p>
+      
+            並びましょ
+      </p>
+      </div>
+      <div class="mem2 right">
+      <span>中田 楓</span>
+      <p>
+      
+            ならびます
+      </p>
+      </div>
+      <div class="mem3 left">
+      <span>店員</span>
+      <p>
+      
+            「いらっしゃいませ！どのタピオカをお求めですか？」
+      </p>
+      </div>
+      <div class="mem3 left">
+      <span>店員</span>
+      <p>
+      
+            『タピオカ増量中！　カラータピオカもあるよ♪』<br>『氷多め/少なめ選べます』<br>・タピオカミルクティー<br>・タピオカ抹茶ミルク<br>・タピオカ紅茶ラテ<br>・タピオカカフェラテ<br>・タピオカ黒蜜ミルク<br>・タピオカ杏仁ミルク<br>・タピオカ黒ゴマミルク<br>・タピオカストロベリーミルク<br>・タピオカマンゴーミルク<br>…etc.
+      </p>
+      </div>
+      <div class="mem2 right">
+      <span>中田 楓</span>
+      <p>
+      
+            「いっぱいあるねー」
+      </p>
+      </div>
+      <div class="mem3 left">
+      <span>店員</span>
+      <p>
+      
+            「おすすめはミルクティーです！」
+      </p>
+      </div>
+      <div class="mem1 left">
+      <span>阿羅々木 有栖</span>
+      <p>
+      
+            「んー。タピオカの杏仁ミルクにタピオカ二倍かなー」
+      </p>
+      </div>
+      <div class="mem2 right">
+      <span>中田 楓</span>
+      <p>
+      
+            「じゃあぼくタピオカミルクティーにしようかな」
+      </p>
+      </div>
+      <div class="mem3 left">
+      <span>店員</span>
+      <p>
+      
+            「はい！杏仁ダブルタピオカとミルクティですね！甘さはいかがしますか？」
+      </p>
+      </div>
+      <div class="mem2 right">
+      <span>中田 楓</span>
+      <p>
+      
+            「甘さ選べるんだ！じゃあ甘めでー」
+      </p>
+      </div>
+      <div class="mem1 left">
+      <span>阿羅々木 有栖</span>
+      <p>
+      
+            「通常でいいかなぁー」
+      </p>
+      </div>
+      <div class="mem3 left">
+      <span>店員</span>
+      <p>
+      
+            「かしこまりました！少々お待ちください！」
+      </p>
+      </div>
+      <div class="kp">
+      
+            待ってる間に聞き耳を
+      </div>
+      <div class="mem1 left">
+      <span>阿羅々木 有栖</span>
+      <p>
+      
+            聞き耳：【1d100】を振りました。結果は「85」失敗です。(成功値75以下)(各ダイス目：85)
+      </p>
+      </div>
+      <div class="mem1 left">
+      <span>阿羅々木 有栖</span>
+      <p>
+      
+            何も聞こえないわー
+      </p>
+      </div>
+      <div class="mem2 right">
+      <span>中田 楓</span>
+      <p>
+      
+            聞き耳：【1d100】を振りました。結果は「25」成功です。(成功値26以下)(各ダイス目：25)
+      </p>
+      </div>
+      <div class="kp">
+      
+            では楓ちゃんは周りのお客さんのこえがきこえました
+      </div>
+      <div class="mem4 right">
+      <span>客</span>
+      <p>
+      
+            「やっぱタピオカッショ！　ツブツブサイコ～！」
+      </p>
+      </div>
+      <div class="mem4 right">
+      <span>客</span>
+      <p>
+      
+            「久々に食べたけどおいしいねえ。ところで、タピオカって昔も流行らなかったっけ？（※バブル世代の人です）」
+      </p>
+      </div>
+      <div class="mem4 right">
+      <span>客</span>
+      <p>
+      
+            「私に話しかけないでッ！　ダイエット中なのにタピオカ食べちゃうタピ……」
+      </p>
+      </div>
+      <div class="mem4 right">
+      <span>客</span>
+      <p>
+      
+            「僕は雑学おじさん。タピオカの語源は、ブラジルの先住民のトゥピ語でデンプン製造方法を『tipi'óka』って言うからなんだよ。トゥピってかわいくない？　トゥピって」
+      </p>
+      </div>
+      <div class="mem2 right">
+      <span>中田 楓</span>
+      <p>
+      
+            「みんな楽しそうだねぇ」
+      </p>
+      </div>
+      <div class="mem1 left">
+      <span>阿羅々木 有栖</span>
+      <p>
+      
+            「そうなのかー」
+      </p>
+      </div>
+      <div class="mem1 left">
+      <span>阿羅々木 有栖</span>
+      <p>
+      
+            僕には楓ちゃんの声しか聞こえない
+      </p>
+      </div>
+      <div class="kp">
+      
+            タピオカをのんでいるあなたたちのもとに不思議な声が聞こえてくる
+      </div>
+      <div class="mem5 left">
+      <span>??</span>
+      <p>
+      
+            （「カエルの歌」のメロディで歌ってください。適当でいいです）
+      </p>
+      </div>
+      <div class="mem5 left">
+      <span>??</span>
+      <p>
+      
+            「タ～ピ～オ～カ～の～う～た～<br>聞～こ～え～て～く～る～よ～<br>タピッ……タピッ……タピッ……タピッ……」
+      </p>
+      </div>
+      <div class="mem1 left">
+      <span>阿羅々木 有栖</span>
+      <p>
+      
+            「たぁーぴぃーおぉーかぁーのぉーうぅたぁがぁー」
+      </p>
+      </div>
+      <div class="mem2 right">
+      <span>中田 楓</span>
+      <p>
+      
+            「きーこーえーてーくーるーよー？」
+      </p>
+      </div>
+      <div class="mem1 left">
+      <span>阿羅々木 有栖</span>
+      <p>
+      
+            「たぴ？たぴ？たぴ？」
+      </p>
+      </div>
+      <div class="kp">
+      
+            あなたの目の前に、さっきまでいなかった不思議な少女が突然現れる。<br>その少女は、ぷるっと艶めいた半透明の黒い肌。カラータピオカのような鮮やかな瞳。波打つようなレースがあしらわれた、ミルクティー色のドレス。<br>不可解な現象、不思議な風貌の少女を目の当たりにし、SANC0/1
+      </div>
+      <div class="mem1 left">
+      <span>阿羅々木 有栖</span>
+      <p>
+      
+            擬人化かな
+      </p>
+      </div>
+      <div class="mem1 left">
+      <span>阿羅々木 有栖</span>
+      <p>
+      
+            SAN：【1d100】を振りました。結果は「77」成功です。(成功値90以下)(各ダイス目：77)
+      </p>
+      </div>
+      <div class="mem2 right">
+      <span>中田 楓</span>
+      <p>
+      
+            SAN：【1d100】を振りました。結果は「99」失敗です。(成功値42以下)(各ダイス目：99)
+      </p>
+      </div>
+      <div class="mem2 right">
+      <span>中田 楓</span>
+      <p>
+      
+            「ぅわびっくりした！！」
+      </p>
+      </div>
+      <div class="mem1 left">
+      <span>阿羅々木 有栖</span>
+      <p>
+      
+            「おっ」
+      </p>
+      </div>
+      <div class="mem6 right">
+      <span>姫</span>
+      <p>
+      
+            「こんにちわ、地球人。私はタピオカ姫。読みはピメですよ、ピ！メ！本日はあなたたちにお願いがあってきました」
+      </p>
+      </div>
+      <div class="mem1 left">
+      <span>阿羅々木 有栖</span>
+      <p>
+      
+            「アッハイ？」
+      </p>
+      </div>
+      <div class="mem2 right">
+      <span>中田 楓</span>
+      <p>
+      
+            「たぴおかぴめ……？」
+      </p>
+      </div>
+      <div class="mem6 right">
+      <span>姫</span>
+      <p>
+      
+            「我らの奉るタピ神さまからお告げがありました。<br>2019年夏。この国ではなぜか、唐突に『タピオカ窒息事故』が多発します。これまでのタピオカブームで、そんな事故はまったく起きなかったにも関わらず、です。」
+      </p>
+      </div>
+      <div class="mem6 right">
+      <span>姫</span>
+      <p>
+      
+            「餅だってこんにゃく畑だって、それ自体が悪いのではないのです。焦らずゆっくり飲めば、おいしくタピオカを飲めるはずなのです。<br>2020年。日本政府は『タピオカ禁止令』を発令します。」
+      </p>
+      </div>
+      <div class="mem6 right">
+      <span>姫</span>
+      <p>
+      
+            「タピオカを売買するものに百年の懲役が課せられます。これは、アメリカ禁酒法並みの暴挙です。<br>タピオカを奪われた女子高生は学校帰りにどら焼きを食べ、ヤクザはタピオカを資金源にすること叶わず。タピオカ中毒者たちの嘆きの声は止みません。」
+      </p>
+      </div>
+      <div class="mem6 right">
+      <span>姫</span>
+      <p>
+      
+            「タピオカ星のため、そして地球のタピラーのためにも、私は戦わなくてはならないのです！」
+      </p>
+      </div>
+      <div class="mem6 right">
+      <span>姫</span>
+      <p>
+      
+            「私は地球人にあまり干渉できません・・・そのためあなたたちに協力していただきたいのです」
+      </p>
+      </div>
+      <div class="mem1 left">
+      <span>阿羅々木 有栖</span>
+      <p>
+      
+            「これは……新手の依頼かな…？」
+      </p>
+      </div>
+      <div class="mem2 right">
+      <span>中田 楓</span>
+      <p>
+      
+            「えっなにを……？あやしいよ……？」
+      </p>
+      </div>
+      <div class="mem6 right">
+      <span>姫</span>
+      <p>
+      
+            「ついでにあなた方は私に協力しないと三日後に死にます」
+      </p>
+      </div>
+      <div class="mem1 left">
+      <span>阿羅々木 有栖</span>
+      <p>
+      
+            「・・・？」
+      </p>
+      </div>
+      <div class="mem1 left">
+      <span>阿羅々木 有栖</span>
+      <p>
+      
+            「・・・はい？」
+      </p>
+      </div>
+      <div class="mem2 right">
+      <span>中田 楓</span>
+      <p>
+      
+            「そんなに重いの！？」
+      </p>
+      </div>
+      <div class="mem6 right">
+      <span>姫</span>
+      <p>
+      
+            因果関係はわかりませんが、あなたは私に協力しなければ死にます。私が殺すのではありません。私とともにタピオカ平和運動に協力すれば、あなたは死の運命から免れる。それが、タピ神さまのお告げ
+      </p>
+      </div>
+      <div class="mem1 left">
+      <span>阿羅々木 有栖</span>
+      <p>
+      
+            「えーと、これは依頼と判断して、対処した方がいいのかな？あの時と同じで」
+      </p>
+      </div>
+      <div class="mem2 right">
+      <span>中田 楓</span>
+      <p>
+      
+            「ぐ、具体的になにをすれば」
+      </p>
+      </div>
+      <div class="mem6 right">
+      <span>姫</span>
+      <p>
+      
+            「そうですね・・・タピオカを飲む人々を観察して、なにか異変があればたすけてほしいのです」
+      </p>
+      </div>
+      <div class="mem1 left">
+      <span>阿羅々木 有栖</span>
+      <p>
+      
+            「つまり死にそうになってたら助けろってことかな？」
+      </p>
+      </div>
+      <div class="mem1 left">
+      <span>阿羅々木 有栖</span>
+      <p>
+      
+            窒息死から助けよう委員会
+      </p>
+      </div>
+      <div class="mem2 right">
+      <span>中田 楓</span>
+      <p>
+      
+            「背中をたたけばいいのかな？」
+      </p>
+      </div>
+      <div class="mem1 left">
+      <span>阿羅々木 有栖</span>
+      <p>
+      
+            背中を叩く（武道で？）
+      </p>
+      </div>
+      <div class="mem1 left">
+      <span>阿羅々木 有栖</span>
+      <p>
+      
+            「それっていつまで助けてればいいの？そんな未来永劫なんて不可能だけど」
+      </p>
+      </div>
+      <div class="mem6 right">
+      <span>姫</span>
+      <p>
+      
+            「ｘでーは今日なのです！今日異変は起こるはずです！」
+      </p>
+      </div>
+      <div class="mem2 right">
+      <span>中田 楓</span>
+      <p>
+      
+            「エックスデー……」
+      </p>
+      </div>
+      <div class="mem1 left">
+      <span>阿羅々木 有栖</span>
+      <p>
+      
+            「つまり、今日一日見張ってればいいって感じかな。報酬はいかほどに？」
+      </p>
+      </div>
+      <div class="mem6 right">
+      <span>姫</span>
+      <p>
+      
+            「あなたの命とみらいですかね・・・」
+      </p>
+      </div>
+      <div class="mem1 left">
+      <span>阿羅々木 有栖</span>
+      <p>
+      
+            脅しやんけぇ
+      </p>
+      </div>
+      <div class="mem1 left">
+      <span>阿羅々木 有栖</span>
+      <p>
+      
+            タピオカを奢ってくれない姫様
+      </p>
+      </div>
+      <div class="mem6 right">
+      <span>姫</span>
+      <p>
+      
+            「とりあえずあの店を観察しましょう！」
+      </p>
+      </div>
+      <div class="mem1 left">
+      <span>阿羅々木 有栖</span>
+      <p>
+      
+            「はいはい、わかりましたよー」
+      </p>
+      </div>
+      <div class="mem2 right">
+      <span>中田 楓</span>
+      <p>
+      
+            「なんだかよくわかんないことになってきちゃったなー」
+      </p>
+      </div>
+      <div class="kp">
+      
+            では店を観察すると次々にお客さんがタピオカをもとめます
+      </div>
+      <div class="kp">
+      
+            シークレットダイス【1d2】を振りました。結果は「2」です。(各ダイス目：2)
+      </div>
+      <div class="kp">
+      
+            あなた方が観察をはじめて最初のお客さんは少年。キラキラした目でクリームソーダタピオカを注文してのんでます
+      </div>
+      <div class="mem1 left">
+      <span>阿羅々木 有栖</span>
+      <p>
+      
+            くりーむそーだたぴおか
+      </p>
+      </div>
+      <div class="mem7 left">
+      <span>少年</span>
+      <p>
+      
+            「わぁ～きらきらしてるぅ！えへへ・・・ずずーーーっっうっ・・・！」
+      </p>
+      </div>
+      <div class="mem1 left">
+      <span>阿羅々木 有栖</span>
+      <p>
+      
+            死にそう
+      </p>
+      </div>
+      <div class="mem7 left">
+      <span>少年</span>
+      <p>
+      
+            「う・・・ぅ・・・」
+      </p>
+      </div>
+      <div class="mem7 left">
+      <span>少年</span>
+      <p>
+      
+            「…うまい！」
+      </p>
+      </div>
+      <div class="kp">
+      
+            少年はしあわせそうに去っていきました
+      </div>
+      <div class="mem1 left">
+      <span>阿羅々木 有栖</span>
+      <p>
+      
+            生きてた
+      </p>
+      </div>
+      <div class="kp">
+      
+            シークレットダイス【1d2】を振りました。結果は「2」です。(各ダイス目：2)
+      </div>
+      <div class="kp">
+      
+            次のお客さんは女子大生。氷少なめのタピオカミルクティーを注文しベンチにすわった
+      </div>
+      <div class="mem8 right">
+      <span>女子大生</span>
+      <p>
+      
+            「はぁーもう単位やばたし・・・ずこここ・・・ぐぅっ？！」
+      </p>
+      </div>
+      <div class="mem2 right">
+      <span>中田 楓</span>
+      <p>
+      
+            しぬ？
+      </p>
+      </div>
+      <div class="mem1 left">
+      <span>阿羅々木 有栖</span>
+      <p>
+      
+            死にそう？
+      </p>
+      </div>
+      <div class="mem8 right">
+      <span>女子大生</span>
+      <p>
+      
+            「こ・・・これだわ！次の課題はこのタピオカよ！！よしよしこれで卒業できるわ・・・！！」
+      </p>
+      </div>
+      <div class="mem8 right">
+      <span>女子大生</span>
+      <p>
+      
+            そうして彼女も去っていきました
+      </p>
+      </div>
+      <div class="kp">
+      
+            シークレットダイス【1d2】を振りました。結果は「1」です。(各ダイス目：1)
+      </div>
+      <div class="mem1 left">
+      <span>阿羅々木 有栖</span>
+      <p>
+      
+            課題をタピオカにする人は大丈夫なのか
+      </p>
+      </div>
+      <div class="kp">
+      
+            つぎのお客さんは女子高生二人組だ
+      </div>
+      <div class="mem9 left">
+      <span>女子高生１</span>
+      <p>
+      
+            「ハーッ！　ヤッパタピオカッショ！　タピオカ食べないと人生なにもはじまんねーわ！　お姉さん、タピオカストロベリーミルクひとつ！　あ、カラータピオカで！」
+      </p>
+      </div>
+      <div class="mem10 right">
+      <span>女子高生２</span>
+      <p>
+      
+            「ウチ、タピオカ黒ゴマミルクで。氷少なめ」
+      </p>
+      </div>
+      <div class="mem9 left">
+      <span>女子高生１</span>
+      <p>
+      
+            「ウッ……！！」
+      </p>
+      </div>
+      <div class="mem1 left">
+      <span>阿羅々木 有栖</span>
+      <p>
+      
+            死んだか？
+      </p>
+      </div>
+      <div class="mem10 right">
+      <span>女子高生２</span>
+      <p>
+      
+            「ちょっアユミ……！？　顔ヤベーよマジでヤベーよ！　アユミがすっぴんの時よりヤベーよ！」
+      </p>
+      </div>
+      <div class="kp">
+      
+            あゆみは苦しそうにうずくまりました
+      </div>
+      <div class="mem1 left">
+      <span>阿羅々木 有栖</span>
+      <p>
+      
+            おっ、これは出番か？
+      </p>
+      </div>
+      <div class="mem2 right">
+      <span>中田 楓</span>
+      <p>
+      
+            しぬのか？
+      </p>
+      </div>
+      <div class="mem6 right">
+      <span>姫</span>
+      <p>
+      
+            「あれは・・・！さあ出番です！！」
+      </p>
+      </div>
+      <div class="kp">
+      
+            どうしますか？
+      </div>
+      <div class="mem1 left">
+      <span>阿羅々木 有栖</span>
+      <p>
+      
+            これは、走って殴ればいいの？
+      </p>
+      </div>
+      <div class="kp">
+      
+            助けにいきますか？
+      </div>
+      <div class="mem2 right">
+      <span>中田 楓</span>
+      <p>
+      
+            「う、うん！？」
+      </p>
+      </div>
+      <div class="mem1 left">
+      <span>阿羅々木 有栖</span>
+      <p>
+      
+            行こうか
+      </p>
+      </div>
+      <div class="mem2 right">
+      <span>中田 楓</span>
+      <p>
+      
+            いくか
+      </p>
+      </div>
+      <div class="mem1 left">
+      <span>阿羅々木 有栖</span>
+      <p>
+      
+            「あれが目的だな！」
+      </p>
+      </div>
+      <div class="mem2 right">
+      <span>中田 楓</span>
+      <p>
+      
+            「どうすればいいの！？背中たたけばいいの！？」
+      </p>
+      </div>
+      <div class="mem1 left">
+      <span>阿羅々木 有栖</span>
+      <p>
+      
+            「吐き出されるのが正解だよね」
+      </p>
+      </div>
+      <div class="kp">
+      
+            DEX×10で判定、3ターン以内に助けないとあゆみは窒息します
+      </div>
+      <div class="mem1 left">
+      <span>阿羅々木 有栖</span>
+      <p>
+      
+            KP、DEXが16です
+      </p>
+      </div>
+      <div class="kp">
+      
+            100ファンいがいなら成功ですね
+      </div>
+      <div class="mem1 left">
+      <span>阿羅々木 有栖</span>
+      <p>
+      
+            DEX*10：【1d100】を振りました。結果は「2」成功です。(成功値160以下)(各ダイス目：2)
+      </p>
+      </div>
+      <div class="kp">
+      
+            くりってんじゃねーーーーーか
+      </div>
+      <div class="mem1 left">
+      <span>阿羅々木 有栖</span>
+      <p>
+      
+            あれぇ
+      </p>
+      </div>
+      <div class="mem2 right">
+      <span>中田 楓</span>
+      <p>
+      
+            dex*10：【1d100】を振りました。結果は「14」成功です。(成功値100以下)(各ダイス目：14)
+      </p>
+      </div>
+      <div class="kp">
+      
+            有栖ちゃんがあゆみの背中をたたくとくちからタピオカがぽんぽこぽーーーん！ととびだしてきます
+      </div>
+      <div class="mem1 left">
+      <span>阿羅々木 有栖</span>
+      <p>
+      
+            これ3個以上同時に飲んでたのかな
+      </p>
+      </div>
+      <div class="mem9 left">
+      <span>女子高生１</span>
+      <p>
+      
+            「ハーッマジ天国見たわ。お姉さんアザッ！　ホレたわ」
+      </p>
+      </div>
+      <div class="mem9 left">
+      <span>女子高生１</span>
+      <p>
+      
+            「ってかさー！　ユキナ見た！？　ウチ、タピオカ吐いちゃったわwwwマジ流行の最先端 wwwこれTikTokに載せね？」
+      </p>
+      </div>
+      <div class="kp">
+      
+            二人は残りのタピオカを飲みながら去っていった
+      </div>
+      <div class="kp">
+      
+            有栖ちゃんは吐き出されたタピオカがなにやら玉虫色の光沢があることに気づく
+      </div>
+      <div class="mem1 left">
+      <span>阿羅々木 有栖</span>
+      <p>
+      
+            あっ
+      </p>
+      </div>
+      <div class="mem1 left">
+      <span>阿羅々木 有栖</span>
+      <p>
+      
+            1/6or1/20
+      </p>
+      </div>
+      <div class="kp">
+      
+            なにか不思議な光沢を持つ粒が混じっていることに気付く。黒いぷよぷよの表面に、シャボン玉のような玉虫色のメタリックな光沢がある。それらは生き物のようにぷるぷると蠢いたあと、みるみる縮み、消えてしまった。
+      </div>
+      <div class="kp">
+      
+            あり得ないはずの光景、そしてそれを自分が食べていた恐怖・周囲の人間が笑顔で食べている恐怖に襲われる。	<br>あなたは嘔吐する。吐き出された黒い粒は、玉虫色の光沢をしていた……。SANC1d2/1d5
+      </div>
+      <div class="mem1 left">
+      <span>阿羅々木 有栖</span>
+      <p>
+      
+            SAN：【1d100】を振りました。結果は「51」成功です。(成功値90以下)(各ダイス目：51)
+      </p>
+      </div>
+      <div class="mem1 left">
+      <span>阿羅々木 有栖</span>
+      <p>
+      
+            SAN喪失：【1d2】を振りました。結果は「2」です。(各ダイス目：2)
+      </p>
+      </div>
+      <div class="kp">
+      
+            あんま削れてる感じがしない
+      </div>
+      <div class="mem1 left">
+      <span>阿羅々木 有栖</span>
+      <p>
+      
+            もう88かー
+      </p>
+      </div>
+      <div class="kp">
+      
+            シークレットダイス【1d2】を振りました。結果は「2」です。(各ダイス目：2)
+      </div>
+      <div class="mem1 left">
+      <span>阿羅々木 有栖</span>
+      <p>
+      
+            ぺってやって足でぐりぐり押しつぶそうかな
+      </p>
+      </div>
+      <div class="kp">
+      
+            がらがわるい
+      </div>
+      <div class="mem1 left">
+      <span>阿羅々木 有栖</span>
+      <p>
+      
+            がらは悪い子ですよ
+      </p>
+      </div>
+      <div class="mem2 right">
+      <span>中田 楓</span>
+      <p>
+      
+            ヤンキーかな
+      </p>
+      </div>
+      <div class="mem1 left">
+      <span>阿羅々木 有栖</span>
+      <p>
+      
+            元です
+      </p>
+      </div>
+      <div class="mem6 right">
+      <span>姫</span>
+      <p>
+      
+            「大丈夫ですか？」心配そうにみます
+      </p>
+      </div>
+      <div class="mem1 left">
+      <span>阿羅々木 有栖</span>
+      <p>
+      
+            「大丈夫ですよー。ただ、嫌な事思い出しただけですから」
+      </p>
+      </div>
+      <div class="mem2 right">
+      <span>中田 楓</span>
+      <p>
+      
+            「いやなこと……」
+      </p>
+      </div>
+      <div class="mem1 left">
+      <span>阿羅々木 有栖</span>
+      <p>
+      
+            クトゥルフ神話技能：【1d100】を振りました。結果は「100」失敗です。(成功値6以下)(各ダイス目：100)
+      </p>
+      </div>
+      <div class="mem1 left">
+      <span>阿羅々木 有栖</span>
+      <p>
+      
+            草生える
+      </p>
+      </div>
+      <div class="mem2 right">
+      <span>中田 楓</span>
+      <p>
+      
+            大草原
+      </p>
+      </div>
+      <div class="kp">
+      
+            有栖ちゃんは自分のなかに気味の悪いものがはいった感覚が抜けず気持ち悪さがぬぐえない。このシナリオ内でcon－2
+      </div>
+      <div class="mem1 left">
+      <span>阿羅々木 有栖</span>
+      <p>
+      
+            わぁー＾＾
+      </p>
+      </div>
+      <div class="kp">
+      
+            シークレットダイス【1d2】を振りました。結果は「2」です。(各ダイス目：2)
+      </div>
+      <div class="kp">
+      
+            では観察をつづけますか？
+      </div>
+      <div class="mem1 left">
+      <span>阿羅々木 有栖</span>
+      <p>
+      
+            つづけまーす
+      </p>
+      </div>
+      <div class="mem2 right">
+      <span>中田 楓</span>
+      <p>
+      
+            はーい
+      </p>
+      </div>
+      <div class="kp">
+      
+            次のお客さんはおばちゃん軍団
+      </div>
+      <div class="mem4 right">
+      <span>客</span>
+      <p>
+      
+            「じゃあこの、タピオカミルクティーってやつ４つ頂戴」
+      </p>
+      </div>
+      <div class="mem4 right">
+      <span>客</span>
+      <p>
+      
+            「アラッヤダ～～カエルの卵じゃないのコレッ！　こんなのが最近流行ってるの？」
+      </p>
+      </div>
+      <div class="mem4 right">
+      <span>客</span>
+      <p>
+      
+            「なんかお腹の中で生まれちゃうんじゃないのコレッ」
+      </p>
+      </div>
+      <div class="mem4 right">
+      <span>客</span>
+      <p>
+      
+            「でもあーた、意外とおいしいわよコレッ！　あーたも食べてみなさいよ！　お姉ちゃん、おおきにね～」
+      </p>
+      </div>
+      <div class="kp">
+      
+            おばちゃんたちはそのままぎゃーぎゃーと去っていきました
+      </div>
+      <div class="mem1 left">
+      <span>阿羅々木 有栖</span>
+      <p>
+      
+            その後、おばちゃん達を見たものは…
+      </p>
+      </div>
+      <div class="kp">
+      
+            シークレットダイス【1d2】を振りました。結果は「2」です。(各ダイス目：2)
+      </div>
+      <div class="kp">
+      
+            つぎのお客さんはびしっときまったスーツをきたお兄さん
+      </div>
+      <div class="mem11 left">
+      <span>男</span>
+      <p>
+      
+            「タピオカカフェラテひとつ・・・あ、氷多めでおねがいします」
+      </p>
+      </div>
+      <div class="mem11 left">
+      <span>男</span>
+      <p>
+      
+            「・・・・うっ」
+      </p>
+      </div>
+      <div class="mem1 left">
+      <span>阿羅々木 有栖</span>
+      <p>
+      
+            うっ
+      </p>
+      </div>
+      <div class="mem2 right">
+      <span>中田 楓</span>
+      <p>
+      
+            お？
+      </p>
+      </div>
+      <div class="kp">
+      
+            男はそのままうずくまります
+      </div>
+      <div class="mem2 right">
+      <span>中田 楓</span>
+      <p>
+      
+            「しごとだ！」
+      </p>
+      </div>
+      <div class="mem1 left">
+      <span>阿羅々木 有栖</span>
+      <p>
+      
+            「走るぞ」
+      </p>
+      </div>
+      <div class="mem6 right">
+      <span>姫</span>
+      <p>
+      
+            「おねがいします！！」
+      </p>
+      </div>
+      <div class="kp">
+      
+            dex×8です
+      </div>
+      <div class="mem1 left">
+      <span>阿羅々木 有栖</span>
+      <p>
+      
+            DEX*8：【1d100】を振りました。結果は「34」成功です。(成功値128以下)(各ダイス目：34)
+      </p>
+      </div>
+      <div class="mem2 right">
+      <span>中田 楓</span>
+      <p>
+      
+            dex*8：【1d100】を振りました。結果は「56」成功です。(成功値80以下)(各ダイス目：56)
+      </p>
+      </div>
+      <div class="mem1 left">
+      <span>阿羅々木 有栖</span>
+      <p>
+      
+            まだまだいけるぜ
+      </p>
+      </div>
+      <div class="kp">
+      
+            ふたりが男の背中をたたくとぽんぽこぽーん！とタピオカがでます
+      </div>
+      <div class="mem1 left">
+      <span>阿羅々木 有栖</span>
+      <p>
+      
+            可愛いタピオカが生まれましたよ（震え声）
+      </p>
+      </div>
+      <div class="mem11 left">
+      <span>男</span>
+      <p>
+      
+            「いやあ、助かりました。この歳でタピオカ喉に詰まらせて死亡なんてなったら、なんて言われるか……」
+      </p>
+      </div>
+      <div class="mem11 left">
+      <span>男</span>
+      <p>
+      
+            「実は、先週別れた彼女とこのタピオカを飲んだことがあって……。いやあ、タピオカって甘いですね……」
+      </p>
+      </div>
+      <div class="kp">
+      
+            男は少し泣きながら去っていった。
+      </div>
+      <div class="kp">
+      
+            楓ちゃんたぴおかに目星とかできますが
+      </div>
+      <div class="mem1 left">
+      <span>阿羅々木 有栖</span>
+      <p>
+      
+            泣いたのはどっちの意味でかな
+      </p>
+      </div>
+      <div class="mem2 right">
+      <span>中田 楓</span>
+      <p>
+      
+            めぼります
+      </p>
+      </div>
+      <div class="mem2 right">
+      <span>中田 楓</span>
+      <p>
+      
+            目星：【1d100】を振りました。結果は「34」成功です。(成功値50以下)(各ダイス目：34)
+      </p>
+      </div>
+      <div class="kp">
+      
+            黒いタピオカ（カラータピオカ）の粒の中に、なにか不思議な光沢を持つ粒が混じっていることに気付く。黒いぷよぷよの表面に、シャボン玉のような玉虫色のメタリックな光沢がある。それらは生き物のようにぷるぷると蠢いたあと、みるみる縮み、消えてしまった。
+      </div>
+      <div class="kp">
+      
+            あなたは嘔吐する。吐き出された黒い粒は、玉虫色の光沢をしていた……。SANC1d2/1d5
+      </div>
+      <div class="mem2 right">
+      <span>中田 楓</span>
+      <p>
+      
+            SAN：【1d100】を振りました。結果は「15」成功です。(成功値41以下)(各ダイス目：15)
+      </p>
+      </div>
+      <div class="mem2 right">
+      <span>中田 楓</span>
+      <p>
+      
+            SAN：【1d2】を振りました。結果は「1」成功です。(成功値41以下)(各ダイス目：1)
+      </p>
+      </div>
+      <div class="mem6 right">
+      <span>姫</span>
+      <p>
+      
+            「地球人の救出はなかなかに負荷がかかるのですね・・・すみません・・・ですが助かる命がちゃんとあります！頑張ってください！」
+      </p>
+      </div>
+      <div class="mem2 right">
+      <span>中田 楓</span>
+      <p>
+      
+            ぺってする
+      </p>
+      </div>
+      <div class="mem1 left">
+      <span>阿羅々木 有栖</span>
+      <p>
+      
+            「まぁ、異物混入してるみたいだね」
+      </p>
+      </div>
+      <div class="mem2 right">
+      <span>中田 楓</span>
+      <p>
+      
+            「タピオカじゃない生き物が入ってるよー」
+      </p>
+      </div>
+      <div class="mem1 left">
+      <span>阿羅々木 有栖</span>
+      <p>
+      
+            「（あ、それ言っちゃうんだぁ）」
+      </p>
+      </div>
+      <div class="mem6 right">
+      <span>姫</span>
+      <p>
+      
+            「タピオカは芋なので植物ですよ！」
+      </p>
+      </div>
+      <div class="kp">
+      
+            さて周辺を目ぼれマス
+      </div>
+      <div class="mem1 left">
+      <span>阿羅々木 有栖</span>
+      <p>
+      
+            「確か、キャッサバ…アレ？なんだっけ」
+      </p>
+      </div>
+      <div class="mem2 right">
+      <span>中田 楓</span>
+      <p>
+      
+            「う、うん？とりあえず生き物だね？」
+      </p>
+      </div>
+      <div class="mem1 left">
+      <span>阿羅々木 有栖</span>
+      <p>
+      
+            周辺目星しますかー
+      </p>
+      </div>
+      <div class="mem1 left">
+      <span>阿羅々木 有栖</span>
+      <p>
+      
+            目星：【1d100】を振りました。結果は「84」失敗です。(成功値75以下)(各ダイス目：84)
+      </p>
+      </div>
+      <div class="mem1 left">
+      <span>阿羅々木 有栖</span>
+      <p>
+      
+            なんだよこれ
+      </p>
+      </div>
+      <div class="kp">
+      
+            おつかれかな
+      </div>
+      <div class="mem2 right">
+      <span>中田 楓</span>
+      <p>
+      
+            めぼります
+      </p>
+      </div>
+      <div class="mem1 left">
+      <span>阿羅々木 有栖</span>
+      <p>
+      
+            耳も目も使えない子じゃん
+      </p>
+      </div>
+      <div class="mem2 right">
+      <span>中田 楓</span>
+      <p>
+      
+            目星：【1d100】を振りました。結果は「86」失敗です。(成功値50以下)(各ダイス目：86)
+      </p>
+      </div>
+      <div class="mem1 left">
+      <span>阿羅々木 有栖</span>
+      <p>
+      
+            今日は人の背中を叩いてタピオカを吐き出させる機械かもしれない
+      </p>
+      </div>
+      <div class="mem2 right">
+      <span>中田 楓</span>
+      <p>
+      
+            ふらふらなのかな
+      </p>
+      </div>
+      <div class="kp">
+      
+            タピオカを買っている老婆がいます
+      </div>
+      <div class="mem12 right">
+      <span>老婆</span>
+      <p>
+      
+            「ふにゃ～～～、ふにゃ、ふにゃ～～～」
+      </p>
+      </div>
+      <div class="kp">
+      
+            老婆が喉を抑え、苦しそうに呻いている。その顔は色が消えたかのような灰色だ
+      </div>
+      <div class="mem1 left">
+      <span>阿羅々木 有栖</span>
+      <p>
+      
+            最初からアウトだよ
+      </p>
+      </div>
+      <div class="mem2 right">
+      <span>中田 楓</span>
+      <p>
+      
+            「おばあちゃん！！」
+      </p>
+      </div>
+      <div class="mem1 left">
+      <span>阿羅々木 有栖</span>
+      <p>
+      
+            「もう死にかけじゃんか！」
+      </p>
+      </div>
+      <div class="mem2 right">
+      <span>中田 楓</span>
+      <p>
+      
+            「縁起でもないよ！」
+      </p>
+      </div>
+      <div class="kp">
+      
+            シークレットダイス【1d2】を振りました。結果は「1」です。(各ダイス目：1)
+      </div>
+      <div class="kp">
+      
+            老婆に駆け付けようとしたならば、突然何者かが有栖ちゃんにくみつきをする！突然のことで有栖ちゃんは動けない！苦しむ老婆！動けぬ有栖！残された楓ちゃんの運命は・・・？！
+      </div>
+      <div class="kp">
+      
+            ふいうちだから有栖ちゃんは１ターンうごけません
+      </div>
+      <div class="mem1 left">
+      <span>阿羅々木 有栖</span>
+      <p>
+      
+            次週、老婆死す！デュエルスタンバイ！
+      </p>
+      </div>
+      <div class="kp">
+      
+            どうします？
+      </div>
+      <div class="mem2 right">
+      <span>中田 楓</span>
+      <p>
+      
+            「ど、どうしたらいいの！？とりあえず、おばあちゃんに……！」
+      </p>
+      </div>
+      <div class="kp">
+      
+            救出はdex×7で
+      </div>
+      <div class="mem1 left">
+      <span>阿羅々木 有栖</span>
+      <p>
+      
+            俺は置いていくんだ！楓ちゃん！
+      </p>
+      </div>
+      <div class="mem2 right">
+      <span>中田 楓</span>
+      <p>
+      
+            dex*7：【1d100】を振りました。結果は「95」失敗です。(成功値70以下)(各ダイス目：95)
+      </p>
+      </div>
+      <div class="mem1 left">
+      <span>阿羅々木 有栖</span>
+      <p>
+      
+            ファンブル一歩手前ｗｗｗ
+      </p>
+      </div>
+      <div class="kp">
+      
+            背中をたたいてもタピオカはでてきません・・・老婆はいまだくるしそうです
+      </div>
+      <div class="kp">
+      
+            ありすちゃんのたーん<br>組みつきほどくならｓｔｒ対抗になります
+      </div>
+      <div class="mem1 left">
+      <span>阿羅々木 有栖</span>
+      <p>
+      
+            STR弱いんだよなぁー 9
+      </p>
+      </div>
+      <div class="kp">
+      
+            不審者のは10
+      </div>
+      <div class="mem1 left">
+      <span>阿羅々木 有栖</span>
+      <p>
+      
+            45％か
+      </p>
+      </div>
+      <div class="mem1 left">
+      <span>阿羅々木 有栖</span>
+      <p>
+      
+            STR対抗：【1d100】を振りました。結果は「79」失敗です。(成功値45以下)(各ダイス目：79)
+      </p>
+      </div>
+      <div class="mem1 left">
+      <span>阿羅々木 有栖</span>
+      <p>
+      
+            今日はもうダメかもしれない
+      </p>
+      </div>
+      <div class="kp">
+      
+            では振りほどけませんでした
+      </div>
+      <div class="mem2 right">
+      <span>中田 楓</span>
+      <p>
+      
+            いきて
+      </p>
+      </div>
+      <div class="mem1 left">
+      <span>阿羅々木 有栖</span>
+      <p>
+      
+            むり
+      </p>
+      </div>
+      <div class="kp">
+      
+            ふしんしゃは相変わらず有栖ちゃんにくみついて楓ちゃんをにらんでます。ろうばはふにゃふにゃ苦しんでます
+      </div>
+      <div class="kp">
+      
+            楓ちゃんのたーん
+      </div>
+      <div class="mem1 left">
+      <span>阿羅々木 有栖</span>
+      <p>
+      
+            ここは地獄か
+      </p>
+      </div>
+      <div class="kp">
+      
+            ここがアビス
+      </div>
+      <div class="mem1 left">
+      <span>阿羅々木 有栖</span>
+      <p>
+      
+            やるんだ、楓ちゃん！
+      </p>
+      </div>
+      <div class="mem2 right">
+      <span>中田 楓</span>
+      <p>
+      
+            ここが大穴
+      </p>
+      </div>
+      <div class="kp">
+      
+            dex×6
+      </div>
+      <div class="mem2 right">
+      <span>中田 楓</span>
+      <p>
+      
+            dex*6：【1d100】を振りました。結果は「84」失敗です。(成功値60以下)(各ダイス目：84)
+      </p>
+      </div>
+      <div class="mem2 right">
+      <span>中田 楓</span>
+      <p>
+      
+            ごみだ
+      </p>
+      </div>
+      <div class="mem1 left">
+      <span>阿羅々木 有栖</span>
+      <p>
+      
+            ちょっとお祓い行った方がいいかな
+      </p>
+      </div>
+      <div class="kp">
+      
+            ばぁちゃんの顔色がどんどん悪くなりますがそれでもタピオカはとれません
+      </div>
+      <div class="mem6 right">
+      <span>姫</span>
+      <p>
+      
+            「く・・なにもできない私がくやしい・・・がんばってください・・！！」
+      </p>
+      </div>
+      <div class="kp">
+      
+            有栖ちゃんのたーん
+      </div>
+      <div class="mem1 left">
+      <span>阿羅々木 有栖</span>
+      <p>
+      
+            「くっ。はーなーせー」
+      </p>
+      </div>
+      <div class="mem1 left">
+      <span>阿羅々木 有栖</span>
+      <p>
+      
+            STRは同じでいいの？
+      </p>
+      </div>
+      <div class="kp">
+      
+            さっきと同じくでー
+      </div>
+      <div class="mem1 left">
+      <span>阿羅々木 有栖</span>
+      <p>
+      
+            STR対抗：【1d100】を振りました。結果は「62」失敗です。(成功値45以下)(各ダイス目：62)
+      </p>
+      </div>
+      <div class="mem1 left">
+      <span>阿羅々木 有栖</span>
+      <p>
+      
+            ちょっと実家に帰ります
+      </p>
+      </div>
+      <div class="kp">
+      
+            それでも不審者はとれません
+      </div>
+      <div class="kp">
+      
+            ３たーんめ
+      </div>
+      <div class="kp">
+      
+            まだろうばいきてる
+      </div>
+      <div class="mem1 left">
+      <span>阿羅々木 有栖</span>
+      <p>
+      
+            ＞まだ＜
+      </p>
+      </div>
+      <div class="kp">
+      
+            dex×5
+      </div>
+      <div class="mem2 right">
+      <span>中田 楓</span>
+      <p>
+      
+            dex*5：【1d100】を振りました。結果は「97」失敗です。(成功値50以下)(各ダイス目：97)
+      </p>
+      </div>
+      <div class="mem1 left">
+      <span>阿羅々木 有栖</span>
+      <p>
+      
+            死んだのでは
+      </p>
+      </div>
+      <div class="kp">
+      
+            老婆の意識がなくなりました
+      </div>
+      <div class="mem1 left">
+      <span>阿羅々木 有栖</span>
+      <p>
+      
+            まさかの次回予告通りに…
+      </p>
+      </div>
+      <div class="mem1 left">
+      <span>阿羅々木 有栖</span>
+      <p>
+      
+            二人してダイス目腐りすぎでは
+      </p>
+      </div>
+      <div class="mem2 right">
+      <span>中田 楓</span>
+      <p>
+      
+            「あっ！？おばあちゃん！？ころしちゃった！？」
+      </p>
+      </div>
+      <div class="mem1 left">
+      <span>阿羅々木 有栖</span>
+      <p>
+      
+            「はぁ！？」
+      </p>
+      </div>
+      <div class="mem1 left">
+      <span>阿羅々木 有栖</span>
+      <p>
+      
+            てか、不審者いつまでくっついてんだろ。張り付いてんだろ。好きすぎかよ
+      </p>
+      </div>
+      <div class="kp">
+      
+            目の前で意識を失った老婆を見てさんちぇ0／1ｄ2
+      </div>
+      <div class="mem1 left">
+      <span>阿羅々木 有栖</span>
+      <p>
+      
+            マモレナカッタ
+      </p>
+      </div>
+      <div class="mem2 right">
+      <span>中田 楓</span>
+      <p>
+      
+            san：【1d100】を振りました。結果は「42」失敗です。(成功値40以下)(各ダイス目：42)
+      </p>
+      </div>
+      <div class="mem2 right">
+      <span>中田 楓</span>
+      <p>
+      
+            san：【1d2】を振りました。結果は「1」成功です。(成功値40以下)(各ダイス目：1)
+      </p>
+      </div>
+      <div class="mem2 right">
+      <span>中田 楓</span>
+      <p>
+      
+            「だめだめおばあちゃん！！いきてー！！いきてー！！」
+      </p>
+      </div>
+      <div class="kp">
+      
+            次のターンで応急手当ふれるからね
+      </div>
+      <div class="kp">
+      
+            有栖ちゃんのたーん
+      </div>
+      <div class="mem1 left">
+      <span>阿羅々木 有栖</span>
+      <p>
+      
+            「はーなーせー」
+      </p>
+      </div>
+      <div class="mem1 left">
+      <span>阿羅々木 有栖</span>
+      <p>
+      
+            引きはがそうとしよう
+      </p>
+      </div>
+      <div class="mem1 left">
+      <span>阿羅々木 有栖</span>
+      <p>
+      
+            STR対抗：【1d100】を振りました。結果は「31」成功です。(成功値45以下)(各ダイス目：31)
+      </p>
+      </div>
+      <div class="mem1 left">
+      <span>阿羅々木 有栖</span>
+      <p>
+      
+            やった！
+      </p>
+      </div>
+      <div class="kp">
+      
+            ふりほどけました
+      </div>
+      <div class="mem1 left">
+      <span>阿羅々木 有栖</span>
+      <p>
+      
+            つかれたわ。なんかもう運使ったわ
+      </p>
+      </div>
+      <div class="kp">
+      
+            不審者は距離をとりくやしそうにこちらをみてます
+      </div>
+      <div class="mem1 left">
+      <span>阿羅々木 有栖</span>
+      <p>
+      
+            なぜじゃ
+      </p>
+      </div>
+      <div class="kp">
+      
+            楓ちゃんのターン応急手当ふれるよ
+      </div>
+      <div class="mem2 right">
+      <span>中田 楓</span>
+      <p>
+      
+            応急手当：【1d100】を振りました。結果は「69」失敗です。(成功値45以下)(各ダイス目：69)
+      </p>
+      </div>
+      <div class="kp">
+      
+            老婆は動かなくなりました
+      </div>
+      <div class="mem1 left">
+      <span>阿羅々木 有栖</span>
+      <p>
+      
+            あ
+      </p>
+      </div>
+      <div class="mem1 left">
+      <span>阿羅々木 有栖</span>
+      <p>
+      
+            任務が失敗しました
+      </p>
+      </div>
+      <div class="mem2 right">
+      <span>中田 楓</span>
+      <p>
+      
+            「おばあちゃーーーん！！！」
+      </p>
+      </div>
+      <div class="mem1 left">
+      <span>阿羅々木 有栖</span>
+      <p>
+      
+            ＱＱ車と警察呼ぼっか
+      </p>
+      </div>
+      <div class="kp">
+      
+            、目の前で命を失った衝撃でSANC1/1d3
+      </div>
+      <div class="mem1 left">
+      <span>阿羅々木 有栖</span>
+      <p>
+      
+            二人？
+      </p>
+      </div>
+      <div class="kp">
+      
+            ふたりかな
+      </div>
+      <div class="mem1 left">
+      <span>阿羅々木 有栖</span>
+      <p>
+      
+            SAN：【1d100】を振りました。結果は「24」成功です。(成功値88以下)(各ダイス目：24)
+      </p>
+      </div>
+      <div class="mem2 right">
+      <span>中田 楓</span>
+      <p>
+      
+            san：【1d100】を振りました。結果は「63」失敗です。(成功値39以下)(各ダイス目：63)
+      </p>
+      </div>
+      <div class="mem1 left">
+      <span>阿羅々木 有栖</span>
+      <p>
+      
+            あんま減らねーわ
+      </p>
+      </div>
+      <div class="mem2 right">
+      <span>中田 楓</span>
+      <p>
+      
+            san：【1d3】を振りました。結果は「2」成功です。(成功値39以下)(各ダイス目：2)
+      </p>
+      </div>
+      <div class="mem2 right">
+      <span>中田 楓</span>
+      <p>
+      
+            「いきて！いきて！ひっひっふー！！」
+      </p>
+      </div>
+      <div class="mem1 left">
+      <span>阿羅々木 有栖</span>
+      <p>
+      
+            「それ出産」
+      </p>
+      </div>
+      <div class="mem1 left">
+      <span>阿羅々木 有栖</span>
+      <p>
+      
+            「間に合わなかったか…」
+      </p>
+      </div>
+      <div class="mem2 right">
+      <span>中田 楓</span>
+      <p>
+      
+            「えっ！！」
+      </p>
+      </div>
+      <div class="kp">
+      
+            死んだ老婆の顔に医学か生物学ができる。なければアイデアでも
+      </div>
+      <div class="mem1 left">
+      <span>阿羅々木 有栖</span>
+      <p>
+      
+            全て不審者が悪い
+      </p>
+      </div>
+      <div class="mem2 right">
+      <span>中田 楓</span>
+      <p>
+      
+            アイデア：【1d100】を振りました。結果は「70」成功です。(成功値70以下)(各ダイス目：70)
+      </p>
+      </div>
+      <div class="mem1 left">
+      <span>阿羅々木 有栖</span>
+      <p>
+      
+            アイデア：【1d100】を振りました。結果は「98」失敗です。(成功値60以下)(各ダイス目：98)
+      </p>
+      </div>
+      <div class="mem1 left">
+      <span>阿羅々木 有栖</span>
+      <p>
+      
+            もうこれは呪われたのかな
+      </p>
+      </div>
+      <div class="mem1 left">
+      <span>阿羅々木 有栖</span>
+      <p>
+      
+            オンセとはここまで怖ろしいものなのか
+      </p>
+      </div>
+      <div class="kp">
+      
+            楓ちゃんは老婆の顔になにか違和感を感じた気がしましたが、そのとき有栖ちゃんがくしゃみをしたので違和感のもとをたどることはできなかった
+      </div>
+      <div class="mem1 left">
+      <span>阿羅々木 有栖</span>
+      <p>
+      
+            「くしゅん」
+      </p>
+      </div>
+      <div class="mem1 left">
+      <span>阿羅々木 有栖</span>
+      <p>
+      
+            「へっくしゅん」
+      </p>
+      </div>
+      <div class="mem1 left">
+      <span>阿羅々木 有栖</span>
+      <p>
+      
+            これは医学か生物学を振るべきか（どちらも初期値）
+      </p>
+      </div>
+      <div class="mem2 right">
+      <span>中田 楓</span>
+      <p>
+      
+            「おば……え？いまくしゃみ？」
+      </p>
+      </div>
+      <div class="kp">
+      
+            老婆の死に動揺している探索者たち、そこに先ほどの不審者がナイフをもちこちらへかまえていた
+      </div>
+      <div class="kp">
+      
+            ＞唐突な戦闘＜
+      </div>
+      <div class="mem1 left">
+      <span>阿羅々木 有栖</span>
+      <p>
+      
+            すべてはおまえのせいだー！
+      </p>
+      </div>
+      <div class="mem1 left">
+      <span>阿羅々木 有栖</span>
+      <p>
+      
+            すべては不審者が悪い
+      </p>
+      </div>
+      <div class="mem6 right">
+      <span>姫</span>
+      <p>
+      
+            「なんていうこと…タピオカの平和を乱すふとどきものめ…！おばぁちゃんの幸せなタピオカタイムを死に場所にするなど許されぬ！」
+      </p>
+      </div>
+      <div class="mem1 left">
+      <span>阿羅々木 有栖</span>
+      <p>
+      
+            おばぁちゃんの最後の晩餐はタピオカか
+      </p>
+      </div>
+      <div class="mem6 right">
+      <span>姫</span>
+      <p>
+      
+            シークレットダイス【1d2】を振りました。結果は「2」です。(各ダイス目：2)
+      </p>
+      </div>
+      <div class="mem6 right">
+      <span>姫</span>
+      <p>
+      
+            「姫として汝に制裁を下そうぞ！中田楓、阿羅々木有栖よ、、ひと時だけあなたに伝説の呪文を授けます。タピオカの平和はあなたがたが守るのです！」
+      </p>
+      </div>
+      <div class="kp">
+      
+            ◎呪文『タピオカビーム』<br>MP１消費。<br>カエルの卵のように数珠繋がりになったタピオカが腕から噴射され、ポコポコポコッと対象にダメージを与える。対象に1d10のダメージ。ビームは対象を追尾し、対象はタピオカのツルツルに包み込まれて１ターン行動不可になる。
+      </div>
+      <div class="mem1 left">
+      <span>阿羅々木 有栖</span>
+      <p>
+      
+            ロックバスターかな
+      </p>
+      </div>
+      <div class="kp">
+      
+            では戦闘です<br>ありすちゃんから
+      </div>
+      <div class="mem1 left">
+      <span>阿羅々木 有栖</span>
+      <p>
+      
+            タピビって命中率っていくら？
+      </p>
+      </div>
+      <div class="kp">
+      
+            ついでにビームは呪文とポーズしてね
+      </div>
+      <div class="kp">
+      
+            8との対抗
+      </div>
+      <div class="mem1 left">
+      <span>阿羅々木 有栖</span>
+      <p>
+      
+            じゃあ武道キックで
+      </p>
+      </div>
+      <div class="kp">
+      
+            どぞ
+      </div>
+      <div class="mem1 left">
+      <span>阿羅々木 有栖</span>
+      <p>
+      
+            不審者って人型？
+      </p>
+      </div>
+      <div class="kp">
+      
+            ひとがた
+      </div>
+      <div class="mem1 left">
+      <span>阿羅々木 有栖</span>
+      <p>
+      
+            ノックアウト宣言します
+      </p>
+      </div>
+      <div class="kp">
+      
+            どぞどぞ
+      </div>
+      <div class="mem1 left">
+      <span>阿羅々木 有栖</span>
+      <p>
+      
+            キック・武道：【1d100】を振りました。結果は「45」成功です。(成功値68以下)(各ダイス目：45)
+      </p>
+      </div>
+      <div class="kp">
+      
+            シークレットダイス【1d100】を振りました。結果は「59」失敗です。(成功値14以下)(各ダイス目：59)
+      </div>
+      <div class="kp">
+      
+            不審者回避しっぱい
+      </div>
+      <div class="mem1 left">
+      <span>阿羅々木 有栖</span>
+      <p>
+      
+            2Ｄ6
+      </p>
+      </div>
+      <div class="kp">
+      
+            はい
+      </div>
+      <div class="mem1 left">
+      <span>阿羅々木 有栖</span>
+      <p>
+      
+            いきます
+      </p>
+      </div>
+      <div class="mem1 left">
+      <span>阿羅々木 有栖</span>
+      <p>
+      
+            ダメージ：【2d6】を振りました。結果は「7」です。(各ダイス目：6,1)
+      </p>
+      </div>
+      <div class="mem1 left">
+      <span>阿羅々木 有栖</span>
+      <p>
+      
+            片方殺す気だろ
+      </p>
+      </div>
+      <div class="kp">
+      
+            不審者意識不明
+      </div>
+      <div class="mem1 left">
+      <span>阿羅々木 有栖</span>
+      <p>
+      
+            草
+      </p>
+      </div>
+      <div class="mem1 left">
+      <span>阿羅々木 有栖</span>
+      <p>
+      
+            「おばぁちゃんのうらみ！」
+      </p>
+      </div>
+      <div class="mem6 right">
+      <span>姫</span>
+      <p>
+      
+            「やりました！有栖！いまですきめ台詞！！」
+      </p>
+      </div>
+      <div class="mem1 left">
+      <span>阿羅々木 有栖</span>
+      <p>
+      
+            「これがタピオカの恨みじゃ！」
+      </p>
+      </div>
+      <div class="kp">
+      
+            有栖ちゃんがきめ台詞を言うと周囲にいた女子高生たちが歓声を上げて写真をとります
+      </div>
+      <div class="mem4 right">
+      <span>客</span>
+      <p>
+      
+            「ちょーかっけいいんですけどぉ～！」
+      </p>
+      </div>
+      <div class="mem1 left">
+      <span>阿羅々木 有栖</span>
+      <p>
+      
+            「それはそうと、これも警察に連絡しないとね。不審者発見なう。と」
+      </p>
+      </div>
+      <div class="mem6 right">
+      <span>姫</span>
+      <p>
+      
+            「やりましたね！」
+      </p>
+      </div>
+      <div class="kp">
+      
+            ぴめがハイタッチを
+      </div>
+      <div class="kp">
+      
+            してくれないの・・・
+      </div>
+      <div class="mem1 left">
+      <span>阿羅々木 有栖</span>
+      <p>
+      
+            はいたーっち
+      </p>
+      </div>
+      <div class="kp">
+      
+            ぴめとはいたっちするとぷるんとした感触がした
+      </div>
+      <div class="mem1 left">
+      <span>阿羅々木 有栖</span>
+      <p>
+      
+            ぷるーんぷるーん
+      </p>
+      </div>
+      <div class="mem1 left">
+      <span>阿羅々木 有栖</span>
+      <p>
+      
+            ぽよーんぽよーん
+      </p>
+      </div>
+      <div class="kp">
+      
+            倒れた不審者の服から一枚の薄汚いメモがでてくる
+      </div>
+      <div class="mem1 left">
+      <span>阿羅々木 有栖</span>
+      <p>
+      
+            見ますよ
+      </p>
+      </div>
+      <div class="mem2 right">
+      <span>中田 楓</span>
+      <p>
+      
+            見ましょう
+      </p>
+      </div>
+      <div class="kp">
+      
+            『宇宙からきた深淵なる虹よ。私は貴方の卵たちが隠れ、栄養を得るに足るに相応しい場所を知っております。それは、今この国で大流行しているものです。みなそれを啜るのに必死で、自らが苗床になるとは誰も気づかないでしょう。<br>美しき貴方がた“色”が、この星をあまねく覆う未来が訪れますように』
+      </div>
+      <div class="mem1 left">
+      <span>阿羅々木 有栖</span>
+      <p>
+      
+            やぶりてぇ
+      </p>
+      </div>
+      <div class="kp">
+      
+            ◎呪文『宇宙からの色の招来と退散』（オリジナル呪文）<br>MP5消費。使用者は1d3の正気度ポイント喪失。<br>複数人でMPを分担して唱えることができる。<br>複数人で協力して唱えた方が成功率が上がる。その場合、使用者たちは手を繋いで輪っかを作る。<br>
+      </div>
+      <div class="kp">
+      
+            あなたは、自らが食していたものの正体を悟り、改めて衝撃と嘔吐感に襲われる
+      </div>
+      <div class="kp">
+      
+            さて得た呪文、どうしましょう？
+      </div>
+      <div class="mem1 left">
+      <span>阿羅々木 有栖</span>
+      <p>
+      
+            退散させようか
+      </p>
+      </div>
+      <div class="mem1 left">
+      <span>阿羅々木 有栖</span>
+      <p>
+      
+            今いるわけでしょ？（いろんな場所に）
+      </p>
+      </div>
+      <div class="kp">
+      
+            いそうですね
+      </div>
+      <div class="mem2 right">
+      <span>中田 楓</span>
+      <p>
+      
+            やるかー
+      </p>
+      </div>
+      <div class="mem6 right">
+      <span>姫</span>
+      <p>
+      
+            「これなら私も協力できます！」
+      </p>
+      </div>
+      <div class="mem1 left">
+      <span>阿羅々木 有栖</span>
+      <p>
+      
+            お前もやるんかーい
+      </p>
+      </div>
+      <div class="mem1 left">
+      <span>阿羅々木 有栖</span>
+      <p>
+      
+            じゃあ三人で輪っか作って退散だよね
+      </p>
+      </div>
+      <div class="mem1 left">
+      <span>阿羅々木 有栖</span>
+      <p>
+      
+            流石に招来はしないよね
+      </p>
+      </div>
+      <div class="mem6 right">
+      <span>姫</span>
+      <p>
+      
+            となりのひとと手をつなぎましょう
+      </p>
+      </div>
+      <div class="mem1 left">
+      <span>阿羅々木 有栖</span>
+      <p>
+      
+            隣（結局は二人）
+      </p>
+      </div>
+      <div class="mem6 right">
+      <span>姫</span>
+      <p>
+      
+            ピメは、高らかに呪文を唱える。
+      </p>
+      </div>
+      <div class="mem6 right">
+      <span>姫</span>
+      <p>
+      
+            「タピタピタピオカおいしいな～♪」（ファミマの入店音のリズムで）
+      </p>
+      </div>
+      <div class="kp">
+      
+            昼下がりの公園のド真ん中に響き渡る。
+      </div>
+      <div class="kp">
+      
+            ｍｐとサンチをへらしてください
+      </div>
+      <div class="mem6 right">
+      <span>姫</span>
+      <p>
+      
+            ぴめ３請け負うよ
+      </p>
+      </div>
+      <div class="mem1 left">
+      <span>阿羅々木 有栖</span>
+      <p>
+      
+            SAN喪失：【1d3】を振りました。結果は「2」です。(各ダイス目：2)
+      </p>
+      </div>
+      <div class="mem1 left">
+      <span>阿羅々木 有栖</span>
+      <p>
+      
+            やべー85になっちゃった
+      </p>
+      </div>
+      <div class="mem2 right">
+      <span>中田 楓</span>
+      <p>
+      
+            SAN喪失：【1d3】を振りました。結果は「2」です。(各ダイス目：2)
+      </p>
+      </div>
+      <div class="mem1 left">
+      <span>阿羅々木 有栖</span>
+      <p>
+      
+            不定とかやば
+      </p>
+      </div>
+      <div class="kp">
+      
+            不定狂気
+      </div>
+      <div class="kp">
+      
+            1ｄ10
+      </div>
+      <div class="mem1 left">
+      <span>阿羅々木 有栖</span>
+      <p>
+      
+            楓ちゃんは各シナリオで1回は狂気になる
+      </p>
+      </div>
+      <div class="mem2 right">
+      <span>中田 楓</span>
+      <p>
+      
+            【1d10】を振りました。結果は「3」です。(各ダイス目：3)
+      </p>
+      </div>
+      <div class="kp">
+      
+            幻覚
+      </div>
+      <div class="mem1 left">
+      <span>阿羅々木 有栖</span>
+      <p>
+      
+            タピオカの幻覚？
+      </p>
+      </div>
+      <div class="kp">
+      
+            1ｄ10×10時間
+      </div>
+      <div class="mem2 right">
+      <span>中田 楓</span>
+      <p>
+      
+            【1d10】を振りました。結果は「1」です。(各ダイス目：1)
+      </p>
+      </div>
+      <div class="mem1 left">
+      <span>阿羅々木 有栖</span>
+      <p>
+      
+            意外に短かった
+      </p>
+      </div>
+      <div class="kp">
+      
+            発狂すると幻覚みがちな楓ちゃん
+      </div>
+      <div class="mem1 left">
+      <span>阿羅々木 有栖</span>
+      <p>
+      
+            精神分析持ってないけど、1％いってみる？（
+      </p>
+      </div>
+      <div class="mem2 right">
+      <span>中田 楓</span>
+      <p>
+      
+            「タピオカの精がいる！！えっ！？あっちにもこっちにもいる！？えっ！？えっなになになに！？」
+      </p>
+      </div>
+      <div class="mem1 left">
+      <span>阿羅々木 有栖</span>
+      <p>
+      
+            「楓ちゃん、それは見えてはいけない精だよ」
+      </p>
+      </div>
+      <div class="mem1 left">
+      <span>阿羅々木 有栖</span>
+      <p>
+      
+            「落ち着いて楓ちゃん。こっちの世界に戻ってきて」
+      </p>
+      </div>
+      <div class="mem2 right">
+      <span>中田 楓</span>
+      <p>
+      
+            「有栖ちゃんには見える！？なんかまるい……えっこれ見えてはいけないもの！？えっ！？」
+      </p>
+      </div>
+      <div class="mem1 left">
+      <span>阿羅々木 有栖</span>
+      <p>
+      
+            精神分析：【1d100】を振りました。結果は「19」失敗です。(成功値1以下)(各ダイス目：19)
+      </p>
+      </div>
+      <div class="mem1 left">
+      <span>阿羅々木 有栖</span>
+      <p>
+      
+            ちくせう
+      </p>
+      </div>
+      <div class="mem6 right">
+      <span>姫</span>
+      <p>
+      
+            シークレットダイス【2d100】を振りました。結果は「52」です。(各ダイス目：30,22)
+      </p>
+      </div>
+      <div class="mem1 left">
+      <span>阿羅々木 有栖</span>
+      <p>
+      
+            ファンブルしたら面白かったのに
+      </p>
+      </div>
+      <div class="mem6 right">
+      <span>姫</span>
+      <p>
+      
+            「しっかりしてください！」
+      </p>
+      </div>
+      <div class="kp">
+      
+            ピメが楓ちゃんにひらてうちします
+      </div>
+      <div class="mem1 left">
+      <span>阿羅々木 有栖</span>
+      <p>
+      
+            ぷるんぷるん
+      </p>
+      </div>
+      <div class="mem1 left">
+      <span>阿羅々木 有栖</span>
+      <p>
+      
+            ぷるんぷるんの1Ｄ3ダメ？
+      </p>
+      </div>
+      <div class="kp">
+      
+            ぷるんとしたそのひらては痛みを感じなかったがすこしだけ落ち着くことができたようだ
+      </div>
+      <div class="mem2 right">
+      <span>中田 楓</span>
+      <p>
+      
+            「ぴゃっ！？」
+      </p>
+      </div>
+      <div class="mem1 left">
+      <span>阿羅々木 有栖</span>
+      <p>
+      
+            つよい
+      </p>
+      </div>
+      <div class="kp">
+      
+            呪文を唱えると、一見なにも変化は起きない。目の前にタピオカがあったなら、玉虫色のタピオカが消える/タピオカの量が減ったことが分かるだろう。<br>不審者は銃刀法違反と殺人未遂で警察に連行されていく。公園は穏やかさを取り戻してゆく。
+      </div>
+      <div class="kp">
+      
+            やがて、タピオカ屋にクレームが上がってきた。
+      </div>
+      <div class="mem4 right">
+      <span>客</span>
+      <p>
+      
+            「ちょっと！私のタピオカ少ないんだけど！」
+      </p>
+      </div>
+      <div class="mem4 right">
+      <span>客</span>
+      <p>
+      
+            「俺も俺も！」
+      </p>
+      </div>
+      <div class="kp">
+      
+            タピオカ屋の店員に押し寄せる。
+      </div>
+      <div class="mem3 left">
+      <span>店員</span>
+      <p>
+      
+            「す、すみません！　今足しますので……。あれ！？　タピオカがぜんぜん足りない！今朝はあんなにあったのに！」
+      </p>
+      </div>
+      <div class="mem1 left">
+      <span>阿羅々木 有栖</span>
+      <p>
+      
+            おばぁちゃんはどうなった
+      </p>
+      </div>
+      <div class="kp">
+      
+            おばぁちゃんは救急車にのせました
+      </div>
+      <div class="kp">
+      
+            店員があたふたと対応する。今日は早めの閉店となりそうだ。
+      </div>
+      <div class="kp">
+      
+            ピメを見ると、彼女は厳粛な面持ちで目を瞑っていた。しばらくするとゆっくりとめをひらく
+      </div>
+      <div class="mem6 right">
+      <span>姫</span>
+      <p>
+      
+            「タピ神さまよりお告げが下りました。この瞬間より、タピオカの危機、そしてあなたの生命の危機は過ぎ去ったと。さか、タピオカのなかにかくもおぞましきものが混入しているとは……。これはピメも引くレベル。」
+      </p>
+      </div>
+      <div class="mem6 right">
+      <span>姫</span>
+      <p>
+      
+            「2020年の日本政府が、厳格にタピオカを取り締まったのは賢い選択だったのですね……。<br>　しかし、元凶を懲らしめた今となっては過ぎたこと。いまや日本国民は、永久にタピオカを愛飲する未来が拓けています！！」
+      </p>
+      </div>
+      <div class="mem1 left">
+      <span>阿羅々木 有栖</span>
+      <p>
+      
+            普通にタピオカが飲める世界」
+      </p>
+      </div>
+      <div class="mem6 right">
+      <span>姫</span>
+      <p>
+      
+            「感謝します、あなたは地球の危機を救い、そしてタピオカの危機をも救ったのです。タピオカ星の人間は、永遠にあなたの名前を忘れることはないでしょう。<br>……『もうタピオカ食べたくない』とか言っちゃダメだぞ！　お姉さんとの約束だぞ！」」
+      </p>
+      </div>
+      <div class="kp">
+      
+            ピメの身体が光り輝き、うっすらと透き通っていく。
+      </div>
+      <div class="mem6 right">
+      <span>姫</span>
+      <p>
+      
+            「お別れの時間ですね……。貴方の栄誉の勲章に、これを授けましょう。タピオカを飲むときは、私を思い出してくださいね。」
+      </p>
+      </div>
+      <div class="mem6 right">
+      <span>姫</span>
+      <p>
+      
+            「さよならは言いません。タピオカ・イズ・フォーエバー」
+      </p>
+      </div>
+      <div class="mem1 left">
+      <span>阿羅々木 有栖</span>
+      <p>
+      
+            「たぴおか・いず・ふぉーえばー」
+      </p>
+      </div>
+      <div class="mem2 right">
+      <span>中田 楓</span>
+      <p>
+      
+            「たぴおかいずふぉーえばー……」
+      </p>
+      </div>
+      <div class="kp">
+      
+            ピメの姿が消える。まるで、はじめからいなかったかのように。<br>　昼下がりの公園。タピオカを楽しむ人々の和やかな喧噪が満ちていた……。
+      </div>
+      </div>
+
+<br><br><br><br><br><br><br><br><br>
+</div></div>
+<script src="../logCon_Respon.js"></script>
+</body></html>
