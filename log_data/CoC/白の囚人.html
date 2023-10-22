@@ -1,0 +1,6951 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<title>log</title>
+<meta http-equiv="content-type" charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+<link rel="stylesheet" href="../logCon_Respon.css">
+<style>
+    /* main css */
+    .bg-inner.bg1{background:url('./白囚人画像/nc284737.png') no-repeat center/cover;}
+    
+    /* member */
+    .mem1 p{border:2px solid rgb(255, 160, 0);box-shadow:5px 5px 0 rgb(255, 160, 0);}
+.mem1 p:after{border-right-color:rgb(255, 160, 0);}
+.mem1 span{background:rgb(255, 160, 0);color:#000;}
+.mem1:before{content:'';background-image:url('./白囚人画像/鴻上麗羅.png');background-size:contain;background-repeat:no-repeat;background-position:center center;width:90px;height:90px;}
+.mem2 p{border:2px solid rgb(187, 100, 33);box-shadow:5px 5px 0 rgb(187, 100, 33);}
+.mem2 p:after{border-left-color:rgb(187, 100, 33);}
+.mem2 span{background:rgb(187, 100, 33);color:#fff;}
+.mem2:before{content:'';background-image:url('./白囚人画像/阿土咲夜之.jpg');background-size:contain;background-repeat:no-repeat;background-position:center center;width:90px;height:90px;}
+.mem3 p{border:2px solid rgb(136, 136, 136);box-shadow:5px 5px 0 rgb(136, 136, 136);}
+.mem3 p:after{border-right-color:rgb(136, 136, 136);}
+.mem3 span{background:rgb(136, 136, 136);color:#fff;}
+.mem3:before{content:'';background-image:url('3.png');background-size:contain;background-repeat:no-repeat;background-position:center center;width:90px;height:90px;}
+.mem4 p{border:2px solid rgb(136, 136, 136);box-shadow:5px 5px 0 rgb(136, 136, 136);}
+.mem4 p:after{border-left-color:rgb(136, 136, 136);}
+.mem4 span{background:rgb(136, 136, 136);color:#fff;}
+.mem4:before{content:'';background-image:url('./白囚人画像/燐ちゃん.png');background-size:contain;background-repeat:no-repeat;background-position:center center;width:90px;height:90px;}
+.mem5 p{border:2px solid rgb(136, 136, 136);box-shadow:5px 5px 0 rgb(136, 136, 136);}
+.mem5 p:after{border-right-color:rgb(136, 136, 136);}
+.mem5 span{background:rgb(136, 136, 136);color:#fff;}
+.mem5:before{content:'';background-image:url('./白囚人画像/手塚雅史.png');background-size:contain;background-repeat:no-repeat;background-position:center center;width:90px;height:90px;}
+.mem6 p{border:2px solid rgb(136, 136, 136);box-shadow:5px 5px 0 rgb(136, 136, 136);}
+.mem6 p:after{border-left-color:rgb(136, 136, 136);}
+.mem6 span{background:rgb(136, 136, 136);color:#fff;}
+.mem6:before{content:'';background-image:url('./白囚人画像/見城.png');background-size:contain;background-repeat:no-repeat;background-position:center center;width:90px;height:90px;}
+.mem7 p{border:2px solid rgb(0, 0, 102);box-shadow:5px 5px 0 rgb(0, 0, 102);}
+.mem7 p:after{border-right-color:rgb(0, 0, 102);}
+.mem7 span{background:rgb(0, 0, 102);color:#fff;}
+.mem7:before{content:'';background-image:url('./白囚人画像/南\ 宵一郎.png');background-size:contain;background-repeat:no-repeat;background-position:center center;width:90px;height:90px;}
+.mem8 p{border:2px solid rgb(38, 68, 53);box-shadow:5px 5px 0 rgb(38, 68, 53);}
+.mem8 p:after{border-left-color:rgb(38, 68, 53);}
+.mem8 span{background:rgb(38, 68, 53);color:#fff;}
+.mem8:before{content:'';background-image:url('./白囚人画像/財前帝.jpg');background-size:contain;background-repeat:no-repeat;background-position:center center;width:90px;height:90px;}
+.mem9 p{border:2px solid rgb(136, 136, 136);box-shadow:5px 5px 0 rgb(136, 136, 136);}
+.mem9 p:after{border-right-color:rgb(136, 136, 136);}
+.mem9 span{background:rgb(136, 136, 136);color:#fff;}
+.mem9:before{content:'';background-image:url('./白囚人画像/鷹野組長.png');background-size:contain;background-repeat:no-repeat;background-position:center center;width:90px;height:90px;}
+.mem10 p{border:2px solid rgb(136, 136, 136);box-shadow:5px 5px 0 rgb(136, 136, 136);}
+.mem10 p:after{border-left-color:rgb(136, 136, 136);}
+.mem10 span{background:rgb(136, 136, 136);color:#fff;}
+.mem10:before{content:'';background-image:url('10.png');background-size:contain;background-repeat:no-repeat;background-position:center center;width:90px;height:90px;}
+.mem11 p{border:2px solid rgb(136, 136, 136);box-shadow:5px 5px 0 rgb(136, 136, 136);}
+.mem11 p:after{border-right-color:rgb(136, 136, 136);}
+.mem11 span{background:rgb(136, 136, 136);color:#fff;}
+.mem11:before{content:'';background-image:url('11.png');background-size:contain;background-repeat:no-repeat;background-position:center center;width:90px;height:90px;}
+.mem12 p{border:2px solid rgb(136, 136, 136);box-shadow:5px 5px 0 rgb(136, 136, 136);}
+.mem12 p:after{border-left-color:rgb(136, 136, 136);}
+.mem12 span{background:rgb(136, 136, 136);color:#fff;}
+.mem12:before{content:'';background-image:url('12.png');background-size:contain;background-repeat:no-repeat;background-position:center center;width:90px;height:90px;}
+.mem13 p{border:2px solid rgb(136, 136, 136);box-shadow:5px 5px 0 rgb(136, 136, 136);}
+.mem13 p:after{border-right-color:rgb(136, 136, 136);}
+.mem13 span{background:rgb(136, 136, 136);color:#fff;}
+.mem13:before{content:'';background-image:url('13.png');background-size:contain;background-repeat:no-repeat;background-position:center center;width:90px;height:90px;}
+.mem14 p{border:2px solid rgb(136, 136, 136);box-shadow:5px 5px 0 rgb(136, 136, 136);}
+.mem14 p:after{border-left-color:rgb(136, 136, 136);}
+.mem14 span{background:rgb(136, 136, 136);color:#fff;}
+.mem14:before{content:'';background-image:url('14.png');background-size:contain;background-repeat:no-repeat;background-position:center center;width:90px;height:90px;}
+    
+    @media only screen and (max-width: 768px) {
+        .mem1 p:after{border-right-color:rgb(255, 160, 0);border-left-color:transparent;}
+        .mem2 p:after{border-right-color:rgb(187, 100, 33);border-left-color:transparent;}
+        .mem3 p:after{border-right-color:rgb(136, 136, 136);border-left-color:transparent;}
+        .mem4 p:after{border-right-color:rgb(136, 136, 136);border-left-color:transparent;}
+        .mem5 p:after{border-right-color:rgb(136, 136, 136);border-left-color:transparent;}
+        .mem6 p:after{border-right-color:rgb(136, 136, 136);border-left-color:transparent;}
+        .mem7 p:after{border-right-color:rgb(0, 0, 102);border-left-color:transparent;}
+        .mem8 p:after{border-right-color:rgb(38, 68, 53);border-left-color:transparent;}
+        .mem9 p:after{border-right-color:rgb(136, 136, 136);border-left-color:transparent;}
+        .mem10 p:after{border-right-color:rgb(136, 136, 136);border-left-color:transparent;}
+        .mem11 p:after{border-right-color:rgb(136, 136, 136);border-left-color:transparent;}
+        .mem12 p:after{border-right-color:rgb(136, 136, 136);border-left-color:transparent;}
+        .mem13 p:after{border-right-color:rgb(136, 136, 136);border-left-color:transparent;}
+        .mem14 p:after{border-right-color:rgb(136, 136, 136);border-left-color:transparent;}
+    
+        .mem1:before,.mem2:before,.mem3:before,
+        .mem4:before,.mem5:before,.mem6:before,
+        .mem7:before,.mem8:before,.mem9:before,
+        .mem10:before,.mem11:before,.mem12:before,
+        .mem13:before,.mem14:before{width:70px;height:70px;}
+    }
+</style>
+</head>
+<body>
+    <p id="page-top"><a href="#"><i class="page-top__arrow"></i></a></p>
+	<div class="leftwhite"></div>
+	<div class="rightwhite"></div>
+	<div class="bg-sp">
+    <div class="bg-over"><div class="bg-inner bg1"></div></div>
+	<div class="log">
+    
+        <div class="kp LtoR-early">
+
+            では、白の囚人始めさせていただきます！
+      </div>
+      <div class="kp LtoR-early">
+      
+            では、先に麗羅ちゃんと阿土くんの導入から始めますね
+      </div>
+      <div class="kp LtoR-early">
+      
+            場所は、馴染みの喫茶店。そこからこのシナリオが始まります。
+      </div>
+      <div class="mem1 left">
+      <span>鴻上 麗羅</span>
+      <p>
+      
+            あい
+      </p>
+      </div>
+      <div class="kp LtoR-early">
+      
+            二人は一緒に居る感じ？別々に居る感じ？
+      </div>
+      <div class="mem1 left">
+      <span>鴻上 麗羅</span>
+      <p>
+      
+            一緒に居ようかな
+      </p>
+      </div>
+      <div class="kp LtoR-early">
+      
+            はい。では、
+      </div>
+      <div class="kp LtoR-early">
+      
+            そんな仲良くカフェーしてるところにカランカランと音をたてて入ってくる人がいますね
+      </div>
+      <div class="mem2 right">
+      <span>阿土 咲夜之</span>
+      <p>
+      
+            クリームソーダ吸いながら特に気にしません←
+      </p>
+      </div>
+      <div class="mem3 left">
+      <span>？</span>
+      <p>
+      
+            「あ、麗羅ちゃん？」
+      </p>
+      </div>
+      <div class="kp LtoR-early">
+      
+            そんな声が聞こえてくる
+      </div>
+      <div class="kp LtoR-early">
+      
+            そして、彼女がいる席に近づくので顔が見えてきますね
+      </div>
+      <div class="kp LtoR-early">
+      
+            それと、もう一人彼女に引かれるように一人の男性が居ます
+      </div>
+      <div class="mem1 left">
+      <span>鴻上 麗羅</span>
+      <p>
+      
+            ボスかな？
+      </p>
+      </div>
+      <div class="mem2 right">
+      <span>阿土 咲夜之</span>
+      <p>
+      
+            「(うわ…。多分可愛い。最近馬ばかり見てるからよくわからないけど…。)」
+      </p>
+      </div>
+      <div class="mem1 left">
+      <span>鴻上 麗羅</span>
+      <p>
+      
+            「燐じゃん。お久〜なに？デート？」
+      </p>
+      </div>
+      <div class="mem4 right">
+      <span>鷹野 燐</span>
+      <p>
+      
+            「うん。ほら、手塚くん。中学で一緒だった」
+      </p>
+      </div>
+      <div class="kp LtoR-early">
+      
+            麗羅ちゃんは燐ちゃんの情報で知っていることがいくつか。
+      </div>
+      <div class="mem1 left">
+      <span>鴻上 麗羅</span>
+      <p>
+      
+            「あ〜…そだっけ？」
+      </p>
+      </div>
+      <div class="mem1 left">
+      <span>鴻上 麗羅</span>
+      <p>
+      
+            あい
+      </p>
+      </div>
+      <div class="kp LtoR-early">
+      
+            ・燐ちゃんとは中学の時からの友人で、彼女の家の事情がややこしいのを知っている。<br>・手塚くんと燐ちゃんは中学の頃から仲よしだったって事を知ってる。
+      </div>
+      <div class="kp LtoR-early">
+      
+            きっと、それから進展して恋仲になったんじゃないかなーって思ってるね
+      </div>
+      <div class="mem1 left">
+      <span>鴻上 麗羅</span>
+      <p>
+      
+            「あー！思い出した思い出した！あんたらそん時からなかよかったよね」
+      </p>
+      </div>
+      <div class="mem4 right">
+      <span>鷹野 燐</span>
+      <p>
+      
+            「うん。そうなんだけどね」
+      </p>
+      </div>
+      <div class="kp LtoR-early">
+      
+            けど、家の事情を知ってるからこそ、わかる。
+      </div>
+      <div class="kp LtoR-early">
+      
+            燐ちゃんのお父さんは鷹野組の組長であるからこそ、結婚相手は相応の人間をって思ってるの
+      </div>
+      <div class="mem1 left">
+      <span>鴻上 麗羅</span>
+      <p>
+      
+            ほえ〜
+      </p>
+      </div>
+      <div class="kp LtoR-early">
+      
+            そうだけど、手塚くんの性格は温厚な人。だから、お父さんは反対なわけだね
+      </div>
+      <div class="mem1 left">
+      <span>鴻上 麗羅</span>
+      <p>
+      
+            覚悟決めたんかなぁとデートって言ってる2人の様子心理学できる？
+      </p>
+      </div>
+      <div class="mem1 left">
+      <span>鴻上 麗羅</span>
+      <p>
+      
+            初期値で
+      </p>
+      </div>
+      <div class="kp LtoR-early">
+      
+            ええよー
+      </div>
+      <div class="kp LtoR-early">
+      
+            仲良さそうでいいなーって思いました、まる
+      </div>
+      <div class="mem1 left">
+      <span>鴻上 麗羅</span>
+      <p>
+      
+            「ふぅん。ジャマじゃなきゃ一緒に座らない？」
+      </p>
+      </div>
+      <div class="mem4 right">
+      <span>鷹野 燐</span>
+      <p>
+      
+            「いいの！やったー！」
+      </p>
+      </div>
+      <div class="kp LtoR-early">
+      
+            ということで、相席をさせていただきますね
+      </div>
+      <div class="mem1 left">
+      <span>鴻上 麗羅</span>
+      <p>
+      
+            「阿土っちもいいっしょ？」
+      </p>
+      </div>
+      <div class="mem2 right">
+      <span>阿土 咲夜之</span>
+      <p>
+      
+            「Σど、どどど、どうぞ！ι」
+      </p>
+      </div>
+      <div class="mem4 right">
+      <span>鷹野 燐</span>
+      <p>
+      
+            「お二人は、カップルなの？」
+      </p>
+      </div>
+      <div class="mem5 left">
+      <span>手塚 雅史</span>
+      <p>
+      
+            「ちょ、鷹野さん」
+      </p>
+      </div>
+      <div class="mem2 right">
+      <span>阿土 咲夜之</span>
+      <p>
+      
+            「Σまさか！彼女は彼女さんがいますし！」
+      </p>
+      </div>
+      <div class="mem1 left">
+      <span>鴻上 麗羅</span>
+      <p>
+      
+            「まっさか！燐しらなかったっけ？私彼女いるし」
+      </p>
+      </div>
+      <div class="mem1 left">
+      <span>鴻上 麗羅</span>
+      <p>
+      
+            「それより燐の方はいつから付き合ってんの？」
+      </p>
+      </div>
+      <div class="mem4 right">
+      <span>鷹野 燐</span>
+      <p>
+      
+            「彼女！？嘘、知らなかった。今度会わせてよ」
+      </p>
+      </div>
+      <div class="mem4 right">
+      <span>鷹野 燐</span>
+      <p>
+      
+            「わ、私たちの方は、ちょっと前に、ね」
+      </p>
+      </div>
+      <div class="mem4 right">
+      <span>鷹野 燐</span>
+      <p>
+      
+            「でも、お父さんが、今、お父さんの知り合いの人と縁談を進めてるみたいで…」
+      </p>
+      </div>
+      <div class="mem1 left">
+      <span>鴻上 麗羅</span>
+      <p>
+      
+            「燐の家でかいもんね。でも燐は手塚がいいんでしょ？」
+      </p>
+      </div>
+      <div class="mem4 right">
+      <span>鷹野 燐</span>
+      <p>
+      
+            「そうなんだけどね、ちょっと前に色々あって・・・」
+      </p>
+      </div>
+      <div class="mem1 left">
+      <span>鴻上 麗羅</span>
+      <p>
+      
+            「色々？」
+      </p>
+      </div>
+      <div class="kp LtoR-early">
+      
+            先にちょっと目星振ってみようか。二人
+      </div>
+      <div class="mem1 left">
+      <span>鴻上 麗羅</span>
+      <p>
+      
+            53成功
+      </p>
+      </div>
+      <div class="mem2 right">
+      <span>阿土 咲夜之</span>
+      <p>
+      
+            (´・_・`)
+      </p>
+      </div>
+      <div class="mem2 right">
+      <span>阿土 咲夜之</span>
+      <p>
+      
+            2
+      </p>
+      </div>
+      <div class="mem1 left">
+      <span>鴻上 麗羅</span>
+      <p>
+      
+            わぁ
+      </p>
+      </div>
+      <div class="kp LtoR-early">
+      
+            え
+      </div>
+      <div class="mem2 right">
+      <span>阿土 咲夜之</span>
+      <p>
+      
+            に
+      </p>
+      </div>
+      <div class="kp LtoR-early">
+      
+            で、では、手塚くんの手首に包帯が巻いてあるのがわかりますねぇ。
+      </div>
+      <div class="kp LtoR-early">
+      
+            そして、燐ちゃんの顔色も少し悪そうだなぁー（くりてぃかったー）
+      </div>
+      <div class="mem1 left">
+      <span>鴻上 麗羅</span>
+      <p>
+      
+            (・∇・)
+      </p>
+      </div>
+      <div class="mem2 right">
+      <span>阿土 咲夜之</span>
+      <p>
+      
+            「……？(突っ込んでいいのだろうか…。デリケートな話題だったら失礼だよなぁ)」
+      </p>
+      </div>
+      <div class="mem4 right">
+      <span>鷹野 燐</span>
+      <p>
+      
+            「前々から、手塚くんと遠くに離れて暮らそうって話してたんだけどね。」
+      </p>
+      </div>
+      <div class="mem4 right">
+      <span>鷹野 燐</span>
+      <p>
+      
+            「最近、お父さんが知り合いの人と縁談の話をしているのを聞いちゃって。手塚くんと二人で遠くに行こうってなって」
+      </p>
+      </div>
+      <div class="mem5 left">
+      <span>手塚 雅史</span>
+      <p>
+      
+            「それで、月下山の吊り橋から落ちちゃったんだ」
+      </p>
+      </div>
+      <div class="mem1 left">
+      <span>鴻上 麗羅</span>
+      <p>
+      
+            「月下山？」
+      </p>
+      </div>
+      <div class="kp LtoR-early">
+      
+            月下山は、近くにある山のことである。遠足などの定番的なコースもあるけど、裏側は危ないところが多くて、一部は立ち入り禁止になっているね。
+      </div>
+      <div class="kp LtoR-early">
+      
+            最近、近県で大きな地震があって、近付かないようにとニュースになっていたことは覚えていていいよ
+      </div>
+      <div class="mem1 left">
+      <span>鴻上 麗羅</span>
+      <p>
+      
+            「あんな山通んなくても大丈夫じゃない？どこ行く予定だったの？」
+      </p>
+      </div>
+      <div class="mem5 left">
+      <span>手塚 雅史</span>
+      <p>
+      
+            「ちょうど、駅もバス停も組の人が居たみたいで…」
+      </p>
+      </div>
+      <div class="mem5 left">
+      <span>手塚 雅史</span>
+      <p>
+      
+            「そこを通るしかなかったんです」
+      </p>
+      </div>
+      <div class="mem2 right">
+      <span>阿土 咲夜之</span>
+      <p>
+      
+            「その…。大変、だったんですね…。」
+      </p>
+      </div>
+      <div class="mem1 left">
+      <span>鴻上 麗羅</span>
+      <p>
+      
+            行先教えてくれない当たりがもう怪しいのだが
+      </p>
+      </div>
+      <div class="mem1 left">
+      <span>鴻上 麗羅</span>
+      <p>
+      
+            「地震あったし山はまずいっしょ。なんか他の道ないかね」
+      </p>
+      </div>
+      <div class="mem2 right">
+      <span>阿土 咲夜之</span>
+      <p>
+      
+            大変だったんだな…って労ろうとして奢ろうかと思ったけど、この二人お金持ちっぽいし、貧乏人の自分に奢られるなんて、プライド傷つけやしないかな…大丈夫かな…。ってちょっとソワソワします(笑)
+      </p>
+      </div>
+      <div class="mem4 right">
+      <span>鷹野 燐</span>
+      <p>
+      
+            「それしか道がなかったんだってー」
+      </p>
+      </div>
+      <div class="mem1 left">
+      <span>鴻上 麗羅</span>
+      <p>
+      
+            「まぁ無事でよかったよ。それで今は？次の道探し中？」
+      </p>
+      </div>
+      <div class="mem4 right">
+      <span>鷹野 燐</span>
+      <p>
+      
+            「今は、手塚くんの怪我が治ってないし大人しくしてる」
+      </p>
+      </div>
+      <div class="mem5 left">
+      <span>手塚 雅史</span>
+      <p>
+      
+            「ごめんなさい」
+      </p>
+      </div>
+      <div class="mem2 right">
+      <span>阿土 咲夜之</span>
+      <p>
+      
+            応急手当は応急手当だからなー。包帯巻いてあるってことは治療済みだし。振っても意味はないだろうな…
+      </p>
+      </div>
+      <div class="mem1 left">
+      <span>鴻上 麗羅</span>
+      <p>
+      
+            「お大事にね。縁談はいつって決まってんの？あたしに出来ることある？」
+      </p>
+      </div>
+      <div class="mem4 right">
+      <span>鷹野 燐</span>
+      <p>
+      
+            「一応、組の中にも応援してくれてる人もいるし。」
+      </p>
+      </div>
+      <div class="mem1 left">
+      <span>鴻上 麗羅</span>
+      <p>
+      
+            もう手当はしてあるからねぇ
+      </p>
+      </div>
+      <div class="kp LtoR-early">
+      
+            一応、手当はちゃんと受けてますね
+      </div>
+      <div class="mem4 right">
+      <span>鷹野 燐</span>
+      <p>
+      
+            「その、落ちちゃったときもその人に連絡して助けてもらったの」
+      </p>
+      </div>
+      <div class="mem1 left">
+      <span>鴻上 麗羅</span>
+      <p>
+      
+            「そっか。男の人？」
+      </p>
+      </div>
+      <div class="kp LtoR-early">
+      
+            月下山の立ち入り禁止区域は、以前は開発計画が持ち上がっているけど、今は断念されたって聞くね。<br>その影響で電波だけは広く行き届いてるんだって。
+      </div>
+      <div class="mem4 right">
+      <span>鷹野 燐</span>
+      <p>
+      
+            「うん。見城さんって」
+      </p>
+      </div>
+      <div class="mem4 right">
+      <span>鷹野 燐</span>
+      <p>
+      
+            「けど、あの時以来ずっと誰かにみられてるような気がしてさ、少し大人しくしてたんだけど。手塚くんの怪我が気になって今日会おうってなったの」
+      </p>
+      </div>
+      <div class="mem1 left">
+      <span>鴻上 麗羅</span>
+      <p>
+      
+            「それ大丈夫？帰り送ってこうかこいつ」って手塚指さす
+      </p>
+      </div>
+      <div class="mem2 right">
+      <span>阿土 咲夜之</span>
+      <p>
+      
+            「じ、自分、ジョッキーの見習いやってます！馬いっぱいいるとこで働いてます！縁談の時間と場所わかったら、そこに暴れ馬けしかけますね！」
+      </p>
+      </div>
+      <div class="mem5 left">
+      <span>手塚 雅史</span>
+      <p>
+      
+            「いや、一人で帰れますよ」
+      </p>
+      </div>
+      <div class="mem4 right">
+      <span>鷹野 燐</span>
+      <p>
+      
+            「暴れ馬って…」
+      </p>
+      </div>
+      <div class="mem2 right">
+      <span>阿土 咲夜之</span>
+      <p>
+      
+            「会場めちゃくちゃになれば、話有耶無耶になるかなって…。」
+      </p>
+      </div>
+      <div class="mem1 left">
+      <span>鴻上 麗羅</span>
+      <p>
+      
+            「たのもしーじゃん。じゃあ2人いるし阿土っち手塚と帰りなよ。今日だけはとりあえずさ」
+      </p>
+      </div>
+      <div class="mem1 left">
+      <span>鴻上 麗羅</span>
+      <p>
+      
+            「燐はあたし送るよ。まだ話したいし」
+      </p>
+      </div>
+      <div class="mem2 right">
+      <span>阿土 咲夜之</span>
+      <p>
+      
+            「わかりました。手塚さんが良ければ…。」
+      </p>
+      </div>
+      <div class="kp LtoR-early">
+      
+            そんなこんな話をしているとカランカランと音がしますね
+      </div>
+      <div class="kp LtoR-early">
+      
+            麗羅ちゃんと阿土くんには見覚えがないのだが、燐ちゃんと手塚くんはその人の顔をみてあって顔をしている。
+      </div>
+      <div class="mem1 left">
+      <span>鴻上 麗羅</span>
+      <p>
+      
+            かわいい
+      </p>
+      </div>
+      <div class="mem1 left">
+      <span>鴻上 麗羅</span>
+      <p>
+      
+            見城さんかな
+      </p>
+      </div>
+      <div class="mem3 left">
+      <span>？</span>
+      <p>
+      
+            「お嬢、探しませたよ」
+      </p>
+      </div>
+      <div class="mem4 right">
+      <span>鷹野 燐</span>
+      <p>
+      
+            「あっ、見城さん。」
+      </p>
+      </div>
+      <div class="mem4 right">
+      <span>鷹野 燐</span>
+      <p>
+      
+            「紹介するね。さっき話してた見城さんだよ」
+      </p>
+      </div>
+      <div class="mem6 right">
+      <span>見城</span>
+      <p>
+      
+            「お嬢がお世話になってます」
+      </p>
+      </div>
+      <div class="mem1 left">
+      <span>鴻上 麗羅</span>
+      <p>
+      
+            「こちらこそ。燐と手塚助けてくれたって？」
+      </p>
+      </div>
+      <div class="mem6 right">
+      <span>見城</span>
+      <p>
+      
+            「いえ。お嬢と手塚くんを助けるのは俺の為でもありますので」
+      </p>
+      </div>
+      <div class="mem6 right">
+      <span>見城</span>
+      <p>
+      
+            「それに、お嬢。手塚くんだってまだ怪我が治ってない状態なんですから、無理に連れださなくても…」
+      </p>
+      </div>
+      <div class="mem4 right">
+      <span>鷹野 燐</span>
+      <p>
+      
+            「だってー」
+      </p>
+      </div>
+      <div class="mem1 left">
+      <span>鴻上 麗羅</span>
+      <p>
+      
+            心理学持っとくべきだったな
+      </p>
+      </div>
+      <div class="mem1 left">
+      <span>鴻上 麗羅</span>
+      <p>
+      
+            「ねぇ2人の事認めてんのは見城さんだけなの？」
+      </p>
+      </div>
+      <div class="mem4 right">
+      <span>鷹野 燐</span>
+      <p>
+      
+            「他には、見ないかな？やっぱりお父さんがお父さんだし」
+      </p>
+      </div>
+      <div class="mem1 left">
+      <span>鴻上 麗羅</span>
+      <p>
+      
+            「そっか。にしても見城さんがお迎えにきたなら大丈夫かな」
+      </p>
+      </div>
+      <div class="mem4 right">
+      <span>鷹野 燐</span>
+      <p>
+      
+            「けどー。もっといたいじゃんー」
+      </p>
+      </div>
+      <div class="mem6 right">
+      <span>見城</span>
+      <p>
+      
+            「お嬢、いい加減に。」
+      </p>
+      </div>
+      <div class="kp LtoR-early">
+      
+            手塚くんはその二人の様子を微笑みながら見てるけど、傷が痛むのかちょっと顔を歪めてるね
+      </div>
+      <div class="mem2 right">
+      <span>阿土 咲夜之</span>
+      <p>
+      
+            「…高いところから落ちると、痛いですよね…。そりゃあ、山と馬じゃ高さが全然違いますけど、馬も馴れてない人からすると、結構高くて、落ちるの怖いんですよ…。もちろん怪我だってしますし…。その、俺馬鹿なんで、言い回しとか色々変だけど、とにかく、怪我がそれだけで良かったです…。」
+      </p>
+      </div>
+      <div class="kp LtoR-early">
+      
+            そんなことで、一通り情報出したので出て行っても大丈夫ですかい？
+      </div>
+      <div class="mem1 left">
+      <span>鴻上 麗羅</span>
+      <p>
+      
+            「痛そうだし安静にしなよ。あっ手塚LINEやってる？家電しか知らないからさぁ交換しよ」
+      </p>
+      </div>
+      <div class="mem5 left">
+      <span>手塚 雅史</span>
+      <p>
+      
+            「あ、やってます。」
+      </p>
+      </div>
+      <div class="kp LtoR-early">
+      
+            じゃあ、交換って事で
+      </div>
+      <div class="mem1 left">
+      <span>鴻上 麗羅</span>
+      <p>
+      
+            「タメだし敬語じゃなくていいよぉ〜見城さんは？LINEやってる？」
+      </p>
+      </div>
+      <div class="mem6 right">
+      <span>見城</span>
+      <p>
+      
+            「いや、自分は…」
+      </p>
+      </div>
+      <div class="mem1 left">
+      <span>鴻上 麗羅</span>
+      <p>
+      
+            「燐いま大変そうだしさ。なんかあったら教えて欲しいんだよね、友達として」コソッと
+      </p>
+      </div>
+      <div class="mem1 left">
+      <span>鴻上 麗羅</span>
+      <p>
+      
+            スマホもってない以外なら説得ふる？？イケメンの連絡先がほしい
+      </p>
+      </div>
+      <div class="mem2 right">
+      <span>阿土 咲夜之</span>
+      <p>
+      
+            「……ι」
+      </p>
+      </div>
+      <div class="kp LtoR-early">
+      
+            いえ、イケメンの連絡先は販売してません。
+      </div>
+      <div class="mem1 left">
+      <span>鴻上 麗羅</span>
+      <p>
+      
+            スタンプ
+      </p>
+      </div>
+      <div class="kp LtoR-early">
+      
+            イケメンにそれなりの好感度があると思って構いませんか？
+      </div>
+      <div class="mem1 left">
+      <span>鴻上 麗羅</span>
+      <p>
+      
+            恋愛ルートはないけどね
+      </p>
+      </div>
+      <div class="mem1 left">
+      <span>鴻上 麗羅</span>
+      <p>
+      
+            一緒にセルフィーは？？だめ？？
+      </p>
+      </div>
+      <div class="kp LtoR-early">
+      
+            いや、好感度が上がってたら色々減るかなって
+      </div>
+      <div class="mem1 left">
+      <span>鴻上 麗羅</span>
+      <p>
+      
+            もしかして…手塚×見城で手塚の好感度がへる……？！
+      </p>
+      </div>
+      <div class="kp LtoR-early">
+      
+            いいよ。プレゼントしちゃう。交換しよう
+      </div>
+      <div class="mem1 left">
+      <span>鴻上 麗羅</span>
+      <p>
+      
+            ｱ､ﾊｲ
+      </p>
+      </div>
+      <div class="kp LtoR-early">
+      
+            で、いいかな行っても？
+      </div>
+      <div class="mem1 left">
+      <span>鴻上 麗羅</span>
+      <p>
+      
+            好感度ってか組内での燐の様子が知りたいのと燐以外の連絡先がもっと来たかったんだよね
+      </p>
+      </div>
+      <div class="mem1 left">
+      <span>鴻上 麗羅</span>
+      <p>
+      
+            目的は果たしたからおっけ
+      </p>
+      </div>
+      <div class="kp LtoR-early">
+      
+            あっ、大丈夫ですよ。色々別方向でわかりますから
+      </div>
+      <div class="mem1 left">
+      <span>鴻上 麗羅</span>
+      <p>
+      
+            まぁ折角ギャルつくったからコミュ力あるとこアピールだよ
+      </p>
+      </div>
+      <div class="kp LtoR-early">
+      
+            では、燐ちゃんが席を立ちあがった際に一瞬だけ動きを止めたけれども、そのまま何事もなく見城と共に出て行った。
+      </div>
+      <div class="mem1 left">
+      <span>鴻上 麗羅</span>
+      <p>
+      
+            きになるぅ
+      </p>
+      </div>
+      <div class="kp LtoR-early">
+      
+            残された手塚くんは怪我が痛むのか、少し苦しそうな様子でいますね。
+      </div>
+      <div class="mem1 left">
+      <span>鴻上 麗羅</span>
+      <p>
+      
+            あっ手塚くんは送ってくれなかった
+      </p>
+      </div>
+      <div class="mem5 left">
+      <span>手塚 雅史</span>
+      <p>
+      
+            「あはは。怪我が痛むから暫く仕事を休んでたけど、鷹野さんから連絡がきて嬉しくて、つい」
+      </p>
+      </div>
+      <div class="kp LtoR-early">
+      
+            という感じに少し照れてますね。
+      </div>
+      <div class="mem1 left">
+      <span>鴻上 麗羅</span>
+      <p>
+      
+            「今仕事なにしてんの？」
+      </p>
+      </div>
+      <div class="kp LtoR-early">
+      
+            今の子って何やってるの
+      </div>
+      <div class="mem2 right">
+      <span>阿土 咲夜之</span>
+      <p>
+      
+            デンカポリマーが、何とかとか、船とかに使う鉄板の加工とか？
+      </p>
+      </div>
+      <div class="mem2 right">
+      <span>阿土 咲夜之</span>
+      <p>
+      
+            今時の子防錆の資格とかの勉強してる(弟の話)
+      </p>
+      </div>
+      <div class="mem2 right">
+      <span>阿土 咲夜之</span>
+      <p>
+      
+            裏社会の今時の子は知らん…
+      </p>
+      </div>
+      <div class="mem7 left">
+      <span>南 宵一郎</span>
+      <p>
+      
+            みしろたかのさんなの？
+      </p>
+      </div>
+      <div class="mem5 left">
+      <span>手塚 雅史</span>
+      <p>
+      
+            「ちょっと、大学で研究を」
+      </p>
+      </div>
+      <div class="mem1 left">
+      <span>鴻上 麗羅</span>
+      <p>
+      
+            「手塚はもう燐と一緒になる覚悟はしてんの？」
+      </p>
+      </div>
+      <div class="mem5 left">
+      <span>手塚 雅史</span>
+      <p>
+      
+            「もちろんさ」
+      </p>
+      </div>
+      <div class="kp LtoR-early">
+      
+            というか、こっちの情報なくなったのでただの雑談になるのですが
+      </div>
+      <div class="mem1 left">
+      <span>鴻上 麗羅</span>
+      <p>
+      
+            じゃあ適当に雑談したら手塚送って帰ったってことで
+      </p>
+      </div>
+      <div class="kp LtoR-early">
+      
+            はい。わかりました。
+      </div>
+      <div class="kp LtoR-early">
+      
+            あ。阿土くんもそれでよかったかな？
+      </div>
+      <div class="mem2 right">
+      <span>阿土 咲夜之</span>
+      <p>
+      
+            どうぞ
+      </p>
+      </div>
+      <div class="kp LtoR-early">
+      
+            はいはい。では、次に鷹野組のメンバー？に向けてになりますね
+      </div>
+      <div class="kp LtoR-early">
+      
+            ――君たちはそれぞれ友好関係にあった組で、葬式が行われるという知らせを受けた。
+      </div>
+      <div class="kp LtoR-early">
+      
+            えっと、一人は弁護士としてかかわりがあって
+      </div>
+      <div class="kp LtoR-early">
+      
+            もう一人は、なんだ？会社ぐるみか、個人的にも面識があったからこそ、呼ばれたんだろう。
+      </div>
+      <div class="mem8 right">
+      <span>財前 帝</span>
+      <p>
+      
+            一般人いる？
+      </p>
+      </div>
+      <div class="kp LtoR-early">
+      
+            時系列的には喫茶店で燐ちゃんと会って暫くしたころだね
+      </div>
+      <div class="kp LtoR-early">
+      
+            お前のキャラ一体何者だ
+      </div>
+      <div class="kp LtoR-early">
+      
+            個人的に面識があればよばれるんでね
+      </div>
+      <div class="mem8 right">
+      <span>財前 帝</span>
+      <p>
+      
+            大っぴらに絡むのはまずいから…
+      </p>
+      </div>
+      <div class="kp LtoR-early">
+      
+            お前来なかったら合流できないからショゴるぞ
+      </div>
+      <div class="mem8 right">
+      <span>財前 帝</span>
+      <p>
+      
+            プレイヤー的には構わないんだけど…深めの帽子被っても良い？
+      </p>
+      </div>
+      <div class="kp LtoR-early">
+      
+            別にいいけど、関わる気あるの？
+      </div>
+      <div class="mem1 left">
+      <span>鴻上 麗羅</span>
+      <p>
+      
+            弁護士さんの背後で聞き耳たてよ
+      </p>
+      </div>
+      <div class="mem8 right">
+      <span>財前 帝</span>
+      <p>
+      
+            あるよ？<br>表向きちゃんとしてれば問題ないし
+      </p>
+      </div>
+      <div class="mem2 right">
+      <span>阿土 咲夜之</span>
+      <p>
+      
+            盗み聞きww
+      </p>
+      </div>
+      <div class="kp LtoR-early">
+      
+            盗み聞きｗｗｗ
+      </div>
+      <div class="kp LtoR-early">
+      
+            さあ、君たち、誰の葬式だと思うかい
+      </div>
+      <div class="mem7 left">
+      <span>南 宵一郎</span>
+      <p>
+      
+            えぇ～薄幸そうだから手塚くん
+      </p>
+      </div>
+      <div class="mem1 left">
+      <span>鴻上 麗羅</span>
+      <p>
+      
+            死んだwww
+      </p>
+      </div>
+      <div class="mem7 left">
+      <span>南 宵一郎</span>
+      <p>
+      
+            というかれいらちゃんおどくんもその葬式来る感じ？
+      </p>
+      </div>
+      <div class="mem7 left">
+      <span>南 宵一郎</span>
+      <p>
+      
+            殺しちゃったてへぺろ
+      </p>
+      </div>
+      <div class="kp LtoR-early">
+      
+            手塚くん可哀想に
+      </div>
+      <div class="mem1 left">
+      <span>鴻上 麗羅</span>
+      <p>
+      
+            ぱぱんか燐じゃないのかな
+      </p>
+      </div>
+      <div class="kp LtoR-early">
+      
+            呼ばれたのは南さんと帝だね
+      </div>
+      <div class="mem1 left">
+      <span>鴻上 麗羅</span>
+      <p>
+      
+            まぁ正直燐ちゃんと手塚は既に死んでてもおかしくないかなって疑いはした
+      </p>
+      </div>
+      <div class="mem7 left">
+      <span>南 宵一郎</span>
+      <p>
+      
+            幽霊とおしゃべり()
+      </p>
+      </div>
+      <div class="mem8 right">
+      <span>財前 帝</span>
+      <p>
+      
+            誰だ。存ぜぬ。
+      </p>
+      </div>
+      <div class="kp LtoR-early">
+      
+            亡くなった人は、若いながらも周りの人間から認められていた人物だ。
+      </div>
+      <div class="mem7 left">
+      <span>南 宵一郎</span>
+      <p>
+      
+            見城さんか？
+      </p>
+      </div>
+      <div class="kp LtoR-early">
+      
+            そう、見城の葬式である
+      </div>
+      <div class="mem7 left">
+      <span>南 宵一郎</span>
+      <p>
+      
+            唯一の味方死んじゃった
+      </p>
+      </div>
+      <div class="mem2 right">
+      <span>阿土 咲夜之</span>
+      <p>
+      
+            あー…カワイソウニ
+      </p>
+      </div>
+      <div class="mem1 left">
+      <span>鴻上 麗羅</span>
+      <p>
+      
+            LINE形見じゃん
+      </p>
+      </div>
+      <div class="mem8 right">
+      <span>財前 帝</span>
+      <p>
+      
+            よいキツメンを亡くした
+      </p>
+      </div>
+      <div class="mem1 left">
+      <span>鴻上 麗羅</span>
+      <p>
+      
+            惜しいわ
+      </p>
+      </div>
+      <div class="mem1 left">
+      <span>鴻上 麗羅</span>
+      <p>
+      
+            頭の中でシャーマンキングながしとこ
+      </p>
+      </div>
+      <div class="mem2 right">
+      <span>阿土 咲夜之</span>
+      <p>
+      
+            ww
+      </p>
+      </div>
+      <div class="kp LtoR-early">
+      
+            ｗ
+      </div>
+      <div class="mem2 right">
+      <span>阿土 咲夜之</span>
+      <p>
+      
+            よみがーえーれー
+      </p>
+      </div>
+      <div class="kp LtoR-early">
+      
+            では、そんなことなんですが、
+      </div>
+      <div class="kp LtoR-early">
+      
+            死因については組の人は口を噤んで何も話そうとしないわけなんですが、いかがなさいますか？
+      </div>
+      <div class="mem7 left">
+      <span>南 宵一郎</span>
+      <p>
+      
+            組の知り合いに心理学ふれます？
+      </p>
+      </div>
+      <div class="kp LtoR-early">
+      
+            はい、振りますね。
+      </div>
+      <div class="kp LtoR-early">
+      
+            南先生は、組員が彼の死に様に恐怖しているのがわかりますね
+      </div>
+      <div class="mem7 left">
+      <span>南 宵一郎</span>
+      <p>
+      
+            オッきなくせぇな
+      </p>
+      </div>
+      <div class="mem7 left">
+      <span>南 宵一郎</span>
+      <p>
+      
+            というかパパンヌはそのへんの弁護士とおしゃべりしてくれるのかしら
+      </p>
+      </div>
+      <div class="mem8 right">
+      <span>財前 帝</span>
+      <p>
+      
+            葬式って棺の中身見えるっけ？<br>少しでも見えるなら　目星したい
+      </p>
+      </div>
+      <div class="kp LtoR-early">
+      
+            葬式の席では、常に誰かが傍に控えてる状態なので、見せてるような様子ではないですね
+      </div>
+      <div class="kp LtoR-early">
+      
+            そして、現在その傍に燐ちゃんのお父さんが疲弊した様子で座り込んでいますね。
+      </div>
+      <div class="mem8 right">
+      <span>財前 帝</span>
+      <p>
+      
+            帝はわりとしゃべるよ！
+      </p>
+      </div>
+      <div class="kp LtoR-early">
+      
+            ぱぱんぬ話しかけていいよ
+      </div>
+      <div class="kp LtoR-early">
+      
+            無駄なパパンヌ主張
+      </div>
+      <div class="mem8 right">
+      <span>財前 帝</span>
+      <p>
+      
+            「人死になんてよくあることだろう？<br>それが一体今回はどうしたんだい？」
+      </p>
+      </div>
+      <div class="mem7 left">
+      <span>南 宵一郎</span>
+      <p>
+      
+            「どうもお世話になっております。お悔やみ申し上げます」
+      </p>
+      </div>
+      <div class="mem7 left">
+      <span>南 宵一郎</span>
+      <p>
+      
+            マブダチなの？
+      </p>
+      </div>
+      <div class="mem8 right">
+      <span>財前 帝</span>
+      <p>
+      
+            呼ばれるくらいだから　資金提供的な意味でそこそこ上からいけるんじゃないかなーって
+      </p>
+      </div>
+      <div class="mem8 right">
+      <span>財前 帝</span>
+      <p>
+      
+            あ、組長に向けてのセリフねコレ！
+      </p>
+      </div>
+      <div class="mem9 left">
+      <span>組長</span>
+      <p>
+      
+            「先生に、帝さん…」
+      </p>
+      </div>
+      <div class="mem9 left">
+      <span>組長</span>
+      <p>
+      
+            「本日は、わざわざ、すいません」
+      </p>
+      </div>
+      <div class="mem7 left">
+      <span>南 宵一郎</span>
+      <p>
+      
+            「大丈夫ですか？ずいぶんお疲れのようですが……無理もありませんね、惜しい人を亡くしたものだ」
+      </p>
+      </div>
+      <div class="mem9 left">
+      <span>組長</span>
+      <p>
+      
+            「あぁ、見城は…いい奴だった」
+      </p>
+      </div>
+      <div class="kp LtoR-early">
+      
+            お父さんはどこかやつれた様子で答えていくね。
+      </div>
+      <div class="mem7 left">
+      <span>南 宵一郎</span>
+      <p>
+      
+            「お嬢さんのことも、大切にしてらしたようですし……お嬢さんもさぞ残念でしょう」
+      </p>
+      </div>
+      <div class="kp LtoR-early">
+      
+            君たちの知る組長は精力的な人だったけど、<br>今は見る影もないね
+      </div>
+      <div class="mem9 left">
+      <span>組長</span>
+      <p>
+      
+            「っ……りん」
+      </p>
+      </div>
+      <div class="mem8 right">
+      <span>財前 帝</span>
+      <p>
+      
+            「ふぅん　そうかい」
+      </p>
+      </div>
+      <div class="mem7 left">
+      <span>南 宵一郎</span>
+      <p>
+      
+            「……お嬢さんが、どうかなされましたか？」
+      </p>
+      </div>
+      <div class="mem9 left">
+      <span>組長</span>
+      <p>
+      
+            「数日前から、燐が行方不明になっているんだ」
+      </p>
+      </div>
+      <div class="mem7 left">
+      <span>南 宵一郎</span>
+      <p>
+      
+            「……なんですって？」
+      </p>
+      </div>
+      <div class="mem9 left">
+      <span>組長</span>
+      <p>
+      
+            「見城が死ぬ数日前に行方不明になっているんだ」
+      </p>
+      </div>
+      <div class="mem7 left">
+      <span>南 宵一郎</span>
+      <p>
+      
+            「そうだったんですか……なにやら、見城さんの死因についても誰も口を割ってくださらないですし……心配ですね。捜索願いは？」
+      </p>
+      </div>
+      <div class="mem8 right">
+      <span>財前 帝</span>
+      <p>
+      
+            「子供の家出だろうよ」
+      </p>
+      </div>
+      <div class="mem7 left">
+      <span>南 宵一郎</span>
+      <p>
+      
+            「財前さん、お嬢さんが行方不明の上、彼女が懐いていた人が亡くなられたんですよ。可笑しいとは思わないんです？」
+      </p>
+      </div>
+      <div class="mem8 right">
+      <span>財前 帝</span>
+      <p>
+      
+            「はぁ　うちも同じようなものでね　探したければ探せば良いんじゃないか？<br>人手は腐るほどあるだろう？」
+      </p>
+      </div>
+      <div class="mem8 right">
+      <span>財前 帝</span>
+      <p>
+      
+            参列の若い衆を一瞥します
+      </p>
+      </div>
+      <div class="mem7 left">
+      <span>南 宵一郎</span>
+      <p>
+      
+            「……鷹野さん。なにか、大っぴらに探せない事情でも？」
+      </p>
+      </div>
+      <div class="mem7 left">
+      <span>南 宵一郎</span>
+      <p>
+      
+            そっかパパンヌとりんちゃんが鷹野だった
+      </p>
+      </div>
+      <div class="mem9 left">
+      <span>組長</span>
+      <p>
+      
+            「最初は、燐が好いている相手の所に上がり込んでるんだと思ったんだ」
+      </p>
+      </div>
+      <div class="mem9 left">
+      <span>組長</span>
+      <p>
+      
+            「だが、こうして見城が死んで……それにもし燐が巻き込まれてるんだとしたら」
+      </p>
+      </div>
+      <div class="mem8 right">
+      <span>財前 帝</span>
+      <p>
+      
+            一応心理学を頼みます
+      </p>
+      </div>
+      <div class="mem7 left">
+      <span>南 宵一郎</span>
+      <p>
+      
+            「燐さんが好かれていらっしゃる方に連絡を取ることはできないのですか？」
+      </p>
+      </div>
+      <div class="mem9 left">
+      <span>組長</span>
+      <p>
+      
+            「だが、組を継ぐ以上相応の人間じゃないと、と思って反対してきたんだ」
+      </p>
+      </div>
+      <div class="kp LtoR-early">
+      
+            心理学振りますね。
+      </div>
+      <div class="kp LtoR-early">
+      
+            お父さんは知りません。名前まで知らないからね
+      </div>
+      <div class="kp LtoR-early">
+      
+            ぱぱんは純粋に娘を心配してますね
+      </div>
+      <div class="mem7 left">
+      <span>南 宵一郎</span>
+      <p>
+      
+            そぉか
+      </p>
+      </div>
+      <div class="kp LtoR-early">
+      
+            もうぱぱん頭を抱え込むようにして蹲っちゃった
+      </div>
+      <div class="mem7 left">
+      <span>南 宵一郎</span>
+      <p>
+      
+            パパンヌ……
+      </p>
+      </div>
+      <div class="mem7 left">
+      <span>南 宵一郎</span>
+      <p>
+      
+            かわいそう
+      </p>
+      </div>
+      <div class="kp LtoR-early">
+      
+            あ、情報渡し忘れたわ
+      </div>
+      <div class="kp LtoR-early">
+      
+            順番に行こう。
+      </div>
+      <div class="kp LtoR-early">
+      
+            もう、ぱぱんの憔悴の理由が見城が死んだだけじゃなくて、燐ちゃんも行方不明になってるってのがよくわかるね。
+      </div>
+      <div class="mem7 left">
+      <span>南 宵一郎</span>
+      <p>
+      
+            あい
+      </p>
+      </div>
+      <div class="mem8 right">
+      <span>財前 帝</span>
+      <p>
+      
+            ﾍｲ
+      </p>
+      </div>
+      <div class="kp LtoR-early">
+      
+            それでぱぱんはそっと一枚の紙を渡してきます。
+      </div>
+      <div class="mem9 left">
+      <span>組長</span>
+      <p>
+      
+            「燐が行方不明になってから、燐の部屋で見つけたものだ」
+      </p>
+      </div>
+      <div class="mem7 left">
+      <span>南 宵一郎</span>
+      <p>
+      
+            「拝見しましょう」受けとります
+      </p>
+      </div>
+      <div class="kp LtoR-early">
+      
+            <br>――――――――――――――――――――――<br><br>
+      </div>
+      <div class="kp LtoR-early">
+      
+            「声が聞こえるの。<br>　私を呼ぶ声が。<br>　いつ、何をしていても、聞こえてくる。<br>　たとえ私の姿がみえなくなったとしても、<br>　少しの間、そっとしておいてください。<br>　見城さん、後のことはよろしくお願いします。<br><br>　手塚くん、ごめんね。」
+      </div>
+      <div class="kp LtoR-early">
+      
+            <br><br>――――――――――――――――――――――<br>
+      </div>
+      <div class="mem8 right">
+      <span>財前 帝</span>
+      <p>
+      
+            この場で見ても大丈夫？
+      </p>
+      </div>
+      <div class="kp LtoR-early">
+      
+            大丈夫よ
+      </div>
+      <div class="mem7 left">
+      <span>南 宵一郎</span>
+      <p>
+      
+            「……これは、燐さんの筆跡ですか？」
+      </p>
+      </div>
+      <div class="mem9 left">
+      <span>組長</span>
+      <p>
+      
+            「あぁ」
+      </p>
+      </div>
+      <div class="mem8 right">
+      <span>財前 帝</span>
+      <p>
+      
+            「宗教かなんかにはまったんじゃないのか？<br>あと　テヅカって誰だ」
+      </p>
+      </div>
+      <div class="mem7 left">
+      <span>南 宵一郎</span>
+      <p>
+      
+            「こう言ってはなんですが、なんだか奇妙ですね……燐さんのご友人などとは連絡は？」
+      </p>
+      </div>
+      <div class="mem9 left">
+      <span>組長</span>
+      <p>
+      
+            「もしかしたら、そいつが相手なのかもしれん」
+      </p>
+      </div>
+      <div class="mem7 left">
+      <span>南 宵一郎</span>
+      <p>
+      
+            「この文面だと、燐さんがお慕いしていらっしゃる方でしょうね」
+      </p>
+      </div>
+      <div class="mem9 left">
+      <span>組長</span>
+      <p>
+      
+            「確か、最近喫茶店で友人と会ったと見城が…」
+      </p>
+      </div>
+      <div class="kp LtoR-early">
+      
+            （言いたい事を察してね）
+      </div>
+      <div class="mem7 left">
+      <span>南 宵一郎</span>
+      <p>
+      
+            「見城さんのスマートフォンなんかに、連絡先は入っていないんですかね」
+      </p>
+      </div>
+      <div class="mem7 left">
+      <span>南 宵一郎</span>
+      <p>
+      
+            ロックかかってるかなぁ
+      </p>
+      </div>
+      <div class="mem8 right">
+      <span>財前 帝</span>
+      <p>
+      
+            「喫茶な　若い衆でも向かわせれば良いんじゃないか？<br>私は忙しいんだ」<br>(喫茶には向かうから　大丈夫)
+      </p>
+      </div>
+      <div class="kp LtoR-early">
+      
+            ツンデレかな
+      </div>
+      <div class="mem8 right">
+      <span>財前 帝</span>
+      <p>
+      
+            恩を売るんだよ！
+      </p>
+      </div>
+      <div class="kp LtoR-early">
+      
+            売れるのかな、これで
+      </div>
+      <div class="mem7 left">
+      <span>南 宵一郎</span>
+      <p>
+      
+            「喫茶店……ですか。場所がわかれば私がいきますよ」
+      </p>
+      </div>
+      <div class="mem9 left">
+      <span>組長</span>
+      <p>
+      
+            「先生、ありがとう。燐を……あの子を、どうか頼む。<br>無事に帰ってきてくれさえくれれば……もう、それで……。<br>別れろだの、縁談だのとはもう言わないから。<br>だから、どうか……」
+      </p>
+      </div>
+      <div class="kp LtoR-early">
+      
+            最後に嗚咽混じりで組長が伝えてきますね
+      </div>
+      <div class="kp LtoR-early">
+      
+            あ、喫茶Aliceだって知ってていいですよ
+      </div>
+      <div class="mem7 left">
+      <span>南 宵一郎</span>
+      <p>
+      
+            じゃあ知ってよう
+      </p>
+      </div>
+      <div class="mem8 right">
+      <span>財前 帝</span>
+      <p>
+      
+            焼香とか終わり次第向かおうか
+      </p>
+      </div>
+      <div class="kp LtoR-early">
+      
+            あと、葬式夜だと思うのですが。たぶん時間帯的に
+      </div>
+      <div class="kp LtoR-early">
+      
+            閉まってるのですが、喫茶店
+      </div>
+      <div class="mem8 right">
+      <span>財前 帝</span>
+      <p>
+      
+            そうなの？葬式わっかんね
+      </p>
+      </div>
+      <div class="mem7 left">
+      <span>南 宵一郎</span>
+      <p>
+      
+            「鷹野さん……大丈夫です、ご安心を。できる限り早く、お嬢さんを見つけられるよう、協力させてください」
+      </p>
+      </div>
+      <div class="mem7 left">
+      <span>南 宵一郎</span>
+      <p>
+      
+            じゃあ次の日かな
+      </p>
+      </div>
+      <div class="kp LtoR-early">
+      
+            では、こちら側のは終わるのですが、
+      </div>
+      <div class="mem8 right">
+      <span>財前 帝</span>
+      <p>
+      
+            「若い衆も使えなさそうだな　情けない」
+      </p>
+      </div>
+      <div class="kp LtoR-early">
+      
+            ちょっとここで、麗羅ちゃんのパートになるわけなのです
+      </div>
+      <div class="mem7 left">
+      <span>南 宵一郎</span>
+      <p>
+      
+            込み入ってるなー
+      </p>
+      </div>
+      <div class="kp LtoR-early">
+      
+            あ、その前に特に進展しないのですが、二人だけアイデアどうぞ
+      </div>
+      <div class="kp LtoR-early">
+      
+            いいや、全員でも
+      </div>
+      <div class="mem7 left">
+      <span>南 宵一郎</span>
+      <p>
+      
+            まっ
+      </p>
+      </div>
+      <div class="kp LtoR-early">
+      
+            内容共有するんならアイデアしてもらった方が面白そうだし
+      </div>
+      <div class="mem7 left">
+      <span>南 宵一郎</span>
+      <p>
+      
+            95
+      </p>
+      </div>
+      <div class="mem8 right">
+      <span>財前 帝</span>
+      <p>
+      
+            83　ダメ。
+      </p>
+      </div>
+      <div class="kp LtoR-early">
+      
+             96～だからセーフ
+      </div>
+      <div class="mem7 left">
+      <span>南 宵一郎</span>
+      <p>
+      
+            よかった！！
+      </p>
+      </div>
+      <div class="mem7 left">
+      <span>南 宵一郎</span>
+      <p>
+      
+            失敗してるけど
+      </p>
+      </div>
+      <div class="kp LtoR-early">
+      
+            ただの便箋の内容だったなぁ
+      </div>
+      <div class="kp LtoR-early">
+      
+            じゃあ、麗羅ちゃんに向けて最初の情報流して僕は転がるよ
+      </div>
+      <div class="kp LtoR-early">
+      
+            見城の葬式が行われているのと同じ時間帯、麗羅ちゃんの元に一つのLINEが届きます。
+      </div>
+      <div class="kp LtoR-early">
+      
+            手塚から、燐ちゃんの行方を知らないかという、連絡でした。
+      </div>
+      <div class="mem1 left">
+      <span>鴻上 麗羅</span>
+      <p>
+      
+            燐ちゃんにLINEおくってSNSとか燐ちゃんについて確認したあとに、手塚くんに
+      </p>
+      </div>
+      <div class="mem1 left">
+      <span>鴻上 麗羅</span>
+      <p>
+      
+            「今どこ、どゆこと？詳しく話して」ってLINE
+      </p>
+      </div>
+      <div class="mem2 right">
+      <span>阿土 咲夜之</span>
+      <p>
+      
+            お通夜は夜だけど葬式はどっちかと言うと朝が多いよ…。だから時間によっては喫茶店やってるんじゃないかな…。
+      </p>
+      </div>
+      <div class="kp LtoR-early">
+      
+            この世界は夜だったんだよ！きっと！
+      </div>
+      <div class="mem2 right">
+      <span>阿土 咲夜之</span>
+      <p>
+      
+            ええ…。それで都合いいならいいけど、骨遺体焼いたりする時間あるんだから実際夜はきついで…(笑)
+      </p>
+      </div>
+      <div class="kp LtoR-early">
+      
+            麗羅ちゃんの方にも連絡が言ってない事を知って、少し気落ちしたような返信が戻ってくる」
+      </div>
+      <div class="mem5 left">
+      <span>手塚 雅史</span>
+      <p>
+      
+            「彼女、どうも数日前から自宅にも戻ってないみたいで」
+      </p>
+      </div>
+      <div class="mem5 left">
+      <span>手塚 雅史</span>
+      <p>
+      
+            「あちこち探してみるつもりだけど。もし何かわかったら、連絡ください」
+      </p>
+      </div>
+      <div class="mem1 left">
+      <span>鴻上 麗羅</span>
+      <p>
+      
+            喫茶店で会ってどのくらい立ってるの？
+      </p>
+      </div>
+      <div class="kp LtoR-early">
+      
+            相当逼迫している様子だなぁって思える。
+      </div>
+      <div class="kp LtoR-early">
+      
+            えっと、葬式が喫茶店再開して暫く経ってないぐらいってコトだから…そのぐらい
+      </div>
+      <div class="mem1 left">
+      <span>鴻上 麗羅</span>
+      <p>
+      
+            翌日？
+      </p>
+      </div>
+      <div class="mem2 right">
+      <span>阿土 咲夜之</span>
+      <p>
+      
+            もしかして喫茶店で会ってしばらくのしばらくって、時間じゃなくて日数…？
+      </p>
+      </div>
+      <div class="kp LtoR-early">
+      
+            んー。数日単位かな
+      </div>
+      <div class="mem1 left">
+      <span>鴻上 麗羅</span>
+      <p>
+      
+            帰ってすぐ殺されたのかとおもったわ
+      </p>
+      </div>
+      <div class="kp LtoR-early">
+      
+            すぐではなさそうだねぇ
+      </div>
+      <div class="kp LtoR-early">
+      
+            まぁ、手塚くんが燐ちゃん失踪って連絡を入れるだけなので、どうぞ次の日に行って大丈夫です。
+      </div>
+      <div class="mem1 left">
+      <span>鴻上 麗羅</span>
+      <p>
+      
+            月下山に行きたいけどほかの人と合流したほうがいいのかな。<br>探偵いるし最後に会ったから次の日に喫茶店いこ
+      </p>
+      </div>
+      <div class="kp LtoR-early">
+      
+            はい。麗羅ちゃんは次の日喫茶店ねー
+      </div>
+      <div class="mem1 left">
+      <span>鴻上 麗羅</span>
+      <p>
+      
+            阿土君にも夜連絡しとくね
+      </p>
+      </div>
+      <div class="kp LtoR-early">
+      
+            おじグループも確か、喫茶店行くって言ってたかな
+      </div>
+      <div class="kp LtoR-early">
+      
+            阿土くんが酷い興味のない人でなければ全員喫茶店で合流するか
+      </div>
+      <div class="mem1 left">
+      <span>鴻上 麗羅</span>
+      <p>
+      
+            いい人そうだから来てくれるよきっと
+      </p>
+      </div>
+      <div class="kp LtoR-early">
+      
+            一時期合流まで出来るか心配だった（濃い人たちを見て）
+      </div>
+      <div class="kp LtoR-early">
+      
+            あぁ、たぶん情報共有されると思うから麗羅ちゃんと阿土くんもアイデアふっちゃってー
+      </div>
+      <div class="mem1 left">
+      <span>鴻上 麗羅</span>
+      <p>
+      
+            ありすちゃんの喫茶店裏の人も使うもんね。便利かあ
+      </p>
+      </div>
+      <div class="mem1 left">
+      <span>鴻上 麗羅</span>
+      <p>
+      
+            75しっぱい
+      </p>
+      </div>
+      <div class="kp LtoR-early">
+      
+            有栖の所は、ギャングから警察から、極道から、なんでも利用する人はするよ
+      </div>
+      <div class="mem2 right">
+      <span>阿土 咲夜之</span>
+      <p>
+      
+            知り合いからの連絡なんだったら呼ばれれば行くよ(笑)「お前の会ったこともない遠い親戚が死んだから」って言われたら馬優先するけど(笑)
+      </p>
+      </div>
+      <div class="kp LtoR-early">
+      
+            つい最近会ったばかりの可愛いんだろうなって言ってた燐ちゃんが消えたんだぞ
+      </div>
+      <div class="mem2 right">
+      <span>阿土 咲夜之</span>
+      <p>
+      
+            62でーす失敗
+      </p>
+      </div>
+      <div class="kp LtoR-early">
+      
+            って言ってますね
+      </div>
+      <div class="mem1 left">
+      <span>鴻上 麗羅</span>
+      <p>
+      
+            手塚くんも死にそうだよなぁ
+      </p>
+      </div>
+      <div class="mem1 left">
+      <span>鴻上 麗羅</span>
+      <p>
+      
+            全員アイデアだめだな( ˇωˇ )
+      </p>
+      </div>
+      <div class="kp LtoR-early">
+      
+            ちくしょう
+      </div>
+      <div class="mem2 right">
+      <span>阿土 咲夜之</span>
+      <p>
+      
+            可愛いんだろうなは思ってただけで口にしてないし、物覚え悪いから数日前に1度だけならきっともう顔忘れてるよ藁
+      </p>
+      </div>
+      <div class="mem2 right">
+      <span>阿土 咲夜之</span>
+      <p>
+      
+            だからどうして藁が先に…
+      </p>
+      </div>
+      <div class="kp LtoR-early">
+      
+            藁が好きなんだよ
+      </div>
+      <div class="kp LtoR-early">
+      
+            じゃあ、みんな、脳裏にパワポケが浮かぶだけで、後は何もわからなかったです
+      </div>
+      <div class="mem2 right">
+      <span>阿土 咲夜之</span>
+      <p>
+      
+            パワポケ？パワプロクンポケット？
+      </p>
+      </div>
+      <div class="kp LtoR-early">
+      
+            パワポケダッシュ
+      </div>
+      <div class="mem2 right">
+      <span>阿土 咲夜之</span>
+      <p>
+      
+            わからぬ…
+      </p>
+      </div>
+      <div class="kp LtoR-early">
+      
+            アイデア成功してれば普通に答えが出てたよ！
+      </div>
+      <div class="kp LtoR-early">
+      
+            しかもみんな数値高かったし(´・ω・`)
+      </div>
+      <div class="mem2 right">
+      <span>阿土 咲夜之</span>
+      <p>
+      
+            お馬鹿だからアイデア50ないんだもんさ…。
+      </p>
+      </div>
+      <div class="kp LtoR-early">
+      
+            まぁ、自力で攻略するか。別にこれフラグじゃないし関係ないやでスルーしてもいいね。フラグ回収はしないから
+      </div>
+      <div class="kp LtoR-early">
+      
+            中の人がアイデア高いから自力で分かるって
+      </div>
+      <div class="mem2 right">
+      <span>阿土 咲夜之</span>
+      <p>
+      
+            専門用語はしらぬ…
+      </p>
+      </div>
+      <div class="kp LtoR-early">
+      
+            いや、あのお父さんが出したメモをちょっと変換すれば一発だよ
+      </div>
+      <div class="kp LtoR-early">
+      
+            僕がはじめてその情報を知った時は震えたからねぇ
+      </div>
+      <div class="mem1 left">
+      <span>鴻上 麗羅</span>
+      <p>
+      
+            パワポケやったことないな
+      </p>
+      </div>
+      <div class="kp LtoR-early">
+      
+            僕もやったことないけど、そのネタは知ってた
+      </div>
+      <div class="mem1 left">
+      <span>鴻上 麗羅</span>
+      <p>
+      
+            ネタも知らない…
+      </p>
+      </div>
+      <div class="kp LtoR-early">
+      
+            元ネタがパワポケだったんだレベルで
+      </div>
+      <div class="mem2 right">
+      <span>阿土 咲夜之</span>
+      <p>
+      
+            知らないネタだと変換すればわかるよとか言われてもわからん…
+      </p>
+      </div>
+      <div class="kp LtoR-early">
+      
+            まぁ、いいや。言っちゃおう。反応みたいし。
+      </div>
+      <div class="mem2 right">
+      <span>阿土 咲夜之</span>
+      <p>
+      
+            私の変換力が生きるのは火曜夜7時にフジテレビでやってるクイズ番組だけだ…
+      </p>
+      </div>
+      <div class="kp LtoR-early">
+      
+            <br>――――――――――――――――――――――<br><br>
+      </div>
+      <div class="kp LtoR-early">
+      
+            「こえがきこえるの。<br> わたしをよぶこえが。<br>    いつ、なにをしていても、きこえてくる。<br> たとえわたしのすがたがみえなくなったとしても、<br> すこしのあいだ、そっとしておいてください<br> けんじょうさん、あとのことはよろしくおねがいします。<br>    てづかくん、ごめんね。」
+      </div>
+      <div class="kp LtoR-early">
+      
+            <br><br>――――――――――――――――――――――<br>
+      </div>
+      <div class="mem1 left">
+      <span>鴻上 麗羅</span>
+      <p>
+      
+            なるほど…縦読みしたのに気が付かなかった私のリアルアイデアがくそ
+      </p>
+      </div>
+      <div class="mem1 left">
+      <span>鴻上 麗羅</span>
+      <p>
+      
+            あとみしろさんって呼んでた
+      </p>
+      </div>
+      <div class="kp LtoR-early">
+      
+            けんじょう　です
+      </div>
+      <div class="mem1 left">
+      <span>鴻上 麗羅</span>
+      <p>
+      
+            燐ちゃんがなにかしらの儀式したのかと思ったけど白だったか
+      </p>
+      </div>
+      <div class="kp LtoR-early">
+      
+            よく縦読みでなんかくるけど、パワポケのネタであったんだーって思った
+      </div>
+      <div class="mem1 left">
+      <span>鴻上 麗羅</span>
+      <p>
+      
+            そうなんだ
+      </p>
+      </div>
+      <div class="mem2 right">
+      <span>阿土 咲夜之</span>
+      <p>
+      
+            それヒントパワポケじゃなくてよかったんじゃないか…？
+      </p>
+      </div>
+      <div class="kp LtoR-early">
+      
+            まぁ、そういうことで。燐ちゃんの手紙はとても楽しい事になってます。（以上）
+      </div>
+      <div class="kp LtoR-early">
+      
+            全員適当に合流しちゃってー( ˘ω˘ )
+      </div>
+      <div class="mem2 right">
+      <span>阿土 咲夜之</span>
+      <p>
+      
+            とりあえず詳しい事情を聞きに喫茶店行きます。
+      </p>
+      </div>
+      <div class="kp LtoR-early">
+      
+            みんな揃うよね？一人だけやってられるかこんにゃろーっていって離脱しないよね？
+      </div>
+      <div class="kp LtoR-early">
+      
+            お店に入ってくる順番は好きでいいので
+      </div>
+      <div class="mem7 left">
+      <span>南 宵一郎</span>
+      <p>
+      
+            時間帯どのくらい？
+      </p>
+      </div>
+      <div class="kp LtoR-early">
+      
+            喫茶店開くのは9時ぐらいだよ？仕込みから入るから
+      </div>
+      <div class="kp LtoR-early">
+      
+            ただ、どの時間がいいかっていうのはこちらから提示はしないし。どの時間帯でも対処はできるよ
+      </div>
+      <div class="mem1 left">
+      <span>鴻上 麗羅</span>
+      <p>
+      
+            麗羅は10時くらいにブランチついでに行こうかな
+      </p>
+      </div>
+      <div class="mem7 left">
+      <span>南 宵一郎</span>
+      <p>
+      
+            待ち合わせしてないしなー
+      </p>
+      </div>
+      <div class="mem7 left">
+      <span>南 宵一郎</span>
+      <p>
+      
+            じゃあ仕事がひとだんらくした11時くらいにお昼がてら行きましょう
+      </p>
+      </div>
+      <div class="kp LtoR-early">
+      
+            まぁ、ご都合主義で10時に合流できたでもいいよ
+      </div>
+      <div class="mem7 left">
+      <span>南 宵一郎</span>
+      <p>
+      
+            オムライスつつきつつタブレットでノマド
+      </p>
+      </div>
+      <div class="mem8 right">
+      <span>財前 帝</span>
+      <p>
+      
+            10時くらいに予約の電話入れようかな<br>話聞きたいんだけどー？って
+      </p>
+      </div>
+      <div class="kp LtoR-early">
+      
+            誰に予約の電話
+      </div>
+      <div class="mem8 right">
+      <span>財前 帝</span>
+      <p>
+      
+            その日働いてた従業員に
+      </p>
+      </div>
+      <div class="kp LtoR-early">
+      
+            あ。安心してください。個人情報は言わないので。
+      </div>
+      <div class="kp LtoR-early">
+      
+            というより、普通に行けば会えるんじゃないかな？（遠い目）
+      </div>
+      <div class="kp LtoR-early">
+      
+            まぁ、初めましてだから何も言えないけどね
+      </div>
+      <div class="kp LtoR-early">
+      
+            見た目的に麗羅ちゃんがお嬢の年に近いなぐらいだよ
+      </div>
+      <div class="mem8 right">
+      <span>財前 帝</span>
+      <p>
+      
+            ちゃんと教育されている。<br>ダメじゃんもう殺せ
+      </p>
+      </div>
+      <div class="kp LtoR-early">
+      
+            NPCを殺そうとしないで下さい。
+      </div>
+      <div class="mem8 right">
+      <span>財前 帝</span>
+      <p>
+      
+            PCをだよ？詰みだよ？
+      </p>
+      </div>
+      <div class="kp LtoR-early">
+      
+            普通にナンパの要領でお嬢知ってるーって話しかけたら一発じゃん
+      </div>
+      <div class="mem7 left">
+      <span>南 宵一郎</span>
+      <p>
+      
+            金持ちのおじさんが若い女の子に話しかけるの大分あやしくない？
+      </p>
+      </div>
+      <div class="kp LtoR-early">
+      
+            なら弁護士さんから話しかけてもいいのよ？
+      </div>
+      <div class="kp LtoR-early">
+      
+            どっちにしろ一歩間違えたら危ないけど
+      </div>
+      <div class="mem1 left">
+      <span>鴻上 麗羅</span>
+      <p>
+      
+            じゃあ麗羅が喫茶店でダチの燐が行方不明なんだけど探偵っていくらすんの？って雑談してるから話かけてくれ
+      </p>
+      </div>
+      <div class="kp LtoR-early">
+      
+            法律的な観点から弁護士が話しかけにいくのかな（）
+      </div>
+      <div class="mem1 left">
+      <span>鴻上 麗羅</span>
+      <p>
+      
+            そしてカイザーさんが話は聞かせてもらった！ってジョジョ立ちで登場すれば完璧な出会い
+      </p>
+      </div>
+      <div class="kp LtoR-early">
+      
+            それは濃い
+      </div>
+      <div class="mem8 right">
+      <span>財前 帝</span>
+      <p>
+      
+            練習させとこう
+      </p>
+      </div>
+      <div class="mem7 left">
+      <span>南 宵一郎</span>
+      <p>
+      
+            すまん持ち物に名刺追加していいかね
+      </p>
+      </div>
+      <div class="kp LtoR-early">
+      
+            そのぐらいなら弁護士さんなら持ってるよね。
+      </div>
+      <div class="mem7 left">
+      <span>南 宵一郎</span>
+      <p>
+      
+            そんでなんとなく怪しそうなひとに「こういうものですが、探し人をしておりまして」と声をかけまくります
+      </p>
+      </div>
+      <div class="mem7 left">
+      <span>南 宵一郎</span>
+      <p>
+      
+            そうこうしてるうちに麗羅ちゃんにも声をかけます
+      </p>
+      </div>
+      <div class="mem7 left">
+      <span>南 宵一郎</span>
+      <p>
+      
+            かいざーさんと宵一郎さんは知り合いだからかいざーさんが来たら宵一郎さんに気づけばよいかなと
+      </p>
+      </div>
+      <div class="kp LtoR-early">
+      
+            二人ずつで行動してるのでは？
+      </div>
+      <div class="mem7 left">
+      <span>南 宵一郎</span>
+      <p>
+      
+            そうなの？
+      </p>
+      </div>
+      <div class="mem8 right">
+      <span>財前 帝</span>
+      <p>
+      
+            そうなのか？
+      </p>
+      </div>
+      <div class="kp LtoR-early">
+      
+            先生と帝さんと一緒だと
+      </div>
+      <div class="kp LtoR-early">
+      
+            なんかかれこれ会話してたし
+      </div>
+      <div class="kp LtoR-early">
+      
+            麗羅ちゃんと阿土くんで会話してるんでしょ？
+      </div>
+      <div class="mem8 right">
+      <span>財前 帝</span>
+      <p>
+      
+            待ち合わせしてないからなぁ
+      </p>
+      </div>
+      <div class="kp LtoR-early">
+      
+            ほらー
+      </div>
+      <div class="mem7 left">
+      <span>南 宵一郎</span>
+      <p>
+      
+            麗羅ちゃんとおどくん一緒にいるの？
+      </p>
+      </div>
+      <div class="kp LtoR-early">
+      
+            麗羅ちゃんが独り言になっちゃう。
+      </div>
+      <div class="kp LtoR-early">
+      
+            店員さんにだったら、阿土くんがソロになっちゃうし
+      </div>
+      <div class="mem1 left">
+      <span>鴻上 麗羅</span>
+      <p>
+      
+            阿土くんとごはん食べながら話してるよ
+      </p>
+      </div>
+      <div class="kp LtoR-early">
+      
+            だよね。そうしないと合流しないもんね、
+      </div>
+      <div class="mem1 left">
+      <span>鴻上 麗羅</span>
+      <p>
+      
+            名刺受け取っていい？設定きまってから時動かす？
+      </p>
+      </div>
+      <div class="kp LtoR-early">
+      
+            そして、時が動き出す
+      </div>
+      <div class="mem7 left">
+      <span>南 宵一郎</span>
+      <p>
+      
+            なるほど
+      </p>
+      </div>
+      <div class="mem1 left">
+      <span>鴻上 麗羅</span>
+      <p>
+      
+            「なに？あたしも人探してて忙しいんだけど」<br>パスタもぐもぐしながら
+      </p>
+      </div>
+      <div class="mem7 left">
+      <span>南 宵一郎</span>
+      <p>
+      
+            「失礼ですが、探している方はどのような方で？私が探しているのは、燐さん、という、ちょうどあなたと同じくらいの歳の女性なのですが」
+      </p>
+      </div>
+      <div class="mem1 left">
+      <span>鴻上 麗羅</span>
+      <p>
+      
+            「……誰に言われて探してるの」
+      </p>
+      </div>
+      <div class="mem1 left">
+      <span>鴻上 麗羅</span>
+      <p>
+      
+            だめだーパパンにあんまいい感情ないから対立しそう…だれか癒し…阿土くーん！！
+      </p>
+      </div>
+      <div class="mem8 right">
+      <span>財前 帝</span>
+      <p>
+      
+            心配してることが伝われば良いんだけど…どうしよっかな
+      </p>
+      </div>
+      <div class="mem7 left">
+      <span>南 宵一郎</span>
+      <p>
+      
+            「見城さん、という方が亡くなられたんです。それで、お嬢さんも行方不明ということで、彼女のお父様が大変心配しておいででして」
+      </p>
+      </div>
+      <div class="kp LtoR-early">
+      
+            麗羅ちゃん、見城さんでSNAちぇしとく？
+      </div>
+      <div class="mem1 left">
+      <span>鴻上 麗羅</span>
+      <p>
+      
+            「見城さんが…？だから既読ないんだ…」
+      </p>
+      </div>
+      <div class="mem1 left">
+      <span>鴻上 麗羅</span>
+      <p>
+      
+            どうだろ。極道ってしってるからな…
+      </p>
+      </div>
+      <div class="kp LtoR-early">
+      
+            麗羅ちゃん一般人でしょｗｗｗ死ぬのに慣れてないでしょｗｗｗ
+      </div>
+      <div class="mem1 left">
+      <span>鴻上 麗羅</span>
+      <p>
+      
+            「燐のパパほんとに心配してた？」
+      </p>
+      </div>
+      <div class="mem1 left">
+      <span>鴻上 麗羅</span>
+      <p>
+      
+            ギャルとオネェは強いってのが私の自論
+      </p>
+      </div>
+      <div class="mem7 left">
+      <span>南 宵一郎</span>
+      <p>
+      
+            「それはもう。涙ぐんでいらっしゃいましたよ。なんでも、ここだけの話ですが、見城さんの死因がはっきりなさっていないようで……それもあって、より心配されているようです。事件に巻き込まれてはいないかと」
+      </p>
+      </div>
+      <div class="mem1 left">
+      <span>鴻上 麗羅</span>
+      <p>
+      
+            「そっか……。ん、まぁ座んなよ。あたし燐のダチで鴻上麗羅。そっちが阿土っち」
+      </p>
+      </div>
+      <div class="kp LtoR-early">
+      
+            まぁ、ここでSAN減らさなくていいか。
+      </div>
+      <div class="mem7 left">
+      <span>南 宵一郎</span>
+      <p>
+      
+            「では、失礼して。私は弁護士をしております南と申します。仕事柄鷹野さんとはお付き合いがありまして、私に白羽の矢が立ったというわけでして。鴻上さんと阿土さんが探しているのも燐さん、で間違いないでしょうか？」
+      </p>
+      </div>
+      <div class="mem1 left">
+      <span>鴻上 麗羅</span>
+      <p>
+      
+            「そ、こないだここで話してからどっか行っちゃったみたいでLINEも返さない。彼氏の方から昨日帰ってないって聞いてさ、さがしてんの」
+      </p>
+      </div>
+      <div class="mem2 right">
+      <span>阿土 咲夜之</span>
+      <p>
+      
+            「阿土っち…じゃなかった。阿土咲夜之です…。」
+      </p>
+      </div>
+      <div class="mem7 left">
+      <span>南 宵一郎</span>
+      <p>
+      
+            「……そうなんですか……初めまして、南です」阿土くんにも名刺を差し出します
+      </p>
+      </div>
+      <div class="mem7 left">
+      <span>南 宵一郎</span>
+      <p>
+      
+            あのパパンヌからのメモ持ってていいかな？
+      </p>
+      </div>
+      <div class="kp LtoR-early">
+      
+            ぱぱんぬのメモ持ってていいよ
+      </div>
+      <div class="kp LtoR-early">
+      
+            ん？パパンヌのメモだとおかしいか
+      </div>
+      <div class="kp LtoR-early">
+      
+            燐ちゃんの置手紙持ってていいですよ
+      </div>
+      <div class="mem7 left">
+      <span>南 宵一郎</span>
+      <p>
+      
+            「そういえば、燐さんのお父様からこんなものを預かりました。燐さんが行方不明になってから、燐さんのお部屋で見つけたものだそうです」そう言ってメモを机に広げます
+      </p>
+      </div>
+      <div class="mem2 right">
+      <span>阿土 咲夜之</span>
+      <p>
+      
+            「…(名刺初めてもらった…)不穏なメモですね…。」
+      </p>
+      </div>
+      <div class="mem7 left">
+      <span>南 宵一郎</span>
+      <p>
+      
+            「なにか、心当たりはないでしょうか」
+      </p>
+      </div>
+      <div class="mem1 left">
+      <span>鴻上 麗羅</span>
+      <p>
+      
+            「……んでだよ…連絡しろっつったじゃん……バカ燐！！！」<br>怒
+      </p>
+      </div>
+      <div class="mem2 right">
+      <span>阿土 咲夜之</span>
+      <p>
+      
+            「お、落ち着きましょう？」
+      </p>
+      </div>
+      <div class="mem1 left">
+      <span>鴻上 麗羅</span>
+      <p>
+      
+            「もー怒った！！ぜってぇみっけてスタバ新作ベンティで奢らせる。ねぇ南ｻﾝ協力するから燐1発なぐるのは見逃してよ」
+      </p>
+      </div>
+      <div class="kp LtoR-early">
+      
+            一発殴るか…ふむ
+      </div>
+      <div class="mem1 left">
+      <span>鴻上 麗羅</span>
+      <p>
+      
+            殴れないやつだわ
+      </p>
+      </div>
+      <div class="mem7 left">
+      <span>南 宵一郎</span>
+      <p>
+      
+            「血気盛んですね。まぁいいでしょう、男が女性を殴るよりはフェアでしょうしね」
+      </p>
+      </div>
+      <div class="kp LtoR-early">
+      
+            殴れるわよ。
+      </div>
+      <div class="mem8 right">
+      <span>財前 帝</span>
+      <p>
+      
+            「落ち着いてくださいよ　お嬢さん」<br>急に来て伝票持ってくよ
+      </p>
+      </div>
+      <div class="mem7 left">
+      <span>南 宵一郎</span>
+      <p>
+      
+            もうどっかいくんか
+      </p>
+      </div>
+      <div class="mem1 left">
+      <span>鴻上 麗羅</span>
+      <p>
+      
+            「つーわけで昨日あったことと燐と彼氏の事教えるけど燐と彼氏マジなやつだから邪魔しないでって……弁護士なら大丈夫か。」
+      </p>
+      </div>
+      <div class="mem8 right">
+      <span>財前 帝</span>
+      <p>
+      
+            持つだけ
+      </p>
+      </div>
+      <div class="mem7 left">
+      <span>南 宵一郎</span>
+      <p>
+      
+            「あ、財前さん」
+      </p>
+      </div>
+      <div class="mem1 left">
+      <span>鴻上 麗羅</span>
+      <p>
+      
+            「…あんたさっきからいたけど何なの？」
+      </p>
+      </div>
+      <div class="mem7 left">
+      <span>南 宵一郎</span>
+      <p>
+      
+            さっきからいたんだ
+      </p>
+      </div>
+      <div class="mem1 left">
+      <span>鴻上 麗羅</span>
+      <p>
+      
+            昨日じゃなかったわ。とりあえずこっちの情報全部共有
+      </p>
+      </div>
+      <div class="mem7 left">
+      <span>南 宵一郎</span>
+      <p>
+      
+            「ご紹介します。こちら、財前さん。私と鷹野さんの知人です。財前グループの会長さんなので、金銭的な面はサポートできるかと」
+      </p>
+      </div>
+      <div class="mem1 left">
+      <span>鴻上 麗羅</span>
+      <p>
+      
+            「パトロンね。」
+      </p>
+      </div>
+      <div class="mem8 right">
+      <span>財前 帝</span>
+      <p>
+      
+            「私の名前は財前帝。鷹野さんとは古い付き合いでしてね」<br>名刺持ってたら渡したい
+      </p>
+      </div>
+      <div class="kp LtoR-early">
+      
+            名刺は爆発しないのでいいですよ
+      </div>
+      <div class="mem1 left">
+      <span>鴻上 麗羅</span>
+      <p>
+      
+            大丈夫？変なチップうめこんでない？
+      </p>
+      </div>
+      <div class="mem2 right">
+      <span>阿土 咲夜之</span>
+      <p>
+      
+            爆発する名刺とはどんな嫌がらせだ…
+      </p>
+      </div>
+      <div class="mem8 right">
+      <span>財前 帝</span>
+      <p>
+      
+            ただの良い紙の名刺だよ！
+      </p>
+      </div>
+      <div class="kp LtoR-early">
+      
+            大丈夫？金色に輝いてない？
+      </div>
+      <div class="mem8 right">
+      <span>財前 帝</span>
+      <p>
+      
+            黒地に金とか？<br>読めればいいよね！
+      </p>
+      </div>
+      <div class="mem7 left">
+      <span>南 宵一郎</span>
+      <p>
+      
+             そういうハデハデ名刺って逆にバカそう
+      </p>
+      </div>
+      <div class="mem7 left">
+      <span>南 宵一郎</span>
+      <p>
+      
+            会長さんだしシンプルに洒落乙なやつでよいのでは
+      </p>
+      </div>
+      <div class="mem2 right">
+      <span>阿土 咲夜之</span>
+      <p>
+      
+            「(やべえ字が輝いてる……)」
+      </p>
+      </div>
+      <div class="mem7 left">
+      <span>南 宵一郎</span>
+      <p>
+      
+            ｱｯでもカイザーって改名するセンスのひとか……わからんな……
+      </p>
+      </div>
+      <div class="mem8 right">
+      <span>財前 帝</span>
+      <p>
+      
+            多分ここでしか使わないから何でもいいや
+      </p>
+      </div>
+      <div class="kp LtoR-early">
+      
+            毛利小五郎レベルなら金ピカになる()
+      </div>
+      <div class="mem7 left">
+      <span>南 宵一郎</span>
+      <p>
+      
+            そういう細かいところから キャラの設定が生えるんだよ！()
+      </p>
+      </div>
+      <div class="mem2 right">
+      <span>阿土 咲夜之</span>
+      <p>
+      
+            むしろ何種類か持ってて見下してる奴には金ぴかの渡して内心馬鹿にしてそう…
+      </p>
+      </div>
+      <div class="mem7 left">
+      <span>南 宵一郎</span>
+      <p>
+      
+            性格悪そう()
+      </p>
+      </div>
+      <div class="mem8 right">
+      <span>財前 帝</span>
+      <p>
+      
+            表向き善人だから加減が難しいね！
+      </p>
+      </div>
+      <div class="mem7 left">
+      <span>南 宵一郎</span>
+      <p>
+      
+            でも渡されたひとにしかわかんないからいいんじゃないかな！
+      </p>
+      </div>
+      <div class="mem8 right">
+      <span>財前 帝</span>
+      <p>
+      
+            そうか！<br>黒基調のいい紙の名刺を渡しました！
+      </p>
+      </div>
+      <div class="mem7 left">
+      <span>南 宵一郎</span>
+      <p>
+      
+            かっくいい！
+      </p>
+      </div>
+      <div class="mem1 left">
+      <span>鴻上 麗羅</span>
+      <p>
+      
+            でも極道って知ってるパパンと古い付き合いって悪い人かなって印象になるよね
+      </p>
+      </div>
+      <div class="mem7 left">
+      <span>南 宵一郎</span>
+      <p>
+      
+            弁護士一緒にいるのに()
+      </p>
+      </div>
+      <div class="mem8 right">
+      <span>財前 帝</span>
+      <p>
+      
+            呼ばれてたから大丈夫と思ってる。<br>ツメが甘いね！
+      </p>
+      </div>
+      <div class="mem7 left">
+      <span>南 宵一郎</span>
+      <p>
+      
+            ツンデレドジっ子なのかな()
+      </p>
+      </div>
+      <div class="kp LtoR-early">
+      
+            はい。合流して、情報共有してで今後の方針をお聞きしたいです
+      </div>
+      <div class="mem7 left">
+      <span>南 宵一郎</span>
+      <p>
+      
+            なんにも情報がないんだよな～<br>見城さんの死因についてとか調べることできそう？
+      </p>
+      </div>
+      <div class="mem8 right">
+      <span>財前 帝</span>
+      <p>
+      
+            オヤジさんしゃべるかな？
+      </p>
+      </div>
+      <div class="mem7 left">
+      <span>南 宵一郎</span>
+      <p>
+      
+            あるいは月下山にいってみるか
+      </p>
+      </div>
+      <div class="mem1 left">
+      <span>鴻上 麗羅</span>
+      <p>
+      
+            月下山についてもうちょい調べらんないかな
+      </p>
+      </div>
+      <div class="mem2 right">
+      <span>阿土 咲夜之</span>
+      <p>
+      
+            お馬鹿なさやの君が思い付くのは鬼電かな
+      </p>
+      </div>
+      <div class="mem8 right">
+      <span>財前 帝</span>
+      <p>
+      
+            図書館とかこのまちにあれば　新聞とかに載ってないかな？
+      </p>
+      </div>
+      <div class="mem7 left">
+      <span>南 宵一郎</span>
+      <p>
+      
+            燐ちゃんに鬼電すんのか
+      </p>
+      </div>
+      <div class="mem2 right">
+      <span>阿土 咲夜之</span>
+      <p>
+      
+            うん。いつか出てくれるかなって(笑)
+      </p>
+      </div>
+      <div class="kp LtoR-early">
+      
+            弁護士さんならワンチャンかな。弁護士さん、アイデアどうぞ
+      </div>
+      <div class="mem7 left">
+      <span>南 宵一郎</span>
+      <p>
+      
+            81だめだん
+      </p>
+      </div>
+      <div class="kp LtoR-early">
+      
+            では、裏社会の医療事情はそこまで詳しくなかったかな
+      </div>
+      <div class="kp LtoR-early">
+      
+            月下山は、図書館で調べるかな
+      </div>
+      <div class="kp LtoR-early">
+      
+            燐ちゃんに鬼電しても何もないですね
+      </div>
+      <div class="mem2 right">
+      <span>阿土 咲夜之</span>
+      <p>
+      
+            そりゃあな。
+      </p>
+      </div>
+      <div class="mem7 left">
+      <span>南 宵一郎</span>
+      <p>
+      
+            「では、その月下山について、少々調べてみましょうか。図書館になら新聞などもあるでしょうし」
+      </p>
+      </div>
+      <div class="kp LtoR-early">
+      
+            弁護士さん知識してみてもいいのよ？
+      </div>
+      <div class="mem7 left">
+      <span>南 宵一郎</span>
+      <p>
+      
+            まじか()じゃあふります
+      </p>
+      </div>
+      <div class="kp LtoR-early">
+      
+            この情報逃すのもにゃあ
+      </div>
+      <div class="mem7 left">
+      <span>南 宵一郎</span>
+      <p>
+      
+            63せいこう
+      </p>
+      </div>
+      <div class="kp LtoR-early">
+      
+            では、弁護士先生は、鷹野組が利用している闇医者は知ってるけど、
+      </div>
+      <div class="mem2 right">
+      <span>阿土 咲夜之</span>
+      <p>
+      
+            や、闇医者…
+      </p>
+      </div>
+      <div class="kp LtoR-early">
+      
+            まぁ、そいつが検視したかは確信持てないけどいってみる？
+      </div>
+      <div class="mem7 left">
+      <span>南 宵一郎</span>
+      <p>
+      
+            いくかぁ
+      </p>
+      </div>
+      <div class="mem7 left">
+      <span>南 宵一郎</span>
+      <p>
+      
+            どうしよ ふたてにわかれたほうがいい？
+      </p>
+      </div>
+      <div class="kp LtoR-early">
+      
+            すきにしていいのよ
+      </div>
+      <div class="mem1 left">
+      <span>鴻上 麗羅</span>
+      <p>
+      
+            「じゃああたし達は月下山について調べてみる。南ｻﾝLINEしてないの、電話めんどい」
+      </p>
+      </div>
+      <div class="mem7 left">
+      <span>南 宵一郎</span>
+      <p>
+      
+            「あぁ、してますよ。交換しましょうか」
+      </p>
+      </div>
+      <div class="mem7 left">
+      <span>南 宵一郎</span>
+      <p>
+      
+            「では私達は鷹野組の知人を当たってみます。終わったら連絡するということで」
+      </p>
+      </div>
+      <div class="mem2 right">
+      <span>阿土 咲夜之</span>
+      <p>
+      
+            「(鴻上さん相変わらずだなぁ…。)」
+      </p>
+      </div>
+      <div class="mem1 left">
+      <span>鴻上 麗羅</span>
+      <p>
+      
+            「カイザーｻﾝはどうすんの？」
+      </p>
+      </div>
+      <div class="mem8 right">
+      <span>財前 帝</span>
+      <p>
+      
+            「そうですね　私も先生についていくことにします。」
+      </p>
+      </div>
+      <div class="mem7 left">
+      <span>南 宵一郎</span>
+      <p>
+      
+            けいごになった
+      </p>
+      </div>
+      <div class="kp LtoR-early">
+      
+            では、年上組が闇医者の所へ<br>年下組が山へ狩人に行くという事でよろしいですか？
+      </div>
+      <div class="mem2 right">
+      <span>阿土 咲夜之</span>
+      <p>
+      
+            芝刈りだー！
+      </p>
+      </div>
+      <div class="mem8 right">
+      <span>財前 帝</span>
+      <p>
+      
+            お金は帝が持つよ
+      </p>
+      </div>
+      <div class="mem2 right">
+      <span>阿土 咲夜之</span>
+      <p>
+      
+            さすが財前家！リアル金づるに欲しい！←
+      </p>
+      </div>
+      <div class="mem2 right">
+      <span>阿土 咲夜之</span>
+      <p>
+      
+            あ、裏に繋がりあるからやっぱいいわ…
+      </p>
+      </div>
+      <div class="kp LtoR-early">
+      
+            一斉摘発で一緒にお縄かな
+      </div>
+      <div class="mem2 right">
+      <span>阿土 咲夜之</span>
+      <p>
+      
+            マジ勘弁…
+      </p>
+      </div>
+      <div class="kp LtoR-early">
+      
+            勘弁で済む事案かは分からないけどね
+      </div>
+      <div class="kp LtoR-early">
+      
+            どっちから描写しようかな。
+      </div>
+      <div class="kp LtoR-early">
+      
+            よし、闇医者からするか
+      </div>
+      <div class="kp LtoR-early">
+      
+            大人組かもーん
+      </div>
+      <div class="mem8 right">
+      <span>財前 帝</span>
+      <p>
+      
+            はいよー
+      </p>
+      </div>
+      <div class="kp LtoR-early">
+      
+            裏社会になんとなく精通してる弁護士が向かった一ヶ所の闇医者の診療所
+      </div>
+      <div class="mem7 left">
+      <span>南 宵一郎</span>
+      <p>
+      
+            はーい
+      </p>
+      </div>
+      <div class="kp LtoR-early">
+      
+            丁度、医者は遠方に往診に行ってるようでいないらしい。
+      </div>
+      <div class="kp LtoR-early">
+      
+            代わりに助手が対応してくれるね。
+      </div>
+      <div class="mem7 left">
+      <span>南 宵一郎</span>
+      <p>
+      
+            ほうほう
+      </p>
+      </div>
+      <div class="mem8 right">
+      <span>財前 帝</span>
+      <p>
+      
+            ほほほう
+      </p>
+      </div>
+      <div class="mem10 right">
+      <span>助手</span>
+      <p>
+      
+            「先生は往診で、いつ戻ってくるかわからないのですが」
+      </p>
+      </div>
+      <div class="mem7 left">
+      <span>南 宵一郎</span>
+      <p>
+      
+            「連絡はつきませんか？見城さんの死因について知りたいのですが」
+      </p>
+      </div>
+      <div class="mem8 right">
+      <span>財前 帝</span>
+      <p>
+      
+            「ふむ…」
+      </p>
+      </div>
+      <div class="mem10 right">
+      <span>助手</span>
+      <p>
+      
+            「見城さんと、言う事は鷹野組のですね。」
+      </p>
+      </div>
+      <div class="mem7 left">
+      <span>南 宵一郎</span>
+      <p>
+      
+            「そうです。ここだけの話ですが、鷹野組のお嬢さんが行方不明になっていて、それに見城さんがかかわっているかもしれないので」
+      </p>
+      </div>
+      <div class="mem10 right">
+      <span>助手</span>
+      <p>
+      
+            「ですが、口止めもされてますし、私は先生から見ないようにと言われたので何ともいえないですよね」
+      </p>
+      </div>
+      <div class="mem7 left">
+      <span>南 宵一郎</span>
+      <p>
+      
+            「そうですか……」いちおう心理学ふれます？
+      </p>
+      </div>
+      <div class="mem8 right">
+      <span>財前 帝</span>
+      <p>
+      
+            「口止めねぇ…普段からよくあることなのかな？」
+      </p>
+      </div>
+      <div class="kp LtoR-early">
+      
+            ふれますよ。あ、振りますね
+      </div>
+      <div class="kp LtoR-early">
+      
+            しらないっぽいねー
+      </div>
+      <div class="mem7 left">
+      <span>南 宵一郎</span>
+      <p>
+      
+            「連絡もつかないでしょうか。お仕事中申し訳ないですけれども」
+      </p>
+      </div>
+      <div class="mem10 right">
+      <span>助手</span>
+      <p>
+      
+            「先生は出先では電話に出られない方ですので」
+      </p>
+      </div>
+      <div class="mem10 right">
+      <span>助手</span>
+      <p>
+      
+            「それと、」
+      </p>
+      </div>
+      <div class="mem10 right">
+      <span>助手</span>
+      <p>
+      
+            「私から言える事ですと、遺体の状況も酷かったようですが、どうしてあんなところにいたのかも、皆さん、相当に混乱されていたようで」
+      </p>
+      </div>
+      <div class="mem8 right">
+      <span>財前 帝</span>
+      <p>
+      
+            「あんなところとは？」
+      </p>
+      </div>
+      <div class="mem10 right">
+      <span>助手</span>
+      <p>
+      
+            「月下山の山中で発見されたそうですよ」
+      </p>
+      </div>
+      <div class="mem7 left">
+      <span>南 宵一郎</span>
+      <p>
+      
+            「そうですか……わかりました。有益な情報を得られました。ありがとうございます」
+      </p>
+      </div>
+      <div class="kp LtoR-early">
+      
+            あーうー
+      </div>
+      <div class="kp LtoR-early">
+      
+            二人とも幸運
+      </div>
+      <div class="mem8 right">
+      <span>財前 帝</span>
+      <p>
+      
+            「ところで　皆さん、とは？<br>現場に他にも人が？」
+      </p>
+      </div>
+      <div class="mem8 right">
+      <span>財前 帝</span>
+      <p>
+      
+            67 成功
+      </p>
+      </div>
+      <div class="mem10 right">
+      <span>助手</span>
+      <p>
+      
+            「詳しくは分からないですけど、鷹野組の組員さんたちが発見したそうです」
+      </p>
+      </div>
+      <div class="mem7 left">
+      <span>南 宵一郎</span>
+      <p>
+      
+            89だめだ
+      </p>
+      </div>
+      <div class="mem10 right">
+      <span>助手</span>
+      <p>
+      
+            「なんでしたら、戻ってきたら連絡いたしましょうか？」
+      </p>
+      </div>
+      <div class="kp LtoR-early">
+      
+            幸運効果：連絡してくれる
+      </div>
+      <div class="mem7 left">
+      <span>南 宵一郎</span>
+      <p>
+      
+            「いいんですか！？是非、よろしくお願い致します」
+      </p>
+      </div>
+      <div class="mem8 right">
+      <span>財前 帝</span>
+      <p>
+      
+            「感謝します」
+      </p>
+      </div>
+      <div class="kp LtoR-early">
+      
+            ヨカッタネェー
+      </div>
+      <div class="mem7 left">
+      <span>南 宵一郎</span>
+      <p>
+      
+            自分が成功したわけでもないのにくいぎみ
+      </p>
+      </div>
+      <div class="mem8 right">
+      <span>財前 帝</span>
+      <p>
+      
+            本人たちにはわからんもんね
+      </p>
+      </div>
+      <div class="kp LtoR-early">
+      
+            まぁ、ぶっちゃけ、最初に名刺渡して連絡して欲しいって言えば済んだ話なんだけどね
+      </div>
+      <div class="kp LtoR-early">
+      
+            もしくは、行きつけだったか
+      </div>
+      <div class="mem7 left">
+      <span>南 宵一郎</span>
+      <p>
+      
+            名刺ぃぃ
+      </p>
+      </div>
+      <div class="mem7 left">
+      <span>南 宵一郎</span>
+      <p>
+      
+            思い付かんかった
+      </p>
+      </div>
+      <div class="kp LtoR-early">
+      
+            まぁ、医者方面は今出る情報はこれまでなんだけどね
+      </div>
+      <div class="mem7 left">
+      <span>南 宵一郎</span>
+      <p>
+      
+            デスヨネー
+      </p>
+      </div>
+      <div class="mem8 right">
+      <span>財前 帝</span>
+      <p>
+      
+            社会人モーションだなぁ
+      </p>
+      </div>
+      <div class="kp LtoR-early">
+      
+            ってことで、山班に移動してよろしいですか？
+      </div>
+      <div class="mem7 left">
+      <span>南 宵一郎</span>
+      <p>
+      
+            どーぞー
+      </p>
+      </div>
+      <div class="mem8 right">
+      <span>財前 帝</span>
+      <p>
+      
+            たのみま
+      </p>
+      </div>
+      <div class="kp LtoR-early">
+      
+            ではでは。
+      </div>
+      <div class="kp LtoR-early">
+      
+            ところ変わって、ねぇ、マジで予備知識なしで山に乗り込むの？
+      </div>
+      <div class="mem1 left">
+      <span>鴻上 麗羅</span>
+      <p>
+      
+            山に行くの？図書館じゃなくて
+      </p>
+      </div>
+      <div class="mem2 right">
+      <span>阿土 咲夜之</span>
+      <p>
+      
+            さすがにスマホとかで調べるのでは…。
+      </p>
+      </div>
+      <div class="kp LtoR-early">
+      
+            山行くって言わなかった？
+      </div>
+      <div class="mem1 left">
+      <span>鴻上 麗羅</span>
+      <p>
+      
+            月下山について調べるとは言ったけど
+      </p>
+      </div>
+      <div class="kp LtoR-early">
+      
+            なんか麗羅ちゃん発言でそう言ってた気がしたなーって思っただけさ
+      </div>
+      <div class="kp LtoR-early">
+      
+            それならいいや
+      </div>
+      <div class="kp LtoR-early">
+      
+            では、図書館かな
+      </div>
+      <div class="mem1 left">
+      <span>鴻上 麗羅</span>
+      <p>
+      
+            月下山についてと事故だか災害だかについてもうちょい出ないかな
+      </p>
+      </div>
+      <div class="kp LtoR-early">
+      
+            とちょっと前に地震があった程度で、検索ワード的に出てくるって感じではないね
+      </div>
+      <div class="kp LtoR-early">
+      
+            けど、山についてはもう少し情報は出るね
+      </div>
+      <div class="mem2 right">
+      <span>阿土 咲夜之</span>
+      <p>
+      
+            うーん、望み薄だけど、月下山での目撃情報的なのないかな…。事故とか災害じゃなくて、ただの、「今日こんな人が山にいたよー」的な情報
+      </p>
+      </div>
+      <div class="kp LtoR-early">
+      
+            ううん。あの山危ないって言われてるから目撃しないかなぁ
+      </div>
+      <div class="mem2 right">
+      <span>阿土 咲夜之</span>
+      <p>
+      
+            なるほど…
+      </p>
+      </div>
+      <div class="kp LtoR-early">
+      
+            普通に調べないの？なんで二人ともピンポイントに引き絞ってくるの
+      </div>
+      <div class="mem2 right">
+      <span>阿土 咲夜之</span>
+      <p>
+      
+            人捜しだからじゃないか…？例えば山奥に肝試しに行くとかだったら、その山がどれだけやばいか山について調べるけど。肝試しじゃないし…
+      </p>
+      </div>
+      <div class="kp LtoR-early">
+      
+            その前に山について調べようよ。どんな地形を知らずにボス倒しに行くもんだよ
+      </div>
+      <div class="mem2 right">
+      <span>阿土 咲夜之</span>
+      <p>
+      
+            じゃあぐぐるマップで航空写真見ますね
+      </p>
+      </div>
+      <div class="kp LtoR-early">
+      
+            では、ぐーちゃんマップで吊り橋付近の様子をみると、山の裏側が切り立った崖になってますね
+      </div>
+      <div class="kp LtoR-early">
+      
+            一応、こちらから無条件で出す情報は<br>吊り橋付近が立ち入り禁止と言われていた理由<br>・そもそも吊り橋が老朽化していた<br>・山の裏側が切り立った崖になってる<br>その二つが原因
+      </div>
+      <div class="kp LtoR-early">
+      
+            そして、ちょっと前に大きい地震があって地盤が緩んでる可能性があるからこそ、注意喚起もあったんだ
+      </div>
+      <div class="mem1 left">
+      <span>鴻上 麗羅</span>
+      <p>
+      
+            図書館かコンピュータでもっとでる？
+      </p>
+      </div>
+      <div class="kp LtoR-early">
+      
+            アイデアかなぁ
+      </div>
+      <div class="mem1 left">
+      <span>鴻上 麗羅</span>
+      <p>
+      
+            52成功
+      </p>
+      </div>
+      <div class="kp LtoR-early">
+      
+            では、もっと詳しい事を調べるなら現地に詳しい人に直接聞いた方がいいかなぁって思いますね
+      </div>
+      <div class="mem1 left">
+      <span>鴻上 麗羅</span>
+      <p>
+      
+            げんち…山守とか？警察？消防？
+      </p>
+      </div>
+      <div class="kp LtoR-early">
+      
+            それを調べるのがお仕事ですよ（）
+      </div>
+      <div class="mem1 left">
+      <span>鴻上 麗羅</span>
+      <p>
+      
+            土地管理者とかわかんないかな
+      </p>
+      </div>
+      <div class="kp LtoR-early">
+      
+            国土って分類じゃない？私有地じゃないし
+      </div>
+      <div class="mem1 left">
+      <span>鴻上 麗羅</span>
+      <p>
+      
+            え〜だれに聞こう
+      </p>
+      </div>
+      <div class="mem1 left">
+      <span>鴻上 麗羅</span>
+      <p>
+      
+            山田涼介の近くって民家ある？
+      </p>
+      </div>
+      <div class="mem1 left">
+      <span>鴻上 麗羅</span>
+      <p>
+      
+            山…
+      </p>
+      </div>
+      <div class="kp LtoR-early">
+      
+            ｗｗｗｗｗｗｗｗｗ
+      </div>
+      <div class="kp LtoR-early">
+      
+            大海原
+      </div>
+      <div class="mem1 left">
+      <span>鴻上 麗羅</span>
+      <p>
+      
+            山田涼介はいない…
+      </p>
+      </div>
+      <div class="mem1 left">
+      <span>鴻上 麗羅</span>
+      <p>
+      
+            草原ですらないし
+      </p>
+      </div>
+      <div class="kp LtoR-early">
+      
+            ダメだ俺の
+      </div>
+      <div class="kp LtoR-early">
+      
+            壺に
+      </div>
+      <div class="kp LtoR-early">
+      
+            ツボにはいった
+      </div>
+      <div class="mem2 right">
+      <span>阿土 咲夜之</span>
+      <p>
+      
+            私ジャニーズは伊野尾慧とSMAPしか顔と名前一致しないなぁ…。
+      </p>
+      </div>
+      <div class="kp LtoR-early">
+      
+            山田涼介くんの為に言おう。昔、山で林業してた人がその近所に会社してるらしい
+      </div>
+      <div class="mem2 right">
+      <span>阿土 咲夜之</span>
+      <p>
+      
+            ？？？こんがらがってきた…
+      </p>
+      </div>
+      <div class="mem1 left">
+      <span>鴻上 麗羅</span>
+      <p>
+      
+            じゃあその人にあいにいこ
+      </p>
+      </div>
+      <div class="kp LtoR-early">
+      
+            はい。では、山で林業してた人の会社へ
+      </div>
+      <div class="kp LtoR-early">
+      
+            どうやら、木材を扱っている小さい会社のようで、社長らしき人が出てきますね
+      </div>
+      <div class="mem1 left">
+      <span>鴻上 麗羅</span>
+      <p>
+      
+            「突然すみません、大学の研究で自然災害について調べているのですが、月下山で以前林業をされていたとお聞きしてお話を伺いに参りました」<br>仕事モードで猫かぶり
+      </p>
+      </div>
+      <div class="mem11 left">
+      <span>社長</span>
+      <p>
+      
+            「そうなのかぃ」
+      </p>
+      </div>
+      <div class="mem11 left">
+      <span>社長</span>
+      <p>
+      
+            「それで、山の何について知りたいんだ？」
+      </p>
+      </div>
+      <div class="mem1 left">
+      <span>鴻上 麗羅</span>
+      <p>
+      
+            え〜全部
+      </p>
+      </div>
+      <div class="kp LtoR-early">
+      
+            それは、考えてないので無理です
+      </div>
+      <div class="mem7 left">
+      <span>南 宵一郎</span>
+      <p>
+      
+            よくばりさん
+      </p>
+      </div>
+      <div class="mem2 right">
+      <span>阿土 咲夜之</span>
+      <p>
+      
+            「吊り橋はいつ設置されたものなんですか？」
+      </p>
+      </div>
+      <div class="mem2 right">
+      <span>阿土 咲夜之</span>
+      <p>
+      
+            とりあえず適当に質問しとけばいいと思ってるさやの君
+      </p>
+      </div>
+      <div class="mem11 left">
+      <span>社長</span>
+      <p>
+      
+            「吊り橋は、ずっと前からあるが…」
+      </p>
+      </div>
+      <div class="mem1 left">
+      <span>鴻上 麗羅</span>
+      <p>
+      
+            「現在は立ち入り禁止でしたよね。地形や他に何か建造物があれば詳しくお聞きしたく。それとこの間の地震について山がおかしな様子だったりはしませんでしたか？」
+      </p>
+      </div>
+      <div class="mem1 left">
+      <span>鴻上 麗羅</span>
+      <p>
+      
+            「だれか見かけたりとか」
+      </p>
+      </div>
+      <div class="mem11 left">
+      <span>社長</span>
+      <p>
+      
+            「最近は仕事で言ってるってわけじゃねえから誰かを見たとは言わねえが」
+      </p>
+      </div>
+      <div class="mem11 left">
+      <span>社長</span>
+      <p>
+      
+            「あー。地震って言えば、昔、川の近くに洞穴があって、そこは危険だからって親父たちが塞いだってのは聞いたな」
+      </p>
+      </div>
+      <div class="mem2 right">
+      <span>阿土 咲夜之</span>
+      <p>
+      
+            「洞穴ですか！ロマンですね！」
+      </p>
+      </div>
+      <div class="mem11 left">
+      <span>社長</span>
+      <p>
+      
+            「そんで、今も念のため近づくなって言われてんだが。地震があってからどうなったかってのは気にしてはいるんだ」
+      </p>
+      </div>
+      <div class="mem2 right">
+      <span>阿土 咲夜之</span>
+      <p>
+      
+            「なるほど…。」
+      </p>
+      </div>
+      <div class="mem11 left">
+      <span>社長</span>
+      <p>
+      
+            「まぁ、そこんところは親父が知ってるな」
+      </p>
+      </div>
+      <div class="mem1 left">
+      <span>鴻上 麗羅</span>
+      <p>
+      
+            「お父様は今はどちらに？」
+      </p>
+      </div>
+      <div class="mem11 left">
+      <span>社長</span>
+      <p>
+      
+            「親父は中にいるが、最近痴呆が酷くて、今じゃまともに話は出来ねえさ」
+      </p>
+      </div>
+      <div class="mem1 left">
+      <span>鴻上 麗羅</span>
+      <p>
+      
+            「そうなんですね、お話ありがとうございました」
+      </p>
+      </div>
+      <div class="mem1 left">
+      <span>鴻上 麗羅</span>
+      <p>
+      
+            こんなもんか？
+      </p>
+      </div>
+      <div class="mem1 left">
+      <span>鴻上 麗羅</span>
+      <p>
+      
+            それとも親父さん特攻仕掛ける？
+      </p>
+      </div>
+      <div class="kp LtoR-early">
+      
+            情報は以上だね
+      </div>
+      <div class="mem1 left">
+      <span>鴻上 麗羅</span>
+      <p>
+      
+            じゃあグループLINEで洞穴の共有して戻るか
+      </p>
+      </div>
+      <div class="kp LtoR-early">
+      
+            ううむ
+      </div>
+      <div class="kp LtoR-early">
+      
+            いいや、この時間で
+      </div>
+      <div class="kp LtoR-early">
+      
+            では、その前に一つのLINEが届きます
+      </div>
+      <div class="kp LtoR-early">
+      
+            麗羅ちゃんにね
+      </div>
+      <div class="kp LtoR-early">
+      
+            手塚くんからで、内容は「彼女が居るかもしれないから、月下山に行ってくる」とのことでした。
+      </div>
+      <div class="mem1 left">
+      <span>鴻上 麗羅</span>
+      <p>
+      
+            「っはぁ〜〜？！何このカップルまじありえない死にフラしらねぇのか！！
+      </p>
+      </div>
+      <div class="mem1 left">
+      <span>鴻上 麗羅</span>
+      <p>
+      
+            電話します
+      </p>
+      </div>
+      <div class="mem1 left">
+      <span>鴻上 麗羅</span>
+      <p>
+      
+            出ないだろうけど
+      </p>
+      </div>
+      <div class="kp LtoR-early">
+      
+            幸運かな
+      </div>
+      <div class="mem1 left">
+      <span>鴻上 麗羅</span>
+      <p>
+      
+            26成功
+      </p>
+      </div>
+      <div class="kp LtoR-early">
+      
+            では、見事に通じましたね
+      </div>
+      <div class="mem1 left">
+      <span>鴻上 麗羅</span>
+      <p>
+      
+            「おぅ手塚ちょっと面貸しな」
+      </p>
+      </div>
+      <div class="mem5 left">
+      <span>手塚 雅史</span>
+      <p>
+      
+            「今は無理です」
+      </p>
+      </div>
+      <div class="mem5 left">
+      <span>手塚 雅史</span>
+      <p>
+      
+            「鷹野さんからメールがあって。それですぐに月下山に向かうので」
+      </p>
+      </div>
+      <div class="mem2 right">
+      <span>阿土 咲夜之</span>
+      <p>
+      
+            「ひ、一人は危ないよ！」
+      </p>
+      </div>
+      <div class="mem1 left">
+      <span>鴻上 麗羅</span>
+      <p>
+      
+            「あんたさぁ、焦んのわかんだけどあたしも燐探してんの知ってんでしょ？一緒行くから。今月下山ちかく？すぐいくから」
+      </p>
+      </div>
+      <div class="mem1 left">
+      <span>鴻上 麗羅</span>
+      <p>
+      
+            「燐もあんたもあたしハブにしすぎっしょ。なにひとりでこいとでも言われたの？」
+      </p>
+      </div>
+      <div class="mem1 left">
+      <span>鴻上 麗羅</span>
+      <p>
+      
+            ダチなのに頼ってもらえなくてガチ凹みギャル
+      </p>
+      </div>
+      <div class="mem5 left">
+      <span>手塚 雅史</span>
+      <p>
+      
+            「けど、いそがないと」
+      </p>
+      </div>
+      <div class="mem1 left">
+      <span>鴻上 麗羅</span>
+      <p>
+      
+            「燐なんていってんの。」
+      </p>
+      </div>
+      <div class="mem1 left">
+      <span>鴻上 麗羅</span>
+      <p>
+      
+            阿土くんにメモで友達が山に行きそうだから南ｻﾝ達に山集合ってLINE打ってって伝える
+      </p>
+      </div>
+      <div class="mem5 left">
+      <span>手塚 雅史</span>
+      <p>
+      
+            「あの日、この場所で、全てが変わったって。山になんてこなければって」
+      </p>
+      </div>
+      <div class="mem1 left">
+      <span>鴻上 麗羅</span>
+      <p>
+      
+            「あの日って落ちた日？とりあえず何が起こってても1人じゃ危ない、何も何時間まてっていってんじゃないの。ちっと頭冷やせ男だろ。燐の彼氏だろ！」
+      </p>
+      </div>
+      <div class="kp LtoR-early">
+      
+            うわぁ。リアル説得されてるぅ
+      </div>
+      <div class="kp LtoR-early">
+      
+            これなら、説得に応じるかなぁ
+      </div>
+      <div class="mem5 left">
+      <span>手塚 雅史</span>
+      <p>
+      
+            「っ……すぐに、山に」
+      </p>
+      </div>
+      <div class="kp LtoR-early">
+      
+            では、すぐに山に向かうという事で構いませんか？
+      </div>
+      <div class="mem1 left">
+      <span>鴻上 麗羅</span>
+      <p>
+      
+            麗羅は向かうけどコンビニで軍手とロープくらいは買ってきたいな
+      </p>
+      </div>
+      <div class="kp LtoR-early">
+      
+            そのぐらいなら…
+      </div>
+      <div class="mem2 right">
+      <span>阿土 咲夜之</span>
+      <p>
+      
+            さやの君、焦っているので全部ひらがなのままLINE送信します(笑)
+      </p>
+      </div>
+      <div class="mem7 left">
+      <span>南 宵一郎</span>
+      <p>
+      
+            ライン受信してすぐ山に向かう旨返信しました
+      </p>
+      </div>
+      <div class="mem1 left">
+      <span>鴻上 麗羅</span>
+      <p>
+      
+            説得や精神分析するにしても携帯越しじゃマイナスかかりそうだからとりあえず手塚と合流したい。
+      </p>
+      </div>
+      <div class="mem1 left">
+      <span>鴻上 麗羅</span>
+      <p>
+      
+            「阿土あたしすぐ行くけどどうする？おっさん達と一緒にくる？」
+      </p>
+      </div>
+      <div class="kp LtoR-early">
+      
+            別々でもいいわよ？ただ、ちょっと色々調整が入るかもしれないけど。どうなるかな
+      </div>
+      <div class="kp LtoR-early">
+      
+            全部に対応したいなぁ
+      </div>
+      <div class="mem1 left">
+      <span>鴻上 麗羅</span>
+      <p>
+      
+            急いでるからスコップとか買えないので装備揃えてきてほしいんだよな
+      </p>
+      </div>
+      <div class="kp LtoR-early">
+      
+            準備するとなると、時間がかかるからねぇ
+      </div>
+      <div class="mem1 left">
+      <span>鴻上 麗羅</span>
+      <p>
+      
+            とりあえず麗羅の次の行動は軍手とロープもって手塚の居場所聞き出して合流または山行きかな
+      </p>
+      </div>
+      <div class="kp LtoR-early">
+      
+            全員の行動確認するかぁ。
+      </div>
+      <div class="mem1 left">
+      <span>鴻上 麗羅</span>
+      <p>
+      
+            阿土くんの行動はまかせた
+      </p>
+      </div>
+      <div class="kp LtoR-early">
+      
+            では、麗羅ちゃんは手塚に合流。
+      </div>
+      <div class="kp LtoR-early">
+      
+            各々の思う通りに動いてください。
+      </div>
+      <div class="mem2 right">
+      <span>阿土 咲夜之</span>
+      <p>
+      
+            「一緒に行きますよ。いくら鴻上さんが男前でも、女性には変わりないですから。ないとは思いますけど、また手塚さんが落っこちて怪我したら一人だと大変でしょうし。」
+      </p>
+      </div>
+      <div class="kp LtoR-early">
+      
+            では、阿土くんもそのまま手塚に合流で。
+      </div>
+      <div class="kp LtoR-early">
+      
+            あとの大人組か
+      </div>
+      <div class="mem7 left">
+      <span>南 宵一郎</span>
+      <p>
+      
+            では阿土くんからのラインで察したってことにして色々揃えましょう
+      </p>
+      </div>
+      <div class="mem8 right">
+      <span>財前 帝</span>
+      <p>
+      
+            金なら出そう
+      </p>
+      </div>
+      <div class="mem7 left">
+      <span>南 宵一郎</span>
+      <p>
+      
+            頼もしィ！！
+      </p>
+      </div>
+      <div class="mem8 right">
+      <span>財前 帝</span>
+      <p>
+      
+            役立てるのがこれぐらいしかないからね！
+      </p>
+      </div>
+      <div class="mem7 left">
+      <span>南 宵一郎</span>
+      <p>
+      
+            ・カッパ<br>・スコップ<br>・ロープ<br>・ビニールシート<br>・救急セット<br>・長靴<br>あとなんかいるかな
+      </p>
+      </div>
+      <div class="kp LtoR-early">
+      
+            では、お二人は後ほどの合流で
+      </div>
+      <div class="kp LtoR-early">
+      
+            どうしようかな。
+      </div>
+      <div class="kp LtoR-early">
+      
+            ここで分断するのは想定内だけど想定外だぁ
+      </div>
+      <div class="mem8 right">
+      <span>財前 帝</span>
+      <p>
+      
+            軍手と軽食とGPSとか？
+      </p>
+      </div>
+      <div class="mem1 left">
+      <span>鴻上 麗羅</span>
+      <p>
+      
+            充電器ほしい
+      </p>
+      </div>
+      <div class="mem8 right">
+      <span>財前 帝</span>
+      <p>
+      
+            よし、買おう
+      </p>
+      </div>
+      <div class="mem7 left">
+      <span>南 宵一郎</span>
+      <p>
+      
+            めっちゃ大荷物なるな
+      </p>
+      </div>
+      <div class="mem8 right">
+      <span>財前 帝</span>
+      <p>
+      
+            債務者こきつかう？(許可出れば)
+      </p>
+      </div>
+      <div class="kp LtoR-early">
+      
+            いや、持ち物とかは大丈夫なんだけどね
+      </div>
+      <div class="kp LtoR-early">
+      
+            前半組と後半組で処理どうしようかなって
+      </div>
+      <div class="kp LtoR-early">
+      
+            描写が被るから別部屋にしたいけど、それだと雰囲気が出ないし
+      </div>
+      <div class="kp LtoR-early">
+      
+            かと言って、調達に時間かかるわけだから時系列を一緒にしたいなら手塚くんは先に行っちゃうし
+      </div>
+      <div class="kp LtoR-early">
+      
+            どうしたい？
+      </div>
+      <div class="mem7 left">
+      <span>南 宵一郎</span>
+      <p>
+      
+            前半組先でいいとおもうけど、シナリオの雰囲気知ってるのはゆうちゃんだけなのでそのへんは判断できかねるな
+      </p>
+      </div>
+      <div class="kp LtoR-early">
+      
+            んじゃま、このまま雰囲気を楽しんでもらおうか。<br>前半組の描写をここで行っていこう。
+      </div>
+      <div class="kp LtoR-early">
+      
+            では、前半組は、手塚くんと合流をする。
+      </div>
+      <div class="kp LtoR-early">
+      
+            場所的には月下山の吊り橋の下の川をくだって少ししたところにある洞穴前かな
+      </div>
+      <div class="kp LtoR-early">
+      
+            洞穴の入口、手前には岩や崩れた木材がいっぱい散らばっていて、洞穴がぽっかり口を開いているのがわかるね。
+      </div>
+      <div class="mem1 left">
+      <span>鴻上 麗羅</span>
+      <p>
+      
+            掘らなくてもあいてた
+      </p>
+      </div>
+      <div class="mem1 left">
+      <span>鴻上 麗羅</span>
+      <p>
+      
+            「手塚！！」
+      </p>
+      </div>
+      <div class="mem5 left">
+      <span>手塚 雅史</span>
+      <p>
+      
+            「鴻上さ…ん」
+      </p>
+      </div>
+      <div class="mem2 right">
+      <span>阿土 咲夜之</span>
+      <p>
+      
+            「大丈夫ですか？怪我してない？」
+      </p>
+      </div>
+      <div class="mem5 left">
+      <span>手塚 雅史</span>
+      <p>
+      
+            「それは、大丈夫だけど、」
+      </p>
+      </div>
+      <div class="mem5 left">
+      <span>手塚 雅史</span>
+      <p>
+      
+            「手塚それよりも、鷹野さんが」
+      </p>
+      </div>
+      <div class="kp LtoR-early">
+      
+            そこで、手塚くんの携帯に着信が入る。
+      </div>
+      <div class="mem5 left">
+      <span>手塚 雅史</span>
+      <p>
+      
+            「っ」
+      </p>
+      </div>
+      <div class="kp LtoR-early">
+      
+            どうやら、メールの様子だ
+      </div>
+      <div class="mem5 left">
+      <span>手塚 雅史</span>
+      <p>
+      
+            「鷹野さんっ」
+      </p>
+      </div>
+      <div class="mem1 left">
+      <span>鴻上 麗羅</span>
+      <p>
+      
+            「落ち着いて、燐はなんて？」
+      </p>
+      </div>
+      <div class="kp LtoR-early">
+      
+            では、そっと、手塚くんは携帯を見せますね
+      </div>
+      <div class="kp LtoR-early">
+      
+            <br><br>――――――――――――――――――――――――<br>
+      </div>
+      <div class="kp LtoR-early">
+      
+            「あぁ。でも、今は凄く良い気分なの。<br>　全てから解き放たれたような感じ。<br>　すごく体が軽い。<br>　こんな気持ちは、生まれて初めて。<br>　今までの悩み事が、全て些細なことのように思えるわ」
+      </div>
+      <div class="kp LtoR-early">
+      
+            <br>――――――――――――――――――――――――<br><br>
+      </div>
+      <div class="mem1 left">
+      <span>鴻上 麗羅</span>
+      <p>
+      
+            もう人間卒業してなぁい？！
+      </p>
+      </div>
+      <div class="kp LtoR-early">
+      
+            ナンノコトカナ
+      </div>
+      <div class="mem1 left">
+      <span>鴻上 麗羅</span>
+      <p>
+      
+            「少なくともまだ燐はメールを打てる状況だ。焦んな手塚。」
+      </p>
+      </div>
+      <div class="mem5 left">
+      <span>手塚 雅史</span>
+      <p>
+      
+            「けどっ、これって」
+      </p>
+      </div>
+      <div class="kp LtoR-early">
+      
+            これってぇ
+      </div>
+      <div class="kp LtoR-early">
+      
+            さて、手塚くんはそのまま、洞穴の中に入る決断をしてますね。
+      </div>
+      <div class="mem2 right">
+      <span>阿土 咲夜之</span>
+      <p>
+      
+            「…大丈夫ですか？」
+      </p>
+      </div>
+      <div class="kp LtoR-early">
+      
+            ――このまま一緒に奥に行くかい？後続待つかい？
+      </div>
+      <div class="mem1 left">
+      <span>鴻上 麗羅</span>
+      <p>
+      
+            「深呼吸しろ。なにかわかるなら話して、一緒にいくから」
+      </p>
+      </div>
+      <div class="mem5 left">
+      <span>手塚 雅史</span>
+      <p>
+      
+            「っ……ごめん」
+      </p>
+      </div>
+      <div class="mem5 left">
+      <span>手塚 雅史</span>
+      <p>
+      
+            「鷹野さん、危ないよね、これ」
+      </p>
+      </div>
+      <div class="kp LtoR-early">
+      
+            色んな意味で（）
+      </div>
+      <div class="mem1 left">
+      <span>鴻上 麗羅</span>
+      <p>
+      
+            「なんで危ないと思うの」
+      </p>
+      </div>
+      <div class="mem1 left">
+      <span>鴻上 麗羅</span>
+      <p>
+      
+            (燐こんなメンヘラだったかな)
+      </p>
+      </div>
+      <div class="kp LtoR-early">
+      
+            では、手塚くんはその前に来ていたメールを見せますね。
+      </div>
+      <div class="kp LtoR-early">
+      
+            <br><br>――――――――――――――――――――――――<br>
+      </div>
+      <div class="kp LtoR-early">
+      
+            「ごめんね。しばらくの間、逢えそうにない。<br>　ぜんぶ終わったら会いに行きます。<br>　燐」
+      </div>
+      <div class="kp LtoR-early">
+      
+            <br>――――――――――――――――――――――――<br><br>
+      </div>
+      <div class="kp LtoR-early">
+      
+            これは、燐ちゃんが昨日送られてきたメールだそうだ
+      </div>
+      <div class="mem2 right">
+      <span>阿土 咲夜之</span>
+      <p>
+      
+            「薬物をやったかのような切り替わりですね……。」
+      </p>
+      </div>
+      <div class="kp LtoR-early">
+      
+            <br><br>――――――――――――――――――――――――<br>
+      </div>
+      <div class="kp LtoR-early">
+      
+            「あの日、この場所で、全てが変わってしまった。<br>　山になんて来なければ、こんなことにならなかったのに。<br>　ごめんなさい。<br>　私が、逃げようなんて<br>　言わなければ。」
+      </div>
+      <div class="kp LtoR-early">
+      
+            <br>――――――――――――――――――――――――<br><br>
+      </div>
+      <div class="kp LtoR-early">
+      
+            これは、時間帯的に今日のお昼ごろに送られてきたメールだ。
+      </div>
+      <div class="kp LtoR-early">
+      
+            すぐに麗羅ちゃんに連絡したのがわかる。
+      </div>
+      <div class="mem1 left">
+      <span>鴻上 麗羅</span>
+      <p>
+      
+            「全部終わったら…？なぁ手塚今あたしの仲間の大人がこっちにむかってる。燐に何かあったとしてもこの文面的にそれはもう終わってる可能性がたかい。焦るな、少しだけまって。なるべく人は多い方がいい気がする」
+      </p>
+      </div>
+      <div class="mem5 left">
+      <span>手塚 雅史</span>
+      <p>
+      
+            「これ、どう考えても。だんだん鷹野さんが…辛い目に合ってるってことじゃ」
+      </p>
+      </div>
+      <div class="mem2 right">
+      <span>阿土 咲夜之</span>
+      <p>
+      
+            「大丈夫ですよ。大丈夫。」
+      </p>
+      </div>
+      <div class="mem1 left">
+      <span>鴻上 麗羅</span>
+      <p>
+      
+            説得で言う事聞かないならノックアウトかな。こっから先はみんなで行きたい
+      </p>
+      </div>
+      <div class="mem1 left">
+      <span>鴻上 麗羅</span>
+      <p>
+      
+            本当は燐にも合わせず眠らしときたい
+      </p>
+      </div>
+      <div class="kp LtoR-early">
+      
+            ううむ。個人的には一緒にさせたいのはやまやまなんですがね。手塚くんはとまらないです（）
+      </div>
+      <div class="mem1 left">
+      <span>鴻上 麗羅</span>
+      <p>
+      
+            じゃあノックアウトかな…
+      </p>
+      </div>
+      <div class="kp LtoR-early">
+      
+            では、キックをお願いします
+      </div>
+      <div class="mem1 left">
+      <span>鴻上 麗羅</span>
+      <p>
+      
+            ダメボで殺さないようにしなきゃ…
+      </p>
+      </div>
+      <div class="mem7 left">
+      <span>南 宵一郎</span>
+      <p>
+      
+            おどくんにやってもらうんじゃあかんのんか
+      </p>
+      </div>
+      <div class="mem2 right">
+      <span>阿土 咲夜之</span>
+      <p>
+      
+            組みつきなら技能とってるよ
+      </p>
+      </div>
+      <div class="mem1 left">
+      <span>鴻上 麗羅</span>
+      <p>
+      
+            おっ失敗したらお願いしよ
+      </p>
+      </div>
+      <div class="kp LtoR-early">
+      
+            お前ら殺意たかいな
+      </div>
+      <div class="kp LtoR-early">
+      
+            おっとまってくれよ
+      </div>
+      <div class="kp LtoR-early">
+      
+            では、麗羅ちゃんが突然蹴りを放ったことにより手塚くんは驚いた
+      </div>
+      <div class="kp LtoR-early">
+      
+            ここで戦闘ラウンドになります（ｷﾘｯ
+      </div>
+      <div class="mem2 right">
+      <span>阿土 咲夜之</span>
+      <p>
+      
+            なんだとぉっ
+      </p>
+      </div>
+      <div class="kp LtoR-early">
+      
+            もちろん手塚くんは洞穴に入っていきますね。
+      </div>
+      <div class="kp LtoR-early">
+      
+            DEX対抗かな
+      </div>
+      <div class="kp LtoR-early">
+      
+            追いつくか、そして、組み付けるか
+      </div>
+      <div class="kp LtoR-early">
+      
+            だから2回かな
+      </div>
+      <div class="kp LtoR-early">
+      
+            こちらのDEXは12です
+      </div>
+      <div class="mem2 right">
+      <span>阿土 咲夜之</span>
+      <p>
+      
+            さやの君9だな…
+      </p>
+      </div>
+      <div class="kp LtoR-early">
+      
+            35％かな
+      </div>
+      <div class="mem2 right">
+      <span>阿土 咲夜之</span>
+      <p>
+      
+            おふぅ…
+      </p>
+      </div>
+      <div class="mem1 left">
+      <span>鴻上 麗羅</span>
+      <p>
+      
+            95だめ( ˇωˇ )<br>殺さないよ
+      </p>
+      </div>
+      <div class="mem1 left">
+      <span>鴻上 麗羅</span>
+      <p>
+      
+            「っちょっと待てっつってんだろ！！阿土！！」
+      </p>
+      </div>
+      <div class="mem2 right">
+      <span>阿土 咲夜之</span>
+      <p>
+      
+            あ、こっちが振るの？
+      </p>
+      </div>
+      <div class="kp LtoR-early">
+      
+            追いつくかね
+      </div>
+      <div class="mem1 left">
+      <span>鴻上 麗羅</span>
+      <p>
+      
+            DEX対抗
+      </p>
+      </div>
+      <div class="mem2 right">
+      <span>阿土 咲夜之</span>
+      <p>
+      
+            23…が出たけど、これでいいのか？
+      </p>
+      </div>
+      <div class="kp LtoR-early">
+      
+            そこから組み付きで成功するか
+      </div>
+      <div class="mem2 right">
+      <span>阿土 咲夜之</span>
+      <p>
+      
+            クリティカル
+      </p>
+      </div>
+      <div class="mem2 right">
+      <span>阿土 咲夜之</span>
+      <p>
+      
+            意味わからない
+      </p>
+      </div>
+      <div class="kp LtoR-early">
+      
+            あー封じ込められたぁ
+      </div>
+      <div class="mem1 left">
+      <span>鴻上 麗羅</span>
+      <p>
+      
+            「ナイス阿土！！」
+      </p>
+      </div>
+      <div class="mem5 left">
+      <span>手塚 雅史</span>
+      <p>
+      
+            「なんでっ、邪魔するんだ、よ！すぐにも行かないとじゃん、か！」
+      </p>
+      </div>
+      <div class="mem2 right">
+      <span>阿土 咲夜之</span>
+      <p>
+      
+            んじゃ床ドンするね(笑)
+      </p>
+      </div>
+      <div class="mem5 left">
+      <span>手塚 雅史</span>
+      <p>
+      
+            「それに、なんでさ…」
+      </p>
+      </div>
+      <div class="kp LtoR-early">
+      
+            組み敷かれながら必死に行こうと頑張りますね
+      </div>
+      <div class="kp LtoR-early">
+      
+            動けないけど
+      </div>
+      <div class="mem2 right">
+      <span>阿土 咲夜之</span>
+      <p>
+      
+            「手塚さんが何かあったら、鷹野さんが正気に戻れないじゃないですか。だから一人で行くのやめましょう？」
+      </p>
+      </div>
+      <div class="mem5 left">
+      <span>手塚 雅史</span>
+      <p>
+      
+            「だけど、けど」
+      </p>
+      </div>
+      <div class="mem1 left">
+      <span>鴻上 麗羅</span>
+      <p>
+      
+            「一旦頭冷やせっての！」<br>頭はたく
+      </p>
+      </div>
+      <div class="kp LtoR-early">
+      
+            1D3しとく？
+      </div>
+      <div class="mem1 left">
+      <span>鴻上 麗羅</span>
+      <p>
+      
+            しにゃい
+      </p>
+      </div>
+      <div class="mem1 left">
+      <span>鴻上 麗羅</span>
+      <p>
+      
+            「なにも邪魔しようってわけじゃない。燐が心配なのはあたしも。死ぬほど心配なの。でもね、あたしが心配してんのはあんたもだよ、手塚。あんたも私の友達なの、無茶しないで、頼ってよ」
+      </p>
+      </div>
+      <div class="mem1 left">
+      <span>鴻上 麗羅</span>
+      <p>
+      
+            手塚精神分析きく？説得？
+      </p>
+      </div>
+      <div class="kp LtoR-early">
+      
+            頼ってたんだけど、焦ってたら蹴られそうになったでござる
+      </div>
+      <div class="mem1 left">
+      <span>鴻上 麗羅</span>
+      <p>
+      
+            だって飛び出しそうだったから
+      </p>
+      </div>
+      <div class="kp LtoR-early">
+      
+            精神分析かなぁ
+      </div>
+      <div class="mem1 left">
+      <span>鴻上 麗羅</span>
+      <p>
+      
+            成功
+      </p>
+      </div>
+      <div class="mem1 left">
+      <span>鴻上 麗羅</span>
+      <p>
+      
+            ぎり！
+      </p>
+      </div>
+      <div class="kp LtoR-early">
+      
+            危なかったね
+      </div>
+      <div class="mem5 left">
+      <span>手塚 雅史</span>
+      <p>
+      
+            「けど、すぐに行きたいのは、わかる、だろ」
+      </p>
+      </div>
+      <div class="mem5 left">
+      <span>手塚 雅史</span>
+      <p>
+      
+            「すぐに、来るかわからない、人のために、まつのは」
+      </p>
+      </div>
+      <div class="mem1 left">
+      <span>鴻上 麗羅</span>
+      <p>
+      
+            「超わかる。でも今むかってるって言ってるから。時間決めてそれまでに来なかったらこのメンツで行こ」
+      </p>
+      </div>
+      <div class="mem1 left">
+      <span>鴻上 麗羅</span>
+      <p>
+      
+            LINEでどのくらいかかるかきく
+      </p>
+      </div>
+      <div class="kp LtoR-early">
+      
+            じゃあ、何かで判定するか
+      </div>
+      <div class="kp LtoR-early">
+      
+            1D6*10分って事で
+      </div>
+      <div class="kp LtoR-early">
+      
+            最大60分
+      </div>
+      <div class="kp LtoR-early">
+      
+            手塚の限界は
+      </div>
+      <div class="kp LtoR-early">
+      
+            40分　アレ意外にコイツ待つぞ。何でだ
+      </div>
+      <div class="mem8 right">
+      <span>財前 帝</span>
+      <p>
+      
+            振るよ！
+      </p>
+      </div>
+      <div class="mem8 right">
+      <span>財前 帝</span>
+      <p>
+      
+            だめだ60分かかる。<br>店員僻地に飛ばそ
+      </p>
+      </div>
+      <div class="kp LtoR-early">
+      
+            以上。その差があるということでよろしいでしょうか？
+      </div>
+      <div class="mem8 right">
+      <span>財前 帝</span>
+      <p>
+      
+            受け入れた。
+      </p>
+      </div>
+      <div class="mem7 left">
+      <span>南 宵一郎</span>
+      <p>
+      
+            おけ
+      </p>
+      </div>
+      <div class="mem2 right">
+      <span>阿土 咲夜之</span>
+      <p>
+      
+            何かあったらまた追いかけるさ
+      </p>
+      </div>
+      <div class="kp LtoR-early">
+      
+            では60分だなんて待てないって事で
+      </div>
+      <div class="kp LtoR-early">
+      
+            ギリギリ40分までは組み伏せられてましたが、限界がきましたね
+      </div>
+      <div class="mem2 right">
+      <span>阿土 咲夜之</span>
+      <p>
+      
+            ずっと組み伏せられていたんか…
+      </p>
+      </div>
+      <div class="kp LtoR-early">
+      
+            だって、外すと先行こうとするよ？
+      </div>
+      <div class="mem1 left">
+      <span>鴻上 麗羅</span>
+      <p>
+      
+            しかたない行くか…カイザーさんヘリできなよ…
+      </p>
+      </div>
+      <div class="mem1 left">
+      <span>鴻上 麗羅</span>
+      <p>
+      
+            「しゃーない行くか。でも何があってもひとりで突っ走んなよ、次はまじで蹴るから。」
+      </p>
+      </div>
+      <div class="mem2 right">
+      <span>阿土 咲夜之</span>
+      <p>
+      
+            「さすが鴻上さん…。言動が男前です……ι」
+      </p>
+      </div>
+      <div class="kp LtoR-early">
+      
+            先に行く？それは絶対に行かないとは断言できませんね
+      </div>
+      <div class="kp LtoR-early">
+      
+            では、先に進みましょう
+      </div>
+      <div class="kp LtoR-early">
+      
+            どうやら天然の洞穴になっているらしく、岩や土の壁にはところどころ蜘蛛の巣が張り巡らされてるみたいだね。<br>それと、土の上にはまだ新しい足跡が残っているみたいだ。
+      </div>
+      <div class="mem2 right">
+      <span>阿土 咲夜之</span>
+      <p>
+      
+            慌てて組みついた場所の写真撮って、「さきにいつてます」って文章と一緒に後半組にLINE送信します
+      </p>
+      </div>
+      <div class="kp LtoR-early">
+      
+            ここで目星ができますよ
+      </div>
+      <div class="mem2 right">
+      <span>阿土 咲夜之</span>
+      <p>
+      
+            3。自分でも意味わかんないでーす。(´д｀)
+      </p>
+      </div>
+      <div class="kp LtoR-early">
+      
+            実は6面ダイスを使ってるのでは（）
+      </div>
+      <div class="mem2 right">
+      <span>阿土 咲夜之</span>
+      <p>
+      
+            多分後半でめっちゃファンブル出すから大丈夫だよ。100ファン1回くらい出そう(笑)
+      </p>
+      </div>
+      <div class="kp LtoR-early">
+      
+            わーわー
+      </div>
+      <div class="mem2 right">
+      <span>阿土 咲夜之</span>
+      <p>
+      
+            ちゃんと100面なんだが…
+      </p>
+      </div>
+      <div class="kp LtoR-early">
+      
+            こわいねぇ
+      </div>
+      <div class="kp LtoR-early">
+      
+            まぁ、いいや。
+      </div>
+      <div class="kp LtoR-early">
+      
+            通路は奥深く、かなりの遠方で、影が通り過ぎるのが見えた気がする。
+      </div>
+      <div class="kp LtoR-early">
+      
+            遠目に見えただけだから、何かが動いたとしかわからないけど、少なくとも人影ではなさそうだね。
+      </div>
+      <div class="mem2 right">
+      <span>阿土 咲夜之</span>
+      <p>
+      
+            「何か動いてる…？」<br>手塚さんが飛び出さないように袖掴んでから発言します
+      </p>
+      </div>
+      <div class="kp LtoR-early">
+      
+            くりていぃかったー特典何にしようかな
+      </div>
+      <div class="mem2 right">
+      <span>阿土 咲夜之</span>
+      <p>
+      
+            手塚さんが無闇に飛び出さないならそれでいい←
+      </p>
+      </div>
+      <div class="kp LtoR-early">
+      
+            じゃあ、わかった
+      </div>
+      <div class="kp LtoR-early">
+      
+            すると、ここで手塚くんの携帯に着信音が鳴り響く
+      </div>
+      <div class="kp LtoR-early">
+      
+            どうやら、また燐ちゃんの、メールのようだ
+      </div>
+      <div class="kp LtoR-early">
+      
+            <br><br>――――――――――――――――――――――――<br>
+      </div>
+      <div class="kp LtoR-early">
+      
+            「ねぇ、知ってる？<br>　生まれ変わる時って、<br>　すごく痛くて苦しいの。<br>　皮膚がはぎ取られるかのような痛みで、気が狂いそうになる。<br>　でも、同時に心のしがらみまで剥がれ落ちていくような気がする。」
+      </div>
+      <div class="kp LtoR-early">
+      
+            <br>――――――――――――――――――――――――<br><br>
+      </div>
+      <div class="mem2 right">
+      <span>阿土 咲夜之</span>
+      <p>
+      
+            「Σ?!(奥になんかいるっぽいのに携帯鳴っちゃった！奴の耳が悪いますように！)」
+      </p>
+      </div>
+      <div class="mem5 left">
+      <span>手塚 雅史</span>
+      <p>
+      
+            「っ……鷹野さん」
+      </p>
+      </div>
+      <div class="kp LtoR-early">
+      
+            二人ともここのタイミングでしときたい描写あるいかい？
+      </div>
+      <div class="mem2 right">
+      <span>阿土 咲夜之</span>
+      <p>
+      
+            持ち物提出するの忘れてたから投げる物とか持ってないしな…。特にないかな…。
+      </p>
+      </div>
+      <div class="mem1 left">
+      <span>鴻上 麗羅</span>
+      <p>
+      
+            とりあえず後続待ってからかな
+      </p>
+      </div>
+      <div class="kp LtoR-early">
+      
+            今後続は山の中腹くらいなので
+      </div>
+      <div class="kp LtoR-early">
+      
+            頑張って追いつくか追いつかないかぐらいじゃないかな
+      </div>
+      <div class="mem1 left">
+      <span>鴻上 麗羅</span>
+      <p>
+      
+            後続のパートおわって合流20分前からのがやりやすいかなって
+      </p>
+      </div>
+      <div class="kp LtoR-early">
+      
+            後続はお買い物パートで、そのまま合流しようとしてるだけなので
+      </div>
+      <div class="kp LtoR-early">
+      
+            描写がすくなーい
+      </div>
+      <div class="kp LtoR-early">
+      
+            まぁ、二人ともやることないならちょっと一つだけイベントが入りますね
+      </div>
+      <div class="kp LtoR-early">
+      
+            後続組が追いかけて行っている最中で、弁護士先生の携帯に連絡が来る
+      </div>
+      <div class="mem7 left">
+      <span>南 宵一郎</span>
+      <p>
+      
+            ほう
+      </p>
+      </div>
+      <div class="kp LtoR-early">
+      
+            出る流れでいいですよね？
+      </div>
+      <div class="kp LtoR-early">
+      
+            たぶん、知らない番号だと思うけど
+      </div>
+      <div class="mem7 left">
+      <span>南 宵一郎</span>
+      <p>
+      
+            電話か
+      </p>
+      </div>
+      <div class="mem7 left">
+      <span>南 宵一郎</span>
+      <p>
+      
+            いいよ
+      </p>
+      </div>
+      <div class="mem12 right">
+      <span>医者</span>
+      <p>
+      
+            「もしもし？お前さんが連絡がほしいといった奴か？」
+      </p>
+      </div>
+      <div class="kp LtoR-early">
+      
+            どうやら、連絡してくれたみたいだね。闇医者だ
+      </div>
+      <div class="mem7 left">
+      <span>南 宵一郎</span>
+      <p>
+      
+            「もしもし。はい、そうです。弁護士の南ともうします」
+      </p>
+      </div>
+      <div class="mem12 right">
+      <span>医者</span>
+      <p>
+      
+            「それで、用件は見城の件だったか？」
+      </p>
+      </div>
+      <div class="mem12 right">
+      <span>医者</span>
+      <p>
+      
+            「こちらとしても鷹野の組長から口止めされてるんで言えんがなぁ」
+      </p>
+      </div>
+      <div class="mem7 left">
+      <span>南 宵一郎</span>
+      <p>
+      
+            「……組長の娘さんの命がかかっているとしても、ですか？」
+      </p>
+      </div>
+      <div class="mem12 right">
+      <span>医者</span>
+      <p>
+      
+            「あの鷹野の娘さんに何かあったのかい？」
+      </p>
+      </div>
+      <div class="mem7 left">
+      <span>南 宵一郎</span>
+      <p>
+      
+            「現在行方不明になっておりまして。見城さんの死因が関係あるのではないかと。おそらく、今彼女は見城さんが発見された月下山にいます」
+      </p>
+      </div>
+      <div class="mem12 right">
+      <span>医者</span>
+      <p>
+      
+            「こちらとて、鷹野組とそれなりの関係なんだ。誰それと言えることじゃねえな」
+      </p>
+      </div>
+      <div class="mem7 left">
+      <span>南 宵一郎</span>
+      <p>
+      
+            「……そうですか。では、鷹野さんに、あなたが協力してくださらなかったことお話いたしますね」
+      </p>
+      </div>
+      <div class="kp LtoR-early">
+      
+            いや、そもそも鷹野さんからお願いされたって言えば済む話なのだが
+      </div>
+      <div class="mem7 left">
+      <span>南 宵一郎</span>
+      <p>
+      
+            直接死因を調べろと言われたわけではないので
+      </p>
+      </div>
+      <div class="kp LtoR-early">
+      
+            どっちかっていうとね。この人、鷹野さんから見城の死因が広まるのを避けてほしいって言われてるから、黙ってるだけなのよね。
+      </div>
+      <div class="mem7 left">
+      <span>南 宵一郎</span>
+      <p>
+      
+            「娘さんが行方不明になって失意の鷹野さんにこのことが知られたらどうですかね？あなたは今後鷹野組に関わることができなくなりますかね？まぁ私の知ったことではないですが。それでもお話ししていただけないなら仕方ありませんね」
+      </p>
+      </div>
+      <div class="kp LtoR-early">
+      
+            すごい脅されてんだけどー
+      </div>
+      <div class="mem7 left">
+      <span>南 宵一郎</span>
+      <p>
+      
+            PLが知っててもPCは知らんしなぁ
+      </p>
+      </div>
+      <div class="mem12 right">
+      <span>医者</span>
+      <p>
+      
+            「ちっ。これで、嘘が入ってるんだったら、覚悟するんだな」
+      </p>
+      </div>
+      <div class="mem12 right">
+      <span>医者</span>
+      <p>
+      
+            「で、見城の死因だったな。特徴的な事をいえば、全身に締め付けられた痕や、打撲痕が複数あったな」
+      </p>
+      </div>
+      <div class="mem12 right">
+      <span>医者</span>
+      <p>
+      
+            「それに両の目が潰されていた」
+      </p>
+      </div>
+      <div class="mem12 right">
+      <span>医者</span>
+      <p>
+      
+            「それと」
+      </p>
+      </div>
+      <div class="kp LtoR-early">
+      
+            そこで一瞬言い淀んだ後で、電話口から僅かに声を震わせて言う
+      </div>
+      <div class="mem12 right">
+      <span>医者</span>
+      <p>
+      
+            「脳がなくなっていたんだ」
+      </p>
+      </div>
+      <div class="mem7 left">
+      <span>南 宵一郎</span>
+      <p>
+      
+            「嘘などとんでもない。私は弁護士ですよ？ただ、鷹野さんがどう思われるか、というだけの話です」
+      </p>
+      </div>
+      <div class="mem7 left">
+      <span>南 宵一郎</span>
+      <p>
+      
+            「……なるほど。やはり、普通ではなかった、ということですね」手帳を出してメモしながら返事します
+      </p>
+      </div>
+      <div class="mem7 left">
+      <span>南 宵一郎</span>
+      <p>
+      
+            「医者の見解として聞きますが、それは人間にできる殺し方でしょうか」
+      </p>
+      </div>
+      <div class="mem12 right">
+      <span>医者</span>
+      <p>
+      
+            「俺が知る限りではないな」
+      </p>
+      </div>
+      <div class="mem7 left">
+      <span>南 宵一郎</span>
+      <p>
+      
+            「……そうですか。他に特記すべきことはなにも？」
+      </p>
+      </div>
+      <div class="mem12 right">
+      <span>医者</span>
+      <p>
+      
+            「そうだ ｻﾞｻﾞｻﾞ」
+      </p>
+      </div>
+      <div class="mem12 right">
+      <span>医者</span>
+      <p>
+      
+            「おい、ノイズが入るようだが、一体どこにいるんだ」
+      </p>
+      </div>
+      <div class="mem7 left">
+      <span>南 宵一郎</span>
+      <p>
+      
+            どこにいるの？
+      </p>
+      </div>
+      <div class="kp LtoR-early">
+      
+            山の中腹あたりかな。まだ洞穴には入ってないと思うよ
+      </div>
+      <div class="mem7 left">
+      <span>南 宵一郎</span>
+      <p>
+      
+            もうそこまできてんのか
+      </p>
+      </div>
+      <div class="kp LtoR-early">
+      
+            優しさだよ
+      </div>
+      <div class="mem7 left">
+      <span>南 宵一郎</span>
+      <p>
+      
+            「娘さんを探しに、月下山に。大丈夫です、あなたの手を煩わせるようなことにはしませんよ、おそらく」
+      </p>
+      </div>
+      <div class="mem12 right">
+      <span>医者</span>
+      <p>
+      
+            「月下山か？そういや、最近山で怪我をした若者を手当てしたな」
+      </p>
+      </div>
+      <div class="mem7 left">
+      <span>南 宵一郎</span>
+      <p>
+      
+            「……ひょっとして、手塚、という若者ですか？」
+      </p>
+      </div>
+      <div class="mem12 right">
+      <span>医者</span>
+      <p>
+      
+            「名前までは知らないが、見城が連れてきてね。見るからにカタギだったんで、簡単な処置をして普通の病院にいかせたさ」
+      </p>
+      </div>
+      <div class="mem12 right">
+      <span>医者</span>
+      <p>
+      
+            「そういや、鷹野の嬢さんも怪我をしてたみたいだったが、そっちは俺が見たわけだが」
+      </p>
+      </div>
+      <div class="mem7 left">
+      <span>南 宵一郎</span>
+      <p>
+      
+            「そうですか……その怪我は、特に変わった様子は？」
+      </p>
+      </div>
+      <div class="mem12 right">
+      <span>医者</span>
+      <p>
+      
+            「何かに噛まれたような傷だったな」
+      </p>
+      </div>
+      <div class="mem12 right">
+      <span>医者</span>
+      <p>
+      
+            「そういうわけだから、山には気をつけろってこった。見城の件もあるからな」
+      </p>
+      </div>
+      <div class="mem7 left">
+      <span>南 宵一郎</span>
+      <p>
+      
+            「噛まれた……そうですか」
+      </p>
+      </div>
+      <div class="mem7 left">
+      <span>南 宵一郎</span>
+      <p>
+      
+            「ご忠告ありがとうございます。ミイラ取りがミイラになっては元も子もないですからね」
+      </p>
+      </div>
+      <div class="kp LtoR-early">
+      
+            そういって切れますね
+      </div>
+      <div class="kp LtoR-early">
+      
+            弁護士先生、これは最初に帝さんと共有しますか？
+      </div>
+      <div class="mem7 left">
+      <span>南 宵一郎</span>
+      <p>
+      
+            共有しましょう
+      </p>
+      </div>
+      <div class="kp LtoR-early">
+      
+            そのあと、先行メンバーと共有しますか？
+      </div>
+      <div class="mem7 left">
+      <span>南 宵一郎</span>
+      <p>
+      
+            会ったら共有しましょう
+      </p>
+      </div>
+      <div class="kp LtoR-early">
+      
+            では、先に
+      </div>
+      <div class="mem7 left">
+      <span>南 宵一郎</span>
+      <p>
+      
+            ラインで伝えてもいいのか
+      </p>
+      </div>
+      <div class="kp LtoR-early">
+      
+            大人組の二人は、見城の異様な死にざまを知って。そして、その原因となったらしき場所に向かっているという今の現状を知って<br>0/1D2のSANチェックだ
+      </div>
+      <div class="mem7 left">
+      <span>南 宵一郎</span>
+      <p>
+      
+            クリティカル
+      </p>
+      </div>
+      <div class="mem7 left">
+      <span>南 宵一郎</span>
+      <p>
+      
+            なんでここででるのよ
+      </p>
+      </div>
+      <div class="kp LtoR-early">
+      
+            強靭な精神で絶えましたね。
+      </div>
+      <div class="kp LtoR-early">
+      
+            こわい
+      </div>
+      <div class="mem1 left">
+      <span>鴻上 麗羅</span>
+      <p>
+      
+            今回クリティカルなんかいでた…？
+      </p>
+      </div>
+      <div class="kp LtoR-early">
+      
+            特に一人がよくだしてるよ
+      </div>
+      <div class="mem2 right">
+      <span>阿土 咲夜之</span>
+      <p>
+      
+            私かww
+      </p>
+      </div>
+      <div class="kp LtoR-early">
+      
+            聞き耳と組み付きが
+      </div>
+      <div class="mem8 right">
+      <span>財前 帝</span>
+      <p>
+      
+            36　自信満々みたいだ
+      </p>
+      </div>
+      <div class="kp LtoR-early">
+      
+            二人とも動揺しないのか。残念
+      </div>
+      <div class="kp LtoR-early">
+      
+            まぁ、情報は以上なんですが、教えます？前方組に？走りながらLINEするなら遅くなるけど
+      </div>
+      <div class="kp LtoR-early">
+      
+            電話してもいいけど、内容は手塚くんにも聞こえるだろうから、SANチェ一緒だね。やったね
+      </div>
+      <div class="kp LtoR-early">
+      
+            って、なります
+      </div>
+      <div class="mem7 left">
+      <span>南 宵一郎</span>
+      <p>
+      
+            会ってから余裕会ったら伝えるかな
+      </p>
+      </div>
+      <div class="kp LtoR-early">
+      
+            はい。では、そのままということで、
+      </div>
+      <div class="kp LtoR-early">
+      
+            まぁ、この様子だと見捨てて帰るという選択肢はなさそうですね
+      </div>
+      <div class="kp LtoR-early">
+      
+            では、場所は戻って、先行組に行かせてもらいましょう。
+      </div>
+      <div class="kp LtoR-early">
+      
+            緩い下り坂を、キミたちは真っ直ぐ歩いていくことになるだろう。
+      </div>
+      <div class="kp LtoR-early">
+      
+            次第に、周囲の色が少しずつ変わっていく。
+      </div>
+      <div class="kp LtoR-early">
+      
+            土肌や岩肌が、少しずつ白く覆われていく。<br>暗い洞穴の穴だけれども。光を向ければ、まるで一面に白く輝くようだ。<br>洞穴全体が、幾重にも張り巡らされた蜘蛛の糸で白く染まって見えるね。
+      </div>
+      <div class="kp LtoR-early">
+      
+            周囲を見渡せば、白く輝く糸がそこかしこに張り巡らされている。<br>次第に足取りも、少しずつ重たくなってくる。<br>靴底を持ち上げるたびに、粘性を帯びている感じだね。
+      </div>
+      <div class="mem1 left">
+      <span>鴻上 麗羅</span>
+      <p>
+      
+            タイトルきたか( ˇωˇ )
+      </p>
+      </div>
+      <div class="kp LtoR-early">
+      
+            そんなで、キミたちが足下を気をつけながら歩いていると。<br>また、手塚くんの携帯に着信音が鳴り響く
+      </div>
+      <div class="kp LtoR-early">
+      
+            燐ちゃんからのメールだぁ。
+      </div>
+      <div class="mem1 left">
+      <span>鴻上 麗羅</span>
+      <p>
+      
+            油持ってきてもらうんだった
+      </p>
+      </div>
+      <div class="kp LtoR-early">
+      
+            <br><br>――――――――――――――――――――――――<br>
+      </div>
+      <div class="kp LtoR-early">
+      
+            「うちは父一人子一人で、ずっとお父さんのために頑張ってきたけれど。<br>　ようやく解放される。<br>　私、ずっとお母さんが欲しかったの。母と呼べる存在が、ようやくできた。<br>　今はそれが<br>　すごく　うれしい」
+      </div>
+      <div class="kp LtoR-early">
+      
+            <br>――――――――――――――――――――――――<br><br>
+      </div>
+      <div class="mem1 left">
+      <span>鴻上 麗羅</span>
+      <p>
+      
+            あ〜あか〜〜〜ん
+      </p>
+      </div>
+      <div class="kp LtoR-early">
+      
+            そして、少しだけ経った後に
+      </div>
+      <div class="kp LtoR-early">
+      
+            また、着信音
+      </div>
+      <div class="kp LtoR-early">
+      
+            <br><br>――――――――――――――――――――――――<br>
+      </div>
+      <div class="kp LtoR-early">
+      
+            「もう、手塚くんには逢えないと思っていた。<br>　その覚悟もしていたのだけど。<br>　来てくれるとわかって、嬉しかった。<br>　ずっと　ずっと<br>　あいたかったんだ」
+      </div>
+      <div class="kp LtoR-early">
+      
+            <br>――――――――――――――――――――――――<br><br>
+      </div>
+      <div class="kp LtoR-early">
+      
+            また、着信音
+      </div>
+      <div class="kp LtoR-early">
+      
+            <br><br>――――――――――――――――――――――――<br>
+      </div>
+      <div class="kp LtoR-early">
+      
+            「やっと　みつけた<br>　やっと　あえる」
+      </div>
+      <div class="kp LtoR-early">
+      
+            <br>――――――――――――――――――――――――<br><br>
+      </div>
+      <div class="kp LtoR-early">
+      
+            ここで麗羅ちゃんと阿土くんは聞き耳で
+      </div>
+      <div class="mem1 left">
+      <span>鴻上 麗羅</span>
+      <p>
+      
+            12成功だよぅ
+      </p>
+      </div>
+      <div class="mem2 right">
+      <span>阿土 咲夜之</span>
+      <p>
+      
+            37成功
+      </p>
+      </div>
+      <div class="kp LtoR-early">
+      
+            では、キミたちは気づくだろう
+      </div>
+      <div class="kp LtoR-early">
+      
+            手塚くんの背後にいるものに
+      </div>
+      <div class="mem2 right">
+      <span>阿土 咲夜之</span>
+      <p>
+      
+            電話じゃないとこから声がするんだろー！どうせ！
+      </p>
+      </div>
+      <div class="kp LtoR-early">
+      
+            不意打ちに気づかれちゃった、残念
+      </div>
+      <div class="mem2 right">
+      <span>阿土 咲夜之</span>
+      <p>
+      
+            「っ…！」<br>手塚さん引っ張りましゅね
+      </p>
+      </div>
+      <div class="kp LtoR-early">
+      
+            では、ソイツの攻撃を避ける事が出来るだろう
+      </div>
+      <div class="kp LtoR-early">
+      
+            だが、キミたちは目視してしまうね
+      </div>
+      <div class="kp LtoR-early">
+      
+            キミたちが見た先。白い道に、黒い影が見えた。<br>そう。それは巨大な蜘蛛だった。己が紡いだ巣の上を軽やかに動いている。<br>だが、それはキミたちの知る蜘蛛の大きさではない。<br>一つ一つの脚が、人間の足ほどもある。<br>大きく膨らんだイボだらけの体と、剛毛の生えた太い脚。<br>キミたちの知る蜘蛛という生物とは似て否なる存在だ
+      </div>
+      <div class="kp LtoR-early">
+      
+            見事、レンの蜘蛛を見てしまったキミたちは、1/1D6のSANチェックだ。
+      </div>
+      <div class="kp LtoR-early">
+      
+            あっ
+      </div>
+      <div class="kp LtoR-early">
+      
+            ちくせう
+      </div>
+      <div class="mem2 right">
+      <span>阿土 咲夜之</span>
+      <p>
+      
+            86失敗2減少55→53
+      </p>
+      </div>
+      <div class="mem2 right">
+      <span>阿土 咲夜之</span>
+      <p>
+      
+            もしかして手塚さんのさんちぇ失敗した？
+      </p>
+      </div>
+      <div class="kp LtoR-early">
+      
+            ナンノコトデショウ。KPワカラナイヤ
+      </div>
+      <div class="mem2 right">
+      <span>阿土 咲夜之</span>
+      <p>
+      
+            あっって言ったから…(笑)
+      </p>
+      </div>
+      <div class="kp LtoR-early">
+      
+            ぶっちゃけますよ。ぶっちゃけてやりますよ。
+      </div>
+      <div class="kp LtoR-early">
+      
+            手塚くん、SANチェック95出して、5減って、アイデア失敗したよ。ちくしょう。発狂しそうだったのに
+      </div>
+      <div class="mem2 right">
+      <span>阿土 咲夜之</span>
+      <p>
+      
+            おいおい。会いたかった彼女だぜ？発狂したら失礼だろ？←
+      </p>
+      </div>
+      <div class="kp LtoR-early">
+      
+            え？
+      </div>
+      <div class="kp LtoR-early">
+      
+            こ　れ　で　終　わ　り　だ　と　思　っ　て　る　の　か　い？
+      </div>
+      <div class="mem2 right">
+      <span>阿土 咲夜之</span>
+      <p>
+      
+            うわあ…
+      </p>
+      </div>
+      <div class="kp LtoR-early">
+      
+            一応、この子小さい方だからSANチェックも甘めなんだぜ？
+      </div>
+      <div class="mem2 right">
+      <span>阿土 咲夜之</span>
+      <p>
+      
+            ああそっかママがいるんでちゅね…
+      </p>
+      </div>
+      <div class="mem1 left">
+      <span>鴻上 麗羅</span>
+      <p>
+      
+            24成功 49
+      </p>
+      </div>
+      <div class="kp LtoR-early">
+      
+            麗羅ちゃんがしっかりしてるねぇ
+      </div>
+      <div class="mem1 left">
+      <span>鴻上 麗羅</span>
+      <p>
+      
+            「なにあれでっか！！」
+      </p>
+      </div>
+      <div class="kp LtoR-early">
+      
+            手塚くんはその巨大蜘蛛に驚きはしたけど、気が狂うようなことはなかったね。
+      </div>
+      <div class="kp LtoR-early">
+      
+            さて、
+      </div>
+      <div class="kp LtoR-early">
+      
+            巨大蜘蛛は、手塚くんを狙ってくるわけだけど、
+      </div>
+      <div class="kp LtoR-early">
+      
+            戦闘ラウンドになるわけだ。
+      </div>
+      <div class="kp LtoR-early">
+      
+            調子がいい阿土くん、1D3振ってもらおうか
+      </div>
+      <div class="mem2 right">
+      <span>阿土 咲夜之</span>
+      <p>
+      
+            逃げたら男が廃るという訳か…。
+      </p>
+      </div>
+      <div class="mem2 right">
+      <span>阿土 咲夜之</span>
+      <p>
+      
+            1。
+      </p>
+      </div>
+      <div class="kp LtoR-early">
+      
+            こいつ…
+      </div>
+      <div class="kp LtoR-early">
+      
+            ホント調子いいな
+      </div>
+      <div class="kp LtoR-early">
+      
+            では、1ラウンドで勝負が決まりますね（やけくそ）
+      </div>
+      <div class="kp LtoR-early">
+      
+            まぁ、DEX順的に言ってしまえば、蜘蛛→阿土・手塚→麗羅なんだろうけど
+      </div>
+      <div class="kp LtoR-early">
+      
+            ううむ。ご都合主義かもしれないが、おじさんメンバー幸運振ってもらおうか
+      </div>
+      <div class="mem8 right">
+      <span>財前 帝</span>
+      <p>
+      
+            クリティカル
+      </p>
+      </div>
+      <div class="kp LtoR-early">
+      
+            ・ｘ・
+      </div>
+      <div class="mem8 right">
+      <span>財前 帝</span>
+      <p>
+      
+            ミラクルラッキーだよ☆
+      </p>
+      </div>
+      <div class="kp LtoR-early">
+      
+            では、おじさまメンバーも合流でいいよ
+      </div>
+      <div class="mem7 left">
+      <span>南 宵一郎</span>
+      <p>
+      
+            わしはふらんでよいのか
+      </p>
+      </div>
+      <div class="kp LtoR-early">
+      
+            クリティカルでお二人仲良く登場でいいよ
+      </div>
+      <div class="mem2 right">
+      <span>阿土 咲夜之</span>
+      <p>
+      
+            いえーい(*・ω・人・ω・*)
+      </p>
+      </div>
+      <div class="mem7 left">
+      <span>南 宵一郎</span>
+      <p>
+      
+            ヤッター
+      </p>
+      </div>
+      <div class="kp LtoR-early">
+      
+            その代わり、おじさまメンバーも巨大蜘蛛を見てしまうので
+      </div>
+      <div class="kp LtoR-early">
+      
+            SANチェックなんだけどね！1/1D6だ
+      </div>
+      <div class="mem8 right">
+      <span>財前 帝</span>
+      <p>
+      
+            戦力になるかな？
+      </p>
+      </div>
+      <div class="mem8 right">
+      <span>財前 帝</span>
+      <p>
+      
+            73　コワイ！<br>2→68
+      </p>
+      </div>
+      <div class="mem8 right">
+      <span>財前 帝</span>
+      <p>
+      
+            「ここまでの仕事になるとは。」
+      </p>
+      </div>
+      <div class="mem7 left">
+      <span>南 宵一郎</span>
+      <p>
+      
+            57 1<br>50→49
+      </p>
+      </div>
+      <div class="kp LtoR-early">
+      
+            みんな耐性あるのね。もっと減ってくれても構わないのに
+      </div>
+      <div class="mem7 left">
+      <span>南 宵一郎</span>
+      <p>
+      
+            「なんですかあの規格外の蜘蛛は……皆さん無事です？」
+      </p>
+      </div>
+      <div class="mem7 left">
+      <span>南 宵一郎</span>
+      <p>
+      
+            でかいリュックでえっさほいさときます
+      </p>
+      </div>
+      <div class="kp LtoR-early">
+      
+            では、最終的なDEX順は、蜘蛛→阿土・手塚→南→麗羅→帝になります。改めて思ったら帝さんDEX6なのかい
+      </div>
+      <div class="mem8 right">
+      <span>財前 帝</span>
+      <p>
+      
+            ジジイだからね
+      </p>
+      </div>
+      <div class="kp LtoR-early">
+      
+            では、蜘蛛は手塚くんに……
+      </div>
+      <div class="kp LtoR-early">
+      
+            あっ
+      </div>
+      <div class="kp LtoR-early">
+      
+            (๑ゝڡ◕๑)
+      </div>
+      <div class="mem1 left">
+      <span>鴻上 麗羅</span>
+      <p>
+      
+            くりったか…
+      </p>
+      </div>
+      <div class="kp LtoR-early">
+      
+            見事な糸さばきで手塚くんを絡めとりました。
+      </div>
+      <div class="kp LtoR-early">
+      
+            さっきまで数値高いなぁって思ってたら03きたよ
+      </div>
+      <div class="mem1 left">
+      <span>鴻上 麗羅</span>
+      <p>
+      
+            うわぁ
+      </p>
+      </div>
+      <div class="mem1 left">
+      <span>鴻上 麗羅</span>
+      <p>
+      
+            逃げられちゃうかな
+      </p>
+      </div>
+      <div class="kp LtoR-early">
+      
+            うん。STR対抗もクリティカル効果で出来ないから
+      </div>
+      <div class="kp LtoR-early">
+      
+            蜘蛛は奥に逃げ出すね
+      </div>
+      <div class="kp LtoR-early">
+      
+            追いかける？
+      </div>
+      <div class="kp LtoR-early">
+      
+            これ、みんなに聞いちゃう
+      </div>
+      <div class="mem8 right">
+      <span>財前 帝</span>
+      <p>
+      
+            財前にとって　もう旨味がないなぁ
+      </p>
+      </div>
+      <div class="kp LtoR-early">
+      
+            それはRP優先でいいよ。
+      </div>
+      <div class="mem8 right">
+      <span>財前 帝</span>
+      <p>
+      
+            バレないように帰ります。
+      </p>
+      </div>
+      <div class="kp LtoR-early">
+      
+            では、帝さんはここで離脱。無事に生還できますね。あとは見守ってもらうって流れになっちゃうけど
+      </div>
+      <div class="mem8 right">
+      <span>財前 帝</span>
+      <p>
+      
+            了解ー
+      </p>
+      </div>
+      <div class="mem8 right">
+      <span>財前 帝</span>
+      <p>
+      
+            (惨い死に方すればいいのになぁ)
+      </p>
+      </div>
+      <div class="mem2 right">
+      <span>阿土 咲夜之</span>
+      <p>
+      
+            追いかけたいに気持ちはかなり傾いてる。鴻上さんが追いかけるなら確実に追いかける
+      </p>
+      </div>
+      <div class="mem2 right">
+      <span>阿土 咲夜之</span>
+      <p>
+      
+            「数日かけてお話した人はもう知人。放っておけない。でも自分が追いかけて何かできるだろうか…。」<br>って感じ。でも鴻上さんに彼女がいるのは知ってるから、一人で行かせて何かあるのは良くないって考え。
+      </p>
+      </div>
+      <div class="mem7 left">
+      <span>南 宵一郎</span>
+      <p>
+      
+            鷹野の組長と娘さんを見つけるって約束しちゃったからなぁ<br>追うかなぁ
+      </p>
+      </div>
+      <div class="kp LtoR-early">
+      
+            南先生は追いかける、了承。
+      </div>
+      <div class="mem7 left">
+      <span>南 宵一郎</span>
+      <p>
+      
+            PL的には帰ってほしいの山々なのですがね()
+      </p>
+      </div>
+      <div class="kp LtoR-early">
+      
+            本音がｗｗｗ
+      </div>
+      <div class="mem7 left">
+      <span>南 宵一郎</span>
+      <p>
+      
+            戦闘めんどくさいし 弟残して死んでほしくない()
+      </p>
+      </div>
+      <div class="kp LtoR-early">
+      
+            うぇーい
+      </div>
+      <div class="mem7 left">
+      <span>南 宵一郎</span>
+      <p>
+      
+            でもこれ確実に死ぬよなぁ……
+      </p>
+      </div>
+      <div class="kp LtoR-early">
+      
+            でも、立ち回りがよければ死なないんだぜ？これ
+      </div>
+      <div class="mem1 left">
+      <span>鴻上 麗羅</span>
+      <p>
+      
+            麗羅も追いかけるかなぁ
+      </p>
+      </div>
+      <div class="kp LtoR-early">
+      
+            はい、麗羅ちゃん追いかけるね。
+      </div>
+      <div class="kp LtoR-early">
+      
+            じゃあ、阿土くんも一緒？
+      </div>
+      <div class="mem1 left">
+      <span>鴻上 麗羅</span>
+      <p>
+      
+            「ざっけんな何なのまじありえないんだけど！！」<br>ダッシュ
+      </p>
+      </div>
+      <div class="mem2 right">
+      <span>阿土 咲夜之</span>
+      <p>
+      
+            そうねー。追いかけますねー。
+      </p>
+      </div>
+      <div class="kp LtoR-early">
+      
+            では、帝さんはそっと戻るで、他三名は手塚くんを追いかける方向で
+      </div>
+      <div class="mem7 left">
+      <span>南 宵一郎</span>
+      <p>
+      
+            「若い方は血気盛んで、いいですね！」麗羅ちゃんと阿土くんを追いかけます
+      </p>
+      </div>
+      <div class="kp LtoR-early">
+      
+            では、手塚くんを走って追いかけようとしても、ここは蜘蛛の巣のようなものだ。蜘蛛ほど早くは進めない。<br>結果として、蜘蛛よりもかなり遅れて到着となるだろう。
+      </div>
+      <div class="mem1 left">
+      <span>鴻上 麗羅</span>
+      <p>
+      
+            むしゃむしゃしてる？
+      </p>
+      </div>
+      <div class="mem8 right">
+      <span>財前 帝</span>
+      <p>
+      
+            「(これは赤字だな。付き合ってられん)」<br>じゃあの
+      </p>
+      </div>
+      <div class="mem1 left">
+      <span>鴻上 麗羅</span>
+      <p>
+      
+            wwwフェードアウトwwwwww
+      </p>
+      </div>
+      <div class="kp LtoR-early">
+      
+            キミたちがその空間に辿り着いた時には、蜘蛛はもう、手塚くんを抱えて巣の中央へと進んでいた。
+      </div>
+      <div class="kp LtoR-early">
+      
+            それまでの細い道とは違い、開けた空間。<br>今まで以上に白い糸が張り巡らされ、<br>白く輝くホールに迷い込んだかのようだ。
+      </div>
+      <div class="kp LtoR-early">
+      
+            その中央に、彼女はいた。
+      </div>
+      <div class="mem2 right">
+      <span>阿土 咲夜之</span>
+      <p>
+      
+            賛美歌でも歌うの？
+      </p>
+      </div>
+      <div class="kp LtoR-early">
+      
+            蜘蛛の巣の上に座り込んで、柔和な笑みを浮かべている。<br>巨大な蜘蛛が近づいてきても、恐れる様子もなく、もしろ親しげに語りかける。
+      </div>
+      <div class="mem4 right">
+      <span>鷹野 燐</span>
+      <p>
+      
+            「ありがとう。連れてきてくれて」
+      </p>
+      </div>
+      <div class="kp LtoR-early">
+      
+            そう言って、手を広げる彼女の元に、蜘蛛の糸にからめとられた、手塚くんの姿が見える
+      </div>
+      <div class="mem7 left">
+      <span>南 宵一郎</span>
+      <p>
+      
+            「ハァ？誘き出されたということですか」
+      </p>
+      </div>
+      <div class="mem1 left">
+      <span>鴻上 麗羅</span>
+      <p>
+      
+            「燐…？あんた何してんの」
+      </p>
+      </div>
+      <div class="kp LtoR-early">
+      
+            彼女は、答えない
+      </div>
+      <div class="kp LtoR-early">
+      
+            さて、描写の続きをしよう
+      </div>
+      <div class="kp LtoR-early">
+      
+            白いホールのように広い空間だが、所々に黒い染みのように穴が開いている。
+      </div>
+      <div class="kp LtoR-early">
+      
+            それは、さらなる深淵への入口。<br>一度落ちたならば、自力では這い上がる事もできないであろう
+      </div>
+      <div class="kp LtoR-early">
+      
+            まぁ、簡単に言ってしまえば、蜘蛛の巣が全体に広がる白い空間の仲、所々ぽっかり穴が開いているので気お付けてね☆
+      </div>
+      <div class="kp LtoR-early">
+      
+            穴を覗いてみるかい？
+      </div>
+      <div class="mem2 right">
+      <span>阿土 咲夜之</span>
+      <p>
+      
+            落ちたらやばそうなら覗かない…かな…
+      </p>
+      </div>
+      <div class="mem7 left">
+      <span>南 宵一郎</span>
+      <p>
+      
+            覗きません
+      </p>
+      </div>
+      <div class="kp LtoR-early">
+      
+            あら残念
+      </div>
+      <div class="mem1 left">
+      <span>鴻上 麗羅</span>
+      <p>
+      
+            「シカトしてんじゃねぇよ…まじないんですけど」
+      </p>
+      </div>
+      <div class="kp LtoR-early">
+      
+            キミがそう言うと同時に巣の中心で燐ちゃんが
+      </div>
+      <div class="kp LtoR-early">
+      
+            燐ちゃんが僅かに身を屈めたかと思うと、彼女の背が大きく膨らんだ
+      </div>
+      <div class="kp LtoR-early">
+      
+            膨らんだ背に亀裂が走り、そこから華奢な少女の身体からは想像もつかぬほどの巨大な脚が生えてくる。<br>それは剛毛の生えた、太い蜘蛛の脚。<br>昆虫が脱皮をするかのように、ずるり、ずるりと裂け目から蜘蛛の体が現れる。
+      </div>
+      <div class="mem1 left">
+      <span>鴻上 麗羅</span>
+      <p>
+      
+            「うわきっしょ」
+      </p>
+      </div>
+      <div class="kp LtoR-early">
+      
+            少女だった体は、既に体と呼べる代物ですらなく、皺だらけの皮膚という形状をした、ただの袋となっていた。<br>少女の皮を全て脱ぎ捨てれば、そこにいるのは一匹の巨大な蜘蛛。
+      </div>
+      <div class="kp LtoR-early">
+      
+            そう、母なる蜘蛛の寵愛を受けた、アトラック＝ナチャの娘だ。
+      </div>
+      <div class="mem2 right">
+      <span>阿土 咲夜之</span>
+      <p>
+      
+            「………。」呆然
+      </p>
+      </div>
+      <div class="kp LtoR-early">
+      
+            燐ちゃん……少女の変わり果てた姿を目にしたキミたちは2/1D8+1のSANチェックだ
+      </div>
+      <div class="mem1 left">
+      <span>鴻上 麗羅</span>
+      <p>
+      
+            ああ〜なるほど蜘蛛
+      </p>
+      </div>
+      <div class="mem1 left">
+      <span>鴻上 麗羅</span>
+      <p>
+      
+            初めて会うわ〜
+      </p>
+      </div>
+      <div class="mem1 left">
+      <span>鴻上 麗羅</span>
+      <p>
+      
+            24成功 47 こいつ強いぞ
+      </p>
+      </div>
+      <div class="mem2 right">
+      <span>阿土 咲夜之</span>
+      <p>
+      
+            6成功53→51
+      </p>
+      </div>
+      <div class="mem7 left">
+      <span>南 宵一郎</span>
+      <p>
+      
+            34成功<br>47 さんちがなかよち
+      </p>
+      </div>
+      <div class="kp LtoR-early">
+      
+            みんな硬すぎじゃなーい
+      </div>
+      <div class="mem1 left">
+      <span>鴻上 麗羅</span>
+      <p>
+      
+            マブだわ
+      </p>
+      </div>
+      <div class="kp LtoR-early">
+      
+            では、キミたちが強靭な精神でこの光景を見ていると
+      </div>
+      <div class="kp LtoR-early">
+      
+            巣の中心でかつては燐と呼ばれた巨大蜘蛛が、節くれだった脚を動かして、糸に巻き取られた男を愛おしそうに抱えた。
+      </div>
+      <div class="kp LtoR-early">
+      
+            そして、巨大な口を開け
+      </div>
+      <div class="kp LtoR-early">
+      
+            ――その男の頭に、食らいついた
+      </div>
+      <div class="mem5 left">
+      <span>手塚 雅史</span>
+      <p>
+      
+            「うっ、ぐっ」
+      </p>
+      </div>
+      <div class="kp LtoR-early">
+      
+            蜘蛛の口から生えた鋭い鋏角が、手塚の両目へと突き立てられる。ずぶりと音をたて、彼の両目が抉れた
+      </div>
+      <div class="mem2 right">
+      <span>阿土 咲夜之</span>
+      <p>
+      
+            「て、手塚しゃん……。」
+      </p>
+      </div>
+      <div class="kp LtoR-early">
+        鮮血迸る眼窩に牙を突き立て、蜘蛛はまるで嬉しそうに”啜って”いた。<br>啜られているのは、血液ではない。<br>長い鋭い鋏角は眼球を貫き、さらなる深部にまで届いていた。
+      </div>
+      <div class="kp LtoR-early">
+      
+            そう、この蜘蛛は目に牙を突き立て、脳を啜っているのだ。
+      </div>
+      <div class="kp LtoR-early">
+      
+            ――かつての恋人の、脳を
+      </div>
+      <div class="mem1 left">
+      <span>鴻上 麗羅</span>
+      <p>
+      
+            やったぜ
+      </p>
+      </div>
+      <div class="mem1 left">
+      <span>鴻上 麗羅</span>
+      <p>
+      
+            あ、ちがった
+      </p>
+      </div>
+      <div class="kp LtoR-early">
+      
+            キミたちは恐怖するだろう。1/1D4のSANチェックをしようか
+      </div>
+      <div class="mem1 left">
+      <span>鴻上 麗羅</span>
+      <p>
+      
+            な、なんて事を！
+      </p>
+      </div>
+      <div class="mem1 left">
+      <span>鴻上 麗羅</span>
+      <p>
+      
+            60流石にドン引きしたね3→44
+      </p>
+      </div>
+      <div class="mem7 left">
+      <span>南 宵一郎</span>
+      <p>
+      
+            62 3<br>47→44
+      </p>
+      </div>
+      <div class="mem7 left">
+      <span>南 宵一郎</span>
+      <p>
+      
+            またさんちがなかよち
+      </p>
+      </div>
+      <div class="mem1 left">
+      <span>鴻上 麗羅</span>
+      <p>
+      
+            なかよしwwwwwwズッ友
+      </p>
+      </div>
+      <div class="mem2 right">
+      <span>阿土 咲夜之</span>
+      <p>
+      
+            20成功50
+      </p>
+      </div>
+      <div class="mem7 left">
+      <span>南 宵一郎</span>
+      <p>
+      
+            マブダチだわ
+      </p>
+      </div>
+      <div class="kp LtoR-early">
+      
+            なんか、燐ちゃんの変貌より減ってるんだけどこの人たち
+      </div>
+      <div class="kp LtoR-early">
+      
+            データ的に言ってしまうとね、手塚は現在燐ちゃんに脳を吸われてる状態なんだよね。脳を食われて、1ラウンドごとにINTが1ずつ減っていって、0になったら、当然脳を全て食われて死んでしまうよ。
+      </div>
+      <div class="mem1 left">
+      <span>鴻上 麗羅</span>
+      <p>
+      
+            いや吸われ始めた時点でもう死んでるっしょ…
+      </p>
+      </div>
+      <div class="mem7 left">
+      <span>南 宵一郎</span>
+      <p>
+      
+            そら目の前で脳じゅるじゅるやられたらびびるでしょ
+      </p>
+      </div>
+      <div class="mem1 left">
+      <span>鴻上 麗羅</span>
+      <p>
+      
+            食われ始めで助かったわ〜って脳汁垂れ流しながら救出すんのか…
+      </p>
+      </div>
+      <div class="kp LtoR-early">
+      
+            いや、一応、食われた分のINTは戻って来ないし、APPは2D4減るし、更に失明は確定してるけど、助けることは可能だよ
+      </div>
+      <div class="kp LtoR-early">
+      
+            まぁ、今なら燐ちゃんはお食事に夢中だから、このまま引き返せば、安全に帰る事が出来るね
+      </div>
+      <div class="mem1 left">
+      <span>鴻上 麗羅</span>
+      <p>
+      
+            つええな…DEX順？
+      </p>
+      </div>
+      <div class="kp LtoR-early">
+      
+            そうだね。DEX順だね
+      </div>
+      <div class="kp LtoR-early">
+      
+            どうする？手塚くん助ける？
+      </div>
+      <div class="mem2 right">
+      <span>阿土 咲夜之</span>
+      <p>
+      
+            蜘蛛のヨダレ塗れの頭かぁ。私だったらそれを想像しただけで勝手に発狂してるな…
+      </p>
+      </div>
+      <div class="mem1 left">
+      <span>鴻上 麗羅</span>
+      <p>
+      
+            でもドン引きするほどのでかい蜘蛛に蹴り入れられるかな…
+      </p>
+      </div>
+      <div class="mem7 left">
+      <span>南 宵一郎</span>
+      <p>
+      
+            燐ちゃん助けられない時点でもう無理かな
+      </p>
+      </div>
+      <div class="kp LtoR-early">
+      
+            手塚くんを連れてきた蜘蛛は敵対してこなければすぐには攻撃してこない。燐ちゃんももぐもぐしてるから攻撃してこないね
+      </div>
+      <div class="mem1 left">
+      <span>鴻上 麗羅</span>
+      <p>
+      
+            白いホールだけ去り際に燃やしたらめっちゃ追いかけてくっかな
+      </p>
+      </div>
+      <div class="kp LtoR-early">
+      
+             蜘蛛の巣ってどんぐらい燃えるんだろ
+      </div>
+      <div class="mem1 left">
+      <span>鴻上 麗羅</span>
+      <p>
+      
+            燃やしたとこだけっぽいな。くそ火力がたりねぇ
+      </p>
+      </div>
+      <div class="mem1 left">
+      <span>鴻上 麗羅</span>
+      <p>
+      
+            せめて奈落に落として帰ろうと思ったのに。
+      </p>
+      </div>
+      <div class="kp LtoR-early">
+      
+            キミたちの選択を聞こうか。
+      </div>
+      <div class="kp LtoR-early">
+      
+            そのまま逃げるかい？
+      </div>
+      <div class="kp LtoR-early">
+      
+            それとも、戦うかい？
+      </div>
+      <div class="mem1 left">
+      <span>鴻上 麗羅</span>
+      <p>
+      
+            悔しいけど勝てる気はないしにげるかなぁ…助けたかったけど多分今の状態じゃ助けられないと思ってるだろうし
+      </p>
+      </div>
+      <div class="mem7 left">
+      <span>南 宵一郎</span>
+      <p>
+      
+            燐ちゃんもとに戻せないなら用はないんだよな……
+      </p>
+      </div>
+      <div class="mem2 right">
+      <span>阿土 咲夜之</span>
+      <p>
+      
+            脳みそ吸い出してるってことは死んでしまったんだろうなってさやの君は思ってますね…
+      </p>
+      </div>
+      <div class="mem2 right">
+      <span>阿土 咲夜之</span>
+      <p>
+      
+            手塚君のことは手遅れだとおもってるけど、どうかなぁ…、逃げるかどうかがちょっと微妙…
+      </p>
+      </div>
+      <div class="kp LtoR-early">
+      
+            では、流れ的には逃げる、ということになりますか？
+      </div>
+      <div class="mem7 left">
+      <span>南 宵一郎</span>
+      <p>
+      
+            そうなるかな
+      </p>
+      </div>
+      <div class="mem7 left">
+      <span>南 宵一郎</span>
+      <p>
+      
+            鷹野さんに何て説明しようって思ってますね
+      </p>
+      </div>
+      <div class="mem2 right">
+      <span>阿土 咲夜之</span>
+      <p>
+      
+            うーん…、どちらかというと動けない、かな。<br>助けようとするのか逃げるのかまではわからんけど、頭こんがらがって固まってる感じ。
+      </p>
+      </div>
+      <div class="mem7 left">
+      <span>南 宵一郎</span>
+      <p>
+      
+            思いっきりどついて引っ張って逃げるわ
+      </p>
+      </div>
+      <div class="kp LtoR-early">
+      
+            阿土くんを？燐ちゃんを？
+      </div>
+      <div class="mem7 left">
+      <span>南 宵一郎</span>
+      <p>
+      
+            おどくんを
+      </p>
+      </div>
+      <div class="mem2 right">
+      <span>阿土 咲夜之</span>
+      <p>
+      
+            ありがと(笑)
+      </p>
+      </div>
+      <div class="kp LtoR-early">
+      
+             じゃあ、全員離脱ということだね
+      </div>
+      <div class="kp LtoR-early">
+      
+            キミたちは彼らから逃げるようにこの場から去る
+      </div>
+      <div class="kp LtoR-early">
+      
+            そして、キミたちは無事に全員脱出することが出来た。
+      </div>
+      <div class="kp LtoR-early">
+      
+            キミたちが洞穴を出てへたり込んでいると、声を掛けてくる者がいる。
+      </div>
+      <div class="mem13 left">
+      <span>？？</span>
+      <p>
+      
+            「おぉ。おぉ。本当に、開いてしまっていたとは……」
+      </p>
+      </div>
+      <div class="mem2 right">
+      <span>阿土 咲夜之</span>
+      <p>
+      
+            「ど、どなたですか…。」
+      </p>
+      </div>
+      <div class="kp LtoR-early">
+      
+            阿土くんと麗羅ちゃんは見覚えがあるかな。後ろの方に林業の社長さんがいるね
+      </div>
+      <div class="mem11 left">
+      <span>社長</span>
+      <p>
+      
+            「おい、アンタたち。大丈夫だったか。近づいたらダメだと言われてるって、ちゃんと言っただろうに」
+      </p>
+      </div>
+      <div class="kp LtoR-early">
+      
+            社長と、腰の曲がった一人の老人がいるよ
+      </div>
+      <div class="mem2 right">
+      <span>阿土 咲夜之</span>
+      <p>
+      
+            「え、あ、す、すみま、せん…。その、中に、知り合い……、──うぷ…。」<br>吐きそうになって堪えます
+      </p>
+      </div>
+      <div class="mem7 left">
+      <span>南 宵一郎</span>
+      <p>
+      
+            「ちょ、大丈夫ですか？」背中をさすります
+      </p>
+      </div>
+      <div class="mem2 right">
+      <span>阿土 咲夜之</span>
+      <p>
+      
+            「だ、大丈夫…、だけど、精神的に…大丈夫じゃないかも…。」
+      </p>
+      </div>
+      <div class="mem11 left">
+      <span>社長</span>
+      <p>
+      
+            「親父にこの洞穴の話をしたら、急に慌てだしてな。どうやらボケていてもここのことだけは鮮明に記憶していたらしい」
+      </p>
+      </div>
+      <div class="mem2 right">
+      <span>阿土 咲夜之</span>
+      <p>
+      
+            「そ、しょう、なんれすか……。」
+      </p>
+      </div>
+      <div class="mem14 right">
+      <span>老人</span>
+      <p>
+      
+            「ここだけは、絶対に塞いでおかねばならんのじゃ。<br>ここの奥深くには、母なる蜘蛛が眠っていると言われておる」
+      </p>
+      </div>
+      <div class="mem14 right">
+      <span>老人</span>
+      <p>
+      
+            「母なる蜘蛛に魅入られたおなごは、人の頭を喰らう化け蜘蛛へと変じてしまうと。儂が小さい頃は、そう言い伝えられておった」
+      </p>
+      </div>
+      <div class="mem2 right">
+      <span>阿土 咲夜之</span>
+      <p>
+      
+            「おなご……。だから、たかのしゃん……。」
+      </p>
+      </div>
+      <div class="mem11 left">
+      <span>社長</span>
+      <p>
+      
+            「まぁ、ここは手配して塞ぐことにするよ」
+      </p>
+      </div>
+      <div class="mem11 left">
+      <span>社長</span>
+      <p>
+      
+            「キミたちも早くここから離れた方がいいさ」
+      </p>
+      </div>
+      <div class="mem2 right">
+      <span>阿土 咲夜之</span>
+      <p>
+      
+            「あにょ…、───、あの、塞ぐなら、早くしたほうが、いいです…。人食い蜘蛛、中にいるから…。知り合いの人が、脳み…そ……」
+      </p>
+      </div>
+      <div class="mem11 left">
+      <span>社長</span>
+      <p>
+      
+            「手配が出来次第だな」
+      </p>
+      </div>
+      <div class="mem2 right">
+      <span>阿土 咲夜之</span>
+      <p>
+      
+            「そうですか……。」
+      </p>
+      </div>
+      <div class="kp LtoR-early">
+      
+            とのまぁ。そういうことで、話が終わるとENDになるのですが
+      </div>
+      <div class="mem2 right">
+      <span>阿土 咲夜之</span>
+      <p>
+      
+            ありゃ
+      </p>
+      </div>
+      <div class="mem8 right">
+      <span>財前 帝</span>
+      <p>
+      
+            その山、おいくら？
+      </p>
+      </div>
+      <div class="kp LtoR-early">
+      
+            国有地です
+      </div>
+      <div class="mem8 right">
+      <span>財前 帝</span>
+      <p>
+      
+            残念！
+      </p>
+      </div>
+      <div class="mem2 right">
+      <span>阿土 咲夜之</span>
+      <p>
+      
+            国総出で人食い蜘蛛飼ってるってことじゃんやべえ！
+      </p>
+      </div>
+      <div class="kp LtoR-early">
+      
+            知らないので何も出来ないし、認知してないです
+      </div>
+      <div class="mem8 right">
+      <span>財前 帝</span>
+      <p>
+      
+            純粋な悪はこの子なのでは
+      </p>
+      </div>
+      <div class="mem2 right">
+      <span>阿土 咲夜之</span>
+      <p>
+      
+            宵さん弁護士だから、国会議員とかにツテありそうじゃん？そいつに訴えかける
+      </p>
+      </div>
+      <div class="mem7 left">
+      <span>南 宵一郎</span>
+      <p>
+      
+            弁護士そんな有能じゃないと思う()
+      </p>
+      </div>
+      <div class="kp LtoR-early">
+      
+            じゃあ
+      </div>
+      <div class="kp LtoR-early">
+      
+            ――キミたちは、なんとかあの洞穴から逃げ出すことができた。
+      </div>
+      <div class="kp LtoR-early">
+      
+            だが、犠牲はあまりにも大きかった。
+      </div>
+      <div class="kp LtoR-early">
+      
+            元に戻らないもの。帰って来ないもの。
+      </div>
+      <div class="kp LtoR-early">
+      
+            何もなかったことになど、もう、出来ないのだから。
+      </div>
+      <div class="kp LtoR-early">
+      
+            これにて、白の囚人完結にございます。全員生還おめでとう
+      </div>
+      </div>
+
+<br><br><br><br><br><br><br><br><br>
+</div></div>
+<script src="../logCon_Respon.js"></script>
+</body></html>
