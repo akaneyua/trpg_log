@@ -1,0 +1,7427 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<title>log</title>
+<meta http-equiv="content-type" charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+<link rel="stylesheet" href="../logCon_Respon.css">
+<style>
+    /* main css */
+    .bg-inner.bg1{background:url('./草刈村画像/mountain004_night_dark.jpg') no-repeat center/cover;}
+    
+    /* member */
+    .mem1 p{border:2px solid rgb(57, 158, 204);box-shadow:5px 5px 0 rgb(57, 158, 204);}
+.mem1 p:after{border-right-color:rgb(57, 158, 204);}
+.mem1 span{background:rgb(57, 158, 204);color:#000;}
+.mem1:before{content:'';background-image:url('./草刈村画像/待夜雪歌.png');background-size:contain;background-repeat:no-repeat;background-position:center center;width:90px;height:90px;}
+.mem2 p{border:2px solid rgb(136, 136, 136);box-shadow:5px 5px 0 rgb(136, 136, 136);}
+.mem2 p:after{border-left-color:rgb(136, 136, 136);}
+.mem2 span{background:rgb(136, 136, 136);color:#fff;}
+.mem2:before{content:'';background-image:url('2.png');background-size:contain;background-repeat:no-repeat;background-position:center center;width:90px;height:90px;}
+.mem3 p{border:2px solid rgb(235, 110, 165);box-shadow:5px 5px 0 rgb(235, 110, 165);}
+.mem3 p:after{border-right-color:rgb(235, 110, 165);}
+.mem3 span{background:rgb(235, 110, 165);color:#000;}
+.mem3:before{content:'';background-image:url('./草刈村画像/南\ 暁二郎.jpg');background-size:contain;background-repeat:no-repeat;background-position:center center;width:90px;height:90px;}
+.mem4 p{border:2px solid rgb(147, 132, 139);box-shadow:5px 5px 0 rgb(147, 132, 139);}
+.mem4 p:after{border-left-color:rgb(147, 132, 139);}
+.mem4 span{background:rgb(147, 132, 139);color:#fff;}
+.mem4:before{content:'';background-image:url('./草刈村画像/夕凪\ リヒト.png');background-size:contain;background-repeat:no-repeat;background-position:center center;width:90px;height:90px;}
+.mem5 p{border:2px solid rgb(73, 165, 129);box-shadow:5px 5px 0 rgb(73, 165, 129);}
+.mem5 p:after{border-right-color:rgb(73, 165, 129);}
+.mem5 span{background:rgb(73, 165, 129);color:#fff;}
+.mem5:before{content:'';background-image:url('./草刈村画像/野々間\ 蒴那.png');background-size:contain;background-repeat:no-repeat;background-position:center center;width:90px;height:90px;}
+.mem6 p{border:2px solid rgb(136, 136, 136);box-shadow:5px 5px 0 rgb(136, 136, 136);}
+.mem6 p:after{border-left-color:rgb(136, 136, 136);}
+.mem6 span{background:rgb(136, 136, 136);color:#fff;}
+.mem6:before{content:'';background-image:url('6.png');background-size:contain;background-repeat:no-repeat;background-position:center center;width:90px;height:90px;}
+.mem7 p{border:2px solid rgb(136, 136, 136);box-shadow:5px 5px 0 rgb(136, 136, 136);}
+.mem7 p:after{border-right-color:rgb(136, 136, 136);}
+.mem7 span{background:rgb(136, 136, 136);color:#fff;}
+.mem7:before{content:'';background-image:url('7.png');background-size:contain;background-repeat:no-repeat;background-position:center center;width:90px;height:90px;}
+.mem8 p{border:2px solid rgb(136, 136, 136);box-shadow:5px 5px 0 rgb(136, 136, 136);}
+.mem8 p:after{border-left-color:rgb(136, 136, 136);}
+.mem8 span{background:rgb(136, 136, 136);color:#fff;}
+.mem8:before{content:'';background-image:url('8.png');background-size:contain;background-repeat:no-repeat;background-position:center center;width:90px;height:90px;}
+.mem9 p{border:2px solid rgb(136, 136, 136);box-shadow:5px 5px 0 rgb(136, 136, 136);}
+.mem9 p:after{border-right-color:rgb(136, 136, 136);}
+.mem9 span{background:rgb(136, 136, 136);color:#fff;}
+.mem9:before{content:'';background-image:url('9.png');background-size:contain;background-repeat:no-repeat;background-position:center center;width:90px;height:90px;}
+.mem10 p{border:2px solid rgb(136, 136, 136);box-shadow:5px 5px 0 rgb(136, 136, 136);}
+.mem10 p:after{border-left-color:rgb(136, 136, 136);}
+.mem10 span{background:rgb(136, 136, 136);color:#fff;}
+.mem10:before{content:'';background-image:url('10.png');background-size:contain;background-repeat:no-repeat;background-position:center center;width:90px;height:90px;}
+.mem11 p{border:2px solid rgb(136, 136, 136);box-shadow:5px 5px 0 rgb(136, 136, 136);}
+.mem11 p:after{border-right-color:rgb(136, 136, 136);}
+.mem11 span{background:rgb(136, 136, 136);color:#fff;}
+.mem11:before{content:'';background-image:url('11.png');background-size:contain;background-repeat:no-repeat;background-position:center center;width:90px;height:90px;}
+.mem12 p{border:2px solid rgb(136, 136, 136);box-shadow:5px 5px 0 rgb(136, 136, 136);}
+.mem12 p:after{border-left-color:rgb(136, 136, 136);}
+.mem12 span{background:rgb(136, 136, 136);color:#fff;}
+.mem12:before{content:'';background-image:url('12.png');background-size:contain;background-repeat:no-repeat;background-position:center center;width:90px;height:90px;}
+.mem13 p{border:2px solid rgb(136, 136, 136);box-shadow:5px 5px 0 rgb(136, 136, 136);}
+.mem13 p:after{border-right-color:rgb(136, 136, 136);}
+.mem13 span{background:rgb(136, 136, 136);color:#fff;}
+.mem13:before{content:'';background-image:url('13.png');background-size:contain;background-repeat:no-repeat;background-position:center center;width:90px;height:90px;}
+.mem14 p{border:2px solid rgb(136, 136, 136);box-shadow:5px 5px 0 rgb(136, 136, 136);}
+.mem14 p:after{border-left-color:rgb(136, 136, 136);}
+.mem14 span{background:rgb(136, 136, 136);color:#fff;}
+.mem14:before{content:'';background-image:url('./草刈村画像/character_cthulhu_mi-go.png');background-size:contain;background-repeat:no-repeat;background-position:center center;width:90px;height:90px;}
+.mem15 p{border:2px solid rgb(136, 136, 136);box-shadow:5px 5px 0 rgb(136, 136, 136);}
+.mem15 p:after{border-right-color:rgb(136, 136, 136);}
+.mem15 span{background:rgb(136, 136, 136);color:#fff;}
+.mem15:before{content:'';background-image:url('15.png');background-size:contain;background-repeat:no-repeat;background-position:center center;width:90px;height:90px;}
+.mem16 p{border:2px solid rgb(136, 136, 136);box-shadow:5px 5px 0 rgb(136, 136, 136);}
+.mem16 p:after{border-left-color:rgb(136, 136, 136);}
+.mem16 span{background:rgb(136, 136, 136);color:#fff;}
+.mem16:before{content:'';background-image:url('16.png');background-size:contain;background-repeat:no-repeat;background-position:center center;width:90px;height:90px;}
+    
+    @media only screen and (max-width: 768px) {
+        .mem1 p:after{border-right-color:rgb(57, 158, 204);border-left-color:transparent;}
+        .mem2 p:after{border-right-color:rgb(136, 136, 136);border-left-color:transparent;}
+        .mem3 p:after{border-right-color:rgb(235, 110, 165);border-left-color:transparent;}
+        .mem4 p:after{border-right-color:rgb(147, 132, 139);border-left-color:transparent;}
+        .mem5 p:after{border-right-color:rgb(73, 165, 129);border-left-color:transparent;}
+        .mem6 p:after{border-right-color:rgb(136, 136, 136);border-left-color:transparent;}
+        .mem7 p:after{border-right-color:rgb(136, 136, 136);border-left-color:transparent;}
+        .mem8 p:after{border-right-color:rgb(136, 136, 136);border-left-color:transparent;}
+        .mem9 p:after{border-right-color:rgb(136, 136, 136);border-left-color:transparent;}
+        .mem10 p:after{border-right-color:rgb(136, 136, 136);border-left-color:transparent;}
+        .mem11 p:after{border-right-color:rgb(136, 136, 136);border-left-color:transparent;}
+        .mem12 p:after{border-right-color:rgb(136, 136, 136);border-left-color:transparent;}
+        .mem13 p:after{border-right-color:rgb(136, 136, 136);border-left-color:transparent;}
+        .mem14 p:after{border-right-color:rgb(136, 136, 136);border-left-color:transparent;}
+        .mem15 p:after{border-right-color:rgb(136, 136, 136);border-left-color:transparent;}
+        .mem16 p:after{border-right-color:rgb(136, 136, 136);border-left-color:transparent;}
+
+        .mem1:before,.mem2:before,.mem3:before,
+        .mem4:before,.mem5:before,.mem6:before,
+        .mem7:before,.mem8:before,.mem9:before,
+        .mem10:before,.mem11:before,.mem12:before,
+        .mem13:before,.mem14:before,.mem15:before.mem16:before{width:70px;height:70px;}
+    }
+</style>
+</head>
+<body>
+    <p id="page-top"><a href="#"><i class="page-top__arrow"></i></a></p>
+	<div class="leftwhite"></div>
+	<div class="rightwhite"></div>
+	<div class="bg-sp">
+    <div class="bg-over"><div class="bg-inner bg1"></div></div>
+	<div class="log">
+    
+        <div class="kp">
+
+            はい！<br>イート・アンド・ウォーカーズ-草取村の疑惑-はーじまーるよー！
+       </div>
+       <div class="mem1 left">
+       <span>待夜 雪歌</span>
+       <p>
+       
+            いあ！いあ！
+       </p>
+       </div>
+       <div class="kp">
+       
+            あなた方は美味しいものを求めて旅をするサークル『イート・アンド・ウォーカーズ』のメンバーです。<br>今回は都内から電車で1時間ほどでいける草取村にキノコ狩りにやって来ました。<br>キノコ狩りを楽しみつつ　名産品の『クサトリヒラタケ』を美味しく食べよう！
+       </div>
+       <div class="mem1 left">
+       <span>待夜 雪歌</span>
+       <p>
+       
+            たべよー！
+       </p>
+       </div>
+       <div class="kp">
+       
+            …と、いうわけで　草取村にやって来ました！
+       </div>
+       <div class="mem1 left">
+       <span>待夜 雪歌</span>
+       <p>
+       
+            「うえーい！」
+       </p>
+       </div>
+       <div class="mem2 right">
+       <span>第一村人</span>
+       <p>
+       
+            「あの、本日キノコ狩りをご予約の　イート・アンド・ウォーカーズの皆さんですよね？」
+       </p>
+       </div>
+       <div class="mem1 left">
+       <span>待夜 雪歌</span>
+       <p>
+       
+            「はぁーい！」
+       </p>
+       </div>
+       <div class="mem3 left">
+       <span>南 暁二郎</span>
+       <p>
+       
+            「はーい！」
+       </p>
+       </div>
+       <div class="mem2 right">
+       <span>第一村人</span>
+       <p>
+       
+            「大変言いにくいのですが、その…キノコ狩り、出来なくなっちゃいました…」
+       </p>
+       </div>
+       <div class="mem1 left">
+       <span>待夜 雪歌</span>
+       <p>
+       
+            「なんですと！」
+       </p>
+       </div>
+       <div class="mem3 left">
+       <span>南 暁二郎</span>
+       <p>
+       
+            「えっマジで！？どうしたんですかー？」
+       </p>
+       </div>
+       <div class="mem2 right">
+       <span>第一村人</span>
+       <p>
+       
+            「キノコ狩りをする予定の山に　熊が出たみたいで…本当にすみません！<br>ですがクサトリヒラタケ自体は収穫済みの分がありますので！お昼のバーベキューは出来ますよ！」
+       </p>
+       </div>
+       <div class="mem1 left">
+       <span>待夜 雪歌</span>
+       <p>
+       
+            「熊って事は、山から下りてくるかもしれないということですよね？そこはちゃんと各方面に連絡してますかー？」<br>死人が出て欲しくない人
+       </p>
+       </div>
+       <div class="mem3 left">
+       <span>南 暁二郎</span>
+       <p>
+       
+            「くま！それは大変ですね！？マジで出るんだ～」
+       </p>
+       </div>
+       <div class="mem2 right">
+       <span>第一村人</span>
+       <p>
+       
+            「そのあたりの事をこれから役場で相談するんです。<br>危ないので絶対に山に入らないで下さい」
+       </p>
+       </div>
+       <div class="mem4 right">
+       <span>夕凪 リヒト</span>
+       <p>
+       
+            ｢フリですか？｣
+       </p>
+       </div>
+       <div class="mem2 right">
+       <span>第一村人</span>
+       <p>
+       
+            「フリじゃないですよ!?本当に危ないですから！」
+       </p>
+       </div>
+       <div class="mem1 left">
+       <span>待夜 雪歌</span>
+       <p>
+       
+            「フラグですねー。ちゃんと対策はお願いしますねー」
+       </p>
+       </div>
+       <div class="mem2 right">
+       <span>第一村人</span>
+       <p>
+       
+            「フラグなんかじゃないですってぇ…<br>バーベキューの準備は12時頃に出来ますので、少し村を見て回ってはいかがでしょうか？」
+       </p>
+       </div>
+       <div class="kp">
+       
+            かんたんな村の地図を渡します
+       </div>
+       <div class="mem1 left">
+       <span>待夜 雪歌</span>
+       <p>
+       
+            受けとります
+       </p>
+       </div>
+       <div class="kp">
+       
+            ざっくりと<br>　・村役場<br>　・バーベキュー場<br>　・村長の家<br>　・川<br>に行けそうですね
+       </div>
+       <div class="mem1 left">
+       <span>待夜 雪歌</span>
+       <p>
+       
+            川で魚釣り…（ﾎﾞｿﾘ
+       </p>
+       </div>
+       <div class="mem4 right">
+       <span>夕凪 リヒト</span>
+       <p>
+       
+            今何時だっけ
+       </p>
+       </div>
+       <div class="kp">
+       
+            しまった　相談場所村長ん家だった　ごめん<br>10時頃だね
+       </div>
+       <div class="mem1 left">
+       <span>待夜 雪歌</span>
+       <p>
+       
+            よくある
+       </p>
+       </div>
+       <div class="mem3 left">
+       <span>南 暁二郎</span>
+       <p>
+       
+            村だなー
+       </p>
+       </div>
+       <div class="mem2 right">
+       <span>第一村人</span>
+       <p>
+       
+            「それでは　熊についての話し合いがありますので、失礼します」去ります
+       </p>
+       </div>
+       <div class="mem1 left">
+       <span>待夜 雪歌</span>
+       <p>
+       
+            ﾉｼ
+       </p>
+       </div>
+       <div class="kp">
+       
+            自由行動タイムです。どうする？
+       </div>
+       <div class="mem1 left">
+       <span>待夜 雪歌</span>
+       <p>
+       
+            雪歌さんは川で魚釣りを
+       </p>
+       </div>
+       <div class="kp">
+       
+            釣竿ないよ？
+       </div>
+       <div class="mem1 left">
+       <span>待夜 雪歌</span>
+       <p>
+       
+            この世にはね、石で投石というのもあるのだよ（出来るとは言っていない）
+       </p>
+       </div>
+       <div class="kp">
+       
+            釣りとは…
+       </div>
+       <div class="mem1 left">
+       <span>待夜 雪歌</span>
+       <p>
+       
+            釣り竿なければ、そこにあるもので代用する。それが…狩猟
+       </p>
+       </div>
+       <div class="mem3 left">
+       <span>南 暁二郎</span>
+       <p>
+       
+            「はいはい！俺、川行きたいな～！」
+       </p>
+       </div>
+       <div class="mem1 left">
+       <span>待夜 雪歌</span>
+       <p>
+       
+            「私も、川にいきまーす」
+       </p>
+       </div>
+       <div class="mem4 right">
+       <span>夕凪 リヒト</span>
+       <p>
+       
+            ｢僕はどうしようかな…野々間さんはどうします？｣
+       </p>
+       </div>
+       <div class="mem5 left">
+       <span>野々間 蒴那</span>
+       <p>
+       
+            「ほんとに熊が出たらヤバイですし、バーベキューの食材が増えるのは良いことなので、みんなに付いていこうと思います。」
+       </p>
+       </div>
+       <div class="kp">
+       
+            みんな川でおけ？
+       </div>
+       <div class="mem1 left">
+       <span>待夜 雪歌</span>
+       <p>
+       
+            なのかな？
+       </p>
+       </div>
+       <div class="mem5 left">
+       <span>野々間 蒴那</span>
+       <p>
+       
+            イエス川
+       </p>
+       </div>
+       <div class="mem3 left">
+       <span>南 暁二郎</span>
+       <p>
+       
+            おけ
+       </p>
+       </div>
+       <div class="mem4 right">
+       <span>夕凪 リヒト</span>
+       <p>
+       
+            ｢じゃあ僕も魚釣りに行きます｣
+       </p>
+       </div>
+       <div class="kp">
+       
+            一行が川に着くとそこでは子供たちがあそんでいます
+       </div>
+       <div class="mem1 left">
+       <span>待夜 雪歌</span>
+       <p>
+       
+            「リヒトー、釣りするー？」
+       </p>
+       </div>
+       <div class="mem1 left">
+       <span>待夜 雪歌</span>
+       <p>
+       
+            かわゆい
+       </p>
+       </div>
+       <div class="kp">
+       
+            5人いますね
+       </div>
+       <div class="mem5 left">
+       <span>野々間 蒴那</span>
+       <p>
+       
+            「せ、先客がいる…。」
+       </p>
+       </div>
+       <div class="mem1 left">
+       <span>待夜 雪歌</span>
+       <p>
+       
+            にこいちが二人？
+       </p>
+       </div>
+       <div class="kp">
+       
+            二人組がにこいち
+       </div>
+       <div class="mem6 right">
+       <span>やきゅー</span>
+       <p>
+       
+            「あ！観光の人たちだ！」
+       </p>
+       </div>
+       <div class="mem1 left">
+       <span>待夜 雪歌</span>
+       <p>
+       
+            「ほみゅ」
+       </p>
+       </div>
+       <div class="mem3 left">
+       <span>南 暁二郎</span>
+       <p>
+       
+            「やっほー！観光の人たちだよ～！」
+       </p>
+       </div>
+       <div class="mem7 left">
+       <span>にこいち</span>
+       <p>
+       
+            「何もない村なのにめずらしいね！」「放せー！」
+       </p>
+       </div>
+       <div class="mem5 left">
+       <span>野々間 蒴那</span>
+       <p>
+       
+            「くっ…！ロリコンで捕まりたくないから小さい子は範疇にないんだ…。せめてもう少し大きくなってから…っ！」<br>女の子の脚見て悔しそうにします。ｷﾞﾘｨ(｀皿´)
+       </p>
+       </div>
+       <div class="mem3 left">
+       <span>南 暁二郎</span>
+       <p>
+       
+            「キノコとりにきたんだけどさー、くまが出たって言われちゃって！俺らもここで遊んでいー？……なんかヤバい人いるけど！」
+       </p>
+       </div>
+       <div class="mem1 left">
+       <span>待夜 雪歌</span>
+       <p>
+       
+            へんたいだぁ
+       </p>
+       </div>
+       <div class="mem6 right">
+       <span>やきゅー</span>
+       <p>
+       
+            「らしいね！あの山くまなんていないはずなのに！<br>水切りで勝負だ！」
+       </p>
+       </div>
+       <div class="mem1 left">
+       <span>待夜 雪歌</span>
+       <p>
+       
+            「熊、いないのかー」
+       </p>
+       </div>
+       <div class="kp">
+       
+            変態を見たことがない純真な子供が勝負をしかけてきた！
+       </div>
+       <div class="mem4 right">
+       <span>夕凪 リヒト</span>
+       <p>
+       
+            ｢水切り！僕やったことない！どうやるの？｣
+       </p>
+       </div>
+       <div class="mem8 right">
+       <span>おねむ</span>
+       <p>
+       
+            「かったら　しょうひん…ｽﾔｧ」
+       </p>
+       </div>
+       <div class="mem5 left">
+       <span>野々間 蒴那</span>
+       <p>
+       
+            「でもさっき熊が出るって言ってましたよね？何だかよくわかんないなぁ…。」
+       </p>
+       </div>
+       <div class="mem1 left">
+       <span>待夜 雪歌</span>
+       <p>
+       
+            「へいわだなぁー。いちぶのぞいて」
+       </p>
+       </div>
+       <div class="kp">
+       
+            水切りと聞き込み　どっちからやる？
+       </div>
+       <div class="mem3 left">
+       <span>南 暁二郎</span>
+       <p>
+       
+            「えっ、水切りってなに？教えて教えて！」
+       </p>
+       </div>
+       <div class="mem3 left">
+       <span>南 暁二郎</span>
+       <p>
+       
+            ガチで水切りがわからない
+       </p>
+       </div>
+       <div class="mem4 right">
+       <span>夕凪 リヒト</span>
+       <p>
+       
+            石で水面きるやつ
+       </p>
+       </div>
+       <div class="mem3 left">
+       <span>南 暁二郎</span>
+       <p>
+       
+            石がはねるやつか
+       </p>
+       </div>
+       <div class="mem4 right">
+       <span>夕凪 リヒト</span>
+       <p>
+       
+            リヒトはもう水切りに興味ひかれてる
+       </p>
+       </div>
+       <div class="mem3 left">
+       <span>南 暁二郎</span>
+       <p>
+       
+            「つーか、くまいないの？」
+       </p>
+       </div>
+       <div class="mem3 left">
+       <span>南 暁二郎</span>
+       <p>
+       
+            遊びながら聞き込みでよいのでは
+       </p>
+       </div>
+       <div class="mem6 right">
+       <span>やきゅー</span>
+       <p>
+       
+            「毎日ひみつきち行くけど見たことないよ！」
+       </p>
+       </div>
+       <div class="kp">
+       
+            水切りはミニゲームとなっております
+       </div>
+       <div class="mem3 left">
+       <span>南 暁二郎</span>
+       <p>
+       
+            ナニィ
+       </p>
+       </div>
+       <div class="mem3 left">
+       <span>南 暁二郎</span>
+       <p>
+       
+            「ひみつきちが山にあるのか～！いいな～」
+       </p>
+       </div>
+       <div class="mem1 left">
+       <span>待夜 雪歌</span>
+       <p>
+       
+            みにげーむだとｗｗｗ
+       </p>
+       </div>
+       <div class="mem5 left">
+       <span>野々間 蒴那</span>
+       <p>
+       
+            嘘だろwwなんてこったww
+       </p>
+       </div>
+       <div class="mem4 right">
+       <span>夕凪 リヒト</span>
+       <p>
+       
+            ｢秘密基地！！すごい！｣
+       </p>
+       </div>
+       <div class="kp">
+       
+            勝ったら賞品が貰えるよ！
+       </div>
+       <div class="mem7 left">
+       <span>にこいち</span>
+       <p>
+       
+            「みんなで頑張って作ったんだー♪」「放せー！」
+       </p>
+       </div>
+       <div class="mem3 left">
+       <span>南 暁二郎</span>
+       <p>
+       
+            にこいちの片割れは放せしかしゃべらんのか
+       </p>
+       </div>
+       <div class="kp">
+       
+            彼女は照れ屋さんだからねー♪とのこと
+       </div>
+       <div class="mem1 left">
+       <span>待夜 雪歌</span>
+       <p>
+       
+            HAーNAーSEー
+       </p>
+       </div>
+       <div class="mem5 left">
+       <span>野々間 蒴那</span>
+       <p>
+       
+            この時期そんなにくっついてたら汗でべたべたして気持ち悪いよー
+       </p>
+       </div>
+       <div class="mem3 left">
+       <span>南 暁二郎</span>
+       <p>
+       
+            川で流れてくからべたべたはしないのかな……
+       </p>
+       </div>
+       <div class="kp">
+       
+            にこいちはあんまり気にしない。
+       </div>
+       <div class="mem3 left">
+       <span>南 暁二郎</span>
+       <p>
+       
+            みにげーむやってから聞き込みするか
+       </p>
+       </div>
+       <div class="mem1 left">
+       <span>待夜 雪歌</span>
+       <p>
+       
+            そうだねぇ
+       </p>
+       </div>
+       <div class="kp">
+       
+            水切りのルール(簡略化)<br>1D6+投擲の10の位の数だけ跳ねる
+       </div>
+       <div class="mem5 left">
+       <span>野々間 蒴那</span>
+       <p>
+       
+            バーベキューから遠ざかってないか…(笑)
+       </p>
+       </div>
+       <div class="mem1 left">
+       <span>待夜 雪歌</span>
+       <p>
+       
+            バーベキューなんてお昼にやれば十分
+       </p>
+       </div>
+       <div class="kp">
+       
+            準備出来てないから　お腹をすかせとくのもアリかもよ？
+       </div>
+       <div class="mem4 right">
+       <span>夕凪 リヒト</span>
+       <p>
+       
+            投擲初期値なんだっけ
+       </p>
+       </div>
+       <div class="kp">
+       
+            目星で水切りにいい感じの石を探せるよ！
+       </div>
+       <div class="mem3 left">
+       <span>南 暁二郎</span>
+       <p>
+       
+            投擲ってみにげーむのためのあれか
+       </p>
+       </div>
+       <div class="mem1 left">
+       <span>待夜 雪歌</span>
+       <p>
+       
+            いい石探すか
+       </p>
+       </div>
+       <div class="mem3 left">
+       <span>南 暁二郎</span>
+       <p>
+       
+            じゃあ目星
+       </p>
+       </div>
+       <div class="mem1 left">
+       <span>待夜 雪歌</span>
+       <p>
+       
+            目星しまー
+       </p>
+       </div>
+       <div class="mem4 right">
+       <span>夕凪 リヒト</span>
+       <p>
+       
+            71失敗 あんまりいい石なかった
+       </p>
+       </div>
+       <div class="kp">
+       
+            投擲は25が初期だね
+       </div>
+       <div class="mem1 left">
+       <span>待夜 雪歌</span>
+       <p>
+       
+            47 ふっいい石あったぜ
+       </p>
+       </div>
+       <div class="mem3 left">
+       <span>南 暁二郎</span>
+       <p>
+       
+            78しっぱい
+       </p>
+       </div>
+       <div class="mem1 left">
+       <span>待夜 雪歌</span>
+       <p>
+       
+            投擲25だっけ
+       </p>
+       </div>
+       <div class="mem4 right">
+       <span>夕凪 リヒト</span>
+       <p>
+       
+            1+失敗(74)1回しか跳ねなかった(´・ω・｀)はじめてだからなぁ
+       </p>
+       </div>
+       <div class="mem5 left">
+       <span>野々間 蒴那</span>
+       <p>
+       
+            石で何か結果変わるのか？ι
+       </p>
+       </div>
+       <div class="mem3 left">
+       <span>南 暁二郎</span>
+       <p>
+       
+            フレーバーフレーバー
+       </p>
+       </div>
+       <div class="mem4 right">
+       <span>夕凪 リヒト</span>
+       <p>
+       
+            バシャンっ｢あれれ｣
+       </p>
+       </div>
+       <div class="kp">
+       
+            いい石で補正がつくよ
+       </div>
+       <div class="mem5 left">
+       <span>野々間 蒴那</span>
+       <p>
+       
+            じゃあ目星でつるつる石探します。
+       </p>
+       </div>
+       <div class="mem5 left">
+       <span>野々間 蒴那</span>
+       <p>
+       
+            11やったね。
+       </p>
+       </div>
+       <div class="mem1 left">
+       <span>待夜 雪歌</span>
+       <p>
+       
+            4プラス補正！
+       </p>
+       </div>
+       <div class="mem3 left">
+       <span>南 暁二郎</span>
+       <p>
+       
+            5+失敗(28)しっぱいしたのにいっぱいはねた
+       </p>
+       </div>
+       <div class="kp">
+       
+            いい石持ってる人は投擲に20足そうか
+       </div>
+       <div class="mem5 left">
+       <span>野々間 蒴那</span>
+       <p>
+       
+            やったぜ
+       </p>
+       </div>
+       <div class="mem1 left">
+       <span>待夜 雪歌</span>
+       <p>
+       
+            えっと投擲元々40だからプラス20で……
+       </p>
+       </div>
+       <div class="mem5 left">
+       <span>野々間 蒴那</span>
+       <p>
+       
+            …つるつる石っていい石なのか？
+       </p>
+       </div>
+       <div class="mem1 left">
+       <span>待夜 雪歌</span>
+       <p>
+       
+            10の桁だから4+6(60)になるのか？
+       </p>
+       </div>
+       <div class="kp">
+       
+            すっげ跳ねてる。
+       </div>
+       <div class="mem3 left">
+       <span>南 暁二郎</span>
+       <p>
+       
+            平たいのがいいんじゃなかったっけ
+       </p>
+       </div>
+       <div class="mem5 left">
+       <span>野々間 蒴那</span>
+       <p>
+       
+            TOKIOにアドバイスもらわなきゃ…
+       </p>
+       </div>
+       <div class="kp">
+       
+            平たくてツルツルなのがいいんだっけかな
+       </div>
+       <div class="mem1 left">
+       <span>待夜 雪歌</span>
+       <p>
+       
+            TOKIOに教えてもらったのかもしれないな()
+       </p>
+       </div>
+       <div class="mem6 right">
+       <span>やきゅー</span>
+       <p>
+       
+            「観光の人たちすげー！オレも負けねー！」
+       </p>
+       </div>
+       <div class="mem1 left">
+       <span>待夜 雪歌</span>
+       <p>
+       
+            「いえーい」
+       </p>
+       </div>
+       <div class="mem4 right">
+       <span>夕凪 リヒト</span>
+       <p>
+       
+            あの夏の思い出って感じ
+       </p>
+       </div>
+       <div class="kp">
+       
+            やきゅーの水切り！<br>10回跳ねた！
+       </div>
+       <div class="mem5 left">
+       <span>野々間 蒴那</span>
+       <p>
+       
+            10の位って、失敗でも数値が高けりゃいいん？
+       </p>
+       </div>
+       <div class="mem1 left">
+       <span>待夜 雪歌</span>
+       <p>
+       
+            つええ
+       </p>
+       </div>
+       <div class="mem4 right">
+       <span>夕凪 リヒト</span>
+       <p>
+       
+            技能値なら失敗じゃあかんのでは
+       </p>
+       </div>
+       <div class="mem4 right">
+       <span>夕凪 リヒト</span>
+       <p>
+       
+            1d6+1 d100 の10 の位になってしまう
+       </p>
+       </div>
+       <div class="kp">
+       
+            振るのは1D6だけでよさげ
+       </div>
+       <div class="mem1 left">
+       <span>待夜 雪歌</span>
+       <p>
+       
+            技能値の10の桁をとるのでは
+       </p>
+       </div>
+       <div class="mem4 right">
+       <span>夕凪 リヒト</span>
+       <p>
+       
+            むずかちい
+       </p>
+       </div>
+       <div class="mem5 left">
+       <span>野々間 蒴那</span>
+       <p>
+       
+            ああなるほど
+       </p>
+       </div>
+       <div class="kp">
+       
+            説明難しいね
+       </div>
+       <div class="mem1 left">
+       <span>待夜 雪歌</span>
+       <p>
+       
+            一回の説明じゃ難しいよね
+       </p>
+       </div>
+       <div class="mem5 left">
+       <span>野々間 蒴那</span>
+       <p>
+       
+            3。7回跳ねたよ
+       </p>
+       </div>
+       <div class="mem3 left">
+       <span>南 暁二郎</span>
+       <p>
+       
+            振れるの一回だけかな
+       </p>
+       </div>
+       <div class="mem6 right">
+       <span>やきゅー</span>
+       <p>
+       
+            「オレとカチューシャのおねーさんがおなじだね！」
+       </p>
+       </div>
+       <div class="mem8 right">
+       <span>おねむ</span>
+       <p>
+       
+            「けっしょうせん…ｽﾔｧ」
+       </p>
+       </div>
+       <div class="mem3 left">
+       <span>南 暁二郎</span>
+       <p>
+       
+            おねむかわいい
+       </p>
+       </div>
+       <div class="mem1 left">
+       <span>待夜 雪歌</span>
+       <p>
+       
+            おねむいいキャラだわぁ
+       </p>
+       </div>
+       <div class="mem1 left">
+       <span>待夜 雪歌</span>
+       <p>
+       
+            「むむー。まけないぞー」
+       </p>
+       </div>
+       <div class="kp">
+       
+            セツカさんは　もう一回投げて！石補正アリで！
+       </div>
+       <div class="mem5 left">
+       <span>野々間 蒴那</span>
+       <p>
+       
+            「頑張ってくださーい。」
+       </p>
+       </div>
+       <div class="mem1 left">
+       <span>待夜 雪歌</span>
+       <p>
+       
+            3！
+       </p>
+       </div>
+       <div class="mem1 left">
+       <span>待夜 雪歌</span>
+       <p>
+       
+            えっと技能入れたら9？
+       </p>
+       </div>
+       <div class="mem1 left">
+       <span>待夜 雪歌</span>
+       <p>
+       
+            技能補正が強い
+       </p>
+       </div>
+       <div class="mem6 right">
+       <span>やきゅー</span>
+       <p>
+       
+            「いけー！オレのメジャーリーグ投げー！」
+       </p>
+       </div>
+       <div class="kp">
+       
+            8回跳ねた！
+       </div>
+       <div class="mem1 left">
+       <span>待夜 雪歌</span>
+       <p>
+       
+            お
+       </p>
+       </div>
+       <div class="mem6 right">
+       <span>やきゅー</span>
+       <p>
+       
+            「くぁー！負けたー！毎日投げてるのなー！」
+       </p>
+       </div>
+       <div class="mem7 left">
+       <span>にこいち</span>
+       <p>
+       
+            「おねーさん　すごいねー！」「放せってー！」
+       </p>
+       </div>
+       <div class="mem8 right">
+       <span>おねむ</span>
+       <p>
+       
+            「ゆうしょう　しょうひん　ｽﾔｧ」
+       </p>
+       </div>
+       <div class="mem1 left">
+       <span>待夜 雪歌</span>
+       <p>
+       
+            「やったー」
+       </p>
+       </div>
+       <div class="kp">
+       
+            子供たちから　真っ白くて綺麗な石を受け取りました
+       </div>
+       <div class="mem1 left">
+       <span>待夜 雪歌</span>
+       <p>
+       
+            人投げる方が得意なんだけどね(柔道的な意味で)
+       </p>
+       </div>
+       <div class="mem6 right">
+       <span>やきゅー</span>
+       <p>
+       
+            「伝説の白い石だよ！」
+       </p>
+       </div>
+       <div class="mem1 left">
+       <span>待夜 雪歌</span>
+       <p>
+       
+            「おー」
+       </p>
+       </div>
+       <div class="mem5 left">
+       <span>野々間 蒴那</span>
+       <p>
+       
+            なんか怪しい…
+       </p>
+       </div>
+       <div class="mem8 right">
+       <span>おねむ</span>
+       <p>
+       
+            「このへんで　ひろった　きれい　ｽﾔｧ」
+       </p>
+       </div>
+       <div class="mem1 left">
+       <span>待夜 雪歌</span>
+       <p>
+       
+            子供だからそんなだと思う
+       </p>
+       </div>
+       <div class="mem3 left">
+       <span>南 暁二郎</span>
+       <p>
+       
+            「スゲーキレー！宝物じゃん！」
+       </p>
+       </div>
+       <div class="mem3 left">
+       <span>南 暁二郎</span>
+       <p>
+       
+            精神年齢が小学生くらいなのかなこの男は
+       </p>
+       </div>
+       <div class="kp">
+       
+            平和だなぁ
+       </div>
+       <div class="mem1 left">
+       <span>待夜 雪歌</span>
+       <p>
+       
+            貰った白い石をのんびり掲げる
+       </p>
+       </div>
+       <div class="mem1 left">
+       <span>待夜 雪歌</span>
+       <p>
+       
+            「うぇーい」
+       </p>
+       </div>
+       <div class="mem4 right">
+       <span>夕凪 リヒト</span>
+       <p>
+       
+            ｢すごい！さすがせつかさんです！！｣
+       </p>
+       </div>
+       <div class="mem1 left">
+       <span>待夜 雪歌</span>
+       <p>
+       
+            「えっへん」
+       </p>
+       </div>
+       <div class="mem5 left">
+       <span>野々間 蒴那</span>
+       <p>
+       
+            「警察ってこういうのも得意なんですか？」
+       </p>
+       </div>
+       <div class="mem1 left">
+       <span>待夜 雪歌</span>
+       <p>
+       
+            「んー、私のはー、趣味だからー。人によるよー」
+       </p>
+       </div>
+       <div class="mem6 right">
+       <span>やきゅー</span>
+       <p>
+       
+            「おねーさんたちなら　くまなんてやっつけられそうだね！」
+       </p>
+       </div>
+       <div class="kp">
+       
+            べた褒め
+       </div>
+       <div class="mem3 left">
+       <span>南 暁二郎</span>
+       <p>
+       
+            「そーそー、くまくま。ほんとにくまいないの～？」
+       </p>
+       </div>
+       <div class="mem1 left">
+       <span>待夜 雪歌</span>
+       <p>
+       
+            「そーだー、さっき熊いないって言ってたけど、どういうことー？」
+       </p>
+       </div>
+       <div class="mem9 left">
+       <span>はらぺこ</span>
+       <p>
+       
+            「あのおやま　くまさんなんていないよ？」
+       </p>
+       </div>
+       <div class="mem1 left">
+       <span>待夜 雪歌</span>
+       <p>
+       
+            「じゃあ何で大人は居るって言ってるんだろー」
+       </p>
+       </div>
+       <div class="mem4 right">
+       <span>夕凪 リヒト</span>
+       <p>
+       
+            ｢入っ欲しくないとか？やっぱり振りだったんですかね？｣
+       </p>
+       </div>
+       <div class="mem6 right">
+       <span>やきゅー</span>
+       <p>
+       
+            「なんか　突然熊だーってさわぎはじめたんだ！」
+       </p>
+       </div>
+       <div class="mem4 right">
+       <span>夕凪 リヒト</span>
+       <p>
+       
+            ｢ペットでも逃げたんでしょうか｣
+       </p>
+       </div>
+       <div class="mem5 left">
+       <span>野々間 蒴那</span>
+       <p>
+       
+            「変態天狗が召喚したとか……。あ、なんでもないです…。」
+       </p>
+       </div>
+       <div class="mem1 left">
+       <span>待夜 雪歌</span>
+       <p>
+       
+            「熊っぽい危険人物だったりしてー」
+       </p>
+       </div>
+       <div class="mem4 right">
+       <span>夕凪 リヒト</span>
+       <p>
+       
+            ｢て…天狗？！｣
+       </p>
+       </div>
+       <div class="mem7 left">
+       <span>にこいち</span>
+       <p>
+       
+            「熊がでても　絶対守るからねー♪」「やめろー！」
+       </p>
+       </div>
+       <div class="mem3 left">
+       <span>南 暁二郎</span>
+       <p>
+       
+            かわいい
+       </p>
+       </div>
+       <div class="mem4 right">
+       <span>夕凪 リヒト</span>
+       <p>
+       
+            もう結婚じゃん
+       </p>
+       </div>
+       <div class="mem1 left">
+       <span>待夜 雪歌</span>
+       <p>
+       
+            やめろになったwww
+       </p>
+       </div>
+       <div class="mem1 left">
+       <span>待夜 雪歌</span>
+       <p>
+       
+            「熊って倒せるのかなー？」
+       </p>
+       </div>
+       <div class="mem8 right">
+       <span>おねむ</span>
+       <p>
+       
+            「くま　あぶない…ｽﾔｧ」
+       </p>
+       </div>
+       <div class="mem5 left">
+       <span>野々間 蒴那</span>
+       <p>
+       
+            「もう出ても石を投げつければいいのでは…。」
+       </p>
+       </div>
+       <div class="mem1 left">
+       <span>待夜 雪歌</span>
+       <p>
+       
+            「石投げつけて怒らせたらー、危ないぞー」
+       </p>
+       </div>
+       <div class="mem3 left">
+       <span>南 暁二郎</span>
+       <p>
+       
+            「なーなー、俺、ひみつきち行ってみたいな～」
+       </p>
+       </div>
+       <div class="mem6 right">
+       <span>やきゅー</span>
+       <p>
+       
+            「今日はダメだぞ！大人が入るなって言うんだ！」
+       </p>
+       </div>
+       <div class="mem8 right">
+       <span>おねむ</span>
+       <p>
+       
+            「ひみつきちは　ひみつ…ｽﾔｧ」
+       </p>
+       </div>
+       <div class="mem1 left">
+       <span>待夜 雪歌</span>
+       <p>
+       
+            「危ないって言われてるもんねー」
+       </p>
+       </div>
+       <div class="mem4 right">
+       <span>夕凪 リヒト</span>
+       <p>
+       
+            ｢じゃあじゃあ熊いないって分かったら入れる？｣
+       </p>
+       </div>
+       <div class="mem5 left">
+       <span>野々間 蒴那</span>
+       <p>
+       
+            「いや、もしかしたら、大人達が秘密基地を横取りしたくて嘘ついたんじゃない？」
+       </p>
+       </div>
+       <div class="mem6 right">
+       <span>やきゅー</span>
+       <p>
+       
+            「いなかったら大丈夫だと思うぞ！<br>大人たちに聞いてみるといいんじゃないかな！」
+       </p>
+       </div>
+       <div class="mem3 left">
+       <span>南 暁二郎</span>
+       <p>
+       
+            「うーん、そこまでいけないんじゃくまがいるか確認できないなぁ……」
+       </p>
+       </div>
+       <div class="mem3 left">
+       <span>南 暁二郎</span>
+       <p>
+       
+            「じゃー知ってる人がいそうなとこに行ってみよっか？」
+       </p>
+       </div>
+       <div class="mem7 left">
+       <span>にこいち</span>
+       <p>
+       
+            「大人たちはひみつきち知らないと思うよー？」「放せよー！」
+       </p>
+       </div>
+       <div class="mem1 left">
+       <span>待夜 雪歌</span>
+       <p>
+       
+            「さかなーたべたいなー（ﾎﾞｿﾘ」
+       </p>
+       </div>
+       <div class="mem9 left">
+       <span>はらぺこ</span>
+       <p>
+       
+            「おさかなさんなら　つかまえてくるよ？」<br>ｼｭｯと魚を鷲掴みます
+       </p>
+       </div>
+       <div class="mem1 left">
+       <span>待夜 雪歌</span>
+       <p>
+       
+            はらぺこつよい
+       </p>
+       </div>
+       <div class="mem1 left">
+       <span>待夜 雪歌</span>
+       <p>
+       
+            「おぉー」
+       </p>
+       </div>
+       <div class="mem9 left">
+       <span>はらぺこ</span>
+       <p>
+       
+            「はい　どうぞ」<br>川魚を手に入れた！
+       </p>
+       </div>
+       <div class="mem1 left">
+       <span>待夜 雪歌</span>
+       <p>
+       
+            「わーい！ありがとー！」
+       </p>
+       </div>
+       <div class="mem3 left">
+       <span>南 暁二郎</span>
+       <p>
+       
+            しゅごい
+       </p>
+       </div>
+       <div class="mem5 left">
+       <span>野々間 蒴那</span>
+       <p>
+       
+            「やべえ。」
+       </p>
+       </div>
+       <div class="mem9 left">
+       <span>はらぺこ</span>
+       <p>
+       
+            「このむらはね、おやさいもおいしいんだよ！」
+       </p>
+       </div>
+       <div class="mem1 left">
+       <span>待夜 雪歌</span>
+       <p>
+       
+            「おやさいも！それは買うのが一番なのかなー」
+       </p>
+       </div>
+       <div class="mem9 left">
+       <span>はらぺこ</span>
+       <p>
+       
+            「そんちょうさんのトマトがすっごいおいしいんだよ！」
+       </p>
+       </div>
+       <div class="mem1 left">
+       <span>待夜 雪歌</span>
+       <p>
+       
+            「よし、村長の家いこう」
+       </p>
+       </div>
+       <div class="mem3 left">
+       <span>南 暁二郎</span>
+       <p>
+       
+            「いま会議してるんじゃないの～？」
+       </p>
+       </div>
+       <div class="mem1 left">
+       <span>待夜 雪歌</span>
+       <p>
+       
+            「突入しよう」（きっぱり）
+       </p>
+       </div>
+       <div class="mem5 left">
+       <span>野々間 蒴那</span>
+       <p>
+       
+            「警察がそれでいいんですか…！」
+       </p>
+       </div>
+       <div class="mem1 left">
+       <span>待夜 雪歌</span>
+       <p>
+       
+            「今日は休暇だしー」
+       </p>
+       </div>
+       <div class="mem3 left">
+       <span>南 暁二郎</span>
+       <p>
+       
+            「うーん、まぁ、面白そうだからいっか！」
+       </p>
+       </div>
+       <div class="mem7 left">
+       <span>にこいち</span>
+       <p>
+       
+            「もう行っちゃうの？」「気を付けてねー」
+       </p>
+       </div>
+       <div class="mem1 left">
+       <span>待夜 雪歌</span>
+       <p>
+       
+            「ばいばーい」
+       </p>
+       </div>
+       <div class="mem10 right">
+       <span>子供たち</span>
+       <p>
+       
+            「ばいばーい！」<br>めっちゃ手を振ってます
+       </p>
+       </div>
+       <div class="mem1 left">
+       <span>待夜 雪歌</span>
+       <p>
+       
+            手を振り返しながら去りまするー
+       </p>
+       </div>
+       <div class="mem3 left">
+       <span>南 暁二郎</span>
+       <p>
+       
+            「じゃーねー！お昼からバーベキューやるからみんなもおいで～！」
+       </p>
+       </div>
+       <div class="mem4 right">
+       <span>夕凪 リヒト</span>
+       <p>
+       
+            ｢またねー！｣
+       </p>
+       </div>
+       <div class="mem5 left">
+       <span>野々間 蒴那</span>
+       <p>
+       
+            「個性的な子達でしたねー。」
+       </p>
+       </div>
+       <div class="mem1 left">
+       <span>待夜 雪歌</span>
+       <p>
+       
+            流れ的に村長の家に特攻でいいのかな？
+       </p>
+       </div>
+       <div class="kp">
+       
+            良さそうなら移動するよー
+       </div>
+       <div class="mem1 left">
+       <span>待夜 雪歌</span>
+       <p>
+       
+            俺はいいよー
+       </p>
+       </div>
+       <div class="mem4 right">
+       <span>夕凪 リヒト</span>
+       <p>
+       
+            どぞー
+       </p>
+       </div>
+       <div class="mem3 left">
+       <span>南 暁二郎</span>
+       <p>
+       
+            いいよー
+       </p>
+       </div>
+       <div class="kp">
+       
+            そんなわけで　村長ん家にやって来ました。<br>中では沢山の村人がひしめき合って話し合いをしています
+       </div>
+       <div class="mem1 left">
+       <span>待夜 雪歌</span>
+       <p>
+       
+            聞き耳してどんな話をしているかワクワクしましょうか
+       </p>
+       </div>
+       <div class="kp">
+       
+            おけー　振ってー！
+       </div>
+       <div class="mem1 left">
+       <span>待夜 雪歌</span>
+       <p>
+       
+            クリティカル
+       </p>
+       </div>
+       <div class="mem1 left">
+       <span>待夜 雪歌</span>
+       <p>
+       
+            頭おかしいんじゃないかな
+       </p>
+       </div>
+       <div class="mem3 left">
+       <span>南 暁二郎</span>
+       <p>
+       
+            盗聴がじょうず
+       </p>
+       </div>
+       <div class="mem1 left">
+       <span>待夜 雪歌</span>
+       <p>
+       
+            こいつ警察です
+       </p>
+       </div>
+       <div class="mem5 left">
+       <span>野々間 蒴那</span>
+       <p>
+       
+            危険人物だ…。警察なのに…
+       </p>
+       </div>
+       <div class="mem3 left">
+       <span>南 暁二郎</span>
+       <p>
+       
+            スパイかな
+       </p>
+       </div>
+       <div class="kp">
+       
+            では<br>『人が来てるのに参ったねぇ　とてもじゃないけど山に怪物が出たなんて言えないよ』と、はっきり聞こえちゃいますね
+       </div>
+       <div class="mem1 left">
+       <span>待夜 雪歌</span>
+       <p>
+       
+            「（うわー）」
+       </p>
+       </div>
+       <div class="mem3 left">
+       <span>南 暁二郎</span>
+       <p>
+       
+            www
+       </p>
+       </div>
+       <div class="mem1 left">
+       <span>待夜 雪歌</span>
+       <p>
+       
+            このままバーベキューして帰らない？一番安全だよ
+       </p>
+       </div>
+       <div class="kp">
+       
+            クリティカル情報
+       </div>
+       <div class="mem11 left">
+       <span>村人</span>
+       <p>
+       
+            『大体山に大きい羽はえたザリガニなんて出るわけないだろう！』
+       </p>
+       </div>
+       <div class="mem1 left">
+       <span>待夜 雪歌</span>
+       <p>
+       
+            ぶっｗｗｗｗｗｗｗｗｗｗｗｗ
+       </p>
+       </div>
+       <div class="mem3 left">
+       <span>南 暁二郎</span>
+       <p>
+       
+            しゅごい
+       </p>
+       </div>
+       <div class="mem5 left">
+       <span>野々間 蒴那</span>
+       <p>
+       
+            カオス
+       </p>
+       </div>
+       <div class="mem1 left">
+       <span>待夜 雪歌</span>
+       <p>
+       
+            ごみが落ちてるのか。ホント汚いなあ
+       </p>
+       </div>
+       <div class="kp">
+       
+            緑の豊かないい山だよー？
+       </div>
+       <div class="mem1 left">
+       <span>待夜 雪歌</span>
+       <p>
+       
+            さて、このまま聞かなかったことにしてバーベキューして帰らない？関わりたくねえよ
+       </p>
+       </div>
+       <div class="mem5 left">
+       <span>野々間 蒴那</span>
+       <p>
+       
+            珍しいね雪歌ちゃんがそう言うの(笑)
+       </p>
+       </div>
+       <div class="mem1 left">
+       <span>待夜 雪歌</span>
+       <p>
+       
+            今回キック持ってきてないから
+       </p>
+       </div>
+       <div class="mem4 right">
+       <span>夕凪 リヒト</span>
+       <p>
+       
+            意外に美味しいかもよ？
+       </p>
+       </div>
+       <div class="mem3 left">
+       <span>南 暁二郎</span>
+       <p>
+       
+            たべるの？
+       </p>
+       </div>
+       <div class="mem1 left">
+       <span>待夜 雪歌</span>
+       <p>
+       
+            食べるの？
+       </p>
+       </div>
+       <div class="mem5 left">
+       <span>野々間 蒴那</span>
+       <p>
+       
+            ザリガニでしょ？泥臭くって味どころじゃないっておとん言ってた。
+       </p>
+       </div>
+       <div class="mem4 right">
+       <span>夕凪 リヒト</span>
+       <p>
+       
+            バーベキューの材料集めるシナリオじゃなかったっけ( ´•ᴗ•ก )
+       </p>
+       </div>
+       <div class="mem1 left">
+       <span>待夜 雪歌</span>
+       <p>
+       
+            ゴミ処理するシナリオじゃないっけ？
+       </p>
+       </div>
+       <div class="mem5 left">
+       <span>野々間 蒴那</span>
+       <p>
+       
+            キノコ狩りじゃなかったっけ…
+       </p>
+       </div>
+       <div class="mem1 left">
+       <span>待夜 雪歌</span>
+       <p>
+       
+            仕方ない。諦めるか
+       </p>
+       </div>
+       <div class="kp">
+       
+            他にやりたいことはある？
+       </div>
+       <div class="mem5 left">
+       <span>野々間 蒴那</span>
+       <p>
+       
+            特にはないかな
+       </p>
+       </div>
+       <div class="mem3 left">
+       <span>南 暁二郎</span>
+       <p>
+       
+            いってないの村役場とバーベキュー場か
+       </p>
+       </div>
+       <div class="mem1 left">
+       <span>待夜 雪歌</span>
+       <p>
+       
+            この会議はこのまま放置でいいか。
+       </p>
+       </div>
+       <div class="mem4 right">
+       <span>夕凪 リヒト</span>
+       <p>
+       
+            村役場何しに行くのかな
+       </p>
+       </div>
+       <div class="mem1 left">
+       <span>待夜 雪歌</span>
+       <p>
+       
+            何かやらかさなければいいし、こいつらが
+       </p>
+       </div>
+       <div class="kp">
+       
+            役場の情報は出ちゃったな<br>軽く荷物置けそう
+       </div>
+       <div class="mem1 left">
+       <span>待夜 雪歌</span>
+       <p>
+       
+            お魚をちゃんと保管しておきたい
+       </p>
+       </div>
+       <div class="mem4 right">
+       <span>夕凪 リヒト</span>
+       <p>
+       
+            もうお昼になるのかな
+       </p>
+       </div>
+       <div class="mem5 left">
+       <span>野々間 蒴那</span>
+       <p>
+       
+            もう魚焼いて食おうぜ。塩焼き
+       </p>
+       </div>
+       <div class="mem1 left">
+       <span>待夜 雪歌</span>
+       <p>
+       
+            あ。そっか。今何時ぐらいだろう
+       </p>
+       </div>
+       <div class="kp">
+       
+            今行けるとこは行った感じだね<br>お昼にしようか
+       </div>
+       <div class="mem1 left">
+       <span>待夜 雪歌</span>
+       <p>
+       
+            バーベキュー場いくか
+       </p>
+       </div>
+       <div class="kp">
+       
+            バーベキュー場にやって来ました！<br>役場の職員たちがバーベキューの準備をしています
+       </div>
+       <div class="mem1 left">
+       <span>待夜 雪歌</span>
+       <p>
+       
+            「すいませーん、この川魚も一緒にお願いしまーす」
+       </p>
+       </div>
+       <div class="mem12 right">
+       <span>職員</span>
+       <p>
+       
+            「えらい新鮮ですね！？」
+       </p>
+       </div>
+       <div class="mem1 left">
+       <span>待夜 雪歌</span>
+       <p>
+       
+            「さっきとれたばかりですからー」
+       </p>
+       </div>
+       <div class="mem12 right">
+       <span>職員</span>
+       <p>
+       
+            「さっきですか！？アグレッシブですね！」
+       </p>
+       </div>
+       <div class="mem1 left">
+       <span>待夜 雪歌</span>
+       <p>
+       
+            「ここの子供にとってもらったんですー」
+       </p>
+       </div>
+       <div class="mem12 right">
+       <span>職員</span>
+       <p>
+       
+            「あぁなるほど！あの子ですね！納得です！」
+       </p>
+       </div>
+       <div class="mem1 left">
+       <span>待夜 雪歌</span>
+       <p>
+       
+            納得されるのかｗｗｗ
+       </p>
+       </div>
+       <div class="kp">
+       
+            はらぺこだからね
+       </div>
+       <div class="mem1 left">
+       <span>待夜 雪歌</span>
+       <p>
+       
+            つおい
+       </p>
+       </div>
+       <div class="mem5 left">
+       <span>野々間 蒴那</span>
+       <p>
+       
+            すごい
+       </p>
+       </div>
+       <div class="kp">
+       
+            そんなわけで　しばらくバーベキューを楽しみます！<br>とれたての川魚、特産品のクサトリヒラタケ、村長さん家のトマト、ナス、はしゃいだ誰かが持ってきたステーキ、マシュマロ等々
+       </div>
+       <div class="mem1 left">
+       <span>待夜 雪歌</span>
+       <p>
+       
+            めしてろ
+       </p>
+       </div>
+       <div class="mem5 left">
+       <span>野々間 蒴那</span>
+       <p>
+       
+            「バナナ！バナナ焼きましょう！」
+       </p>
+       </div>
+       <div class="mem1 left">
+       <span>待夜 雪歌</span>
+       <p>
+       
+            「そーいえば、熊っておいしいんでしょうかー（ﾎﾞｿﾘ」
+       </p>
+       </div>
+       <div class="mem12 right">
+       <span>職員</span>
+       <p>
+       
+            「どうでしょう？食べたことないんですよねー」
+       </p>
+       </div>
+       <div class="mem5 left">
+       <span>野々間 蒴那</span>
+       <p>
+       
+            「私は伊勢エビがいいですー。知ってますか？伊勢エビってザリガニの仲間なんですよ…。(ボソリ)」
+       </p>
+       </div>
+       <div class="mem3 left">
+       <span>南 暁二郎</span>
+       <p>
+       
+            これせつかちゃんがきこえたこと共有してる体でいいのか
+       </p>
+       </div>
+       <div class="mem1 left">
+       <span>待夜 雪歌</span>
+       <p>
+       
+            言ってないんじゃないかな。
+       </p>
+       </div>
+       <div class="kp">
+       
+            おっと…でもクリティカルだしなぁ
+       </div>
+       <div class="mem5 left">
+       <span>野々間 蒴那</span>
+       <p>
+       
+            じゃあただの豆知識にしてくれ(笑)
+       </p>
+       </div>
+       <div class="mem1 left">
+       <span>待夜 雪歌</span>
+       <p>
+       
+            聞いて、知らん顔してすっげー帰りたいって顔になったから
+       </p>
+       </div>
+       <div class="mem5 left">
+       <span>野々間 蒴那</span>
+       <p>
+       
+            さくなさんの豆知識が火を吹くぜ！的な
+       </p>
+       </div>
+       <div class="mem12 right">
+       <span>職員</span>
+       <p>
+       
+            「似てますもんね！」
+       </p>
+       </div>
+       <div class="mem1 left">
+       <span>待夜 雪歌</span>
+       <p>
+       
+            この職員さんは知らないんだろうなぁ。山にいるなにか
+       </p>
+       </div>
+       <div class="mem1 left">
+       <span>待夜 雪歌</span>
+       <p>
+       
+            これで饒舌に嘘ついてたら笑う
+       </p>
+       </div>
+       <div class="mem1 left">
+       <span>待夜 雪歌</span>
+       <p>
+       
+            そーいえば、ここにいるのは探索者＋職員1人って感じ？
+       </p>
+       </div>
+       <div class="kp">
+       
+            探索者　職員　あとはご近所さんがぱらぱらいる感じかな
+       </div>
+       <div class="mem1 left">
+       <span>待夜 雪歌</span>
+       <p>
+       
+            あの子供たちは来てないかぁ
+       </p>
+       </div>
+       <div class="kp">
+       
+            まだ来てないね
+       </div>
+       <div class="mem1 left">
+       <span>待夜 雪歌</span>
+       <p>
+       
+            そうか。
+       </p>
+       </div>
+       <div class="mem1 left">
+       <span>待夜 雪歌</span>
+       <p>
+       
+            特にイベントはないのかな？バーベキュー中は
+       </p>
+       </div>
+       <div class="kp">
+       
+            バーベキュー中は　ないね<br>楽しもうね！
+       </div>
+       <div class="mem5 left">
+       <span>野々間 蒴那</span>
+       <p>
+       
+            じゃあさくなさんは焼きバナナにスモア乗っけて食べます
+       </p>
+       </div>
+       <div class="mem1 left">
+       <span>待夜 雪歌</span>
+       <p>
+       
+            さて、平和はここまでか
+       </p>
+       </div>
+       <div class="mem1 left">
+       <span>待夜 雪歌</span>
+       <p>
+       
+            「ふふふ、ばーべきゅー」
+       </p>
+       </div>
+       <div class="mem3 left">
+       <span>南 暁二郎</span>
+       <p>
+       
+            「いっぱいたべるぞ～」
+       </p>
+       </div>
+       <div class="mem4 right">
+       <span>夕凪 リヒト</span>
+       <p>
+       
+            (もぎゅもぎゅもぎゅ)カロリー蓄積中
+       </p>
+       </div>
+       <div class="mem1 left">
+       <span>待夜 雪歌</span>
+       <p>
+       
+            かわいい
+       </p>
+       </div>
+       <div class="mem3 left">
+       <span>南 暁二郎</span>
+       <p>
+       
+            かわいい
+       </p>
+       </div>
+       <div class="kp">
+       
+            たくさんお食べよ…
+       </div>
+       <div class="mem4 right">
+       <span>夕凪 リヒト</span>
+       <p>
+       
+            成長期だからさ…
+       </p>
+       </div>
+       <div class="mem5 left">
+       <span>野々間 蒴那</span>
+       <p>
+       
+            「お肉焼けたよー。リヒト君食べる？」
+       </p>
+       </div>
+       <div class="mem4 right">
+       <span>夕凪 リヒト</span>
+       <p>
+       
+            ｢！！いいんですか！ありがとうございます！｣ぱあぁぁぁﾟ･*:.｡.:*･
+       </p>
+       </div>
+       <div class="mem5 left">
+       <span>野々間 蒴那</span>
+       <p>
+       
+            「どうぞどうぞー。大きくおなり。」お肉もっさり
+       </p>
+       </div>
+       <div class="mem1 left">
+       <span>待夜 雪歌</span>
+       <p>
+       
+            「（へいわだなー）」
+       </p>
+       </div>
+       <div class="mem4 right">
+       <span>夕凪 リヒト</span>
+       <p>
+       
+            ののまちゃんに懐くわ…
+       </p>
+       </div>
+       <div class="mem5 left">
+       <span>野々間 蒴那</span>
+       <p>
+       
+            飲食店でバイトしてるからとてもいい焼き加減さ
+       </p>
+       </div>
+       <div class="mem3 left">
+       <span>南 暁二郎</span>
+       <p>
+       
+            かわいいなー
+       </p>
+       </div>
+       <div class="kp">
+       
+            いやされるなー
+       </div>
+       <div class="mem1 left">
+       <span>待夜 雪歌</span>
+       <p>
+       
+            守りたいこの子
+       </p>
+       </div>
+       <div class="mem4 right">
+       <span>夕凪 リヒト</span>
+       <p>
+       
+            もぎゅもぎゅごくんっ｢バーベキューは美味しいですがやっぱりキノコ狩りしてみたかったです…｣
+       </p>
+       </div>
+       <div class="mem5 left">
+       <span>野々間 蒴那</span>
+       <p>
+       
+            「そだねー。キノコ狩りしようって集まったからねー。」
+       </p>
+       </div>
+       <div class="mem1 left">
+       <span>待夜 雪歌</span>
+       <p>
+       
+            「次はキノコ狩りできたらいいねー」
+       </p>
+       </div>
+       <div class="mem3 left">
+       <span>南 暁二郎</span>
+       <p>
+       
+            「また計画しようねー」
+       </p>
+       </div>
+       <div class="mem4 right">
+       <span>夕凪 リヒト</span>
+       <p>
+       
+            ｢はい…｣
+       </p>
+       </div>
+       <div class="mem4 right">
+       <span>夕凪 リヒト</span>
+       <p>
+       
+            目的のキノコ食べちゃったけどこれからどうしよう
+       </p>
+       </div>
+       <div class="mem1 left">
+       <span>待夜 雪歌</span>
+       <p>
+       
+            もうなんか目的達成したから帰りそうな雰囲気になりそう
+       </p>
+       </div>
+       <div class="mem5 left">
+       <span>野々間 蒴那</span>
+       <p>
+       
+            帰っても探索してもどっちでもいいけど、帰っても問題ないのかしら？(笑)
+       </p>
+       </div>
+       <div class="mem4 right">
+       <span>夕凪 リヒト</span>
+       <p>
+       
+            なんも始まらないし終わらないね
+       </p>
+       </div>
+       <div class="mem5 left">
+       <span>野々間 蒴那</span>
+       <p>
+       
+            ただ水切りをしただけ…
+       </p>
+       </div>
+       <div class="mem3 left">
+       <span>南 暁二郎</span>
+       <p>
+       
+            さんち回復できないなww
+       </p>
+       </div>
+       <div class="mem5 left">
+       <span>野々間 蒴那</span>
+       <p>
+       
+            可愛い5人組と水切り勝負をしてBBQを食べるだけのシナリオ…
+       </p>
+       </div>
+       <div class="mem1 left">
+       <span>待夜 雪歌</span>
+       <p>
+       
+            SAN回復シナリオ(バーベキューを食べるだけ)
+       </p>
+       </div>
+       <div class="mem5 left">
+       <span>野々間 蒴那</span>
+       <p>
+       
+            おかしいなキノコ狩りって聞いたのに(笑)
+       </p>
+       </div>
+       <div class="kp">
+       
+            満足したかな？
+       </div>
+       <div class="mem1 left">
+       <span>待夜 雪歌</span>
+       <p>
+       
+            バーベキューは満足したねぇ。そろそろ事件が起きそうなフラグバリバリだねえ
+       </p>
+       </div>
+       <div class="mem13 left">
+       <span>ご近所さん</span>
+       <p>
+       
+            「あらやだ！野菜を持ってきすぎちゃったわ！捨てちゃうのももったいないし、食べるかしら？」<br>ご近所さんがトマトとナスをたくさん持ってます
+       </p>
+       </div>
+       <div class="mem1 left">
+       <span>待夜 雪歌</span>
+       <p>
+       
+            「はいー。ありがとうございますー」
+       </p>
+       </div>
+       <div class="kp">
+       
+            トマトとナスを手に入れた！
+       </div>
+       <div class="mem1 left">
+       <span>待夜 雪歌</span>
+       <p>
+       
+            手に入れた！
+       </p>
+       </div>
+       <div class="mem5 left">
+       <span>野々間 蒴那</span>
+       <p>
+       
+            そのトマトとナスに足が生えて動き出すのか？
+       </p>
+       </div>
+       <div class="mem1 left">
+       <span>待夜 雪歌</span>
+       <p>
+       
+            フラグかな（）
+       </p>
+       </div>
+       <div class="kp">
+       
+            貴方たちはバーベキューをひととおり楽しみ、談笑していると　困りきった顔をしたり心配そうな顔をした子供たちが近寄ってきます
+       </div>
+       <div class="mem1 left">
+       <span>待夜 雪歌</span>
+       <p>
+       
+            「あにゃー。さっきの子達ですねー」
+       </p>
+       </div>
+       <div class="mem8 right">
+       <span>おねむ</span>
+       <p>
+       
+            「あの、お兄さん、お姉さん、少しだけ話を聞いてもらえませんか？」
+       </p>
+       </div>
+       <div class="mem1 left">
+       <span>待夜 雪歌</span>
+       <p>
+       
+            「んー。いいよー。そーいうのは私の仕事になるかもしれないしー」
+       </p>
+       </div>
+       <div class="kp">
+       
+            子供たちは後片付けをする大人たちから少し離れ話しはじめます
+       </div>
+       <div class="mem8 right">
+       <span>おねむ</span>
+       <p>
+       
+            「僕たちの友達…あの、魚掴んだ子が　山の秘密基地に行ってしまったんです」
+       </p>
+       </div>
+       <div class="mem1 left">
+       <span>待夜 雪歌</span>
+       <p>
+       
+            「いっちゃったんですかー」
+       </p>
+       </div>
+       <div class="mem7 left">
+       <span>にこいち</span>
+       <p>
+       
+            「僕らも止めたんだよ！」「でも　業務日誌は毎日書かなくちゃって」
+       </p>
+       </div>
+       <div class="mem1 left">
+       <span>待夜 雪歌</span>
+       <p>
+       
+            「ふむむー。つまり、連れ戻してほしいですかねー」
+       </p>
+       </div>
+       <div class="mem6 right">
+       <span>やきゅー</span>
+       <p>
+       
+            「探しにいきたいんだけど、大人に止められてるから　ついてきてほしいんだ！」
+       </p>
+       </div>
+       <div class="mem1 left">
+       <span>待夜 雪歌</span>
+       <p>
+       
+            「場所の説明はできるー？」
+       </p>
+       </div>
+       <div class="mem8 right">
+       <span>おねむ</span>
+       <p>
+       
+            「秘密とか言ってられませんからね、かんたんに地図を描いてきました」
+       </p>
+       </div>
+       <div class="kp">
+       
+            ひみつきちへの地図を手に入れた！
+       </div>
+       <div class="mem1 left">
+       <span>待夜 雪歌</span>
+       <p>
+       
+            それあれば森の中で見つかりそう？
+       </p>
+       </div>
+       <div class="mem1 left">
+       <span>待夜 雪歌</span>
+       <p>
+       
+            大雑把すぎてこれ読めねえレベル？
+       </p>
+       </div>
+       <div class="kp">
+       
+            要点は押さえてあるから　問題なくたどり着けますね
+       </div>
+       <div class="mem1 left">
+       <span>待夜 雪歌</span>
+       <p>
+       
+            ふむ。じゃあ
+       </p>
+       </div>
+       <div class="mem1 left">
+       <span>待夜 雪歌</span>
+       <p>
+       
+            「私たちが連れて帰ってくるから、キミたちは大人にこの事を伝えておいてくれないかい？」
+       </p>
+       </div>
+       <div class="mem1 left">
+       <span>待夜 雪歌</span>
+       <p>
+       
+            地図を確認しつつ、仕事モードになる
+       </p>
+       </div>
+       <div class="kp">
+       
+            子供たちは　そうするとはらぺこが怒られちゃうね　みたいなことを話していると、役員をやっていた親たちに見つかります
+       </div>
+       <div class="mem1 left">
+       <span>待夜 雪歌</span>
+       <p>
+       
+            今怒られるか後で怒られるかの差だな
+       </p>
+       </div>
+       <div class="kp">
+       
+            こらっ！あんたまた宿題をやらずに出掛けたね！早く帰って宿題をしなさい！…みたいなやり取りがあって子供たちは家に帰されてしまいますね
+       </div>
+       <div class="mem1 left">
+       <span>待夜 雪歌</span>
+       <p>
+       
+            「（これで、この子達は一緒に来れないからこそ安全が確定されるね）」
+       </p>
+       </div>
+       <div class="mem1 left">
+       <span>待夜 雪歌</span>
+       <p>
+       
+            この流れ的に森へいきましょー！森へいきましょー！ゴミ処理をしにいきましょー！って感じになるのかな
+       </p>
+       </div>
+       <div class="mem5 left">
+       <span>野々間 蒴那</span>
+       <p>
+       
+            ゴミ扱いww
+       </p>
+       </div>
+       <div class="mem1 left">
+       <span>待夜 雪歌</span>
+       <p>
+       
+            ザリガニ触りたくないから
+       </p>
+       </div>
+       <div class="mem4 right">
+       <span>夕凪 リヒト</span>
+       <p>
+       
+            ザリガニ釣るなら裂きイカもってかなきゃ
+       </p>
+       </div>
+       <div class="mem1 left">
+       <span>待夜 雪歌</span>
+       <p>
+       
+            裂き縄持ってくる？（乱視）
+       </p>
+       </div>
+       <div class="mem1 left">
+       <span>待夜 雪歌</span>
+       <p>
+       
+            「私は、山に行きますが…」
+       </p>
+       </div>
+       <div class="mem4 right">
+       <span>夕凪 リヒト</span>
+       <p>
+       
+            ｢僕も行きます！これでも体力には自信がありますので邪魔にはなりませんよ！｣
+       </p>
+       </div>
+       <div class="mem1 left">
+       <span>待夜 雪歌</span>
+       <p>
+       
+            「うん。何かあったら後ろにいてね？何かあったら私が有栖に怒られちゃうから」
+       </p>
+       </div>
+       <div class="mem4 right">
+       <span>夕凪 リヒト</span>
+       <p>
+       
+            ｢うう情けないですが師匠に怒られるのは怖い…でも僕だって男ですからね！やるときは出来ますからね！｣
+       </p>
+       </div>
+       <div class="mem1 left">
+       <span>待夜 雪歌</span>
+       <p>
+       
+            「ふふっ、ありがと」
+       </p>
+       </div>
+       <div class="mem5 left">
+       <span>野々間 蒴那</span>
+       <p>
+       
+            「まあ、食べたので、食後の運動と思って頑張ります。」
+       </p>
+       </div>
+       <div class="mem3 left">
+       <span>南 暁二郎</span>
+       <p>
+       
+            「みんながいくなら俺も行くよ～」
+       </p>
+       </div>
+       <div class="kp">
+       
+            秘密基地に向かう　でおけ？
+       </div>
+       <div class="mem1 left">
+       <span>待夜 雪歌</span>
+       <p>
+       
+            全員向かうってカタチになったかな
+       </p>
+       </div>
+       <div class="mem3 left">
+       <span>南 暁二郎</span>
+       <p>
+       
+            そうだね
+       </p>
+       </div>
+       <div class="mem4 right">
+       <span>夕凪 リヒト</span>
+       <p>
+       
+            いこいこ
+       </p>
+       </div>
+       <div class="kp">
+       
+            地図を頼りにひみつきち前までたどり着きました。<br>わりと立派なひみつきちです。
+       </div>
+       <div class="mem1 left">
+       <span>待夜 雪歌</span>
+       <p>
+       
+            「ここか。はらぺこちゃんがいるのが」
+       </p>
+       </div>
+       <div class="mem3 left">
+       <span>南 暁二郎</span>
+       <p>
+       
+            「スゲー立派！あの子達やるなぁ」
+       </p>
+       </div>
+       <div class="mem5 left">
+       <span>野々間 蒴那</span>
+       <p>
+       
+            「おー。ほんとに秘密基地だー。」
+       </p>
+       </div>
+       <div class="mem4 right">
+       <span>夕凪 リヒト</span>
+       <p>
+       
+            ｢すごい…！｣
+       </p>
+       </div>
+       <div class="mem1 left">
+       <span>待夜 雪歌</span>
+       <p>
+       
+            「いるかなー」
+       </p>
+       </div>
+       <div class="mem1 left">
+       <span>待夜 雪歌</span>
+       <p>
+       
+            ひみつきちだ
+       </p>
+       </div>
+       <div class="mem3 left">
+       <span>南 暁二郎</span>
+       <p>
+       
+            すごいやつじゃん
+       </p>
+       </div>
+       <div class="kp">
+       
+            こんな感じで　入り口にペラい板を立てかけてあります
+       </div>
+       <div class="mem3 left">
+       <span>南 暁二郎</span>
+       <p>
+       
+            あの花みたいな感じを想像してた
+       </p>
+       </div>
+       <div class="mem4 right">
+       <span>夕凪 リヒト</span>
+       <p>
+       
+            ツリーハウス想像してた
+       </p>
+       </div>
+       <div class="kp">
+       
+            基地の中が見えなければなんでも良いんだけどね！
+       </div>
+       <div class="mem1 left">
+       <span>待夜 雪歌</span>
+       <p>
+       
+            声を上げて呼びかけるべきか、中に入るべきか、どうするか
+       </p>
+       </div>
+       <div class="mem4 right">
+       <span>夕凪 リヒト</span>
+       <p>
+       
+            いきなり入ったらびびるっしょ
+       </p>
+       </div>
+       <div class="mem4 right">
+       <span>夕凪 リヒト</span>
+       <p>
+       
+            ｢ごめんくださーい！｣
+       </p>
+       </div>
+       <div class="mem3 left">
+       <span>南 暁二郎</span>
+       <p>
+       
+            「だれかいるー！？」
+       </p>
+       </div>
+       <div class="kp">
+       
+            静まり返ってます
+       </div>
+       <div class="mem1 left">
+       <span>待夜 雪歌</span>
+       <p>
+       
+            「……来てないのか？」
+       </p>
+       </div>
+       <div class="mem4 right">
+       <span>夕凪 リヒト</span>
+       <p>
+       
+            聞き耳できる？
+       </p>
+       </div>
+       <div class="kp">
+       
+            どうぞー
+       </div>
+       <div class="mem4 right">
+       <span>夕凪 リヒト</span>
+       <p>
+       
+            54だめですなぁ
+       </p>
+       </div>
+       <div class="mem1 left">
+       <span>待夜 雪歌</span>
+       <p>
+       
+            援護します
+       </p>
+       </div>
+       <div class="mem3 left">
+       <span>南 暁二郎</span>
+       <p>
+       
+            17せいこう
+       </p>
+       </div>
+       <div class="mem1 left">
+       <span>待夜 雪歌</span>
+       <p>
+       
+            27　せいこう
+       </p>
+       </div>
+       <div class="kp">
+       
+            成功した方は　何も音がしないなーとなります
+       </div>
+       <div class="mem3 left">
+       <span>南 暁二郎</span>
+       <p>
+       
+            「……いないのかな？」
+       </p>
+       </div>
+       <div class="mem4 right">
+       <span>夕凪 リヒト</span>
+       <p>
+       
+            ｢のぞいてみましょうか｣
+       </p>
+       </div>
+       <div class="mem1 left">
+       <span>待夜 雪歌</span>
+       <p>
+       
+            「見てみるか」
+       </p>
+       </div>
+       <div class="mem4 right">
+       <span>夕凪 リヒト</span>
+       <p>
+       
+            ちらっと
+       </p>
+       </div>
+       <div class="kp">
+       
+            中を軽く覗いたところ　誰もいないことがわかります
+       </div>
+       <div class="mem3 left">
+       <span>南 暁二郎</span>
+       <p>
+       
+            「……だれもいないー？」
+       </p>
+       </div>
+       <div class="mem1 left">
+       <span>待夜 雪歌</span>
+       <p>
+       
+            中に入ります
+       </p>
+       </div>
+       <div class="mem4 right">
+       <span>夕凪 リヒト</span>
+       <p>
+       
+            ｢入れ違いになっちゃいましたかね？｣
+       </p>
+       </div>
+       <div class="mem1 left">
+       <span>待夜 雪歌</span>
+       <p>
+       
+            何かあってこっち来てないのか戻ったのかみたいから日誌を探したいな
+       </p>
+       </div>
+       <div class="kp">
+       
+            目星で探せます
+       </div>
+       <div class="mem1 left">
+       <span>待夜 雪歌</span>
+       <p>
+       
+            73　成功
+       </p>
+       </div>
+       <div class="kp">
+       
+            ありました！
+       </div>
+       <div class="mem1 left">
+       <span>待夜 雪歌</span>
+       <p>
+       
+            読みましょう
+       </p>
+       </div>
+       <div class="kp">
+       
+            ちょっと待っててね
+       </div>
+       <div class="kp">
+       
+            <br><br>――――――――――――――――――――――<br><br>
+       </div>
+       <div class="kp">
+       
+            業務日誌<br>
+       </div>
+       <div class="kp">
+       
+            ◯月4日
+       </div>
+       <div class="kp">
+       
+            きょうは　やまでおおきなザリガニさんをみつけました。<br>そのザリガニさんには　はねがはえていて、あたまもふつうのザリガニさんとはちがいました。<br>かっこよかったので　つかまえてペットにしようとおもいました！<br>
+       </div>
+       <div class="kp">
+       
+            ◯月7日
+       </div>
+       <div class="kp">
+       
+            きょうは　ザリガニさんをみつけました。<br>あれからまいにち　むしとりあみをもっていたのでつかまえにいきました。<br>でも、ザリガニさんはおおきかったので　つかまえられませんでした。<br>ザリガニさんは『やめてください！』といってにげていきました。<br>わたしもびっくりして　うごけませんでした。<br>つぎあったら　あやまらないといけないなっておもいました。<br>
+       </div>
+       <div class="kp">
+       
+            ◯月8日
+       </div>
+       <div class="kp">
+       
+            きのうとおなじところにザリガニさんがいました。<br>ザリガニさんは　わたしをみてにげようとしたので、あわててきのうはごめんなさいってあやまりました。<br>そしたらザリガニさんも『こちらこそかってにこのやまにいてごめんなさい』ってあやまりました。<br>ザリガニさんは　さいきんこのやまにひっこしてきたらしいです。<br>おなまえは『みーご』っていうみたいです。<br>みーごさんは　いしをあつめにきたけど　ひとがこわいからやまにいるみたいです。<br>むらのひとにいわないでほしいっていってました。<br>だから　ここにかくだけにします。<br>みんなも　だれにもいわないでください。<br>
+       </div>
+       <div class="kp">
+       
+            ◯月9日
+       </div>
+       <div class="kp">
+       
+            きょうは　かわできれいないしをひろってきました。<br>みーごさんは　はずかしがりやさんだから　わたしがかわりにひろってきました。<br>そのいしをみーごさんにわたしたら　すごくよろこんでくれました！<br>あした　おれいにみーごさんがおいしいものをごちそうしてくれるっていってました。たのしみです！<br>みーごさんのおうちまでの　ちずももらいました。<br>わたしはもうおぼえたけど、わすれたときのためにはこにしまっておきます。<br><br>
+       </div>
+       <div class="kp">
+       
+            ――――――――――――――――――――――<br><br>
+       </div>
+       <div class="mem1 left">
+       <span>待夜 雪歌</span>
+       <p>
+       
+            はいアウトー！
+       </p>
+       </div>
+       <div class="mem1 left">
+       <span>待夜 雪歌</span>
+       <p>
+       
+            そうだったね！あれも鉱石求めるタイプだったね！
+       </p>
+       </div>
+       <div class="mem4 right">
+       <span>夕凪 リヒト</span>
+       <p>
+       
+            みごさんなにしてん
+       </p>
+       </div>
+       <div class="mem1 left">
+       <span>待夜 雪歌</span>
+       <p>
+       
+            もうゴ＝ミ処理がはかどりますね！
+       </p>
+       </div>
+       <div class="mem5 left">
+       <span>野々間 蒴那</span>
+       <p>
+       
+            貰った石渡せば戦闘回避できるのでは？
+       </p>
+       </div>
+       <div class="mem1 left">
+       <span>待夜 雪歌</span>
+       <p>
+       
+            本当に穏便？……穏便？穏便な奴っているのか？穏便？な奴ならワンチャンあるかもしれないが
+       </p>
+       </div>
+       <div class="mem3 left">
+       <span>南 暁二郎</span>
+       <p>
+       
+            みーごさんなにものやねんと調べてしまったわ
+       </p>
+       </div>
+       <div class="mem1 left">
+       <span>待夜 雪歌</span>
+       <p>
+       
+            みーごさん缶詰作るの趣味なザリガニさん
+       </p>
+       </div>
+       <div class="kp">
+       
+            ここからどうする？
+       </div>
+       <div class="mem1 left">
+       <span>待夜 雪歌</span>
+       <p>
+       
+            日誌に書いてある通りなら箱に地図があると思うから
+       </p>
+       </div>
+       <div class="mem1 left">
+       <span>待夜 雪歌</span>
+       <p>
+       
+            それ見つけて追いかけるかなぁ。呼んで帰らないと。子供たちが心配してるしな
+       </p>
+       </div>
+       <div class="kp">
+       
+            箱は目星で探せるよ！
+       </div>
+       <div class="mem1 left">
+       <span>待夜 雪歌</span>
+       <p>
+       
+            はい<br>51　安心ですね
+       </p>
+       </div>
+       <div class="kp">
+       
+            ちょっとした鍵のかかった　小さな箱が見つかりました
+       </div>
+       <div class="mem1 left">
+       <span>待夜 雪歌</span>
+       <p>
+       
+            鍵かぁ
+       </p>
+       </div>
+       <div class="mem1 left">
+       <span>待夜 雪歌</span>
+       <p>
+       
+            出来れば壊したくないんだよなぁ
+       </p>
+       </div>
+       <div class="mem4 right">
+       <span>夕凪 リヒト</span>
+       <p>
+       
+            鍵開けあるよ！
+       </p>
+       </div>
+       <div class="mem1 left">
+       <span>待夜 雪歌</span>
+       <p>
+       
+            「リヒト、頼めるか？」
+       </p>
+       </div>
+       <div class="mem4 right">
+       <span>夕凪 リヒト</span>
+       <p>
+       
+            ｢まかせてください！｣
+       </p>
+       </div>
+       <div class="mem4 right">
+       <span>夕凪 リヒト</span>
+       <p>
+       
+            鍵開け道具持ってるんですが補正ありますか
+       </p>
+       </div>
+       <div class="mem4 right">
+       <span>夕凪 リヒト</span>
+       <p>
+       
+            技能値は60
+       </p>
+       </div>
+       <div class="mem4 right">
+       <span>夕凪 リヒト</span>
+       <p>
+       
+            30普通に成功したわ…
+       </p>
+       </div>
+       <div class="kp">
+       
+            ちゃっちい鍵だから　20くらい
+       </div>
+       <div class="kp">
+       
+            箱には小さな地図が入っていました。
+       </div>
+       <div class="mem1 left">
+       <span>待夜 雪歌</span>
+       <p>
+       
+            「ここにあの子がいるんだな」
+       </p>
+       </div>
+       <div class="kp">
+       
+            地図は触ったことの無い質感で　ここから山奥の洞窟への道のりが書かれています
+       </div>
+       <div class="mem1 left">
+       <span>待夜 雪歌</span>
+       <p>
+       
+            さすがぁ
+       </p>
+       </div>
+       <div class="mem1 left">
+       <span>待夜 雪歌</span>
+       <p>
+       
+            「もう一度確認する。――ここから先は多少危険かもしれない。それでも洞窟までくるか？」
+       </p>
+       </div>
+       <div class="mem1 left">
+       <span>待夜 雪歌</span>
+       <p>
+       
+            ううむ。PLの嫌な気配がPCに流れ込むぅ
+       </p>
+       </div>
+       <div class="mem3 left">
+       <span>南 暁二郎</span>
+       <p>
+       
+            「そのザリガニの怪物がいるとこにはらぺこちゃんがいるってことっしょ？じゃあ迎えにいかなくちゃ！」
+       </p>
+       </div>
+       <div class="mem3 left">
+       <span>南 暁二郎</span>
+       <p>
+       
+            これ日誌と地図は共有した体でよいのか？
+       </p>
+       </div>
+       <div class="mem1 left">
+       <span>待夜 雪歌</span>
+       <p>
+       
+            みんな興味はあるでしょ？
+       </p>
+       </div>
+       <div class="mem3 left">
+       <span>南 暁二郎</span>
+       <p>
+       
+            あるとはおもう
+       </p>
+       </div>
+       <div class="mem1 left">
+       <span>待夜 雪歌</span>
+       <p>
+       
+            そしたら勝手に覗き込むんじゃない？
+       </p>
+       </div>
+       <div class="mem3 left">
+       <span>南 暁二郎</span>
+       <p>
+       
+            いなくなった子を探したいという意味では
+       </p>
+       </div>
+       <div class="mem3 left">
+       <span>南 暁二郎</span>
+       <p>
+       
+            なるほど
+       </p>
+       </div>
+       <div class="kp">
+       
+            そのあたりは　ロール次第だね
+       </div>
+       <div class="mem4 right">
+       <span>夕凪 リヒト</span>
+       <p>
+       
+            ｢でもザリガニさんお話できるみたいですし、みんな心配してるからって言えばいいんじゃないですか？｣
+       </p>
+       </div>
+       <div class="mem4 right">
+       <span>夕凪 リヒト</span>
+       <p>
+       
+            日誌みて悪いザリガニじゃなさそうだって思ってるよ
+       </p>
+       </div>
+       <div class="mem1 left">
+       <span>待夜 雪歌</span>
+       <p>
+       
+            「――そう簡単にいけばいいんだがな。人間だって、話を聞かない奴がいるんだ」
+       </p>
+       </div>
+       <div class="mem3 left">
+       <span>南 暁二郎</span>
+       <p>
+       
+            「こどもにやさしいやつはそんなに悪いやつじゃないと思うけどな～」
+       </p>
+       </div>
+       <div class="mem5 left">
+       <span>野々間 蒴那</span>
+       <p>
+       
+            「まあ行ってから何とかしましょ。」
+       </p>
+       </div>
+       <div class="kp">
+       
+            山奥の洞窟に向かう？<br>準備とかする？
+       </div>
+       <div class="mem1 left">
+       <span>待夜 雪歌</span>
+       <p>
+       
+            んー。この村じゃ準備出来ないからこのままで
+       </p>
+       </div>
+       <div class="mem5 left">
+       <span>野々間 蒴那</span>
+       <p>
+       
+            役場にさすまたくらいならあるんじゃね？
+       </p>
+       </div>
+       <div class="mem1 left">
+       <span>待夜 雪歌</span>
+       <p>
+       
+            使う人がいるなら持ってきていいよ？僕は警棒(初期値)あるから
+       </p>
+       </div>
+       <div class="mem1 left">
+       <span>待夜 雪歌</span>
+       <p>
+       
+            出来れば防刃ベスト欲しいけど……
+       </p>
+       </div>
+       <div class="mem3 left">
+       <span>南 暁二郎</span>
+       <p>
+       
+            戦う気満々すぎる
+       </p>
+       </div>
+       <div class="mem5 left">
+       <span>野々間 蒴那</span>
+       <p>
+       
+            みごって確か装甲持ってるんだっけ？
+       </p>
+       </div>
+       <div class="mem1 left">
+       <span>待夜 雪歌</span>
+       <p>
+       
+            いや、非番でも呼び出される場合を考えて警棒は持ち歩いてるようにしてる(設定)
+       </p>
+       </div>
+       <div class="mem1 left">
+       <span>待夜 雪歌</span>
+       <p>
+       
+            それは時と場合による
+       </p>
+       </div>
+       <div class="mem1 left">
+       <span>待夜 雪歌</span>
+       <p>
+       
+            元々あると思ったけど
+       </p>
+       </div>
+       <div class="mem1 left">
+       <span>待夜 雪歌</span>
+       <p>
+       
+            まぁ、PC的にはゴミさんの警戒レベルは真ん中あたりなので、装備はそのぐらいかなぁ
+       </p>
+       </div>
+       <div class="kp">
+       
+            準備大丈夫そうだね？<br>地図を頼りに山奥の洞窟までやって来ました。<br>山の木が生い茂っていて昼間にしては暗いです。
+       </div>
+       <div class="mem1 left">
+       <span>待夜 雪歌</span>
+       <p>
+       
+            ペンライトつけます。
+       </p>
+       </div>
+       <div class="kp">
+       
+            明るくなりました！<br>洞窟の中は暗いということしかわかりません
+       </div>
+       <div class="kp">
+       
+            ※目星無効
+       </div>
+       <div class="mem1 left">
+       <span>待夜 雪歌</span>
+       <p>
+       
+            諦めて進むかぁ
+       </p>
+       </div>
+       <div class="mem1 left">
+       <span>待夜 雪歌</span>
+       <p>
+       
+            「暗いから足元に気をつけて」
+       </p>
+       </div>
+       <div class="kp">
+       
+            入ったね？
+       </div>
+       <div class="mem1 left">
+       <span>待夜 雪歌</span>
+       <p>
+       
+            先に入ったね
+       </p>
+       </div>
+       <div class="kp">
+       
+            探索者たちは洞窟の奥から何かが近付いて来るのに気付いた。<br>　やがてしっかりと視認できる位置まで来たそれは、探索者たちが今まで見たことのない生物だった。<br>　甲殻類を思わせるピンクがかった色の体に、蝙蝠のように薄い膜のような翼。<br>　脚は節足動物によく似たものが複数胴体から伸びており、その先には鋭い鉤爪がついている。<br>　本来顔があるはずの場所には、渦を巻いたような模様の丸い肉の塊。<br>　その肉の塊の表面は短い触手のようなもので覆われ、その触手は地表に這い出た蚯蚓のように、丸い肉の塊の表面をうねうねと蠢いていたのである。
+       </div>
+       <div class="kp">
+       
+            0又は1D6のSANチェックです
+       </div>
+       <div class="mem4 right">
+       <span>夕凪 リヒト</span>
+       <p>
+       
+            49失敗
+       </p>
+       </div>
+       <div class="mem4 right">
+       <span>夕凪 リヒト</span>
+       <p>
+       
+            -5( ˘ω˘ ) 
+       </p>
+       </div>
+       <div class="mem4 right">
+       <span>夕凪 リヒト</span>
+       <p>
+       
+            アイデアかしら
+       </p>
+       </div>
+       <div class="mem1 left">
+       <span>待夜 雪歌</span>
+       <p>
+       
+            あ
+       </p>
+       </div>
+       <div class="mem4 right">
+       <span>夕凪 リヒト</span>
+       <p>
+       
+            26
+       </p>
+       </div>
+       <div class="kp">
+       
+            そうなるね！
+       </div>
+       <div class="mem4 right">
+       <span>夕凪 リヒト</span>
+       <p>
+       
+            Kpごめんよ、発狂です^^
+       </p>
+       </div>
+       <div class="mem1 left">
+       <span>待夜 雪歌</span>
+       <p>
+       
+            おうふ
+       </p>
+       </div>
+       <div class="mem1 left">
+       <span>待夜 雪歌</span>
+       <p>
+       
+            04
+       </p>
+       </div>
+       <div class="mem1 left">
+       <span>待夜 雪歌</span>
+       <p>
+       
+            最初、このダイスがコロコロ転がって100になりかけてから04になりました。怖かったです
+       </p>
+       </div>
+       <div class="kp">
+       
+            一時的な狂気→7<br>幻覚・妄想
+       </div>
+       <div class="kp">
+       
+            セツカさんつっよいな
+       </div>
+       <div class="mem4 right">
+       <span>夕凪 リヒト</span>
+       <p>
+       
+            わぁい
+       </p>
+       </div>
+       <div class="mem4 right">
+       <span>夕凪 リヒト</span>
+       <p>
+       
+            皆のダイス終わってからロールしよ
+       </p>
+       </div>
+       <div class="mem1 left">
+       <span>待夜 雪歌</span>
+       <p>
+       
+            これで二人が発狂したらどうしよう
+       </p>
+       </div>
+       <div class="mem3 left">
+       <span>南 暁二郎</span>
+       <p>
+       
+            48失敗<br>-3で42です
+       </p>
+       </div>
+       <div class="mem5 left">
+       <span>野々間 蒴那</span>
+       <p>
+       
+            49成功-0
+       </p>
+       </div>
+       <div class="mem4 right">
+       <span>夕凪 リヒト</span>
+       <p>
+       
+            つょ
+       </p>
+       </div>
+       <div class="mem1 left">
+       <span>待夜 雪歌</span>
+       <p>
+       
+            よかった。発狂は一人だけか
+       </p>
+       </div>
+       <div class="mem3 left">
+       <span>南 暁二郎</span>
+       <p>
+       
+            へんたいさんはつよいなぁ
+       </p>
+       </div>
+       <div class="mem1 left">
+       <span>待夜 雪歌</span>
+       <p>
+       
+            私は変態じゃないよ！()
+       </p>
+       </div>
+       <div class="mem3 left">
+       <span>南 暁二郎</span>
+       <p>
+       
+            へんたいさんとけいさつかんはつよいなぁ()
+       </p>
+       </div>
+       <div class="mem4 right">
+       <span>夕凪 リヒト</span>
+       <p>
+       
+            じゃあ幻覚みよ
+       </p>
+       </div>
+       <div class="mem3 left">
+       <span>南 暁二郎</span>
+       <p>
+       
+            テレビみよみたいなノリw
+       </p>
+       </div>
+       <div class="mem1 left">
+       <span>待夜 雪歌</span>
+       <p>
+       
+            幻覚かぁ。それもそれで厄介だな
+       </p>
+       </div>
+       <div class="mem4 right">
+       <span>夕凪 リヒト</span>
+       <p>
+       
+            ｢…ナハト大丈夫だよ僕がいるよあれ今日一緒にきたっけ来たんだよねごめんね、わすれてたのかな大丈夫、くらいけどお兄ちゃんがいるからちゃんと守ってあげるからね、大丈夫だよ｣
+       </p>
+       </div>
+       <div class="mem4 right">
+       <span>夕凪 リヒト</span>
+       <p>
+       
+            何もいない隣に手を繋ぐ動作をしながらぶつぶつしてます
+       </p>
+       </div>
+       <div class="kp">
+       
+            ミ=ゴは緑色の粘液を纏いはじめた！<br>こんな状況だが戦闘だ！
+       </div>
+       <div class="mem1 left">
+       <span>待夜 雪歌</span>
+       <p>
+       
+            やっぱり緑の装甲出してきたか
+       </p>
+       </div>
+       <div class="mem4 right">
+       <span>夕凪 リヒト</span>
+       <p>
+       
+            狂気のターン1d10でいいのかい？
+       </p>
+       </div>
+       <div class="mem1 left">
+       <span>待夜 雪歌</span>
+       <p>
+       
+            公式るるぶだと1D10+4だけどどうしやす？
+       </p>
+       </div>
+       <div class="kp">
+       
+            そうだ忘れてた<br>1D10で
+       </div>
+       <div class="mem4 right">
+       <span>夕凪 リヒト</span>
+       <p>
+       
+            8っす
+       </p>
+       </div>
+       <div class="kp">
+       
+            リヒトくん　DEXいくつ？
+       </div>
+       <div class="mem4 right">
+       <span>夕凪 リヒト</span>
+       <p>
+       
+            写真上切れてたね…11です
+       </p>
+       </div>
+       <div class="mem1 left">
+       <span>待夜 雪歌</span>
+       <p>
+       
+            ちなみに、お客様の中で精神分析お持ちの方いらっしゃいますかー！？
+       </p>
+       </div>
+       <div class="mem4 right">
+       <span>夕凪 リヒト</span>
+       <p>
+       
+            君かな
+       </p>
+       </div>
+       <div class="mem1 left">
+       <span>待夜 雪歌</span>
+       <p>
+       
+            せやな
+       </p>
+       </div>
+       <div class="kp">
+       
+            ありがとう！<br>順番は
+       </div>
+       <div class="kp">
+       
+            セツカ=アキラ→リヒト→ミ=ゴ→サクナだね
+       </div>
+       <div class="mem1 left">
+       <span>待夜 雪歌</span>
+       <p>
+       
+            アキラさんはやいね
+       </p>
+       </div>
+       <div class="mem1 left">
+       <span>待夜 雪歌</span>
+       <p>
+       
+            一度、作戦会議していい？（PL間で）
+       </p>
+       </div>
+       <div class="kp">
+       
+            ええよ
+       </div>
+       <div class="mem1 left">
+       <span>待夜 雪歌</span>
+       <p>
+       
+            さて、どうしようか？とりあいず、ゴ＝ミさん緑装甲ってネバネバするらしいから触りたくないんだよね（ゴ＝ミさんが出ると察して一番思ってたこと）
+       </p>
+       </div>
+       <div class="mem4 right">
+       <span>夕凪 リヒト</span>
+       <p>
+       
+            狂気中多分リヒトは幻覚の弟を守ることしか出来ないょ
+       </p>
+       </div>
+       <div class="mem1 left">
+       <span>待夜 雪歌</span>
+       <p>
+       
+            一応リヒトが危なくないように誰かを含めて後ろに下がってほしいんだけど
+       </p>
+       </div>
+       <div class="mem1 left">
+       <span>待夜 雪歌</span>
+       <p>
+       
+            KP、ゴ＝ミは何体いますか？
+       </p>
+       </div>
+       <div class="kp">
+       
+            1だよ！
+       </div>
+       <div class="mem1 left">
+       <span>待夜 雪歌</span>
+       <p>
+       
+            最悪組み付けばいけるか
+       </p>
+       </div>
+       <div class="mem1 left">
+       <span>待夜 雪歌</span>
+       <p>
+       
+            一方で精神分析をして正気を取り戻したあとに、という案もあるけど、そもそもゴ＝ミの反応はどうでるかも問題だしねぇ
+       </p>
+       </div>
+       <div class="mem3 left">
+       <span>南 暁二郎</span>
+       <p>
+       
+            戦闘技能なにも持ってないけどいけっかね
+       </p>
+       </div>
+       <div class="mem3 left">
+       <span>南 暁二郎</span>
+       <p>
+       
+            みーごさんおしゃべりはできん感じか
+       </p>
+       </div>
+       <div class="mem1 left">
+       <span>待夜 雪歌</span>
+       <p>
+       
+            緑ゴ＝ミがステータスを忘れたんだよなー。
+       </p>
+       </div>
+       <div class="mem1 left">
+       <span>待夜 雪歌</span>
+       <p>
+       
+            一度対話を試みようとするならその間にリヒトに精神分析するかな。（一番信頼できない4割さん）
+       </p>
+       </div>
+       <div class="mem3 left">
+       <span>南 暁二郎</span>
+       <p>
+       
+            じゃあおしゃべりしてみようかなアキラさん
+       </p>
+       </div>
+       <div class="mem1 left">
+       <span>待夜 雪歌</span>
+       <p>
+       
+            メタ的に言えば、上位種族だから頭はいいんだよ。ただ、人間に友好的かと言われたら・・・なんだよね
+       </p>
+       </div>
+       <div class="mem3 left">
+       <span>南 暁二郎</span>
+       <p>
+       
+            こどもにはやさしいのになぁ
+       </p>
+       </div>
+       <div class="mem1 left">
+       <span>待夜 雪歌</span>
+       <p>
+       
+            たぶん鉱石目的だからかなぁって
+       </p>
+       </div>
+       <div class="mem3 left">
+       <span>南 暁二郎</span>
+       <p>
+       
+            なるほど もってるやんけ
+       </p>
+       </div>
+       <div class="mem4 right">
+       <span>夕凪 リヒト</span>
+       <p>
+       
+            シナリオによっては仲良くなれるよ
+       </p>
+       </div>
+       <div class="mem1 left">
+       <span>待夜 雪歌</span>
+       <p>
+       
+            これ1個であの子を差し出してくれて帰るまで待ってくれるかどうか
+       </p>
+       </div>
+       <div class="mem1 left">
+       <span>待夜 雪歌</span>
+       <p>
+       
+            KP、今の内にアキラさんに白い石渡してもいい？
+       </p>
+       </div>
+       <div class="mem3 left">
+       <span>南 暁二郎</span>
+       <p>
+       
+            言いくるめと説得が75こえなのでどうにかならんかね
+       </p>
+       </div>
+       <div class="kp">
+       
+            ええよ
+       </div>
+       <div class="mem1 left">
+       <span>待夜 雪歌</span>
+       <p>
+       
+            対人技能はそこまでないから、対話に関しては任せる
+       </p>
+       </div>
+       <div class="mem3 left">
+       <span>南 暁二郎</span>
+       <p>
+       
+            アキラさんにがんばってもらおう(他人事)
+       </p>
+       </div>
+       <div class="mem3 left">
+       <span>南 暁二郎</span>
+       <p>
+       
+            とりあえず対話で時間かせいでその間に精神分析してどうにもならなかったら戦闘でおけ？
+       </p>
+       </div>
+       <div class="mem1 left">
+       <span>待夜 雪歌</span>
+       <p>
+       
+            そうだね。無理だった場合は次のターンに組み付きますか。
+       </p>
+       </div>
+       <div class="kp">
+       
+            KP的にはおけー
+       </div>
+       <div class="mem1 left">
+       <span>待夜 雪歌</span>
+       <p>
+       
+            でも、精神分析4割だから信用しないでね！（）
+       </p>
+       </div>
+       <div class="mem5 left">
+       <span>野々間 蒴那</span>
+       <p>
+       
+            きっと成功するさ
+       </p>
+       </div>
+       <div class="mem1 left">
+       <span>待夜 雪歌</span>
+       <p>
+       
+            （それにきっと鬼畜シナリオじゃないと信じてるから）
+       </p>
+       </div>
+       <div class="mem3 left">
+       <span>南 暁二郎</span>
+       <p>
+       
+            がんばえ
+       </p>
+       </div>
+       <div class="mem1 left">
+       <span>待夜 雪歌</span>
+       <p>
+       
+            ではぁ、リヒトに対して精神分析します！
+       </p>
+       </div>
+       <div class="kp">
+       
+            はいよー
+       </div>
+       <div class="mem3 left">
+       <span>南 暁二郎</span>
+       <p>
+       
+            「えーとみーごさん？対話できる感じ～？ここに女の子いないかな、うんとかわいい子！」
+       </p>
+       </div>
+       <div class="mem1 left">
+       <span>待夜 雪歌</span>
+       <p>
+       
+            08　( ･´ｰ･｀)
+       </p>
+       </div>
+       <div class="mem3 left">
+       <span>南 暁二郎</span>
+       <p>
+       
+            しゅごい
+       </p>
+       </div>
+       <div class="kp">
+       
+            分析は成功しました！正気！
+       </div>
+       <div class="kp">
+       
+            ミ=ゴはこっちを警戒しているようだ
+       </div>
+       <div class="mem1 left">
+       <span>待夜 雪歌</span>
+       <p>
+       
+            「リヒト！しっかりしろ！少し落ち着け！」<br>手をぎゅっとする
+       </p>
+       </div>
+       <div class="mem3 left">
+       <span>南 暁二郎</span>
+       <p>
+       
+            「うーん、どうしたら警戒といてもらえるかなー。そーだ！じゃーん。みーごさんこれがほしいんだっけ？」石を掲げます
+       </p>
+       </div>
+       <div class="mem14 right">
+       <span>ミ=ゴ</span>
+       <p>
+       
+            「あーっ！地球の伝説の石じゃないですかーっ！」
+       </p>
+       </div>
+       <div class="mem1 left">
+       <span>待夜 雪歌</span>
+       <p>
+       
+            キャラ！キャラ！
+       </p>
+       </div>
+       <div class="mem5 left">
+       <span>野々間 蒴那</span>
+       <p>
+       
+            ウワアア思ったよりも流暢にシャベッタアアア
+       </p>
+       </div>
+       <div class="mem3 left">
+       <span>南 暁二郎</span>
+       <p>
+       
+            「あっ意外と喋り方フランク！これ好きなの？きれいだよねー俺も好き！」
+       </p>
+       </div>
+       <div class="kp">
+       
+            はい。戦闘終了です。
+       </div>
+       <div class="mem1 left">
+       <span>待夜 雪歌</span>
+       <p>
+       
+            ｗｗｗｗｗ
+       </p>
+       </div>
+       <div class="mem3 left">
+       <span>南 暁二郎</span>
+       <p>
+       
+            ナニィ
+       </p>
+       </div>
+       <div class="mem5 left">
+       <span>野々間 蒴那</span>
+       <p>
+       
+            やったぜ……
+       </p>
+       </div>
+       <div class="mem3 left">
+       <span>南 暁二郎</span>
+       <p>
+       
+            アキラさんの交渉がここでストップされるとは
+       </p>
+       </div>
+       <div class="mem1 left">
+       <span>待夜 雪歌</span>
+       <p>
+       
+            犠牲はリヒトのSAN値だけか
+       </p>
+       </div>
+       <div class="kp">
+       
+            探索者とミ=ゴがわちゃわちゃしていると　はらぺこちゃんがやって来ました
+       </div>
+       <div class="mem3 left">
+       <span>南 暁二郎</span>
+       <p>
+       
+            ギャルを口説くように神話生物に話しかけるアキラさんやばいな……
+       </p>
+       </div>
+       <div class="mem9 left">
+       <span>はらぺこ</span>
+       <p>
+       
+            「みーごさん　このひとたちをおどろかしたらだめだよ！」
+       </p>
+       </div>
+       <div class="mem1 left">
+       <span>待夜 雪歌</span>
+       <p>
+       
+            普通に来たｗｗｗ
+       </p>
+       </div>
+       <div class="kp">
+       
+            叱りつけてます
+       </div>
+       <div class="mem1 left">
+       <span>待夜 雪歌</span>
+       <p>
+       
+            「いやそれよりもだ！勝手に山に入るなと言われていただろう！」<br>それをしかりつけます
+       </p>
+       </div>
+       <div class="mem9 left">
+       <span>はらぺこ</span>
+       <p>
+       
+            「だって　みーごさんとやくそくしたんだもん…」
+       </p>
+       </div>
+       <div class="mem1 left">
+       <span>待夜 雪歌</span>
+       <p>
+       
+            その見た目には騙されないぞ
+       </p>
+       </div>
+       <div class="mem1 left">
+       <span>待夜 雪歌</span>
+       <p>
+       
+            「だってではない！他の子どもたちが心配していたからな」
+       </p>
+       </div>
+       <div class="mem14 right">
+       <span>ミ=ゴ</span>
+       <p>
+       
+            「ぺこちゃんは悪くないですよ！私との約束を守ってくれただけなんです！」
+       </p>
+       </div>
+       <div class="mem3 left">
+       <span>南 暁二郎</span>
+       <p>
+       
+            「まぁ、大人の言いつけより友達との約束の方が大事だよね～」
+       </p>
+       </div>
+       <div class="mem1 left">
+       <span>待夜 雪歌</span>
+       <p>
+       
+            「だとしてもね、他の子達にも説明しないで行くのはどうかと思うよ？ちゃんと戻ったら謝るんだよ？」
+       </p>
+       </div>
+       <div class="mem5 left">
+       <span>野々間 蒴那</span>
+       <p>
+       
+            「めっちゃカオスじゃん…。」
+       </p>
+       </div>
+       <div class="mem14 right">
+       <span>ミ=ゴ</span>
+       <p>
+       
+            「それに関しては私が悪いです。ぺこちゃんは人に喋らない約束も守ってくれただけなんです！」
+       </p>
+       </div>
+       <div class="mem9 left">
+       <span>はらぺこ</span>
+       <p>
+       
+            「はぁい…(ｼｭﾝ)」
+       </p>
+       </div>
+       <div class="mem1 left">
+       <span>待夜 雪歌</span>
+       <p>
+       
+            「……はぁ。わかった。それで、用は終わったのか？」
+       </p>
+       </div>
+       <div class="mem9 left">
+       <span>はらぺこ</span>
+       <p>
+       
+            「あのね！みーごさんがね！おいしいものごちそうしてくれるって！」
+       </p>
+       </div>
+       <div class="mem3 left">
+       <span>南 暁二郎</span>
+       <p>
+       
+            「え～なになにおいしいものって？」
+       </p>
+       </div>
+       <div class="mem14 right">
+       <span>ミ=ゴ</span>
+       <p>
+       
+            「はい。この星の川の石はミ=ゴにとってとても貴重なものなんですよ！」
+       </p>
+       </div>
+       <div class="mem3 left">
+       <span>南 暁二郎</span>
+       <p>
+       
+            「えっ、これたべるの？おいしいの？これ」
+       </p>
+       </div>
+       <div class="kp">
+       
+            ダイヤとか金塊とかもらった感じ
+       </div>
+       <div class="mem5 left">
+       <span>野々間 蒴那</span>
+       <p>
+       
+            「歯なくなりそう…。」
+       </p>
+       </div>
+       <div class="mem1 left">
+       <span>待夜 雪歌</span>
+       <p>
+       
+            「ア。ドーモ、アリガトウゴザイマス」
+       </p>
+       </div>
+       <div class="mem3 left">
+       <span>南 暁二郎</span>
+       <p>
+       
+            「宝石をたべるのか～。ロマンチックだね！俺は食べれないけど」
+       </p>
+       </div>
+       <div class="mem14 right">
+       <span>ミ=ゴ</span>
+       <p>
+       
+            「石は食べないですよ！？」
+       </p>
+       </div>
+       <div class="mem14 right">
+       <span>ミ=ゴ</span>
+       <p>
+       
+            「そう！その石！すっごいんです！ください！」
+       </p>
+       </div>
+       <div class="mem3 left">
+       <span>南 暁二郎</span>
+       <p>
+       
+            「えっどういうこと～？この宝石とかでおいしいもの食べろってこと？」
+       </p>
+       </div>
+       <div class="mem3 left">
+       <span>南 暁二郎</span>
+       <p>
+       
+            「この石？……あげてもいい？」せつかさんにききます
+       </p>
+       </div>
+       <div class="mem14 right">
+       <span>ミ=ゴ</span>
+       <p>
+       
+            「地球人にも食べられる美味しいものを御馳走するんです！お礼に！」
+       </p>
+       </div>
+       <div class="mem1 left">
+       <span>待夜 雪歌</span>
+       <p>
+       
+            「別にいいよ」
+       </p>
+       </div>
+       <div class="mem3 left">
+       <span>南 暁二郎</span>
+       <p>
+       
+            「ちょー義理堅いじゃーん。じゃ、あげちゃう！どーぞー」
+       </p>
+       </div>
+       <div class="mem3 left">
+       <span>南 暁二郎</span>
+       <p>
+       
+            あげます
+       </p>
+       </div>
+       <div class="mem14 right">
+       <span>ミ=ゴ</span>
+       <p>
+       
+            「うわぁぁぁやったぁぁぁぁ！<br>ありがとうございます！お礼に皆さんにも御馳走しますよ！」
+       </p>
+       </div>
+       <div class="mem3 left">
+       <span>南 暁二郎</span>
+       <p>
+       
+            「やったー。おいしいものってなになにー？」
+       </p>
+       </div>
+       <div class="mem1 left">
+       <span>待夜 雪歌</span>
+       <p>
+       
+            「うわー、ありがとうございますー」
+       </p>
+       </div>
+       <div class="mem14 right">
+       <span>ミ=ゴ</span>
+       <p>
+       
+            「こっちです！ついてきてください！」
+       </p>
+       </div>
+       <div class="kp">
+       
+            はらぺこを連れて　洞窟の奥に進んでいきます。
+       </div>
+       <div class="mem1 left">
+       <span>待夜 雪歌</span>
+       <p>
+       
+            ついていくかぁ
+       </p>
+       </div>
+       <div class="mem1 left">
+       <span>待夜 雪歌</span>
+       <p>
+       
+            幼女とゴ＝ミが一緒に洞窟の奥に行くのか
+       </p>
+       </div>
+       <div class="mem3 left">
+       <span>南 暁二郎</span>
+       <p>
+       
+            ごみ……
+       </p>
+       </div>
+       <div class="mem3 left">
+       <span>南 暁二郎</span>
+       <p>
+       
+            ついていきます
+       </p>
+       </div>
+       <div class="mem5 left">
+       <span>野々間 蒴那</span>
+       <p>
+       
+            「戻ったらまたバーベキューかなー。」<br>ついてく
+       </p>
+       </div>
+       <div class="mem1 left">
+       <span>待夜 雪歌</span>
+       <p>
+       
+            「ここに来る前にも食べて、ここでもごちそうになって、戻ってもまた食べる…か」
+       </p>
+       </div>
+       <div class="mem3 left">
+       <span>南 暁二郎</span>
+       <p>
+       
+            「食べ放題みたいだなー」
+       </p>
+       </div>
+       <div class="mem4 right">
+       <span>夕凪 リヒト</span>
+       <p>
+       
+            ｢タッパーもってくればよかった…｣
+       </p>
+       </div>
+       <div class="kp">
+       
+            洞窟の奥は近未来的な扉があり、その中も同じように近未来的なへやになっています。<br>部屋の中央には理科室のテーブルっぽいのがあり、その上にはガラスの水槽が置いてあります。
+       </div>
+       <div class="mem1 left">
+       <span>待夜 雪歌</span>
+       <p>
+       
+            デスヨネー
+       </p>
+       </div>
+       <div class="kp">
+       
+            水槽の中には茶色い土みたいなものが敷き詰められています。
+       </div>
+       <div class="mem4 right">
+       <span>夕凪 リヒト</span>
+       <p>
+       
+            わぁ
+       </p>
+       </div>
+       <div class="mem4 right">
+       <span>夕凪 リヒト</span>
+       <p>
+       
+            ミ=ゴとごはん嫌な予感しかしない
+       </p>
+       </div>
+       <div class="mem1 left">
+       <span>待夜 雪歌</span>
+       <p>
+       
+            あぁ、まだ缶詰はなさそうかなぁ
+       </p>
+       </div>
+       <div class="kp">
+       
+            ミ=ゴがその中に白い粉を撒くとミ=ゴそっくりの何かがうぞうぞと生えてきます。
+       </div>
+       <div class="kp">
+       
+            見ちゃった人は<br>0/1のSANチェックです。
+       </div>
+       <div class="mem1 left">
+       <span>待夜 雪歌</span>
+       <p>
+       
+            56　ふっ成功
+       </p>
+       </div>
+       <div class="mem3 left">
+       <span>南 暁二郎</span>
+       <p>
+       
+            7成功
+       </p>
+       </div>
+       <div class="mem3 left">
+       <span>南 暁二郎</span>
+       <p>
+       
+            「わぁ生えてきた！」
+       </p>
+       </div>
+       <div class="mem1 left">
+       <span>待夜 雪歌</span>
+       <p>
+       
+            「うわぁー」
+       </p>
+       </div>
+       <div class="mem4 right">
+       <span>夕凪 リヒト</span>
+       <p>
+       
+            失敗-1 →42( ˘ω˘ ) 
+       </p>
+       </div>
+       <div class="mem1 left">
+       <span>待夜 雪歌</span>
+       <p>
+       
+            着実に一人減ってる
+       </p>
+       </div>
+       <div class="kp">
+       
+            リヒトー！
+       </div>
+       <div class="mem3 left">
+       <span>南 暁二郎</span>
+       <p>
+       
+            がんばって……
+       </p>
+       </div>
+       <div class="mem4 right">
+       <span>夕凪 リヒト</span>
+       <p>
+       
+            せつかちゃんの後ろに隠れる
+       </p>
+       </div>
+       <div class="mem1 left">
+       <span>待夜 雪歌</span>
+       <p>
+       
+            手を握って隠す
+       </p>
+       </div>
+       <div class="mem4 right">
+       <span>夕凪 リヒト</span>
+       <p>
+       
+            ｢きもちわるい…｣
+       </p>
+       </div>
+       <div class="mem1 left">
+       <span>待夜 雪歌</span>
+       <p>
+       
+            「大丈夫だ」
+       </p>
+       </div>
+       <div class="mem5 left">
+       <span>野々間 蒴那</span>
+       <p>
+       
+            38成功。
+       </p>
+       </div>
+       <div class="mem5 left">
+       <span>野々間 蒴那</span>
+       <p>
+       
+            これSAN値回復シナリオじゃなかったっけ…(笑)
+       </p>
+       </div>
+       <div class="mem1 left">
+       <span>待夜 雪歌</span>
+       <p>
+       
+            そうだったっけ？（
+       </p>
+       </div>
+       <div class="mem9 left">
+       <span>はらぺこ</span>
+       <p>
+       
+            「なにこれー？」
+       </p>
+       </div>
+       <div class="mem14 right">
+       <span>ミ=ゴ</span>
+       <p>
+       
+            「これは地球で言うキノコっぽいものですよー！平たく言うと『食用ミ=ゴ』です！」
+       </p>
+       </div>
+       <div class="mem5 left">
+       <span>野々間 蒴那</span>
+       <p>
+       
+            「うへえザリガニ…。」
+       </p>
+       </div>
+       <div class="mem1 left">
+       <span>待夜 雪歌</span>
+       <p>
+       
+            「………」<br>これ突っ込みまちなのかな
+       </p>
+       </div>
+       <div class="mem1 left">
+       <span>待夜 雪歌</span>
+       <p>
+       
+            「食用ミ＝ゴ？食べられるの？食べちゃうの？バカなの？アホなの？バキって折っちゃうよ？そもそもキノコなの？私の知ってるキノコと違うし。」
+       </p>
+       </div>
+       <div class="mem4 right">
+       <span>夕凪 リヒト</span>
+       <p>
+       
+            キレてんじゃん
+       </p>
+       </div>
+       <div class="mem3 left">
+       <span>南 暁二郎</span>
+       <p>
+       
+            「辛辣だなぁ雪歌ちゃん。でもさぁこれ、ぺこちゃんにしてみたら友達たべることになっちゃわない？」
+       </p>
+       </div>
+       <div class="mem14 right">
+       <span>ミ=ゴ</span>
+       <p>
+       
+            「キノコと同じ質なんですよー！美味しいですよー！」
+       </p>
+       </div>
+       <div class="mem1 left">
+       <span>待夜 雪歌</span>
+       <p>
+       
+            食べた事あるのかよ
+       </p>
+       </div>
+       <div class="mem9 left">
+       <span>はらぺこ</span>
+       <p>
+       
+            「おいしそうだねー！」
+       </p>
+       </div>
+       <div class="mem5 left">
+       <span>野々間 蒴那</span>
+       <p>
+       
+            「やべえ…。」
+       </p>
+       </div>
+       <div class="mem3 left">
+       <span>南 暁二郎</span>
+       <p>
+       
+            「うーん……ぺこちゃんがいいならいいけどさっ」
+       </p>
+       </div>
+       <div class="mem14 right">
+       <span>ミ=ゴ</span>
+       <p>
+       
+            「これが美味しいのはいいんですけど　私地球のもの食べられないの忘れてたんですよね！<br>石を掘ってるときに出てきた岩塩と水と趣味で集めたキッチングッズならあるんですけどー！」
+       </p>
+       </div>
+       <div class="mem3 left">
+       <span>南 暁二郎</span>
+       <p>
+       
+            「キッチングッズ趣味で集めてんだ……」
+       </p>
+       </div>
+       <div class="mem4 right">
+       <span>夕凪 リヒト</span>
+       <p>
+       
+            ｢僕…いらない…｣
+       </p>
+       </div>
+       <div class="mem1 left">
+       <span>待夜 雪歌</span>
+       <p>
+       
+            実はバカなゴ=ミさんなのかな
+       </p>
+       </div>
+       <div class="mem14 right">
+       <span>ミ=ゴ</span>
+       <p>
+       
+            「そんなわけで、料理教えてくれませんかー？」
+       </p>
+       </div>
+       <div class="mem1 left">
+       <span>待夜 雪歌</span>
+       <p>
+       
+            ばかだったー！？
+       </p>
+       </div>
+       <div class="mem3 left">
+       <span>南 暁二郎</span>
+       <p>
+       
+            「自分でごはん食べないのに料理つくんのー？いいけどさ～」
+       </p>
+       </div>
+       <div class="kp">
+       
+            そんなわけで！クッキングタイムです！
+       </div>
+       <div class="kp">
+       
+            誰か幸運を振ってほしい
+       </div>
+       <div class="mem3 left">
+       <span>南 暁二郎</span>
+       <p>
+       
+            63だめだ
+       </p>
+       </div>
+       <div class="mem1 left">
+       <span>待夜 雪歌</span>
+       <p>
+       
+            14　へへっ
+       </p>
+       </div>
+       <div class="mem4 right">
+       <span>夕凪 リヒト</span>
+       <p>
+       
+            出目いいねぇ
+       </p>
+       </div>
+       <div class="mem1 left">
+       <span>待夜 雪歌</span>
+       <p>
+       
+            今日はよく滑る
+       </p>
+       </div>
+       <div class="mem9 left">
+       <span>はらぺこ</span>
+       <p>
+       
+            「あ！わたしさかなとってきたよ！」
+       </p>
+       </div>
+       <div class="kp">
+       
+            食材追加です
+       </div>
+       <div class="mem3 left">
+       <span>南 暁二郎</span>
+       <p>
+       
+            「調味料とか、コンロとかはー？」
+       </p>
+       </div>
+       <div class="mem5 left">
+       <span>野々間 蒴那</span>
+       <p>
+       
+            「さっきも魚食べたな…。」
+       </p>
+       </div>
+       <div class="mem14 right">
+       <span>ミ=ゴ</span>
+       <p>
+       
+            「こっちです！」
+       </p>
+       </div>
+       <div class="kp">
+       
+            めっちゃ使いやすそうなシステムキッチンがあります
+       </div>
+       <div class="mem1 left">
+       <span>待夜 雪歌</span>
+       <p>
+       
+            なんであるんだよ
+       </p>
+       </div>
+       <div class="kp">
+       
+            趣味
+       </div>
+       <div class="mem1 left">
+       <span>待夜 雪歌</span>
+       <p>
+       
+            趣味ぃ
+       </p>
+       </div>
+       <div class="mem4 right">
+       <span>夕凪 リヒト</span>
+       <p>
+       
+            形から入るタイプ
+       </p>
+       </div>
+       <div class="mem1 left">
+       <span>待夜 雪歌</span>
+       <p>
+       
+            形から入るけど結局やらないタイプ
+       </p>
+       </div>
+       <div class="mem4 right">
+       <span>夕凪 リヒト</span>
+       <p>
+       
+            あるある
+       </p>
+       </div>
+       <div class="kp">
+       
+            今ある食材<br>　食用ミ=ゴ<br>　トマト<br>　ナス<br>　川魚<br>　岩塩
+       </div>
+       <div class="mem3 left">
+       <span>南 暁二郎</span>
+       <p>
+       
+            みーごさんに親近感わいちゃう
+       </p>
+       </div>
+       <div class="mem1 left">
+       <span>待夜 雪歌</span>
+       <p>
+       
+            何作ろうかな
+       </p>
+       </div>
+       <div class="mem4 right">
+       <span>夕凪 リヒト</span>
+       <p>
+       
+            リヒトは食用ミ=ゴにドン引きしてんだよな
+       </p>
+       </div>
+       <div class="mem1 left">
+       <span>待夜 雪歌</span>
+       <p>
+       
+            リヒトにはミ＝ゴ入れないようにしないと
+       </p>
+       </div>
+       <div class="mem4 right">
+       <span>夕凪 リヒト</span>
+       <p>
+       
+            ｢焼き魚と冷やしナストマトでよくないですか…｣
+       </p>
+       </div>
+       <div class="mem5 left">
+       <span>野々間 蒴那</span>
+       <p>
+       
+            「ほんとだよね…。」
+       </p>
+       </div>
+       <div class="mem5 left">
+       <span>野々間 蒴那</span>
+       <p>
+       
+            「私飲食店でバイトしてるけど、あんな食材初めて見るからどうしたらいいかわからん…。」
+       </p>
+       </div>
+       <div class="mem1 left">
+       <span>待夜 雪歌</span>
+       <p>
+       
+            「普通にキノコと同じ扱いでいいんじゃない？」
+       </p>
+       </div>
+       <div class="mem1 left">
+       <span>待夜 雪歌</span>
+       <p>
+       
+            「アレの言う事聞くならね」
+       </p>
+       </div>
+       <div class="mem3 left">
+       <span>南 暁二郎</span>
+       <p>
+       
+            「みじんぎりにしちゃえばわかんないかな」
+       </p>
+       </div>
+       <div class="mem5 left">
+       <span>野々間 蒴那</span>
+       <p>
+       
+            「多分…？ι」
+       </p>
+       </div>
+       <div class="mem1 left">
+       <span>待夜 雪歌</span>
+       <p>
+       
+            これって試しに味見してみるっていうのアリなのかい？
+       </p>
+       </div>
+       <div class="kp">
+       
+            アリだけど　火は通してね
+       </div>
+       <div class="mem3 left">
+       <span>南 暁二郎</span>
+       <p>
+       
+            「炙ってみる？」
+       </p>
+       </div>
+       <div class="mem1 left">
+       <span>待夜 雪歌</span>
+       <p>
+       
+            湯通ししてあぶってみるか
+       </p>
+       </div>
+       <div class="mem14 right">
+       <span>ミ=ゴ</span>
+       <p>
+       
+            「私ここに来てから炙りミ=ゴしか食べてないんですよー！」
+       </p>
+       </div>
+       <div class="kp">
+       
+            地球のもの食べられないからね
+       </div>
+       <div class="mem5 left">
+       <span>野々間 蒴那</span>
+       <p>
+       
+            「共食いしてやがる……。」
+       </p>
+       </div>
+       <div class="mem1 left">
+       <span>待夜 雪歌</span>
+       <p>
+       
+            「共食い……」
+       </p>
+       </div>
+       <div class="mem14 right">
+       <span>ミ=ゴ</span>
+       <p>
+       
+            「いやー、大きい魚が小さい魚食べる感じですよー？」
+       </p>
+       </div>
+       <div class="mem3 left">
+       <span>南 暁二郎</span>
+       <p>
+       
+            「地球のものは食べられないのに自分の分身は食べられるんだ」
+       </p>
+       </div>
+       <div class="mem3 left">
+       <span>南 暁二郎</span>
+       <p>
+       
+            「食物連鎖じゃ～ん」
+       </p>
+       </div>
+       <div class="mem5 left">
+       <span>野々間 蒴那</span>
+       <p>
+       
+            「知らなくて良いこと知った気がする…。」
+       </p>
+       </div>
+       <div class="mem1 left">
+       <span>待夜 雪歌</span>
+       <p>
+       
+            「……ホント、同族を食べるってばからし（ﾎﾞｿﾘ」
+       </p>
+       </div>
+       <div class="mem4 right">
+       <span>夕凪 リヒト</span>
+       <p>
+       
+            連鎖はしてないね？？
+       </p>
+       </div>
+       <div class="mem9 left">
+       <span>はらぺこ</span>
+       <p>
+       
+            「わたしのともだちなんだよ！あやまって！」
+       </p>
+       </div>
+       <div class="mem1 left">
+       <span>待夜 雪歌</span>
+       <p>
+       
+            弱肉強食ではあるかもね
+       </p>
+       </div>
+       <div class="mem14 right">
+       <span>ミ=ゴ</span>
+       <p>
+       
+            「いや　慣れてる。」
+       </p>
+       </div>
+       <div class="mem1 left">
+       <span>待夜 雪歌</span>
+       <p>
+       
+            ゴ＝ミさん達観としてらっしゃる
+       </p>
+       </div>
+       <div class="mem1 left">
+       <span>待夜 雪歌</span>
+       <p>
+       
+            そういえば今のはらぺこは雪歌に対しての反論？
+       </p>
+       </div>
+       <div class="kp">
+       
+            セツカさんだね
+       </div>
+       <div class="mem1 left">
+       <span>待夜 雪歌</span>
+       <p>
+       
+            「……そっか。そうだねー。ごめんごめん」<br>同族をお友達の方で捉えてる子だなぁーって思うねぇ
+       </p>
+       </div>
+       <div class="mem1 left">
+       <span>待夜 雪歌</span>
+       <p>
+       
+            ホントは、人間も共食いするやついるからそっちに対してイラついてたんだけどね
+       </p>
+       </div>
+       <div class="kp">
+       
+            はらぺこにはわからないから…
+       </div>
+       <div class="mem1 left">
+       <span>待夜 雪歌</span>
+       <p>
+       
+            うん。聞こえちゃったのならーって感じで捉えてる
+       </p>
+       </div>
+       <div class="mem1 left">
+       <span>待夜 雪歌</span>
+       <p>
+       
+            「そーだ、味見だ。味見。どんな味するかによって料理に添えるか決まるねー」
+       </p>
+       </div>
+       <div class="mem1 left">
+       <span>待夜 雪歌</span>
+       <p>
+       
+            どんな味すんだろ
+       </p>
+       </div>
+       <div class="mem14 right">
+       <span>ミ=ゴ</span>
+       <p>
+       
+            「食べるなら火を通してくださいねー！」
+       </p>
+       </div>
+       <div class="mem1 left">
+       <span>待夜 雪歌</span>
+       <p>
+       
+            「わかってますよー」
+       </p>
+       </div>
+       <div class="mem5 left">
+       <span>野々間 蒴那</span>
+       <p>
+       
+            「キノコにも、色々味がありますからねー。」
+       </p>
+       </div>
+       <div class="mem1 left">
+       <span>待夜 雪歌</span>
+       <p>
+       
+            湯通しして、味見してみる
+       </p>
+       </div>
+       <div class="kp">
+       
+            湯通しした食用ミ=ゴを噛み締めると　口の中に旨味が広がる。<br>なにこれ？マッシュルームの旨味を凝縮した感じ？え？マ？<br>1D3回復です
+       </div>
+       <div class="mem1 left">
+       <span>待夜 雪歌</span>
+       <p>
+       
+            HP？SAN？
+       </p>
+       </div>
+       <div class="kp">
+       
+            SANだね
+       </div>
+       <div class="mem3 left">
+       <span>南 暁二郎</span>
+       <p>
+       
+            まさかの
+       </p>
+       </div>
+       <div class="mem1 left">
+       <span>待夜 雪歌</span>
+       <p>
+       
+            つよい
+       </p>
+       </div>
+       <div class="mem5 left">
+       <span>野々間 蒴那</span>
+       <p>
+       
+            ここで(笑)
+       </p>
+       </div>
+       <div class="mem3 left">
+       <span>南 暁二郎</span>
+       <p>
+       
+            「どんな味どんな味？俺もたべる！」
+       </p>
+       </div>
+       <div class="mem1 left">
+       <span>待夜 雪歌</span>
+       <p>
+       
+            「おいしい」
+       </p>
+       </div>
+       <div class="mem3 left">
+       <span>南 暁二郎</span>
+       <p>
+       
+            「まじで！？」
+       </p>
+       </div>
+       <div class="mem1 left">
+       <span>待夜 雪歌</span>
+       <p>
+       
+            しかも3でた<br>減ってないのにここで増えた
+       </p>
+       </div>
+       <div class="kp">
+       
+            そうです　ここ回復ポイントです。<br>張り切って調理するっきゃないね！
+       </div>
+       <div class="mem1 left">
+       <span>待夜 雪歌</span>
+       <p>
+       
+            まさかすぎる…
+       </p>
+       </div>
+       <div class="mem3 left">
+       <span>南 暁二郎</span>
+       <p>
+       
+            「ほんとだ！んまい！」<br>2ふえて44になりました
+       </p>
+       </div>
+       <div class="mem5 left">
+       <span>野々間 蒴那</span>
+       <p>
+       
+            嘘やん…。
+       </p>
+       </div>
+       <div class="mem5 left">
+       <span>野々間 蒴那</span>
+       <p>
+       
+            「美味しいって。リヒト君も食べてみる？」
+       </p>
+       </div>
+       <div class="mem1 left">
+       <span>待夜 雪歌</span>
+       <p>
+       
+            「これなら、ミ＝ゴステーキでもいいんじゃないかな。岩塩で塩気たして」
+       </p>
+       </div>
+       <div class="mem9 left">
+       <span>はらぺこ</span>
+       <p>
+       
+            「わたしもたべたーい！」わくわくしてます
+       </p>
+       </div>
+       <div class="mem1 left">
+       <span>待夜 雪歌</span>
+       <p>
+       
+            ミ＝ゴステーキってある種すごいな
+       </p>
+       </div>
+       <div class="mem9 left">
+       <span>はらぺこ</span>
+       <p>
+       
+            「せっかくだから　ごうかなやつにしようよ！」
+       </p>
+       </div>
+       <div class="mem3 left">
+       <span>南 暁二郎</span>
+       <p>
+       
+            「どーしてもむりなら、みじん切りしてパスタとかもいいかもね～パスタないけど」
+       </p>
+       </div>
+       <div class="mem1 left">
+       <span>待夜 雪歌</span>
+       <p>
+       
+            「お肉あればいいのにね」
+       </p>
+       </div>
+       <div class="mem3 left">
+       <span>南 暁二郎</span>
+       <p>
+       
+            「魚肉ならあるけどね」
+       </p>
+       </div>
+       <div class="mem4 right">
+       <span>夕凪 リヒト</span>
+       <p>
+       
+            そんな好き嫌いのにんじんみたいな扱いをされても…
+       </p>
+       </div>
+       <div class="mem1 left">
+       <span>待夜 雪歌</span>
+       <p>
+       
+            「魚はそのままでやりたいじゃん」
+       </p>
+       </div>
+       <div class="mem4 right">
+       <span>夕凪 リヒト</span>
+       <p>
+       
+            ｢た、たべるんですかぁ…｣
+       </p>
+       </div>
+       <div class="mem9 left">
+       <span>はらぺこ</span>
+       <p>
+       
+            「すききらいはだめって　おかあさんがいってたよ」
+       </p>
+       </div>
+       <div class="mem5 left">
+       <span>野々間 蒴那</span>
+       <p>
+       
+            「い、いただきまーす。」<br>みごみご食べます
+       </p>
+       </div>
+       <div class="mem5 left">
+       <span>野々間 蒴那</span>
+       <p>
+       
+            1。しょっぱい…。→76
+       </p>
+       </div>
+       <div class="mem4 right">
+       <span>夕凪 リヒト</span>
+       <p>
+       
+            イナゴ並の抵抗感あるよ
+       </p>
+       </div>
+       <div class="mem4 right">
+       <span>夕凪 リヒト</span>
+       <p>
+       
+            しかし食べさせないと回復しない…
+       </p>
+       </div>
+       <div class="mem1 left">
+       <span>待夜 雪歌</span>
+       <p>
+       
+            まぁ、過程みちゃったからね
+       </p>
+       </div>
+       <div class="mem4 right">
+       <span>夕凪 リヒト</span>
+       <p>
+       
+            大丈夫？身体つきやぶんない？？
+       </p>
+       </div>
+       <div class="mem9 left">
+       <span>はらぺこ</span>
+       <p>
+       
+            「たべないの？」むしゃむしゃ
+       </p>
+       </div>
+       <div class="mem3 left">
+       <span>南 暁二郎</span>
+       <p>
+       
+            「だいじょぶだって。肉だって魚だって元々生きてたもんだし、それと一緒一緒」
+       </p>
+       </div>
+       <div class="mem4 right">
+       <span>夕凪 リヒト</span>
+       <p>
+       
+            ｢ぅ……師匠も探偵には覚悟が必要っていってた…僕だって…！！たっ…たべましゅ！｣噛み
+       </p>
+       </div>
+       <div class="mem1 left">
+       <span>待夜 雪歌</span>
+       <p>
+       
+            「えらいなぁー」
+       </p>
+       </div>
+       <div class="mem4 right">
+       <span>夕凪 リヒト</span>
+       <p>
+       
+            1( ᐛ👐
+       </p>
+       </div>
+       <div class="mem4 right">
+       <span>夕凪 リヒト</span>
+       <p>
+       
+            →43
+       </p>
+       </div>
+       <div class="mem5 left">
+       <span>野々間 蒴那</span>
+       <p>
+       
+            しょっぱい…
+       </p>
+       </div>
+       <div class="mem1 left">
+       <span>待夜 雪歌</span>
+       <p>
+       
+            ちっぱい
+       </p>
+       </div>
+       <div class="mem4 right">
+       <span>夕凪 リヒト</span>
+       <p>
+       
+            ちみっとだけ食べた
+       </p>
+       </div>
+       <div class="mem3 left">
+       <span>南 暁二郎</span>
+       <p>
+       
+            かわいい
+       </p>
+       </div>
+       <div class="mem3 left">
+       <span>南 暁二郎</span>
+       <p>
+       
+            「えらいえらい」
+       </p>
+       </div>
+       <div class="mem5 left">
+       <span>野々間 蒴那</span>
+       <p>
+       
+            リヒト君の胸筋ムキムキになってもやだよ……
+       </p>
+       </div>
+       <div class="mem4 right">
+       <span>夕凪 リヒト</span>
+       <p>
+       
+            おっぱいのちっぱいじゃないって
+       </p>
+       </div>
+       <div class="mem5 left">
+       <span>野々間 蒴那</span>
+       <p>
+       
+            そうなの？よかった
+       </p>
+       </div>
+       <div class="mem1 left">
+       <span>待夜 雪歌</span>
+       <p>
+       
+            一番最初に思い浮かべるのがそっちだったか・ｘ・
+       </p>
+       </div>
+       <div class="mem3 left">
+       <span>南 暁二郎</span>
+       <p>
+       
+            www
+       </p>
+       </div>
+       <div class="mem5 left">
+       <span>野々間 蒴那</span>
+       <p>
+       
+            むしろそっちしか知らん(笑)<br>私知識の偏り激しいから
+       </p>
+       </div>
+       <div class="mem4 right">
+       <span>夕凪 リヒト</span>
+       <p>
+       
+            しっぱい→ちっぱい
+       </p>
+       </div>
+       <div class="mem5 left">
+       <span>野々間 蒴那</span>
+       <p>
+       
+            ナルホド
+       </p>
+       </div>
+       <div class="mem4 right">
+       <span>夕凪 リヒト</span>
+       <p>
+       
+            しょっぱいかな
+       </p>
+       </div>
+       <div class="mem1 left">
+       <span>待夜 雪歌</span>
+       <p>
+       
+            しょっぱい
+       </p>
+       </div>
+       <div class="mem3 left">
+       <span>南 暁二郎</span>
+       <p>
+       
+            そっちだと思ったからなんでおっぱいのはなしになったのかわからんかった
+       </p>
+       </div>
+       <div class="mem1 left">
+       <span>待夜 雪歌</span>
+       <p>
+       
+            僕の訛りみたいなものだから気にしないで
+       </p>
+       </div>
+       <div class="mem5 left">
+       <span>野々間 蒴那</span>
+       <p>
+       
+            わかったー
+       </p>
+       </div>
+       <div class="mem4 right">
+       <span>夕凪 リヒト</span>
+       <p>
+       
+            おっぱいあるショタか…
+       </p>
+       </div>
+       <div class="mem1 left">
+       <span>待夜 雪歌</span>
+       <p>
+       
+            ｗｗ
+       </p>
+       </div>
+       <div class="mem5 left">
+       <span>野々間 蒴那</span>
+       <p>
+       
+            ええええ…(´д｀)
+       </p>
+       </div>
+       <div class="mem4 right">
+       <span>夕凪 リヒト</span>
+       <p>
+       
+            つまりこれミ=ゴを食べれば食べるほど回復できんのかな
+       </p>
+       </div>
+       <div class="mem4 right">
+       <span>夕凪 リヒト</span>
+       <p>
+       
+            ボス食べていいのかな
+       </p>
+       </div>
+       <div class="kp">
+       
+            幸運を振って欲しいです！
+       </div>
+       <div class="mem5 left">
+       <span>野々間 蒴那</span>
+       <p>
+       
+            おっとお？
+       </p>
+       </div>
+       <div class="mem1 left">
+       <span>待夜 雪歌</span>
+       <p>
+       
+            え？飛んでいるのを食べる？
+       </p>
+       </div>
+       <div class="mem1 left">
+       <span>待夜 雪歌</span>
+       <p>
+       
+            今振ればいいのかな？
+       </p>
+       </div>
+       <div class="mem4 right">
+       <span>夕凪 リヒト</span>
+       <p>
+       
+            47成功
+       </p>
+       </div>
+       <div class="mem1 left">
+       <span>待夜 雪歌</span>
+       <p>
+       
+            81　失敗しちゃった
+       </p>
+       </div>
+       <div class="mem5 left">
+       <span>野々間 蒴那</span>
+       <p>
+       
+            みんな振るの？
+       </p>
+       </div>
+       <div class="mem3 left">
+       <span>南 暁二郎</span>
+       <p>
+       
+            43ギりせいこう
+       </p>
+       </div>
+       <div class="mem3 left">
+       <span>南 暁二郎</span>
+       <p>
+       
+            とりあえずふっちゃった
+       </p>
+       </div>
+       <div class="kp">
+       
+            成功した貴方は<br>あれ？これめっちゃ美味しいごはん出来るんじゃね？<br>美味しければ美味しいほど回復するんじゃね？と思います
+       </div>
+       <div class="mem1 left">
+       <span>待夜 雪歌</span>
+       <p>
+       
+            「とりあいず、なにか作る流れでいいですかー？」
+       </p>
+       </div>
+       <div class="mem5 left">
+       <span>野々間 蒴那</span>
+       <p>
+       
+            「いいですよー。」
+       </p>
+       </div>
+       <div class="mem4 right">
+       <span>夕凪 リヒト</span>
+       <p>
+       
+            ｢…んん…これ…美味しいです！見かけによらないですね、僕もお手伝いします！｣
+       </p>
+       </div>
+       <div class="mem4 right">
+       <span>夕凪 リヒト</span>
+       <p>
+       
+            料理技能ないけど
+       </p>
+       </div>
+       <div class="mem5 left">
+       <span>野々間 蒴那</span>
+       <p>
+       
+            「リヒト君がやる気になった…。」
+       </p>
+       </div>
+       <div class="mem3 left">
+       <span>南 暁二郎</span>
+       <p>
+       
+            「すごいねみーご！」
+       </p>
+       </div>
+       <div class="mem14 right">
+       <span>ミ=ゴ</span>
+       <p>
+       
+            「でしょう！お礼のためにとびきりのやつを用意しましたからね！」
+       </p>
+       </div>
+       <div class="mem1 left">
+       <span>待夜 雪歌</span>
+       <p>
+       
+            「それじゃ、つくりましょー？」
+       </p>
+       </div>
+       <div class="mem3 left">
+       <span>南 暁二郎</span>
+       <p>
+       
+            「ありがとーみーごくん！なにつくろーか」
+       </p>
+       </div>
+       <div class="mem9 left">
+       <span>はらぺこ</span>
+       <p>
+       
+            「(よだれを垂らしながら料理の名前を呟いている)」
+       </p>
+       </div>
+       <div class="mem3 left">
+       <span>南 暁二郎</span>
+       <p>
+       
+            「ぺこちゃんなんて？」
+       </p>
+       </div>
+       <div class="mem5 left">
+       <span>野々間 蒴那</span>
+       <p>
+       
+            「汚いな…ι」<br>ティッシュでふきふき
+       </p>
+       </div>
+       <div class="mem9 left">
+       <span>はらぺこ</span>
+       <p>
+       
+            「いっぱいたべたいおりょうりがあってね！」
+       </p>
+       </div>
+       <div class="mem1 left">
+       <span>待夜 雪歌</span>
+       <p>
+       
+            「ここであるものでねー」
+       </p>
+       </div>
+       <div class="mem3 left">
+       <span>南 暁二郎</span>
+       <p>
+       
+            「んーふつうに炒めちゃってもおいしいんじゃないかなーと思うけど、どぉ？」
+       </p>
+       </div>
+       <div class="mem5 left">
+       <span>野々間 蒴那</span>
+       <p>
+       
+            「いいと思いますよー。」
+       </p>
+       </div>
+       <div class="mem1 left">
+       <span>待夜 雪歌</span>
+       <p>
+       
+            「それでいいと思うよー」
+       </p>
+       </div>
+       <div class="mem3 left">
+       <span>南 暁二郎</span>
+       <p>
+       
+            料理技能ない人間が仕切ってていいのか
+       </p>
+       </div>
+       <div class="mem5 left">
+       <span>野々間 蒴那</span>
+       <p>
+       
+            見た目グロいからさくなちゃんちょっと距離的に引いてるかな(笑)
+       </p>
+       </div>
+       <div class="mem3 left">
+       <span>南 暁二郎</span>
+       <p>
+       
+            アキラさん意図せずみーごさんと仲良くなっちゃったからなぁ
+       </p>
+       </div>
+       <div class="mem1 left">
+       <span>待夜 雪歌</span>
+       <p>
+       
+            僕は近くなくだからなぁ
+       </p>
+       </div>
+       <div class="mem3 left">
+       <span>南 暁二郎</span>
+       <p>
+       
+            しかたなく？
+       </p>
+       </div>
+       <div class="mem1 left">
+       <span>待夜 雪歌</span>
+       <p>
+       
+            そこまで近寄らないけど、あからさまな避けではない
+       </p>
+       </div>
+       <div class="mem3 left">
+       <span>南 暁二郎</span>
+       <p>
+       
+            なるほど
+       </p>
+       </div>
+       <div class="mem4 right">
+       <span>夕凪 リヒト</span>
+       <p>
+       
+            料理技能ないとDex判定になるのかな
+       </p>
+       </div>
+       <div class="mem5 left">
+       <span>野々間 蒴那</span>
+       <p>
+       
+            どうかしら…。
+       </p>
+       </div>
+       <div class="mem1 left">
+       <span>待夜 雪歌</span>
+       <p>
+       
+            代表で回すなら料理あるよ
+       </p>
+       </div>
+       <div class="kp">
+       
+            そのあたりはシナリオにないな…DEX判定でも大丈夫なことにしよう。<br>一人成功すれば大丈夫よー
+       </div>
+       <div class="mem5 left">
+       <span>野々間 蒴那</span>
+       <p>
+       
+            どうする？
+       </p>
+       </div>
+       <div class="mem1 left">
+       <span>待夜 雪歌</span>
+       <p>
+       
+            どっちでも？一応両方あるけど
+       </p>
+       </div>
+       <div class="kp">
+       
+            どっちでもいける！
+       </div>
+       <div class="mem1 left">
+       <span>待夜 雪歌</span>
+       <p>
+       
+            一人成功すればいいだから全員振っちゃえば？
+       </p>
+       </div>
+       <div class="mem1 left">
+       <span>待夜 雪歌</span>
+       <p>
+       
+            あとDEX判定は*いくつでやるの？
+       </p>
+       </div>
+       <div class="kp">
+       
+            5位にしようかね
+       </div>
+       <div class="mem1 left">
+       <span>待夜 雪歌</span>
+       <p>
+       
+            それだとDEXの方が高いんだけどー。料理技能なんてなかんやー
+       </p>
+       </div>
+       <div class="kp">
+       
+            成功すればいいんだよォ！
+       </div>
+       <div class="mem1 left">
+       <span>待夜 雪歌</span>
+       <p>
+       
+            32
+       </p>
+       </div>
+       <div class="mem1 left">
+       <span>待夜 雪歌</span>
+       <p>
+       
+             どっちであろうとも成功だった
+       </p>
+       </div>
+       <div class="kp">
+       
+            やったね！<br>ミ=ゴ炒めを作ったんだよね？
+       </div>
+       <div class="mem1 left">
+       <span>待夜 雪歌</span>
+       <p>
+       
+            じゃない？
+       </p>
+       </div>
+       <div class="kp">
+       
+            使った食材は　ミ=ゴと岩塩だけ？
+       </div>
+       <div class="mem1 left">
+       <span>待夜 雪歌</span>
+       <p>
+       
+            たぶん雪歌が作ったのはミ＝ゴステーキ（岩塩で味付け）かな
+       </p>
+       </div>
+       <div class="kp">
+       
+            ミ=ゴステーキだね　了解
+       </div>
+       <div class="mem5 left">
+       <span>野々間 蒴那</span>
+       <p>
+       
+            なんか段々肉の焼き方にありそうって思ってしまった…。ミディアム、レア、ウェルダン、ミ=ゴ、みたいな…。
+       </p>
+       </div>
+       <div class="mem1 left">
+       <span>待夜 雪歌</span>
+       <p>
+       
+            そんなんじっくり焼くわ
+       </p>
+       </div>
+       <div class="mem1 left">
+       <span>待夜 雪歌</span>
+       <p>
+       
+            他は……任せた()
+       </p>
+       </div>
+       <div class="mem4 right">
+       <span>夕凪 リヒト</span>
+       <p>
+       
+            さぁ飯テロの時間だ(ミ=ゴ)
+       </p>
+       </div>
+       <div class="mem1 left">
+       <span>待夜 雪歌</span>
+       <p>
+       
+            飯テロだぁ
+       </p>
+       </div>
+       <div class="mem3 left">
+       <span>南 暁二郎</span>
+       <p>
+       
+            ステーキだけでよいのかな
+       </p>
+       </div>
+       <div class="mem1 left">
+       <span>待夜 雪歌</span>
+       <p>
+       
+            誰も他やらんの？
+       </p>
+       </div>
+       <div class="mem3 left">
+       <span>南 暁二郎</span>
+       <p>
+       
+            やろう
+       </p>
+       </div>
+       <div class="mem3 left">
+       <span>南 暁二郎</span>
+       <p>
+       
+            ミーゴ炒めつくります
+       </p>
+       </div>
+       <div class="mem3 left">
+       <span>南 暁二郎</span>
+       <p>
+       
+            DEX×5で<br>15成功
+       </p>
+       </div>
+       <div class="mem4 right">
+       <span>夕凪 リヒト</span>
+       <p>
+       
+            じゃあ煮よう
+       </p>
+       </div>
+       <div class="mem3 left">
+       <span>南 暁二郎</span>
+       <p>
+       
+            「できたー！なすとトマトのミーゴ炒めだよ～」
+       </p>
+       </div>
+       <div class="mem4 right">
+       <span>夕凪 リヒト</span>
+       <p>
+       
+            7成功
+       </p>
+       </div>
+       <div class="mem4 right">
+       <span>夕凪 リヒト</span>
+       <p>
+       
+            ｢茹でミ=ゴできました！｣
+       </p>
+       </div>
+       <div class="mem1 left">
+       <span>待夜 雪歌</span>
+       <p>
+       
+            ステーキに炒め物に、茹で
+       </p>
+       </div>
+       <div class="mem4 right">
+       <span>夕凪 リヒト</span>
+       <p>
+       
+            完璧じゃん
+       </p>
+       </div>
+       <div class="mem5 left">
+       <span>野々間 蒴那</span>
+       <p>
+       
+            チーズがあればグラタン作ったんだけど、ないから思い付かないわ…(笑)<br>プレイヤーのリアルレシピのひきだしがなさ過ぎる…(笑)
+       </p>
+       </div>
+       <div class="mem1 left">
+       <span>待夜 雪歌</span>
+       <p>
+       
+            え？（元々ないから）
+       </p>
+       </div>
+       <div class="mem4 right">
+       <span>夕凪 リヒト</span>
+       <p>
+       
+            ミ=ゴのレシピとかリアルにあったら人間じゃない
+       </p>
+       </div>
+       <div class="mem5 left">
+       <span>野々間 蒴那</span>
+       <p>
+       
+            キノコだと思えばいいんでしょ…？(笑)
+       </p>
+       </div>
+       <div class="mem4 right">
+       <span>夕凪 リヒト</span>
+       <p>
+       
+            魚と包焼きにすれば？
+       </p>
+       </div>
+       <div class="mem5 left">
+       <span>野々間 蒴那</span>
+       <p>
+       
+            マリネ、マリネ作ります
+       </p>
+       </div>
+       <div class="mem5 left">
+       <span>野々間 蒴那</span>
+       <p>
+       
+            料理55→34成功。やったぜ
+       </p>
+       </div>
+       <div class="mem1 left">
+       <span>待夜 雪歌</span>
+       <p>
+       
+            おめでとう
+       </p>
+       </div>
+       <div class="mem4 right">
+       <span>夕凪 リヒト</span>
+       <p>
+       
+            バランスがいいい献立だなぁ(ミ=ゴ)
+       </p>
+       </div>
+       <div class="mem5 left">
+       <span>野々間 蒴那</span>
+       <p>
+       
+            クックパッドで検索してきた←
+       </p>
+       </div>
+       <div class="mem1 left">
+       <span>待夜 雪歌</span>
+       <p>
+       
+            KP、料理はこれで十分ですか？（
+       </p>
+       </div>
+       <div class="mem9 left">
+       <span>はらぺこ</span>
+       <p>
+       
+            「わたしもつくるよ！みーごさんのスープにする！」ミ=ゴと魚とトマトを勝手に使ってます
+       </p>
+       </div>
+       <div class="mem3 left">
+       <span>南 暁二郎</span>
+       <p>
+       
+            みーごさんのスープ……出汁がでるのかな……
+       </p>
+       </div>
+       <div class="kp">
+       
+            キノコだから　多分おいしたあ
+       </div>
+       <div class="kp">
+       
+            おいしい。
+       </div>
+       <div class="mem3 left">
+       <span>南 暁二郎</span>
+       <p>
+       
+            「こんなもんかな？」
+       </p>
+       </div>
+       <div class="mem1 left">
+       <span>待夜 雪歌</span>
+       <p>
+       
+            「十分じゃないー？」
+       </p>
+       </div>
+       <div class="mem14 right">
+       <span>ミ=ゴ</span>
+       <p>
+       
+            「これが地球の食べ物を組み合わせる技術！すごいですねー！」
+       </p>
+       </div>
+       <div class="mem9 left">
+       <span>はらぺこ</span>
+       <p>
+       
+            「(そわそわ)」
+       </p>
+       </div>
+       <div class="mem1 left">
+       <span>待夜 雪歌</span>
+       <p>
+       
+            「これ立ちながら食べるのー？」
+       </p>
+       </div>
+       <div class="mem14 right">
+       <span>ミ=ゴ</span>
+       <p>
+       
+            「とりあえず台はやしますね！」<br>床からﾐｭｰﾝ…と台がせりだしてきます。近未来的だから大丈夫。
+       </p>
+       </div>
+       <div class="mem1 left">
+       <span>待夜 雪歌</span>
+       <p>
+       
+            近未来ってスゴイ
+       </p>
+       </div>
+       <div class="mem1 left">
+       <span>待夜 雪歌</span>
+       <p>
+       
+            「それじゃーその台に乗っけてー」
+       </p>
+       </div>
+       <div class="mem5 left">
+       <span>野々間 蒴那</span>
+       <p>
+       
+            近未来的って言われても何もないとこからテーブル出たから、自主的にSANチェックしたけど3で成功したから減らなかったわ(笑)
+       </p>
+       </div>
+       <div class="kp">
+       
+            映画とかでみるんだろうね！
+       </div>
+       <div class="mem3 left">
+       <span>南 暁二郎</span>
+       <p>
+       
+            「おぉっスゲー！」
+       </p>
+       </div>
+       <div class="mem5 left">
+       <span>野々間 蒴那</span>
+       <p>
+       
+            そうだね！
+       </p>
+       </div>
+       <div class="mem1 left">
+       <span>待夜 雪歌</span>
+       <p>
+       
+            「ほら、準備しないとー」
+       </p>
+       </div>
+       <div class="mem14 right">
+       <span>ミ=ゴ</span>
+       <p>
+       
+            「（わっせわっせ）」
+       </p>
+       </div>
+       <div class="mem9 left">
+       <span>はらぺこ</span>
+       <p>
+       
+            「(わっせわっせ)」
+       </p>
+       </div>
+       <div class="mem5 left">
+       <span>野々間 蒴那</span>
+       <p>
+       
+            「はいよー。」<br>ウェイトレス様々。何皿も持って行きます。
+       </p>
+       </div>
+       <div class="mem1 left">
+       <span>待夜 雪歌</span>
+       <p>
+       
+            「はーい、出来たらいただきますねー」
+       </p>
+       </div>
+       <div class="mem3 left">
+       <span>南 暁二郎</span>
+       <p>
+       
+            「いただきまーす！」
+       </p>
+       </div>
+       <div class="mem14 right">
+       <span>ミ=ゴ</span>
+       <p>
+       
+            「地球では　ハサミを合わせてから食べるんですよね！」ハサミをゴツゴツと合わせています
+       </p>
+       </div>
+       <div class="mem5 left">
+       <span>野々間 蒴那</span>
+       <p>
+       
+            「片方の鋏でもう片方の鋏切れちゃったりしないんですかー？」
+       </p>
+       </div>
+       <div class="mem14 right">
+       <span>ミ=ゴ</span>
+       <p>
+       
+            「力加減の調節くらい出来ますよー！」
+       </p>
+       </div>
+       <div class="mem5 left">
+       <span>野々間 蒴那</span>
+       <p>
+       
+            「ほこたてかと思ったのに……。」
+       </p>
+       </div>
+       <div class="mem14 right">
+       <span>ミ=ゴ</span>
+       <p>
+       
+            「？」
+       </p>
+       </div>
+       <div class="mem5 left">
+       <span>野々間 蒴那</span>
+       <p>
+       
+            「何でも無いっす。」
+       </p>
+       </div>
+       <div class="mem4 right">
+       <span>夕凪 リヒト</span>
+       <p>
+       
+            ｢こんなに沢山でいたただきますはじめてです…いただきます！｣
+       </p>
+       </div>
+       <div class="mem1 left">
+       <span>待夜 雪歌</span>
+       <p>
+       
+            「おいしくできてるかなー」
+       </p>
+       </div>
+       <div class="mem9 left">
+       <span>はらぺこ</span>
+       <p>
+       
+            「いただきまーす」
+       </p>
+       </div>
+       <div class="mem14 right">
+       <span>ミ=ゴ</span>
+       <p>
+       
+            「いただきます！」
+       </p>
+       </div>
+       <div class="kp">
+       
+            ミ=ゴステーキ<br>いい案配にミ=ゴが焼けていて　削った岩塩が輝いている。<br>切ってみると肉汁(？)がもう　わーって。うっめぇ。すげぇ。
+       </div>
+       <div class="kp">
+       
+            ミ=ゴ炒め<br>ミ=ゴ　ナス　トマトの色合いが素敵。<br>ミ=ゴの旬とかわからんけど多分今なのでは？
+       </div>
+       <div class="mem1 left">
+       <span>待夜 雪歌</span>
+       <p>
+       
+            旬とかあるのかな（震え声）
+       </p>
+       </div>
+       <div class="kp">
+       
+            茹でミ=ゴ<br>ミ=ゴと塩のシンプルな逸品。<br>これめっちゃビールに合うよね！やったぁ！
+       </div>
+       <div class="mem1 left">
+       <span>待夜 雪歌</span>
+       <p>
+       
+            ここビールあるの？
+       </p>
+       </div>
+       <div class="kp">
+       
+            ビールはないなぁ
+       </div>
+       <div class="mem1 left">
+       <span>待夜 雪歌</span>
+       <p>
+       
+            なら、仕方ないなぁ
+       </p>
+       </div>
+       <div class="kp">
+       
+            ミ=ゴマリネ<br>ミ=ゴと酸味がとても爽やかだ！<br>酢の効能なのか心なしかミ=ゴ肉が柔らかくなっている気がする。
+       </div>
+       <div class="kp">
+       
+            ミ=ゴスープ<br>ミ=ゴがゴロゴロ入ったトマトベース。<br>見た目地獄だけど合わないわけがなかった。
+       </div>
+       <div class="mem1 left">
+       <span>待夜 雪歌</span>
+       <p>
+       
+            見た目が地獄
+       </p>
+       </div>
+       <div class="mem3 left">
+       <span>南 暁二郎</span>
+       <p>
+       
+            www
+       </p>
+       </div>
+       <div class="kp">
+       
+            そんなわけで5品のミ=ゴ料理が目の前に並んでいる。<br>みんなで囲む温かな食卓に心と体が癒される。<br>1品につき1D5回復です
+       </div>
+       <div class="mem1 left">
+       <span>待夜 雪歌</span>
+       <p>
+       
+            5D5かな？
+       </p>
+       </div>
+       <div class="kp">
+       
+            そうか同じか！<br>そうなるね！
+       </div>
+       <div class="mem1 left">
+       <span>待夜 雪歌</span>
+       <p>
+       
+            2・1・3・2・3　計11<br>63→74　増えていく
+       </p>
+       </div>
+       <div class="mem4 right">
+       <span>夕凪 リヒト</span>
+       <p>
+       
+            4.3.3.3.4→17わぁい！60！
+       </p>
+       </div>
+       <div class="mem1 left">
+       <span>待夜 雪歌</span>
+       <p>
+       
+            高い
+       </p>
+       </div>
+       <div class="kp">
+       
+            よかった取り戻せた
+       </div>
+       <div class="mem4 right">
+       <span>夕凪 リヒト</span>
+       <p>
+       
+            ありがとうございます！
+       </p>
+       </div>
+       <div class="kp">
+       
+            安心！
+       </div>
+       <div class="mem3 left">
+       <span>南 暁二郎</span>
+       <p>
+       
+            1,5,4,4,2→16<br>44→60！
+       </p>
+       </div>
+       <div class="mem5 left">
+       <span>野々間 蒴那</span>
+       <p>
+       
+            1.2.3.2.5→13<br>76→89
+       </p>
+       </div>
+       <div class="mem1 left">
+       <span>待夜 雪歌</span>
+       <p>
+       
+            多いな
+       </p>
+       </div>
+       <div class="mem5 left">
+       <span>野々間 蒴那</span>
+       <p>
+       
+            1d5を5回じゃなくて、最初に5d5を1回振ったら20が出た…。でもみんな数字5個ずつ出してるからそのほうがいいのかなって…(笑)
+       </p>
+       </div>
+       <div class="mem9 left">
+       <span>はらぺこ</span>
+       <p>
+       
+            「みんな　おりょうりじょうずだね！」
+       </p>
+       </div>
+       <div class="kp">
+       
+            どっちでも大丈夫よー？
+       </div>
+       <div class="mem3 left">
+       <span>南 暁二郎</span>
+       <p>
+       
+            「ぺこちゃんのお料理も上手だったよー！」
+       </p>
+       </div>
+       <div class="mem5 left">
+       <span>野々間 蒴那</span>
+       <p>
+       
+            89で大丈夫でーす
+       </p>
+       </div>
+       <div class="mem1 left">
+       <span>待夜 雪歌</span>
+       <p>
+       
+            「うむ。」
+       </p>
+       </div>
+       <div class="mem9 left">
+       <span>はらぺこ</span>
+       <p>
+       
+            「ほんと！えへへー！」
+       </p>
+       </div>
+       <div class="mem5 left">
+       <span>野々間 蒴那</span>
+       <p>
+       
+            「普段お料理するのー？」
+       </p>
+       </div>
+       <div class="mem9 left">
+       <span>はらぺこ</span>
+       <p>
+       
+            「しないけど　おいしいものとおいしいものをにこむとおいしくなるってきいたの」
+       </p>
+       </div>
+       <div class="mem1 left">
+       <span>待夜 雪歌</span>
+       <p>
+       
+            「そうだねー」
+       </p>
+       </div>
+       <div class="mem14 right">
+       <span>ミ=ゴ</span>
+       <p>
+       
+            (微笑ましそうに眺めている)
+       </p>
+       </div>
+       <div class="mem5 left">
+       <span>野々間 蒴那</span>
+       <p>
+       
+            「(闇鍋かな？)」
+       </p>
+       </div>
+       <div class="mem1 left">
+       <span>待夜 雪歌</span>
+       <p>
+       
+            食べるだけ、食べて、この先どうなるか
+       </p>
+       </div>
+       <div class="kp">
+       
+            もう大丈夫そうかな
+       </div>
+       <div class="mem4 right">
+       <span>夕凪 リヒト</span>
+       <p>
+       
+            たべたよー
+       </p>
+       </div>
+       <div class="mem1 left">
+       <span>待夜 雪歌</span>
+       <p>
+       
+            よければゴチソウサマまでいくかな
+       </p>
+       </div>
+       <div class="mem4 right">
+       <span>夕凪 リヒト</span>
+       <p>
+       
+            ｢ごちそうさまでした！｣
+       </p>
+       </div>
+       <div class="mem3 left">
+       <span>南 暁二郎</span>
+       <p>
+       
+            「ごちそうさまでしたー！」
+       </p>
+       </div>
+       <div class="mem9 left">
+       <span>はらぺこ</span>
+       <p>
+       
+            「ごちそうさまでした！」
+       </p>
+       </div>
+       <div class="mem1 left">
+       <span>待夜 雪歌</span>
+       <p>
+       
+            「ごちそうさまっと」
+       </p>
+       </div>
+       <div class="mem5 left">
+       <span>野々間 蒴那</span>
+       <p>
+       
+            「ごちそうさまでした。」
+       </p>
+       </div>
+       <div class="mem14 right">
+       <span>ミ=ゴ</span>
+       <p>
+       
+            「喜んでもらえましたかね？」
+       </p>
+       </div>
+       <div class="mem1 left">
+       <span>待夜 雪歌</span>
+       <p>
+       
+            「はーい」
+       </p>
+       </div>
+       <div class="mem4 right">
+       <span>夕凪 リヒト</span>
+       <p>
+       
+            ｢美味しかったです！｣
+       </p>
+       </div>
+       <div class="mem5 left">
+       <span>野々間 蒴那</span>
+       <p>
+       
+            「意外な味だった。」
+       </p>
+       </div>
+       <div class="mem3 left">
+       <span>南 暁二郎</span>
+       <p>
+       
+            「まんぞく！」
+       </p>
+       </div>
+       <div class="mem14 right">
+       <span>ミ=ゴ</span>
+       <p>
+       
+            「それならよかったです！それでは麓まで…」
+       </p>
+       </div>
+       <div class="mem9 left">
+       <span>はらぺこ</span>
+       <p>
+       
+            「それはだめだよ！」
+       </p>
+       </div>
+       <div class="mem1 left">
+       <span>待夜 雪歌</span>
+       <p>
+       
+            「どうして？」
+       </p>
+       </div>
+       <div class="mem9 left">
+       <span>はらぺこ</span>
+       <p>
+       
+            「いまは　おとなたちがいっぱいいるからあぶないよ！」
+       </p>
+       </div>
+       <div class="mem14 right">
+       <span>ミ=ゴ</span>
+       <p>
+       
+            「ええぇ!?なんでですか!?困りますよ！」
+       </p>
+       </div>
+       <div class="mem5 left">
+       <span>野々間 蒴那</span>
+       <p>
+       
+            「姿見られちゃったみたいですよ。熊が出たって誤魔化してるみたいですけど。」
+       </p>
+       </div>
+       <div class="mem3 left">
+       <span>南 暁二郎</span>
+       <p>
+       
+            「みーごくん、どー見てもくまではないもんなぁ」
+       </p>
+       </div>
+       <div class="mem1 left">
+       <span>待夜 雪歌</span>
+       <p>
+       
+            「まぁ、少しの大人は貴方のことを見てるようだから、危ないかもしれないけどね」
+       </p>
+       </div>
+       <div class="mem14 right">
+       <span>ミ=ゴ</span>
+       <p>
+       
+            「そんなぁ!?お願いします村の方々に上手く言って誤魔化してもらえませんか？<br>危害は加えないと約束します。なのでどうか…！」
+       </p>
+       </div>
+       <div class="mem1 left">
+       <span>待夜 雪歌</span>
+       <p>
+       
+            「言ってはみるけど、少しは身を潜めててよ？」
+       </p>
+       </div>
+       <div class="mem14 right">
+       <span>ミ=ゴ</span>
+       <p>
+       
+            「ありがとうございます！これからはより気を付けなければなりませんね…！」
+       </p>
+       </div>
+       <div class="mem9 left">
+       <span>はらぺこ</span>
+       <p>
+       
+            「いまのおとなたちは　すこしこわいの…」
+       </p>
+       </div>
+       <div class="mem5 left">
+       <span>野々間 蒴那</span>
+       <p>
+       
+            「何なんだこのザリガニ…ι」
+       </p>
+       </div>
+       <div class="mem3 left">
+       <span>南 暁二郎</span>
+       <p>
+       
+            「ののまちゃん塩いな～ま、これまでより慎重に山に身を潜めてればいいんじゃない？」
+       </p>
+       </div>
+       <div class="mem1 left">
+       <span>待夜 雪歌</span>
+       <p>
+       
+            「もしくは、少しの間山から離れてた方がいいかもしれないぞ」
+       </p>
+       </div>
+       <div class="mem5 left">
+       <span>野々間 蒴那</span>
+       <p>
+       
+            「ミゴさん見ちゃったらみんなびっくりしちゃいますもんねー。」
+       </p>
+       </div>
+       <div class="mem1 left">
+       <span>待夜 雪歌</span>
+       <p>
+       
+            （なお、このメンバーで驚いたのはリヒトくんのみである）
+       </p>
+       </div>
+       <div class="mem5 left">
+       <span>野々間 蒴那</span>
+       <p>
+       
+            リヒト君まだ小っちゃいから。これから馴れるよ←
+       </p>
+       </div>
+       <div class="mem3 left">
+       <span>南 暁二郎</span>
+       <p>
+       
+            いちおうアキラさんもさんちへったけどね
+       </p>
+       </div>
+       <div class="mem1 left">
+       <span>待夜 雪歌</span>
+       <p>
+       
+            やっぱり発狂しないと（）
+       </p>
+       </div>
+       <div class="mem3 left">
+       <span>南 暁二郎</span>
+       <p>
+       
+            発狂しないとびっくりしたことにならない世界つらいな～()
+       </p>
+       </div>
+       <div class="mem5 left">
+       <span>野々間 蒴那</span>
+       <p>
+       
+            SAN値減る→びっくりじゃなくて、発狂→びっくりなの…。怖すぎ…
+       </p>
+       </div>
+       <div class="mem1 left">
+       <span>待夜 雪歌</span>
+       <p>
+       
+            なんか、段々マヒしてくるんだよ、色々と（）
+       </p>
+       </div>
+       <div class="mem3 left">
+       <span>南 暁二郎</span>
+       <p>
+       
+            マヒしすぎてるなー
+       </p>
+       </div>
+       <div class="mem1 left">
+       <span>待夜 雪歌</span>
+       <p>
+       
+            マヒしすぎて段々描写がリアルSAN値を減らす方にもっていくよ（震え声）
+       </p>
+       </div>
+       <div class="mem5 left">
+       <span>野々間 蒴那</span>
+       <p>
+       
+            やめて♡
+       </p>
+       </div>
+       <div class="mem1 left">
+       <span>待夜 雪歌</span>
+       <p>
+       
+            断る☆
+       </p>
+       </div>
+       <div class="mem5 left">
+       <span>野々間 蒴那</span>
+       <p>
+       
+            「というか、はらぺこちゃんに石を持ってきてもらうのじゃだめなんですか？ミゴさんは引きこもってさ。」
+       </p>
+       </div>
+       <div class="mem1 left">
+       <span>待夜 雪歌</span>
+       <p>
+       
+            「だが、一度出た話が鎮まるまでは隠れていなければややこしくなるからな」
+       </p>
+       </div>
+       <div class="mem3 left">
+       <span>南 暁二郎</span>
+       <p>
+       
+            「まー、とりあえず大人たちに話してみて、信じてもらえなかったらその辺検討するでどぉ？」
+       </p>
+       </div>
+       <div class="mem1 left">
+       <span>待夜 雪歌</span>
+       <p>
+       
+            「コイツの話をするの？」
+       </p>
+       </div>
+       <div class="mem4 right">
+       <span>夕凪 リヒト</span>
+       <p>
+       
+            ｢悪いザリガニさんじゃないってわかればいいんですが…｣
+       </p>
+       </div>
+       <div class="mem3 left">
+       <span>南 暁二郎</span>
+       <p>
+       
+            「んー、とりあえず、ぺこちゃんが懐いてて俺らがしゃべれた程度には無害だよって」
+       </p>
+       </div>
+       <div class="mem4 right">
+       <span>夕凪 リヒト</span>
+       <p>
+       
+            村人一斉発狂しないだろうか
+       </p>
+       </div>
+       <div class="mem3 left">
+       <span>南 暁二郎</span>
+       <p>
+       
+            姿見なければ大丈夫じゃない？
+       </p>
+       </div>
+       <div class="mem1 left">
+       <span>待夜 雪歌</span>
+       <p>
+       
+            「人がそう簡単に信じるかどうか」
+       </p>
+       </div>
+       <div class="mem4 right">
+       <span>夕凪 リヒト</span>
+       <p>
+       
+            説得か言いくるめかな？できるのかな
+       </p>
+       </div>
+       <div class="mem3 left">
+       <span>南 暁二郎</span>
+       <p>
+       
+            「ん、もしも信じてもらえなかったら、さっきのしばらくの間隠れとくとかすればいいんじゃないかなーって」
+       </p>
+       </div>
+       <div class="kp">
+       
+            うーん…アイデアかな
+       </div>
+       <div class="mem1 left">
+       <span>待夜 雪歌</span>
+       <p>
+       
+            誰でもいいの？アイデア
+       </p>
+       </div>
+       <div class="kp">
+       
+            一人でも成功すればおけー
+       </div>
+       <div class="mem1 left">
+       <span>待夜 雪歌</span>
+       <p>
+       
+            18　アイデア90だから普通に成功するわ
+       </p>
+       </div>
+       <div class="kp">
+       
+            アイデアに成功したあなたは　ミ=ゴのことが知られたら退治されかねないのでは？と思います
+       </div>
+       <div class="mem1 left">
+       <span>待夜 雪歌</span>
+       <p>
+       
+            うん。わかってたけど、言わなかったこと
+       </p>
+       </div>
+       <div class="mem1 left">
+       <span>待夜 雪歌</span>
+       <p>
+       
+            だから、隠れてろとあれほど・・・
+       </p>
+       </div>
+       <div class="mem4 right">
+       <span>夕凪 リヒト</span>
+       <p>
+       
+            ミ=ゴに説得か
+       </p>
+       </div>
+       <div class="mem9 left">
+       <span>はらぺこ</span>
+       <p>
+       
+            「みーごさんはだいじなともだちだから　あぶないめにはあってほしくないよ…」
+       </p>
+       </div>
+       <div class="mem4 right">
+       <span>夕凪 リヒト</span>
+       <p>
+       
+            ミ=ゴさんに言いくるめってできたっけ
+       </p>
+       </div>
+       <div class="mem1 left">
+       <span>待夜 雪歌</span>
+       <p>
+       
+            このミ＝ゴさんは理解してくれる可能性が…
+       </p>
+       </div>
+       <div class="mem1 left">
+       <span>待夜 雪歌</span>
+       <p>
+       
+            普通なら出来なそうだけど
+       </p>
+       </div>
+       <div class="kp">
+       
+            シナリオに記載はないけど…オススメはしないよ
+       </div>
+       <div class="mem4 right">
+       <span>夕凪 リヒト</span>
+       <p>
+       
+            どうすれば…村人消す？
+       </p>
+       </div>
+       <div class="mem1 left">
+       <span>待夜 雪歌</span>
+       <p>
+       
+            村人を言いくるめかな
+       </p>
+       </div>
+       <div class="mem14 right">
+       <span>ミ=ゴ</span>
+       <p>
+       
+            「私は危害をくわえません…お願いします、あともう少しだけ　この子と居たいんです」
+       </p>
+       </div>
+       <div class="mem4 right">
+       <span>夕凪 リヒト</span>
+       <p>
+       
+            ｢ミ=ゴさん…なら僕達で村の人になにもいなかったって伝えてきましょう！ただ、やっぱり最初はびっくりしちゃうのでしばらくはミ=ゴさんに隠れてて貰わないといけないかもですが…｣
+       </p>
+       </div>
+       <div class="mem1 left">
+       <span>待夜 雪歌</span>
+       <p>
+       
+            「下手な事をすると熊相手ということで猟友会が出てくる。流石のお前でも銃相手では辛いだろう。巡回のときはこういった洞窟の奥に入ればいい。それで、少しの間は凌げるはずだ。今の私にはそれしか出来ないな」
+       </p>
+       </div>
+       <div class="mem14 right">
+       <span>ミ=ゴ</span>
+       <p>
+       
+            「あ…ありがとうございます！」<br>ミ=ゴは何度も何度も頭を下げています
+       </p>
+       </div>
+       <div class="mem9 left">
+       <span>はらぺこ</span>
+       <p>
+       
+            「みーごさん　ずっとこのおやまにいられるの？」
+       </p>
+       </div>
+       <div class="mem4 right">
+       <span>夕凪 リヒト</span>
+       <p>
+       
+            尊いぞこのミ=ゴ
+       </p>
+       </div>
+       <div class="mem3 left">
+       <span>南 暁二郎</span>
+       <p>
+       
+            あたまってどこ
+       </p>
+       </div>
+       <div class="mem1 left">
+       <span>待夜 雪歌</span>
+       <p>
+       
+            あたま？
+       </p>
+       </div>
+       <div class="mem3 left">
+       <span>南 暁二郎</span>
+       <p>
+       
+            あたまをさげるっていうから()
+       </p>
+       </div>
+       <div class="mem4 right">
+       <span>夕凪 リヒト</span>
+       <p>
+       
+            ここじゃん？
+       </p>
+       </div>
+       <div class="mem3 left">
+       <span>南 暁二郎</span>
+       <p>
+       
+            あたまだったわ……
+       </p>
+       </div>
+       <div class="mem1 left">
+       <span>待夜 雪歌</span>
+       <p>
+       
+            首から出てる触手っぽいのでしょうね
+       </p>
+       </div>
+       <div class="kp">
+       
+            多分その辺
+       </div>
+       <div class="mem3 left">
+       <span>南 暁二郎</span>
+       <p>
+       
+            「みーごくんがずっとここにいるために俺らが頑張んないといけないねぇ」
+       </p>
+       </div>
+       <div class="mem5 left">
+       <span>野々間 蒴那</span>
+       <p>
+       
+            そんなもじゃもじゃぺこぺこされても怖いわ…
+       </p>
+       </div>
+       <div class="mem4 right">
+       <span>夕凪 リヒト</span>
+       <p>
+       
+            ペコペコうにょうにょ
+       </p>
+       </div>
+       <div class="mem1 left">
+       <span>待夜 雪歌</span>
+       <p>
+       
+            みてたくないなぁ
+       </p>
+       </div>
+       <div class="mem4 right">
+       <span>夕凪 リヒト</span>
+       <p>
+       
+            とりあえず村人説得しにいくでいいのかな
+       </p>
+       </div>
+       <div class="mem1 left">
+       <span>待夜 雪歌</span>
+       <p>
+       
+            その流れだろうねえ
+       </p>
+       </div>
+       <div class="kp">
+       
+            見送りしても大丈夫かな？
+       </div>
+       <div class="mem1 left">
+       <span>待夜 雪歌</span>
+       <p>
+       
+            かな
+       </p>
+       </div>
+       <div class="mem14 right">
+       <span>ミ=ゴ</span>
+       <p>
+       
+            「今日はとても楽しかったです！<br>外、だいぶ暗くなってしまったので　気をつけて帰ってくださいね！<br>内緒にしてくれる件も頼みますねー！」
+       </p>
+       </div>
+       <div class="mem9 left">
+       <span>はらぺこ</span>
+       <p>
+       
+            「みーごさん　ばいばーい！<br>またあそびにくるねー！」
+       </p>
+       </div>
+       <div class="mem3 left">
+       <span>南 暁二郎</span>
+       <p>
+       
+            何時くらい？
+       </p>
+       </div>
+       <div class="kp">
+       
+            PM5時くらいかな<br>子供は帰る時間
+       </div>
+       <div class="mem1 left">
+       <span>待夜 雪歌</span>
+       <p>
+       
+            「暗くなる前にかえろー」
+       </p>
+       </div>
+       <div class="mem4 right">
+       <span>夕凪 リヒト</span>
+       <p>
+       
+            「ごちそうさまでした～！」
+       </p>
+       </div>
+       <div class="mem3 left">
+       <span>南 暁二郎</span>
+       <p>
+       
+            「ごちでしたー！ありがとーみーごくん！」
+       </p>
+       </div>
+       <div class="mem14 right">
+       <span>ミ=ゴ</span>
+       <p>
+       
+            「よかったら　またいつでも来てくださいねーっ！」<br>洞窟の入り口から　探索者たちが見えなくなるまでハサミを振っています。
+       </p>
+       </div>
+       <div class="mem1 left">
+       <span>待夜 雪歌</span>
+       <p>
+       
+            見送られた…
+       </p>
+       </div>
+       <div class="kp">
+       
+            探索者達が無事下山したところ　心配した様子の村人達が集まってきました。
+       </div>
+       <div class="mem1 left">
+       <span>待夜 雪歌</span>
+       <p>
+       
+            山に登ったのバレたか（知ってた）
+       </p>
+       </div>
+       <div class="mem15 left">
+       <span>村人A</span>
+       <p>
+       
+            「ぺこちゃん！観光の方々！無事だったんですね！<br>……なんで山から降りてきてるんですか!?」
+       </p>
+       </div>
+       <div class="mem1 left">
+       <span>待夜 雪歌</span>
+       <p>
+       
+            「ちょっとお肉が物足りなくてー。熊さんに会いに行ったんですー」
+       </p>
+       </div>
+       <div class="mem2 right">
+       <span>第一村人</span>
+       <p>
+       
+            「山に熊が出たって　ちゃんと伝えましたよね!?危険だって！」
+       </p>
+       </div>
+       <div class="mem11 left">
+       <span>村人</span>
+       <p>
+       
+            「丸腰じゃないですか！」
+       </p>
+       </div>
+       <div class="mem1 left">
+       <span>待夜 雪歌</span>
+       <p>
+       
+            「知ってますか？この世には熊と1対1で戦う人だっているんですよー」
+       </p>
+       </div>
+       <div class="mem11 left">
+       <span>村人</span>
+       <p>
+       
+            「いても駄目ですよ！」
+       </p>
+       </div>
+       <div class="mem1 left">
+       <span>待夜 雪歌</span>
+       <p>
+       
+            「だから、私も出来ると思ったんですけどねー。山に熊がいなかったんですよー。ざんねん」
+       </p>
+       </div>
+       <div class="mem11 left">
+       <span>村人</span>
+       <p>
+       
+            「あとぺこちゃん！なんで山に！」
+       </p>
+       </div>
+       <div class="mem1 left">
+       <span>待夜 雪歌</span>
+       <p>
+       
+            「あ。怒らないでくださーい。私が連れて行っちゃったんですー」
+       </p>
+       </div>
+       <div class="mem11 left">
+       <span>村人</span>
+       <p>
+       
+            「なぜこんな子供を熊が居るかもしれない山に連れていったんです!?」
+       </p>
+       </div>
+       <div class="kp">
+       
+            はらぺこは　近くの探索者の服の裾を掴んでます
+       </div>
+       <div class="mem1 left">
+       <span>待夜 雪歌</span>
+       <p>
+       
+            「ごめんなさーい。その子どうしても山に行きたかったみたいですしー。私も行きたかったってわけでー。ほら、よく言う利害の一致ってやつですよー」
+       </p>
+       </div>
+       <div class="mem1 left">
+       <span>待夜 雪歌</span>
+       <p>
+       
+            「それに、行ってみたはいいですけど、熊も動物も何もいなかったですしー」
+       </p>
+       </div>
+       <div class="kp">
+       
+            技能使う？
+       </div>
+       <div class="mem1 left">
+       <span>待夜 雪歌</span>
+       <p>
+       
+            説得45％だから信じてない
+       </p>
+       </div>
+       <div class="mem3 left">
+       <span>南 暁二郎</span>
+       <p>
+       
+            「ほんとにみたんですか？くまを？」カマをかけてみる
+       </p>
+       </div>
+       <div class="mem11 left">
+       <span>村人</span>
+       <p>
+       
+            「熊の他に　何がいると…」
+       </p>
+       </div>
+       <div class="mem4 right">
+       <span>夕凪 リヒト</span>
+       <p>
+       
+            ここで心理学かな？？
+       </p>
+       </div>
+       <div class="mem1 left">
+       <span>待夜 雪歌</span>
+       <p>
+       
+            「もしかしたら、他の動物と見間違いをしたのかもしれないですよー？」
+       </p>
+       </div>
+       <div class="mem3 left">
+       <span>南 暁二郎</span>
+       <p>
+       
+            「てゆーか、くまがいるっつったのはそっちじゃないですかー」
+       </p>
+       </div>
+       <div class="mem1 left">
+       <span>待夜 雪歌</span>
+       <p>
+       
+            けど、僕ら熊以外に何かいるって知ってるから心理学しても情報の確認になりそう
+       </p>
+       </div>
+       <div class="mem4 right">
+       <span>夕凪 リヒト</span>
+       <p>
+       
+            村人が熊だと信じてるなら言いくるめ楽かなって
+       </p>
+       </div>
+       <div class="mem3 left">
+       <span>南 暁二郎</span>
+       <p>
+       
+            集会のとき化け物がいたっていってたな
+       </p>
+       </div>
+       <div class="mem4 right">
+       <span>夕凪 リヒト</span>
+       <p>
+       
+            そうだったかじゃあ無理くり言いくるめ(70)よう
+       </p>
+       </div>
+       <div class="mem1 left">
+       <span>待夜 雪歌</span>
+       <p>
+       
+            だからこそ、クマで丸め込んでいなかったって力説すればいいんでね？
+       </p>
+       </div>
+       <div class="mem1 left">
+       <span>待夜 雪歌</span>
+       <p>
+       
+            失敗したら説得（45）だすか
+       </p>
+       </div>
+       <div class="kp">
+       
+            今までのロールで+20かな
+       </div>
+       <div class="mem1 left">
+       <span>待夜 雪歌</span>
+       <p>
+       
+            言いくるめ余裕でね？
+       </p>
+       </div>
+       <div class="mem4 right">
+       <span>夕凪 リヒト</span>
+       <p>
+       
+            ｢僕達ぐるっと探検してきましたけど熊さんも変なものも見ませんでしたよ！｣<br>言いくるめまーす…90？
+       </p>
+       </div>
+       <div class="kp">
+       
+            90。
+       </div>
+       <div class="mem4 right">
+       <span>夕凪 リヒト</span>
+       <p>
+       
+            57楽勝〜
+       </p>
+       </div>
+       <div class="mem1 left">
+       <span>待夜 雪歌</span>
+       <p>
+       
+            余裕でしたね
+       </p>
+       </div>
+       <div class="mem11 left">
+       <span>村人</span>
+       <p>
+       
+            「熊なんて　居なかった…？<br>確かに今まで熊が出たことも無かったし　だからこそ人だって呼べた…んー？」
+       </p>
+       </div>
+       <div class="mem1 left">
+       <span>待夜 雪歌</span>
+       <p>
+       
+            「いませんでしたよー」
+       </p>
+       </div>
+       <div class="mem11 left">
+       <span>村人</span>
+       <p>
+       
+            「じゃああれは見間違いだったのか…そうか…」
+       </p>
+       </div>
+       <div class="mem1 left">
+       <span>待夜 雪歌</span>
+       <p>
+       
+            「そうそう見間違いだったんですよー」
+       </p>
+       </div>
+       <div class="mem9 left">
+       <span>はらぺこ</span>
+       <p>
+       
+            「ごめんなさい…」裾を握る力が少しだけ強くなりました
+       </p>
+       </div>
+       <div class="mem1 left">
+       <span>待夜 雪歌</span>
+       <p>
+       
+            「何を言ってるんですかー？ぺこちゃんは、ただ私のお願いを聞いてくれただけですよー。ねー？」
+       </p>
+       </div>
+       <div class="mem4 right">
+       <span>夕凪 リヒト</span>
+       <p>
+       
+            ぺこちゃんにこそっと<br>｢内緒のお友達できたので嬉しい｣って笑いかけます
+       </p>
+       </div>
+       <div class="mem4 right">
+       <span>夕凪 リヒト</span>
+       <p>
+       
+            森にはいって怒られたのを反省してのごめんなさいか…<br>嘘ついてごめんなさいのほうかと勘違いした
+       </p>
+       </div>
+       <div class="mem1 left">
+       <span>待夜 雪歌</span>
+       <p>
+       
+            僕は上の方だと思ったからの反応
+       </p>
+       </div>
+       <div class="mem3 left">
+       <span>南 暁二郎</span>
+       <p>
+       
+            どちらにしろ嘘ってわかってんのこっちだけだしだいじょぶじゃね
+       </p>
+       </div>
+       <div class="mem1 left">
+       <span>待夜 雪歌</span>
+       <p>
+       
+            それにしても雪歌が口を開くたびに平気で嘘をついている（）
+       </p>
+       </div>
+       <div class="mem6 right">
+       <span>やきゅー</span>
+       <p>
+       
+            「はらぺこが帰ってきたんだからいいじゃんかー！」
+       </p>
+       </div>
+       <div class="mem7 left">
+       <span>にこいち</span>
+       <p>
+       
+            「なにもいなかったしー」「そうだよ！」
+       </p>
+       </div>
+       <div class="mem8 right">
+       <span>おねむ</span>
+       <p>
+       
+            「ぶじでよかった…すやり」
+       </p>
+       </div>
+       <div class="mem1 left">
+       <span>待夜 雪歌</span>
+       <p>
+       
+            すやり
+       </p>
+       </div>
+       <div class="mem4 right">
+       <span>夕凪 リヒト</span>
+       <p>
+       
+            かわいい
+       </p>
+       </div>
+       <div class="mem3 left">
+       <span>南 暁二郎</span>
+       <p>
+       
+            かわいい
+       </p>
+       </div>
+       <div class="mem3 left">
+       <span>南 暁二郎</span>
+       <p>
+       
+            「子供たちのほうがまともなこといってますねー？」ぺこちゃんのあたまをなでなでしつつ
+       </p>
+       </div>
+       <div class="mem1 left">
+       <span>待夜 雪歌</span>
+       <p>
+       
+            「ほーら、心配してたみんなのところいっておいでー」<br>トンとやきゅーたちの方に押す？押しとこ
+       </p>
+       </div>
+       <div class="mem5 left">
+       <span>野々間 蒴那</span>
+       <p>
+       
+            「あんまり怒ると子供の教育に良くないってテレビでやってましたよー。」
+       </p>
+       </div>
+       <div class="mem16 right">
+       <span>村長</span>
+       <p>
+       
+            「…我々も慣れないことで動揺していたのでしょうな。<br>ありがとう、旅の方々。」
+       </p>
+       </div>
+       <div class="mem1 left">
+       <span>待夜 雪歌</span>
+       <p>
+       
+            「いえいえー。こっちも遊んじゃいましたしー」
+       </p>
+       </div>
+       <div class="mem3 left">
+       <span>南 暁二郎</span>
+       <p>
+       
+            「おいしいバーベキューもいただきましたし！」
+       </p>
+       </div>
+       <div class="mem16 right">
+       <span>村長</span>
+       <p>
+       
+            「問題も全て解決したことですし　今夜は宴ですな！」
+       </p>
+       </div>
+       <div class="mem1 left">
+       <span>待夜 雪歌</span>
+       <p>
+       
+            「いっぱいたべましょー」
+       </p>
+       </div>
+       <div class="kp">
+       
+            エンディングに入ります。
+       </div>
+       <div class="mem1 left">
+       <span>待夜 雪歌</span>
+       <p>
+       
+            はーい
+       </p>
+       </div>
+       <div class="mem4 right">
+       <span>夕凪 リヒト</span>
+       <p>
+       
+            旅の方って言われると勇者一行感
+       </p>
+       </div>
+       <div class="mem5 left">
+       <span>野々間 蒴那</span>
+       <p>
+       
+            勇者だぜ。
+       </p>
+       </div>
+       <div class="kp">
+       
+            その夜　探索者達は草取村の村長宅で沢山のもてなしを受けました。<br>はらぺこが無事だったこと、問題解決の分もあるのでしょう。沢山のお土産をもらって電車で村をあとにする探索者達。<br>そのお土産を分けていると　一通の手紙が入っていました。
+       </div>
+       <div class="kp">
+       
+            いーと　あんど　うぉーかーずのみんなへ<br>きょうは　ほうとうにありがとうございました！<br>また　くさとりむらにきてください！<br>まっています！
+       </div>
+       <div class="kp">
+       
+            イート・アンド・ウォーカーズ-草取村の疑惑-<br>ハッピーエンドです！
+       </div>
+       <div class="mem3 left">
+       <span>南 暁二郎</span>
+       <p>
+       
+            やったー！おつかれさまです！
+       </p>
+       </div>
+       <div class="mem1 left">
+       <span>待夜 雪歌</span>
+       <p>
+       
+            おつかれさまでーす
+       </p>
+       </div>
+       <div class="mem4 right">
+       <span>夕凪 リヒト</span>
+       <p>
+       
+            お疲れ様です！！
+       </p>
+       </div>
+       <div class="kp">
+       
+            差出人忘れてたな<br>お疲れ様でした！
+       </div>
+       <div class="mem3 left">
+       <span>南 暁二郎</span>
+       <p>
+       
+            ぺこちゃん？
+       </p>
+       </div>
+       <div class="mem1 left">
+       <span>待夜 雪歌</span>
+       <p>
+       
+            みごさん？（
+       </p>
+       </div>
+       <div class="kp">
+       
+            ぺこちゃん。
+       </div>
+       <div class="mem1 left">
+       <span>待夜 雪歌</span>
+       <p>
+       
+            ぺこちゃんか
+       </p>
+       </div>
+       </div>
+
+<br>
+</div></div>
+<script src="../logCon_Respon.js"></script>
+</body></html>
