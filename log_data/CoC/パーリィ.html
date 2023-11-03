@@ -1,0 +1,8528 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<title>log</title>
+<meta http-equiv="content-type" charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+<link rel="stylesheet" href="../logCon_Respon.css">
+<style>
+    /* main css */
+    .bg-inner.bg1{background:url('./パーティ画像/nc120614.jpg') no-repeat center/cover;}
+    
+    /* member */
+    .mem1 p{border:2px solid rgb(243, 1, 0);box-shadow:5px 5px 0 rgb(243, 1, 0);}
+.mem1 p:after{border-right-color:rgb(243, 1, 0);}
+.mem1 span{background:rgb(243, 1, 0);color:#fff;}
+.mem1:before{content:'';background-image:url('./パーティ画像/淵切\ 亞煉1.png');background-size:contain;background-repeat:no-repeat;background-position:center center;width:90px;height:90px;}
+.mem2 p{border:2px solid rgb(64, 158, 204);box-shadow:5px 5px 0 rgb(64, 158, 204);}
+.mem2 p:after{border-left-color:rgb(64, 158, 204);}
+.mem2 span{background:rgb(64, 158, 204);color:#000;}
+.mem2:before{content:'';background-image:url('./パーティ画像/八坂\ 七夕.png');background-size:contain;background-repeat:no-repeat;background-position:center center;width:90px;height:90px;}
+.mem3 p{border:2px solid rgb(136, 203, 127);box-shadow:5px 5px 0 rgb(136, 203, 127);}
+.mem3 p:after{border-right-color:rgb(136, 203, 127);}
+.mem3 span{background:rgb(136, 203, 127);color:#000;}
+.mem3:before{content:'';background-image:url('./パーティ画像/御守\ 月彦.png');background-size:contain;background-repeat:no-repeat;background-position:center center;width:90px;height:90px;}
+.mem4 p{border:2px solid rgb(136, 136, 136);box-shadow:5px 5px 0 rgb(136, 136, 136);}
+.mem4 p:after{border-left-color:rgb(136, 136, 136);}
+.mem4 span{background:rgb(136, 136, 136);color:#fff;}
+.mem4:before{content:'';background-image:url('./パーティ画像/ｱﾘｻｶ.png');background-size:contain;background-repeat:no-repeat;background-position:center center;width:90px;height:90px;}
+.mem5 p{border:2px solid rgb(136, 136, 136);box-shadow:5px 5px 0 rgb(136, 136, 136);}
+.mem5 p:after{border-right-color:rgb(136, 136, 136);}
+.mem5 span{background:rgb(136, 136, 136);color:#fff;}
+.mem5:before{content:'';background-image:url('5.png');background-size:contain;background-repeat:no-repeat;background-position:center center;width:90px;height:90px;}
+.mem6 p{border:2px solid rgb(136, 136, 136);box-shadow:5px 5px 0 rgb(136, 136, 136);}
+.mem6 p:after{border-left-color:rgb(136, 136, 136);}
+.mem6 span{background:rgb(136, 136, 136);color:#fff;}
+.mem6:before{content:'';background-image:url('6.png');background-size:contain;background-repeat:no-repeat;background-position:center center;width:90px;height:90px;}
+.mem7 p{border:2px solid rgb(136, 136, 136);box-shadow:5px 5px 0 rgb(136, 136, 136);}
+.mem7 p:after{border-right-color:rgb(136, 136, 136);}
+.mem7 span{background:rgb(136, 136, 136);color:#fff;}
+.mem7:before{content:'';background-image:url('./パーティ画像/ｼﾗﾕｷ.png');background-size:contain;background-repeat:no-repeat;background-position:center center;width:90px;height:90px;}
+.mem8 p{border:2px solid rgb(136, 136, 136);box-shadow:5px 5px 0 rgb(136, 136, 136);}
+.mem8 p:after{border-left-color:rgb(136, 136, 136);}
+.mem8 span{background:rgb(136, 136, 136);color:#fff;}
+.mem8:before{content:'';background-image:url('8.png');background-size:contain;background-repeat:no-repeat;background-position:center center;width:90px;height:90px;}
+.mem9 p{border:2px solid rgb(136, 136, 136);box-shadow:5px 5px 0 rgb(136, 136, 136);}
+.mem9 p:after{border-right-color:rgb(136, 136, 136);}
+.mem9 span{background:rgb(136, 136, 136);color:#fff;}
+.mem9:before{content:'';background-image:url('9.png');background-size:contain;background-repeat:no-repeat;background-position:center center;width:90px;height:90px;}
+.mem10 p{border:2px solid rgb(136, 136, 136);box-shadow:5px 5px 0 rgb(136, 136, 136);}
+.mem10 p:after{border-left-color:rgb(136, 136, 136);}
+.mem10 span{background:rgb(136, 136, 136);color:#fff;}
+.mem10:before{content:'';background-image:url('./パーティ画像/有坂.png');background-size:contain;background-repeat:no-repeat;background-position:center center;width:90px;height:90px;}
+.mem11 p{border:2px solid rgb(136, 136, 136);box-shadow:5px 5px 0 rgb(136, 136, 136);}
+.mem11 p:after{border-right-color:rgb(136, 136, 136);}
+.mem11 span{background:rgb(136, 136, 136);color:#fff;}
+.mem11:before{content:'';background-image:url('11.png');background-size:contain;background-repeat:no-repeat;background-position:center center;width:90px;height:90px;}
+.mem12 p{border:2px solid rgb(136, 136, 136);box-shadow:5px 5px 0 rgb(136, 136, 136);}
+.mem12 p:after{border-left-color:rgb(136, 136, 136);}
+.mem12 span{background:rgb(136, 136, 136);color:#fff;}
+.mem12:before{content:'';background-image:url('12.png');background-size:contain;background-repeat:no-repeat;background-position:center center;width:90px;height:90px;}
+.mem13 p{border:2px solid rgb(136, 136, 136);box-shadow:5px 5px 0 rgb(136, 136, 136);}
+.mem13 p:after{border-right-color:rgb(136, 136, 136);}
+.mem13 span{background:rgb(136, 136, 136);color:#fff;}
+.mem13:before{content:'';background-image:url('./パーティ画像/白雪.png');background-size:contain;background-repeat:no-repeat;background-position:center center;width:90px;height:90px;}
+.mem14 p{border:2px solid rgb(136, 136, 136);box-shadow:5px 5px 0 rgb(136, 136, 136);}
+.mem14 p:after{border-left-color:rgb(136, 136, 136);}
+.mem14 span{background:rgb(136, 136, 136);color:#fff;}
+.mem14:before{content:'';background-image:url('./パーティ画像/道.png');background-size:contain;background-repeat:no-repeat;background-position:center center;width:90px;height:90px;}
+    
+    @media only screen and (max-width: 768px) {
+        .mem1 p:after{border-right-color:rgb(243, 1, 0);border-left-color:transparent;}
+        .mem2 p:after{border-right-color:rgb(64, 158, 204);border-left-color:transparent;}
+        .mem3 p:after{border-right-color:rgb(136, 203, 127);border-left-color:transparent;}
+        .mem4 p:after{border-right-color:rgb(136, 136, 136);border-left-color:transparent;}
+        .mem5 p:after{border-right-color:rgb(136, 136, 136);border-left-color:transparent;}
+        .mem6 p:after{border-right-color:rgb(136, 136, 136);border-left-color:transparent;}
+        .mem7 p:after{border-right-color:rgb(136, 136, 136);border-left-color:transparent;}
+        .mem8 p:after{border-right-color:rgb(136, 136, 136);border-left-color:transparent;}
+        .mem9 p:after{border-right-color:rgb(136, 136, 136);border-left-color:transparent;}
+        .mem10 p:after{border-right-color:rgb(136, 136, 136);border-left-color:transparent;}
+        .mem11 p:after{border-right-color:rgb(136, 136, 136);border-left-color:transparent;}
+        .mem12 p:after{border-right-color:rgb(136, 136, 136);border-left-color:transparent;}
+        .mem13 p:after{border-right-color:rgb(136, 136, 136);border-left-color:transparent;}
+        .mem14 p:after{border-right-color:rgb(136, 136, 136);border-left-color:transparent;}
+    
+        .mem1:before,.mem2:before,.mem3:before,
+        .mem4:before,.mem5:before,.mem6:before,
+        .mem7:before,.mem8:before,.mem9:before,
+        .mem10:before,.mem11:before,.mem12:before,
+        .mem13:before,.mem14:before{width:70px;height:70px;}
+    }
+</style>
+</head>
+<body>
+    <p id="page-top"><a href="#"><i class="page-top__arrow"></i></a></p>
+	<div class="leftwhite"></div>
+	<div class="rightwhite"></div>
+	<div class="bg-sp">
+    <div class="bg-over"><div class="bg-inner bg1"></div></div>
+	<div class="log">
+    
+        <div class="kp LtoR-early">
+
+            　十二月某日。豪華客船の高級ディナーに招待された探索者は、ドレスコードをしてパーティーへと参加する。<br>　食べて！遊んで！闘って？―――ちょっと待って、これってただのパーティーじゃなかったの！？<br>　やっぱり年末はこうじゃなくちゃな！探索者の豪華で華やかな一夜が、いま幕を開ける！
+      </div>
+      <div class="kp LtoR-early">
+      
+            『Welcom to NIGHT×PARTY！』を開始したいと思います
+      </div>
+      <div class="mem1 left">
+      <span>淵切 亞煉</span>
+      <p>
+      
+            いあいあ!!!!!
+      </p>
+      </div>
+      <div class="mem2 right">
+      <span>八坂 七夕</span>
+      <p>
+      
+            いあいあー
+      </p>
+      </div>
+      <div class="mem3 left">
+      <span>御守 月彦</span>
+      <p>
+      
+            いあいあ
+      </p>
+      </div>
+      <div class="kp LtoR-early">
+      
+            ≪導入≫
+      </div>
+      <div class="kp LtoR-early">
+      
+            『〇〇市のバスハイジャック事件から二十年。有毒ガス散布により運転手含む乗客全員が殺害されたこの事件について、専門家の先生と共に議論していきます』
+      </div>
+      <div class="kp LtoR-early">
+      
+            十二月某日、街頭のモニターではそんなニュースが流れる。仄暗い内容になど興味をそそられることもせず、華やかなイルミネーションに彩られた街を尻目に、探索者は目的地へと向かう。
+      </div>
+      <div class="kp LtoR-early">
+      
+            本来は静寂に包まれている夜の港も、今日ばかりは華やかな衣装を纏う人々によって賑わっている。
+      </div>
+      <div class="kp LtoR-early">
+      
+            　―――豪華客船『カンタービレ』。
+      </div>
+      <div class="kp LtoR-early">
+      
+            何十年も前から日本を拠点に世界中の海を渡り歩いている船だが、老朽化により一時運航中止。その後、多額の資金を投じられ復活を遂げたとして、巷で話題の船である。<br>そんな豪華客船で行われるディナーパーティーに、探索者は参加することとなった。
+      </div>
+      <div class="kp LtoR-early">
+      
+            みんな知り合い？（悩み）
+      </div>
+      <div class="kp LtoR-early">
+      
+            ≪船内≫
+      </div>
+      <div class="kp LtoR-early">
+      
+            高級ホテルと錯覚するほど絢爛なエントランスは、大勢の搭乗者によって賑わっている。<br>　探索者が会場に入れば、一面のガラス窓が美しい夜景を映し出していた。青を基調とした会場にはジャズの生演奏が流れており、心地よい空間を演出している。<br>　探索者が着席すると、『ARISAKA』と書かれたネームを付けた従業員が、柔らかな物腰でパーティーの注意事項の案内を始めた。
+      </div>
+      <div class="mem4 right">
+      <span>ARISAKA</span>
+      <p>
+      
+            「本日は、当船のナイトディナーパーティーにお越し下さり、誠にありがとうございます」
+      </p>
+      </div>
+      <div class="mem4 right">
+      <span>ARISAKA</span>
+      <p>
+      
+            「私、ご案内を務めさせて頂きます、有坂と申します」
+      </p>
+      </div>
+      <div class="mem4 right">
+      <span>ARISAKA</span>
+      <p>
+      
+            「当パーティーは十九時開催のフルコースとなっております。全ての料理が提供されて会場を離れる場合、二十二時まで当船を観覧して頂くことも可能です」
+      </p>
+      </div>
+      <div class="mem4 right">
+      <span>ARISAKA</span>
+      <p>
+      
+            「その際、三階と五階から六階までは一般のお客様の宿泊エリアとなっておりますので、お立ち寄りは御遠慮下さい」
+      </p>
+      </div>
+      <div class="mem4 right">
+      <span>ARISAKA</span>
+      <p>
+      
+            「観覧可能箇所は二階にありますデッキ、エントランス、展示室。そして四階の劇場、カジノとなっております」
+      </p>
+      </div>
+      <div class="mem4 right">
+      <span>ARISAKA</span>
+      <p>
+      
+            「それではどうぞ、心ゆくまでお楽しみください」
+      </p>
+      </div>
+      <div class="kp LtoR-early">
+      
+            探索者の全員は偶然同じ席になりました。
+      </div>
+      <div class="kp LtoR-early">
+      
+            なってしまいました
+      </div>
+      <div class="kp LtoR-early">
+      
+            世間話が終わったぐらいで料理来る流れにしますね
+      </div>
+      <div class="mem3 left">
+      <span>御守 月彦</span>
+      <p>
+      
+            「こんばんわ。いやあこんな爺と相席で申し訳ありませんな」
+      </p>
+      </div>
+      <div class="mem2 right">
+      <span>八坂 七夕</span>
+      <p>
+      
+            「こんばんわ。すてきな紳士と同席出来て光栄ですわ」
+      </p>
+      </div>
+      <div class="mem1 left">
+      <span>淵切 亞煉</span>
+      <p>
+      
+            「何も申し訳ないことなんてねぇだろ？」
+      </p>
+      </div>
+      <div class="mem2 right">
+      <span>八坂 七夕</span>
+      <p>
+      
+            「んー、ためごでいい？いいかな？」
+      </p>
+      </div>
+      <div class="mem3 left">
+      <span>御守 月彦</span>
+      <p>
+      
+            「そういっていただけるとありがたい。私御守月彦と申します。どうぞ楽なお言葉で」
+      </p>
+      </div>
+      <div class="mem1 left">
+      <span>淵切 亞煉</span>
+      <p>
+      
+            「良いぜ！」
+      </p>
+      </div>
+      <div class="mem2 right">
+      <span>八坂 七夕</span>
+      <p>
+      
+            「あたしは八坂七夕。変な名前でしょ？何とでも呼んでー」
+      </p>
+      </div>
+      <div class="mem1 left">
+      <span>淵切 亞煉</span>
+      <p>
+      
+            「俺は亞煉　淵切亞煉様だ！よろしくな！」
+      </p>
+      </div>
+      <div class="mem2 right">
+      <span>八坂 七夕</span>
+      <p>
+      
+            「おお。許可が出たね。月彦さんとアレンくんね」
+      </p>
+      </div>
+      <div class="kp LtoR-early">
+      
+            そのように自己紹介をしていると、横から「失礼します」と従業員が皿を持ってくる。
+      </div>
+      <div class="kp LtoR-early">
+      
+            ・≪アミューズ≫アミューズの盛り合わせ<br>・≪前菜≫帆立貝柱と季節のお野菜マリネ<br>・≪スープ≫こだわりコーンポタージュ<br>・≪魚料理≫桜鯛のムニエル<br>・≪肉料理≫黒毛和牛のA5ランクステーキ<br>・≪デザート≫季節の苺ムース
+      </div>
+      <div class="mem3 left">
+      <span>御守 月彦</span>
+      <p>
+      
+            「元気な方々でこちらも活力をいただけますな。…おやありがとうございます。これはおいしそうだ。」
+      </p>
+      </div>
+      <div class="mem2 right">
+      <span>八坂 七夕</span>
+      <p>
+      
+            「ありがとうございますー。コースとか久々ー」
+      </p>
+      </div>
+      <div class="mem1 left">
+      <span>淵切 亞煉</span>
+      <p>
+      
+            「ありがとな！」
+      </p>
+      </div>
+      <div class="mem3 left">
+      <span>御守 月彦</span>
+      <p>
+      
+            「皆様は今日はおひとりで？」
+      </p>
+      </div>
+      <div class="mem1 left">
+      <span>淵切 亞煉</span>
+      <p>
+      
+            「そうだぜ！<br>俺様の仲間《ダチ》はこういうとこ苦手だからな！」
+      </p>
+      </div>
+      <div class="mem2 right">
+      <span>八坂 七夕</span>
+      <p>
+      
+            「ん。ひとりだよー。あたしにお鉢が回ってきてさ」
+      </p>
+      </div>
+      <div class="kp LtoR-early">
+      
+            すべて堪能して…よろしいですね？
+      </div>
+      <div class="mem1 left">
+      <span>淵切 亞煉</span>
+      <p>
+      
+            残らず食べます
+      </p>
+      </div>
+      <div class="mem3 left">
+      <span>御守 月彦</span>
+      <p>
+      
+            「よろしければこの後一緒に回りませんか？私年甲斐もなくはしゃいでおりましてぜひどなたかと分かち合いたく。」
+      </p>
+      </div>
+      <div class="mem3 left">
+      <span>御守 月彦</span>
+      <p>
+      
+            たべます
+      </p>
+      </div>
+      <div class="mem1 left">
+      <span>淵切 亞煉</span>
+      <p>
+      
+            「良いぜ！よろしくな！ツキヒコさん！」
+      </p>
+      </div>
+      <div class="mem2 right">
+      <span>八坂 七夕</span>
+      <p>
+      
+            「ほんと？ぜひぜひ！こんなとこでひとりは寂しいしね」
+      </p>
+      </div>
+      <div class="mem1 left">
+      <span>淵切 亞煉</span>
+      <p>
+      
+            「タナバタもよろしくな！」年下だと思ってる
+      </p>
+      </div>
+      <div class="kp LtoR-early">
+      
+            七夕ちゃんももぐもぐ？
+      </div>
+      <div class="kp LtoR-early">
+      
+            じゃHPかSAN選んでください
+      </div>
+      <div class="mem2 right">
+      <span>八坂 七夕</span>
+      <p>
+      
+            「よろしくー。元気でいいねー。アレンくん何歳？」
+      </p>
+      </div>
+      <div class="mem3 left">
+      <span>御守 月彦</span>
+      <p>
+      
+            「うれしいです。よろしくお願いしますね」
+      </p>
+      </div>
+      <div class="mem3 left">
+      <span>御守 月彦</span>
+      <p>
+      
+            さんで
+      </p>
+      </div>
+      <div class="mem2 right">
+      <span>八坂 七夕</span>
+      <p>
+      
+            さんで
+      </p>
+      </div>
+      <div class="mem1 left">
+      <span>淵切 亞煉</span>
+      <p>
+      
+            HPで
+      </p>
+      </div>
+      <div class="kp LtoR-early">
+      
+            では、アレンくんはHP+5
+      </div>
+      <div class="kp LtoR-early">
+      
+            月彦さんと七夕ちゃんはSAN+5で
+      </div>
+      <div class="mem1 left">
+      <span>淵切 亞煉</span>
+      <p>
+      
+            「俺様は17だぜ！<br>お前は15.6くらいか？」
+      </p>
+      </div>
+      <div class="mem5 left">
+      <span>system</span>
+      <p>
+      
+            [ 八坂 七夕 ] SAN : 59 → 64
+      </p>
+      </div>
+      <div class="mem5 left">
+      <span>system</span>
+      <p>
+      
+            [ 淵切 亞煉 ] HP : 15 → 20
+      </p>
+      </div>
+      <div class="kp LtoR-early">
+      
+            一種のバフですね
+      </div>
+      <div class="mem5 left">
+      <span>system</span>
+      <p>
+      
+            [ 御守 月彦 ] SAN : 55 → 60
+      </p>
+      </div>
+      <div class="mem2 right">
+      <span>八坂 七夕</span>
+      <p>
+      
+            「えっそんなに幼く見える―？これでも25歳のおねーさんなんだけど」
+      </p>
+      </div>
+      <div class="mem1 left">
+      <span>淵切 亞煉</span>
+      <p>
+      
+            「スンマセンっしたーっ！」
+      </p>
+      </div>
+      <div class="kp LtoR-early">
+      
+            かわいい
+      </div>
+      <div class="kp LtoR-early">
+      
+            そんなこんな仲良くなっている所で聞き耳をお願いします
+      </div>
+      <div class="mem1 left">
+      <span>淵切 亞煉</span>
+      <p>
+      
+            CCB&lt;=60 【聞き耳】 (1D100&lt;=60) ＞ 12 ＞ スペシャル
+            
+      </p>
+      </div>
+      <div class="mem2 right">
+      <span>八坂 七夕</span>
+      <p>
+      
+            「あはははっ！元気でいいねー。タメ語でいいよーやりにくいし」
+      </p>
+      </div>
+      <div class="mem3 left">
+      <span>御守 月彦</span>
+      <p>
+      
+            CCB&lt;=51 【聞き耳】 (1D100&lt;=51) ＞ 52 ＞ 失敗
+            
+      </p>
+      </div>
+      <div class="mem2 right">
+      <span>八坂 七夕</span>
+      <p>
+      
+            CCB&lt;=55 【聞き耳】 (1D100&lt;=55) ＞ 26 ＞ 成功
+            
+      </p>
+      </div>
+      <div class="mem1 left">
+      <span>淵切 亞煉</span>
+      <p>
+      
+            「ッス！あざっス！」
+      </p>
+      </div>
+      <div class="kp LtoR-early">
+      
+            アレンくんは爽快に謝りながら、ふと他のテーブルから会話が聞こえてくる
+      </div>
+      <div class="mem6 right">
+      <span>一般客</span>
+      <p>
+      
+            「さっきテレビで見たんだけど、あのバスジャックから二十年が経つらしいわよ」
+      </p>
+      </div>
+      <div class="mem6 right">
+      <span>一般客</span>
+      <p>
+      
+            「もう二十年か…。そう言えば、犯人はまだ捕まってないんだっけ」
+      </p>
+      </div>
+      <div class="mem6 right">
+      <span>一般客</span>
+      <p>
+      
+            「そうみたいね。犯人の特徴も依然不明みたいだし、早く捕まって欲しいわ。有毒ガスだなんて、考えるだけで恐ろしい」
+      </p>
+      </div>
+      <div class="kp LtoR-early">
+      
+            なんて聞こえてくるね。こわいねーこわいねー
+      </div>
+      <div class="kp LtoR-early">
+      
+            ほか二人は、アレン君の声で聞こえなかったんじゃない？
+      </div>
+      <div class="mem1 left">
+      <span>淵切 亞煉</span>
+      <p>
+      
+            関係ないなと思ってます
+      </p>
+      </div>
+      <div class="kp LtoR-early">
+      
+            あ。ごめん。七夕ちゃんも聞こえてたわ
+      </div>
+      <div class="kp LtoR-early">
+      
+            おじいちゃんだけアレン君の声に負けたね
+      </div>
+      <div class="mem3 left">
+      <span>御守 月彦</span>
+      <p>
+      
+            「ほっほ皆さんお若いですねぇ」
+      </p>
+      </div>
+      <div class="mem2 right">
+      <span>八坂 七夕</span>
+      <p>
+      
+            （バスジャックねぇ。ここでそんなことが起こんないといーけど）
+      </p>
+      </div>
+      <div class="mem2 right">
+      <span>八坂 七夕</span>
+      <p>
+      
+            「若いよー。月彦さんはおいくつ？」
+      </p>
+      </div>
+      <div class="kp LtoR-early">
+      
+            じゃ、みなさんフルコース堪能したので席を外して自由行動になりますね（RPも自由にしていいよ）
+      </div>
+      <div class="kp LtoR-early">
+      
+            行ける場所は…先ほど言った観覧場所ですね
+      </div>
+      <div class="mem3 left">
+      <span>御守 月彦</span>
+      <p>
+      
+            「いや60ごえのじじいですよ。…さて食事も終わりましたがどこから行きましょうか？」
+      </p>
+      </div>
+      <div class="mem2 right">
+      <span>八坂 七夕</span>
+      <p>
+      
+            「人生の大先輩だ。アレンくん、敬意を払うなら月彦さんのほうだよー？」立ち上がりつつ
+      </p>
+      </div>
+      <div class="mem1 left">
+      <span>淵切 亞煉</span>
+      <p>
+      
+            「ヨロッシャース！」
+      </p>
+      </div>
+      <div class="mem3 left">
+      <span>御守 月彦</span>
+      <p>
+      
+            「ただ年をくってるだけですよ。しかしアレン様は本当に元気がよろしい」
+      </p>
+      </div>
+      <div class="kp LtoR-early">
+      
+            どこいきやすか？
+      </div>
+      <div class="mem1 left">
+      <span>淵切 亞煉</span>
+      <p>
+      
+            「呼び捨てで良いッス！ツキヒコさん！」
+      </p>
+      </div>
+      <div class="mem1 left">
+      <span>淵切 亞煉</span>
+      <p>
+      
+            「二階にデッキ、エントランス、展示室<br>四階に劇場、カジノがあるッス！<br>何展示してるんスかね？」
+      </p>
+      </div>
+      <div class="mem3 left">
+      <span>御守 月彦</span>
+      <p>
+      
+            「どうやら職業病のようで。ではアレンさんと。近いところから回りましょうか…エントランスに出てからデッキと展示室にいかれますかな？」
+      </p>
+      </div>
+      <div class="mem2 right">
+      <span>八坂 七夕</span>
+      <p>
+      
+            「そうだねー。近場から順に回ってみよっか」
+      </p>
+      </div>
+      <div class="kp LtoR-early">
+      
+            ではエントランスへ向かいます
+      </div>
+      <div class="kp LtoR-early">
+      
+            ディナーの時間になったためか、先ほどに比べると落ち着きを取り戻している。
+      </div>
+      <div class="kp LtoR-early">
+      
+            螺旋階段とエレベーターの両方が備え付けられており、これより上の階に行く場合はどちらを利用しても構わない。
+      </div>
+      <div class="mem3 left">
+      <span>御守 月彦</span>
+      <p>
+      
+            「4階へはあれで行くのですね」
+      </p>
+      </div>
+      <div class="kp LtoR-early">
+      
+            こちら、目星と聞き耳の情報があります
+      </div>
+      <div class="mem3 left">
+      <span>御守 月彦</span>
+      <p>
+      
+            CCB&lt;=51 【聞き耳】 (1D100&lt;=51) ＞ 39 ＞ 成功
+            
+      </p>
+      </div>
+      <div class="mem2 right">
+      <span>八坂 七夕</span>
+      <p>
+      
+            「来た時も思ったけど、船で螺旋階段ってかっこいーよね」
+      </p>
+      </div>
+      <div class="mem1 left">
+      <span>淵切 亞煉</span>
+      <p>
+      
+            CCB&lt;=60 【目星】 (1D100&lt;=60) ＞ 20 ＞ 成功
+            
+      </p>
+      </div>
+      <div class="mem2 right">
+      <span>八坂 七夕</span>
+      <p>
+      
+            CCB&lt;=55 【聞き耳】 (1D100&lt;=55) ＞ 52 ＞ 成功
+            
+      </p>
+      </div>
+      <div class="mem3 left">
+      <span>御守 月彦</span>
+      <p>
+      
+            「さすが豪華ですな」
+      </p>
+      </div>
+      <div class="kp LtoR-early">
+      
+            先に目星の情報出しますね
+      </div>
+      <div class="mem1 left">
+      <span>淵切 亞煉</span>
+      <p>
+      
+            「高いな！」
+      </p>
+      </div>
+      <div class="kp LtoR-early">
+      
+            アレン君は掲示板が目に止まる。そのなかに展示の案内が貼られており、現在はクラシックカーやクラシックバイクの展示が行われているらしい。
+      </div>
+      <div class="mem1 left">
+      <span>淵切 亞煉</span>
+      <p>
+      
+            目をキラッキラさせてます
+      </p>
+      </div>
+      <div class="kp LtoR-early">
+      
+            月彦さんと七夕ちゃんは一般客の会話が聞こえてきます。
+      </div>
+      <div class="mem6 right">
+      <span>一般客</span>
+      <p>
+      
+            「そういえばこの船、出るって噂なのよ」
+      </p>
+      </div>
+      <div class="mem6 right">
+      <span>一般客</span>
+      <p>
+      
+            「出るって…幽霊とか？」
+      </p>
+      </div>
+      <div class="mem6 right">
+      <span>一般客</span>
+      <p>
+      
+            「多分ね。私も噂で聞いたんだけど、昔からこの船は乗客や乗務員の不審死があるみたいで。それも、ミイラのような姿になって発見されるみたい」
+      </p>
+      </div>
+      <div class="mem6 right">
+      <span>一般客</span>
+      <p>
+      
+            「なにそれ。まるで吸血鬼じゃないの」
+      </p>
+      </div>
+      <div class="kp LtoR-early">
+      
+            なんて聞こえてきますね
+      </div>
+      <div class="mem3 left">
+      <span>御守 月彦</span>
+      <p>
+      
+            「おや・・なにやら面白そうなお話ですね」
+      </p>
+      </div>
+      <div class="mem2 right">
+      <span>八坂 七夕</span>
+      <p>
+      
+            「おばけがでるってー。楽しそうな話だね。……アレンくん、何見てんの？」
+      </p>
+      </div>
+      <div class="mem1 left">
+      <span>淵切 亞煉</span>
+      <p>
+      
+            「クラシックバイクが展示されてるらしいンスよ!!!」
+      </p>
+      </div>
+      <div class="mem3 left">
+      <span>御守 月彦</span>
+      <p>
+      
+            「いいですねぇ。バイクはロマンです…どうです？展示から先に見ますかな？」
+      </p>
+      </div>
+      <div class="mem2 right">
+      <span>八坂 七夕</span>
+      <p>
+      
+            「かっけーやつだ。アレンくんはバイク好きなの？」
+      </p>
+      </div>
+      <div class="mem1 left">
+      <span>淵切 亞煉</span>
+      <p>
+      
+            「ツキヒコさんもバイク乗るンすか!!??良いっすよねぇ！朝焼けの紫色が視界に広がる時間にカッ飛ばすのなんて最高スよね！<br>バイクより良いものがあるなら　教えて欲しいっすよ!!!」
+      </p>
+      </div>
+      <div class="kp LtoR-early">
+      
+            かわいいねぇ
+      </div>
+      <div class="mem1 left">
+      <span>淵切 亞煉</span>
+      <p>
+      
+            めっちゃ喋る
+      </p>
+      </div>
+      <div class="mem3 left">
+      <span>御守 月彦</span>
+      <p>
+      
+            「残念ながらバイクの免許はないんですよ。しかし確かに朝のドライブはよいものです…ぜひ一度ご一緒したいものですね」
+      </p>
+      </div>
+      <div class="mem2 right">
+      <span>八坂 七夕</span>
+      <p>
+      
+            「ふたりとも運転できるんだ。あたしも免許はあるけどペーパーだなー。ヒッチハイクの方が得意かも」
+      </p>
+      </div>
+      <div class="mem3 left">
+      <span>御守 月彦</span>
+      <p>
+      
+            「ひっちはいく！ロックですねぇ」
+      </p>
+      </div>
+      <div class="mem2 right">
+      <span>八坂 七夕</span>
+      <p>
+      
+            ヒッチハイクのジェスチャー
+      </p>
+      </div>
+      <div class="kp LtoR-early">
+      
+            移動したいって言ったら移動するね
+      </div>
+      <div class="mem2 right">
+      <span>八坂 七夕</span>
+      <p>
+      
+            「海外回ってたことあってさー。色んな人に乗せてもらったよ」
+      </p>
+      </div>
+      <div class="mem3 left">
+      <span>御守 月彦</span>
+      <p>
+      
+            「いやすばらしい。よい旅でしたね。おっと時間が限られているのでした…そろそろ移動しますかな」
+      </p>
+      </div>
+      <div class="mem1 left">
+      <span>淵切 亞煉</span>
+      <p>
+      
+            「ッス！」
+      </p>
+      </div>
+      <div class="kp LtoR-early">
+      
+            で、どこ向かいます？（とりあいず確認）
+      </div>
+      <div class="mem3 left">
+      <span>御守 月彦</span>
+      <p>
+      
+            「さて予定どおりデッキへ？それとも展示を見に行きますか？」
+      </p>
+      </div>
+      <div class="mem2 right">
+      <span>八坂 七夕</span>
+      <p>
+      
+            「バイク見に行くー？」
+      </p>
+      </div>
+      <div class="mem1 left">
+      <span>淵切 亞煉</span>
+      <p>
+      
+            「バイク見ちゃうと多分見いっちゃうんで　デッキからにしやしょう！」
+      </p>
+      </div>
+      <div class="mem2 right">
+      <span>八坂 七夕</span>
+      <p>
+      
+            「アレンくん、さては好きなものは後で食べるタイプだなー？」
+      </p>
+      </div>
+      <div class="mem3 left">
+      <span>御守 月彦</span>
+      <p>
+      
+            「では後ほどゆっくり観覧いたしましょう」
+      </p>
+      </div>
+      <div class="mem1 left">
+      <span>淵切 亞煉</span>
+      <p>
+      
+            「そっすよ！<br>最後にとっておきを頬張るのが最高ス！」
+      </p>
+      </div>
+      <div class="kp LtoR-early">
+      
+            ≪デッキ≫
+      </div>
+      <div class="kp LtoR-early">
+      
+            心地よい夜風が探索者の頬を撫でた。デッキにはプールやカフェテリアもあり、一般と思わしき客が泳いでいる。また、プールとは反対側のデッキは広々としていて、展望ポイントとなっているようだ。
+      </div>
+      <div class="kp LtoR-early">
+      
+            目星さんと聞き耳さんが出番になりますよ
+      </div>
+      <div class="mem1 left">
+      <span>淵切 亞煉</span>
+      <p>
+      
+            CCB&lt;=60 【目星】 (1D100&lt;=60) ＞ 13 ＞ 成功
+            
+      </p>
+      </div>
+      <div class="mem3 left">
+      <span>御守 月彦</span>
+      <p>
+      
+            CCB&lt;=51 【聞き耳】 (1D100&lt;=51) ＞ 59 ＞ 失敗
+            
+      </p>
+      </div>
+      <div class="mem2 right">
+      <span>八坂 七夕</span>
+      <p>
+      
+            CCB&lt;=55 【聞き耳】 (1D100&lt;=55) ＞ 22 ＞ 成功
+            
+      </p>
+      </div>
+      <div class="kp LtoR-early">
+      
+            目星さんは
+      </div>
+      <div class="kp LtoR-early">
+      
+            地上と繋ぐ出入口が閉ざされている。錨は下ろされており、船は揺れ一つ感じない快適な空間になっております。
+      </div>
+      <div class="kp LtoR-early">
+      
+            やったね。動いてないよ
+      </div>
+      <div class="kp LtoR-early">
+      
+            聞き耳さんは
+      </div>
+      <div class="kp LtoR-early">
+      
+            この船には似つかわしくない腐臭がどこからともなく漂ってくるのがわかるよ
+      </div>
+      <div class="kp LtoR-early">
+      
+            なんだろうね
+      </div>
+      <div class="mem2 right">
+      <span>八坂 七夕</span>
+      <p>
+      
+            「……なんか変なにおいしない？」
+      </p>
+      </div>
+      <div class="mem1 left">
+      <span>淵切 亞煉</span>
+      <p>
+      
+            「？　そっすか？」
+      </p>
+      </div>
+      <div class="kp LtoR-early">
+      
+            おじいちゃんに関しては、匂いを感じない…？
+      </div>
+      <div class="mem3 left">
+      <span>御守 月彦</span>
+      <p>
+      
+            「申し訳ありません鼻の調子がわるく…磯の香ではなく？」
+      </p>
+      </div>
+      <div class="kp LtoR-early">
+      
+            アレン君は聞き耳成功したら気付けるよ
+      </div>
+      <div class="mem1 left">
+      <span>淵切 亞煉</span>
+      <p>
+      
+            CCB&lt;=60 【聞き耳】 (1D100&lt;=60) ＞ 30 ＞ 成功
+            
+      </p>
+      </div>
+      <div class="kp LtoR-early">
+      
+            臭そう
+      </div>
+      <div class="mem1 left">
+      <span>淵切 亞煉</span>
+      <p>
+      
+            「あー…　港特有のヤツっすかね？」
+      </p>
+      </div>
+      <div class="mem2 right">
+      <span>八坂 七夕</span>
+      <p>
+      
+            「あー。そういう？」
+      </p>
+      </div>
+      <div class="mem3 left">
+      <span>御守 月彦</span>
+      <p>
+      
+            「にしてもよい景色ですねぇ…いつかこんな船で海外へ行ってみたいものです」
+      </p>
+      </div>
+      <div class="mem2 right">
+      <span>八坂 七夕</span>
+      <p>
+      
+            「いいねー。豪華客船で世界一周とか、してみたいもんだよねー」
+      </p>
+      </div>
+      <div class="mem1 left">
+      <span>淵切 亞煉</span>
+      <p>
+      
+            「西海岸とかカッ飛ばしたら　気持ちよさそうッスよね！」
+      </p>
+      </div>
+      <div class="mem3 left">
+      <span>御守 月彦</span>
+      <p>
+      
+            「ほっほいやあブレないものをお持ちだ。ではアレンさんお待ちかねの展示にでもいきましょうかね」
+      </p>
+      </div>
+      <div class="mem1 left">
+      <span>淵切 亞煉</span>
+      <p>
+      
+            「ッス!!!」そわそわ
+      </p>
+      </div>
+      <div class="kp LtoR-early">
+      
+            じゃ移動しますね
+      </div>
+      <div class="kp LtoR-early">
+      
+            ≪展示室≫
+      </div>
+      <div class="kp LtoR-early">
+      
+            デッキと併設しており、レトロな雰囲気を演出する広々とした室内には数台のクラシックカーやクラシックバイクが展示されている。
+      </div>
+      <div class="kp LtoR-early">
+      
+            探索者が入ると、『SHIRAYUKI』と書かれたネームを付けた従業員が、展示物について詳細が書かれたパンフレットを渡して来た。
+      </div>
+      <div class="kp LtoR-early">
+      
+            どうしたい？
+      </div>
+      <div class="mem3 left">
+      <span>御守 月彦</span>
+      <p>
+      
+            パンフみたい
+      </p>
+      </div>
+      <div class="mem1 left">
+      <span>淵切 亞煉</span>
+      <p>
+      
+            パンフを熟読
+      </p>
+      </div>
+      <div class="mem2 right">
+      <span>八坂 七夕</span>
+      <p>
+      
+            「かっけー。なんかテンション上がるね」
+      </p>
+      </div>
+      <div class="mem3 left">
+      <span>御守 月彦</span>
+      <p>
+      
+            「いいですねぇ！！ワクワクしてしまいますな」
+      </p>
+      </div>
+      <div class="kp LtoR-early">
+      
+            じゃあパンフレットをみたね。えらいね
+      </div>
+      <div class="mem2 right">
+      <span>八坂 七夕</span>
+      <p>
+      
+            多分説明書とか読まないタイプ
+      </p>
+      </div>
+      <div class="kp LtoR-early">
+      
+            それぞれの車の特徴が載っている
+      </div>
+      <div class="kp LtoR-early">
+      
+            ・A車＜スピードが出るためDEXが＋2されるが、操作に癖があるため運転に－10される＞<br>・B車＜普通の車より運転し易いため運転に＋10入るが、スピードが出にくいためDEXが－１される＞<br>・C車＜ごく普通の車。DEXも運転も補正無し＞
+      </div>
+      <div class="mem1 left">
+      <span>淵切 亞煉</span>
+      <p>
+      
+            「うっおぉぉぉぉぉぉぉ!!!!!カッケー!!!!!」
+      </p>
+      </div>
+      <div class="mem3 left">
+      <span>御守 月彦</span>
+      <p>
+      
+            「かわったバイクもありますな」
+      </p>
+      </div>
+      <div class="mem1 left">
+      <span>淵切 亞煉</span>
+      <p>
+      
+            「昔のも結構速かったんだなぁ!!!<br>この四輪なんてジブリでドンパチしてたヤツじゃねぇか！<br>この二輪も安定してそうだし　この珍しいのなんてマックとか置けそうだな!!!」
+      </p>
+      </div>
+      <div class="mem2 right">
+      <span>八坂 七夕</span>
+      <p>
+      
+            「テンション上がってんねー」
+      </p>
+      </div>
+      <div class="mem3 left">
+      <span>御守 月彦</span>
+      <p>
+      
+            「ぜひ機会があれば運転してみたいですねぇ…こういうものは癖もいとおしいものです」
+      </p>
+      </div>
+      <div class="mem1 left">
+      <span>淵切 亞煉</span>
+      <p>
+      
+            「これ乗らしてもらえねーかなぁ!?カッケーなぁ！」
+      </p>
+      </div>
+      <div class="mem3 left">
+      <span>御守 月彦</span>
+      <p>
+      
+            「展示品ですからねぇ…いやあ見事です」
+      </p>
+      </div>
+      <div class="mem1 left">
+      <span>淵切 亞煉</span>
+      <p>
+      
+            目星あたりで目に焼き付けときたい
+      </p>
+      </div>
+      <div class="kp LtoR-early">
+      
+            目星どうぞ
+      </div>
+      <div class="mem2 right">
+      <span>八坂 七夕</span>
+      <p>
+      
+            （正直展示よりふたりのテンションの上がり方の方がおもろいなー）
+      </p>
+      </div>
+      <div class="mem1 left">
+      <span>淵切 亞煉</span>
+      <p>
+      
+            CCB&lt;=60 【目星】 (1D100&lt;=60) ＞ 8 ＞ スペシャル
+            
+      </p>
+      </div>
+      <div class="kp LtoR-early">
+      
+            連続写真のように何枚もの写真が取れた気がします
+      </div>
+      <div class="kp LtoR-early">
+      
+            ちらり
+      </div>
+      <div class="mem1 left">
+      <span>淵切 亞煉</span>
+      <p>
+      
+            「舎弟たちに教えてやろっと」
+      </p>
+      </div>
+      <div class="kp LtoR-early">
+      
+            ちらり
+      </div>
+      <div class="mem2 right">
+      <span>八坂 七夕</span>
+      <p>
+      
+            「あのーすみませーん。ここって撮影オッケー？」
+      </p>
+      </div>
+      <div class="mem7 left">
+      <span>SHIRAYUKI</span>
+      <p>
+      
+            「あ、はい。大丈夫ですよ」
+      </p>
+      </div>
+      <div class="mem2 right">
+      <span>八坂 七夕</span>
+      <p>
+      
+            CCB&lt;=35 【写真術】 (1D100&lt;=35) ＞ 37 ＞ 失敗
+            
+      </p>
+      </div>
+      <div class="kp LtoR-early">
+      
+            ちょっとぶれちった
+      </div>
+      <div class="kp LtoR-early">
+      
+            ちらり
+      </div>
+      <div class="mem2 right">
+      <span>八坂 七夕</span>
+      <p>
+      
+            「うーんあんま上手く撮れなかったなー。でも、データあげるよアレンくん」
+      </p>
+      </div>
+      <div class="mem1 left">
+      <span>淵切 亞煉</span>
+      <p>
+      
+            スマホで連写したい
+      </p>
+      </div>
+      <div class="kp LtoR-early">
+      
+            写真術どうぞ
+      </div>
+      <div class="mem1 left">
+      <span>淵切 亞煉</span>
+      <p>
+      
+            「あざーっす！」
+      </p>
+      </div>
+      <div class="mem1 left">
+      <span>淵切 亞煉</span>
+      <p>
+      
+            CCB&lt;=10 【写真術】 (1D100&lt;=10) ＞ 89 ＞ 失敗
+            
+      </p>
+      </div>
+      <div class="mem3 left">
+      <span>御守 月彦</span>
+      <p>
+      
+            「よろしければ私にも戴けませんか？」
+      </p>
+      </div>
+      <div class="mem2 right">
+      <span>八坂 七夕</span>
+      <p>
+      
+            「ぶれてるのでいいならいいよー」
+      </p>
+      </div>
+      <div class="mem1 left">
+      <span>淵切 亞煉</span>
+      <p>
+      
+            ｶｯｼｬｼｬｼｬｼｬｼｬｼｬｼｬ!(ブレブレ)
+      </p>
+      </div>
+      <div class="mem2 right">
+      <span>八坂 七夕</span>
+      <p>
+      
+            「連絡先交換しとく？」
+      </p>
+      </div>
+      <div class="mem3 left">
+      <span>御守 月彦</span>
+      <p>
+      
+            「構いませんかな？ラインでも大丈夫ですかね」
+      </p>
+      </div>
+      <div class="mem1 left">
+      <span>淵切 亞煉</span>
+      <p>
+      
+            「ッス！」
+      </p>
+      </div>
+      <div class="kp LtoR-early">
+      
+            ちらり
+      </div>
+      <div class="mem2 right">
+      <span>八坂 七夕</span>
+      <p>
+      
+            「ライン使えるんだ！じゃあふるふるー」
+      </p>
+      </div>
+      <div class="mem3 left">
+      <span>御守 月彦</span>
+      <p>
+      
+            「ふるふる…はっはっは楽しいですな。いやぁお若いお友達が増えました」
+      </p>
+      </div>
+      <div class="mem1 left">
+      <span>淵切 亞煉</span>
+      <p>
+      
+            (ﾌﾞﾝﾌﾞﾝ)
+      </p>
+      </div>
+      <div class="kp LtoR-early">
+      
+            ちらり
+      </div>
+      <div class="kp LtoR-early">
+      
+            目星…ちらり
+      </div>
+      <div class="mem3 left">
+      <span>御守 月彦</span>
+      <p>
+      
+            みようか
+      </p>
+      </div>
+      <div class="mem1 left">
+      <span>淵切 亞煉</span>
+      <p>
+      
+            CCB&lt;=60 【目星】 (1D100&lt;=60) ＞ 99 ＞ 致命的失敗
+            
+      </p>
+      </div>
+      <div class="mem2 right">
+      <span>八坂 七夕</span>
+      <p>
+      
+            CCB&lt;=50 【目星】 (1D100&lt;=50) ＞ 14 ＞ 成功
+            
+      </p>
+      </div>
+      <div class="mem3 left">
+      <span>御守 月彦</span>
+      <p>
+      
+            CCB&lt;=25 【目星】 (1D100&lt;=25) ＞ 19 ＞ 成功
+            
+      </p>
+      </div>
+      <div class="kp LtoR-early">
+      
+            じゃ見つけた二人は、出入口(プール側)とは正反対の壁にレバーを見つける。どうやら、ここから展示物の搬入をしているようだ。
+      </div>
+      <div class="kp LtoR-early">
+      
+            ってことがわかりますよ
+      </div>
+      <div class="kp LtoR-early">
+      
+            アレン君は…
+      </div>
+      <div class="kp LtoR-early">
+      
+            バイクに触ろうとして怒られておいて
+      </div>
+      <div class="mem7 left">
+      <span>SHIRAYUKI</span>
+      <p>
+      
+            「展示品には触れないようにしてくださいね」
+      </p>
+      </div>
+      <div class="mem1 left">
+      <span>淵切 亞煉</span>
+      <p>
+      
+            「ちっとだけなら…そぉ……っ」
+      </p>
+      </div>
+      <div class="mem7 left">
+      <span>SHIRAYUKI</span>
+      <p>
+      
+            やんわりと
+      </p>
+      </div>
+      <div class="mem7 left">
+      <span>SHIRAYUKI</span>
+      <p>
+      
+            ね？
+      </p>
+      </div>
+      <div class="mem1 left">
+      <span>淵切 亞煉</span>
+      <p>
+      
+            「サーセンッしたー！」
+      </p>
+      </div>
+      <div class="mem7 left">
+      <span>SHIRAYUKI</span>
+      <p>
+      
+            「気を付けて頂けるのでしたら。次からはね？」
+      </p>
+      </div>
+      <div class="mem1 left">
+      <span>淵切 亞煉</span>
+      <p>
+      
+            「ッス！」
+      </p>
+      </div>
+      <div class="mem3 left">
+      <span>御守 月彦</span>
+      <p>
+      
+            「さて…名残惜しいですが折角ですから四階にもいきますか。時間に余裕があればまた来ましょうか」
+      </p>
+      </div>
+      <div class="mem1 left">
+      <span>淵切 亞煉</span>
+      <p>
+      
+            「ッス！
+      <br>どこ行きやしょう!?」
+      </p>
+      </div>
+      <div class="kp LtoR-early">
+      
+            どこいきたい？
+      </div>
+      <div class="mem2 right">
+      <span>八坂 七夕</span>
+      <p>
+      
+            「おっけー。劇場とカジノどっち行く？」
+      </p>
+      </div>
+      <div class="mem3 left">
+      <span>御守 月彦</span>
+      <p>
+      
+            「どちらも気になりますがやはりカジノはわくわくする響きですねぇ」
+      </p>
+      </div>
+      <div class="mem1 left">
+      <span>淵切 亞煉</span>
+      <p>
+      
+            「一攫千金といきやしょう！」
+      </p>
+      </div>
+      <div class="mem2 right">
+      <span>八坂 七夕</span>
+      <p>
+      
+            「カジノかー。月彦さんギャンブルするの？」会話しつつ移動
+      </p>
+      </div>
+      <div class="kp LtoR-early">
+      
+            カジノ？
+      </div>
+      <div class="kp LtoR-early">
+      
+            カジノにいきまーす
+      </div>
+      <div class="mem3 left">
+      <span>御守 月彦</span>
+      <p>
+      
+            「今はお目付け役がいるのでなかなか…お二人…いえアレンさんは未成年ですな。八坂さんは初めてで？」
+      <br>
+      </p>
+      </div>
+      <div class="mem2 right">
+      <span>八坂 七夕</span>
+      <p>
+      
+            「お目付け役かー。ちょっと覗いたことはあるけどギャンブルはしたことないなー」
+      </p>
+      </div>
+      <div class="kp LtoR-early">
+      
+            ≪カジノ≫
+      </div>
+      <div class="kp LtoR-early">
+      
+            BARが併設されているカジノだ。ポーカーテーブルの他、ダーツやビリヤードも楽しめる。<br>　チップの換金などは出来ないようだが、豪華景品が揃っているようだ。
+      </div>
+      <div class="kp LtoR-early">
+      
+            ちなみに、お一人30枚のチップが渡されます
+      </div>
+      <div class="kp LtoR-early">
+      
+            ルーレットとポーカーがありますが、どちらを遊びますか？
+      </div>
+      <div class="mem1 left">
+      <span>淵切 亞煉</span>
+      <p>
+      
+            ポーカーかな
+      </p>
+      </div>
+      <div class="kp LtoR-early">
+      
+            ◇ポーカー <br>≪5d6を振ってもらい出た目の数で役を決める。振り直しは一度迄とし、ダイスの一部だけを振り直すこが出来る。<br>　例えば、1,1,3,4,5の値が出たとすれば、1を一つ振り直してストレートを狙っても良いし、3,4,5を振り直してツーペア以上を狙っても良い≫
+      </div>
+      <div class="mem3 left">
+      <span>御守 月彦</span>
+      <p>
+      
+            5ｄ6 (5D6) ＞ 25[5,6,6,2,6] ＞ 25
+            
+      </p>
+      </div>
+      <div class="mem2 right">
+      <span>八坂 七夕</span>
+      <p>
+      
+            5ｄ6 (5D6) ＞ 20[2,6,3,3,6] ＞ 20
+            
+      </p>
+      </div>
+      <div class="mem1 left">
+      <span>淵切 亞煉</span>
+      <p>
+      
+            5d6 (5D6) ＞ 17[2,6,4,1,4] ＞ 17
+            
+      </p>
+      </div>
+      <div class="kp LtoR-early">
+      
+            5D6 (5D6) ＞ 13[1,1,1,6,4] ＞ 13
+            
+      </div>
+      <div class="kp LtoR-early">
+      
+            かけますか？おりますか？
+      </div>
+      <div class="mem1 left">
+      <span>淵切 亞煉</span>
+      <p>
+      
+            おりる
+      </p>
+      </div>
+      <div class="mem3 left">
+      <span>御守 月彦</span>
+      <p>
+      
+            ２０チップをかけて5.2を振りなおしたい
+      </p>
+      </div>
+      <div class="mem2 right">
+      <span>八坂 七夕</span>
+      <p>
+      
+            １０チップかけて2だけふりなおす
+      </p>
+      </div>
+      <div class="kp LtoR-early">
+      
+            6・4を振りなおす
+      </div>
+      <div class="mem3 left">
+      <span>御守 月彦</span>
+      <p>
+      
+            2ｄ6 (2D6) ＞ 11[5,6] ＞ 11
+            
+      </p>
+      </div>
+      <div class="mem2 right">
+      <span>八坂 七夕</span>
+      <p>
+      
+            1ｄ6 (1D6) ＞ 6
+            
+      </p>
+      </div>
+      <div class="kp LtoR-early">
+      
+            2D6 (2D6) ＞ 7[6,1] ＞ 7
+            
+      </div>
+      <div class="kp LtoR-early">
+      
+            月彦さんの勝ちです
+      </div>
+      <div class="mem3 left">
+      <span>御守 月彦</span>
+      <p>
+      
+            「ほっほやりましたな」
+      </p>
+      </div>
+      <div class="mem1 left">
+      <span>淵切 亞煉</span>
+      <p>
+      
+            「すげぇやツキヒコさん！」
+      </p>
+      </div>
+      <div class="mem2 right">
+      <span>八坂 七夕</span>
+      <p>
+      
+            「つよいなー月彦さん」
+      </p>
+      </div>
+      <div class="kp LtoR-early">
+      
+            次、なさいますか？
+      </div>
+      <div class="mem1 left">
+      <span>淵切 亞煉</span>
+      <p>
+      
+            やる！
+      </p>
+      </div>
+      <div class="kp LtoR-early">
+      
+            ルーレットでおｋ？
+      </div>
+      <div class="mem3 left">
+      <span>御守 月彦</span>
+      <p>
+      
+            おｋ
+      </p>
+      </div>
+      <div class="kp LtoR-early">
+      
+            ◇ルーレット<br>≪ディーラーが2d6を振り、出た目のグループor数を予想する≫<br>［※例えば『2』と『3』だった場合、『23』の扱いになる。最小『11』、最大『66』］
+      </div>
+      <div class="mem1 left">
+      <span>淵切 亞煉</span>
+      <p>
+      
+            みまもり
+      </p>
+      </div>
+      <div class="mem3 left">
+      <span>御守 月彦</span>
+      <p>
+      
+            30チップで奇数にかけます
+      </p>
+      </div>
+      <div class="mem2 right">
+      <span>八坂 七夕</span>
+      <p>
+      
+            10チップで偶数にかけます
+      </p>
+      </div>
+      <div class="kp LtoR-early">
+      
+            2D6 (2D6) ＞ 11[6,5] ＞ 11
+            
+      </div>
+      <div class="mem2 right">
+      <span>八坂 七夕</span>
+      <p>
+      
+            「月彦さんほんと強いなー……」
+      </p>
+      </div>
+      <div class="mem3 left">
+      <span>御守 月彦</span>
+      <p>
+      
+            「イタリア旅行いただけましたな。はっはっは」
+      </p>
+      </div>
+      <div class="mem2 right">
+      <span>八坂 七夕</span>
+      <p>
+      
+            「いいなー。あたしも連れてって？」
+      </p>
+      </div>
+      <div class="kp LtoR-early">
+      
+            次、いかがなさいますか？
+      </div>
+      <div class="mem3 left">
+      <span>御守 月彦</span>
+      <p>
+      
+            「こんな素敵なお嬢さんと旅に行けるとは。ふふ、ぜひエスコートさせてください」
+      </p>
+      </div>
+      <div class="mem1 left">
+      <span>淵切 亞煉</span>
+      <p>
+      
+            やんややんや
+      </p>
+      </div>
+      <div class="kp LtoR-early">
+      
+            月彦さん、交換。完了
+      </div>
+      <div class="mem2 right">
+      <span>八坂 七夕</span>
+      <p>
+      
+            「えっほんと？うれしいなー。すてきな紳士にエスコートされちゃう」
+      </p>
+      </div>
+      <div class="kp LtoR-early">
+      
+            はい。やるかい？
+      </div>
+      <div class="mem1 left">
+      <span>淵切 亞煉</span>
+      <p>
+      
+            やるよ！
+      </p>
+      </div>
+      <div class="kp LtoR-early">
+      
+            どっちやるかい？
+      </div>
+      <div class="mem1 left">
+      <span>淵切 亞煉</span>
+      <p>
+      
+            ポーカー！
+      </p>
+      </div>
+      <div class="kp LtoR-early">
+      
+            へい
+      </div>
+      <div class="mem3 left">
+      <span>御守 月彦</span>
+      <p>
+      
+            5ｄ6 (5D6) ＞ 18[3,5,6,2,2] ＞ 18
+            
+      </p>
+      </div>
+      <div class="mem2 right">
+      <span>八坂 七夕</span>
+      <p>
+      
+            5ｄ6 (5D6) ＞ 19[2,5,2,5,5] ＞ 19
+            
+      </p>
+      </div>
+      <div class="mem1 left">
+      <span>淵切 亞煉</span>
+      <p>
+      
+            5d6 (5D6) ＞ 21[5,4,6,3,3] ＞ 21
+            
+      </p>
+      </div>
+      <div class="kp LtoR-early">
+      
+            5D6 (5D6) ＞ 20[3,2,5,5,5] ＞ 20
+            
+      </div>
+      <div class="kp LtoR-early">
+      
+            どうするかい？
+      </div>
+      <div class="mem3 left">
+      <span>御守 月彦</span>
+      <p>
+      
+            2を一つ振りなおします10かけて
+      </p>
+      </div>
+      <div class="mem1 left">
+      <span>淵切 亞煉</span>
+      <p>
+      
+            おりる…
+      </p>
+      </div>
+      <div class="mem2 right">
+      <span>八坂 七夕</span>
+      <p>
+      
+            10かけてそのままで
+      </p>
+      </div>
+      <div class="kp LtoR-early">
+      
+            3.2 振りなおすぜ
+      </div>
+      <div class="mem3 left">
+      <span>御守 月彦</span>
+      <p>
+      
+            1ｄ6 (1D6) ＞ 5
+            
+      </p>
+      </div>
+      <div class="kp LtoR-early">
+      
+            2D6 (2D6) ＞ 3[2,1] ＞ 3
+            
+      </div>
+      <div class="kp LtoR-early">
+      
+            七夕ちゃんの勝ちですね
+      </div>
+      <div class="kp LtoR-early">
+      
+            次、どうしますか？
+      </div>
+      <div class="mem1 left">
+      <span>淵切 亞煉</span>
+      <p>
+      
+            やるぜ！
+      </p>
+      </div>
+      <div class="kp LtoR-early">
+      
+            ポーカー？
+      </div>
+      <div class="mem3 left">
+      <span>御守 月彦</span>
+      <p>
+      
+            「私は手持ちがなくなりましたので見守っておりますね」
+      </p>
+      </div>
+      <div class="mem2 right">
+      <span>八坂 七夕</span>
+      <p>
+      
+            やろう
+      </p>
+      </div>
+      <div class="mem1 left">
+      <span>淵切 亞煉</span>
+      <p>
+      
+            ポーカー！
+      </p>
+      </div>
+      <div class="kp LtoR-early">
+      
+            はい
+      </div>
+      <div class="mem1 left">
+      <span>淵切 亞煉</span>
+      <p>
+      
+            5d6 (5D6) ＞ 19[6,2,6,1,4] ＞ 19
+            
+      </p>
+      </div>
+      <div class="mem2 right">
+      <span>八坂 七夕</span>
+      <p>
+      
+            5ｄ6 (5D6) ＞ 22[5,1,6,5,5] ＞ 22
+            
+      </p>
+      </div>
+      <div class="kp LtoR-early">
+      
+            5D6 (5D6) ＞ 14[2,5,1,3,3] ＞ 14
+            
+      </div>
+      <div class="kp LtoR-early">
+      
+            どうしますか？
+      </div>
+      <div class="mem1 left">
+      <span>淵切 亞煉</span>
+      <p>
+      
+            全部かけて214振るよ
+      </p>
+      </div>
+      <div class="mem2 right">
+      <span>八坂 七夕</span>
+      <p>
+      
+            10かけて1と6をふりなおす
+      </p>
+      </div>
+      <div class="mem1 left">
+      <span>淵切 亞煉</span>
+      <p>
+      
+            3d6 (3D6) ＞ 12[3,4,5] ＞ 12
+            
+      </p>
+      </div>
+      <div class="kp LtoR-early">
+      
+            3を振りなおす
+      </div>
+      <div class="mem2 right">
+      <span>八坂 七夕</span>
+      <p>
+      
+            2ｄ6 (2D6) ＞ 6[5,1] ＞ 6
+            
+      </p>
+      </div>
+      <div class="kp LtoR-early">
+      
+            1D6 (1D6) ＞ 5
+            
+      </div>
+      <div class="kp LtoR-early">
+      
+            アレンくんと七夕ちゃんの勝ち
+      </div>
+      <div class="kp LtoR-early">
+      
+            次どうする？
+      </div>
+      <div class="mem1 left">
+      <span>淵切 亞煉</span>
+      <p>
+      
+            アクセサリー貰ってターンエンド
+      </p>
+      </div>
+      <div class="mem2 right">
+      <span>八坂 七夕</span>
+      <p>
+      
+            食事券貰っとく
+      </p>
+      </div>
+      <div class="kp LtoR-early">
+      
+            余ったチップどうする？
+      </div>
+      <div class="kp LtoR-early">
+      
+            以上。カジノでした
+      </div>
+      <div class="kp LtoR-early">
+      
+            と思わせて
+      </div>
+      <div class="kp LtoR-early">
+      
+            目星忘れてた
+      </div>
+      <div class="mem1 left">
+      <span>淵切 亞煉</span>
+      <p>
+      
+            CCB&lt;=60 【目星】 (1D100&lt;=60) ＞ 72 ＞ 失敗
+            
+      </p>
+      </div>
+      <div class="mem3 left">
+      <span>御守 月彦</span>
+      <p>
+      
+            CCB&lt;=25 【目星】 (1D100&lt;=25) ＞ 23 ＞ 成功
+            
+      </p>
+      </div>
+      <div class="mem2 right">
+      <span>八坂 七夕</span>
+      <p>
+      
+            CCB&lt;=50 【目星】 (1D100&lt;=50) ＞ 70 ＞ 失敗
+            
+      </p>
+      </div>
+      <div class="kp LtoR-early">
+      
+            数名の男女が狼男やゴーレムなどと対峙している奇妙な絵画が、ＢＡＲカウンターに飾られている。男女はみな一様に銀色の武器や松明を持っており、絵画には緊張感が漂っていた。<br>　また、傍らにはオブジェと思わしき小型オノも額に飾られている。
+      </div>
+      <div class="kp LtoR-early">
+      
+            月彦さんちゃんとみてるぅ
+      </div>
+      <div class="mem3 left">
+      <span>御守 月彦</span>
+      <p>
+      
+            「なにやらアバンギャルドな展示品がありますな。ほらあれを」
+      </p>
+      </div>
+      <div class="kp LtoR-early">
+      
+            ここで
+      </div>
+      <div class="kp LtoR-early">
+      
+            銀色の何か持ってる人がいるね
+      </div>
+      <div class="kp LtoR-early">
+      
+            覚えておこう
+      </div>
+      <div class="kp LtoR-early">
+      
+            35枚余ってるね。どうする？
+      </div>
+      <div class="mem1 left">
+      <span>淵切 亞煉</span>
+      <p>
+      
+            「妖怪カチコミ戦争か？」
+      </p>
+      </div>
+      <div class="mem2 right">
+      <span>八坂 七夕</span>
+      <p>
+      
+            「発想がすごいね」
+      </p>
+      </div>
+      <div class="kp LtoR-early">
+      
+            さて
+      </div>
+      <div class="mem3 left">
+      <span>御守 月彦</span>
+      <p>
+      
+            「燃やすか銀色の何かが有効な敵なんですかね」
+      </p>
+      </div>
+      <div class="kp LtoR-early">
+      
+            移動する？
+      </div>
+      <div class="mem1 left">
+      <span>淵切 亞煉</span>
+      <p>
+      
+            「この空気はカチコミかお礼参り」
+      </p>
+      </div>
+      <div class="mem3 left">
+      <span>御守 月彦</span>
+      <p>
+      
+            「懐かしい響きですなほっほっほ」
+      </p>
+      </div>
+      <div class="mem3 left">
+      <span>御守 月彦</span>
+      <p>
+      
+            「さて最後は劇場が見れるんでしたかな」
+      </p>
+      </div>
+      <div class="kp LtoR-early">
+      
+            いっていい？
+      </div>
+      <div class="mem1 left">
+      <span>淵切 亞煉</span>
+      <p>
+      
+            「まだ何かやってるッスかね？」
+      </p>
+      </div>
+      <div class="mem1 left">
+      <span>淵切 亞煉</span>
+      <p>
+      
+            いこか！
+      </p>
+      </div>
+      <div class="kp LtoR-early">
+      
+            移動、すます
+      </div>
+      <div class="kp LtoR-early">
+      
+            すました
+      </div>
+      <div class="kp LtoR-early">
+      
+            ≪劇場≫
+      </div>
+      <div class="kp LtoR-early">
+      
+            広々とした劇場だが、全てのプログラムを終えており今夜の公演予定は無い。これまでの劇で使われた小道具が幾つか壁に展示されており、観ることが出来る。
+      </div>
+      <div class="kp LtoR-early">
+      
+            みますか？
+      </div>
+      <div class="kp LtoR-early">
+      
+            興味ありますか？
+      </div>
+      <div class="mem1 left">
+      <span>淵切 亞煉</span>
+      <p>
+      
+            みるよ！
+      </p>
+      </div>
+      <div class="mem3 left">
+      <span>御守 月彦</span>
+      <p>
+      
+            みます興味津々
+      </p>
+      </div>
+      <div class="mem2 right">
+      <span>八坂 七夕</span>
+      <p>
+      
+            みます
+      </p>
+      </div>
+      <div class="kp LtoR-early">
+      
+            ・銀の鍵：特殊な素材で作られた世界で一つだけの鍵。作中では、呪文を唱えると特別な世界へと行けるとされていた。
+      </div>
+      <div class="kp LtoR-early">
+      
+            ・38口径リボルバー：百年前のモデル。作中では、銀の弾丸を吸血鬼へ打ち抜く際に使われた。
+      </div>
+      <div class="kp LtoR-early">
+      
+            ・32口径オートマチック：リボルバー同様に百年前のモデル。ボディに描かれた十字架が特徴。
+      </div>
+      <div class="kp LtoR-early">
+      
+            ・アンティークナイフ：中世のヨーロッパで使われていたモノをモデルにしている。純銀で作られており、鞘に埋め込まれた宝石も特殊なモノを使用している。
+      </div>
+      <div class="kp LtoR-early">
+      
+            ・歌劇『吸血鬼の夜』のパンフレット：有名監督による、カンタービレでのみ上映されたオリジナルの物語。木こりの青年が吸血鬼の住む森を伐採してしまい、吸血鬼の怒りを買ってしまう悲劇。<br>　住居と餌を奪われた吸血鬼は青年に罰を下そうとするが、仲間と結託した青年は吸血鬼を返り討ちにする。吸血鬼は銀の弾丸を受けて死亡するものの、のちに吸血鬼によって森が守られていたことが発覚。<br>　忽ち、森に住む生き物や植物は絶滅してしまい、青年により大勢の人間が命を落としてしまう。
+      </div>
+      <div class="mem3 left">
+      <span>御守 月彦</span>
+      <p>
+      
+            「そういえば先ほど吸血鬼がなんとやらと噂をしておりましたな」
+      </p>
+      </div>
+      <div class="mem1 left">
+      <span>淵切 亞煉</span>
+      <p>
+      
+            「救いがねぇ！」
+      </p>
+      </div>
+      <div class="kp LtoR-early">
+      
+            ちなんみ、目星と聞き耳が出来たりする
+      </div>
+      <div class="mem3 left">
+      <span>御守 月彦</span>
+      <p>
+      
+            CCB&lt;=51 【聞き耳】 (1D100&lt;=51) ＞ 60 ＞ 失敗
+            
+      </p>
+      </div>
+      <div class="mem2 right">
+      <span>八坂 七夕</span>
+      <p>
+      
+            「劇で出るからって現実でも出るかねー？」
+      </p>
+      </div>
+      <div class="mem2 right">
+      <span>八坂 七夕</span>
+      <p>
+      
+            CCB&lt;=55 【聞き耳】 (1D100&lt;=55) ＞ 79 ＞ 失敗
+            
+      </p>
+      </div>
+      <div class="mem1 left">
+      <span>淵切 亞煉</span>
+      <p>
+      
+            CCB&lt;=60 【聞き耳】 (1D100&lt;=60) ＞ 59 ＞ 成功
+            
+      </p>
+      </div>
+      <div class="kp LtoR-early">
+      
+            アレンくんは従業員の会話が聞こえてくる
+      </div>
+      <div class="mem8 right">
+      <span>従業員</span>
+      <p>
+      
+            「不備があったみたいで、いまキッチンとここ以外の換気扇が動かなくなったらしいわよ」
+      </p>
+      </div>
+      <div class="mem8 right">
+      <span>従業員</span>
+      <p>
+      
+            「またですか？一週間前も、無人の客室から異臭が漂って来ることありましたよね」
+      </p>
+      </div>
+      <div class="mem8 right">
+      <span>従業員</span>
+      <p>
+      
+            「そうね。最近、匂いについて少し問題が多いから注意しましょう」
+      </p>
+      </div>
+      <div class="kp LtoR-early">
+      
+            という話が聞こえてきますねぇ
+      </div>
+      <div class="mem1 left">
+      <span>淵切 亞煉</span>
+      <p>
+      
+            「なんだぁ？以外とボロい船なのか？」
+      </p>
+      </div>
+      <div class="kp LtoR-early">
+      
+            で、目をみる？
+      </div>
+      <div class="mem3 left">
+      <span>御守 月彦</span>
+      <p>
+      
+            CCB&lt;=25 【目星】 (1D100&lt;=25) ＞ 61 ＞ 失敗
+            
+      </p>
+      </div>
+      <div class="kp LtoR-early">
+      
+            ﾊﾟﾘｨﾝ
+      </div>
+      <div class="mem2 right">
+      <span>八坂 七夕</span>
+      <p>
+      
+            CCB&lt;=50 【目星】 (1D100&lt;=50) ＞ 83 ＞ 失敗
+            
+      </p>
+      </div>
+      <div class="mem1 left">
+      <span>淵切 亞煉</span>
+      <p>
+      
+            CCB&lt;=60 【目星】 (1D100&lt;=60) ＞ 86 ＞ 失敗
+            
+      </p>
+      </div>
+      <div class="kp LtoR-early">
+      
+            アンティークに心奪われました
+      </div>
+      <div class="mem3 left">
+      <span>御守 月彦</span>
+      <p>
+      
+            「どうされましたかな？」
+      </p>
+      </div>
+      <div class="kp LtoR-early">
+      
+            はい。そんな端っこの事なんて興味なかったですね。はい
+      </div>
+      <div class="kp LtoR-early">
+      
+            はい
+      </div>
+      <div class="mem1 left">
+      <span>淵切 亞煉</span>
+      <p>
+      
+            「なんか換気扇とかがイカれてるらしいんすよ<br>他にも無人の客室から臭いがしたりとかあるらしくて　ヤベーって」
+      </p>
+      </div>
+      <div class="mem2 right">
+      <span>八坂 七夕</span>
+      <p>
+      
+            「さっきも変なにおいしてたしなー」
+      </p>
+      </div>
+      <div class="mem3 left">
+      <span>御守 月彦</span>
+      <p>
+      
+            「デッキでおっしゃってたやつですか？」
+      </p>
+      </div>
+      <div class="kp LtoR-early">
+      
+            では
+      </div>
+      <div class="kp LtoR-early">
+      
+            気付けば時刻は二十二時。そろそろ船を降りる時間だと探索者が思っていると、徐に非常用のベルが鳴り響く。船内に響き渡る音に目を丸くする探索者だったが、スピーカーから荒い呼吸に身を固くする。
+      </div>
+      <div class="mem8 right">
+      <span>従業員</span>
+      <p>
+      
+            『ただいま、エントランスにて不審者が侵入しました。どうか落ち着いて、部屋にお戻り下さ―――』
+      </p>
+      </div>
+      <div class="mem8 right">
+      <span>従業員</span>
+      <p>
+      
+            『ああ…嫌っ！こうしろって言ったのはアナタじゃない！お願いだから、入って来ないで！』
+      </p>
+      </div>
+      <div class="mem8 right">
+      <span>従業員</span>
+      <p>
+      
+            『駄目！駄目よ！いや…ひ…あ、……いやあああああああああ！！！！』
+      </p>
+      </div>
+      <div class="kp LtoR-early">
+      
+            断末魔を最後に、スピーカーの向こう側は静まり返る。突然の出来事に船内はパニックに陥り、瞬く間に阿鼻叫喚の地獄絵図と化した。
+      </div>
+      <div class="kp LtoR-early">
+      
+            SANチェックです
+      </div>
+      <div class="mem1 left">
+      <span>淵切 亞煉</span>
+      <p>
+      
+            CCB&lt;=60 【SAN値チェック】 (1D100&lt;=60) ＞ 95 ＞ 失敗
+            
+      </p>
+      </div>
+      <div class="mem3 left">
+      <span>御守 月彦</span>
+      <p>
+      
+            CCB&lt;=60 【SAN値チェック】 (1D100&lt;=60) ＞ 15 ＞ 成功
+            
+      </p>
+      </div>
+      <div class="kp LtoR-early">
+      
+            成功で1、失敗で1D3
+      </div>
+      <div class="mem2 right">
+      <span>八坂 七夕</span>
+      <p>
+      
+            CCB&lt;=64 【SAN値チェック】 (1D100&lt;=64) ＞ 49 ＞ 成功
+            
+      </p>
+      </div>
+      <div class="mem5 left">
+      <span>system</span>
+      <p>
+      
+            [ 御守 月彦 ] SAN : 60 → 59
+      </p>
+      </div>
+      <div class="mem1 left">
+      <span>淵切 亞煉</span>
+      <p>
+      
+            1d3 (1D3) ＞ 2
+            
+      </p>
+      </div>
+      <div class="mem5 left">
+      <span>system</span>
+      <p>
+      
+            [ 八坂 七夕 ] SAN : 64 → 63
+      </p>
+      </div>
+      <div class="mem5 left">
+      <span>system</span>
+      <p>
+      
+            [ 淵切 亞煉 ] SAN : 60 → 58
+      </p>
+      </div>
+      <div class="kp LtoR-early">
+      
+            聞き耳をどうぞ
+      </div>
+      <div class="mem1 left">
+      <span>淵切 亞煉</span>
+      <p>
+      
+            「!!??」
+      </p>
+      </div>
+      <div class="mem3 left">
+      <span>御守 月彦</span>
+      <p>
+      
+            CCB&lt;=51 【聞き耳】 (1D100&lt;=51) ＞ 32 ＞ 成功
+            
+      </p>
+      </div>
+      <div class="mem2 right">
+      <span>八坂 七夕</span>
+      <p>
+      
+            「何事？ただ事じゃないね」
+      </p>
+      </div>
+      <div class="mem3 left">
+      <span>御守 月彦</span>
+      <p>
+      
+            「騒がしいですね。ひとまず状況確認を」
+      </p>
+      </div>
+      <div class="mem2 right">
+      <span>八坂 七夕</span>
+      <p>
+      
+            CCB&lt;=55 【聞き耳】 (1D100&lt;=55) ＞ 83 ＞ 失敗
+            
+      </p>
+      </div>
+      <div class="mem1 left">
+      <span>淵切 亞煉</span>
+      <p>
+      
+            CCB&lt;=60 【聞き耳】 (1D100&lt;=60) ＞ 66 ＞ 失敗
+            
+      </p>
+      </div>
+      <div class="kp LtoR-early">
+      
+            では、月彦さんはスピーカーの向こうから、獣のような呻き声が聞こえました。
+      </div>
+      <div class="kp LtoR-early">
+      
+            優秀
+      </div>
+      <div class="kp LtoR-early">
+      
+            優秀？
+      </div>
+      <div class="kp LtoR-early">
+      
+            廊下…出ていい？
+      </div>
+      <div class="mem3 left">
+      <span>御守 月彦</span>
+      <p>
+      
+            「…獣のような声が聞こえました。なんでしょうね。とりあえず出口へ」
+      </p>
+      </div>
+      <div class="mem1 left">
+      <span>淵切 亞煉</span>
+      <p>
+      
+            メリケンサックを握ります
+      </p>
+      </div>
+      <div class="mem2 right">
+      <span>八坂 七夕</span>
+      <p>
+      
+            ついてく
+      </p>
+      </div>
+      <div class="kp LtoR-early">
+      
+            探索者が廊下に出ると、そこは耐え難いほどの腐臭で満ちていた。<br>臭いの元は、―――人を襲っている。聞くに堪えないほど醜い声と、腐敗して虫の湧いた身体。従業員の服を身に纏ったそれは、紛れも無く異形の存在だった。
+      </div>
+      <div class="kp LtoR-early">
+      
+            そのような化け物を見た探索者はSANチェックです
+      </div>
+      <div class="kp LtoR-early">
+      
+            成功で1、失敗で1D8
+      </div>
+      <div class="mem3 left">
+      <span>御守 月彦</span>
+      <p>
+      
+            CCB&lt;=59 【SAN値チェック】 (1D100&lt;=59) ＞ 45 ＞ 成功
+            
+      </p>
+      </div>
+      <div class="mem2 right">
+      <span>八坂 七夕</span>
+      <p>
+      
+            CCB&lt;=63 【SAN値チェック】 (1D100&lt;=63) ＞ 22 ＞ 成功
+            
+      </p>
+      </div>
+      <div class="mem1 left">
+      <span>淵切 亞煉</span>
+      <p>
+      
+            CCB&lt;=58 【SAN値チェック】 (1D100&lt;=58) ＞ 61 ＞ 失敗
+            
+      </p>
+      </div>
+      <div class="mem5 left">
+      <span>system</span>
+      <p>
+      
+            [ 御守 月彦 ] SAN : 59 → 58
+      </p>
+      </div>
+      <div class="mem5 left">
+      <span>system</span>
+      <p>
+      
+            [ 八坂 七夕 ] SAN : 63 → 62
+      </p>
+      </div>
+      <div class="mem1 left">
+      <span>淵切 亞煉</span>
+      <p>
+      
+            1d8 (1D8) ＞ 2
+            
+      </p>
+      </div>
+      <div class="mem5 left">
+      <span>system</span>
+      <p>
+      
+            [ 淵切 亞煉 ] SAN : 58 → 56
+      </p>
+      </div>
+      <div class="mem3 left">
+      <span>御守 月彦</span>
+      <p>
+      
+            「まるで映画の様ですね」
+      </p>
+      </div>
+      <div class="kp LtoR-early">
+      
+            では
+      </div>
+      <div class="kp LtoR-early">
+      
+            どうしますか？
+      </div>
+      <div class="kp LtoR-early">
+      
+            対峙しますか？逃げますか？
+      </div>
+      <div class="mem1 left">
+      <span>淵切 亞煉</span>
+      <p>
+      
+            生存者はいる？
+      </p>
+      </div>
+      <div class="kp LtoR-early">
+      
+            見える限りにはいない
+      </div>
+      <div class="mem1 left">
+      <span>淵切 亞煉</span>
+      <p>
+      
+            撤退かな
+      </p>
+      </div>
+      <div class="mem2 right">
+      <span>八坂 七夕</span>
+      <p>
+      
+            「やば。逃げなきゃだね」
+      </p>
+      </div>
+      <div class="mem3 left">
+      <span>御守 月彦</span>
+      <p>
+      
+            「どこからか逃げられる場所は…そういえば搬入口がありましたね」
+      </p>
+      </div>
+      <div class="kp LtoR-early">
+      
+            あ。逃げるなら自動移動になります
+      </div>
+      <div class="mem2 right">
+      <span>八坂 七夕</span>
+      <p>
+      
+            「あったねー。入口がだめそうならそっちかな」
+      </p>
+      </div>
+      <div class="kp LtoR-early">
+      
+            では
+      </div>
+      <div class="mem1 left">
+      <span>淵切 亞煉</span>
+      <p>
+      
+            「とにかく離れないと…!」声抑えます
+      </p>
+      </div>
+      <div class="mem3 left">
+      <span>御守 月彦</span>
+      <p>
+      
+            「ひとまずあれから距離をとりましょう。殿はわたしが」
+      </p>
+      </div>
+      <div class="kp LtoR-early">
+      
+            キミたちは放送された通りエントランスに向かった…
+      </div>
+      <div class="mem2 right">
+      <span>八坂 七夕</span>
+      <p>
+      
+            「おっけ。いこう」
+      </p>
+      </div>
+      <div class="kp LtoR-early">
+      
+            悲鳴が、探索者の鼓膜を劈く。絢爛だったエントランスは腐臭と鉄の香りが充満しており、探索者の顔は歪んでしまうだろう。<br>　廊下に居たはずの異形の存在が、溢れかえっている。十数体の異形の存在は一般人を次々に襲うと、死亡したと思われた一般人は痙攣を起こし、地を這うような低い声で呻き起き上がった。<br>　そうして鼠算式に増えていく異形の存在は、閉ざされた地上への扉へと群がる大勢の人間を襲い始める。
+      </div>
+      <div class="kp LtoR-early">
+      
+            ここで目星できるよ
+      </div>
+      <div class="kp LtoR-early">
+      
+            戦闘したいなら出来るよ
+      </div>
+      <div class="mem1 left">
+      <span>淵切 亞煉</span>
+      <p>
+      
+            CCB&lt;=60 【目星】 (1D100&lt;=60) ＞ 99 ＞ 致命的失敗
+            
+      </p>
+      </div>
+      <div class="mem2 right">
+      <span>八坂 七夕</span>
+      <p>
+      
+            CCB&lt;=50 【目星】 (1D100&lt;=50) ＞ 30 ＞ 成功
+            
+      </p>
+      </div>
+      <div class="mem3 left">
+      <span>御守 月彦</span>
+      <p>
+      
+            CCB&lt;=25 【目星】 (1D100&lt;=25) ＞ 77 ＞ 失敗
+            
+      </p>
+      </div>
+      <div class="kp LtoR-early">
+      
+            アレンくんは今まで見てきた光景では有り得ない。大量の人の死体に、言葉が出てこない
+      </div>
+      <div class="kp LtoR-early">
+      
+            SANチェックしようか
+      </div>
+      <div class="mem1 left">
+      <span>淵切 亞煉</span>
+      <p>
+      
+            CCB&lt;=56 【SAN値チェック】 (1D100&lt;=56) ＞ 76 ＞ 失敗
+            
+      </p>
+      </div>
+      <div class="mem1 left">
+      <span>淵切 亞煉</span>
+      <p>
+      
+            1d3 (1D3) ＞ 1
+            
+      </p>
+      </div>
+      <div class="mem5 left">
+      <span>system</span>
+      <p>
+      
+            [ 淵切 亞煉 ] SAN : 56 → 55
+      </p>
+      </div>
+      <div class="kp LtoR-early">
+      
+            成功で0，失敗で1D3だったね（過去形）
+      </div>
+      <div class="mem1 left">
+      <span>淵切 亞煉</span>
+      <p>
+      
+            「なんで　死ぬまでやってんだ…?」
+      </p>
+      </div>
+      <div class="kp LtoR-early">
+      
+            七夕ちゃんはディナー会場から何食わぬ顔で有坂が出て来る。有坂はそのまま廊下へと姿を消すのを見つける。
+      </div>
+      <div class="mem2 right">
+      <span>八坂 七夕</span>
+      <p>
+      
+            「有坂さんすごい平気そうな顔してどっか行った……」
+      </p>
+      </div>
+      <div class="kp LtoR-early">
+      
+            さてゾンビはいくついるかな
+      </div>
+      <div class="kp LtoR-early">
+      
+            2D20 (2D20) ＞ 19[11,8] ＞ 19
+            
+      </div>
+      <div class="kp LtoR-early">
+      
+            19体のゾンビがいますね
+      </div>
+      <div class="kp LtoR-early">
+      
+            どうしますか？
+      </div>
+      <div class="mem1 left">
+      <span>淵切 亞煉</span>
+      <p>
+      
+            展示室まではいけそう？
+      </p>
+      </div>
+      <div class="kp LtoR-early">
+      
+            ちなみに二人は有坂さんを見つけられんね
+      </div>
+      <div class="kp LtoR-early">
+      
+            19体のゾンビから逃げられるならいいよ
+      </div>
+      <div class="kp LtoR-early">
+      
+            あ、言い直すね
+      </div>
+      <div class="mem2 right">
+      <span>八坂 七夕</span>
+      <p>
+      
+            「有坂さんなんか知ってるかな？それとも逃げたほうがいいかな？」
+      </p>
+      </div>
+      <div class="kp LtoR-early">
+      
+            19回の攻撃避けられたらいけるよ
+      </div>
+      <div class="mem1 left">
+      <span>淵切 亞煉</span>
+      <p>
+      
+            「くっそ　轢くにしても拾ってくにしても　これじゃどうにもならねぇ」
+      </p>
+      </div>
+      <div class="mem3 left">
+      <span>御守 月彦</span>
+      <p>
+      
+            「ゾンビには打撃は効きましたかな」
+      </p>
+      </div>
+      <div class="kp LtoR-early">
+      
+            七夕ちゃん
+      </div>
+      <div class="kp LtoR-early">
+      
+            有坂さんどこ行ったか気にならない？
+      </div>
+      <div class="mem2 right">
+      <span>八坂 七夕</span>
+      <p>
+      
+            「戦うの！？逃げないの！？」
+      </p>
+      </div>
+      <div class="kp LtoR-early">
+      
+            目で追いかけていい？
+      </div>
+      <div class="kp LtoR-early">
+      
+            成功してるから大丈夫
+      </div>
+      <div class="kp LtoR-early">
+      
+            「関係者以外立ち入り禁止」と書かれた一階の階段を降りていくのが見えましたね
+      </div>
+      <div class="kp LtoR-early">
+      
+            螺旋階段だったから分かるね
+      </div>
+      <div class="kp LtoR-early">
+      
+            ニュー探索エリア：従業員休憩室・エンジンルーム
+      </div>
+      <div class="kp LtoR-early">
+      
+            戦ってもいいよ？追いかけてもいいよ？
+      </div>
+      <div class="mem2 right">
+      <span>八坂 七夕</span>
+      <p>
+      
+            「関係者以外立ち入り禁止……非常時だし、隠れさせてもらおう！」
+      </p>
+      </div>
+      <div class="mem2 right">
+      <span>八坂 七夕</span>
+      <p>
+      
+            追いかけたし
+      </p>
+      </div>
+      <div class="mem1 left">
+      <span>淵切 亞煉</span>
+      <p>
+      
+            援護しよう
+      </p>
+      </div>
+      <div class="mem3 left">
+      <span>御守 月彦</span>
+      <p>
+      
+            「数が数ですからね。ひとまず向かいましょう」
+      </p>
+      </div>
+      <div class="kp LtoR-early">
+      
+            では、どっちいく？
+      </div>
+      <div class="mem1 left">
+      <span>淵切 亞煉</span>
+      <p>
+      
+            「露払いは任せろ！」
+      </p>
+      </div>
+      <div class="kp LtoR-early">
+      
+            と思ったんですが
+      </div>
+      <div class="kp LtoR-early">
+      
+            ＜入室前に強制聞き耳＞
+      </div>
+      <div class="kp LtoR-early">
+      
+            いくってことで
+      </div>
+      <div class="kp LtoR-early">
+      
+            はい。ききみみ
+      </div>
+      <div class="mem2 right">
+      <span>八坂 七夕</span>
+      <p>
+      
+            CCB&lt;=55 【聞き耳】 (1D100&lt;=55) ＞ 29 ＞ 成功
+            
+      </p>
+      </div>
+      <div class="mem3 left">
+      <span>御守 月彦</span>
+      <p>
+      
+            CCB&lt;=51 【聞き耳】 (1D100&lt;=51) ＞ 81 ＞ 失敗
+            
+      </p>
+      </div>
+      <div class="mem1 left">
+      <span>淵切 亞煉</span>
+      <p>
+      
+            CCB&lt;=60 【聞き耳】 (1D100&lt;=60) ＞ 21 ＞ 成功
+            
+      </p>
+      </div>
+      <div class="kp LtoR-early">
+      
+            はい。では
+      </div>
+      <div class="kp LtoR-early">
+      
+            女の悲鳴が聞こえた。
+      </div>
+      <div class="kp LtoR-early">
+      
+            聞こえた人SANチェックです
+      </div>
+      <div class="mem1 left">
+      <span>淵切 亞煉</span>
+      <p>
+      
+            CCB&lt;=55 【SAN値チェック】 (1D100&lt;=55) ＞ 37 ＞ 成功
+            
+      </p>
+      </div>
+      <div class="kp LtoR-early">
+      
+            成功で0、失敗で1
+      </div>
+      <div class="mem2 right">
+      <span>八坂 七夕</span>
+      <p>
+      
+            CCB&lt;=62 【SAN値チェック】 (1D100&lt;=62) ＞ 8 ＞ スペシャル
+            
+      </p>
+      </div>
+      <div class="kp LtoR-early">
+      
+            はい
+      </div>
+      <div class="kp LtoR-early">
+      
+            死体見た後の悲鳴はどうってことないね
+      </div>
+      <div class="kp LtoR-early">
+      
+            どうします？
+      </div>
+      <div class="mem2 right">
+      <span>八坂 七夕</span>
+      <p>
+      
+            「スタッフルームってことは、放送室もあるのかな」
+      </p>
+      </div>
+      <div class="mem1 left">
+      <span>淵切 亞煉</span>
+      <p>
+      
+            「女だ！どこだァ！」
+      </p>
+      </div>
+      <div class="kp LtoR-early">
+      
+            中に入りますか？
+      </div>
+      <div class="mem2 right">
+      <span>八坂 七夕</span>
+      <p>
+      
+            「開けるよ？」
+      </p>
+      </div>
+      <div class="mem1 left">
+      <span>淵切 亞煉</span>
+      <p>
+      
+            おけ
+      </p>
+      </div>
+      <div class="kp LtoR-early">
+      
+            部屋に入ると、一体のゾンビが白雪を襲っている。白雪の細い首は血で汚れており、虚ろな瞳は天井を見上げていた。
+      </div>
+      <div class="mem2 right">
+      <span>八坂 七夕</span>
+      <p>
+      
+            そっとあけます
+      </p>
+      </div>
+      <div class="kp LtoR-early">
+      
+            ゾンビ1体と強制戦闘です
+      </div>
+      <div class="kp LtoR-early">
+      
+            ゾンビは行動順は最後です
+      </div>
+      <div class="kp LtoR-early">
+      
+            アレンくんどうぞ
+      </div>
+      <div class="mem1 left">
+      <span>淵切 亞煉</span>
+      <p>
+      
+            こぶしマーシャル+メリケン
+      </p>
+      </div>
+      <div class="mem1 left">
+      <span>淵切 亞煉</span>
+      <p>
+      
+            CCB&lt;=80 【こぶし（パンチ）】 (1D100&lt;=80) ＞ 86 ＞ 失敗
+            
+      </p>
+      </div>
+      <div class="kp LtoR-early">
+      
+            すかっ
+      </div>
+      <div class="mem1 left">
+      <span>淵切 亞煉</span>
+      <p>
+      
+            「っのヤロウ!!」
+      </p>
+      </div>
+      <div class="kp LtoR-early">
+      
+            七夕ちゃんかな。次
+      </div>
+      <div class="mem2 right">
+      <span>八坂 七夕</span>
+      <p>
+      
+            「落ち着いてよ」
+      </p>
+      </div>
+      <div class="mem2 right">
+      <span>八坂 七夕</span>
+      <p>
+      
+            こぶしで
+      </p>
+      </div>
+      <div class="mem2 right">
+      <span>八坂 七夕</span>
+      <p>
+      
+            CCB&lt;=59 【こぶし（パンチ）】 (1D100&lt;=59) ＞ 61 ＞ 失敗
+            
+      </p>
+      </div>
+      <div class="kp LtoR-early">
+      
+            すかっ
+      </div>
+      <div class="mem2 right">
+      <span>八坂 七夕</span>
+      <p>
+      
+            「うへぇ。当たんなかった」
+      </p>
+      </div>
+      <div class="kp LtoR-early">
+      
+            月彦おじいちゃん
+      </div>
+      <div class="mem3 left">
+      <span>御守 月彦</span>
+      <p>
+      
+            杖でなぐります
+      </p>
+      </div>
+      <div class="mem3 left">
+      <span>御守 月彦</span>
+      <p>
+      
+            CCB&lt;=70 【杖術】 (1D100&lt;=70) ＞ 58 ＞ 成功
+            
+      </p>
+      </div>
+      <div class="mem3 left">
+      <span>御守 月彦</span>
+      <p>
+      
+            1ｄ6 (1D6) ＞ 6
+            
+      </p>
+      </div>
+      <div class="mem3 left">
+      <span>御守 月彦</span>
+      <p>
+      
+            「よいしょっと」
+      </p>
+      </div>
+      <div class="kp LtoR-early">
+      
+            ぞんび
+      </div>
+      <div class="mem2 right">
+      <span>八坂 七夕</span>
+      <p>
+      
+            「いいなぁ飛び道具！あたしもなんかもって来ればよかった」
+      </p>
+      </div>
+      <div class="mem9 left">
+      <span>ゾンビ</span>
+      <p>
+      
+            schoice[月彦,アレン,七夕] (choice[月彦,アレン,七夕]) ＞ 七夕
+            
+      </p>
+      </div>
+      <div class="mem9 left">
+      <span>ゾンビ</span>
+      <p>
+      
+            schoice[噛み付き,大きな棍棒] (choice[噛み付き,大きな棍棒]) ＞ 噛み付き
+            
+      </p>
+      </div>
+      <div class="mem9 left">
+      <span>ゾンビ</span>
+      <p>
+      
+            s1D100&lt;=30 [噛み付き] (1D100&lt;=30) ＞ 97 ＞ 失敗
+            
+      </p>
+      </div>
+      <div class="kp LtoR-early">
+      
+            えっと
+      </div>
+      <div class="kp LtoR-early">
+      
+            えっと
+      </div>
+      <div class="kp LtoR-early">
+      
+            ゾンビは七夕さんに噛みつこうとしましたが、こけました
+      </div>
+      <div class="kp LtoR-early">
+      
+            次のターン行動不能です
+      </div>
+      <div class="mem2 right">
+      <span>八坂 七夕</span>
+      <p>
+      
+            「こけた……」
+      </p>
+      </div>
+      <div class="kp LtoR-early">
+      
+            はい。アレンくんです
+      </div>
+      <div class="mem1 left">
+      <span>淵切 亞煉</span>
+      <p>
+      
+            蹴りマーシャルを！
+      </p>
+      </div>
+      <div class="kp LtoR-early">
+      
+            メリケンサックを付けて蹴る
+      </div>
+      <div class="kp LtoR-early">
+      
+            トンファーキックかな
+      </div>
+      <div class="mem1 left">
+      <span>淵切 亞煉</span>
+      <p>
+      
+            CCB&lt;=80 【マーシャルアーツ】 (1D100&lt;=80) ＞ 53 ＞ 成功
+            
+      </p>
+      </div>
+      <div class="kp LtoR-early">
+      
+            はいダメージ
+      </div>
+      <div class="mem1 left">
+      <span>淵切 亞煉</span>
+      <p>
+      
+            2d6 (2D6) ＞ 4[2,2] ＞ 4
+            
+      </p>
+      </div>
+      <div class="kp LtoR-early">
+      
+            はい
+      </div>
+      <div class="kp LtoR-early">
+      
+            いたい
+      </div>
+      <div class="kp LtoR-early">
+      
+            七夕ちゃん
+      </div>
+      <div class="mem1 left">
+      <span>淵切 亞煉</span>
+      <p>
+      
+            「死に晒せやクソボケェ！」
+      </p>
+      </div>
+      <div class="mem2 right">
+      <span>八坂 七夕</span>
+      <p>
+      
+            CCB&lt;=59 【こぶし（パンチ）】 (1D100&lt;=59) ＞ 91 ＞ 失敗
+            
+      </p>
+      </div>
+      <div class="kp LtoR-early">
+      
+            すかっ
+      </div>
+      <div class="kp LtoR-early">
+      
+            おじいちゃん
+      </div>
+      <div class="mem2 right">
+      <span>八坂 七夕</span>
+      <p>
+      
+            「おくちが悪いよアレンくん！」
+      </p>
+      </div>
+      <div class="mem3 left">
+      <span>御守 月彦</span>
+      <p>
+      
+            CCB&lt;=70 【杖術】 (1D100&lt;=70) ＞ 14 ＞ スペシャル
+            
+      </p>
+      </div>
+      <div class="mem3 left">
+      <span>御守 月彦</span>
+      <p>
+      
+            1ｄ6 (1D6) ＞ 4
+            
+      </p>
+      </div>
+      <div class="kp LtoR-early">
+      
+            アレン君
+      </div>
+      <div class="kp LtoR-early">
+      
+            あ。ゾンビ起き上がりました
+      </div>
+      <div class="mem3 left">
+      <span>御守 月彦</span>
+      <p>
+      
+            「ゾンビだからもう死んでますねぇ」
+      </p>
+      </div>
+      <div class="kp LtoR-early">
+      
+            ぼどぼどだよぉ
+      </div>
+      <div class="mem1 left">
+      <span>淵切 亞煉</span>
+      <p>
+      
+            マーシャルキック！
+      </p>
+      </div>
+      <div class="kp LtoR-early">
+      
+            はい
+      </div>
+      <div class="mem1 left">
+      <span>淵切 亞煉</span>
+      <p>
+      
+            CCB&lt;=80 【キック】 (1D100&lt;=80) ＞ 1 ＞ 決定的成功/スペシャル
+            
+      </p>
+      </div>
+      <div class="kp LtoR-early">
+      
+            4D6で
+      </div>
+      <div class="mem1 left">
+      <span>淵切 亞煉</span>
+      <p>
+      
+            4d6 (4D6) ＞ 12[5,2,2,3] ＞ 12
+            
+      </p>
+      </div>
+      <div class="kp LtoR-early">
+      
+            アレンくんの見事な蹴りがゾンビに入り
+      </div>
+      <div class="kp LtoR-early">
+      
+            倒れました。
+      </div>
+      <div class="mem3 left">
+      <span>御守 月彦</span>
+      <p>
+      
+            「よい足をお持ちで！」
+      </p>
+      </div>
+      <div class="kp LtoR-early">
+      
+            勝利のファンファーレ
+      </div>
+      <div class="mem1 left">
+      <span>淵切 亞煉</span>
+      <p>
+      
+            「二度と起きんなドブカスゥ！」
+      </p>
+      </div>
+      <div class="mem2 right">
+      <span>八坂 七夕</span>
+      <p>
+      
+            「おくちおくち」
+      </p>
+      </div>
+      <div class="kp LtoR-early">
+      
+            さて
+      </div>
+      <div class="kp LtoR-early">
+      
+            どうする？
+      </div>
+      <div class="kp LtoR-early">
+      
+            では、アレンくんは白雪ちゃんを調べて。
+      </div>
+      <div class="kp LtoR-early">
+      
+            他は幸運？
+      </div>
+      <div class="mem1 left">
+      <span>淵切 亞煉</span>
+      <p>
+      
+            「大丈夫か女ァ！」<br>応急手当て
+      </p>
+      </div>
+      <div class="mem1 left">
+      <span>淵切 亞煉</span>
+      <p>
+      
+            CCB&lt;=70 【応急手当】 (1D100&lt;=70) ＞ 95 ＞ 失敗
+            
+      </p>
+      </div>
+      <div class="kp LtoR-early">
+      
+            し…しんでる！SANチェックです
+      </div>
+      <div class="mem1 left">
+      <span>淵切 亞煉</span>
+      <p>
+      
+            CCB&lt;=55 【SAN値チェック】 (1D100&lt;=55) ＞ 1 ＞ 決定的成功/スペシャル
+            
+      </p>
+      </div>
+      <div class="mem3 left">
+      <span>御守 月彦</span>
+      <p>
+      
+            「なくなっていても女性ですよアレンさん」
+      </p>
+      </div>
+      <div class="kp LtoR-early">
+      
+            強靭な精神は強靭な肉体に宿る
+      </div>
+      <div class="mem1 left">
+      <span>淵切 亞煉</span>
+      <p>
+      
+            「駄目だ！だろうな！」
+      </p>
+      </div>
+      <div class="mem2 right">
+      <span>八坂 七夕</span>
+      <p>
+      
+            「ダメか―……」
+      </p>
+      </div>
+      <div class="mem3 left">
+      <span>御守 月彦</span>
+      <p>
+      
+            CCB&lt;=55 【幸運】 (1D100&lt;=55) ＞ 20 ＞ 成功
+            
+      </p>
+      </div>
+      <div class="mem2 right">
+      <span>八坂 七夕</span>
+      <p>
+      
+            CCB&lt;=60 【幸運】 (1D100&lt;=60) ＞ 39 ＞ 成功
+            
+      </p>
+      </div>
+      <div class="kp LtoR-early">
+      
+            アレン君は手当てをしようと触り、完全に死んでいると確信したが、強靭な精神で耐える事ができました。手荷物もないことが分かりました
+      </div>
+      <div class="kp LtoR-early">
+      
+            二人で仲良く棚から応急手当セットを一つ見つけました
+      </div>
+      <div class="mem3 left">
+      <span>御守 月彦</span>
+      <p>
+      
+            「こんな時ですし拝借しましょうか」
+      </p>
+      </div>
+      <div class="mem2 right">
+      <span>八坂 七夕</span>
+      <p>
+      
+            「そうだね。緊急事態だし」
+      </p>
+      </div>
+      <div class="kp LtoR-early">
+      
+            二人とも死体にSANチェックする？
+      </div>
+      <div class="mem3 left">
+      <span>御守 月彦</span>
+      <p>
+      
+            「杖持ってるのでお任せしても？」
+      </p>
+      </div>
+      <div class="mem2 right">
+      <span>八坂 七夕</span>
+      <p>
+      
+            「おっけー」
+      </p>
+      </div>
+      <div class="kp LtoR-early">
+      
+            二人とも死体にSANチェックする？
+      </div>
+      <div class="mem3 left">
+      <span>御守 月彦</span>
+      <p>
+      
+            CCB&lt;=58 【SAN値チェック】 (1D100&lt;=58) ＞ 34 ＞ 成功
+            
+      </p>
+      </div>
+      <div class="kp LtoR-early">
+      
+            0/1D3 (0/1D3) ＞ 0/2[2] ＞ 0
+            
+      </div>
+      <div class="mem2 right">
+      <span>八坂 七夕</span>
+      <p>
+      
+            CCB&lt;=62 【SAN値チェック】 (1D100&lt;=62) ＞ 78 ＞ 失敗
+            
+      </p>
+      </div>
+      <div class="mem2 right">
+      <span>八坂 七夕</span>
+      <p>
+      
+            1ｄ3 (1D3) ＞ 1
+            
+      </p>
+      </div>
+      <div class="mem5 left">
+      <span>system</span>
+      <p>
+      
+            [ 八坂 七夕 ] SAN : 62 → 61
+      </p>
+      </div>
+      <div class="mem1 left">
+      <span>淵切 亞煉</span>
+      <p>
+      
+            CCB&lt;=60 【幸運】 (1D100&lt;=60) ＞ 70 ＞ 失敗
+            
+      </p>
+      </div>
+      <div class="kp LtoR-early">
+      
+            紐なかったです
+      </div>
+      <div class="mem1 left">
+      <span>淵切 亞煉</span>
+      <p>
+      
+            残念
+      </p>
+      </div>
+      <div class="kp LtoR-early">
+      
+            え
+      </div>
+      <div class="kp LtoR-early">
+      
+            おじいちゃんネクタイ外さないの？
+      </div>
+      <div class="kp LtoR-early">
+      
+            幸運どうぞ
+      </div>
+      <div class="mem3 left">
+      <span>御守 月彦</span>
+      <p>
+      
+            CCB&lt;=55 【幸運】 (1D100&lt;=55) ＞ 91 ＞ 失敗
+            
+      </p>
+      </div>
+      <div class="kp LtoR-early">
+      
+            はい
+      </div>
+      <div class="mem2 right">
+      <span>八坂 七夕</span>
+      <p>
+      
+            CCB&lt;=60 【幸運】 (1D100&lt;=60) ＞ 41 ＞ 成功
+            
+      </p>
+      </div>
+      <div class="kp LtoR-early">
+      
+            紐ありましたー
+      </div>
+      <div class="mem3 left">
+      <span>御守 月彦</span>
+      <p>
+      
+            「ゾンビ映画だと噛まれた人がゾンビになるのが常識ですね」
+      </p>
+      </div>
+      <div class="mem2 right">
+      <span>八坂 七夕</span>
+      <p>
+      
+            「紐あった！白雪さん縛っとく？」
+      </p>
+      </div>
+      <div class="mem1 left">
+      <span>淵切 亞煉</span>
+      <p>
+      
+            「見知った顔はやりにくいから困るぜ…」
+      </p>
+      </div>
+      <div class="kp LtoR-early">
+      
+            縛りますか？
+      </div>
+      <div class="kp LtoR-early">
+      
+            エロ同人みたいに！エロ同人みたいに！
+      </div>
+      <div class="mem2 right">
+      <span>八坂 七夕</span>
+      <p>
+      
+            「さっきちょっと会っただけだけどね……」縛ります
+      </p>
+      </div>
+      <div class="kp LtoR-early">
+      
+            縛られます
+      </div>
+      <div class="kp LtoR-early">
+      
+            先に振っておくか
+      </div>
+      <div class="kp LtoR-early">
+      
+            s1D100 (1D100) ＞ 57
+            
+      </div>
+      <div class="kp LtoR-early">
+      
+            はい
+      </div>
+      <div class="kp LtoR-early">
+      
+            バリケードしとく？
+      </div>
+      <div class="mem3 left">
+      <span>御守 月彦</span>
+      <p>
+      
+            「ここはこれだけですかね。先に進みましょうか」
+      </p>
+      </div>
+      <div class="kp LtoR-early">
+      
+            先に進みますか？
+      </div>
+      <div class="mem1 left">
+      <span>淵切 亞煉</span>
+      <p>
+      
+            いこうか
+      </p>
+      </div>
+      <div class="kp LtoR-early">
+      
+            　船の命とも言える部屋だ。様々なエンジンが忙しなく稼働しており、室内は広々としている。<br>　その部屋の一角に、数体の異形の存在を引き連れて有坂は居た。有坂は何かのバルブを一撫ですると探索者に気付いたのか、物腰柔らかな笑みを浮べる。
+      </div>
+      <div class="mem10 right">
+      <span>有坂</span>
+      <p>
+      
+            「おや」
+      </p>
+      </div>
+      <div class="mem3 left">
+      <span>御守 月彦</span>
+      <p>
+      
+            「黒幕…といったところですかな」
+      </p>
+      </div>
+      <div class="mem10 right">
+      <span>有坂</span>
+      <p>
+      
+            「仰る通り、ですね」
+      </p>
+      </div>
+      <div class="mem2 right">
+      <span>八坂 七夕</span>
+      <p>
+      
+            「あっこいつやばいやつだね」
+      </p>
+      </div>
+      <div class="mem1 left">
+      <span>淵切 亞煉</span>
+      <p>
+      
+            「何してんだテメェ…?」
+      </p>
+      </div>
+      <div class="mem10 right">
+      <span>有坂</span>
+      <p>
+      
+            「何をと言われましても…」
+      </p>
+      </div>
+      <div class="mem10 right">
+      <span>有坂</span>
+      <p>
+      
+            「あの御方の召喚にはまだ生贄が足りないわけでしてね。これは、生贄を増やすための手段なんですよ」
+      </p>
+      </div>
+      <div class="mem2 right">
+      <span>八坂 七夕</span>
+      <p>
+      
+            「有坂さんがゾンビ生み出したの？」
+      </p>
+      </div>
+      <div class="mem10 right">
+      <span>有坂</span>
+      <p>
+      
+            「まぁ、そういうことになりますね」
+      </p>
+      </div>
+      <div class="mem2 right">
+      <span>八坂 七夕</span>
+      <p>
+      
+            「異臭はゾンビってことかな」
+      </p>
+      </div>
+      <div class="mem3 left">
+      <span>御守 月彦</span>
+      <p>
+      
+            「あのお方…はっは本当に悪役のようで。しかしここてくたばってやることはできませんよ私は」
+      </p>
+      </div>
+      <div class="mem2 right">
+      <span>八坂 七夕</span>
+      <p>
+      
+            「趣味悪いなぁ……。ドレスで闘いたくないんだけど」
+      </p>
+      </div>
+      <div class="kp LtoR-early">
+      
+            探索者の質問に答えると、有坂は肩を竦めた。
+      </div>
+      <div class="mem1 left">
+      <span>淵切 亞煉</span>
+      <p>
+      
+            「趣味悪ィな！死ねェ！」
+      </p>
+      </div>
+      <div class="mem10 right">
+      <span>有坂</span>
+      <p>
+      
+            「質問は以上でよろしいでしょうか」
+      </p>
+      </div>
+      <div class="mem10 right">
+      <span>有坂</span>
+      <p>
+      
+            「ご覧の通り、私は忙しい身でして。くだらない世間話なら、お仲間と楽しんでくださいよ―――あの世でね」
+      </p>
+      </div>
+      <div class="kp LtoR-early">
+      
+            そう告げて、有坂はバルブを回す。途端にどこからとも無くガスが漏れるような音が聞こえ、有坂は顔を歪めて笑い始めた。
+      </div>
+      <div class="mem10 right">
+      <span>有坂</span>
+      <p>
+      
+            「ははっ！いつの時代も、ガスっていうのは便利で助かりますね！…これで漸く、あの御方をお呼びすることが出来そうだ」
+      </p>
+      </div>
+      <div class="mem2 right">
+      <span>八坂 七夕</span>
+      <p>
+      
+            「んー。待って待って。あの方って誰よ……うへぇ！」
+      </p>
+      </div>
+      <div class="mem10 right">
+      <span>有坂</span>
+      <p>
+      
+            「あなた達には感謝いたします。そして、光栄に思いなさい。その命、あの御方のために使えるのですから」
+      </p>
+      </div>
+      <div class="kp LtoR-early">
+      
+            有坂がそう言うや否や、エンジンルームへと凹んだ扉が飛んで来る。
+      </div>
+      <div class="mem3 left">
+      <span>御守 月彦</span>
+      <p>
+      
+            「火器の類はないんですが…しかし長居はきけんですね」
+      </p>
+      </div>
+      <div class="kp LtoR-early">
+      
+            見れば、そこには十数体の異形の存在に加え、優に二メートルはあるだろう全身を黒い体毛に覆われた獣人が佇んでいた。
+      </div>
+      <div class="mem2 right">
+      <span>八坂 七夕</span>
+      <p>
+      
+            「せっかちだなぁ。悪役はもっとどっしりしててよー」
+      </p>
+      </div>
+      <div class="kp LtoR-early">
+      
+            SANチェックですの。成功で0
+      </div>
+      <div class="mem1 left">
+      <span>淵切 亞煉</span>
+      <p>
+      
+            CCB&lt;=55 【SAN値チェック】 (1D100&lt;=55) ＞ 34 ＞ 成功
+            
+      </p>
+      </div>
+      <div class="kp LtoR-early">
+      
+            失敗で1D8
+      </div>
+      <div class="mem2 right">
+      <span>八坂 七夕</span>
+      <p>
+      
+            「……どっしりしたやつ出てきた」
+      </p>
+      </div>
+      <div class="mem3 left">
+      <span>御守 月彦</span>
+      <p>
+      
+            CCB&lt;=58 【SAN値チェック】 (1D100&lt;=58) ＞ 17 ＞ 成功
+            
+      </p>
+      </div>
+      <div class="mem2 right">
+      <span>八坂 七夕</span>
+      <p>
+      
+            CCB&lt;=61 【SAN値チェック】 (1D100&lt;=61) ＞ 31 ＞ 成功
+            
+      </p>
+      </div>
+      <div class="kp LtoR-early">
+      
+            へらないなぁ
+      </div>
+      <div class="mem3 left">
+      <span>御守 月彦</span>
+      <p>
+      
+            「ひとまず空気が吸える場所へ出なければ」
+      </p>
+      </div>
+      <div class="mem1 left">
+      <span>淵切 亞煉</span>
+      <p>
+      
+            「劇場とキッチンなら換気扇が生きてるハズだぜ！」
+      </p>
+      </div>
+      <div class="kp LtoR-early">
+      
+            有坂は出入口とは反対側の扉から逃亡するのでばいばい
+      </div>
+      <div class="kp LtoR-early">
+      
+            この部屋から逃げる場合、DEX対抗である。
+      </div>
+      <div class="kp LtoR-early">
+      
+            アレンくん65
+      </div>
+      <div class="kp LtoR-early">
+      
+            七夕ちゃん55
+      </div>
+      <div class="kp LtoR-early">
+      
+            おじいちゃん
+      </div>
+      <div class="kp LtoR-early">
+      
+            はい
+      </div>
+      <div class="kp LtoR-early">
+      
+            あ、25でした
+      </div>
+      <div class="kp LtoR-early">
+      
+            がんばれ
+      </div>
+      <div class="mem3 left">
+      <span>御守 月彦</span>
+      <p>
+      
+            「お先に！はやく！」
+      </p>
+      </div>
+      <div class="kp LtoR-early">
+      
+            では戦闘ラウンドになります
+      </div>
+      <div class="kp LtoR-early">
+      
+            アレン君ですね
+      </div>
+      <div class="mem1 left">
+      <span>淵切 亞煉</span>
+      <p>
+      
+            1d100 (1D100) ＞ 55
+            
+      </p>
+      </div>
+      <div class="kp LtoR-early">
+      
+            はい七夕ちゃん
+      </div>
+      <div class="mem2 right">
+      <span>八坂 七夕</span>
+      <p>
+      
+            1ｄ100 (1D100) ＞ 3
+            
+      </p>
+      </div>
+      <div class="mem1 left">
+      <span>淵切 亞煉</span>
+      <p>
+      
+            「早く来てくれよ！」逃げ
+      </p>
+      </div>
+      <div class="kp LtoR-early">
+      
+            おじちゃん
+      </div>
+      <div class="kp LtoR-early">
+      
+            おっと
+      </div>
+      <div class="mem3 left">
+      <span>御守 月彦</span>
+      <p>
+      
+            1ｄ100 (1D100) ＞ 37
+            
+      </p>
+      </div>
+      <div class="kp LtoR-early">
+      
+            はい
+      </div>
+      <div class="kp LtoR-early">
+      
+            すっぽぬけて狼男のターン抜けたぜ
+      </div>
+      <div class="mem11 left">
+      <span>狼男</span>
+      <p>
+      
+            schoice[噛み付き,かぎ爪] (choice[噛み付き,かぎ爪]) ＞ 噛み付き
+            
+      </p>
+      </div>
+      <div class="mem11 left">
+      <span>狼男</span>
+      <p>
+      
+            s1D100&lt;=30 [噛み付き] (1D100&lt;=30) ＞ 36 ＞ 失敗
+            
+      </p>
+      </div>
+      <div class="kp LtoR-early">
+      
+            なんもなかったです
+      </div>
+      <div class="kp LtoR-early">
+      
+            では
+      </div>
+      <div class="kp LtoR-early">
+      
+            クリティカル効果です
+      </div>
+      <div class="kp LtoR-early">
+      
+            不意に、凹んだ扉側に居た異形の存在が呻く。一体、また一体と上がる悲鳴に異形の存在らが探索者から意識が逸れた途端、探索者の頭上から誰かが降り立った。
+      </div>
+      <div class="mem12 right">
+      <span>？？？</span>
+      <p>
+      
+            「やはり、こうなってしまったか」
+      </p>
+      </div>
+      <div class="kp LtoR-early">
+      
+            そう呟きながら、血塗れの服を纏った女は振り返る。
+      </div>
+      <div class="mem13 left">
+      <span>白雪</span>
+      <p>
+      
+            「一先ず逃げるぞ」
+      </p>
+      </div>
+      <div class="kp LtoR-early">
+      
+            そうして女が何かを呟いた途端、探索者の目の前は白み―――気が付くと、展示室に佇んでいた。
+      </div>
+      <div class="mem2 right">
+      <span>八坂 七夕</span>
+      <p>
+      
+            「あぁ！？白雪さん！？」
+      </p>
+      </div>
+      <div class="mem1 left">
+      <span>淵切 亞煉</span>
+      <p>
+      
+            「女ァ！？」
+      </p>
+      </div>
+      <div class="mem13 left">
+      <span>白雪</span>
+      <p>
+      
+            「女とはなんだ。女とは」
+      </p>
+      </div>
+      <div class="mem1 left">
+      <span>淵切 亞煉</span>
+      <p>
+      
+            「だっ　おま　死んでただろ！？」
+      </p>
+      </div>
+      <div class="mem13 left">
+      <span>白雪</span>
+      <p>
+      
+            「あれくらいで死ぬはずがないであろう」
+      </p>
+      </div>
+      <div class="mem3 left">
+      <span>御守 月彦</span>
+      <p>
+      
+            「おや…これはこれは…先ほどは失礼いたしました。貴方は味方とみてよろしいので？」
+      </p>
+      </div>
+      <div class="mem13 left">
+      <span>白雪</span>
+      <p>
+      
+            「味方か…か。有坂を倒すまではその味方なのだろうな」
+      </p>
+      </div>
+      <div class="mem2 right">
+      <span>八坂 七夕</span>
+      <p>
+      
+            「じゃああそこで死んでた人は誰……？」
+      </p>
+      </div>
+      <div class="mem13 left">
+      <span>白雪</span>
+      <p>
+      
+            「さぁな」
+      </p>
+      </div>
+      <div class="mem1 left">
+      <span>淵切 亞煉</span>
+      <p>
+      
+            「えっ　えっ<br>アザっす！」
+      </p>
+      </div>
+      <div class="mem3 left">
+      <span>御守 月彦</span>
+      <p>
+      
+            「有坂とのご関係をお聞きしても？」
+      </p>
+      </div>
+      <div class="kp LtoR-early">
+      
+            白雪は深々と溜め息を吐くと、苦々し気な表情で口を開く。
+      </div>
+      <div class="mem13 left">
+      <span>白雪</span>
+      <p>
+      
+            「私は元々この船に住み着いていた吸血鬼なのだが、数年前の夜、有坂の襲撃により奪われてしまった」
+      </p>
+      </div>
+      <div class="mem13 left">
+      <span>白雪</span>
+      <p>
+      
+            「世間的には一切知られていないが、ここに居る殆どの従業員はそのときの襲撃によって殺され…有坂の眷属にされてしまったのだ」
+      </p>
+      </div>
+      <div class="mem13 left">
+      <span>白雪</span>
+      <p>
+      
+            「有坂は幾つかの呪文により、それを上手く隠蔽していた。だが奴はとうとう、あの悍ましい計画を実行するらしい」
+      </p>
+      </div>
+      <div class="mem13 left">
+      <span>白雪</span>
+      <p>
+      
+            「私は人間がどうなろうと関係ない。ただ、住みかと餌を奪われた上にコケにされるなど、数百年に及ぶ私のプライドが許さないのだ」
+      </p>
+      </div>
+      <div class="mem13 left">
+      <span>白雪</span>
+      <p>
+      
+            「どの道、このままでは有坂の計画によって大勢の人間が死ぬ。この船に留まらず、この街に住む全ての人間が対象だ。それを避けたいと言うのならば、私に協力しろ」
+      </p>
+      </div>
+      <div class="mem2 right">
+      <span>八坂 七夕</span>
+      <p>
+      
+            「餌ってヒト？」
+      </p>
+      </div>
+      <div class="mem1 left">
+      <span>淵切 亞煉</span>
+      <p>
+      
+            「街ィ!?」
+      </p>
+      </div>
+      <div class="mem13 left">
+      <span>白雪</span>
+      <p>
+      
+            「吸血鬼のエサとなれば決まっておるであろう？」
+      </p>
+      </div>
+      <div class="mem2 right">
+      <span>八坂 七夕</span>
+      <p>
+      
+            「血かー」
+      </p>
+      </div>
+      <div class="mem3 left">
+      <span>御守 月彦</span>
+      <p>
+      
+            「一難去ってまた一難になる可能性があるんですねぇ。しかし有坂を放っておけないのも事実ですね」
+      </p>
+      </div>
+      <div class="mem3 left">
+      <span>御守 月彦</span>
+      <p>
+      
+            「協力とは具体的には？」
+      </p>
+      </div>
+      <div class="mem1 left">
+      <span>淵切 亞煉</span>
+      <p>
+      
+            「なんだ　アイツを殺せばいいのか？」
+      </p>
+      </div>
+      <div class="kp LtoR-early">
+      
+            では、協力するということで、貴方達は呪文「門の創造」を教わります
+      </div>
+      <div class="mem2 right">
+      <span>八坂 七夕</span>
+      <p>
+      
+            「まぁ、この状況だと協力せざるを得ないよねー……」
+      </p>
+      </div>
+      <div class="mem13 left">
+      <span>白雪</span>
+      <p>
+      
+            「銀の鍵を探せ」
+      </p>
+      </div>
+      <div class="mem13 left">
+      <span>白雪</span>
+      <p>
+      
+            「そして、銀の鍵を使い、鍵穴を回せ。扉はどこでも良い。呪文を唱えながら回せば、ここではない“どこか”に繋がるらしい。だがショーケースは特別な加工が施されているため、素手で破壊するのはまず難しいだろうな」
+      </p>
+      </div>
+      <div class="mem3 left">
+      <span>御守 月彦</span>
+      <p>
+      
+            「劇場にありましたね」
+      </p>
+      </div>
+      <div class="mem13 left">
+      <span>白雪</span>
+      <p>
+      
+            「兎に角。鍵を使えば、あの忌まわしき化けモノ共を一掃できる手段が見つかるかもしれない。―――そう聞いた」
+      </p>
+      </div>
+      <div class="mem13 left">
+      <span>白雪</span>
+      <p>
+      
+            「私は化けモノ共を食い止める。これ以上、住居と餌を荒らされることは許容出来ない」
+      </p>
+      </div>
+      <div class="mem1 left">
+      <span>淵切 亞煉</span>
+      <p>
+      
+            「直接叩くのはダメなのか？」
+      </p>
+      </div>
+      <div class="mem13 left">
+      <span>白雪</span>
+      <p>
+      
+            「だから言っておるであろう。特別な加工が施されているものを素手では無理だとな」
+      </p>
+      </div>
+      <div class="mem13 left">
+      <span>白雪</span>
+      <p>
+      
+            「何か物を介して破壊すればよかろう」
+      </p>
+      </div>
+      <div class="mem3 left">
+      <span>御守 月彦</span>
+      <p>
+      
+            「武器もありましたしちょうどいいでしょう。カジノにオノならありましたが」
+      </p>
+      </div>
+      <div class="mem1 left">
+      <span>淵切 亞煉</span>
+      <p>
+      
+            「ちげぇよ怪物の方だ<br>お前強そうだからよ」
+      </p>
+      </div>
+      <div class="mem13 left">
+      <span>白雪</span>
+      <p>
+      
+            「一人で出来るのにも限りがある。その打開策を探してこいといっておろう」
+      </p>
+      </div>
+      <div class="mem1 left">
+      <span>淵切 亞煉</span>
+      <p>
+      
+            「そうか！わかったぜ！」
+      </p>
+      </div>
+      <div class="mem13 left">
+      <span>白雪</span>
+      <p>
+      
+            「ならばさっさと行ってまいれ」
+      </p>
+      </div>
+      <div class="mem2 right">
+      <span>八坂 七夕</span>
+      <p>
+      
+            「打開策が銀の鍵ってことでいいのかな」
+      </p>
+      </div>
+      <div class="mem13 left">
+      <span>白雪</span>
+      <p>
+      
+            「鍵の先に打開策があると聞いていると言っておる」
+      </p>
+      </div>
+      <div class="mem13 left">
+      <span>白雪</span>
+      <p>
+      
+            「さっさと行ってこい」
+      </p>
+      </div>
+      <div class="mem2 right">
+      <span>八坂 七夕</span>
+      <p>
+      
+            「なるほどね。あいあーい」
+      </p>
+      </div>
+      <div class="mem3 left">
+      <span>御守 月彦</span>
+      <p>
+      
+            「あの数を倒すのは骨が折れそうですしね。行きましょう」
+      </p>
+      </div>
+      <div class="kp LtoR-early">
+      
+            はい。ではショーケース前まで移動ですね
+      </div>
+      <div class="kp LtoR-early">
+      
+            エントランス、月彦さん幸運
+      </div>
+      <div class="mem3 left">
+      <span>御守 月彦</span>
+      <p>
+      
+            CCB&lt;=55 【幸運】 (1D100&lt;=55) ＞ 83 ＞ 失敗
+            
+      </p>
+      </div>
+      <div class="kp LtoR-early">
+      
+            はい
+      </div>
+      <div class="kp LtoR-early">
+      
+            1D3 (1D3) ＞ 2
+            
+      </div>
+      <div class="kp LtoR-early">
+      
+            野生のゾンビが2匹出現した！
+      </div>
+      <div class="mem3 left">
+      <span>御守 月彦</span>
+      <p>
+      
+            「邪魔ですね」
+      </p>
+      </div>
+      <div class="kp LtoR-early">
+      
+            あとね
+      </div>
+      <div class="kp LtoR-early">
+      
+            POT10との対抗ね
+      </div>
+      <div class="kp LtoR-early">
+      
+            みんな
+      </div>
+      <div class="kp LtoR-early">
+      
+            CONと10の対抗だから
+      </div>
+      <div class="kp LtoR-early">
+      
+            おじいちゃん50、七夕ちゃん65、アレンくんが70
+      </div>
+      <div class="mem3 left">
+      <span>御守 月彦</span>
+      <p>
+      
+            1ｄ100 (1D100) ＞ 39
+            
+      </p>
+      </div>
+      <div class="mem1 left">
+      <span>淵切 亞煉</span>
+      <p>
+      
+            1d100 (1D100) ＞ 59
+            
+      </p>
+      </div>
+      <div class="mem2 right">
+      <span>八坂 七夕</span>
+      <p>
+      
+            1ｄ100 (1D100) ＞ 35
+            
+      </p>
+      </div>
+      <div class="kp LtoR-early">
+      
+            逃げるならDEX対抗
+      </div>
+      <div class="mem3 left">
+      <span>御守 月彦</span>
+      <p>
+      
+            「アレンさんあまり時間はとれません！お先に行けるようであれば先にお願いします」
+      </p>
+      </div>
+      <div class="mem1 left">
+      <span>淵切 亞煉</span>
+      <p>
+      
+            「ッス！」
+      </p>
+      </div>
+      <div class="mem1 left">
+      <span>淵切 亞煉</span>
+      <p>
+      
+            先を急ぎます
+      </p>
+      </div>
+      <div class="kp LtoR-early">
+      
+            ではターン処理で全てを進めましょうか
+      </div>
+      <div class="kp LtoR-early">
+      
+            アレンくん
+      </div>
+      <div class="kp LtoR-early">
+      
+            95で
+      </div>
+      <div class="mem1 left">
+      <span>淵切 亞煉</span>
+      <p>
+      
+            1d100 (1D100) ＞ 11
+            
+      </p>
+      </div>
+      <div class="kp LtoR-early">
+      
+            はい
+      </div>
+      <div class="kp LtoR-early">
+      
+            アレンくん離脱
+      </div>
+      <div class="mem1 left">
+      <span>淵切 亞煉</span>
+      <p>
+      
+            「すぐに戻ってくるッス！」
+      </p>
+      </div>
+      <div class="kp LtoR-early">
+      
+            七夕ちゃん
+      </div>
+      <div class="kp LtoR-early">
+      
+            あ、アレン君どこ向かう？
+      </div>
+      <div class="mem1 left">
+      <span>淵切 亞煉</span>
+      <p>
+      
+            劇場にいくよ！
+      </p>
+      </div>
+      <div class="kp LtoR-early">
+      
+            了解
+      </div>
+      <div class="kp LtoR-early">
+      
+            七夕ちゃん85
+      </div>
+      <div class="mem2 right">
+      <span>八坂 七夕</span>
+      <p>
+      
+            1ｄ100 (1D100) ＞ 32
+            
+      </p>
+      </div>
+      <div class="kp LtoR-early">
+      
+            はい
+      </div>
+      <div class="kp LtoR-early">
+      
+            どこ向かう？
+      </div>
+      <div class="mem2 right">
+      <span>八坂 七夕</span>
+      <p>
+      
+            ついていく
+      </p>
+      </div>
+      <div class="kp LtoR-early">
+      
+            では月彦さん
+      </div>
+      <div class="kp LtoR-early">
+      
+            55で
+      </div>
+      <div class="mem3 left">
+      <span>御守 月彦</span>
+      <p>
+      
+            1ｄ100 (1D100) ＞ 1
+            
+      </p>
+      </div>
+      <div class="kp LtoR-early">
+      
+            月彦さん、一歩間違えたらアレンくん抜かしそう
+      </div>
+      <div class="kp LtoR-early">
+      
+            抜かしていいよ
+      </div>
+      <div class="mem3 left">
+      <span>御守 月彦</span>
+      <p>
+      
+            カジノにオノとりいこ
+      </p>
+      </div>
+      <div class="mem3 left">
+      <span>御守 月彦</span>
+      <p>
+      
+            「ほっほお先にいきますよ！」
+      </p>
+      </div>
+      <div class="kp LtoR-early">
+      
+            POT10の対抗2回（おじいちゃんのみ）
+      </div>
+      <div class="kp LtoR-early">
+      
+            あとアレン君幸運
+      </div>
+      <div class="mem1 left">
+      <span>淵切 亞煉</span>
+      <p>
+      
+            CCB&lt;=60 【幸運】 (1D100&lt;=60) ＞ 91 ＞ 失敗
+            
+      </p>
+      </div>
+      <div class="kp LtoR-early">
+      
+            あと二人POT10の対抗1回（アレン君・七夕ちゃん）
+      </div>
+      <div class="kp LtoR-early">
+      
+            1D3 (1D3) ＞ 3
+            
+      </div>
+      <div class="mem3 left">
+      <span>御守 月彦</span>
+      <p>
+      
+            2ｄ100 (2D100) ＞ 149[51,98] ＞ 149
+            
+      </p>
+      </div>
+      <div class="mem5 left">
+      <span>system</span>
+      <p>
+      
+            [ 御守 月彦 ] HP : 11 → 9
+      </p>
+      </div>
+      <div class="kp LtoR-early">
+      
+            ファンブルなので-2
+      </div>
+      <div class="kp LtoR-early">
+      
+            おじいちゃんゾンビぶつからずにカジノ
+      </div>
+      <div class="kp LtoR-early">
+      
+            二人は廊下でぶつかった
+      </div>
+      <div class="mem1 left">
+      <span>淵切 亞煉</span>
+      <p>
+      
+            1d100 (1D100) ＞ 20
+            
+      </p>
+      </div>
+      <div class="mem2 right">
+      <span>八坂 七夕</span>
+      <p>
+      
+            1ｄ100 (1D100) ＞ 18
+            
+      </p>
+      </div>
+      <div class="kp LtoR-early">
+      
+            アレンからゾンビ戦
+      </div>
+      <div class="mem1 left">
+      <span>淵切 亞煉</span>
+      <p>
+      
+            先を急ぎます
+      </p>
+      </div>
+      <div class="mem1 left">
+      <span>淵切 亞煉</span>
+      <p>
+      
+            1d100 (1D100) ＞ 20
+            
+      </p>
+      </div>
+      <div class="mem2 right">
+      <span>八坂 七夕</span>
+      <p>
+      
+            1ｄ100 (1D100) ＞ 67
+            
+      </p>
+      </div>
+      <div class="kp LtoR-early">
+      
+            二人とも廊下すぎます
+      </div>
+      <div class="kp LtoR-early">
+      
+            おじいちゃん
+      </div>
+      <div class="kp LtoR-early">
+      
+            カジノ着
+      </div>
+      <div class="mem3 left">
+      <span>御守 月彦</span>
+      <p>
+      
+            CCB&lt;=55 【幸運】 (1D100&lt;=55) ＞ 46 ＞ 成功
+            
+      </p>
+      </div>
+      <div class="kp LtoR-early">
+      
+            幸運とPOT
+      </div>
+      <div class="mem3 left">
+      <span>御守 月彦</span>
+      <p>
+      
+            1ｄ100 (1D100) ＞ 8
+            
+      </p>
+      </div>
+      <div class="kp LtoR-early">
+      
+            ゾンビでない。毒も大丈夫
+      </div>
+      <div class="kp LtoR-early">
+      
+            どうする
+      </div>
+      <div class="mem3 left">
+      <span>御守 月彦</span>
+      <p>
+      
+            オノとって劇場へ
+      </p>
+      </div>
+      <div class="kp LtoR-early">
+      
+            はい
+      </div>
+      <div class="kp LtoR-early">
+      
+            幸運とPOT
+      </div>
+      <div class="mem1 left">
+      <span>淵切 亞煉</span>
+      <p>
+      
+            CCB&lt;=60 【幸運】 (1D100&lt;=60) ＞ 68 ＞ 失敗
+            
+      </p>
+      </div>
+      <div class="mem2 right">
+      <span>八坂 七夕</span>
+      <p>
+      
+            CCB&lt;=60 【幸運】 (1D100&lt;=60) ＞ 20 ＞ 成功
+            
+      </p>
+      </div>
+      <div class="kp LtoR-early">
+      
+            1D3 (1D3) ＞ 2
+            
+      </div>
+      <div class="mem2 right">
+      <span>八坂 七夕</span>
+      <p>
+      
+            1ｄ100 (1D100) ＞ 80
+            
+      </p>
+      </div>
+      <div class="mem1 left">
+      <span>淵切 亞煉</span>
+      <p>
+      
+            1d100<br> (1D100) ＞ 89
+            
+      </p>
+      </div>
+      <div class="kp LtoR-early">
+      
+            失敗は-1
+      </div>
+      <div class="mem5 left">
+      <span>system</span>
+      <p>
+      
+            [ 淵切 亞煉 ] HP : 20 → 19
+      </p>
+      </div>
+      <div class="kp LtoR-early">
+      
+            どうする？
+      </div>
+      <div class="mem5 left">
+      <span>system</span>
+      <p>
+      
+            [ 八坂 七夕 ] HP : 12 → 11
+      </p>
+      </div>
+      <div class="kp LtoR-early">
+      
+            どうする？
+      </div>
+      <div class="kp LtoR-early">
+      
+            アレンくんだけアイデア
+      </div>
+      <div class="mem1 left">
+      <span>淵切 亞煉</span>
+      <p>
+      
+            CCB&lt;=50 【アイデア】 (1D100&lt;=50) ＞ 11 ＞ 成功
+            
+      </p>
+      </div>
+      <div class="kp LtoR-early">
+      
+            換気扇あるならどっか探してみる？
+      </div>
+      <div class="mem1 left">
+      <span>淵切 亞煉</span>
+      <p>
+      
+            「換気扇　生きてるんじゃなかったのかよ！？」探します
+      </p>
+      </div>
+      <div class="mem2 right">
+      <span>八坂 七夕</span>
+      <p>
+      
+            CCB&lt;=50 【目星】 (1D100&lt;=50) ＞ 16 ＞ 成功
+            
+      </p>
+      </div>
+      <div class="kp LtoR-early">
+      
+            舞台近くにレバーがある。また、その直ぐ傍には警棒も備え付けられているようだ
+      </div>
+      <div class="kp LtoR-early">
+      
+            どうしますか？
+      </div>
+      <div class="mem1 left">
+      <span>淵切 亞煉</span>
+      <p>
+      
+            CCB&lt;=60 【目星】 (1D100&lt;=60) ＞ 57 ＞ 成功
+            
+      </p>
+      </div>
+      <div class="mem1 left">
+      <span>淵切 亞煉</span>
+      <p>
+      
+            「あるな！オラァ！」レバー引きます
+      </p>
+      </div>
+      <div class="mem2 right">
+      <span>八坂 七夕</span>
+      <p>
+      
+            「この警棒で割れないかな」
+      </p>
+      </div>
+      <div class="kp LtoR-early">
+      
+            この部屋から毒がなくなっていきます
+      </div>
+      <div class="kp LtoR-early">
+      
+            警棒もちます
+      </div>
+      <div class="kp LtoR-early">
+      
+            おじいちゃん廊下 POＴ
+      </div>
+      <div class="mem3 left">
+      <span>御守 月彦</span>
+      <p>
+      
+            1ｄ100 (1D100) ＞ 44
+            
+      </p>
+      </div>
+      <div class="kp LtoR-early">
+      
+            おじいちゃん劇場ＩＮ
+      </div>
+      <div class="mem9 left">
+      <span>ゾンビ</span>
+      <p>
+      
+            schoice[アレン,七夕] (choice[アレン,七夕]) ＞ 七夕
+            
+      </p>
+      </div>
+      <div class="mem3 left">
+      <span>御守 月彦</span>
+      <p>
+      
+            「にぎやかですねぇオノとってきましたよ」
+      </p>
+      </div>
+      <div class="mem9 left">
+      <span>ゾンビ</span>
+      <p>
+      
+            schoice[噛み付き,大きな棍棒] (choice[噛み付き,大きな棍棒]) ＞ 大きな棍棒
+            
+      </p>
+      </div>
+      <div class="mem9 left">
+      <span>ゾンビ</span>
+      <p>
+      
+            s1D100&lt;=25 [大きな棍棒] (1D100&lt;=25) ＞ 88 ＞ 失敗
+            
+      </p>
+      </div>
+      <div class="mem9 left">
+      <span>ゾンビ</span>
+      <p>
+      
+            schoice[アレン,七夕] (choice[アレン,七夕]) ＞ 七夕
+            
+      </p>
+      </div>
+      <div class="mem9 left">
+      <span>ゾンビ</span>
+      <p>
+      
+            schoice[噛み付き,大きな棍棒] (choice[噛み付き,大きな棍棒]) ＞ 噛み付き
+            
+      </p>
+      </div>
+      <div class="mem9 left">
+      <span>ゾンビ</span>
+      <p>
+      
+            s1D100&lt;=30 [噛み付き] (1D100&lt;=30) ＞ 51 ＞ 失敗
+            
+      </p>
+      </div>
+      <div class="kp LtoR-early">
+      
+            では
+      </div>
+      <div class="kp LtoR-early">
+      
+            ゾンビが連携をして七夕ちゃんを狙いましたが
+      </div>
+      <div class="kp LtoR-early">
+      
+            手に持っていた棍棒やゾンビの噛みつきは空を切りました
+      </div>
+      <div class="kp LtoR-early">
+      
+            じゃアレンくん
+      </div>
+      <div class="kp LtoR-early">
+      
+            s1D100/2 (1D100/2) ＞ 93[93]/2 ＞ 46
+            
+      </div>
+      <div class="kp LtoR-early">
+      
+            劇場の中に46体のゾンビいるけどそのままいる？
+      </div>
+      <div class="mem1 left">
+      <span>淵切 亞煉</span>
+      <p>
+      
+            入れないよ！？
+      </p>
+      </div>
+      <div class="mem1 left">
+      <span>淵切 亞煉</span>
+      <p>
+      
+            蹴り殺そ！
+      </p>
+      </div>
+      <div class="kp LtoR-early">
+      
+            はい
+      </div>
+      <div class="mem1 left">
+      <span>淵切 亞煉</span>
+      <p>
+      
+            CCB&lt;=80 【キック】 (1D100&lt;=80) ＞ 7 ＞ スペシャル
+            
+      </p>
+      </div>
+      <div class="mem1 left">
+      <span>淵切 亞煉</span>
+      <p>
+      
+            2d6 (2D6) ＞ 3[1,2] ＞ 3
+            
+      </p>
+      </div>
+      <div class="kp LtoR-early">
+      
+            七夕ちゃん
+      </div>
+      <div class="mem1 left">
+      <span>淵切 亞煉</span>
+      <p>
+      
+            「邪魔だァ！」
+      </p>
+      </div>
+      <div class="mem2 right">
+      <span>八坂 七夕</span>
+      <p>
+      
+            1ｄ100 (1D100) ＞ 15
+            
+      </p>
+      </div>
+      <div class="kp LtoR-early">
+      
+            じゃ硝子ﾊﾟﾘｰﾝ
+      </div>
+      <div class="kp LtoR-early">
+      
+            おじいちゃん出番…(´・ω・`)
+      </div>
+      <div class="mem2 right">
+      <span>八坂 七夕</span>
+      <p>
+      
+            「割れちゃったよ！ごめん月彦さん！」
+      </p>
+      </div>
+      <div class="mem3 left">
+      <span>御守 月彦</span>
+      <p>
+      
+            「おや無用でしたな。さすがです八坂さん！」
+      </p>
+      </div>
+      <div class="kp LtoR-early">
+      
+            さて
+      </div>
+      <div class="kp LtoR-early">
+      
+            おじいちゃん
+      </div>
+      <div class="mem3 left">
+      <span>御守 月彦</span>
+      <p>
+      
+            「扉はどこでも開けるらしいですが彼女のもとに一度もどりますか？」
+      <br>
+      </p>
+      </div>
+      <div class="mem1 left">
+      <span>淵切 亞煉</span>
+      <p>
+      
+            「アイツに武器とか持ってってやろうぜ！」
+      </p>
+      </div>
+      <div class="mem3 left">
+      <span>御守 月彦</span>
+      <p>
+      
+            「銀の武器が狼男には有効そうでしたが…とりあえずこのオノは八坂さんに差し上げますね。」
+      </p>
+      </div>
+      <div class="mem9 left">
+      <span>ゾンビ</span>
+      <p>
+      
+            schoice[月彦,アレン,七夕] (choice[月彦,アレン,七夕]) ＞ 月彦
+            
+      </p>
+      </div>
+      <div class="mem9 left">
+      <span>ゾンビ</span>
+      <p>
+      
+            schoice[噛み付き,大きな棍棒] (choice[噛み付き,大きな棍棒]) ＞ 大きな棍棒
+            
+      </p>
+      </div>
+      <div class="mem9 left">
+      <span>ゾンビ</span>
+      <p>
+      
+            s1D100&lt;=25 [大きな棍棒] (1D100&lt;=25) ＞ 38 ＞ 失敗
+            
+      </p>
+      </div>
+      <div class="mem9 left">
+      <span>ゾンビ</span>
+      <p>
+      
+            schoice[月彦,アレン,七夕] (choice[月彦,アレン,七夕]) ＞ 月彦
+            
+      </p>
+      </div>
+      <div class="mem9 left">
+      <span>ゾンビ</span>
+      <p>
+      
+            schoice[噛み付き,大きな棍棒] (choice[噛み付き,大きな棍棒]) ＞ 大きな棍棒
+            
+      </p>
+      </div>
+      <div class="mem9 left">
+      <span>ゾンビ</span>
+      <p>
+      
+            s1D100&lt;=25 [大きな棍棒] (1D100&lt;=25) ＞ 36 ＞ 失敗
+            
+      </p>
+      </div>
+      <div class="kp LtoR-early">
+      
+            月彦しゃんに大きな棍棒二人？して振り被ったけどあたらんかった
+      </div>
+      <div class="mem3 left">
+      <span>御守 月彦</span>
+      <p>
+      
+            「はっはあたりませんなあ」
+      </p>
+      </div>
+      <div class="kp LtoR-early">
+      
+            えー
+      </div>
+      <div class="kp LtoR-early">
+      
+            アレンくん
+      </div>
+      <div class="kp LtoR-early">
+      
+            女神さまがさっさと進めって言ってるよ
+      </div>
+      <div class="kp LtoR-early">
+      
+            心の白雪さんがさっさといけって言ってるよ
+      </div>
+      <div class="mem3 left">
+      <span>御守 月彦</span>
+      <p>
+      
+            「どれかもっていかれます？武器」
+      </p>
+      </div>
+      <div class="mem1 left">
+      <span>淵切 亞煉</span>
+      <p>
+      
+            「武器はあった方が安心だよな！」ナイフ取ります
+      </p>
+      </div>
+      <div class="kp LtoR-early">
+      
+            心の中にいる白雪さんがさっさと扉開けろよって言ってるよ
+      </div>
+      <div class="kp LtoR-early">
+      
+            七夕さん
+      </div>
+      <div class="mem2 right">
+      <span>八坂 七夕</span>
+      <p>
+      
+            警棒を捨てる
+      </p>
+      </div>
+      <div class="mem2 right">
+      <span>八坂 七夕</span>
+      <p>
+      
+            1ｄ100 (1D100) ＞ 9
+            
+      </p>
+      </div>
+      <div class="kp LtoR-early">
+      
+            完璧に胸に挟みました？
+      </div>
+      <div class="mem2 right">
+      <span>八坂 七夕</span>
+      <p>
+      
+            片手に銃おっぱいに銃
+      </p>
+      </div>
+      <div class="kp LtoR-early">
+      
+            はい
+      </div>
+      <div class="kp LtoR-early">
+      
+            おじいちゃん
+      </div>
+      <div class="mem3 left">
+      <span>御守 月彦</span>
+      <p>
+      
+            「行きましょうか」
+      </p>
+      </div>
+      <div class="kp LtoR-early">
+      
+            白雪さんがこっちくんなって
+      </div>
+      <div class="kp LtoR-early">
+      
+            心の中に白雪さんが鍵使えって…
+      </div>
+      <div class="kp LtoR-early">
+      
+            わかった
+      </div>
+      <div class="kp LtoR-early">
+      
+            ゾンビいっぱい現れるし、展示場には白雪さんもういないけど向かうならどうぞ
+      </div>
+      <div class="kp LtoR-early">
+      
+            じゃ廊下
+      </div>
+      <div class="kp LtoR-early">
+      
+            月彦さん幸運
+      </div>
+      <div class="mem3 left">
+      <span>御守 月彦</span>
+      <p>
+      
+            CCB&lt;=55 【幸運】 (1D100&lt;=55) ＞ 24 ＞ 成功
+            
+      </p>
+      </div>
+      <div class="kp LtoR-early">
+      
+            エントランス
+      </div>
+      <div class="kp LtoR-early">
+      
+            おじいちゃん
+      </div>
+      <div class="mem3 left">
+      <span>御守 月彦</span>
+      <p>
+      
+            CCB&lt;=55 【幸運】 (1D100&lt;=55) ＞ 49 ＞ 成功
+            
+      </p>
+      </div>
+      <div class="kp LtoR-early">
+      
+            展示場
+      </div>
+      <div class="kp LtoR-early">
+      
+            おじいちゃん
+      </div>
+      <div class="mem3 left">
+      <span>御守 月彦</span>
+      <p>
+      
+            CCB&lt;=55 【幸運】 (1D100&lt;=55) ＞ 97 ＞ 致命的失敗
+            
+      </p>
+      </div>
+      <div class="kp LtoR-early">
+      
+            1D6 (1D6) ＞ 1
+            
+      </div>
+      <div class="kp LtoR-early">
+      
+            1体のゾンビが出てきて、白雪さんいません
+      </div>
+      <div class="mem3 left">
+      <span>御守 月彦</span>
+      <p>
+      
+            「…彼女はいませんね」
+      </p>
+      </div>
+      <div class="kp LtoR-early">
+      
+            わろ
+      </div>
+      <div class="kp LtoR-early">
+      
+            どうしますか？
+      </div>
+      <div class="mem1 left">
+      <span>淵切 亞煉</span>
+      <p>
+      
+            「このゾンビが　アイツなのか…?」
+      </p>
+      </div>
+      <div class="mem9 left">
+      <span>ゾンビ</span>
+      <p>
+      
+            ぐあー
+      </p>
+      </div>
+      <div class="mem2 right">
+      <span>八坂 七夕</span>
+      <p>
+      
+            「そんなわけないしょーやっつけにいっちゃったのかもね」
+      </p>
+      </div>
+      <div class="kp LtoR-early">
+      
+            どうします？
+      </div>
+      <div class="mem3 left">
+      <span>御守 月彦</span>
+      <p>
+      
+            「いないものは仕方ありません。門とやらを開きましょう。ゾンビはおまかせしても？」
+      </p>
+      </div>
+      <div class="kp LtoR-early">
+      
+            KP早く遊びたい
+      </div>
+      <div class="kp LtoR-early">
+      
+            アレンくん
+      </div>
+      <div class="mem1 left">
+      <span>淵切 亞煉</span>
+      <p>
+      
+            「だったらいいな！ブチ殺そう！」マーシャルキックします
+      </p>
+      </div>
+      <div class="kp LtoR-early">
+      
+            はいはい
+      </div>
+      <div class="mem1 left">
+      <span>淵切 亞煉</span>
+      <p>
+      
+            CCB&lt;=80 【キック】 (1D100&lt;=80) ＞ 34 ＞ 成功
+            
+      </p>
+      </div>
+      <div class="kp LtoR-early">
+      
+            2D6ね
+      </div>
+      <div class="mem1 left">
+      <span>淵切 亞煉</span>
+      <p>
+      
+            2d6 (2D6) ＞ 12[6,6] ＞ 12
+            
+      </p>
+      </div>
+      <div class="mem9 left">
+      <span>ゾンビ</span>
+      <p>
+      
+            いたーい
+      </p>
+      </div>
+      <div class="kp LtoR-early">
+      
+            七夕ちゃん
+      </div>
+      <div class="mem1 left">
+      <span>淵切 亞煉</span>
+      <p>
+      
+            「死ねェ！」
+      </p>
+      </div>
+      <div class="mem2 right">
+      <span>八坂 七夕</span>
+      <p>
+      
+            1ｄ100 (1D100) ＞ 23
+            
+      </p>
+      </div>
+      <div class="kp LtoR-early">
+      
+            お月さん
+      </div>
+      <div class="mem2 right">
+      <span>八坂 七夕</span>
+      <p>
+      
+            「あぁ！？この銃弾入ってないの！？」
+      </p>
+      </div>
+      <div class="mem3 left">
+      <span>御守 月彦</span>
+      <p>
+      
+            門作りましょう
+      </p>
+      </div>
+      <div class="kp LtoR-early">
+      
+            はい
+      </div>
+      <div class="kp LtoR-early">
+      
+            銀の鍵を使って扉を開くと、眩い光が探索者を包み込む。
+      </div>
+      <div class="kp LtoR-early">
+      
+            そして、音の波が探索者を歓迎した。大勢の客でひしめき合った室内には、世界的に有名な著名人の姿も見える。
+      </div>
+      <div class="kp LtoR-early">
+      
+            非常に豪華な装飾が施されていたそこは、スロット、ポーカーテーブル、ダーツ…ギャンブルに使用するための道具は一通り揃っているようだ。
+      </div>
+      <div class="kp LtoR-early">
+      
+            探索者らが入って来た扉の両隣には、いつの間にかペストマスクで顔を覆った人物が立っている
+      </div>
+      <div class="kp LtoR-early">
+      
+            やがて、大勢の客を掻き分けてチャイナ服を装った一人の男性が、ペストマスクの人物らを数名引き連れながら探索者らへと歩み寄る。目を見張るほど美しい男性は探索者らの前で足を止めると、柔らかく微笑みかけて口を開く。
+      </div>
+      <div class="mem14 right">
+      <span>道</span>
+      <p>
+      
+            「皆様、ようこそいらっしゃいました。」
+      </p>
+      </div>
+      <div class="mem14 right">
+      <span>道</span>
+      <p>
+      
+            「私がこのカジノのオーナー代理である、タオでございます。道、と書いてタオです」
+      </p>
+      </div>
+      <div class="mem14 right">
+      <span>道</span>
+      <p>
+      
+            「これよりルールの説明を致します。―――と言いたいところですが、どうやらお急ぎのようですね」
+      </p>
+      </div>
+      <div class="mem14 right">
+      <span>道</span>
+      <p>
+      
+            「お聞きしてもよろしいですか？」
+      </p>
+      </div>
+      <div class="mem3 left">
+      <span>御守 月彦</span>
+      <p>
+      
+            「こちらにいる異形の者たちを一掃する手立てを伺いたく。こちらに行けばなにかわかるとお聞きしたもので」
+      </p>
+      </div>
+      <div class="mem14 right">
+      <span>道</span>
+      <p>
+      
+            「化け物共を一掃する手段なら、心当たりがあります。特別にお力をお貸ししましょう」
+      </p>
+      </div>
+      <div class="mem14 right">
+      <span>道</span>
+      <p>
+      
+            「―――と言いたいところですが、残念ながらここはカジノです。欲しいモノは己の運と実力で手に入れる場所」
+      </p>
+      </div>
+      <div class="mem14 right">
+      <span>道</span>
+      <p>
+      
+            「私とゲームをして下さい。私に勝ったら、あなた達に力をお貸しします。でも、あなた達が負けた場合……相応の覚悟はして下さいね」
+      </p>
+      </div>
+      <div class="kp LtoR-early">
+      
+            という訳で
+      </div>
+      <div class="mem3 left">
+      <span>御守 月彦</span>
+      <p>
+      
+            「なるほど。それは心が躍る申し出ですね。お受けいたしましょう」
+      </p>
+      </div>
+      <div class="kp LtoR-early">
+      
+            ここカジノ「デュエル」でゲームを行っていただきます
+      </div>
+      <div class="mem14 right">
+      <span>道</span>
+      <p>
+      
+            「一応伝えておきますね。ここデュエルのルールは”暴力行為とイカサマの禁止”ですのであらかじめご了承くださいね」
+      </p>
+      </div>
+      <div class="kp LtoR-early">
+      
+            ではみなさんにやっていただくのは
+      </div>
+      <div class="kp LtoR-early">
+      
+            チンチロ
+      </div>
+      <div class="kp LtoR-early">
+      
+            です
+      </div>
+      <div class="kp LtoR-early">
+      
+            ▶チンチロ<br>≪3d6を振って出た目を競う≫<br>［各PC一回勝負、先に二回勝利した方の勝利。役が出るまで三回は振り直し可能で、親（タオ/KP）→子（PC）の順でダイスを振る］
+      </div>
+      <div class="kp LtoR-early">
+      
+            じゃ
+      </div>
+      <div class="kp LtoR-early">
+      
+            アレンくんやろっか
+      </div>
+      <div class="mem1 left">
+      <span>淵切 亞煉</span>
+      <p>
+      
+            おけ
+      </p>
+      </div>
+      <div class="mem14 right">
+      <span>道</span>
+      <p>
+      
+            3D6 (3D6) ＞ 10[5,1,4] ＞ 10
+            
+      </p>
+      </div>
+      <div class="mem1 left">
+      <span>淵切 亞煉</span>
+      <p>
+      
+            「振ればいいんだよな？オッラァ！」
+      </p>
+      </div>
+      <div class="mem1 left">
+      <span>淵切 亞煉</span>
+      <p>
+      
+            3d6 (3D6) ＞ 9[1,2,6] ＞ 9
+            
+      </p>
+      </div>
+      <div class="mem14 right">
+      <span>道</span>
+      <p>
+      
+            3D6 (3D6) ＞ 11[6,1,4] ＞ 11
+            
+      </p>
+      </div>
+      <div class="mem1 left">
+      <span>淵切 亞煉</span>
+      <p>
+      
+            3d6<br> (3D6) ＞ 7[3,1,3] ＞ 7
+            
+      </p>
+      </div>
+      <div class="mem14 right">
+      <span>道</span>
+      <p>
+      
+            3D6 (3D6) ＞ 11[6,4,1] ＞ 11
+            
+      </p>
+      </div>
+      <div class="mem14 right">
+      <span>道</span>
+      <p>
+      
+            「あら負けましたね」
+      </p>
+      </div>
+      <div class="mem1 left">
+      <span>淵切 亞煉</span>
+      <p>
+      
+            「ッシャ！」
+      </p>
+      </div>
+      <div class="kp LtoR-early">
+      
+            アレンくんの勝利ー
+      </div>
+      <div class="kp LtoR-early">
+      
+            続きましてー、七夕ちゃーん
+      </div>
+      <div class="mem14 right">
+      <span>道</span>
+      <p>
+      
+            3D6 (3D6) ＞ 10[4,4,2] ＞ 10
+            
+      </p>
+      </div>
+      <div class="mem2 right">
+      <span>八坂 七夕</span>
+      <p>
+      
+            3ｄ6 (3D6) ＞ 16[5,5,6] ＞ 16
+            
+      </p>
+      </div>
+      <div class="kp LtoR-early">
+      
+            負けちゃった
+      </div>
+      <div class="kp LtoR-early">
+      
+            七夕ちゃんのかちー
+      </div>
+      <div class="mem2 right">
+      <span>八坂 七夕</span>
+      <p>
+      
+            「勝った！」
+      </p>
+      </div>
+      <div class="mem14 right">
+      <span>道</span>
+      <p>
+      
+            「おやおや」
+      </p>
+      </div>
+      <div class="mem14 right">
+      <span>道</span>
+      <p>
+      
+            「結果は決まりましたが、やりますか？」
+      </p>
+      </div>
+      <div class="mem3 left">
+      <span>御守 月彦</span>
+      <p>
+      
+            「せっかくですからお相手願いましょうか」
+      </p>
+      </div>
+      <div class="mem14 right">
+      <span>道</span>
+      <p>
+      
+            「わかりました」
+      </p>
+      </div>
+      <div class="mem14 right">
+      <span>道</span>
+      <p>
+      
+            3D6 (3D6) ＞ 10[3,2,5] ＞ 10
+            
+      </p>
+      </div>
+      <div class="mem3 left">
+      <span>御守 月彦</span>
+      <p>
+      
+            3ｄ6 (3D6) ＞ 10[1,4,5] ＞ 10
+            
+      </p>
+      </div>
+      <div class="mem14 right">
+      <span>道</span>
+      <p>
+      
+            3d6 (3D6) ＞ 6[2,2,2] ＞ 6
+            
+      </p>
+      </div>
+      <div class="mem3 left">
+      <span>御守 月彦</span>
+      <p>
+      
+            3ｄ6 (3D6) ＞ 13[6,3,4] ＞ 13
+            
+      </p>
+      </div>
+      <div class="mem3 left">
+      <span>御守 月彦</span>
+      <p>
+      
+            「お二人が一緒で命拾いしました」
+      </p>
+      </div>
+      <div class="kp LtoR-early">
+      
+            対戦ありがとうございました
+      </div>
+      <div class="mem1 left">
+      <span>淵切 亞煉</span>
+      <p>
+      
+            「なんかわからんけど　やったな！」
+      </p>
+      </div>
+      <div class="mem14 right">
+      <span>道</span>
+      <p>
+      
+            「それでは、あなた方に力を貸しましょう。とは言っても、私は大それた呪文などが使えませんので、あなた方の潜在能力を少しばかり促させて頂きます」
+      </p>
+      </div>
+      <div class="mem14 right">
+      <span>道</span>
+      <p>
+      
+            「反動で一週間くらい筋肉痛に悩まされるかも知れませんが、そんなことは余りにも些細ですよね？」
+      </p>
+      </div>
+      <div class="kp LtoR-early">
+      
+            そう笑うと、タオは探索者に煙管の煙を吹きかけた。
+      </div>
+      <div class="kp LtoR-early">
+      
+            忽ち、探索者の身体は煙に包まれる。その直後、煙が青白い光に変容すると、探索者は身体の底から力のようなモノが込み上げてくる感覚がした。
+      </div>
+      <div class="mem14 right">
+      <span>道</span>
+      <p>
+      
+            「効力は一時間程度です。どうかそれまでに、事を終わらせて下さい」
+      </p>
+      </div>
+      <div class="mem3 left">
+      <span>御守 月彦</span>
+      <p>
+      
+            「爺には堪えますな」
+      </p>
+      </div>
+      <div class="mem14 right">
+      <span>道</span>
+      <p>
+      
+            「長話、大変失礼致しました。またご縁がありましたら、当カジノへお越しください。その時は、手厚く歓迎致します」
+      </p>
+      </div>
+      <div class="mem1 left">
+      <span>淵切 亞煉</span>
+      <p>
+      
+            「楽しかったぜ！」
+      </p>
+      </div>
+      <div class="kp LtoR-early">
+      
+            誰もイカサマ技能持ってなくてよかったね☆
+      </div>
+      <div class="mem2 right">
+      <span>八坂 七夕</span>
+      <p>
+      
+            「まぁ来れると思ってこれるとこじゃないと思うけど、ありがとー」
+      </p>
+      </div>
+      <div class="kp LtoR-early">
+      
+            気が付くと、そこは変わり果てた劇場だった。
+      </div>
+      <div class="kp LtoR-early">
+      
+            扉は閉ざされており、閉鎖空間と化したそこは、化け物共の巣窟と言っても過言ではないだろう。突然現れた探索者に異形の存在は釘付けになる。劇場の外からは生存者の悲鳴や、轟音が響き渡り、船全体が音の波によって揺れていると錯覚するほどだ。<br>　50…60……100は優に超えているのかもしれない。山のような異形の存在がここから解き放たれたら、生存者に多大な被害が被ってしまうだろう。
+      </div>
+      <div class="kp LtoR-early">
+      
+            しかし、不思議と探索者に恐怖は無い。
+      </div>
+      <div class="kp LtoR-early">
+      
+            戦力差がなんだ。化け物の力がなんだ。悍ましい計画がなんだ。
+      </div>
+      <div class="kp LtoR-early">
+      
+            力が漲る。内側から込み上げて来るそれは、確かな勇気と自信…そして、希望となって探索者を奮い立たせた。
+      </div>
+      <div class="kp LtoR-early">
+      
+            ―――勝てばいい。そう、とても単純な話だ。勝って、有坂の計画を潰してやればいい！
+      </div>
+      <div class="kp LtoR-early">
+      
+            さあ、いけ探索者よ！その力！その知恵！すべてを振り絞り、この窮地を脱出するのだ！！！
+      </div>
+      <div class="kp LtoR-early">
+      
+            ※ここからボーナスタイムとなる。探索者はタオの力によって潜在能力を引き上げられている状態であり、最も得意とする戦闘技能のステータスが99%まであがっている状態だ。(戦闘に振って無い探索者がいる場合、拳が99%となる)
+      </div>
+      <div class="kp LtoR-early">
+      
+            攻撃が成功した場合、化け物に対して装甲無視のダメージを与えられる。また、劇場に居る化け物に限り、技能のロールに成功すれば1d20を振り、出た出目の数だけ化け物を倒したという扱いだ。また、怪我をしていた探索者がいた場合、タオの能力によって全回復する。<br>　力こそすべて！！存分に、化け物共をぶっ殺すのだ！！！！
+      </div>
+      <div class="mem5 left">
+      <span>system</span>
+      <p>
+      
+            [ 御守 月彦 ] HP : 9 → 12
+      </p>
+      </div>
+      <div class="mem5 left">
+      <span>system</span>
+      <p>
+      
+            [ 八坂 七夕 ] HP : 11 → 12
+      </p>
+      </div>
+      <div class="mem5 left">
+      <span>system</span>
+      <p>
+      
+            [ 御守 月彦 ] HP : 12 → 11
+      </p>
+      </div>
+      <div class="kp LtoR-early">
+      
+            100+1D20 (100+1D20) ＞ 100+20[20] ＞ 120
+            
+      </div>
+      <div class="kp LtoR-early">
+      
+            ターンなのだー
+      </div>
+      <div class="kp LtoR-early">
+      
+            アレンくんターンなのだー
+      </div>
+      <div class="mem1 left">
+      <span>淵切 亞煉</span>
+      <p>
+      
+            蹴り殺すのだー
+      </p>
+      </div>
+      <div class="mem1 left">
+      <span>淵切 亞煉</span>
+      <p>
+      
+            1d100 (1D100) ＞ 5
+            
+      </p>
+      </div>
+      <div class="mem1 left">
+      <span>淵切 亞煉</span>
+      <p>
+      
+            2d20 (2D20) ＞ 24[11,13] ＞ 24
+            
+      </p>
+      </div>
+      <div class="kp LtoR-early">
+      
+            残り96体なのだー
+      </div>
+      <div class="mem1 left">
+      <span>淵切 亞煉</span>
+      <p>
+      
+            「なんだこれ!?負ける気がしねぇ！」
+      </p>
+      </div>
+      <div class="kp LtoR-early">
+      
+            七夕ちゃんなのだー
+      </div>
+      <div class="mem2 right">
+      <span>八坂 七夕</span>
+      <p>
+      
+            1ｄ100 (1D100) ＞ 69
+            
+      </p>
+      </div>
+      <div class="mem2 right">
+      <span>八坂 七夕</span>
+      <p>
+      
+            1ｄ20 (1D20) ＞ 5
+            
+      </p>
+      </div>
+      <div class="kp LtoR-early">
+      
+            91になったのだー
+      </div>
+      <div class="mem2 right">
+      <span>八坂 七夕</span>
+      <p>
+      
+            「そんなに恩恵受けられてる気がしないんだけど……」
+      </p>
+      </div>
+      <div class="kp LtoR-early">
+      
+            おじいちゃんなのだー
+      </div>
+      <div class="mem3 left">
+      <span>御守 月彦</span>
+      <p>
+      
+            1ｄ100 (1D100) ＞ 98
+            
+      </p>
+      </div>
+      <div class="mem3 left">
+      <span>御守 月彦</span>
+      <p>
+      
+            1ｄ20 (1D20) ＞ 1
+            
+      </p>
+      </div>
+      <div class="kp LtoR-early">
+      
+            残り90なのだー
+      </div>
+      <div class="mem3 left">
+      <span>御守 月彦</span>
+      <p>
+      
+            「刺すしかできませんねぇ」
+      </p>
+      </div>
+      <div class="mem9 left">
+      <span>ゾンビ</span>
+      <p>
+      
+            schoice[月彦,アレン,七夕] (choice[月彦,アレン,七夕]) ＞ 月彦
+            
+      </p>
+      </div>
+      <div class="mem9 left">
+      <span>ゾンビ</span>
+      <p>
+      
+            schoice[噛み付き,大きな棍棒] (choice[噛み付き,大きな棍棒]) ＞ 大きな棍棒
+            
+      </p>
+      </div>
+      <div class="mem9 left">
+      <span>ゾンビ</span>
+      <p>
+      
+            s1D100&lt;=90 [大きな棍棒] (1D100&lt;=90) ＞ 19 ＞ 成功
+            
+      </p>
+      </div>
+      <div class="kp LtoR-early">
+      
+            月彦ー！くらえー！
+      </div>
+      <div class="kp LtoR-early">
+      
+            なのだー
+      </div>
+      <div class="kp LtoR-early">
+      
+            回避振れるのだー
+      </div>
+      <div class="mem3 left">
+      <span>御守 月彦</span>
+      <p>
+      
+            CCB&lt;=80 【回避】 (1D100&lt;=80) ＞ 50 ＞ 成功
+            
+      </p>
+      </div>
+      <div class="kp LtoR-early">
+      
+            雪崩れのような棍棒を避けられたのだー
+      </div>
+      <div class="mem3 left">
+      <span>御守 月彦</span>
+      <p>
+      
+            「数だけですねぇ」
+      </p>
+      </div>
+      <div class="kp LtoR-early">
+      
+            アレン君なのらー
+      </div>
+      <div class="mem1 left">
+      <span>淵切 亞煉</span>
+      <p>
+      
+            蹴り殺すのだー
+      </p>
+      </div>
+      <div class="mem1 left">
+      <span>淵切 亞煉</span>
+      <p>
+      
+            1d100 (1D100) ＞ 34
+            
+      </p>
+      </div>
+      <div class="mem1 left">
+      <span>淵切 亞煉</span>
+      <p>
+      
+            1d20<br> (1D20) ＞ 7
+            
+      </p>
+      </div>
+      <div class="mem1 left">
+      <span>淵切 亞煉</span>
+      <p>
+      
+            「くたばれぇ！」
+      </p>
+      </div>
+      <div class="kp LtoR-early">
+      
+            七夕ちゃん－
+      </div>
+      <div class="kp LtoR-early">
+      
+            残り83匹
+      </div>
+      <div class="mem2 right">
+      <span>八坂 七夕</span>
+      <p>
+      
+            1ｄ100 (1D100) ＞ 57
+            
+      </p>
+      </div>
+      <div class="mem2 right">
+      <span>八坂 七夕</span>
+      <p>
+      
+            1ｄ20 (1D20) ＞ 20
+            
+      </p>
+      </div>
+      <div class="kp LtoR-early">
+      
+            63匹なのらー
+      </div>
+      <div class="kp LtoR-early">
+      
+            月彦ちゃんなのらー
+      </div>
+      <div class="mem2 right">
+      <span>八坂 七夕</span>
+      <p>
+      
+            「あっ恩恵出たかも！」
+      </p>
+      </div>
+      <div class="mem3 left">
+      <span>御守 月彦</span>
+      <p>
+      
+            1ｄ100 (1D100) ＞ 54
+            
+      </p>
+      </div>
+      <div class="mem3 left">
+      <span>御守 月彦</span>
+      <p>
+      
+            1ｄ20 (1D20) ＞ 17
+            
+      </p>
+      </div>
+      <div class="mem3 left">
+      <span>御守 月彦</span>
+      <p>
+      
+            「きもちいものですねぇ」
+      </p>
+      </div>
+      <div class="kp LtoR-early">
+      
+            46なのらー
+      </div>
+      <div class="mem9 left">
+      <span>ゾンビ</span>
+      <p>
+      
+            schoice[月彦,アレン,七夕] (choice[月彦,アレン,七夕]) ＞ 月彦
+            
+      </p>
+      </div>
+      <div class="mem9 left">
+      <span>ゾンビ</span>
+      <p>
+      
+            schoice[噛み付き,大きな棍棒] (choice[噛み付き,大きな棍棒]) ＞ 大きな棍棒
+            
+      </p>
+      </div>
+      <div class="mem9 left">
+      <span>ゾンビ</span>
+      <p>
+      
+            s1D100&lt;=25 [大きな棍棒] (1D100&lt;=25) ＞ 63 ＞ 失敗
+            
+      </p>
+      </div>
+      <div class="kp LtoR-early">
+      
+            つっきーにふりか…しっぱい
+      </div>
+      <div class="kp LtoR-early">
+      
+            アレンくんです
+      </div>
+      <div class="mem1 left">
+      <span>淵切 亞煉</span>
+      <p>
+      
+            1d100 (1D100) ＞ 16
+            
+      </p>
+      </div>
+      <div class="mem1 left">
+      <span>淵切 亞煉</span>
+      <p>
+      
+            1d20<br> (1D20) ＞ 1
+            
+      </p>
+      </div>
+      <div class="kp LtoR-early">
+      
+            45なのだー
+      </div>
+      <div class="mem1 left">
+      <span>淵切 亞煉</span>
+      <p>
+      
+            「ぐっ」
+      </p>
+      </div>
+      <div class="kp LtoR-early">
+      
+            七夕ちんなのらー
+      </div>
+      <div class="mem2 right">
+      <span>八坂 七夕</span>
+      <p>
+      
+            1ｄ100 (1D100) ＞ 70
+            
+      </p>
+      </div>
+      <div class="mem2 right">
+      <span>八坂 七夕</span>
+      <p>
+      
+            1ｄ20 (1D20) ＞ 2
+            
+      </p>
+      </div>
+      <div class="kp LtoR-early">
+      
+            43なのらー
+      </div>
+      <div class="mem2 right">
+      <span>八坂 七夕</span>
+      <p>
+      
+            「あ？やっぱだめかも？」
+      </p>
+      </div>
+      <div class="mem3 left">
+      <span>御守 月彦</span>
+      <p>
+      
+            1ｄ100 (1D100) ＞ 20
+            
+      </p>
+      </div>
+      <div class="mem3 left">
+      <span>御守 月彦</span>
+      <p>
+      
+            1ｄ20 (1D20) ＞ 9
+            
+      </p>
+      </div>
+      <div class="kp LtoR-early">
+      
+            34なのらー
+      </div>
+      <div class="mem9 left">
+      <span>ゾンビ</span>
+      <p>
+      
+            schoice[月彦,アレン,七夕] (choice[月彦,アレン,七夕]) ＞ 月彦
+            
+      </p>
+      </div>
+      <div class="mem9 left">
+      <span>ゾンビ</span>
+      <p>
+      
+            schoice[噛み付き,大きな棍棒] (choice[噛み付き,大きな棍棒]) ＞ 大きな棍棒
+            
+      </p>
+      </div>
+      <div class="mem9 left">
+      <span>ゾンビ</span>
+      <p>
+      
+            s1D100&lt;=34 [大きな棍棒] (1D100&lt;=34) ＞ 34 ＞ 成功
+            
+      </p>
+      </div>
+      <div class="kp LtoR-early">
+      
+            つっきーにあたーっく
+      </div>
+      <div class="kp LtoR-early">
+      
+            かいひしていいよ
+      </div>
+      <div class="mem3 left">
+      <span>御守 月彦</span>
+      <p>
+      
+            CCB&lt;=80 【回避】 (1D100&lt;=80) ＞ 7 ＞ スペシャル
+            
+      </p>
+      </div>
+      <div class="kp LtoR-early">
+      
+            スぺだから反撃していいよ
+      </div>
+      <div class="mem3 left">
+      <span>御守 月彦</span>
+      <p>
+      
+            「いやあ我ながらモテますな」
+      </p>
+      </div>
+      <div class="mem3 left">
+      <span>御守 月彦</span>
+      <p>
+      
+            1ｄ100 (1D100) ＞ 62
+            
+      </p>
+      </div>
+      <div class="mem3 left">
+      <span>御守 月彦</span>
+      <p>
+      
+            1ｄ20 (1D20) ＞ 6
+            
+      </p>
+      </div>
+      <div class="kp LtoR-early">
+      
+            28なのらー
+      </div>
+      <div class="kp LtoR-early">
+      
+            アレンなのらー
+      </div>
+      <div class="mem1 left">
+      <span>淵切 亞煉</span>
+      <p>
+      
+            1d100 (1D100) ＞ 37
+            
+      </p>
+      </div>
+      <div class="mem1 left">
+      <span>淵切 亞煉</span>
+      <p>
+      
+            1d20 (1D20) ＞ 8
+            
+      </p>
+      </div>
+      <div class="kp LtoR-early">
+      
+            20なのらー
+      </div>
+      <div class="kp LtoR-early">
+      
+            たなばっちゃんなのらー
+      </div>
+      <div class="mem2 right">
+      <span>八坂 七夕</span>
+      <p>
+      
+            1ｄ100 (1D100) ＞ 75
+            
+      </p>
+      </div>
+      <div class="mem2 right">
+      <span>八坂 七夕</span>
+      <p>
+      
+            1ｄ20 (1D20) ＞ 20
+            
+      </p>
+      </div>
+      <div class="mem3 left">
+      <span>御守 月彦</span>
+      <p>
+      
+            「さすがです！！」
+      </p>
+      </div>
+      <div class="kp LtoR-early">
+      
+            ぴったりなのだー！
+      </div>
+      <div class="mem2 right">
+      <span>八坂 七夕</span>
+      <p>
+      
+            「っしゃあ！」
+      </p>
+      </div>
+      <div class="mem1 left">
+      <span>淵切 亞煉</span>
+      <p>
+      
+            「さすがッス！」
+      </p>
+      </div>
+      <div class="kp LtoR-early">
+      
+            では全ての敵を倒したのだ
+      </div>
+      <div class="kp LtoR-early">
+      
+            廊下に出れば、想像通りの地獄絵図が広がっていた。積み重なった亡骸は忽ち立ち上がり、生存者を殺さんと牙を向ける。
+      </div>
+      <div class="kp LtoR-early">
+      
+            しかし、すかさず白雪の爪が化け物を切り裂き、化け物は地に伏せた。白雪は探索者に気が付くと目を丸くし、牙を剥き出して咆哮する。
+      </div>
+      <div class="mem13 left">
+      <span>白雪</span>
+      <p>
+      
+            「やっと戻ったのか、このノロマ共め！つい先程、有坂が展示室のバイクに乗って地上へと逃亡してしまった！」
+      </p>
+      </div>
+      <div class="mem13 left">
+      <span>白雪</span>
+      <p>
+      
+            「奴はきっと、安全なところから儀式とやらを執り行うつもりだ。鼠算式に増える化け物を止めるには、もう本体である有坂を倒すしか方法はない！」
+      </p>
+      </div>
+      <div class="mem1 left">
+      <span>淵切 亞煉</span>
+      <p>
+      
+            「アレ動くのか!?」
+      </p>
+      </div>
+      <div class="mem2 right">
+      <span>八坂 七夕</span>
+      <p>
+      
+            「マジでぇ！？やばいね！！」
+      </p>
+      </div>
+      <div class="mem3 left">
+      <span>御守 月彦</span>
+      <p>
+      
+            「追いかけましょう！」
+      </p>
+      </div>
+      <div class="mem13 left">
+      <span>白雪</span>
+      <p>
+      
+            「さっさと追いかけてなんとかしてくるのだ！」
+      </p>
+      </div>
+      <div class="mem1 left">
+      <span>淵切 亞煉</span>
+      <p>
+      
+            「バイク借りていくぜ！ひゃっほう！」
+      </p>
+      </div>
+      <div class="kp LtoR-early">
+      
+            アイデアどうぞ
+      </div>
+      <div class="mem1 left">
+      <span>淵切 亞煉</span>
+      <p>
+      
+            CCB&lt;=50 【アイデア】 (1D100&lt;=50) ＞ 9 ＞ スペシャル
+            
+      </p>
+      </div>
+      <div class="kp LtoR-early">
+      
+            あれ？鍵どうしよう
+      </div>
+      <div class="mem2 right">
+      <span>八坂 七夕</span>
+      <p>
+      
+            「バイクとかの鍵は！？」
+      </p>
+      </div>
+      <div class="mem13 left">
+      <span>白雪</span>
+      <p>
+      
+            「船長が管理しておる！船長はエンジンルームにいた狼男だ」
+      </p>
+      </div>
+      <div class="mem1 left">
+      <span>淵切 亞煉</span>
+      <p>
+      
+            「クラシックだし　直結とかで動かねぇか？」
+      </p>
+      </div>
+      <div class="mem2 right">
+      <span>八坂 七夕</span>
+      <p>
+      
+            「うそぉ！あれ船長！？」
+      </p>
+      </div>
+      <div class="mem13 left">
+      <span>白雪</span>
+      <p>
+      
+            「狼男を倒すには銀の武器が必要なのだ。きっと今はデッキにいるだろう」
+      </p>
+      </div>
+      <div class="mem2 right">
+      <span>八坂 七夕</span>
+      <p>
+      
+            「めんどくさー！ハッキングでどうにかできないかなー！？」
+      </p>
+      </div>
+      <div class="mem13 left">
+      <span>白雪</span>
+      <p>
+      
+            「道具ないであろう！」
+      </p>
+      </div>
+      <div class="mem2 right">
+      <span>八坂 七夕</span>
+      <p>
+      
+            「もーしょうがないなぁ！」
+      </p>
+      </div>
+      <div class="mem3 left">
+      <span>御守 月彦</span>
+      <p>
+      
+            「しかたありませんね」
+      </p>
+      </div>
+      <div class="kp LtoR-early">
+      
+            ではデッキへ・・・
+      </div>
+      <div class="kp LtoR-early">
+      
+            あ
+      </div>
+      <div class="mem1 left">
+      <span>淵切 亞煉</span>
+      <p>
+      
+            「パパッとかわいがってやろう！」
+      </p>
+      </div>
+      <div class="kp LtoR-early">
+      
+            一応生きてる人がちらほらいるけど、劇場安全だから逃げろとかっていう？
+      </div>
+      <div class="mem2 right">
+      <span>八坂 七夕</span>
+      <p>
+      
+            「みんなー！！劇場今みんな潰したから安全だよー！！」
+      </p>
+      </div>
+      <div class="mem1 left">
+      <span>淵切 亞煉</span>
+      <p>
+      
+            「死体あるけど　気にすんなよ！」
+      </p>
+      </div>
+      <div class="mem2 right">
+      <span>八坂 七夕</span>
+      <p>
+      
+            「ゾンビはあたしたちにのされてー！！」
+      </p>
+      </div>
+      <div class="kp LtoR-early">
+      
+            探索者がデッキに向かうと、二体の狼男が待ち構えている。狼男は探索者を見つけるや否か咆哮すると、探索者へと襲い掛かって来た。
+      </div>
+      <div class="mem1 left">
+      <span>淵切 亞煉</span>
+      <p>
+      
+            CCB&lt;=50 【アイデア】 (1D100&lt;=50) ＞ 95 ＞ 失敗
+            
+      </p>
+      </div>
+      <div class="kp LtoR-early">
+      
+            戦闘前にアイデアを
+      </div>
+      <div class="mem2 right">
+      <span>八坂 七夕</span>
+      <p>
+      
+            CCB&lt;=90 【アイデア】 (1D100&lt;=90) ＞ 81 ＞ 成功
+            
+      </p>
+      </div>
+      <div class="mem3 left">
+      <span>御守 月彦</span>
+      <p>
+      
+            CCB&lt;=85 【アイデア】 (1D100&lt;=85) ＞ 83 ＞ 成功
+            
+      </p>
+      </div>
+      <div class="kp LtoR-early">
+      
+            船の碇が上げられており、少しずつ進んでしまっているのがわかる
+      </div>
+      <div class="kp LtoR-early">
+      
+            では戦闘です
+      </div>
+      <div class="kp LtoR-early">
+      
+            まだタオの恩恵があります
+      </div>
+      <div class="mem3 left">
+      <span>御守 月彦</span>
+      <p>
+      
+            「もたもたしていられませんね」
+      </p>
+      </div>
+      <div class="mem2 right">
+      <span>八坂 七夕</span>
+      <p>
+      
+            「やっばいね！！船離れちゃってる！！」
+      </p>
+      </div>
+      <div class="kp LtoR-early">
+      
+            アレンくん
+      </div>
+      <div class="mem1 left">
+      <span>淵切 亞煉</span>
+      <p>
+      
+            ナイフで心臓を膾切りにしよう
+      </p>
+      </div>
+      <div class="kp LtoR-early">
+      
+            初期値ですね
+      </div>
+      <div class="mem1 left">
+      <span>淵切 亞煉</span>
+      <p>
+      
+            1d100<br> (1D100) ＞ 8
+            
+      </p>
+      </div>
+      <div class="kp LtoR-early">
+      
+            では1D4で
+      </div>
+      <div class="mem1 left">
+      <span>淵切 亞煉</span>
+      <p>
+      
+            1d4<br> (1D4) ＞ 2
+            
+      </p>
+      </div>
+      <div class="mem1 left">
+      <span>淵切 亞煉</span>
+      <p>
+      
+            「鍵をよこしな！」
+      </p>
+      </div>
+      <div class="kp LtoR-early">
+      
+            はい
+      </div>
+      <div class="kp LtoR-early">
+      
+            七夕ちゃん
+      </div>
+      <div class="mem2 right">
+      <span>八坂 七夕</span>
+      <p>
+      
+            1ｄ100 (1D100) ＞ 44
+            
+      </p>
+      </div>
+      <div class="mem2 right">
+      <span>八坂 七夕</span>
+      <p>
+      
+            1ｄ3 (1D3) ＞ 2
+            
+      </p>
+      </div>
+      <div class="kp LtoR-early">
+      
+            はい
+      </div>
+      <div class="mem11 left">
+      <span>狼男</span>
+      <p>
+      
+            schoice[月彦,アレン,七夕] (choice[月彦,アレン,七夕]) ＞ 七夕
+            
+      </p>
+      </div>
+      <div class="mem11 left">
+      <span>狼男</span>
+      <p>
+      
+            schoice[噛み付き,かぎ爪] (choice[噛み付き,かぎ爪]) ＞ かぎ爪
+            
+      </p>
+      </div>
+      <div class="mem11 left">
+      <span>狼男</span>
+      <p>
+      
+            s1D100&lt;=35 [かぎ爪] (1D100&lt;=35) ＞ 76 ＞ 失敗
+            
+      </p>
+      </div>
+      <div class="mem11 left">
+      <span>狼男</span>
+      <p>
+      
+            schoice[月彦,アレン,七夕] (choice[月彦,アレン,七夕]) ＞ 七夕
+            
+      </p>
+      </div>
+      <div class="mem11 left">
+      <span>狼男</span>
+      <p>
+      
+            schoice[噛み付き,かぎ爪] (choice[噛み付き,かぎ爪]) ＞ かぎ爪
+            
+      </p>
+      </div>
+      <div class="mem11 left">
+      <span>狼男</span>
+      <p>
+      
+            s1D100&lt;=35 [かぎ爪] (1D100&lt;=35) ＞ 81 ＞ 失敗
+            
+      </p>
+      </div>
+      <div class="kp LtoR-early">
+      
+            かなーしみーの
+      </div>
+      <div class="kp LtoR-early">
+      
+            むーこーうーへとー
+      </div>
+      <div class="kp LtoR-early">
+      
+            何もなかったです
+      </div>
+      <div class="kp LtoR-early">
+      
+            おじいちゃん
+      </div>
+      <div class="mem3 left">
+      <span>御守 月彦</span>
+      <p>
+      
+            「八坂さん銃をおひとついただいても？」
+      </p>
+      </div>
+      <div class="mem2 right">
+      <span>八坂 七夕</span>
+      <p>
+      
+            「おっどうぞー！」持ってるやつを差し出す
+      </p>
+      </div>
+      <div class="mem3 left">
+      <span>御守 月彦</span>
+      <p>
+      
+            受け取ってターンエンドで
+      </p>
+      </div>
+      <div class="kp LtoR-early">
+      
+            どっちわたした？
+      </div>
+      <div class="kp LtoR-early">
+      
+            てか一回どっち渡した？
+      </div>
+      <div class="kp LtoR-early">
+      
+            違う
+      </div>
+      <div class="mem2 right">
+      <span>八坂 七夕</span>
+      <p>
+      
+            十字架の方をおっぱいに挟んでいるていで
+      </p>
+      </div>
+      <div class="kp LtoR-early">
+      
+            どっち撃ってたっけ
+      </div>
+      <div class="mem1 left">
+      <span>淵切 亞煉</span>
+      <p>
+      
+            刺激がつよいなぁ
+      </p>
+      </div>
+      <div class="kp LtoR-early">
+      
+            リボルバー：6かな
+      </div>
+      <div class="kp LtoR-early">
+      
+            オートマが8かな
+      </div>
+      <div class="kp LtoR-early">
+      
+            リボルバー渡した
+      </div>
+      <div class="kp LtoR-early">
+      
+            のこり5発
+      </div>
+      <div class="kp LtoR-early">
+      
+            20％で1D10
+      </div>
+      <div class="kp LtoR-early">
+      
+            おｋ？
+      </div>
+      <div class="kp LtoR-early">
+      
+            はい
+      </div>
+      <div class="kp LtoR-early">
+      
+            おじいちゃん
+      </div>
+      <div class="kp LtoR-early">
+      
+            ラウンド始め1発目
+      </div>
+      <div class="mem3 left">
+      <span>御守 月彦</span>
+      <p>
+      
+            CCB&lt;=20 【拳銃】 (1D100&lt;=20) ＞ 23 ＞ 失敗
+            
+      </p>
+      </div>
+      <div class="kp LtoR-early">
+      
+            はい
+      </div>
+      <div class="mem3 left">
+      <span>御守 月彦</span>
+      <p>
+      
+            「むずかしいですねぇ」
+      </p>
+      </div>
+      <div class="kp LtoR-early">
+      
+            アレンくん
+      </div>
+      <div class="mem1 left">
+      <span>淵切 亞煉</span>
+      <p>
+      
+            靴にアクセサリーを巻こうかな
+      </p>
+      </div>
+      <div class="kp LtoR-early">
+      
+            はい
+      </div>
+      <div class="kp LtoR-early">
+      
+            七夕ちゃん
+      </div>
+      <div class="mem2 right">
+      <span>八坂 七夕</span>
+      <p>
+      
+            1ｄ100 (1D100) ＞ 86
+            
+      </p>
+      </div>
+      <div class="mem2 right">
+      <span>八坂 七夕</span>
+      <p>
+      
+            1ｄ3 (1D3) ＞ 1
+            
+      </p>
+      </div>
+      <div class="kp LtoR-early">
+      
+            はい
+      </div>
+      <div class="kp LtoR-early">
+      
+            おーかみ
+      </div>
+      <div class="mem11 left">
+      <span>狼男</span>
+      <p>
+      
+            schoice[月彦,アレン,七夕] (choice[月彦,アレン,七夕]) ＞ アレン
+            
+      </p>
+      </div>
+      <div class="mem11 left">
+      <span>狼男</span>
+      <p>
+      
+            schoice[噛み付き,かぎ爪] (choice[噛み付き,かぎ爪]) ＞ かぎ爪
+            
+      </p>
+      </div>
+      <div class="mem11 left">
+      <span>狼男</span>
+      <p>
+      
+            s1D100&lt;=35 [かぎ爪] (1D100&lt;=35) ＞ 64 ＞ 失敗
+            
+      </p>
+      </div>
+      <div class="mem11 left">
+      <span>狼男</span>
+      <p>
+      
+            schoice[月彦,アレン,七夕] (choice[月彦,アレン,七夕]) ＞ アレン
+            
+      </p>
+      </div>
+      <div class="mem11 left">
+      <span>狼男</span>
+      <p>
+      
+            schoice[噛み付き,かぎ爪] (choice[噛み付き,かぎ爪]) ＞ かぎ爪
+            
+      </p>
+      </div>
+      <div class="mem11 left">
+      <span>狼男</span>
+      <p>
+      
+            s1D100&lt;=35 [かぎ爪] (1D100&lt;=35) ＞ 77 ＞ 失敗
+            
+      </p>
+      </div>
+      <div class="kp LtoR-early">
+      
+            ばいばい
+      </div>
+      <div class="kp LtoR-early">
+      
+            狼さんから人気のアレンくん（なお当たらない）
+      </div>
+      <div class="kp LtoR-early">
+      
+            おじちゃん
+      </div>
+      <div class="mem3 left">
+      <span>御守 月彦</span>
+      <p>
+      
+            CCB&lt;=20 【拳銃】 (1D100&lt;=20) ＞ 56 ＞ 失敗
+            
+      </p>
+      </div>
+      <div class="mem3 left">
+      <span>御守 月彦</span>
+      <p>
+      
+            CCB&lt;=20 【拳銃】 (1D100&lt;=20) ＞ 26 ＞ 失敗
+            
+      </p>
+      </div>
+      <div class="kp LtoR-early">
+      
+            はい
+      </div>
+      <div class="kp LtoR-early">
+      
+            アレンくん
+      </div>
+      <div class="mem1 left">
+      <span>淵切 亞煉</span>
+      <p>
+      
+            蹴るよ！
+      </p>
+      </div>
+      <div class="mem1 left">
+      <span>淵切 亞煉</span>
+      <p>
+      
+            1d100 (1D100) ＞ 1
+            
+      </p>
+      </div>
+      <div class="kp LtoR-early">
+      
+            えっと
+      </div>
+      <div class="kp LtoR-early">
+      
+            今から変えてやるよ
+      </div>
+      <div class="kp LtoR-early">
+      
+            どっち蹴る？
+      </div>
+      <div class="mem1 left">
+      <span>淵切 亞煉</span>
+      <p>
+      
+            元気な方
+      </p>
+      </div>
+      <div class="mem1 left">
+      <span>淵切 亞煉</span>
+      <p>
+      
+            4d6+1d4 (4D6+1D4) ＞ 17[4,4,6,3]+3[3] ＞ 20
+            
+      </p>
+      </div>
+      <div class="mem11 left">
+      <span>狼男</span>
+      <p>
+      
+            s1D100 (1D100) ＞ 21
+            
+      </p>
+      </div>
+      <div class="kp LtoR-early">
+      
+            あ、しんだ
+      </div>
+      <div class="mem1 left">
+      <span>淵切 亞煉</span>
+      <p>
+      
+            「くたばれイヌゥ！」
+      </p>
+      </div>
+      <div class="kp LtoR-early">
+      
+            アレンくんの蹴りで狼男は爆発四散
+      </div>
+      <div class="kp LtoR-early">
+      
+            さらば
+      </div>
+      <div class="kp LtoR-early">
+      
+            では七夕ちゃん
+      </div>
+      <div class="mem3 left">
+      <span>御守 月彦</span>
+      <p>
+      
+            「おみごと！」
+      </p>
+      </div>
+      <div class="mem2 right">
+      <span>八坂 七夕</span>
+      <p>
+      
+            1ｄ100 (1D100) ＞ 80
+            
+      </p>
+      </div>
+      <div class="mem2 right">
+      <span>八坂 七夕</span>
+      <p>
+      
+            1ｄ3 (1D3) ＞ 3
+            
+      </p>
+      </div>
+      <div class="kp LtoR-early">
+      
+            はい
+      </div>
+      <div class="kp LtoR-early">
+      
+            おらこいよ銃！
+      </div>
+      <div class="kp LtoR-early">
+      
+            その前にだったわ
+      </div>
+      <div class="mem11 left">
+      <span>狼男</span>
+      <p>
+      
+            schoice[月彦,アレン,七夕] (choice[月彦,アレン,七夕]) ＞ 七夕
+            
+      </p>
+      </div>
+      <div class="mem11 left">
+      <span>狼男</span>
+      <p>
+      
+            schoice[噛み付き,かぎ爪] (choice[噛み付き,かぎ爪]) ＞ かぎ爪
+            
+      </p>
+      </div>
+      <div class="mem11 left">
+      <span>狼男</span>
+      <p>
+      
+            s1D100&lt;=35 [かぎ爪] (1D100&lt;=35) ＞ 76 ＞ 失敗
+            
+      </p>
+      </div>
+      <div class="kp LtoR-early">
+      
+            はい
+      </div>
+      <div class="mem3 left">
+      <span>御守 月彦</span>
+      <p>
+      
+            CCB&lt;=20 【拳銃】 (1D100&lt;=20) ＞ 2 ＞ 決定的成功/スペシャル
+            
+      </p>
+      </div>
+      <div class="mem3 left">
+      <span>御守 月彦</span>
+      <p>
+      
+            2ｄ10 (2D10) ＞ 11[4,7] ＞ 11
+            
+      </p>
+      </div>
+      <div class="mem11 left">
+      <span>狼男</span>
+      <p>
+      
+            s1D100 (1D100) ＞ 38
+            
+      </p>
+      </div>
+      <div class="kp LtoR-early">
+      
+            はい
+      </div>
+      <div class="kp LtoR-early">
+      
+            くるしい
+      </div>
+      <div class="mem3 left">
+      <span>御守 月彦</span>
+      <p>
+      
+            「くたばりはしませんか。しぶといですね」
+      </p>
+      </div>
+      <div class="mem3 left">
+      <span>御守 月彦</span>
+      <p>
+      
+            CCB&lt;=20 【拳銃】 (1D100&lt;=20) ＞ 35 ＞ 失敗
+            
+      </p>
+      </div>
+      <div class="kp LtoR-early">
+      
+            アレン君
+      </div>
+      <div class="mem1 left">
+      <span>淵切 亞煉</span>
+      <p>
+      
+            蹴るよ！
+      </p>
+      </div>
+      <div class="kp LtoR-early">
+      
+            トドメさせよ
+      </div>
+      <div class="mem1 left">
+      <span>淵切 亞煉</span>
+      <p>
+      
+            1d100 (1D100) ＞ 90
+            
+      </p>
+      </div>
+      <div class="mem1 left">
+      <span>淵切 亞煉</span>
+      <p>
+      
+            2d6+1d4<br><br> (2D6+1D4) ＞ 7[3,4]+4[4] ＞ 11
+            
+      </p>
+      </div>
+      <div class="kp LtoR-early">
+      
+            1D100 (1D100) ＞ 79
+            
+      </div>
+      <div class="kp LtoR-early">
+      
+            さらば
+      </div>
+      <div class="kp LtoR-early">
+      
+            息絶え絶えだったけど爆発四散した
+      </div>
+      <div class="kp LtoR-early">
+      
+            かなしみ
+      </div>
+      <div class="mem1 left">
+      <span>淵切 亞煉</span>
+      <p>
+      
+            「殺処分だァ！」
+      </p>
+      </div>
+      <div class="kp LtoR-early">
+      
+            HP-2だった
+      </div>
+      <div class="kp LtoR-early">
+      
+            まぁ即死だったんだけど
+      </div>
+      <div class="kp LtoR-early">
+      
+            爆発した死体の影に鍵が
+      </div>
+      <div class="mem1 left">
+      <span>淵切 亞煉</span>
+      <p>
+      
+            「鍵だ！ヒャッハー！」
+      </p>
+      </div>
+      <div class="kp LtoR-early">
+      
+            確認だけど蛮族じゃないよね？
+      </div>
+      <div class="mem1 left">
+      <span>淵切 亞煉</span>
+      <p>
+      
+            ちがうよ
+      </p>
+      </div>
+      <div class="mem2 right">
+      <span>八坂 七夕</span>
+      <p>
+      
+            「落ちてたね」
+      </p>
+      </div>
+      <div class="kp LtoR-early">
+      
+            じゃ
+      </div>
+      <div class="kp LtoR-early">
+      
+            まくね
+      </div>
+      <div class="kp LtoR-early">
+      
+            さっそく好きなバイクか車か選んでもらおう
+      </div>
+      <div class="kp LtoR-early">
+      
+            タオの力により運転技能も＋10ずつもらってます
+      </div>
+      <div class="kp LtoR-early">
+      
+            サービス
+      </div>
+      <div class="mem2 right">
+      <span>八坂 七夕</span>
+      <p>
+      
+            「月彦さん相乗りさせてー」
+      </p>
+      </div>
+      <div class="mem1 left">
+      <span>淵切 亞煉</span>
+      <p>
+      
+            「相乗りなら俺様バイク乗っても良いよな！な！！」
+      </p>
+      </div>
+      <div class="mem3 left">
+      <span>御守 月彦</span>
+      <p>
+      
+            「ええ、ランデブーと洒落こみましょうか。」
+      </p>
+      </div>
+      <div class="kp LtoR-early">
+      
+            のりこんだ？
+      </div>
+      <div class="kp LtoR-early">
+      
+            いい？
+      </div>
+      <div class="kp LtoR-early">
+      
+            では
+      </div>
+      <div class="mem1 left">
+      <span>淵切 亞煉</span>
+      <p>
+      
+            Aバイクにのりたし
+      </p>
+      </div>
+      <div class="mem2 right">
+      <span>八坂 七夕</span>
+      <p>
+      
+            「いいよー！ゾンビ轢き殺して！」
+      </p>
+      </div>
+      <div class="kp LtoR-early">
+      
+            動いている船の中、車やバイクにエンジンをかける
+      </div>
+      <div class="kp LtoR-early">
+      
+            そして、展示室から飛び出し…デッキを猛スピードで走り抜ける
+      </div>
+      <div class="kp LtoR-early">
+      
+            そして、デッキから―――降りる！
+      </div>
+      <div class="kp LtoR-early">
+      
+            さあ運転技能で判定だ
+      </div>
+      <div class="mem1 left">
+      <span>淵切 亞煉</span>
+      <p>
+      
+            「うおぉぉぉぉ！」
+      </p>
+      </div>
+      <div class="mem1 left">
+      <span>淵切 亞煉</span>
+      <p>
+      
+            CCB&lt;=90 【運転(大型二輪)】 (1D100&lt;=90) ＞ 69 ＞ 成功
+            
+      </p>
+      </div>
+      <div class="mem3 left">
+      <span>御守 月彦</span>
+      <p>
+      
+            CCB&lt;=80 【運転(車)】 (1D100&lt;=80) ＞ 68 ＞ 成功
+            
+      </p>
+      </div>
+      <div class="kp LtoR-early">
+      
+            では、二台の車とバイクは華麗なジャンプを決めて埠頭へと降り立つ
+      </div>
+      <div class="mem1 left">
+      <span>淵切 亞煉</span>
+      <p>
+      
+            「速度《スピード》の彼方《むこうがわ》が見えるぜぇーーー！」
+      </p>
+      </div>
+      <div class="mem2 right">
+      <span>八坂 七夕</span>
+      <p>
+      
+            「うっはぁ！！海飛び越えた！！」
+      </p>
+      </div>
+      <div class="kp LtoR-early">
+      
+            突如として地上に降り立った探索者に、港に居た一般人は目を丸くする。港の地面を見れば真新しいタイヤ跡が残されており、有坂の乗ったバイクだろうということは容易に想像出来た。
+      </div>
+      <div class="kp LtoR-early">
+      
+            バイクの痕跡を追いながら有坂を追跡する。
+      </div>
+      <div class="kp LtoR-early">
+      
+            三ターン以内に追い付かなければ有坂は逃げてしまう、猶予は五ターン。
+      </div>
+      <div class="kp LtoR-early">
+      
+            手順としては、①目星でタイヤ跡を見つける→②運転技能で有坂を追う→③DEX×5で車体を傷つけず追う(失敗で車体のHP-1d3)　という手順となる。車もバイクも、本シナリオに限りHPは一律10。
+      </div>
+      <div class="kp LtoR-early">
+      
+            1.目星
+      </div>
+      <div class="kp LtoR-early">
+      
+            2.運転
+      </div>
+      <div class="kp LtoR-early">
+      
+            3.DEX×5
+      </div>
+      <div class="kp LtoR-early">
+      
+            全て成功すれば追いつける
+      </div>
+      <div class="kp LtoR-early">
+      
+            ってことにしよう
+      </div>
+      <div class="kp LtoR-early">
+      
+            連続成功ね
+      </div>
+      <div class="kp LtoR-early">
+      
+            では目星
+      </div>
+      <div class="mem1 left">
+      <span>淵切 亞煉</span>
+      <p>
+      
+            CCB&lt;=60 【目星】 (1D100&lt;=60) ＞ 11 ＞ スペシャル
+            
+      </p>
+      </div>
+      <div class="mem2 right">
+      <span>八坂 七夕</span>
+      <p>
+      
+            CCB&lt;=50 【目星】 (1D100&lt;=50) ＞ 43 ＞ 成功
+            
+      </p>
+      </div>
+      <div class="mem3 left">
+      <span>御守 月彦</span>
+      <p>
+      
+            CCB&lt;=25 【目星】 (1D100&lt;=25) ＞ 24 ＞ 成功
+            
+      </p>
+      </div>
+      <div class="kp LtoR-early">
+      
+            運転よろー
+      </div>
+      <div class="mem3 left">
+      <span>御守 月彦</span>
+      <p>
+      
+            CCB&lt;=80 【運転(車)】 (1D100&lt;=80) ＞ 30 ＞ 成功
+            
+      </p>
+      </div>
+      <div class="mem1 left">
+      <span>淵切 亞煉</span>
+      <p>
+      
+            CCB&lt;=90 【運転(大型二輪)】 (1D100&lt;=90) ＞ 1 ＞ 決定的成功/スペシャル
+            
+      </p>
+      </div>
+      <div class="kp LtoR-early">
+      
+            DEX×5
+      </div>
+      <div class="mem1 left">
+      <span>淵切 亞煉</span>
+      <p>
+      
+            1d100 (1D100) ＞ 23
+            
+      </p>
+      </div>
+      <div class="mem3 left">
+      <span>御守 月彦</span>
+      <p>
+      
+            1ｄ100 (1D100) ＞ 50
+            
+      </p>
+      </div>
+      <div class="kp LtoR-early">
+      
+            探索者の登場に有坂は絶句し、顔を歪めると廃工場へと逃げ込む。
+      </div>
+      <div class="mem2 right">
+      <span>八坂 七夕</span>
+      <p>
+      
+            「あー！！いた！！」
+      </p>
+      </div>
+      <div class="kp LtoR-early">
+      
+            そしてバイクを降りると、探索者を鋭い眼光で睨み付け忌々し気に口を開いた。
+      </div>
+      <div class="mem10 right">
+      <span>有坂</span>
+      <p>
+      
+            「またお前たちか…！もう直ぐで儀式が完成されるというのに、邪魔しやがって！」
+      </p>
+      </div>
+      <div class="mem1 left">
+      <span>淵切 亞煉</span>
+      <p>
+      
+            「俺様に　スピードで勝てると思ってるのかよぉ！
+      <br>この亞煉様によぉ！」
+      </p>
+      </div>
+      <div class="mem10 right">
+      <span>有坂</span>
+      <p>
+      
+            「俺の邪魔はさせない…絶対に、させるものか！」
+      </p>
+      </div>
+      <div class="kp LtoR-early">
+      
+            そう有坂が叫んだ瞬間、倉庫の奥から異常なほどに膨れ上がった巨大な化け物が姿を見せた。化け物は探索者を見るや否や、廃工場全体が震えんばかりの咆哮をあげる。
+      </div>
+      <div class="mem3 left">
+      <span>御守 月彦</span>
+      <p>
+      
+            「私の生きる邪魔もさせませんよ」
+      </p>
+      </div>
+      <div class="kp LtoR-early">
+      
+            SANチェックです0/1D8
+      </div>
+      <div class="mem2 right">
+      <span>八坂 七夕</span>
+      <p>
+      
+            「なんでそんなにこだわるわけぇ？なにがしたいの？」
+      </p>
+      </div>
+      <div class="mem3 left">
+      <span>御守 月彦</span>
+      <p>
+      
+            CCB&lt;=58 【SAN値チェック】 (1D100&lt;=58) ＞ 55 ＞ 成功
+            
+      </p>
+      </div>
+      <div class="mem1 left">
+      <span>淵切 亞煉</span>
+      <p>
+      
+            CCB&lt;=55 【SAN値チェック】 (1D100&lt;=55) ＞ 14 ＞ 成功
+            
+      </p>
+      </div>
+      <div class="mem2 right">
+      <span>八坂 七夕</span>
+      <p>
+      
+            CCB&lt;=61 【SAN値チェック】 (1D100&lt;=61) ＞ 2 ＞ 決定的成功/スペシャル
+            
+      </p>
+      </div>
+      <div class="kp LtoR-early">
+      
+            お前ら余裕すぎ
+      </div>
+      <div class="kp LtoR-early">
+      
+            はいであ
+      </div>
+      <div class="mem2 right">
+      <span>八坂 七夕</span>
+      <p>
+      
+            「吸血鬼と協力して異世界行ってゾンビ薙ぎ払って狼男殺してきたんだよ？もうこんなので驚くわけないでしょー」
+      </p>
+      </div>
+      <div class="kp LtoR-early">
+      
+            巨大ゾンビ＆有坂vs探索者
+      </div>
+      <div class="kp LtoR-early">
+      
+            ふぁい（カーン）
+      </div>
+      <div class="kp LtoR-early">
+      
+            アレン君です
+      </div>
+      <div class="mem1 left">
+      <span>淵切 亞煉</span>
+      <p>
+      
+            轢こう！
+      </p>
+      </div>
+      <div class="kp LtoR-early">
+      
+            バイクで
+      </div>
+      <div class="kp LtoR-early">
+      
+            あ
+      </div>
+      <div class="mem1 left">
+      <span>淵切 亞煉</span>
+      <p>
+      
+            バイクで！
+      </p>
+      </div>
+      <div class="kp LtoR-early">
+      
+            ちなみにタオパワーが衰えてきたので運転バフは消えました
+      </div>
+      <div class="kp LtoR-early">
+      
+            -10でお願いします
+      </div>
+      <div class="kp LtoR-early">
+      
+            タオバフは通常の戦闘技能に＋10％の補正
+      </div>
+      <div class="kp LtoR-early">
+      
+            はい
+      </div>
+      <div class="kp LtoR-early">
+      
+            はい
+      </div>
+      <div class="mem1 left">
+      <span>淵切 亞煉</span>
+      <p>
+      
+            CCB&lt;=90 【運転(大型二輪)】 (1D100&lt;=90) ＞ 60 ＞ 成功
+            
+      </p>
+      </div>
+      <div class="mem1 left">
+      <span>淵切 亞煉</span>
+      <p>
+      
+            「RTA総長《カシラァ！》亞煉様にバイク！<br>すなわち最強ォ！」
+      </p>
+      </div>
+      <div class="mem1 left">
+      <span>淵切 亞煉</span>
+      <p>
+      
+            1d10 (1D10) ＞ 10
+            
+      </p>
+      </div>
+      <div class="kp LtoR-early">
+      
+            ゾンビがかばいます
+      </div>
+      <div class="kp LtoR-early">
+      
+            では
+      </div>
+      <div class="kp LtoR-early">
+      
+            七夕ちゃん
+      </div>
+      <div class="mem2 right">
+      <span>八坂 七夕</span>
+      <p>
+      
+            有坂にこぶし
+      </p>
+      </div>
+      <div class="kp LtoR-early">
+      
+            かばでぃ
+      </div>
+      <div class="mem2 right">
+      <span>八坂 七夕</span>
+      <p>
+      
+            CCB&lt;=69 【こぶし（パンチ）】 (1D100&lt;=69) ＞ 75 ＞ 失敗
+            
+      </p>
+      </div>
+      <div class="kp LtoR-early">
+      
+            すかっ
+      </div>
+      <div class="kp LtoR-early">
+      
+            どうやって外したんやろなぁ
+      </div>
+      <div class="kp LtoR-early">
+      
+            ありかてぃ
+      </div>
+      <div class="mem10 right">
+      <span>有坂</span>
+      <p>
+      
+            schoice[月彦,アレン,七夕] (choice[月彦,アレン,七夕]) ＞ 月彦
+            
+      </p>
+      </div>
+      <div class="mem10 right">
+      <span>有坂</span>
+      <p>
+      
+            s1D100&lt;=40 [拳銃] (1D100&lt;=40) ＞ 40 ＞ 成功
+            
+      </p>
+      </div>
+      <div class="kp LtoR-early">
+      
+            おじいちゃん
+      </div>
+      <div class="kp LtoR-early">
+      
+            貴方に拳銃の弾が飛んできます
+      </div>
+      <div class="mem3 left">
+      <span>御守 月彦</span>
+      <p>
+      
+            CCB&lt;=80 【回避】 (1D100&lt;=80) ＞ 84 ＞ 失敗
+            
+      </p>
+      </div>
+      <div class="mem10 right">
+      <span>有坂</span>
+      <p>
+      
+            1D10 (1D10) ＞ 1
+            
+      </p>
+      </div>
+      <div class="mem3 left">
+      <span>御守 月彦</span>
+      <p>
+      
+            「かゆいですな」
+      </p>
+      </div>
+      <div class="mem5 left">
+      <span>system</span>
+      <p>
+      
+            [ 御守 月彦 ] HP : 11 → 10
+      </p>
+      </div>
+      <div class="kp LtoR-early">
+      
+            おじいちゃんですね
+      </div>
+      <div class="mem3 left">
+      <span>御守 月彦</span>
+      <p>
+      
+            CCB&lt;=70 【杖術】 (1D100&lt;=70) ＞ 59 ＞ 成功
+            
+      </p>
+      </div>
+      <div class="kp LtoR-early">
+      
+            かばでぃ
+      </div>
+      <div class="mem3 left">
+      <span>御守 月彦</span>
+      <p>
+      
+            1ｄ6 (1D6) ＞ 4
+            
+      </p>
+      </div>
+      <div class="kp LtoR-early">
+      
+            ゾンビがいたい
+      </div>
+      <div class="kp LtoR-early">
+      
+            ゾンビが
+      </div>
+      <div class="mem9 left">
+      <span>ゾンビ</span>
+      <p>
+      
+            schoice[月彦,アレン,七夕] (choice[月彦,アレン,七夕]) ＞ 七夕
+            
+      </p>
+      </div>
+      <div class="mem9 left">
+      <span>ゾンビ</span>
+      <p>
+      
+            schoice[噛み付き,大きな棍棒] (choice[噛み付き,大きな棍棒]) ＞ 噛み付き
+            
+      </p>
+      </div>
+      <div class="mem9 left">
+      <span>ゾンビ</span>
+      <p>
+      
+            s1D100&lt;=30 [噛み付き] (1D100&lt;=30) ＞ 86 ＞ 失敗
+            
+      </p>
+      </div>
+      <div class="kp LtoR-early">
+      
+            はい
+      </div>
+      <div class="kp LtoR-early">
+      
+            では
+      </div>
+      <div class="kp LtoR-early">
+      
+            暴走族
+      </div>
+      <div class="mem1 left">
+      <span>淵切 亞煉</span>
+      <p>
+      
+            轢くよ！
+      </p>
+      </div>
+      <div class="kp LtoR-early">
+      
+            ※バイクは武器です
+      </div>
+      <div class="kp LtoR-early">
+      
+            どうぞ
+      </div>
+      <div class="mem1 left">
+      <span>淵切 亞煉</span>
+      <p>
+      
+            CCB&lt;=90 【運転(大型二輪)】 (1D100&lt;=90) ＞ 96 ＞ 致命的失敗
+            
+      </p>
+      </div>
+      <div class="kp LtoR-early">
+      
+            えっと
+      </div>
+      <div class="kp LtoR-early">
+      
+            バイク大破かと思ったけど、事故るか
+      </div>
+      <div class="kp LtoR-early">
+      
+            幸運-20で
+      </div>
+      <div class="mem1 left">
+      <span>淵切 亞煉</span>
+      <p>
+      
+            CCB&lt;=60 【幸運】 (1D100&lt;=60) ＞ 12 ＞ スペシャル
+            
+      </p>
+      </div>
+      <div class="kp LtoR-early">
+      
+            バイク大破+1D5ダメで
+      </div>
+      <div class="mem1 left">
+      <span>淵切 亞煉</span>
+      <p>
+      
+            1d5 (1D5) ＞ 4
+            
+      </p>
+      </div>
+      <div class="mem5 left">
+      <span>system</span>
+      <p>
+      
+            [ 淵切 亞煉 ] HP : 19 → 15
+      </p>
+      </div>
+      <div class="kp LtoR-early">
+      
+            はい
+      </div>
+      <div class="kp LtoR-early">
+      
+            七夕ちゃん
+      </div>
+      <div class="mem2 right">
+      <span>八坂 七夕</span>
+      <p>
+      
+            拳を有坂に
+      </p>
+      </div>
+      <div class="mem1 left">
+      <span>淵切 亞煉</span>
+      <p>
+      
+            「チィッ　ありがとなA!」
+      </p>
+      </div>
+      <div class="mem2 right">
+      <span>八坂 七夕</span>
+      <p>
+      
+            CCB&lt;=69 【こぶし（パンチ）】 (1D100&lt;=69) ＞ 10 ＞ スペシャル
+            
+      </p>
+      </div>
+      <div class="mem2 right">
+      <span>八坂 七夕</span>
+      <p>
+      
+            1ｄ3 (1D3) ＞ 3
+            
+      </p>
+      </div>
+      <div class="kp LtoR-early">
+      
+            カバディ
+      </div>
+      <div class="mem2 right">
+      <span>八坂 七夕</span>
+      <p>
+      
+            「おらぁ！」
+      </p>
+      </div>
+      <div class="kp LtoR-early">
+      
+            ありかってぃ
+      </div>
+      <div class="mem10 right">
+      <span>有坂</span>
+      <p>
+      
+            schoice[月彦,アレン,七夕] (choice[月彦,アレン,七夕]) ＞ アレン
+            
+      </p>
+      </div>
+      <div class="mem10 right">
+      <span>有坂</span>
+      <p>
+      
+            s1D100&lt;=40 [拳銃] (1D100&lt;=40) ＞ 74 ＞ 失敗
+            
+      </p>
+      </div>
+      <div class="kp LtoR-early">
+      
+            アレンくんの横を弾がかすめました
+      </div>
+      <div class="kp LtoR-early">
+      
+            おじいちゃん
+      </div>
+      <div class="mem1 left">
+      <span>淵切 亞煉</span>
+      <p>
+      
+            「っぶね」
+      </p>
+      </div>
+      <div class="mem3 left">
+      <span>御守 月彦</span>
+      <p>
+      
+            CCB&lt;=70 【杖術】 (1D100&lt;=70) ＞ 75 ＞ 失敗
+            
+      </p>
+      </div>
+      <div class="mem3 left">
+      <span>御守 月彦</span>
+      <p>
+      
+            1ｄ6 (1D6) ＞ 6
+            
+      </p>
+      </div>
+      <div class="kp LtoR-early">
+      
+            ぞんびがーど
+      </div>
+      <div class="kp LtoR-early">
+      
+            ぞんびぃ
+      </div>
+      <div class="mem9 left">
+      <span>ゾンビ</span>
+      <p>
+      
+            schoice[月彦,アレン,七夕] (choice[月彦,アレン,七夕]) ＞ 七夕
+            
+      </p>
+      </div>
+      <div class="mem9 left">
+      <span>ゾンビ</span>
+      <p>
+      
+            schoice[噛み付き,大きな棍棒] (choice[噛み付き,大きな棍棒]) ＞ 噛み付き
+            
+      </p>
+      </div>
+      <div class="mem9 left">
+      <span>ゾンビ</span>
+      <p>
+      
+            s1D100&lt;=30 [噛み付き] (1D100&lt;=30) ＞ 83 ＞ 失敗
+            
+      </p>
+      </div>
+      <div class="kp LtoR-early">
+      
+            さよなら
+      </div>
+      <div class="kp LtoR-early">
+      
+            ではアレンくん
+      </div>
+      <div class="mem1 left">
+      <span>淵切 亞煉</span>
+      <p>
+      
+            蹴ります！
+      </p>
+      </div>
+      <div class="kp LtoR-early">
+      
+            はい
+      </div>
+      <div class="mem1 left">
+      <span>淵切 亞煉</span>
+      <p>
+      
+            CCB&lt;=80 【キック】 (1D100&lt;=80) ＞ 83 ＞ 失敗
+            
+      </p>
+      </div>
+      <div class="mem1 left">
+      <span>淵切 亞煉</span>
+      <p>
+      
+            2d6+1d4 (2D6+1D4) ＞ 5[4,1]+1[1] ＞ 6
+            
+      </p>
+      </div>
+      <div class="kp LtoR-early">
+      
+            七夕ちん
+      </div>
+      <div class="mem2 right">
+      <span>八坂 七夕</span>
+      <p>
+      
+            拳を有坂に
+      </p>
+      </div>
+      <div class="mem2 right">
+      <span>八坂 七夕</span>
+      <p>
+      
+            CCB&lt;=69 【こぶし（パンチ）】 (1D100&lt;=69) ＞ 60 ＞ 成功
+            
+      </p>
+      </div>
+      <div class="kp LtoR-early">
+      
+            はい
+      </div>
+      <div class="mem2 right">
+      <span>八坂 七夕</span>
+      <p>
+      
+            1ｄ3 (1D3) ＞ 1
+            
+      </p>
+      </div>
+      <div class="kp LtoR-early">
+      
+            げすちん
+      </div>
+      <div class="mem10 right">
+      <span>有坂</span>
+      <p>
+      
+            schoice[月彦,アレン,七夕] (choice[月彦,アレン,七夕]) ＞ 七夕
+            
+      </p>
+      </div>
+      <div class="mem10 right">
+      <span>有坂</span>
+      <p>
+      
+            s1D100&lt;=40 [拳銃] (1D100&lt;=40) ＞ 51 ＞ 失敗
+            
+      </p>
+      </div>
+      <div class="kp LtoR-early">
+      
+            七夕ちゃんの横を弾がばいばい
+      </div>
+      <div class="mem3 left">
+      <span>御守 月彦</span>
+      <p>
+      
+            CCB&lt;=70 【杖術】 (1D100&lt;=70) ＞ 34 ＞ 成功
+            
+      </p>
+      </div>
+      <div class="mem3 left">
+      <span>御守 月彦</span>
+      <p>
+      
+            1ｄ6 (1D6) ＞ 2
+            
+      </p>
+      </div>
+      <div class="kp LtoR-early">
+      
+            かばでぃ
+      </div>
+      <div class="kp LtoR-early">
+      
+            えーっと
+      </div>
+      <div class="kp LtoR-early">
+      
+            あれんくーん
+      </div>
+      <div class="mem1 left">
+      <span>淵切 亞煉</span>
+      <p>
+      
+            蹴るよ！
+      </p>
+      </div>
+      <div class="mem1 left">
+      <span>淵切 亞煉</span>
+      <p>
+      
+            CCB&lt;=80 【キック】 (1D100&lt;=80) ＞ 24 ＞ 成功
+            
+      </p>
+      </div>
+      <div class="mem9 left">
+      <span>ゾンビ</span>
+      <p>
+      
+            schoice[月彦,アレン,七夕] (choice[月彦,アレン,七夕]) ＞ 月彦
+            
+      </p>
+      </div>
+      <div class="mem9 left">
+      <span>ゾンビ</span>
+      <p>
+      
+            schoice[噛み付き,大きな棍棒] (choice[噛み付き,大きな棍棒]) ＞ 噛み付き
+            
+      </p>
+      </div>
+      <div class="mem9 left">
+      <span>ゾンビ</span>
+      <p>
+      
+            s1D100&lt;=30 [噛み付き] (1D100&lt;=30) ＞ 39 ＞ 失敗
+            
+      </p>
+      </div>
+      <div class="mem1 left">
+      <span>淵切 亞煉</span>
+      <p>
+      
+            2d6+1d4 (2D6+1D4) ＞ 6[4,2]+4[4] ＞ 10
+            
+      </p>
+      </div>
+      <div class="kp LtoR-early">
+      
+            たなちん
+      </div>
+      <div class="mem2 right">
+      <span>八坂 七夕</span>
+      <p>
+      
+            有坂に拳
+      </p>
+      </div>
+      <div class="mem2 right">
+      <span>八坂 七夕</span>
+      <p>
+      
+            CCB&lt;=69 【こぶし（パンチ）】 (1D100&lt;=69) ＞ 65 ＞ 成功
+            
+      </p>
+      </div>
+      <div class="mem2 right">
+      <span>八坂 七夕</span>
+      <p>
+      
+            1ｄ3 (1D3) ＞ 2
+            
+      </p>
+      </div>
+      <div class="kp LtoR-early">
+      
+            げっす
+      </div>
+      <div class="mem10 right">
+      <span>有坂</span>
+      <p>
+      
+            schoice[月彦,アレン,七夕] (choice[月彦,アレン,七夕]) ＞ 月彦
+            
+      </p>
+      </div>
+      <div class="mem10 right">
+      <span>有坂</span>
+      <p>
+      
+            s1D100&lt;=40 [拳銃] (1D100&lt;=40) ＞ 86 ＞ 失敗
+            
+      </p>
+      </div>
+      <div class="kp LtoR-early">
+      
+            つっきーの頭上ずっと上を弾がばいばーい
+      </div>
+      <div class="kp LtoR-early">
+      
+            そろそろ弾なくなった気がする
+      </div>
+      <div class="mem3 left">
+      <span>御守 月彦</span>
+      <p>
+      
+            「私ととんとんののーこんですねぇ」
+      </p>
+      </div>
+      <div class="kp LtoR-early">
+      
+            リロードしないと
+      </div>
+      <div class="mem3 left">
+      <span>御守 月彦</span>
+      <p>
+      
+            CCB&lt;=70 【杖術】 (1D100&lt;=70) ＞ 91 ＞ 失敗
+            
+      </p>
+      </div>
+      <div class="kp LtoR-early">
+      
+            ぞんぞん
+      </div>
+      <div class="mem9 left">
+      <span>ゾンビ</span>
+      <p>
+      
+            schoice[月彦,アレン,七夕] (choice[月彦,アレン,七夕]) ＞ 月彦
+            
+      </p>
+      </div>
+      <div class="mem9 left">
+      <span>ゾンビ</span>
+      <p>
+      
+            schoice[噛み付き,大きな棍棒] (choice[噛み付き,大きな棍棒]) ＞ 噛み付き
+            
+      </p>
+      </div>
+      <div class="mem9 left">
+      <span>ゾンビ</span>
+      <p>
+      
+            s1D100&lt;=30 [噛み付き] (1D100&lt;=30) ＞ 48 ＞ 失敗
+            
+      </p>
+      </div>
+      <div class="kp LtoR-early">
+      
+            かなしみ
+      </div>
+      <div class="kp LtoR-early">
+      
+            つっきーを噛みつこうとしたけど届かなかった
+      </div>
+      <div class="kp LtoR-early">
+      
+            はい
+      </div>
+      <div class="kp LtoR-early">
+      
+            ほらとどめ刺せよあれん
+      </div>
+      <div class="mem1 left">
+      <span>淵切 亞煉</span>
+      <p>
+      
+            有坂を蹴るよ！
+      </p>
+      </div>
+      <div class="mem1 left">
+      <span>淵切 亞煉</span>
+      <p>
+      
+            CCB&lt;=90 【キック】 (1D100&lt;=90) ＞ 86 ＞ 成功
+            
+      </p>
+      </div>
+      <div class="mem1 left">
+      <span>淵切 亞煉</span>
+      <p>
+      
+            2d6+1d4 (2D6+1D4) ＞ 9[4,5]+1[1] ＞ 10
+            
+      </p>
+      </div>
+      <div class="mem9 left">
+      <span>ゾンビ</span>
+      <p>
+      
+            s1D100 (1D100) ＞ 53
+            
+      </p>
+      </div>
+      <div class="kp LtoR-early">
+      
+            ではさよならキックをまともにくらいゾンビは倒れました
+      </div>
+      <div class="mem1 left">
+      <span>淵切 亞煉</span>
+      <p>
+      
+            「ただの木偶だったなァ！」
+      </p>
+      </div>
+      <div class="kp LtoR-early">
+      
+            そして有坂さんは心が折れました
+      </div>
+      <div class="kp LtoR-early">
+      
+            【有坂の心を折るには、巨大ゾンビを倒すだけで充分だ】
+      </div>
+      <div class="mem1 left">
+      <span>淵切 亞煉</span>
+      <p>
+      
+            関節をポキポキしながら近づきます
+      </p>
+      </div>
+      <div class="kp LtoR-early">
+      
+            はい
+      </div>
+      <div class="mem1 left">
+      <span>淵切 亞煉</span>
+      <p>
+      
+            「死んで償えやァ！」<br>蹴ります
+      </p>
+      </div>
+      <div class="kp LtoR-early">
+      
+            はい
+      </div>
+      <div class="mem1 left">
+      <span>淵切 亞煉</span>
+      <p>
+      
+            CCB&lt;=80+10 【キック】 (1D100&lt;=90) ＞ 86 ＞ 成功
+            
+      </p>
+      </div>
+      <div class="kp LtoR-early">
+      
+            ダメージどうぞ
+      </div>
+      <div class="mem1 left">
+      <span>淵切 亞煉</span>
+      <p>
+      
+            2d6+1d4 (2D6+1D4) ＞ 7[2,5]+1[1] ＞ 8
+            
+      </p>
+      </div>
+      <div class="mem10 right">
+      <span>有坂</span>
+      <p>
+      
+            1D100 (1D100) ＞ 59
+            
+      </p>
+      </div>
+      <div class="kp LtoR-early">
+      
+            気絶しました
+      </div>
+      <div class="kp LtoR-early">
+      
+            追い打ちしますか？
+      </div>
+      <div class="mem1 left">
+      <span>淵切 亞煉</span>
+      <p>
+      
+            わりとヒヤヒヤしていたぞ
+      </p>
+      </div>
+      <div class="mem1 left">
+      <span>淵切 亞煉</span>
+      <p>
+      
+            しないよ！
+      </p>
+      </div>
+      <div class="kp LtoR-early">
+      
+            なんでこいつサイズでかいんだよぉ
+      </div>
+      <div class="mem3 left">
+      <span>御守 月彦</span>
+      <p>
+      
+            ナイスコントロール
+      </p>
+      </div>
+      <div class="mem2 right">
+      <span>八坂 七夕</span>
+      <p>
+      
+            つよい
+      </p>
+      </div>
+      <div class="mem3 left">
+      <span>御守 月彦</span>
+      <p>
+      
+            「ひとまずこれでなんとかなったんですかねえ」
+      </p>
+      </div>
+      <div class="kp LtoR-early">
+      
+            では、貴方達は有坂の野望は潰すことが出来た。
+      </div>
+      <div class="mem1 left">
+      <span>淵切 亞煉</span>
+      <p>
+      
+            「またやったら　今度はチームでお礼参りしてやる」
+      </p>
+      </div>
+      <div class="kp LtoR-early">
+      
+            そしてカンタービレに居た異形の存在も死体に戻った。
+      </div>
+      <div class="kp LtoR-early">
+      
+            のちに、有坂は二十年前のバスジャックの犯人であることが発覚し、今回の事件も有坂による計画的な犯行としてメディアに報じられる。
+      </div>
+      <div class="kp LtoR-early">
+      
+            生存者である探索者は事情聴取などに追われたが、それもある日を境にぱたりと止まった。
+      </div>
+      <div class="kp LtoR-early">
+      
+            痛ましい事件の遺物でもあるカンタービレは、数十年に渡る航海へと強制的に終止符を打つ。そうしてメディアの関心も薄れ行ったある日、探索者宛てに一通の手紙が届く。
+      </div>
+      <div class="kp LtoR-early">
+      
+            『今回の件では世話になったわ。事件以降、暫く船は賑やかだったけれど、漸く落ち着きを取り戻して来たわ。<br>本当のことを言えば、住居なんてどうでもよかったの。私はあの船が出来た頃からずっと一緒に居たから、船を傷つけられるのが嫌だっただけ。<br>でも、今にして思えばあの船も寿命だったのね。私のエゴでもう少し頑張ってもらおうかと思ったけど、そろそろ休んでも良い頃だったのよ。<br>こんな形だけど、今は船が休めるようになって良かったと思っているわ。あなた達には感謝している。<br>私はどこか別な家を探すとするわ。あの船のように居心地の良い家をね。―――また縁があったら、どこかで会いましょう』
+      </div>
+      <div class="kp LtoR-early">
+      
+            読み終えると、手紙は灰に変わってしまった。
+      </div>
+      <div class="kp LtoR-early">
+      
+            この世ならざる異形の存在。この世のモノでありながら、その異形に惹かれる人間。<br>様々な出会いを思い返しつつ、探索者はいつもの日常へと戻った。
+      </div>
+      <div class="kp LtoR-early">
+      
+            エンドA『Welcom to NIGHT×PARTY！』
+      </div>
+      <div class="kp LtoR-early">
+      
+            おめでとうございます
+      </div>
+      <div class="mem3 left">
+      <span>御守 月彦</span>
+      <p>
+      
+            「なかなか刺激的な一日でした」
+      </p>
+      </div>
+      <div class="mem3 left">
+      <span>御守 月彦</span>
+      <p>
+      
+            おつかれさまです
+      </p>
+      </div>
+      <div class="mem1 left">
+      <span>淵切 亞煉</span>
+      <p>
+      
+            「そうだな！楽しかったぜ！」
+      </p>
+      </div>
+      <div class="kp LtoR-early">
+      
+            ＜報酬＞<br>生き残った：1d10<br>タオとの勝負に勝った：1d6<br>運転した探索者：運転技能＋1d6<br>任意の戦闘技能＋1d6
+      </div>
+      <div class="mem2 right">
+      <span>八坂 七夕</span>
+      <p>
+      
+            「また今度ごはんでもいこー」
+      </p>
+      </div>
+      <div class="mem3 left">
+      <span>御守 月彦</span>
+      <p>
+      
+            「イタリアにもいかねばなりませんものね。またいつか。」
+      </p>
+      </div>
+
+<br><br><br><br><br><br><br><br><br>
+</div></div>
+<script src="../logCon_Respon.js"></script>
+</body></html>
