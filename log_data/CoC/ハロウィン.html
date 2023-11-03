@@ -1,0 +1,6152 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<title>log</title>
+<meta http-equiv="content-type" charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+<link rel="stylesheet" href="../logCon_Respon.css">
+<style>
+    /* main css */
+    .bg-inner.bg1{background:url('./ハロウィン画像/nc285809.png') no-repeat center/cover;}
+    
+    /* member */
+    .mem1 p{border:2px solid rgb(217, 65, 119);box-shadow:5px 5px 0 rgb(217, 65, 119);}
+.mem1 p:after{border-right-color:rgb(217, 65, 119);}
+.mem1 span{background:rgb(217, 65, 119);color:#000;}
+.mem1:before{content:'';background-image:url('./ハロウィン画像/言祝みづき.jpg');background-size:contain;background-repeat:no-repeat;background-position:center center;width:90px;height:90px;}
+.mem2 p{border:2px solid rgb(131, 109, 197);box-shadow:5px 5px 0 rgb(131, 109, 197);}
+.mem2 p:after{border-left-color:rgb(131, 109, 197);}
+.mem2 span{background:rgb(131, 109, 197);color:#fff;}
+.mem2:before{content:'';background-image:url('./ハロウィン画像/城野光希.jpg');background-size:contain;background-repeat:no-repeat;background-position:center center;width:90px;height:90px;}
+.mem3 p{border:2px solid rgb(0, 174, 149);box-shadow:5px 5px 0 rgb(0, 174, 149);}
+.mem3 p:after{border-right-color:rgb(0, 174, 149);}
+.mem3 span{background:rgb(0, 174, 149);color:#fff;}
+.mem3:before{content:'';background-image:url('./ハロウィン画像/澪標\ 杏.png');background-size:contain;background-repeat:no-repeat;background-position:center center;width:90px;height:90px;}
+.mem4 p{border:2px solid rgb(30, 80, 162);box-shadow:5px 5px 0 rgb(30, 80, 162);}
+.mem4 p:after{border-left-color:rgb(30, 80, 162);}
+.mem4 span{background:rgb(30, 80, 162);color:#fff;}
+.mem4:before{content:'';background-image:url('./ハロウィン画像/北峰\ 大夜.jpg');background-size:contain;background-repeat:no-repeat;background-position:center center;width:90px;height:90px;}
+.mem5 p{border:2px solid rgb(136, 136, 136);box-shadow:5px 5px 0 rgb(136, 136, 136);}
+.mem5 p:after{border-right-color:rgb(136, 136, 136);}
+.mem5 span{background:rgb(136, 136, 136);color:#fff;}
+.mem5:before{content:'';background-image:url('5.png');background-size:contain;background-repeat:no-repeat;background-position:center center;width:90px;height:90px;}
+.mem6 p{border:2px solid rgb(136, 136, 136);box-shadow:5px 5px 0 rgb(136, 136, 136);}
+.mem6 p:after{border-left-color:rgb(136, 136, 136);}
+.mem6 span{background:rgb(136, 136, 136);color:#fff;}
+.mem6:before{content:'';background-image:url('6.png');background-size:contain;background-repeat:no-repeat;background-position:center center;width:90px;height:90px;}
+.mem7 p{border:2px solid rgb(136, 136, 136);box-shadow:5px 5px 0 rgb(136, 136, 136);}
+.mem7 p:after{border-right-color:rgb(136, 136, 136);}
+.mem7 span{background:rgb(136, 136, 136);color:#fff;}
+.mem7:before{content:'';background-image:url('7.png');background-size:contain;background-repeat:no-repeat;background-position:center center;width:90px;height:90px;}
+.mem8 p{border:2px solid rgb(136, 136, 136);box-shadow:5px 5px 0 rgb(136, 136, 136);}
+.mem8 p:after{border-left-color:rgb(136, 136, 136);}
+.mem8 span{background:rgb(136, 136, 136);color:#fff;}
+.mem8:before{content:'';background-image:url('8.png');background-size:contain;background-repeat:no-repeat;background-position:center center;width:90px;height:90px;}
+.mem9 p{border:2px solid rgb(136, 136, 136);box-shadow:5px 5px 0 rgb(136, 136, 136);}
+.mem9 p:after{border-right-color:rgb(136, 136, 136);}
+.mem9 span{background:rgb(136, 136, 136);color:#fff;}
+.mem9:before{content:'';background-image:url('9.png');background-size:contain;background-repeat:no-repeat;background-position:center center;width:90px;height:90px;}
+.mem10 p{border:2px solid rgb(136, 136, 136);box-shadow:5px 5px 0 rgb(136, 136, 136);}
+.mem10 p:after{border-left-color:rgb(136, 136, 136);}
+.mem10 span{background:rgb(136, 136, 136);color:#fff;}
+.mem10:before{content:'';background-image:url('10.png');background-size:contain;background-repeat:no-repeat;background-position:center center;width:90px;height:90px;}
+.mem11 p{border:2px solid rgb(136, 136, 136);box-shadow:5px 5px 0 rgb(136, 136, 136);}
+.mem11 p:after{border-right-color:rgb(136, 136, 136);}
+.mem11 span{background:rgb(136, 136, 136);color:#fff;}
+.mem11:before{content:'';background-image:url('11.png');background-size:contain;background-repeat:no-repeat;background-position:center center;width:90px;height:90px;}
+.mem12 p{border:2px solid rgb(136, 136, 136);box-shadow:5px 5px 0 rgb(136, 136, 136);}
+.mem12 p:after{border-left-color:rgb(136, 136, 136);}
+.mem12 span{background:rgb(136, 136, 136);color:#fff;}
+.mem12:before{content:'';background-image:url('12.png');background-size:contain;background-repeat:no-repeat;background-position:center center;width:90px;height:90px;}
+    
+    @media only screen and (max-width: 768px) {
+        .mem1 p:after{border-right-color:rgb(217, 65, 119);border-left-color:transparent;}
+        .mem2 p:after{border-right-color:rgb(131, 109, 197);border-left-color:transparent;}
+        .mem3 p:after{border-right-color:rgb(0, 174, 149);border-left-color:transparent;}
+        .mem4 p:after{border-right-color:rgb(30, 80, 162);border-left-color:transparent;}
+        .mem5 p:after{border-right-color:rgb(136, 136, 136);border-left-color:transparent;}
+        .mem6 p:after{border-right-color:rgb(136, 136, 136);border-left-color:transparent;}
+        .mem7 p:after{border-right-color:rgb(136, 136, 136);border-left-color:transparent;}
+        .mem8 p:after{border-right-color:rgb(136, 136, 136);border-left-color:transparent;}
+        .mem9 p:after{border-right-color:rgb(136, 136, 136);border-left-color:transparent;}
+        .mem10 p:after{border-right-color:rgb(136, 136, 136);border-left-color:transparent;}
+        .mem11 p:after{border-right-color:rgb(136, 136, 136);border-left-color:transparent;}
+        .mem12 p:after{border-right-color:rgb(136, 136, 136);border-left-color:transparent;}
+    
+        .mem1:before,.mem2:before,.mem3:before,
+        .mem4:before,.mem5:before,.mem6:before,
+        .mem7:before,.mem8:before,.mem9:before,
+        .mem10:before,.mem11:before,.mem12:before{width:70px;height:70px;}
+        
+    }
+</style>
+</head>
+<body>
+    <p id="page-top"><a href="#"><i class="page-top__arrow"></i></a></p>
+	<div class="leftwhite"></div>
+	<div class="rightwhite"></div>
+	<div class="bg-sp">
+    <div class="bg-over"><div class="bg-inner bg1"></div></div>
+	<div class="log">
+    
+        <div class="kp">
+
+            それでは｢ハロウィンタウンとみっつの試練｣開始します
+      </div>
+      <div class="mem1 left">
+      <span>言祝 みづき</span>
+      <p>
+      
+            いあいあー！
+      </p>
+      </div>
+      <div class="kp">
+      
+            イベントガチ参加者一人もいなかったな…とりあえずハロウィン作法として簡単でもいいので仮装してくれたらのちのちかわいいかもしれない
+      </div>
+      <div class="mem2 right">
+      <span>城野 光希</span>
+      <p>
+      
+            光希さんはきっと仕事用のガチ衣装しかねえな…(笑)
+      </p>
+      </div>
+      <div class="mem1 left">
+      <span>言祝 みづき</span>
+      <p>
+      
+            では　ブライダルキツネ装備していい？
+      </p>
+      </div>
+      <div class="mem2 right">
+      <span>城野 光希</span>
+      <p>
+      
+            ？？？
+      </p>
+      </div>
+      <div class="mem1 left">
+      <span>言祝 みづき</span>
+      <p>
+      
+            ちょいちょい縁結びの謂れがあるっぽいんよ
+      </p>
+      </div>
+      <div class="mem3 left">
+      <span>澪標 杏</span>
+      <p>
+      
+            29歳が仮装…
+      </p>
+      </div>
+      <div class="mem3 left">
+      <span>澪標 杏</span>
+      <p>
+      
+            ありだな
+      </p>
+      </div>
+      <div class="mem4 right">
+      <span>北峰 大夜</span>
+      <p>
+      
+            じゃあそういう感じのかわいい帽子とかわいいメガネにしよう
+      </p>
+      </div>
+      <div class="mem2 right">
+      <span>城野 光希</span>
+      <p>
+      
+            じゃあお化けのアルミ風船をどっかで調達して持ってこう(笑)
+      </p>
+      </div>
+      <div class="kp">
+      
+            はい、では友人と来た組とソロ参加者で導入ちょっとわけるね
+      </div>
+      <div class="kp">
+      
+            【導入】｢共通ルート｣<br>10月最後の週末の夜、ハロウィンイベントが開催される繁華街。<br>平素ならば帰路を急ぐサラリーマンや買い物帰りの若者であふれる雑踏は今夜は異界のモンスターたちの独壇場だ。
+      </div>
+      <div class="kp">
+      
+            【友人組】<br>友人と連れ立って来た探索者。お祭りとは違い屋台などはあまり見られないが、その代わりにスタンプラリーのイベントがあるそうだ。折角来たのだからと参加したくなるだろう、それはもうこれに参加しなければ今夜の自分の存在意義を見失うほどに参加したくなるだろう
+      </div>
+      <div class="kp">
+      
+             Rpあればどうぞ。なければそのまま進行
+      </div>
+      <div class="mem3 left">
+      <span>澪標 杏</span>
+      <p>
+      
+            「藍ちゃん！スタンプラリーだって！こういうイベントはやっぱり参加しなきゃだね！ほら、参加参加！」
+      </p>
+      </div>
+      <div class="mem3 left">
+      <span>澪標 杏</span>
+      <p>
+      
+            って声が聞こえてくると思います
+      </p>
+      </div>
+      <div class="mem4 right">
+      <span>北峰 大夜</span>
+      <p>
+      
+            「スタンプラリーだって。せっかくだしやろうか」
+      </p>
+      </div>
+      <div class="kp">
+      
+            そうして参加しようとイベントスタッフを目指し歩いていたが人の波ではぐれてしまうだろう。連絡をとるにも電波は人の多さで届かない。待ち合わせも決めていないため、今の目的であるイベントスタッフに向かう方が可能性はあるだろうと思われた。
+      </div>
+      <div class="kp">
+      
+            軽率に流します
+      </div>
+      <div class="mem3 left">
+      <span>澪標 杏</span>
+      <p>
+      
+            ナチュラルに逸れる
+      </p>
+      </div>
+      <div class="mem4 right">
+      <span>北峰 大夜</span>
+      <p>
+      
+            ほい
+      </p>
+      </div>
+      <div class="kp">
+      
+            じゃあ続きはソロ組と合流してからだからちょっと待機
+      </div>
+      <div class="mem3 left">
+      <span>澪標 杏</span>
+      <p>
+      
+            あいさ
+      </p>
+      </div>
+      <div class="mem4 right">
+      <span>北峰 大夜</span>
+      <p>
+      
+            あい
+      </p>
+      </div>
+      <div class="kp">
+      
+            【ソロ組】<br>ふらりとイベントに立ち寄った探索者。まわりの楽しそうなお祭りの陽気に誘われて、イベントの目玉であるスタンプラリーにとても参加したくなる。うきうきだ！
+      </div>
+      <div class="kp">
+      
+            導入をせざるを得ない呪いを毎回かけます
+      </div>
+      <div class="mem1 left">
+      <span>言祝 みづき</span>
+      <p>
+      
+            「スタンプかぁ　昔よくやったなぁ～<br>隅々まで見て回れるし　やるしかないねぇ～」<br>付け尻尾を振りつつ　用紙をもらいにいきます
+      </p>
+      </div>
+      <div class="mem4 right">
+      <span>北峰 大夜</span>
+      <p>
+      
+            かわいい
+      </p>
+      </div>
+      <div class="mem2 right">
+      <span>城野 光希</span>
+      <p>
+      
+            「あー、なんかこういうのやりたくなっちゃうよなー。この前の夏休みのポケモンスタンプラリーもやったし、山手線乗ってFFスタンプも集めたし。これもやろうかな……。」
+      </p>
+      </div>
+      <div class="kp">
+      
+            【共通】<br>そうして各自イベントスタッフの元へたどり着く。ほぼ同時についた探索者達にスタッフは気付きます
+      </div>
+      <div class="mem1 left">
+      <span>言祝 みづき</span>
+      <p>
+      
+            「こんにちはぁ　スタンプラリーのシートください～」
+      </p>
+      </div>
+      <div class="mem5 left">
+      <span>ｽﾀｯﾌ</span>
+      <p>
+      
+            ｢ハッピーハロウィン！！いい夜は過ごせていますか？ん〜まだまだって感じですね？なんたって今夜はハロウィン！お菓子を貰わなきゃはじまらない！さぁ試練に挑み素敵なお菓子を手に入れませんか？！｣
+      </p>
+      </div>
+      <div class="mem3 left">
+      <span>澪標 杏</span>
+      <p>
+      
+            「迷子のお知らせでーす」
+      </p>
+      </div>
+      <div class="kp">
+      
+            スタッフNPCだから決まったセリフしかいいません
+      </div>
+      <div class="mem3 left">
+      <span>澪標 杏</span>
+      <p>
+      
+            ドラクエの村人かな
+      </p>
+      </div>
+      <div class="mem4 right">
+      <span>北峰 大夜</span>
+      <p>
+      
+            ww
+      </p>
+      </div>
+      <div class="mem1 left">
+      <span>言祝 みづき</span>
+      <p>
+      
+            「僕　あげる側だと思うなぁ～」<br>そうとは知らずに　話続けます
+      </p>
+      </div>
+      <div class="kp">
+      
+            後続の人にも同じ話するからアトラクションてきなの
+      </div>
+      <div class="mem1 left">
+      <span>言祝 みづき</span>
+      <p>
+      
+            「代わりに　これあげるねぇ」<br>花束から花を一輪抜き取って　渡してます
+      </p>
+      </div>
+      <div class="mem2 right">
+      <span>城野 光希</span>
+      <p>
+      
+            「お菓子もらうのに試練があるのか…なるほど。」
+      </p>
+      </div>
+      <div class="mem5 left">
+      <span>ｽﾀｯﾌ</span>
+      <p>
+      
+            ｢さて、参加する前にここで1つ注意点が…ああ申し訳ありませんそういうのいただけない決まりでして｣
+      </p>
+      </div>
+      <div class="mem4 right">
+      <span>北峰 大夜</span>
+      <p>
+      
+            ちゃんとしてる
+      </p>
+      </div>
+      <div class="mem1 left">
+      <span>言祝 みづき</span>
+      <p>
+      
+            大人しく引きます
+      </p>
+      </div>
+      <div class="mem3 left">
+      <span>澪標 杏</span>
+      <p>
+      
+            注意点って言われると、死んでも知りませんとか言われそう
+      </p>
+      </div>
+      <div class="mem2 right">
+      <span>城野 光希</span>
+      <p>
+      
+            やべーイベントだな(笑)
+      </p>
+      </div>
+      <div class="mem5 left">
+      <span>ｽﾀｯﾌ</span>
+      <p>
+      
+            ｢こほん。今夜はいたずら好きなおばけも一緒に参加しているため今お持ちのものは開始前にお預かりしています。あ、お預かりにはそちらのロッカー使わせて貰うので御安心を｣
+      </p>
+      </div>
+      <div class="kp">
+      
+            もしどうしても手放したくなければ隠す技能つかってね
+      </div>
+      <div class="mem1 left">
+      <span>言祝 みづき</span>
+      <p>
+      
+            リングケースに　実印と婚姻届入れて　リングケースを持っときたいです
+      </p>
+      </div>
+      <div class="mem3 left">
+      <span>澪標 杏</span>
+      <p>
+      
+            「えー。記念撮影したいからスマホほしいなぁー」
+      </p>
+      </div>
+      <div class="mem4 right">
+      <span>北峰 大夜</span>
+      <p>
+      
+            「連絡とれなくなるのは……それ、どのくらいかかりますか？」
+      </p>
+      </div>
+      <div class="mem2 right">
+      <span>城野 光希</span>
+      <p>
+      
+            「あー…。まあいいか。どうぞ。」<br>持ち物預けます。
+      </p>
+      </div>
+      <div class="mem5 left">
+      <span>ｽﾀｯﾌ</span>
+      <p>
+      
+            ｢お子様もできるものですからそんなに時間はかかりません。毎年紛失や盗難が増えていまして…｣
+      </p>
+      </div>
+      <div class="mem3 left">
+      <span>澪標 杏</span>
+      <p>
+      
+            「それよりも迷子なんですけどー、どうしたらいいですかぁー」
+      </p>
+      </div>
+      <div class="mem1 left">
+      <span>言祝 みづき</span>
+      <p>
+      
+            「それは怖いねぇ」<br>と言いつつ　リングケース、実印、婚姻届を隠そうと試みるよ！
+      </p>
+      </div>
+      <div class="mem4 right">
+      <span>北峰 大夜</span>
+      <p>
+      
+            「うーん……じゃあいいかな。とりあえず連絡だけしておきます」<br>アキラさんにラインいれて預けます
+      </p>
+      </div>
+      <div class="mem1 left">
+      <span>言祝 みづき</span>
+      <p>
+      
+            55　惜しかった
+      </p>
+      </div>
+      <div class="mem2 right">
+      <span>城野 光希</span>
+      <p>
+      
+            何のダイス…
+      </p>
+      </div>
+      <div class="mem1 left">
+      <span>言祝 みづき</span>
+      <p>
+      
+            隠すダイス
+      </p>
+      </div>
+      <div class="mem3 left">
+      <span>澪標 杏</span>
+      <p>
+      
+            隠したけど見つかった…って感じかな
+      </p>
+      </div>
+      <div class="mem5 left">
+      <span>ｽﾀｯﾌ</span>
+      <p>
+      
+            ｢申し訳ありませんがそちらも…｣
+      </p>
+      </div>
+      <div class="mem1 left">
+      <span>言祝 みづき</span>
+      <p>
+      
+            「うぅ…」<br>泣く泣く預けます
+      </p>
+      </div>
+      <div class="mem3 left">
+      <span>澪標 杏</span>
+      <p>
+      
+            「まぁー、いいやぁー。藍ちゃんならきっと合流してくれるからぁ」<br>預けます
+      </p>
+      </div>
+      <div class="kp">
+      
+            腕にスタッフの腕章をつけたゾンビに荷物を預けるのと引き換えにネームホルダーとスタンプカードの用紙、それからカボチャのランタンを受け取る。<br>スタンプカードの表には、<br>《～ハロウィンタウン・スタンプラリー～<br>みっつの試練に挑戦してスタンプをもらってね！<br>スタンプをぜんぶ集めたら美味しいお菓子がもらえるよ♪》<br>と書かれていた。<br>裏面には街を簡略化したマップが描かれており、三カ所のチェックポイントの場所が星印で示されている。
+      </div>
+      <div class="kp">
+      
+            言い忘れてたけどスタッフはゾンビ
+      </div>
+      <div class="mem3 left">
+      <span>澪標 杏</span>
+      <p>
+      
+            スタッフはゾンビ(本物)
+      </p>
+      </div>
+      <div class="mem4 right">
+      <span>北峰 大夜</span>
+      <p>
+      
+            ほあ
+      </p>
+      </div>
+      <div class="mem1 left">
+      <span>言祝 みづき</span>
+      <p>
+      
+            「よく出来てるなぁ～」<br>用紙に目星したい
+      </p>
+      </div>
+      <div class="kp">
+      
+            とくに気になるところはないかも
+      </div>
+      <div class="mem3 left">
+      <span>澪標 杏</span>
+      <p>
+      
+            素直にネームホルダーをつけて、子供のようにはしゃいでよう
+      </p>
+      </div>
+      <div class="mem5 left">
+      <span>ｽﾀｯﾌ</span>
+      <p>
+      
+            「配られたカードによってまわるチェックポイントが違うんですよ～」<br>そしてみてみると同時に来た4人は同じルートのようです
+      </p>
+      </div>
+      <div class="mem4 right">
+      <span>北峰 大夜</span>
+      <p>
+      
+            おずおずとネームホルダーをつけて戸惑ったままカードとランタンを抱えていよう
+      </p>
+      </div>
+      <div class="mem4 right">
+      <span>北峰 大夜</span>
+      <p>
+      
+            「そ、そうなんですか……」<br>他三人の顔を見ます
+      </p>
+      </div>
+      <div class="mem2 right">
+      <span>城野 光希</span>
+      <p>
+      
+            「へえー。ありがとうございます。」
+      </p>
+      </div>
+      <div class="mem1 left">
+      <span>言祝 みづき</span>
+      <p>
+      
+            「(カップルいないなぁ)」
+      </p>
+      </div>
+      <div class="mem2 right">
+      <span>城野 光希</span>
+      <p>
+      
+            押し売りする気かww
+      </p>
+      </div>
+      <div class="mem3 left">
+      <span>澪標 杏</span>
+      <p>
+      
+            ランタンで遊んでる
+      </p>
+      </div>
+      <div class="mem3 left">
+      <span>澪標 杏</span>
+      <p>
+      
+            「らんたーん。らんたーん」
+      </p>
+      </div>
+      <div class="kp">
+      
+            それでは仲良くいってらっしゃい！<br>【導入〜end〜】
+      </div>
+      <div class="kp">
+      
+             RPor進行
+      </div>
+      <div class="mem3 left">
+      <span>澪標 杏</span>
+      <p>
+      
+            「らーんたん。らーんたーん」
+      </p>
+      </div>
+      <div class="mem1 left">
+      <span>言祝 みづき</span>
+      <p>
+      
+            「こんにちはぁ～　君たちもスタンプやるんだよねぇ～？<br>僕もついてっていい～？」
+      </p>
+      </div>
+      <div class="mem4 right">
+      <span>北峰 大夜</span>
+      <p>
+      
+            「えーと、こんにちは？四人で回った方が効率がいいですかね？」
+      </p>
+      </div>
+      <div class="mem4 right">
+      <span>北峰 大夜</span>
+      <p>
+      
+            これ昼？夜？
+      </p>
+      </div>
+      <div class="mem5 left">
+      <span>ｽﾀｯﾌ</span>
+      <p>
+      
+            ｢謎解きになっていますから人数いた方がいいかもしれませんね。｣<br>夜
+      </p>
+      </div>
+      <div class="mem4 right">
+      <span>北峰 大夜</span>
+      <p>
+      
+            こんばんはだな
+      </p>
+      </div>
+      <div class="mem3 left">
+      <span>澪標 杏</span>
+      <p>
+      
+            もしかしたらおやすみになるかもしれないぞ
+      </p>
+      </div>
+      <div class="mem1 left">
+      <span>言祝 みづき</span>
+      <p>
+      
+            不審度合いが増した！
+      </p>
+      </div>
+      <div class="mem3 left">
+      <span>澪標 杏</span>
+      <p>
+      
+            「謎解きでぇー、人が多いほぉーがよくてぇー、えーっとぉ、よろしくお願いしまぁーす！」
+      </p>
+      </div>
+      <div class="mem4 right">
+      <span>北峰 大夜</span>
+      <p>
+      
+            「えっと、よろしくお願いします」生まじめに会釈します
+      </p>
+      </div>
+      <div class="mem1 left">
+      <span>言祝 みづき</span>
+      <p>
+      
+            「よろしくねぇ～」にっこにこしてます
+      </p>
+      </div>
+      <div class="mem3 left">
+      <span>澪標 杏</span>
+      <p>
+      
+            あと、頭にランタン置いてるのでもしかしたらランタンと目が合うかもよ
+      </p>
+      </div>
+      <div class="kp">
+      
+            今回は変人と普通人とバランスいいな
+      </div>
+      <div class="mem4 right">
+      <span>北峰 大夜</span>
+      <p>
+      
+            2、2だもんね
+      </p>
+      </div>
+      <div class="mem1 left">
+      <span>言祝 みづき</span>
+      <p>
+      
+            どっちがどっちだろうなー？
+      </p>
+      </div>
+      <div class="mem3 left">
+      <span>澪標 杏</span>
+      <p>
+      
+            どっちだろうなぁ！
+      </p>
+      </div>
+      <div class="mem4 right">
+      <span>北峰 大夜</span>
+      <p>
+      
+            どっちでしょうねぇ()
+      </p>
+      </div>
+      <div class="mem2 right">
+      <span>城野 光希</span>
+      <p>
+      
+            「これもまた縁ってやつだね！よろしく！」
+      </p>
+      </div>
+      <div class="kp">
+      
+            話しながら進むと繁華街の喧噪とはどんどん離れていく。<br>ネオンのあかりも届かなくなり、<br>住宅街の狭い歩道を照らす街灯と手元のランタンだけが探索者の足下をたよりなく照らしている。<br>繁華街といってもメイン通りから離れればこんなものだろう。<br>地図のとおりならば、この短いトンネルを通った先にひとつめのチェックポイントがあるはずだ。<br>トンネルの入り口の傍に木製のちいさな看板が立てられており<br>《ハロウィンタウンへようこそ》<br>とポップなフォントで書かれている。
+      </div>
+      <div class="mem3 left">
+      <span>澪標 杏</span>
+      <p>
+      
+            「ハロウィンタウンへようこそ！」
+      </p>
+      </div>
+      <div class="mem3 left">
+      <span>澪標 杏</span>
+      <p>
+      
+            「ようこそ！ようこそ！」
+      </p>
+      </div>
+      <div class="kp">
+      
+             NPCになってない？
+      </div>
+      <div class="mem2 right">
+      <span>城野 光希</span>
+      <p>
+      
+            ww
+      </p>
+      </div>
+      <div class="mem3 left">
+      <span>澪標 杏</span>
+      <p>
+      
+            いいえ。通常運転です
+      </p>
+      </div>
+      <div class="mem1 left">
+      <span>言祝 みづき</span>
+      <p>
+      
+            トンネルの反響音を楽しみます
+      </p>
+      </div>
+      <div class="mem1 left">
+      <span>言祝 みづき</span>
+      <p>
+      
+            「わぁ～(ゎぁ～)」
+      </p>
+      </div>
+      <div class="kp">
+      
+            看板にめぼれるかも
+      </div>
+      <div class="mem3 left">
+      <span>澪標 杏</span>
+      <p>
+      
+            振るか（初期値）
+      </p>
+      </div>
+      <div class="mem3 left">
+      <span>澪標 杏</span>
+      <p>
+      
+            15　成功
+      </p>
+      </div>
+      <div class="kp">
+      
+            隅のほうにちいさな文字で《ここは子どもとモンスターの街！》と書かれている。
+      </div>
+      <div class="mem3 left">
+      <span>澪標 杏</span>
+      <p>
+      
+            「ここは子供とモンスターの街！わぁ！おもしろそう！あははは！」
+      </p>
+      </div>
+      <div class="mem3 left">
+      <span>澪標 杏</span>
+      <p>
+      
+            頭にランタンのっけた人がはしゃぎます
+      </p>
+      </div>
+      <div class="mem1 left">
+      <span>言祝 みづき</span>
+      <p>
+      
+            「モンスターカップルとか　いるのかなぁ～？」
+      </p>
+      </div>
+      <div class="mem4 right">
+      <span>北峰 大夜</span>
+      <p>
+      
+            「なんでおとながいないんですかね？危なくないかな」
+      </p>
+      </div>
+      <div class="mem2 right">
+      <span>城野 光希</span>
+      <p>
+      
+            「ハロウィンでお菓子をねだるのは子供だからじゃないかなぁ。」
+      </p>
+      </div>
+      <div class="kp">
+      
+            進みますか？
+      </div>
+      <div class="mem3 left">
+      <span>澪標 杏</span>
+      <p>
+      
+            進むぜ
+      </p>
+      </div>
+      <div class="mem4 right">
+      <span>北峰 大夜</span>
+      <p>
+      
+            おうよ
+      </p>
+      </div>
+      <div class="mem1 left">
+      <span>言祝 みづき</span>
+      <p>
+      
+            進もう
+      </p>
+      </div>
+      <div class="kp">
+      
+            じゃあ進んじゃおう
+      </div>
+      <div class="kp">
+      
+            トンネルの内部には明かりがなくやけに暗いが数メートル向こう側にはちらちらと光が見えている。<br>探索者は暗闇に足を踏み入れた。
+      </div>
+      <div class="mem3 left">
+      <span>澪標 杏</span>
+      <p>
+      
+            ランタンを掲げて進むぜ
+      </p>
+      </div>
+      <div class="mem1 left">
+      <span>言祝 みづき</span>
+      <p>
+      
+            ワーワー言いながら進みます
+      </p>
+      </div>
+      <div class="kp">
+      
+            トンネルを抜けると、そこは森の中だった。<br>先程まではコンクリートに囲まれていたのに周囲は木々がざわめき、秋の虫の鳴く声も聞こえる。<br>いくらなんでもおかしいのではないか？と気がつくと同時に探索者は自分の身体の異変にも気がついてしまう。<br>ちいさくなってる！？<br>手、足、視認できる範囲はすべてがちいさく、子どものサイズになっている。<br>突然の事態にSANチェック（1/1d3）
+      </div>
+      <div class="mem3 left">
+      <span>澪標 杏</span>
+      <p>
+      
+            モリダー
+      </p>
+      </div>
+      <div class="mem3 left">
+      <span>澪標 杏</span>
+      <p>
+      
+            99　あはははは
+      </p>
+      </div>
+      <div class="mem3 left">
+      <span>澪標 杏</span>
+      <p>
+      
+            1D3？それとも最大値減らしとく？
+      </p>
+      </div>
+      <div class="kp">
+      
+            ん〜1d3で
+      </div>
+      <div class="mem3 left">
+      <span>澪標 杏</span>
+      <p>
+      
+            3　75→72
+      </p>
+      </div>
+      <div class="mem4 right">
+      <span>北峰 大夜</span>
+      <p>
+      
+            19成功 55
+      </p>
+      </div>
+      <div class="mem4 right">
+      <span>北峰 大夜</span>
+      <p>
+      
+            夢だと思っておられますね
+      </p>
+      </div>
+      <div class="mem3 left">
+      <span>澪標 杏</span>
+      <p>
+      
+            「あはははは。おもしろーい！これこそまさにちっちゃくなっちゃったー！あはははは」
+      </p>
+      </div>
+      <div class="mem1 left">
+      <span>言祝 みづき</span>
+      <p>
+      
+            72　失敗<br>40→39
+      </p>
+      </div>
+      <div class="mem4 right">
+      <span>北峰 大夜</span>
+      <p>
+      
+            「……俺、どうなってます？子供になってる？」
+      </p>
+      </div>
+      <div class="mem1 left">
+      <span>言祝 みづき</span>
+      <p>
+      
+            「ちっちゃい！<br>これじゃお姫さまだっことかできないよ～！」
+      </p>
+      </div>
+      <div class="mem3 left">
+      <span>澪標 杏</span>
+      <p>
+      
+            「見た目は子供、頭脳は大人状態だよ！あはは！」
+      </p>
+      </div>
+      <div class="mem4 right">
+      <span>北峰 大夜</span>
+      <p>
+      
+            「……(聞いてないなぁ)」
+      </p>
+      </div>
+      <div class="kp">
+      
+            かわいそうに…
+      </div>
+      <div class="mem3 left">
+      <span>澪標 杏</span>
+      <p>
+      
+            一応説明してるじゃん。見た目は子供とだけは
+      </p>
+      </div>
+      <div class="mem4 right">
+      <span>北峰 大夜</span>
+      <p>
+      
+            会話をする気があるように見えなくてな……
+      </p>
+      </div>
+      <div class="mem1 left">
+      <span>言祝 みづき</span>
+      <p>
+      
+            「でも　みんなちっちゃい！」
+      </p>
+      </div>
+      <div class="kp">
+      
+            会話は諦めるべきかな
+      </div>
+      <div class="mem4 right">
+      <span>北峰 大夜</span>
+      <p>
+      
+            「そうですね、ちっちゃいですね……」遠い目
+      </p>
+      </div>
+      <div class="mem1 left">
+      <span>言祝 みづき</span>
+      <p>
+      
+            一慌てしとこうと思って…
+      </p>
+      </div>
+      <div class="mem4 right">
+      <span>北峰 大夜</span>
+      <p>
+      
+            一周回って落ち着いてる
+      </p>
+      </div>
+      <div class="mem3 left">
+      <span>澪標 杏</span>
+      <p>
+      
+            一応最低限の会話は出来てるよ（）
+      </p>
+      </div>
+      <div class="mem1 left">
+      <span>言祝 みづき</span>
+      <p>
+      
+            「係の人呼んできた方がささそうだね～！」<br>周りを見渡します
+      </p>
+      </div>
+      <div class="mem4 right">
+      <span>北峰 大夜</span>
+      <p>
+      
+            「戻れるんですかね？戻れなさそうじゃないですか？」
+      </p>
+      </div>
+      <div class="mem3 left">
+      <span>澪標 杏</span>
+      <p>
+      
+            「これはこれで楽しくなぁい？」
+      </p>
+      </div>
+      <div class="mem3 left">
+      <span>澪標 杏</span>
+      <p>
+      
+            「トップニュースだよ！遊んでいたら子供になった！どうしてこうなった！治す方法があるのか！」
+      </p>
+      </div>
+      <div class="mem3 left">
+      <span>澪標 杏</span>
+      <p>
+      
+            「みたいなっ！」
+      </p>
+      </div>
+      <div class="mem1 left">
+      <span>言祝 みづき</span>
+      <p>
+      
+            「夜の森は危ないよね～　僕戻って呼んできてもいい～？」
+      </p>
+      </div>
+      <div class="mem4 right">
+      <span>北峰 大夜</span>
+      <p>
+      
+            「ひとりで？危ないって……俺もいきますよ」
+      </p>
+      </div>
+      <div class="mem1 left">
+      <span>言祝 みづき</span>
+      <p>
+      
+            「子供の成長って早いから　すぐにもとの姿に戻れるよ～」
+      </p>
+      </div>
+      <div class="mem1 left">
+      <span>言祝 みづき</span>
+      <p>
+      
+            「ありがとう～！頼りにしてるね～」
+      </p>
+      </div>
+      <div class="mem4 right">
+      <span>北峰 大夜</span>
+      <p>
+      
+            「早いっていっても、数分で成長するわけじゃないでしょう……大したことはできませんが」
+      </p>
+      </div>
+      <div class="mem1 left">
+      <span>言祝 みづき</span>
+      <p>
+      
+            常識人頼りになる
+      </p>
+      </div>
+      <div class="mem3 left">
+      <span>澪標 杏</span>
+      <p>
+      
+            流石、常識人。
+      </p>
+      </div>
+      <div class="mem4 right">
+      <span>北峰 大夜</span>
+      <p>
+      
+            ヤッター
+      </p>
+      </div>
+      <div class="mem2 right">
+      <span>城野 光希</span>
+      <p>
+      
+            9成功。なんか初っ端からダイス荒ぶってる人いる…。
+      </p>
+      </div>
+      <div class="mem2 right">
+      <span>城野 光希</span>
+      <p>
+      
+            「良い子にしていればきっと何とかなるさ。でも何だか不思議の国のアリスみたいだね(笑)」
+      </p>
+      </div>
+      <div class="kp">
+      
+            トンネルを引き返しますか？
+      </div>
+      <div class="mem3 left">
+      <span>澪標 杏</span>
+      <p>
+      
+            みーはそのまま奥に進む側の人間だよ
+      </p>
+      </div>
+      <div class="mem1 left">
+      <span>言祝 みづき</span>
+      <p>
+      
+            戻って係員探すよ！
+      </p>
+      </div>
+      <div class="mem2 right">
+      <span>城野 光希</span>
+      <p>
+      
+            どうしよ。何とかなるさ精神だからこのまま進んでみようかな…。
+      </p>
+      </div>
+      <div class="kp">
+      
+            ついでに服は体に合わせて縮んでいてPOW INT APP EDUを除くステータス、ならびに戦闘技能が半減しています
+      </div>
+      <div class="mem3 left">
+      <span>澪標 杏</span>
+      <p>
+      
+            あ、もし戦闘がある場合は死ぬので任せた
+      </p>
+      </div>
+      <div class="kp">
+      
+            全員の行動が決まるまで今の状況描写します
+      </div>
+      <div class="kp">
+      
+            着ていた衣服も同じように縮んでいたため、ぶかぶかの服で身動きがとれなくなる…なんてことにならなかっただけでも幸いなのか。<br>手足の大きさから、だいたい小学校低学年くらいまで若返っているようだと判断する。<br>背後のトンネルは相変わらず暗い。<br>トンネルの向こう側は住宅街のはずだが、向こう側に明かりひとつ見えない。<br>左右には木々がうっそうと広がり、やはり暗いが頭上には星と半月が輝いているのでそれなりに視界は確保できている。
+      </div>
+      <div class="mem3 left">
+      <span>澪標 杏</span>
+      <p>
+      
+            「きらきらひかるー、おそらのほしよー」
+      </p>
+      </div>
+      <div class="kp">
+      
+            ショタロリ最高だよねっていう
+      </div>
+      <div class="mem3 left">
+      <span>澪標 杏</span>
+      <p>
+      
+            ショタロリ最強
+      </p>
+      </div>
+      <div class="mem2 right">
+      <span>城野 光希</span>
+      <p>
+      
+            APP16のイケメンロリか……。
+      </p>
+      </div>
+      <div class="mem3 left">
+      <span>澪標 杏</span>
+      <p>
+      
+            イケロリ
+      </p>
+      </div>
+      <div class="mem1 left">
+      <span>言祝 みづき</span>
+      <p>
+      
+            イケショタが結婚迫ってくる感じになる。警察。
+      </p>
+      </div>
+      <div class="kp">
+      
+            おまわりさん、わたしです
+      </div>
+      <div class="mem4 right">
+      <span>北峰 大夜</span>
+      <p>
+      
+            事案
+      </p>
+      </div>
+      <div class="mem3 left">
+      <span>澪標 杏</span>
+      <p>
+      
+            事案
+      </p>
+      </div>
+      <div class="mem4 right">
+      <span>北峰 大夜</span>
+      <p>
+      
+            戻るなら付き添おう
+      </p>
+      </div>
+      <div class="kp">
+      
+            では戻る組
+      </div>
+      <div class="kp">
+      
+            暗闇の中はひんやりした空気が漂っている。 先程通った時は感じなかった冷気に探索者は身体を震わせる。 とにかく街に戻ろうと逸る探索者はなにかにつまづいて転んでしまう。 （HP1減少）
+      </div>
+      <div class="mem4 right">
+      <span>北峰 大夜</span>
+      <p>
+      
+            11になった
+      </p>
+      </div>
+      <div class="mem3 left">
+      <span>澪標 杏</span>
+      <p>
+      
+            HPも体格とかで減ってる？
+      </p>
+      </div>
+      <div class="mem4 right">
+      <span>北峰 大夜</span>
+      <p>
+      
+            あっそっか
+      </p>
+      </div>
+      <div class="kp">
+      
+            そだね
+      </div>
+      <div class="mem4 right">
+      <span>北峰 大夜</span>
+      <p>
+      
+            半分？
+      </p>
+      </div>
+      <div class="kp">
+      
+            半分
+      </div>
+      <div class="kp">
+      
+             SAN値はそのままでいいや
+      </div>
+      <div class="mem1 left">
+      <span>言祝 みづき</span>
+      <p>
+      
+            13(7→6)
+      </p>
+      </div>
+      <div class="mem1 left">
+      <span>言祝 みづき</span>
+      <p>
+      
+            DEX3しかねぇ！
+      </p>
+      </div>
+      <div class="mem4 right">
+      <span>北峰 大夜</span>
+      <p>
+      
+            だいすふるのか？
+      </p>
+      </div>
+      <div class="mem3 left">
+      <span>澪標 杏</span>
+      <p>
+      
+            こっちはCONが3だよ！気絶しやすいぞ！
+      </p>
+      </div>
+      <div class="kp">
+      
+            ダイスはふらないかな
+      </div>
+      <div class="kp">
+      
+            膝の痛みをこらえて、ころんだ原因にランタンを翳してみる。<br>地面の上には白くて丸い…人骨とおぼしき骸骨が、探索者をまっくろな窪みで睨みつけていた。<br>SANチェック（1/1d3）<br>トンネルの先の地面の上を照らすと他にもいくつもの骸骨が転がっている。<br>そしてその骸骨が一斉に上顎の骨を上下させてガチガチと音を鳴らしはじめた。<br>まるで探索者を嘲笑っているようだ…。<br>SANチェック（0/1）
+      </div>
+      <div class="mem3 left">
+      <span>澪標 杏</span>
+      <p>
+      
+            うわーあっちがわ大変そうだなぁー（棒読み）
+      </p>
+      </div>
+      <div class="mem1 left">
+      <span>言祝 みづき</span>
+      <p>
+      
+            4　成功<br>39→38<br>31 成功
+      </p>
+      </div>
+      <div class="mem1 left">
+      <span>言祝 みづき</span>
+      <p>
+      
+            「うわぁぁぁぁぁガイコツだぁぁぁぁぁ！！」
+      </p>
+      </div>
+      <div class="mem4 right">
+      <span>北峰 大夜</span>
+      <p>
+      
+            73失敗 55→53<br>27 成功
+      </p>
+      </div>
+      <div class="mem1 left">
+      <span>言祝 みづき</span>
+      <p>
+      
+            腰抜かしてます。<br>外には聞こえそうかな？
+      </p>
+      </div>
+      <div class="kp">
+      
+            まだ数メートルも進んでいない。しかし、探索者は気が付くだろう、これは出口ではない。これ以上は進めない。自分達が進むべき道はもはや1つしか無いのだと。
+      </div>
+      <div class="mem4 right">
+      <span>北峰 大夜</span>
+      <p>
+      
+            「死んだ人がいるってことか……？さっきありましたあんなの？」
+      </p>
+      </div>
+      <div class="mem1 left">
+      <span>言祝 みづき</span>
+      <p>
+      
+            「ない！！！」
+      </p>
+      </div>
+      <div class="mem4 right">
+      <span>北峰 大夜</span>
+      <p>
+      
+            「で、ですよね、ですよね……」
+      </p>
+      </div>
+      <div class="kp">
+      
+            入口からは出れないので^^
+      </div>
+      <div class="mem4 right">
+      <span>北峰 大夜</span>
+      <p>
+      
+            「も、戻りましょうか、ここにいるのヤバい気がする」
+      </p>
+      </div>
+      <div class="mem4 right">
+      <span>北峰 大夜</span>
+      <p>
+      
+            入り口だしな～
+      </p>
+      </div>
+      <div class="mem1 left">
+      <span>言祝 みづき</span>
+      <p>
+      
+            「戻ろう！！！」
+      </p>
+      </div>
+      <div class="kp">
+      
+            ついでに悲鳴は多分きこえてる
+      </div>
+      <div class="mem3 left">
+      <span>澪標 杏</span>
+      <p>
+      
+            「あはは、お化け屋敷かなぁ！あははは」
+      </p>
+      </div>
+      <div class="mem4 right">
+      <span>北峰 大夜</span>
+      <p>
+      
+            みづきさんの手をとって走って戻ります
+      </p>
+      </div>
+      <div class="mem1 left">
+      <span>言祝 みづき</span>
+      <p>
+      
+            天使か
+      </p>
+      </div>
+      <div class="kp">
+      
+            かわいい
+      </div>
+      <div class="mem3 left">
+      <span>澪標 杏</span>
+      <p>
+      
+            仲良くなってそう
+      </p>
+      </div>
+      <div class="mem1 left">
+      <span>言祝 みづき</span>
+      <p>
+      
+            涙目で走ります
+      </p>
+      </div>
+      <div class="mem4 right">
+      <span>北峰 大夜</span>
+      <p>
+      
+            ショタが手に手をとって走ってることになるのか ほほえましい
+      </p>
+      </div>
+      <div class="kp">
+      
+            吊り橋効果
+      </div>
+      <div class="mem4 right">
+      <span>北峰 大夜</span>
+      <p>
+      
+            らぶだ……
+      </p>
+      </div>
+      <div class="mem3 left">
+      <span>澪標 杏</span>
+      <p>
+      
+            ここから恋が始まる…！
+      </p>
+      </div>
+      <div class="mem4 right">
+      <span>北峰 大夜</span>
+      <p>
+      
+            海外で結婚式
+      </p>
+      </div>
+      <div class="kp">
+      
+            リスポーン地点にもどりました。おかえり
+      </div>
+      <div class="mem4 right">
+      <span>北峰 大夜</span>
+      <p>
+      
+            ただいま<br>ぜぇぜぇしてます
+      </p>
+      </div>
+      <div class="mem1 left">
+      <span>言祝 みづき</span>
+      <p>
+      
+            「ガイコツが！オバケがいっぱいいた！！！」
+      </p>
+      </div>
+      <div class="mem4 right">
+      <span>北峰 大夜</span>
+      <p>
+      
+            「オバケはいなかったけどガイコツはいっぱいいましたね！！」
+      </p>
+      </div>
+      <div class="mem1 left">
+      <span>言祝 みづき</span>
+      <p>
+      
+            「すごい笑われた！！！！こわかった！！」
+      </p>
+      </div>
+      <div class="mem3 left">
+      <span>澪標 杏</span>
+      <p>
+      
+            「骸骨だったのぉ？ゾンビじゃなくてぇ？」
+      </p>
+      </div>
+      <div class="mem4 right">
+      <span>北峰 大夜</span>
+      <p>
+      
+            「ガイコツでしたね、バカにされましたね」
+      </p>
+      </div>
+      <div class="kp">
+      
+            みづきさんショタに違和感無いな
+      </div>
+      <div class="mem3 left">
+      <span>澪標 杏</span>
+      <p>
+      
+            「どっちにしてもキャストが演じてるとかじゃないのかな？」
+      </p>
+      </div>
+      <div class="mem4 right">
+      <span>北峰 大夜</span>
+      <p>
+      
+            素がショタなのか
+      </p>
+      </div>
+      <div class="mem1 left">
+      <span>言祝 みづき</span>
+      <p>
+      
+            「あと　助けてくれてありがとう！！！！」
+      </p>
+      </div>
+      <div class="kp">
+      
+            いい子
+      </div>
+      <div class="mem4 right">
+      <span>北峰 大夜</span>
+      <p>
+      
+            「どういたしまして……無事でよかった」
+      </p>
+      </div>
+      <div class="mem1 left">
+      <span>言祝 みづき</span>
+      <p>
+      
+            気付かず32になってたからなぁ
+      </p>
+      </div>
+      <div class="mem4 right">
+      <span>北峰 大夜</span>
+      <p>
+      
+            「本物でしたって……たぶん」
+      </p>
+      </div>
+      <div class="mem4 right">
+      <span>北峰 大夜</span>
+      <p>
+      
+            心は少年の32
+      </p>
+      </div>
+      <div class="kp">
+      
+            さぁ君たちが進むべき道は一本道。十メートルほど先には、西洋風の建物がひとつ建っている。<br>スタンプカードのマップを確認すると、そこがひとつめのチェックポイントで間違いないようだ。
+      </div>
+      <div class="mem1 left">
+      <span>言祝 みづき</span>
+      <p>
+      
+            「……ガイコツの親分とか居そうだね～……」
+      </p>
+      </div>
+      <div class="mem3 left">
+      <span>澪標 杏</span>
+      <p>
+      
+            「もう行く場所ないんだったら、先に進もうよぉー。このままいけばチェックポイントなんだし、人いると思うしー」
+      </p>
+      </div>
+      <div class="mem4 right">
+      <span>北峰 大夜</span>
+      <p>
+      
+            「……子供になったのにスタンプラリーは続けるんですね……」
+      </p>
+      </div>
+      <div class="mem3 left">
+      <span>澪標 杏</span>
+      <p>
+      
+            「みんながどうしたいかはしらないけどぉー、今できる事は先に進むことー」
+      </p>
+      </div>
+      <div class="mem4 right">
+      <span>北峰 大夜</span>
+      <p>
+      
+            「まぁ、それもそうですね」
+      </p>
+      </div>
+      <div class="mem1 left">
+      <span>言祝 みづき</span>
+      <p>
+      
+            目星でいい感じの枝とか探していい？
+      </p>
+      </div>
+      <div class="mem3 left">
+      <span>澪標 杏</span>
+      <p>
+      
+            「それにスタンプ押すのはスタッフさんだろうし、そこで言うのもアリなんじゃないのぉ？ま、場所によるかもしれないけどぉ」
+      </p>
+      </div>
+      <div class="kp">
+      
+            目星許可
+      </div>
+      <div class="mem1 left">
+      <span>言祝 みづき</span>
+      <p>
+      
+            やった！
+      </p>
+      </div>
+      <div class="mem1 left">
+      <span>言祝 みづき</span>
+      <p>
+      
+            91 チキショウ！
+      </p>
+      </div>
+      <div class="kp">
+      
+            なかったね
+      </div>
+      <div class="mem4 right">
+      <span>北峰 大夜</span>
+      <p>
+      
+            少年だな
+      </p>
+      </div>
+      <div class="mem3 left">
+      <span>澪標 杏</span>
+      <p>
+      
+            普通に道を進むのに目星はいる？
+      </p>
+      </div>
+      <div class="kp">
+      
+            いらないよ〜まっすぐ進めばつく
+      </div>
+      <div class="mem1 left">
+      <span>言祝 みづき</span>
+      <p>
+      
+            「せめて　武器が欲しかったなぁ…」
+      </p>
+      </div>
+      <div class="mem4 right">
+      <span>北峰 大夜</span>
+      <p>
+      
+            枝は武器になるのか
+      </p>
+      </div>
+      <div class="mem4 right">
+      <span>北峰 大夜</span>
+      <p>
+      
+            「そうだ、皆さんの名前を聞いてもいいですか？俺は北峰といいます」
+      </p>
+      </div>
+      <div class="mem1 left">
+      <span>言祝 みづき</span>
+      <p>
+      
+            「僕の名前は　言祝みづきっていうんだ～<br>きたみねさん　さっきは本当に助かったよ～！」
+      </p>
+      </div>
+      <div class="mem3 left">
+      <span>澪標 杏</span>
+      <p>
+      
+            「澪標杏っていいまぁーす！好きなことはお友達と遊ぶこと！嫌いなことは、音楽を大切にしない人でーす！あと、こういう怖いのって好きでーす！あははは」
+      </p>
+      </div>
+      <div class="mem4 right">
+      <span>北峰 大夜</span>
+      <p>
+      
+            「みづきさんと、杏さん……名字で呼んだ方がいいですか？」下の名前を聞かれなかったことにほっとしつつ
+      </p>
+      </div>
+      <div class="mem1 left">
+      <span>言祝 みづき</span>
+      <p>
+      
+            「僕は何でもいいよぉ～？」
+      </p>
+      </div>
+      <div class="mem3 left">
+      <span>澪標 杏</span>
+      <p>
+      
+            「杏はどっちでもいいよぉー！ホント嫌いな人にはスパーって言っちゃうし！」
+      </p>
+      </div>
+      <div class="mem4 right">
+      <span>北峰 大夜</span>
+      <p>
+      
+            「じゃあ、みづきさんと杏さんって呼びますね」
+      </p>
+      </div>
+      <div class="mem3 left">
+      <span>澪標 杏</span>
+      <p>
+      
+            「のーのー。あんず、あんず呼びだよ？さんはなくていい？おーけー？」
+      </p>
+      </div>
+      <div class="mem4 right">
+      <span>北峰 大夜</span>
+      <p>
+      
+            「えぇっ？わ、わかりました」
+      </p>
+      </div>
+      <div class="mem2 right">
+      <span>城野 光希</span>
+      <p>
+      
+            「僕は城野光希。元々は宝塚の人だけど、このままちっこかったら子役にでもなろうかな。」
+      </p>
+      </div>
+      <div class="kp">
+      
+            前向き
+      </div>
+      <div class="mem4 right">
+      <span>北峰 大夜</span>
+      <p>
+      
+            「光希さん。女の子……ですよね？」
+      </p>
+      </div>
+      <div class="kp">
+      
+            仲良くお話しながら歩いていると先程みえたチェックポイントにたどり着く<br>探索者は目の前の館を見上げる。 おとぎ話かテーマパークにでもありそうな外装の建築物だ。 レンガの壁には蔦が絡まり、つんと尖った屋根の尖塔はねじ曲がっている。 ドアにはコウモリの形のノッカーがついている。 表札のようなものはない。
+      </div>
+      <div class="kp">
+      
+            聞き耳ができるかな
+      </div>
+      <div class="mem2 right">
+      <span>城野 光希</span>
+      <p>
+      
+            「これはあれかな？『雪だるまつくーろー♪』って歌えばいいのかな？」
+      </p>
+      </div>
+      <div class="kp">
+      
+            うたう？
+      </div>
+      <div class="mem2 right">
+      <span>城野 光希</span>
+      <p>
+      
+            雪景色じゃないから歌わないかな(笑)
+      </p>
+      </div>
+      <div class="mem3 left">
+      <span>澪標 杏</span>
+      <p>
+      
+            聞き耳振ろうかな
+      </p>
+      </div>
+      <div class="kp">
+      
+            どぞぞードアに大してになるかな
+      </div>
+      <div class="mem3 left">
+      <span>澪標 杏</span>
+      <p>
+      
+            17　成功
+      </p>
+      </div>
+      <div class="kp">
+      
+            何かちいさな生き物の気配と、かすかに異臭を感じる。
+      </div>
+      <div class="mem3 left">
+      <span>澪標 杏</span>
+      <p>
+      
+            「ふむふむふむふむふむ」
+      </p>
+      </div>
+      <div class="mem3 left">
+      <span>澪標 杏</span>
+      <p>
+      
+            知識で嗅いだことがある異臭かわかりますか
+      </p>
+      </div>
+      <div class="kp">
+      
+            嗅いだことはないと思うな
+      </div>
+      <div class="mem3 left">
+      <span>澪標 杏</span>
+      <p>
+      
+            そうかぁ
+      </p>
+      </div>
+      <div class="mem3 left">
+      <span>澪標 杏</span>
+      <p>
+      
+            今の心情を作詞作曲して突然歌いだしたらどうなりますか
+      </p>
+      </div>
+      <div class="kp">
+      
+             SAN値を確認するかな
+      </div>
+      <div class="mem3 left">
+      <span>澪標 杏</span>
+      <p>
+      
+            え？72だよ？そんなSAN0みたいに言わないでよ
+      </p>
+      </div>
+      <div class="kp">
+      
+            にぎちゃんと仲良くなれそうだね
+      </div>
+      <div class="mem3 left">
+      <span>澪標 杏</span>
+      <p>
+      
+            同類になるのか…
+      </p>
+      </div>
+      <div class="mem3 left">
+      <span>澪標 杏</span>
+      <p>
+      
+            まぁ、いいか。
+      </p>
+      </div>
+      <div class="mem3 left">
+      <span>澪標 杏</span>
+      <p>
+      
+            ドアに向かって「トントントン、誰かいませんかぁ？」ってノックと同時に声でも言って語り掛ける
+      </p>
+      </div>
+      <div class="kp">
+      
+            ノッカーを鳴らすと木製のドアがゆっくりと開いた。<br>ドアの向こうには誰もいない…いや、視線を下におろすとそこには一匹の黒猫が居た。
+      </div>
+      <div class="mem6 right">
+      <span>黒猫</span>
+      <p>
+      
+            「やあやあよくきてくれたね、かわいいコックさん♪待っていたんだよ」
+      </p>
+      </div>
+      <div class="kp">
+      
+            黒猫は長いしっぽを揺らしながら金色の瞳を光らせた。<br>猫が喋った！SANチェック（0/1）
+      </div>
+      <div class="mem3 left">
+      <span>澪標 杏</span>
+      <p>
+      
+            44　成功です
+      </p>
+      </div>
+      <div class="mem3 left">
+      <span>澪標 杏</span>
+      <p>
+      
+            「かわいいかわいい黒猫さん。貴方は一体何者ですかあ」
+      </p>
+      </div>
+      <div class="mem3 left">
+      <span>澪標 杏</span>
+      <p>
+      
+            たぶん、誰かが軌道修正しないと、暴れるよ
+      </p>
+      </div>
+      <div class="kp">
+      
+            暴れるの…
+      </div>
+      <div class="kp">
+      
+            軌道はいまのとこ間違ってないよ
+      </div>
+      <div class="mem3 left">
+      <span>澪標 杏</span>
+      <p>
+      
+            いや、もうこのRPが楽しいから。
+      </p>
+      </div>
+      <div class="kp">
+      
+            良いことだ
+      </div>
+      <div class="mem3 left">
+      <span>澪標 杏</span>
+      <p>
+      
+            いつも堅物やってるから楽しい。ピュア楽しい
+      </p>
+      </div>
+      <div class="kp">
+      
+            動かしやすいよね
+      </div>
+      <div class="kp">
+      
+            ある意味
+      </div>
+      <div class="mem3 left">
+      <span>澪標 杏</span>
+      <p>
+      
+            いつもはいかに生き残るかを考えてるけど、今回全然考えてない。楽しい
+      </p>
+      </div>
+      <div class="mem2 right">
+      <span>城野 光希</span>
+      <p>
+      
+            37成功。
+      </p>
+      </div>
+      <div class="mem2 right">
+      <span>城野 光希</span>
+      <p>
+      
+            「最近のロボットはここまで進化しているんだね！」
+      </p>
+      </div>
+      <div class="mem4 right">
+      <span>北峰 大夜</span>
+      <p>
+      
+            80失敗<br>53→52
+      </p>
+      </div>
+      <div class="mem4 right">
+      <span>北峰 大夜</span>
+      <p>
+      
+            「ねこがしゃべった」
+      </p>
+      </div>
+      <div class="mem1 left">
+      <span>言祝 みづき</span>
+      <p>
+      
+            89　失敗<br>39→38
+      </p>
+      </div>
+      <div class="mem1 left">
+      <span>言祝 みづき</span>
+      <p>
+      
+            「ネコチャンガシャベッタ！！！」
+      </p>
+      </div>
+      <div class="kp">
+      
+            猫に目星可能
+      </div>
+      <div class="mem3 left">
+      <span>澪標 杏</span>
+      <p>
+      
+            目星ります
+      </p>
+      </div>
+      <div class="mem3 left">
+      <span>澪標 杏</span>
+      <p>
+      
+            93 あははは
+      </p>
+      </div>
+      <div class="kp">
+      
+            ｶﾜｲｲﾈｺﾁｬﾝって感じ
+      </div>
+      <div class="mem3 left">
+      <span>澪標 杏</span>
+      <p>
+      
+            「にゃーんにゃーん、ははははは」
+      </p>
+      </div>
+      <div class="mem1 left">
+      <span>言祝 みづき</span>
+      <p>
+      
+            めぼるよ
+      </p>
+      </div>
+      <div class="mem1 left">
+      <span>言祝 みづき</span>
+      <p>
+      
+            100
+      </p>
+      </div>
+      <div class="mem3 left">
+      <span>澪標 杏</span>
+      <p>
+      
+            くっそwww
+      </p>
+      </div>
+      <div class="mem1 left">
+      <span>言祝 みづき</span>
+      <p>
+      
+            ﾁﾞｷﾞｼﾞｮｳ゛
+      </p>
+      </div>
+      <div class="mem2 right">
+      <span>城野 光希</span>
+      <p>
+      
+            めぼるね…(笑)
+      </p>
+      </div>
+      <div class="mem2 right">
+      <span>城野 光希</span>
+      <p>
+      
+            92
+      </p>
+      </div>
+      <div class="mem2 right">
+      <span>城野 光希</span>
+      <p>
+      
+            笑うしかない
+      </p>
+      </div>
+      <div class="mem3 left">
+      <span>澪標 杏</span>
+      <p>
+      
+            あれ、呪われてるのでは
+      </p>
+      </div>
+      <div class="kp">
+      
+            100ファンどうしよか
+      </div>
+      <div class="mem3 left">
+      <span>澪標 杏</span>
+      <p>
+      
+            黒猫がニャルに見える呪い
+      </p>
+      </div>
+      <div class="mem1 left">
+      <span>言祝 みづき</span>
+      <p>
+      
+            おっも
+      </p>
+      </div>
+      <div class="mem3 left">
+      <span>澪標 杏</span>
+      <p>
+      
+            だって、そう思えるぐらい、黒猫目星の数値のでかさ
+      </p>
+      </div>
+      <div class="mem1 left">
+      <span>言祝 みづき</span>
+      <p>
+      
+            アレルギー発症位で　いかがでしょうか…？
+      </p>
+      </div>
+      <div class="mem3 left">
+      <span>澪標 杏</span>
+      <p>
+      
+            やっぱりここは猫のひっかき攻撃で
+      </p>
+      </div>
+      <div class="mem1 left">
+      <span>言祝 みづき</span>
+      <p>
+      
+            ネコ引っ掻き病こわいなぁ
+      </p>
+      </div>
+      <div class="kp">
+      
+            アレルギー発症で猫がいるあいだ目星-20
+      </div>
+      <div class="mem1 left">
+      <span>言祝 みづき</span>
+      <p>
+      
+            はぁい！
+      </p>
+      </div>
+      <div class="mem3 left">
+      <span>澪標 杏</span>
+      <p>
+      
+            今度みづきくんの為に猫シナリオにしないと（
+      </p>
+      </div>
+      <div class="mem1 left">
+      <span>言祝 みづき</span>
+      <p>
+      
+            「(ぐずぐず涙目)」
+      </p>
+      </div>
+      <div class="mem2 right">
+      <span>城野 光希</span>
+      <p>
+      
+            「スタッフが用意したロボットじゃないのかい？」
+      </p>
+      </div>
+      <div class="mem3 left">
+      <span>澪標 杏</span>
+      <p>
+      
+            「え？猫でしょ？」
+      </p>
+      </div>
+      <div class="mem3 left">
+      <span>澪標 杏</span>
+      <p>
+      
+            「かわいい猫にゃん」
+      </p>
+      </div>
+      <div class="mem1 left">
+      <span>言祝 みづき</span>
+      <p>
+      
+            「本物のネコチャンだよ～……」
+      </p>
+      </div>
+      <div class="mem4 right">
+      <span>北峰 大夜</span>
+      <p>
+      
+            14成功
+      </p>
+      </div>
+      <div class="mem1 left">
+      <span>言祝 みづき</span>
+      <p>
+      
+            有能。
+      </p>
+      </div>
+      <div class="mem3 left">
+      <span>澪標 杏</span>
+      <p>
+      
+            有能
+      </p>
+      </div>
+      <div class="mem4 right">
+      <span>北峰 大夜</span>
+      <p>
+      
+            やったぜ
+      </p>
+      </div>
+      <div class="kp">
+      
+            首輪にCASTと彫られたプレートを下げている
+      </div>
+      <div class="mem4 right">
+      <span>北峰 大夜</span>
+      <p>
+      
+            「キャスト……猫がキャスト……？」
+      </p>
+      </div>
+      <div class="mem6 right">
+      <span>黒猫</span>
+      <p>
+      
+            「まぁまぁ僕のことはどうでもいいから！ご主人も僕ももうお腹ぺこぺこなんだよ～ちゃっちゃとつくってよね！」
+      </p>
+      </div>
+      <div class="kp">
+      
+            黒猫に促されて探索者はキッチンに連れてこられた。<br>キッチンは整頓されており、調理台にはさまざまな食材と共にメモが一枚。<br>《ひとつめの試練～Witch's　Kitchen～うぃっちず　きっちん<br>魔女の喜ぶ料理をつくってね！》
+      </div>
+      <div class="mem6 right">
+      <span>黒猫</span>
+      <p>
+      
+            「ご主人は、朝・昼・晩と同じメニューを食べちゃうくらい好きなメニューがあるんだよ♪」
+      </p>
+      </div>
+      <div class="kp">
+      
+            黒猫が歌うように話しかけてくる。
+      </div>
+      <div class="mem6 right">
+      <span>黒猫</span>
+      <p>
+      
+            「愛らしいコックさん、ひとつめの試練がとけるかなあ？」
+      </p>
+      </div>
+      <div class="kp">
+      
+            〈目星〉なしでわかる情報→<br>キッチンには、かまど、水桶、食材や調理器具の並んだ調理台、食器棚がある。
+      </div>
+      <div class="mem3 left">
+      <span>澪標 杏</span>
+      <p>
+      
+            カレーライスって三食おいしいよね（乱視）
+      </p>
+      </div>
+      <div class="mem2 right">
+      <span>城野 光希</span>
+      <p>
+      
+            「かまどとはまた古風な……。」
+      </p>
+      </div>
+      <div class="mem2 right">
+      <span>城野 光希</span>
+      <p>
+      
+            カレー無限に食える
+      </p>
+      </div>
+      <div class="mem3 left">
+      <span>澪標 杏</span>
+      <p>
+      
+            「かまど！これーで魔女をけとばっせるー！」
+      </p>
+      </div>
+      <div class="kp">
+      
+            今日昼カレーだった
+      </div>
+      <div class="mem4 right">
+      <span>北峰 大夜</span>
+      <p>
+      
+            「俺たち、コックなんですか？」
+      </p>
+      </div>
+      <div class="mem1 left">
+      <span>言祝 みづき</span>
+      <p>
+      
+            「ネコチャンも食べるなら　材料気を付けないと～」
+      </p>
+      </div>
+      <div class="mem2 right">
+      <span>城野 光希</span>
+      <p>
+      
+            けど今はカレーより月見バーガーとガストの栗パフェとスタバの芋けんぴフラペチーノたべたい
+      </p>
+      </div>
+      <div class="mem3 left">
+      <span>澪標 杏</span>
+      <p>
+      
+            バラバラやな
+      </p>
+      </div>
+      <div class="mem4 right">
+      <span>北峰 大夜</span>
+      <p>
+      
+            一日中ねてたのでなにもたべてないな
+      </p>
+      </div>
+      <div class="mem3 left">
+      <span>澪標 杏</span>
+      <p>
+      
+            健康が悪いから食べようぜ！
+      </p>
+      </div>
+      <div class="mem6 right">
+      <span>黒猫</span>
+      <p>
+      
+            ｢んもう設定にけちつけないの！ほらほら早く試練をクリアしなきゃ夜が明けちゃうよ！｣
+      </p>
+      </div>
+      <div class="mem3 left">
+      <span>澪標 杏</span>
+      <p>
+      
+            「時間がたつのははやいよー！」
+      </p>
+      </div>
+      <div class="mem1 left">
+      <span>言祝 みづき</span>
+      <p>
+      
+            「お水とか自由に使ってもいーい？」
+      </p>
+      </div>
+      <div class="mem4 right">
+      <span>北峰 大夜</span>
+      <p>
+      
+            「……はぁ。材料は何があるんですか？」
+      </p>
+      </div>
+      <div class="mem6 right">
+      <span>黒猫</span>
+      <p>
+      
+            ｢キッチンにあるものはなんでもつかっていいよ！｣
+      </p>
+      </div>
+      <div class="mem2 right">
+      <span>城野 光希</span>
+      <p>
+      
+            「料理の歌はビーフストロガノフの歌しか知らないな……。」
+      </p>
+      </div>
+      <div class="mem1 left">
+      <span>言祝 みづき</span>
+      <p>
+      
+            「よかったぁ！」<br>目を洗います
+      </p>
+      </div>
+      <div class="mem3 left">
+      <span>澪標 杏</span>
+      <p>
+      
+            ダメだ。眼球抉り出して洗ってるのかとおもった
+      </p>
+      </div>
+      <div class="kp">
+      
+            食材はなんでもあるよ。その他目星
+      </div>
+      <div class="mem3 left">
+      <span>澪標 杏</span>
+      <p>
+      
+            よし、目星振るか
+      </p>
+      </div>
+      <div class="mem4 right">
+      <span>北峰 大夜</span>
+      <p>
+      
+            「その、ご主人様が好きなメニューを当ててつくればいいってことですね？」
+      </p>
+      </div>
+      <div class="mem3 left">
+      <span>澪標 杏</span>
+      <p>
+      
+            57　はい、使えないひとでーす
+      </p>
+      </div>
+      <div class="mem6 right">
+      <span>黒猫</span>
+      <p>
+      
+            ｢そうだよ〜！パスタやライスって気分じゃないかもなぁ｣
+      </p>
+      </div>
+      <div class="mem3 left">
+      <span>澪標 杏</span>
+      <p>
+      
+            「りょーりーしないかっらーわっからなーい」
+      </p>
+      </div>
+      <div class="kp">
+      
+            調理台か食器棚に目星かな
+      </div>
+      <div class="mem4 right">
+      <span>北峰 大夜</span>
+      <p>
+      
+            では調理だいに
+      </p>
+      </div>
+      <div class="mem4 right">
+      <span>北峰 大夜</span>
+      <p>
+      
+            16 成功
+      </p>
+      </div>
+      <div class="mem3 left">
+      <span>澪標 杏</span>
+      <p>
+      
+            有能だぁ
+      </p>
+      </div>
+      <div class="kp">
+      
+            耳のない食パンが開封済になってる
+      </div>
+      <div class="mem1 left">
+      <span>言祝 みづき</span>
+      <p>
+      
+            食器棚に目星を
+      </p>
+      </div>
+      <div class="mem4 right">
+      <span>北峰 大夜</span>
+      <p>
+      
+            「パンか……パンを使えばいいんですね？」
+      </p>
+      </div>
+      <div class="mem1 left">
+      <span>言祝 みづき</span>
+      <p>
+      
+            86　無能
+      </p>
+      </div>
+      <div class="mem2 right">
+      <span>城野 光希</span>
+      <p>
+      
+            では代わりに私が
+      </p>
+      </div>
+      <div class="mem3 left">
+      <span>澪標 杏</span>
+      <p>
+      
+            みんな目星振ってるから頑張ってー
+      </p>
+      </div>
+      <div class="mem3 left">
+      <span>澪標 杏</span>
+      <p>
+      
+            「パンがパーン。ぱぱぱ、ぱーん」
+      </p>
+      </div>
+      <div class="kp">
+      
+            パン祭りしそう
+      </div>
+      <div class="mem4 right">
+      <span>北峰 大夜</span>
+      <p>
+      
+            お皿がもらえちゃう
+      </p>
+      </div>
+      <div class="mem1 left">
+      <span>言祝 みづき</span>
+      <p>
+      
+            ヤマザキ手広いな
+      </p>
+      </div>
+      <div class="mem3 left">
+      <span>澪標 杏</span>
+      <p>
+      
+            秋のパン祭りかな
+      </p>
+      </div>
+      <div class="mem2 right">
+      <span>城野 光希</span>
+      <p>
+      
+            5
+      </p>
+      </div>
+      <div class="mem1 left">
+      <span>言祝 みづき</span>
+      <p>
+      
+            ﾋｭｰｯ！
+      </p>
+      </div>
+      <div class="mem3 left">
+      <span>澪標 杏</span>
+      <p>
+      
+            ぴゅー
+      </p>
+      </div>
+      <div class="mem2 right">
+      <span>城野 光希</span>
+      <p>
+      
+            有能判定やったね！
+      </p>
+      </div>
+      <div class="mem4 right">
+      <span>北峰 大夜</span>
+      <p>
+      
+            有能！
+      </p>
+      </div>
+      <div class="kp">
+      
+            クリティカルやぁ
+      </div>
+      <div class="kp">
+      
+            食器棚には子供用エプロンが入っている。これさえ付けたらなんでも作れる気がする…！！
+      </div>
+      <div class="mem3 left">
+      <span>澪標 杏</span>
+      <p>
+      
+            パワーアイテムだわ
+      </p>
+      </div>
+      <div class="mem2 right">
+      <span>城野 光希</span>
+      <p>
+      
+            そっか今小っちゃいんだっけ
+      </p>
+      </div>
+      <div class="mem3 left">
+      <span>澪標 杏</span>
+      <p>
+      
+            今コナン君だよ
+      </p>
+      </div>
+      <div class="mem1 left">
+      <span>言祝 みづき</span>
+      <p>
+      
+            めちゃかわじゃん
+      </p>
+      </div>
+      <div class="mem4 right">
+      <span>北峰 大夜</span>
+      <p>
+      
+            できるかなクッキング
+      </p>
+      </div>
+      <div class="mem2 right">
+      <span>城野 光希</span>
+      <p>
+      
+            ひとりでできるもんかな？
+      </p>
+      </div>
+      <div class="mem3 left">
+      <span>澪標 杏</span>
+      <p>
+      
+            そもそもキッチンが大きければ体が届かないかもしれないぞ
+      </p>
+      </div>
+      <div class="mem2 right">
+      <span>城野 光希</span>
+      <p>
+      
+            「みんな！ここにエプロンがあったよ！」
+      </p>
+      </div>
+      <div class="mem4 right">
+      <span>北峰 大夜</span>
+      <p>
+      
+            台がほしいね
+      </p>
+      </div>
+      <div class="kp">
+      
+            キッチンには椅子や台があるから届くね
+      </div>
+      <div class="kp">
+      
+            助手猫やし
+      </div>
+      <div class="mem3 left">
+      <span>澪標 杏</span>
+      <p>
+      
+            「えっぷろーん！」
+      </p>
+      </div>
+      <div class="kp">
+      
+            つけますか？
+      </div>
+      <div class="mem1 left">
+      <span>言祝 みづき</span>
+      <p>
+      
+            「清潔だね～！」
+      </p>
+      </div>
+      <div class="mem4 right">
+      <span>北峰 大夜</span>
+      <p>
+      
+            「あっほんとですか！食器棚にはパンがあったので、たぶんパンでなにか作れってことだと思います」
+      </p>
+      </div>
+      <div class="mem1 left">
+      <span>言祝 みづき</span>
+      <p>
+      
+            人数分あるなら　装備したい
+      </p>
+      </div>
+      <div class="mem4 right">
+      <span>北峰 大夜</span>
+      <p>
+      
+            つけましょう
+      </p>
+      </div>
+      <div class="mem2 right">
+      <span>城野 光希</span>
+      <p>
+      
+            光希さんエプロンつけます
+      </p>
+      </div>
+      <div class="kp">
+      
+            人数分あるよ
+      </div>
+      <div class="mem3 left">
+      <span>澪標 杏</span>
+      <p>
+      
+            「そーちゃく！」
+      </p>
+      </div>
+      <div class="mem1 left">
+      <span>言祝 みづき</span>
+      <p>
+      
+            E　ばんのうエプロン
+      </p>
+      </div>
+      <div class="mem3 left">
+      <span>澪標 杏</span>
+      <p>
+      
+            「あとさ、安易な考えだけどサンドがウィッチするとかないよね？」
+      </p>
+      </div>
+      <div class="mem3 left">
+      <span>澪標 杏</span>
+      <p>
+      
+            「そんなそんな。まっさかー」
+      </p>
+      </div>
+      <div class="kp">
+      
+            制作(料理)＋80
+      </div>
+      <div class="mem3 left">
+      <span>澪標 杏</span>
+      <p>
+      
+            つよい
+      </p>
+      </div>
+      <div class="mem1 left">
+      <span>言祝 みづき</span>
+      <p>
+      
+            最強！
+      </p>
+      </div>
+      <div class="mem4 right">
+      <span>北峰 大夜</span>
+      <p>
+      
+            「サンドイッチ、なるほど。グラタンとかしか思い付きませんでした」
+      </p>
+      </div>
+      <div class="mem4 right">
+      <span>北峰 大夜</span>
+      <p>
+      
+            でもどうかな……ファンブル多いし……
+      </p>
+      </div>
+      <div class="kp">
+      
+            フラグかな
+      </div>
+      <div class="mem4 right">
+      <span>北峰 大夜</span>
+      <p>
+      
+            折りたい！
+      </p>
+      </div>
+      <div class="mem3 left">
+      <span>澪標 杏</span>
+      <p>
+      
+            「でも、夜食べるかは知らないからーあってるかはどうかなーって」
+      </p>
+      </div>
+      <div class="mem3 left">
+      <span>澪標 杏</span>
+      <p>
+      
+            祈るしかない（フラグ）
+      </p>
+      </div>
+      <div class="mem1 left">
+      <span>言祝 みづき</span>
+      <p>
+      
+            「あさ　ひる　ばんで　サンドイッチ～♪」
+      </p>
+      </div>
+      <div class="mem1 left">
+      <span>言祝 みづき</span>
+      <p>
+      
+            きゃいのきゃいの
+      </p>
+      </div>
+      <div class="mem3 left">
+      <span>澪標 杏</span>
+      <p>
+      
+            わいのわいの
+      </p>
+      </div>
+      <div class="mem4 right">
+      <span>北峰 大夜</span>
+      <p>
+      
+            「まぁ、夜もたべる……かな？」
+      </p>
+      </div>
+      <div class="kp">
+      
+            作るもの決まったら宣言と制作を
+      </div>
+      <div class="mem1 left">
+      <span>言祝 みづき</span>
+      <p>
+      
+            「何サンドが好きなのかな～？」
+      </p>
+      </div>
+      <div class="mem1 left">
+      <span>言祝 みづき</span>
+      <p>
+      
+            全員同じもの作った方が良さげ？
+      </p>
+      </div>
+      <div class="kp">
+      
+            どちらでもー多分もってったのは全部たべる
+      </div>
+      <div class="mem4 right">
+      <span>北峰 大夜</span>
+      <p>
+      
+            「じゃあ、おやつにもごはんにもなるように、いろんなサンドつくりましょうか」
+      </p>
+      </div>
+      <div class="mem3 left">
+      <span>澪標 杏</span>
+      <p>
+      
+            これって挑戦1回なの？
+      </p>
+      </div>
+      <div class="kp">
+      
+             1回だね。これ料理選手権じゃなくてクイズみたいなやつだから
+      </div>
+      <div class="mem4 right">
+      <span>北峰 大夜</span>
+      <p>
+      
+            正解してれば料理がダークマターでもゆるされるのか
+      </p>
+      </div>
+      <div class="mem3 left">
+      <span>澪標 杏</span>
+      <p>
+      
+            これはサンドイッチ（ダークマター）ですって言っても言い張れば勝てるの？
+      </p>
+      </div>
+      <div class="mem1 left">
+      <span>言祝 みづき</span>
+      <p>
+      
+            80が4人いるし　心配ないやろ(慢心)
+      </p>
+      </div>
+      <div class="mem3 left">
+      <span>澪標 杏</span>
+      <p>
+      
+            ただ、これが正解なのかっていう不安が…
+      </p>
+      </div>
+      <div class="mem4 right">
+      <span>北峰 大夜</span>
+      <p>
+      
+            それな～
+      </p>
+      </div>
+      <div class="mem1 left">
+      <span>言祝 みづき</span>
+      <p>
+      
+            三食同じものを食べる<br>↓<br>三度一致　で大丈夫だと思う
+      </p>
+      </div>
+      <div class="mem3 left">
+      <span>澪標 杏</span>
+      <p>
+      
+            まぁ！今回は合ってても間違っててもいいや！
+      </p>
+      </div>
+      <div class="mem4 right">
+      <span>北峰 大夜</span>
+      <p>
+      
+            天才か
+      </p>
+      </div>
+      <div class="mem3 left">
+      <span>澪標 杏</span>
+      <p>
+      
+            すごい！
+      </p>
+      </div>
+      <div class="mem1 left">
+      <span>言祝 みづき</span>
+      <p>
+      
+            違ったらカッコ悪いな！
+      </p>
+      </div>
+      <div class="mem3 left">
+      <span>澪標 杏</span>
+      <p>
+      
+            頭良すぎだろ
+      </p>
+      </div>
+      <div class="mem1 left">
+      <span>言祝 みづき</span>
+      <p>
+      
+            作っちゃっていい？
+      </p>
+      </div>
+      <div class="mem3 left">
+      <span>澪標 杏</span>
+      <p>
+      
+            やっちゃう？やっちゃう？
+      </p>
+      </div>
+      <div class="mem4 right">
+      <span>北峰 大夜</span>
+      <p>
+      
+            何さんどをつくるのかな
+      </p>
+      </div>
+      <div class="mem1 left">
+      <span>言祝 みづき</span>
+      <p>
+      
+            みづきさんは　サバサンドにしようかなと
+      </p>
+      </div>
+      <div class="mem4 right">
+      <span>北峰 大夜</span>
+      <p>
+      
+            しぶい
+      </p>
+      </div>
+      <div class="mem3 left">
+      <span>澪標 杏</span>
+      <p>
+      
+            今話題かな
+      </p>
+      </div>
+      <div class="mem4 right">
+      <span>北峰 大夜</span>
+      <p>
+      
+            そうなの？
+      </p>
+      </div>
+      <div class="mem3 left">
+      <span>澪標 杏</span>
+      <p>
+      
+            なんか私最近見る
+      </p>
+      </div>
+      <div class="mem1 left">
+      <span>言祝 みづき</span>
+      <p>
+      
+            ネコチャンにもやさしそう
+      </p>
+      </div>
+      <div class="mem4 right">
+      <span>北峰 大夜</span>
+      <p>
+      
+            そうかねこちゃんにもか
+      </p>
+      </div>
+      <div class="mem3 left">
+      <span>澪標 杏</span>
+      <p>
+      
+            何にしようかな
+      </p>
+      </div>
+      <div class="mem3 left">
+      <span>澪標 杏</span>
+      <p>
+      
+            よし。たまごサンド作ります
+      </p>
+      </div>
+      <div class="kp">
+      
+            作るもの決まったらダイスを振ってね。出揃ったら進行します
+      </div>
+      <div class="mem1 left">
+      <span>言祝 みづき</span>
+      <p>
+      
+            はぁい！
+      </p>
+      </div>
+      <div class="mem3 left">
+      <span>澪標 杏</span>
+      <p>
+      
+            86　たまごサンドすらまともにつくれねぇよ！
+      </p>
+      </div>
+      <div class="mem1 left">
+      <span>言祝 みづき</span>
+      <p>
+      
+            11　サバサンドをつくった！
+      </p>
+      </div>
+      <div class="mem4 right">
+      <span>北峰 大夜</span>
+      <p>
+      
+            じゃあハムレタスサンドを
+      </p>
+      </div>
+      <div class="mem3 left">
+      <span>澪標 杏</span>
+      <p>
+      
+            「やーめた、やめたー。やるっきがーでーなーいー」
+      </p>
+      </div>
+      <div class="mem4 right">
+      <span>北峰 大夜</span>
+      <p>
+      
+            94不器用wwwwwww
+      </p>
+      </div>
+      <div class="mem3 left">
+      <span>澪標 杏</span>
+      <p>
+      
+            あぶねえ
+      </p>
+      </div>
+      <div class="mem3 left">
+      <span>澪標 杏</span>
+      <p>
+      
+            本気でダークマターが出来るところだったじゃないか
+      </p>
+      </div>
+      <div class="mem1 left">
+      <span>言祝 みづき</span>
+      <p>
+      
+            ギリギリwww
+      </p>
+      </div>
+      <div class="mem4 right">
+      <span>北峰 大夜</span>
+      <p>
+      
+            言い出しっぺの法則が
+      </p>
+      </div>
+      <div class="mem3 left">
+      <span>澪標 杏</span>
+      <p>
+      
+            ファンブル出るかもしれないといった人がファンブル寸前で、祈るしかないといった人が失敗です。…言いたい事はわかりますね？（
+      </p>
+      </div>
+      <div class="mem4 right">
+      <span>北峰 大夜</span>
+      <p>
+      
+            フラグがおれなかった()
+      </p>
+      </div>
+      <div class="mem3 left">
+      <span>澪標 杏</span>
+      <p>
+      
+            私は悲しい…（ﾎﾟﾛﾛﾛﾝ
+      </p>
+      </div>
+      <div class="mem4 right">
+      <span>北峰 大夜</span>
+      <p>
+      
+            いけめんの不器用はかわいいのでうれしい()
+      </p>
+      </div>
+      <div class="mem3 left">
+      <span>澪標 杏</span>
+      <p>
+      
+            なんだろ、こっちは。単純なたまごサンドで失敗要素が…なんだろ
+      </p>
+      </div>
+      <div class="mem3 left">
+      <span>澪標 杏</span>
+      <p>
+      
+            野菜サンドだったら、トマト祭りしたのに
+      </p>
+      </div>
+      <div class="mem1 left">
+      <span>言祝 みづき</span>
+      <p>
+      
+            「こっちが魔女さんので～　こっちがネコチャンので～　こっちがみんなの～！」<br>切り分けてます
+      </p>
+      </div>
+      <div class="mem1 left">
+      <span>言祝 みづき</span>
+      <p>
+      
+            具の量とかムズくね？
+      </p>
+      </div>
+      <div class="mem3 left">
+      <span>澪標 杏</span>
+      <p>
+      
+            そこらへん感覚だからわからんべ
+      </p>
+      </div>
+      <div class="mem3 left">
+      <span>澪標 杏</span>
+      <p>
+      
+            「うわぁーすっごーい。よく、作れるねぇー。ひゅーあっこがれるー」
+      </p>
+      </div>
+      <div class="mem4 right">
+      <span>北峰 大夜</span>
+      <p>
+      
+            「器用なんですね、みづきさん……」
+      </p>
+      </div>
+      <div class="mem1 left">
+      <span>言祝 みづき</span>
+      <p>
+      
+            「いつか　僕のお嫁さんにも　つくってあげるんだ～♪」
+      </p>
+      </div>
+      <div class="mem4 right">
+      <span>北峰 大夜</span>
+      <p>
+      
+            「素敵な夢ですね」
+      </p>
+      </div>
+      <div class="mem1 left">
+      <span>言祝 みづき</span>
+      <p>
+      
+            「へへ～　でしょ～？」(32)
+      </p>
+      </div>
+      <div class="mem3 left">
+      <span>澪標 杏</span>
+      <p>
+      
+            「夢かぁー。すごいなぁー」
+      </p>
+      </div>
+      <div class="mem4 right">
+      <span>北峰 大夜</span>
+      <p>
+      
+            「俺なんか、特に夢とか、ないですよ」
+      </p>
+      </div>
+      <div class="mem1 left">
+      <span>言祝 みづき</span>
+      <p>
+      
+            「そうなの～？<br>じゃあ王子様とか～、アイドルとか～、救助の人とかどう～？<br>きたみねさん　きらきらしてて優しくて勇気があるから　何にだってなれると思うよ～？」
+      </p>
+      </div>
+      <div class="mem1 left">
+      <span>言祝 みづき</span>
+      <p>
+      
+            トンネルの件でめちゃくちゃなついてます
+      </p>
+      </div>
+      <div class="mem3 left">
+      <span>澪標 杏</span>
+      <p>
+      
+            こいつらくっつけば最強じゃね
+      </p>
+      </div>
+      <div class="mem4 right">
+      <span>北峰 大夜</span>
+      <p>
+      
+            「……ふはっ 俺、アイドルなんですよ、実は……」
+      </p>
+      </div>
+      <div class="mem4 right">
+      <span>北峰 大夜</span>
+      <p>
+      
+            くっついちゃう～？？
+      </p>
+      </div>
+      <div class="mem1 left">
+      <span>言祝 みづき</span>
+      <p>
+      
+            「そうなの～？すごいすご～い！<br>ファンレターいっぱい書くねぇ～！」
+      </p>
+      </div>
+      <div class="mem1 left">
+      <span>言祝 みづき</span>
+      <p>
+      
+            個人的にハイパー美味しい！
+      </p>
+      </div>
+      <div class="mem4 right">
+      <span>北峰 大夜</span>
+      <p>
+      
+            「ふふっ。無事に戻れたら、ステージに招待しますね」
+      </p>
+      </div>
+      <div class="mem1 left">
+      <span>言祝 みづき</span>
+      <p>
+      
+            「わぁ～！ありがとう～！<br>楽しみだなぁ～！」
+      </p>
+      </div>
+      <div class="mem4 right">
+      <span>北峰 大夜</span>
+      <p>
+      
+            「楽しみにしててください。いっぱい練習しときますから」
+      </p>
+      </div>
+      <div class="mem1 left">
+      <span>言祝 みづき</span>
+      <p>
+      
+            「僕も　ファンマナーとか覚えておくねぇ～！」
+      </p>
+      </div>
+      <div class="mem2 right">
+      <span>城野 光希</span>
+      <p>
+      
+            もともと40持ってて更に+80ってことは…自動成功？
+      </p>
+      </div>
+      <div class="mem3 left">
+      <span>澪標 杏</span>
+      <p>
+      
+            どんな技能でも100は絶対的な失敗って言われるけど、卓による？
+      </p>
+      </div>
+      <div class="mem3 left">
+      <span>澪標 杏</span>
+      <p>
+      
+            まぁ、そんな素晴らしいタイミングで100出すなんて、そんなそんな
+      </p>
+      </div>
+      <div class="mem2 right">
+      <span>城野 光希</span>
+      <p>
+      
+            15。100ファンは普通に回避したぜ(笑)<br>可愛いフルーツサンドを作ったよ！
+      </p>
+      </div>
+      <div class="mem4 right">
+      <span>北峰 大夜</span>
+      <p>
+      
+            有能！
+      </p>
+      </div>
+      <div class="mem1 left">
+      <span>言祝 みづき</span>
+      <p>
+      
+            タカラヅカシェフ！
+      </p>
+      </div>
+      <div class="mem3 left">
+      <span>澪標 杏</span>
+      <p>
+      
+            流石ですぞ、シェフ！
+      </p>
+      </div>
+      <div class="mem2 right">
+      <span>城野 光希</span>
+      <p>
+      
+            でも不器用だからちょっとフルーツがパンからチラリしてるかもしれない(笑)
+      </p>
+      </div>
+      <div class="mem3 left">
+      <span>澪標 杏</span>
+      <p>
+      
+            食べれるなら問題ないんだよ！
+      </p>
+      </div>
+      <div class="mem4 right">
+      <span>北峰 大夜</span>
+      <p>
+      
+            愛嬌ご愛嬌
+      </p>
+      </div>
+      <div class="mem1 left">
+      <span>言祝 みづき</span>
+      <p>
+      
+            むしろ洒落てるよ！
+      </p>
+      </div>
+      <div class="mem3 left">
+      <span>澪標 杏</span>
+      <p>
+      
+            そこが手作り感あっていいんだよね
+      </p>
+      </div>
+      <div class="mem2 right">
+      <span>城野 光希</span>
+      <p>
+      
+            「ふむ…。やはりまだまだ腕を磨かなければ。まあ一人暮らしだから自分が食べられればそれでいいんだが。」
+      </p>
+      </div>
+      <div class="mem3 left">
+      <span>澪標 杏</span>
+      <p>
+      
+            「一人暮らしでぇー自分が食べれるのぉー作れるだけましなんだよぉー」
+      </p>
+      </div>
+      <div class="kp">
+      
+            では具が飛び出てしまったたまごサンドとハムレタスサンドと、綺麗なサバサンドとフルーツサンドができました
+      </div>
+      <div class="mem4 right">
+      <span>北峰 大夜</span>
+      <p>
+      
+            わーい
+      </p>
+      </div>
+      <div class="mem6 right">
+      <span>黒猫</span>
+      <p>
+      
+            「サンドイッチはご主人の大好物だよ！よくわかったね♪」
+      </p>
+      </div>
+      <div class="kp">
+      
+            黒猫は飛び跳ねて喜んでいる。
+      </div>
+      <div class="mem6 right">
+      <span>黒猫</span>
+      <p>
+      
+            「お利口さんのコックさんには、スタンプをあげなくちゃね」
+      </p>
+      </div>
+      <div class="kp">
+      
+            探索者はひとつめのスタンプを無事にゲットした。<br>試練をクリアした探索者はいつの間にか館の外に出されていて、黒猫が探索者の肩に飛び乗り、耳元でそっと
+      </div>
+      <div class="mem6 right">
+      <span>黒猫</span>
+      <p>
+      
+            「あ～そだそだ、ひとつアドバイス～♪君たちの世界とおんなじで、ここも労働力不足なんだ♪<br>キャストにへんなちょっかいだすと、オーナーに怒られちゃうから気をつけてね♪」
+      </p>
+      </div>
+      <div class="kp">
+      
+            と呟き館の中へ消えていった
+      </div>
+      <div class="mem4 right">
+      <span>北峰 大夜</span>
+      <p>
+      
+            こわ
+      </p>
+      </div>
+      <div class="kp">
+      
+            ついでにエプロンはついたまんま
+      </div>
+      <div class="mem4 right">
+      <span>北峰 大夜</span>
+      <p>
+      
+            わすれてた
+      </p>
+      </div>
+      <div class="mem3 left">
+      <span>澪標 杏</span>
+      <p>
+      
+            「そーのまま！けっどきのっしなーい！」
+      </p>
+      </div>
+      <div class="mem3 left">
+      <span>澪標 杏</span>
+      <p>
+      
+            「次はどこかなー！道はどこかなー」
+      </p>
+      </div>
+      <div class="mem4 right">
+      <span>北峰 大夜</span>
+      <p>
+      
+            「ま、まぁ、次についたときに外せばいいですしね」
+      </p>
+      </div>
+      <div class="mem2 right">
+      <span>城野 光希</span>
+      <p>
+      
+            「次も料理だったらまた使うかもよ？」
+      </p>
+      </div>
+      <div class="kp">
+      
+            マップに従い、森の小径をランタン片手に進んでいくと木造のちいさな小屋の前に辿り着いた。どうやらここが2つ目のチェックポイントのようだ。<br>屋根瓦は一部剥がれ落ち雑草が生えている。<br>かなりのボロ家だ。住んでいる人などいるのだろうか？
+      </div>
+      <div class="mem3 left">
+      <span>澪標 杏</span>
+      <p>
+      
+            「らーんたーん。らーんたーん」
+      </p>
+      </div>
+      <div class="mem4 right">
+      <span>北峰 大夜</span>
+      <p>
+      
+            「ご、ごめんくださーい」
+      </p>
+      </div>
+      <div class="mem3 left">
+      <span>澪標 杏</span>
+      <p>
+      
+            「だれかいませんかぁー？
+      </p>
+      </div>
+      <div class="mem2 right">
+      <span>城野 光希</span>
+      <p>
+      
+            「ボロボロだなぁ。僕もこんな家にしないようにしないと。」
+      </p>
+      </div>
+      <div class="mem3 left">
+      <span>澪標 杏</span>
+      <p>
+      
+            「次はー、にゃんだっけー。にゃーんにゃーん」
+      </p>
+      </div>
+      <div class="mem1 left">
+      <span>言祝 みづき</span>
+      <p>
+      
+            「危ないねぇ～」
+      </p>
+      </div>
+      <div class="kp">
+      
+            コンコンと木製のドアをノックすると、中から顔をのぞかせたのは1匹のネズミだった。
+      </div>
+      <div class="mem7 left">
+      <span>ネズミ</span>
+      <p>
+      
+            「こんばんは、ちいさなお客さま」 
+      </p>
+      </div>
+      <div class="kp">
+      
+            ネズミが喋った！<br>（先程黒猫が喋るのを目の当たりにしているので、SANチェックは不要）
+      </div>
+      <div class="mem3 left">
+      <span>澪標 杏</span>
+      <p>
+      
+            「ちゅー！！」
+      </p>
+      </div>
+      <div class="mem3 left">
+      <span>澪標 杏</span>
+      <p>
+      
+            「にゃー！」
+      </p>
+      </div>
+      <div class="mem1 left">
+      <span>言祝 みづき</span>
+      <p>
+      
+            「ネズミクンだねぇ～　よろしくねぇ～」
+      </p>
+      </div>
+      <div class="mem4 right">
+      <span>北峰 大夜</span>
+      <p>
+      
+            「ちいさな……ちいさいんだ、そっか」
+      </p>
+      </div>
+      <div class="mem2 right">
+      <span>城野 光希</span>
+      <p>
+      
+            「これもロボットかい？」
+      </p>
+      </div>
+      <div class="mem3 left">
+      <span>澪標 杏</span>
+      <p>
+      
+            「ちゅーだよ？」
+      </p>
+      </div>
+      <div class="mem4 right">
+      <span>北峰 大夜</span>
+      <p>
+      
+            「ねずみ、ですね」
+      </p>
+      </div>
+      <div class="mem1 left">
+      <span>言祝 みづき</span>
+      <p>
+      
+            「今回は　何をすればいいのかな～？」
+      </p>
+      </div>
+      <div class="kp">
+      
+            ネズミに目星できます
+      </div>
+      <div class="mem3 left">
+      <span>澪標 杏</span>
+      <p>
+      
+            やってやろう
+      </p>
+      </div>
+      <div class="mem3 left">
+      <span>澪標 杏</span>
+      <p>
+      
+            32 なんもなかった
+      </p>
+      </div>
+      <div class="mem1 left">
+      <span>言祝 みづき</span>
+      <p>
+      
+            みるよ！
+      </p>
+      </div>
+      <div class="mem1 left">
+      <span>言祝 みづき</span>
+      <p>
+      
+            16　見えるぞ！
+      </p>
+      </div>
+      <div class="kp">
+      
+            ネズミの背中の毛が一部禿げて文字のように見える。探索者にはCASTと読めた。
+      </div>
+      <div class="mem1 left">
+      <span>言祝 みづき</span>
+      <p>
+      
+            ネズミに厳しい世界
+      </p>
+      </div>
+      <div class="mem7 left">
+      <span>ネズミ</span>
+      <p>
+      
+            「まあ狭いとこだけどはいってくれ」
+      </p>
+      </div>
+      <div class="kp">
+      
+            ネズミに招きいれられた室内は確かに粗末だったが、 なにより探索者の目をひいたのは部屋の奥のシーツの塊だ。<br> 大きな姿見の前に蹲るシーツの塊は小刻みに震えている。 <br>「おい、客だぞ！顔くらいみせやがれ！」<br> シーツの端をちいさな手でひっぱりながらネズミが怒鳴ると<br> 「うぅ～いやだ～」<br>と、 塊からくぐもった返事がかえってきた。 埒があかないと思ったのかネズミは探索者の方に身振りで『てつだえ』と伝えてくる。
+      </div>
+      <div class="mem3 left">
+      <span>澪標 杏</span>
+      <p>
+      
+            「ちゅーちゅー！」<br>引っ張ります
+      </p>
+      </div>
+      <div class="mem1 left">
+      <span>言祝 みづき</span>
+      <p>
+      
+            「優しくしないとだめだよ～」<br>手伝います
+      </p>
+      </div>
+      <div class="mem4 right">
+      <span>北峰 大夜</span>
+      <p>
+      
+            「どうしたの？」そっと優しく手伝います
+      </p>
+      </div>
+      <div class="mem2 right">
+      <span>城野 光希</span>
+      <p>
+      
+            「なんてネズミなんだ…。行動力がある。」
+      </p>
+      </div>
+      <div class="kp">
+      
+            協力してシーツを引っ張ると<br> 「べあぁあ！？」<br> 情けない悲鳴とともに、成人男性の姿があらわになる。 男性の姿は異常…いや、異形だった。 頭の先から身体、つま先までをぴしっと半分に線をひいたように 左半分は人間の姿、右半分は毛むくじゃらの獣のような姿だったのだ。 SANチェック（1/1d3）
+      </div>
+      <div class="mem1 left">
+      <span>言祝 みづき</span>
+      <p>
+      
+            35　成功<br>38→37
+      </p>
+      </div>
+      <div class="mem3 left">
+      <span>澪標 杏</span>
+      <p>
+      
+            72 一足りた
+      </p>
+      </div>
+      <div class="mem2 right">
+      <span>城野 光希</span>
+      <p>
+      
+            6成功。55→54
+      </p>
+      </div>
+      <div class="mem3 left">
+      <span>澪標 杏</span>
+      <p>
+      
+            72→71
+      </p>
+      </div>
+      <div class="mem4 right">
+      <span>北峰 大夜</span>
+      <p>
+      
+            31成功<br>52→51
+      </p>
+      </div>
+      <div class="mem1 left">
+      <span>言祝 みづき</span>
+      <p>
+      
+            「(体洗うときはシャンプー使うのかなぁ)」
+      </p>
+      </div>
+      <div class="mem3 left">
+      <span>澪標 杏</span>
+      <p>
+      
+            「もふー！もふもふ！」<br>獣部分に抱きつく
+      </p>
+      </div>
+      <div class="mem4 right">
+      <span>北峰 大夜</span>
+      <p>
+      
+            ちなみになんのけもの？
+      </p>
+      </div>
+      <div class="mem8 right">
+      <span>？</span>
+      <p>
+      
+            ｢やめろ！みるな！さわるな！｣
+      </p>
+      </div>
+      <div class="kp">
+      
+            そう叫んでまたシーツにこもります
+      </div>
+      <div class="kp">
+      
+            ハロウィンですので
+      </div>
+      <div class="mem7 left">
+      <span>ネズミ</span>
+      <p>
+      
+            「ほら、今日は下弦の月…半月だろう？だから狼男も半分しか変身できないってわけ」
+      </p>
+      </div>
+      <div class="kp">
+      
+            未練がましくシーツを頭からかぶって顔を隠す男の足をネズミが蹴りながら続ける。
+      </div>
+      <div class="mem7 left">
+      <span>ネズミ</span>
+      <p>
+      
+            「今夜はせっかくのハロウィンなのに、こんな姿じゃみっともなくて外に出られないって<br>べそべそして困ってんだ。なんとかしてやってくれねえか？」
+      </p>
+      </div>
+      <div class="kp">
+      
+            そう言ってネズミは探索者たちにメモを渡した。<br>《ふたつめの試練～Depression of a wolfman～狼男の憂鬱<br>狼男の変身を手伝ってあげよう！》
+      </div>
+      <div class="mem3 left">
+      <span>澪標 杏</span>
+      <p>
+      
+            「やだー！獣かわいー！」
+      </p>
+      </div>
+      <div class="mem4 right">
+      <span>北峰 大夜</span>
+      <p>
+      
+            「半分って、縦に半分なんだな……」
+      </p>
+      </div>
+      <div class="kp">
+      
+            〈目星〉なしでわかる情報→<br>狭い部屋の中に家具は少ない。<br>部屋の奥には全身が映る姿見、鏡の前にはシーツをかぶった男が踞っている。<br>他に目立つものといえば中央に置かれたイーゼルと描きかけのキャンバス、テーブルの上には油絵の具とパレット、絵筆が散乱している。<br>窓のむこうには半月がのぞいていた。
+      </div>
+      <div class="mem1 left">
+      <span>言祝 みづき</span>
+      <p>
+      
+            キャンバスに目星をしたい
+      </p>
+      </div>
+      <div class="kp">
+      
+            はい
+      </div>
+      <div class="mem1 left">
+      <span>言祝 みづき</span>
+      <p>
+      
+            90　なんだこいつ
+      </p>
+      </div>
+      <div class="mem4 right">
+      <span>北峰 大夜</span>
+      <p>
+      
+            じゃあめぼりま
+      </p>
+      </div>
+      <div class="mem4 right">
+      <span>北峰 大夜</span>
+      <p>
+      
+            98
+      </p>
+      </div>
+      <div class="mem4 right">
+      <span>北峰 大夜</span>
+      <p>
+      
+            ファ
+      </p>
+      </div>
+      <div class="mem1 left">
+      <span>言祝 みづき</span>
+      <p>
+      
+            ﾌｫ
+      </p>
+      </div>
+      <div class="mem2 right">
+      <span>城野 光希</span>
+      <p>
+      
+            デデドン
+      </p>
+      </div>
+      <div class="kp">
+      
+            ん〜！！どうしよっか〜！！
+      </div>
+      <div class="mem4 right">
+      <span>北峰 大夜</span>
+      <p>
+      
+            いいとこみせらんなかった
+      </p>
+      </div>
+      <div class="mem3 left">
+      <span>澪標 杏</span>
+      <p>
+      
+            とりあいず、目星カバーした方がいい？（技能無い人）
+      </p>
+      </div>
+      <div class="mem2 right">
+      <span>城野 光希</span>
+      <p>
+      
+            んじゃあ振るわ
+      </p>
+      </div>
+      <div class="mem3 left">
+      <span>澪標 杏</span>
+      <p>
+      
+            よし、成功してくれるな
+      </p>
+      </div>
+      <div class="mem4 right">
+      <span>北峰 大夜</span>
+      <p>
+      
+            フラグをたてるな
+      </p>
+      </div>
+      <div class="mem2 right">
+      <span>城野 光希</span>
+      <p>
+      
+            2
+      </p>
+      </div>
+      <div class="mem2 right">
+      <span>城野 光希</span>
+      <p>
+      
+            (゜ロ゜)
+      </p>
+      </div>
+      <div class="mem3 left">
+      <span>澪標 杏</span>
+      <p>
+      
+            ほら、やってくれた
+      </p>
+      </div>
+      <div class="mem4 right">
+      <span>北峰 大夜</span>
+      <p>
+      
+            有能！
+      </p>
+      </div>
+      <div class="mem3 left">
+      <span>澪標 杏</span>
+      <p>
+      
+            僕は信じていたよ
+      </p>
+      </div>
+      <div class="mem1 left">
+      <span>言祝 みづき</span>
+      <p>
+      
+            すごいや！！
+      </p>
+      </div>
+      <div class="kp">
+      
+            じゃあファンブル相殺で！(思いつかなかった)
+      </div>
+      <div class="mem4 right">
+      <span>北峰 大夜</span>
+      <p>
+      
+            ありがとう！！
+      </p>
+      </div>
+      <div class="mem3 left">
+      <span>澪標 杏</span>
+      <p>
+      
+            よかったよかった
+      </p>
+      </div>
+      <div class="mem1 left">
+      <span>言祝 みづき</span>
+      <p>
+      
+            やったね！
+      </p>
+      </div>
+      <div class="mem2 right">
+      <span>城野 光希</span>
+      <p>
+      
+            おっけー！
+      </p>
+      </div>
+      <div class="kp">
+      
+            おまけ
+      </div>
+      <div class="kp">
+      
+            雑然と床置きされた日用雑貨の山の中から<br>新品の絵筆とベレー帽をみつけた。
+      </div>
+      <div class="mem4 right">
+      <span>北峰 大夜</span>
+      <p>
+      
+            目星の結果は？
+      </p>
+      </div>
+      <div class="mem3 left">
+      <span>澪標 杏</span>
+      <p>
+      
+            おまけが本編だと思ってた
+      </p>
+      </div>
+      <div class="kp">
+      
+            クリファン相殺しておまけに目星の結果⬆
+      </div>
+      <div class="mem3 left">
+      <span>澪標 杏</span>
+      <p>
+      
+            ベレー帽は全員分？
+      </p>
+      </div>
+      <div class="mem4 right">
+      <span>北峰 大夜</span>
+      <p>
+      
+            なるほど
+      </p>
+      </div>
+      <div class="kp">
+      
+            全員分
+      </div>
+      <div class="mem3 left">
+      <span>澪標 杏</span>
+      <p>
+      
+            よし、エプロンにベレー帽をつけよう
+      </p>
+      </div>
+      <div class="mem1 left">
+      <span>言祝 みづき</span>
+      <p>
+      
+            よっしゃ　そのまま装備じゃ！
+      </p>
+      </div>
+      <div class="mem3 left">
+      <span>澪標 杏</span>
+      <p>
+      
+            「きゃー！にゃー！みゃー！」
+      </p>
+      </div>
+      <div class="mem3 left">
+      <span>澪標 杏</span>
+      <p>
+      
+            キャンバスって何描かれてるの？
+      </p>
+      </div>
+      <div class="kp">
+      
+            とりあえずベレー帽つける人宣言して
+      </div>
+      <div class="mem3 left">
+      <span>澪標 杏</span>
+      <p>
+      
+            つけてます
+      </p>
+      </div>
+      <div class="mem1 left">
+      <span>言祝 みづき</span>
+      <p>
+      
+            ベレーと筆を　装備します！
+      </p>
+      </div>
+      <div class="mem4 right">
+      <span>北峰 大夜</span>
+      <p>
+      
+            つけます
+      </p>
+      </div>
+      <div class="mem2 right">
+      <span>城野 光希</span>
+      <p>
+      
+            かぶってみます。
+      </p>
+      </div>
+      <div class="kp">
+      
+            新品の絵筆をつかいたくてたまらない！今ならどんな絵でもうまく描ける気がする！<br>よくわからない衝動で右手がうずく。<br>芸術〈絵画〉に＋80補正
+      </div>
+      <div class="mem3 left">
+      <span>澪標 杏</span>
+      <p>
+      
+            つよい！
+      </p>
+      </div>
+      <div class="kp">
+      
+            キャンバスは目星してね
+      </div>
+      <div class="mem3 left">
+      <span>澪標 杏</span>
+      <p>
+      
+            やるか
+      </p>
+      </div>
+      <div class="mem3 left">
+      <span>澪標 杏</span>
+      <p>
+      
+             9　あ、成功した
+      </p>
+      </div>
+      <div class="kp">
+      
+            窓の外の景色が描かれている
+      </div>
+      <div class="mem2 right">
+      <span>城野 光希</span>
+      <p>
+      
+            「僕に絵の才能はないんだけどなぁ。」
+      </p>
+      </div>
+      <div class="mem4 right">
+      <span>北峰 大夜</span>
+      <p>
+      
+            「……キャンバスに、変身できた狼男を描いてあげればいいのかな」
+      </p>
+      </div>
+      <div class="mem1 left">
+      <span>言祝 みづき</span>
+      <p>
+      
+            「お月様をまんまるにするんじゃないかな～？」
+      </p>
+      </div>
+      <div class="mem4 right">
+      <span>北峰 大夜</span>
+      <p>
+      
+            「あっそうか……そっちの方が簡単だし そうかもしれないですね」
+      </p>
+      </div>
+      <div class="mem3 left">
+      <span>澪標 杏</span>
+      <p>
+      
+            あぁ。なるほど
+      </p>
+      </div>
+      <div class="mem3 left">
+      <span>澪標 杏</span>
+      <p>
+      
+            「にゃる。杏は半分は鏡で補えばいいのかとおもったー！」
+      </p>
+      </div>
+      <div class="mem1 left">
+      <span>言祝 みづき</span>
+      <p>
+      
+            「両方とも描いちゃう～？<br>僕こういうの得意だよ～？」<br>フラグをたてます
+      </p>
+      </div>
+      <div class="mem4 right">
+      <span>北峰 大夜</span>
+      <p>
+      
+            「そうなんですか？頼もしいなぁ」純粋にそうおもいます
+      </p>
+      </div>
+      <div class="kp">
+      
+            絵の具は両方書くにはちょっと足りないので今回は代表を決めてね
+      </div>
+      <div class="kp">
+      
+            (ベレー帽全員分出したけど結果処理が難しかった)
+      </div>
+      <div class="mem1 left">
+      <span>言祝 みづき</span>
+      <p>
+      
+            了解した！<br>みづきが描く場合　芸術(ウェルカムボード)にエプロン効果はプラスされる？
+      </p>
+      </div>
+      <div class="kp">
+      
+            ベレー帽かな。ただし技能は半減しているから…って＋80なら自動成功だね
+      </div>
+      <div class="mem1 left">
+      <span>言祝 みづき</span>
+      <p>
+      
+            普通に間違えたわ…<br>やったぜ！！
+      </p>
+      </div>
+      <div class="mem4 right">
+      <span>北峰 大夜</span>
+      <p>
+      
+            みづきさんに任せるかんじでおけなん？
+      </p>
+      </div>
+      <div class="mem2 right">
+      <span>城野 光希</span>
+      <p>
+      
+            任せようかなー。頑張ってー♪
+      </p>
+      </div>
+      <div class="mem1 left">
+      <span>言祝 みづき</span>
+      <p>
+      
+            何するか決まったら　描くよ！
+      </p>
+      </div>
+      <div class="mem3 left">
+      <span>澪標 杏</span>
+      <p>
+      
+            今回のシナリオのダイス運がないから。応援してる
+      </p>
+      </div>
+      <div class="mem3 left">
+      <span>澪標 杏</span>
+      <p>
+      
+            じゃあ、応援しながら狼男（仮）の布団を取って遊んでますね
+      </p>
+      </div>
+      <div class="mem4 right">
+      <span>北峰 大夜</span>
+      <p>
+      
+            なにをかくんだけっきょく
+      </p>
+      </div>
+      <div class="mem3 left">
+      <span>澪標 杏</span>
+      <p>
+      
+            半分のお月様を真ん丸お月様にするんじゃ…？
+      </p>
+      </div>
+      <div class="mem4 right">
+      <span>北峰 大夜</span>
+      <p>
+      
+            それでよいかんじ？
+      </p>
+      </div>
+      <div class="mem3 left">
+      <span>澪標 杏</span>
+      <p>
+      
+            「ふぁいっとー！」
+      </p>
+      </div>
+      <div class="mem3 left">
+      <span>澪標 杏</span>
+      <p>
+      
+            「おー！」
+      </p>
+      </div>
+      <div class="mem2 right">
+      <span>城野 光希</span>
+      <p>
+      
+            「絵を描くことに対して応援が大きいね。」
+      </p>
+      </div>
+      <div class="mem4 right">
+      <span>北峰 大夜</span>
+      <p>
+      
+            「がんばってください」
+      </p>
+      </div>
+      <div class="mem3 left">
+      <span>澪標 杏</span>
+      <p>
+      
+            「ファイト！闘う君の唄をー闘わない奴等が笑うだろー」
+      </p>
+      </div>
+      <div class="mem3 left">
+      <span>澪標 杏</span>
+      <p>
+      
+            （やばい、このまま歌唱の技能振って本気で応援しそう）
+      </p>
+      </div>
+      <div class="mem4 right">
+      <span>北峰 大夜</span>
+      <p>
+      
+            「笑っちゃだめですよ……」
+      </p>
+      </div>
+      <div class="mem2 right">
+      <span>城野 光希</span>
+      <p>
+      
+            「集中させるためにも黙るべきでは……ι」
+      </p>
+      </div>
+      <div class="mem3 left">
+      <span>澪標 杏</span>
+      <p>
+      
+            「みゅー。」
+      </p>
+      </div>
+      <div class="mem1 left">
+      <span>言祝 みづき</span>
+      <p>
+      
+            月で大丈夫？描いちゃうよ？
+      </p>
+      </div>
+      <div class="mem3 left">
+      <span>澪標 杏</span>
+      <p>
+      
+            大丈夫だよ。
+      </p>
+      </div>
+      <div class="mem4 right">
+      <span>北峰 大夜</span>
+      <p>
+      
+            「うん、お願いします」
+      </p>
+      </div>
+      <div class="mem3 left">
+      <span>澪標 杏</span>
+      <p>
+      
+            ファイト歌ってるぐらい任せてるから
+      </p>
+      </div>
+      <div class="mem4 right">
+      <span>北峰 大夜</span>
+      <p>
+      
+            応援してるのか他人事なのか
+      </p>
+      </div>
+      <div class="mem1 left">
+      <span>言祝 みづき</span>
+      <p>
+      
+            「それじゃあ　描いちゃうねぇ～」<br>月を丸くします！
+      </p>
+      </div>
+      <div class="mem1 left">
+      <span>言祝 みづき</span>
+      <p>
+      
+            82　補正生きた！
+      </p>
+      </div>
+      <div class="mem4 right">
+      <span>北峰 大夜</span>
+      <p>
+      
+            よかった！
+      </p>
+      </div>
+      <div class="mem3 left">
+      <span>澪標 杏</span>
+      <p>
+      
+            やったぜ
+      </p>
+      </div>
+      <div class="mem2 right">
+      <span>城野 光希</span>
+      <p>
+      
+            やったね！
+      </p>
+      </div>
+      <div class="kp">
+      
+            キャンバスにまあるい月を描くとシーツを外した狼男の半分も無事狼へと変身した
+      </div>
+      <div class="mem7 left">
+      <span>ネズミ</span>
+      <p>
+      
+            「ありがとうな！あんたらのおかげでコイツもハロウィンを楽しめらぁ」
+      </p>
+      </div>
+      <div class="kp">
+      
+            狼男の肩に乗ったネズミが嬉しそうにお礼を告げる。
+      </div>
+      <div class="mem9 left">
+      <span>狼男</span>
+      <p>
+      
+            「あの、皆さん、本当にありがとうございました！あ、お礼にスタンプを…」
+      </p>
+      </div>
+      <div class="kp">
+      
+            おそろしい姿になってもどこかおどおどとした狼男は探索者のカードに丁寧にスタンプを捺してくれた。
+      </div>
+      <div class="mem7 left">
+      <span>ネズミ</span>
+      <p>
+      
+            「あと、これは俺からのお礼だ。なんかの役にたつと思うから持っていきな」
+      </p>
+      </div>
+      <div class="kp">
+      
+            と、ネズミが探索者になにかを手渡してきた。<br>見るとそれはふわふわのボアで出来た犬のつけ鼻だった。
+      </div>
+      <div class="mem7 left">
+      <span>ネズミ</span>
+      <p>
+      
+            ｢お、いっこめのスタンプも押してあるな。じゃあ次が3つ目の試練だ！きばっていけよ！｣
+      </p>
+      </div>
+      <div class="mem4 right">
+      <span>北峰 大夜</span>
+      <p>
+      
+            「あ、ありがとうございます」
+      </p>
+      </div>
+      <div class="mem4 right">
+      <span>北峰 大夜</span>
+      <p>
+      
+            狼男がかわいい
+      </p>
+      </div>
+      <div class="mem3 left">
+      <span>澪標 杏</span>
+      <p>
+      
+            「わん？」
+      </p>
+      </div>
+      <div class="mem1 left">
+      <span>言祝 みづき</span>
+      <p>
+      
+            「よかったねぇ～！握手握手～！」
+      </p>
+      </div>
+      <div class="mem3 left">
+      <span>澪標 杏</span>
+      <p>
+      
+            「わんわーん！」
+      </p>
+      </div>
+      <div class="kp">
+      
+            鼻を受け取るといつの間にか玄関の前に出されていて扉はあかなくなっている
+      </div>
+      <div class="mem3 left">
+      <span>澪標 杏</span>
+      <p>
+      
+            ベレー帽は？
+      </p>
+      </div>
+      <div class="kp">
+      
+            さぁ最後のチェックポイントに向かおうか！
+      </div>
+      <div class="kp">
+      
+            あるよ
+      </div>
+      <div class="mem1 left">
+      <span>言祝 みづき</span>
+      <p>
+      
+            「ありがとうねぇ～！」大声
+      </p>
+      </div>
+      <div class="mem3 left">
+      <span>澪標 杏</span>
+      <p>
+      
+            「わぉーん！」大声
+      </p>
+      </div>
+      <div class="kp">
+      
+            近所迷惑だなぁ
+      </div>
+      <div class="mem3 left">
+      <span>澪標 杏</span>
+      <p>
+      
+            装備：エプロン・ベレー帽・犬のつけ鼻←new
+      </p>
+      </div>
+      <div class="kp">
+      
+            全部つけてんのかで
+      </div>
+      <div class="kp">
+      
+            つけ鼻聞き耳に＋30
+      </div>
+      <div class="mem3 left">
+      <span>澪標 杏</span>
+      <p>
+      
+            聞き耳最強になった！
+      </p>
+      </div>
+      <div class="mem4 right">
+      <span>北峰 大夜</span>
+      <p>
+      
+            ぜんぶつけてるかな……
+      </p>
+      </div>
+      <div class="mem1 left">
+      <span>言祝 みづき</span>
+      <p>
+      
+            これに合わせて狐耳と尻尾付いてるぞ…
+      </p>
+      </div>
+      <div class="mem4 right">
+      <span>北峰 大夜</span>
+      <p>
+      
+            変装してるんだっけ
+      </p>
+      </div>
+      <div class="mem4 right">
+      <span>北峰 大夜</span>
+      <p>
+      
+            仮装か
+      </p>
+      </div>
+      <div class="mem1 left">
+      <span>言祝 みづき</span>
+      <p>
+      
+            属性過多だわぁ
+      </p>
+      </div>
+      <div class="kp">
+      
+            さて向かいます？
+      </div>
+      <div class="mem3 left">
+      <span>澪標 杏</span>
+      <p>
+      
+            むかいまーす
+      </p>
+      </div>
+      <div class="mem4 right">
+      <span>北峰 大夜</span>
+      <p>
+      
+            ほい
+      </p>
+      </div>
+      <div class="mem2 right">
+      <span>城野 光希</span>
+      <p>
+      
+            ゴーゴー
+      </p>
+      </div>
+      <div class="mem1 left">
+      <span>言祝 みづき</span>
+      <p>
+      
+            行こう！
+      </p>
+      </div>
+      <div class="kp">
+      
+            探索者は地図に従い森の小径を歩いた。<br>時折、木々の隙間に鬼火のような光とクスクスという笑い声のような音が聞こえる…が、きっとハロウィンの演出のひとつだろう。<br>某アミューズメントパークのゴーストハウスのような洋館に辿り着いた。
+      </div>
+      <div class="mem3 left">
+      <span>澪標 杏</span>
+      <p>
+      
+            「いっこう。いっこう。ゆのくにへー」
+      </p>
+      </div>
+      <div class="mem3 left">
+      <span>澪標 杏</span>
+      <p>
+      
+            ゴーストタウン…
+      </p>
+      </div>
+      <div class="mem3 left">
+      <span>澪標 杏</span>
+      <p>
+      
+            くそ、いいネタが思いつかない
+      </p>
+      </div>
+      <div class="mem1 left">
+      <span>言祝 みづき</span>
+      <p>
+      
+            「ガイコツの親分いない～…？」
+      </p>
+      </div>
+      <div class="mem3 left">
+      <span>澪標 杏</span>
+      <p>
+      
+            「ぶわわー！」
+      </p>
+      </div>
+      <div class="mem4 right">
+      <span>北峰 大夜</span>
+      <p>
+      
+            タワテラかな
+      </p>
+      </div>
+      <div class="mem4 right">
+      <span>北峰 大夜</span>
+      <p>
+      
+            「大丈夫、きっといないですよ……」
+      </p>
+      </div>
+      <div class="mem2 right">
+      <span>城野 光希</span>
+      <p>
+      
+            「今度は何だろうなぁ。」
+      </p>
+      </div>
+      <div class="kp">
+      
+            はいる？
+      </div>
+      <div class="mem4 right">
+      <span>北峰 大夜</span>
+      <p>
+      
+            はいろう
+      </p>
+      </div>
+      <div class="mem1 left">
+      <span>言祝 みづき</span>
+      <p>
+      
+            おじゃましまー
+      </p>
+      </div>
+      <div class="mem2 right">
+      <span>城野 光希</span>
+      <p>
+      
+            「チャイムないのかな。」
+      </p>
+      </div>
+      <div class="mem4 right">
+      <span>北峰 大夜</span>
+      <p>
+      
+            入り口どんな感じです？めぼしいる？
+      </p>
+      </div>
+      <div class="mem3 left">
+      <span>澪標 杏</span>
+      <p>
+      
+            「こんこんこん、だれかいませんかぁ」
+      </p>
+      </div>
+      <div class="kp">
+      
+            舘に目星はいらないかな
+      </div>
+      <div class="kp">
+      
+            洋館の扉を探索者たちがノックすると、中から一匹のコウモリが現れる。<br>コウモリはぱたぱたと探索者の頭上を飛びまわり甲高い声で叫んだ。
+      </div>
+      <div class="mem10 right">
+      <span>ｺｳﾓﾘ</span>
+      <p>
+      
+            「みな首を長くしてお待ちしておりましたわ、パーティには素敵な音楽が必要不可欠ですもの！」<br>（今更コウモリが喋ったくらいでは驚かないと思うのでSANチェックは不要）
+      </p>
+      </div>
+      <div class="mem1 left">
+      <span>言祝 みづき</span>
+      <p>
+      
+            「パーティ？誰か結婚するの～？」
+      </p>
+      </div>
+      <div class="mem4 right">
+      <span>北峰 大夜</span>
+      <p>
+      
+            「次は音楽か」
+      </p>
+      </div>
+      <div class="mem3 left">
+      <span>澪標 杏</span>
+      <p>
+      
+            「……！！」
+      </p>
+      </div>
+      <div class="mem3 left">
+      <span>澪標 杏</span>
+      <p>
+      
+            「こうもりってきぃーだってきぃーだっけ…」
+      </p>
+      </div>
+      <div class="mem3 left">
+      <span>澪標 杏</span>
+      <p>
+      
+            「きぃーきぃー…」
+      </p>
+      </div>
+      <div class="mem4 right">
+      <span>北峰 大夜</span>
+      <p>
+      
+            「……それ、鳴き声ですか？」
+      </p>
+      </div>
+      <div class="mem3 left">
+      <span>澪標 杏</span>
+      <p>
+      
+            「きぃーきぃー？」
+      </p>
+      </div>
+      <div class="mem4 right">
+      <span>北峰 大夜</span>
+      <p>
+      
+            「そう、それです」
+      </p>
+      </div>
+      <div class="mem3 left">
+      <span>澪標 杏</span>
+      <p>
+      
+            「こうもりってきぃーきぃーじゃなかった？」
+      </p>
+      </div>
+      <div class="mem4 right">
+      <span>北峰 大夜</span>
+      <p>
+      
+            「うーん、わかんないです」
+      </p>
+      </div>
+      <div class="mem3 left">
+      <span>澪標 杏</span>
+      <p>
+      
+            「うにー」
+      </p>
+      </div>
+      <div class="mem2 right">
+      <span>城野 光希</span>
+      <p>
+      
+            「実際に血を吸うコウモリはそんなにいないらしいね。」
+      </p>
+      </div>
+      <div class="mem4 right">
+      <span>北峰 大夜</span>
+      <p>
+      
+            「コウモリって血吸うんですか？」
+      </p>
+      </div>
+      <div class="mem3 left">
+      <span>澪標 杏</span>
+      <p>
+      
+            「きゅーけつ、こーもりとかいなかったっけ？場所によってだけどー」
+      </p>
+      </div>
+      <div class="mem2 right">
+      <span>城野 光希</span>
+      <p>
+      
+            「種類によってはいるよ。だからバンパイアなんていう妖怪が生まれたんだし。」
+      </p>
+      </div>
+      <div class="mem10 right">
+      <span>ｺｳﾓﾘ</span>
+      <p>
+      
+            ｢まぁまぁ私の事はいいんですの！ほら急いで！｣
+      </p>
+      </div>
+      <div class="kp">
+      
+            探索者が連れてこられた場所は、ステージの舞台袖のようだ。 分厚い緞帳の隙間からステージの向こう側を覗いてみた探索者は きらびやかなパーティ会場を目にする。 そこには西洋風の豪華なドレスを着た貴婦人や、時代がかった燕尾服姿の紳士の姿があった。 夢のような光景…ただ一点、変わったところがあるとすれば、 貴婦人や紳士が半透明で、薄水色にあわく発光していることだけだ。 SANチェック（1/1d3）
+      </div>
+      <div class="mem3 left">
+      <span>澪標 杏</span>
+      <p>
+      
+            「うわあああああああああああああああああああ（歓喜）」
+      </p>
+      </div>
+      <div class="mem3 left">
+      <span>澪標 杏</span>
+      <p>
+      
+            64　成功<br>71→70
+      </p>
+      </div>
+      <div class="mem3 left">
+      <span>澪標 杏</span>
+      <p>
+      
+            「すごいすごいすごすぎる！これは夢！夢なの！？すごい綺麗！楽しそう！杏にも参加させて！一緒にパーティーしようよ！」
+      </p>
+      </div>
+      <div class="mem1 left">
+      <span>言祝 みづき</span>
+      <p>
+      
+            89　失敗<br>2減少<br>37→35
+      </p>
+      </div>
+      <div class="mem2 right">
+      <span>城野 光希</span>
+      <p>
+      
+            発狂してない？大丈夫？(笑)
+      </p>
+      </div>
+      <div class="mem3 left">
+      <span>澪標 杏</span>
+      <p>
+      
+            大丈夫。発狂してない
+      </p>
+      </div>
+      <div class="mem4 right">
+      <span>北峰 大夜</span>
+      <p>
+      
+            23成功<br>51→50
+      </p>
+      </div>
+      <div class="mem1 left">
+      <span>言祝 みづき</span>
+      <p>
+      
+            「オバケの結婚式だー！<br>うわぁぁぁおめでとうぅぅ！」
+      </p>
+      </div>
+      <div class="mem2 right">
+      <span>城野 光希</span>
+      <p>
+      
+            54→53。
+      </p>
+      </div>
+      <div class="mem4 right">
+      <span>北峰 大夜</span>
+      <p>
+      
+            「ここで歌えばいいってことですかね」
+      </p>
+      </div>
+      <div class="mem3 left">
+      <span>澪標 杏</span>
+      <p>
+      
+            「歌う！歌うの！それとも音楽演奏する！？最初から最後まで音楽プロデュースする！？」
+      </p>
+      </div>
+      <div class="mem10 right">
+      <span>ｺｳﾓﾘ</span>
+      <p>
+      
+            「さあさあ！はやくお召しものを着替えて演奏をはじめてくださいまし！」 <br>コウモリは容赦なく探索者をせかしてくる。
+      </p>
+      </div>
+      <div class="kp">
+      
+            〈目星〉なしでわかる情報→<br>舞台袖には楽器やマイク、ハンガーラックがあり、ハンガーラックには様々な衣装がかかっている。 緞帳に一枚のメモがこれ見よがしに貼られている。<br> 《みっつめの試練～Ghost's dinner　party～<br>幽霊たちの晩餐会 素敵な音楽で晩餐会を盛りあげてね！》
+      </div>
+      <div class="mem2 right">
+      <span>城野 光希</span>
+      <p>
+      
+            「なんと。」
+      </p>
+      </div>
+      <div class="mem1 left">
+      <span>言祝 みづき</span>
+      <p>
+      
+            「ちゃんとした衣装が必要なんだねぇ～！」
+      </p>
+      </div>
+      <div class="mem1 left">
+      <span>言祝 みづき</span>
+      <p>
+      
+            衣装に目星したい！
+      </p>
+      </div>
+      <div class="kp">
+      
+            どぞ！
+      </div>
+      <div class="mem1 left">
+      <span>言祝 みづき</span>
+      <p>
+      
+            28　成功
+      </p>
+      </div>
+      <div class="mem3 left">
+      <span>澪標 杏</span>
+      <p>
+      
+            安定してるなぁ
+      </p>
+      </div>
+      <div class="kp">
+      
+            ハンガーラックにはフリフリキラキラの、いかにもアイドル！といった衣装とオーケストラが着るようなタキシードやシンプルなドレスが用意されている。
+      </div>
+      <div class="mem1 left">
+      <span>言祝 みづき</span>
+      <p>
+      
+            「いっぱいあるねぇ～」
+      </p>
+      </div>
+      <div class="mem3 left">
+      <span>澪標 杏</span>
+      <p>
+      
+            「あ！ドレスある！」
+      </p>
+      </div>
+      <div class="mem3 left">
+      <span>澪標 杏</span>
+      <p>
+      
+            これ普通に考えたら芸術音楽系で成功すればスタンプ貰えるよね
+      </p>
+      </div>
+      <div class="mem1 left">
+      <span>言祝 みづき</span>
+      <p>
+      
+            盛り上げに盛り上げれば良さそうだよね！やったらぁ！
+      </p>
+      </div>
+      <div class="mem3 left">
+      <span>澪標 杏</span>
+      <p>
+      
+            つまり、作詞作曲して楽器演奏して歌唱すれば完璧なんだよね（
+      </p>
+      </div>
+      <div class="mem1 left">
+      <span>言祝 みづき</span>
+      <p>
+      
+            「白スーツは主役が着るべきだよねぇ<br>早く着替えなきゃ～」<br>一応気遣います
+      </p>
+      </div>
+      <div class="mem1 left">
+      <span>言祝 みづき</span>
+      <p>
+      
+            本職の仕事ぶり
+      </p>
+      </div>
+      <div class="mem3 left">
+      <span>澪標 杏</span>
+      <p>
+      
+            まぁ、4人中3人が音楽振りだからね。
+      </p>
+      </div>
+      <div class="mem1 left">
+      <span>言祝 みづき</span>
+      <p>
+      
+            作曲家　アイドル　歌劇団…豪華！
+      </p>
+      </div>
+      <div class="kp">
+      
+            着替えるのであれば何に着替えるのか、今装着しているものをどうするのか宣言してね
+      </div>
+      <div class="mem3 left">
+      <span>澪標 杏</span>
+      <p>
+      
+            城野ちゃんが男役か女役かによって着るものが変わります。
+      </p>
+      </div>
+      <div class="mem1 left">
+      <span>言祝 みづき</span>
+      <p>
+      
+            衣装は全種類全員分ある？
+      </p>
+      </div>
+      <div class="mem3 left">
+      <span>澪標 杏</span>
+      <p>
+      
+            まぁ、たぶんシンプルなドレス着るかな。
+      </p>
+      </div>
+      <div class="kp">
+      
+            全種類1グループ分ずつある
+      </div>
+      <div class="mem3 left">
+      <span>澪標 杏</span>
+      <p>
+      
+            今はドレスのみの装着です
+      </p>
+      </div>
+      <div class="mem3 left">
+      <span>澪標 杏</span>
+      <p>
+      
+            「むー。オフだったけど、こういうのはー、真面目にやらないとだからー」
+      </p>
+      </div>
+      <div class="mem1 left">
+      <span>言祝 みづき</span>
+      <p>
+      
+            よかった！<br>では<br>白スーツ+エプロン+ベレー<br>↓<br>タキシード<br>狐耳と狐尻尾は付けとこう
+      </p>
+      </div>
+      <div class="mem1 left">
+      <span>言祝 みづき</span>
+      <p>
+      
+            あと　舞台袖の楽器を目星したい
+      </p>
+      </div>
+      <div class="mem3 left">
+      <span>澪標 杏</span>
+      <p>
+      
+            楽器が何あるかきになる
+      </p>
+      </div>
+      <div class="mem3 left">
+      <span>澪標 杏</span>
+      <p>
+      
+            がんばってー
+      </p>
+      </div>
+      <div class="kp">
+      
+            楽器はオーケストラが使う物からバンド用のものまでなんでもあるよ
+      </div>
+      <div class="mem1 left">
+      <span>言祝 みづき</span>
+      <p>
+      
+            楽器技能無いからな…<br>手拍子は技能必要？
+      </p>
+      </div>
+      <div class="mem4 right">
+      <span>北峰 大夜</span>
+      <p>
+      
+            ではなんかキラキラのアイドルっぽいジャケット着ましょう<br>エプロンとベレー帽とつけ鼻は畳んでおく
+      </p>
+      </div>
+      <div class="mem2 right">
+      <span>城野 光希</span>
+      <p>
+      
+            「主役は幽霊だからな…。」<br>地味目なスーツ選びます。
+      </p>
+      </div>
+      <div class="kp">
+      
+            みつきちゃんもエプロンとかは脱いでるでいいね？
+      </div>
+      <div class="mem2 right">
+      <span>城野 光希</span>
+      <p>
+      
+            そうねー
+      </p>
+      </div>
+      <div class="kp">
+      
+            では、アイドル服、ドレスを選んだ→歌がうたいたくてうたいたくてたまらなくなる！！歌唱＋80<br>タキシード、スーツを選んだ→どんな楽器もひきこなせそうだ！！演奏＋80
+      </div>
+      <div class="kp">
+      
+            バランスいいわぁ
+      </div>
+      <div class="mem4 right">
+      <span>北峰 大夜</span>
+      <p>
+      
+            やったー
+      </p>
+      </div>
+      <div class="mem4 right">
+      <span>北峰 大夜</span>
+      <p>
+      
+            このひとアイドルなのに歌唱40しかないから……()
+      </p>
+      </div>
+      <div class="kp">
+      
+            アイドルは歌だけじゃないから…
+      </div>
+      <div class="mem1 left">
+      <span>言祝 みづき</span>
+      <p>
+      
+            よっしゃ！手拍子回避だ！
+      </p>
+      </div>
+      <div class="mem3 left">
+      <span>澪標 杏</span>
+      <p>
+      
+            よし、歌えるな。
+      </p>
+      </div>
+      <div class="mem2 right">
+      <span>城野 光希</span>
+      <p>
+      
+            「手がうずうずする。」
+      </p>
+      </div>
+      <div class="mem3 left">
+      <span>澪標 杏</span>
+      <p>
+      
+            「〜♪〜♪」
+      </p>
+      </div>
+      <div class="mem4 right">
+      <span>北峰 大夜</span>
+      <p>
+      
+            「こんなに歌いたいって思ったの、初めてかもしれない」
+      </p>
+      </div>
+      <div class="mem3 left">
+      <span>澪標 杏</span>
+      <p>
+      
+            「あー、音叉がないから楽器のチューニングして弾き語りしたい。歌いたい」
+      </p>
+      </div>
+      <div class="mem2 right">
+      <span>城野 光希</span>
+      <p>
+      
+            「音叉？仮面ライダーにでもなるのかい？」
+      </p>
+      </div>
+      <div class="mem1 left">
+      <span>言祝 みづき</span>
+      <p>
+      
+            「どんな演目にする～？<br>今なら何でも弾けそうだよ～！」
+      </p>
+      </div>
+      <div class="mem4 right">
+      <span>北峰 大夜</span>
+      <p>
+      
+            「なんで音叉で仮面ライダーなのかわかんないですけど……なんでもいいかな。今ならなんでも歌えそうです」
+      </p>
+      </div>
+      <div class="mem3 left">
+      <span>澪標 杏</span>
+      <p>
+      
+            「音叉は音を合わせるのに使うようにー」
+      </p>
+      </div>
+      <div class="mem3 left">
+      <span>澪標 杏</span>
+      <p>
+      
+            「にひひ」
+      </p>
+      </div>
+      <div class="mem2 right">
+      <span>城野 光希</span>
+      <p>
+      
+            「なるほど。」
+      </p>
+      </div>
+      <div class="mem3 left">
+      <span>澪標 杏</span>
+      <p>
+      
+            「作る？作る？」
+      </p>
+      </div>
+      <div class="mem4 right">
+      <span>北峰 大夜</span>
+      <p>
+      
+            「音楽、つくれるんですか？」
+      </p>
+      </div>
+      <div class="mem3 left">
+      <span>澪標 杏</span>
+      <p>
+      
+            「うん。だって本職だよ？」
+      </p>
+      </div>
+      <div class="mem3 left">
+      <span>澪標 杏</span>
+      <p>
+      
+            「当たり前じゃん」
+      </p>
+      </div>
+      <div class="mem1 left">
+      <span>言祝 みづき</span>
+      <p>
+      
+            「僕　なんでもやるよ～！」<br>シンセサイザーを選びます
+      </p>
+      </div>
+      <div class="mem4 right">
+      <span>北峰 大夜</span>
+      <p>
+      
+            「そうなんですか。知らなかった」
+      </p>
+      </div>
+      <div class="mem3 left">
+      <span>澪標 杏</span>
+      <p>
+      
+            「にひひ。そこまで有名じゃないからにゃー」
+      </p>
+      </div>
+      <div class="kp">
+      
+            ステージにでますか？
+      </div>
+      <div class="mem3 left">
+      <span>澪標 杏</span>
+      <p>
+      
+            ブラフで作詞作曲する？
+      </p>
+      </div>
+      <div class="kp">
+      
+            技能半分なので作曲40成功で可能
+      </div>
+      <div class="mem3 left">
+      <span>澪標 杏</span>
+      <p>
+      
+            12 本職舐めんなぜよ
+      </p>
+      </div>
+      <div class="mem3 left">
+      <span>澪標 杏</span>
+      <p>
+      
+            「にひひひひ」
+      </p>
+      </div>
+      <div class="kp">
+      
+            じゃあ作曲できました
+      </div>
+      <div class="mem3 left">
+      <span>澪標 杏</span>
+      <p>
+      
+            いい曲が出来たみたいだわ
+      </p>
+      </div>
+      <div class="mem3 left">
+      <span>澪標 杏</span>
+      <p>
+      
+            よし、ステージに出よう。堂々と
+      </p>
+      </div>
+      <div class="mem4 right">
+      <span>北峰 大夜</span>
+      <p>
+      
+            じゃあ追いましょう
+      </p>
+      </div>
+      <div class="mem1 left">
+      <span>言祝 みづき</span>
+      <p>
+      
+            合奏でいいのかな？<br>いくよ！
+      </p>
+      </div>
+      <div class="mem3 left">
+      <span>澪標 杏</span>
+      <p>
+      
+            歌唱と楽器演奏バランスいいんだよね
+      </p>
+      </div>
+      <div class="mem4 right">
+      <span>北峰 大夜</span>
+      <p>
+      
+            22か
+      </p>
+      </div>
+      <div class="mem1 left">
+      <span>言祝 みづき</span>
+      <p>
+      
+            シンセサイザー　振る！
+      </p>
+      </div>
+      <div class="mem1 left">
+      <span>言祝 みづき</span>
+      <p>
+      
+            92　このやろう
+      </p>
+      </div>
+      <div class="kp">
+      
+            自動成功以外は振ってね〜
+      </div>
+      <div class="kp">
+      
+            ぶっつけ本番しんどかったかな
+      </div>
+      <div class="mem4 right">
+      <span>北峰 大夜</span>
+      <p>
+      
+            40+80だから自動成功でいいのか
+      </p>
+      </div>
+      <div class="mem3 left">
+      <span>澪標 杏</span>
+      <p>
+      
+            自動成功の気がする
+      </p>
+      </div>
+      <div class="mem3 left">
+      <span>澪標 杏</span>
+      <p>
+      
+            わざわざ楽器演奏しに行くなら別かもだけど
+      </p>
+      </div>
+      <div class="mem2 right">
+      <span>城野 光希</span>
+      <p>
+      
+            82…。失敗……。どうやら歌はともかく楽器は管轄外だったようだ……。
+      </p>
+      </div>
+      <div class="kp">
+      
+            楽器組〜！！
+      </div>
+      <div class="mem3 left">
+      <span>澪標 杏</span>
+      <p>
+      
+            フォロー入れますか？
+      </p>
+      </div>
+      <div class="kp">
+      
+            残念歌唱のみです
+      </div>
+      <div class="mem4 right">
+      <span>北峰 大夜</span>
+      <p>
+      
+            アカペラ～
+      </p>
+      </div>
+      <div class="mem3 left">
+      <span>澪標 杏</span>
+      <p>
+      
+            アカペラでやるしかないか
+      </p>
+      </div>
+      <div class="kp">
+      
+            クリティカル狙ってもいいがファンブルも視野に入れてね
+      </div>
+      <div class="mem4 right">
+      <span>北峰 大夜</span>
+      <p>
+      
+            ふったほうがよい？
+      </p>
+      </div>
+      <div class="kp">
+      
+            クリティカルで相殺を狙うならば
+      </div>
+      <div class="mem3 left">
+      <span>澪標 杏</span>
+      <p>
+      
+            数値どこまで下がってる？
+      </p>
+      </div>
+      <div class="mem2 right">
+      <span>城野 光希</span>
+      <p>
+      
+            「す、すすすすまない……。僕は不器用だから、指が演奏に追いつきそうにない……。」
+      </p>
+      </div>
+      <div class="mem3 left">
+      <span>澪標 杏</span>
+      <p>
+      
+            まじか
+      </p>
+      </div>
+      <div class="mem3 left">
+      <span>澪標 杏</span>
+      <p>
+      
+            挑戦してみるか。
+      </p>
+      </div>
+      <div class="kp">
+      
+            自動成功値だからクリティカルでフォロー可能、ファンブルで歌唱も失敗扱い。それ以外なら普通に成功で
+      </div>
+      <div class="mem3 left">
+      <span>澪標 杏</span>
+      <p>
+      
+            そんなそんな。ファンブルはしないでしょ
+      </p>
+      </div>
+      <div class="kp">
+      
+            フラグ立ててくじゃん…
+      </div>
+      <div class="mem3 left">
+      <span>澪標 杏</span>
+      <p>
+      
+            6
+      </p>
+      </div>
+      <div class="mem3 left">
+      <span>澪標 杏</span>
+      <p>
+      
+            悔しい
+      </p>
+      </div>
+      <div class="kp">
+      
+            おしい
+      </div>
+      <div class="mem1 left">
+      <span>言祝 みづき</span>
+      <p>
+      
+            惜しい…っ！
+      </p>
+      </div>
+      <div class="mem4 right">
+      <span>北峰 大夜</span>
+      <p>
+      
+            歌唱じゃなくダンス振っていいすか
+      </p>
+      </div>
+      <div class="kp">
+      
+            ううん歌唱のみかな…
+      </div>
+      <div class="mem4 right">
+      <span>北峰 大夜</span>
+      <p>
+      
+            うーむ
+      </p>
+      </div>
+      <div class="mem2 right">
+      <span>城野 光希</span>
+      <p>
+      
+            ボイパは楽器になりますか……←
+      </p>
+      </div>
+      <div class="kp">
+      
+            入るけれど歌唱にはならないかな
+      </div>
+      <div class="mem3 left">
+      <span>澪標 杏</span>
+      <p>
+      
+            いいよ。最悪独唱すれば
+      </p>
+      </div>
+      <div class="kp">
+      
+            ダイヤくんは振らないで大丈夫かな？
+      </div>
+      <div class="mem3 left">
+      <span>澪標 杏</span>
+      <p>
+      
+            あれ独唱じゃなくてなんだっけ。
+      </p>
+      </div>
+      <div class="mem3 left">
+      <span>澪標 杏</span>
+      <p>
+      
+            なんか、担当パートが1人しかいない合唱
+      </p>
+      </div>
+      <div class="mem4 right">
+      <span>北峰 大夜</span>
+      <p>
+      
+            いちおうふるか！
+      </p>
+      </div>
+      <div class="mem4 right">
+      <span>北峰 大夜</span>
+      <p>
+      
+            94あっぶねぇ
+      </p>
+      </div>
+      <div class="mem3 left">
+      <span>澪標 杏</span>
+      <p>
+      
+            やべえ
+      </p>
+      </div>
+      <div class="kp">
+      
+            あぶない
+      </div>
+      <div class="mem3 left">
+      <span>澪標 杏</span>
+      <p>
+      
+            ほんとに一人でやる事になる所だった
+      </p>
+      </div>
+      <div class="kp">
+      
+            さて、じゃあ進行
+      </div>
+      <div class="mem3 left">
+      <span>澪標 杏</span>
+      <p>
+      
+            うがー！
+      </p>
+      </div>
+      <div class="kp">
+      
+            慣れない楽器に手間取ったのか旋律はぎこちないもののプロ並な歌唱といきおいでステージに立った探索者たち
+      </div>
+      <div class="kp">
+      
+            探索者のステージに魅せられたゴーストたちが拍手を送ってくれた。 緞帳が降りて 高揚した気分の探索者の頭上にコウモリが飛んでくる。
+      </div>
+      <div class="mem10 right">
+      <span>ｺｳﾓﾘ</span>
+      <p>
+      
+             「素晴らしい音楽をありがとう！」
+      </p>
+      </div>
+      <div class="kp">
+      
+            コウモリは細い脚を器用に使って、スタンプをぽんぽんと押してくれた。
+      </div>
+      <div class="mem3 left">
+      <span>澪標 杏</span>
+      <p>
+      
+            丁寧にお辞儀しますね。
+      </p>
+      </div>
+      <div class="mem3 left">
+      <span>澪標 杏</span>
+      <p>
+      
+            「ありがとうございます」
+      </p>
+      </div>
+      <div class="mem1 left">
+      <span>言祝 みづき</span>
+      <p>
+      
+            「ありがとうねぇ～！」
+      </p>
+      </div>
+      <div class="mem4 right">
+      <span>北峰 大夜</span>
+      <p>
+      
+            「ありがとうございます！」
+      </p>
+      </div>
+      <div class="mem3 left">
+      <span>澪標 杏</span>
+      <p>
+      
+            「………みゃみゃーん！揃ったー！」
+      </p>
+      </div>
+      <div class="mem2 right">
+      <span>城野 光希</span>
+      <p>
+      
+            「くっ、不甲斐ない……。もっと素敵な作品を見せたかった！」
+      </p>
+      </div>
+      <div class="kp">
+      
+            探索者はみっつめのスタンプをゲットした。 別れ際、コウモリが探索者の耳元に小声で呟く。
+      </div>
+      <div class="mem10 right">
+      <span>ｺｳﾓﾘ</span>
+      <p>
+      
+            「かわいいおぼっちゃん（おじょうちゃん）にひとつご忠告。 ここは子どもとモンスターの世界、大人は立ち入り禁止なの。 帰りたくなったらそのことを思い出して」
+      </p>
+      </div>
+      <div class="kp">
+      
+            気がつけばまた館の外にたっていた
+      </div>
+      <div class="mem3 left">
+      <span>澪標 杏</span>
+      <p>
+      
+            服はドレスだったり、タキシードだったり？
+      </p>
+      </div>
+      <div class="mem4 right">
+      <span>北峰 大夜</span>
+      <p>
+      
+            そういえばちびっこだった
+      </p>
+      </div>
+      <div class="kp">
+      
+            みっつの試練を終えた探索者の前に現れたのはスーツ姿にマントを羽織り頭にはカボチャ…となんとも珍妙な格好をした男だった。<br>カボチャは目、鼻、口の部分が大きくくりぬかれているが中は墨で塗られたように黒く、表情は見えない。
+      </div>
+      <div class="mem11 left">
+      <span>ｶﾎﾞﾁｬ</span>
+      <p>
+      
+            「今宵はハロウィンタウン・スタンプラリーにご参加いただきありがとうございます♪」
+      </p>
+      </div>
+      <div class="mem1 left">
+      <span>言祝 みづき</span>
+      <p>
+      
+            「親切なコウモリさんだったね～！」
+      </p>
+      </div>
+      <div class="mem3 left">
+      <span>澪標 杏</span>
+      <p>
+      
+            「ジャックオランタン！」
+      </p>
+      </div>
+      <div class="mem4 right">
+      <span>北峰 大夜</span>
+      <p>
+      
+            「スタッフさんですか？」
+      </p>
+      </div>
+      <div class="mem12 right">
+      <span>ﾗﾝﾀﾝ</span>
+      <p>
+      
+            ｢そう私こそここのowner、ジャック・オ・ランタン！｣
+      </p>
+      </div>
+      <div class="mem12 right">
+      <span>ﾗﾝﾀﾝ</span>
+      <p>
+      
+            「スタンプカードを拝見させていただきますね〜」
+      </p>
+      </div>
+      <div class="kp">
+      
+             いつのまにかかぼちゃ男の手に探索者のスタンプカードが握られている。
+      </div>
+      <div class="mem12 right">
+      <span>ﾗﾝﾀﾝ</span>
+      <p>
+      
+            「スタンプをコンプリートしたんだ～えらいえらい♪」 スタンプカードを確認して、カボチャ男は笑ったようだった。
+      </p>
+      </div>
+      <div class="mem3 left">
+      <span>澪標 杏</span>
+      <p>
+      
+            「えへへー！」
+      </p>
+      </div>
+      <div class="mem12 right">
+      <span>ﾗﾝﾀﾝ</span>
+      <p>
+      
+            「じゃあ、えらい子にはご褒美のお菓子をあげなくちゃいけないね」 
+      </p>
+      </div>
+      <div class="kp">
+      
+            カボチャ男の手にはいつのまにか銀のトレイが。 そしてトレイの上には プリン、チョコレート、クッキー が並んでいる。 
+      </div>
+      <div class="mem12 right">
+      <span>ﾗﾝﾀﾝ</span>
+      <p>
+      
+            「さあさあ、このなかからひとつ選んでね♪」 
+      </p>
+      </div>
+      <div class="kp">
+      
+            カボチャ男は楽しそうな声でそう告げると探索者の目の前にトレイを差し出した。
+      </div>
+      <div class="mem4 right">
+      <span>北峰 大夜</span>
+      <p>
+      
+            これは間違えたら死ぬやつかな
+      </p>
+      </div>
+      <div class="mem3 left">
+      <span>澪標 杏</span>
+      <p>
+      
+            あぶね。好きなもの選ぶところだった
+      </p>
+      </div>
+      <div class="kp">
+      
+            お菓子に対して目星、聞き耳、料理がふれます。選べるのは一人1つ。全種類人数分あるから同じものも可能。
+      </div>
+      <div class="mem1 left">
+      <span>言祝 みづき</span>
+      <p>
+      
+            「おいしそうだね～！」
+      </p>
+      </div>
+      <div class="mem3 left">
+      <span>澪標 杏</span>
+      <p>
+      
+            聞き耳します
+      </p>
+      </div>
+      <div class="kp">
+      
+            これが最後の試練となります。
+      </div>
+      <div class="kp">
+      
+            技能はそれぞれの菓子に振れるので振る際には対象、技能の宣言でお願いします。
+      </div>
+      <div class="mem3 left">
+      <span>澪標 杏</span>
+      <p>
+      
+            じゃあ、チョコに聞き耳を
+      </p>
+      </div>
+      <div class="kp">
+      
+            ついでにやっぱり技能は半分。服装はステージのままなので補正アイテムはなしです
+      </div>
+      <div class="kp">
+      
+            どぞ
+      </div>
+      <div class="mem3 left">
+      <span>澪標 杏</span>
+      <p>
+      
+            やっぱりそうだよね！
+      </p>
+      </div>
+      <div class="mem3 left">
+      <span>澪標 杏</span>
+      <p>
+      
+            2
+      </p>
+      </div>
+      <div class="mem3 left">
+      <span>澪標 杏</span>
+      <p>
+      
+            神が言っている。やれと
+      </p>
+      </div>
+      <div class="mem1 left">
+      <span>言祝 みづき</span>
+      <p>
+      
+            有能！
+      </p>
+      </div>
+      <div class="mem4 right">
+      <span>北峰 大夜</span>
+      <p>
+      
+            もってるわぁ
+      </p>
+      </div>
+      <div class="kp">
+      
+            ここでかぁ〜！
+      </div>
+      <div class="kp">
+      
+            まるいチョコレートからはカカオの香りと一緒にかすかなアルコールの匂いがした。
+      </div>
+      <div class="mem3 left">
+      <span>澪標 杏</span>
+      <p>
+      
+            大人の味！
+      </p>
+      </div>
+      <div class="mem3 left">
+      <span>澪標 杏</span>
+      <p>
+      
+            これ食ったら「てめえ大人だな！ぶっ殺してやる！」ってなるんだな！
+      </p>
+      </div>
+      <div class="kp">
+      
+            クリティカル情報→プリンとクッキーからは甘いカボチャの匂いがした
+      </div>
+      <div class="mem3 left">
+      <span>澪標 杏</span>
+      <p>
+      
+            「むむむむむむむむ」
+      </p>
+      </div>
+      <div class="mem3 left">
+      <span>澪標 杏</span>
+      <p>
+      
+            あ、カボチャプリンだ。ガチで美味そう
+      </p>
+      </div>
+      <div class="mem4 right">
+      <span>北峰 大夜</span>
+      <p>
+      
+            プリンに聞き耳します
+      </p>
+      </div>
+      <div class="kp">
+      
+            かぼちゃの音がするよ
+      </div>
+      <div class="mem4 right">
+      <span>北峰 大夜</span>
+      <p>
+      
+            おと？？
+      </p>
+      </div>
+      <div class="mem3 left">
+      <span>澪標 杏</span>
+      <p>
+      
+            カボチャの音…？
+      </p>
+      </div>
+      <div class="mem4 right">
+      <span>北峰 大夜</span>
+      <p>
+      
+            57しっぱい
+      </p>
+      </div>
+      <div class="mem3 left">
+      <span>澪標 杏</span>
+      <p>
+      
+            プリンから……？
+      </p>
+      </div>
+      <div class="kp">
+      
+            情報出来っちゃった…
+      </div>
+      <div class="kp">
+      
+            全種類人数分あるけどそれぞれ同じものだから1人成功したから…
+      </div>
+      <div class="mem4 right">
+      <span>北峰 大夜</span>
+      <p>
+      
+            まじかぁ
+      </p>
+      </div>
+      <div class="mem4 right">
+      <span>北峰 大夜</span>
+      <p>
+      
+            プリンかクッキーの二択かぁ
+      </p>
+      </div>
+      <div class="kp">
+      
+            まぁあとはヒントを辿って好きなものを選んでねって感じ
+      </div>
+      <div class="mem1 left">
+      <span>言祝 みづき</span>
+      <p>
+      
+            帰りたかったら大人になった方がいいのでは…？<br>でも　リスク高いな！
+      </p>
+      </div>
+      <div class="mem3 left">
+      <span>澪標 杏</span>
+      <p>
+      
+            あー、そろそろ帰る時間だから大人アピールするって表現か
+      </p>
+      </div>
+      <div class="mem4 right">
+      <span>北峰 大夜</span>
+      <p>
+      
+            子供味のを選んだら永遠に子供のままこの国でってことか
+      </p>
+      </div>
+      <div class="mem3 left">
+      <span>澪標 杏</span>
+      <p>
+      
+            プリンとクッキーを分ける選択肢の話今まであったっけ
+      </p>
+      </div>
+      <div class="mem3 left">
+      <span>澪標 杏</span>
+      <p>
+      
+            なければ大人か大人じゃないかの問いかけしかないかな
+      </p>
+      </div>
+      <div class="kp">
+      
+            エンディングは個別にもできるよ。さぁ、どれに手を伸ばしますか？
+      </div>
+      <div class="mem3 left">
+      <span>澪標 杏</span>
+      <p>
+      
+            じゃ、自分が思うままにやればいいのかな？
+      </p>
+      </div>
+      <div class="mem3 left">
+      <span>澪標 杏</span>
+      <p>
+      
+            ついでに言えば僕は無意識にチョコに手を出そうとした
+      </p>
+      </div>
+      <div class="mem3 left">
+      <span>澪標 杏</span>
+      <p>
+      
+            考えないで反射で答えるからね！
+      </p>
+      </div>
+      <div class="kp">
+      
+            大丈夫、もし間違えてもちょっと長く夢を見るか、ちょっとした後遺症がのこるだけだよ
+      </div>
+      <div class="kp">
+      
+            目覚めるか治るかはその後のシナリオに寄るけれど
+      </div>
+      <div class="mem2 right">
+      <span>城野 光希</span>
+      <p>
+      
+            アルコール選んじゃったら「子供しか入れないのに大人だと?!殺せ殺せ！」で殺されるのかなぁ。それとも子供のお菓子選んで一生コナン君なのか…。どっちなのかわからなくて怖い(笑)
+      </p>
+      </div>
+      <div class="kp">
+      
+            たのしいな^^
+      </div>
+      <div class="mem1 left">
+      <span>言祝 みづき</span>
+      <p>
+      
+            俺ｧコウモリさんを信じるぜ…！
+      </p>
+      </div>
+      <div class="mem3 left">
+      <span>澪標 杏</span>
+      <p>
+      
+            よし。各々に任せよう！
+      </p>
+      </div>
+      <div class="mem4 right">
+      <span>北峰 大夜</span>
+      <p>
+      
+            フラグをたてたいのでみづきさんの挙動をじっとみましょう
+      </p>
+      </div>
+      <div class="mem3 left">
+      <span>澪標 杏</span>
+      <p>
+      
+            「杏は、チョコが好きなんだー！」<br>ぱくり
+      </p>
+      </div>
+      <div class="mem1 left">
+      <span>言祝 みづき</span>
+      <p>
+      
+            「僕はこれをもらうねぇ～！」<br>チョコレートを食べます
+      </p>
+      </div>
+      <div class="mem2 right">
+      <span>城野 光希</span>
+      <p>
+      
+            殺されないと信じてチョコ取ります……。
+      </p>
+      </div>
+      <div class="mem4 right">
+      <span>北峰 大夜</span>
+      <p>
+      
+            「じゃあ、俺もチョコで」
+      </p>
+      </div>
+      <div class="kp">
+      
+            食べましたか？
+      </div>
+      <div class="mem3 left">
+      <span>澪標 杏</span>
+      <p>
+      
+            「もぐもぐもぐ」
+      </p>
+      </div>
+      <div class="mem1 left">
+      <span>言祝 みづき</span>
+      <p>
+      
+            「おいしいねぇ～」
+      </p>
+      </div>
+      <div class="mem2 right">
+      <span>城野 光希</span>
+      <p>
+      
+            「もぐごっきゅん」
+      </p>
+      </div>
+      <div class="mem4 right">
+      <span>北峰 大夜</span>
+      <p>
+      
+            「もぐもぐ」
+      </p>
+      </div>
+      <div class="mem3 left">
+      <span>澪標 杏</span>
+      <p>
+      
+            「むにゃー」
+      </p>
+      </div>
+      <div class="kp">
+      
+            チョコレートを噛むと口の中にブランデーの味が広がった。 強いアルコールで喉が灼けるように熱い、一瞬目眩のように視界がふらつき 気がつくと探索者の身体は元の大人の姿に戻っていた。 「あらら、子どものままだったら、ずーっとここで遊んで暮らせたのに」 カボチャ男が残念そうに、もしくは投げやりに言い放つ。 「大人はバイバ～イ♪」
+      </div>
+      <div class="mem2 right">
+      <span>城野 光希</span>
+      <p>
+      
+            カボチャプリンがセブンのカボチャプリンだったらPL的にはそっち食うけど
+      </p>
+      </div>
+      <div class="kp">
+      
+            探索者が目を覚ますと、そこは繁華街のゴミ集積所だった。 酔っぱらいよろしく、ゴミ袋の間に埋まった探索者を 朝の通勤をいそぐサラリーマンが胡乱な目で通り過ぎていく。 <br>それもそうだろう、今の探索者はハロウィンに浮かれて酔いつぶれて ゴミ捨て場で寝こけていたようにしか見えない。 <br>実際、口内にはまだひりつくようなブランデーの味が残っている。 周囲を見回すと、昨夜イベントスタッフに預けた荷物が転がっていた。<br>スタンプカードを確認すると、みっつのスタンプの横に 「僕の気がむいたら、また来年遊ぼうね♪」と書かれていた。<br> （シナリオクリア　成功報酬…SAN回復（1d6）） 
+      </div>
+      <div class="mem3 left">
+      <span>澪標 杏</span>
+      <p>
+      
+            「むにゃああああ！藍がいねえええ」
+      </p>
+      </div>
+      <div class="mem4 right">
+      <span>北峰 大夜</span>
+      <p>
+      
+            「……戻ってきた」
+      </p>
+      </div>
+      <div class="kp">
+      
+            ついでに衣装はステージ衣装
+      </div>
+      <div class="mem2 right">
+      <span>城野 光希</span>
+      <p>
+      
+            「……なんてこった…。かっこ悪い。」
+      </p>
+      </div>
+      </div>
+
+<br><br>
+</div></div>
+<script src="../logCon_Respon.js"></script>
+</body></html>
