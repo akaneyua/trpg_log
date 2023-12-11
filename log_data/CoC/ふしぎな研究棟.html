@@ -1,0 +1,7596 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<title>log</title>
+<meta http-equiv="content-type" charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+<link rel="stylesheet" href="../logCon_Respon.css">
+<style>
+    /* main css */
+    .bg-inner.bg1{background:url('./研究棟画像/lab_cyberpunk01.png') no-repeat center/cover;}
+    
+    /* member */
+    .mem1 p{border:2px solid rgb(136, 203, 127);box-shadow:5px 5px 0 rgb(136, 203, 127);}
+.mem1 p:after{border-right-color:rgb(136, 203, 127);}
+.mem1 span{background:rgb(136, 203, 127);color:#fff;}
+.mem1:before{content:'';background-image:url('./研究棟画像/御守\ 月彦.png');background-size:contain;background-repeat:no-repeat;background-position:center center;width:90px;height:90px;}
+.mem2 p{border:2px solid rgb(0, 150, 136);box-shadow:5px 5px 0 rgb(0, 150, 136);}
+.mem2 p:after{border-left-color:rgb(0, 150, 136);}
+.mem2 span{background:rgb(0, 150, 136);color:#fff;}
+.mem2:before{content:'';background-image:url('./研究棟画像/九重\ 是之.jpg');background-size:contain;background-repeat:no-repeat;background-position:center center;width:90px;height:90px;}
+.mem3 p{border:2px solid rgb(255, 215, 0);box-shadow:5px 5px 0 rgb(255, 215, 0);}
+.mem3 p:after{border-right-color:rgb(255, 215, 0);}
+.mem3 span{background:rgb(255, 215, 0);color:#000;}
+.mem3:before{content:'';background-image:url('./研究棟画像/麒麟児\ ニア.png');background-size:contain;background-repeat:no-repeat;background-position:center center;width:90px;height:90px;}
+.mem4 p{border:2px solid rgb(65, 105, 225);box-shadow:5px 5px 0 rgb(65, 105, 225);}
+.mem4 p:after{border-left-color:rgb(65, 105, 225);}
+.mem4 span{background:rgb(65, 105, 225);color:#fff;}
+.mem4:before{content:'';background-image:url('./研究棟画像/蒼田\ 翔馬.png');background-size:contain;background-repeat:no-repeat;background-position:center center;width:90px;height:90px;}
+.mem5 p{border:2px solid rgb(255, 87, 34);box-shadow:5px 5px 0 rgb(255, 87, 34);}
+.mem5 p:after{border-right-color:rgb(255, 87, 34);}
+.mem5 span{background:rgb(255, 87, 34);color:#fff;}
+.mem5:before{content:'';background-image:url('./研究棟画像/伊央里\ 絢.png');background-size:contain;background-repeat:no-repeat;background-position:center center;width:90px;height:90px;}
+.mem6 p{border:2px solid rgb(136, 136, 136);box-shadow:5px 5px 0 rgb(136, 136, 136);}
+.mem6 p:after{border-left-color:rgb(136, 136, 136);}
+.mem6 span{background:rgb(136, 136, 136);color:#fff;}
+.mem6:before{content:'';background-image:url('6.png');background-size:contain;background-repeat:no-repeat;background-position:center center;width:90px;height:90px;}
+.mem7 p{border:2px solid rgb(224, 224, 224);box-shadow:5px 5px 0 rgb(224, 224, 224);}
+.mem7 p:after{border-right-color:rgb(224, 224, 224);}
+.mem7 span{background:rgb(224, 224, 224);color:#000;}
+.mem7:before{content:'';background-image:url('./研究棟画像/ノワール.png');background-size:contain;background-repeat:no-repeat;background-position:center center;width:90px;height:90px;}
+.mem8 p{border:2px solid rgb(136, 136, 136);box-shadow:5px 5px 0 rgb(136, 136, 136);}
+.mem8 p:after{border-left-color:rgb(136, 136, 136);}
+.mem8 span{background:rgb(136, 136, 136);color:#fff;}
+.mem8:before{content:'';background-image:url('8.png');background-size:contain;background-repeat:no-repeat;background-position:center center;width:90px;height:90px;}
+.mem9 p{border:2px solid rgb(3, 169, 244);box-shadow:5px 5px 0 rgb(3, 169, 244);}
+.mem9 p:after{border-right-color:rgb(3, 169, 244);}
+.mem9 span{background:rgb(3, 169, 244);color:#000;}
+.mem9:before{content:'';background-image:url('./研究棟画像/ぴぃ.png');background-size:contain;background-repeat:no-repeat;background-position:center center;width:90px;height:90px;}
+.mem10 p{border:2px solid rgb(3, 169, 244);box-shadow:5px 5px 0 rgb(3, 169, 244);}
+.mem10 p:after{border-left-color:rgb(3, 169, 244);}
+.mem10 span{background:rgb(3, 169, 244);color:#000;}
+.mem10:before{content:'';background-image:url('./研究棟画像/ぴぃ.png');background-size:contain;background-repeat:no-repeat;background-position:center center;width:90px;height:90px;}
+.mem11 p{border:2px solid rgb(233, 30, 99);box-shadow:5px 5px 0 rgb(233, 30, 99);}
+.mem11 p:after{border-right-color:rgb(233, 30, 99);}
+.mem11 span{background:rgb(233, 30, 99);color:#000;}
+.mem11:before{content:'';background-image:url('./研究棟画像/ティムル.png');background-size:contain;background-repeat:no-repeat;background-position:center center;width:90px;height:90px;}
+.mem12 p{border:2px solid rgb(136, 136, 136);box-shadow:5px 5px 0 rgb(136, 136, 136);}
+.mem12 p:after{border-left-color:rgb(136, 136, 136);}
+.mem12 span{background:rgb(136, 136, 136);color:#fff;}
+.mem12:before{content:'';background-image:url('12.png');background-size:contain;background-repeat:no-repeat;background-position:center center;width:90px;height:90px;}
+.mem13 p{border:2px solid rgb(136, 136, 136);box-shadow:5px 5px 0 rgb(136, 136, 136);}
+.mem13 p:after{border-right-color:rgb(136, 136, 136);}
+.mem13 span{background:rgb(136, 136, 136);color:#000;}
+.mem13:before{content:'';background-image:url('13.png');background-size:contain;background-repeat:no-repeat;background-position:center center;width:90px;height:90px;}
+    
+    @media only screen and (max-width: 768px) {
+        .mem1 p:after{border-right-color:rgb(136, 203, 127);border-left-color:transparent;}
+        .mem2 p:after{border-right-color:rgb(0, 150, 136);border-left-color:transparent;}
+        .mem3 p:after{border-right-color:rgb(255, 215, 0);border-left-color:transparent;}
+        .mem4 p:after{border-right-color:rgb(65, 105, 225);border-left-color:transparent;}
+        .mem5 p:after{border-right-color:rgb(255, 87, 34);border-left-color:transparent;}
+        .mem6 p:after{border-right-color:rgb(136, 136, 136);border-left-color:transparent;}
+        .mem7 p:after{border-right-color:rgb(224, 224, 224);border-left-color:transparent;}
+        .mem8 p:after{border-right-color:rgb(136, 136, 136);border-left-color:transparent;}
+        .mem9 p:after{border-right-color:rgb(3, 169, 244);border-left-color:transparent;}
+        .mem10 p:after{border-right-color:rgb(3, 169, 244);border-left-color:transparent;}
+        .mem11 p:after{border-right-color:rgb(233, 30, 99);border-left-color:transparent;}
+        .mem12 p:after{border-right-color:rgb(136, 136, 136);border-left-color:transparent;}
+        .mem13 p:after{border-right-color:rgb(136, 136, 136);border-left-color:transparent;}
+    
+        .mem1:before,.mem2:before,.mem3:before,
+        .mem4:before,.mem5:before,.mem6:before{width:70px;height:70px;}
+    }
+</style>
+</head>
+<body>
+    <p id="page-top"><a href="#"><i class="page-top__arrow"></i></a></p>
+	<div class="leftwhite"></div>
+	<div class="rightwhite"></div>
+	<div class="bg-sp">
+    <div class="bg-over"><div class="bg-inner bg1"></div></div>
+	<div class="log">
+    
+        <div class="kp LtoR-early">
+
+            『ふしぎな不思議な研究棟』
+      </div>
+      <div class="kp LtoR-early">
+      
+            始めていきたいと思います
+      </div>
+      <div class="mem1 left">
+      <span>御守 月彦</span>
+      <p>
+      
+            いあいあ
+      </p>
+      </div>
+      <div class="mem2 right">
+      <span>九重 是之</span>
+      <p>
+      
+            いあいあ
+      </p>
+      </div>
+      <div class="mem3 left">
+      <span>麒麟児 ニア</span>
+      <p>
+      
+            いあいあ！
+      </p>
+      </div>
+      <div class="mem4 right">
+      <span>蒼田 翔馬</span>
+      <p>
+      
+            いあいあ
+      </p>
+      </div>
+      <div class="mem5 left">
+      <span>伊央里 絢</span>
+      <p>
+      
+            いあいあー
+      </p>
+      </div>
+      <div class="kp LtoR-early">
+      
+            あなたたちは夢夜研究所と呼ばれる、魔法にも似た不思議な技術を研究している研究所に見学に来ている。
+      </div>
+      <div class="kp LtoR-early">
+      
+            それぞれどんな理由で来たのでしょうか？
+      </div>
+      <div class="mem1 left">
+      <span>御守 月彦</span>
+      <p>
+      
+            観光できてます
+      </p>
+      </div>
+      <div class="mem2 right">
+      <span>九重 是之</span>
+      <p>
+      
+            取材できてます
+      </p>
+      </div>
+      <div class="mem3 left">
+      <span>麒麟児 ニア</span>
+      <p>
+      
+            遊びに来ましたわ
+      </p>
+      </div>
+      <div class="kp LtoR-early">
+      
+            何も理由が思いつかなければツアーにでもしますよ
+      </div>
+      <div class="mem4 right">
+      <span>蒼田 翔馬</span>
+      <p>
+      
+            シマの不穏な動きに関わってると聞いて
+      </p>
+      </div>
+      <div class="mem5 left">
+      <span>伊央里 絢</span>
+      <p>
+      
+            旅してたら面白そうなの見つけたからー
+      </p>
+      </div>
+      <div class="kp LtoR-early">
+      
+            そのような感じでみなさんがそれぞれ見学をしていき、
+      </div>
+      <div class="kp LtoR-early">
+      
+            夕暮れになり、担当者が宿泊施設へ案内しようとしたがどうやら急な団体客の来訪でいっぱいらしい。
+      </div>
+      <div class="kp LtoR-early">
+      
+            ここならすぐ泊まれるということでひとまず案内されたのは、研究所第2棟の一番高いフロアだった。
+      </div>
+      <div class="kp LtoR-early">
+      
+            ...研究所らしく内装に飾り気と窓はないが、確かに泊まれそうだ。
+      </div>
+      <div class="kp LtoR-early">
+      
+            「夜間はエレベーターが止まりますので、万一外に出る必要が出た場合は階段を降りて下さい。<br> ただし、階段はフロアごとに別の場所にありますので、不用意に立ち入り禁止の部屋に入ったりしないようご注意くださいね........」
+      </div>
+      <div class="kp LtoR-early">
+      
+            こうして第2棟で一泊することになったあなたたちだが、夜中に事件は起きてしまう。
+      </div>
+      <div class="kp LtoR-early">
+      
+            あなたたちの泊まっていた部屋のドアが異形の何かに破られてしまったのだ。
+      </div>
+      <div class="kp LtoR-early">
+      
+            これ以上ここにいたらどうなるか分からない。外に出ねばならないだろう....。
+      </div>
+      <div class="kp LtoR-early">
+      
+            第2棟最上階廊下
+      </div>
+      <div class="kp LtoR-early">
+      
+            この物語がスタートします
+      </div>
+      <div class="mem1 left">
+      <span>御守 月彦</span>
+      <p>
+      
+            「おや私以外の宿泊客ですかな？皆様ご無事で？」
+      </p>
+      </div>
+      <div class="mem4 right">
+      <span>蒼田 翔馬</span>
+      <p>
+      
+            「ちっ……何だったんだアレ」
+      </p>
+      </div>
+      <div class="mem2 right">
+      <span>九重 是之</span>
+      <p>
+      
+            「ものものしいな」
+      </p>
+      </div>
+      <div class="mem3 left">
+      <span>麒麟児 ニア</span>
+      <p>
+      
+            「やかましいですわよ!!」
+      </p>
+      </div>
+      <div class="mem5 left">
+      <span>伊央里 絢</span>
+      <p>
+      
+            ｢びっくりしたぁ！なんだろうね？｣
+      </p>
+      </div>
+      <div class="mem1 left">
+      <span>御守 月彦</span>
+      <p>
+      
+            「ご挨拶をしたいところですがひとまずは外へ向かいましょう」
+      </p>
+      </div>
+      <div class="mem4 right">
+      <span>蒼田 翔馬</span>
+      <p>
+      
+            「お嬢様ならもっとお淑やかにしろよ」
+      </p>
+      </div>
+      <div class="mem2 right">
+      <span>九重 是之</span>
+      <p>
+      
+            「階段って言ってたな」
+      </p>
+      </div>
+      <div class="mem5 left">
+      <span>伊央里 絢</span>
+      <p>
+      
+            ｢外出れるかな？｣
+      </p>
+      </div>
+      <div class="mem3 left">
+      <span>麒麟児 ニア</span>
+      <p>
+      
+            「わたくしはお嬢様ではなく　わたくしですの」
+      </p>
+      </div>
+      <div class="mem4 right">
+      <span>蒼田 翔馬</span>
+      <p>
+      
+            (楽並みに頭おかしい奴だ)
+      </p>
+      </div>
+      <div class="mem2 right">
+      <span>九重 是之</span>
+      <p>
+      
+            （なんか濃いメンツだな）
+      </p>
+      </div>
+      <div class="mem1 left">
+      <span>御守 月彦</span>
+      <p>
+      
+            「さきほどのは何だったんでしょうねぇこの階にはもういないのでしょうか」
+      </p>
+      </div>
+      <div class="mem4 right">
+      <span>蒼田 翔馬</span>
+      <p>
+      
+            「とりあえずみんな出てきたってことは、まだ近くにいるかもしれねぇだろ」
+      </p>
+      </div>
+      <div class="mem2 right">
+      <span>九重 是之</span>
+      <p>
+      
+            「とりあえず変なもんがいないかその辺見てみるか」
+      </p>
+      </div>
+      <div class="kp LtoR-early">
+      
+            所持品は持ってます。
+      </div>
+      <div class="kp LtoR-early">
+      
+            ただし、拳銃以上のは見たら怪しまれるので没収とされます
+      </div>
+      <div class="mem5 left">
+      <span>伊央里 絢</span>
+      <p>
+      
+            ｢気を付けながら行った方がよさそうたね｣
+      </p>
+      </div>
+      <div class="kp LtoR-early">
+      
+            部屋から出て少し進むと、研究所第2棟の見取り図を見つけた。
+      </div>
+      <div class="kp LtoR-early">
+      
+            【見取り図】<br>〈3F〉<br>・管理室<br>・特別実験体保管室<br>・倉庫<br>・休憩室<br>〈2F〉<br>・冷蔵エリア<br>・研究エリア<br>・医療エリア<br>〈1F〉<br>・各種素体保管エリア<br>・玄関ホール
+      </div>
+      <div class="kp LtoR-early">
+      
+            なお、棟内はかなり暗い。明かりがなければ探索に不自由してしまうだろう。
+      </div>
+      <div class="kp LtoR-early">
+      
+            目星などの視覚を使う技能に-10の補正が入ります。
+      </div>
+      <div class="mem4 right">
+      <span>蒼田 翔馬</span>
+      <p>
+      
+            「緊急用の懐中電灯とかねぇのかよ」
+      </p>
+      </div>
+      <div class="mem1 left">
+      <span>御守 月彦</span>
+      <p>
+      
+            「なにやらわくわくする場所が多々ありますね。身の安全を確保したいところではありますが…倉庫などに物資をみにいきましょうか？」
+      </p>
+      </div>
+      <div class="kp LtoR-early">
+      
+            ないですね（こそっ
+      </div>
+      <div class="mem2 right">
+      <span>九重 是之</span>
+      <p>
+      
+            「スマホがある」
+      </p>
+      </div>
+      <div class="mem4 right">
+      <span>蒼田 翔馬</span>
+      <p>
+      
+            「管理室にいけば電気管理のシステムねぇかな」
+      </p>
+      </div>
+      <div class="mem3 left">
+      <span>麒麟児 ニア</span>
+      <p>
+      
+            「端から当たるのが確実でしてよ」
+      </p>
+      </div>
+      <div class="kp LtoR-early">
+      
+            さて、どこいこうか
+      </div>
+      <div class="mem1 left">
+      <span>御守 月彦</span>
+      <p>
+      
+            「近場からまいりますか。…ひとまずここはまだ安全そうですね。短いお付き合いになるかもしれませんが一度自己紹介をさせていただいてもよろしいですかな？」
+      </p>
+      </div>
+      <div class="mem5 left">
+      <span>伊央里 絢</span>
+      <p>
+      
+            ｢一応小さめのランタンとスマホならあるけど…？｣
+      </p>
+      </div>
+      <div class="mem2 right">
+      <span>九重 是之</span>
+      <p>
+      
+            「九重だ」
+      </p>
+      </div>
+      <div class="mem4 right">
+      <span>蒼田 翔馬</span>
+      <p>
+      
+            「……蒼田翔馬。翔馬でいい」
+      </p>
+      </div>
+      <div class="mem5 left">
+      <span>伊央里 絢</span>
+      <p>
+      
+            ｢伊央里 絢ですー｣
+      </p>
+      </div>
+      <div class="mem3 left">
+      <span>麒麟児 ニア</span>
+      <p>
+      
+            「わたくしは　大・天・才　麒麟児ニアですわ!!!」
+      <br>何回名乗ってもいいものですわね～　と満足げ
+      </p>
+      </div>
+      <div class="mem4 right">
+      <span>蒼田 翔馬</span>
+      <p>
+      
+            （仲良くできなそうな人種だな）
+      </p>
+      </div>
+      <div class="mem1 left">
+      <span>御守 月彦</span>
+      <p>
+      
+            「九重様、翔馬様、伊央里様、麒麟児様ですね。私御守月彦と申します。どうぞお好きにお呼びくださいませ。よいご縁になりますようよろしくおねがいいたします」
+      </p>
+      </div>
+      <div class="mem2 right">
+      <span>九重 是之</span>
+      <p>
+      
+            「よろしく頼む」
+      </p>
+      </div>
+      <div class="mem4 right">
+      <span>蒼田 翔馬</span>
+      <p>
+      
+            「……よろしく」
+      </p>
+      </div>
+      <div class="mem5 left">
+      <span>伊央里 絢</span>
+      <p>
+      
+            ｢みんなよろしくね〜｣
+      </p>
+      </div>
+      <div class="mem3 left">
+      <span>麒麟児 ニア</span>
+      <p>
+      
+            「よろしくですわ！」
+      </p>
+      </div>
+      <div class="mem1 left">
+      <span>御守 月彦</span>
+      <p>
+      
+            「さて、研究所見学の続きと参りましょうか。いかがいたしましょう？」
+      </p>
+      </div>
+      <div class="mem4 right">
+      <span>蒼田 翔馬</span>
+      <p>
+      
+            「出るためにはするしかねぇんだろうな」
+      </p>
+      </div>
+      <div class="mem2 right">
+      <span>九重 是之</span>
+      <p>
+      
+            「とりあえず頭から行くか？」
+      </p>
+      </div>
+      <div class="mem4 right">
+      <span>蒼田 翔馬</span>
+      <p>
+      
+            「階段は別々の場所にあるっていうしな」
+      </p>
+      </div>
+      <div class="mem4 right">
+      <span>蒼田 翔馬</span>
+      <p>
+      
+            （不便すぎるがわざとか？）
+      </p>
+      </div>
+      <div class="mem3 left">
+      <span>麒麟児 ニア</span>
+      <p>
+      
+            「面倒なつくりですわね～」<br>一番近い部屋の扉に近づいてます
+      </p>
+      </div>
+      <div class="kp LtoR-early">
+      
+            休憩室かな？
+      </div>
+      <div class="mem5 left">
+      <span>伊央里 絢</span>
+      <p>
+      
+            ｢一応全部回ってから階段行った方がよさそうだね〜｣
+      </p>
+      </div>
+      <div class="mem1 left">
+      <span>御守 月彦</span>
+      <p>
+      
+            「麒麟児様、先ほどの異形がいないとも限りませんのでお気を付けを」
+      </p>
+      </div>
+      <div class="mem2 right">
+      <span>九重 是之</span>
+      <p>
+      
+            「あまり一人で動くな」ニアちゃんについていきます
+      </p>
+      </div>
+      <div class="mem4 right">
+      <span>蒼田 翔馬</span>
+      <p>
+      
+            「ああいう奴はいっぺん痛い目見た方がいい」
+      </p>
+      </div>
+      <div class="mem3 left">
+      <span>麒麟児 ニア</span>
+      <p>
+      
+            「もしもいたとしても　わたくしが皆様を守りますわ🎵」
+      </p>
+      </div>
+      <div class="mem2 right">
+      <span>九重 是之</span>
+      <p>
+      
+            「そうは言うが、なにかあったら親御さんに申し訳が立たないだろう」
+      </p>
+      </div>
+      <div class="mem5 left">
+      <span>伊央里 絢</span>
+      <p>
+      
+            ｢…逆じゃない？｣みんなについてく
+      </p>
+      </div>
+      <div class="mem3 left">
+      <span>麒麟児 ニア</span>
+      <p>
+      
+            勢いよく開けます
+      </p>
+      </div>
+      <div class="kp LtoR-early">
+      
+            どうやら鍵はかかってないようだ。
+      </div>
+      <div class="mem4 right">
+      <span>蒼田 翔馬</span>
+      <p>
+      
+            「泊りで未成年を放り出す親がいるかよ」
+      </p>
+      </div>
+      <div class="kp LtoR-early">
+      
+            オレンジ色の電灯が灯った休憩室だ。...水飲み場や自販機もある。<br>ここなら少しゆっくり出来そうだ。
+      </div>
+      <div class="kp LtoR-early">
+      
+            さて、ここで
+      </div>
+      <div class="kp LtoR-early">
+      
+            本日初めてのダイスを振りましょうか
+      </div>
+      <div class="kp LtoR-early">
+      
+            今回は目星です
+      </div>
+      <div class="mem1 left">
+      <span>御守 月彦</span>
+      <p>
+      
+            CCB&lt;=32 【目星】 (1D100&lt;=32) ＞ 85 ＞ 失敗
+            
+      </p>
+      </div>
+      <div class="mem2 right">
+      <span>九重 是之</span>
+      <p>
+      
+            CCB&lt;=49 【目星】 (1D100&lt;=49) ＞ 55 ＞ 失敗
+            
+      </p>
+      </div>
+      <div class="mem3 left">
+      <span>麒麟児 ニア</span>
+      <p>
+      
+            CCB&lt;=76 【目星】 (1D100&lt;=76) ＞ 93 ＞ 失敗
+            
+      </p>
+      </div>
+      <div class="mem4 right">
+      <span>蒼田 翔馬</span>
+      <p>
+      
+            CCB&lt;=60 【目星】 (1D100&lt;=60) ＞ 16 ＞ 成功
+            
+      </p>
+      </div>
+      <div class="mem5 left">
+      <span>伊央里 絢</span>
+      <p>
+      
+            CCB&lt;=60 【目星】 (1D100&lt;=60) ＞ 100 ＞ 致命的失敗
+            
+      </p>
+      </div>
+      <div class="kp LtoR-early">
+      
+            目星成功した、翔馬君は、カードキーを発見します。
+      </div>
+      <div class="kp LtoR-early">
+      
+            「管理室」と書いてあります
+      </div>
+      <div class="mem4 right">
+      <span>蒼田 翔馬</span>
+      <p>
+      
+            「管理室のカードキー？忘れ物か？」
+      </p>
+      </div>
+      <div class="mem4 right">
+      <span>蒼田 翔馬</span>
+      <p>
+      
+            （とりあえずラッキーだな）
+      </p>
+      </div>
+      <div class="kp LtoR-early">
+      
+            じゃ、スマホの調子が悪かったらしく、プチっと切れてしまいますね
+      </div>
+      <div class="mem1 left">
+      <span>御守 月彦</span>
+      <p>
+      
+            「これで管理室も見ることができるのですね」
+      </p>
+      </div>
+      <div class="mem3 left">
+      <span>麒麟児 ニア</span>
+      <p>
+      
+            「無用心すぎませんこと？」
+      </p>
+      </div>
+      <div class="mem5 left">
+      <span>伊央里 絢</span>
+      <p>
+      
+            ｢あっ、スマホ切れちゃった…｣
+      </p>
+      </div>
+      <div class="mem2 right">
+      <span>九重 是之</span>
+      <p>
+      
+            「……他はなにもなさそうか？」
+      </p>
+      </div>
+      <div class="mem4 right">
+      <span>蒼田 翔馬</span>
+      <p>
+      
+            「こんなとこに置き去りってことは、さぞかしセキュリティに自信があるんじゃねぇのか」
+      </p>
+      </div>
+      <div class="mem1 left">
+      <span>御守 月彦</span>
+      <p>
+      
+            「もしかしたら持ち主の方も先ほどのものに驚いておいて行ってしまったのかもしれませんね」
+      </p>
+      </div>
+      <div class="mem2 right">
+      <span>九重 是之</span>
+      <p>
+      
+            「管理室に行ってみるか」
+      </p>
+      </div>
+      <div class="mem3 left">
+      <span>麒麟児 ニア</span>
+      <p>
+      
+            「扉が破られてないのが気にかかりますわ……<br>全部破るものではなくて？」
+      </p>
+      </div>
+      <div class="mem4 right">
+      <span>蒼田 翔馬</span>
+      <p>
+      
+            「まるで人の体温に反応したみてぇだな」
+      </p>
+      </div>
+      <div class="mem2 right">
+      <span>九重 是之</span>
+      <p>
+      
+            （アグレッシブなお嬢さんだな……）
+      </p>
+      </div>
+      <div class="mem5 left">
+      <span>伊央里 絢</span>
+      <p>
+      
+            ｢これ水出るのかなー、水止まってたら困らない？｣水飲み場を指さし
+      </p>
+      </div>
+      <div class="mem1 left">
+      <span>御守 月彦</span>
+      <p>
+      
+            「確かめてみましょう」みずだしてみる
+      </p>
+      </div>
+      <div class="kp LtoR-early">
+      
+            普通のお水が出てきますよ
+      </div>
+      <div class="mem1 left">
+      <span>御守 月彦</span>
+      <p>
+      
+            「でるようですね。もし疲れたらここにお茶でもしに戻りましょうか」
+      </p>
+      </div>
+      <div class="mem3 left">
+      <span>麒麟児 ニア</span>
+      <p>
+      
+            「そういたしましょう」
+      </p>
+      </div>
+      <div class="mem5 left">
+      <span>伊央里 絢</span>
+      <p>
+      
+            ｢あ、出た。ちゃんと水っぽいね｣水の匂いを嗅ぎながら
+      </p>
+      </div>
+      <div class="mem4 right">
+      <span>蒼田 翔馬</span>
+      <p>
+      
+            「茶出来る時間があればな」
+      </p>
+      </div>
+      <div class="mem2 right">
+      <span>九重 是之</span>
+      <p>
+      
+            「飲み水の確保はできたな」
+      </p>
+      </div>
+      <div class="mem4 right">
+      <span>蒼田 翔馬</span>
+      <p>
+      
+            「犬みてぇだな(いおりをみて)」
+      </p>
+      </div>
+      <div class="kp LtoR-early">
+      
+            どうするんご？
+      </div>
+      <div class="mem1 left">
+      <span>御守 月彦</span>
+      <p>
+      
+            「まだ休憩には早そうですし九重様の仰る通り管理室へ向かいましょうか」
+      </p>
+      </div>
+      <div class="mem4 right">
+      <span>蒼田 翔馬</span>
+      <p>
+      
+            管理室いきます
+      </p>
+      </div>
+      <div class="mem5 left">
+      <span>伊央里 絢</span>
+      <p>
+      
+            空のボトルに水を入れる
+      </p>
+      </div>
+      <div class="kp LtoR-early">
+      
+            水確保ヨシ
+      </div>
+      <div class="mem3 left">
+      <span>麒麟児 ニア</span>
+      <p>
+      
+            先頭を進みます
+      </p>
+      </div>
+      <div class="mem1 left">
+      <span>御守 月彦</span>
+      <p>
+      
+            二歩斜め後ろ歩きましょう
+      </p>
+      </div>
+      <div class="mem2 right">
+      <span>九重 是之</span>
+      <p>
+      
+            では最後を
+      </p>
+      </div>
+      <div class="mem4 right">
+      <span>蒼田 翔馬</span>
+      <p>
+      
+            何か考えながら歩く
+      </p>
+      </div>
+      <div class="kp LtoR-early">
+      
+            管理室
+      </div>
+      <div class="kp LtoR-early">
+      
+            どうやらここはセキュリティルームのようだ
+      </div>
+      <div class="kp LtoR-early">
+      
+            管理室のカードキーがあるので、開けることが可能だ
+      </div>
+      <div class="kp LtoR-early">
+      
+            中には棚と、複雑な機器や机が置かれている。
+      </div>
+      <div class="kp LtoR-early">
+      
+            部屋全体に目星できることでしょう
+      </div>
+      <div class="mem2 right">
+      <span>九重 是之</span>
+      <p>
+      
+            CCB&lt;=49 【目星】 (1D100&lt;=49) ＞ 89 ＞ 失敗
+            
+      </p>
+      </div>
+      <div class="mem3 left">
+      <span>麒麟児 ニア</span>
+      <p>
+      
+            CCB&lt;=76 【目星】 (1D100&lt;=76) ＞ 69 ＞ 成功
+            
+      </p>
+      </div>
+      <div class="mem5 left">
+      <span>伊央里 絢</span>
+      <p>
+      
+            CCB&lt;=60 【目星】 (1D100&lt;=60) ＞ 59 ＞ 成功
+            
+      </p>
+      </div>
+      <div class="mem1 left">
+      <span>御守 月彦</span>
+      <p>
+      
+            CCB&lt;=32 【目星】 (1D100&lt;=32) ＞ 62 ＞ 失敗
+            
+      </p>
+      </div>
+      <div class="mem4 right">
+      <span>蒼田 翔馬</span>
+      <p>
+      
+            CCB&lt;=60 【目星】 (1D100&lt;=60) ＞ 3 ＞ 決定的成功/スペシャル
+            
+      </p>
+      </div>
+      <div class="kp LtoR-early">
+      
+            棚から充電式ランタン(問題なく使用できる)と青いカギを発見した。
+      </div>
+      <div class="kp LtoR-early">
+      
+            クリティカルで、ランタンもう一個プレゼント
+      </div>
+      <div class="kp LtoR-early">
+      
+            さて、
+      </div>
+      <div class="kp LtoR-early">
+      
+            ここで
+      </div>
+      <div class="kp LtoR-early">
+      
+            不意にあなたたちは視線を感じた。そちらに振り向くと、白髪に赤い目の少女の姿がちらりと見えたような....。
+      </div>
+      <div class="kp LtoR-early">
+      
+            ここで初のSANチェックです
+      </div>
+      <div class="kp LtoR-early">
+      
+            成功で0、失敗で1
+      </div>
+      <div class="mem1 left">
+      <span>御守 月彦</span>
+      <p>
+      
+            CCB&lt;=65 【SAN値チェック】 (1D100&lt;=65) ＞ 20 ＞ 成功
+            
+      </p>
+      </div>
+      <div class="mem3 left">
+      <span>麒麟児 ニア</span>
+      <p>
+      
+            CCB&lt;=45 【SAN値チェック】 (1D100&lt;=45) ＞ 89 ＞ 失敗
+            
+      </p>
+      </div>
+      <div class="kp LtoR-early">
+      
+            [ 麒麟児 ニア ] SAN : 45 → 44
+      </div>
+      <div class="mem2 right">
+      <span>九重 是之</span>
+      <p>
+      
+            CCB&lt;=86 【SAN値チェック】 (1D100&lt;=86) ＞ 36 ＞ 成功
+            
+      </p>
+      </div>
+      <div class="mem4 right">
+      <span>蒼田 翔馬</span>
+      <p>
+      
+            CCB&lt;=75 【SAN値チェック】 (1D100&lt;=75) ＞ 87 ＞ 失敗
+            
+      </p>
+      </div>
+      <div class="kp LtoR-early">
+      
+            [ 蒼田 翔馬 ] SAN : 75 → 74
+      </div>
+      <div class="mem5 left">
+      <span>伊央里 絢</span>
+      <p>
+      
+            CCB&lt;=45 【SAN値チェック】 (1D100&lt;=45) ＞ 97 ＞ 致命的失敗
+            
+      </p>
+      </div>
+      <div class="kp LtoR-early">
+      
+            [ 伊央里 絢 ] SAN : 45 → 44
+      </div>
+      <div class="mem4 right">
+      <span>蒼田 翔馬</span>
+      <p>
+      
+            「なんだ、今の……」
+      </p>
+      </div>
+      <div class="mem4 right">
+      <span>蒼田 翔馬</span>
+      <p>
+      
+            （ガキの頃の姉貴に似ててビビった……）
+      </p>
+      </div>
+      <div class="mem3 left">
+      <span>麒麟児 ニア</span>
+      <p>
+      
+            「誰ですの!!?」<br>やんのかステップ
+      </p>
+      </div>
+      <div class="mem1 left">
+      <span>御守 月彦</span>
+      <p>
+      
+            「なにかいましたかな？」
+      </p>
+      </div>
+      <div class="mem2 right">
+      <span>九重 是之</span>
+      <p>
+      
+            「気のせいだろう」
+      </p>
+      </div>
+      <div class="mem5 left">
+      <span>伊央里 絢</span>
+      <p>
+      
+            ｢うあっ!!なに…!?｣
+      </p>
+      </div>
+      <div class="mem3 left">
+      <span>麒麟児 ニア</span>
+      <p>
+      
+            「白髪の方がいらっしゃいましたわ！」<br>廊下に調べに走ります
+      </p>
+      </div>
+      <div class="mem1 left">
+      <span>御守 月彦</span>
+      <p>
+      
+            「おやおや」おいかけます
+      </p>
+      </div>
+      <div class="kp LtoR-early">
+      
+            廊下には、誰もおりません
+      </div>
+      <div class="mem4 right">
+      <span>蒼田 翔馬</span>
+      <p>
+      
+            「あぶねぇから走んな！」
+      </p>
+      </div>
+      <div class="mem2 right">
+      <span>九重 是之</span>
+      <p>
+      
+            ついていきます
+      </p>
+      </div>
+      <div class="mem3 left">
+      <span>麒麟児 ニア</span>
+      <p>
+      
+            「……いませんわねぇ」
+      </p>
+      </div>
+      <div class="mem5 left">
+      <span>伊央里 絢</span>
+      <p>
+      
+            ｢絶対なんかいたよ…｣
+      </p>
+      </div>
+      <div class="mem1 left">
+      <span>御守 月彦</span>
+      <p>
+      
+            「違うお部屋に入られたのかもしれませんよ。」
+      </p>
+      </div>
+      <div class="mem2 right">
+      <span>九重 是之</span>
+      <p>
+      
+            「違う部屋を調べてみるか」
+      </p>
+      </div>
+      <div class="mem5 left">
+      <span>伊央里 絢</span>
+      <p>
+      
+            ｢…どこ行く？｣
+      </p>
+      </div>
+      <div class="mem3 left">
+      <span>麒麟児 ニア</span>
+      <p>
+      
+            「このカギはどこのカギかしら？」<br>近い部屋のカギに青カギを刺してます
+      </p>
+      </div>
+      <div class="mem2 right">
+      <span>九重 是之</span>
+      <p>
+      
+            「倉庫か、ナントカ保管室か」
+      </p>
+      </div>
+      <div class="mem4 right">
+      <span>蒼田 翔馬</span>
+      <p>
+      
+            「特別実験体保管室だな」
+      </p>
+      </div>
+      <div class="mem1 left">
+      <span>御守 月彦</span>
+      <p>
+      
+            「すこしばかり小さいかもしれませんなそのカギは」
+      </p>
+      </div>
+      <div class="mem3 left">
+      <span>麒麟児 ニア</span>
+      <p>
+      
+            「扉とは関係ありませんわね」
+      </p>
+      </div>
+      <div class="mem5 left">
+      <span>伊央里 絢</span>
+      <p>
+      
+            ｢特別実験体って面白そうだけど、ちょっとこわいね…｣
+      </p>
+      </div>
+      <div class="mem1 left">
+      <span>御守 月彦</span>
+      <p>
+      
+            「なにかの入れ物かもしれませんね。倉庫からみましょうか？」
+      </p>
+      </div>
+      <div class="mem4 right">
+      <span>蒼田 翔馬</span>
+      <p>
+      
+            「何かの装置の起動キーの可能性もあるな」
+      </p>
+      </div>
+      <div class="mem2 right">
+      <span>九重 是之</span>
+      <p>
+      
+            「なんにせよ大事に持っていろ」
+      </p>
+      </div>
+      <div class="mem2 right">
+      <span>九重 是之</span>
+      <p>
+      
+            「倉庫から行こう」
+      </p>
+      </div>
+      <div class="mem5 left">
+      <span>伊央里 絢</span>
+      <p>
+      
+            ｢安全そうだしね｣
+      </p>
+      </div>
+      <div class="mem4 right">
+      <span>蒼田 翔馬</span>
+      <p>
+      
+            「はしゃいで落とすなよ」
+      </p>
+      </div>
+      <div class="kp LtoR-early">
+      
+            倉庫
+      </div>
+      <div class="kp LtoR-early">
+      
+            ここには特にカギなどはかかっていない様子。<br>中は薄暗く、ひんやりとしておりダンボール箱で仕分けされた荷物が棚に並べられている。
+      </div>
+      <div class="kp LtoR-early">
+      
+            幸運で何か見つかるかもしれない
+      </div>
+      <div class="kp LtoR-early">
+      
+            目星で何か見つかるかもしれない
+      </div>
+      <div class="mem4 right">
+      <span>蒼田 翔馬</span>
+      <p>
+      
+            CCB&lt;=75 【幸運】 (1D100&lt;=75) ＞ 56 ＞ 成功
+            
+      </p>
+      </div>
+      <div class="mem2 right">
+      <span>九重 是之</span>
+      <p>
+      
+            CCB&lt;=80 【幸運】 (1D100&lt;=80) ＞ 73 ＞ 成功
+            
+      </p>
+      </div>
+      <div class="mem5 left">
+      <span>伊央里 絢</span>
+      <p>
+      
+            CCB&lt;=45 【幸運】 (1D100&lt;=45) ＞ 41 ＞ 成功
+            
+      </p>
+      </div>
+      <div class="mem1 left">
+      <span>御守 月彦</span>
+      <p>
+      
+            CCB&lt;=55 【幸運】 (1D100&lt;=55) ＞ 52 ＞ 成功
+            
+      </p>
+      </div>
+      <div class="mem3 left">
+      <span>麒麟児 ニア</span>
+      <p>
+      
+            CCB&lt;=76 【目星】 (1D100&lt;=76) ＞ 90 ＞ 失敗
+            
+      </p>
+      </div>
+      <div class="mem1 left">
+      <span>御守 月彦</span>
+      <p>
+      
+            CCB&lt;=32 【目星】 (1D100&lt;=32) ＞ 22 ＞ 成功
+            
+      </p>
+      </div>
+      <div class="mem2 right">
+      <span>九重 是之</span>
+      <p>
+      
+            CCB&lt;=49 【目星】 (1D100&lt;=49) ＞ 57 ＞ 失敗
+            
+      </p>
+      </div>
+      <div class="mem5 left">
+      <span>伊央里 絢</span>
+      <p>
+      
+            CCB&lt;=60 【目星】 (1D100&lt;=60) ＞ 41 ＞ 成功
+            
+      </p>
+      </div>
+      <div class="mem4 right">
+      <span>蒼田 翔馬</span>
+      <p>
+      
+            CCB&lt;=60 【目星】 (1D100&lt;=60) ＞ 43 ＞ 成功
+            
+      </p>
+      </div>
+      <div class="kp LtoR-early">
+      
+            じゃ幸運成功者で、可能なものは許可します
+      </div>
+      <div class="mem3 left">
+      <span>麒麟児 ニア</span>
+      <p>
+      
+            CCB&lt;=45 【幸運】 (1D100&lt;=45) ＞ 58 ＞ 失敗
+            
+      </p>
+      </div>
+      <div class="kp LtoR-early">
+      
+            救急セットおｋです（成功率+10、+1）
+      </div>
+      <div class="mem1 left">
+      <span>御守 月彦</span>
+      <p>
+      
+            救急セット成功率+10、+1　所持
+      </p>
+      </div>
+      <div class="kp LtoR-early">
+      
+            お願いします3ｍ
+      </div>
+      <div class="kp LtoR-early">
+      
+            ロープ3ｍおｋです
+      </div>
+      <div class="mem2 right">
+      <span>九重 是之</span>
+      <p>
+      
+            ロープ3ｍ
+      </p>
+      </div>
+      <div class="kp LtoR-early">
+      
+            非常食おｋです
+      </div>
+      <div class="mem5 left">
+      <span>伊央里 絢</span>
+      <p>
+      
+            非常食
+      </p>
+      </div>
+      <div class="kp LtoR-early">
+      
+            じゃ
+      </div>
+      <div class="kp LtoR-early">
+      
+            鉄片おｋです
+      </div>
+      <div class="kp LtoR-early">
+      
+            キック+1ダメ
+      </div>
+      <div class="mem4 right">
+      <span>蒼田 翔馬</span>
+      <p>
+      
+            つま先に鉄片　キック+1
+      </p>
+      </div>
+      <div class="mem1 left">
+      <span>御守 月彦</span>
+      <p>
+      
+            「いろいろありましたな。しばし拝借いたしましょう」
+      </p>
+      </div>
+      <div class="mem3 left">
+      <span>麒麟児 ニア</span>
+      <p>
+      
+            要らないものしかないな～　と思ってます
+      </p>
+      </div>
+      <div class="kp LtoR-early">
+      
+            カギ穴のついた小さな箱を見つけた。
+      </div>
+      <div class="kp LtoR-early">
+      
+            誰か…なんか
+      </div>
+      <div class="mem1 left">
+      <span>御守 月彦</span>
+      <p>
+      
+            「おやちょうどよさげな箱が。麒麟児様こちらを」
+      </p>
+      </div>
+      <div class="mem3 left">
+      <span>麒麟児 ニア</span>
+      <p>
+      
+            「あらこれは」<br>青カギを刺して回します
+      </p>
+      </div>
+      <div class="kp LtoR-early">
+      
+            お分かりのように、青いカギが合う。
+      </div>
+      <div class="kp LtoR-early">
+      
+            中には林檎の形にカットされた、青と白の入り交じった色合いの結晶のペンダントが入っていた。
+      </div>
+      <div class="kp LtoR-early">
+      
+            ｢スピリットクォーターのペンダント｣
+      </div>
+      <div class="kp LtoR-early">
+      
+            を1つ得ます
+      </div>
+      <div class="kp LtoR-early">
+      
+            誰が持ちますか
+      </div>
+      <div class="mem1 left">
+      <span>御守 月彦</span>
+      <p>
+      
+            「ペンダントですね」
+      </p>
+      </div>
+      <div class="mem3 left">
+      <span>麒麟児 ニア</span>
+      <p>
+      
+            「変わったデザインですわね」
+      </p>
+      </div>
+      <div class="mem4 right">
+      <span>蒼田 翔馬</span>
+      <p>
+      
+            「お嬢がもってろよ」
+      </p>
+      </div>
+      <div class="mem3 left">
+      <span>麒麟児 ニア</span>
+      <p>
+      
+            「麒・麟・児・ニ・ア！ですわ！」
+      </p>
+      </div>
+      <div class="mem4 right">
+      <span>蒼田 翔馬</span>
+      <p>
+      
+            「お嬢でいいだろ」
+      </p>
+      </div>
+      <div class="mem2 right">
+      <span>九重 是之</span>
+      <p>
+      
+            「うん、麒麟児が持っていろ」
+      </p>
+      </div>
+      <div class="mem6 right">
+      <span>ビクトマウス</span>
+      <p>
+      
+            ちゅー
+      </p>
+      </div>
+      <div class="mem3 left">
+      <span>麒麟児 ニア</span>
+      <p>
+      
+            「お嬢様はいくらでもいますわ！<br>でも麒麟児ニアはわたくしだけですの！」
+      </p>
+      </div>
+      <div class="mem6 right">
+      <span>ビクトマウス</span>
+      <p>
+      
+            ちゅー
+      </p>
+      </div>
+      <div class="mem5 left">
+      <span>伊央里 絢</span>
+      <p>
+      
+            ｢白雪姫みたいなペンダントだね〜｣
+      </p>
+      </div>
+      <div class="kp LtoR-early">
+      
+            暗闇に赤い目が輝き、ネズミの鳴き声が聞こえてくる。姿を現したのは、普通より数回り大きな身体を持つ赤い目のネズミの群れだ！
+      </div>
+      <div class="mem4 right">
+      <span>蒼田 翔馬</span>
+      <p>
+      
+            「あん？」
+      </p>
+      </div>
+      <div class="kp LtoR-early">
+      
+            ネズミの群れはあなたたちに襲いかかってきた！
+      </div>
+      <div class="kp LtoR-early">
+      
+            【ビクトマウス】×3と戦闘。
+      </div>
+      <div class="mem5 left">
+      <span>伊央里 絢</span>
+      <p>
+      
+            ｢ネ、ズミ…？｣
+      </p>
+      </div>
+      <div class="kp LtoR-early">
+      
+            戦闘開始です？
+      </div>
+      <div class="mem4 right">
+      <span>蒼田 翔馬</span>
+      <p>
+      
+            「でけぇネズミだな」
+      </p>
+      </div>
+      <div class="mem3 left">
+      <span>麒麟児 ニア</span>
+      <p>
+      
+            「これだけ大きいと　いい的ですわね！」
+      </p>
+      </div>
+      <div class="mem1 left">
+      <span>御守 月彦</span>
+      <p>
+      
+            「討伐いたしますか」
+      </p>
+      </div>
+      <div class="kp LtoR-early">
+      
+            DEX順で、お嬢様から
+      </div>
+      <div class="mem5 left">
+      <span>伊央里 絢</span>
+      <p>
+      
+            ｢このネズミは食べない方がよさそうだな…｣つぶやく
+      </p>
+      </div>
+      <div class="mem2 right">
+      <span>九重 是之</span>
+      <p>
+      
+            「食うな」
+      </p>
+      </div>
+      <div class="mem4 right">
+      <span>蒼田 翔馬</span>
+      <p>
+      
+            「こそこそするネズミは駆除だろ」
+      </p>
+      </div>
+      <div class="mem3 left">
+      <span>麒麟児 ニア</span>
+      <p>
+      
+            「わたくしたちに敵対する方は　こうですわよ!!!」<br>Aにマーシャルキック
+      </p>
+      </div>
+      <div class="mem3 left">
+      <span>麒麟児 ニア</span>
+      <p>
+      
+            CCB&lt;=41 【マーシャルアーツ】 (1D100&lt;=41) ＞ 9 ＞ 成功
+            
+      </p>
+      </div>
+      <div class="mem3 left">
+      <span>麒麟児 ニア</span>
+      <p>
+      
+            2d6+1d4 (2D6+1D4) ＞ 2[1,1]+1[1] ＞ 3
+            
+      </p>
+      </div>
+      <div class="kp LtoR-early">
+      
+            お嬢様のけりは、少し嫌そうだったのか掠った程度だった。
+      </div>
+      <div class="kp LtoR-early">
+      
+            次、翔馬くん
+      </div>
+      <div class="mem4 right">
+      <span>蒼田 翔馬</span>
+      <p>
+      
+            Bにこぶし
+      </p>
+      </div>
+      <div class="mem4 right">
+      <span>蒼田 翔馬</span>
+      <p>
+      
+            CCB&lt;=55 【こぶし（パンチ）】 (1D100&lt;=55) ＞ 89 ＞ 失敗
+            
+      </p>
+      </div>
+      <div class="mem6 right">
+      <span>ビクトマウス</span>
+      <p>
+      
+            choice[麒麟児 ニア,蒼田 翔馬,御守 月彦,九重 是之,伊央里 絢] (choice[麒麟児 ニア,蒼田 翔馬,御守 月彦,九重 是之,伊央里 絢]) ＞ 伊央里 絢
+            
+      </p>
+      </div>
+      <div class="mem6 right">
+      <span>ビクトマウス</span>
+      <p>
+      
+            S1D2 (1D2) ＞ 2
+            
+      </p>
+      </div>
+      <div class="mem6 right">
+      <span>ビクトマウス</span>
+      <p>
+      
+            CCB&lt;=40 【噛みつき】 (1D100&lt;=40) ＞ 25 ＞ 成功
+            
+      </p>
+      </div>
+      <div class="mem5 left">
+      <span>伊央里 絢</span>
+      <p>
+      
+            CCB&lt;=12 【回避】 (1D100&lt;=12) ＞ 58 ＞ 失敗
+            
+      </p>
+      </div>
+      <div class="mem6 right">
+      <span>ビクトマウス</span>
+      <p>
+      
+            ２ダメージ
+      </p>
+      </div>
+      <div class="kp LtoR-early">
+      
+            [ 伊央里 絢 ] HP : 12 → 10
+      </div>
+      <div class="mem6 right">
+      <span>ビクトマウス</span>
+      <p>
+      
+            choice[麒麟児 ニア,蒼田 翔馬,御守 月彦,九重 是之,伊央里 絢] (choice[麒麟児 ニア,蒼田 翔馬,御守 月彦,九重 是之,伊央里 絢]) ＞ 九重 是之
+            
+      </p>
+      </div>
+      <div class="mem6 right">
+      <span>ビクトマウス</span>
+      <p>
+      
+            S1D2 (1D2) ＞ 2
+            
+      </p>
+      </div>
+      <div class="mem6 right">
+      <span>ビクトマウス</span>
+      <p>
+      
+            CCB&lt;=40 【噛みつき】 (1D100&lt;=40) ＞ 14 ＞ 成功
+            
+      </p>
+      </div>
+      <div class="mem2 right">
+      <span>九重 是之</span>
+      <p>
+      
+            CCB&lt;=14 【回避】 (1D100&lt;=14) ＞ 62 ＞ 失敗
+            
+      </p>
+      </div>
+      <div class="kp LtoR-early">
+      
+            2ダメージです
+      </div>
+      <div class="kp LtoR-early">
+      
+            [ 九重 是之 ] HP : 10 → 8
+      </div>
+      <div class="mem6 right">
+      <span>ビクトマウス</span>
+      <p>
+      
+            choice[麒麟児 ニア,蒼田 翔馬,御守 月彦,九重 是之,伊央里 絢] (choice[麒麟児 ニア,蒼田 翔馬,御守 月彦,九重 是之,伊央里 絢]) ＞ 蒼田 翔馬
+            
+      </p>
+      </div>
+      <div class="mem6 right">
+      <span>ビクトマウス</span>
+      <p>
+      
+            S1D2 (1D2) ＞ 2
+            
+      </p>
+      </div>
+      <div class="mem6 right">
+      <span>ビクトマウス</span>
+      <p>
+      
+            CCB&lt;=40 【噛みつき】 (1D100&lt;=40) ＞ 13 ＞ 成功
+            
+      </p>
+      </div>
+      <div class="mem4 right">
+      <span>蒼田 翔馬</span>
+      <p>
+      
+            CCB&lt;=50 【回避】 (1D100&lt;=50) ＞ 30 ＞ 成功
+            
+      </p>
+      </div>
+      <div class="kp LtoR-early">
+      
+            回避成功しました。やったね
+      </div>
+      <div class="kp LtoR-early">
+      
+            月彦さんどうぞ
+      </div>
+      <div class="mem1 left">
+      <span>御守 月彦</span>
+      <p>
+      
+            CCB&lt;=70 【杖術】 (1D100&lt;=70) ＞ 96 ＞ 致命的失敗
+            
+      </p>
+      </div>
+      <div class="kp LtoR-early">
+      
+            転んで、次のターン攻撃できない
+      </div>
+      <div class="mem1 left">
+      <span>御守 月彦</span>
+      <p>
+      
+            「おっとと…」
+      </p>
+      </div>
+      <div class="kp LtoR-early">
+      
+            九重くんですね
+      </div>
+      <div class="mem2 right">
+      <span>九重 是之</span>
+      <p>
+      
+            CCB&lt;=55 【キック】 (1D100&lt;=55) ＞ 43 ＞ 成功
+            
+      </p>
+      </div>
+      <div class="mem2 right">
+      <span>九重 是之</span>
+      <p>
+      
+            1ｄ6+1ｄ4 (1D6+1D4) ＞ 6[6]+2[2] ＞ 8
+            
+      </p>
+      </div>
+      <div class="mem6 right">
+      <span>ビクトマウス</span>
+      <p>
+      
+            きゅー！
+      </p>
+      </div>
+      <div class="mem6 right">
+      <span>ビクトマウス</span>
+      <p>
+      
+            CCB&lt;=55 【回避】 (1D100&lt;=55) ＞ 82 ＞ 失敗
+            
+      </p>
+      </div>
+      <div class="kp LtoR-early">
+      
+            九重君の鋭い一撃は、ネズミの急所を狙い撃ち
+      </div>
+      <div class="kp LtoR-early">
+      
+            死に絶えました。
+      </div>
+      <div class="kp LtoR-early">
+      
+            伊央里くんターンです
+      </div>
+      <div class="mem5 left">
+      <span>伊央里 絢</span>
+      <p>
+      
+            Bにこぶし
+      </p>
+      </div>
+      <div class="mem5 left">
+      <span>伊央里 絢</span>
+      <p>
+      
+            CCB&lt;=60 【こぶし（パンチ）】 (1D100&lt;=60) ＞ 48 ＞ 成功
+            
+      </p>
+      </div>
+      <div class="mem6 right">
+      <span>ビクトマウス</span>
+      <p>
+      
+            CCB&lt;=55 【回避】 (1D100&lt;=55) ＞ 54 ＞ 成功
+            
+      </p>
+      </div>
+      <div class="kp LtoR-early">
+      
+            伊央里くんのパンチをネズミBは避けました。
+      </div>
+      <div class="kp LtoR-early">
+      
+            最初に戻って
+      </div>
+      <div class="kp LtoR-early">
+      
+            お嬢様
+      </div>
+      <div class="mem3 left">
+      <span>麒麟児 ニア</span>
+      <p>
+      
+            Bにマーシャルキック
+      </p>
+      </div>
+      <div class="mem3 left">
+      <span>麒麟児 ニア</span>
+      <p>
+      
+            CCB&lt;=41 【マーシャルアーツ】 (1D100&lt;=41) ＞ 69 ＞ 失敗
+            
+      </p>
+      </div>
+      <div class="kp LtoR-early">
+      
+            では失敗しました。
+      </div>
+      <div class="kp LtoR-early">
+      
+            翔馬君
+      </div>
+      <div class="mem4 right">
+      <span>蒼田 翔馬</span>
+      <p>
+      
+            Cにキック
+      </p>
+      </div>
+      <div class="kp LtoR-early">
+      
+            どうぞ
+      </div>
+      <div class="mem4 right">
+      <span>蒼田 翔馬</span>
+      <p>
+      
+            CCB&lt;=50 【キック】 (1D100&lt;=50) ＞ 52 ＞ 失敗
+            
+      </p>
+      </div>
+      <div class="kp LtoR-early">
+      
+            当たらない
+      </div>
+      <div class="mem6 right">
+      <span>ビクトマウス</span>
+      <p>
+      
+            choice[麒麟児 ニア,蒼田 翔馬,御守 月彦,九重 是之,伊央里 絢] (choice[麒麟児 ニア,蒼田 翔馬,御守 月彦,九重 是之,伊央里 絢]) ＞ 九重 是之
+            
+      </p>
+      </div>
+      <div class="mem6 right">
+      <span>ビクトマウス</span>
+      <p>
+      
+            1D2 (1D2) ＞ 2
+            
+      </p>
+      </div>
+      <div class="mem6 right">
+      <span>ビクトマウス</span>
+      <p>
+      
+            CCB&lt;=40 【噛みつき】 (1D100&lt;=40) ＞ 12 ＞ 成功
+            
+      </p>
+      </div>
+      <div class="mem2 right">
+      <span>九重 是之</span>
+      <p>
+      
+            CCB&lt;=14 【回避】 (1D100&lt;=14) ＞ 100 ＞ 致命的失敗
+            
+      </p>
+      </div>
+      <div class="kp LtoR-early">
+      
+            [ 九重 是之 ] HP : 8 → 6
+      </div>
+      <div class="mem6 right">
+      <span>ビクトマウス</span>
+      <p>
+      
+            choice[麒麟児 ニア,蒼田 翔馬,御守 月彦,九重 是之,伊央里 絢] (choice[麒麟児 ニア,蒼田 翔馬,御守 月彦,九重 是之,伊央里 絢]) ＞ 蒼田 翔馬
+            
+      </p>
+      </div>
+      <div class="mem6 right">
+      <span>ビクトマウス</span>
+      <p>
+      
+            1D2 (1D2) ＞ 1
+            
+      </p>
+      </div>
+      <div class="mem6 right">
+      <span>ビクトマウス</span>
+      <p>
+      
+            CCB&lt;=80 【体当たり】 (1D100&lt;=80) ＞ 45 ＞ 成功
+            
+      </p>
+      </div>
+      <div class="mem4 right">
+      <span>蒼田 翔馬</span>
+      <p>
+      
+            CCB&lt;=50 【回避】 (1D100&lt;=50) ＞ 51 ＞ 失敗
+            
+      </p>
+      </div>
+      <div class="mem6 right">
+      <span>ビクトマウス</span>
+      <p>
+      
+            1D3+1 (1D3+1) ＞ 3[3]+1 ＞ 4
+            
+      </p>
+      </div>
+      <div class="kp LtoR-early">
+      
+            [ 蒼田 翔馬 ] HP : 14 → 10
+      </div>
+      <div class="kp LtoR-early">
+      
+            月彦さんが…
+      </div>
+      <div class="kp LtoR-early">
+      
+            応急手当いいですよ
+      </div>
+      <div class="kp LtoR-early">
+      
+            +10で
+      </div>
+      <div class="mem1 left">
+      <span>御守 月彦</span>
+      <p>
+      
+            CCB&lt;=80 【応急手当】 (1D100&lt;=80) ＞ 63 ＞ 成功
+            
+      </p>
+      </div>
+      <div class="mem1 left">
+      <span>御守 月彦</span>
+      <p>
+      
+            1ｄ3 (1D3) ＞ 3
+            
+      </p>
+      </div>
+      <div class="kp LtoR-early">
+      
+            [ 九重 是之 ] HP : 6 → 10
+      </div>
+      <div class="mem1 left">
+      <span>御守 月彦</span>
+      <p>
+      
+            「九重様大丈夫ですか？」
+      </p>
+      </div>
+      <div class="mem2 right">
+      <span>九重 是之</span>
+      <p>
+      
+            「ありがとう……助かった」
+      </p>
+      </div>
+      <div class="kp LtoR-early">
+      
+            こけた九重くんをスルーして
+      </div>
+      <div class="kp LtoR-early">
+      
+            伊央里くんに
+      </div>
+      <div class="mem5 left">
+      <span>伊央里 絢</span>
+      <p>
+      
+            Bにキック
+      </p>
+      </div>
+      <div class="mem5 left">
+      <span>伊央里 絢</span>
+      <p>
+      
+            CCB&lt;=35 【キック】 (1D100&lt;=35) ＞ 42 ＞ 失敗
+            
+      </p>
+      </div>
+      <div class="kp LtoR-early">
+      
+            では失敗となります
+      </div>
+      <div class="kp LtoR-early">
+      
+            お嬢様ー
+      </div>
+      <div class="mem3 left">
+      <span>麒麟児 ニア</span>
+      <p>
+      
+            Bにマーシャルキック
+      </p>
+      </div>
+      <div class="mem5 left">
+      <span>伊央里 絢</span>
+      <p>
+      
+            ｢当たんない…｣しょぼん
+      </p>
+      </div>
+      <div class="mem3 left">
+      <span>麒麟児 ニア</span>
+      <p>
+      
+            CCB&lt;=41 【マーシャルアーツ】 (1D100&lt;=41) ＞ 14 ＞ 成功
+            
+      </p>
+      </div>
+      <div class="mem6 right">
+      <span>ビクトマウス</span>
+      <p>
+      
+            CCB&lt;=55 【回避】 (1D100&lt;=55) ＞ 21 ＞ 成功
+            
+      </p>
+      </div>
+      <div class="kp LtoR-early">
+      
+            ネズミは素早い
+      </div>
+      <div class="mem3 left">
+      <span>麒麟児 ニア</span>
+      <p>
+      
+            「ちょこまかと…!」
+      </p>
+      </div>
+      <div class="kp LtoR-early">
+      
+            ちなみにBは一度避けたので、このターン避けれません
+      </div>
+      <div class="kp LtoR-early">
+      
+            とだけ伝えておきます
+      </div>
+      <div class="kp LtoR-early">
+      
+            翔馬君どうぞ
+      </div>
+      <div class="mem4 right">
+      <span>蒼田 翔馬</span>
+      <p>
+      
+            Bを蹴り飛ばしたい
+      </p>
+      </div>
+      <div class="kp LtoR-early">
+      
+            はい
+      </div>
+      <div class="mem4 right">
+      <span>蒼田 翔馬</span>
+      <p>
+      
+            CCB&lt;=50 【キック】 (1D100&lt;=50) ＞ 32 ＞ 成功
+            
+      </p>
+      </div>
+      <div class="mem4 right">
+      <span>蒼田 翔馬</span>
+      <p>
+      
+            1D6+1D4 (1D6+1D4) ＞ 6[6]+2[2] ＞ 8
+            
+      </p>
+      </div>
+      <div class="kp LtoR-early">
+      
+            ネズミは砕け散ります
+      </div>
+      <div class="mem6 right">
+      <span>ビクトマウス</span>
+      <p>
+      
+            choice[麒麟児 ニア,蒼田 翔馬,御守 月彦,九重 是之,伊央里 絢] (choice[麒麟児 ニア,蒼田 翔馬,御守 月彦,九重 是之,伊央里 絢]) ＞ 麒麟児 ニア
+            
+      </p>
+      </div>
+      <div class="mem6 right">
+      <span>ビクトマウス</span>
+      <p>
+      
+            1D2 (1D2) ＞ 2
+            
+      </p>
+      </div>
+      <div class="mem6 right">
+      <span>ビクトマウス</span>
+      <p>
+      
+            CCB&lt;=40 【噛みつき】 (1D100&lt;=40) ＞ 96 ＞ 致命的失敗
+            
+      </p>
+      </div>
+      <div class="kp LtoR-early">
+      
+            Cはこのターン避けれません
+      </div>
+      <div class="kp LtoR-early">
+      
+            こけました
+      </div>
+      <div class="kp LtoR-early">
+      
+            おじいちゃんだね
+      </div>
+      <div class="mem1 left">
+      <span>御守 月彦</span>
+      <p>
+      
+            CCB&lt;=70 【杖術】 (1D100&lt;=70) ＞ 2 ＞ 決定的成功/スペシャル
+            
+      </p>
+      </div>
+      <div class="mem1 left">
+      <span>御守 月彦</span>
+      <p>
+      
+            1ｄ8 (1D8) ＞ 4
+            
+      </p>
+      </div>
+      <div class="mem1 left">
+      <span>御守 月彦</span>
+      <p>
+      
+            「よいしょぉ」
+      </p>
+      </div>
+      <div class="kp LtoR-early">
+      
+            死体の山が積みあがりました
+      </div>
+      <div class="kp LtoR-early">
+      
+            戦闘終了です
+      </div>
+      <div class="mem4 right">
+      <span>蒼田 翔馬</span>
+      <p>
+      
+            「なんだったんだ、あのネズミ」
+      </p>
+      </div>
+      <div class="kp LtoR-early">
+      
+            [ 伊央里 絢 ] HP : 10 → 10
+      </div>
+      <div class="kp LtoR-early">
+      
+            [ 伊央里 絢 ] HP : 10 → 7
+      </div>
+      <div class="kp LtoR-early">
+      
+            [ 伊央里 絢 ] HP : 7 → 10
+      </div>
+      <div class="mem1 left">
+      <span>御守 月彦</span>
+      <p>
+      
+            「翔馬様、お怪我診させてせていただいてもよろしいですかな？」
+      </p>
+      </div>
+      <div class="mem4 right">
+      <span>蒼田 翔馬</span>
+      <p>
+      
+            「よろしくお願いします」
+      </p>
+      </div>
+      <div class="mem5 left">
+      <span>伊央里 絢</span>
+      <p>
+      
+            ｢デカいし、はやかったね…｣
+      </p>
+      </div>
+      <div class="mem1 left">
+      <span>御守 月彦</span>
+      <p>
+      
+            CCB&lt;=70 【応急手当】 (1D100&lt;=70) ＞ 41 ＞ 成功
+            
+      </p>
+      </div>
+      <div class="mem1 left">
+      <span>御守 月彦</span>
+      <p>
+      
+            1ｄ3 (1D3) ＞ 1
+            
+      </p>
+      </div>
+      <div class="kp LtoR-early">
+      
+            [ 蒼田 翔馬 ] HP : 10 → 11
+      </div>
+      <div class="mem1 left">
+      <span>御守 月彦</span>
+      <p>
+      
+            「痛みだけでもやわらげばよいのですが…伊央里さまもこちらへ」
+      </p>
+      </div>
+      <div class="mem5 left">
+      <span>伊央里 絢</span>
+      <p>
+      
+            ｢お願いします〜｣
+      </p>
+      </div>
+      <div class="mem1 left">
+      <span>御守 月彦</span>
+      <p>
+      
+            CCB&lt;=70 【応急手当】 (1D100&lt;=70) ＞ 24 ＞ 成功
+            
+      </p>
+      </div>
+      <div class="mem1 left">
+      <span>御守 月彦</span>
+      <p>
+      
+            1ｄ3 (1D3) ＞ 3
+            
+      </p>
+      </div>
+      <div class="mem4 right">
+      <span>蒼田 翔馬</span>
+      <p>
+      
+            「いえ、ありがとうございます。この恩はいつか」
+      </p>
+      </div>
+      <div class="kp LtoR-early">
+      
+            [ 伊央里 絢 ] HP : 10 → 12
+      </div>
+      <div class="kp LtoR-early">
+      
+            では、次どうしますか？
+      </div>
+      <div class="mem5 left">
+      <span>伊央里 絢</span>
+      <p>
+      
+            ｢おじいちゃんありがとう〜！｣月彦さんにハグ
+      </p>
+      </div>
+      <div class="mem4 right">
+      <span>蒼田 翔馬</span>
+      <p>
+      
+            「最後は特別実験体保管室か？」
+      </p>
+      </div>
+      <div class="mem1 left">
+      <span>御守 月彦</span>
+      <p>
+      
+            「ほっほっほこんなじじいでもやくに立てたなら幸いでございます」ぎゅー
+      </p>
+      </div>
+      <div class="mem2 right">
+      <span>九重 是之</span>
+      <p>
+      
+            「仕方ない、行くか」
+      </p>
+      </div>
+      <div class="mem5 left">
+      <span>伊央里 絢</span>
+      <p>
+      
+            ｢またなんかいそう…｣
+      </p>
+      </div>
+      <div class="mem4 right">
+      <span>蒼田 翔馬</span>
+      <p>
+      
+            （おじじと孫がおる……）
+      </p>
+      </div>
+      <div class="mem3 left">
+      <span>麒麟児 ニア</span>
+      <p>
+      
+            「手際が良いですわね～<br>皆様　動くのに支障はなくって？」
+      </p>
+      </div>
+      <div class="mem2 right">
+      <span>九重 是之</span>
+      <p>
+      
+            「なんとか、大丈夫だ」
+      </p>
+      </div>
+      <div class="mem4 right">
+      <span>蒼田 翔馬</span>
+      <p>
+      
+            「こんなんでへばってられっかよ」
+      </p>
+      </div>
+      <div class="mem5 left">
+      <span>伊央里 絢</span>
+      <p>
+      
+            ｢大丈夫だよ！｣
+      </p>
+      </div>
+      <div class="mem1 left">
+      <span>御守 月彦</span>
+      <p>
+      
+            「私は問題ありませんよ。ですが次の部屋はなにやら気になるお名前ですし、すこし慎重に参りましょうか」
+      </p>
+      </div>
+      <div class="kp LtoR-early">
+      
+            扉は何かに破壊されたかのようにぶち破られており、中には簡単に侵入できるだろう。
+      </div>
+      <div class="mem3 left">
+      <span>麒麟児 ニア</span>
+      <p>
+      
+            「そうですわね！」
+      </p>
+      </div>
+      <div class="mem4 right">
+      <span>蒼田 翔馬</span>
+      <p>
+      
+            「わぁ……」
+      </p>
+      </div>
+      <div class="mem5 left">
+      <span>伊央里 絢</span>
+      <p>
+      
+            ｢えぇ…｣
+      </p>
+      </div>
+      <div class="mem2 right">
+      <span>九重 是之</span>
+      <p>
+      
+            いやな顔をしています
+      </p>
+      </div>
+      <div class="mem1 left">
+      <span>御守 月彦</span>
+      <p>
+      
+            「おやおや大当たりという感じですね」
+      </p>
+      </div>
+      <div class="mem3 left">
+      <span>麒麟児 ニア</span>
+      <p>
+      
+            「あら～瓦礫」
+      </p>
+      </div>
+      <div class="kp LtoR-early">
+      
+            両隅の培養槽の上に、無数のパイプが繋がれた棺のような機械が並んでいるが、ほとんどは空っぽだったり破壊されていたりで何も無い。.....しかし、真ん中にひとつだけ中身の入った無事な機械があった。<br>
+      </div>
+      <div class="mem1 left">
+      <span>御守 月彦</span>
+      <p>
+      
+            のぞく
+      </p>
+      </div>
+      <div class="kp LtoR-early">
+      
+            目星 ここで
+      </div>
+      <div class="mem3 left">
+      <span>麒麟児 ニア</span>
+      <p>
+      
+            CCB&lt;=76 【目星】 (1D100&lt;=76) ＞ 13 ＞ スペシャル
+            
+      </p>
+      </div>
+      <div class="mem1 left">
+      <span>御守 月彦</span>
+      <p>
+      
+            CCB&lt;=32 【目星】 (1D100&lt;=32) ＞ 97 ＞ 致命的失敗
+            
+      </p>
+      </div>
+      <div class="mem5 left">
+      <span>伊央里 絢</span>
+      <p>
+      
+            CCB&lt;=60 【目星】 (1D100&lt;=60) ＞ 86 ＞ 失敗
+            
+      </p>
+      </div>
+      <div class="mem2 right">
+      <span>九重 是之</span>
+      <p>
+      
+            CCB&lt;=49 【目星】 (1D100&lt;=49) ＞ 87 ＞ 失敗
+            
+      </p>
+      </div>
+      <div class="mem4 right">
+      <span>蒼田 翔馬</span>
+      <p>
+      
+            CCB&lt;=60 【目星】 (1D100&lt;=60) ＞ 81 ＞ 失敗
+            
+      </p>
+      </div>
+      <div class="kp LtoR-early">
+      
+            隅に、何枚かの資料が落ちていた。一部だけなんとか読めそうだ。
+      </div>
+      <div class="kp LtoR-early">
+      
+            【特別実験体リスト】<br>■ティムル<br>施術:グランドイーター<br>※下位実験体を自在に操る能力を得ており、機嫌によって力が変動する。<br>※無邪気な少女の姿をしており、行動に悪意はない。しかし、無知であるため相手方には危険を及ぼす場合がある。
+      </div>
+      <div class="kp LtoR-early">
+      
+            ■ノワール<br>施術:セラフィック<br>※感覚が異様に鋭く、また頭が極めて良い。飛行能力を得た関係上比較的体が弱い。<br>※大人しい性格。無用な怪我をさせないよう、十全に周囲環境に措置を施すこと。
+      </div>
+      <div class="kp LtoR-early">
+      
+            で、伝える前にここで幸運ロールをお願いします
+      </div>
+      <div class="kp LtoR-early">
+      
+            月彦さんは-10で
+      </div>
+      <div class="mem3 left">
+      <span>麒麟児 ニア</span>
+      <p>
+      
+            CCB&lt;=45 【幸運】 (1D100&lt;=45) ＞ 11 ＞ 成功
+            
+      </p>
+      </div>
+      <div class="mem1 left">
+      <span>御守 月彦</span>
+      <p>
+      
+            CCB&lt;=45 【幸運】 (1D100&lt;=45) ＞ 28 ＞ 成功
+            
+      </p>
+      </div>
+      <div class="mem2 right">
+      <span>九重 是之</span>
+      <p>
+      
+            CCB&lt;=80 【幸運】 (1D100&lt;=80) ＞ 22 ＞ 成功
+            
+      </p>
+      </div>
+      <div class="mem5 left">
+      <span>伊央里 絢</span>
+      <p>
+      
+            CCB&lt;=45 【幸運】 (1D100&lt;=45) ＞ 95 ＞ 失敗
+            
+      </p>
+      </div>
+      <div class="mem4 right">
+      <span>蒼田 翔馬</span>
+      <p>
+      
+            CCB&lt;=75 【幸運】 (1D100&lt;=75) ＞ 27 ＞ 成功
+            
+      </p>
+      </div>
+      <div class="kp LtoR-early">
+      
+            成功した人は何も起きない。
+      </div>
+      <div class="kp LtoR-early">
+      
+            失敗した人は、足を滑らせて培養槽の中へ落ちてしまう。培養液を飲み込んでしまい、身体に変化が....？
+      </div>
+      <div class="kp LtoR-early">
+      
+            1d6をどうぞ
+      </div>
+      <div class="mem3 left">
+      <span>麒麟児 ニア</span>
+      <p>
+      
+            「伊央里さまー!?」
+      </p>
+      </div>
+      <div class="mem5 left">
+      <span>伊央里 絢</span>
+      <p>
+      
+            1d6 (1D6) ＞ 5
+            
+      </p>
+      </div>
+      <div class="kp LtoR-early">
+      
+            耳がなくなって代わりに狐耳が生える。ついでにしっぽも生える。...なんだか頭がスッキリしてきたような？(耳としっぽには感覚もある):INT+2(18が上限)<br>
+      </div>
+      <div class="mem4 right">
+      <span>蒼田 翔馬</span>
+      <p>
+      
+            「ワァ……」
+      </p>
+      </div>
+      <div class="mem2 right">
+      <span>九重 是之</span>
+      <p>
+      
+            「……！？」
+      </p>
+      </div>
+      <div class="mem1 left">
+      <span>御守 月彦</span>
+      <p>
+      
+            「お狐様のお耳でしょうか…」
+      </p>
+      </div>
+      <div class="mem2 right">
+      <span>九重 是之</span>
+      <p>
+      
+            「……まぁ、そういうこともあるか」
+      </p>
+      </div>
+      <div class="mem3 left">
+      <span>麒麟児 ニア</span>
+      <p>
+      
+            「とりあえず吐いた方が良いですわ」
+      </p>
+      </div>
+      <div class="mem4 right">
+      <span>蒼田 翔馬</span>
+      <p>
+      
+            （哀れみの意味で合掌）
+      </p>
+      </div>
+      <div class="mem5 left">
+      <span>伊央里 絢</span>
+      <p>
+      
+            ｢ｹﾞﾎｯｹﾞﾎｯ…うぅ……なに？｣
+      </p>
+      </div>
+      <div class="mem2 right">
+      <span>九重 是之</span>
+      <p>
+      
+            「耳と、しっぽが」
+      </p>
+      </div>
+      <div class="mem2 right">
+      <span>九重 是之</span>
+      <p>
+      
+            「ふさふさと」
+      </p>
+      </div>
+      <div class="mem4 right">
+      <span>蒼田 翔馬</span>
+      <p>
+      
+            「ほらよ(スマフォの鏡機能で見せる)」
+      </p>
+      </div>
+      <div class="mem5 left">
+      <span>伊央里 絢</span>
+      <p>
+      
+            ｢耳としっぽ…？？｣さわる
+      </p>
+      </div>
+      <div class="mem1 left">
+      <span>御守 月彦</span>
+      <p>
+      
+            「お体に痛みなどはありませんか？」
+      </p>
+      </div>
+      <div class="kp LtoR-early">
+      
+            感覚がありますね。
+      </div>
+      <div class="mem5 left">
+      <span>伊央里 絢</span>
+      <p>
+      
+            ｢なにこれ…！？｣スマホを見てびっくり
+      </p>
+      </div>
+      <div class="kp LtoR-early">
+      
+            では
+      </div>
+      <div class="mem5 left">
+      <span>伊央里 絢</span>
+      <p>
+      
+            ｢アレ飲んじゃったの苦しかったけど痛くはない…｣
+      </p>
+      </div>
+      <div class="kp LtoR-early">
+      
+            真ん中の培養槽
+      </div>
+      <div class="kp LtoR-early">
+      
+            機械の中は薄青色の培養液で満たされており、大きな翼を持ち黒い包帯で目隠しをされた、人形のように美しい青年が眠っている。
+      </div>
+      <div class="kp LtoR-early">
+      
+            先程の幸運ロールで失敗者がいる場合そのはずみで、いなかった場合はPCたちが機械に近づくと、ﾋﾟｰｯﾋﾟｰｯと機械音が鳴り響いて機械内の培養液が排出されﾌﾟｼｭｰと音を立てて機械の棺の蓋が開き、中から患者服の青年が転がるように出てきた
+      </div>
+      <div class="kp LtoR-early">
+      
+            灰色の髪の青年は咳き込んだ後、キョロキョロと周囲を見回し｢そこにいらっしゃるのはどなたですか？｣と聞いてくる。
+      </div>
+      <div class="mem3 left">
+      <span>麒麟児 ニア</span>
+      <p>
+      
+            「わたくしは　麒麟児ニアですわ!!!」
+      </p>
+      </div>
+      <div class="mem1 left">
+      <span>御守 月彦</span>
+      <p>
+      
+            「意思疎通ができるのですね。私は御守月彦と申します」
+      </p>
+      </div>
+      <div class="mem2 right">
+      <span>九重 是之</span>
+      <p>
+      
+            「話ができるなら害はないか。九重だ」
+      </p>
+      </div>
+      <div class="mem4 right">
+      <span>蒼田 翔馬</span>
+      <p>
+      
+            「オレは翔馬」
+      </p>
+      </div>
+      <div class="mem5 left">
+      <span>伊央里 絢</span>
+      <p>
+      
+            ｢伊央里絢だよ、目隠し外そうか…？｣
+      </p>
+      </div>
+      <div class="mem7 left">
+      <span>ノワール</span>
+      <p>
+      
+            「えっと、麒麟児さんに御守さんに九重さんに翔馬さんに伊央里さんですね」
+      </p>
+      </div>
+      <div class="mem3 left">
+      <span>麒麟児 ニア</span>
+      <p>
+      
+            「おまちになって　この方どうやら感覚が鋭いらしいんですの」<br>流れで資料を共有
+      </p>
+      </div>
+      <div class="mem7 left">
+      <span>ノワール</span>
+      <p>
+      
+            「すいません。私は目が見えないものでして、目隠しを外しても変わらないのです」
+      </p>
+      </div>
+      <div class="mem2 right">
+      <span>九重 是之</span>
+      <p>
+      
+            「見えなくてもわかるのは鋭いからか」
+      </p>
+      </div>
+      <div class="mem5 left">
+      <span>伊央里 絢</span>
+      <p>
+      
+            ｢そうなのかぁ…大丈夫ならいいんだけど｣
+      </p>
+      </div>
+      <div class="mem7 left">
+      <span>ノワール</span>
+      <p>
+      
+            「えっと、危険な方ではないようですね。私は、実験体の一人の、ノワールと云う者です」
+      </p>
+      </div>
+      <div class="mem4 right">
+      <span>蒼田 翔馬</span>
+      <p>
+      
+            「……(資料をみて思案中)」
+      </p>
+      </div>
+      <div class="mem1 left">
+      <span>御守 月彦</span>
+      <p>
+      
+            「身体が繊細でいらっしゃるそうですね。瓦礫があるといけませんからどうかお気をつけて」
+      </p>
+      </div>
+      <div class="mem7 left">
+      <span>ノワール</span>
+      <p>
+      
+            「ありがとうございます」
+      </p>
+      </div>
+      <div class="mem2 right">
+      <span>九重 是之</span>
+      <p>
+      
+            「羽があるな。触ってみてもいいか」
+      </p>
+      </div>
+      <div class="mem1 left">
+      <span>御守 月彦</span>
+      <p>
+      
+            手を貸して立たせとけるかな
+      </p>
+      </div>
+      <div class="mem7 left">
+      <span>ノワール</span>
+      <p>
+      
+            「あ、はい」
+      </p>
+      </div>
+      <div class="mem2 right">
+      <span>九重 是之</span>
+      <p>
+      
+            後ろに回って背中支えつつモフモフします
+      </p>
+      </div>
+      <div class="kp LtoR-early">
+      
+            じゃ、ノワールは立ち上がりました。
+      </div>
+      <div class="mem1 left">
+      <span>御守 月彦</span>
+      <p>
+      
+            「やはり空を飛べるのですか？」
+      </p>
+      </div>
+      <div class="mem7 left">
+      <span>ノワール</span>
+      <p>
+      
+            「一応飛べますが、室内ではそこまで飛びませんね」
+      </p>
+      </div>
+      <div class="mem2 right">
+      <span>九重 是之</span>
+      <p>
+      
+            「なるほど、本物はこういう構造でこういう手触り……」さわさわ
+      </p>
+      </div>
+      <div class="mem3 left">
+      <span>麒麟児 ニア</span>
+      <p>
+      
+            「ところで　ティルムさまの行方をご存じない？<br>あの方がおそらく何か仕出かしてますの」
+      </p>
+      </div>
+      <div class="mem5 left">
+      <span>伊央里 絢</span>
+      <p>
+      
+            ｢ノワールくんよろしくね、俺も実験体みたいになっちゃったけど…｣狐耳がピクピク動く
+      </p>
+      </div>
+      <div class="mem2 right">
+      <span>九重 是之</span>
+      <p>
+      
+            「大変勉強になった、ありがとう」
+      </p>
+      </div>
+      <div class="mem7 left">
+      <span>ノワール</span>
+      <p>
+      
+            「培養液を少し飲んでしまったのですね。そのぐらいでしたら、少しすれば治ると思いますよ」
+      </p>
+      </div>
+      <div class="mem5 left">
+      <span>伊央里 絢</span>
+      <p>
+      
+            ｢俺もー｣羽触る
+      </p>
+      </div>
+      <div class="mem2 right">
+      <span>九重 是之</span>
+      <p>
+      
+            「では俺は伊央里を触ろう」さわさわ
+      </p>
+      </div>
+      <div class="mem7 left">
+      <span>ノワール</span>
+      <p>
+      
+            「私は眠っていたので今までの状況はわかりませんが、ティルムは私と同じ実験体の子供ですね。無邪気な赤い目の少女なのですが、…施された施術は私のものよりも危険ですね」
+      </p>
+      </div>
+      <div class="mem4 right">
+      <span>蒼田 翔馬</span>
+      <p>
+      
+            （……非人道的な研究だな）
+      </p>
+      </div>
+      <div class="mem5 left">
+      <span>伊央里 絢</span>
+      <p>
+      
+            ｢え、治るの!?誰か写真撮って！｣
+      </p>
+      </div>
+      <div class="mem3 left">
+      <span>麒麟児 ニア</span>
+      <p>
+      
+            「あなたは　望んでこの様なところに？」
+      </p>
+      </div>
+      <div class="mem2 right">
+      <span>九重 是之</span>
+      <p>
+      
+            「なるほど狐耳というのはこういう……」もふもふ
+      </p>
+      </div>
+      <div class="mem4 right">
+      <span>蒼田 翔馬</span>
+      <p>
+      
+            （この子も……恐らくさっき見た少女も被害者か？）
+      </p>
+      </div>
+      <div class="mem1 left">
+      <span>御守 月彦</span>
+      <p>
+      
+            「では僭越ながら私がお撮りしましょう」
+      </p>
+      </div>
+      <div class="mem1 left">
+      <span>御守 月彦</span>
+      <p>
+      
+            CCB&lt;=10 【写真術】 (1D100&lt;=10) ＞ 3 ＞ 決定的成功
+            
+      </p>
+      </div>
+      <div class="mem5 left">
+      <span>伊央里 絢</span>
+      <p>
+      
+            ｢あぅ…九重くんくすぐったい…｣
+      </p>
+      </div>
+      <div class="kp LtoR-early">
+      
+            では素晴らしい写真が取れましたね
+      </div>
+      <div class="mem2 right">
+      <span>九重 是之</span>
+      <p>
+      
+            「すまない。しかし感覚が短期間でここまで」
+      </p>
+      </div>
+      <div class="kp LtoR-early">
+      
+            あの、これから…どうしますか？
+      </div>
+      <div class="mem2 right">
+      <span>九重 是之</span>
+      <p>
+      
+            しっぽもふもふ
+      </p>
+      </div>
+      <div class="mem1 left">
+      <span>御守 月彦</span>
+      <p>
+      
+            「我ながらいいですねぇ！伊央里様のすまほは確か切れてしまわれていましたから後ほどお送りいたしますね」
+      </p>
+      </div>
+      <div class="mem5 left">
+      <span>伊央里 絢</span>
+      <p>
+      
+            ｢…うん、ちゃんと感覚あるし聞こえるよ｣しっぽふりふり
+      </p>
+      </div>
+      <div class="mem2 right">
+      <span>九重 是之</span>
+      <p>
+      
+            「俄然興味がわいてきたなここの研究とやらに」しゅるん
+      </p>
+      </div>
+      <div class="mem4 right">
+      <span>蒼田 翔馬</span>
+      <p>
+      
+            （……まだパーツが揃わねぇな。他の階と……素体の保管エリア見るしかねぇか）
+      </p>
+      </div>
+      <div class="mem5 left">
+      <span>伊央里 絢</span>
+      <p>
+      
+            ｢ありがとー！送って送って！｣しっぽブンブン(無意識)
+      </p>
+      </div>
+      <div class="mem4 right">
+      <span>蒼田 翔馬</span>
+      <p>
+      
+            「とりあえず下に降りよう」
+      </p>
+      </div>
+      <div class="mem1 left">
+      <span>御守 月彦</span>
+      <p>
+      
+            「ノワール様は歩けますかな？倉庫に履物等があればほしいところですが…」
+      </p>
+      </div>
+      <div class="mem3 left">
+      <span>麒麟児 ニア</span>
+      <p>
+      
+            「ノワールさまは　どういたしますの？」
+      </p>
+      </div>
+      <div class="mem2 right">
+      <span>九重 是之</span>
+      <p>
+      
+            「そうだな。調べよう」なごりおしそうに
+      </p>
+      </div>
+      <div class="mem4 right">
+      <span>蒼田 翔馬</span>
+      <p>
+      
+            「扉を壊したのがもう一人の子なら、保護してやるのが一番だろう」
+      </p>
+      </div>
+      <div class="mem3 left">
+      <span>麒麟児 ニア</span>
+      <p>
+      
+            「テーピングならありましてよ！」
+      </p>
+      </div>
+      <div class="mem7 left">
+      <span>ノワール</span>
+      <p>
+      
+            「えっと。そのままでも大丈夫です」
+      </p>
+      </div>
+      <div class="mem2 right">
+      <span>九重 是之</span>
+      <p>
+      
+            「何か履くものがあったほうがいい。危険だ」
+      </p>
+      </div>
+      <div class="mem4 right">
+      <span>蒼田 翔馬</span>
+      <p>
+      
+            「オレのインソールをテーピングでとめて簡易的に履物にする手がある」
+      </p>
+      </div>
+      <div class="mem5 left">
+      <span>伊央里 絢</span>
+      <p>
+      
+            ｢やっぱり赤い目の子いたんだ…どこに行ったんだろ…ノワールくんのお友達だから心配になってきた｣
+      </p>
+      </div>
+      <div class="kp LtoR-early">
+      
+            ちなみにノワールくんも一緒に行動する？
+      </div>
+      <div class="kp LtoR-early">
+      
+            おいてくこともできるけど
+      </div>
+      <div class="mem1 left">
+      <span>御守 月彦</span>
+      <p>
+      
+            「離れるのは危険な気がしますから翔馬様の案を使わせていただいて倉庫によってから降りましょうか」
+      </p>
+      </div>
+      <div class="mem2 right">
+      <span>九重 是之</span>
+      <p>
+      
+            「それがいい」
+      </p>
+      </div>
+      <div class="mem3 left">
+      <span>麒麟児 ニア</span>
+      <p>
+      
+            「いきますわよ！」<br>先頭をいきます
+      </p>
+      </div>
+      <div class="mem2 right">
+      <span>九重 是之</span>
+      <p>
+      
+            テーピング手伝ってついていきます
+      </p>
+      </div>
+      <div class="kp LtoR-early">
+      
+            じゃノワールくんは言われるままについてきます
+      </div>
+      <div class="mem1 left">
+      <span>御守 月彦</span>
+      <p>
+      
+            「ノワール様お手をどうぞ」
+      </p>
+      </div>
+      <div class="mem7 left">
+      <span>ノワール</span>
+      <p>
+      
+            「はい」
+      </p>
+      </div>
+      <div class="mem5 left">
+      <span>伊央里 絢</span>
+      <p>
+      
+            ｢靴あるといいね｣ノワールくんに親近感で近くを歩く
+      </p>
+      </div>
+      <div class="mem2 right">
+      <span>九重 是之</span>
+      <p>
+      
+            後ろから観察しながら歩く
+      </p>
+      </div>
+      <div class="mem4 right">
+      <span>蒼田 翔馬</span>
+      <p>
+      
+            「……(歩きながら考えたことと発見をメモに書き留める)」
+      </p>
+      </div>
+      <div class="mem1 left">
+      <span>御守 月彦</span>
+      <p>
+      
+            CCB&lt;=55 【幸運】 (1D100&lt;=55) ＞ 10 ＞ スペシャル
+            
+      </p>
+      </div>
+      <div class="kp LtoR-early">
+      
+            幸運でくつみつけてください
+            
+      </div>
+      <div class="kp LtoR-early">
+      
+            月彦さんのやる気スイッチが入った
+      </div>
+      <div class="mem4 right">
+      <span>蒼田 翔馬</span>
+      <p>
+      
+            CCB&lt;=75 【幸運】 (1D100&lt;=75) ＞ 96 ＞ 致命的失敗
+            
+      </p>
+      </div>
+      <div class="kp LtoR-early">
+      
+            丁度いい靴とよりクロックスのようなものを見つけた…かな？
+      </div>
+      <div class="mem2 right">
+      <span>九重 是之</span>
+      <p>
+      
+            CCB&lt;=80 【幸運】 (1D100&lt;=80) ＞ 22 ＞ 成功
+            
+      </p>
+      </div>
+      <div class="mem5 left">
+      <span>伊央里 絢</span>
+      <p>
+      
+            CCB&lt;=45 【幸運】 (1D100&lt;=45) ＞ 27 ＞ 成功
+            
+      </p>
+      </div>
+      <div class="mem3 left">
+      <span>麒麟児 ニア</span>
+      <p>
+      
+            CCB&lt;=45 【幸運】 (1D100&lt;=45) ＞ 75 ＞ 失敗
+            
+      </p>
+      </div>
+      <div class="kp LtoR-early">
+      
+            転んでください
+      </div>
+      <div class="kp LtoR-early">
+      
+            1
+      </div>
+      <div class="mem4 right">
+      <span>蒼田 翔馬</span>
+      <p>
+      
+            「いてぇっ」
+      </p>
+      </div>
+      <div class="mem7 left">
+      <span>ノワール</span>
+      <p>
+      
+            「大丈夫ですか？」
+      </p>
+      </div>
+      <div class="kp LtoR-early">
+      
+            [ 蒼田 翔馬 ] HP : 11 → 10
+      </div>
+      <div class="mem7 left">
+      <span>ノワール</span>
+      <p>
+      
+            S1D100 (1D100) ＞ 94
+            
+      </p>
+      </div>
+      <div class="mem4 right">
+      <span>蒼田 翔馬</span>
+      <p>
+      
+            「大丈夫だ、心配すんな」
+      </p>
+      </div>
+      <div class="kp LtoR-early">
+      
+            えっと
+      </div>
+      <div class="kp LtoR-early">
+      
+            全回復していいですよ
+      </div>
+      <div class="mem1 left">
+      <span>御守 月彦</span>
+      <p>
+      
+            「物が多いですから…お怪我は大丈夫ですか？」
+      </p>
+      </div>
+      <div class="mem2 right">
+      <span>九重 是之</span>
+      <p>
+      
+            「靴下もあった」
+      </p>
+      </div>
+      <div class="mem4 right">
+      <span>蒼田 翔馬</span>
+      <p>
+      
+            「あぁ、なんとか」
+      </p>
+      </div>
+      <div class="mem5 left">
+      <span>伊央里 絢</span>
+      <p>
+      
+            ｢気をつけて〜｣翔馬くん立つの手伝う
+      </p>
+      </div>
+      <div class="kp LtoR-early">
+      
+            [ 蒼田 翔馬 ] HP : 10 → 14
+      </div>
+      <div class="mem1 left">
+      <span>御守 月彦</span>
+      <p>
+      
+            「これで間に合いますかね。ノワール様ここにおかけくださいませ」
+      </p>
+      </div>
+      <div class="mem7 left">
+      <span>ノワール</span>
+      <p>
+      
+            「わかりました」
+      </p>
+      </div>
+      <div class="kp LtoR-early">
+      
+            倉庫にあった椅子に座りましょう
+      </div>
+      <div class="mem1 left">
+      <span>御守 月彦</span>
+      <p>
+      
+            履かせます
+      </p>
+      </div>
+      <div class="mem2 right">
+      <span>九重 是之</span>
+      <p>
+      
+            「たのむ」靴下差し出し
+      </p>
+      </div>
+      <div class="mem1 left">
+      <span>御守 月彦</span>
+      <p>
+      
+            「具合はどうですかな？窮屈ではございませんか？」
+      </p>
+      </div>
+      <div class="mem7 left">
+      <span>ノワール</span>
+      <p>
+      
+            「ありがとうございます」
+      </p>
+      </div>
+      <div class="mem7 left">
+      <span>ノワール</span>
+      <p>
+      
+            「大丈夫です」
+      </p>
+      </div>
+      <div class="mem5 left">
+      <span>伊央里 絢</span>
+      <p>
+      
+            ｢よかったね〜｣にこにこ
+      </p>
+      </div>
+      <div class="mem1 left">
+      <span>御守 月彦</span>
+      <p>
+      
+            「では、これで参りましょうか」また手を取る
+      </p>
+      </div>
+      <div class="mem7 left">
+      <span>ノワール</span>
+      <p>
+      
+            「はい」
+      </p>
+      </div>
+      <div class="mem7 left">
+      <span>ノワール</span>
+      <p>
+      
+            手を取りましょう
+      </p>
+      </div>
+      <div class="kp LtoR-early">
+      
+            えーっとじゃ
+      </div>
+      <div class="kp LtoR-early">
+      
+            次どうしましょうか
+      </div>
+      <div class="mem3 left">
+      <span>麒麟児 ニア</span>
+      <p>
+      
+            「次は2階ですわ！いきますわよ！」<br>先頭を歩きます
+      </p>
+      </div>
+      <div class="mem3 left">
+      <span>麒麟児 ニア</span>
+      <p>
+      
+            冷蔵にいこうか
+      </p>
+      </div>
+      <div class="kp LtoR-early">
+      
+            冷蔵エリア
+      </div>
+      <div class="kp LtoR-early">
+      
+            たくさんの缶詰や、奇妙な肉塊が置かれた冷蔵庫のような場所だ。<br>ちょうど良いひんやり具合で快適に休めるが、あまりの物量にやや薄気味悪いものを感じる.....
+      </div>
+      <div class="kp LtoR-early">
+      
+            SANチェックです
+      </div>
+      <div class="kp LtoR-early">
+      
+            成功で1、失敗で1D3
+      </div>
+      <div class="mem3 left">
+      <span>麒麟児 ニア</span>
+      <p>
+      
+            CCB&lt;=44 【SAN値チェック】 (1D100&lt;=44) ＞ 82 ＞ 失敗
+            
+      </p>
+      </div>
+      <div class="mem2 right">
+      <span>九重 是之</span>
+      <p>
+      
+            CCB&lt;=86 【SAN値チェック】 (1D100&lt;=86) ＞ 18 ＞ 成功
+            
+      </p>
+      </div>
+      <div class="mem1 left">
+      <span>御守 月彦</span>
+      <p>
+      
+            CCB&lt;=65 【SAN値チェック】 (1D100&lt;=65) ＞ 72 ＞ 失敗
+            
+      </p>
+      </div>
+      <div class="kp LtoR-early">
+      
+            [ 九重 是之 ] SAN : 86 → 85
+      </div>
+      <div class="mem5 left">
+      <span>伊央里 絢</span>
+      <p>
+      
+            CCB&lt;=44 【SAN値チェック】 (1D100&lt;=44) ＞ 46 ＞ 失敗
+            
+      </p>
+      </div>
+      <div class="mem4 right">
+      <span>蒼田 翔馬</span>
+      <p>
+      
+            CCB&lt;=74 【SAN値チェック】 (1D100&lt;=74) ＞ 21 ＞ 成功
+            
+      </p>
+      </div>
+      <div class="mem1 left">
+      <span>御守 月彦</span>
+      <p>
+      
+            1ｄ3 (1D3) ＞ 3
+            
+      </p>
+      </div>
+      <div class="mem3 left">
+      <span>麒麟児 ニア</span>
+      <p>
+      
+            1d3 (1D3) ＞ 1[1] ＞ 1
+            
+      </p>
+      </div>
+      <div class="kp LtoR-early">
+      
+            [ 蒼田 翔馬 ] SAN : 74 → 73
+      </div>
+      <div class="mem5 left">
+      <span>伊央里 絢</span>
+      <p>
+      
+            1d3 (1D3) ＞ 2
+            
+      </p>
+      </div>
+      <div class="kp LtoR-early">
+      
+            [ 麒麟児 ニア ] SAN : 44 → 43
+      </div>
+      <div class="kp LtoR-early">
+      
+            [ 御守 月彦 ] SAN : 65 → 62
+      </div>
+      <div class="kp LtoR-early">
+      
+            [ 伊央里 絢 ] SAN : 44 → 42
+      </div>
+      <div class="mem1 left">
+      <span>御守 月彦</span>
+      <p>
+      
+            「少し気味が悪い場所ですねぇ」
+      </p>
+      </div>
+      <div class="mem3 left">
+      <span>麒麟児 ニア</span>
+      <p>
+      
+            「このお肉　食用なのかしら……」
+      </p>
+      </div>
+      <div class="mem4 right">
+      <span>蒼田 翔馬</span>
+      <p>
+      
+            「まさか人肉の缶詰とかじゃねぇだろうな？」
+      </p>
+      </div>
+      <div class="mem2 right">
+      <span>九重 是之</span>
+      <p>
+      
+            「あまり触らないほうがいい気がするな」
+      </p>
+      </div>
+      <div class="mem5 left">
+      <span>伊央里 絢</span>
+      <p>
+      
+            ｢怖いこと言うのやめてよぉ!!｣
+      </p>
+      </div>
+      <div class="kp LtoR-early">
+      
+            PC全員[アイデア]ロール。
+      </div>
+      <div class="mem1 left">
+      <span>御守 月彦</span>
+      <p>
+      
+            CCB&lt;=85 【アイデア】 (1D100&lt;=85) ＞ 74 ＞ 成功
+            
+      </p>
+      </div>
+      <div class="mem2 right">
+      <span>九重 是之</span>
+      <p>
+      
+            CCB&lt;=65 【アイデア】 (1D100&lt;=65) ＞ 58 ＞ 成功
+            
+      </p>
+      </div>
+      <div class="mem3 left">
+      <span>麒麟児 ニア</span>
+      <p>
+      
+            CCB&lt;=60 【アイデア】 (1D100&lt;=60) ＞ 50 ＞ 成功
+            
+      </p>
+      </div>
+      <div class="mem5 left">
+      <span>伊央里 絢</span>
+      <p>
+      
+            CCB&lt;=75 【アイデア】 (1D100&lt;=75) ＞ 87 ＞ 失敗
+            
+      </p>
+      </div>
+      <div class="mem4 right">
+      <span>蒼田 翔馬</span>
+      <p>
+      
+            CCB&lt;=75 【アイデア】 (1D100&lt;=75) ＞ 27 ＞ 成功
+            
+      </p>
+      </div>
+      <div class="kp LtoR-early">
+      
+            成功者は、エリアの一方からﾋｭｳｩｳ....という何かが飛ぶような音と異様な冷気が近づいてくることに気づくだろう。
+      </div>
+      <div class="mem3 left">
+      <span>麒麟児 ニア</span>
+      <p>
+      
+            見ようか！
+      </p>
+      </div>
+      <div class="kp LtoR-early">
+      
+            ノワールくんも気づいてますね
+      </div>
+      <div class="kp LtoR-early">
+      
+            えっと
+      </div>
+      <div class="kp LtoR-early">
+      
+            更に全員[隠れる]ロール
+      </div>
+      <div class="kp LtoR-early">
+      
+            だったんですが
+      </div>
+      <div class="kp LtoR-early">
+      
+            ニア様、隠れない？
+      </div>
+      <div class="mem2 right">
+      <span>九重 是之</span>
+      <p>
+      
+            CCB&lt;=10 【隠れる】 (1D100&lt;=10) ＞ 6 ＞ 成功
+            
+      </p>
+      </div>
+      <div class="mem1 left">
+      <span>御守 月彦</span>
+      <p>
+      
+            CCB&lt;=10 【隠れる】 (1D100&lt;=10) ＞ 91 ＞ 失敗
+            
+      </p>
+      </div>
+      <div class="mem2 right">
+      <span>九重 是之</span>
+      <p>
+      
+            じゃあニアちゃんの腕を引きよせる
+      </p>
+      </div>
+      <div class="mem4 right">
+      <span>蒼田 翔馬</span>
+      <p>
+      
+            CCB&lt;=50 【隠れる】 (1D100&lt;=50) ＞ 93 ＞ 失敗
+            
+      </p>
+      </div>
+      <div class="mem3 left">
+      <span>麒麟児 ニア</span>
+      <p>
+      
+            「！」
+      </p>
+      </div>
+      <div class="mem5 left">
+      <span>伊央里 絢</span>
+      <p>
+      
+            CCB&lt;=45 【隠れる】 (1D100&lt;=45) ＞ 39 ＞ 成功
+            
+      </p>
+      </div>
+      <div class="kp LtoR-early">
+      
+            成功者は無事に物陰に隠れ息を潜めることに成功し、通りがかりの【ホロウランタン】×3から隠れることが出来ました。
+      </div>
+      <div class="kp LtoR-early">
+      
+            失敗者は幽霊特有の異様な冷気をもろに浴びてしまい、4ダメージを受けかつ暫くの間｢身体を動かす系統の技能｣にペナルティを喰らいます。
+      </div>
+      <div class="kp LtoR-early">
+      
+            ノワールくんは隠れてます
+      </div>
+      <div class="kp LtoR-early">
+      
+            [ 蒼田 翔馬 ] HP : 14 → 10
+      </div>
+      <div class="kp LtoR-early">
+      
+            [ 御守 月彦 ] HP : 11 → 7
+      </div>
+      <div class="kp LtoR-early">
+      
+            ノワールくん、回復するけど…一人しかできないね。今回は
+      </div>
+      <div class="mem2 right">
+      <span>九重 是之</span>
+      <p>
+      
+            「変な物にすぐちかづこうとしないほうがいい」ニアちゃんに囁き
+      </p>
+      </div>
+      <div class="mem1 left">
+      <span>御守 月彦</span>
+      <p>
+      
+            「おばけ…でしょうか…」
+      </p>
+      </div>
+      <div class="mem7 left">
+      <span>ノワール</span>
+      <p>
+      
+            S1D100 (1D100) ＞ 32
+            
+      </p>
+      </div>
+      <div class="mem3 left">
+      <span>麒麟児 ニア</span>
+      <p>
+      
+            「わかりましたわ……助かりましたわ九重さま」
+      </p>
+      </div>
+      <div class="kp LtoR-early">
+      
+            [ 御守 月彦 ] HP : 7 → 11
+      </div>
+      <div class="mem1 left">
+      <span>御守 月彦</span>
+      <p>
+      
+            CCB&lt;=70 【応急手当】 (1D100&lt;=70) ＞ 100 ＞ 致命的失敗
+            
+      </p>
+      </div>
+      <div class="mem5 left">
+      <span>伊央里 絢</span>
+      <p>
+      
+            ｢みんなよくわかったね…わからなかった…｣
+      </p>
+      </div>
+      <div class="mem2 right">
+      <span>九重 是之</span>
+      <p>
+      
+            「うむ。好奇心が強いのはいいことだが」
+      </p>
+      </div>
+      <div class="mem1 left">
+      <span>御守 月彦</span>
+      <p>
+      
+            1d3 (1D3) ＞ 2
+            
+      </p>
+      </div>
+      <div class="kp LtoR-early">
+      
+            [ 御守 月彦 ] HP : 11 → 9
+      </div>
+      <div class="mem7 left">
+      <span>ノワール</span>
+      <p>
+      
+            ｢...この場所で死んだ誰かの幽霊だと思います｣
+      </p>
+      </div>
+      <div class="mem1 left">
+      <span>御守 月彦</span>
+      <p>
+      
+            「おっと…すみません寒さで手が…申し訳ありません」
+      </p>
+      </div>
+      <div class="mem4 right">
+      <span>蒼田 翔馬</span>
+      <p>
+      
+            「大丈夫です、お気になさらず」
+      </p>
+      </div>
+      <div class="mem2 right">
+      <span>九重 是之</span>
+      <p>
+      
+            「死ぬのか。研究所で」
+      </p>
+      </div>
+      <div class="mem4 right">
+      <span>蒼田 翔馬</span>
+      <p>
+      
+            「実験の失敗とかで死んだとか」
+      </p>
+      </div>
+      <div class="mem3 left">
+      <span>麒麟児 ニア</span>
+      <p>
+      
+            「この場所で…?」<br>月彦さんにお嬢様手袋(白)を渡しつつ
+      </p>
+      </div>
+      <div class="mem4 right">
+      <span>蒼田 翔馬</span>
+      <p>
+      
+            「脱走しようとしても殺されるとか」
+      </p>
+      </div>
+      <div class="mem4 right">
+      <span>蒼田 翔馬</span>
+      <p>
+      
+            「こんな研究所ではありがちだろう」
+      </p>
+      </div>
+      <div class="mem2 right">
+      <span>九重 是之</span>
+      <p>
+      
+            「物騒なものだな」
+      </p>
+      </div>
+      <div class="mem1 left">
+      <span>御守 月彦</span>
+      <p>
+      
+            「お心遣いありがとうございます。お借りいたしますね」
+      </p>
+      </div>
+      <div class="mem5 left">
+      <span>伊央里 絢</span>
+      <p>
+      
+            ｢ありそう…｣
+      </p>
+      </div>
+      <div class="kp LtoR-early">
+      
+            次、どうしますか？
+      </div>
+      <div class="mem4 right">
+      <span>蒼田 翔馬</span>
+      <p>
+      
+            「人体実験なんざやってる施設なんだ。法にも倫理にも反するようなことがばれたらやっていけねぇだろ」
+      </p>
+      </div>
+      <div class="mem2 right">
+      <span>九重 是之</span>
+      <p>
+      
+            「口封じか……」
+      </p>
+      </div>
+      <div class="mem3 left">
+      <span>麒麟児 ニア</span>
+      <p>
+      
+            「あとで家のものと対処いたしますわ」
+      </p>
+      </div>
+      <div class="mem1 left">
+      <span>御守 月彦</span>
+      <p>
+      
+            「その時は私の旦那様にもご相談いたしましょう」
+      </p>
+      </div>
+      <div class="mem4 right">
+      <span>蒼田 翔馬</span>
+      <p>
+      
+            研究エリアに
+      </p>
+      </div>
+      <div class="kp LtoR-early">
+      
+            研究エリア
+      </div>
+      <div class="kp LtoR-early">
+      
+            たくさんの机/椅子や研究器具、資料棚などが存在している。
+      </div>
+      <div class="kp LtoR-early">
+      
+            目星どうぞ
+      </div>
+      <div class="mem3 left">
+      <span>麒麟児 ニア</span>
+      <p>
+      
+            CCB&lt;=76 【目星】 (1D100&lt;=76) ＞ 28 ＞ 成功
+            
+      </p>
+      </div>
+      <div class="mem2 right">
+      <span>九重 是之</span>
+      <p>
+      
+            CCB&lt;=49 【目星】 (1D100&lt;=49) ＞ 75 ＞ 失敗
+            
+      </p>
+      </div>
+      <div class="mem1 left">
+      <span>御守 月彦</span>
+      <p>
+      
+            CCB&lt;=32 【目星】 (1D100&lt;=32) ＞ 23 ＞ 成功
+            
+      </p>
+      </div>
+      <div class="mem5 left">
+      <span>伊央里 絢</span>
+      <p>
+      
+            CCB&lt;=60 【目星】 (1D100&lt;=60) ＞ 62 ＞ 失敗
+            
+      </p>
+      </div>
+      <div class="mem4 right">
+      <span>蒼田 翔馬</span>
+      <p>
+      
+            CCB&lt;=60 【目星】 (1D100&lt;=60) ＞ 8 ＞ スペシャル
+            
+      </p>
+      </div>
+      <div class="kp LtoR-early">
+      
+            机の上に置かれた資料と、また別の机に置かれたいくつかの瓶、パイプが張り巡らされた用途不明の大きめな器具が目に付いた。
+      </div>
+      <div class="kp LtoR-early">
+      
+            ●資料<br>・栄養薬<br>錠剤型と液体型、双方精製技術確立間近。完成品は机上に安置中。<br>・凛血結晶<br>青と白の入り交じった色をした結晶体。<br>加工処理を施すことで絶え間ない癒しの力を発揮するようになる結晶。器具にて現在精製作業中。稼働中の器具は危険なため不用意に触らないこと。<br>精製完了後の完成した結晶は研究所本棟の研究員にまで運ぶこと。
+      </div>
+      <div class="kp LtoR-early">
+      
+            ●いくつかの瓶<br>3本の栄養薬が置かれていたのと、それに混じって5人分の瓶が置かれている。<br>飲んでみるのであればその度に1d6を振り、出た結果を適用する。
+      </div>
+      <div class="kp LtoR-early">
+      
+            のむひとー
+      </div>
+      <div class="mem1 left">
+      <span>御守 月彦</span>
+      <p>
+      
+            「これを飲むと伊央里様のようになるのですかね」
+      </p>
+      </div>
+      <div class="mem2 right">
+      <span>九重 是之</span>
+      <p>
+      
+            「なんだ。伊央里みたいになるやつがあるのか」
+      </p>
+      </div>
+      <div class="mem4 right">
+      <span>蒼田 翔馬</span>
+      <p>
+      
+            「なんの研究の資料だ……？」資料を拝見
+      </p>
+      </div>
+      <div class="mem3 left">
+      <span>麒麟児 ニア</span>
+      <p>
+      
+            「栄養なら安全ですわね！」<br>イッキします
+      </p>
+      </div>
+      <div class="mem1 left">
+      <span>御守 月彦</span>
+      <p>
+      
+            「身体に害がないのであれば気になりますねぇ」
+      </p>
+      </div>
+      <div class="mem5 left">
+      <span>伊央里 絢</span>
+      <p>
+      
+            ｢生えるだけならいいけどね…｣資料を覗き込む
+      </p>
+      </div>
+      <div class="mem3 left">
+      <span>麒麟児 ニア</span>
+      <p>
+      
+            1d6 (1D6) ＞ 2
+            
+      </p>
+      </div>
+      <div class="kp LtoR-early">
+      
+            夜目が効くようになった。何故か自分の耳の代わりに猫耳と猫しっぽも生えてきた。(感覚もある)
+      </div>
+      <div class="mem2 right">
+      <span>九重 是之</span>
+      <p>
+      
+            「ノワール。これは何かが生えたりしてもすぐに治るんだな？」
+      </p>
+      </div>
+      <div class="mem1 left">
+      <span>御守 月彦</span>
+      <p>
+      
+            「おっと…大丈夫ですか？」
+      </p>
+      </div>
+      <div class="mem3 left">
+      <span>麒麟児 ニア</span>
+      <p>
+      
+            「栄養薬とは!!!??」
+      </p>
+      </div>
+      <div class="mem7 left">
+      <span>ノワール</span>
+      <p>
+      
+            「そうだと思いますけど…」
+      </p>
+      </div>
+      <div class="mem4 right">
+      <span>蒼田 翔馬</span>
+      <p>
+      
+            「ワァ……って何やってんだよ！？」
+      </p>
+      </div>
+      <div class="mem5 left">
+      <span>伊央里 絢</span>
+      <p>
+      
+            ｢あ、猫ちゃん！かわいい〜！｣しっぽふりふり
+      </p>
+      </div>
+      <div class="mem2 right">
+      <span>九重 是之</span>
+      <p>
+      
+            「よろしい。では」一気
+      </p>
+      </div>
+      <div class="mem2 right">
+      <span>九重 是之</span>
+      <p>
+      
+            1ｄ6 (1D6) ＞ 2
+            
+      </p>
+      </div>
+      <div class="mem4 right">
+      <span>蒼田 翔馬</span>
+      <p>
+      
+            「さっき九重さんに叱られたばっかだろう！？」
+      </p>
+      </div>
+      <div class="kp LtoR-early">
+      
+            夜目が効くようになった。何故か自分の耳の代わりに猫耳と猫しっぽも生えてきた。(感覚もある)
+      </div>
+      <div class="mem1 left">
+      <span>御守 月彦</span>
+      <p>
+      
+            「では私もご一緒しましょうかねえ」飲みましょう
+      </p>
+      </div>
+      <div class="kp LtoR-early">
+      
+            では1D6
+      </div>
+      <div class="mem4 right">
+      <span>蒼田 翔馬</span>
+      <p>
+      
+            「いやあんたもかよ！」
+      </p>
+      </div>
+      <div class="mem1 left">
+      <span>御守 月彦</span>
+      <p>
+      
+            1ｄ6 (1D6) ＞ 4
+            
+      </p>
+      </div>
+      <div class="kp LtoR-early">
+      
+            毒薬だ！よく見ればドクロのラベルが貼ってあるのに何故飲んだ。
+      </div>
+      <div class="mem2 right">
+      <span>九重 是之</span>
+      <p>
+      
+            「……おぉ。おぉ」おみみさわさわ
+      </p>
+      </div>
+      <div class="kp LtoR-early">
+      
+            [幸運]または[アイデア]の高い方で
+      </div>
+      <div class="mem1 left">
+      <span>御守 月彦</span>
+      <p>
+      
+            CCB&lt;=85 【アイデア】 (1D100&lt;=85) ＞ 87 ＞ 失敗
+            
+      </p>
+      </div>
+      <div class="kp LtoR-early">
+      
+            失敗すると5ダメージ。
+      </div>
+      <div class="kp LtoR-early">
+      
+            [ 御守 月彦 ] HP : 9 → 4
+      </div>
+      <div class="mem7 left">
+      <span>ノワール</span>
+      <p>
+      
+            「わわ、大丈夫ですか！？」
+      </p>
+      </div>
+      <div class="mem7 left">
+      <span>ノワール</span>
+      <p>
+      
+            S1D100 (1D100) ＞ 29
+            
+      </p>
+      </div>
+      <div class="mem1 left">
+      <span>御守 月彦</span>
+      <p>
+      
+            「ぐふっ」
+      </p>
+      </div>
+      <div class="mem7 left">
+      <span>ノワール</span>
+      <p>
+      
+            回復します
+      </p>
+      </div>
+      <div class="mem3 left">
+      <span>麒麟児 ニア</span>
+      <p>
+      
+            「伊央里さま　お水持ってましたわよね!?」
+      </p>
+      </div>
+      <div class="mem5 left">
+      <span>伊央里 絢</span>
+      <p>
+      
+            ｢水どうぞ！｣水わたす
+      </p>
+      </div>
+      <div class="kp LtoR-early">
+      
+            どうですか？
+      </div>
+      <div class="mem4 right">
+      <span>蒼田 翔馬</span>
+      <p>
+      
+            「言わんこっちゃない！」
+      </p>
+      </div>
+      <div class="mem1 left">
+      <span>御守 月彦</span>
+      <p>
+      
+            「ロシアンルーレットとは…なつかしいですな…」
+      </p>
+      </div>
+      <div class="mem2 right">
+      <span>九重 是之</span>
+      <p>
+      
+            「御守さん。大丈夫か」背中さすさす
+      </p>
+      </div>
+      <div class="kp LtoR-early">
+      
+            [ 御守 月彦 ] HP : 4 → 11
+      </div>
+      <div class="mem2 right">
+      <span>九重 是之</span>
+      <p>
+      
+            「あんたはどういう人生を送ってきたんだ……」
+      </p>
+      </div>
+      <div class="mem1 left">
+      <span>御守 月彦</span>
+      <p>
+      
+            「いやぁ私も仲間に入りたかったんですがねえ」
+      </p>
+      </div>
+      <div class="kp LtoR-early">
+      
+            あと２本ありますが、…？
+      </div>
+      <div class="mem5 left">
+      <span>伊央里 絢</span>
+      <p>
+      
+            ｢他のは毒じゃないよね…？｣瓶を見る
+      </p>
+      </div>
+      <div class="mem4 right">
+      <span>蒼田 翔馬</span>
+      <p>
+      
+            「……やるかぁ」
+      </p>
+      </div>
+      <div class="mem5 left">
+      <span>伊央里 絢</span>
+      <p>
+      
+            そわそわ
+      </p>
+      </div>
+      <div class="kp LtoR-early">
+      
+            1D6で
+      </div>
+      <div class="mem4 right">
+      <span>蒼田 翔馬</span>
+      <p>
+      
+            1D6 (1D6) ＞ 5
+            
+      </p>
+      </div>
+      <div class="kp LtoR-early">
+      
+            そわそわ
+      </div>
+      <div class="kp LtoR-early">
+      
+            清涼な味のミックスジュースだ。疲れた頭に染み込む香りは、幾らか脳をスッキリさせた。次の判定に+10のボーナス。
+      </div>
+      <div class="kp LtoR-early">
+      
+            残り一本
+      </div>
+      <div class="mem1 left">
+      <span>御守 月彦</span>
+      <p>
+      
+            「どうやら効果にだいぶ差があるみたいですな」
+      </p>
+      </div>
+      <div class="mem4 right">
+      <span>蒼田 翔馬</span>
+      <p>
+      
+            「ただのジュースだこれ」
+      </p>
+      </div>
+      <div class="mem5 left">
+      <span>伊央里 絢</span>
+      <p>
+      
+            ｢何もなかった…｣ちょっと残念そう
+      </p>
+      </div>
+      <div class="kp LtoR-early">
+      
+            もう一本あるよ
+      </div>
+      <div class="mem2 right">
+      <span>九重 是之</span>
+      <p>
+      
+            「なぜ薬品とジュースをごっちゃにしておくんだ……」
+      </p>
+      </div>
+      <div class="mem4 right">
+      <span>蒼田 翔馬</span>
+      <p>
+      
+            「こんなロシアン嫌すぎる」
+      </p>
+      </div>
+      <div class="mem1 left">
+      <span>御守 月彦</span>
+      <p>
+      
+            「もうひとつございますね…再チャレンジしてみても？」
+      </p>
+      </div>
+      <div class="mem2 right">
+      <span>九重 是之</span>
+      <p>
+      
+            自分のしっぽにぎにぎしながら
+      </p>
+      </div>
+      <div class="mem4 right">
+      <span>蒼田 翔馬</span>
+      <p>
+      
+            「どうぞ」
+      </p>
+      </div>
+      <div class="mem1 left">
+      <span>御守 月彦</span>
+      <p>
+      
+            1d6 (1D6) ＞ 5
+            
+      </p>
+      </div>
+      <div class="kp LtoR-early">
+      
+            どぞー
+      </div>
+      <div class="kp LtoR-early">
+      
+            清涼な味のミックスジュースだ。疲れた頭に染み込む香りは、幾らか脳をスッキリさせた。次の判定に+10のボーナス。
+      </div>
+      <div class="mem1 left">
+      <span>御守 月彦</span>
+      <p>
+      
+            「おいしかったです」
+      </p>
+      </div>
+      <div class="mem5 left">
+      <span>伊央里 絢</span>
+      <p>
+      
+            九重くんのしっぽさわる
+      </p>
+      </div>
+      <div class="kp LtoR-early">
+      
+            ●パイプが繋がれた、稼働中の器具<br>何か青と白の大きめな石の様なものが、器具の取り出し口らしき場所にある。<br>→取りに行く
+      </div>
+      <div class="kp LtoR-early">
+      
+            いく？
+      </div>
+      <div class="kp LtoR-early">
+      
+            いかなくてもいいよ？
+      </div>
+      <div class="mem2 right">
+      <span>九重 是之</span>
+      <p>
+      
+            「おぉ。触られるのはこういう感覚か」ふりふり
+      </p>
+      </div>
+      <div class="mem3 left">
+      <span>麒麟児 ニア</span>
+      <p>
+      
+            行くしかないよなぁ！
+      </p>
+      </div>
+      <div class="mem4 right">
+      <span>蒼田 翔馬</span>
+      <p>
+      
+            「稼働中の機械には不用意には近づくな！！！」
+      </p>
+      </div>
+      <div class="kp LtoR-early">
+      
+            [幸運]
+      </div>
+      <div class="mem5 left">
+      <span>伊央里 絢</span>
+      <p>
+      
+            ｢気をつけてね！｣
+      </p>
+      </div>
+      <div class="mem3 left">
+      <span>麒麟児 ニア</span>
+      <p>
+      
+            CCB&lt;=45 【幸運】 (1D100&lt;=45) ＞ 32 ＞ 成功
+            
+      </p>
+      </div>
+      <div class="kp LtoR-early">
+      
+            成功すれば何事もなく"青と白が入り交じった美しい結晶(凛血結晶)"を取ることができる
+      </div>
+      <div class="mem3 left">
+      <span>麒麟児 ニア</span>
+      <p>
+      
+            「みなさま～　取れましたわよ～」
+      </p>
+      </div>
+      <div class="mem4 right">
+      <span>蒼田 翔馬</span>
+      <p>
+      
+            「アホか……(頭抱え)」
+      </p>
+      </div>
+      <div class="mem2 right">
+      <span>九重 是之</span>
+      <p>
+      
+            （こういう幸運で生きてきたんだろうなぁ）
+      </p>
+      </div>
+      <div class="mem5 left">
+      <span>伊央里 絢</span>
+      <p>
+      
+            ｢よかったぁ…｣
+      </p>
+      </div>
+      <div class="mem1 left">
+      <span>御守 月彦</span>
+      <p>
+      
+            「加工をすれば癒しの効果があるのでしたかな」
+      </p>
+      </div>
+      <div class="mem4 right">
+      <span>蒼田 翔馬</span>
+      <p>
+      
+            （帰ったら報告して休暇貰うか……）
+      </p>
+      </div>
+      <div class="mem3 left">
+      <span>麒麟児 ニア</span>
+      <p>
+      
+            「今なら幸運な気がしましたの！」(のんき)
+      </p>
+      </div>
+      <div class="kp LtoR-early">
+      
+            次、いきますか？
+      </div>
+      <div class="mem4 right">
+      <span>蒼田 翔馬</span>
+      <p>
+      
+            「はいはいよかったな(疲れ切った声)」
+      </p>
+      </div>
+      <div class="mem5 left">
+      <span>伊央里 絢</span>
+      <p>
+      
+            ｢これ、あのペンダントと同じ色だね…｣
+      </p>
+      </div>
+      <div class="mem2 right">
+      <span>九重 是之</span>
+      <p>
+      
+            「そう落ち込むな。おかしなことはいくらでも起こりうる」翔馬君の背中ポンポン
+      </p>
+      </div>
+      <div class="mem3 left">
+      <span>麒麟児 ニア</span>
+      <p>
+      
+            「あら？欲しかったんですの？」<br>結晶を渡します
+      </p>
+      </div>
+      <div class="mem4 right">
+      <span>蒼田 翔馬</span>
+      <p>
+      
+            「……」
+      </p>
+      </div>
+      <div class="mem4 right">
+      <span>蒼田 翔馬</span>
+      <p>
+      
+            「のんきにやってる場合じゃないんだよ(ぼそっ)」
+      </p>
+      </div>
+      <div class="mem4 right">
+      <span>蒼田 翔馬</span>
+      <p>
+      
+            「いい、お嬢がもってろ」
+      </p>
+      </div>
+      <div class="mem3 left">
+      <span>麒麟児 ニア</span>
+      <p>
+      
+            「ニ！ア！」
+      </p>
+      </div>
+      <div class="mem4 right">
+      <span>蒼田 翔馬</span>
+      <p>
+      
+            「はいはい、ニアお嬢」
+      </p>
+      </div>
+      <div class="mem4 right">
+      <span>蒼田 翔馬</span>
+      <p>
+      
+            「次、行くぞ」
+      </p>
+      </div>
+      <div class="kp LtoR-early">
+      
+            次、どこいきます？
+      </div>
+      <div class="mem4 right">
+      <span>蒼田 翔馬</span>
+      <p>
+      
+            医療エリアに
+      </p>
+      </div>
+      <div class="mem3 left">
+      <span>麒麟児 ニア</span>
+      <p>
+      
+            いこうか！
+      </p>
+      </div>
+      <div class="kp LtoR-early">
+      
+            医療エリア
+      </div>
+      <div class="kp LtoR-early">
+      
+            メディカルマシンが複数置かれた部屋だ。それ以外には医療道具が揃っているだけで、特に目につくものはない。
+      </div>
+      <div class="mem2 right">
+      <span>九重 是之</span>
+      <p>
+      
+            「のんきにならなければ乗り切れない時もあるぞ」言いつつついてく
+      </p>
+      </div>
+      <div class="kp LtoR-early">
+      
+            ●メディカルマシンを使うと受けているペナルティを全て解除し[HP][MP]全回復。
+      </div>
+      <div class="mem1 left">
+      <span>御守 月彦</span>
+      <p>
+      
+            「これで傷や疲れが癒されそうですな。翔馬様いかがですか？」
+      </p>
+      </div>
+      <div class="mem2 right">
+      <span>九重 是之</span>
+      <p>
+      
+            「たまには不可思議に身を任せろ」翔馬君の背中を押します
+      </p>
+      </div>
+      <div class="mem4 right">
+      <span>蒼田 翔馬</span>
+      <p>
+      
+            「オレは兄貴のために、組のために、少しでも情報を持って帰らなきゃならねぇんだよ」
+      </p>
+      </div>
+      <div class="mem2 right">
+      <span>九重 是之</span>
+      <p>
+      
+            「体験は情報ではないのか？」
+      </p>
+      </div>
+      <div class="mem5 left">
+      <span>伊央里 絢</span>
+      <p>
+      
+            ｢やってみなよぉ｣背中押す
+      </p>
+      </div>
+      <div class="mem4 right">
+      <span>蒼田 翔馬</span>
+      <p>
+      
+            「押すな押すな！」
+      </p>
+      </div>
+      <div class="kp LtoR-early">
+      
+            入る？入る？
+      </div>
+      <div class="mem3 left">
+      <span>麒麟児 ニア</span>
+      <p>
+      
+            「うちにも欲しいですわね…」
+      </p>
+      </div>
+      <div class="kp LtoR-early">
+      
+            言いくるめで入るかどうか
+      </div>
+      <div class="mem1 left">
+      <span>御守 月彦</span>
+      <p>
+      
+            CCB&lt;=65 【言いくるめ】 (1D100&lt;=65) ＞ 74 ＞ 失敗
+            
+      </p>
+      </div>
+      <div class="mem1 left">
+      <span>御守 月彦</span>
+      <p>
+      
+            「酸素カプセルのようなものですよおそらく」
+      </p>
+      </div>
+      <div class="mem4 right">
+      <span>蒼田 翔馬</span>
+      <p>
+      
+            「おそらく」
+      </p>
+      </div>
+      <div class="mem2 right">
+      <span>九重 是之</span>
+      <p>
+      
+            CCB&lt;=35 【説得】 (1D100&lt;=35) ＞ 89 ＞ 失敗
+            
+      </p>
+      </div>
+      <div class="mem5 left">
+      <span>伊央里 絢</span>
+      <p>
+      
+            CCB&lt;=45 【言いくるめ】 (1D100&lt;=45) ＞ 56 ＞ 失敗
+            
+      </p>
+      </div>
+      <div class="mem3 left">
+      <span>麒麟児 ニア</span>
+      <p>
+      
+            CCB&lt;=50 【言いくるめ】 (1D100&lt;=50) ＞ 43 ＞ 成功
+            
+      </p>
+      </div>
+      <div class="mem2 right">
+      <span>九重 是之</span>
+      <p>
+      
+            「入っちゃだめだと言われたら入りたくなるタイプか？」
+      </p>
+      </div>
+      <div class="mem4 right">
+      <span>蒼田 翔馬</span>
+      <p>
+      
+            「入らねぇよ！？」
+      </p>
+      </div>
+      <div class="kp LtoR-early">
+      
+            お嬢様のかちー
+      </div>
+      <div class="mem2 right">
+      <span>九重 是之</span>
+      <p>
+      
+            「入りたいのか」
+      </p>
+      </div>
+      <div class="mem4 right">
+      <span>蒼田 翔馬</span>
+      <p>
+      
+            「なら九重さんがいけよ」
+      </p>
+      </div>
+      <div class="mem3 left">
+      <span>麒麟児 ニア</span>
+      <p>
+      
+            「万全にしない理由がありませんわ！」ぐいぐい
+      </p>
+      </div>
+      <div class="mem5 left">
+      <span>伊央里 絢</span>
+      <p>
+      
+            ｢何かあってもノワールくんがきっと助けてくれるよ！｣
+      </p>
+      </div>
+      <div class="mem2 right">
+      <span>九重 是之</span>
+      <p>
+      
+            「入ったらたぶん耳としっぽがなくなってしまうから……」耳さわさわ
+      </p>
+      </div>
+      <div class="mem2 right">
+      <span>九重 是之</span>
+      <p>
+      
+            「もう少し体感していたい」
+      </p>
+      </div>
+      <div class="mem4 right">
+      <span>蒼田 翔馬</span>
+      <p>
+      
+            「うぉ！？なんだコイツつぇ！？」ひっぱられ
+      </p>
+      </div>
+      <div class="mem5 left">
+      <span>伊央里 絢</span>
+      <p>
+      
+            ｢そうなんだよねぇ…｣九重くんの耳さわさわ
+      </p>
+      </div>
+      <div class="mem1 left">
+      <span>御守 月彦</span>
+      <p>
+      
+            「うらやましいですなぁ」
+      </p>
+      </div>
+      <div class="mem2 right">
+      <span>九重 是之</span>
+      <p>
+      
+            伊央里君の耳モフモフ
+      </p>
+      </div>
+      <div class="kp LtoR-early">
+      
+            とぅんとぅんとくとぅん
+      </div>
+      <div class="kp LtoR-early">
+      
+            全回復しました
+      </div>
+      <div class="mem4 right">
+      <span>蒼田 翔馬</span>
+      <p>
+      
+            「めっちゃポケモンになった気分……」
+      </p>
+      </div>
+      <div class="kp LtoR-early">
+      
+            [ 蒼田 翔馬 ] HP : 10 → 14
+      </div>
+      <div class="kp LtoR-early">
+      
+            あなたたちが部屋を出ようとすると、唐突に足元や壁を突き破り触手が襲いかかってきた！<br>【ザハンド】×2と戦闘。
+      </div>
+      <div class="kp LtoR-early">
+      
+            触手は一番遅いので
+      </div>
+      <div class="kp LtoR-early">
+      
+            お嬢様から
+      </div>
+      <div class="mem3 left">
+      <span>麒麟児 ニア</span>
+      <p>
+      
+            Aにマーシャルキック！
+      </p>
+      </div>
+      <div class="mem3 left">
+      <span>麒麟児 ニア</span>
+      <p>
+      
+            CCB&lt;=41 【マーシャルアーツ】 (1D100&lt;=41) ＞ 47 ＞ 失敗
+            
+      </p>
+      </div>
+      <div class="mem3 left">
+      <span>麒麟児 ニア</span>
+      <p>
+      
+            1d6+1d4 (1D6+1D4) ＞ 2[2]+4[4] ＞ 6
+            
+      </p>
+      </div>
+      <div class="kp LtoR-early">
+      
+            翔馬くん
+      </div>
+      <div class="mem4 right">
+      <span>蒼田 翔馬</span>
+      <p>
+      
+            Aを蹴り飛ばしたい
+      </p>
+      </div>
+      <div class="mem4 right">
+      <span>蒼田 翔馬</span>
+      <p>
+      
+            CCB&lt;=60【キック】
+      </p>
+      </div>
+      <div class="mem4 right">
+      <span>蒼田 翔馬</span>
+      <p>
+      
+            CCB&lt;=60 【キック】 (1D100&lt;=60) ＞ 35 ＞ 成功
+            
+      </p>
+      </div>
+      <div class="mem4 right">
+      <span>蒼田 翔馬</span>
+      <p>
+      
+            1D6+1D4 (1D6+1D4) ＞ 6[6]+4[4] ＞ 10
+            
+      </p>
+      </div>
+      <div class="kp LtoR-early">
+      
+            くたばりました
+      </div>
+      <div class="kp LtoR-early">
+      
+            月彦さん
+      </div>
+      <div class="mem1 left">
+      <span>御守 月彦</span>
+      <p>
+      
+            CCB&lt;=80 【杖術】 (1D100&lt;=80) ＞ 7 ＞ スペシャル
+            
+      </p>
+      </div>
+      <div class="mem1 left">
+      <span>御守 月彦</span>
+      <p>
+      
+            1ｄ8 (1D8) ＞ 1
+            
+      </p>
+      </div>
+      <div class="mem1 left">
+      <span>御守 月彦</span>
+      <p>
+      
+            「手ごたえがないですね」
+      </p>
+      </div>
+      <div class="kp LtoR-early">
+      
+            九重君
+      </div>
+      <div class="mem2 right">
+      <span>九重 是之</span>
+      <p>
+      
+            CCB&lt;=55 【キック】 (1D100&lt;=55) ＞ 54 ＞ 成功
+            
+      </p>
+      </div>
+      <div class="mem2 right">
+      <span>九重 是之</span>
+      <p>
+      
+            1ｄ6+1ｄ4 (1D6+1D4) ＞ 3[3]+3[3] ＞ 6
+            
+      </p>
+      </div>
+      <div class="kp LtoR-early">
+      
+            はい痛いです
+      </div>
+      <div class="kp LtoR-early">
+      
+            伊央里くん
+      </div>
+      <div class="mem5 left">
+      <span>伊央里 絢</span>
+      <p>
+      
+            CCB&lt;=60 【こぶし（パンチ）】 (1D100&lt;=60) ＞ 54 ＞ 成功
+            
+      </p>
+      </div>
+      <div class="mem5 left">
+      <span>伊央里 絢</span>
+      <p>
+      
+            1d3+1d4 (1D3+1D4) ＞ 1[1]+3[3] ＞ 4
+            
+      </p>
+      </div>
+      <div class="kp LtoR-early">
+      
+            ノワールくんだけど
+      </div>
+      <div class="kp LtoR-early">
+      
+            何したらいい？
+      </div>
+      <div class="kp LtoR-early">
+      
+            攻撃？防御？
+      </div>
+      <div class="mem7 left">
+      <span>ノワール</span>
+      <p>
+      
+            ホワイトシールドを自分にかけてる？
+      </p>
+      </div>
+      <div class="mem7 left">
+      <span>ノワール</span>
+      <p>
+      
+            じゃ
+      </p>
+      </div>
+      <div class="mem7 left">
+      <span>ノワール</span>
+      <p>
+      
+            S1D100 (1D100) ＞ 65
+            
+      </p>
+      </div>
+      <div class="mem8 right">
+      <span>ザハンド</span>
+      <p>
+      
+            choice[麒麟児 ニア,蒼田 翔馬,御守 月彦,九重 是之,伊央里 絢,ノワール] (choice[麒麟児 ニア,蒼田 翔馬,御守 月彦,九重 是之,伊央里 絢,ノワール]) ＞ 御守 月彦
+            
+      </p>
+      </div>
+      <div class="mem8 right">
+      <span>ザハンド</span>
+      <p>
+      
+            CCB&lt;=80 (1D100&lt;=80) ＞ 87 ＞ 失敗
+            
+      </p>
+      </div>
+      <div class="kp LtoR-early">
+      
+            叩けなかった…
+      </div>
+      <div class="kp LtoR-early">
+      
+            じゃ、
+      </div>
+      <div class="kp LtoR-early">
+      
+            お嬢様
+      </div>
+      <div class="mem3 left">
+      <span>麒麟児 ニア</span>
+      <p>
+      
+            マーシャルキック！
+      </p>
+      </div>
+      <div class="mem3 left">
+      <span>麒麟児 ニア</span>
+      <p>
+      
+            CCB&lt;=41 【マーシャルアーツ】 (1D100&lt;=41) ＞ 42 ＞ 失敗
+            
+      </p>
+      </div>
+      <div class="mem3 left">
+      <span>麒麟児 ニア</span>
+      <p>
+      
+            1d6+1d4 (1D6+1D4) ＞ 6[6]+1[1] ＞ 7
+            
+      </p>
+      </div>
+      <div class="mem3 left">
+      <span>麒麟児 ニア</span>
+      <p>
+      
+            「心なしか動きやすい気がしますわ！」
+      </p>
+      </div>
+      <div class="mem2 right">
+      <span>九重 是之</span>
+      <p>
+      
+            「ねこだからな」
+      </p>
+      </div>
+      <div class="mem4 right">
+      <span>蒼田 翔馬</span>
+      <p>
+      
+            「触手には知能はないか……」
+      </p>
+      </div>
+      <div class="mem5 left">
+      <span>伊央里 絢</span>
+      <p>
+      
+            ｢ネズミより楽だったね｣
+      </p>
+      </div>
+      <div class="mem3 left">
+      <span>麒麟児 ニア</span>
+      <p>
+      
+            「今でしたら　あのようにはいかなくてよ？」
+      </p>
+      </div>
+      <div class="kp LtoR-early">
+      
+            で、どうする？
+      </div>
+      <div class="mem4 right">
+      <span>蒼田 翔馬</span>
+      <p>
+      
+            一階へ
+      </p>
+      </div>
+      <div class="kp LtoR-early">
+      
+            各種素体保管エリア？
+      </div>
+      <div class="kp LtoR-early">
+      
+            各種素体保管エリア
+      </div>
+      <div class="kp LtoR-early">
+      
+            培養液が満たされた水槽に、様々なものが入れられている。
+      </div>
+      <div class="kp LtoR-early">
+      
+            目星どうぞ
+      </div>
+      <div class="mem3 left">
+      <span>麒麟児 ニア</span>
+      <p>
+      
+            CCB&lt;=76 【目星】 (1D100&lt;=76) ＞ 4 ＞ 決定的成功/スペシャル
+            
+      </p>
+      </div>
+      <div class="mem1 left">
+      <span>御守 月彦</span>
+      <p>
+      
+            CCB&lt;=32 【目星】 (1D100&lt;=32) ＞ 83 ＞ 失敗
+            
+      </p>
+      </div>
+      <div class="mem2 right">
+      <span>九重 是之</span>
+      <p>
+      
+            CCB&lt;=49 【目星】 (1D100&lt;=49) ＞ 82 ＞ 失敗
+            
+      </p>
+      </div>
+      <div class="mem4 right">
+      <span>蒼田 翔馬</span>
+      <p>
+      
+            CCB&lt;=60 【目星】 (1D100&lt;=60) ＞ 10 ＞ スペシャル
+            
+      </p>
+      </div>
+      <div class="mem5 left">
+      <span>伊央里 絢</span>
+      <p>
+      
+            CCB&lt;=60 【目星】
+      </p>
+      </div>
+      <div class="mem5 left">
+      <span>伊央里 絢</span>
+      <p>
+      
+            CCB&lt;=60 【目星】 (1D100&lt;=60) ＞ 52 ＞ 成功
+            
+      </p>
+      </div>
+      <div class="kp LtoR-early">
+      
+            ひとつだけ蓋が開いた水槽があり、なんの生き物やら分からない胎児が入っている。
+      </div>
+      <div class="kp LtoR-early">
+      
+            近づきますか？
+      </div>
+      <div class="mem3 left">
+      <span>麒麟児 ニア</span>
+      <p>
+      
+            近づかぬ
+      </p>
+      </div>
+      <div class="mem7 left">
+      <span>ノワール</span>
+      <p>
+      
+            ｢あれは確か小動物の人工生命体を育てていた水槽ですね、近づいても危険はないはずです｣
+      </p>
+      </div>
+      <div class="mem5 left">
+      <span>伊央里 絢</span>
+      <p>
+      
+            ｢小動物かぁ…｣ちょっと近付く
+      </p>
+      </div>
+      <div class="mem4 right">
+      <span>蒼田 翔馬</span>
+      <p>
+      
+            「オレにはやらなきゃならないことがあるからな」
+      </p>
+      </div>
+      <div class="mem4 right">
+      <span>蒼田 翔馬</span>
+      <p>
+      
+            近付く
+      </p>
+      </div>
+      <div class="mem1 left">
+      <span>御守 月彦</span>
+      <p>
+      
+            ノワール君とニアちゃんのそばにたってる
+      </p>
+      </div>
+      <div class="mem2 right">
+      <span>九重 是之</span>
+      <p>
+      
+            ついてく
+      </p>
+      </div>
+      <div class="mem5 left">
+      <span>伊央里 絢</span>
+      <p>
+      
+            小動物につられる狐の図
+      </p>
+      </div>
+      <div class="kp LtoR-early">
+      
+            その胎児はあなたたちが近づくと、気味悪さを感じるほどの速度で成長し始めた！
+      </div>
+      <div class="kp LtoR-early">
+      
+            SANチェックです！<br>
+      </div>
+      <div class="kp LtoR-early">
+      
+            遠くても気づくからね
+      </div>
+      <div class="kp LtoR-early">
+      
+            成功1、失敗で2
+      </div>
+      <div class="mem3 left">
+      <span>麒麟児 ニア</span>
+      <p>
+      
+            CCB&lt;=43 【SAN値チェック】 (1D100&lt;=43) ＞ 12 ＞ 成功
+            
+      </p>
+      </div>
+      <div class="mem2 right">
+      <span>九重 是之</span>
+      <p>
+      
+            CCB&lt;=85 【SAN値チェック】 (1D100&lt;=85) ＞ 57 ＞ 成功
+            
+      </p>
+      </div>
+      <div class="mem5 left">
+      <span>伊央里 絢</span>
+      <p>
+      
+            CCB&lt;=42 【SAN値チェック】 (1D100&lt;=42) ＞ 59 ＞ 失敗
+            
+      </p>
+      </div>
+      <div class="kp LtoR-early">
+      
+            [ 麒麟児 ニア ] SAN : 43 → 42
+      </div>
+      <div class="mem1 left">
+      <span>御守 月彦</span>
+      <p>
+      
+            CCB&lt;=62 【SAN値チェック】 (1D100&lt;=62) ＞ 21 ＞ 成功
+            
+      </p>
+      </div>
+      <div class="kp LtoR-early">
+      
+            [ 九重 是之 ] SAN : 85 → 84
+      </div>
+      <div class="mem4 right">
+      <span>蒼田 翔馬</span>
+      <p>
+      
+            CCB&lt;=73 【SAN値チェック】 (1D100&lt;=73) ＞ 16 ＞ 成功
+            
+      </p>
+      </div>
+      <div class="kp LtoR-early">
+      
+            [ 御守 月彦 ] SAN : 62 → 61
+      </div>
+      <div class="kp LtoR-early">
+      
+            [ 伊央里 絢 ] SAN : 42 → 40
+      </div>
+      <div class="kp LtoR-early">
+      
+            [ 蒼田 翔馬 ] SAN : 73 → 72
+      </div>
+      <div class="kp LtoR-early">
+      
+            schoice[蒼田 翔馬,九重 是之,伊央里 絢] (choice[蒼田 翔馬,九重 是之,伊央里 絢]) ＞ 蒼田 翔馬
+            
+      </div>
+      <div class="kp LtoR-early">
+      
+            可愛らしい小さな青い鳥が生まれる。
+      </div>
+      <div class="kp LtoR-early">
+      
+            そして翔馬君になつきます
+      </div>
+      <div class="mem4 right">
+      <span>蒼田 翔馬</span>
+      <p>
+      
+            「なつかれた……？」
+      </p>
+      </div>
+      <div class="mem9 left">
+      <span>小鳥</span>
+      <p>
+      
+            ちゅんちゅん
+      </p>
+      </div>
+      <div class="mem1 left">
+      <span>御守 月彦</span>
+      <p>
+      
+            「刷り込み…でしょうか」
+      </p>
+      </div>
+      <div class="mem4 right">
+      <span>蒼田 翔馬</span>
+      <p>
+      
+            「……かわいい」
+      </p>
+      </div>
+      <div class="mem4 right">
+      <span>蒼田 翔馬</span>
+      <p>
+      
+            「まぁ、猫と狐がいればそうなるか」
+      </p>
+      </div>
+      <div class="mem3 left">
+      <span>麒麟児 ニア</span>
+      <p>
+      
+            (少し美味しそうですわね)
+      </p>
+      </div>
+      <div class="mem5 left">
+      <span>伊央里 絢</span>
+      <p>
+      
+            ｢え、なに…！？｣狐耳がピーン
+      </p>
+      </div>
+      <div class="mem2 right">
+      <span>九重 是之</span>
+      <p>
+      
+            「取って食ったりしないのにな……？」
+      </p>
+      </div>
+      <div class="mem1 left">
+      <span>御守 月彦</span>
+      <p>
+      
+            「お名前などはないのでしょうか」
+      </p>
+      </div>
+      <div class="mem9 left">
+      <span>小鳥</span>
+      <p>
+      
+            ぴぴぴぴぴぴ
+      </p>
+      </div>
+      <div class="mem4 right">
+      <span>蒼田 翔馬</span>
+      <p>
+      
+            「青い鳥か……」
+      </p>
+      </div>
+      <div class="mem5 left">
+      <span>伊央里 絢</span>
+      <p>
+      
+            ｢ノワールくん何か知ってる？｣
+      </p>
+      </div>
+      <div class="mem7 left">
+      <span>ノワール</span>
+      <p>
+      
+            「生まれたばかりの人工生命体ですから」
+      </p>
+      </div>
+      <div class="mem7 left">
+      <span>ノワール</span>
+      <p>
+      
+            「なつかれたみたいですね」
+      </p>
+      </div>
+      <div class="mem4 right">
+      <span>蒼田 翔馬</span>
+      <p>
+      
+            「これ名付けて大丈夫な奴なのか？」
+      </p>
+      </div>
+      <div class="mem5 left">
+      <span>伊央里 絢</span>
+      <p>
+      
+            ｢やっぱり刷り込み…？｣興味津々
+      </p>
+      </div>
+      <div class="mem7 left">
+      <span>ノワール</span>
+      <p>
+      
+            「どうでしょう。外への持ち出しは出来ないと思われますので、ここで呼ばれる名前を一時的にというなら可能だと…」
+      </p>
+      </div>
+      <div class="mem2 right">
+      <span>九重 是之</span>
+      <p>
+      
+            「連れて帰れないのか」
+      </p>
+      </div>
+      <div class="mem7 left">
+      <span>ノワール</span>
+      <p>
+      
+            「機密がありますから」
+      </p>
+      </div>
+      <div class="mem4 right">
+      <span>蒼田 翔馬</span>
+      <p>
+      
+            「そうだろうな」
+      </p>
+      </div>
+      <div class="mem4 right">
+      <span>蒼田 翔馬</span>
+      <p>
+      
+            「……プルシアン」
+      </p>
+      </div>
+      <div class="mem9 left">
+      <span>小鳥</span>
+      <p>
+      
+            ぴぃ！
+      </p>
+      </div>
+      <div class="mem1 left">
+      <span>御守 月彦</span>
+      <p>
+      
+            「気に入られたようですな」
+      </p>
+      </div>
+      <div class="mem10 right">
+      <span>プルシアン</span>
+      <p>
+      
+            ぴっぴっぴ
+      </p>
+      </div>
+      <div class="mem5 left">
+      <span>伊央里 絢</span>
+      <p>
+      
+            ｢オシャレ！よかったねぇ｣
+      </p>
+      </div>
+      <div class="mem10 right">
+      <span>プルシアン</span>
+      <p>
+      
+            ぴぃ！
+      </p>
+      </div>
+      <div class="mem4 right">
+      <span>蒼田 翔馬</span>
+      <p>
+      
+            「しばらくの間よろしくな(指先で頭をなでる)」
+      </p>
+      </div>
+      <div class="mem10 right">
+      <span>プルシアン</span>
+      <p>
+      
+            ぴぃぴぃ
+      </p>
+      </div>
+      <div class="mem3 left">
+      <span>麒麟児 ニア</span>
+      <p>
+      
+            「プルシアンさん　言葉が分かるかのようですわね」
+      </p>
+      </div>
+      <div class="mem10 right">
+      <span>プルシアン</span>
+      <p>
+      
+            ぴ！
+      </p>
+      </div>
+      <div class="mem2 right">
+      <span>九重 是之</span>
+      <p>
+      
+            「人工知能生命体ならそういうこともあるか」
+      </p>
+      </div>
+      <div class="mem10 right">
+      <span>プルシアン</span>
+      <p>
+      
+            ぴ！
+      </p>
+      </div>
+      <div class="mem10 right">
+      <span>プルシアン</span>
+      <p>
+      
+            ぴぃ
+      </p>
+      </div>
+      <div class="kp LtoR-early">
+      
+            そろそろいい？
+      </div>
+      <div class="mem5 left">
+      <span>伊央里 絢</span>
+      <p>
+      
+            ｢かわいいねぇ｣(そっと指先で頭を撫でる)
+      </p>
+      </div>
+      <div class="mem10 right">
+      <span>プルシアン</span>
+      <p>
+      
+            ぴ！
+      </p>
+      </div>
+      <div class="kp LtoR-early">
+      
+            ぴぃ。いい？<br>
+      </div>
+      <div class="mem4 right">
+      <span>蒼田 翔馬</span>
+      <p>
+      
+            おっけ
+      </p>
+      </div>
+      <div class="mem3 left">
+      <span>麒麟児 ニア</span>
+      <p>
+      
+            いこうか！
+      </p>
+      </div>
+      <div class="mem2 right">
+      <span>九重 是之</span>
+      <p>
+      
+            玄関ホールへ
+      </p>
+      </div>
+      <div class="mem1 left">
+      <span>御守 月彦</span>
+      <p>
+      
+            向かいましょう
+      </p>
+      </div>
+      <div class="kp LtoR-early">
+      
+            玄関ホールには黒いワンピースを着た赤い目の少女が待ち構えていた！
+      </div>
+      <div class="mem5 left">
+      <span>伊央里 絢</span>
+      <p>
+      
+            みんなについてく
+      </p>
+      </div>
+      <div class="mem11 left">
+      <span>ティムル</span>
+      <p>
+      
+            ｢ねぇねぇ、お兄ちゃん、お姉ちゃん、どこにいくの....？もーっとわたしとあそびましょう！｣
+      </p>
+      </div>
+      <div class="kp LtoR-early">
+      
+            少女が無邪気な笑みを浮かべると、少女の背中から何本もの触手が飛び出した！
+      </div>
+      <div class="kp LtoR-early">
+      
+            SANチェックです
+      </div>
+      <div class="kp LtoR-early">
+      
+            成功で1。失敗で1D3
+      </div>
+      <div class="mem1 left">
+      <span>御守 月彦</span>
+      <p>
+      
+            CCB&lt;=61 【SAN値チェック】 (1D100&lt;=61) ＞ 44 ＞ 成功
+            
+      </p>
+      </div>
+      <div class="mem3 left">
+      <span>麒麟児 ニア</span>
+      <p>
+      
+            CCB&lt;=42 【SAN値チェック】 (1D100&lt;=42) ＞ 82 ＞ 失敗
+            
+      </p>
+      </div>
+      <div class="mem2 right">
+      <span>九重 是之</span>
+      <p>
+      
+            CCB&lt;=84 【SAN値チェック】 (1D100&lt;=84) ＞ 82 ＞ 成功
+            
+      </p>
+      </div>
+      <div class="mem5 left">
+      <span>伊央里 絢</span>
+      <p>
+      
+            CCB&lt;=40 【SAN値チェック】 (1D100&lt;=40) ＞ 3 ＞ 決定的成功/スペシャル
+            
+      </p>
+      </div>
+      <div class="kp LtoR-early">
+      
+            [ 九重 是之 ] SAN : 84 → 83
+      </div>
+      <div class="kp LtoR-early">
+      
+            [ 御守 月彦 ] SAN : 61 → 60
+      </div>
+      <div class="mem3 left">
+      <span>麒麟児 ニア</span>
+      <p>
+      
+            1d3 (1D3) ＞ 2
+            
+      </p>
+      </div>
+      <div class="mem4 right">
+      <span>蒼田 翔馬</span>
+      <p>
+      
+            CCB&lt;=72 【SAN値チェック】 (1D100&lt;=72) ＞ 67 ＞ 成功
+            
+      </p>
+      </div>
+      <div class="kp LtoR-early">
+      
+            [ 麒麟児 ニア ] SAN : 42 → 40
+      </div>
+      <div class="kp LtoR-early">
+      
+            [ 蒼田 翔馬 ] SAN : 72 → 71
+      </div>
+      <div class="mem3 left">
+      <span>麒麟児 ニア</span>
+      <p>
+      
+            「さきほどの!?」
+      </p>
+      </div>
+      <div class="mem1 left">
+      <span>御守 月彦</span>
+      <p>
+      
+            「ティムル様で…ございますかな？」
+      </p>
+      </div>
+      <div class="kp LtoR-early">
+      
+            [ 伊央里 絢 ] SAN : 40 → 39
+      </div>
+      <div class="kp LtoR-early">
+      
+            どうやら彼女をなんとかせねば、ここから出ることは叶わないようだ.....！
+      </div>
+      <div class="kp LtoR-early">
+      
+            【ティムル】と戦闘。
+      </div>
+      <div class="mem5 left">
+      <span>伊央里 絢</span>
+      <p>
+      
+            ｢あっ、さっきの子…!!｣
+      </p>
+      </div>
+      <div class="mem2 right">
+      <span>九重 是之</span>
+      <p>
+      
+            「ふむ。皆が言っていたのはこの子か」
+      </p>
+      </div>
+      <div class="mem7 left">
+      <span>ノワール</span>
+      <p>
+      
+            「はい」
+      </p>
+      </div>
+      <div class="mem4 right">
+      <span>蒼田 翔馬</span>
+      <p>
+      
+            「姉貴はこんなロリッてなかったわ」
+      </p>
+      </div>
+      <div class="mem7 left">
+      <span>ノワール</span>
+      <p>
+      
+            「どうやら、今は大人しい方のようですね」
+      </p>
+      </div>
+      <div class="mem2 right">
+      <span>九重 是之</span>
+      <p>
+      
+            「大人しくてこれか」
+      </p>
+      </div>
+      <div class="mem4 right">
+      <span>蒼田 翔馬</span>
+      <p>
+      
+            「凶暴な性格もあるんだな？」
+      </p>
+      </div>
+      <div class="mem4 right">
+      <span>蒼田 翔馬</span>
+      <p>
+      
+            （実験の影響による人格分離か……）
+      </p>
+      </div>
+      <div class="mem5 left">
+      <span>伊央里 絢</span>
+      <p>
+      
+            ｢機嫌悪くなるとやばいんだっけ…？｣
+      </p>
+      </div>
+      <div class="mem1 left">
+      <span>御守 月彦</span>
+      <p>
+      
+            「ではご要望通り少し遊んでいきましょうか」
+      </p>
+      </div>
+      <div class="kp LtoR-early">
+      
+            お嬢様のターンです
+      </div>
+      <div class="mem3 left">
+      <span>麒麟児 ニア</span>
+      <p>
+      
+            「それでは思い切り遊びましょう！」<br>バレエを披露したい
+      </p>
+      </div>
+      <div class="kp LtoR-early">
+      
+            おもしろい
+      </div>
+      <div class="kp LtoR-early">
+      
+            どうぞ
+      </div>
+      <div class="mem3 left">
+      <span>麒麟児 ニア</span>
+      <p>
+      
+            CCB&lt;=60 【芸術(バレエ)】 (1D100&lt;=60) ＞ 6 ＞ スペシャル
+            
+      </p>
+      </div>
+      <div class="kp LtoR-early">
+      
+            このターン、貴方は狙いません（触手は）
+      </div>
+      <div class="kp LtoR-early">
+      
+            翔馬くん
+      </div>
+      <div class="mem1 left">
+      <span>御守 月彦</span>
+      <p>
+      
+            「お見事なバレエでございます！」
+      </p>
+      </div>
+      <div class="mem1 left">
+      <span>御守 月彦</span>
+      <p>
+      
+            拍手
+      </p>
+      </div>
+      <div class="mem7 left">
+      <span>ノワール</span>
+      <p>
+      
+            つられて拍手（見えないけど）
+      </p>
+      </div>
+      <div class="mem5 left">
+      <span>伊央里 絢</span>
+      <p>
+      
+            ｢すごーい｣拍手
+      </p>
+      </div>
+      <div class="mem4 right">
+      <span>蒼田 翔馬</span>
+      <p>
+      
+            「ならお嬢が踊ってられるようにしねえとな！」
+      </p>
+      </div>
+      <div class="mem2 right">
+      <span>九重 是之</span>
+      <p>
+      
+            「すごいな。子供の相手に慣れてるのか」
+      </p>
+      </div>
+      <div class="mem4 right">
+      <span>蒼田 翔馬</span>
+      <p>
+      
+            触手Aにこぶし
+      </p>
+      </div>
+      <div class="kp LtoR-early">
+      
+            どうぞ
+      </div>
+      <div class="mem4 right">
+      <span>蒼田 翔馬</span>
+      <p>
+      
+            CCB&lt;=55 【こぶし（パンチ）】 (1D100&lt;=55) ＞ 78 ＞ 失敗
+            
+      </p>
+      </div>
+      <div class="kp LtoR-early">
+      
+            当たらなかった！
+      </div>
+      <div class="mem10 right">
+      <span>プルシアン</span>
+      <p>
+      
+            ぴぴぃ
+      </p>
+      </div>
+      <div class="mem4 right">
+      <span>蒼田 翔馬</span>
+      <p>
+      
+            「ち」
+      </p>
+      </div>
+      <div class="mem10 right">
+      <span>プルシアン</span>
+      <p>
+      
+            ちちちちち
+      </p>
+      </div>
+      <div class="mem1 left">
+      <span>御守 月彦</span>
+      <p>
+      
+            触手Ａに杖
+      </p>
+      </div>
+      <div class="mem1 left">
+      <span>御守 月彦</span>
+      <p>
+      
+            CCB&lt;=70 【杖術】 (1D100&lt;=70) ＞ 71 ＞ 失敗
+            
+      </p>
+      </div>
+      <div class="kp LtoR-early">
+      
+            相性が悪いようですね
+      </div>
+      <div class="kp LtoR-early">
+      
+            九重くん
+      </div>
+      <div class="mem2 right">
+      <span>九重 是之</span>
+      <p>
+      
+            CCB&lt;=55 【キック】 (1D100&lt;=55) ＞ 75 ＞ 失敗
+            
+      </p>
+      </div>
+      <div class="kp LtoR-early">
+      
+            アカンですねぇ
+      </div>
+      <div class="kp LtoR-early">
+      
+            がんばれ
+      </div>
+      <div class="kp LtoR-early">
+      
+            がんばれ
+      </div>
+      <div class="kp LtoR-early">
+      
+            伊央里くん
+      </div>
+      <div class="mem5 left">
+      <span>伊央里 絢</span>
+      <p>
+      
+            A殴る
+      </p>
+      </div>
+      <div class="mem5 left">
+      <span>伊央里 絢</span>
+      <p>
+      
+            CCB&lt;=60 【こぶし（パンチ）】 (1D100&lt;=60) ＞ 16 ＞ 成功
+            
+      </p>
+      </div>
+      <div class="mem5 left">
+      <span>伊央里 絢</span>
+      <p>
+      
+            1d3+1d4 (1D3+1D4) ＞ 2[2]+4[4] ＞ 6
+            
+      </p>
+      </div>
+      <div class="kp LtoR-early">
+      
+            じゃ
+      </div>
+      <div class="kp LtoR-early">
+      
+            ノワールだけどどうする？
+      </div>
+      <div class="mem7 left">
+      <span>ノワール</span>
+      <p>
+      
+            S1D100 (1D100) ＞ 22
+            
+      </p>
+      </div>
+      <div class="mem7 left">
+      <span>ノワール</span>
+      <p>
+      
+            自分にシールド張ります
+      </p>
+      </div>
+      <div class="mem11 left">
+      <span>ティムル</span>
+      <p>
+      
+            choice[シャドウアロー,シャドウストーム,きゃははは！] (choice[シャドウアロー,シャドウストーム,きゃははは!]) ＞ きゃははは!
+            
+      </p>
+      </div>
+      <div class="kp LtoR-early">
+      
+            POW×5ロールどうぞ
+      </div>
+      <div class="mem1 left">
+      <span>御守 月彦</span>
+      <p>
+      
+            CCB&lt;=55 【POW×5】 (1D100&lt;=55) ＞ 87 ＞ 失敗
+            
+      </p>
+      </div>
+      <div class="mem3 left">
+      <span>麒麟児 ニア</span>
+      <p>
+      
+            CCB&lt;=45 【POW×5】 (1D100&lt;=45) ＞ 90 ＞ 失敗
+            
+      </p>
+      </div>
+      <div class="mem2 right">
+      <span>九重 是之</span>
+      <p>
+      
+            CCB&lt;=80 【POW×5】 (1D100&lt;=80) ＞ 48 ＞ 成功
+            
+      </p>
+      </div>
+      <div class="mem5 left">
+      <span>伊央里 絢</span>
+      <p>
+      
+            CCB&lt;=45 【POW×5】 (1D100&lt;=45) ＞ 24 ＞ 成功
+            
+      </p>
+      </div>
+      <div class="mem4 right">
+      <span>蒼田 翔馬</span>
+      <p>
+      
+            CCB&lt;=75 【POW×5】 (1D100&lt;=75) ＞ 17 ＞ 成功
+            
+      </p>
+      </div>
+      <div class="kp LtoR-early">
+      
+            5SANの減少
+      </div>
+      <div class="mem1 left">
+      <span>御守 月彦</span>
+      <p>
+      
+            CCB&lt;=85 【アイデア】 (1D100&lt;=85) ＞ 71 ＞ 成功
+            
+      </p>
+      </div>
+      <div class="kp LtoR-early">
+      
+            [ 麒麟児 ニア ] SAN : 40 → 35
+      </div>
+      <div class="mem1 left">
+      <span>御守 月彦</span>
+      <p>
+      
+            1ｄ10 (1D10) ＞ 4
+            
+      </p>
+      </div>
+      <div class="kp LtoR-early">
+      
+            [ 御守 月彦 ] SAN : 60 → 55
+      </div>
+      <div class="mem3 left">
+      <span>麒麟児 ニア</span>
+      <p>
+      
+            CCB&lt;=60 【アイデア】 (1D100&lt;=60) ＞ 60 ＞ 成功
+            
+      </p>
+      </div>
+      <div class="mem3 left">
+      <span>麒麟児 ニア</span>
+      <p>
+      
+            1d10 (1D10) ＞ 7
+            
+      </p>
+      </div>
+      <div class="mem1 left">
+      <span>御守 月彦</span>
+      <p>
+      
+            「楽しそうでなによりでございます私も全力でお相手して差し上げなければ失礼にあたるというもの。いやはやこの爺まだまだ耄碌などしてる暇などございませんなそれにしても元気なお方を見るのは実に楽し」
+      </p>
+      </div>
+      <div class="mem12 right">
+      <span>触手さん</span>
+      <p>
+      
+            Aは翔馬君
+      </p>
+      </div>
+      <div class="mem12 right">
+      <span>触手さん</span>
+      <p>
+      
+            CCB&lt;=80 (1D100&lt;=80) ＞ 63 ＞ 成功
+            
+      </p>
+      </div>
+      <div class="mem4 right">
+      <span>蒼田 翔馬</span>
+      <p>
+      
+            CCB&lt;=50 【回避】 (1D100&lt;=50) ＞ 56 ＞ 失敗
+            
+      </p>
+      </div>
+      <div class="mem12 right">
+      <span>触手さん</span>
+      <p>
+      
+            1D3+1 (1D3+1) ＞ 1[1]+1 ＞ 2
+            
+      </p>
+      </div>
+      <div class="kp LtoR-early">
+      
+            [ 蒼田 翔馬 ] HP : 14 → 12
+      </div>
+      <div class="mem12 right">
+      <span>触手さん</span>
+      <p>
+      
+            choice[蒼田 翔馬,伊央里 絢,ノワール] (choice[蒼田 翔馬,伊央里 絢,ノワール]) ＞ 伊央里 絢
+            
+      </p>
+      </div>
+      <div class="mem12 right">
+      <span>触手さん</span>
+      <p>
+      
+            CCB&lt;=80 【触手で叩きつける】 (1D100&lt;=80) ＞ 69 ＞ 成功
+            
+      </p>
+      </div>
+      <div class="mem5 left">
+      <span>伊央里 絢</span>
+      <p>
+      
+            CCB&lt;=12 【回避】 (1D100&lt;=12) ＞ 70 ＞ 失敗
+            
+      </p>
+      </div>
+      <div class="mem12 right">
+      <span>触手さん</span>
+      <p>
+      
+            1d3+1 (1D3+1) ＞ 3[3]+1 ＞ 4
+            
+      </p>
+      </div>
+      <div class="kp LtoR-early">
+      
+            [ 伊央里 絢 ] HP : 12 → 8
+      </div>
+      <div class="mem5 left">
+      <span>伊央里 絢</span>
+      <p>
+      
+            ｢いった…｣
+      </p>
+      </div>
+      <div class="mem12 right">
+      <span>触手さん</span>
+      <p>
+      
+            choice[蒼田 翔馬,ノワール]  (choice[蒼田 翔馬,ノワール]) ＞ ノワール
+            
+      </p>
+      </div>
+      <div class="kp LtoR-early">
+      
+            無効化ですね
+      </div>
+      <div class="mem12 right">
+      <span>触手さん</span>
+      <p>
+      
+            choice[蒼田 翔馬,ノワール]  (choice[蒼田 翔馬,ノワール]) ＞ 蒼田 翔馬
+            
+      </p>
+      </div>
+      <div class="mem12 right">
+      <span>触手さん</span>
+      <p>
+      
+            CCB&lt;=80 【触手で叩きつける】 (1D100&lt;=80) ＞ 4 ＞ 決定的成功/スペシャル
+            
+      </p>
+      </div>
+      <div class="mem12 right">
+      <span>触手さん</span>
+      <p>
+      
+            1d3+1 (1D3+1) ＞ 2[2]+1 ＞ 3
+            
+      </p>
+      </div>
+      <div class="kp LtoR-early">
+      
+            [ 蒼田 翔馬 ] HP : 12 → 9
+      </div>
+      <div class="kp LtoR-early">
+      
+            2R目
+      </div>
+      <div class="kp LtoR-early">
+      
+            お嬢様
+      </div>
+      <div class="mem3 left">
+      <span>麒麟児 ニア</span>
+      <p>
+      
+            キック&amp;バレエ！
+      </p>
+      </div>
+      <div class="mem3 left">
+      <span>麒麟児 ニア</span>
+      <p>
+      
+            CCB&lt;=60 【芸術(バレエ)】 (1D100&lt;=60) ＞ 73 ＞ 失敗
+            
+      </p>
+      </div>
+      <div class="kp LtoR-early">
+      
+            はい
+      </div>
+      <div class="kp LtoR-early">
+      
+            翔馬くん
+      </div>
+      <div class="mem3 left">
+      <span>麒麟児 ニア</span>
+      <p>
+      
+            「あっははは！ティルムさまも一緒に踊りましょうよ！楽しいですわよ！」
+      </p>
+      </div>
+      <div class="mem4 right">
+      <span>蒼田 翔馬</span>
+      <p>
+      
+            Aを蹴り飛ばす
+      </p>
+      </div>
+      <div class="mem4 right">
+      <span>蒼田 翔馬</span>
+      <p>
+      
+            CCB&lt;=50 【キック】 (1D100&lt;=50) ＞ 6 ＞ スペシャル
+            
+      </p>
+      </div>
+      <div class="mem4 right">
+      <span>蒼田 翔馬</span>
+      <p>
+      
+            1D6+1D4+1 (1D6+1D4+1) ＞ 5[5]+2[2]+1 ＞ 8
+            
+      </p>
+      </div>
+      <div class="kp LtoR-early">
+      
+            はい
+      </div>
+      <div class="kp LtoR-early">
+      
+            月彦さんどうする？
+      </div>
+      <div class="kp LtoR-early">
+      
+            多弁だね
+      </div>
+      <div class="mem1 left">
+      <span>御守 月彦</span>
+      <p>
+      
+            翔馬くんに応急手当
+      </p>
+      </div>
+      <div class="mem1 left">
+      <span>御守 月彦</span>
+      <p>
+      
+            CCB&lt;=70 【応急手当】 (1D100&lt;=70) ＞ 13 ＞ スペシャル
+            
+      </p>
+      </div>
+      <div class="mem1 left">
+      <span>御守 月彦</span>
+      <p>
+      
+            1ｄ3+1 (1D3+1) ＞ 1[1]+1 ＞ 2
+            
+      </p>
+      </div>
+      <div class="kp LtoR-early">
+      
+            [ 蒼田 翔馬 ] HP : 9 → 11
+      </div>
+      <div class="kp LtoR-early">
+      
+            はい
+      </div>
+      <div class="kp LtoR-early">
+      
+            九重くん
+      </div>
+      <div class="mem4 right">
+      <span>蒼田 翔馬</span>
+      <p>
+      
+            「御守さんに世話かけてばっかりですね」
+      </p>
+      </div>
+      <div class="mem1 left">
+      <span>御守 月彦</span>
+      <p>
+      
+            「いたいのいたいのはじけ飛べとはよく旦那様がお嬢様におっしゃられていた文言ではありますがはははあれはまことに愉快で」
+      </p>
+      </div>
+      <div class="mem2 right">
+      <span>九重 是之</span>
+      <p>
+      
+            触手Aにキック
+      </p>
+      </div>
+      <div class="mem2 right">
+      <span>九重 是之</span>
+      <p>
+      
+            CCB&lt;=55 【キック】 (1D100&lt;=55) ＞ 41 ＞ 成功
+            
+      </p>
+      </div>
+      <div class="mem2 right">
+      <span>九重 是之</span>
+      <p>
+      
+            1ｄ6+1ｄ4 (1D6+1D4) ＞ 2[2]+1[1] ＞ 3
+            
+      </p>
+      </div>
+      <div class="kp LtoR-early">
+      
+            はい
+      </div>
+      <div class="kp LtoR-early">
+      
+            伊央里くん
+      </div>
+      <div class="mem5 left">
+      <span>伊央里 絢</span>
+      <p>
+      
+            ニアちゃんに精神分析
+      </p>
+      </div>
+      <div class="mem5 left">
+      <span>伊央里 絢</span>
+      <p>
+      
+            CCB&lt;=46 【精神分析】 (1D100&lt;=46) ＞ 61 ＞ 失敗
+            
+      </p>
+      </div>
+      <div class="kp LtoR-early">
+      
+            どんまい
+      </div>
+      <div class="kp LtoR-early">
+      
+            じゃ
+      </div>
+      <div class="kp LtoR-early">
+      
+            ノワールくんは
+      </div>
+      <div class="kp LtoR-early">
+      
+            伊央里くん回復だよね？
+      </div>
+      <div class="mem7 left">
+      <span>ノワール</span>
+      <p>
+      
+            S1D100 (1D100) ＞ 72
+            
+      </p>
+      </div>
+      <div class="mem7 left">
+      <span>ノワール</span>
+      <p>
+      
+            全回復です
+      </p>
+      </div>
+      <div class="mem5 left">
+      <span>伊央里 絢</span>
+      <p>
+      
+            ｢ノワールくんありがとう〜…｣
+      </p>
+      </div>
+      <div class="kp LtoR-early">
+      
+            [ 伊央里 絢 ] HP : 8 → 12
+      </div>
+      <div class="mem11 left">
+      <span>ティムル</span>
+      <p>
+      
+            choice[シャドウアロー,シャドウストーム,きゃははは！] (choice[シャドウアロー,シャドウストーム,きゃははは!]) ＞ きゃははは!
+            
+      </p>
+      </div>
+      <div class="kp LtoR-early">
+      
+            みなさん
+      </div>
+      <div class="kp LtoR-early">
+      
+            POW×5でお願いします
+      </div>
+      <div class="mem1 left">
+      <span>御守 月彦</span>
+      <p>
+      
+            CCB&lt;=55 【POW×5】 (1D100&lt;=55) ＞ 78 ＞ 失敗
+            
+      </p>
+      </div>
+      <div class="mem2 right">
+      <span>九重 是之</span>
+      <p>
+      
+            CCB&lt;=80 【POW×5】 (1D100&lt;=80) ＞ 16 ＞ スペシャル
+            
+      </p>
+      </div>
+      <div class="mem3 left">
+      <span>麒麟児 ニア</span>
+      <p>
+      
+            CCB&lt;=45 【POW×5】 (1D100&lt;=45) ＞ 79 ＞ 失敗
+            
+      </p>
+      </div>
+      <div class="mem5 left">
+      <span>伊央里 絢</span>
+      <p>
+      
+            CCB&lt;=45 【POW×5】 (1D100&lt;=45) ＞ 63 ＞ 失敗
+            
+      </p>
+      </div>
+      <div class="mem4 right">
+      <span>蒼田 翔馬</span>
+      <p>
+      
+            CCB&lt;=75 【POW×5】 (1D100&lt;=75) ＞ 37 ＞ 成功
+            
+      </p>
+      </div>
+      <div class="kp LtoR-early">
+      
+            [ 御守 月彦 ] SAN : 55 → 50
+      </div>
+      <div class="kp LtoR-early">
+      
+            [ 麒麟児 ニア ] SAN : 35 → 30
+      </div>
+      <div class="kp LtoR-early">
+      
+            [ 伊央里 絢 ] SAN : 39 → 34
+      </div>
+      <div class="mem5 left">
+      <span>伊央里 絢</span>
+      <p>
+      
+            CCB&lt;=75 【アイデア】 (1D100&lt;=75) ＞ 64 ＞ 成功
+            
+      </p>
+      </div>
+      <div class="mem5 left">
+      <span>伊央里 絢</span>
+      <p>
+      
+            1d10 (1D10) ＞ 6
+            
+      </p>
+      </div>
+      <div class="mem5 left">
+      <span>伊央里 絢</span>
+      <p>
+      
+            1d10 (1D10) ＞ 8
+            
+      </p>
+      </div>
+      <div class="mem12 right">
+      <span>触手さん</span>
+      <p>
+      
+            Aはお嬢様狙います
+      </p>
+      </div>
+      <div class="mem12 right">
+      <span>触手さん</span>
+      <p>
+      
+            CCB&lt;=80 【触手で叩きつける】 (1D100&lt;=80) ＞ 90 ＞ 失敗
+            
+      </p>
+      </div>
+      <div class="mem12 right">
+      <span>触手さん</span>
+      <p>
+      
+            Bはお嬢様をねらいます
+      </p>
+      </div>
+      <div class="mem12 right">
+      <span>触手さん</span>
+      <p>
+      
+            CCB&lt;=80 【触手で叩きつける】 (1D100&lt;=80) ＞ 94 ＞ 失敗
+            
+      </p>
+      </div>
+      <div class="mem12 right">
+      <span>触手さん</span>
+      <p>
+      
+            Cはお嬢様をねらいます
+      </p>
+      </div>
+      <div class="mem12 right">
+      <span>触手さん</span>
+      <p>
+      
+            CCB&lt;=80 【触手で叩きつける】 (1D100&lt;=80) ＞ 78 ＞ 成功
+            
+      </p>
+      </div>
+      <div class="mem3 left">
+      <span>麒麟児 ニア</span>
+      <p>
+      
+            CCB&lt;=26 【回避】 (1D100&lt;=26) ＞ 53 ＞ 失敗
+            
+      </p>
+      </div>
+      <div class="mem12 right">
+      <span>触手さん</span>
+      <p>
+      
+            1d3+1 (1D3+1) ＞ 2[2]+1 ＞ 3
+            
+      </p>
+      </div>
+      <div class="kp LtoR-early">
+      
+            [ 麒麟児 ニア ] HP : 13 → 10
+      </div>
+      <div class="mem12 right">
+      <span>触手さん</span>
+      <p>
+      
+            Dはちょいす
+      </p>
+      </div>
+      <div class="mem12 right">
+      <span>触手さん</span>
+      <p>
+      
+            choice[伊央里 絢,ノワール] (choice[伊央里 絢,ノワール]) ＞ ノワール
+            
+      </p>
+      </div>
+      <div class="mem12 right">
+      <span>触手さん</span>
+      <p>
+      
+            CCB&lt;=80 【触手で叩きつける】 (1D100&lt;=80) ＞ 18 ＞ 成功
+            
+      </p>
+      </div>
+      <div class="mem7 left">
+      <span>ノワール</span>
+      <p>
+      
+            3D6 (3D6) ＞ 10[5,3,2] ＞ 10
+            
+      </p>
+      </div>
+      <div class="mem7 left">
+      <span>ノワール</span>
+      <p>
+      
+            CCB&lt;=20 【回避】 (1D100&lt;=20) ＞ 53 ＞ 失敗
+            
+      </p>
+      </div>
+      <div class="mem7 left">
+      <span>ノワール</span>
+      <p>
+      
+            1d3+1+1D2 (1D3+1+1D2) ＞ 3[3]+1+1[1] ＞ 5
+            
+      </p>
+      </div>
+      <div class="kp LtoR-early">
+      
+            3R目
+      </div>
+      <div class="kp LtoR-early">
+      
+            お嬢様
+      </div>
+      <div class="mem3 left">
+      <span>麒麟児 ニア</span>
+      <p>
+      
+            バレエキックをAに！
+      </p>
+      </div>
+      <div class="mem3 left">
+      <span>麒麟児 ニア</span>
+      <p>
+      
+            CCB&lt;=60 【芸術(バレエ)】 (1D100&lt;=60) ＞ 73 ＞ 失敗
+            
+      </p>
+      </div>
+      <div class="mem3 left">
+      <span>麒麟児 ニア</span>
+      <p>
+      
+            1d3 (1D3) ＞ 3
+            
+      </p>
+      </div>
+      <div class="kp LtoR-early">
+      
+            翔馬くん
+      </div>
+      <div class="mem4 right">
+      <span>蒼田 翔馬</span>
+      <p>
+      
+            Aを蹴り飛ばします
+      </p>
+      </div>
+      <div class="mem4 right">
+      <span>蒼田 翔馬</span>
+      <p>
+      
+            CCB&lt;=50 【キック】 (1D100&lt;=50) ＞ 65 ＞ 失敗
+            
+      </p>
+      </div>
+      <div class="kp LtoR-early">
+      
+            月彦さん…
+      </div>
+      <div class="mem1 left">
+      <span>御守 月彦</span>
+      <p>
+      
+            ニアちゃんに応急手当
+      </p>
+      </div>
+      <div class="mem1 left">
+      <span>御守 月彦</span>
+      <p>
+      
+            CCB&lt;=55 【幸運】 (1D100&lt;=55) ＞ 3 ＞ 決定的成功/スペシャル
+            
+      </p>
+      </div>
+      <div class="mem1 left">
+      <span>御守 月彦</span>
+      <p>
+      
+            1ｄ3 (1D3) ＞ 3
+            
+      </p>
+      </div>
+      <div class="kp LtoR-early">
+      
+            [ 麒麟児 ニア ] HP : 10 → 13
+      </div>
+      <div class="mem3 left">
+      <span>麒麟児 ニア</span>
+      <p>
+      
+            「気分がとても良いですわ～！」
+      </p>
+      </div>
+      <div class="mem1 left">
+      <span>御守 月彦</span>
+      <p>
+      
+            「元気なのはよろしいですが体を万全でなければせっかくの美しい技術ももったいなく存じます差し出がましいじじいのおせっかいですがどうかご自愛くださるよう」
+      </p>
+      </div>
+      <div class="kp LtoR-early">
+      
+            九重くん
+      </div>
+      <div class="mem2 right">
+      <span>九重 是之</span>
+      <p>
+      
+            Aにキック
+      </p>
+      </div>
+      <div class="mem2 right">
+      <span>九重 是之</span>
+      <p>
+      
+            CCB&lt;=55 【キック】 (1D100&lt;=55) ＞ 84 ＞ 失敗
+            
+      </p>
+      </div>
+      <div class="kp LtoR-early">
+      
+            伊央里くんどうぞんぬ
+      </div>
+      <div class="mem5 left">
+      <span>伊央里 絢</span>
+      <p>
+      
+            Aにキックまねっこ
+      </p>
+      </div>
+      <div class="mem5 left">
+      <span>伊央里 絢</span>
+      <p>
+      
+            CCB&lt;=35 【キック】 (1D100&lt;=35) ＞ 77 ＞ 失敗
+            
+      </p>
+      </div>
+      <div class="kp LtoR-early">
+      
+            ノワールくん
+      </div>
+      <div class="mem7 left">
+      <span>ノワール</span>
+      <p>
+      
+            1D2 (1D2) ＞ 2
+            
+      </p>
+      </div>
+      <div class="mem7 left">
+      <span>ノワール</span>
+      <p>
+      
+            どうしたらいい？
+      </p>
+      </div>
+      <div class="mem7 left">
+      <span>ノワール</span>
+      <p>
+      
+            ニアちゃんに｢ホワイトシールド｣
+      </p>
+      </div>
+      <div class="mem7 left">
+      <span>ノワール</span>
+      <p>
+      
+            S1D100 (1D100) ＞ 51
+            
+      </p>
+      </div>
+      <div class="mem7 left">
+      <span>ノワール</span>
+      <p>
+      
+            バリア張りました
+      </p>
+      </div>
+      <div class="mem11 left">
+      <span>ティムル</span>
+      <p>
+      
+            choice[シャドウアロー,シャドウストーム,きゃははは！] (choice[シャドウアロー,シャドウストーム,きゃははは!]) ＞ シャドウアロー
+            
+      </p>
+      </div>
+      <div class="mem11 left">
+      <span>ティムル</span>
+      <p>
+      
+            choice[麒麟児 ニア,蒼田 翔馬,御守 月彦,九重 是之,伊央里 絢,ノワール] (choice[麒麟児 ニア,蒼田 翔馬,御守 月彦,九重 是之,伊央里 絢,ノワール]) ＞ 伊央里 絢
+            
+      </p>
+      </div>
+      <div class="mem11 left">
+      <span>ティムル</span>
+      <p>
+      
+            sCCB&lt;=80 【シャドウアロー】 (1D100&lt;=80) ＞ 89 ＞ 失敗
+            
+      </p>
+      </div>
+      <div class="mem12 right">
+      <span>触手さん</span>
+      <p>
+      
+            A～Dまで攻撃無効化されました
+      </p>
+      </div>
+      <div class="kp LtoR-early">
+      
+            4R目
+      </div>
+      <div class="kp LtoR-early">
+      
+            お嬢様
+      </div>
+      <div class="mem3 left">
+      <span>麒麟児 ニア</span>
+      <p>
+      
+            バレエキック！
+      </p>
+      </div>
+      <div class="mem3 left">
+      <span>麒麟児 ニア</span>
+      <p>
+      
+            CCB&lt;=60 【芸術(バレエ)】 (1D100&lt;=60) ＞ 94 ＞ 失敗
+            
+      </p>
+      </div>
+      <div class="kp LtoR-early">
+      
+            翔馬くん
+      </div>
+      <div class="mem4 right">
+      <span>蒼田 翔馬</span>
+      <p>
+      
+            Aを蹴り飛ばしたい
+      </p>
+      </div>
+      <div class="kp LtoR-early">
+      
+            はい
+      </div>
+      <div class="mem4 right">
+      <span>蒼田 翔馬</span>
+      <p>
+      
+            CCB&lt;=50 【キック】 (1D100&lt;=50) ＞ 31 ＞ 成功
+            
+      </p>
+      </div>
+      <div class="mem4 right">
+      <span>蒼田 翔馬</span>
+      <p>
+      
+            1D6+1D4+1 (1D6+1D4+1) ＞ 5[5]+1[1]+1 ＞ 7
+            
+      </p>
+      </div>
+      <div class="kp LtoR-early">
+      
+            おじいちゃん
+      </div>
+      <div class="mem1 left">
+      <span>御守 月彦</span>
+      <p>
+      
+            CCB&lt;=70 【杖術】 (1D100&lt;=70) ＞ 76 ＞ 失敗
+            
+      </p>
+      </div>
+      <div class="kp LtoR-early">
+      
+            九重くん
+      </div>
+      <div class="mem2 right">
+      <span>九重 是之</span>
+      <p>
+      
+            Aにキック
+      </p>
+      </div>
+      <div class="mem2 right">
+      <span>九重 是之</span>
+      <p>
+      
+            CCB&lt;=55 【キック】 (1D100&lt;=55) ＞ 25 ＞ 成功
+            
+      </p>
+      </div>
+      <div class="mem2 right">
+      <span>九重 是之</span>
+      <p>
+      
+            1ｄ6+1ｄ4 (1D6+1D4) ＞ 3[3]+2[2] ＞ 5
+            
+      </p>
+      </div>
+      <div class="kp LtoR-early">
+      
+            伊央里くん
+      </div>
+      <div class="mem5 left">
+      <span>伊央里 絢</span>
+      <p>
+      
+            Aにキックまねっこ
+      </p>
+      </div>
+      <div class="mem5 left">
+      <span>伊央里 絢</span>
+      <p>
+      
+            CCB&lt;=35 【キック】 (1D100&lt;=35) ＞ 87 ＞ 失敗
+            
+      </p>
+      </div>
+      <div class="kp LtoR-early">
+      
+            戦闘終了です
+      </div>
+      <div class="mem11 left">
+      <span>ティムル</span>
+      <p>
+      
+            ｢ああ...いっぱい遊んだ....<br>また遊びに来てね、わたし待ってるから....くすくす｣
+      </p>
+      </div>
+      <div class="kp LtoR-early">
+      
+            少女はそう言うと研究棟の奥に消えた。騒ぎを聞きつけた担当者がやってきて、
+      </div>
+      <div class="mem13 left">
+      <span>担当者</span>
+      <p>
+      
+            ｢ああ、皆さんご無事でしたか。<br>こちらの手違いでこのような目に遭わせてしまい、申し訳ありませんでした...｣
+      </p>
+      </div>
+      <div class="mem2 right">
+      <span>九重 是之</span>
+      <p>
+      
+            「見張りを置け」
+      </p>
+      </div>
+      <div class="mem2 right">
+      <span>九重 是之</span>
+      <p>
+      
+            「子供を一人にするな」
+      </p>
+      </div>
+      <div class="mem4 right">
+      <span>蒼田 翔馬</span>
+      <p>
+      
+            「何をもってよしとしたんですか」
+      </p>
+      </div>
+      <div class="mem1 left">
+      <span>御守 月彦</span>
+      <p>
+      
+            「刺激的な観光にはなりましたがね」
+      </p>
+      </div>
+      <div class="mem13 left">
+      <span>担当者</span>
+      <p>
+      
+            「どうやら今日はティムルの機嫌が良かったというか悪かったというか...<br>外からお客様が多くやってきたため興奮状態になっていたようですね。そのせいで研究棟内の生き物もじゃれついてきたようです。」
+      </p>
+      </div>
+      <div class="mem13 left">
+      <span>担当者</span>
+      <p>
+      
+            「二度とああいうことがないよう、よくしつけておきますので...たまにはあの子たちと遊んであげないといけませんね。<br>ともあれ、せっかくの見学でトラブルに巻きこんで申し訳ありませんでした。｣
+      </p>
+      </div>
+      <div class="mem4 right">
+      <span>蒼田 翔馬</span>
+      <p>
+      
+            「何をもってよしとしてたんですか」
+      </p>
+      </div>
+      <div class="mem2 right">
+      <span>九重 是之</span>
+      <p>
+      
+            「じゃれつきで死にそうになったが……」
+      </p>
+      </div>
+      <div class="mem3 left">
+      <span>麒麟児 ニア</span>
+      <p>
+      
+            「それはそれとして　こちらあなたに渡せば良かったのよね？」<br>ペンダントと結晶を見せます
+      </p>
+      </div>
+      <div class="mem13 left">
+      <span>担当者</span>
+      <p>
+      
+            「それはティムルの機嫌次第なので私にはよく…」
+      </p>
+      </div>
+      <div class="mem13 left">
+      <span>担当者</span>
+      <p>
+      
+            ｢あぁ、持って来て下さったんですか！少し待っていてください....｣
+      </p>
+      </div>
+      <div class="kp LtoR-early">
+      
+            結晶を受け取り、研究所の方に走っていき少しすると帰ってきた。
+      </div>
+      <div class="mem13 left">
+      <span>担当者</span>
+      <p>
+      
+            ｢数十分すれは加工処理ができますので、お詫びも兼ねてあなたがたに完成品をお渡ししますね｣
+      </p>
+      </div>
+      <div class="kp LtoR-early">
+      
+            ペンダントの方は返してもらおうかな。
+      </div>
+      <div class="kp LtoR-early">
+      
+            完成品渡すから
+      </div>
+      <div class="mem3 left">
+      <span>麒麟児 ニア</span>
+      <p>
+      
+            渡しまーす
+      </p>
+      </div>
+      <div class="mem5 left">
+      <span>伊央里 絢</span>
+      <p>
+      
+            ｢うぅ……｣疲れてしょもん
+      </p>
+      </div>
+      <div class="mem2 right">
+      <span>九重 是之</span>
+      <p>
+      
+            「よしよし」おみみなでなで
+      </p>
+      </div>
+      <div class="kp LtoR-early">
+      
+            研究者はノワールをみて
+      </div>
+      <div class="mem13 left">
+      <span>担当者</span>
+      <p>
+      
+            ｢おっと、あなたも目を覚ましていたのですね。丁度良いので伝えますが、本研究所の方に移動のお願いが来ています。<br>......あの場所の中ではなんというか、あなたの大人しい性格だと暮らしにくいでしょうし....｣
+      </p>
+      </div>
+      <div class="kp LtoR-early">
+      
+            ノワールは気まずそうに顔を逸らしている。どうやら同意見だったようだ。
+      </div>
+      <div class="mem13 left">
+      <span>担当者</span>
+      <p>
+      
+            ｢......とりあえず皆さん、こちらの休憩室へご案内しますね。落ち着いた後に見学の行程は終了としましょう｣
+      </p>
+      </div>
+      <div class="kp LtoR-early">
+      
+            そうしてあなたたちは本研究所の方の休憩室へ案内され、一息つくことができた。身体が変異してしまったPCは元に戻して貰った後、最後の最後で割と大変な目にあった研究所見学は終了となりあなたたちは帰路へと着いた。
+      </div>
+      <div class="mem1 left">
+      <span>御守 月彦</span>
+      <p>
+      
+            「なかなか愉快な研究所でしたねぇ」
+      </p>
+      </div>
+      <div class="mem3 left">
+      <span>麒麟児 ニア</span>
+      <p>
+      
+            「耳などもう少し触っておくべきでしたわね…」
+      </p>
+      </div>
+      <div class="mem2 right">
+      <span>九重 是之</span>
+      <p>
+      
+            「そのあたりは有意義な体験だった」
+      </p>
+      </div>
+      <div class="mem4 right">
+      <span>蒼田 翔馬</span>
+      <p>
+      
+            「こんな愉快な研究所があってたまるか」プルと戯れ
+      </p>
+      </div>
+      <div class="mem5 left">
+      <span>伊央里 絢</span>
+      <p>
+      
+            ｢耳は面白かったけど精神的に疲れたよ……｣
+      </p>
+      </div>
+      <div class="mem1 left">
+      <span>御守 月彦</span>
+      <p>
+      
+            「皆様大変お疲れ様でございました。とても刺激的な夜の出会いではありましたが皆様と会えてとても楽しかったです。もしよろしければらいんなどお聞きしても？」
+      </p>
+      </div>
+      <div class="mem4 right">
+      <span>蒼田 翔馬</span>
+      <p>
+      
+            「これでもくっとけ」金平糖さしだす
+      </p>
+      </div>
+      <div class="mem1 left">
+      <span>御守 月彦</span>
+      <p>
+      
+            「伊央里様にはお写真もお渡ししたいですし」
+      </p>
+      </div>
+      <div class="mem3 left">
+      <span>麒麟児 ニア</span>
+      <p>
+      
+            「もちろんですわ！」全員にばらまきます
+      </p>
+      </div>
+      <div class="mem2 right">
+      <span>九重 是之</span>
+      <p>
+      
+            「俺も撮っておけばよかったな」
+      </p>
+      </div>
+      <div class="mem3 left">
+      <span>麒麟児 ニア</span>
+      <p>
+      
+            「落ち着いたらわたくしの屋敷で　パーティーでもいたしましょう🎵」
+      </p>
+      </div>
+      <div class="mem2 right">
+      <span>九重 是之</span>
+      <p>
+      
+            「連絡先の交換、いいぞ」
+      </p>
+      </div>
+      <div class="mem4 right">
+      <span>蒼田 翔馬</span>
+      <p>
+      
+            「オレはパスで」
+      </p>
+      </div>
+      <div class="mem2 right">
+      <span>九重 是之</span>
+      <p>
+      
+            「……どうやってやるのか教えてくれるか」
+      </p>
+      </div>
+      <div class="mem5 left">
+      <span>伊央里 絢</span>
+      <p>
+      
+            ｢ありがとう…｣翔馬くんの手から直接金平糖食べる
+      </p>
+      </div>
+      <div class="mem4 right">
+      <span>蒼田 翔馬</span>
+      <p>
+      
+            「カタギの人間はこれ以上まきこめねぇよ」
+      </p>
+      </div>
+      <div class="mem1 left">
+      <span>御守 月彦</span>
+      <p>
+      
+            「ふるふる。というものをこの間ご教授いただきまして」
+      </p>
+      </div>
+      <div class="mem2 right">
+      <span>九重 是之</span>
+      <p>
+      
+            「ある意味でもうカタギではない気がするがな……」ぼそり
+      </p>
+      </div>
+      <div class="mem5 left">
+      <span>伊央里 絢</span>
+      <p>
+      
+            ｢スマホ切れちゃったからIDでもいいー？｣
+      </p>
+      </div>
+      <div class="mem2 right">
+      <span>九重 是之</span>
+      <p>
+      
+            「ふるふる。なるほど。こうか。ふるふるー」振ってます
+      </p>
+      </div>
+      <div class="mem4 right">
+      <span>蒼田 翔馬</span>
+      <p>
+      
+            「まっとうな場所、社会、お天道様の見られる場所で生きてんならカタギだ」
+      </p>
+      </div>
+      <div class="mem1 left">
+      <span>御守 月彦</span>
+      <p>
+      
+            「ええ大丈夫です。頂戴いたしますね。…私のIDはどこで見るのでしょう…」
+      </p>
+      </div>
+      <div class="mem2 right">
+      <span>九重 是之</span>
+      <p>
+      
+            「怪物に頻繁に会うのはカタギと呼べるか？」
+      </p>
+      </div>
+      <div class="mem1 left">
+      <span>御守 月彦</span>
+      <p>
+      
+            九重君とふるふるしとく
+      </p>
+      </div>
+      <div class="mem4 right">
+      <span>蒼田 翔馬</span>
+      <p>
+      
+            「堅気だな」
+      </p>
+      </div>
+      <div class="mem2 right">
+      <span>九重 是之</span>
+      <p>
+      
+            「そうか……」
+      </p>
+      </div>
+      <div class="kp LtoR-early">
+      
+            さけさけ
+      </div>
+      <div class="mem4 right">
+      <span>蒼田 翔馬</span>
+      <p>
+      
+            「怪物なんざどこにでもいるようなもんだろ」
+      </p>
+      </div>
+      <div class="mem1 left">
+      <span>御守 月彦</span>
+      <p>
+      
+            「わたくしは老い先短い爺ですから構いませんが、翔馬様の気が乗らないのであれば無理強いはできませんね…」しょぼ
+      </p>
+      </div>
+      <div class="mem3 left">
+      <span>麒麟児 ニア</span>
+      <p>
+      
+            「天才のわたくしにも分からないことって　あるんですのねぇ<br>何か困ったら　いつでも聞かせていただきますわ！」
+      </p>
+      </div>
+      <div class="mem4 right">
+      <span>蒼田 翔馬</span>
+      <p>
+      
+            「あ……なら」
+      </p>
+      </div>
+      <div class="kp LtoR-early">
+      
+            さけさけ
+      </div>
+      <div class="mem5 left">
+      <span>伊央里 絢</span>
+      <p>
+      
+            ｢あ、じゃあ俺が直接打って検索するよ。ここをこうして…｣月彦さんにやり方教える
+      </p>
+      </div>
+      <div class="mem4 right">
+      <span>蒼田 翔馬</span>
+      <p>
+      
+            御守さんに連絡先を書いた紙を渡す
+      </p>
+      </div>
+      <div class="mem4 right">
+      <span>蒼田 翔馬</span>
+      <p>
+      
+            「この会社に連絡してくれ。普通の企業だ、そこを通してくれたら礼をしたい」
+      </p>
+      </div>
+      <div class="mem1 left">
+      <span>御守 月彦</span>
+      <p>
+      
+            「おねがいします」伊央里くんにすまほわたし
+      </p>
+      </div>
+      <div class="mem2 right">
+      <span>九重 是之</span>
+      <p>
+      
+            「まぁ、一度おかしな目に巻き込まれた以上、また会うこともあるだろう」
+      </p>
+      </div>
+      <div class="kp LtoR-early">
+      
+            さけのみてぇよー
+      </div>
+      <div class="mem5 left">
+      <span>伊央里 絢</span>
+      <p>
+      
+            ｢ここを押せば友達追加できるよー｣
+      </p>
+      </div>
+      <div class="mem1 left">
+      <span>御守 月彦</span>
+      <p>
+      
+            「お礼は構いませんが、ありがとうございます。私もよいものがあればお持ちするので受け取ってくださいね」
+      </p>
+      </div>
+      <div class="mem1 left">
+      <span>御守 月彦</span>
+      <p>
+      
+            「なるほど…こうですね」
+      </p>
+      </div>
+      <div class="mem2 right">
+      <span>九重 是之</span>
+      <p>
+      
+            「伊央里。俺も教えてくれるか」
+      </p>
+      </div>
+      <div class="mem1 left">
+      <span>御守 月彦</span>
+      <p>
+      
+            「皆様とまたご縁がありますように。お茶でも私はいつでも歓迎いたしますので」お友達ふえてほくほく
+      </p>
+      </div>
+      <div class="mem4 right">
+      <span>蒼田 翔馬</span>
+      <p>
+      
+            煙草に火をつけ一服
+      </p>
+      </div>
+      <div class="mem5 left">
+      <span>伊央里 絢</span>
+      <p>
+      
+            ｢いいよ〜｣入力する
+      </p>
+      </div>
+      <div class="mem2 right">
+      <span>九重 是之</span>
+      <p>
+      
+            「ありがとう。何かあったら取材させていただく」
+      </p>
+      </div>
+      <div class="mem4 right">
+      <span>蒼田 翔馬</span>
+      <p>
+      
+            様子を見ながら紫煙をくゆらす
+      </p>
+      </div>
+      <div class="kp LtoR-early">
+      
+            ED｢奇妙で危険な夜の終わり｣
+      </div>
+      <div class="kp LtoR-early">
+      
+            ・生還→1d3+2<br>・ノワールを最後まで連れている→2<br>以上の通りのSAN回復
+      </div>
+      <div class="kp LtoR-early">
+      
+            ・"凛血結晶"を担当者に渡している→｢装飾品:スピリットクォーター｣を得る
+      </div>
+      <div class="kp LtoR-early">
+      
+            ｢スピリットクォーター｣<br>青と白が入り交じった美しい結晶のペンデュラムと金色の飾りが特徴的な癒しのペンダント。<br>身につけている限り、全ての場面において[HP]の回復量が+3される。
+      </div>
+      <div class="mem1 left">
+      <span>御守 月彦</span>
+      <p>
+      
+            1ｄ3+2 (1D3+2) ＞ 3[3]+2 ＞ 5
+            
+      </p>
+      </div>
+      <div class="kp LtoR-early">
+      
+            [ 御守 月彦 ] SAN : 50 → 55
+      </div>
+      <div class="mem2 right">
+      <span>九重 是之</span>
+      <p>
+      
+            1ｄ3+2 (1D3+2) ＞ 2[2]+2 ＞ 4
+            
+      </p>
+      </div>
+      <div class="mem3 left">
+      <span>麒麟児 ニア</span>
+      <p>
+      
+            1D3+2 (1D3+2) ＞ 1[1]+2 ＞ 3
+            
+      </p>
+      </div>
+      <div class="kp LtoR-early">
+      
+            [ 麒麟児 ニア ] SAN : 30 → 33
+      </div>
+      <div class="mem4 right">
+      <span>蒼田 翔馬</span>
+      <p>
+      
+            1D3+2 (1D3+2) ＞ 3[3]+2 ＞ 5
+            
+      </p>
+      </div>
+      <div class="mem5 left">
+      <span>伊央里 絢</span>
+      <p>
+      
+            1d3+2 (1D3+2) ＞ 2[2]+2 ＞ 4
+            
+      </p>
+      </div>
+      <div class="kp LtoR-early">
+      
+            [ 伊央里 絢 ] SAN : 34 → 38
+      </div>
+      <div class="kp LtoR-early">
+      
+            [ 御守 月彦 ] SAN : 55 → 57
+      </div>
+      <div class="kp LtoR-early">
+      
+            [ 麒麟児 ニア ] SAN : 33 → 35
+      </div>
+      <div class="kp LtoR-early">
+      
+            [ 伊央里 絢 ] SAN : 38 → 40
+      </div>
+      <div class="kp LtoR-early">
+      
+            [ 蒼田 翔馬 ] SAN : 71 → 77
+      </div>
+      <div class="kp LtoR-early">
+      
+            [ 九重 是之 ] SAN : 83 → 89
+      </div>
+      <div class="kp LtoR-early">
+      
+            [ 蒼田 翔馬 ] SAN : 77 → 78
+      </div>
+      <div class="mem1 left">
+      <span>御守 月彦</span>
+      <p>
+      
+            1d10 (1D10) ＞ 2
+            
+      </p>
+      </div>
+      <div class="mem3 left">
+      <span>麒麟児 ニア</span>
+      <p>
+      
+            1d10 (1D10) ＞ 2
+            
+      </p>
+      </div>
+      <div class="mem5 left">
+      <span>伊央里 絢</span>
+      <p>
+      
+            1d10 (1D10) ＞ 10
+            
+      </p>
+      </div>
+      <div class="mem3 left">
+      <span>麒麟児 ニア</span>
+      <p>
+      
+            こどもこわい
+      </p>
+      </div>
+      <div class="kp LtoR-early">
+      
+            伊央里 目星 F <br>翔馬 目星 C<br>月彦 杖術 F<br>月彦 杖術 C<br>月彦 目星 F<br>月彦 写真術 C 初期値<br>九重 隠れる 初期値<br>月彦 応急手当 F<br>ニア 目星 C
+      </div>
+      <div class="mem1 left">
+      <span>御守 月彦</span>
+      <p>
+      
+            CCB&lt;=70 【杖術】 (1D100&lt;=70) ＞ 38 ＞ 成功
+            
+      </p>
+      </div>
+      <div class="mem1 left">
+      <span>御守 月彦</span>
+      <p>
+      
+            CCB&lt;=70 【杖術】 (1D100&lt;=70) ＞ 67 ＞ 成功
+            
+      </p>
+      </div>
+      <div class="mem1 left">
+      <span>御守 月彦</span>
+      <p>
+      
+            CCB&lt;=32 【目星】 (1D100&lt;=32) ＞ 31 ＞ 成功
+            
+      </p>
+      </div>
+      <div class="mem5 left">
+      <span>伊央里 絢</span>
+      <p>
+      
+            CCB&lt;=60 【目星】 (1D100&lt;=60) ＞ 17 ＞ 成功
+            
+      </p>
+      </div>
+      <div class="mem1 left">
+      <span>御守 月彦</span>
+      <p>
+      
+            CCB&lt;=10 【写真術】 (1D100&lt;=10) ＞ 64 ＞ 失敗
+            
+      </p>
+      </div>
+      <div class="mem1 left">
+      <span>御守 月彦</span>
+      <p>
+      
+            CCB&lt;=10 【写真術】 (1D100&lt;=10) ＞ 23 ＞ 失敗
+            
+      </p>
+      </div>
+      <div class="mem2 right">
+      <span>九重 是之</span>
+      <p>
+      
+            CCB&lt;=10 【隠れる】 (1D100&lt;=10) ＞ 43 ＞ 失敗
+            
+      </p>
+      </div>
+      <div class="mem2 right">
+      <span>九重 是之</span>
+      <p>
+      
+            1ｄ6 (1D6) ＞ 6
+            
+      </p>
+      </div>
+      <div class="mem3 left">
+      <span>麒麟児 ニア</span>
+      <p>
+      
+            CCB&lt;=76 【目星】 (1D100&lt;=76) ＞ 74 ＞ 成功
+            
+      </p>
+      </div>
+      <div class="mem4 right">
+      <span>蒼田 翔馬</span>
+      <p>
+      
+            CCB&lt;=60 【目星】 (1D100&lt;=60) ＞ 62 ＞ 失敗
+            
+      </p>
+      </div>
+      <div class="mem1 left">
+      <span>御守 月彦</span>
+      <p>
+      
+            1d6+1d6 (1D6+1D6) ＞ 1[1]+1[1] ＞ 2
+            
+      </p>
+      </div>
+      <div class="mem4 right">
+      <span>蒼田 翔馬</span>
+      <p>
+      
+            1D6 (1D6) ＞ 5
+            
+      </p>
+      </div>
+      <div class="mem2 right">
+      <span>九重 是之</span>
+      <p>
+      
+            CCB&lt;=14 【回避】 (1D100&lt;=14) ＞ 66 ＞ 失敗
+            
+      </p>
+      </div>
+      <div class="mem2 right">
+      <span>九重 是之</span>
+      <p>
+      
+            1ｄ6 (1D6) ＞ 6
+            
+      </p>
+      </div>
+      </div>
+
+<br><br><br>
+</div></div>
+<script src="../logCon_Respon.js"></script>
+</body></html>
