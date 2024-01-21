@@ -1,0 +1,3146 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<title>log</title>
+<meta http-equiv="content-type" charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+<link rel="stylesheet" href="../logCon_Respon.css">
+<style>
+    /* main css */
+    .bg-inner.bg1{background:url('./終末婚/2しょう.png') no-repeat center/cover;}
+    
+    /* member */
+    .mem1 p{border:2px solid rgb(156, 39, 176);box-shadow:5px 5px 0 rgb(156, 39, 176);}
+.mem1 p:after{border-right-color:rgb(156, 39, 176);}
+.mem1 span{background:rgb(156, 39, 176);color:#fff;}
+.mem1:before{content:'';background-image:url('./終末婚/柴木蛍2.png');background-size:contain;background-repeat:no-repeat;background-position:center center;width:90px;height:90px;}
+.mem2 p{border:2px solid rgb(255, 152, 0);box-shadow:5px 5px 0 rgb(255, 152, 0);}
+.mem2 p:after{border-left-color:rgb(255, 152, 0);}
+.mem2 span{background:rgb(255, 152, 0);color:#000;}
+.mem2:before{content:'';background-image:url('./終末婚/陸\ デフォ.png');background-size:contain;background-repeat:no-repeat;background-position:center center;width:90px;height:90px;}
+.mem2_hohoemi:before{content:'';background-image:url('./終末婚/陸\ 微笑み.png');background-size:contain;background-repeat:no-repeat;background-position:center center;width:90px;height:90px;}
+.mem2_ikari:before{content:'';background-image:url('./終末婚/陸\ 怒り.png');background-size:contain;background-repeat:no-repeat;background-position:center center;width:90px;height:90px;}
+.mem2_kanasimi:before{content:'';background-image:url('./終末婚/陸\ 悲しみ.png');background-size:contain;background-repeat:no-repeat;background-position:center center;width:90px;height:90px;}
+.mem2_egao:before{content:'';background-image:url('./終末婚/陸\ 笑顔.png');background-size:contain;background-repeat:no-repeat;background-position:center center;width:90px;height:90px;}
+.mem2_odoroki:before{content:'';background-image:url('./終末婚/陸\ 驚き.png');background-size:contain;background-repeat:no-repeat;background-position:center center;width:90px;height:90px;}
+.mem3 p{border:2px solid rgb(136, 136, 136);box-shadow:5px 5px 0 rgb(136, 136, 136);}
+.mem3 p:after{border-right-color:rgb(136, 136, 136);}
+.mem3 span{background:rgb(136, 136, 136);color:#fff;}
+.mem3:before{content:'';background-image:url('3.png');background-size:contain;background-repeat:no-repeat;background-position:center center;width:90px;height:90px;}
+.mem4 p{border:2px solid rgb(136, 136, 136);box-shadow:5px 5px 0 rgb(136, 136, 136);}
+.mem4 p:after{border-left-color:rgb(136, 136, 136);}
+.mem4 span{background:rgb(136, 136, 136);color:#fff;}
+.mem4:before{content:'';background-image:url('4.png');background-size:contain;background-repeat:no-repeat;background-position:center center;width:90px;height:90px;}
+.mem5 p{border:2px solid rgb(136, 136, 136);box-shadow:5px 5px 0 rgb(136, 136, 136);}
+.mem5 p:after{border-right-color:rgb(136, 136, 136);}
+.mem5 span{background:rgb(136, 136, 136);color:#fff;}
+.mem5:before{content:'';background-image:url('5.png');background-size:contain;background-repeat:no-repeat;background-position:center center;width:90px;height:90px;}
+.mem6 p{border:2px solid rgb(136, 136, 136);box-shadow:5px 5px 0 rgb(136, 136, 136);}
+.mem6 p:after{border-left-color:rgb(136, 136, 136);}
+.mem6 span{background:rgb(136, 136, 136);color:#fff;}
+.mem6:before{content:'';background-image:url('6.png');background-size:contain;background-repeat:no-repeat;background-position:center center;width:90px;height:90px;}
+.mem7 p{border:2px solid rgb(136, 136, 136);box-shadow:5px 5px 0 rgb(136, 136, 136);}
+.mem7 p:after{border-right-color:rgb(136, 136, 136);}
+.mem7 span{background:rgb(136, 136, 136);color:#fff;}
+.mem7:before{content:'';background-image:url('7.png');background-size:contain;background-repeat:no-repeat;background-position:center center;width:90px;height:90px;}
+.mem8 p{border:2px solid rgb(136, 136, 136);box-shadow:5px 5px 0 rgb(136, 136, 136);}
+.mem8 p:after{border-left-color:rgb(136, 136, 136);}
+.mem8 span{background:rgb(136, 136, 136);color:#fff;}
+.mem8:before{content:'';background-image:url('8.png');background-size:contain;background-repeat:no-repeat;background-position:center center;width:90px;height:90px;}
+.mem9 p{border:2px solid rgb(136, 136, 136);box-shadow:5px 5px 0 rgb(136, 136, 136);}
+.mem9 p:after{border-right-color:rgb(136, 136, 136);}
+.mem9 span{background:rgb(136, 136, 136);color:#fff;}
+.mem9:before{content:'';background-image:url('9.png');background-size:contain;background-repeat:no-repeat;background-position:center center;width:90px;height:90px;}
+.mem10 p{border:2px solid rgb(136, 136, 136);box-shadow:5px 5px 0 rgb(136, 136, 136);}
+.mem10 p:after{border-left-color:rgb(136, 136, 136);}
+.mem10 span{background:rgb(136, 136, 136);color:#fff;}
+.mem10:before{content:'';background-image:url('10.png');background-size:contain;background-repeat:no-repeat;background-position:center center;width:90px;height:90px;}
+.mem11 p{border:2px solid rgb(136, 136, 136);box-shadow:5px 5px 0 rgb(136, 136, 136);}
+.mem11 p:after{border-right-color:rgb(136, 136, 136);}
+.mem11 span{background:rgb(136, 136, 136);color:#fff;}
+.mem11:before{content:'';background-image:url('11.png');background-size:contain;background-repeat:no-repeat;background-position:center center;width:90px;height:90px;}
+    
+    @media only screen and (max-width: 768px) {
+        .mem1 p:after{border-right-color:rgb(156, 39, 176);border-left-color:transparent;}
+        .mem2 p:after{border-right-color:rgb(255, 152, 0);border-left-color:transparent;}
+        .mem3 p:after{border-right-color:rgb(136, 136, 136);border-left-color:transparent;}
+        .mem4 p:after{border-right-color:rgb(136, 136, 136);border-left-color:transparent;}
+        .mem5 p:after{border-right-color:rgb(136, 136, 136);border-left-color:transparent;}
+        .mem6 p:after{border-right-color:rgb(136, 136, 136);border-left-color:transparent;}
+        .mem7 p:after{border-right-color:rgb(136, 136, 136);border-left-color:transparent;}
+        .mem8 p:after{border-right-color:rgb(136, 136, 136);border-left-color:transparent;}
+        .mem9 p:after{border-right-color:rgb(136, 136, 136);border-left-color:transparent;}
+        .mem10 p:after{border-right-color:rgb(136, 136, 136);border-left-color:transparent;}
+        .mem11 p:after{border-right-color:rgb(136, 136, 136);border-left-color:transparent;}
+    
+        .mem1:before,.mem2:before,.mem3:before,
+        .mem4:before,.mem5:before,.mem6:before
+        .mem7:before,.mem8:before,.mem9:before,
+        .mem10:before,.mem11:before{width:70px;height:70px;}
+    }
+</style>
+</head>
+<body>
+    <p id="page-top"><a href="#"><i class="page-top__arrow"></i></a></p>
+	<div class="leftwhite"></div>
+	<div class="rightwhite"></div>
+	<div class="bg-sp">
+    <div class="bg-over"><div class="bg-inner bg1"></div></div>
+	<div class="log">
+    
+        <div class="kp LtoR-early">
+
+            一章のあらすじ
+      </div>
+      <div class="kp LtoR-early">
+      
+            あなたたちふたりはそれぞれ、山羊をモチーフにした可愛らしい黒いマスコットに「一ヶ月後に世界は終わるシュブ」と言われる夢を見る。<br>目覚めて見た空は鉛色で、なにか半透明の塊が浮かんでおり、空いっぱいにその黒いマスコットが「シュブシュブシュブシュブ……」と鳴きながら飛んでいた。<br>さらに唐突にバフォメットと名乗る山羊をモチーフにした同じマスコットキャラクターが現れ、あなたたちそれぞれの部屋でくつろいでいる。<br>そして、それぞれふたりに「婚活をするシュブ！　諸々の用意はしてやったからまずは婚活パーティーに行くシュブよ！　場所はアマルテイアラウンジシュブ！」とかなんとか言い出した。<br>婚活パーティーが行われる「アマルテイアラウンジ」について調べてみると、経営母体は[アマルテイア研究所]、研究所住所はH県緋染(村ひぞめむら)。<br>婚活パーティーに行かなければならないような気がして、赴いたふたりは、そこで確実に人間ではないものも婚活していることを知る。<br><br>陸くんはフレンドリーなショゴさんの連絡先を知り、ショゴさんと無事フラグをたてることに成功し、ゾンビを食べた。その結果、狂気状態を発症し、ものすごく婚活がしたくなっている。<br>蛍ちゃんはちょっと横柄な感じの深きさんの連絡先を得、薊競(あざみ せる)という名の中性的な人間と出会い、ヴィブールの排泄物という結晶体を食べた結果、HPが0になり、バフォメットになってしまった。だが、魂で不思議な空間に迷い込み、神に再び人間としての生を与えられた。<br><br>バフォメットは言う。<br>「オマエらが婚活しないと世界は終わるし、オマエらも死ぬシュブ。死にたくなければ婚活して生き残るシュブ。サポートはしてやるシュブよ」<br>「とりあえず生き残るために抗えシュブ」<br><br>ふたりの明日はどっちだ！？
+      </div>
+      <div class="kp LtoR-early">
+      
+            終末婚<br>第二章「相思相愛スウィートホーム」<br>よろしくお願いします！
+      </div>
+      <div class="mem1 left">
+      <span>柴木 蛍</span>
+      <p>
+      
+            おねがいしまーす！
+      </p>
+      </div>
+      <div class="mem2 right">
+      <span>花垣 陸</span>
+      <p>
+      
+            よろしくおねがいします！！！
+      </p>
+      </div>
+      <div class="kp LtoR-early">
+      
+            鉛色の空を覆う半透明の触手。そしてそれを更に覆う黒いマスコットキャラクター。<br>そのマスコットキャラクターのひとつが探索者のもとにあらわれ、バフォメットと名乗り、1ヶ月後世界の終わりが来るから婚活を始めるようにと告げた。<br>そしてバフォメットが探索者の家で生活し始めてから1週間が過ぎた。<br>探索者は生活に疲弊している。空のクリーチャーは地上に攻撃こそ仕掛けてこないものの、自衛隊を含む各国の軍隊が与えた攻撃には応戦し、対抗策は発見されていない。<br>世界の終わりを告げられ、正常な空を見ることができなくなった人々の精神は荒廃し、詐欺や暴行事件、事故や自殺が多発している。出歩くことも買い物をすることも困難であり、ライフラインはゆっくりと死滅しつつある。<br>また、奇妙な化け物を見た、襲われて殺されたという報告も多く上がっている。<br><br>そんなある日、バフォメットは探索者に告げる。
+      </div>
+      <div class="mem3 left">
+      <span>バフォメット</span>
+      <p>
+      
+            「［緋染村］で婚活ツアーがあるシュブ。申し込んでおいたから行くシュブ。そろそろ人里を離れて避難するのもいいんじゃないシュブか？ もってこいの僻地シュブよ」
+      </p>
+      </div>
+      <div class="kp LtoR-early">
+      
+            バフォメットのこのような言葉を聞くと、探索者は、「バフォメットの言うことはもっともだ、行くべき」という感覚に取りつかれる。
+      </div>
+      <div class="kp LtoR-early">
+      
+            ＜アイデア＞
+      </div>
+      <div class="mem1 left">
+      <span>柴木 蛍</span>
+      <p>
+      
+            CCB&lt;=75 【アイデア】 (1D100&lt;=75) ＞ 65 ＞ 成功
+            
+      </p>
+      </div>
+      <div class="mem2 mem2_hohoemi right">
+      <span>花垣 陸</span>
+      <p>
+      
+            CCB&lt;=80 【アイデア】 (1D100&lt;=80) ＞ 57 ＞ 成功
+            
+      </p>
+      </div>
+      <div class="kp LtoR-early">
+      
+            ［緋染村］が［アマルテイア研究所］のある場所であると思い至る。
+      </div>
+      <div class="mem1 left">
+      <span>柴木 蛍</span>
+      <p>
+      
+            「（あー、あそこかぁ）」
+      </p>
+      </div>
+      <div class="mem1 left">
+      <span>柴木 蛍</span>
+      <p>
+      
+            「へーいバフォメット、費用は？」
+      </p>
+      </div>
+      <div class="mem3 left">
+      <span>バフォメット</span>
+      <p>
+      
+            「ボクが払っておいたシュブ。感謝するシュブ」
+      </p>
+      </div>
+      <div class="mem1 left">
+      <span>柴木 蛍</span>
+      <p>
+      
+            「さすが！」
+      </p>
+      </div>
+      <div class="mem3 left">
+      <span>バフォメット</span>
+      <p>
+      
+            「世界の終わりのためシュブ～」
+      </p>
+      </div>
+      <div class="mem1 left">
+      <span>柴木 蛍</span>
+      <p>
+      
+            「え、世界の終わりを目指してる？私達」
+      </p>
+      </div>
+      <div class="mem3 left">
+      <span>バフォメット</span>
+      <p>
+      
+            「外見なかったシュブか？　世界は終わりに向かっているシュブ。終わるか終わらないかはオマエら次第だシュブ」
+      </p>
+      </div>
+      <div class="mem1 left">
+      <span>柴木 蛍</span>
+      <p>
+      
+            「私達の行動で世界がなんとかなっちゃうの！？」
+      </p>
+      </div>
+      <div class="mem3 left">
+      <span>バフォメット</span>
+      <p>
+      
+            「え？　前お見合いパーティーのとき言わなかったシュブか？　世界の終わりをどうにかしたければ婚活しろシュブ」
+      </p>
+      </div>
+      <div class="mem1 left">
+      <span>柴木 蛍</span>
+      <p>
+      
+            「そうだっけ。そこらへんの記憶が曖昧になってるんだよね。知らない内に帰ってきてたし」
+      </p>
+      </div>
+      <div class="mem3 left">
+      <span>バフォメット</span>
+      <p>
+      
+            「オマエはそうかもシュブね。ちょっと特殊な例シュブ。でも安心しろシュブ、おぜん立てはしてやるシュブ。緋染村とか緋染村婚活ツアーについて検索してもいいシュブよ」
+      </p>
+      </div>
+      <div class="mem1 left">
+      <span>柴木 蛍</span>
+      <p>
+      
+            「お、じゃ……へいSiri、緋染村について」
+      </p>
+      </div>
+      <div class="kp LtoR-early">
+      
+            ●緋染村<br>-------------<br>2-01【緋染村】<br>H県山間部の僻地にある村。観光地化している。<br>古くから茜染めの産地として知られ、H県においては緋染村の茜染めによる打掛（婚礼衣装）で婚礼を上げると夫婦の縁が切れないと信じられてきた。<br>その関係からか、村内にある緋染神社で婚礼を上げるカップルも多いようで、観光地として成功しているかなり裕福な村である。<br>その他、様々な赤い花が季節を通じて見られる花畑作りを行っている。<br>-------------<br>＜歴史＞＜人類学＞
+      </div>
+      <div class="mem1 left">
+      <span>柴木 蛍</span>
+      <p>
+      
+            CCB&lt;=20 【歴史】 (1D100&lt;=20) ＞ 86 ＞ 失敗
+            
+      </p>
+      </div>
+      <div class="mem1 left">
+      <span>柴木 蛍</span>
+      <p>
+      
+            CCB&lt;=1 【人類学】 (1D100&lt;=1) ＞ 93 ＞ 失敗
+            
+      </p>
+      </div>
+      <div class="mem2 mem2_hohoemi right">
+      <span>花垣 陸</span>
+      <p>
+      
+            CCB&lt;=51 【人類学】 (1D100&lt;=51) ＞ 32 ＞ 成功
+            
+      </p>
+      </div>
+      <div class="mem2 mem2_kanasimi right">
+      <span>花垣 陸</span>
+      <p>
+      
+            CCB&lt;=20 【歴史】 (1D100&lt;=20) ＞ 47 ＞ 失敗
+            
+      </p>
+      </div>
+      <div class="kp LtoR-early">
+      
+            婚礼衣装を白無垢から赤い色打掛にお色直しする場合、「生まれ変わり」を意味する。また、赤は血や太陽の色と通じることから、生命力を意味するおめでたい色とされる。
+      </div>
+      <div class="mem2 mem2_hohoemi right">
+      <span>花垣 陸</span>
+      <p>
+      
+            「へぇ…素敵だな。そこでいい縁があればこの風習に乗って花嫁衣裳をデザインしたいなぁ」
+      </p>
+      </div>
+      <div class="mem3 left">
+      <span>バフォメット</span>
+      <p>
+      
+            「いい心がけだシュブね！　さすがシュブ。その調子で婚活するシュブ」
+      </p>
+      </div>
+      <div class="mem2 right">
+      <span>花垣 陸</span>
+      <p>
+      
+            「もう時間もないし…なんだかこの間のパーティからすごく婚活がしたくてたまらないんだよ。そのツアーについてちょっと調べてから向かうか」
+      </p>
+      </div>
+      <div class="mem3 left">
+      <span>バフォメット</span>
+      <p>
+      
+            「前向きで素晴らしいシュブね。インターネットの叡智を活用するシュブ～」
+      </p>
+      </div>
+      <div class="mem2 right">
+      <span>花垣 陸</span>
+      <p>
+      
+            パソコンでかるくしらべます
+      </p>
+      </div>
+      <div class="mem1 left">
+      <span>柴木 蛍</span>
+      <p>
+      
+            同じくグーグル先生で調べてます
+      </p>
+      </div>
+      <div class="kp LtoR-early">
+      
+            ●緋染村婚活ツアー<br>-------------<br>2-02【緋染村婚活ツアー】<br>主催は緋染村、協賛はアマルテイア研究所。<br>長時間のバスツアーおよび現地での観光を通じて、男女の懇親を深めることを目的としている。<br>世界の終わりを受けて現在公共交通機関が破綻しているため、移動にはこのような乗用車を使うのが一般的となっており、探索者が地元を離れたいと思っている場合うってつけだと感じるだろう。<br><br>現地の旅館での宿泊がセットとなっており、かなりお得感のあるコースである。<br>現在の社会情勢を鑑みて、そのまま村に滞在したい場合は継続宿泊の格安プランも提供。<br><br>参加者リストが事前に開示される。同数の男女である。<br>前回のパーティーで出会った探索者を見つけることができる。<br>バスツアーへの参加者は、バスツアー中に隣席する相手を第三希望まで指名できるようだ。希望が重複の場合は抽選になる。<br>隣席相手は数時間ごとにチェンジとなる。<br>-------------
+      </div>
+      <div class="mem1 left">
+      <span>柴木 蛍</span>
+      <p>
+      
+            「あ、あの人がいる」
+      </p>
+      </div>
+      <div class="mem2 right">
+      <span>花垣 陸</span>
+      <p>
+      
+            「柴木さんも同じツアーなのか。それにしてもこのアマルテイア研究所はなんでこんなに婚活に支援してるんだ…？婚活研究所なのか？」
+      </p>
+      </div>
+      <div class="mem3 left">
+        <span>バフォメット</span>
+        <p>
+        
+              「アマルテイア研究所については、まぁ婚活を押し進めてるところではあるシュブね～」
+        </p>
+        </div>
+      <div class="mem1 left">
+      <span>柴木 蛍</span>
+      <p>
+      
+            「あざみさんはいないかぁ」
+      </p>
+      </div>
+      <div class="mem1 left">
+      <span>柴木 蛍</span>
+      <p>
+      
+            「へーい、バフォバフォ的におススメに人っている？」
+      </p>
+      </div>
+      <div class="mem3 left">
+      <span>バフォメット</span>
+      <p>
+      
+            「おすすめシュブか？　この花垣 陸って男とかいいんじゃないシュブか？」
+      </p>
+      </div>
+      <div class="mem1 left">
+      <span>柴木 蛍</span>
+      <p>
+      
+            「あ、バフォバフォ、この三人の希望って先に書くものなの？」
+      </p>
+      </div>
+      <div class="mem1 left">
+      <span>柴木 蛍</span>
+      <p>
+      
+            「後決め？」
+      </p>
+      </div>
+      <div class="mem3 left">
+      <span>バフォメット</span>
+      <p>
+      
+            「抽選する都合があるだろうシュブから、ネットのマイページから入力しておくといいシュブ～」
+      </p>
+      </div>
+      <div class="mem1 left">
+      <span>柴木 蛍</span>
+      <p>
+      
+            「じゃ、希望のどこかに花垣さん入れておいて……あとはどうしようかな」
+      </p>
+      </div>
+      <div class="mem3 left">
+      <span>バフォメット</span>
+      <p>
+      
+            「適当でいいシュブ～。ご縁はどこにあるかわからないシュブ～」
+      </p>
+      </div>
+      <div class="mem1 left">
+      <span>柴木 蛍</span>
+      <p>
+      
+            「じゃ、適当にこの人とこの人っと」
+      </p>
+      </div>
+      <div class="mem2 right">
+      <span>花垣 陸</span>
+      <p>
+      
+            「今の俺にあまりに都合がよすぎるけど…婚活を推進してる研究所…まぁいいか。荷造りしてくるよ」準備して当日をまちます
+      </p>
+      </div>
+      <div class="mem3 left">
+      <span>バフォメット</span>
+      <p>
+      
+            「都合がいいのはいいことだシュブ。その意気シュブ～」
+      </p>
+      </div>
+      <div class="kp LtoR-early">
+      
+            ツアー当日、バフォメットが、思い出したというように「おしゃれは大事だシュブ」と言いながら［石のついた髪飾り／耳飾り／首飾りのどれか］をくれる。
+      </div>
+      <div class="mem1 left">
+      <span>柴木 蛍</span>
+      <p>
+      
+            耳飾りもらいます
+      </p>
+      </div>
+      <div class="mem2 right">
+      <span>花垣 陸</span>
+      <p>
+      
+            髪飾りもらいます
+      </p>
+      </div>
+      <div class="mem1 left">
+      <span>柴木 蛍</span>
+      <p>
+      
+            「バフォバフォこれは？」
+      </p>
+      </div>
+      <div class="mem2 mem2_egao right">
+      <span>花垣 陸</span>
+      <p>
+      
+            どんなデザインか今の洋服にあうかよく見ます
+      </p>
+      </div>
+      <div class="mem3 left">
+      <span>バフォメット</span>
+      <p>
+      
+            「これはムナールの星石シュブ。頭に身に着けていれば頭だけは守ってくれるかもしれないシュブ。どれくらい効くかはおためしシュブ。前回のこともあるし、婚活があんまりうまくいかないのも困りものシュブからね～」
+      </p>
+      </div>
+      <div class="kp LtoR-early">
+      
+            アクセサリーを確認すると、1cmほどの石がついたアクセサリー。石の色は灰色っぽい黒で、光る赤い物質によって、星の中に燃える目が入ったデザインが描かれている。<br>＜地質学＞＜クトゥルフ神話技能＞
+      </div>
+      <div class="mem1 left">
+      <span>柴木 蛍</span>
+      <p>
+      
+            「ふぅーん。」じろじろ
+      </p>
+      </div>
+      <div class="mem1 left">
+      <span>柴木 蛍</span>
+      <p>
+      
+            CCB&lt;=1 【地質学】 (1D100&lt;=1) ＞ 32 ＞ 失敗
+            
+      </p>
+      </div>
+      <div class="mem1 left">
+      <span>柴木 蛍</span>
+      <p>
+      
+            CCB&lt;=39 【クトゥルフ神話】 (1D100&lt;=39) ＞ 57 ＞ 失敗
+            
+      </p>
+      </div>
+      <div class="mem2 mem2_kanasimi right">
+      <span>花垣 陸</span>
+      <p>
+      
+            CCB&lt;=1 【地質学】 (1D100&lt;=1) ＞ 39 ＞ 失敗
+            
+      </p>
+      </div>
+      <div class="mem2 mem2_kanasimi right">
+      <span>花垣 陸</span>
+      <p>
+      
+            CCB&lt;=14 【クトゥルフ神話】 (1D100&lt;=14) ＞ 68 ＞ 失敗
+            
+      </p>
+      </div>
+      <div class="kp LtoR-early">
+      
+            2-03【ムナールの星石】キーパーコンパニオンP63<br>呪文［旧き印］（基本ルールブックP280）をコストなしで発動できるアーティファクト。<br>旧き印は出入り口や通路にかけると異界の神々がそこを通れなくなる呪文である。<br>この呪文は基本的に通行の阻害のために使われるが、その印をつけた肉体の一部を守る可能性もあり、敵意を持ったクリーチャーを追い払い守るともされる。<br>しかし通行の阻害以外の用途で使った場合のその効能は完全なものではない。
+      </div>
+      <div class="mem2 right">
+      <span>花垣 陸</span>
+      <p>
+      
+            「変わった石だな、見たことがない…」
+      </p>
+      </div>
+      <div class="mem1 left">
+      <span>柴木 蛍</span>
+      <p>
+      
+            「うわぁ、綺麗」
+      </p>
+      </div>
+      <div class="mem3 left">
+      <span>バフォメット</span>
+      <p>
+      
+            「特別な石シュブ。がんばってくるシュブよ。ボクはお留守番してるシュブ～」探索者の家でくつろぎながら
+      </p>
+      </div>
+      <div class="mem1 left">
+      <span>柴木 蛍</span>
+      <p>
+      
+            「あ、掃除はこまめにしてね。よろしくね？」
+      </p>
+      </div>
+      <div class="mem3 left">
+      <span>バフォメット</span>
+      <p>
+      
+            「掃除？　掃除ってなんシュブか？」
+      </p>
+      </div>
+      <div class="mem1 left">
+      <span>柴木 蛍</span>
+      <p>
+      
+            「綺麗にするんだよぉ！」
+      </p>
+      </div>
+      <div class="mem1 left">
+      <span>柴木 蛍</span>
+      <p>
+      
+            「帰ってきて汚かったら逆さ吊りの刑ね」
+      </p>
+      </div>
+      <div class="mem3 left">
+      <span>バフォメット</span>
+      <p>
+      
+            「あぁ、わかったシュブ、たまにやってる吸うやつとかコロコロするやつシュブね」
+      </p>
+      </div>
+      <div class="mem1 left">
+      <span>柴木 蛍</span>
+      <p>
+      
+            「そうそう」
+      </p>
+      </div>
+      <div class="mem3 left">
+      <span>バフォメット</span>
+      <p>
+      
+            「マスコット使いの荒いやつシュブ……」
+      </p>
+      </div>
+      <div class="mem2 mem2_egao right">
+      <span>花垣 陸</span>
+      <p>
+      
+            「ありがとう。食い物こぼすなよ、あと火は危ないから栓しめてくからあっためるときはレンジつかえよ」
+      </p>
+      </div>
+      <div class="mem3 left">
+      <span>バフォメット</span>
+      <p>
+      
+            「わかったシュブ！　行ってらっしゃいシュブ～」お菓子のカスをこぼしながら
+      </p>
+      </div>
+      <div class="mem2 mem2_ikari right">
+      <span>花垣 陸</span>
+      <p>
+      
+            「言ったそばから…！…ルンバつけてくか…」
+      </p>
+      </div>
+      <div class="mem3 left">
+      <span>バフォメット</span>
+      <p>
+      
+            「吸う動くやつシュブ」
+      </p>
+      </div>
+      <div class="mem2 mem2_hohoemi right">
+      <span>花垣 陸</span>
+      <p>
+      
+            「もちあげたりひっくり返したりしちゃだめだぞ。じゃあ行ってくる」髪をくくって髪留めをつけて向かいます
+      </p>
+      </div>
+      <div class="mem3 left">
+      <span>バフォメット</span>
+      <p>
+      
+            「がんばるシュブよ～」おててふりふり
+      </p>
+      </div>
+      <div class="kp LtoR-early">
+      
+            探索者がバフォメットの指定した場所へ赴くと、大型バスが待っていた。<br>探索者の名前が告げられ、ツアーのしおりを渡されたうえで、席に通される。
+      </div>
+      <div class="kp LtoR-early">
+      
+            s1d2 (1D2) ＞ 2
+            
+      </div>
+      <div class="kp LtoR-early">
+      
+            陸くんの隣には見知らぬ女性、蛍ちゃんの隣には「柳冬至」という男性が座る。男性は探索者にとって非常に好ましいと思える容姿やふるまいをしており、名前を名乗る。
+      </div>
+      <div class="kp LtoR-early">
+      
+            ＜天文学＞＜英語／2＞
+      </div>
+      <div class="mem1 left">
+      <span>柴木 蛍</span>
+      <p>
+      
+            CCB&lt;=1 【天文学】 (1D100&lt;=1) ＞ 62 ＞ 失敗
+            
+      </p>
+      </div>
+      <div class="mem1 left">
+      <span>柴木 蛍</span>
+      <p>
+      
+            CCB&lt;=24/2 【英語】 (1D100&lt;=12) ＞ 12 ＞ 成功
+            
+      </p>
+      </div>
+      <div class="mem2 mem2_kanasimi right">
+      <span>花垣 陸</span>
+      <p>
+      
+            CCB&lt;=1 【天文学】 (1D100&lt;=1) ＞ 54 ＞ 失敗
+            
+      </p>
+      </div>
+      <div class="kp LtoR-early">
+      
+            英語では冬至点をやぎ座の名（The Tropic of Capricorn）で呼ぶ。
+      </div>
+      <div class="mem1 left">
+      <span>柴木 蛍</span>
+      <p>
+      
+            「（あっ、この人適当だけど選んだ人だ。やった）」
+      </p>
+      </div>
+      <div class="mem2 right">
+      <span>花垣 陸</span>
+      <p>
+      
+            隣に軽く挨拶してからしおりをみます
+      </p>
+      </div>
+      <div class="kp LtoR-early">
+      
+            ●しおりを見る<br>前章以上に急ごしらえのものに見える。デザインの心得のない素人が作ったものであるということは一目見てわかるだろう。<br>ツアーの流れ（到着時刻、現地観光、夕食のコース等）が記載されている他、資料2-01【緋染村】2-02【緋染村婚活ツアー】の情報も記載されている。<br>緋染村の簡単な地図もあり、［花畑／旅館／茜農園・緋染神社］が記載されている。神社は農園の一角にあるようだ。<br>地図に記載はないが、しおりの奥付には協賛としてアマルテイア研究所の住所も記載されており、だいたいどのあたりに研究所があるのか把握するのは容易だろう。
+      </div>
+      <div class="mem2 right">
+      <span>花垣 陸</span>
+      <p>
+      
+            （茜染もみてみたいけど農園で見学とかできるかなぁ…）
+      </p>
+      </div>
+      <div class="mem1 left">
+      <span>柴木 蛍</span>
+      <p>
+      
+            「（なるほど。農園に花畑、神社……デートスポットにはよさげな場所なのかな）」
+      </p>
+      </div>
+      <div class="mem1 left">
+      <span>柴木 蛍</span>
+      <p>
+      
+            「あ、はじめましてぇ、私柴木蛍っていいますー」<br>隣の冬至さんに挨拶する
+      </p>
+      </div>
+      <div class="mem4 right">
+      <span>柳 冬至</span>
+      <p>
+      
+            「はじめまして。柳冬至だよ～。よろしくね」
+      </p>
+      </div>
+      <div class="kp LtoR-early">
+      
+            ツアーコンダクターに＜交渉技能＞＜制作（デザイン）＞で話を聞くことができます
+      </div>
+      <div class="mem1 left">
+      <span>柴木 蛍</span>
+      <p>
+      
+            「柳さんは、こういうの初めてなんですか？」
+      </p>
+      </div>
+      <div class="mem4 right">
+        <span>柳 冬至</span>
+        <p>
+        
+              「そうだね。世界が終わり始めてから、ちょっとおてつだいとかはしてたんだけど～」
+        </p>
+        </div>
+        <div class="mem1 left">
+        <span>柴木 蛍</span>
+        <p>
+        
+              「そうなんですねぇ。（おてつだい…？）」
+        </p>
+        </div>
+        <div class="mem4 right">
+            <span>柳 冬至</span>
+            <p>
+            
+                  「やってる人を見てるうちに、自分もやってみようかなって気になったんですよ～」
+            </p>
+        </div>
+
+        <div class="mem1 left">
+            <span>柴木 蛍</span>
+            <p>
+            
+                  「なるほどなるほど。それはとってもいいことですね。私は、前回この研究所企画にの参加したんですけど、お相手が見つからなくて……」
+            </p>
+        </div>
+        <div class="mem4 right">
+            <span>柳 冬至</span>
+            <p>
+            
+                  「そうだったんですね～。今回で見つかるといいですね。あ、もしかして、ボク、だったりして。あはは～」
+            </p>
+            </div>
+            <div class="mem1 left">
+            <span>柴木 蛍</span>
+            <p>
+            
+                  「それだったらとってもロマンチックですね、ふふふ」
+            </p>
+        </div>
+        <div class="mem1 left">
+            <span>柴木 蛍</span>
+            <p>
+            
+                  「そういえば、柳さんはこちらは初めてなんですか？」
+            </p>
+            </div>
+            <div class="mem4 right">
+            <span>柳 冬至</span>
+            <p>
+            
+                  「ね～。世界の終わりに結ばれたら、ロマンチックですよね～。村ですか？　確か、初めてだった気がします」
+            </p>
+            </div>
+            <div class="mem1 left">
+            <span>柴木 蛍</span>
+            <p>
+            
+                  「なんか、花畑や農園なんか色々あるみたいですよ？楽しみですね」
+            </p>
+        </div>
+        <div class="mem4 right">
+            <span>柳 冬至</span>
+            <p>
+            
+                  「そうですね～。そういえば、世界が終わりに近づいてきてから、いろんなところで変なバケモノを見たって噂があるんですよ。気をつけましょうね～」
+            </p>
+            </div>
+            <div class="mem1 left">
+            <span>柴木 蛍</span>
+            <p>
+            
+                  「そうですね、気を付けましょうね」
+            </p>
+            </div>
+            <div class="mem1 left">
+            <span>柴木 蛍</span>
+            <p>
+            
+                  「（なんかうちにいる子もバケモノなんだろうけどね）」
+            </p>
+        </div>        
+      <div class="mem2 mem2_hohoemi right">
+      <span>花垣 陸</span>
+      <p>
+      
+            CCB&lt;=83 【製作（デザイン）】 (1D100&lt;=83) ＞ 74 ＞ 成功
+            
+      </p>
+      </div>
+      <div class="mem2 mem2_hohoemi right">
+      <span>花垣 陸</span>
+      <p>
+      
+            「緋染村は茜染の産地ってお聞きしたんですが…現物をツアー中にみれたりしますかね」ってツアーコンダクターさんに話しかけます
+      </p>
+      </div>
+      <div class="mem5 left">
+      <span>ツアーコンダクター</span>
+      <p>
+      
+            「あら！　そうなんですね。緋染村の茜染めは特別なもので、夫婦の縁を強くするといわれています。、詳しいことが知りたければ［農園］内にある［緋染神社］を尋ねるといいかもしれませんね」
+      </p>
+      </div>
+      <div class="mem5 left">
+      <span>ツアーコンダクター</span>
+      <p>
+      
+            「アマルテイア研究所は3年ほど前に村の隅にできた研究所で、村の文化の研究等を行っているみたいです。緋染村には茜染めにまつわる独自の宗教があるので、それを中心に研究対象としているみたいですね」
+      </p>
+      </div>
+      <div class="mem2 right">
+      <span>花垣 陸</span>
+      <p>
+      
+            「そうなんですね…では神社で祀られているのも茜染にまつわっているんですか？」
+      </p>
+      </div>
+
+      <div class="mem5 left">
+      <span>ツアーコンダクター</span>
+      <p>
+      
+            「そうですね。茜染にまつわるもの、というか、お花を信仰しているみたいです」
+      </p>
+      </div>
+      <div class="mem2 right">
+      <span>花垣 陸</span>
+      <p>
+      
+            「お花を…木や石なんかはよくご神体にされてたりしますけどお花は珍しいですね。」
+      </p>
+      </div>
+      <div class="mem5 left">
+      <span>ツアーコンダクター</span>
+      <p>
+      
+            「確かにそうですね！　研究所について補足すると、他にも様々な歴史・人類学に関わる研究をしているみたいです。私はあまり詳しくは知らないんですが……そうそう、しおり制作は今回の協賛のアマルテイア研究所が行う予定だったんですけど、担当していたデザイナーが急遽辞めてしまわれて……作れる人間がいなくなったので、仕方なく緋染村側で作成したみたいです。苦労されたようなので、少しデザインが拙いのはお目こぼしください」
+      </p>
+      </div>
+
+      <div class="mem2 mem2_hohoemi right">
+      <span>花垣 陸</span>
+      <p>
+      
+            「そうだったんですね、新しい施設みたいですが村の方とも連携がとれているんですね。出会いを求めて参加しましたが緋染村の文化にもとても興味がわきました。観光は全員で回る形ですか？」
+      </p>
+      </div>
+      <div class="mem5 left">
+      <span>ツアーコンダクター</span>
+      <p>
+      
+            「各々お好きな方と回られても結構ですよ。自由時間がございますので」
+      </p>
+      </div>
+      <div class="mem2 right">
+      <span>花垣 陸</span>
+      <p>
+      
+            「ではいろいろ見てみますね。ありがとうございます」
+      </p>
+      </div>
+      <div class="mem5 left">
+      <span>ツアーコンダクター</span>
+      <p>
+      
+            「いえいえ！　なんでも聞いてくださいね！」
+      </p>
+      </div>
+      <div class="kp LtoR-early">
+      
+            発射し、山々を抜け、奥深い細い道を抜けて、バスは走っていく。<br>道には異常な大きさの穴、木々は不自然になぎ倒された痕跡があり、どうやらこのあたりも怪奇に襲われているようだということは一目でわかるが、都会よりはましな印象を受ける。<br>やがて探索者は緋染村にたどり着く。
+      </div>
+      <div class="kp LtoR-early">
+      
+            バスの扉が開いた瞬間、妙に甘い、植物性の香りがバスの中にたちこめた。<br>とたん、バスに乗っていた人々は、嗚咽のような声を漏らした。<br>それは恍惚感と高揚感に満ちた声であり、彼らは口々に「なんてきれいなところ」「すばらしい、まるで楽園だ」といったことを囁いている。<br>そして人々は隣にいる人間に抱き着く、手を取る等といった行動を取りながら、「愛している」「好きだ、一緒にいよう」といった熱烈な愛の言葉を相手に告げ始めた。<br>周囲の人々が一斉に発狂し、探索者だけが取り残されてしまったかのような奇妙な現象にSANC0/1D3
+      </div>
+      <div class="mem1 left">
+      <span>柴木 蛍</span>
+      <p>
+      
+            1d100&lt;=60 【正気度ロール】 (1D100&lt;=60) ＞ 23 ＞ 成功
+            
+      </p>
+      </div>
+      <div class="mem2 mem2_hohoemi right">
+      <span>花垣 陸</span>
+      <p>
+      
+            1d100&lt;=85 【正気度ロール】 (1D100&lt;=85) ＞ 21 ＞ 成功
+            
+      </p>
+      </div>
+      <div class="mem1 left">
+      <span>柴木 蛍</span>
+      <p>
+      
+            「柳さん……」
+      </p>
+      </div>
+      <div class="mem1 left">
+      <span>柴木 蛍</span>
+      <p>
+      
+            すっと手を伸ばす
+      </p>
+      </div>
+      <div class="kp LtoR-early">
+      
+            周囲の人々ほど熱烈な感情ではないが、探索者自身もまた、漠然とした愛の感覚に包まれる。<br>しかしそれは自分自身の中から生まれた感覚ではなく、誰かに植え付けられたもののように思えた。<br><br>直後、探索者たちの目の前で、運転手が「ああ！ なんて美しい場所なんだ！ 待っていて、僕の理想の恋人よ！」と叫びながら車を降り、走り去ってしまう。<br><br>バスの中で正気なのは探索者2人の他、柳だけのようだ。
+      </div>
+      <div class="mem2 mem2_hohoemi right">
+      <span>花垣 陸</span>
+      <p>
+      
+            CCB&lt;=70 【幸運】 (1D100&lt;=70) ＞ 23 ＞ 成功
+            
+      </p>
+      </div>
+      <div class="mem4 right">
+      <span>柳 冬至</span>
+      <p>
+      
+            「なんかみんなおかしいですねぇ。……おいてよかった……(小声)」
+      </p>
+      </div>
+      <div class="kp LtoR-early">
+      
+            陸くんはツアーコンダクターさんに抱きつかれてます
+      </div>
+      <div class="mem1 left">
+      <span>柴木 蛍</span>
+      <p>
+      
+            「あっ、ほんとどうしたんでしょう」
+      </p>
+      </div>
+      <div class="mem1 left">
+      <span>柴木 蛍</span>
+      <p>
+      
+            手をそっと戻す
+      </p>
+      </div>
+      <div class="mem2 mem2_odoroki right">
+      <span>花垣 陸</span>
+      <p>
+      
+            「わ、大丈夫ですか」
+      </p>
+      </div>
+      <div class="mem5 left">
+      <span>ツアーコンダクター</span>
+      <p>
+      
+            「素敵なところですねぇ！　いい匂いですねぇ！　あなたもとっても素敵です！　一緒にいてもいいですか……？」
+      </p>
+      </div>
+      <div class="mem1 left">
+      <span>柴木 蛍</span>
+      <p>
+      
+            「（どこもかしこもイチャラブだなぁ。ツアーコンダクターさんまで抱き着いちゃ……あ、花垣さんだ）」
+      </p>
+      </div>
+      <div class="mem4 right">
+      <span>柳 冬至</span>
+      <p>
+      
+            「どうやら、正気なのはボクたちだけみたいですねぇ。もしよろしければ、ご一緒してもいいですか？」
+      </p>
+      </div>
+      <div class="mem1 left">
+      <span>柴木 蛍</span>
+      <p>
+      
+            「えぇ。出来ればお願いしますね」
+      </p>
+      </div>
+      <div class="mem2 right">
+      <span>花垣 陸</span>
+      <p>
+      
+            「それはうれしいですが…ご様子が…」精神分析ふります
+      </p>
+      </div>
+      <div class="mem2 mem2_kanasimi right">
+      <span>花垣 陸</span>
+      <p>
+      
+            CCB&lt;=1 【精神分析】 (1D100&lt;=1) ＞ 73 ＞ 失敗
+            
+      </p>
+      </div>
+      <div class="mem5 left">
+      <span>ツアーコンダクター</span>
+      <p>
+      
+            「なんですか？　どうかしましたか……？」
+      </p>
+      </div>
+      <div class="mem1 left">
+      <span>柴木 蛍</span>
+      <p>
+      
+            「あ、あそこにいるのは……花垣さん？」
+      </p>
+      </div>
+      <div class="mem1 left">
+      <span>柴木 蛍</span>
+      <p>
+      
+            「なにイチャイチャしてるんですか」
+      </p>
+      </div>
+      <div class="mem1 left">
+      <span>柴木 蛍</span>
+      <p>
+      
+            「見せつけてくれるなー」
+      </p>
+      </div>
+      <div class="mem2 mem2_odoroki right">
+      <span>花垣 陸</span>
+      <p>
+      
+            「ううん…様子が変わってしまった気がするけれどなんと言えばいいか……と、柴木さん。貴方はなんとも無い…みたいですね」
+      </p>
+      </div>
+      <div class="mem1 left">
+      <span>柴木 蛍</span>
+      <p>
+      
+            「はい。こちらの柳さんも何ともない人です」
+      </p>
+      </div>
+      <div class="mem1 left">
+      <span>柴木 蛍</span>
+      <p>
+      
+            「少し様子を見てみますか」
+      </p>
+      </div>
+      <div class="mem4 right">
+      <span>柳 冬至</span>
+      <p>
+      
+            「お。お知り合いですか～？」
+      </p>
+      </div>
+      <div class="kp LtoR-early">
+      
+            ＜聞き耳＞
+      </div>
+      <div class="mem2 mem2_kanasimi right">
+      <span>花垣 陸</span>
+      <p>
+      
+            CCB&lt;=55 【聞き耳】 (1D100&lt;=55) ＞ 68 ＞ 失敗
+            
+      </p>
+      </div>
+      <div class="mem1 left">
+      <span>柴木 蛍</span>
+      <p>
+      
+            CCB&lt;=70 【聞き耳】 (1D100&lt;=70) ＞ 89 ＞ 失敗
+            
+      </p>
+      </div>
+      <div class="mem1 left">
+      <span>柴木 蛍</span>
+      <p>
+      
+            CCB&lt;=70 【薬学】 (1D100&lt;=70) ＞ 16 ＞ 成功
+            
+      </p>
+      </div>
+      <div class="kp LtoR-early">
+      
+            では、蛍ちゃんはツアーコンダクターさんやバスから降りて行った人々が、おそらく花の香りで強迫観念のようなものにとらわれているのかもしれないと思うでしょう
+      </div>
+      <div class="mem1 left">
+      <span>柴木 蛍</span>
+      <p>
+      
+            「あ、柳さん。こちらは花垣さんと言って前の婚活パーティーで知り合った人です」
+      </p>
+      </div>
+      <div class="mem4 right">
+      <span>柳 冬至</span>
+      <p>
+      
+            「なるほど～。好みじゃなかったってことですか？」
+      </p>
+      </div>
+      <div class="mem1 left">
+      <span>柴木 蛍</span>
+      <p>
+      
+            「……なるほど、花に強迫観念。それは少々興味深いかもしれませんね」
+      </p>
+      </div>
+      <div class="mem1 left">
+      <span>柴木 蛍</span>
+      <p>
+      
+            「いえいえ、そんなことは。でも、本命は別にいたといえば……言えなくはなかったですけどぉ」
+      </p>
+      </div>
+      <div class="mem2 mem2_egao right">
+      <span>花垣 陸</span>
+      <p>
+      
+            紹介されて軽く会釈しておきます
+      </p>
+      </div>
+      <div class="mem4 right">
+      <span>柳 冬至</span>
+      <p>
+      
+            陸くんに会釈しつつ「花に強迫観念？　なんですか～？」
+      </p>
+      </div>
+      <div class="mem1 left">
+      <span>柴木 蛍</span>
+      <p>
+      
+            「ここの扉を開けた際に感じた植物の香りでここの人たちが強迫観念……この場合恋愛をしたいという感情にかられたと思います」
+      </p>
+      </div>
+      <div class="mem1 left">
+      <span>柴木 蛍</span>
+      <p>
+      
+            「これでもしがない薬剤師見習いですから」
+      </p>
+      </div>
+      <div class="mem4 right">
+      <span>柳 冬至</span>
+      <p>
+      
+            「へぇ～すごいですね～。さすがです～」
+      </p>
+      </div>
+      <div class="mem1 left">
+      <span>柴木 蛍</span>
+      <p>
+      
+            「えへへ」
+      </p>
+      </div>
+      <div class="mem2 right">
+      <span>花垣 陸</span>
+      <p>
+      
+            「そんな効果がある植物が…でも運転手さんもいなくなっちゃったので離れるのも難しそうですね…ひとまず旅館とかで休んでてもらったら少しおさまるかな…。とりあえずご一緒に行きましょうか、ガイドさん」
+      </p>
+      </div>
+      <div class="mem5 left">
+      <span>ツアーコンダクター</span>
+      <p>
+      
+            「はぁい～。あなたとならどこまででもいきます！」
+      </p>
+      </div>
+      <div class="mem1 left">
+      <span>柴木 蛍</span>
+      <p>
+      
+            「私達はどうします？一緒に宿に行きます？それとも散策してから宿に向かいます？あ、でも荷物を置いてからの方がいいんですかね」
+      </p>
+      </div>
+      <div class="mem2 right">
+      <span>花垣 陸</span>
+      <p>
+      
+            「正気になってもそう言っていただけると嬉しいのですが。お荷物ある場所わかります？」ガイドさんと一緒にバスおりますね
+      </p>
+      </div>
+      <div class="mem4 right">
+      <span>柳 冬至</span>
+      <p>
+      
+            「うーん、なんとなく一緒にいたほうがいいような気がしますねぇ。まぁ、どちらでも構わないですが」
+      </p>
+      </div>
+      <div class="mem5 left">
+      <span>ツアーコンダクター</span>
+      <p>
+      
+            「荷物は荷物置き場にあります～！　いっしょにいってくれるんですか……？」
+      </p>
+      </div>
+      <div class="mem1 left">
+      <span>柴木 蛍</span>
+      <p>
+      
+            「一緒ですか。……あのイチャイチャを目に…一緒に行きます？」
+      </p>
+      </div>
+      <div class="mem4 right">
+      <span>柳 冬至</span>
+      <p>
+      
+            「あはは。気まずいですか？　僕らもイチャイチャしますか？」
+      </p>
+      </div>
+      <div class="kp LtoR-early">
+      
+            緋染村探索可能箇所［バス／花畑／村の家々／旅館／茜農園／緋染神社／アマルテイア研究所］<br>※記載順にバス発着所から近い。
+      </div>
+      <div class="mem1 left">
+      <span>柴木 蛍</span>
+      <p>
+      
+            「しちゃっても、いいですか！？……ごほんごほん」
+      </p>
+      </div>
+      <div class="mem4 right">
+      <span>柳 冬至</span>
+      <p>
+      
+            「あはは。おもしろいですねぇ。いいですよぉ」
+      </p>
+      </div>
+      <div class="mem1 left">
+      <span>柴木 蛍</span>
+      <p>
+      
+            「やったぁ（小声）」
+      </p>
+      </div>
+      <div class="mem1 left">
+      <span>柴木 蛍</span>
+      <p>
+      
+            「（バフォやったよ、婚活への一歩だよ）」
+      </p>
+      </div>
+      <div class="mem2 mem2_hohoemi right">
+      <span>花垣 陸</span>
+      <p>
+      
+            「一人にはさせられないので…僕もちょっと荷物まとめますね」自分のにもつまとめるついでにバスみます
+      </p>
+      </div>
+      <div class="mem4 right">
+      <span>柳 冬至</span>
+      <p>
+      
+            「あはは。どうぞぉ」腕を差し出しつつ
+      </p>
+      </div>
+      <div class="mem1 left">
+      <span>柴木 蛍</span>
+      <p>
+      
+            「では、失礼します」<br>腕を絡める
+      </p>
+      </div>
+      <div class="kp LtoR-early">
+      
+            ▼バス<br>同じバスに乗ってきた参加者たちは狂気に満ちた目で愛を囁き続けており、コミュニケーションを取ることはできない。<br>運転席を調べると、鍵が持ち去られていると気づく。運転手が持ち去ったのだろう。<br>また、座席の下に［バス運転の際の留意点］と書かれたパンフレットが吊るされている。
+      </div>
+      <div class="kp LtoR-early">
+      
+            -------------<br>2-04【バス運転の際の留意点】<br>大型バスを運転する際の留意点を中心に、運転の基本技術をおさらいするような内容が書かれており、「基本をしっかり大切に」と大書されている。<br>この本を読んだあと運転する場合、本キャンペーン中に限り、自動車運転の教育を受けていないという設定のPCであっても拙くはあるが自動車運転が可能となる。<br>-------------
+      </div>
+      <div class="mem2 right">
+      <span>花垣 陸</span>
+      <p>
+      
+            （車があればな…）
+      </p>
+      </div>
+      <div class="mem5 left">
+      <span>ツアーコンダクター</span>
+      <p>
+      
+            「鍵、運転手さんが持って行っちゃったみたい……でも村のどこかにはいるでしょうから、なんなら、一緒に逃げますかぁ……？」
+      </p>
+      </div>
+      <div class="mem1 left">
+      <span>柴木 蛍</span>
+      <p>
+      
+            「柳さん、どうします？鍵ないみたいですから、荷物をとれるかも微妙なところですし、運転手さん探すついでに散策します？」
+      </p>
+      </div>
+      <div class="mem2 mem2_odoroki right">
+      <span>花垣 陸</span>
+      <p>
+      
+            「そうですね…帰りも困りますし…運転手さんを探すのをとりあえずの目的にしましょうか。えっと…荷物をおいてから探しに行こうと思いますが…お二人はどうしますか？」柴木ちゃんたちの方へ声をかけます
+      </p>
+      </div>
+      <div class="mem1 left">
+      <span>柴木 蛍</span>
+      <p>
+      
+            「荷物取れるんでしたら、宿に行って事情を説明したあとに探す流れですかね」
+      </p>
+      </div>
+      <div class="mem4 right">
+      <span>柳 冬至</span>
+      <p>
+      
+            「荷物はとれるんじゃないですかね？　まぁ、お二人にお任せしますよ～」
+      </p>
+      </div>
+      <div class="mem2 mem2_hohoemi right">
+      <span>花垣 陸</span>
+      <p>
+      
+            「では旅館まではご一緒に行きましょうか。ツアーですしチェックインは一緒の方がいいと思いますし」
+      </p>
+      </div>
+      <div class="mem1 left">
+      <span>柴木 蛍</span>
+      <p>
+      
+            「そうですね。宿に行ったのちに、それぞれどう行動するか、といった流れでしょうね」
+      </p>
+      </div>
+      <div class="kp LtoR-early">
+      
+            ▼旅館<br>旅館では誰も出迎えない。入り口は開け放たれている。中に入り荷物を降ろし一休みすることは問題なくできそうである。<br>＜聞き耳＞
+      </div>
+      <div class="mem1 left">
+      <span>柴木 蛍</span>
+      <p>
+      
+            CCB&lt;=70 【聞き耳】 (1D100&lt;=70) ＞ 81 ＞ 失敗
+            
+      </p>
+      </div>
+      <div class="mem2 mem2_hohoemi right">
+      <span>花垣 陸</span>
+      <p>
+      
+            CCB&lt;=55 【聞き耳】 (1D100&lt;=55) ＞ 41 ＞ 成功
+            
+      </p>
+      </div>
+      <div class="kp LtoR-early">
+      
+            奥の方から人の声が聞こえるが、やはり狂気に陥ったような愛の言葉を交わしあっているようだ。
+      </div>
+      <div class="mem1 left">
+      <span>柴木 蛍</span>
+      <p>
+      
+            「ううん。何も聞こえない」
+      </p>
+      </div>
+      <div class="mem4 right">
+      <span>柳 冬至</span>
+      <p>
+      
+            「どうやら中でも似たようなことになっているみたいですね～」
+      </p>
+      </div>
+      <div class="mem2 right">
+      <span>花垣 陸</span>
+      <p>
+      
+            「ここに住んでる方も耐性ないのか…？」
+      </p>
+      </div>
+      <div class="mem1 left">
+      <span>柴木 蛍</span>
+      <p>
+      
+            「ホントですか？なら、何かしらの薬害が出ているんですかね」
+      </p>
+      </div>
+      <div class="mem5 left">
+      <span>ツアーコンダクター</span>
+      <p>
+      
+            「どうなんでしょう……？　私は一緒にいられればいいんですけど……」
+      </p>
+      </div>
+      <div class="mem4 right">
+      <span>柳 冬至</span>
+      <p>
+      
+            「薬かどうかはともかく、被害は出ていますね～」
+      </p>
+      </div>
+      <div class="mem2 right">
+      <span>花垣 陸</span>
+      <p>
+      
+            「そうですね…ここに残しておいても不安ですし…ご一緒に行動しましょうか…。お部屋は好きなとこでいいんですかね」受付台帳とかで予約されてる部屋確認できます？
+      </p>
+      </div>
+      <div class="mem1 left">
+      <span>柴木 蛍</span>
+      <p>
+      
+            「薬なら研究所、花系なら花畑。農園も気になりはしますね」
+      </p>
+      </div>
+      <div class="mem1 left">
+      <span>柴木 蛍</span>
+      <p>
+      
+            「あ、部屋は普通に一人部屋とかなんですかね」
+      </p>
+      </div>
+      <div class="kp LtoR-early">
+      
+            受付には人はおらず、奥の部屋から人の声が聞こえるでしょう
+      </div>
+      <div class="mem2 right">
+      <span>花垣 陸</span>
+      <p>
+      
+            「部屋の鍵とかあるかな…」奥の部屋をちょっと覗きにいきたいです
+      </p>
+      </div>
+      <div class="mem5 left">
+      <span>ツアーコンダクター</span>
+      <p>
+      
+            「お部屋は予約しているはずなので、皆さん一人部屋かと……あっでも、いつでも来てくださっていいんですよ……？」
+      </p>
+      </div>
+      <div class="kp LtoR-early">
+      
+            奥の部屋を探ると、女将らしき人物が男性と手を取り合って愛を囁きあっているところに踏み込むことになる。<br>彼らは探索者を見ると微笑み、「いらっしゃいませ、ようこそ、私たちのすばらしい愛のなかへ。この村に滞在し、愛し合ってくださるならば、いつまでも無料で滞在してくださって結構です」と言う。<br>＜目星＞
+      </div>
+      <div class="mem2 mem2_kanasimi right">
+      <span>花垣 陸</span>
+      <p>
+      
+            CCB&lt;=71 【目星】 (1D100&lt;=71) ＞ 92 ＞ 失敗
+            
+      </p>
+      </div>
+      <div class="mem2 mem2_kanasimi right">
+      <span>花垣 陸</span>
+      <p>
+      
+            気まずさにちょっと目をそらし
+      </p>
+      </div>
+      <div class="mem1 left">
+      <span>柴木 蛍</span>
+      <p>
+      
+            「おじゃましまーす」って言いながらあとをついていこう
+      </p>
+      </div>
+      <div class="mem1 left">
+      <span>柴木 蛍</span>
+      <p>
+      
+            CCB&lt;=65 【目星】 (1D100&lt;=65) ＞ 84 ＞ 失敗
+            
+      </p>
+      </div>
+      <div class="mem1 left">
+      <span>柴木 蛍</span>
+      <p>
+      
+            そっとじ
+      </p>
+      </div>
+      <div class="mem1 left">
+      <span>柴木 蛍</span>
+      <p>
+      
+            「さて、部屋はそれぞれ選べるみたいですし、荷物を置いたら現状把握しに行きましょうか！」
+      </p>
+      </div>
+      <div class="mem2 right">
+      <span>花垣 陸</span>
+      <p>
+      
+            「さすがにお部屋にお邪魔するのはまだはやいと思います…荷物おいたら入口でまってますね」ガイドさんに伝えてからお部屋にむかいます
+      </p>
+      </div>
+      <div class="mem4 right">
+      <span>柳 冬至</span>
+      <p>
+      
+            「あはは～。そうですね、荷物を置いてきます～」
+      </p>
+      </div>
+      <div class="mem5 left">
+      <span>ツアーコンダクター</span>
+      <p>
+      
+            「残念……でもまだ、きっとチャンスはありますから……荷物、おいてきます……！」
+      </p>
+      </div>
+      <div class="mem1 left">
+      <span>柴木 蛍</span>
+      <p>
+      
+            「ツアーコンダクターさん、ツアーコンダクターさん」
+      </p>
+      </div>
+      <div class="mem1 left">
+      <span>柴木 蛍</span>
+      <p>
+      
+            「夜這いですよ。今の時代は攻めるのみです」
+      </p>
+      </div>
+      <div class="mem5 left">
+      <span>ツアーコンダクター</span>
+      <p>
+      
+            「えぇ？　よ、夜這い……！？　そ、そんなぁ、まだ早いですよぉ……！」もじもじ
+      </p>
+      </div>
+      <div class="mem1 left">
+      <span>柴木 蛍</span>
+      <p>
+      
+            「今のままじゃなんも進展しません。待つより攻めるのが手ですよ」
+      </p>
+      </div>
+      <div class="mem5 left">
+      <span>ツアーコンダクター</span>
+      <p>
+      
+            「そ、そんなぁ、わ、私、今十分攻めてるんですよぉ……」てれてれ
+      </p>
+      </div>
+      <div class="mem1 left">
+      <span>柴木 蛍</span>
+      <p>
+      
+            「きゃーかわいい」
+      </p>
+      </div>
+      <div class="mem5 left">
+      <span>ツアーコンダクター</span>
+      <p>
+      
+            「えへへっ……お客様も頑張ってくださいね……！」
+      </p>
+      </div>
+      <div class="mem1 left">
+      <span>柴木 蛍</span>
+      <p>
+      
+            「はい！」
+      </p>
+      </div>
+      <div class="mem2 right">
+      <span>花垣 陸</span>
+      <p>
+      
+            「お待たせしました、えっと…じゃあどうしましょうか、手分けして運転手さんを探しますか？」荷物おいて入口に来ました
+      </p>
+      </div>
+      <div class="mem1 left">
+      <span>柴木 蛍</span>
+      <p>
+      
+            「手分けした方が効率はいいと思いますけど……（それに、気になる人との好感度アップの予感）」
+      </p>
+      </div>
+      <div class="mem2 mem2_hohoemi right">
+      <span>花垣 陸</span>
+      <p>
+      
+            「なにかあったら連絡してください。あ、よかったら柳さん達のご連絡先もお聞きしても…？グループつくりましょう」
+      </p>
+      </div>
+      <div class="mem1 left">
+      <span>柴木 蛍</span>
+      <p>
+      
+            「そうですね、グループトークで逐一報告していきましょう」
+      </p>
+      </div>
+      <div class="mem4 right">
+      <span>柳 冬至</span>
+      <p>
+      
+            「いいですよ～。情報共有しましょう」
+      </p>
+      </div>
+      <div class="mem5 left">
+      <span>ツアーコンダクター</span>
+      <p>
+      
+            「連絡先、交換できるんですか！？　えっうれしい……ふふ、たくさんやり取りしましょうね……！」
+      </p>
+      </div>
+      <div class="mem2 right">
+      <span>花垣 陸</span>
+      <p>
+      
+            「できれば皆さんを正気に戻す手がかりも探したいですね…（正気になったとき俺の連絡先はいってて大丈夫かな…）」
+      </p>
+      </div>
+      <div class="mem1 left">
+      <span>柴木 蛍</span>
+      <p>
+      
+            「（私もあれぐらい攻めるべきなのか？……でも、自分でやるのはなぁ）」
+      </p>
+      </div>
+      <div class="mem2 right">
+      <span>花垣 陸</span>
+      <p>
+      
+            「どこから回ります？手分けするなら研究所がわと神社側で別れた方がいいですかね」
+      </p>
+      </div>
+      <div class="mem1 left">
+      <span>柴木 蛍</span>
+      <p>
+      
+            「私、生物学や薬学の知識があるので花畑には適任だと思います」
+      </p>
+      </div>
+      <div class="mem2 right">
+      <span>花垣 陸</span>
+      <p>
+      
+            「では僕とガイドさんで研究所と民家を見に行ってきますね。」
+      </p>
+      </div>
+      <div class="mem1 left">
+      <span>柴木 蛍</span>
+      <p>
+      
+            「じゃ私達は農園と神社を見てきますね」
+      </p>
+      </div>
+
+      <div class="kp LtoR-early">
+            ――――――――――――――――――――――――<br>
+            ―――――――――――――――<br>
+            ―――――――
+      </div>
+      <div class="kp LtoR-early">
+      
+            ▼花畑<br>バスの停車した発着所のすぐ近くが、広い花畑になっている。<br>花畑の花は一面に赤く、探索者に、なぜか、奇妙な印象を与えた。<br>2-01【緋染村】の情報を得ている探索者は＜生物学＞＜アイデア＞
+      </div>
+      <div class="mem1 left">
+      <span>柴木 蛍</span>
+      <p>
+      
+            CCB&lt;=70 【生物学】 (1D100&lt;=70) ＞ 41 ＞ 成功
+            
+      </p>
+      </div>
+      <div class="kp LtoR-early">
+      
+            花畑は四季を通じて様々な花が見られるようになっているはずであり、つまり季節によって花が咲いていないエリアがあるはずだ。<br>事前調査をしている探索者であれば、以前は確かに様々な種類の花が植えられていただろうことにも気づける。
+      </div>
+      <div class="mem1 left">
+      <span>柴木 蛍</span>
+      <p>
+      
+            花をよく観察してみるぜ
+      </p>
+      </div>
+      <div class="kp LtoR-early">
+      
+            花をよく見ると、それらの花は異常といえるものだった。<br>青白く膨らんだ球根から、大きく開いた真っ赤な花弁が広がっている。<br>そして花弁の中心には人間のような妖精じみた姿があり、にこにこと微笑んで探索者を見上げている。<br>それはこの世のものとも思えないような美しく澄んだ声で、「愛し合いなさい、愛し合いなさい、愛し合いなさい……」と声を揃えて囁いている。<br>このような花が花畑に一面咲き誇っている。<br>SANC1/1D3<br>探索者はこの声をあまり長く聴いていると、愛し合わなくてはという高揚感が自身を覆うのに気づく。
+      </div>
+      <div class="mem1 left">
+      <span>柴木 蛍</span>
+      <p>
+      
+            1d100&lt;=60 【正気度ロール】 (1D100&lt;=60) ＞ 29 ＞ 成功
+            
+      </p>
+      </div>
+      <div class="mem6 right">
+      <span>system</span>
+      <p>
+      
+            [ 柴木 蛍 ] SAN : 60 → 59
+      </p>
+      </div>
+      <div class="mem1 left">
+      <span>柴木 蛍</span>
+      <p>
+      
+            「柳さん、これ……危険ですね」
+      </p>
+      </div>
+      <div class="mem4 right">
+      <span>柳 冬至</span>
+      <p>
+      
+            「あは～。そうですね、人間には危険なものかもしれませんね～」
+      </p>
+      </div>
+      <div class="mem1 left">
+      <span>柴木 蛍</span>
+      <p>
+      
+            ＞人間には＜
+      </p>
+      </div>
+      <div class="mem1 left">
+      <span>柴木 蛍</span>
+      <p>
+      
+            一本抜いてみましょうか
+      </p>
+      </div>
+      <div class="kp LtoR-early">
+      
+            花を摘もうとすると、花は「殺さないで」「死にたくない」と叫ぶ。
+      </div>
+      <div class="mem1 left">
+      <span>柴木 蛍</span>
+      <p>
+      
+            「うわ、意識があるー」
+      </p>
+      </div>
+      <div class="mem1 left">
+      <span>柴木 蛍</span>
+      <p>
+      
+            「せい」
+      </p>
+      </div>
+      <div class="kp LtoR-early">
+      
+            それでも摘もうとする場合、「お母さん、助けて！」と叫びながら探索者に対して強い芳香を放ち、探索者は一瞬、めまいにも似た高揚感に襲われ、隣にいる柳に対して、無意識に愛を告げてしまう。
+      </div>
+      <div class="mem1 left">
+      <span>柴木 蛍</span>
+      <p>
+      
+            「柳さん、……すきです」
+      </p>
+      </div>
+      <div class="mem4 right">
+      <span>柳 冬至</span>
+      <p>
+      
+            「あはは！　本当ですか～？」
+      </p>
+      </div>
+      <div class="mem1 left">
+      <span>柴木 蛍</span>
+      <p>
+      
+            「はっ。私は一体何を…」
+      </p>
+      </div>
+      <div class="mem4 right">
+      <span>柳 冬至</span>
+      <p>
+      
+            「ボクに好きだとか言ってきましたね～」
+      </p>
+      </div>
+      <div class="mem1 left">
+      <span>柴木 蛍</span>
+      <p>
+      
+            「はぅっ！？」
+      </p>
+      </div>
+      <div class="mem1 left">
+      <span>柴木 蛍</span>
+      <p>
+      
+            「……ほんとに、好きっていったらどうしますか？」
+      </p>
+      </div>
+      <div class="mem4 right">
+      <span>柳 冬至</span>
+      <p>
+      
+            「はは。ボクの本当の姿を知っても、そんなこと言ってられますかね～？」
+      </p>
+      </div>
+      <div class="mem1 left">
+      <span>柴木 蛍</span>
+      <p>
+      
+            「本当の姿？」
+      </p>
+      </div>
+      <div class="mem4 right">
+      <span>柳 冬至</span>
+      <p>
+      
+            「今はまだ秘密です～」
+      </p>
+      </div>
+      <div class="mem1 left">
+      <span>柴木 蛍</span>
+      <p>
+      
+            「秘密ですか……。でも、その時が来たら教えてくれますか？」
+      </p>
+      </div>
+      <div class="mem4 right">
+      <span>柳 冬至</span>
+      <p>
+      
+            「その時が来たら、おのずと、いやでも知ることになりますよ～」
+      </p>
+      </div>
+      <div class="mem1 left">
+      <span>柴木 蛍</span>
+      <p>
+      
+            「なら、気長に待ってます」
+      </p>
+      </div>
+      <div class="mem1 left">
+      <span>柴木 蛍</span>
+      <p>
+      
+            「それと、花の件は報告しておきましょう。危険でもあり重要な手がかりでもありますから」
+      </p>
+      </div>
+      <div class="mem1 left">
+      <span>柴木 蛍</span>
+      <p>
+      
+            メッセージで、四季折々だった花が抜かれてる件、小さな妖精が愛を囁けと話してる件、引き抜こうとしたら愛を囁いてた件、について連絡します
+      </p>
+      </div>
+      <div class="kp LtoR-early">
+            ――――――――――――――――――――――――<br>
+            ―――――――――――――――<br>
+            ―――――――
+      </div>
+      <div class="kp LtoR-early">
+      
+            一方そのころ
+      </div>
+      <div class="kp LtoR-early">
+      
+            ▼村の家々<br>村へ降りると、甘い香りに満ちていた。<br>民家が立ち並ぶ家々から、甘ったるい声が響いていることに気づく。<br>村民は皆、口々に愛を囁きあい、手を取り合い抱き合って、周囲の様子がまるで目に入らない様子であるが、話しかけるとかろうじて反応する。<br>バスの中の参加者と同じような状態であるとわかるが、コミュニケーションを取ることは一応できそうだ。
+      </div>
+      <div class="mem2 mem2_odoroki right">
+      <span>花垣 陸</span>
+      <p>
+      
+            「もう村全体がこうなのかな…。あの、すみませんこちらにバスの運転手さん…スーツ着た男性が来ませんでしたか？」村人に信用をふります
+      </p>
+      </div>
+      <div class="mem2 mem2_hohoemi right">
+      <span>花垣 陸</span>
+      <p>
+      
+            CCB&lt;=65 【信用】 (1D100&lt;=65) ＞ 44 ＞ 成功
+            
+      </p>
+      </div>
+      <div class="mem7 left">
+      <span>村民</span>
+      <p>
+      
+            「他所から来たスーツのお客さんならさっきひとり見かけましたよ。農園の方へ走っていきました」
+      </p>
+      </div>
+      <div class="mem2 right">
+      <span>花垣 陸</span>
+      <p>
+      
+            「あ、反対側だったか…とりあえずこのことを連絡しておこう。えっと…この村はずっとその、こんな感じですか？なんていうか…皆愛にあふれてるといいますか…」
+      </p>
+      </div>
+      <div class="mem7 left">
+      <span>村民</span>
+      <p>
+      
+            「世界の終わりが始まってから徐々にこうなっていきましたね。おそらく影響があるんでしょうけど、愛し合っているのでどうでもいいですねぇ～」
+      </p>
+      </div>
+      <div class="mem2 mem2_kanasimi right">
+      <span>花垣 陸</span>
+      <p>
+      
+            「そうですか…」
+      </p>
+      </div>
+      <div class="mem7 left">
+      <span>村民</span>
+      <p>
+      
+            「あなたも愛し合うといいですよ～」
+      </p>
+      </div>
+      <div class="mem5 left">
+      <span>ツアーコンダクター</span>
+      <p>
+      
+            「ですって……！　ふふ、愛って素敵ですね……！」
+      </p>
+      </div>
+      <div class="kp LtoR-early">
+      
+            ＜目星＞
+      </div>
+      <div class="mem2 mem2_hohoemi right">
+      <span>花垣 陸</span>
+      <p>
+      
+            CCB&lt;=71 【目星】 (1D100&lt;=71) ＞ 56 ＞ 成功
+            
+      </p>
+      </div>
+      <div class="kp LtoR-early">
+      
+            ガスマスクをつけた白衣の人物が村の写真を撮っている。<br>探索者の見ている前で、その人物は複数の村民にいやおうなしに腕を取られ、マスクを剥ぎ取られて家の中に連れ込まれてしまう。<br>その時手にしていたタブレットPCを落とした。
+      </div>
+      <div class="mem2 right">
+      <span>花垣 陸</span>
+      <p>
+      
+            （お相手は見つけたいけどこんなだましてるみたいな状況だと…ん？）
+      </p>
+      </div>
+      <div class="mem2 mem2_odoroki right">
+      <span>花垣 陸</span>
+      <p>
+      
+            「えっ…なんだいまの」PCを拾いにいきます
+      </p>
+      </div>
+      <div class="kp LtoR-early">
+      
+            あなたがそれを拾おうとすると、落ちたタブレットPCの前に大きな影が落ちる。<br>空から飛び降りてきたそれは、ピンク色の甲殻類のように見えた。頭についた楕円形から触手が生え、そこからノイズがかった声で探索者に話しかけてくる。SANC0/1D6
+      </div>
+      <div class="mem2 mem2_hohoemi right">
+      <span>花垣 陸</span>
+      <p>
+      
+            1d100&lt;=85 【正気度ロール】 (1D100&lt;=85) ＞ 64 ＞ 成功
+            
+      </p>
+      </div>
+      <div class="mem8 right">
+      <span>ミゴさん</span>
+      <p>
+      
+            「こんにちは、花垣陸さん。お久しぶりです、奇遇ですね」
+      </p>
+      </div>
+      <div class="mem2 right">
+      <span>花垣 陸</span>
+      <p>
+      
+            「ミゴさん、お久しぶりです。あれ、ミゴさんツアーに参加されてませんでしたよね？どうしてここに…？」
+      </p>
+      </div>
+      <div class="mem8 right">
+      <span>ミゴさん</span>
+      <p>
+      
+            「私は少々研究所に用がありまして。久しぶりに研究所に顔を出したところ、村がこんな様子になっていて驚いているところです」
+      </p>
+      </div>
+      <div class="mem2 right">
+      <span>花垣 陸</span>
+      <p>
+      
+            「ミゴさんはこの村にお詳しいんですか？俺はさっき来たばかりで…研究所もこの後伺おうとおもってました」
+      </p>
+      </div>
+      <div class="mem8 right">
+      <span>ミゴさん</span>
+      <p>
+      
+            「自分も詳しいことはわからないのですが、村がこのようになっているのは、ヴルトゥームという火星に住む神の影響によるものと思われます。この村はもともとヴルトゥームと縁深かった。世界の終わりに関連して影響が強くなったのではないでしょうか。研究所は……私はアマルテイア研究所と業務提携して機材開発を行っているため、半月に1度程度定期的に機材点検に通っているのです。点検を終えてもう帰るところだったんですが、いやはや……」
+      </p>
+      </div>
+      <div class="mem8 right">
+      <span>ミゴさん</span>
+      <p>
+      
+            「研究所は通常通り業務を行っており、研究員がいるはずです。花垣さんはこのような状況下でも正常な判断力があるようなので、研究所に行くと良いサンプルとして歓迎されると思いますよ。……サンプル、というのはよくない言い方なのでしたか、人間には」
+      </p>
+      </div>
+      <div class="mem2 right">
+      <span>花垣 陸</span>
+      <p>
+      
+            「火星の神様と縁が深い…？そういえばミゴさんも地球生まれではないんでしたっけ。確かにサンプルはあまりいい意味ではとらえられませんね…歓迎されるなら同格の相手としてもてなされたいです」
+      </p>
+      </div>
+      <div class="mem8 right">
+      <span>ミゴさん</span>
+      <p>
+      
+            「そうですね、私も地球生まれではないです。同格の相手として……は、私は人間ではないので、人間に対しての研究所の接し方が同格かはわかりませんが、何らかの情報は得られると思いますよ」
+      </p>
+      </div>
+      <div class="mem2 right">
+      <span>花垣 陸</span>
+      <p>
+      
+            「次に会った時に出身についてお話を聞きたいと思っていましたが…ちょっと状況がわるいですね、また次に聞かせてください。研究員さんたちは人間ですか？」
+      </p>
+      </div>
+      <div class="mem8 right">
+      <span>ミゴさん</span>
+      <p>
+      
+            「そうですね、また今度お茶でもゆっくり。まぁ、その時に人間の世界がまだあるかはわかりませんが……研究者たちは、だいたいは人間ですよ。私のような例外も少々いるはずですが」
+      </p>
+      </div>
+      <div class="mem2 right">
+      <span>花垣 陸</span>
+      <p>
+      
+            「世界が終わるまであと三週間くらいでしたっけ…。そうなんですね…ミゴさんみたいにお話がしやすいといいのですが…もう帰られます？お時間あればご一緒に行っていただけたりはむずかしいですかね」
+      </p>
+      </div>
+      <div class="mem8 right">
+      <span>ミゴさん</span>
+      <p>
+      
+            「話しやすいと言ってくださるのはうれしいですね。しかし、ちょっとこの後野暮用がありまして……そのタブレットPCも、研究所に届けてもらえると助かります。中身は見てもかまいませんよ、あなたなら大丈夫でしょう。もし怖ければ、私が預かりますし、研究所に行かないのも一つの手かもしれません」
+      </p>
+      </div>
+      <div class="mem2 mem2_hohoemi right">
+      <span>花垣 陸</span>
+      <p>
+      
+            「そうでしたかお忙しいのに色々教えてくれてありがとうございます。家に帰る方法を探さなくてはいけないので…それにまだ婚活も途中ですから。タブレットちゃんと届けますね」
+      </p>
+      </div>
+      <div class="mem8 right">
+      <span>ミゴさん</span>
+      <p>
+      
+            「いえいえ。幸いなことに連絡先も交換していますし、また何かあれば遠慮なく聞くなり呼び出すなりしてください。タブレットも、ありがとうございます。お手数かけますが、よろしくお願いいたします」
+      </p>
+      </div>
+      <div class="mem2 mem2_egao right">
+      <span>花垣 陸</span>
+      <p>
+      
+            「頼もしいです。ではまた、世界が終わる前に機会があれば」タブレットを拾って手を振ります
+      </p>
+      </div>
+      <div class="mem8 right">
+      <span>ミゴさん</span>
+      <p>
+      
+            「ぜひまたお会いしましょう。では」飛び去って行く
+      </p>
+      </div>
+      <div class="mem2 mem2_hohoemi right">
+      <span>花垣 陸</span>
+      <p>
+      
+            では見送ってタブレットPCを見ます
+      </p>
+      </div>
+      <div class="kp LtoR-early">
+      
+            ●タブレットPCを見る<br>タブレットPCの背景はバフォメットによく似たマスコットキャラクターのイラストが設定されているが、このキャラクターのリボンはバフォメットとは違い、白である。<br>タブレットPCにはアイコン、カメラの他4つ表示されている。<br>アイコンリスト【カメラロール／研究所概要／緋染村定期観察チェックシート／議事録：ウボ＝サスラのかけらについて】<br>
+      </div>
+      <div class="mem2 right">
+      <span>花垣 陸</span>
+      <p>
+      
+            （しゅぶしゅぶの別個体…？）カメラロールから覗いてみます
+      </p>
+      </div>
+      <div class="kp LtoR-early">
+      
+            ・カメラロール<br>村内を撮ったらしい様々な写真が保存されている。<br>神社の写真は見当たらない。
+      </div>
+      <div class="mem2 right">
+      <span>花垣 陸</span>
+      <p>
+      
+            （宗教を研究してるんじゃなかったのか？）研究所概要をみます
+      </p>
+      </div>
+      <div class="kp LtoR-early">
+      
+            製薬開発の他、不老長寿、不老不死、繁殖といった研究を秘密裏に行っており、ミ＝ゴはそちらに関わっている。［ウボ＝サスラのかけら］服用による再生能力のサポートとして使える装置も作成した。
+      </div>
+      <div class="mem2 right">
+      <span>花垣 陸</span>
+      <p>
+      
+            「そういえば神の知識が欲しいなら飲むようにって前にもらったな…」観察チェックシートをみます
+      </p>
+      </div>
+      <div class="kp LtoR-early">
+      
+            ・その他の資料<br>-------------<br>2-05【緋染村定期観察チェックシート】<br>・一般の村民とは一定の距離を取り、接触されないよう心がけること。<br>・ヴルトゥームに近接する際は芳香に十分注意し、万が一の際は緊急ボタンを押すこと。<br>・正常な意識を保っている人材を発見した場合、研究所に連絡。<br>・その他サンプル要件を満たす人材を発見次第、研究所に連絡。<br>-------------<br>2-06【議事録：ウボ＝サスラのかけらについて】<br>未整理のメモのような、雑然とした議事録である。以下の記載がある。<br><br><br>・ウボ＝サスラのかけらによる再生機能は、ホメオスタシス機能として働く。<br>・ウボ＝サスラのかけらは世界終焉をリセットする機能がある可能性が憂慮される。<br>・ウボ＝サスラのかけらを摂取した者がオールド・ワンの使者に干渉した場合、オールド・ワンの使者の、世界を終わらせるという機能が逆再生する可能性。<br>・ウボ＝サスラのかけらの厳重管理を呼びかけるべきである。仮説が正しければすべては水泡に帰す。<br>-------------<br>＜医学＞
+      </div>
+      <div class="mem2 mem2_egao right">
+      <span>花垣 陸</span>
+      <p>
+      
+            CCB&lt;=5 【医学】 (1D100&lt;=5) ＞ 5 ＞ 決定的成功
+            
+      </p>
+      </div>
+      <div class="kp LtoR-early">
+      
+            【ウボ＝サスラのかけら】<br>ウボ＝サスラは地球上の全ての生命の源となる原形質を生み出したとされる神。<br>ミ＝ゴは南極の氷の下にあるウボ＝サスラのかけらを採集し、彼らの発明に使用している。<br>このかけらの能力はウボ＝サスラの能力に準じるため、生命を創造する、再生する、作り替えるといった能力が得られる。<br>この1瓶の分量は効力を最小限に抑える分量となっており、2瓶以上飲むと、ちょっとした惑星の創造さえ可能になる。<br>しかし、この［再生能力］を行使するには一般の人間の体では不十分であり、人間がそのような大きな創造を行使するためにはたとえばミ＝ゴのオーバーテクノロジーの力を借りる、あるいは人外への変貌が必要となる。<br>また、人間がこれを摂取する場合、副作用として、異常な量の知識を得ることになる。<br>しかし、それは人間の身の丈を超えた知識であり、得た者の大抵はその知識によって身を亡ぼすという。<br>この知識を得ずにこのかけらを摂取したいと考える場合、以下の要件のいずれかを満たす必要がある。<br>・健忘もしくは酩酊といった状態で摂取する。<br>・自己保護の機構が働くような薬品等の使用後に摂取する。
+      </div>
+      <div class="kp LtoR-early">
+      
+            ＜医学＞ホメオスタシス機能とは、生理状態、生物の生きている状態を一定に保とうとする機能のこと。
+      </div>
+      <div class="mem2 mem2_odoroki right">
+      <span>花垣 陸</span>
+      <p>
+      
+            「そんなにすごいものだったんだ…」
+      </p>
+      </div>
+      <div class="mem2 right">
+      <span>花垣 陸</span>
+      <p>
+      
+            とりあえず知った情報を共有して次に研究所に向かうことを伝えます
+      </p>
+      </div>
+
+      <div class="kp LtoR-early">
+            ――――――――――――――――――――――――<br>
+            ―――――――――――――――<br>
+            ―――――――
+      </div>
+
+      <div class="kp LtoR-early">
+      
+            ▼茜農園<br>花畑と同様、ここの植物もすべて妖精じみた姿を擁する赤い花である。描写は［花畑］を参照。<br>観光客用のものらしい［緋染村茜農園総合センター］という建物が入り口付近にある。<br>農園の奥には神社の鳥居が見える。<br>＜聞き耳＞
+      </div>
+      <div class="mem1 left">
+      <span>柴木 蛍</span>
+      <p>
+      
+            CCB&lt;=70 【聞き耳】 (1D100&lt;=70) ＞ 20 ＞ 成功
+            
+      </p>
+      </div>
+      <div class="kp LtoR-early">
+      
+            村に充満する甘い香りは神社の方からより濃く漂っている。
+      </div>
+      <div class="mem1 left">
+      <span>柴木 蛍</span>
+      <p>
+      
+            「神社が一番の匂いの元……なのかな」
+      </p>
+      </div>
+      <div class="mem1 left">
+      <span>柴木 蛍</span>
+      <p>
+      
+            「運転手の方もこちらの方にいるらしいから、なるべく早く見つけないとですね」
+      </p>
+      </div>
+      <div class="mem1 left">
+      <span>柴木 蛍</span>
+      <p>
+      
+            「まずはこの付近を調べることにしましょう」
+      </p>
+      </div>
+      <div class="mem1 left">
+      <span>柴木 蛍</span>
+      <p>
+      
+            「おーい、運転手さーん」
+      </p>
+      </div>
+      <div class="mem1 left">
+      <span>柴木 蛍</span>
+      <p>
+      
+            CCB&lt;=65 【目星】 (1D100&lt;=65) ＞ 26 ＞ 成功
+            
+      </p>
+      </div>
+      <div class="kp LtoR-early">
+      
+            農園には運転手はおらず、神社のほうにいるのではないかと思う。
+      </div>
+      <div class="mem1 left">
+      <span>柴木 蛍</span>
+      <p>
+      
+            「ここらへんではなく、神社の方ですかね」
+      </p>
+      </div>
+      <div class="mem1 left">
+      <span>柴木 蛍</span>
+      <p>
+      
+            農園の建物を調べに行きます
+      </p>
+      </div>
+      <div class="kp LtoR-early">
+      
+            ◎緋染村茜農園総合センター<br>入口は開け放たれており、人の気配はない。<br>農具、染色の手順、材料等が展示されている他、地域史をまとめた本が多く展示されている。<br>＜図書館＞
+      </div>
+      <div class="mem1 left">
+      <span>柴木 蛍</span>
+      <p>
+      
+            CCB&lt;=25 【図書館】 (1D100&lt;=25) ＞ 80 ＞ 失敗
+            
+      </p>
+      </div>
+      <div class="mem1 left">
+      <span>柴木 蛍</span>
+      <p>
+      
+            「ほへー（理解できてない）」
+      </p>
+      </div>
+      <div class="mem4 right">
+      <span>柳 冬至</span>
+      <p>
+      
+            「なるほど～。ボクの力借りますか？」
+      </p>
+      </div>
+      <div class="mem1 left">
+      <span>柴木 蛍</span>
+      <p>
+      
+            「いいんですか？」
+      </p>
+      </div>
+      <div class="mem4 right">
+      <span>柳 冬至</span>
+      <p>
+      
+            「あなた方をサポートするためにいるようなものなので～」
+      </p>
+      </div>
+      <div class="mem1 left">
+      <span>柴木 蛍</span>
+      <p>
+      
+            「うわすき」
+      </p>
+      </div>
+      <div class="mem4 right">
+      <span>柳 冬至</span>
+      <p>
+      
+            「はは。では見てみますね～」
+      </p>
+      </div>
+      <div class="mem4 right">
+      <span>柳 冬至</span>
+      <p>
+      
+            s1d100 無意味ダイス (1D100) ＞ 71
+            
+      </p>
+      </div>
+      <div class="kp LtoR-early">
+      
+            【緋染村茜染色の歴史】と題された本が見つかる。<br>-------------<br>2-07【緋染村茜染色の歴史】<br>茜染色の一般的な情報の他、以下のような記載がある。<br><br>茜染色は鮮やかな色を出すためには複数回の染色を重ねる必要があります。<br>しかし緋染村で採れる茜は、一回の染色だけで非常に色鮮やかな赤に染まります。<br>それゆえに、古来から、緋染村の茜は他のものとは違う品種であるとされてきました。<br>そのような強く鮮やかな色に影響されたものか、緋染茜で染めた婚礼衣装で婚礼を上げた夫婦はどれも非常に仲睦まじく、お互いへの愛を忘れることなく、子宝に恵まれると言われており、H県を中心に知る人ぞ知る婚礼の聖地とされてきました。<br>そのような縁もあり、緋染神社にて婚礼を上げる例も古来から多くあり、現代でも根強い人気があります。<br><br>近年の研究では、緋染村の茜には、火星の土壌との関連が指摘されています。何らかの事情で土壌が宇宙由来の影響を受けているようですが、詳しい研究は行われていません。<br>緋染神社に展示されている［神の花］と呼ばれる化石も火星由来のものであるとの研究結果が出ています。<br><br>写真が2枚載っている。緋染茜の写真と神社内部の写真のようだ。<br><br>●緋染茜の写真<br>あの妖精のような姿こそないものの、花の形が村中で咲き誇っている花とよく似ていると気づく。<br><br>●神社の写真<br>神社本殿内部の写真のようだ。<br>むき出しの地面の上に台が置かれ、その上に、化石化した花のようなものが置かれている。それはまるで生きている植物であるかのように地面に根を伸ばし、地面いっぱいに根を張り巡らせていた。<br>-------------<br>＜生物学＞
+      </div>
+      <div class="mem1 left">
+      <span>柴木 蛍</span>
+      <p>
+      
+            CCB&lt;=70 【生物学】 (1D100&lt;=70) ＞ 7 ＞ スペシャル
+            
+      </p>
+      </div>
+      <div class="kp LtoR-early">
+      
+            茜の花は白であるが［緋染茜］として掲示されているこの花の形は茜には似ていない。他の植物との交雑種のような印象を受けるが、該当する他の植物が全く思いつかない。
+      </div>
+      <div class="mem1 left">
+      <span>柴木 蛍</span>
+      <p>
+      
+            「なるほど……なるほど？」
+      </p>
+      </div>
+      <div class="mem1 left">
+      <span>柴木 蛍</span>
+      <p>
+      
+            「ここだけ茜の種類が別で、元々は妖精がいなかった花が主流だったけど、今回の終末世界で妖精さんが出現してこうなってる可能性がある、ってことかな」
+      </p>
+      </div>
+      <div class="mem1 left">
+      <span>柴木 蛍</span>
+      <p>
+      
+            「あと神社の写真は……わからない」
+      </p>
+      </div>
+      <div class="mem4 right">
+      <span>柳 冬至</span>
+      <p>
+      
+            「さすがですねぇ。きっとそうなんじゃないでしょうか～。神社は……行けばわかりますよ、きっとね」
+      </p>
+      </div>
+      <div class="mem1 left">
+      <span>柴木 蛍</span>
+      <p>
+      
+            とりあいず、二枚の写真を写真に収めて画像も共有しますね
+      </p>
+      </div>
+
+      <div class="kp LtoR-early">
+            ――――――――――――――――――――――――<br>
+            ―――――――――――――――<br>
+            ―――――――
+      </div>
+
+      <div class="kp LtoR-early">
+      
+            ▼アマルテイア研究所<br>アマルテイア研究所は白く新しい建物である。<br>探索者が近づいていくと、扉が開き、美しい人物が出てくる。女性なのか男性なのかわからない、中性的な容姿をしているが、見覚えのない人物である。<br>人物は探索者を認めると、朗らかに話しかけてくる。
+      </div>
+      <div class="mem9 left">
+      <span>薊</span>
+      <p>
+      
+            「やあ、天使ちゃんたち、ここまで来てもらって悪いが、今は君たちはまだ招かれざる客だよ」
+      </p>
+      </div>
+      <div class="mem9 left">
+      <span>薊</span>
+      <p>
+      
+            「思い出せないかもしれないが、私は薊だよ」
+      </p>
+      </div>
+      <div class="kp LtoR-early">
+      
+            探索者は薊の顔を思い出そうとするが、どうしても思い出せないことに気づく。
+      </div>
+      <div class="mem2 mem2_odoroki right">
+      <span>花垣 陸</span>
+      <p>
+      
+            「えっと…パーティにいました…？雰囲気が少し…いやだいぶ違うような…？あなたはここの研究所の方ですか？」
+      </p>
+      </div>
+      <div class="mem9 left">
+      <span>薊</span>
+      <p>
+      
+            「パーティーはいたよ。姿を変えているんだ、この研究所を自由に出入りできるようにね。研究所の関係者なのかは……デザイナーとして雇われていたんだ。もっとももう辞めたけどね」
+      </p>
+      </div>
+      <div class="mem2 right">
+      <span>花垣 陸</span>
+      <p>
+      
+            「ああ突如やめたデザイナーってあなたのことなんですね。なら研究所とは今無関係ですよね…？どうして俺たちを招かれざる客だと？」
+      </p>
+      </div>
+      <div class="mem9 left">
+      <span>薊</span>
+      <p>
+      
+            「そうだよ、よく知ってるね。もともと職員だったから、中に入ると君たちは、おそらく君たちの望まない形で研究対象にされるだろうってわかるんだ。お勧めはしないよ」
+      </p>
+      </div>
+      <div class="mem2 mem2_hohoemi right">
+      <span>花垣 陸</span>
+      <p>
+      
+            「サンプルにされる事を心配してくださったんですか。ありがとうございます。でも…そうしたらどうしましょう…このタブレットを届けて、このみんながおかしくなっている原因と治し方がわかれば、と思ったんですけれど…」
+      </p>
+      </div>
+      <div class="mem9 left">
+      <span>薊</span>
+      <p>
+      
+            「なるほど、君は優しいね。もしよければタブレットは私が預かろう。あるいは、君が持っていてもいいんじゃないかな。そのキャラクター、かわいいだろう？　私がデザインしたんだ。アマルテイア、愛称はアムちゃん。アマルテイア研究所関連施設のマスコットキャラクターだよ」
+      </p>
+      </div>
+      <div class="mem9 left">
+      <span>薊</span>
+      <p>
+      
+            「そうだな……皆がおかしくなっている原因は、神社のほうに行けばわかると思うよ」
+      </p>
+      </div>
+      <div class="mem2 right">
+      <span>花垣 陸</span>
+      <p>
+      
+            「そうですね…でしたら研究所関係の知り合いに渡しておくことにします。え？あなたが？アムちゃん…これってモデルがいたりします？なんか…しゅぶしゅぶ鳴く生き物みたいな…」
+      </p>
+      </div>
+      <div class="mem9 left">
+      <span>薊</span>
+      <p>
+      
+            「わかったよ。モデル？　山羊だけど……シュブシュブ？　確かに、そう鳴きそうだよね」
+      </p>
+      </div>
+      <div class="mem2 mem2_hohoemi right">
+      <span>花垣 陸</span>
+      <p>
+      
+            「ああアマルテイアだから…いえ、ありがとうございました。薊さんはこれからどうされるんですか？また研究所へ？」
+      </p>
+      </div>
+      <div class="mem9 left">
+      <span>薊</span>
+      <p>
+      
+            「そうだよ。少し忘れ物があってね、取りに来たんだ」
+      </p>
+      </div>
+      <div class="mem2 mem2_hohoemi right">
+      <span>花垣 陸</span>
+      <p>
+      
+            「そうなんですね、いろいろありがとうございました、神社の方調べてみますね」といって少しはなれたあたりであったことを共有しておきます
+      </p>
+      </div>
+      <div class="mem2 right">
+      <span>花垣 陸</span>
+      <p>
+      
+            共有連絡したついでにそっちむかいますーって言って向かいます
+      </p>
+      </div>
+      <div class="mem1 left">
+      <span>柴木 蛍</span>
+      <p>
+      
+            待ってまーすって返信が戻ってきます
+      </p>
+      </div>
+      <div class="mem2 right">
+      <span>花垣 陸</span>
+      <p>
+      
+            ミゴさんにタブレット返せなくて預かってるから今度会った時渡しますって連絡入れておきます
+      </p>
+      </div>
+      <div class="mem2 right">
+      <span>花垣 陸</span>
+      <p>
+      
+            （かえってアムちゃんをしゅぶしゅぶにみせてみようかな）
+      </p>
+      </div>
+
+      <div class="kp LtoR-early">
+            ――――――――――――――――――――――――<br>
+            ―――――――――――――――<br>
+            ―――――――
+      </div>
+
+      <div class="kp LtoR-early">
+      
+            ▼緋染神社<br>・・・・・・・<br>神社に近づいていくにつれ、探索者は異常な雰囲気に気づく。<br>婚礼に使われることもあるという神社はかなり大きなものだ。しかし、想定していたよりも一回り、いやそれ以上、神社は大きく見えた。本能的な忌避感を覚えるだろう。<br>甘い香りはどんどん強くなっていく。<br><br>更に近づいていく場合、それが何であるかわかる。<br>その神社は巨大な植物に飲み込まれようとしていた。<br>神社を無数の根が覆いつくし、根はそのまま地に這っている。<br>根の上には丸い球根、そして球根からは赤い花が咲いていた。<br>花の真ん中から、見たこともないような美しい、妖精のような姿が生えている。<br>それは村中を覆う花と殆ど同じ様子をしていたが、より美しく、そして巨大だった。<br>SANC1/1D10
+      </div>
+      <div class="mem2 mem2_hohoemi right">
+      <span>花垣 陸</span>
+      <p>
+      
+            1d100&lt;=85 【正気度ロール】 (1D100&lt;=85) ＞ 64 ＞ 成功
+            
+      </p>
+      </div>
+      <div class="mem6 right">
+      <span>system</span>
+      <p>
+      
+            [ 花垣　陸（はながき　りく） ] SAN : 85 → 84
+      </p>
+      </div>
+      <div class="mem1 left">
+      <span>柴木 蛍</span>
+      <p>
+      
+            1d100&lt;=59 【正気度ロール】 (1D100&lt;=59) ＞ 29 ＞ 成功
+            
+      </p>
+      </div>
+      <div class="mem6 right">
+      <span>system</span>
+      <p>
+      
+            [ 柴木 蛍 ] SAN : 59 → 58
+      </p>
+      </div>
+      <div class="kp LtoR-early">
+      
+            それは甘く優しい声で探索者に語りかけてくる。
+            
+        </div>
+            <div class="mem10 right">
+                <span>？？</span>
+                <p>
+            「なぜわたしの言う通りにしないのですか？ 愛し合いなさい、愛し合うことは生物の本能なのですよ」
+                </p>
+        </div>
+   
+      <div class="kp LtoR-early">
+      
+            ＜目星＞
+      </div>
+      <div class="mem2 mem2_egao right">
+      <span>花垣 陸</span>
+      <p>
+      
+            CCB&lt;=71 【目星】 (1D100&lt;=71) ＞ 10 ＞ スペシャル
+            
+      </p>
+      </div>
+      <div class="mem1 left">
+      <span>柴木 蛍</span>
+      <p>
+      
+            CCB&lt;=65 【目星】 (1D100&lt;=65) ＞ 73 ＞ 失敗
+            
+      </p>
+      </div>
+      <div class="kp LtoR-early">
+      
+            根に埋もれるように運転手が倒れている。
+      </div>
+      <div class="mem2 right">
+      <span>花垣 陸</span>
+      <p>
+      
+            「あ、運転手さん…こんなところに…無事かな」
+      </p>
+      </div>
+      <div class="mem10 right">
+      <span>花（ヴルトゥーム）</span>
+      <p>
+      
+            「わたしは火星で眠りについていましたの。でも招かれているように感じたのでこちらに参りました。地球はこれから愛と婚姻の聖地になるという予感がしましたの」
+      </p>
+      </div>
+      <div class="mem1 left">
+      <span>柴木 蛍</span>
+      <p>
+      
+            「まぁた婚活だ」
+      </p>
+      </div>
+      <div class="mem10 right">
+      <span>花（ヴルトゥーム）</span>
+      <p>
+      
+            「もしかしてご存じではないかしら？ 人類には早すぎる知識かもしれませんね。教えて差し上げましょう、空を覆っているあれ、ニャルラトホテプの化身たる［オールド・ワンの使者］と呼ばれているものは、本来『召喚する』ことができないものなのです。あれはあくまでも神々の支配の先ぶれとして現れるメッセンジャーに過ぎない。でも今回は順序が逆、使者が現れたから、神々の支配がはじまった。世界中のあちこちで、同じことが起こっていることでしょう」
+      </p>
+      </div>
+      <div class="mem10 right">
+      <span>花（ヴルトゥーム）</span>
+      <p>
+      
+            「方法は存じ上げません。でもわたしは生物の本能については嗅覚があります。彼らは愛を利用したのです。愛を、つながりを、契約を――おしゃべりはこんなところかしら？ あなたがたも愛し合いましょう。子孫を残すこと、それこそが愛」
+      </p>
+      </div>
+      <div class="kp LtoR-early">
+      
+            運転手に探索者が気づいた場合は救い出すより早く、花（ヴルトゥーム）が語りかける。<br>言葉を聞いていると、探索者はどんどんぐらぐらとめまいを感じ始め、恍惚感と高揚感とともに、愛し合わなければ、愛し合いたい、という衝動を抱く。
+      </div>
+      <div class="mem1 left">
+      <span>柴木 蛍</span>
+      <p>
+      
+            「っ……」
+      </p>
+      </div>
+      <div class="mem2 mem2_kanasimi right">
+      <span>花垣 陸</span>
+      <p>
+      
+            「ぅ…」
+      </p>
+      </div>
+      <div class="kp LtoR-early">
+      
+            花が語り終えるのにあわせて、根がゆっくりと持ち上がり、運転手が放り出される。<br>放り出された運転手ははっと目を覚まし、そのまま柳を見据えた。<br>彼は微笑みながら柳に駆け寄り、手を取る。
+      </div>
+      <div class="mem11 left">
+      <span>運転手</span>
+      <p>
+      
+            「君を愛している！ 君も僕を愛しているはずだ、そうだね？」
+      </p>
+      </div>
+      <div class="mem1 left">
+      <span>柴木 蛍</span>
+      <p>
+      
+            「なぁに言ってるの！」
+      </p>
+      </div>
+      <div class="mem4 right">
+      <span>柳 冬至</span>
+      <p>
+      
+            「ええ、あなたを愛している……だから私の子供を産んでほしい」柳は微笑み返し、こう言った。
+      </p>
+      </div>
+      <div class="kp LtoR-early">
+      
+            ＜目星＞＜聞き耳＞
+      </div>
+      <div class="mem1 left">
+      <span>柴木 蛍</span>
+      <p>
+      
+            CCB&lt;=65 【目星】 (1D100&lt;=65) ＞ 4 ＞ 決定的成功/スペシャル
+            
+      </p>
+      </div>
+      <div class="mem2 mem2_hohoemi right">
+      <span>花垣 陸</span>
+      <p>
+      
+            CCB&lt;=71 【目星】 (1D100&lt;=71) ＞ 16 ＞ 成功
+            
+      </p>
+      </div>
+      <div class="mem2 mem2_hohoemi right">
+      <span>花垣 陸</span>
+      <p>
+      
+            CCB&lt;=55 【聞き耳】 (1D100&lt;=55) ＞ 13 ＞ 成功
+            
+      </p>
+      </div>
+      <div class="mem1 left">
+      <span>柴木 蛍</span>
+      <p>
+      
+            CCB&lt;=70 【聞き耳】 (1D100&lt;=70) ＞ 23 ＞ 成功
+            
+      </p>
+      </div>
+      <div class="kp LtoR-early">
+      
+            駆け寄った瞬間、運転手の背後でちゃりんと音がして、運転手が何かを落としたのが見える。鍵が落ちたようだ。
+      </div>
+      <div class="kp LtoR-early">
+      
+            柳が言葉を発する。そして次の瞬間、柳はぶわりと膨らんだ。<br>それは一見木のように見えた。のたうつ黒い触手で作られた木のように。<br>ねばねばしたゼリー状のロープのような触手が運転手へとまとわりつく。<br>蹄を持つ足で地面を踏みしめたそれは、触手の中に運転手を飲み込んだ。<br>SANC1D3/1D10
+      </div>
+      <div class="mem2 mem2_hohoemi right">
+      <span>花垣 陸</span>
+      <p>
+      
+            1d100&lt;=84 【正気度ロール】 (1D100&lt;=84) ＞ 57 ＞ 成功
+            
+      </p>
+      </div>
+      <div class="mem1 left">
+      <span>柴木 蛍</span>
+      <p>
+      
+            1d100&lt;=58 【正気度ロール】 (1D100&lt;=58) ＞ 50 ＞ 成功
+            
+      </p>
+      </div>
+      <div class="mem2 mem2_kanasimi right">
+      <span>花垣 陸</span>
+      <p>
+      
+            １ｄ３ (1D3) ＞ 3
+            
+      </p>
+      </div>
+      <div class="mem1 left">
+      <span>柴木 蛍</span>
+      <p>
+      
+            1D3 (1D3) ＞ 3
+            
+      </p>
+      </div>
+      <div class="mem6 right">
+      <span>system</span>
+      <p>
+      
+            [ 柴木 蛍 ] SAN : 58 → 55
+      </p>
+      </div>
+      <div class="mem6 right">
+      <span>system</span>
+      <p>
+      
+            [ 花垣　陸（はながき　りく） ] SAN : 84 → 81
+      </p>
+      </div>
+      <div class="kp LtoR-early">
+      
+            あたりには、粘着質な音とともに、運転手の、どこか甘ったるい声が響いた。<br>そして次の瞬間、触手から泥のようなものが零れ落ちてきた。<br>それは血と肉片が混ざった泥水のように見えた。<br>よどんだ水たまりの中から、ひどい悪臭が漂ってくる。<br>それは花の香りに侵された探索者の頭を正気に戻すには十分な臭気だった。<br>どろどろの水たまりの中には目と口がばらばらに存在し、うねる触手が持ち上がっては沈み、粘着物がびちゃりびちゃりと音を立てている。<br>探索者は理解してしまう。それが、運転手と怪物の間に産み落とされた、子供なのだと。<br>SANC1D3/1D20
+      </div>
+      <div class="mem1 left">
+      <span>柴木 蛍</span>
+      <p>
+      
+            1d100&lt;=55 【正気度ロール】 (1D100&lt;=55) ＞ 51 ＞ 成功
+            
+      </p>
+      </div>
+      <div class="mem2 mem2_hohoemi right">
+      <span>花垣 陸</span>
+      <p>
+      
+            1d100&lt;=81 【正気度ロール】 (1D100&lt;=81) ＞ 78 ＞ 成功
+            
+      </p>
+      </div>
+      <div class="mem1 left">
+      <span>柴木 蛍</span>
+      <p>
+      
+            1D3 (1D3) ＞ 3
+            
+      </p>
+      </div>
+      <div class="mem2 mem2_hohoemi right">
+      <span>花垣 陸</span>
+      <p>
+      
+            １ｄ３ (1D3) ＞ 1
+            
+      </p>
+      </div>
+      <div class="mem6 right">
+      <span>system</span>
+      <p>
+      
+            [ 柴木 蛍 ] SAN : 55 → 52
+      </p>
+      </div>
+      <div class="mem6 right">
+      <span>system</span>
+      <p>
+      
+            [ 花垣　陸（はながき　りく） ] SAN : 81 → 80
+      </p>
+      </div>
+      <div class="kp LtoR-early">
+      
+            ＜目星＞＜聞き耳＞<br>
+      </div>
+      <div class="mem2 mem2_hohoemi right">
+      <span>花垣 陸</span>
+      <p>
+      
+            CCB&lt;=71 【目星】 (1D100&lt;=71) ＞ 26 ＞ 成功
+            
+      </p>
+      </div>
+      <div class="mem1 left">
+      <span>柴木 蛍</span>
+      <p>
+      
+            CCB&lt;=65 【目星】 (1D100&lt;=65) ＞ 75 ＞ 失敗
+            
+      </p>
+      </div>
+      <div class="mem2 mem2_kanasimi right">
+      <span>花垣 陸</span>
+      <p>
+      
+            CCB&lt;=55 【聞き耳】 (1D100&lt;=55) ＞ 80 ＞ 失敗
+            
+      </p>
+      </div>
+      <div class="mem1 left">
+      <span>柴木 蛍</span>
+      <p>
+      
+            CCB&lt;=70 【聞き耳】 (1D100&lt;=70) ＞ 20 ＞ 成功
+            
+      </p>
+      </div>
+      <div class="kp LtoR-early">
+      
+            蹄のある化け物の触手の先端がすべてバフォメットの上半身であると気づく。リボンは黒である。<br>怪物は、残念そうな口調で「失敗だシュブ～」と、聞き覚えのある声で言った。<br>
+      </div>
+      <div class="mem1 left">
+      <span>柴木 蛍</span>
+      <p>
+      
+            「え、えぇー」
+      </p>
+      </div>
+      <div class="mem2 mem2_odoroki right">
+      <span>花垣 陸</span>
+      <p>
+      
+            「失敗なのか…なんなんだこれ…」
+      </p>
+      </div>
+      <div class="mem3 left">
+      <span>バフォメット</span>
+      <p>
+      
+            「顔がじくじくしてきたんじゃないシュブか？ この子の近くにいるだけでみんな呪われるシュブ。オマエたちももう呪われてるシュブけど、今なら『計画通り』シュブ。死にたくないなら早く離れるシュブ。そして次の段階に進むシュブ。大丈夫、ちゃんと結婚できるシュブよ。このバフォメットの言うことを信じるシュブ。鍵ならそこに落ちてるシュブよ。離れた方がいいシュブよ～」
+      </p>
+      </div>
+      <div class="mem1 left">
+      <span>柴木 蛍</span>
+      <p>
+      
+            「ちょっと柳さんとの関係でエンディングじゃないの！？ややこしいわ！」
+      </p>
+      </div>
+      <div class="mem2 mem2_odoroki right">
+      <span>花垣 陸</span>
+      <p>
+      
+            「まだ死ぬわけにはいかないな…行きましょう」鍵を取ってガイドさんの手を引いて柴木さんに言います
+      </p>
+      </div>
+      <div class="mem1 left">
+      <span>柴木 蛍</span>
+      <p>
+      
+            「そんなっ、私の推しが……」
+      </p>
+      </div>
+      <div class="mem1 left">
+      <span>柴木 蛍</span>
+      <p>
+      
+            「みんな人外っ…」
+      </p>
+      </div>
+      <div class="mem5 left">
+      <span>ツアーコンダクター</span>
+      <p>
+      
+            「えっ？　あっ、えっ？　は、はい」
+      </p>
+      </div>
+      <div class="mem2 right">
+      <span>花垣 陸</span>
+      <p>
+      
+            バスまで走ります
+      </p>
+      </div>
+      <div class="mem1 left">
+      <span>柴木 蛍</span>
+      <p>
+      
+            「さようなら、柳さんとの生活。ありがとう、柳さん」
+      </p>
+      </div>
+      <div class="mem1 left">
+      <span>柴木 蛍</span>
+      <p>
+      
+            さらば
+      </p>
+      </div>
+      <div class="mem3 left">
+      <span>バフォメット</span>
+      <p>
+      
+            「またねシュブ～」
+      </p>
+      </div>
+      <div class="mem1 left">
+      <span>柴木 蛍</span>
+      <p>
+      
+            花垣君のあとを追いかける形でここを抜ける
+      </p>
+      </div>
+      <div class="kp LtoR-early">
+      
+            ■END-D：はなれるひと<br>【条件】鍵を回収し、バスを運転して村を離脱<br>◎膿の母のもとで1行動のみ行い離れた<br>探索者は鍵を回収し、バスを運転して村を離脱する。<br>バスの中にはもう誰もいなかった。<br>バスから降りた人々はどこかで愛し合っているのかもしれない。<br>バフォメットはあなたの傍らから気づいたらいなくなっている。<br>世界が終わるまであと2週間と少し。<br><br>それからしばらく経って、探索者は奇妙な体験をする。<br>探索者は体調不良を覚える。<br>それが妊娠の初期症状であるということに探索者は気づく。<br>SANC0/1D3<br><br>→生還／キャンペーン第3章進行可／後遺症あり
+      </div>
+      <div class="mem2 mem2_hohoemi right">
+      <span>花垣 陸</span>
+      <p>
+      
+            1d100&lt;=80 【正気度ロール】 (1D100&lt;=80) ＞ 59 ＞ 成功
+            
+      </p>
+      </div>
+      <div class="mem1 left">
+      <span>柴木 蛍</span>
+      <p>
+      
+            1d100&lt;=52 【正気度ロール】 (1D100&lt;=52) ＞ 89 ＞ 失敗
+            
+      </p>
+      </div>
+      <div class="mem1 left">
+      <span>柴木 蛍</span>
+      <p>
+      
+            1D3 (1D3) ＞ 3
+            
+      </p>
+      </div>
+      <div class="mem6 right">
+      <span>system</span>
+      <p>
+      
+            [ 柴木 蛍 ] SAN : 52 → 49
+      </p>
+      </div>
+      <div class="kp LtoR-early">
+      
+            ●報酬<br>・生還→2D10<br>・クトゥルフ神話技能+5％<br>●後遺症<br>END-D→体内に正体不明の胎児らしきものを宿す。<br>現段階で病院はほぼ機能していないが、運よく受診できた場合も完全に正体不明である。
+      </div>
+      <div class="mem1 left">
+      <span>柴木 蛍</span>
+      <p>
+      
+            2D10 (2D10) ＞ 17[8,9] ＞ 17
+            
+      </p>
+      </div>
+      <div class="mem2 right">
+      <span>花垣 陸</span>
+      <p>
+      
+            2d10 (2D10) ＞ 17[10,7] ＞ 17
+            
+      </p>
+      </div>
+      <div class="mem6 right">
+      <span>system</span>
+      <p>
+      
+            [ 柴木 蛍 ] SAN : 49 → 55
+      </p>
+      </div>
+      <div class="kp LtoR-early">
+      
+            蛍ちゃん：アイデア　英語　薬学　生物学　聞き耳<br>目星クリティカル　<br>陸くん：アイデア　人類学　製作（デザイン）　幸運　聞き耳　目星<br>医学クリティカル
+      </div>
+      <div class="mem2 right">
+      <span>花垣 陸</span>
+      <p>
+      
+            CCB&lt;=80 【アイデア】 (1D100&lt;=80) ＞ 74 ＞ 成功
+            
+      </p>
+      </div>
+      <div class="mem2 right">
+      <span>花垣 陸</span>
+      <p>
+      
+            CCB&lt;=51 【人類学】 (1D100&lt;=51) ＞ 10 ＞ スペシャル
+            
+      </p>
+      </div>
+      <div class="mem2 right">
+      <span>花垣 陸</span>
+      <p>
+      
+            CCB&lt;=83 【製作（デザイン）】 (1D100&lt;=83) ＞ 46 ＞ 成功
+            
+      </p>
+      </div>
+      <div class="mem2 right">
+      <span>花垣 陸</span>
+      <p>
+      
+            CCB&lt;=70 【幸運】 (1D100&lt;=70) ＞ 82 ＞ 失敗
+            
+      </p>
+      </div>
+      <div class="mem2 right">
+      <span>花垣 陸</span>
+      <p>
+      
+            CCB&lt;=55 【聞き耳】 (1D100&lt;=55) ＞ 41 ＞ 成功
+            
+      </p>
+      </div>
+      <div class="mem2 right">
+      <span>花垣 陸</span>
+      <p>
+      
+            CCB&lt;=71 【目星】 (1D100&lt;=71) ＞ 56 ＞ 成功
+            
+      </p>
+      </div>
+      <div class="mem2 right">
+      <span>花垣 陸</span>
+      <p>
+      
+            人類学に１ｄ１０
+      </p>
+      </div>
+      <div class="mem2 right">
+      <span>花垣 陸</span>
+      <p>
+      
+            １ｄ１０ (1D10) ＞ 5
+            
+      </p>
+      </div>
+      <div class="mem2 right">
+      <span>花垣 陸</span>
+      <p>
+      
+            医学
+      </p>
+      </div>
+      <div class="mem2 right">
+      <span>花垣 陸</span>
+      <p>
+      
+            １ｄ１０ (1D10) ＞ 5
+            
+      </p>
+      </div>
+      <div class="mem1 left">
+      <span>柴木 蛍</span>
+      <p>
+      
+            CCB&lt;=75 【アイデア】 (1D100&lt;=75) ＞ 98 ＞ 致命的失敗
+            
+      </p>
+      </div>
+      <div class="mem1 left">
+      <span>柴木 蛍</span>
+      <p>
+      
+            CCB&lt;=24 【英語】 (1D100&lt;=24) ＞ 62 ＞ 失敗
+            
+      </p>
+      </div>
+      <div class="mem1 left">
+      <span>柴木 蛍</span>
+      <p>
+      
+            CCB&lt;=70 【薬学】 (1D100&lt;=70) ＞ 55 ＞ 成功
+            
+      </p>
+      </div>
+      <div class="mem1 left">
+      <span>柴木 蛍</span>
+      <p>
+      
+            CCB&lt;=70 【生物学】 (1D100&lt;=70) ＞ 36 ＞ 成功
+            
+      </p>
+      </div>
+      <div class="mem1 left">
+      <span>柴木 蛍</span>
+      <p>
+      
+            CCB&lt;=70 【聞き耳】 (1D100&lt;=70) ＞ 79 ＞ 失敗
+            
+      </p>
+      </div>
+      <div class="mem1 left">
+      <span>柴木 蛍</span>
+      <p>
+      
+            アイデア 成長→医学
+      </p>
+      </div>
+      <div class="mem1 left">
+      <span>柴木 蛍</span>
+      <p>
+      
+            1D10 医学 (1D10) ＞ 7
+            
+      </p>
+      </div>
+      <div class="mem1 left">
+      <span>柴木 蛍</span>
+      <p>
+      
+            1D10 英語 (1D10) ＞ 10
+            
+      </p>
+      </div>
+      <div class="mem1 left">
+      <span>柴木 蛍</span>
+      <p>
+      
+            1D10 聞き耳 (1D10) ＞ 3
+            
+      </p>
+      </div>
+      <div class="mem1 left">
+      <span>柴木 蛍</span>
+      <p>
+      
+            1D10 目星 (1D10) ＞ 6
+            
+      </p>
+      </div>
+      </div>
+
+<br>
+</div></div>
+<script src="../logCon_Respon.js"></script>
+</body></html>
