@@ -1,0 +1,4463 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<title>log</title>
+<meta http-equiv="content-type" charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+<link rel="stylesheet" href="../logCon_Respon.css">
+<style>
+    /* main css */
+    .bg-inner.bg1{background:url('./ふらふら/トレーラー.png') no-repeat center/cover;}
+    
+    /* member */
+    .mem1 p{border:2px solid rgb(51, 60, 94);box-shadow:5px 5px 0 rgb(51, 60, 94);}
+.mem1 p:after{border-right-color:rgb(51, 60, 94);}
+.mem1 span{background:rgb(51, 60, 94);color:#fff;}
+.mem1:before{content:'';background-image:url('./ふらふら/白兎深月.png');background-size:contain;background-repeat:no-repeat;background-position:center center;width:90px;height:90px;}
+.mem2 p{border:2px solid rgb(136, 136, 136);box-shadow:5px 5px 0 rgb(136, 136, 136);}
+.mem2 p:after{border-left-color:rgb(136, 136, 136);}
+.mem2 span{background:rgb(136, 136, 136);color:#fff;}
+.mem2:before{content:'';background-image:url('2.png');background-size:contain;background-repeat:no-repeat;background-position:center center;width:90px;height:90px;}
+.mem3 p{border:2px solid rgb(136, 136, 136);box-shadow:5px 5px 0 rgb(136, 136, 136);}
+.mem3 p:after{border-right-color:rgb(136, 136, 136);}
+.mem3 span{background:rgb(136, 136, 136);color:#fff;}
+.mem3:before{content:'';background-image:url('./ふらふら/グチャグチャ.png');background-size:contain;background-repeat:no-repeat;background-position:center center;width:90px;height:90px;}
+.mem4 p{border:2px solid rgb(136, 136, 136);box-shadow:5px 5px 0 rgb(136, 136, 136);}
+.mem4 p:after{border-left-color:rgb(136, 136, 136);}
+.mem4 span{background:rgb(136, 136, 136);color:#fff;}
+.mem4:before{content:'';background-image:url('4.png');background-size:contain;background-repeat:no-repeat;background-position:center center;width:90px;height:90px;}
+.mem5 p{border:2px solid rgb(136, 136, 136);box-shadow:5px 5px 0 rgb(136, 136, 136);}
+.mem5 p:after{border-right-color:rgb(136, 136, 136);}
+.mem5 span{background:rgb(136, 136, 136);color:#fff;}
+.mem5:before{content:'';background-image:url('5.png');background-size:contain;background-repeat:no-repeat;background-position:center center;width:90px;height:90px;}
+.mem6 p{border:2px solid rgb(136, 136, 136);box-shadow:5px 5px 0 rgb(136, 136, 136);}
+.mem6 p:after{border-left-color:rgb(136, 136, 136);}
+.mem6 span{background:rgb(136, 136, 136);color:#fff;}
+.mem6:before{content:'';background-image:url('6.png');background-size:contain;background-repeat:no-repeat;background-position:center center;width:90px;height:90px;}
+.mem7 p{border:2px solid rgb(136, 136, 136);box-shadow:5px 5px 0 rgb(136, 136, 136);}
+.mem7 p:after{border-right-color:rgb(136, 136, 136);}
+.mem7 span{background:rgb(136, 136, 136);color:#fff;}
+.mem7:before{content:'';background-image:url('7.png');background-size:contain;background-repeat:no-repeat;background-position:center center;width:90px;height:90px;}
+.mem8 p{border:2px solid rgb(136, 136, 136);box-shadow:5px 5px 0 rgb(136, 136, 136);}
+.mem8 p:after{border-left-color:rgb(136, 136, 136);}
+.mem8 span{background:rgb(136, 136, 136);color:#fff;}
+.mem8:before{content:'';background-image:url('8.png');background-size:contain;background-repeat:no-repeat;background-position:center center;width:90px;height:90px;}
+.mem9 p{border:2px solid rgb(136, 136, 136);box-shadow:5px 5px 0 rgb(136, 136, 136);}
+.mem9 p:after{border-right-color:rgb(136, 136, 136);}
+.mem9 span{background:rgb(136, 136, 136);color:#fff;}
+.mem9:before{content:'';background-image:url('./ふらふら/グチャグチャ.png');background-size:contain;background-repeat:no-repeat;background-position:center center;width:90px;height:90px;}
+.mem10 p{border:2px solid rgb(136, 136, 136);box-shadow:5px 5px 0 rgb(136, 136, 136);}
+.mem10 p:after{border-left-color:rgb(136, 136, 136);}
+.mem10 span{background:rgb(136, 136, 136);color:#fff;}
+.mem10:before{content:'';background-image:url('10.png');background-size:contain;background-repeat:no-repeat;background-position:center center;width:90px;height:90px;}
+
+    @media only screen and (max-width: 768px) {
+        .mem1 p:after{border-right-color:rgb(51, 60, 94);border-left-color:transparent;}
+        .mem2 p:after{border-right-color:rgb(136, 136, 136);border-left-color:transparent;}
+        .mem3 p:after{border-right-color:rgb(136, 136, 136);border-left-color:transparent;}
+        .mem4 p:after{border-right-color:rgb(136, 136, 136);border-left-color:transparent;}
+        .mem5 p:after{border-right-color:rgb(136, 136, 136);border-left-color:transparent;}
+        .mem6 p:after{border-right-color:rgb(136, 136, 136);border-left-color:transparent;}
+        .mem7 p:after{border-right-color:rgb(136, 136, 136);border-left-color:transparent;}
+        .mem8 p:after{border-right-color:rgb(136, 136, 136);border-left-color:transparent;}
+        .mem9 p:after{border-right-color:rgb(136, 136, 136);border-left-color:transparent;}
+        .mem10 p:after{border-right-color:rgb(136, 136, 136);border-left-color:transparent;}
+  
+        .mem1:before,.mem2:before,.mem3:before,
+        .mem4:before,.mem5:before,.mem6:before,
+        .mem4:before,.mem5:before,.mem6:before,
+        .mem4:before{width:70px;height:70px;}
+    }
+</style>
+</head>
+<body>
+    <p id="page-top"><a href="#"><i class="page-top__arrow"></i></a></p>
+	<div class="leftwhite"></div>
+	<div class="rightwhite"></div>
+	<div class="bg-sp">
+    <div class="bg-over"><div class="bg-inner bg1"></div></div>
+	<div class="log">
+    
+        <div class="kp LtoR-early">
+
+            腐乱腐乱始めていきます～
+      </div>
+      <div class="mem1 left">
+      <span>白兎 深月</span>
+      <p>
+      
+            いえーい。おねがいしまーす！
+      </p>
+      </div>
+      <div class="kp LtoR-early">
+      
+            01.導入<br>探索者は一人、深夜のコインランドリーで洗濯が終わるのを待っている。<br>自動ドアが開いて、見れば中華服の男が洗濯物を回収している。どこか遠くから消防車のサイレンの音もしていた。<br>全てをぼんやり受け止めながら、探索者は自分の回した洗濯機が止まるのを確認した。<br>洗濯機を開ける。するとそこにあったのは自分が入れた洗濯物ではなく、グチャグチャの肉塊だった。<br>グチャグチャの肉塊はどちゃりと探索者に向かってこぼれ落ち、「たすけて」と言った。＜SANc＞1/1d6+1
+      </div>
+      <div class="mem1 left">
+      <span>白兎 深月</span>
+      <p>
+      
+            1d100&lt;=50 【正気度ロール】 (1D100&lt;=50) ＞ 8 ＞ 成功
+            
+      </p>
+      </div>
+      <div class="mem2 right">
+      <span>system</span>
+      <p>
+      
+            [ 白兎 深月 ] SAN : 50 → 49
+      </p>
+      </div>
+      <div class="mem1 left">
+      <span>白兎 深月</span>
+      <p>
+      
+            「一体どういうことでしょう。洗濯をしていたはずがいつの間にか人を洗濯いていた…一体何を言っているんだ私は」
+      </p>
+      </div>
+      <div class="mem1 left">
+      <span>白兎 深月</span>
+      <p>
+      
+            「しかもこの形で助けを求めるって……いったいどうなってるの」
+      </p>
+      </div>
+      <div class="kp LtoR-early">
+      
+            その声は優しそうな中年男性の声であるように聞こえる。
+      </div>
+      <div class="mem1 left">
+      <span>白兎 深月</span>
+      <p>
+      
+            「優しそうなおっさ……」
+      </p>
+      </div>
+      <div class="mem1 left">
+      <span>白兎 深月</span>
+      <p>
+      
+            聞き覚えはありますか？
+      </p>
+      </div>
+      <div class="kp LtoR-early">
+      
+            ないですね
+      </div>
+      <div class="mem1 left">
+      <span>白兎 深月</span>
+      <p>
+      
+            「知らない人物だな」
+      </p>
+      </div>
+      <div class="mem3 left">
+      <span>グチャグチャ</span>
+      <p>
+      
+            「たすけてくれ～」
+      </p>
+      </div>
+      <div class="mem1 left">
+      <span>白兎 深月</span>
+      <p>
+      
+            「え？話せてる？おーい生きてますかー？」
+      </p>
+      </div>
+      <div class="mem3 left">
+      <span>グチャグチャ</span>
+      <p>
+      
+            「えっ、私は死んでいるのかな？」
+      </p>
+      </div>
+      <div class="mem1 left">
+      <span>白兎 深月</span>
+      <p>
+      
+            「いや知らんがな」
+      </p>
+      </div>
+      <div class="mem1 left">
+      <span>白兎 深月</span>
+      <p>
+      
+            「でも話せているということは、……えっと胸の鼓動を……胸どこだよ」
+      </p>
+      </div>
+      <div class="kp LtoR-early">
+      
+            グチャグチャを確認すると、肉塊がミキサーにかけられたかのようにほとんどペースト状になっている。量は M サイズのレジ袋（420×220mm）に収まりそうなほど。<br>グチャグチャを確認していると、グチャグチャから再びグチャグチャした声がする。<br>「君は僕を助けてくれるのかなぁ」<br>＜アイデア＞
+      </div>
+      <div class="mem1 left">
+      <span>白兎 深月</span>
+      <p>
+      
+            CCB&lt;=80 【アイデア】 (1D100&lt;=80) ＞ 75 ＞ 成功
+            
+      </p>
+      </div>
+      <div class="kp LtoR-early">
+      
+            グチャグチャの中に人体の一部らしき箇所を発見してしまう。＜SANc＞1/1d3
+      </div>
+      <div class="mem1 left">
+      <span>白兎 深月</span>
+      <p>
+      
+            1d100&lt;=49 【正気度ロール】 (1D100&lt;=49) ＞ 76 ＞ 失敗
+            
+      </p>
+      </div>
+      <div class="mem1 left">
+      <span>白兎 深月</span>
+      <p>
+      
+            1D3 (1D3) ＞ 3
+            
+      </p>
+      </div>
+      <div class="mem2 right">
+      <span>system</span>
+      <p>
+      
+            [ 白兎 深月 ] SAN : 49 → 46
+      </p>
+      </div>
+      <div class="mem1 left">
+      <span>白兎 深月</span>
+      <p>
+      
+            「やべ、ぐちゃぐちゃし忘れ見つけちゃった」
+      </p>
+      </div>
+      <div class="mem1 left">
+      <span>白兎 深月</span>
+      <p>
+      
+            「ぐろー」
+      </p>
+      </div>
+      <div class="mem1 left">
+      <span>白兎 深月</span>
+      <p>
+      
+            「君はって言ってるけど何人か助け求めたことあるの？」
+      </p>
+      </div>
+      <div class="mem1 left">
+      <span>白兎 深月</span>
+      <p>
+      
+            「てか、なんでそうなったの？」
+      </p>
+      </div>
+      <div class="mem3 left">
+      <span>グチャグチャ</span>
+      <p>
+      
+            「それが、思い出せないんだよね。グチャグチャだからかな？ 脳が欠けちゃってるのかなあ。……そうって、どんな？ 生まれてからずっとこの姿だよ」
+      </p>
+      </div>
+      <div class="mem1 left">
+      <span>白兎 深月</span>
+      <p>
+      
+            「摩訶不思議生命体。これは、研究室に報告案件かな。先生喜んでくれるかな。ってか調べられるのかなこれ」
+      </p>
+      </div>
+      <div class="mem1 left">
+      <span>白兎 深月</span>
+      <p>
+      
+            「袋に入りそうだから持ち帰りは出来るけど…」
+      </p>
+      </div>
+      <div class="mem1 left">
+      <span>白兎 深月</span>
+      <p>
+      
+            「てか私の洗濯物どこいった」
+      </p>
+      </div>
+      <div class="kp LtoR-early">
+      
+            グチャグチャの入っていた洗濯機を確認すると、空になった M サイズのレジ袋（420×220mm）が出てくるがそれ以外のものは入っていない。<br>そしてよく考えると、自分が洗濯物を入れていたのはここではない。隣の洗濯機である。<br>隣の洗濯機は空になっている。<br>＜アイデア＞
+      </div>
+      <div class="mem1 left">
+      <span>白兎 深月</span>
+      <p>
+      
+            「そもそも間違えてた！？ってかないし盗まれた……！？」
+      </p>
+      </div>
+      <div class="mem1 left">
+      <span>白兎 深月</span>
+      <p>
+      
+            CCB&lt;=80 【アイデア】 (1D100&lt;=80) ＞ 50 ＞ 成功
+            
+      </p>
+      </div>
+      <div class="kp LtoR-early">
+      
+            少し前に訪れた中華服の男がここから洗濯物を取り出していたことを思い出す。すぐに追いかければ間に合うかもしれない。
+      </div>
+      <div class="mem1 left">
+      <span>白兎 深月</span>
+      <p>
+      
+            「何も言わずに盗んでたのか……！なんだあいつ！」
+      </p>
+      </div>
+      <div class="mem1 left">
+      <span>白兎 深月</span>
+      <p>
+      
+            「ぐちゃぐちょ、待ってたらなんか処遇考えるけど、とりあいず服盗んだやつとっ捕まえてくるわ」
+      </p>
+      </div>
+      <div class="mem3 left">
+      <span>グチャグチャ</span>
+      <p>
+      
+            「僕を助けてはくれないのかい……？」
+      </p>
+      </div>
+      <div class="mem1 left">
+      <span>白兎 深月</span>
+      <p>
+      
+            「あとでな」
+      </p>
+      </div>
+      <div class="mem1 left">
+      <span>白兎 深月</span>
+      <p>
+      
+            急いであとを追いかける
+      </p>
+      </div>
+      <div class="mem3 left">
+      <span>グチャグチャ</span>
+      <p>
+      
+            「ちょっと待ちなさい、女の子ひとりでは危ないよ。せめて僕を連れて行っておくれ、袋に入れてもらえればいいから」
+      </p>
+      </div>
+      <div class="mem1 left">
+      <span>白兎 深月</span>
+      <p>
+      
+            「やだ、いけ……めん？じゃ、袋詰めさせてもらってから行くわ」
+      </p>
+      </div>
+      <div class="mem1 left">
+      <span>白兎 深月</span>
+      <p>
+      
+            「きついだろうけど、我慢してね」
+      </p>
+      </div>
+      <div class="mem1 left">
+      <span>白兎 深月</span>
+      <p>
+      
+            急いでいるので無理くり詰めます
+      </p>
+      </div>
+      <div class="mem3 left">
+      <span>グチャグチャ</span>
+      <p>
+      
+            「優しいんだねぇ……」ぼとぼと
+      </p>
+      </div>
+      <div class="kp LtoR-early">
+      
+            探索-すぐ近く<br>外に出ると、消防車のランプが目につく。【隣の建物】の横に止まっているようだ。<br>道路に目を落とすと、点々と【洗濯物】が落ちていることに気が付く。<br>見回すとそう遠くないところに【交番】と【電話ボックス】があることも分かるだろう。<br>すぐ近く探索箇所【隣の建物／洗濯物／交番／電話ボックス】
+      </div>
+      <div class="mem1 left">
+      <span>白兎 深月</span>
+      <p>
+      
+            洗濯ものからみそう
+      </p>
+      </div>
+      <div class="kp LtoR-early">
+      
+            ◇洗濯物<br>探索者のものだ。点々と落ちているそれを拾い上げると、べたりと血液が手についた。<br>その先の道路にも血痕が残されており、後を追いかけていくと【電話ボックス】に辿り着く。
+      </div>
+      <div class="mem1 left">
+      <span>白兎 深月</span>
+      <p>
+      
+            「洗ったばっかりなのになんかついてんだけど！？」
+      </p>
+      </div>
+      <div class="mem1 left">
+      <span>白兎 深月</span>
+      <p>
+      
+            「迷惑だなぁ」<br>と言いながら電話ボックスを調べよう
+      </p>
+      </div>
+      <div class="mem1 left">
+      <span>白兎 深月</span>
+      <p>
+      
+            あ、洗濯物拾いながらね
+      </p>
+      </div>
+      <div class="kp LtoR-early">
+      
+            ◇電話ボックス<br>誰もいないが、電話の前に【財布】が置いてある。<br>ボックス内には『落とし物は【交番】に届けましょう！』『困ったときは、110 番！』という張り紙が貼ってある。<br>＜目星＞
+      </div>
+      <div class="mem1 left">
+      <span>白兎 深月</span>
+      <p>
+      
+            CCB&lt;=60 【目星】 (1D100&lt;=60) ＞ 32 ＞ 成功
+            
+      </p>
+      </div>
+      <div class="kp LtoR-early">
+      
+            突然ポスターが目に飛び込んでくる。<br>・・・・・<br>▼ポスター<br>スピーディーな自殺に対応した包丁がついに登場！<br>はやい！ やすい！ かくじつ！<br>『スピーディー自殺用包丁』<br>お求めはお近くのコンビニまで。<br>※当ポスターは自殺を助長・肯定するものではありません。<br>・・・・・
+      </div>
+      <div class="mem1 left">
+      <span>白兎 深月</span>
+      <p>
+      
+            「えっと、矛盾案件？」
+      </p>
+      </div>
+      <div class="mem3 left">
+      <span>グチャグチャ</span>
+      <p>
+      
+            「矛盾してないよぉ。普通だよぉ」
+      </p>
+      </div>
+      <div class="mem1 left">
+      <span>白兎 深月</span>
+      <p>
+      
+            「ってかコンビニに自殺用包丁置いとくとか危ないなぁ。コンビニ強盗あったらどうするんだよ」
+      </p>
+      </div>
+      <div class="mem3 left">
+      <span>グチャグチャ</span>
+      <p>
+      
+            「普通なんだけどなぁ」
+      </p>
+      </div>
+      <div class="mem1 left">
+      <span>白兎 深月</span>
+      <p>
+      
+            「私の知ってる普通と違う」
+      </p>
+      </div>
+      <div class="mem1 left">
+      <span>白兎 深月</span>
+      <p>
+      
+            「いや、私の普通も結構違うけどさ」
+      </p>
+      </div>
+      <div class="mem1 left">
+      <span>白兎 深月</span>
+      <p>
+      
+            「とりあいず、財布を交番に……」
+      </p>
+      </div>
+      <div class="mem3 left">
+      <span>グチャグチャ</span>
+      <p>
+      
+            「財布の中身、見なくてもいいのかい？」
+      </p>
+      </div>
+      <div class="mem1 left">
+      <span>白兎 深月</span>
+      <p>
+      
+            「さすがに110番してもなぁ」
+      </p>
+      </div>
+      <div class="mem1 left">
+      <span>白兎 深月</span>
+      <p>
+      
+            「あ、名前が書いてある的な？」
+      </p>
+      </div>
+      <div class="mem1 left">
+      <span>白兎 深月</span>
+      <p>
+      
+            「見てみよ」
+      </p>
+      </div>
+      <div class="kp LtoR-early">
+      
+            ●財布<br>以下が入っている。<br>・・・・・<br>▼財布の中身<br>・千五十二円<br>・コインランドリーの領収書<br>……日時は一月前。名義は『山蓮界』、内容は『グチャグチャ』になっている。かなりの量を一気に洗濯して一気に領収書を切っているらしい。<br>・【コンビニエンスストア】のレシート<br>……日時は数分前。購入しているのは煙草や飲料水や雑誌や『スピーディー自殺用包丁』など、一般的なもの。<br>・【ファミリーレストラン】のレシート<br>……数時間前に「水×5」と「ィヌ×1」を飲食している。計 500 円。<br>・【ラーメン屋】のスタンプカード<br>……スタンプをためると「グチャグチャーメン」が一杯無料になるらしい。スタンプは全部たまっている！<br>・【銭湯】の回数券<br>……10 枚つづりの券。残り 2 枚。<br>・メモ書き<br>……「待ち合わせ場所：【公園】」と書かれている。<br>・・・・・<br>いずれの場所もちょっと遠くだが、徒歩圏内である。<br>ちょっと遠く探索箇所【コンビニエンスストア／ファミリーレストラン／ラーメン屋／銭湯／公園】
+      </div>
+      <div class="mem1 left">
+      <span>白兎 深月</span>
+      <p>
+      
+            「……ちょっとよくわからない。理解がおいつ…きはしてるな」
+      </p>
+      </div>
+      <div class="mem1 left">
+      <span>白兎 深月</span>
+      <p>
+      
+            「とりあいず、この人はスピーディーにダイナミック自殺をしようとしてるのだけはわかるね」
+      </p>
+      </div>
+      <div class="mem3 left">
+      <span>グチャグチャ</span>
+      <p>
+      
+            「そうかな～。そうかも～。そうとは限らないかも～」
+      </p>
+      </div>
+      <div class="mem1 left">
+      <span>白兎 深月</span>
+      <p>
+      
+            「それはグチャグチャからの視点か？それとも自分がそうだったかもしれないという視点か？」
+      </p>
+      </div>
+      <div class="mem3 left">
+      <span>グチャグチャ</span>
+      <p>
+      
+            「どうなのかなぁ？　体がちょっとだけないみたいだから、そのせいかもしれないねぇ」
+      </p>
+      </div>
+      <div class="mem1 left">
+      <span>白兎 深月</span>
+      <p>
+      
+            「見つかったら人体錬成すれば戻るの？」
+      </p>
+      </div>
+      <div class="mem3 left">
+      <span>グチャグチャ</span>
+      <p>
+      
+            「えぇ？　私は元からグチャグチャだよぉ？」
+      </p>
+      </div>
+      <div class="mem1 left">
+      <span>白兎 深月</span>
+      <p>
+      
+            「なら欠けてたって問題はないでしょ。たぶん」
+      </p>
+      </div>
+      <div class="mem3 left">
+      <span>グチャグチャ</span>
+      <p>
+      
+            「そんな～」
+      </p>
+      </div>
+      <div class="mem1 left">
+      <span>白兎 深月</span>
+      <p>
+      
+            「ちょっとぐらいかけててもきっと大丈夫だよ」
+      </p>
+      </div>
+      <div class="mem3 left">
+      <span>グチャグチャ</span>
+      <p>
+      
+            「探すのを手伝ってもらおうと思っていたのに……」
+      </p>
+      </div>
+      <div class="mem1 left">
+      <span>白兎 深月</span>
+      <p>
+      
+            「この財布の持ち主を探すついでに見つかったらね」
+      </p>
+      </div>
+      <div class="mem1 left">
+      <span>白兎 深月</span>
+      <p>
+      
+            「あー、警察に渡すだけでもいいかもしれきたぁ」
+      </p>
+      </div>
+      <div class="mem3 left">
+      <span>グチャグチャ</span>
+      <p>
+      
+            「わぁい。やっぱりやさ……あれぇ？」
+      </p>
+      </div>
+      <div class="mem1 left">
+      <span>白兎 深月</span>
+      <p>
+      
+            「？」
+      </p>
+      </div>
+      <div class="mem1 left">
+      <span>白兎 深月</span>
+      <p>
+      
+            「だって落し物は警察に届けましょうでしょ？」
+      </p>
+      </div>
+      <div class="mem3 left">
+      <span>グチャグチャ</span>
+      <p>
+      
+            「まぁ、私の一部も交番に届けられているかもしれないから、交番には行ってみてほしいなぁ」
+      </p>
+      </div>
+      <div class="mem1 left">
+      <span>白兎 深月</span>
+      <p>
+      
+            「その前にコインランドリー横の事故やらは気になるから野次馬してくるか」
+      </p>
+      </div>
+      <div class="kp LtoR-early">
+      
+            ◇隣の建物<br>平屋の建物。『山蓮界（さんれんかい）工場』と書いてある。<br>消防車や周囲には消防隊員がいて、ホースの片付けなどをしている。
+      </div>
+      <div class="mem1 left">
+      <span>白兎 深月</span>
+      <p>
+      
+            「何かあったんですかぁ？」
+      </p>
+      </div>
+      <div class="mem4 right">
+      <span>消防隊員</span>
+      <p>
+      
+            「ちょっとしたボヤ、火災ですね。もう消火されました。原因はまだ分かっていません」
+      </p>
+      </div>
+      <div class="mem1 left">
+      <span>白兎 深月</span>
+      <p>
+      
+            「おつかれさまですぅ」
+      </p>
+      </div>
+      <div class="mem1 left">
+      <span>白兎 深月</span>
+      <p>
+      
+            「家主さんとかっていたんですか？」
+      </p>
+      </div>
+      <div class="mem4 right">
+      <span>消防隊員</span>
+      <p>
+      
+            「何かの工場のようだったので、家主さんとかは……。持ち主は山蓮界（さんれんかい）という産業廃棄物の処理や、自動車解体業の会社みたいですが……」
+      </p>
+      </div>
+      <div class="mem1 left">
+      <span>白兎 深月</span>
+      <p>
+      
+            「ほら、こういうのって火事が起こっているので会社関係の人とか呼ばれると思ったんですけど……、どうやら居ないようですねぇ」
+      </p>
+      </div>
+      <div class="kp LtoR-early">
+      
+            ＜交渉技能＞を振ることでもう少し情報が出ます
+      </div>
+      <div class="mem1 left">
+      <span>白兎 深月</span>
+      <p>
+      
+            CCB&lt;=65 【母国語】 (1D100&lt;=65) ＞ 10 ＞ スペシャル
+            
+      </p>
+      </div>
+      <div class="mem1 left">
+      <span>白兎 深月</span>
+      <p>
+      
+            CCB&lt;=40+20 【説得】 (1D100&lt;=60) ＞ 20 ＞ 成功
+            
+      </p>
+      </div>
+      <div class="mem1 left">
+      <span>白兎 深月</span>
+      <p>
+      
+            「ここの持ち主にちょっと要件があるんですけど、もう少しお話ってありますか？」
+      </p>
+      </div>
+      <div class="mem4 right">
+      <span>消防隊員</span>
+      <p>
+      
+            「えぇ、そうなんですか？　暴力団が経営している会社かもしれなくて、もしかしたら麻薬とか……今警察にも連絡しているんですけど……」
+      </p>
+      </div>
+      <div class="mem1 left">
+      <span>白兎 深月</span>
+      <p>
+      
+            「そうだったんですね！さっきその人の財布と思われる落とし物を見つけちゃったので届けようかと思ったんですけど、警察に届けた方が安全そう……ですね」
+      </p>
+      </div>
+      <div class="mem1 left">
+      <span>白兎 深月</span>
+      <p>
+      
+            「隊員さんが優しくてよかった。もし、本当に暴力団の方だったら怖いですものね」
+      </p>
+      </div>
+      <div class="mem4 right">
+      <span>消防隊員</span>
+      <p>
+      
+            「もしかして、中華服の方ですかね？　それでしたら、あっちの方に歩いていきましたよ」
+      </p>
+      </div>
+      <div class="kp LtoR-early">
+      
+            ※指差された方向には【コンビニエンスストア】【ファミリーレストラン】【ラーメン屋】【銭湯】【公園】などがあり、いずれも深夜まで開いているようだ。
+      </div>
+      <div class="mem1 left">
+      <span>白兎 深月</span>
+      <p>
+      
+            「そうなんですね！ありがとうございます。ちょっと、様子を見て渡せたら渡してみます」
+      </p>
+      </div>
+      <div class="mem4 right">
+      <span>消防隊員</span>
+      <p>
+      
+            「いえいえ。ところで一酸化炭素中毒で死んだ人間の血は何色になると思いますか？」
+      </p>
+      </div>
+      <div class="kp LtoR-early">
+      
+            ＜知識/2＞＜医学＞
+      </div>
+      <div class="mem1 left">
+      <span>白兎 深月</span>
+      <p>
+      
+            CCB&lt;=65/2 【知識】 (1D100&lt;=32) ＞ 23 ＞ 成功
+            
+      </p>
+      </div>
+      <div class="kp LtoR-early">
+      
+            一酸化炭素と血中のヘモグロビンが結合して、鮮やかな紅色になることを知っている。
+      </div>
+      <div class="mem1 left">
+      <span>白兎 深月</span>
+      <p>
+      
+            「鮮やかな紅色…ですっけ。というか、唐突ですね」
+      </p>
+      </div>
+      <div class="mem4 right">
+      <span>消防隊員</span>
+      <p>
+      
+            「正解はこちら！」
+      </p>
+      </div>
+      <div class="kp LtoR-early">
+      
+            消防隊員の頭が弾け飛ぶ。＜SANc＞1/1d6+1
+      </div>
+      <div class="mem1 left">
+      <span>白兎 深月</span>
+      <p>
+      
+            「お前が一酸化炭素中毒なんかーーーーーい」
+      </p>
+      </div>
+      <div class="mem1 left">
+      <span>白兎 深月</span>
+      <p>
+      
+            1d100&lt;=46 【正気度ロール】 (1D100&lt;=46) ＞ 18 ＞ 成功
+            
+      </p>
+      </div>
+      <div class="mem2 right">
+      <span>system</span>
+      <p>
+      
+            [ 白兎 深月 ] SAN : 46 → 45
+      </p>
+      </div>
+      <div class="mem3 left">
+      <span>グチャグチャ</span>
+      <p>
+      
+            「中に入って調べないのかい？」
+      </p>
+      </div>
+      <div class="mem1 left">
+      <span>白兎 深月</span>
+      <p>
+      
+            「……あ、そうだね。持ち主の情報とか中華服の盗人とかの情報がわかるかもしれないね」
+      </p>
+      </div>
+      <div class="mem1 left">
+      <span>白兎 深月</span>
+      <p>
+      
+            「あ、隊員さん……返事する？しない？」
+      </p>
+      </div>
+      <div class="mem1 left">
+      <span>白兎 深月</span>
+      <p>
+      
+            「入っていいですかー？」
+      </p>
+      </div>
+      <div class="mem1 left">
+      <span>白兎 深月</span>
+      <p>
+      
+            「入っちゃいますよー？」
+      </p>
+      </div>
+      <div class="mem4 right">
+      <span>消防隊員</span>
+      <p>
+      
+            「危ないですから気を付けてくださいね」頭が飛んでいても普通に会話をしてきます
+      </p>
+      </div>
+      <div class="mem1 left">
+      <span>白兎 深月</span>
+      <p>
+      
+            「あ、返事できるんだ。頭吹っ飛んでも」
+      </p>
+      </div>
+      <div class="kp LtoR-early">
+      
+            中は煤と煙でよく見えない。どうやら長いベルトコンベアが敷かれているようで、稼働音がしている。<br>何かを裁断する音がして、誰かの断末魔が起き、肉の潰れる音がする。煤と煙の向こう側で、ガシャン・ギャー・グチャリがリズミカルに聞こえ続けている。＜SANc＞0/1d3<br>＜聞き耳＞
+      </div>
+      <div class="mem1 left">
+      <span>白兎 深月</span>
+      <p>
+      
+            1d100&lt;=45 【正気度ロール】 (1D100&lt;=45) ＞ 93 ＞ 失敗
+            
+      </p>
+      </div>
+      <div class="mem1 left">
+      <span>白兎 深月</span>
+      <p>
+      
+            1D3 (1D3) ＞ 1
+            
+      </p>
+      </div>
+      <div class="mem2 right">
+      <span>system</span>
+      <p>
+      
+            [ 白兎 深月 ] SAN : 45 → 44
+      </p>
+      </div>
+      <div class="mem1 left">
+      <span>白兎 深月</span>
+      <p>
+      
+            CCB&lt;=66 【聞き耳】 (1D100&lt;=66) ＞ 22 ＞ 成功
+            
+      </p>
+      </div>
+      <div class="mem1 left">
+      <span>白兎 深月</span>
+      <p>
+      
+            「リズミカルカッター！？」
+      </p>
+      </div>
+      <div class="kp LtoR-early">
+      
+            中には甘い香りが充満していて、気分が良くなる。SAN 値+1<br>＜目星＞
+      </div>
+      <div class="mem2 right">
+      <span>system</span>
+      <p>
+      
+            [ 白兎 深月 ] SAN : 44 → 45
+      </p>
+      </div>
+      <div class="mem1 left">
+      <span>白兎 深月</span>
+      <p>
+      
+            CCB&lt;=60 【目星】 (1D100&lt;=60) ＞ 40 ＞ 成功
+            
+      </p>
+      </div>
+      <div class="kp LtoR-early">
+      
+            煤と煙の向こうに、建物内に貼ってある紙を微かに読み取ることができる。<br>・・・・・<br>▼グチャ-グチャ<br>①善良な。善良なるもの。また、その様。<br>②電話。あるいは電話の音。呼びかけ。<br>・・・・・
+      </div>
+      <div class="mem1 left">
+      <span>白兎 深月</span>
+      <p>
+      
+            「グチャグチャってそんなものなん？」
+      </p>
+      </div>
+      <div class="mem1 left">
+      <span>白兎 深月</span>
+      <p>
+      
+            「電話の音、呼びかけってグチャグチャなん？」
+      </p>
+      </div>
+      <div class="mem3 left">
+      <span>グチャグチャ</span>
+      <p>
+      
+            「そうかもしれないねぇ」
+      </p>
+      </div>
+      <div class="mem1 left">
+      <span>白兎 深月</span>
+      <p>
+      
+            「ちょっと意味がわからないっすね」
+      </p>
+      </div>
+      <div class="mem3 left">
+      <span>グチャグチャ</span>
+      <p>
+      
+            「いずれわかるんじゃないかなぁ」
+      </p>
+      </div>
+      <div class="mem1 left">
+      <span>白兎 深月</span>
+      <p>
+      
+            「それ、私グチャグチャなるパターン」
+      </p>
+      </div>
+      <div class="mem3 left">
+      <span>グチャグチャ</span>
+      <p>
+      
+            「そんなことないよぉ」
+      </p>
+      </div>
+      <div class="mem1 left">
+      <span>白兎 深月</span>
+      <p>
+      
+            「そんなことあるよぉ」
+      </p>
+      </div>
+      <div class="mem3 left">
+      <span>グチャグチャ</span>
+      <p>
+      
+            「信じておくれよ、グチャグチャを」
+      </p>
+      </div>
+      <div class="mem1 left">
+      <span>白兎 深月</span>
+      <p>
+      
+            「グチャグチャを信じたらグチャグチャになりそうなんだよ」
+      </p>
+      </div>
+      <div class="mem3 left">
+      <span>グチャグチャ</span>
+      <p>
+      
+            「そんなぁ」
+      </p>
+      </div>
+      <div class="mem1 left">
+      <span>白兎 深月</span>
+      <p>
+      
+            「さて、めぼしい所はこのあたりかな」
+      </p>
+      </div>
+      <div class="mem1 left">
+      <span>白兎 深月</span>
+      <p>
+      
+            社員名簿とか、写真とかないかなぁ
+      </p>
+      </div>
+      <div class="mem3 left">
+      <span>グチャグチャ</span>
+      <p>
+      
+            「そうだねぇ」
+      </p>
+      </div>
+      <div class="kp LtoR-early">
+      
+            目星どぞ
+      </div>
+      <div class="mem1 left">
+      <span>白兎 深月</span>
+      <p>
+      
+            CCB&lt;=60 【目星】 (1D100&lt;=60) ＞ 6 ＞ スペシャル
+            
+      </p>
+      </div>
+      <div class="kp LtoR-early">
+      
+            では、怪しげな名簿やチャイニーズな男の写真がある
+      </div>
+      <div class="mem1 left">
+      <span>白兎 深月</span>
+      <p>
+      
+            「あらら、いかにも怪しそうな名簿にいかにも怪しそうなチャイニーズの写真があるわ」
+      </p>
+      </div>
+      <div class="kp LtoR-early">
+      
+            名簿も写真も燃えカスらしくはっきりとは見えない。
+      </div>
+      <div class="mem1 left">
+      <span>白兎 深月</span>
+      <p>
+      
+            「これじゃ証拠にならないか。洗濯物泥棒として突き付けたかったのに」
+      </p>
+      </div>
+      <div class="mem1 left">
+      <span>白兎 深月</span>
+      <p>
+      
+            「グチャグチャ突き付けたら証拠になる？」
+      </p>
+      </div>
+      <div class="mem3 left">
+      <span>グチャグチャ</span>
+      <p>
+      
+            「私かい？　わからないなぁ。もしかしたら、間違えちゃったのかもしれないよぉ？」
+      </p>
+      </div>
+      <div class="mem1 left">
+      <span>白兎 深月</span>
+      <p>
+      
+            「なにを？配合を？」
+      </p>
+      </div>
+      <div class="mem3 left">
+      <span>グチャグチャ</span>
+      <p>
+      
+            「洗濯機を」
+      </p>
+      </div>
+      <div class="mem1 left">
+      <span>白兎 深月</span>
+      <p>
+      
+            「あぁ、洗濯物ね。女物と間違えないでしょ」
+      </p>
+      </div>
+      <div class="mem1 left">
+      <span>白兎 深月</span>
+      <p>
+      
+            「女装趣味だったら別だけど」
+      </p>
+      </div>
+      <div class="mem1 left">
+      <span>白兎 深月</span>
+      <p>
+      
+            「いや、別でもねーよ。下着まで女物は気合い入れすぎだって」
+      </p>
+      </div>
+      <div class="mem3 left">
+      <span>グチャグチャ</span>
+      <p>
+      
+            「そそそんな、あからさまに女物と分かるものを洗濯していたのかい……？　危ないよぉ」
+      </p>
+      </div>
+      <div class="mem3 left">
+      <span>グチャグチャ</span>
+      <p>
+      
+            「そういうものは、おうちで洗濯した方がいいと、おじさん思うなぁ……」
+      </p>
+      </div>
+      <div class="mem1 left">
+      <span>白兎 深月</span>
+      <p>
+      
+            「おじさん……。でも、それが道路に転がってんだぜ？血濡れでよ」
+      </p>
+      </div>
+      <div class="mem3 left">
+      <span>グチャグチャ</span>
+      <p>
+      
+            「落としちゃったんじゃないかなぁ。血は……私と同じグチャグチャかもしれないじゃない？」
+      </p>
+      </div>
+      <div class="mem1 left">
+      <span>白兎 深月</span>
+      <p>
+      
+            「グチャグチャと一緒に洗ったばっかの洗濯物入れないでほしいな」
+      </p>
+      </div>
+      <div class="mem1 left">
+      <span>白兎 深月</span>
+      <p>
+      
+            「今は仕方ないけど」
+      </p>
+      </div>
+      <div class="mem3 left">
+      <span>グチャグチャ</span>
+      <p>
+      
+            「一緒にいるうちについちゃったのかもしれないじゃない。ペットの毛みたいにさぁ」
+      </p>
+      </div>
+      <div class="mem1 left">
+      <span>白兎 深月</span>
+      <p>
+      
+            「出てすぐ落ちてたやん？そんなすぐ付くみたいに思わない？」
+      </p>
+      </div>
+      <div class="mem3 left">
+      <span>グチャグチャ</span>
+      <p>
+      
+            「て、ていうかおじさんのぐちゃぐちゃが入ってる袋に女物を一緒に入れちゃってていいのかい？」
+      </p>
+      </div>
+      <div class="mem1 left">
+      <span>白兎 深月</span>
+      <p>
+      
+            「だって、他にしまう場所ないし。グチャグチャって性別あるの？」
+      </p>
+      </div>
+      <div class="mem1 left">
+      <span>白兎 深月</span>
+      <p>
+      
+            「ってか、道路にまで落とされたら捨てるしかないし……」
+      </p>
+      </div>
+      <div class="mem3 left">
+      <span>グチャグチャ</span>
+      <p>
+      
+            「はわ……おじさんどきどきしちゃうなぁ……」
+      </p>
+      </div>
+      <div class="mem1 left">
+      <span>白兎 深月</span>
+      <p>
+      
+            「どきどきしたらどうなるの？爆発するの？」
+      </p>
+      </div>
+      <div class="mem3 left">
+      <span>グチャグチャ</span>
+      <p>
+      
+            「えぇっ。君はどきどきしたら爆発するのかい？」
+      </p>
+      </div>
+      <div class="mem1 left">
+      <span>白兎 深月</span>
+      <p>
+      
+            「人間の形してれば爆発しないと思うけど、グチャグチャだと何か吹き出したり爆発するのかなって」
+      </p>
+      </div>
+      <div class="mem3 left">
+      <span>グチャグチャ</span>
+      <p>
+      
+            「そんなぁ」
+      </p>
+      </div>
+      <div class="mem1 left">
+      <span>白兎 深月</span>
+      <p>
+      
+            「これは知的好奇心だから」
+      </p>
+      </div>
+      <div class="mem1 left">
+      <span>白兎 深月</span>
+      <p>
+      
+            「しかたない」
+      </p>
+      </div>
+      <div class="mem3 left">
+      <span>グチャグチャ</span>
+      <p>
+      
+            「そうかぁ」
+      </p>
+      </div>
+      <div class="mem3 left">
+      <span>グチャグチャ</span>
+      <p>
+      
+            「交番に私の欠片が届けられてるかもしれないから、交番に行ってくれるとうれしいなぁ」
+      </p>
+      </div>
+      <div class="mem1 left">
+      <span>白兎 深月</span>
+      <p>
+      
+            「落とし物としてあるかなぁ」
+      </p>
+      </div>
+      <div class="mem1 left">
+      <span>白兎 深月</span>
+      <p>
+      
+            「まぁ、落とし物を届けるついでだしいいか」
+      </p>
+      </div>
+      <div class="mem1 left">
+      <span>白兎 深月</span>
+      <p>
+      
+            「そのあとコンビニね」
+      </p>
+      </div>
+      <div class="mem3 left">
+      <span>グチャグチャ</span>
+      <p>
+      
+            「わかったよぉ」
+      </p>
+      </div>
+      <div class="kp LtoR-early">
+      
+            ◇交番<br>警官がいて、「どうしました？」と応対してくれる。
+      </div>
+      <div class="mem1 left">
+      <span>白兎 深月</span>
+      <p>
+      
+            「あ、すいません。グチャグチャの落とし物ありますか？それと財布の落とし物です」
+      </p>
+      </div>
+      <div class="mem5 left">
+      <span>警官</span>
+      <p>
+      
+            「あ、落し物のお届けありがとうございます。グチャグチャの落し物、ありますよ。【銭湯】で拾ってくださったそうです。拾い切れなかったのでまた来ると言っていましたよ」
+      </p>
+      </div>
+      <div class="kp LtoR-early">
+      
+            入手アイテム→［グチャグチャの破片］
+      </div>
+      <div class="mem1 left">
+      <span>白兎 深月</span>
+      <p>
+      
+            「ありがとうございます。じゃ、銭湯にはこちらから行ってみることにもしますね」
+      </p>
+      </div>
+      <div class="mem3 left">
+      <span>グチャグチャ</span>
+      <p>
+      
+            「わぁい。私の体だ。袋に入れてくれるとうれしいなぁ」
+      </p>
+      </div>
+      <div class="mem1 left">
+      <span>白兎 深月</span>
+      <p>
+      
+            「よかったね、グチャグチャ。融合できる？」
+      </p>
+      </div>
+      <div class="mem3 left">
+      <span>グチャグチャ</span>
+      <p>
+      
+            「できるできる～」
+      </p>
+      </div>
+      <div class="mem1 left">
+      <span>白兎 深月</span>
+      <p>
+      
+            「あと、この洗濯物捨てたいんですけど」
+      </p>
+      </div>
+      <div class="mem5 left">
+      <span>警官</span>
+      <p>
+      
+            「あぁ、ごみ箱ならありますけど……だいじょうぶですか？　女性もの、その辺に捨てちゃって……袋、別に差し上げましょうか？」
+      </p>
+      </div>
+      <div class="mem1 left">
+      <span>白兎 深月</span>
+      <p>
+      
+            「あ、ほんとですか？グチャグチャが興奮しちゃってどうしようかと思ってて」
+      </p>
+      </div>
+      <div class="mem3 left">
+      <span>グチャグチャ</span>
+      <p>
+      
+            「うーん、何かおかしい気がするな、まるで悪夢の中にいるみたいな……気のせいかな……。えっいや、おじさんが変態みたいに言わないでおくれよぉ」
+      </p>
+      </div>
+      <div class="mem1 left">
+      <span>白兎 深月</span>
+      <p>
+      
+            「どきどきしてたじゃん」
+      </p>
+      </div>
+      <div class="mem5 left">
+      <span>警官</span>
+      <p>
+      
+            「じゃあでは、袋どうぞ」ビニール袋くれます
+      </p>
+      </div>
+      <div class="mem1 left">
+      <span>白兎 深月</span>
+      <p>
+      
+            「私の中でグチャグチャは性別がないものだと思ってるから」
+      </p>
+      </div>
+      <div class="mem1 left">
+      <span>白兎 深月</span>
+      <p>
+      
+            声がおっさんだけど
+      </p>
+      </div>
+      <div class="mem3 left">
+      <span>グチャグチャ</span>
+      <p>
+      
+            「だって若い女の子の、し、下着とか、その、よくないよぉ」
+      </p>
+      </div>
+      <div class="mem1 left">
+      <span>白兎 深月</span>
+      <p>
+      
+            「ありがとうございます。」<br>洗濯物を移動させます
+      </p>
+      </div>
+      <div class="mem1 left">
+      <span>白兎 深月</span>
+      <p>
+      
+            「だから、どきどきするなって」
+      </p>
+      </div>
+      <div class="mem3 left">
+      <span>グチャグチャ</span>
+      <p>
+      
+            「ご、ごめんよぉ」
+      </p>
+      </div>
+      <div class="mem1 left">
+      <span>白兎 深月</span>
+      <p>
+      
+            「で、財布の落とし物ですけど」
+      </p>
+      </div>
+      <div class="mem5 left">
+      <span>警官</span>
+      <p>
+      
+            「あぁ、こちらにどうぞ。ありがとうございます。どちらにありましたか」
+      </p>
+      </div>
+      <div class="mem1 left">
+      <span>白兎 深月</span>
+      <p>
+      
+            「なんかさっきコインランドリーの隣で火事に合った会社の社長さんらしいものだと思うんですけど、公衆電話にありました」
+      </p>
+      </div>
+      <div class="mem1 left">
+      <span>白兎 深月</span>
+      <p>
+      
+            「あと、私の洗濯物盗んで血濡れで落としていった奴がいるんですよ」
+      </p>
+      </div>
+      <div class="mem5 left">
+      <span>警官</span>
+      <p>
+      
+            「なるほど。お預かりしておきます」
+      </p>
+      </div>
+      <div class="mem1 left">
+      <span>白兎 深月</span>
+      <p>
+      
+            「その先に公衆電話がありました」
+      </p>
+      </div>
+      <div class="mem1 left">
+      <span>白兎 深月</span>
+      <p>
+      
+            「そこで見つけました」
+      </p>
+      </div>
+      <div class="mem5 left">
+      <span>警官</span>
+      <p>
+      
+            「なるほど。それは……ご愁傷さまです？」
+      </p>
+      </div>
+      <div class="mem1 left">
+      <span>白兎 深月</span>
+      <p>
+      
+            「……はい。」
+      </p>
+      </div>
+      <div class="mem3 left">
+      <span>グチャグチャ</span>
+      <p>
+      
+            「どんまいだよぉ」
+      </p>
+      </div>
+      <div class="mem1 left">
+      <span>白兎 深月</span>
+      <p>
+      
+            「ホントね、どうしてくれよう。中国服」
+      </p>
+      </div>
+      <div class="mem5 left">
+      <span>警官</span>
+      <p>
+      
+            「もしかして、中華服の男ですか？　あっちの方に歩いていきましたよ」
+      </p>
+      </div>
+      <div class="kp LtoR-early">
+      
+            指差された方向には【コンビニエンスストア】【ファミリーレストラン】【ラーメン屋】【銭湯】【公園】などがあり、いずれも深夜まで開いているようだ。
+      </div>
+      <div class="mem1 left">
+      <span>白兎 深月</span>
+      <p>
+      
+            「その人変態です。見つけたら注意してあげてください」
+      </p>
+      </div>
+      <div class="mem5 left">
+      <span>警官</span>
+      <p>
+      
+            「そ、そうですか。注意しておきますね」
+      </p>
+      </div>
+      <div class="mem1 left">
+      <span>白兎 深月</span>
+      <p>
+      
+            「グチャグチャ、銭湯の他にもいろいろありそうだけど、お前ってどこからきたの？」
+      </p>
+      </div>
+      <div class="mem3 left">
+      <span>グチャグチャ</span>
+      <p>
+      
+            「それがわからないから困ってるんだよぉ」
+      </p>
+      </div>
+      <div class="mem1 left">
+      <span>白兎 深月</span>
+      <p>
+      
+            「コインランドリーで錬成されたんじゃないの？」
+      </p>
+      </div>
+      <div class="mem3 left">
+      <span>グチャグチャ</span>
+      <p>
+      
+            「そんなわけないよぉ」
+      </p>
+      </div>
+      <div class="mem1 left">
+      <span>白兎 深月</span>
+      <p>
+      
+            「私的にはコインランドリーに入ってグチャグチャになったが一票だったんだけど
+      </p>
+      </div>
+      <div class="mem3 left">
+      <span>グチャグチャ</span>
+      <p>
+      
+            「グチャグチャはそんなふうにできないよぉ。どうできるかは……うーん、思い出せないんだけどさぁ」
+      </p>
+      </div>
+      <div class="mem1 left">
+      <span>白兎 深月</span>
+      <p>
+      
+            「銭湯にもあったってなると移動してることになるからさ。持ち歩かれてたの？持ち主いたの？」
+      </p>
+      </div>
+      <div class="mem3 left">
+      <span>グチャグチャ</span>
+      <p>
+      
+            「わかんないんだよねぇ。体を取り戻せば思い出せるかもしれないんだけど……うーん」
+      </p>
+      </div>
+      <div class="mem1 left">
+      <span>白兎 深月</span>
+      <p>
+      
+            「あと封印されし欠片は何個あるんだい」
+      </p>
+      </div>
+      <div class="mem1 left">
+      <span>白兎 深月</span>
+      <p>
+      
+            「右腕？左腕？右足？左足？頭？」
+      </p>
+      </div>
+      <div class="mem3 left">
+      <span>グチャグチャ</span>
+      <p>
+      
+            「私も知りたいよぉ」
+      </p>
+      </div>
+      <div class="mem1 left">
+      <span>白兎 深月</span>
+      <p>
+      
+            「ま、あっち（指さされた方面）を探してみたら見つかるかもね。銭湯には確実にあるだろうし」
+      </p>
+      </div>
+      <div class="mem3 left">
+      <span>グチャグチャ</span>
+      <p>
+      
+            「私は自力では移動できない気がするから、君が頼りだよぉ」
+      </p>
+      </div>
+      <div class="mem1 left">
+      <span>白兎 深月</span>
+      <p>
+      
+            「あ、警察官さん。袋もう一枚あります？」
+      </p>
+      </div>
+      <div class="mem1 left">
+      <span>白兎 深月</span>
+      <p>
+      
+            「グチャグチャが万が一納まりきらなかったら二つ目ほしいので」
+      </p>
+      </div>
+      <div class="mem5 left">
+      <span>警官</span>
+      <p>
+      
+            「ありますよ。どうぞ」
+      </p>
+      </div>
+      <div class="mem1 left">
+      <span>白兎 深月</span>
+      <p>
+      
+            「ありがとうございます」
+      </p>
+      </div>
+      <div class="mem1 left">
+      <span>白兎 深月</span>
+      <p>
+      
+            「よかったね、これでグチャ＝グチャになれるよ」
+      </p>
+      </div>
+      <div class="mem3 left">
+      <span>グチャグチャ</span>
+      <p>
+      
+            「えぇ？　グチャグチャはグチャグチャだよぉ」
+      </p>
+      </div>
+      <div class="mem1 left">
+      <span>白兎 深月</span>
+      <p>
+      
+            「一つの袋に収まるかわからなくなってきたからさ」
+      </p>
+      </div>
+      <div class="mem3 left">
+      <span>グチャグチャ</span>
+      <p>
+      
+            「それはそうかもぉ」
+      </p>
+      </div>
+      <div class="mem1 left">
+      <span>白兎 深月</span>
+      <p>
+      
+            「あ、今のグチャグチャの持ち主、仮ですけど私なのでもし、落とし物届いたらこちらまで連絡ください」
+      </p>
+      </div>
+      <div class="mem1 left">
+      <span>白兎 深月</span>
+      <p>
+      
+            名刺渡しておきます
+      </p>
+      </div>
+      <div class="mem1 left">
+      <span>白兎 深月</span>
+      <p>
+      
+            CCB&lt;=65 【幸運】 (1D100&lt;=65) ＞ 23 ＞ 成功
+            
+      </p>
+      </div>
+      <div class="kp LtoR-early">
+      
+            じゃあ名刺ありました。渡せます
+      </div>
+      <div class="mem5 left">
+      <span>警官</span>
+      <p>
+      
+            「あ、ありがとうございます」
+      </p>
+      </div>
+      <div class="mem1 left">
+      <span>白兎 深月</span>
+      <p>
+      
+            「それじゃお願いしますね」
+      </p>
+      </div>
+      <div class="mem5 left">
+      <span>警官</span>
+      <p>
+      
+            「はい。ありがとうございました」
+      </p>
+      </div>
+      <div class="mem1 left">
+      <span>白兎 深月</span>
+      <p>
+      
+            じゃ宣言通りコンビニ行きましょう
+      </p>
+      </div>
+      <div class="kp LtoR-early">
+      
+            ◇コンビニエンスストア<br>眩しいほどの白い明かりが灯っており、店内には店員以外誰もいない。<br>＜幸運＞
+      </div>
+      <div class="mem1 left">
+      <span>白兎 深月</span>
+      <p>
+      
+            CCB&lt;=65 【幸運】 (1D100&lt;=65) ＞ 84 ＞ 失敗
+            
+      </p>
+      </div>
+      <div class="kp LtoR-early">
+      
+            でやる気なさげな店員が「……っせー」と言う。
+      </div>
+      <div class="mem1 left">
+      <span>白兎 深月</span>
+      <p>
+      
+            「グチャグチャの落とし物ありますかー？」
+      </p>
+      </div>
+      <div class="mem1 left">
+      <span>白兎 深月</span>
+      <p>
+      
+            「てか売ってますかー？」
+      </p>
+      </div>
+      <div class="mem1 left">
+      <span>白兎 深月</span>
+      <p>
+      
+            レジにどんとグチャグチャを置きます
+      </p>
+      </div>
+      <div class="mem6 right">
+      <span>店員</span>
+      <p>
+      
+            「グチャグチャは人気っすからね～。入れてもすぐに売れてしまうんすよ～」
+      </p>
+      </div>
+      <div class="mem1 left">
+      <span>白兎 深月</span>
+      <p>
+      
+            「この子の部位なんですよぉ。ありませんかぁ？」
+      </p>
+      </div>
+      <div class="mem6 right">
+      <span>店員</span>
+      <p>
+      
+            「いや～ないっすねぇ」
+      </p>
+      </div>
+      <div class="mem1 left">
+      <span>白兎 深月</span>
+      <p>
+      
+            「そうですかぁ。」
+      </p>
+      </div>
+      <div class="mem1 left">
+      <span>白兎 深月</span>
+      <p>
+      
+            「お前、人気者だね」
+      </p>
+      </div>
+      <div class="mem3 left">
+      <span>グチャグチャ</span>
+      <p>
+      
+            「へへ、そうかなぁ」てれてれ
+      </p>
+      </div>
+      <div class="mem1 left">
+      <span>白兎 深月</span>
+      <p>
+      
+            じゃ店内見渡します
+      </p>
+      </div>
+      <div class="kp LtoR-early">
+      
+            コンビニ店内【生活用品／食料品／雑誌】
+      </div>
+      <div class="mem1 left">
+      <span>白兎 深月</span>
+      <p>
+      
+            スタイリッシュ包丁ないかなぁ
+      </p>
+      </div>
+      <div class="mem1 left">
+      <span>白兎 深月</span>
+      <p>
+      
+            生活用品から
+      </p>
+      </div>
+      <div class="mem1 left">
+      <span>白兎 深月</span>
+      <p>
+      
+            1D100 (1D100) ＞ 98
+            
+      </p>
+      </div>
+      <div class="mem1 left">
+      <span>白兎 深月</span>
+      <p>
+      
+            1D100 (1D100) ＞ 63
+            
+      </p>
+      </div>
+      <div class="mem1 left">
+      <span>白兎 深月</span>
+      <p>
+      
+            1D100 (1D100) ＞ 42
+            
+      </p>
+      </div>
+      <div class="kp LtoR-early">
+      
+            生活用品<br>『ナニエール-化学髄液配合-』『ドレパノモナスコレプスノート』『不織布ラスク』『ダイナミックペーパー』『クックロビンなりきりグッズ』などが並んでいる。何かがおかしい……。<br>また、『スピーディー自殺用包丁』という表示が目に留まる。432 円（税込み）のようだが、「品切れ中」になっている。
+      </div>
+      <div class="mem1 left">
+      <span>白兎 深月</span>
+      <p>
+      
+            「クックロビンなりきりグッズいいなぁ」
+      </p>
+      </div>
+      <div class="mem1 left">
+      <span>白兎 深月</span>
+      <p>
+      
+            「あ、スタイリッシュ自殺包丁売り切れだ」
+      </p>
+      </div>
+      <div class="mem1 left">
+      <span>白兎 深月</span>
+      <p>
+      
+            「グチャグチャ、何かほしいのある？」
+      </p>
+      </div>
+      <div class="mem3 left">
+      <span>グチャグチャ</span>
+      <p>
+      
+            「スピーディー自殺用包丁、人気だからなぁ。私は特にないかなぁ」
+      </p>
+      </div>
+      <div class="mem1 left">
+      <span>白兎 深月</span>
+      <p>
+      
+            「じゃクックロビンなりきりグッズを籠に入れてっと」
+      </p>
+      </div>
+      <div class="mem1 left">
+      <span>白兎 深月</span>
+      <p>
+      
+            次は食料品かな
+      </p>
+      </div>
+      <div class="mem1 left">
+      <span>白兎 深月</span>
+      <p>
+      
+            1D100 (1D100) ＞ 35
+            
+      </p>
+      </div>
+      <div class="mem1 left">
+      <span>白兎 深月</span>
+      <p>
+      
+            1D100 (1D100) ＞ 28
+            
+      </p>
+      </div>
+      <div class="mem1 left">
+      <span>白兎 深月</span>
+      <p>
+      
+            1D100 (1D100) ＞ 86
+            
+      </p>
+      </div>
+      <div class="kp LtoR-early">
+      
+            ・食料品<br>『ボデダチップス』『アンゴラヤギの天然水』『ドスコ～おいしくてつよくなる～』『バリポー』『や～いおちた』などが並んでいる。何かがおかしい……。<br>『グチャグチャ』の表示がある棚もあるが、「品切れ中」になっている。
+      </div>
+      <div class="mem1 left">
+      <span>白兎 深月</span>
+      <p>
+      
+            「あ、ドスコがある」
+      </p>
+      </div>
+      <div class="mem1 left">
+      <span>白兎 深月</span>
+      <p>
+      
+            「おいしくてつよくなるってあこがれるよなぁ」
+      </p>
+      </div>
+      <div class="mem3 left">
+      <span>グチャグチャ</span>
+      <p>
+      
+            「そうだねぇ」
+      </p>
+      </div>
+      <div class="mem1 left">
+      <span>白兎 深月</span>
+      <p>
+      
+            「じゃ、ドスコ買ってこ」
+      </p>
+      </div>
+      <div class="mem1 left">
+      <span>白兎 深月</span>
+      <p>
+      
+            次雑誌コーナーかな
+      </p>
+      </div>
+      <div class="kp LtoR-early">
+      
+            ・雑誌<br>『zn-zn』『週刊ブンードゥンー』などが並んでいる。何かがおかしい……。<br>＜目星＞＜図書館＞
+      </div>
+      <div class="mem1 left">
+      <span>白兎 深月</span>
+      <p>
+      
+            CCB&lt;=60 【目星】 (1D100&lt;=60) ＞ 48 ＞ 成功
+            
+      </p>
+      </div>
+      <div class="mem1 left">
+      <span>白兎 深月</span>
+      <p>
+      
+            CCB&lt;=55 【図書館】 (1D100&lt;=55) ＞ 45 ＞ 成功
+            
+      </p>
+      </div>
+      <div class="kp LtoR-early">
+      
+            『あくむのとも』という雑誌が何故か目に留まる。<br>・・・・・<br>▼あくむのとも<br>上質な悪夢には上質な睡眠が不可欠です。<br>上質な睡眠というのはほんの些細な火事とべたべたに甘ったるい香りと黒い蓮が不可欠です。<br>上質な悪夢の継続のためにはィヌから逃げ回らなくてはなりません。<br>上質な悪夢には強い耳栓が必要です。悪い電話に耳を傾けてはなりません。<br>それから、命を大切にするんですよ。<br>また上質な悪夢を見るために。<br>いずれ来る白い使者を待ちましょう。<br>万歳三唱！ チャウグナー・フォーン<br>拍手喝采！ チャウグナー・フォーン<br>千客万来！ チャウグナー・フォーン<br>・・・・・<br>＜SANc＞0/1<br>クトゥルフ神話技能+1%
+      </div>
+      <div class="mem1 left">
+      <span>白兎 深月</span>
+      <p>
+      
+            1d100&lt;=45 【正気度ロール】 (1D100&lt;=45) ＞ 86 ＞ 失敗
+            
+      </p>
+      </div>
+      <div class="mem2 right">
+      <span>system</span>
+      <p>
+      
+            [ 白兎 深月 ] SAN : 45 → 44
+      </p>
+      </div>
+      <div class="mem1 left">
+      <span>白兎 深月</span>
+      <p>
+      
+            「やば、これおもろ。買おうかな」
+      </p>
+      </div>
+      <div class="mem1 left">
+      <span>白兎 深月</span>
+      <p>
+      
+            「研究室においておこ」
+      </p>
+      </div>
+      <div class="mem3 left">
+      <span>グチャグチャ</span>
+      <p>
+      
+            「だいじょうぶかなぁ」
+      </p>
+      </div>
+      <div class="mem1 left">
+      <span>白兎 深月</span>
+      <p>
+      
+            「大丈夫。研究室のみんな強いから」
+      </p>
+      </div>
+      <div class="mem3 left">
+      <span>グチャグチャ</span>
+      <p>
+      
+            「えぇ……」
+      </p>
+      </div>
+      <div class="mem1 left">
+      <span>白兎 深月</span>
+      <p>
+      
+            「姉妹校の人たちよりマシだし」
+      </p>
+      </div>
+      <div class="mem3 left">
+      <span>グチャグチャ</span>
+      <p>
+      
+            「うぅん……君も大丈夫かなぁ……」
+      </p>
+      </div>
+      <div class="mem1 left">
+      <span>白兎 深月</span>
+      <p>
+      
+            「大丈夫大丈夫。山の鼓動を感じたことあるけど元気だし」
+      </p>
+      </div>
+      <div class="mem3 left">
+      <span>グチャグチャ</span>
+      <p>
+      
+            「そうかぁ……」
+      </p>
+      </div>
+      <div class="mem1 left">
+      <span>白兎 深月</span>
+      <p>
+      
+            「それじゃ会計してくるかぁ」
+      </p>
+      </div>
+      <div class="mem1 left">
+      <span>白兎 深月</span>
+      <p>
+      
+            「店員さんお願いしまーす」
+      </p>
+      </div>
+      <div class="mem6 right">
+      <span>店員</span>
+      <p>
+      
+            「どうぞ～」
+      </p>
+      </div>
+      <div class="mem1 left">
+      <span>白兎 深月</span>
+      <p>
+      
+            1D100 (1D100) ＞ 63
+            
+      </p>
+      </div>
+      <div class="mem1 left">
+      <span>白兎 深月</span>
+      <p>
+      
+            1D100 (1D100) ＞ 50
+            
+      </p>
+      </div>
+      <div class="mem1 left">
+      <span>白兎 深月</span>
+      <p>
+      
+            1D100 (1D100) ＞ 19
+            
+      </p>
+      </div>
+      <div class="kp LtoR-early">
+      
+            『アメリカンドッッッ（レジ横フード）』『ラッキーフォアボール（たばこ）』『インスタントラヴ（インスタント食品）』などもある。何かがおかしい……。
+      </div>
+      <div class="mem1 left">
+      <span>白兎 深月</span>
+      <p>
+      
+            「あ、この時間でもレジ横フードあるんだ」
+      </p>
+      </div>
+      <div class="mem1 left">
+      <span>白兎 深月</span>
+      <p>
+      
+            「すいませーん、これにプラスしてアメリカンドッッッください」
+      </p>
+      </div>
+      <div class="mem6 right">
+      <span>店員</span>
+      <p>
+      
+            「あ～、は～い」
+      </p>
+      </div>
+      <div class="mem6 right">
+      <span>店員</span>
+      <p>
+      
+            「お会計三千二百十三円になりま～す」
+      </p>
+      </div>
+      <div class="mem1 left">
+      <span>白兎 深月</span>
+      <p>
+      
+            「お、良い買い物したかも。あ、カードで」
+      </p>
+      </div>
+      <div class="mem6 right">
+      <span>店員</span>
+      <p>
+      
+            「は～い。袋お付けしますか～」
+      </p>
+      </div>
+      <div class="mem1 left">
+      <span>白兎 深月</span>
+      <p>
+      
+            「お願いしまーす」
+      </p>
+      </div>
+      <div class="mem6 right">
+      <span>店員</span>
+      <p>
+      
+            「は～い。ではお会計変わりまして五円たされます～。カードどうぞ～」
+      </p>
+      </div>
+      <div class="mem1 left">
+      <span>白兎 深月</span>
+      <p>
+      
+            「はいはーい」
+      </p>
+      </div>
+      <div class="mem1 left">
+      <span>白兎 深月</span>
+      <p>
+      
+            ピッ
+      </p>
+      </div>
+      <div class="mem6 right">
+      <span>店員</span>
+      <p>
+      
+            袋詰め詰め「あざっした～」
+      </p>
+      </div>
+      <div class="mem1 left">
+      <span>白兎 深月</span>
+      <p>
+      
+            「ふぅ、いい買い物した。けど、グチャグチャなかったね」
+      </p>
+      </div>
+      <div class="mem3 left">
+      <span>グチャグチャ</span>
+      <p>
+      
+            「人気だからかな～」
+      </p>
+      </div>
+      <div class="mem1 left">
+      <span>白兎 深月</span>
+      <p>
+      
+            「お前の欠片もなかったね」
+      </p>
+      </div>
+      <div class="mem3 left">
+      <span>グチャグチャ</span>
+      <p>
+      
+            「人気だからかも～」
+      </p>
+      </div>
+      <div class="mem1 left">
+      <span>白兎 深月</span>
+      <p>
+      
+            「お前の欠片も販売されてるのか。やっば」
+      </p>
+      </div>
+      <div class="mem3 left">
+      <span>グチャグチャ</span>
+      <p>
+      
+            「グチャグチャはグチャグチャだからねぇ」
+      </p>
+      </div>
+      <div class="mem1 left">
+      <span>白兎 深月</span>
+      <p>
+      
+            「あー他人には見分けはつかないって？」
+      </p>
+      </div>
+      <div class="mem1 left">
+      <span>白兎 深月</span>
+      <p>
+      
+            「それって自分の欠片かどう判別するの？」
+      </p>
+      </div>
+      <div class="mem1 left">
+      <span>白兎 深月</span>
+      <p>
+      
+            「グチャグチャならなんでも悪魔合体できるの？」
+      </p>
+      </div>
+      <div class="mem3 left">
+      <span>グチャグチャ</span>
+      <p>
+      
+            「グチャグチャにはわかるよぉ、多分」
+      </p>
+      </div>
+      <div class="mem1 left">
+      <span>白兎 深月</span>
+      <p>
+      
+            「たぶん」
+      </p>
+      </div>
+      <div class="mem1 left">
+      <span>白兎 深月</span>
+      <p>
+      
+            「次はー、確実に行くなら銭湯だけど」
+      </p>
+      </div>
+      <div class="mem1 left">
+      <span>白兎 深月</span>
+      <p>
+      
+            「ラーメン店とファミレスがいつまでやってるかだなぁ。深夜っていつまでだ」
+      </p>
+      </div>
+      <div class="mem3 left">
+      <span>グチャグチャ</span>
+      <p>
+      
+            「ここはいつも深夜みたいなもんだからなぁ」
+      </p>
+      </div>
+      <div class="mem1 left">
+      <span>白兎 深月</span>
+      <p>
+      
+            「なら時間を気にせずに……ここは？いつも深夜？」
+      </p>
+      </div>
+      <div class="mem3 left">
+      <span>グチャグチャ</span>
+      <p>
+      
+            「何か変かなぁ？」
+      </p>
+      </div>
+      <div class="mem1 left">
+      <span>白兎 深月</span>
+      <p>
+      
+            「いや、もう冒険してる気分になろう」
+      </p>
+      </div>
+      <div class="mem1 left">
+      <span>白兎 深月</span>
+      <p>
+      
+            「そうしよう」
+      </p>
+      </div>
+      <div class="mem3 left">
+      <span>グチャグチャ</span>
+      <p>
+      
+            「う～ん、君には頑張ってほしいんだけどなぁ」
+      </p>
+      </div>
+      <div class="mem1 left">
+      <span>白兎 深月</span>
+      <p>
+      
+            「お前の欠片を探す以外に何を頑張れと」
+      </p>
+      </div>
+      <div class="mem3 left">
+      <span>グチャグチャ</span>
+      <p>
+      
+            「いろいろだよぉ」
+      </p>
+      </div>
+      <div class="mem1 left">
+      <span>白兎 深月</span>
+      <p>
+      
+            「うわ、不穏」
+      </p>
+      </div>
+      <div class="mem3 left">
+      <span>グチャグチャ</span>
+      <p>
+      
+            「私の欠片も探してもらわないといけないしねぇ」
+      </p>
+      </div>
+      <div class="mem1 left">
+      <span>白兎 深月</span>
+      <p>
+      
+            choice[ファミレス,ラーメン,銭湯] (choice[ファミレス,ラーメン,銭湯]) ＞ 銭湯
+            
+      </p>
+      </div>
+      <div class="mem1 left">
+      <span>白兎 深月</span>
+      <p>
+      
+            「銭湯かな」
+      </p>
+      </div>
+      <div class="mem3 left">
+      <span>グチャグチャ</span>
+      <p>
+      
+            「じゃあ行こうかぁ」
+      </p>
+      </div>
+      <div class="mem1 left">
+      <span>白兎 深月</span>
+      <p>
+      
+            1D20 (1D20) ＞ 3
+            
+      </p>
+      </div>
+      <div class="kp LtoR-early">
+      
+            あなたが夜の街を歩いていると、視点が急速に遠ざかり、気が付くとあなたは遥か上空からあなた自身の頭頂部を眺めていた。<br>
+      </div>
+      <div class="mem1 left">
+      <span>白兎 深月</span>
+      <p>
+      
+            CCB&lt;=13*5 【POW × 5】 (1D100&lt;=65) ＞ 25 ＞ 成功
+            
+      </p>
+      </div>
+      <div class="mem1 left">
+      <span>白兎 深月</span>
+      <p>
+      
+            1D50 (1D50) ＞ 25
+            
+      </p>
+      </div>
+      <div class="mem1 left">
+      <span>白兎 深月</span>
+      <p>
+      
+            「（あれぇ？俯瞰視点？）」
+      </p>
+      </div>
+      <div class="kp LtoR-early">
+      
+            探索者の背中には羽根がある。いま、「幸せ」に触ったみたいだ。<br>ひどく高まった幸福な気持ちになる。SAN 値+1d5
+      </div>
+      <div class="mem1 left">
+      <span>白兎 深月</span>
+      <p>
+      
+            1D5 (1D5) ＞ 2
+            
+      </p>
+      </div>
+      <div class="mem2 right">
+      <span>system</span>
+      <p>
+      
+            [ 白兎 深月 ] SAN : 44 → 46
+      </p>
+      </div>
+      <div class="kp LtoR-early">
+      
+            一瞬あとには何もなく夜道を歩いている。
+      </div>
+      <div class="mem1 left">
+      <span>白兎 深月</span>
+      <p>
+      
+            「はっ。すごい面白い気分に浸った気がする」
+      </p>
+      </div>
+      <div class="kp LtoR-early">
+      
+            ◇銭湯<br>24 時間営業しているようだ。入湯料は 666 円（税込み）で、タオルなどは別途料金がかかる。
+      </div>
+      <div class="mem1 left">
+      <span>白兎 深月</span>
+      <p>
+      
+            「すいませーん、交番でここでグチャグチャの落とし物があったって聞いて……、この子の落とし物じゃないですかね」
+      </p>
+      </div>
+      <div class="mem1 left">
+      <span>白兎 深月</span>
+      <p>
+      
+            グチャグチャを見せます
+      </p>
+      </div>
+      <div class="mem7 left">
+      <span>従業員</span>
+      <p>
+      
+            「あっ、僕が届けたグチャグチャですかね？　でもとても届けきれなかったので、いっそのことウリにしようと思って。『グチャグチャの湯』、おすすめですよ！」
+      </p>
+      </div>
+      <div class="mem1 left">
+      <span>白兎 深月</span>
+      <p>
+      
+            「売り物になっちゃった！？」
+      </p>
+      </div>
+      <div class="mem7 left">
+      <span>従業員</span>
+      <p>
+      
+            「グチャグチャって遍在するので……」
+      </p>
+      </div>
+      <div class="mem1 left">
+      <span>白兎 深月</span>
+      <p>
+      
+            「グチャグチャ、沈めればいい？」
+      </p>
+      </div>
+      <div class="mem3 left">
+      <span>グチャグチャ</span>
+      <p>
+      
+            「え！？　すくって入れておくれよぉ」
+      </p>
+      </div>
+      <div class="mem1 left">
+      <span>白兎 深月</span>
+      <p>
+      
+            「……遍在？」
+      </p>
+      </div>
+      <div class="mem7 left">
+      <span>従業員</span>
+      <p>
+      
+            「グチャグチャの湯、浸かっていかれますか？」
+      </p>
+      </div>
+      <div class="mem1 left">
+      <span>白兎 深月</span>
+      <p>
+      
+            「いや、お前の欠片が湯に散らばってるんでしょ？どう回収するよ？吸収してくれる？」
+      </p>
+      </div>
+      <div class="mem1 left">
+      <span>白兎 深月</span>
+      <p>
+      
+            「あ、入りはします」
+      </p>
+      </div>
+      <div class="mem3 left">
+      <span>グチャグチャ</span>
+      <p>
+      
+            「一部でいいよぉ」
+      </p>
+      </div>
+      <div class="mem1 left">
+      <span>白兎 深月</span>
+      <p>
+      
+            「そんなんでいいのか」
+      </p>
+      </div>
+      <div class="mem3 left">
+      <span>グチャグチャ</span>
+      <p>
+      
+            「全部が私じゃないはずだしさぁ」
+      </p>
+      </div>
+      <div class="mem7 left">
+      <span>従業員</span>
+      <p>
+      
+            「ではどうぞ～」
+      </p>
+      </div>
+      <div class="mem1 left">
+      <span>白兎 深月</span>
+      <p>
+      
+            「それにしても税込み666って払いづらいなぁ」
+      </p>
+      </div>
+      <div class="kp LtoR-early">
+      
+            ●湯に浸かる？<br>・・・・・<br>▼さまざまな湯<br>・ゴの湯<br>・グジーの湯<br>・グチャグチャの湯<br>・イジウルヴィルスススズの湯<br>・ハンの湯<br>・ザヴナ<br>・・・・・・
+      </div>
+      <div class="mem1 left">
+      <span>白兎 深月</span>
+      <p>
+      
+            「じゃ、グチャグチャが桶に入ってそれにグチャグチャの湯入れるね」
+      </p>
+      </div>
+      <div class="mem1 left">
+      <span>白兎 深月</span>
+      <p>
+      
+            「そのあと回収するから」
+      </p>
+      </div>
+      <div class="mem3 left">
+      <span>グチャグチャ</span>
+      <p>
+      
+            「わかったよぉ」
+      </p>
+      </div>
+      <div class="mem1 left">
+      <span>白兎 深月</span>
+      <p>
+      
+            バシャーバシャー
+      </p>
+      </div>
+      <div class="mem1 left">
+      <span>白兎 深月</span>
+      <p>
+      
+            「あ、タオル借りるの忘れた」
+      </p>
+      </div>
+      <div class="mem3 left">
+      <span>グチャグチャ</span>
+      <p>
+      
+            「おぉ……うーん？……君のこと、どこかで見たような気がする。コインランドリーじゃないな、その近くの……うーん、思い出せない」
+      </p>
+      </div>
+      <div class="mem1 left">
+      <span>白兎 深月</span>
+      <p>
+      
+            「お、効いてるね」
+      </p>
+      </div>
+      <div class="kp LtoR-early">
+      
+            ふやけたグチャグチャが採取できた。<br>・入手アイテム→［グチャグチャの破片］
+      </div>
+      <div class="mem1 left">
+      <span>白兎 深月</span>
+      <p>
+      
+            「じゃ、そこで浸かってて私も風呂入ってくるわ」
+      </p>
+      </div>
+      <div class="mem1 left">
+      <span>白兎 深月</span>
+      <p>
+      
+            「店員さーんタオル借りるからいくらー？」
+      </p>
+      </div>
+      <div class="mem3 left">
+      <span>グチャグチャ</span>
+      <p>
+      
+            「わかったよぉ」
+      </p>
+      </div>
+      <div class="mem7 left">
+      <span>従業員</span>
+      <p>
+      
+            「はーい！　222円になります！」
+      </p>
+      </div>
+      <div class="mem1 left">
+      <span>白兎 深月</span>
+      <p>
+      
+            「あ、はーい」
+      </p>
+      </div>
+      <div class="mem1 left">
+      <span>白兎 深月</span>
+      <p>
+      
+            「あ、細かいのないや300円で」
+      </p>
+      </div>
+      <div class="mem7 left">
+      <span>従業員</span>
+      <p>
+      
+            「ありがとうございます！　おつりです！」
+      </p>
+      </div>
+      <div class="mem1 left">
+      <span>白兎 深月</span>
+      <p>
+      
+            「はーい」
+      </p>
+      </div>
+      <div class="mem1 left">
+      <span>白兎 深月</span>
+      <p>
+      
+            じゃ、イジウルヴィルスススズの湯に入ります
+      </p>
+      </div>
+      <div class="kp LtoR-early">
+      
+            イジウルヴィルスススズの湯→心地がよい。SAN 値+10
+      </div>
+      <div class="mem1 left">
+      <span>白兎 深月</span>
+      <p>
+      
+            「あーあったまるぅ」
+      </p>
+      </div>
+      <div class="mem2 right">
+      <span>system</span>
+      <p>
+      
+            [ 白兎 深月 ] SAN : 46 → 56
+      </p>
+      </div>
+      <div class="mem1 left">
+      <span>白兎 深月</span>
+      <p>
+      
+            「いい湯だな、あははん」
+      </p>
+      </div>
+      <div class="mem1 left">
+      <span>白兎 深月</span>
+      <p>
+      
+            「よし。」
+      </p>
+      </div>
+      <div class="mem1 left">
+      <span>白兎 深月</span>
+      <p>
+      
+            服に着替えてから迎えに行こう
+      </p>
+      </div>
+      <div class="mem1 left">
+      <span>白兎 深月</span>
+      <p>
+      
+            「あったまった？」
+      </p>
+      </div>
+      <div class="mem3 left">
+      <span>グチャグチャ</span>
+      <p>
+      
+            「待ってたよ～。君もあったまったかい？」
+      </p>
+      </div>
+      <div class="mem1 left">
+      <span>白兎 深月</span>
+      <p>
+      
+            「いいお湯加減だったよ」
+      </p>
+      </div>
+      <div class="mem3 left">
+      <span>グチャグチャ</span>
+      <p>
+      
+            「それはよかったよぉ」
+      </p>
+      </div>
+      <div class="mem1 left">
+      <span>白兎 深月</span>
+      <p>
+      
+            「それじゃ袋に着替えよっか」
+      </p>
+      </div>
+      <div class="mem3 left">
+      <span>グチャグチャ</span>
+      <p>
+      
+            「桶から袋にねぇ」
+      </p>
+      </div>
+      <div class="mem1 left">
+      <span>白兎 深月</span>
+      <p>
+      
+            「ちょっとふやけてるやつ増えてるから重くなったね」
+      </p>
+      </div>
+      <div class="mem3 left">
+      <span>グチャグチャ</span>
+      <p>
+      
+            どちゃどちゃ
+      </p>
+      </div>
+      <div class="mem3 left">
+      <span>グチャグチャ</span>
+      <p>
+      
+            「仕方ないよねぇ。苦労かけてごめんねぇ」
+      </p>
+      </div>
+      <div class="mem1 left">
+      <span>白兎 深月</span>
+      <p>
+      
+            「穴が開かないかだけ不安だね。ひとまず二重にしておくか」
+      </p>
+      </div>
+      <div class="mem3 left">
+      <span>グチャグチャ</span>
+      <p>
+      
+            「私はそんなにとげとげしくないけど……助かるよぉ」
+      </p>
+      </div>
+      <div class="mem1 left">
+      <span>白兎 深月</span>
+      <p>
+      
+            「重さで破れるってこともあるからさ」
+      </p>
+      </div>
+      <div class="mem3 left">
+      <span>グチャグチャ</span>
+      <p>
+      
+            「そうかぁ」
+      </p>
+      </div>
+      <div class="mem1 left">
+      <span>白兎 深月</span>
+      <p>
+      
+            「それじゃ、次はどこ行こうかな」
+      </p>
+      </div>
+      <div class="mem1 left">
+      <span>白兎 深月</span>
+      <p>
+      
+            choice[ファミレス,ラーメン] (choice[ファミレス,ラーメン]) ＞ ファミレス
+            
+      </p>
+      </div>
+      <div class="mem1 left">
+      <span>白兎 深月</span>
+      <p>
+      
+            1D20 (1D20) ＞ 16
+            
+      </p>
+      </div>
+      <div class="kp LtoR-early">
+      
+            あなたが夜の街を歩いていると、ビルほどもある巨大で太った赤ん坊が大口を開けて笑っているのが見えた。
+      </div>
+      <div class="mem1 left">
+      <span>白兎 深月</span>
+      <p>
+      
+            CCB&lt;=13*5 【POW × 5】 (1D100&lt;=65) ＞ 12 ＞ スペシャル
+            
+      </p>
+      </div>
+      <div class="mem1 left">
+      <span>白兎 深月</span>
+      <p>
+      
+            1D50 (1D50) ＞ 5
+            
+      </p>
+      </div>
+      <div class="mem1 left">
+      <span>白兎 深月</span>
+      <p>
+      
+            「元気な赤ん坊だなぁ」
+      </p>
+      </div>
+      <div class="kp LtoR-early">
+      
+            自分にもう一本腕が生えてきた。便利だ。<br>グッドトリップ→ひどく高まった幸福な気持ちになる。SAN 値+1d5
+      </div>
+      <div class="mem1 left">
+      <span>白兎 深月</span>
+      <p>
+      
+            choice[右腕,左腕] (choice[右腕,左腕]) ＞ 左腕
+            
+      </p>
+      </div>
+      <div class="mem1 left">
+      <span>白兎 深月</span>
+      <p>
+      
+            「あらこれすっごい面白いね」
+      </p>
+      </div>
+      <div class="mem1 left">
+      <span>白兎 深月</span>
+      <p>
+      
+            「でもバランス悪いから右にも生えないかな」
+      </p>
+      </div>
+      <div class="mem1 left">
+      <span>白兎 深月</span>
+      <p>
+      
+            1D5 (1D5) ＞ 4
+            
+      </p>
+      </div>
+      <div class="mem2 right">
+      <span>system</span>
+      <p>
+      
+            [ 白兎 深月 ] SAN : 56 → 60
+      </p>
+      </div>
+      <div class="kp LtoR-early">
+      
+            一瞬後には赤ん坊も左腕も消えている。
+      </div>
+      <div class="mem1 left">
+      <span>白兎 深月</span>
+      <p>
+      
+            「あら、残念」
+      </p>
+      </div>
+      <div class="kp LtoR-early">
+      
+            ◇ファミリーレストラン<br>明るい雰囲気の店。24 時間営業しているようだ。<br>＜幸運＞
+      </div>
+      <div class="mem1 left">
+      <span>白兎 深月</span>
+      <p>
+      
+            CCB&lt;=65 【幸運】 (1D100&lt;=65) ＞ 57 ＞ 成功
+            
+      </p>
+      </div>
+      <div class="kp LtoR-early">
+      
+            で感じのいいウェイターが「いらっしゃいませ！」と言う。
+      </div>
+      <div class="mem1 left">
+      <span>白兎 深月</span>
+      <p>
+      
+            「すいません、ここにグチャグチャの落とし物ありませんか？」
+      </p>
+      </div>
+      <div class="mem6 right">
+      <span>店員</span>
+      <p>
+      
+            「グチャグチャはちょっとないですねぇ……何名様ですか？」
+      </p>
+      </div>
+      <div class="mem1 left">
+      <span>白兎 深月</span>
+      <p>
+      
+            「一人と一グチャグチャです」
+      </p>
+      </div>
+      <div class="mem6 right">
+      <span>店員</span>
+      <p>
+      
+            「かしこまりました。こちらのお席へどうぞ！」
+      </p>
+      </div>
+      <div class="mem1 left">
+      <span>白兎 深月</span>
+      <p>
+      
+            「はぁい」
+      </p>
+      </div>
+      <div class="mem1 left">
+      <span>白兎 深月</span>
+      <p>
+      
+            「ここ初めてなんですけど、水とィヌってどういうものですか？」
+      </p>
+      </div>
+      <div class="mem1 left">
+      <span>白兎 深月</span>
+      <p>
+      
+            「あとグチャグチャって売ってますか？」
+      </p>
+      </div>
+      <div class="mem6 right">
+      <span>店員</span>
+      <p>
+      
+            「グチャグチャはちょっとないですねぇ」
+      </p>
+      </div>
+      <div class="mem6 right">
+      <span>店員</span>
+      <p>
+      
+            「当店のメニューは水しかございません。水を、水を、水を水を水を飲まないと飲ま飲まないと飲まないといずれ死にます、中和を、中和をしないと血中濃度が、そう、どうぞ心ゆくまで！」
+      </p>
+      </div>
+      <div class="kp LtoR-early">
+      
+            ＜SANc＞0/1
+      </div>
+      <div class="mem1 left">
+      <span>白兎 深月</span>
+      <p>
+      
+            1d100&lt;=60 【正気度ロール】 (1D100&lt;=60) ＞ 94 ＞ 失敗
+            
+      </p>
+      </div>
+      <div class="mem2 right">
+      <span>system</span>
+      <p>
+      
+            [ 白兎 深月 ] SAN : 60 → 59
+      </p>
+      </div>
+      <div class="mem1 left">
+      <span>白兎 深月</span>
+      <p>
+      
+            「（店員さんってバグるんだ）」
+      </p>
+      </div>
+      <div class="mem6 right">
+      <span>店員</span>
+      <p>
+      
+            「あっ……その……ィヌは……当店オススメです！ その……あの……すごくあれなので……お値段！？ お構いなく！！ とにかくオススメです……！」
+      </p>
+      </div>
+      <div class="kp LtoR-early">
+      
+            ＜心理学＞
+      </div>
+      <div class="mem1 left">
+      <span>白兎 深月</span>
+      <p>
+      
+            CCB&lt;=5 【心理学】 (1D100&lt;=5) ＞ 80 ＞ 失敗
+            
+      </p>
+      </div>
+      <div class="mem1 left">
+      <span>白兎 深月</span>
+      <p>
+      
+            「あれでも、数時間前のお客さんは水五杯とィヌで500円でしたよね？」
+      </p>
+      </div>
+      <div class="kp LtoR-early">
+      
+            ●注文する<br>・・・・・<br>▼ファミレスメニュー<br>・水<br>・水<br>・水<br>・水<br>・水<br>・・・・・<br>……メニュー表は「水」の文字で埋め尽くされている。1 杯 100 円だ。＜SANc＞0/1<br>＜目星＞
+      </div>
+      <div class="mem1 left">
+      <span>白兎 深月</span>
+      <p>
+      
+            1d100&lt;=59 【正気度ロール】 (1D100&lt;=59) ＞ 91 ＞ 失敗
+            
+      </p>
+      </div>
+      <div class="mem2 right">
+      <span>system</span>
+      <p>
+      
+            [ 白兎 深月 ] SAN : 59 → 58
+      </p>
+      </div>
+      <div class="mem1 left">
+      <span>白兎 深月</span>
+      <p>
+      
+            CCB&lt;=60 【目星】 (1D100&lt;=60) ＞ 48 ＞ 成功
+            
+      </p>
+      </div>
+      <div class="kp LtoR-early">
+      
+            一つだけ「ィヌ」というメニューがあることに気が付く。値段は記載されていない。
+      </div>
+      <div class="mem1 left">
+      <span>白兎 深月</span>
+      <p>
+      
+            「（やべー店。水で腹を満たせとかしかも一杯100円ぼったくり店かな）」
+      </p>
+      </div>
+      <div class="mem1 left">
+      <span>白兎 深月</span>
+      <p>
+      
+            「あの、ィヌって…いくらですか？」
+      </p>
+      </div>
+      <div class="mem6 right">
+      <span>店員</span>
+      <p>
+      
+            「お値段！？ お構いなく！！ とにかくオススメです……！」
+      </p>
+      </div>
+      <div class="mem1 left">
+      <span>白兎 深月</span>
+      <p>
+      
+            「無限ループ！」
+      </p>
+      </div>
+      <div class="mem3 left">
+      <span>グチャグチャ</span>
+      <p>
+      
+            「水は大事だからねぇ」
+      </p>
+      </div>
+      <div class="mem1 left">
+      <span>白兎 深月</span>
+      <p>
+      
+            「じゃ、水とィヌを」
+      </p>
+      </div>
+      <div class="mem1 left">
+      <span>白兎 深月</span>
+      <p>
+      
+            「あ、やっぱり水二杯で」
+      </p>
+      </div>
+      <div class="mem6 right">
+      <span>店員</span>
+      <p>
+      
+            「か、かしこまりました！！」
+      </p>
+      </div>
+      <div class="mem1 left">
+      <span>白兎 深月</span>
+      <p>
+      
+            「ごめんね、グチャグチャ。お前の分を忘れてたよ」
+      </p>
+      </div>
+      <div class="mem3 left">
+      <span>グチャグチャ</span>
+      <p>
+      
+            「いいよぉ。グチャグチャだからねぇ」
+      </p>
+      </div>
+      <div class="kp LtoR-early">
+      
+            待っている間店内を見ると、客が一組だけいて頭を突き合わせて話をしている。<br>＜聞き耳＞
+      </div>
+      <div class="mem1 left">
+      <span>白兎 深月</span>
+      <p>
+      
+            CCB&lt;=66 【聞き耳】 (1D100&lt;=66) ＞ 43 ＞ 成功
+            
+      </p>
+      </div>
+      <div class="kp LtoR-early">
+      
+            ＞以下のことを話している。<br>・・・・・<br>▼黒い蓮について<br>黒い蓮の花から製造される粉を熱した際に立ち昇る香りには中毒性はないが、吸い込むと幻覚と幻視が起きる。<br>黒い蓮の影響下にある間、服用者は完全に周囲の様子を知覚することができなくなる。<br>服用者にとっての幻覚の世界は、現実世界と同様に現実味があって実体のあるものである。<br>中毒性はないが、実害はある。<br>自力で幻覚から醒めることは難しく、よほどの衝撃か、外部からのアプローチが必要だろう。<br>・・・・・
+      </div>
+      <div class="mem1 left">
+      <span>白兎 深月</span>
+      <p>
+      
+            「（あー。はいはい。ヤクですわこれ）」
+      </p>
+      </div>
+      <div class="mem1 left">
+      <span>白兎 深月</span>
+      <p>
+      
+            「（そういや消防の人も言ってたな）」
+      </p>
+      </div>
+      <div class="mem6 right">
+      <span>店員</span>
+      <p>
+      
+            「さ、先に水二杯になります……！」
+      </p>
+      </div>
+      <div class="mem1 left">
+      <span>白兎 深月</span>
+      <p>
+      
+            「あ、はいありがとうございます」
+      </p>
+      </div>
+      <div class="mem3 left">
+      <span>グチャグチャ</span>
+      <p>
+      
+            「わぁい水だよぉ」
+      </p>
+      </div>
+      <div class="mem1 left">
+      <span>白兎 深月</span>
+      <p>
+      
+            「（外部からのアプローチがあるかは不安だけど、よほどの衝撃は場合によっては死をもたらすから危険なんだよな）」
+      </p>
+      </div>
+      <div class="mem1 left">
+      <span>白兎 深月</span>
+      <p>
+      
+            「グチャグチャ、飲ませてあげる」
+      </p>
+      </div>
+      <div class="mem3 left">
+      <span>グチャグチャ</span>
+      <p>
+      
+            「助かるよぉ」
+      </p>
+      </div>
+      <div class="mem1 left">
+      <span>白兎 深月</span>
+      <p>
+      
+            袋に注ぎます
+      </p>
+      </div>
+      <div class="mem3 left">
+      <span>グチャグチャ</span>
+      <p>
+      
+            「水は大事だからねぇ」
+      </p>
+      </div>
+      <div class="mem3 left">
+      <span>グチャグチャ</span>
+      <p>
+      
+            ビチャビチャ
+      </p>
+      </div>
+      <div class="mem1 left">
+      <span>白兎 深月</span>
+      <p>
+      
+            「乾くと大変かもしれないからね」
+      </p>
+      </div>
+      <div class="mem3 left">
+      <span>グチャグチャ</span>
+      <p>
+      
+            「グチャグチャがカピカピになっちゃうからねぇ」
+      </p>
+      </div>
+      <div class="mem1 left">
+      <span>白兎 深月</span>
+      <p>
+      
+            「そうしたらくっつかなくなるかもだしね」
+      </p>
+      </div>
+      <div class="mem1 left">
+      <span>白兎 深月</span>
+      <p>
+      
+            「そしたら物理的に接着するしかないのか……それはそれで気になるな」
+      </p>
+      </div>
+      <div class="mem1 left">
+      <span>白兎 深月</span>
+      <p>
+      
+            と言いつつ水を飲みます
+      </p>
+      </div>
+      <div class="mem3 left">
+      <span>グチャグチャ</span>
+      <p>
+      
+            「水はいいねぇ。水を飲むべきだよぉ」
+      </p>
+      </div>
+      <div class="kp LtoR-early">
+      
+            あなた方が水を飲み終わってしばらくすると、突如として爆音のような吠え声が響き渡る。
+      </div>
+      <div class="mem1 left">
+      <span>白兎 深月</span>
+      <p>
+      
+            「新鮮だなぁ（棒読み）」
+      </p>
+      </div>
+      <div class="kp LtoR-early">
+      
+            ◇ィヌ襲来<br>振り返るとそこには大きなィヌがいた。探索者は恐怖する。＜SANc＞1d3/1d20
+      </div>
+      <div class="mem1 left">
+      <span>白兎 深月</span>
+      <p>
+      
+            1d100&lt;=58 【正気度ロール】 (1D100&lt;=58) ＞ 90 ＞ 失敗
+            
+      </p>
+      </div>
+      <div class="mem1 left">
+      <span>白兎 深月</span>
+      <p>
+      
+            1D20 (1D20) ＞ 7
+            
+      </p>
+      </div>
+      <div class="mem2 right">
+      <span>system</span>
+      <p>
+      
+            [ 白兎 深月 ] SAN : 58 → 51
+      </p>
+      </div>
+      <div class="mem1 left">
+      <span>白兎 深月</span>
+      <p>
+      
+            CCB&lt;=80 【アイデア】 (1D100&lt;=80) ＞ 44 ＞ 成功
+            
+      </p>
+      </div>
+      <div class="mem1 left">
+      <span>白兎 深月</span>
+      <p>
+      
+            「うわぁィヌだぁあああああああああ」
+      </p>
+      </div>
+      <div class="mem1 left">
+      <span>白兎 深月</span>
+      <p>
+      
+            1D10 (1D10) ＞ 8
+            
+      </p>
+      </div>
+      <div class="mem1 left">
+      <span>白兎 深月</span>
+      <p>
+      
+            「わんわんわん！」
+      </p>
+      </div>
+      <div class="mem3 left">
+      <span>グチャグチャ</span>
+      <p>
+      
+            「わわわ、大変なことになっちゃったよぉ」
+      </p>
+      </div>
+      <div class="mem1 left">
+      <span>白兎 深月</span>
+      <p>
+      
+            「わわわ、大変なことになっちゃったよぉ」
+      </p>
+      </div>
+      <div class="mem3 left">
+      <span>グチャグチャ</span>
+      <p>
+      
+            「とにかく逃げようねぇ」
+      </p>
+      </div>
+      <div class="mem1 left">
+      <span>白兎 深月</span>
+      <p>
+      
+            「とにかく逃げようねぇ」
+      </p>
+      </div>
+      <div class="mem3 left">
+      <span>グチャグチャ</span>
+      <p>
+      
+            「こっちだよぉ、こっち」がんばって外を指し示そうとしています
+      </p>
+      </div>
+      <div class="mem1 left">
+      <span>白兎 深月</span>
+      <p>
+      
+            「こっちだよぉ、こっち」
+      </p>
+      </div>
+      <div class="mem1 left">
+      <span>白兎 深月</span>
+      <p>
+      
+            グチャグチャをもって指？指の方へ向かいます
+      </p>
+      </div>
+      <div class="kp LtoR-early">
+      
+            では外に出てグチャグチャの示す方へしばらく歩くと落ち着いてくるでしょう。ィヌは追いかけてきません
+      </div>
+      <div class="mem1 left">
+      <span>白兎 深月</span>
+      <p>
+      
+            「ふはー。お風呂入ったのに汗かいちゃった」
+      </p>
+      </div>
+      <div class="mem1 left">
+      <span>白兎 深月</span>
+      <p>
+      
+            「で、なんだっけ？」
+      </p>
+      </div>
+      <div class="mem1 left">
+      <span>白兎 深月</span>
+      <p>
+      
+            「あぁ。なんかやべーわんころが襲い掛かってきてびっくりしたんだった」
+      </p>
+      </div>
+      <div class="mem1 left">
+      <span>白兎 深月</span>
+      <p>
+      
+            「ありがと、グチャグチャ」
+      </p>
+      </div>
+      <div class="mem3 left">
+      <span>グチャグチャ</span>
+      <p>
+      
+            「そうだよぉ。ィヌはこわいよぉ」
+      </p>
+      </div>
+      <div class="mem3 left">
+      <span>グチャグチャ</span>
+      <p>
+      
+            「で、どこに行こうか」
+      </p>
+      </div>
+      <div class="mem1 left">
+      <span>白兎 深月</span>
+      <p>
+      
+            「あとはラーメン店と公園だけど、先にラーメン店じゃない？」
+      </p>
+      </div>
+      <div class="mem3 left">
+      <span>グチャグチャ</span>
+      <p>
+      
+            「ラーメン屋に先に行こうかぁ」
+      </p>
+      </div>
+      <div class="mem1 left">
+      <span>白兎 深月</span>
+      <p>
+      
+            「だねぇ」
+      </p>
+      </div>
+      <div class="kp LtoR-early">
+      
+            ◇ラーメン屋<br>高架下には猛スピードで車が行き交っている。狂気的とも思えるスピードだが、不思議と事故は起きていない。みんな運転が上手いのだろう。<br>＜アイデア＞
+      </div>
+      <div class="mem1 left">
+      <span>白兎 深月</span>
+      <p>
+      
+            CCB&lt;=80 【アイデア】 (1D100&lt;=80) ＞ 38 ＞ 成功
+            
+      </p>
+      </div>
+      <div class="kp LtoR-early">
+      
+            道路に足を踏み出せば簡単に死ねるかもしれない、と頭をよぎる。
+      </div>
+      <div class="mem1 left">
+      <span>白兎 深月</span>
+      <p>
+      
+            「やべー高速移動」
+      </p>
+      </div>
+      <div class="mem1 left">
+      <span>白兎 深月</span>
+      <p>
+      
+            「あー。なるへそ」
+      </p>
+      </div>
+      <div class="mem1 left">
+      <span>白兎 深月</span>
+      <p>
+      
+            「ま、もう少し様子見かな」
+      </p>
+      </div>
+      <div class="mem1 left">
+      <span>白兎 深月</span>
+      <p>
+      
+            「約束は違えない女だぜ」
+      </p>
+      </div>
+      <div class="kp LtoR-early">
+      
+            ラーメン屋はすぐに見つかる。のぼりが立っており、中からは工事現場のような音が響いている。<br>声をかけると、中から店主が顔を出した。
+      </div>
+      <div class="mem1 left">
+      <span>白兎 深月</span>
+      <p>
+      
+            「大将、グチャグチャーメン一つ」
+      </p>
+      </div>
+      <div class="mem8 right">
+      <span>ラーメン屋店主</span>
+      <p>
+      
+            「オッ、見る目があるねぇお嬢ちゃん。でもまずはメニューを見てくれよ」
+      </p>
+      </div>
+      <div class="mem1 left">
+      <span>白兎 深月</span>
+      <p>
+      
+            「わかりましたぁ」
+      </p>
+      </div>
+      <div class="mem1 left">
+      <span>白兎 深月</span>
+      <p>
+      
+            席に座ろう
+      </p>
+      </div>
+      <div class="kp LtoR-early">
+      
+            ・・・・・<br>▼ラーメン屋メニュー<br>・ジャブジャブランランメン<br>・クギ<br>・バビニクジンメン<br>・シュゴーメン<br>・グチャグチャーメン<br>・グチャグチャーハン<br>・フリーメイーソン<br>・キーザ（小）<br>※定食できます。大盛無料。替え玉+100 円。<br>・・・・・
+      </div>
+      <div class="mem8 right">
+      <span>ラーメン屋店主</span>
+      <p>
+      
+            「腹に余裕があるならまずはグチャグチャーハンがおすすめ。ないならジャブジャブランランメンが看板メニューだ。どうする？お嬢ちゃん」
+      </p>
+      </div>
+      <div class="mem1 left">
+      <span>白兎 深月</span>
+      <p>
+      
+            「さっきの店で食べてないからグチャグチャーハンかな。定食にするとどうなります？」
+      </p>
+      </div>
+      <div class="mem8 right">
+      <span>ラーメン屋店主</span>
+      <p>
+      
+            「定食にするとハンとメンになるかな」
+      </p>
+      </div>
+      <div class="mem1 left">
+      <span>白兎 深月</span>
+      <p>
+      
+            「じゃハンメンで」
+      </p>
+      </div>
+      <div class="mem8 right">
+      <span>ラーメン屋店主</span>
+      <p>
+      
+            「グチャグチャーハンメン一丁！」
+      </p>
+      </div>
+      <div class="mem8 right">
+      <span>ラーメン屋店主</span>
+      <p>
+      
+            「おあがりよ！」
+      </p>
+      </div>
+      <div class="mem1 left">
+      <span>白兎 深月</span>
+      <p>
+      
+            「さんきゅー」
+      </p>
+      </div>
+      <div class="kp LtoR-early">
+      
+            グチャグチャが入っており、それを取り囲むようにメンとハンが盛りつけられている。<br>・入手アイテム→［グチャグチャの破片］
+      </div>
+      <div class="mem1 left">
+      <span>白兎 深月</span>
+      <p>
+      
+            「あ、グチャグチャあった」
+      </p>
+      </div>
+      <div class="mem1 left">
+      <span>白兎 深月</span>
+      <p>
+      
+            「ほら、グチャグチャおたべ」
+      </p>
+      </div>
+      <div class="mem3 left">
+      <span>グチャグチャ</span>
+      <p>
+      
+            「わぁい。ありがとうねぇ」
+      </p>
+      </div>
+      <div class="mem1 left">
+      <span>白兎 深月</span>
+      <p>
+      
+            グチャグチャ部分を入れます
+      </p>
+      </div>
+      <div class="mem3 left">
+      <span>グチャグチャ</span>
+      <p>
+      
+            「……思い出してきたよぉ。私の名前は、新雪 康夫（しんせつ やすお）。……でも私がここにいるはずがないんだ。どうしてだろう……もっと思い出したいな」
+      </p>
+      </div>
+      <div class="mem1 left">
+      <span>白兎 深月</span>
+      <p>
+      
+            「お前、そんな名前だったのか」
+      </p>
+      </div>
+      <div class="mem9 left">
+      <span>グチャグチャ（新雪 康夫（しんせつ やすお））</span>
+      <p>
+      
+            「でもグチャグチャでいいよぉ」
+      </p>
+      </div>
+      <div class="mem1 left">
+      <span>白兎 深月</span>
+      <p>
+      
+            「わかった」
+      </p>
+      </div>
+      <div class="mem1 left">
+      <span>白兎 深月</span>
+      <p>
+      
+            残りのメンとハンの部分を食べる
+      </p>
+      </div>
+      <div class="mem8 right">
+      <span>ラーメン屋店主</span>
+      <p>
+      
+            「お嬢ちゃん、グチャグチャーハンメンは初めてかい？」
+      </p>
+      </div>
+      <div class="mem1 left">
+      <span>白兎 深月</span>
+      <p>
+      
+            「うん、はじめて」
+      </p>
+      </div>
+      <div class="mem1 left">
+      <span>白兎 深月</span>
+      <p>
+      
+            「でもグチャグチャーの分はグチャグチャが食べたいっていうからあげた」
+      </p>
+      </div>
+      <div class="mem8 right">
+      <span>ラーメン屋店主</span>
+      <p>
+      
+            「初めてがうちの店とは嬉しいねぇ！　今後ともよろしく！」
+      </p>
+      </div>
+      <div class="mem1 left">
+      <span>白兎 深月</span>
+      <p>
+      
+            「うん」
+      </p>
+      </div>
+      <div class="mem1 left">
+      <span>白兎 深月</span>
+      <p>
+      
+            「全メニュー制覇する」
+      </p>
+      </div>
+      <div class="mem8 right">
+      <span>ラーメン屋店主</span>
+      <p>
+      
+            「うれしいねぇ！　これ、サービス券だよ！」
+      </p>
+      </div>
+      <div class="mem1 left">
+      <span>白兎 深月</span>
+      <p>
+      
+            「ありがと」
+      </p>
+      </div>
+      <div class="mem1 left">
+      <span>白兎 深月</span>
+      <p>
+      
+            「じゃ、ちょっと物足りないからクギを食べようかな？それとも、看板のジャブジャブランランメンのがいい？」
+      </p>
+      </div>
+      <div class="mem8 right">
+      <span>ラーメン屋店主</span>
+      <p>
+      
+            「どっちも食ってくれたらうれしいけど、お嬢ちゃんの好きな方にしな！　通ってくれるんだろ？」
+      </p>
+      </div>
+      <div class="mem1 left">
+      <span>白兎 深月</span>
+      <p>
+      
+            「うん。じゃ、ランランメンは次の楽しみにしておくからクギで」
+      </p>
+      </div>
+      <div class="mem8 right">
+      <span>ラーメン屋店主</span>
+      <p>
+      
+            「クギ一丁！」
+      </p>
+      </div>
+      <div class="mem8 right">
+      <span>ラーメン屋店主</span>
+      <p>
+      
+            「お待ち！」
+      </p>
+      </div>
+      <div class="kp LtoR-early">
+      
+            ・クギ→美味しい。HP-1d3、SAN 値+10
+      </div>
+      <div class="mem1 left">
+      <span>白兎 深月</span>
+      <p>
+      
+            1D3 (1D3) ＞ 2
+            
+      </p>
+      </div>
+      <div class="mem2 right">
+      <span>system</span>
+      <p>
+      
+            [ 白兎 深月 ] HP : 11 → 9
+      </p>
+      </div>
+      <div class="mem2 right">
+      <span>system</span>
+      <p>
+      
+            [ 白兎 深月 ] SAN : 51 → 61
+      </p>
+      </div>
+      <div class="mem1 left">
+      <span>白兎 深月</span>
+      <p>
+      
+            「くぅーおいしい」
+      </p>
+      </div>
+      <div class="mem8 right">
+      <span>ラーメン屋店主</span>
+      <p>
+      
+            「お嬢ちゃん、お目が高いねぇ！」
+      </p>
+      </div>
+      <div class="mem1 left">
+      <span>白兎 深月</span>
+      <p>
+      
+            「へへ。いろんな場所で食べてるけど、ここのおいしいね」
+      </p>
+      </div>
+      <div class="mem8 right">
+      <span>ラーメン屋店主</span>
+      <p>
+      
+            「うれしいねぇ！　おっちゃん泣けてきちゃうよ！」
+      </p>
+      </div>
+      <div class="mem1 left">
+      <span>白兎 深月</span>
+      <p>
+      
+            「大将、ずっと続けてね」
+      </p>
+      </div>
+      <div class="mem8 right">
+      <span>ラーメン屋店主</span>
+      <p>
+      
+            「お嬢ちゃんにそういわれたら、頑張らねぇわけにはいかねぇなぁ！」
+      </p>
+      </div>
+      <div class="mem1 left">
+      <span>白兎 深月</span>
+      <p>
+      
+            「うん。その意気だ」
+      </p>
+      </div>
+      <div class="mem8 right">
+      <span>ラーメン屋店主</span>
+      <p>
+      
+            「ありがとよ！」
+      </p>
+      </div>
+      <div class="mem1 left">
+      <span>白兎 深月</span>
+      <p>
+      
+            「それで今日はいくらだい？」
+      </p>
+      </div>
+      <div class="mem8 right">
+      <span>ラーメン屋店主</span>
+      <p>
+      
+            「お嬢ちゃんいっぱいほめてくれたからね、サービスで半額の555円でいいよ！」
+      </p>
+      </div>
+      <div class="mem1 left">
+      <span>白兎 深月</span>
+      <p>
+      
+            「ありがとう。……はい、」
+      </p>
+      </div>
+      <div class="mem8 right">
+      <span>ラーメン屋店主</span>
+      <p>
+      
+            「ありがとよ！　気をつけてな！」
+      </p>
+      </div>
+      <div class="mem1 left">
+      <span>白兎 深月</span>
+      <p>
+      
+            「うん」
+      </p>
+      </div>
+      <div class="mem1 left">
+      <span>白兎 深月</span>
+      <p>
+      
+            「いこう。グチャグチャ」
+      </p>
+      </div>
+      <div class="mem9 left">
+      <span>グチャグチャ（新雪 康夫（しんせつ やすお））</span>
+      <p>
+      
+            「行こうかぁ」
+      </p>
+      </div>
+      <div class="mem1 left">
+      <span>白兎 深月</span>
+      <p>
+      
+            1D20 (1D20) ＞ 3
+            
+      </p>
+      </div>
+      <div class="mem1 left">
+      <span>白兎 深月</span>
+      <p>
+      
+            1D20 (1D20) ＞ 20
+            
+      </p>
+      </div>
+      <div class="kp LtoR-early">
+      
+            あなたが夜の街を歩いていると、カンカンカンカンという音がして頭上に遮断機が現れ、ギロチンのように振ってきた。
+      </div>
+      <div class="mem1 left">
+      <span>白兎 深月</span>
+      <p>
+      
+            CCB&lt;=13*5 【POW × 5】 (1D100&lt;=65) ＞ 68 ＞ 失敗
+            
+      </p>
+      </div>
+      <div class="mem1 left">
+      <span>白兎 深月</span>
+      <p>
+      
+            1D50 (1D50) ＞ 35
+            
+      </p>
+      </div>
+      <div class="kp LtoR-early">
+      
+            ぱちん、ぱちん、と爪を切る音がする。ほどなくして耳をつんざく絶叫が響いた。<br>バッドトリップ→ひどく恐ろしい不快な気持ちになる。SAN 値-1d5
+      </div>
+      <div class="mem1 left">
+      <span>白兎 深月</span>
+      <p>
+      
+            1D5 (1D5) ＞ 2
+            
+      </p>
+      </div>
+      <div class="mem2 right">
+      <span>system</span>
+      <p>
+      
+            [ 白兎 深月 ] SAN : 61 → 59
+      </p>
+      </div>
+      <div class="mem1 left">
+      <span>白兎 深月</span>
+      <p>
+      
+            「うっわ、うっわ。いやな気分」
+      </p>
+      </div>
+      <div class="kp LtoR-early">
+      
+            一瞬後には遮断器も絶叫もなくなっている。
+      </div>
+      <div class="mem1 left">
+      <span>白兎 深月</span>
+      <p>
+      
+            「これぞまさにホラー」
+      </p>
+      </div>
+      <div class="mem1 left">
+      <span>白兎 深月</span>
+      <p>
+      
+            「この体験ができているだけでも私は嬉しいのでは？」
+      </p>
+      </div>
+      <div class="mem1 left">
+      <span>白兎 深月</span>
+      <p>
+      
+            「これは、研究レポートに使えるのでは」
+      </p>
+      </div>
+      <div class="kp LtoR-early">
+      
+            ◇公園<br>明かりがついている。静かな公園だ。<br>中華服の男が灰皿の前で煙草を吸っている。<br>＜目星＞
+      </div>
+      <div class="mem1 left">
+      <span>白兎 深月</span>
+      <p>
+      
+            「お、おまえは！」
+      </p>
+      </div>
+      <div class="mem1 left">
+      <span>白兎 深月</span>
+      <p>
+      
+            CCB&lt;=60 【目星】 (1D100&lt;=60) ＞ 42 ＞ 成功
+            
+      </p>
+      </div>
+      <div class="mem1 left">
+      <span>白兎 深月</span>
+      <p>
+      
+            「女装変態男！」
+      </p>
+      </div>
+      <div class="kp LtoR-early">
+      
+            胸ポケットになんか入っている。血が染み出ている。
+      </div>
+      <div class="mem1 left">
+      <span>白兎 深月</span>
+      <p>
+      
+            「あ、グチャグチャがいそう」
+      </p>
+      </div>
+      <div class="mem10 right">
+      <span>中華服の男</span>
+      <p>
+      
+            「なんそれ」
+      </p>
+      </div>
+      <div class="mem1 left">
+      <span>白兎 深月</span>
+      <p>
+      
+            「人の服を勝手に持ってて血までつけたじゃないか！」
+      </p>
+      </div>
+      <div class="mem10 right">
+      <span>中華服の男</span>
+      <p>
+      
+            「女装変態男じゃないヨ」
+      </p>
+      </div>
+      <div class="mem1 left">
+      <span>白兎 深月</span>
+      <p>
+      
+            「下着までご丁寧に持ってって」
+      </p>
+      </div>
+      <div class="mem10 right">
+      <span>中華服の男</span>
+      <p>
+      
+            「エ～？　あれボクノネ」
+      </p>
+      </div>
+      <div class="mem1 left">
+      <span>白兎 深月</span>
+      <p>
+      
+            「平然と間違えるならそれは自分が女性ものの下着をつけているということだ！つまり――変態」
+      </p>
+      </div>
+      <div class="mem1 left">
+      <span>白兎 深月</span>
+      <p>
+      
+            「お前は女性ものの下着をつけていると認めたのか？」
+      </p>
+      </div>
+      <div class="mem10 right">
+      <span>中華服の男</span>
+      <p>
+      
+            「エ～？　そんなことないヨ、会社の人ノ。普通ネ」
+      </p>
+      </div>
+      <div class="mem1 left">
+      <span>白兎 深月</span>
+      <p>
+      
+            「さっきボクノネって言ったじゃないか。自分でつけてるってことだろ」
+      </p>
+      </div>
+      <div class="mem1 left">
+      <span>白兎 深月</span>
+      <p>
+      
+            「それに会社の人間がそんなプライベートしかも下着関係を男に頼むなんぞするか」
+      </p>
+      </div>
+      <div class="mem10 right">
+      <span>中華服の男</span>
+      <p>
+      
+            「認識の問題ネ」
+      </p>
+      </div>
+      <div class="mem1 left">
+      <span>白兎 深月</span>
+      <p>
+      
+            「けど結局は服を血濡れにして捨ててるではないか」
+      </p>
+      </div>
+      <div class="mem1 left">
+      <span>白兎 深月</span>
+      <p>
+      
+            「会社の人間の服を捨てていいのか？」
+      </p>
+      </div>
+      <div class="mem10 right">
+      <span>中華服の男</span>
+      <p>
+      
+            「グチャグチャの体液だヨ。落としちゃったみたいネ」
+      </p>
+      </div>
+      <div class="mem1 left">
+      <span>白兎 深月</span>
+      <p>
+      
+            「あーグチャグチャは血の色だもんなぁ」
+      </p>
+      </div>
+      <div class="mem1 left">
+      <span>白兎 深月</span>
+      <p>
+      
+            「ってんな納得するわけない！」
+      </p>
+      </div>
+      <div class="mem1 left">
+      <span>白兎 深月</span>
+      <p>
+      
+            「あと、落としたってのも気づいたら拾いにいけよ！」
+      </p>
+      </div>
+      <div class="mem10 right">
+      <span>中華服の男</span>
+      <p>
+      
+            「ンー。むずかしネ～」
+      </p>
+      </div>
+      <div class="mem1 left">
+      <span>白兎 深月</span>
+      <p>
+      
+            「可哀そうだろ、会社の人！」
+      </p>
+      </div>
+      <div class="mem10 right">
+      <span>中華服の男</span>
+      <p>
+      
+            「がんばったんだけどナ～」
+      </p>
+      </div>
+      <div class="mem1 left">
+      <span>白兎 深月</span>
+      <p>
+      
+            「もう少し頑張ってやれよ！同僚だろ！」
+      </p>
+      </div>
+      <div class="mem10 right">
+      <span>中華服の男</span>
+      <p>
+      
+            「次からがんばるネ～」
+      </p>
+      </div>
+      <div class="mem1 left">
+      <span>白兎 深月</span>
+      <p>
+      
+            「今からがんばれよ！」
+      </p>
+      </div>
+      <div class="mem9 left">
+      <span>グチャグチャ（新雪 康夫（しんせつ やすお））</span>
+      <p>
+      
+            「私が見えるよぉ……」
+      </p>
+      </div>
+      <div class="mem1 left">
+      <span>白兎 深月</span>
+      <p>
+      
+            「今回の同僚は悲しむだろ！」
+      </p>
+      </div>
+      <div class="mem1 left">
+      <span>白兎 深月</span>
+      <p>
+      
+            「あぁ、そうだね！グチャグチャが見えるね！」
+      </p>
+      </div>
+      <div class="mem10 right">
+      <span>中華服の男</span>
+      <p>
+      
+            「やさしいネ」
+      </p>
+      </div>
+      <div class="mem1 left">
+      <span>白兎 深月</span>
+      <p>
+      
+            「どうやらそのポケットに入ってるのはこのグチャグチャのらしいんだが」
+      </p>
+      </div>
+      <div class="mem1 left">
+      <span>白兎 深月</span>
+      <p>
+      
+            「返してあげてくれないか？」
+      </p>
+      </div>
+      <div class="mem10 right">
+      <span>中華服の男</span>
+      <p>
+      
+            「グチャグチャほしいノ？　グチャグチャだから、あげるヨ」
+      </p>
+      </div>
+      <div class="mem1 left">
+      <span>白兎 深月</span>
+      <p>
+      
+            「あ。こっちは素直にくれた」
+      </p>
+      </div>
+      <div class="kp LtoR-early">
+      
+            ・入手アイテム→［グチャグチャの破片］
+      </div>
+      <div class="mem1 left">
+      <span>白兎 深月</span>
+      <p>
+      
+            「グチャグチャ、げんきー？」
+      </p>
+      </div>
+      <div class="mem9 left">
+      <span>グチャグチャ（新雪 康夫（しんせつ やすお））</span>
+      <p>
+      
+            「う～ん……なるほど。ぜんぶ分かったよぉ。君は今、夢を見ている。私は外から声をかけている……。他にしたいことはあるかなぁ？」<br>
+      </p>
+      </div>
+      <div class="mem1 left">
+      <span>白兎 深月</span>
+      <p>
+      
+            「あ。外からのアプローチの人だ」
+      </p>
+      </div>
+      <div class="mem1 left">
+      <span>白兎 深月</span>
+      <p>
+      
+            「夢だったかぁ。やっぱり。起きたら覚えてられるかなぁ。この夢について論文書いてみたいんだけどなぁ」
+      </p>
+      </div>
+      <div class="mem10 right">
+      <span>中華服の男</span>
+      <p>
+      
+            「ンー。困ってるみたいだから、あげるヨ。タダだヨ」
+      </p>
+      </div>
+      <div class="kp LtoR-early">
+      
+            ・入手アイテム→［なんかのタブレット］
+      </div>
+      <div class="mem1 left">
+      <span>白兎 深月</span>
+      <p>
+      
+            「あ。ありがとう」
+      </p>
+      </div>
+      <div class="mem1 left">
+      <span>白兎 深月</span>
+      <p>
+      
+            タブレットを調べようかな
+      </p>
+      </div>
+      <div class="mem1 left">
+      <span>白兎 深月</span>
+      <p>
+      
+            「これは？」
+      </p>
+      </div>
+      <div class="mem10 right">
+      <span>中華服の男</span>
+      <p>
+      
+            「ラムネヨ」
+      </p>
+      </div>
+      <div class="kp LtoR-early">
+      
+            ＜心理学＞
+      </div>
+      <div class="mem1 left">
+      <span>白兎 深月</span>
+      <p>
+      
+            CCB&lt;=5 【心理学】 (1D100&lt;=5) ＞ 38 ＞ 失敗
+            
+      </p>
+      </div>
+      <div class="mem9 left">
+      <span>グチャグチャ（新雪 康夫（しんせつ やすお））</span>
+      <p>
+      
+            「やめたほうがいいよぉ」
+      </p>
+      </div>
+      <div class="mem9 left">
+      <span>グチャグチャ（新雪 康夫（しんせつ やすお））</span>
+      <p>
+      
+            「食べないほうがいいよぉ」
+      </p>
+      </div>
+      <div class="mem1 left">
+      <span>白兎 深月</span>
+      <p>
+      
+            「あぁ、うん。変態さんのは食べないけどさ」
+      </p>
+      </div>
+      <div class="mem9 left">
+      <span>グチャグチャ（新雪 康夫（しんせつ やすお））</span>
+      <p>
+      
+            「よかったぁ」
+      </p>
+      </div>
+      <div class="mem1 left">
+      <span>白兎 深月</span>
+      <p>
+      
+            「よし、することはないね」
+      </p>
+      </div>
+      <div class="mem9 left">
+      <span>グチャグチャ（新雪 康夫（しんせつ やすお））</span>
+      <p>
+      
+            「よぉし。他の一切を見ずに、私の声だけに集中してくれるかなぁ？　目を瞑って……早くこの夢を終わらせよう」
+      </p>
+      </div>
+      <div class="mem1 left">
+      <span>白兎 深月</span>
+      <p>
+      
+            「うん…！」
+      </p>
+      </div>
+      <div class="mem1 left">
+      <span>白兎 深月</span>
+      <p>
+      
+            目を瞑ります
+      </p>
+      </div>
+      <div class="kp LtoR-early">
+      
+            ■【END-B】孵卵孵卵<br>目を閉じた探索者を揺り起こす者がいる。その声はいつもの、あるいはこの小一時間ほどですっかり聞き慣れたものだった。<br>「大丈夫かなぁ……しっかりして、起きておくれ！」<br>目蓋を上げるとそこには、新雪 康夫だろう人物がいる。もちろん五体満足だし、グチャグチャの肉塊になっているということもない。<br>聞けば、探索者のいたコインランドリーの隣で火事が起きたらしい。煙を吸い込んで中毒状態に陥った探索者は意識を失っており、偶然通りがかった彼がずっと介抱をしてくれていたそうだ。<br>救急車のサイレンが近付いてくる。探索者は救急搬送されることになるだろう。<br>「よかったネ、悪夢が終わって」<br>……運んでくれた救急隊員の顔。それもまた、どこかで見たことがあるような気がした。<br>→生還<br>
+      </div>
+      <div class="kp LtoR-early">
+      
+            ――――――――――――――――――――――――<br>
+            ――――――――――――<br>
+            ――――――
+      </div>
+      <div class="kp LtoR-early">
+      
+            ・生還 SAN 値報酬→1d10
+      </div>
+      <div class="mem1 left">
+      <span>白兎 深月</span>
+      <p>
+      
+            1D10 (1D10) ＞ 1
+            
+      </p>
+      </div>
+      <div class="mem2 right">
+      <span>system</span>
+      <p>
+      
+            [ 白兎 深月 ] SAN : 59 → 60
+      </p>
+      </div>
+      <div class="mem1 left">
+      <span>白兎 深月</span>
+      <p>
+      
+            CCB&lt;=80 【アイデア】 (1D100&lt;=80) ＞ 52 ＞ 成功
+            
+      </p>
+      </div>
+      <div class="mem1 left">
+      <span>白兎 深月</span>
+      <p>
+      
+            CCB&lt;=60 【目星】 (1D100&lt;=60) ＞ 45 ＞ 成功
+            
+      </p>
+      </div>
+      <div class="mem1 left">
+      <span>白兎 深月</span>
+      <p>
+      
+            CCB&lt;=65 【母国語】 (1D100&lt;=65) ＞ 23 ＞ 成功
+            
+      </p>
+      </div>
+      <div class="mem1 left">
+      <span>白兎 深月</span>
+      <p>
+      
+            CCB&lt;=40 【説得】 (1D100&lt;=40) ＞ 6 ＞ スペシャル
+            
+      </p>
+      </div>
+      <div class="mem1 left">
+      <span>白兎 深月</span>
+      <p>
+      
+            CCB&lt;=65 【知識】 (1D100&lt;=65) ＞ 87 ＞ 失敗
+            
+      </p>
+      </div>
+      <div class="mem1 left">
+      <span>白兎 深月</span>
+      <p>
+      
+            CCB&lt;=66 【聞き耳】 (1D100&lt;=66) ＞ 22 ＞ 成功
+            
+      </p>
+      </div>
+      <div class="mem1 left">
+      <span>白兎 深月</span>
+      <p>
+      
+            CCB&lt;=65 【幸運】 (1D100&lt;=65) ＞ 72 ＞ 失敗
+            
+      </p>
+      </div>
+      <div class="mem1 left">
+      <span>白兎 深月</span>
+      <p>
+      
+            CCB&lt;=55 【図書館】 (1D100&lt;=55) ＞ 76 ＞ 失敗
+            
+      </p>
+      </div>
+      <div class="mem1 left">
+      <span>白兎 深月</span>
+      <p>
+      
+            心理学 知識・幸運
+      </p>
+      </div>
+      <div class="mem1 left">
+      <span>白兎 深月</span>
+      <p>
+      
+            2D10 (2D10) ＞ 16[7,9] ＞ 16
+            
+      </p>
+      </div>
+      <div class="mem1 left">
+      <span>白兎 深月</span>
+      <p>
+      
+            1D10 図書館 (1D10) ＞ 4
+            
+      </p>
+      </div>
+      </div>
+
+<br>
+</div></div>
+<script src="../logCon_Respon.js"></script>
+</body></html>
