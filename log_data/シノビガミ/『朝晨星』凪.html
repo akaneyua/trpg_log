@@ -1,0 +1,3841 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<title>log</title>
+<meta http-equiv="content-type" charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+<link rel="stylesheet" href="../logCon_Respon.css">
+<style>
+    /* main css */
+    .bg-inner.bg1{background:url('./凪画像/背景.png') no-repeat center/cover;}
+    
+    /* member */
+    .mem1 p{border:2px solid rgb(224, 224, 224);box-shadow:5px 5px 0 rgb(224, 224, 224);}
+.mem1 p:after{border-right-color:rgb(224, 224, 224);}
+.mem1 span{background:rgb(224, 224, 224);color:#000;}
+.mem1:before{content:'';background-image:url('./凪画像/参宿七_通常.png');background-size:contain;background-repeat:no-repeat;background-position:center center;width:90px;height:90px;}
+.mem2 p{border:2px solid rgb(255, 235, 59);box-shadow:5px 5px 0 rgb(255, 235, 59);}
+.mem2 p:after{border-left-color:rgb(255, 235, 59);}
+.mem2 span{background:rgb(255, 235, 59);color:#000;}
+.mem2:before{content:'';background-image:url('./凪画像/煌良.png');background-size:contain;background-repeat:no-repeat;background-position:center center;width:90px;height:90px;}
+.mem3 p{border:2px solid rgb(76, 175, 80);box-shadow:5px 5px 0 rgb(76, 175, 80);}
+.mem3 p:after{border-right-color:rgb(76, 175, 80);}
+.mem3 span{background:rgb(76, 175, 80);color:#fff;}
+.mem3:before{content:'';background-image:url('./凪画像/ミミ.png');background-size:contain;background-repeat:no-repeat;background-position:center center;width:90px;height:90px;}
+.mem4 p{border:2px solid rgb(156, 39, 176);box-shadow:5px 5px 0 rgb(156, 39, 176);}
+.mem4 p:after{border-left-color:rgb(156, 39, 176);}
+.mem4 span{background:rgb(156, 39, 176);color:#fff;}
+.mem4:before{content:'';background-image:url('./凪画像/咬威.png');background-size:contain;background-repeat:no-repeat;background-position:center center;width:90px;height:90px;}
+.mem5 p{border:2px solid rgb(136, 136, 136);box-shadow:5px 5px 0 rgb(136, 136, 136);}
+.mem5 p:after{border-right-color:rgb(136, 136, 136);}
+.mem5 span{background:rgb(136, 136, 136);color:#fff;}
+.mem5:before{content:'';background-image:url('5.png');background-size:contain;background-repeat:no-repeat;background-position:center center;width:90px;height:90px;}
+.mem6 p{border:2px solid rgb(136, 136, 136);box-shadow:5px 5px 0 rgb(136, 136, 136);}
+.mem6 p:after{border-left-color:rgb(136, 136, 136);}
+.mem6 span{background:rgb(136, 136, 136);color:#fff;}
+.mem6:before{content:'';background-image:url('6.png');background-size:contain;background-repeat:no-repeat;background-position:center center;width:90px;height:90px;}
+
+    @media only screen and (max-width: 768px) {
+        .mem1 p:after{border-right-color:rgb(224, 224, 224);border-left-color:transparent;}
+        .mem2 p:after{border-right-color:rgb(255, 235, 59);border-left-color:transparent;}
+        .mem3 p:after{border-right-color:rgb(76, 175, 80);border-left-color:transparent;}
+        .mem4 p:after{border-right-color:rgb(156, 39, 176);border-left-color:transparent;}
+        .mem5 p:after{border-right-color:rgb(136, 136, 136);border-left-color:transparent;}
+        .mem6 p:after{border-right-color:rgb(136, 136, 136);border-left-color:transparent;}
+    
+        .mem1:before,.mem2:before,.mem3:before,
+        .mem4:before,.mem5:before,.mem6:before{width:70px;height:70px;}
+    }
+</style>
+</head>
+<body>
+    <p id="page-top"><a href="#"><i class="page-top__arrow"></i></a></p>
+	<div class="leftwhite"></div>
+	<div class="rightwhite"></div>
+	<div class="bg-sp">
+    <div class="bg-over"><div class="bg-inner bg1"></div></div>
+	<div class="log">
+
+        <div class="kp LtoR-early">
+
+            巨星墜つ――<br>春風がまだ寒さを孕む季節、天光流が頭領"朱赫"がその命を終えた。<br>この知らせは瞬く間に広がり、忍界を賑わせると同時にある疑問が囁かれた。<br>門外不出の究極奥義【超新星】は誰に継承されたのかと。<br><br>時を同じくして日本海沖、結界により巧妙に隠された小群島、始星源。<br>天光流の手ほどきを受けた継承資格者達がこの地を目指し上陸を待ちわびていた。<br><br><br>忍術バトルRPG シノビガミ<br>『朝晨星』<br><br>命瞬き、星を紡ぐ。<br><br>
+      </div>
+      <div class="kp LtoR-early">
+      
+            ――１隻の小舟が湖に浮かんでいる。
+      </div>
+      <div class="kp LtoR-early">
+      
+            舟を操る女性は器用に舵を取りながら、行く手を阻む岩山を軽やかにかわし、霧の中を進む。<br>この舟に乗って何日経ったのだろう。師の訃報を知ったあなた達は、事情を知る姉弟子のもとを訪ねた。<br>彼女はあなたたち３人が揃ったのを確認するや否や船に乗るよう捲し立て、気が付けばこの通り波に揺られている状況だ。<br>大した説明もされず、我慢の限界を迎えようという頃、姉弟子"参宿七"から声がかかる。
+      </div>
+      <div class="mem1 left">
+      <span>参 宿七</span>
+      <p>
+      
+            「――見えましたね。あなたたち！起きなさい！いつまで寝ているのですか！」
+      </p>
+      </div>
+      <div class="mem2 right">
+      <span>星影 煌良</span>
+      <p>
+      
+            「フゥン…清々しい朝…とはいかないようだな」
+      </p>
+      </div>
+      <div class="mem3 left">
+      <span>木影 ミミ</span>
+      <p>
+      
+            「……ふぇ？」<br>「ねっ、寝てないです！　全然！……ふぁ〜」大欠伸
+      </p>
+      </div>
+      <div class="mem4 right">
+      <span>十影 咬威</span>
+      <p>
+      
+            参さんの声にゆっくり目を開けるとにやっと笑い<br>「見えてきたか。この地に足を踏み入れるのは何年ぶりだったか」
+      </p>
+      </div>
+      <div class="mem1 left">
+      <span>参 宿七</span>
+      <p>
+      
+            「つきましたよ。懐かしき修行の地です」
+      </p>
+      </div>
+      <div class="kp LtoR-early">
+      
+            船外に出ると、見覚えのある切り立った山々が目に映る。ここは始星源。天光流が保有する絶海の秘境だ。<br>川沿いにしばらく進むと、かつての賑わいが感じられる廃墟が姿を現した。<br>そこから伸びる桟橋に舟を寄せ、着船する。
+      </div>
+      <div class="mem1 left">
+      <span>参 宿七</span>
+      <p>
+      
+            「さてあなた達、師匠から頂戴した振り子は持っていますね？」
+      </p>
+      </div>
+      <div class="mem3 left">
+      <span>木影 ミミ</span>
+      <p>
+      
+            「はい！　出かける前に3回ほど確認しましたあ！」
+      </p>
+      </div>
+      <div class="mem4 right">
+      <span>十影 咬威</span>
+      <p>
+      
+            「もちろん。待ちに待ったこの日に忘れるわけがなかろうよ」
+      </p>
+      </div>
+      <div class="mem2 right">
+      <span>星影 煌良</span>
+      <p>
+      
+            「ハッハァ　もちろんここにある。この俺様が子猫ﾁｬﾝの頼みを断れるわけがないからな！」
+      </p>
+      </div>
+      <div class="mem1 left">
+      <span>参 宿七</span>
+      <p>
+      
+            「よろしい。それは『冬星の振り子』。天光流が奥義【超新星】の継承の鍵になります」
+      </p>
+      </div>
+      <div class="mem1 left">
+      <span>参 宿七</span>
+      <p>
+      
+            「つまり、それを師から授かった時点であなた方には見込みがあるという事です」
+      </p>
+      </div>
+      <div class="mem1 left">
+      <span>参 宿七</span>
+      <p>
+      
+            「……この儀式について、私もすべてを知るわけではありません。ですが過酷なものであることは違いないでしょう」
+      </p>
+      </div>
+      <div class="mem1 left">
+      <span>参 宿七</span>
+      <p>
+      
+            「率直に言えば……私としては不安です。あなた達のような、まだ幼い――」
+      </p>
+      </div>
+      <div class="mem1 left">
+      <span>参 宿七</span>
+      <p>
+      
+            「……」
+      </p>
+      </div>
+      <div class="mem2 right">
+      <span>星影 煌良</span>
+      <p>
+      
+            「フゥン　年齢など恋の前には関係ないさ」
+      </p>
+      </div>
+      <div class="kp LtoR-early">
+      
+            彼女は不安な表情で何かを言いよどむ。その言葉を飲み込むと、冷静に話を続けた。
+      </div>
+      <div class="mem4 right">
+      <span>十影 咬威</span>
+      <p>
+      
+            「幼い？かの参小姐も目が曇られたかな。年齢だけで判断されるとは」/
+      </p>
+      </div>
+      <div class="mem1 left">
+      <span>参 宿七</span>
+      <p>
+      
+            「私から見たら、咬威、貴方も幼いのですよ？」
+      </p>
+      </div>
+      <div class="mem4 right">
+      <span>十影 咬威</span>
+      <p>
+      
+            「はは、その様子だと一生その認識は覆られなさそうだ」と肩を竦めつつ
+      </p>
+      </div>
+      <div class="mem4 right">
+      <span>十影 咬威</span>
+      <p>
+      
+            「だがそれも今日まで。この俺が超新星を継ぐにふさわしいと証明してみせよう」サングラスキラーン/
+      </p>
+      </div>
+      <div class="mem3 left">
+      <span>木影 ミミ</span>
+      <p>
+      
+            「おお〜」ぱちぱち
+      </p>
+      </div>
+      <div class="mem2 right">
+      <span>星影 煌良</span>
+      <p>
+      
+            「その心意気　煌めいているな」
+      </p>
+      </div>
+      <div class="mem1 left">
+      <span>参 宿七</span>
+      <p>
+      
+            「こほん。――儀式はこの地で行い、振り子がすべて導くと聞いています」
+      </p>
+      </div>
+      <div class="mem1 left">
+      <span>参 宿七</span>
+      <p>
+      
+            「まずは『冬星の振り子』について探るといいでしょう」
+      </p>
+      </div>
+      <div class="mem1 left">
+      <span>参 宿七</span>
+      <p>
+      
+            「そして、この儀式が終わるまで何人たりとも始星源から出ることは叶いません」
+      </p>
+      </div>
+      <div class="mem1 left">
+      <span>参 宿七</span>
+      <p>
+      
+            「私は儀式の邪魔にならないよう、この地を移動しながら隠れています」
+      </p>
+      </div>
+      <div class="mem1 left">
+      <span>参 宿七</span>
+      <p>
+      
+            「 基本的に儀式は当事者以外の者が手を加えてはならないのです」
+      </p>
+      </div>
+      <div class="mem1 left">
+      <span>参 宿七</span>
+      <p>
+      
+            「……質問がなければ、行きなさい」
+      </p>
+      </div>
+      <div class="mem3 left">
+      <span>木影 ミミ</span>
+      <p>
+      
+            「わかりましたあ！　頑張ります！」むん
+      </p>
+      </div>
+      <div class="mem2 right">
+      <span>星影 煌良</span>
+      <p>
+      
+            「SHOW TIMEの始まりだ！」
+      </p>
+      </div>
+      <div class="mem4 right">
+      <span>十影 咬威</span>
+      <p>
+      
+            「ああ、俺達はもう幼くはないと見ているといい」引きずるな/
+      </p>
+      </div>
+      <div class="mem1 left">
+      <span>参 宿七</span>
+      <p>
+      
+            「わかりました、貴方は幼いではなく若いという表現がいいのですね」頭ヨシヨシ
+      </p>
+      </div>
+      <div class="mem4 right">
+      <span>十影 咬威</span>
+      <p>
+      
+            「いや、俺だけではないと思うが...大の大人の頭を撫でるのはやめてくれ」やんわりと振り払いつつ
+      </p>
+      </div>
+      <div class="mem1 left">
+      <span>参 宿七</span>
+      <p>
+      
+            「私にとっては貴方もかわいい弟弟子ですからね」
+      </p>
+      </div>
+      <div class="mem4 right">
+      <span>十影 咬威</span>
+      <p>
+      
+            やれやれとため息をつきつつ<br>「ほら、ミミも 煌良も、羨ましがってないでこっちに来て撫でてもらうといい」巻き込みました
+      </p>
+      </div>
+      <div class="mem1 left">
+      <span>参 宿七</span>
+      <p>
+      
+            「貴方達も撫でてほしいのですか？仕方ありませんね」
+      </p>
+      </div>
+      <div class="mem2 right">
+      <span>星影 煌良</span>
+      <p>
+      
+            「フッ…仕方ない子猫ﾁｬﾝだ　特別に俺様の頭を撫でさせてやろう」（てれてれして嬉しそう）
+      </p>
+      </div>
+      <div class="mem1 left">
+      <span>参 宿七</span>
+      <p>
+      
+            「ふふふ」
+      </p>
+      </div>
+      <div class="mem3 left">
+      <span>木影 ミミ</span>
+      <p>
+      
+            「えっ！　良いんですか！」<br>「……じゃなくて！　私はもう大人なので撫でてほしいとは言いませんが！　十影さんがおっしゃるなら！」
+      </p>
+      </div>
+      <div class="mem1 left">
+      <span>参 宿七</span>
+      <p>
+      
+            「では、ミミはいいのですね……」しゅん
+      </p>
+      </div>
+      <div class="mem3 left">
+      <span>木影 ミミ</span>
+      <p>
+      
+            「わ〜！　撫でてください！　撫でてほしいです！」わたわた
+      </p>
+      </div>
+      <div class="mem1 left">
+      <span>参 宿七</span>
+      <p>
+      
+            「ふふふ、頑張ってくださいね」なでなで
+      </p>
+      </div>
+      <div class="mem3 left">
+      <span>木影 ミミ</span>
+      <p>
+      
+            「えへへ」てれてれ
+      </p>
+      </div>
+      <div class="kp LtoR-early">
+      
+            三人を見送る参 宿七
+      </div>
+      <div class="mem1 left">
+      <span>参 宿七</span>
+      <p>
+      
+            「……行きましたか」
+      </p>
+      </div>
+      <div class="mem1 left">
+      <span>参 宿七</span>
+      <p>
+      
+            「どうか、どうか皆……」
+      </p>
+      </div>
+      <div class="kp LtoR-early">
+      
+            試練に挑む弟妹弟子の後姿を、彼女は不安な表情を浮かべて見送った。
+      </div>
+      <div class="kp LtoR-early">
+      
+            シーン終了
+      </div>
+      <div class="mem4 right">
+      <span>十影 咬威</span>
+      <p>
+      
+            d66 (D66) ＞ 25
+            
+      </p>
+      </div>
+      <div class="mem3 left">
+      <span>木影 ミミ</span>
+      <p>
+      
+            d66 (D66) ＞ 13
+            
+      </p>
+      </div>
+      <div class="mem2 right">
+      <span>星影 煌良</span>
+      <p>
+      
+            d66 (D66) ＞ 25
+            
+      </p>
+      </div>
+      <div class="mem2 right">
+      <span>星影 煌良</span>
+      <p>
+      
+            d66 (D66) ＞ 45
+            
+      </p>
+      </div>
+      <div class="mem4 right">
+      <span>十影 咬威</span>
+      <p>
+      
+            d66 (D66) ＞ 12
+            
+      </p>
+      </div>
+      <div class="kp LtoR-early">
+      
+            煌良→咬威→ミミ
+      </div>
+      <div class="kp LtoR-early">
+      
+            1サイクル目1シーン目
+      </div>
+      <div class="kp LtoR-early">
+      
+            登場人物：煌良
+      </div>
+      <div class="mem2 right">
+      <span>星影 煌良</span>
+      <p>
+      
+            BT 戦場表(6) ＞ 極地:宇宙や深海、溶岩、魔界など。ゲームマスターは、ラウンドの終わりに１Ｄ６を振る。戦闘開始時からの経過ラウンド以下の目が出ると、この戦場にいると、接近戦ダメージを１点受ける。この戦場から脱落した者は、１Ｄ６を振り、変調表の結果を適用すること。
+            
+      </p>
+      </div>
+      <div class="kp LtoR-early">
+      
+            濁流が木々や土砂を巻き上げながら暴れ狂う。巻き込まれたらただでは済まないだろう。
+      </div>
+      <div class="mem2 right">
+      <span>星影 煌良</span>
+      <p>
+      
+            「フゥン　熱烈な歓迎だな」
+      </p>
+      </div>
+      <div class="mem2 right">
+      <span>星影 煌良</span>
+      <p>
+      
+            プライズの秘密を第六感で調べます
+      </p>
+      </div>
+      <div class="mem2 right">
+      <span>星影 煌良</span>
+      <p>
+      
+            2D6&gt;=5 （判定：第六感） (2D6&gt;=5) ＞ 6[1,5] ＞ 6 ＞ 成功
+            
+      </p>
+      </div>
+      <div class="mem5 left">
+      <span>GM</span>
+      <p>
+      
+            ■プライズ『冬星の振り子』秘密：<br><br>※公開情報（この秘密を誰かが獲得した場合、全体に公開する）<br><br>下記の条件の内、３つを１度でも満たした場合、奥義【超新星】の情報を獲得する。（この獲得による情報共有はされず、受け渡しもできない）<br><br>・この秘密を最初に公開情報にする。<br>・戦果を２回獲得する。（クライマックス含む）<br>・戦闘を５回行う。（クライマックス含む）<br>・自分が誰かに対しマイナスの感情を２つ獲得する。<br>・誰かからプラスの感情を１つ獲得される。<br><br>◇クライマックス戦闘にて、攻撃の代わりに下記のいずれかで判定を行い、成功する。<br>・《仕込み》<br>・《手練》<br>・《隠蔽術》<br>・《罠術》<br>・《暗号術》<br>・《封術》<br>※それぞれ別々の達成条件としてカウントする。１度成功したら同じものはカウントしない。<br><br>また、条件を満たしたPCのプライズ『冬星の振り子』に下記の効果を追加する。<br>●クライマックスフェイズに１度だけ、いつでも使用できる。<br>自身の奥義を、自身が【情報】を獲得している別の奥義に変更する事ができる。
+      </p>
+      </div>
+      <div class="mem2 right">
+      <span>星影 煌良</span>
+      <p>
+      
+            「こいつにこんな煌めきがあったとはな…」
+      </p>
+      </div>
+      <div class="mem2 right">
+      <span>星影 煌良</span>
+      <p>
+      
+            飛術で木影 ミミの居所を探ります
+      </p>
+      </div>
+      <div class="mem2 right">
+      <span>星影 煌良</span>
+      <p>
+      
+            2D6&gt;=5 （判定：飛術） (2D6&gt;=5) ＞ 3[1,2] ＞ 3 ＞ 失敗
+            
+      </p>
+      </div>
+      <div class="kp LtoR-early">
+      
+            シーン終了
+      </div>
+      <div class="kp LtoR-early">
+      
+            2シーン目
+      </div>
+      <div class="kp LtoR-early">
+      
+            登場人物：咬威
+      </div>
+      <div class="mem4 right">
+      <span>十影 咬威</span>
+      <p>
+      
+            BT 戦場表(2) ＞ 水中:海や川や、プール、血の池地獄など。この戦場では、回避判定にマイナス２の修正がつく。
+            
+      </p>
+      </div>
+      <div class="kp LtoR-early">
+      
+            宝流湖、産学の合間にできた美しい翠緑色の川を小舟で進む。
+      </div>
+      <div class="mem4 right">
+      <span>十影 咬威</span>
+      <p>
+      
+            「...相変わらずのどかな場所だが...地を制する者は戦況を制す。準備するに越したことはあるまい」
+      </p>
+      </div>
+      <div class="mem4 right">
+      <span>十影 咬威</span>
+      <p>
+      
+            『始星源&lt;しせいげん&gt;』を水術で判定したいです！
+      </p>
+      </div>
+      <div class="mem4 right">
+      <span>十影 咬威</span>
+      <p>
+      
+            SG&gt;=5 （判定：水術） (SG@12#2&gt;=5) ＞ 11[5,6] ＞ 11 ＞ 成功
+            
+      </p>
+      </div>
+      <div class="mem4 right">
+      <span>十影 咬威</span>
+      <p>
+      
+            「...なるほど、参小姐が心配するわけだ」
+      </p>
+      </div>
+      <div class="mem4 right">
+      <span>十影 咬威</span>
+      <p>
+      
+            奥義！！
+      </p>
+      </div>
+      <div class="mem4 right">
+      <span>十影 咬威</span>
+      <p>
+      
+            《シークレットモード：拡張》<br>指定特技：暗号術<br>効果　　：追加忍法(闇神楽)<br>/巡らし(p160)/回数制限(p161)<br>演出　　：外付けデバイスに接続することで、ロボットの記憶領域を拡張し、新たなアルゴリズムで動かすことができる。<br>情報自体が膨大なため、使える回数には限りがある。
+      </p>
+      </div>
+      <div class="mem6 right">
+      <span>解説</span>
+      <p>
+      
+            追加忍法<br>この奥義を修得したとき、自分が修得可能な攻撃忍法およびサポート忍法の中から、好きな二種類を選ぶ。この奥義を使用すると、その忍法のいずれか一つを使用できる。この奥義の使用タイミングは、使用する忍法のものと同じになり、その忍法にコストがあれば、それと同じだけコストも必要になる。また、この奥義を使用するとき、その忍法の指定特技は、この奥義の指定特技と同じものになる。
+      </p>
+      </div>
+      <div class="mem6 right">
+      <span>解説</span>
+      <p>
+      
+            巡らし<br>【巡らし】が追加された奥義の持ち主は、【追加忍法】で使用できるようになる攻撃忍法かサポート忍法を、自分の流派以外の流派忍法の中から一つたけ選ぶことができるようになる（秘伝忍法からは選ぷことができない)。
+      </p>
+      </div>
+      <div class="mem6 right">
+      <span>解説</span>
+      <p>
+      
+            回数制限<br>【回数制限】が追加された奥義は、一回のセッションで二度しか使用できなくなる。【回数制限】が追加されたのが【追加忍法】の場合は、【追加忍法】で使用できる忍法を、一回のセッションでそれぞれ二度ずつしか使用できなくなる。
+      </p>
+      </div>
+      <div class="mem6 right">
+      <span>解説</span>
+      <p>
+      
+            【闇神楽】やみかぐら<br>サポート忍法/間合なし/コストなし<br>指定特技：暗号術<br>自分が情報判定に成功し、【情報】を獲得したときに使用できる。指定特技の判定に成功すると、【生命力】1点を消費して、好きな特技でもう一度情報判定を行うことができる。
+      </p>
+      </div>
+      <div class="mem4 right">
+      <span>十影 咬威</span>
+      <p>
+      
+            SG&gt;=5 （判定：暗号術） (SG@12#2&gt;=5) ＞ 4[1,3] ＞ 4 ＞ 失敗
+            
+      </p>
+      </div>
+      <div class="mem4 right">
+      <span>十影 咬威</span>
+      <p>
+      
+            「...チッ、原因は水か...？改良の必要があるな」
+      </p>
+      </div>
+      <div class="mem4 right">
+      <span>十影 咬威</span>
+      <p>
+      
+            プライズの効果で、星影煌良の居所を「野戦術」で獲得しに行きたいです
+      </p>
+      </div>
+      <div class="mem4 right">
+      <span>十影 咬威</span>
+      <p>
+      
+            SG&gt;=5 （判定：野戦術） (SG@12#2&gt;=5) ＞ 9[3,6] ＞ 9 ＞ 成功
+            
+      </p>
+      </div>
+      <div class="kp LtoR-early">
+      
+            シーン終了
+      </div>
+      <div class="kp LtoR-early">
+      
+            3シーン目
+      </div>
+      <div class="kp LtoR-early">
+      
+            登場人物：ミミ、咬威
+      </div>
+      <div class="mem3 left">
+      <span>木影 ミミ</span>
+      <p>
+      
+            BT 戦場表(6) ＞ 極地:宇宙や深海、溶岩、魔界など。ゲームマスターは、ラウンドの終わりに１Ｄ６を振る。戦闘開始時からの経過ラウンド以下の目が出ると、この戦場にいると、接近戦ダメージを１点受ける。この戦場から脱落した者は、１Ｄ６を振り、変調表の結果を適用すること。
+            
+      </p>
+      </div>
+      <div class="kp LtoR-early">
+      
+            濁流が木々や土砂を巻き上げながら暴れ狂う。巻き込まれたらただでは済まないだろう。
+      </div>
+      <div class="mem3 left">
+      <span>木影 ミミ</span>
+      <p>
+      
+            「ついついお散歩してしまいましたぁ……」<br>「あ、十影さぁん！　何をされてるんですか？」
+      </p>
+      </div>
+      <div class="mem4 right">
+      <span>十影 咬威</span>
+      <p>
+      
+            「...ん？ミミか。こんな所で散歩とは、やはり鞍馬らしいな」<br>「俺は...そうだな、言うなれば偵察だよ」/
+      </p>
+      </div>
+      <div class="mem3 left">
+      <span>木影 ミミ</span>
+      <p>
+      
+            「てーさつ！　私がぼやっとしているうちに十影さんはそんなことを……！」えら過ぎる
+      </p>
+      </div>
+      <div class="mem3 left">
+      <span>木影 ミミ</span>
+      <p>
+      
+            第六感で感情結びます　今までの十影さんの行動から察するに、こういう言動をすれば……むむむ……
+      </p>
+      </div>
+      <div class="mem3 left">
+      <span>木影 ミミ</span>
+      <p>
+      
+            SG&gt;=5 （判定：第六感） (SG@12#2&gt;=5) ＞ 11[5,6] ＞ 11 ＞ 成功
+            
+      </p>
+      </div>
+      <div class="mem4 right">
+      <span>十影 咬威</span>
+      <p>
+      
+            ET 感情表(4) ＞ 忠誠（プラス）／侮蔑（マイナス）
+            
+      </p>
+      </div>
+      <div class="mem3 left">
+      <span>木影 ミミ</span>
+      <p>
+      
+            ET 感情表(6) ＞ 狂信（プラス）／殺意（マイナス）
+            
+      </p>
+      </div>
+      <div class="mem3 left">
+      <span>木影 ミミ</span>
+      <p>
+      
+            （仕事をしっかりこなす大人な方だ……！　十影さんを信じておけば大丈夫でしょう！）<br>狂信取ります
+      </p>
+      </div>
+      <div class="mem4 right">
+      <span>十影 咬威</span>
+      <p>
+      
+            「...ふむ、そうだな。一時的に手を組まないか？今回の試練、表向きは協力し合えば奥義を獲得できるようになっている。流派は違えど、共に修行した仲だからな」
+      </p>
+      </div>
+      <div class="mem4 right">
+      <span>十影 咬威</span>
+      <p>
+      
+            「それにミミ、君は色んな意味で興味深い。細かいことは抜きにして、仲良くしてもらえるとありがたいんだが」忠誠を取ります！
+      </p>
+      </div>
+      <div class="mem3 left">
+      <span>木影 ミミ</span>
+      <p>
+      
+            「わ、私でよろしければ仲良くしてくださあい！」<br>「ここまでで何かわかったこととかあれば、教えていただけると嬉しいです！」
+      </p>
+      </div>
+      <div class="mem4 right">
+      <span>十影 咬威</span>
+      <p>
+      
+            「はは、中々強欲だな...だが良いだろう。ここで共同戦線を結べたのも何かの縁だ」始星源の情報を渡します
+      </p>
+      </div>
+      <div class="mem3 left">
+      <span>木影 ミミ</span>
+      <p>
+      
+            「ありがとうございまあす！」<br>「……むむむ。これは中々…………」難しい顔
+      </p>
+      </div>
+      <div class="mem3 left">
+      <span>木影 ミミ</span>
+      <p>
+      
+            十影さんの居所を歩法で探ります
+      </p>
+      </div>
+      <div class="mem3 left">
+      <span>木影 ミミ</span>
+      <p>
+      
+            SG&gt;=5 （判定：歩法） (SG@12#2&gt;=5) ＞ 7[3,4] ＞ 7 ＞ 成功
+            
+      </p>
+      </div>
+      <div class="mem3 left">
+      <span>木影 ミミ</span>
+      <p>
+      
+            （謎のステップを踏む）
+      </p>
+      </div>
+      <div class="mem4 right">
+      <span>十影 咬威</span>
+      <p>
+      
+            「...どうした？」
+      </p>
+      </div>
+      <div class="kp LtoR-early">
+      
+            シーン終了
+      </div>
+      <div class="kp LtoR-early">
+      
+            1サイクル目終了
+      </div>
+      <div class="mem3 left">
+      <span>木影 ミミ</span>
+      <p>
+      
+            d66 (D66) ＞ 45
+            
+      </p>
+      </div>
+      <div class="mem4 right">
+      <span>十影 咬威</span>
+      <p>
+      
+            d66 (D66) ＞ 55
+            
+      </p>
+      </div>
+      <div class="mem2 right">
+      <span>星影 煌良</span>
+      <p>
+      
+            d66 (D66) ＞ 12
+            
+      </p>
+      </div>
+      <div class="kp LtoR-early">
+      
+            咬威→ミミ→煌良
+      </div>
+      <div class="kp LtoR-early">
+      
+            変更後：ミミ→煌良→咬威
+      </div>
+      <div class="kp LtoR-early">
+      
+            2サイクル目
+      </div>
+      <div class="kp LtoR-early">
+      
+            登場人物：ミミ
+      </div>
+      <div class="kp LtoR-early">
+      
+            4シーン目
+      </div>
+      <div class="mem3 left">
+      <span>木影 ミミ</span>
+      <p>
+      
+            BT 戦場表(2) ＞ 水中:海や川や、プール、血の池地獄など。この戦場では、回避判定にマイナス２の修正がつく。
+            
+      </p>
+      </div>
+      <div class="kp LtoR-early">
+      
+            宝流湖、産学の合間にできた美しい翠緑色の川を小舟で進む。
+      </div>
+      <div class="mem3 left">
+      <span>木影 ミミ</span>
+      <p>
+      
+            「川が綺麗ですねえ」<br>「……じゃなくて！　私も忍びとしての仕事をしなければ、です！」<br>「むむむ」
+      </p>
+      </div>
+      <div class="mem3 left">
+      <span>木影 ミミ</span>
+      <p>
+      
+            呪術で参お姉様の秘密を探ります　不幸は私が祓うぞ<br>なんか　式神とか飛ばしときますね（？）
+      </p>
+      </div>
+      <div class="mem3 left">
+      <span>木影 ミミ</span>
+      <p>
+      
+            SG&gt;=5 （判定：呪術） (SG@12#2&gt;=5) ＞ 3[1,2] ＞ 3 ＞ 失敗
+            
+      </p>
+      </div>
+      <div class="mem3 left">
+      <span>木影 ミミ</span>
+      <p>
+      
+            「……今日は無理みたいです」
+      </p>
+      </div>
+      <div class="mem3 left">
+      <span>木影 ミミ</span>
+      <p>
+      
+            星影くんの居所を歩法で探ります
+      </p>
+      </div>
+      <div class="mem3 left">
+      <span>木影 ミミ</span>
+      <p>
+      
+            SG&gt;=5 （判定：歩法） (SG@12#2&gt;=5) ＞ 11[5,6] ＞ 11 ＞ 成功
+            
+      </p>
+      </div>
+      <div class="mem3 left">
+      <span>木影 ミミ</span>
+      <p>
+      
+            （謎のステップ）
+      </p>
+      </div>
+      <div class="kp LtoR-early">
+      
+            シーン終了
+      </div>
+      <div class="kp LtoR-early">
+      
+            登場人物：煌良、ミミ
+      </div>
+      <div class="kp LtoR-early">
+      
+            5シーン目
+      </div>
+      <div class="mem2 right">
+      <span>星影 煌良</span>
+      <p>
+      
+            BT 戦場表(3) ＞ 高所:ビルの谷間や樹上、断崖絶壁など。この戦場でファンブルすると接近戦ダメージを１点受ける。
+            
+      </p>
+      </div>
+      <div class="kp LtoR-early">
+      
+            切り立った山々を見下ろす。霧に阻まれて下界の様子は伺えない。
+      </div>
+      <div class="mem2 right">
+      <span>星影 煌良</span>
+      <p>
+      
+            「この高み…煌めいているなッ」
+      </p>
+      </div>
+      <div class="mem2 right">
+      <span>星影 煌良</span>
+      <p>
+      
+            「ん…？あれは……子猫ﾁｬﾝじゃないか」
+      </p>
+      </div>
+      <div class="mem3 left">
+      <span>木影 ミミ</span>
+      <p>
+      
+            「あ！　星影さぁん！　ずいぶん高いところにいますねぇ！」歩法で近づこう　すすす
+      </p>
+      </div>
+      <div class="mem2 right">
+      <span>星影 煌良</span>
+      <p>
+      
+            「ムッ　なんという脚力…！煌めきを感じるぞ」
+      </p>
+      </div>
+      <div class="mem3 left">
+      <span>木影 ミミ</span>
+      <p>
+      
+            「星影さんも煌めいてますよぉ」<br>「あ、そうだ！　今儀式のことを色々探ってみてるんですけど、参お姉様のことがいまいちわからなくって……星影さんは何か知ってますかぁ？」
+      </p>
+      </div>
+      <div class="mem2 right">
+      <span>星影 煌良</span>
+      <p>
+      
+            「フフン…俺様の煌めきに目が潰れてしまわないようにな」
+      </p>
+      </div>
+      <div class="mem2 right">
+      <span>星影 煌良</span>
+      <p>
+      
+            「フゥン…なるほど…この技は使いたくなかったが…俺様の瞳を使って調べてみよう」
+      </p>
+      </div>
+      <div class="mem2 right">
+      <span>星影 煌良</span>
+      <p>
+      
+            「フッ…俺様に惚れるなよ？」サングラスを外す
+      </p>
+      </div>
+      <div class="mem2 right">
+      <span>星影 煌良</span>
+      <p>
+      
+            瞳術で参 宿七&lt;サン スゥチィ&gt;の秘密を調べます
+      </p>
+      </div>
+      <div class="mem2 right">
+      <span>星影 煌良</span>
+      <p>
+      
+            2D6&gt;=5 （判定：瞳術） (2D6&gt;=5) ＞ 11[5,6] ＞ 11 ＞ 成功
+            
+      </p>
+      </div>
+      <div class="mem2 right">
+      <span>星影 煌良</span>
+      <p>
+      
+            「フッ…さすがの子猫ﾁｬﾝもこの瞳の前では無力か…」
+      </p>
+      </div>
+      <div class="mem2 right">
+      <span>星影 煌良</span>
+      <p>
+      
+            木影 ミミの始星源の秘密と星影 煌良の参 宿七の秘密を交換します
+      </p>
+      </div>
+      <div class="mem3 left">
+      <span>木影 ミミ</span>
+      <p>
+      
+            始星源の秘密を渡します。こうかんこ
+      </p>
+      </div>
+      <div class="mem5 left">
+      <span>GM</span>
+      <p>
+      
+            ■NPC『参宿七』秘密：<br>あなたはかつて、【超新星】継承の儀式を行ったことがある。<br>しかし、儀式は失敗し奥義を受け継ぐことはできなかった。<br>それ以降、師匠の下で飼い殺しにされていたが、奇しくもチャンスが巡ってきた。<br>以前は成し遂げる事叶わなかった、奥義修得の最終条件。<br>今ならそのことに迷いはない――筈だ。<br><br>あなたの本当の使命は『【超新星】を継ぐこと』だ。<br><br>※このキャラクターが戦闘に勝利した場合、他のキャラクターが持つすべてのプライズ『冬星の振り子』と【超新星】の情報は失われる。
+      </p>
+      </div>
+      <div class="mem5 left">
+      <span>GM</span>
+      <p>
+      
+            ■HO『始星源』秘密：<br>始星源には多くの死霊怨霊が渦巻いている。<br>その正体は【超新星】の継承儀式を行った者のなれの果てだ。<br>継承儀式とは、それほど過酷極まるものなのだろうか？<br><br>天光流頭首は代々、見込みのある門下生をこの場所に連れてくると、<br>継承の儀と称し、奥義を用いた殺し合いを行わせた。<br>こうして命懸けで研ぎ澄まされた奥義こそ【超新星】なのである。
+      </p>
+      </div>
+      <div class="mem2 right">
+      <span>星影 煌良</span>
+      <p>
+      
+            「始星源…名に合わず煌めきを感じられないじゃないか」
+      </p>
+      </div>
+      <div class="mem3 left">
+      <span>木影 ミミ</span>
+      <p>
+      
+            「ですねぇ」
+      </p>
+      </div>
+      <div class="mem2 right">
+      <span>星影 煌良</span>
+      <p>
+      
+            仕込みで木影 ミミの居所を探ります
+      </p>
+      </div>
+      <div class="mem2 right">
+      <span>星影 煌良</span>
+      <p>
+      
+            2D6&gt;=5 （判定：仕込み） (2D6&gt;=5) ＞ 5[2,3] ＞ 5 ＞ 成功
+            
+      </p>
+      </div>
+      <div class="mem2 right">
+      <span>星影 煌良</span>
+      <p>
+      
+            「フッ…木影 ミミ…貴様の煌めきに感謝する」
+      </p>
+      </div>
+      <div class="mem3 left">
+      <span>木影 ミミ</span>
+      <p>
+      
+            「こちらこそありがとうございますっ！」
+      </p>
+      </div>
+      <div class="kp LtoR-early">
+      
+            シーン終了
+      </div>
+      <div class="kp LtoR-early">
+      
+            登場人物：咬威、煌良
+      </div>
+      <div class="kp LtoR-early">
+      
+            6シーン目
+      </div>
+      <div class="mem4 right">
+      <span>十影 咬威</span>
+      <p>
+      
+            BT 戦場表(1) ＞ 平地:特になし。
+            
+      </p>
+      </div>
+      <div class="kp LtoR-early">
+      
+            渓流、水の流れが穏やかで木々の合間に小鳥の鳴き声が聞こえる。
+      </div>
+      <div class="mem4 right">
+      <span>十影 咬威</span>
+      <p>
+      
+            メモ：3サイクル目きらくんと感情結びに行く
+      </p>
+      </div>
+      <div class="mem2 right">
+      <span>星影 煌良</span>
+      <p>
+      
+            「始星源……まさかあんな成り立ちであったとはな」
+      </p>
+      </div>
+      <div class="mem2 right">
+      <span>星影 煌良</span>
+      <p>
+      
+            「――ム　いつからそこで待ち構えていた？」
+      </p>
+      </div>
+      <div class="mem4 right">
+      <span>十影 咬威</span>
+      <p>
+      
+            「はは、やはり気づくか。俺は相手の居所を把握していないと落ち着かない性質でね」木陰から出てこよう
+      </p>
+      </div>
+      <div class="mem2 right">
+      <span>星影 煌良</span>
+      <p>
+      
+            「フッ　俺様の煌めきが強すぎたか…」
+      </p>
+      </div>
+      <div class="mem4 right">
+      <span>十影 咬威</span>
+      <p>
+      
+            「...それもあるな」なんとなく話を合わせました
+      </p>
+      </div>
+      <div class="mem4 right">
+      <span>十影 咬威</span>
+      <p>
+      
+            「何、俺は嫌われ者だが、進んで嫌われ者になりたいわけじゃない」
+      </p>
+      </div>
+      <div class="mem4 right">
+      <span>十影 咬威</span>
+      <p>
+      
+            「...参小姐の動きがきな臭い。ここは手を取り合うべきだと思うんだ」
+      </p>
+      </div>
+      <div class="mem4 right">
+      <span>十影 咬威</span>
+      <p>
+      
+            「ただし____無条件で信じられるわけじゃない。君を信用するためにも...これからすることを悪く思わないでほしい」
+      </p>
+      </div>
+      <div class="mem4 right">
+      <span>十影 咬威</span>
+      <p>
+      
+            「星影煌良」の秘密を経済力で探りたいです！
+      </p>
+      </div>
+      <div class="mem4 right">
+      <span>十影 咬威</span>
+      <p>
+      
+            SG&gt;=5 （判定：経済力） (SG@12#2&gt;=5) ＞ 7[2,5] ＞ 7 ＞ 成功
+            
+      </p>
+      </div>
+      <div class="mem5 left">
+      <span>GM</span>
+      <p>
+      
+            ■PC3秘密：<br>あなたは嘗て姉弟子に尋ねたことがある。<br>何故この地を離れずに"朱赫"の下に居続けるのか。【超新星】は欲しくないのか？<br><br>すると彼女は珍しく、困ったような照れたような表情を浮かべて答えた。<br>曰く、【超新星】の継承に挑んだものの、失敗したという。<br>それ以降、奥義の情報を漏らさぬために"朱赫"の下で生きる事を言い渡されたそうだ。<br><br>その時の表情が、今も脳裏で煌めいている。<br>この想いを何と言うのか、その答えは【超新星】の中にある。
+      </p>
+      </div>
+      <div class="mem6 right">
+      <span>解説</span>
+      <p>
+      
+            【目付】めつけ<br>装備忍法/間合なし/コストなし<br>指定特技：なし<br>自分が情報判定に成功し、同じシーンに登場しているキャラクターの【情報】を獲得することにした場合に使用できる。そのキャラクターのすべての【居所】や【秘密】を、すでに自分が獲得していれば、そのキャラクターの【奥義】の【情報】を獲得できる。
+      </p>
+      </div>
+      <div class="mem6 right">
+      <span>解説</span>
+      <p>
+      
+            PC3奥義<br>■奥義<br>《彗星》<br>指定特技：瞳術<br>効果　　：絶対防御/流し/防御低下<br><br>絶対防御（同じシーンに登場しているキャラクターが【生命力】を失ったときに使用できる(ただし、【生命力】を消費したときには使用できない)。【生命力】を失ったキャラクターの中から一人を目標に選ぶ。目標の【生命力】の減少の中から好きな4点分を軽減することがでさる（0点未満にはならない）。）/流し（【流し】が追加された奥義で、射撃戦ダメージを1点以上軽減したり、回復したりした場合、奥義の効果の対象（【絶対防御】ならその目標、【不死身】なら自分）からプロット値が3以内のキャラクター一人を目標に選ぶ。目標に射撃戦ダメージを1点与えることができる。）/防御低下（【防御低下】が追加された【絶対防御】では、軽減できる【生命力】減少の値が1点少なくなる。）<br>演出　　：彗星が如く煌めきながら超スピードで移動し、相手の攻撃をはじき返す。
+      </p>
+      </div>
+      <div class="mem4 right">
+      <span>十影 咬威</span>
+      <p>
+      
+            奥義！！
+      </p>
+      </div>
+      <div class="mem4 right">
+      <span>十影 咬威</span>
+      <p>
+      
+            《シークレットモード：拡張》<br>指定特技：暗号術<br>効果　　：追加忍法(流転・闇神楽)<br>/巡らし(p160)/回数制限(p161)<br>演出　　：外付けデバイスに接続することで、ロボットの記憶領域を拡張し、新たなアルゴリズムで動かすことができる。<br>他人の奥義・他流派の忍法は情報自体が膨大なため、使える回数には限りがある。
+      </p>
+      </div>
+      <div class="mem4 right">
+      <span>十影 咬威</span>
+      <p>
+      
+            流転を使います
+      </p>
+      </div>
+      <div class="mem6 right">
+      <span>解説</span>
+      <p>
+      
+            【流転】るてん<br>サポート忍法/間合なし/コスト1<br>指定特技：暗号術<br>戦闘中の自分の手番か、自分がシーンプレイヤーのドラマシーンに使用できる。指定特技の判定に成功すると、自分が修得している奥義一つを、自分が【情報】を獲得している別の奥義一つに変更することができる(この奥義の元々の持ち主の【奥義】の【情報】を持っているキャラクターは、この奥義に対して奥義破りを試みることができる)。変更した奥義の指定特技も一緒に変更され、この忍法の使用時点では、その奥義の使用回数は0回と数える。
+      </p>
+      </div>
+      <div class="mem4 right">
+      <span>十影 咬威</span>
+      <p>
+      
+            整備班を使います
+      </p>
+      </div>
+      <div class="mem6 right">
+      <span>解説</span>
+      <p>
+      
+            【整備班】せいびはん<br>功績点：-3（-6）<br>自分がシーンプレイヤー時のドラマシーンに使用できる。自分の修得しているサポート忍法の中から、判定が必要なものを一つ選ぶ。そのセッションの間、一度だけ、そのサポート忍法を使用するときに、その指定特技の判定に自動的に成功したことにすることができる。この効果は、一回のセッションで一度しか使用できない。この「長所」は、斜歯忍軍か、その下位流派のキャラクターであれば、必要功績点が通常の半分になる。
+      </p>
+      </div>
+      <div class="mem4 right">
+      <span>十影 咬威</span>
+      <p>
+      
+            奥義が追加忍法→絶対防御に変えます
+      </p>
+      </div>
+      <div class="mem4 right">
+      <span>十影 咬威</span>
+      <p>
+      
+            奥義名→シークレットコード：彗星
+      </p>
+      </div>
+      <div class="mem4 right">
+      <span>十影 咬威</span>
+      <p>
+      
+            「...君は、参小姐の身を案じているのか。参小姐のことはどうするつもりだ？」
+      </p>
+      </div>
+      <div class="mem2 right">
+      <span>星影 煌良</span>
+      <p>
+      
+            「フゥン…天光流に携わったものなら多かれ少なかれ参 宿七のことは皆慕っていただろう」
+      </p>
+      </div>
+      <div class="mem2 right">
+      <span>星影 煌良</span>
+      <p>
+      
+            「とはいえ、それで俺様の煌めきが失われるのはこの世の損失。仇なしてくるなら迎え撃つまでだ！」
+      </p>
+      </div>
+      <div class="mem4 right">
+      <span>十影 咬威</span>
+      <p>
+      
+            「...なるほど、よく分かった。<br>俺だって、ここで終わるつもりは無い。俺達は仲良くできそうだ」ふ、と笑って
+      </p>
+      </div>
+      <div class="mem4 right">
+      <span>十影 咬威</span>
+      <p>
+      
+            「そうだな...また後で君に会いに行くよ。俺は感情の機微に疎いから、気を悪くしてしまうかもしれないが」※後で感情結びに行きます/
+      </p>
+      </div>
+      <div class="mem2 right">
+      <span>星影 煌良</span>
+      <p>
+      
+            「フン…また一人、俺様の美貌に堕ちてしまったか…」
+      </p>
+      </div>
+      <div class="mem2 right">
+      <span>星影 煌良</span>
+      <p>
+      
+            「俺様に会いにくるのに許可はいらない。ただ俺様の身体は一つしかないからな…CHU」
+      </p>
+      </div>
+      <div class="mem4 right">
+      <span>十影 咬威</span>
+      <p>
+      
+            「ああうん、もうそういうことで良いよ。流派が違うのに気軽に会いに行けるのはありがたいからな」
+      </p>
+      </div>
+      <div class="mem2 right">
+      <span>星影 煌良</span>
+      <p>
+      
+            「照れ屋な子猫ﾁｬﾝだ」
+      </p>
+      </div>
+      <div class="mem4 right">
+      <span>十影 咬威</span>
+      <p>
+      
+            「長生きしそうで何よりだ」
+      </p>
+      </div>
+      <div class="mem4 right">
+      <span>十影 咬威</span>
+      <p>
+      
+            隠しコマンドを仕込んで、「暗号術」でミミちゃんの居所を探ります
+      </p>
+      </div>
+      <div class="mem4 right">
+      <span>十影 咬威</span>
+      <p>
+      
+            SG&gt;=5 （判定：暗号術） (SG@12#2&gt;=5) ＞ 4[1,3] ＞ 4 ＞ 失敗
+            
+      </p>
+      </div>
+      <div class="kp LtoR-early">
+      
+            シーン終了
+      </div>
+      <div class="kp LtoR-early">
+      
+            マスターシーン
+      </div>
+      <div class="kp LtoR-early">
+      
+            仲良くしている３人を遠目に、影が一つ木々の合間に姿を隠し、その雄姿？を見守っていた。
+      </div>
+      <div class="mem1 left">
+      <span>参 宿七</span>
+      <p>
+      
+            「……」
+      </p>
+      </div>
+      <div class="kp LtoR-early">
+      
+            彼女は自身の手に目を落とす。そこには『冬星の振り子』が３つ握られていた。
+      </div>
+      <div class="mem1 left">
+      <span>参 宿七</span>
+      <p>
+      
+            「……師匠……私は、迷いません……いや、迷うわけにはいかない」
+      </p>
+      </div>
+      <div class="mem1 left">
+      <span>参 宿七</span>
+      <p>
+      
+            「彼らの……いえ、これは天光流を受け継ぐ者としての……覚悟……が」
+      </p>
+      </div>
+      <div class="kp LtoR-early">
+      
+            口籠り震えた声を発する。誰に聞かせるでもなく、己を奮い立たせるための言霊を。<br>脳裏に浮かぶのは自身の過去。親しかった兄弟弟子たちの姿。<br>しかし彼らはもう――いや、あるいは未だこの地にいるのかもしれない。<br>だが、自身の使命は彼らの為ではない。<br>あくまで彼女は天光流を継ぐ者としての努めを果たすだけだ。
+      </div>
+      <div class="mem1 left">
+      <span>参 宿七</span>
+      <p>
+      
+            「咬威……ミミ……煌良……」
+      </p>
+      </div>
+      <div class="kp LtoR-early">
+      
+            手に収まる振り子を握りしめると、目を見開く。その顔に迷いはなかった。
+      </div>
+      <div class="kp LtoR-early">
+      
+            シーン終了
+      </div>
+      <div class="mem3 left">
+      <span>木影 ミミ</span>
+      <p>
+      
+            d66 (D66) ＞ 66
+            
+      </p>
+      </div>
+      <div class="mem4 right">
+      <span>十影 咬威</span>
+      <p>
+      
+            d66 (D66) ＞ 14
+            
+      </p>
+      </div>
+      <div class="mem2 right">
+      <span>星影 煌良</span>
+      <p>
+      
+            d66 (D66) ＞ 16
+            
+      </p>
+      </div>
+      <div class="kp LtoR-early">
+      
+            順番：ミミ→煌良→咬威
+      </div>
+      <div class="mem4 right">
+      <span>十影 咬威</span>
+      <p>
+      
+            咬威一番手
+      </p>
+      </div>
+      <div class="kp LtoR-early">
+      
+            3サイクル目
+      </div>
+      <div class="kp LtoR-early">
+      
+            7シーン目
+      </div>
+      <div class="kp LtoR-early">
+      
+            登場人物：咬威、煌良
+      </div>
+      <div class="mem4 right">
+      <span>十影 咬威</span>
+      <p>
+      
+            BT 戦場表(3) ＞ 高所:ビルの谷間や樹上、断崖絶壁など。この戦場でファンブルすると接近戦ダメージを１点受ける。
+            
+      </p>
+      </div>
+      <div class="kp LtoR-early">
+      
+            切り立った山々を見下ろす。霧に阻まれて下界の様子は伺えない。
+      </div>
+      <div class="mem4 right">
+      <span>十影 咬威</span>
+      <p>
+      
+            「相変わらず霧が濃いな...そうは思わないか、煌良？」
+      </p>
+      </div>
+      <div class="mem2 right">
+      <span>星影 煌良</span>
+      <p>
+      
+            「フッ…三人で霧中に駆けていた時もあったな。…当時は参 宿七も…な」
+      </p>
+      </div>
+      <div class="mem4 right">
+      <span>十影 咬威</span>
+      <p>
+      
+            「！...珍しいな、君が女性のことを子猫ﾁｬﾝって呼ばないなんて。やはり何か思うところがあったのか？」
+      </p>
+      </div>
+      <div class="mem2 right">
+      <span>星影 煌良</span>
+      <p>
+      
+            「…いや　なんでもないさ。フッ…それに俺様は女性だけを子猫ﾁｬﾝと呼んでるわけじゃないぞ」
+      </p>
+      </div>
+      <div class="mem2 right">
+      <span>星影 煌良</span>
+      <p>
+      
+            「咬威、貴様も子猫ﾁｬﾝだ　CHU」
+      </p>
+      </div>
+      <div class="mem4 right">
+      <span>十影 咬威</span>
+      <p>
+      
+            「マジか」男もいけたのか君は、と勘違いしている
+      </p>
+      </div>
+      <div class="mem4 right">
+      <span>十影 咬威</span>
+      <p>
+      
+            「まあうん、君の手にかかれば全人類が子猫ﾁｬﾝになることは分かった」
+      </p>
+      </div>
+      <div class="mem4 right">
+      <span>十影 咬威</span>
+      <p>
+      
+            「...修行の後は、参小姐が野営でご飯用意してくれたんだったな。願わくば、何のしがらみもなく食べたかったと思う」
+      </p>
+      </div>
+      <div class="mem4 right">
+      <span>十影 咬威</span>
+      <p>
+      
+            同じ釜の飯を食べた思い出に浸りながら、野戦術で感情を結びに行きます！
+      </p>
+      </div>
+      <div class="mem6 right">
+      <span>解説</span>
+      <p>
+      
+            【異端】いたん<br>功績点：+3（+2）<br>自分が感情判定を行う場合、マイナス2の修正がつく。この「弱点」は、斜歯忍軍か、その下位流派のキャラクターが修得した場合、さらに追加で功績点を1点獲得できる。
+      </p>
+      </div>
+      <div class="mem4 right">
+      <span>十影 咬威</span>
+      <p>
+      
+            SG-2&gt;=5 （判定：野戦術） (SG-2@12#2&gt;=5) ＞ 5[2,3]-2 ＞ 3 ＞ 失敗
+            
+      </p>
+      </div>
+      <div class="kp LtoR-early">
+      
+            [ 星影 煌良 ] 忍具 : 6 → 5
+      </div>
+      <div class="mem2 right">
+      <span>星影 煌良</span>
+      <p>
+      
+            遁甲符使用
+      </p>
+      </div>
+      <div class="mem4 right">
+      <span>十影 咬威</span>
+      <p>
+      
+            SG-2&gt;=5 （判定：野戦術） (SG-2@12#2&gt;=5) ＞ 4[2,2]-2 ＞ 2 ＞ 失敗
+            
+      </p>
+      </div>
+      <div class="mem4 right">
+      <span>十影 咬威</span>
+      <p>
+      
+            「...あんまり興味は無かったか」なんとなく響いてないなと察して
+      </p>
+      </div>
+      <div class="mem4 right">
+      <span>十影 咬威</span>
+      <p>
+      
+            野戦術でミミちゃんの居所を探りに行きます
+      </p>
+      </div>
+      <div class="mem4 right">
+      <span>十影 咬威</span>
+      <p>
+      
+            SG&gt;=5 （判定：野戦術） (SG@12#2&gt;=5) ＞ 5[2,3] ＞ 5 ＞ 成功
+            
+      </p>
+      </div>
+      <div class="kp LtoR-early">
+      
+            シーン終了
+      </div>
+      <div class="kp LtoR-early">
+      
+            8シーン目
+      </div>
+      <div class="kp LtoR-early">
+      
+            登場人物：ミミ、咬威、煌良
+      </div>
+      <div class="kp LtoR-early">
+      
+            シーン継続
+      </div>
+      <div class="mem3 left">
+      <span>木影 ミミ</span>
+      <p>
+      
+            「良い匂いがすると思ったら、ご飯を食べていたんですね……！　私もご一緒させてくださぁい！」
+      </p>
+      </div>
+      <div class="mem2 right">
+      <span>星影 煌良</span>
+      <p>
+      
+            「フッさすがの嗅覚！煌めいているな」
+      </p>
+      </div>
+      <div class="mem4 right">
+      <span>十影 咬威</span>
+      <p>
+      
+            「ああ、ミミも来たか。ちょうど良かった、食べていくと良い」
+      </p>
+      </div>
+      <div class="mem3 left">
+      <span>木影 ミミ</span>
+      <p>
+      
+            「いただきます！」<br>「この味、懐かしいですねぇ……！　このメニューだと、あの修行をしていたときですね」おもむろに立ち上がる
+      </p>
+      </div>
+      <div class="mem3 left">
+      <span>木影 ミミ</span>
+      <p>
+      
+            この流れで格闘技を披露して、星影さんと感情結びます！　骨法術で！
+      </p>
+      </div>
+      <div class="mem4 right">
+      <span>十影 咬威</span>
+      <p>
+      
+            「おお、なら音楽でもかけるか」ミミちゃんに感情修正+1をば！
+      </p>
+      </div>
+      <div class="mem3 left">
+      <span>木影 ミミ</span>
+      <p>
+      
+            SG+1&gt;=5 （判定：骨法術） (SG+1@12#2&gt;=5) ＞ 3[1,2]+1 ＞ 4 ＞ 失敗
+            
+      </p>
+      </div>
+      <div class="kp LtoR-early">
+      
+            [ 木影 ミミ ] 忍具 : 6 → 5
+      </div>
+      <div class="mem3 left">
+      <span>木影 ミミ</span>
+      <p>
+      
+            神通丸使います！
+      </p>
+      </div>
+      <div class="mem3 left">
+      <span>木影 ミミ</span>
+      <p>
+      
+            SG+1&gt;=5 （判定：骨法術） (SG+1@12#2&gt;=5) ＞ 6[2,4]+1 ＞ 7 ＞ 成功
+            
+      </p>
+      </div>
+      <div class="mem3 left">
+      <span>木影 ミミ</span>
+      <p>
+      
+            ET 感情表(3) ＞ 愛情（プラス）／妬み（マイナス）
+            
+      </p>
+      </div>
+      <div class="mem2 right">
+      <span>星影 煌良</span>
+      <p>
+      
+            ET 感情表(5) ＞ 憧憬（プラス）／劣等感（マイナス）
+            
+      </p>
+      </div>
+      <div class="mem3 left">
+      <span>木影 ミミ</span>
+      <p>
+      
+            （突然技を披露してしまった……！　でも受け入れてくれています！　この胸に湧き上がる気持ちは、言うなれば愛！　ですね！）<br>愛情取ります！
+      </p>
+      </div>
+      <div class="mem2 right">
+      <span>星影 煌良</span>
+      <p>
+      
+            「ハッハー　心！技！体！子猫ﾁｬﾝ…いや、ミミはすべてを兼ね備えているな！」
+      </p>
+      </div>
+      <div class="mem2 right">
+      <span>星影 煌良</span>
+      <p>
+      
+            星影 煌良→木影 ミミ（憧憬）
+      </p>
+      </div>
+      <div class="mem4 right">
+      <span>十影 咬威</span>
+      <p>
+      
+            (後方先輩面)
+      </p>
+      </div>
+      <div class="kp LtoR-early">
+      
+            シーン終了
+      </div>
+      <div class="kp LtoR-early">
+      
+            9シーン目
+      </div>
+      <div class="kp LtoR-early">
+      
+            登場人物：煌良、咬威、ミミ
+      </div>
+      <div class="kp LtoR-early">
+      
+            シーン継続
+      </div>
+      <div class="mem2 right">
+      <span>星影 煌良</span>
+      <p>
+      
+            「フッ…こうしていると【超新星】継承にきていることを忘れてしまうな…」
+      </p>
+      </div>
+      <div class="mem2 right">
+      <span>星影 煌良</span>
+      <p>
+      
+            「俺様は幼い頃から天光流で修行して…二人を兄弟のように想っていたから…」
+      </p>
+      </div>
+      <div class="mem3 left">
+      <span>木影 ミミ</span>
+      <p>
+      
+            「そうですねぇ……長い間一緒にいますから、家族のようなものですね」
+      </p>
+      </div>
+      <div class="mem4 right">
+      <span>十影 咬威</span>
+      <p>
+      
+            「そうだな。だが争わないに越したことは無い。俺はこの関係を好ましく思うよ」
+      </p>
+      </div>
+      <div class="mem2 right">
+      <span>星影 煌良</span>
+      <p>
+      
+            「最近は…俺様を求めてくれる子猫ﾁｬﾝが多いのは嬉しいんだが忙しくてな。久しぶりに師達の煌めきに触れられて救われた。」
+      </p>
+      </div>
+      <div class="mem2 right">
+      <span>星影 煌良</span>
+      <p>
+      
+            第六感で木影 ミミの秘密を探ります。
+      </p>
+      </div>
+      <div class="mem2 right">
+      <span>星影 煌良</span>
+      <p>
+      
+            2D6&gt;=5 （判定：第六感） (2D6&gt;=5) ＞ 5[1,4] ＞ 5 ＞ 成功
+            
+      </p>
+      </div>
+      <div class="mem2 right">
+      <span>星影 煌良</span>
+      <p>
+      
+            「…！」
+      </p>
+      </div>
+      <div class="mem2 right">
+      <span>星影 煌良</span>
+      <p>
+      
+            （二人を師として…家族として認めた瞬間にミミの成り立ちが頭に流れ込んできたようだ…）
+      </p>
+      </div>
+      <div class="mem2 right">
+      <span>星影 煌良</span>
+      <p>
+      
+            「咬威、すこしいいか」
+      </p>
+      </div>
+      <div class="mem4 right">
+      <span>十影 咬威</span>
+      <p>
+      
+            「ああ、何だ？」すす
+      </p>
+      </div>
+      <div class="mem5 left">
+      <span>GM</span>
+      <p>
+      
+            ■PC2秘密：<br>あなたはひたすらに強さを探求し続けている。<br>天光流に入ったのも【超新星】を継ぐためではない、破るためだ。<br>その為に姉弟子の目を盗んで"朱赫"との一騎打ちを行った。<br>だが"朱赫"は老い、終ぞ【超新星】を放つことなくこの世を去る事となった。<br>つまり、あなたが"朱赫"を殺したのだ。<br><br>だが、これでは勝ったとは言えない。<br>究極奥義を正面から切伏せ、己が最強を証明するのだ。<br><br>あなたの【本当の使命】は『【超新星】の奥義破りに成功すること』<br>あるいは『【超新星】の奥義を取得したものをこの手で倒すこと』だ。
+      </p>
+      </div>
+      <div class="mem2 right">
+      <span>星影 煌良</span>
+      <p>
+      
+            「頭領が亡くなったのは……」
+      </p>
+      </div>
+      <div class="mem3 left">
+      <span>木影 ミミ</span>
+      <p>
+      
+            「？」
+      </p>
+      </div>
+      <div class="mem4 right">
+      <span>十影 咬威</span>
+      <p>
+      
+            「____なんと。それは...面白くなってきたな」
+      </p>
+      </div>
+      <div class="mem4 right">
+      <span>十影 咬威</span>
+      <p>
+      
+            「最強と謳われた奥義が破られるということは、その弱点が分かるということだ。興味深い」
+      </p>
+      </div>
+      <div class="mem2 right">
+      <span>星影 煌良</span>
+      <p>
+      
+            「俺様たちはまだ…参 宿七の思惑もわかっていない。確かなのは【超新星】を継がなければならないということだけか」
+      </p>
+      </div>
+      <div class="mem4 right">
+      <span>十影 咬威</span>
+      <p>
+      
+            「ああ。それに、【超新星】を継ぐ方法もな。...2人とは、最後まで敵対しないことを祈るよ」
+      </p>
+      </div>
+      <div class="mem3 left">
+      <span>木影 ミミ</span>
+      <p>
+      
+            「？　そうですね！」
+      </p>
+      </div>
+      <div class="mem4 right">
+      <span>十影 咬威</span>
+      <p>
+      
+            「！？何だ聞いてたのか」
+      </p>
+      </div>
+      <div class="mem3 left">
+      <span>木影 ミミ</span>
+      <p>
+      
+            「え！　はい！　途中から聞いてましたぁ」<br>「仲良くしたいってことですよね？」
+      </p>
+      </div>
+      <div class="mem4 right">
+      <span>十影 咬威</span>
+      <p>
+      
+            「そういうことだ。そうだろう、煌良？」
+      </p>
+      </div>
+      <div class="mem2 right">
+      <span>星影 煌良</span>
+      <p>
+      
+            「ああ　その強さと心…俺様がミミに憧れているのは間違いない」
+      </p>
+      </div>
+      <div class="kp LtoR-early">
+      
+            シーン終了
+      </div>
+      <div class="kp LtoR-early">
+      
+            クライマックスフェイズ
+      </div>
+      <div class="kp LtoR-early">
+      
+            PC達の間には少しだが不穏な空気が流れる。じりじりと互いにけん制し合い、今にも襲い掛かろうかという瞬間。
+      </div>
+      <div class="kp LtoR-early">
+      
+            突如、姉弟子"参宿七"が姿を現す。その表情は険しく、これまでとは異なっていた。<br>嘗て修業をつけていた時――否、それ以上の気迫を感じる。
+      </div>
+      <div class="mem1 left">
+      <span>参 宿七</span>
+      <p>
+      
+            「貴方達は、本当に継ぐ気があるのですか？」
+      </p>
+      </div>
+      <div class="mem1 left">
+      <span>参 宿七</span>
+      <p>
+      
+            「これは、互いに競ってこそ手に入れることが出来るものなのですよ」
+      </p>
+      </div>
+      <div class="mem1 left">
+      <span>参 宿七</span>
+      <p>
+      
+            「それならば、……【超新星】は渡しません」
+      </p>
+      </div>
+      <div class="mem1 left">
+      <span>参 宿七</span>
+      <p>
+      
+            「これを継ぐべきは常に１人――他ならぬ私こそがそれにふさわしい！」
+      </p>
+      </div>
+      <div class="kp LtoR-early">
+      
+            彼女は懐から『冬星の振り子』を取り出し、３人に見せる。
+      </div>
+      <div class="mem4 right">
+      <span>十影 咬威</span>
+      <p>
+      
+            「【超新星】が継ぐのは一人と決まったわけじゃない。なら、協力し合えるところは協力する。当然の行動だと思うが？」
+      </p>
+      </div>
+      <div class="mem1 left">
+      <span>参 宿七</span>
+      <p>
+      
+            「咬威、貴方はわかっていませんね。ここで、どれほどの人間が血を流しそして、この業が生み出されていたのかを」
+      </p>
+      </div>
+      <div class="mem4 right">
+      <span>十影 咬威</span>
+      <p>
+      
+            「知っているさ。ただ、それを俺達が辿る理由が今の所無いというだけで」
+      </p>
+      </div>
+      <div class="mem2 right">
+      <span>星影 煌良</span>
+      <p>
+      
+            「俺様は…この四人で過ごしたあの時間が何よりもの煌めきだった」
+      </p>
+      </div>
+      <div class="mem2 right">
+      <span>星影 煌良</span>
+      <p>
+      
+            「参 宿七、あなたを……いや、そうなってしまったあなたを師とは仰げない」
+      </p>
+      </div>
+      <div class="mem1 left">
+      <span>参 宿七</span>
+      <p>
+      
+            「そうですか。――ですが、私は、ここで諦めることは出来ないのです！」
+      </p>
+      </div>
+      <div class="mem1 left">
+      <span>参 宿七</span>
+      <p>
+      
+            「そうでしょう！私が儀式を失敗しなければ、そう思い続けてきた！だから、私は――」
+      </p>
+      </div>
+      <div class="mem1 left">
+      <span>参 宿七</span>
+      <p>
+      
+            「もういいでしょう」
+      </p>
+      </div>
+      <div class="mem1 left">
+      <span>参 宿七</span>
+      <p>
+      
+            「あなた方には諦めてもらいます。嫌というなら――」
+      </p>
+      </div>
+      <div class="kp LtoR-early">
+      
+            言葉と同時に構えを取る。もはや拳で語るほかない。
+      </div>
+      <div class="mem1 left">
+      <span>参 宿七</span>
+      <p>
+      
+            「いざ――おいでなさい！」
+      </p>
+      </div>
+      <div class="kp LtoR-early">
+      
+            戦闘開始！！
+      </div>
+      <div class="mem4 right">
+      <span>十影 咬威</span>
+      <p>
+      
+            奈落/掘削術<br>プロット忍法。「プロット」時に使用できる。指定特技の判定に成功すると、自分のプロットとは別に、「奈落」のプロットを行う。プロットを公開したタイミングで、「奈落」と同じプロット値のキャラクター全員は、《掘削術》による判定を行う。失敗したキャラクターは逆凪を受け、ファンブルエリアへ移動する。
+      </p>
+      </div>
+      <div class="mem6 right">
+      <span>解説</span>
+      <p>
+      
+            【忍法回路】にんぽうかいろ<br>装備忍法/間合なし/コストなし<br>指定特技：なし<br>あらゆるサポート忍法のコストが1低いものとして扱う(1未満にはならない)。
+      </p>
+      </div>
+      <div class="mem4 right">
+      <span>十影 咬威</span>
+      <p>
+      
+            SG&gt;=5 （判定：掘削術） (SG@12#2&gt;=5) ＞ 8[3,5] ＞ 8 ＞ 成功
+            
+      </p>
+      </div>
+      <div class="kp LtoR-early">
+      
+            プロット
+      </div>
+      <div class="mem3 left">
+      <span>木影 ミミ</span>
+      <p>
+      
+            影法師使います！　対象は十影さんで
+      </p>
+      </div>
+      <div class="mem6 right">
+      <span>解説</span>
+      <p>
+      
+            【影法師】かげほうし<br>サポート忍法/間合なし/コスト2<br>指定特技：歩法<br>プロット忍法。「プロット」時、自分のプロットを行う前に使用できる。戦闘に参加している好きなキャラクター一人を目標に選ぶ。指定特技の判定に成功すると、そのラウンドはプロットを行わず、プロット公開後、自動的に自分のプロット値は、目標のプロットしたサイコロの目と同じになる。そのラウンドに目標が【影法師】を使用していた場合、自分と目標は通常通りプロットを行う(【影法師】の効果は失われる)。そのラウンドに目標が複数のプロットを行っていた場合、目標のプロット公開後、そのプロットしたサイコロの中からランダムに一つを選ぶこと。
+      </p>
+      </div>
+      <div class="mem3 left">
+      <span>木影 ミミ</span>
+      <p>
+      
+            SG&gt;=5 （判定：歩法） (SG@12#2&gt;=5) ＞ 4[1,3] ＞ 4 ＞ 失敗
+            
+      </p>
+      </div>
+      <div class="kp LtoR-early">
+      
+            プロットオープン
+      </div>
+      <div class="kp LtoR-early">
+      
+            [ 星影 煌良 ] がダイスシンボルを公開。出目は 5 です。
+      </div>
+      <div class="kp LtoR-early">
+      
+            [ 参 宿七 ] がダイスシンボルを公開。出目は 6 です。
+      </div>
+      <div class="kp LtoR-early">
+      
+            [ 木影 ミミ  ] がダイスシンボルを公開。出目は 3 です。
+      </div>
+      <div class="kp LtoR-early">
+      
+            [ 十影 咬威 ] がダイスシンボルを公開。出目は 1 です。
+      </div>
+      <div class="kp LtoR-early">
+      
+            [ 奈落 ] がダイスシンボルを公開。出目は 6 です。
+      </div>
+      <div class="mem1 left">
+      <span>参 宿七</span>
+      <p>
+      
+            奈落の判定
+      </p>
+      </div>
+      <div class="mem1 left">
+      <span>参 宿七</span>
+      <p>
+      
+            SG@12#6&gt;=9 （判定：骨法術） (SG@12#6&gt;=9) ＞ 10[4,6] ＞ 10 ＞ 成功
+            
+      </p>
+      </div>
+      <div class="mem1 left">
+      <span>参 宿七</span>
+      <p>
+      
+            海原
+      </p>
+      </div>
+      <div class="mem1 left">
+      <span>参 宿七</span>
+      <p>
+      
+            【海原】うなばら<br>サポート忍法/間合なし/コスト2<br>指定特技：水術<br>戦闘中、自分が攻撃する代わりに使用できる。指定特技の判定に成功すると、戦場を「水中」に変更する。また、この忍法の使用者よりも低いプロット値にいるキャラクター全員は《水術》で判定を行う。失敗したキャラクターは、射撃戦ダメージを1点受ける。この効果は、中忍頭以上でないと修得できない。
+      </p>
+      </div>
+      <div class="mem1 left">
+      <span>参 宿七</span>
+      <p>
+      
+            SG@12#6&gt;=5 （判定：水術） (SG@12#6&gt;=5) ＞ 6[2,4] ＞ 6 ＞ ファンブル
+            
+      </p>
+      </div>
+      <div class="mem1 left">
+      <span>参 宿七</span>
+      <p>
+      
+            逆凪しました
+      </p>
+      </div>
+      <div class="mem1 left">
+      <span>参 宿七</span>
+      <p>
+      
+            「くっ」
+      </p>
+      </div>
+      <div class="mem2 right">
+      <span>星影 煌良</span>
+      <p>
+      
+            SG#5&gt;=5 （判定：仕込み） (SG@12#5&gt;=5) ＞ 2[1,1] ＞ 2 ＞ ファンブル
+            
+      </p>
+      </div>
+      <div class="mem2 right">
+      <span>星影 煌良</span>
+      <p>
+      
+            神通丸使います
+      </p>
+      </div>
+      <div class="kp LtoR-early">
+      
+            [ 星影 煌良 ] 忍具 : 5 → 4
+      </div>
+      <div class="mem2 right">
+      <span>星影 煌良</span>
+      <p>
+      
+            SG#5&gt;=5 （判定：仕込み） (SG@12#5&gt;=5) ＞ 9[3,6] ＞ 9 ＞ 成功
+            
+      </p>
+      </div>
+      <div class="mem6 right">
+      <span>解説</span>
+      <p>
+      
+            【錬気】れんき<br>サポート忍法/間合なし/コスト1<br>指定特技：身体操術<br>戦闘中、自分が攻撃する代わりに使用できる。指定特技の判定に成功すると、自分が【クリティカルヒット】の効果を持つ奥義を使用したとき、さらに接近戦ダメージ1点を与えることができるようになる。この効果は、累積せず、その戦闘が終了するか、自分に対して誰かが攻撃を成功させるまで持続する。
+      </p>
+      </div>
+      <div class="mem3 left">
+      <span>木影 ミミ</span>
+      <p>
+      
+            SG&gt;=6 （判定：歩法） (SG@12#2&gt;=6) ＞ 7[2,5] ＞ 7 ＞ 成功
+            
+      </p>
+      </div>
+      <div class="mem4 right">
+      <span>十影 咬威</span>
+      <p>
+      
+            暗号術で判定します
+      </p>
+      </div>
+      <div class="mem4 right">
+      <span>十影 咬威</span>
+      <p>
+      
+            SG&gt;=5 （判定：暗号術） (SG@12#2&gt;=5) ＞ 9[3,6] ＞ 9 ＞ 成功
+            
+      </p>
+      </div>
+      <div class="kp LtoR-early">
+      
+            ラウンド2
+      </div>
+      <div class="kp LtoR-early">
+      
+            プロット
+      </div>
+      <div class="mem4 right">
+      <span>十影 咬威</span>
+      <p>
+      
+            奈落/掘削術
+      </p>
+      </div>
+      <div class="mem4 right">
+      <span>十影 咬威</span>
+      <p>
+      
+            SG&gt;=5 （判定：掘削術） (SG@12#2&gt;=5) ＞ 2[1,1] ＞ 2 ＞ ファンブル
+            
+      </p>
+      </div>
+      <div class="kp LtoR-early">
+      
+            [ 木影 ミミ ] 忍具 : 5 → 4
+      </div>
+      <div class="mem3 left">
+      <span>木影 ミミ</span>
+      <p>
+      
+            とんこうふ！
+      </p>
+      </div>
+      <div class="mem4 right">
+      <span>十影 咬威</span>
+      <p>
+      
+            SG&gt;=5 （判定：掘削術） (SG@12#2&gt;=5) ＞ 7[1,6] ＞ 7 ＞ 成功
+            
+      </p>
+      </div>
+      <div class="kp LtoR-early">
+      
+            プロットオープン
+      </div>
+      <div class="kp LtoR-early">
+      
+            [ 星影 煌良 ] がダイスシンボルを公開。出目は 6 です。
+      </div>
+      <div class="kp LtoR-early">
+      
+            [ 十影 咬威 ] がダイスシンボルを公開。出目は 1 です。
+      </div>
+      <div class="kp LtoR-early">
+      
+            [ 木影 ミミ  ] がダイスシンボルを公開。出目は 6 です。
+      </div>
+      <div class="kp LtoR-early">
+      
+            [ 参 宿七 ] がダイスシンボルを公開。出目は 4 です。
+      </div>
+      <div class="kp LtoR-early">
+      
+            [ 奈落 ] がダイスシンボルを公開。出目は 5 です。
+      </div>
+      <div class="mem2 right">
+      <span>星影 煌良</span>
+      <p>
+      
+            d66 (D66) ＞ 26
+            
+      </p>
+      </div>
+      <div class="mem3 left">
+      <span>木影 ミミ</span>
+      <p>
+      
+            d66 (D66) ＞ 35
+            
+      </p>
+      </div>
+      <div class="mem3 left">
+      <span>木影 ミミ</span>
+      <p>
+      
+            星影さんに接近戦攻撃します
+      </p>
+      </div>
+      <div class="mem3 left">
+      <span>木影 ミミ</span>
+      <p>
+      
+            SG&gt;=5 （判定：罠術） (SG@12#2&gt;=5) ＞ 6[2,4] ＞ 6 ＞ 成功
+            
+      </p>
+      </div>
+      <div class="mem3 left">
+      <span>木影 ミミ</span>
+      <p>
+      
+            こけました
+      </p>
+      </div>
+      <div class="mem6 right">
+      <span>解説</span>
+      <p>
+      
+            【刃隠】はがくれ<br>装備忍法/間合なし/コストなし<br>指定特技：なし<br>このキャラクターに対する命中判定が失敗したキャラクターは1点の射撃戦ダメージを受ける。
+      </p>
+      </div>
+      <div class="kp LtoR-early">
+      
+            [ 木影 ミミ ] 日々の鍛錬 : 1 → 0
+      </div>
+      <div class="mem2 right">
+      <span>星影 煌良</span>
+      <p>
+      
+            参 宿七に【綺羅星】きらぼしで攻撃
+      </p>
+      </div>
+      <div class="mem6 right">
+      <span>解説</span>
+      <p>
+      
+            【綺羅星】きらぼし<br>攻撃忍法/間合2/コスト1<br>指定特技：飛術<br>接近戦。攻撃が成功すると、目標に接近戦ダメージを2点与える。相手にダメージを与えた後、自分が逆凪になる。
+      </p>
+      </div>
+      <div class="mem2 right">
+      <span>星影 煌良</span>
+      <p>
+      
+            SG#6&gt;=5 （判定：飛術） (SG@12#6&gt;=5) ＞ 8[3,5] ＞ 8 ＞ 成功
+            
+      </p>
+      </div>
+      <div class="mem1 left">
+      <span>参 宿七</span>
+      <p>
+      
+            SG@12#4&gt;=6 （判定：骨法術） (SG@12#4&gt;=6) ＞ 6[2,4] ＞ 6 ＞ 成功
+            
+      </p>
+      </div>
+      <div class="mem1 left">
+      <span>参 宿七</span>
+      <p>
+      
+            海原
+      </p>
+      </div>
+      <div class="mem1 left">
+      <span>参 宿七</span>
+      <p>
+      
+            SG@12#4&gt;=5 （判定：水術） (SG@12#4&gt;=5) ＞ 10[4,6] ＞ 10 ＞ 成功
+            
+      </p>
+      </div>
+      <div class="mem4 right">
+      <span>十影 咬威</span>
+      <p>
+      
+            SG&gt;=5 （判定：水術） (SG@12#2&gt;=5) ＞ 5[1,4] ＞ 5 ＞ 成功
+            
+      </p>
+      </div>
+      <div class="mem1 left">
+      <span>参 宿七</span>
+      <p>
+      
+            戦場が水中に
+      </p>
+      </div>
+      <div class="mem4 right">
+      <span>十影 咬威</span>
+      <p>
+      
+            仕込み術の代用判定（水術）
+      </p>
+      </div>
+      <div class="mem4 right">
+      <span>十影 咬威</span>
+      <p>
+      
+            SG&gt;=7 （判定：水術） (SG@12#2&gt;=7) ＞ 4[1,3] ＞ 4 ＞ 失敗
+            
+      </p>
+      </div>
+      <div class="kp LtoR-early">
+      
+            ラウンド3
+      </div>
+      <div class="mem4 right">
+      <span>十影 咬威</span>
+      <p>
+      
+            奈落/掘削術
+      </p>
+      </div>
+      <div class="mem3 left">
+      <span>木影 ミミ</span>
+      <p>
+      
+            影法師　対象は参お姉様！
+      </p>
+      </div>
+      <div class="mem4 right">
+      <span>十影 咬威</span>
+      <p>
+      
+            SG&gt;=5 （判定：掘削術） (SG@12#2&gt;=5) ＞ 12[6,6] ＞ 12 ＞ スペシャル(【生命力】1点か変調一つを回復)
+            
+      </p>
+      </div>
+      <div class="mem3 left">
+      <span>木影 ミミ</span>
+      <p>
+      
+            SG&gt;=5 （判定：歩法） (SG@12#2&gt;=5) ＞ 11[5,6] ＞ 11 ＞ 成功
+            
+      </p>
+      </div>
+      <div class="kp LtoR-early">
+      
+            プロットオープン
+      </div>
+      <div class="kp LtoR-early">
+      
+            [ 十影 咬威 ] がダイスシンボルを公開。出目は 1 です。
+      </div>
+      <div class="kp LtoR-early">
+      
+            [ 星影 煌良 ] がダイスシンボルを公開。出目は 6 です。
+      </div>
+      <div class="kp LtoR-early">
+      
+            [ 参 宿七 ] がダイスシンボルを公開。出目は 3 です。
+      </div>
+      <div class="kp LtoR-early">
+      
+            [ 十影 咬威 ] がダイスシンボルを公開。出目は 4 です。
+      </div>
+      <div class="mem1 left">
+      <span>参 宿七</span>
+      <p>
+      
+            D66 (D66) ＞ 14
+            
+      </p>
+      </div>
+      <div class="mem3 left">
+      <span>木影 ミミ</span>
+      <p>
+      
+            d66 (D66) ＞ 12
+            
+      </p>
+      </div>
+      <div class="mem1 left">
+      <span>参 宿七</span>
+      <p>
+      
+            「貴方達もまだまだのようですね」
+      </p>
+      </div>
+      <div class="mem1 left">
+      <span>参 宿七</span>
+      <p>
+      
+            「みなさい。これが海の世界だ――」
+      </p>
+      </div>
+      <div class="mem1 left">
+      <span>参 宿七</span>
+      <p>
+      
+            奥義！！
+      </p>
+      </div>
+      <div class="mem1 left">
+      <span>参 宿七</span>
+      <p>
+      
+            ■奥義<br>《明けの明星[ｱｹﾉﾐｮｳｼﾞｮｳ]》<br>指定特技：水術<br>効果　　：追加忍法<br>①地獄[ｲﾝﾍﾙﾉ]<br>②天国[ﾊﾟﾗｲｿ]（使用不可）<br>演出　　：空気中の水分を操り、霧を発生させる水遁。<br>灼熱の熱気を体内から放ち、火花を散らす火遁。<br>両者を組み合わせ霧の中で光を乱反射させる。
+      </p>
+      </div>
+      <div class="mem6 right">
+      <span>解説</span>
+      <p>
+      
+            【水師】すいし<br>装備忍法/間合なし/コストなし<br>指定特技：なし<br>自分がシーンプレイヤーなら、戦闘開始時に、その戦場を「水中」にすることができる。また戦闘中、現在の戦場が「水中」の場合、各ラウンドに使用できる忍法のコストの合計が3点上昇し、命中判定のスペシャル値が2点減少する。
+      </p>
+      </div>
+      <div class="mem6 right">
+      <span>解説</span>
+      <p>
+      
+            【戦場の極意】せんじょうのごくい<br>装備忍法/間合なし/コストなし<br>指定特技：なし<br>この忍法を修得したとき「戦場表」の中から戦場を一つ選ぶ。その戦場で戦う場合、自分はあらゆる行為判定にプラス1の修正を受ける。また、その戦場の特殊効果を無視できる。<br>→水中
+      </p>
+      </div>
+      <div class="mem6 right">
+      <span>解説</span>
+      <p>
+      
+            【地獄】いんへるの<br>攻撃忍法/間合2/コスト4<br>指定特技：水術<br>間合内におり、かつ自分と同じプロット値にいないキャラクター全員を目標にする。攻撃が成功すると、目標に接近戦ダメージを1点と射撃戦ダメージを1点与える。
+      </p>
+      </div>
+      <div class="mem1 left">
+      <span>参 宿七</span>
+      <p>
+      
+            SG@10#3&gt;=5 （判定：水術） (SG@10#3&gt;=5) ＞ 6[3,3] ＞ 6 ＞ 成功
+            
+      </p>
+      </div>
+      <div class="mem4 right">
+      <span>十影 咬威</span>
+      <p>
+      
+            SG&gt;=5 （判定：水術） (SG@12#2&gt;=5) ＞ 5[1,4] ＞ 5 ＞ 成功
+            
+      </p>
+      </div>
+      <div class="mem6 right">
+      <span>解説</span>
+      <p>
+      
+            【揺音】ゆりね<br>装備忍法/間合なし/コストなし<br>指定特技：なし<br>この忍法を修得しているキャラクターが奥義を使用したとき、同じシーンに登場しているキャラクターは、《見敵術》の判定に成功しないと、その奥義の【情報】を獲得できなくなる。この判定を見切り判定と呼ぶ。
+      </p>
+      </div>
+      <div class="mem6 right">
+      <span>解説</span>
+      <p>
+      
+            【秘中の秘】ひちゅうのひ<br>装備忍法/間合なし/コストなし<br>指定特技：なし<br>この忍法を修得したときに、好きな特技一種を選ぶ。このキャラクターの奥義に対して「見切り判定」を行う場合、《見敵術》ではなく、その特技の判定に成功しなければならない。また、その「見切り判定」にはマイナス2の修正がつく。<br>→呪術
+      </p>
+      </div>
+      <div class="mem3 left">
+      <span>木影 ミミ</span>
+      <p>
+      
+            SG-2&gt;=5 （判定：呪術） (SG-2@12#2&gt;=5) ＞ 5[1,4]-2 ＞ 3 ＞ 失敗
+            
+      </p>
+      </div>
+      <div class="mem2 right">
+      <span>星影 煌良</span>
+      <p>
+      
+            SG-2&gt;=8 （判定：瞳術） (SG-2@12#2&gt;=8) ＞ 7[1,6]-2 ＞ 5 ＞ 失敗
+            
+      </p>
+      </div>
+      <div class="mem4 right">
+      <span>十影 咬威</span>
+      <p>
+      
+            SG-2&gt;=9 （判定：経済力） (SG-2@12#2&gt;=9) ＞ 2[1,1]-2 ＞ 0 ＞ ファンブル
+            
+      </p>
+      </div>
+      <div class="mem3 left">
+      <span>木影 ミミ</span>
+      <p>
+      
+            奥義！！
+      </p>
+      </div>
+      <div class="mem3 left">
+      <span>木影 ミミ</span>
+      <p>
+      
+            ■奥義<br>《光芒一拳》<br>指定特技：骨法術<br>効果　　：クリティカルヒット<br>くらまし<br>射程低下<br>演出　　：拳を高速で振り抜き、とてつもない威力でぶん殴る。<br><br>気づいた時にはもう遅い。<br>後ろにつく彼女の姿は影の如く。その動きは光の如く。<br>避ける間も無く襲い来るは一つの拳。<br>さあ！　お覚悟を。
+      </p>
+      </div>
+      <div class="mem3 left">
+      <span>木影 ミミ</span>
+      <p>
+      
+            対象は参お姉様で！　練気ものります
+      </p>
+      </div>
+      <div class="mem6 right">
+      <span>解説</span>
+      <p>
+      
+            クリティカルヒット<br>攻撃を行う代わりに使用できる。自分のプロット値から1以内にいるキャラクター一人を目標に選ぶ。ランダムに特技分野四つを選び、目標の【生命力】を失わせる(すでに失っている【生命力】が選ばれた場合、どの特技分野の【生命力】を失うのかを、目標が選ぶことができる)。
+      </p>
+      </div>
+      <div class="mem6 right">
+      <span>解説</span>
+      <p>
+      
+            くらまし<br>【くらまし】が追加された奥義を使用したとき、その奥義の奥義破り判定にはマイナス2の修正がつく。
+      </p>
+      </div>
+      <div class="mem6 right">
+      <span>解説</span>
+      <p>
+      
+            射程低下<br>【射程低下】が追加された奥義は、通常のものよりもプロット値の範囲が1狭い位置にいるキャラクターしか目標として選べなくなる。
+      </p>
+      </div>
+      <div class="kp LtoR-early">
+      
+            [ 参 宿七 ] 生命力 : 8 → 3
+      </div>
+      <div class="kp LtoR-early">
+      
+            ラウンド4
+      </div>
+      <div class="kp LtoR-early">
+      
+            見切り判定
+      </div>
+      <div class="mem4 right">
+      <span>十影 咬威</span>
+      <p>
+      
+            SG-2&gt;=6 （判定：暗号術） (SG-2@12#2&gt;=6) ＞ 5[2,3]-2 ＞ 3 ＞ 失敗
+            
+      </p>
+      </div>
+      <div class="mem1 left">
+      <span>参 宿七</span>
+      <p>
+      
+            SG@10#3&gt;=5 （判定：見敵術） (SG@10#3&gt;=5) ＞ 3[1,2] ＞ 3 ＞ ファンブル
+            
+      </p>
+      </div>
+      <div class="mem2 right">
+      <span>星影 煌良</span>
+      <p>
+      
+            SG&gt;=7 （判定：瞳術） (SG@12#2&gt;=7) ＞ 3[1,2] ＞ 3 ＞ 失敗
+            
+      </p>
+      </div>
+      <div class="mem2 right">
+      <span>星影 煌良</span>
+      <p>
+      
+            神通丸つかいます
+      </p>
+      </div>
+      <div class="kp LtoR-early">
+      
+            [ 星影 煌良 ] 忍具 : 4 → 3
+      </div>
+      <div class="mem2 right">
+      <span>星影 煌良</span>
+      <p>
+      
+            SG&gt;=7 （判定：瞳術） (SG@12#2&gt;=7) ＞ 6[1,5] ＞ 6 ＞ 失敗
+            
+      </p>
+      </div>
+      <div class="kp LtoR-early">
+      
+            プロット
+      </div>
+      <div class="mem3 left">
+      <span>木影 ミミ</span>
+      <p>
+      
+            影法師　対象は参お姉様で
+      </p>
+      </div>
+      <div class="mem4 right">
+      <span>十影 咬威</span>
+      <p>
+      
+            奈落/掘削術
+      </p>
+      </div>
+      <div class="mem4 right">
+      <span>十影 咬威</span>
+      <p>
+      
+            SG&gt;=5 （判定：掘削術） (SG@12#2&gt;=5) ＞ 5[2,3] ＞ 5 ＞ 成功
+            
+      </p>
+      </div>
+      <div class="mem3 left">
+      <span>木影 ミミ</span>
+      <p>
+      
+            SG&gt;=5 （判定：歩法） (SG@12#2&gt;=5) ＞ 11[5,6] ＞ 11 ＞ 成功
+            
+      </p>
+      </div>
+      <div class="kp LtoR-early">
+      
+            プロットオープン
+      </div>
+      <div class="kp LtoR-early">
+      
+            [ 星影 煌良 ] がダイスシンボルを公開。出目は 5 です。
+      </div>
+      <div class="kp LtoR-early">
+      
+            [ 十影 咬威 ] がダイスシンボルを公開。出目は 4 です。
+      </div>
+      <div class="kp LtoR-early">
+      
+            [ 参 宿七 ] がダイスシンボルを公開。出目は 4 です。
+      </div>
+      <div class="kp LtoR-early">
+      
+            [ 奈落 ] がダイスシンボルを公開。出目は 2 です。
+      </div>
+      <div class="mem2 right">
+      <span>星影 煌良</span>
+      <p>
+      
+            参 宿七に【綺羅星】きらぼしで攻撃
+      </p>
+      </div>
+      <div class="mem2 right">
+      <span>星影 煌良</span>
+      <p>
+      
+            SG&gt;=5 （判定：飛術） (SG@12#2&gt;=5) ＞ 7[1,6] ＞ 7 ＞ 成功
+            
+      </p>
+      </div>
+      <div class="mem1 left">
+      <span>参 宿七</span>
+      <p>
+      
+            SG@12#4+1&gt;=6 （判定：骨法術） (SG+1@12#4&gt;=6) ＞ 4[1,3]+1 ＞ 5 ＞ ファンブル
+            
+      </p>
+      </div>
+      <div class="kp LtoR-early">
+      
+            [ 参 宿七 ] 生命力 : 3 → 1
+      </div>
+      <div class="mem3 left">
+      <span>木影 ミミ</span>
+      <p>
+      
+            d66 (D66) ＞ 13
+            
+      </p>
+      </div>
+      <div class="mem4 right">
+      <span>十影 咬威</span>
+      <p>
+      
+            d66 (D66) ＞ 36
+            
+      </p>
+      </div>
+      <div class="mem1 left">
+      <span>参 宿七</span>
+      <p>
+      
+            D66 (D66) ＞ 11
+            
+      </p>
+      </div>
+      <div class="mem4 right">
+      <span>十影 咬威</span>
+      <p>
+      
+            罠術の判定をします
+      </p>
+      </div>
+      <div class="mem4 right">
+      <span>十影 咬威</span>
+      <p>
+      
+            SG#4&gt;=7 （判定：野戦術） (SG@12#4&gt;=7) ＞ 8[3,5] ＞ 8 ＞ 成功
+            
+      </p>
+      </div>
+      <div class="mem3 left">
+      <span>木影 ミミ</span>
+      <p>
+      
+            参お姉様に接近戦攻撃します
+      </p>
+      </div>
+      <div class="mem3 left">
+      <span>木影 ミミ</span>
+      <p>
+      
+            SG&gt;=5 （判定：罠術） (SG@12#2&gt;=5) ＞ 7[3,4] ＞ 7 ＞ 成功
+            
+      </p>
+      </div>
+      <div class="mem1 left">
+      <span>参 宿七</span>
+      <p>
+      
+            「っ……さすがですね」
+      </p>
+      </div>
+      <div class="mem1 left">
+      <span>参 宿七</span>
+      <p>
+      
+            「最後に、一度だけ見せてあげましょう」
+      </p>
+      </div>
+      <div class="mem1 left">
+      <span>参 宿七</span>
+      <p>
+      
+            「最後に、魅せてあげましょう」
+      </p>
+      </div>
+      <div class="mem1 left">
+      <span>参 宿七</span>
+      <p>
+      
+            「最期に、みせましょう」
+      </p>
+      </div>
+      <div class="mem1 left">
+      <span>参 宿七</span>
+      <p>
+      
+            奥義！！
+      </p>
+      </div>
+      <div class="mem1 left">
+      <span>参 宿七</span>
+      <p>
+      
+            ■奥義<br>《超新星[ﾁｮｳｼﾝｾｲ ｲﾀﾗｽﾞ]》<br>指定特技：呪術<br>効果　　：範囲攻撃／撃ち／発動条件<br><br>(強)撃ち:射撃戦ダメージを１点追加。<br>(弱)発動条件:生命点が３点以下にならないと使用不可能。<br>演出　　："一撃にてあらゆる敵を滅し<br>無数の攻撃をも防ぎ<br>どのような傷さえ苦にせず<br>如何なる困難さえ突破し<br>相対する者の試みを挫く<br><br>天上天下 並ぶ者無し<br><br>其れ即ち 並びて二つと同じ技に非ず<br>命紡ぎ星は巡る<br>これぞ正しく 超新星"
+      </p>
+      </div>
+      <div class="mem6 right">
+      <span>解説</span>
+      <p>
+      
+            流し<br>【流し】が追加された奥義で、射撃戦ダメージを1点以上軽減したり、回復したりした場合、奥義の効果の対象（【絶対防御】ならその目標、【不死身】なら自分）からプロット値が3以内のキャラクター一人を目標に選ぶ。目標に射撃戦ダメージを1点与えることができる。
+      </p>
+      </div>
+      <div class="mem6 right">
+      <span>解説</span>
+      <p>
+      
+            【撃ち】が追加された奥義は、目標に選んだキャラクターに、さらに射撃戦ダメージを1点与えることができる。
+      </p>
+      </div>
+      <div class="mem2 right">
+      <span>星影 煌良</span>
+      <p>
+      
+            奥義！！
+      </p>
+      </div>
+      <div class="mem2 right">
+      <span>星影 煌良</span>
+      <p>
+      
+            『冬星の振り子』を掲げた
+      </p>
+      </div>
+      <div class="mem2 right">
+      <span>星影 煌良</span>
+      <p>
+      
+            ■奥義<br>《《超新星・彗星[ﾁｮｳｼﾝｾｲ]》》<br>指定特技：瞳術<br>効果　　：絶対防御/流し/防御低下<br><br>絶対防御（同じシーンに登場しているキャラクターが【生命力】を失ったときに使用できる(ただし、【生命力】を消費したときには使用できない)。【生命力】を失ったキャラクターの中から一人を目標に選ぶ。目標の【生命力】の減少の中から好きな4点分を軽減することがでさる（0点未満にはならない）。）<br><br>/流し（【流し】が追加された奥義で、射撃戦ダメージを1点以上軽減したり、回復したりした場合、奥義の効果の対象（【絶対防御】ならその目標、【不死身】なら自分）からプロット値が3以内のキャラクター一人を目標に選ぶ。目標に射撃戦ダメージを1点与えることができる。）<br><br>/防御低下（【防御低下】が追加された【絶対防御】では、軽減できる【生命力】減少の値が1点少なくなる。）<br>演出　　："天上天下 並ぶ者無し<br><br>其れ即ち 並びて二つと同じ技に非ず<br>命紡ぎ星は巡る<br>これぞ正しく 超新星"<br><br>彗星が如く煌めきながら超スピードで移動し、相手の攻撃をはじき返す。<br> 
+      </p>
+      </div>
+      <div class="mem4 right">
+      <span>十影 咬威</span>
+      <p>
+      
+            振り子をかざします
+      </p>
+      </div>
+      <div class="mem4 right">
+      <span>十影 咬威</span>
+      <p>
+      
+            ■奥義<br>《超新星[ﾁｮｳｼﾝｾｲ]・シークレットコード：彗星》<br>指定特技　：変更前の元々の奥義と同じ<br>エフェクト：変更前の元々のエフェクト、強み、弱みと同様<br>（回数制限や不死身の回数はリセットされる）<br><br>効果・演出：<br>変更前の元々の奥義に下記の文章と追加する。<br><br>"天上天下 並ぶ者無し<br><br>其れ即ち 並びて二つと同じ技に非ず<br>命紡ぎ星は巡る<br>これぞ正しく 超新星"
+      </p>
+      </div>
+      <div class="mem4 right">
+      <span>十影 咬威</span>
+      <p>
+      
+            流しの対象：参さん
+      </p>
+      </div>
+      <div class="mem1 left">
+      <span>参 宿七</span>
+      <p>
+      
+            見切り判定呪術で-2
+      </p>
+      </div>
+      <div class="mem3 left">
+      <span>木影 ミミ</span>
+      <p>
+      
+            SG-2&gt;=5 （判定：呪術） (SG-2@12#2&gt;=5) ＞ 7[1,6]-2 ＞ 5 ＞ 成功
+            
+      </p>
+      </div>
+      <div class="mem4 right">
+      <span>十影 咬威</span>
+      <p>
+      
+            SG#4-2&gt;=9 （判定：経済力） (SG-2@12#4&gt;=9) ＞ 8[2,6]-2 ＞ 6 ＞ 失敗
+            
+      </p>
+      </div>
+      <div class="mem2 right">
+      <span>星影 煌良</span>
+      <p>
+      
+            SG-2&gt;=8 （判定：瞳術） (SG-2@12#2&gt;=8) ＞ 4[2,2]-2 ＞ 2 ＞ 失敗
+            
+      </p>
+      </div>
+      <div class="kp LtoR-early">
+      
+            [ 参 宿七 ] 生命力 : 1 → -2
+      </div>
+      <div class="kp LtoR-early">
+      
+            [ 木影 ミミ ] 器術 : 1 → 0
+      </div>
+      <div class="kp LtoR-early">
+      
+            [ 木影 ミミ ] 忍術 : 1 → 0
+      </div>
+      <div class="kp LtoR-early">
+      
+            [ 木影 ミミ ] 体術 : 1 → 0
+      </div>
+      <div class="mem3 left">
+      <span>木影 ミミ</span>
+      <p>
+      
+            兵糧丸３つ食います
+      </p>
+      </div>
+      <div class="kp LtoR-early">
+      
+            [ 木影 ミミ ] 忍具 : 4 → 1
+      </div>
+      <div class="kp LtoR-early">
+      
+            [ 木影 ミミ ] 器術 : 0 → 1
+      </div>
+      <div class="kp LtoR-early">
+      
+            [ 木影 ミミ ] 体術 : 0 → 1
+      </div>
+      <div class="kp LtoR-early">
+      
+            [ 木影 ミミ ] 忍術 : 0 → 1
+      </div>
+      <div class="mem1 left">
+      <span>参 宿七</span>
+      <p>
+      
+            脱落です
+      </p>
+      </div>
+      <div class="mem1 left">
+      <span>参 宿七</span>
+      <p>
+      
+            「つよくなりましたね……」
+      </p>
+      </div>
+      <div class="kp LtoR-early">
+      
+            ラウンド5
+      </div>
+      <div class="kp LtoR-early">
+      
+            シノビたちのバトルにより、戦場が荒れ極地へと変貌する
+      </div>
+      <div class="kp LtoR-early">
+      
+            プロット
+      </div>
+      <div class="mem3 left">
+      <span>木影 ミミ</span>
+      <p>
+      
+            影法師使います　対象は十影さんで
+      </p>
+      </div>
+      <div class="mem3 left">
+      <span>木影 ミミ</span>
+      <p>
+      
+            SG-2&gt;=5 （判定：歩法） (SG-2@12#2&gt;=5) ＞ 7[1,6]-2 ＞ 5 ＞ 成功
+            
+      </p>
+      </div>
+      <div class="kp LtoR-early">
+      
+            プロットオープン
+      </div>
+      <div class="kp LtoR-early">
+      
+            [ 星影 煌良 ] がダイスシンボルを公開。出目は 3 です。
+      </div>
+      <div class="kp LtoR-early">
+      
+            [ 十影 咬威 ] がダイスシンボルを公開。出目は 5 です。
+      </div>
+      <div class="mem4 right">
+      <span>十影 咬威</span>
+      <p>
+      
+            d66 (D66) ＞ 24
+            
+      </p>
+      </div>
+      <div class="mem3 left">
+      <span>木影 ミミ</span>
+      <p>
+      
+            d66 (D66) ＞ 23
+            
+      </p>
+      </div>
+      <div class="mem6 right">
+      <span>解説</span>
+      <p>
+      
+            【土竜吼】どりゅうこう<br>攻撃忍法/間合2/コスト2<br>指定特技：掘削術<br>接近戦。攻撃が成功すると、目標に接近戦ダメージ1点を与え、目標のいるプロット値に移動する。元々の自分のプロット値より低いプロット値に移動した場合、そのプロット値の手番になったとき、もう一度このラウンドに使用していない別の攻撃忍法を使用することができる。(【クリティカルヒット】や【範囲攻撃】の奥義は使用できない。)
+      </p>
+      </div>
+      <div class="mem6 right">
+      <span>解説</span>
+      <p>
+      
+            【非常識】ひじょうしき<br>装備忍法/間合なし/コストなし<br>指定特技：なし<br>このキャラクターに対する命中判定は、その攻撃に使った攻撃忍法のコストの半分(端数切り上げ)だけ、マイナスの修正がつく。
+      </p>
+      </div>
+      <div class="mem4 right">
+      <span>十影 咬威</span>
+      <p>
+      
+            土竜吼/掘削術　対象は煌良くん
+      </p>
+      </div>
+      <div class="mem4 right">
+      <span>十影 咬威</span>
+      <p>
+      
+            SG#5-1&gt;=5 （判定：掘削術） (SG-1@12#5&gt;=5) ＞ 2[1,1]-1 ＞ 1 ＞ ファンブル
+            
+      </p>
+      </div>
+      <div class="kp LtoR-early">
+      
+            [ 十影 咬威 ] 忍術 : 1 → 0
+      </div>
+      <div class="mem3 left">
+      <span>木影 ミミ</span>
+      <p>
+      
+            十影さんに接近戦攻撃します
+      </p>
+      </div>
+      <div class="mem3 left">
+      <span>木影 ミミ</span>
+      <p>
+      
+            SG&gt;=5 （判定：罠術） (SG@12#2&gt;=5) ＞ 9[3,6] ＞ 9 ＞ 成功
+            
+      </p>
+      </div>
+      <div class="mem4 right">
+      <span>十影 咬威</span>
+      <p>
+      
+            奥義！！
+      </p>
+      </div>
+      <div class="mem4 right">
+      <span>十影 咬威</span>
+      <p>
+      
+            ■奥義<br>《超新星[ﾁｮｳｼﾝｾｲ]》<br>指定特技　：変更前の元々の奥義と同じ<br>エフェクト：変更前の元々のエフェクト、強み、弱みと同様<br>（回数制限や不死身の回数はリセットされる）<br><br>効果・演出：<br>変更前の元々の奥義に下記の文章と追加する。<br><br>"天上天下 並ぶ者無し<br><br>其れ即ち 並びて二つと同じ技に非ず<br>命紡ぎ星は巡る<br>これぞ正しく 超新星"
+      </p>
+      </div>
+      <div class="mem3 left">
+      <span>木影 ミミ</span>
+      <p>
+      
+            奥義破り！！
+      </p>
+      </div>
+      <div class="mem3 left">
+      <span>木影 ミミ</span>
+      <p>
+      
+            SG&gt;=7 （判定：見敵術） (SG@12#2&gt;=7) ＞ 6[1,5] ＞ 6 ＞ 失敗
+            
+      </p>
+      </div>
+      <div class="mem2 right">
+      <span>星影 煌良</span>
+      <p>
+      
+            遁甲符使います
+      </p>
+      </div>
+      <div class="kp LtoR-early">
+      
+            [ 星影 煌良 ] 忍具 : 3 → 2
+      </div>
+      <div class="mem2 right">
+      <span>星影 煌良</span>
+      <p>
+      
+            木影 ミミに感情修正をします
+      </p>
+      </div>
+      <div class="mem4 right">
+      <span>十影 咬威</span>
+      <p>
+      
+            「最強と謳われたこの奥義、破ってみせるがいい！」木影ミミ感情修正+1!
+      </p>
+      </div>
+      <div class="mem3 left">
+      <span>木影 ミミ</span>
+      <p>
+      
+            「ありがとうございますっ！」
+      </p>
+      </div>
+      <div class="mem3 left">
+      <span>木影 ミミ</span>
+      <p>
+      
+            回想シーンいれます！！！
+      </p>
+      </div>
+      <div class="mem3 left">
+      <span>木影 ミミ</span>
+      <p>
+      
+            奥義を継ぐと偽って、ここに弟子入りしたけれど。<br>いつのまにかみんなのことを大好きになって、奥義のことも知りたくなった。<br><br>好きな人の放つ奥義と、本気で向き合いたいのです！
+      </p>
+      </div>
+      <div class="mem3 left">
+      <span>木影 ミミ</span>
+      <p>
+      
+            SG+5&gt;=7 （判定：見敵術） (SG+5@12#2&gt;=7) ＞ 7[1,6]+5 ＞ 12 ＞ 成功
+            
+      </p>
+      </div>
+      <div class="mem4 right">
+      <span>十影 咬威</span>
+      <p>
+      
+            RCT ランダム分野表(2) ＞ 体術
+            
+      </p>
+      </div>
+      <div class="kp LtoR-early">
+      
+            [ 十影 咬威 ] 体術 : 1 → 0
+      </div>
+      <div class="mem2 right">
+      <span>星影 煌良</span>
+      <p>
+      
+            「【超新星】を得た今――俺様の煌めきに勝るものはない！」
+      </p>
+      </div>
+      <div class="mem2 right">
+      <span>星影 煌良</span>
+      <p>
+      
+            十影 咬威に【綺羅星】きらぼしで攻撃します
+      </p>
+      </div>
+      <div class="mem2 right">
+      <span>星影 煌良</span>
+      <p>
+      
+            2D6&gt;=5 （判定：飛術） (2D6&gt;=5) ＞ 7[1,6] ＞ 7 ＞ 成功
+            
+      </p>
+      </div>
+      <div class="mem4 right">
+      <span>十影 咬威</span>
+      <p>
+      
+            RCT ランダム分野表(5) ＞ 戦術
+            
+      </p>
+      </div>
+      <div class="mem4 right">
+      <span>十影 咬威</span>
+      <p>
+      
+            RCT ランダム分野表(6) ＞ 妖術
+            
+      </p>
+      </div>
+      <div class="kp LtoR-early">
+      
+            [ 十影 咬威 ] 戦術 : 1 → 0
+      </div>
+      <div class="kp LtoR-early">
+      
+            [ 十影 咬威 ] 妖術 : 1 → 0
+      </div>
+      <div class="kp LtoR-early">
+      
+            1D6 (1D6) ＞ 2
+            
+      </div>
+      <div class="mem4 right">
+      <span>十影 咬威</span>
+      <p>
+      
+            RCT ランダム分野表(5) ＞ 戦術
+            
+      </p>
+      </div>
+      <div class="mem2 right">
+      <span>星影 煌良</span>
+      <p>
+      
+            RCT ランダム分野表(2) ＞ 体術
+            
+      </p>
+      </div>
+      <div class="mem3 left">
+      <span>木影 ミミ</span>
+      <p>
+      
+            RCT ランダム分野表(6) ＞ 妖術
+            
+      </p>
+      </div>
+      <div class="kp LtoR-early">
+      
+            [ 木影 ミミ ] 妖術 : 1 → 0
+      </div>
+      <div class="kp LtoR-early">
+      
+            [ 十影 咬威 ] 謀術 : 1 → 0
+      </div>
+      <div class="kp LtoR-early">
+      
+            [ 星影 煌良 ] 体術 : 1 → 0
+      </div>
+      <div class="mem4 right">
+      <span>十影 咬威</span>
+      <p>
+      
+            d66 (D66) ＞ 11
+            
+      </p>
+      </div>
+      <div class="mem3 left">
+      <span>木影 ミミ</span>
+      <p>
+      
+            d66 (D66) ＞ 34
+            
+      </p>
+      </div>
+      <div class="mem2 right">
+      <span>星影 煌良</span>
+      <p>
+      
+            d66 (D66) ＞ 22
+            
+      </p>
+      </div>
+      <div class="mem4 right">
+      <span>十影 咬威</span>
+      <p>
+      
+            戦闘脱落します
+      </p>
+      </div>
+      <div class="mem2 right">
+      <span>星影 煌良</span>
+      <p>
+      
+            戦闘脱落します
+      </p>
+      </div>
+      <div class="kp LtoR-early">
+      
+            戦闘終了！！
+      </div>
+      <div class="kp LtoR-early">
+      
+            勝者：ミミ
+      </div>
+      <div class="mem5 left">
+      <span>GM</span>
+      <p>
+      
+            ■PC1秘密：<br>あなたは元々、究極とまで呼ばれる奥義に興味を持ち、天光流の門を叩いた。<br>口伝に伝えられるその技は従来の常識をはるかに凌駕している。<br>世に伝え広めれば、まさしく超新星となるだろう。<br><br>しかし、一人前と認められ巣立ちを迎えようとも、一向に【超新星】の詳細を掴めず苛立ちと焦りを覚えた。<br>いくら想い焦がそうとも、手中に得られないそれに、興味は増すばかりだった。<br><br>そして今回、いよいよその機会が巡ってきたのだ。<br><br>あなたの【本当の使命】は『【超新星】の情報を持ち帰ること』だ。
+      </p>
+      </div>
+      <div class="mem3 left">
+      <span>木影 ミミ</span>
+      <p>
+      
+            戦果にとかげさんの秘密もらいます！
+      </p>
+      </div>
+      <div class="kp LtoR-early">
+      
+            エンディング
+      </div>
+      <div class="mem3 left">
+      <span>木影 ミミ</span>
+      <p>
+      
+            では私から！
+      </p>
+      </div>
+      <div class="mem3 left">
+      <span>木影 ミミ</span>
+      <p>
+      
+            今回の経験で、『強さ』への向き合い方を考え直そうと思った私です。
+      </p>
+      </div>
+      <div class="mem3 left">
+      <span>木影 ミミ</span>
+      <p>
+      
+            たとえ悪意がなかったとしても、動機を偽って弟子になったのは事実。あまり良くないと私は思います。シノビですから、その程度の嘘は嘘のうちに入らないかもしれませんが……それはそれとして。気持ちの問題なのです。
+      </p>
+      </div>
+      <div class="mem3 left">
+      <span>木影 ミミ</span>
+      <p>
+      
+            というわけで、旅に出ることにしました！　強さを探究する旅です。戦いの日々です。<br>嘘なく強い人と戦う！　それが今の私の目標です。
+      </p>
+      </div>
+      <div class="mem3 left">
+      <span>木影 ミミ</span>
+      <p>
+      
+            ……旅に出る前に、兄弟子と弟弟子に手合わせを頼むのもありかもしれないですね。もちろん、本気のやつを。あの時はちゃんと戦えませんでしたから。
+      </p>
+      </div>
+      <div class="mem3 left">
+      <span>木影 ミミ</span>
+      <p>
+      
+            絶対楽しいですよね、そうですよね！　わくわくしてきました。思い立ったが吉日！　今誘いましょう！　そうしましょう！
+      </p>
+      </div>
+      <div class="kp LtoR-early">
+      
+            ――――――――――――――
+      </div>
+      <div class="kp LtoR-early">
+      
+            ―――――――――
+      </div>
+      <div class="kp LtoR-early">
+      
+            ―――――
+      </div>
+      <div class="kp LtoR-early">
+      
+            ざわざわと人で溢れる都会――。始星源の幻想的な風景とはうってかわった場所で話す二人がいた。
+      </div>
+      <div class="mem2 right">
+      <span>星影 煌良</span>
+      <p>
+      
+            「俺様たちは…超新星を継承したんだな」
+      </p>
+      </div>
+      <div class="mem4 right">
+      <span>十影 咬威</span>
+      <p>
+      
+            「ああ。あまり実感は湧かないがな」
+      </p>
+      </div>
+      <div class="mem2 right">
+      <span>星影 煌良</span>
+      <p>
+      
+            「フゥン　煌めきのもと生まれた俺様はもとより…天光流・参 宿七に次ぐ実力者の十影咬威ならば当然であろう」
+      </p>
+      </div>
+      <div class="mem2 right">
+      <span>星影 煌良</span>
+      <p>
+      
+            「……あれから、参 宿七とは会ったか？」
+      </p>
+      </div>
+      <div class="mem4 right">
+      <span>十影 咬威</span>
+      <p>
+      
+            choice[あった,あってない] (choice[あった,あってない]) ＞ あった
+            
+      </p>
+      </div>
+      <div class="mem4 right">
+      <span>十影 咬威</span>
+      <p>
+      
+            「一応はな、大した話はしなかったが」
+      </p>
+      </div>
+      <div class="mem4 right">
+      <span>十影 咬威</span>
+      <p>
+      
+            「朱赫の元から解放されたんだ、参小姐がこれから先のことを考えるには、もう少し時間が必要なんだろうよ」
+      </p>
+      </div>
+      <div class="mem2 right">
+      <span>星影 煌良</span>
+      <p>
+      
+            「…！そうか……やはり、参 宿七にとっての一番弟子は、咬威だったのだろうな…」
+      </p>
+      </div>
+      <div class="mem4 right">
+      <span>十影 咬威</span>
+      <p>
+      
+            「どうだかな...」あんまりそうは思ってなさそうな顔
+      </p>
+      </div>
+      <div class="mem2 right">
+      <span>星影 煌良</span>
+      <p>
+      
+            「かの地を離れることができたのは本当に…よかったんだろう」
+      </p>
+      </div>
+      <div class="mem4 right">
+      <span>十影 咬威</span>
+      <p>
+      
+            「参小姐にとって、俺は数いる弟弟子の一人にすぎんよ」
+      </p>
+      </div>
+      <div class="mem2 right">
+      <span>星影 煌良</span>
+      <p>
+      
+            「知っているだろうが…俺は産みの親を知らない。この美貌のせいか…瞳のせいか……すべてを惑わしてきたからだろうか」
+      </p>
+      </div>
+      <div class="mem2 right">
+      <span>星影 煌良</span>
+      <p>
+      
+            「気づいたときには天光流にいて、参 宿七、咬威、ミミと……ずっと4人で始星源で過ごしていたな」
+      </p>
+      </div>
+      <div class="mem2 right">
+      <span>星影 煌良</span>
+      <p>
+      
+            「家族というものを知らない俺は、あの関係性がなんだったのかはわからない…」<br>
+      </p>
+      </div>
+      <div class="mem2 right">
+      <span>星影 煌良</span>
+      <p>
+      
+            「だが今ならわかる――」
+      </p>
+      </div>
+      <div class="mem2 right">
+      <span>星影 煌良</span>
+      <p>
+      
+            「あれは紛れもなく家族の煌めきであった、と…」
+      </p>
+      </div>
+      <div class="mem4 right">
+      <span>十影 咬威</span>
+      <p>
+      
+            「...」<br>「俺もそういったものから縁遠かったから、本当の家族なんてものは知らん」<br>だが、とふ、と笑って
+      </p>
+      </div>
+      <div class="mem4 right">
+      <span>十影 咬威</span>
+      <p>
+      
+            「...きっとそうだったんだと、今なら思う」
+      </p>
+      </div>
+      <div class="mem3 left">
+      <span>木影 ミミ</span>
+      <p>
+      
+            「あーっ！　十影さんと星影さんじゃないですかぁ。奇遇ですねぇ」<br>「なんの話をしていたのですか？　やっぱり手に入れた奥義の話ですか？」
+      </p>
+      </div>
+      <div class="mem2 right">
+      <span>星影 煌良</span>
+      <p>
+      
+            「おお！ミミ！フフン　超新星を継ぐ者どうし、作戦会議をしていたのさ」
+      </p>
+      </div>
+      <div class="mem2 right">
+      <span>星影 煌良</span>
+      <p>
+      
+            「次の手合わせの際には容赦はせんぞ」
+      </p>
+      </div>
+      <div class="mem3 left">
+      <span>木影 ミミ</span>
+      <p>
+      
+            「ふふふ！　そうこなくっちゃ！」たのしい
+      </p>
+      </div>
+      <div class="mem4 right">
+      <span>十影 咬威</span>
+      <p>
+      
+            「ほう、そうとくれば俺は見学させてもらおうか」サングラスくいっ
+      </p>
+      </div>
+      <div class="mem3 left">
+      <span>木影 ミミ</span>
+      <p>
+      
+            「え？」
+      </p>
+      </div>
+      <div class="mem3 left">
+      <span>木影 ミミ</span>
+      <p>
+      
+            「なんでですかぁ！　やりましょうよぉ」<br>「絶対楽しいですって！」
+      </p>
+      </div>
+      <div class="mem2 right">
+      <span>星影 煌良</span>
+      <p>
+      
+            ――天光流という流派があること、【超新星】という奥義があること<br>家族の証明のために俺は【超新星】を継ぐのだと…そうあの時に誓ったんだ
+      </p>
+      </div>
+      <div class="mem2 right">
+      <span>星影 煌良</span>
+      <p>
+      
+            「フッ…楽しいな、　咬威兄さん、ミミ姉さん！」
+      </p>
+      </div>
+      <div class="mem4 right">
+      <span>十影 咬威</span>
+      <p>
+      
+            「馬鹿も休み休み言え、俺は君らと相性が悪いんだ」眉をしかめつつ
+      </p>
+      </div>
+      <div class="mem4 right">
+      <span>十影 咬威</span>
+      <p>
+      
+            楽しそうに自分達を兄・姉と呼んだ煌良くんに目をぱちくりとさせて
+      </p>
+      </div>
+      <div class="mem4 right">
+      <span>十影 咬威</span>
+      <p>
+      
+            「...初めてじゃないか？俺達のことをそう呼んだのは」
+      </p>
+      </div>
+      <div class="mem2 right">
+      <span>星影 煌良</span>
+      <p>
+      
+            「……！こ、これはミミの喋り方がうつっただけだ！俺様はいつも通りだぞ　子猫ﾁｬﾝ　CHU…」
+      </p>
+      </div>
+      <div class="mem3 left">
+      <span>木影 ミミ</span>
+      <p>
+      
+            「照れてるんです？」かわいいね
+      </p>
+      </div>
+      <div class="mem4 right">
+      <span>十影 咬威</span>
+      <p>
+      
+            「へえ～～～」面白そうににやにやしました
+      </p>
+      </div>
+      <div class="mem2 right">
+      <span>星影 煌良</span>
+      <p>
+      
+            「ハッハー　咬威、俺様に惚れるんじゃあないぞ！」（といいながら赤面しどろもどろ）
+      </p>
+      </div>
+      <div class="mem4 right">
+      <span>十影 咬威</span>
+      <p>
+      
+            「なるほど、母性本能を擽るというやつか。確かに万人が惚れそうだ」冗談か本気か分からないボケをかましつつ
+      </p>
+      </div>
+      <div class="mem4 right">
+      <span>十影 咬威</span>
+      <p>
+      
+            （超新星は、元ある己の奥義を更なる高みに到達したものだった。）
+      </p>
+      </div>
+      <div class="mem4 right">
+      <span>十影 咬威</span>
+      <p>
+      
+            （別次元の奥義へと変わるという点は興味深くはあるが、<br>あれは本来殺し合いで磨き合うことで至ることができる境地。<br>俺の求めているものではなかったな。）
+      </p>
+      </div>
+      <div class="mem4 right">
+      <span>十影 咬威</span>
+      <p>
+      
+            自分に忍びの才能があるとは思っていない。ミミのような必殺奥義も、煌良のような鉄壁奥義も、完成されたものを見て、条件が揃えば模倣はできるが、オリジナルを超えることは無い。
+      </p>
+      </div>
+      <div class="mem4 right">
+      <span>十影 咬威</span>
+      <p>
+      
+            だから自分は、完成された奥義を模倣しようとした。そのために天光流の門戸を叩いた。最初はそれだけだった。
+      </p>
+      </div>
+      <div class="mem4 right">
+      <span>十影 咬威</span>
+      <p>
+      
+            （...だが、修行し共に過ごした時間は、案外悪くないものだった。）
+      </p>
+      </div>
+      <div class="mem4 right">
+      <span>十影 咬威</span>
+      <p>
+      
+            わざわざ口に出すことはしないが、お互いそれを分かっているからこそ、このような関係が続いているのだろう。
+      </p>
+      </div>
+      <div class="mem4 right">
+      <span>十影 咬威</span>
+      <p>
+      
+            「さて、俺はそろそろ行くとしよう。ではまたな、弟妹。次会った時は加減をしてくれると助かる」
+      </p>
+      </div>
+      <div class="mem3 left">
+      <span>木影 ミミ</span>
+      <p>
+      
+            「加減……努力します」むむ<br>「では！　またどこかで！」
+      </p>
+      </div>
+      <div class="mem2 right">
+      <span>星影 煌良</span>
+      <p>
+      
+            「ハッハー　俺様の活躍はテレビでいつでも見られるからな！寂しくなったらつけるがいい！」
+      </p>
+      </div>
+      <div class="kp LtoR-early">
+      
+            ―――――――――――
+      </div>
+      <div class="kp LtoR-early">
+      
+            ―――――
+      </div>
+      <div class="kp LtoR-early">
+      
+            ――
+      </div>
+      <div class="kp LtoR-early">
+      
+            ――木影 ミミという女がいた。<br>彼女は、強き者を倒すと意気込み天光流に身を投じた。<br>彼女は、超新星を打ち破り、新たな強者へと立ち向かっていく。<br>それは、彼女らしいといえばらしいのやもしれない。<br>ただ、あの明るさは……今となっては懐かしい。
+      </div>
+      <div class="kp LtoR-early">
+      
+            ――星影 煌良という男がいた。<br>あの中では一番の煌めきを持ち、最年少ながらも超新星を受け継ぐこととなった。<br>それをどう生かすか殺すかは彼の手に委ねられるだろう。<br>出来ることならば、あの子には…新たなそして幸せな道を歩んでほしい、なんてあの子にとっては迷惑なのかもしれない……
+      </div>
+      <div class="kp LtoR-early">
+      
+            ――十影 咬威という男がいた。<br>超新星の真理に辿り着くために、天光流の門戸を開いたのだろう。<br>しかし、あの子の研究心はいつまでも尽きることはないだろう。<br>そしてこの超新星の真実を知り、世間に知らしめるやもしれん。大々的に謳うやもしれん。<br>だが、それは勝ち取ったからこそ行うことができることだ。<br>それを私は否定することは出来ない。<br>ただただ、あの子が自らの意志で歩み続けることを祈り続ける。
+      </div>
+      <div class="kp LtoR-early">
+      
+            <br>――パタン<br>
+      </div>
+      <div class="kp LtoR-early">
+      
+            本を閉じる。<br>そして、立ち上がる。
+      </div>
+      <div class="mem1 left">
+      <span>参 宿七</span>
+      <p>
+      
+            「私は、私の道を歩むべきか――。私と共に歩んだ者達がまだこちら来るべきではないといるのでしょう。だから、私はここにいる」
+      </p>
+      </div>
+      <div class="mem1 left">
+      <span>参 宿七</span>
+      <p>
+      
+            「ミミ、煌良、咬威……貴方達は貴方達の道を歩み続けなさい――」
+      </p>
+      </div>
+      <div class="mem1 left">
+      <span>参 宿七</span>
+      <p>
+      
+            「ここは、私が……。貴方達の育った故郷は私が護り続けますから」
+      </p>
+      </div>
+      <div class="kp LtoR-early">
+      
+            立ち込める霧の中微かにだが光が差し込む。<br>それは一筋の天光である。
+      </div>
+      <div class="mem1 left">
+      <span>参 宿七</span>
+      <p>
+      
+            「"朱赫"師匠。貴方の望んだ結末とは違う結果になったでしょうか。ですが、本来あるべき姿ではない形で受け継がれましたよ――」
+      </p>
+      </div>
+      <div class="mem1 left">
+      <span>参 宿七</span>
+      <p>
+      
+            「私達も変わるべきだと思いませんか？ねぇ――」
+      </p>
+      </div>
+      <div class="kp LtoR-early">
+      
+            ―――――――――――
+      </div>
+      <div class="kp LtoR-early">
+      
+            ――――
+      </div>
+      <div class="kp LtoR-early">
+      
+            乱世に生まれ、戦の中で成長し、数多の死体の上に築きあげられた古流流派、天光流。<br>超新星を継ぎし者はただ一人――<br>そのはずだった。
+      </div>
+      <div class="kp LtoR-early">
+      
+            現在、継いだと言われるものが二人いる。<br>それは、"無数の攻撃をも防ぐ"と言われた存在。
+      </div>
+      <div class="kp LtoR-early">
+      
+            だが、誰かが答えた。<br>"一撃にてあらゆる敵を滅した"、と
+      </div>
+      <div class="kp LtoR-early">
+      
+            誰がいった
+      </div>
+      <div class="kp LtoR-early">
+      
+            朝晨星
+      </div>
+      <div class="kp LtoR-early">
+      
+            天光に煌めきがある限り――<br>彼らの物語は終わらない
+      </div>
+      <div class="kp LtoR-early">
+      
+            以上で終了となります。お疲れさまでした
+      </div>
+      <div class="mem5 left">
+      <span>GM</span>
+      <p>
+      
+            功績点
+      </p>
+      </div>
+      <div class="mem4 right">
+      <span>十影 咬威</span>
+      <p>
+      
+            流儀の達成 1点：とかげ、きらくん<br>セッションに最後まで1点：全員<br>RP1点：全員<br>プライズ：全員0点<br>琴線：とかげ1点、きらくん2点<br>使命の達成3点：全員達成
+      </p>
+      </div>
+      <div class="kp LtoR-early">
+      
+            [ 星影 煌良 ] がダイスシンボルを公開。出目は 1 です。
+      </div>
+      <div class="kp LtoR-early">
+      
+            [ 十影 咬威 ] がダイスシンボルを公開。出目は 3 です。
+      </div>
+      <div class="kp LtoR-early">
+      
+            [ 木影 ミミ  ] がダイスシンボルを公開。出目は 3 です。
+      </div>
+      <div class="kp LtoR-early">
+      
+            奥義【超新星】<br>
+      ※PCには下記を送る
+      <br><br>
+      同名の奥義はエフェクト、読み方にかかわらず、同じものとして扱い、【情報】を所持してるキャラクターは奥義破りを試みることができる。
+      
+      <br><br><br>
+      ■奥義
+      《超新星[ﾁｮｳｼﾝｾｲ]》<br>
+      指定特技　：変更前の元々の奥義と同じ<br>
+      エフェクト：変更前の元々のエフェクト、強み、弱みと同様<br>
+      （回数制限や不死身の回数はリセットされる）
+      <br><br>
+      効果・演出：<br>
+      変更前の元々の奥義に下記の文章と追加する。
+      <br><br>
+      "天上天下 並ぶ者無し<br>
+      
+      其れ即ち 並びて二つと同じ技に非ず<br>
+      命紡ぎ星は巡る<br>
+      これぞ正しく 超新星"
+            
+      </div>
+      </div>
+
+<br><br>
+</div></div>
+<script src="../logCon_Respon.js"></script>
+</body></html>
