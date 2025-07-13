@@ -1,0 +1,4513 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<title>log</title>
+<meta http-equiv="content-type" charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+<link rel="stylesheet" href="../logCon_Respon.css">
+<style>
+    /* main css */
+    .bg-inner.bg1{background:url('./アマテラス/初詣.png') no-repeat center/cover;}
+    .bg-inner.bg2{background:url('./アマテラス/空.png') no-repeat center/cover;}
+    .bg-inner.bg3{background:url('./アマテラス/深海.png') no-repeat center/cover;}
+    .bg-inner.bg4{background:url('./アマテラス/神社.png') no-repeat center/cover;}
+    .bg-inner.bg5{background:url('./アマテラス/やる気なし.png') no-repeat center/cover;}
+    .bg-inner.bg6{background:url('./アマテラス/内部.png') no-repeat center/cover;}
+    .bg-inner.bg7{background:url('./アマテラス/日の出.png') no-repeat center/cover;}
+    .bg-inner.bg8{background:url('./アマテラス/浴室.png') no-repeat center/cover;}
+
+    /* member */
+    .mem1 p{border:2px solid rgb(136, 136, 136);box-shadow:5px 5px 0 rgb(136, 136, 136);}
+.mem1 p:after{border-right-color:rgb(136, 136, 136);}
+.mem1 span{background:rgb(136, 136, 136);color:#fff;}
+.mem1:before{content:'';background-image:url('./アマテラス/GM.png');background-size:contain;background-repeat:no-repeat;background-position:center center;width:90px;height:90px;}
+.mem1_PC1:before{content:'';background-image:url('./アマテラス/悟志_通常.png');background-size:contain;background-repeat:no-repeat;background-position:center center;width:90px;height:90px;}
+.mem1_PC2:before{content:'';background-image:url('./アマテラス/アサキ.png');background-size:contain;background-repeat:no-repeat;background-position:center center;width:90px;height:90px;}
+.mem1_PC3:before{content:'';background-image:url('./アマテラス/タツトシ.png');background-size:contain;background-repeat:no-repeat;background-position:center center;width:90px;height:90px;}
+.mem2 p{border:2px solid rgb(136, 136, 136);box-shadow:5px 5px 0 rgb(136, 136, 136);}
+.mem2 p:after{border-left-color:rgb(136, 136, 136);}
+.mem2 span{background:rgb(136, 136, 136);color:#fff;}
+.mem2:before{content:'';background-image:url('./アマテラス/GM.png');background-size:contain;background-repeat:no-repeat;background-position:center center;width:90px;height:90px;}
+.mem2_PC1:before{content:'';background-image:url('./アマテラス/悟志_通常.png');background-size:contain;background-repeat:no-repeat;background-position:center center;width:90px;height:90px;}
+.mem2_PC2:before{content:'';background-image:url('./アマテラス/アサキ.png');background-size:contain;background-repeat:no-repeat;background-position:center center;width:90px;height:90px;}
+.mem2_PC3:before{content:'';background-image:url('./アマテラス/タツトシ.png');background-size:contain;background-repeat:no-repeat;background-position:center center;width:90px;height:90px;}
+.mem3 p{border:2px solid rgb(0, 32, 64);box-shadow:5px 5px 0 rgb(0, 32, 64);}
+.mem3 p:after{border-right-color:rgb(0, 32, 64);}
+.mem3 span{background:rgb(0, 32, 64);color:#fff;}
+.mem3:before{content:'';background-image:url('./アマテラス/アサキ.png');background-size:contain;background-repeat:no-repeat;background-position:center center;width:90px;height:90px;}
+.satosi p{border:2px solid rgb(255, 105, 180);box-shadow:5px 5px 0 rgb(255, 105, 180);}
+.satosi p:after{border-left-color:rgb(255, 105, 180);}
+.satosi span{background:rgb(255, 105, 180);color:#000;}
+.satosi:before{content:'';background-image:url('./アマテラス/悟志_通常.png');background-size:contain;background-repeat:no-repeat;background-position:center center;width:90px;height:90px;}
+.satosi_bikkuri:before{content:'';background-image:url('./アマテラス/悟志_びっくり.png');background-size:contain;background-repeat:no-repeat;background-position:center center;width:90px;height:90px;}
+.satosi_warai:before{content:'';background-image:url('./アマテラス/悟志_わらい.png');background-size:contain;background-repeat:no-repeat;background-position:center center;width:90px;height:90px;}
+.satosi_ase:before{content:'';background-image:url('./アマテラス/悟志_汗.png');background-size:contain;background-repeat:no-repeat;background-position:center center;width:90px;height:90px;}
+.satosi_sinken:before{content:'';background-image:url('./アマテラス/悟志_真剣.png');background-size:contain;background-repeat:no-repeat;background-position:center center;width:90px;height:90px;}
+.mem5 p{border:2px solid rgb(136, 136, 136);box-shadow:5px 5px 0 rgb(136, 136, 136);}
+.mem5 p:after{border-right-color:rgb(136, 136, 136);}
+.mem5 span{background:rgb(136, 136, 136);color:#fff;}
+.mem5:before{content:'';background-image:url('./アマテラス/ヤタガラス.png');background-size:contain;background-repeat:no-repeat;background-position:center center;width:90px;height:90px;}
+.mem6 p{border:2px solid rgb(255, 152, 0);box-shadow:5px 5px 0 rgb(255, 152, 0);}
+.mem6 p:after{border-left-color:rgb(255, 152, 0);}
+.mem6 span{background:rgb(255, 152, 0);color:#000;}
+.mem6:before{content:'';background-image:url('./アマテラス/タツトシ.png');background-size:contain;background-repeat:no-repeat;background-position:center center;width:90px;height:90px;}
+.mem6_batu:before{content:'';background-image:url('./アマテラス/タツトシ_瀕死.png');background-size:contain;background-repeat:no-repeat;background-position:center center;width:90px;height:90px;}
+.mem7 p{border:2px solid rgb(136, 136, 136);box-shadow:5px 5px 0 rgb(136, 136, 136);}
+.mem7 p:after{border-right-color:rgb(136, 136, 136);}
+.mem7 span{background:rgb(136, 136, 136);color:#fff;}
+.mem7:before{content:'';background-image:url('./アマテラス/リュウ.png');background-size:contain;background-repeat:no-repeat;background-position:center center;width:90px;height:90px;}
+.mem8 p{border:2px solid rgb(136, 136, 136);box-shadow:5px 5px 0 rgb(136, 136, 136);}
+.mem8 p:after{border-left-color:rgb(136, 136, 136);}
+.mem8 span{background:rgb(136, 136, 136);color:#fff;}
+.mem8:before{content:'';background-image:url('8.png');background-size:contain;background-repeat:no-repeat;background-position:center center;width:90px;height:90px;}
+.mem9 p{border:2px solid rgb(136, 136, 136);box-shadow:5px 5px 0 rgb(136, 136, 136);}
+.mem9 p:after{border-right-color:rgb(136, 136, 136);}
+.mem9 span{background:rgb(136, 136, 136);color:#fff;}
+.mem9:before{content:'';background-image:url('./アマテラス/ツクヨミ_D.png');background-size:contain;background-repeat:no-repeat;background-position:center center;width:90px;height:90px;}
+.mem10 p{border:2px solid rgb(136, 136, 136);box-shadow:5px 5px 0 rgb(136, 136, 136);}
+.mem10 p:after{border-left-color:rgb(136, 136, 136);}
+.mem10 span{background:rgb(136, 136, 136);color:#fff;}
+.mem10:before{content:'';background-image:url('./アマテラス/アマテラス.png');background-size:contain;background-repeat:no-repeat;background-position:center center;width:90px;height:90px;}
+.mem10_D:before{content:'';background-image:url('./アマテラス/アマテラス_D.png');background-size:contain;background-repeat:no-repeat;background-position:center center;width:90px;height:90px;}
+.mem11 p{border:2px solid rgb(136, 136, 136);box-shadow:5px 5px 0 rgb(136, 136, 136);}
+.mem11 p:after{border-right-color:rgb(136, 136, 136);}
+.mem11 span{background:rgb(136, 136, 136);color:#fff;}
+.mem11:before{content:'';background-image:url('11.png');background-size:contain;background-repeat:no-repeat;background-position:center center;width:90px;height:90px;}
+.mem12 p{border:2px solid rgb(136, 136, 136);box-shadow:5px 5px 0 rgb(136, 136, 136);}
+.mem12 p:after{border-left-color:rgb(136, 136, 136);}
+.mem12 span{background:rgb(136, 136, 136);color:#fff;}
+.mem12:before{content:'';background-image:url('./アマテラス/アマテラス_D.png');background-size:contain;background-repeat:no-repeat;background-position:center center;width:90px;height:90px;}
+.mem12_F:before{content:'';background-image:url('./アマテラス/アマテラス.png');background-size:contain;background-repeat:no-repeat;background-position:center center;width:90px;height:90px;}
+.mem13 p{border:2px solid rgb(136, 136, 136);box-shadow:5px 5px 0 rgb(136, 136, 136);}
+.mem13 p:after{border-right-color:rgb(136, 136, 136);}
+.mem13 span{background:rgb(136, 136, 136);color:#fff;}
+.mem13:before{content:'';background-image:url('./アマテラス/リュウ.png');background-size:contain;background-repeat:no-repeat;background-position:center center;width:90px;height:90px;}
+.mem14 p{border:2px solid rgb(136, 136, 136);box-shadow:5px 5px 0 rgb(136, 136, 136);}
+.mem14 p:after{border-left-color:rgb(136, 136, 136);}
+.mem14 span{background:rgb(136, 136, 136);color:#fff;}
+.mem14:before{content:'';background-image:url('./アマテラス/ヤタガラス.png');background-size:contain;background-repeat:no-repeat;background-position:center center;width:90px;height:90px;}
+.mem15 p{border:2px solid rgb(136, 136, 136);box-shadow:5px 5px 0 rgb(136, 136, 136);}
+.mem15 p:after{border-right-color:rgb(136, 136, 136);}
+.mem15 span{background:rgb(136, 136, 136);color:#fff;}
+.mem15:before{content:'';background-image:url('./アマテラス/ホルス.png');background-size:contain;background-repeat:no-repeat;background-position:center center;width:90px;height:90px;}
+.mem16 p{border:2px solid rgb(136, 136, 136);box-shadow:5px 5px 0 rgb(136, 136, 136);}
+.mem16 p:after{border-left-color:rgb(136, 136, 136);}
+.mem16 span{background:rgb(136, 136, 136);color:#fff;}
+.mem16:before{content:'';background-image:url('./アマテラス/ツクヨミ.png');background-size:contain;background-repeat:no-repeat;background-position:center center;width:90px;height:90px;}
+.mem17 p{border:2px solid rgb(136, 136, 136);box-shadow:5px 5px 0 rgb(136, 136, 136);}
+.mem17 p:after{border-right-color:rgb(136, 136, 136);}
+.mem17 span{background:rgb(136, 136, 136);color:#fff;}
+.mem17:before{content:'';background-image:url('./アマテラス/ソラ.png');background-size:contain;background-repeat:no-repeat;background-position:center center;width:90px;height:90px;}
+    
+    @media only screen and (max-width: 768px) {
+        .mem1 p:after{border-right-color:rgb(136, 136, 136);border-left-color:transparent;}
+        .mem2 p:after{border-right-color:rgb(136, 136, 136);border-left-color:transparent;}
+        .mem3 p:after{border-right-color:rgb(0, 32, 64);border-left-color:transparent;}
+        .satosi p:after{border-right-color:rgb(255, 105, 180);border-left-color:transparent;}
+        .mem5 p:after{border-right-color:rgb(136, 136, 136);border-left-color:transparent;}
+        .mem6 p:after{border-right-color:rgb(255, 152, 0);border-left-color:transparent;}
+        .mem7 p:after{border-right-color:rgb(136, 136, 136);border-left-color:transparent;}
+        .mem8 p:after{border-right-color:rgb(136, 136, 136);border-left-color:transparent;}
+        .mem9 p:after{border-right-color:rgb(136, 136, 136);border-left-color:transparent;}
+        .mem10 p:after{border-right-color:rgb(136, 136, 136);border-left-color:transparent;}
+        .mem11 p:after{border-right-color:rgb(136, 136, 136);border-left-color:transparent;}
+        .mem12 p:after{border-right-color:rgb(136, 136, 136);border-left-color:transparent;}
+        .mem13 p:after{border-right-color:rgb(136, 136, 136);border-left-color:transparent;}
+        .mem14 p:after{border-right-color:rgb(136, 136, 136);border-left-color:transparent;}
+        .mem15 p:after{border-right-color:rgb(136, 136, 136);border-left-color:transparent;}
+        .mem16 p:after{border-right-color:rgb(136, 136, 136);border-left-color:transparent;}
+        .mem17 p:after{border-right-color:rgb(136, 136, 136);border-left-color:transparent;}
+
+        .mem1:before,.mem2:before,.mem3:before,
+        .satosi:before,.mem5:before,.mem6:before,
+        .mem7:before,.mem8:before,.mem9:before,
+        .mem10:before,.mem11:before,.mem12:before,
+        .mem13:before,.mem14:before,.mem15:before,
+        .mem16:before,.mem17:before,.mem18:before{width:70px;height:70px;}
+    }
+</style>
+</head>
+<body>
+    <p id="page-top"><a href="#"><i class="page-top__arrow"></i></a></p>
+	<div class="leftwhite"></div>
+	<div class="rightwhite"></div>
+	<div class="bg-sp">
+    <div class="bg-over"><div class="bg-inner bg2"></div></div>
+	<div class="log">
+    
+        <div class="mem1 mem1_PC1 left">
+            <span>ハンドアウト</span>
+            <p>
+            PC1　親神→アマテラス<br>暗示：<br>　あなたは絶界に巻き込まれた一般人だった。<br>　神話災害を解決し、絶界を解放することに成功したのはよかったが、これから神子とやっていけるか不安が残る。<br>　初詣のついでに、もう一度詳しい話を聞こうと神社へとやってきたのだった！<br>　<br>　……突然、意識が遠退いた。<br>　あなたの【任務】は絶界から脱出することだ。
+                  
+            </p>
+            </div>
+            <div class="mem1 mem1_PC2 left">
+            <span>ハンドアウト</span>
+            <p>
+            PC2　親神→ホルス<br>暗示：<br>　あなたは絶界に巻き込まれた一般人だった。<br>　神話災害を解決し、絶界を解放することに成功したのはよかったが大切な何かを忘れている気がする。<br>　……そうだ、忘れていた！あなたには大切な友人がいた筈だ！<br>　親神なら何か知っているかもしれない！そういうわけで初めて出会った神社へと戻ってきたのだった！<br>　<br>　……突然、意識が遠退いた。<br>　あなたの【任務】は友人を救出することだ。
+                  
+            </p>
+            </div>
+            <div class="mem1 mem1_PC3 left">
+            <span>ハンドアウト</span>
+            <p>
+            PC3　親神→龍吉公主<br>暗示：<br>　あなたは新米神子だ。<br>　大晦日の神話災害を解決すれば、一人前の神子として認められる予定だったが？<br>　「解決するということは、絶界を解放すればいいというわけではありません。<br>　その辺が理解できないうちは、まだまだ青い。やり直し」<br>　気が付くと、あなたの足元には気を失っている二人の新米神子が居た。<br>　あなたの【任務】は絶界を解き放ち、解決することだ。
+            </p>
+            </div>
+            <div class="kp">
+            ☆トレーラー<br><br>「私もね、あんな結末を迎えるなんて想像もしてなかったのよ。<br>運命に選ばれた神子達がすったもんだしながら、<br>なんやかんやでパパッと解決して、何もかも元通り。<br><br>その様子をぬく～いおこたから、ゆったりと眺めたい……そう思っていたのだけれどね。<br>折角の初詣、目覚めが悪いままでは終われないでしょ。<br><br><br>それでも私はね――アマテラスは、できる限り引きこもりたいのよ？」<br><br><br>――神話創世RPGアマデウス『アマテラスは引きこもりたい＠2』
+            </div>
+
+        </div></div>
+
+        <div class="bg-sp">
+            <div class="bg-over"><div class="bg-inner bg1"></div></div>
+        <div class="log">
+
+            <div class="mem2 right">
+            <span>GM</span>
+            <p>
+            OP
+            </p>
+            </div>
+            <div class="kp">
+            今日は晴天の正月。
+            </div>
+            <div class="kp">
+            近所の神社は初詣に訪れる人々でごった返している。
+            </div>
+            <div class="kp">
+            君たちはその人ごみの中に紛れている。
+            </div>
+            <div class="kp">
+            目的は先日の一件にてキミたちのみに訪れた変化について、親神に尋ねる為だ
+            </div>
+            <div class="kp">
+            （なお、本来の神子達はこういう場合、近場の万神殿にいけばいいが君たちは知らないのでここにいる）
+            </div>
+            <div class="kp">
+            鳥居を潜り、石段を登っていく。
+            </div>
+            <div class="kp">
+            手水舎で清め、拝殿に向かい、賽銭を投げ入れ、二礼二拍手一礼。
+            </div>
+            <div class="mem3 left">
+            <span>宵宮 晶咲</span>
+            <p>
+            「ホルス！ほるす！ホルス！」
+            </p>
+            </div>
+            <div class="satosi satosi_sinken right">
+            <span>秋永 サトシ</span>
+            <p>
+            「アマデウス！あまでうす！アマデウスッ」
+            </p>
+            </div>
+            <div class="satosi satosi_ase right">
+            <span>秋永 サトシ</span>
+            <p>
+            「こんなんで出てくんですか……？」
+            </p>
+            </div>
+            <div class="mem5 left">
+            <span>ヤタガラス</span>
+            <p>
+            「べらんめいっ！アマテラスだろうが小僧！」
+            </p>
+            </div>
+            <div class="satosi satosi_bikkuri right">
+            <span>秋永 サトシ</span>
+            <p>
+            「ﾜｯ出たァ！」
+            </p>
+            </div>
+            <div class="mem3 left">
+            <span>宵宮 晶咲</span>
+            <p>
+            「そもそもアタシの所の親神ってここでいいのか……？」
+            </p>
+            </div>
+            <div class="mem3 left">
+            <span>宵宮 晶咲</span>
+            <p>
+            「どう考えても日本じゃない……よな？」
+            </p>
+            </div>
+            <div class="kp">
+            ２人が疑問を抱いていると、視界が歪む
+            </div>
+            <div class="kp">
+            意識が遠退いていく感覚――これは……
+            </div>
+            <div class="mem2 right">
+            <span>GM</span>
+            <p>
+            シーン終了
+            </p>
+            </div>
+
+        </div></div>
+
+        <div class="bg-sp">
+            <div class="bg-over"><div class="bg-inner bg3"></div></div>
+        <div class="log">
+
+            <div class="mem2 right">
+            <span>GM</span>
+            <p>
+            導入2
+            </p>
+            </div>
+            <div class="kp">
+            中華神群の万神殿
+            </div>
+            <div class="kp">
+            あなたは海藻に捕まりながら親神に抗議をしていた
+            </div>
+            <div class="kp">
+            それもそのはず、あなたは未だに新米神子扱いだからだ
+            </div>
+            <div class="mem6 mem6_batu right">
+            <span>尾ノ後 辰俊</span>
+            <p>
+            「龍吉公主様～なんでちゅかこれは」
+            </p>
+            </div>
+            <div class="mem7 left">
+            <span>龍吉公主</span>
+            <p>
+            「心当たりがないのですか？」
+            </p>
+            </div>
+            <div class="mem6 mem6_batu right">
+            <span>尾ノ後 辰俊</span>
+            <p>
+            「無傷でツクヨミを倒したのに一体なぜでちゅ……」
+            </p>
+            </div>
+            <div class="mem6 mem6_batu right">
+            <span>尾ノ後 辰俊</span>
+            <p>
+            「わかんないでちゅ……」
+            </p>
+            </div>
+            <div class="mem7 left">
+            <span>龍吉公主</span>
+            <p>
+            「いいですか？解決するということは、ただ絶界を解放すればいいというわけではありません」
+            </p>
+            </div>
+            <div class="mem6 mem6_batu right">
+            <span>尾ノ後 辰俊</span>
+            <p>
+            「そうなんでちゅか……」
+            </p>
+            </div>
+            <div class="mem7 left">
+            <span>龍吉公主</span>
+            <p>
+            「（まぁ正直、私としては結構どうでもいいのですが）」
+            </p>
+            </div>
+            <div class="mem6 mem6_batu right">
+            <span>尾ノ後 辰俊</span>
+            <p>
+            「でもあれはサトシが勝手にやったことでちゅ」
+            </p>
+            </div>
+            <div class="mem7 left">
+            <span>龍吉公主</span>
+            <p>
+            「それを諫めるためにあなたが居たのでは？」
+            </p>
+            </div>
+            <div class="mem6 right">
+            <span>尾ノ後 辰俊</span>
+            <p>
+            「そうなんでちゅか？」
+            </p>
+            </div>
+            <div class="mem7 left">
+            <span>龍吉公主</span>
+            <p>
+            「先輩として、後輩のやらかしの責任をとるべきでしょう」
+            </p>
+            </div>
+            <div class="mem7 left">
+            <span>龍吉公主</span>
+            <p>
+            「その辺が理解できないうちは、まだまだ青い。やり直し」
+            </p>
+            </div>
+            <div class="kp">
+            突如、水流があなたの身体を押し流す
+            </div>
+            <div class="mem6 mem6_batu right">
+            <span>尾ノ後 辰俊</span>
+            <p>
+            「え～ん」
+            </p>
+            </div>
+            <div class="kp">
+            目が×になり、視界が歪む
+            </div>
+            <div class="mem6 mem6_batu right">
+            <span>尾ノ後 辰俊</span>
+            <p>
+            「ああああああああ」
+            </p>
+            </div>
+
+        </div></div>
+
+        <div class="bg-sp">
+            <div class="bg-over"><div class="bg-inner bg4"></div></div>
+        <div class="log">
+
+            <div class="kp">
+            次に視界が開けた時、そこはあの神社の境内だった
+            </div>
+            <div class="mem6 mem6_batu right">
+            <span>尾ノ後 辰俊</span>
+            <p>
+            「でちゅっ！」
+            </p>
+            </div>
+            <div class="kp">
+            まっすぐ正面には、三つの建物――神々を祀る本殿。左が最も大きく豪奢だが、中央と右のものはあまり差異が見受けられない。
+            </div>
+            <div class="kp">
+            先に見えるのは――どこまでも続く水平線と青空。
+            </div>
+            <div class="kp">
+            静かな水面と絶海に浮かぶ社。頭上に輝く日が、僅かに弱いような気がした。
+            </div>
+            <div class="kp">
+            そして。
+            </div>
+            <div class="kp">
+            あなたの足元には気を失っている二人の新米神子が居た。
+            </div>
+            <div class="mem6 right">
+            <span>尾ノ後 辰俊</span>
+            <p>
+            「あれ？」
+            </p>
+            </div>
+            <div class="kp">
+            これはまるで、あの時のようだ
+            </div>
+            <div class="mem6 right">
+            <span>尾ノ後 辰俊</span>
+            <p>
+            「また君たちでちゅか……早く起きるでちゅ」
+            </p>
+            </div>
+            <div class="mem3 left">
+            <span>宵宮 晶咲</span>
+            <p>
+            「んっ……んー」
+            </p>
+            </div>
+            <div class="mem3 left">
+            <span>宵宮 晶咲</span>
+            <p>
+            「あっ！ホルス！」
+            </p>
+            </div>
+            <div class="mem3 left">
+            <span>宵宮 晶咲</span>
+            <p>
+            「あ違った。タツトシだ」
+            </p>
+            </div>
+            <div class="satosi right">
+            <span>秋永 サトシ</span>
+            <p>
+            「……ン、ウンーー？」
+            </p>
+            </div>
+            <div class="mem6 right">
+            <span>尾ノ後 辰俊</span>
+            <p>
+            「主神と間違えられたでちゅ」
+            </p>
+            </div>
+            <div class="mem3 left">
+            <span>宵宮 晶咲</span>
+            <p>
+            「さっきまでホルスー！ってずっと考えてたから、いっきに口に出ちまった」
+            </p>
+            </div>
+            <div class="satosi right">
+            <span>秋永 サトシ</span>
+            <p>
+            「……あ、どうもあけましておめでとうございますタツトシさん」
+            </p>
+            </div>
+            <div class="mem8 right">
+            <span>？？？</span>
+            <p>
+            「皆、目覚めたようだね」
+            </p>
+            </div>
+            <div class="kp">
+            何処からか声がする
+            </div>
+            <div class="mem6 right">
+            <span>尾ノ後 辰俊</span>
+            <p>
+            「あ、どうもでちゅ」
+            </p>
+            </div>
+            <div class="satosi right">
+            <span>秋永 サトシ</span>
+            <p>
+            「この声は――」
+            </p>
+            </div>
+            <div class="mem6 right">
+            <span>尾ノ後 辰俊</span>
+            <p>
+            「まさか……！？」
+            </p>
+            </div>
+            <div class="mem3 left">
+            <span>宵宮 晶咲</span>
+            <p>
+            「？？？」
+            </p>
+            </div>
+            <div class="mem9 left">
+            <span>ツクヨミ</span>
+            <p>
+            「ボクだよ、あけましておめでとう」
+            </p>
+            </div>
+            <div class="mem6 mem6_batu right">
+            <span>尾ノ後 辰俊</span>
+            <p>
+            「出たでちゅーー！？」
+            </p>
+            </div>
+            <div class="satosi satosi_bikkuri right">
+            <span>秋永 サトシ</span>
+            <p>
+            「誰！？」
+            </p>
+            </div>
+            <div class="mem3 left">
+            <span>宵宮 晶咲</span>
+            <p>
+            「あ、あけましてオメデトウゴザイマス」
+            </p>
+            </div>
+            <div class="mem9 left">
+            <span>ツクヨミ</span>
+            <p>
+            「だけど、ここはまだ年明け前でもある」
+            </p>
+            </div>
+            <div class="mem9 left">
+            <span>ツクヨミ</span>
+            <p>
+            「初めまして……ではないかな？まぁこのボクとは初めましてか」
+            </p>
+            </div>
+            <div class="mem3 left">
+            <span>宵宮 晶咲</span>
+            <p>
+            「どういうこと……なんだ？」
+            </p>
+            </div>
+            <div class="satosi satosi_ase right">
+            <span>秋永 サトシ</span>
+            <p>
+            「えっこの人この前ボクら殺そうとしてた人ですよね！？」
+            </p>
+            </div>
+            <div class="mem3 left">
+            <span>宵宮 晶咲</span>
+            <p>
+            「思いっきり、殴って殴られた間柄だよな？」
+            </p>
+            </div>
+            <div class="mem6 mem6_batu right">
+            <span>尾ノ後 辰俊</span>
+            <p>
+            「仕返しされるでちゅー！？」
+            </p>
+            </div>
+            <div class="mem9 left">
+            <span>ツクヨミ</span>
+            <p>
+            「ボクはツクヨミ。キミたちが言っているのはボクの影霊だね」
+            </p>
+            </div>
+            <div class="satosi satosi_ase right">
+            <span>秋永 サトシ</span>
+            <p>
+            「影、霊？随分マイルドな感じになってますケドーーちがう人……ッテコト！？」
+            </p>
+            </div>
+            <div class="mem9 left">
+            <span>ツクヨミ</span>
+            <p>
+            「神は無数の顔をもつ。いい面もあれば悪い面もね。あれはボクの一側面」
+            </p>
+            </div>
+            <div class="mem3 left">
+            <span>宵宮 晶咲</span>
+            <p>
+            「はぃ？？？」
+            </p>
+            </div>
+            <div class="mem3 left">
+            <span>宵宮 晶咲</span>
+            <p>
+            「アレが悪い面で？こっちがいい面って？？？」
+            </p>
+            </div>
+            <div class="mem9 left">
+            <span>ツクヨミ</span>
+            <p>
+            「ボクの邪な心が生み出した悪い分神さ」
+            </p>
+            </div>
+            <div class="mem9 left">
+            <span>ツクヨミ</span>
+            <p>
+            「わかりにくいなら彼とボクは双子みたいなものだと認識してくれればいいよ」
+            </p>
+            </div>
+            <div class="mem3 left">
+            <span>宵宮 晶咲</span>
+            <p>
+            「おー、双子か。わかった！」
+            </p>
+            </div>
+            <div class="mem6 right">
+            <span>尾ノ後 辰俊</span>
+            <p>
+            「突然首をはねようとするよりよっぽどいいでちゅ」
+            </p>
+            </div>
+            <div class="mem9 left">
+            <span>ツクヨミ</span>
+            <p>
+            「どちらにせよ、ボクは君たちを害する気はない。それより手助けしてほしいくらいさ」
+            </p>
+            </div>
+            <div class="mem3 left">
+            <span>宵宮 晶咲</span>
+            <p>
+            「あ！てか、ソラを返してくれよ！」
+            </p>
+            </div>
+            <div class="mem3 left">
+            <span>宵宮 晶咲</span>
+            <p>
+            「いい面でも悪い面でもどっちでもいいからよ！」
+            </p>
+            </div>
+            <div class="mem3 left">
+            <span>宵宮 晶咲</span>
+            <p>
+            「双子でもどうでもいいからよ！」
+            </p>
+            </div>
+            <div class="mem9 left">
+            <span>ツクヨミ</span>
+            <p>
+            「うん、まさにそのことなんだけどね」
+            </p>
+            </div>
+            <div class="satosi satosi_ase right">
+            <span>秋永 サトシ</span>
+            <p>
+            「ソラ？？」
+            </p>
+            </div>
+            <div class="mem3 left">
+            <span>宵宮 晶咲</span>
+            <p>
+            「アタシのダチで、大みそかに行方不明になったって思い出したんだよ！」
+            </p>
+            </div>
+            <div class="mem9 left">
+            <span>ツクヨミ</span>
+            <p>
+            「大晦日、そこで君の友人、闇雲ソラは絶界に捕らわれた。キミたちはその謎を明らかにしないままに怪物――過去のボクを倒してしまったんだ」
+            </p>
+            </div>
+            <div class="satosi satosi_bikkuri right">
+            <span>秋永 サトシ</span>
+            <p>
+            「ナ、ナンダッテーー！」
+            </p>
+            </div>
+            <div class="mem3 left">
+            <span>宵宮 晶咲</span>
+            <p>
+            「あんときは、何か忘れちまったけど、思い出したんだよ！」
+            </p>
+            </div>
+            <div class="mem9 left">
+            <span>ツクヨミ</span>
+            <p>
+            「誠に遺憾ではあるけど……怪物に攫われてしまった彼女はこの世界から永遠に消え去り、人々の記憶からも消えてしまう」
+            </p>
+            </div>
+            <div class="mem9 left">
+            <span>ツクヨミ</span>
+            <p>
+            「永遠にね」
+            </p>
+            </div>
+            <div class="mem3 left">
+            <span>宵宮 晶咲</span>
+            <p>
+            「！！！？」
+            </p>
+            </div>
+            <div class="mem9 left">
+            <span>ツクヨミ</span>
+            <p>
+            「だから忘れていたんだ、初めから存在していなかったかのように」
+            </p>
+            </div>
+            <div class="mem6 mem6_batu right">
+            <span>尾ノ後 辰俊</span>
+            <p>
+            「ちゃんと倒したのに理不尽でちゅー！」
+            </p>
+            </div>
+            <div class="mem3 left">
+            <span>宵宮 晶咲</span>
+            <p>
+            「けど、今は思い出して……！」
+            </p>
+            </div>
+            <div class="mem9 left">
+            <span>ツクヨミ</span>
+            <p>
+            「それが絶界に捕らわれた人の末路――本来はね」
+            </p>
+            </div>
+            <div class="mem3 left">
+            <span>宵宮 晶咲</span>
+            <p>
+            「本来は…？」
+            </p>
+            </div>
+            <div class="mem9 left">
+            <span>ツクヨミ</span>
+            <p>
+            「この事を不憫に感じた姉さん――アマテラスがボクに話を持ち掛けてきたんだ」
+            </p>
+            </div>
+            <div class="mem10 right">
+            <span>アマテラス</span>
+            <p>
+            『そもそもアンタのせいなんだからなんとかしなさい（意訳）』
+            </p>
+            </div>
+            <div class="mem9 left">
+            <span>ツクヨミ</span>
+            <p>
+            「――とね」
+            </p>
+            </div>
+            <div class="mem3 left">
+            <span>宵宮 晶咲</span>
+            <p>
+            「なんとか……なるのか？ソラが戻ってくるのか……？」
+            </p>
+            </div>
+            <div class="mem9 left">
+            <span>ツクヨミ</span>
+            <p>
+            「……君たちの頑張り次第かな」
+            </p>
+            </div>
+            <div class="mem9 left">
+            <span>ツクヨミ</span>
+            <p>
+            「一度解決した神話災害はどうにもできない――その結末を歪めてしまえばそれがあらたな神話災害になってしまうからね」
+            </p>
+            </div>
+            <div class="mem3 left">
+            <span>宵宮 晶咲</span>
+            <p>
+            「くらーで…」
+            </p>
+            </div>
+            <div class="mem9 left">
+            <span>ツクヨミ</span>
+            <p>
+            「だがボクは時の神、少しならば時間を巻き戻し過去に介入することができる」
+            </p>
+            </div>
+            <div class="mem9 left">
+            <span>ツクヨミ</span>
+            <p>
+            「とはいえ……今言ったようにその結果を変えることはできない」
+            </p>
+            </div>
+            <div class="satosi right">
+            <span>秋永 サトシ</span>
+            <p>
+            「それじゃ一体どうしろというんです……？」
+            </p>
+            </div>
+            <div class="mem9 left">
+            <span>ツクヨミ</span>
+            <p>
+            「今、ここは12/31の絶界内。過去の君たちが訪れるほんの少し前だ」
+            </p>
+            </div>
+            <div class="mem6 mem6_batu right">
+            <span>尾ノ後 辰俊</span>
+            <p>
+            「なんでちゅってー！？」
+            </p>
+            </div>
+            <div class="mem3 left">
+            <span>宵宮 晶咲</span>
+            <p>
+            「は！？そんなことが…」
+            </p>
+            </div>
+            <div class="mem9 left">
+            <span>ツクヨミ</span>
+            <p>
+            「キミたちはここでこの神話災害に再び挑むことができる」
+            </p>
+            </div>
+            <div class="mem3 left">
+            <span>宵宮 晶咲</span>
+            <p>
+            「けどさっきそのくらーでは解決したら変えられないってよ」
+            </p>
+            </div>
+            <div class="mem3 left">
+            <span>宵宮 晶咲</span>
+            <p>
+            「結果が変わらないなら、ソラは帰って来ないじゃないか！」
+            </p>
+            </div>
+            <div class="mem9 left">
+            <span>ツクヨミ</span>
+            <p>
+            「ただし……過去は変えられない。過去の君たちはこの後この絶界を訪れてツクヨミを倒し、神話災害を解決する」
+            </p>
+            </div>
+            <div class="mem9 left">
+            <span>ツクヨミ</span>
+            <p>
+            「変えられないのは過去であり……未来ではないんだ」
+            </p>
+            </div>
+            <div class="mem3 left">
+            <span>宵宮 晶咲</span>
+            <p>
+            「？？？」
+            </p>
+            </div>
+            <div class="satosi right">
+            <span>秋永 サトシ</span>
+            <p>
+            「結果を変えずに未来を変えろと……？」
+            </p>
+            </div>
+            <div class="mem9 left">
+            <span>ツクヨミ</span>
+            <p>
+            「ボクの話は難しいかな？ごめんね」
+            </p>
+            </div>
+            <div class="mem9 left">
+            <span>ツクヨミ</span>
+            <p>
+            「！うん、そういうことだ」
+            </p>
+            </div>
+            <div class="mem3 left">
+            <span>宵宮 晶咲</span>
+            <p>
+            「アタシ、バカだからよぉ。わかりやすくズバッといってくれや」
+            </p>
+            </div>
+            <div class="mem6 right">
+            <span>尾ノ後 辰俊</span>
+            <p>
+            「つまりどうゆうことでちゅか？」
+            </p>
+            </div>
+            <div class="mem9 left">
+            <span>ツクヨミ</span>
+            <p>
+            「……これ以上の助言はボクからはできない」
+            </p>
+            </div>
+            <div class="mem3 left">
+            <span>宵宮 晶咲</span>
+            <p>
+            「わかった。サトシに聞くわ」
+            </p>
+            </div>
+            <div class="mem9 left">
+            <span>ツクヨミ</span>
+            <p>
+            「神が過去を歪めたことになってしまうからね」
+            </p>
+            </div>
+            <div class="mem9 left">
+            <span>ツクヨミ</span>
+            <p>
+            「だから一つ、あらたな【予言】を託そう」
+            </p>
+            </div>
+            <div class="mem11 left">
+            <span>暗示</span>
+            <p>
+                ●大晦日<br>暗示：<br>　今日は大晦日。即ち明日は新年。<br>　早い内に解決しなければ、人々が絶界となった神社に押し寄せてしまうだろう。<br>　だが、よりによってどうしてこんなにも忙しいタイミングで……。
+            </p>
+            </div>
+            <div class="mem11 left">
+                <span>暗示</span>
+                <p>
+                    ●孤島の社<br>暗示：<br>　孤島のようになった絶界には三つの社が並んでいる。<br>　左が最も大きく豪奢だが、中央と右のものはあまり差異が見受けられない。<br>　このカードに対する調査判定は【頭脳】あるいは【霊力】で行うことができる。<br><br>真実：<br>　それぞれ祀る神が異なる。<br>　左から順番にアマテラス、ツクヨミ、スサノヲ。<br>　そして、何れかの本殿に神話災害を齎した怪物が居る。<br>　では一体どれに居るのか――<br>　この【真実】が公開された場合、以降のシーン開始時に何れか本殿を舞台として宣言することが可能となる。該当の場所に怪物が居るならば、決戦フェイズに移行する。<br>トリガー：いつでも公開できる。
+                </p>
+            </div>
+
+            <div class="mem11 left">
+                <span>暗示</span>
+                <p>
+                    ●カウントダウン<br>暗示：<br>この絶界は件の大晦日の際と同じもの。<br>つまり、このままでは過去のあなた達がツクヨミを倒して、再び何もわからないまま絶界が崩壊してしまうだろう。<br>だからと言って今のあなた達が謎を解いて先に解決しても、過去が変わってしまい新たな神話災害となるだけだ！<br>刻一刻とRTA開始時間が近づく……。<br><br>過去を変えず、かつ今のあなた達がこの神話災害を解決する為には……？
+                </p>
+            </div>
+            <div class="mem9 left">
+            <span>ツクヨミ</span>
+            <p>
+            「よく、考えてみてくれ」
+            </p>
+            </div>
+            <div class="mem3 left">
+            <span>宵宮 晶咲</span>
+            <p>
+            「前のアタシ達が早いから……下調べもほとんどできねぇじゃねえか」
+            </p>
+            </div>
+            <div class="kp">
+            その言葉を最後に、ツクヨミは姿を隠した
+            </div>
+            <div class="mem6 mem6_batu right">
+            <span>尾ノ後 辰俊</span>
+            <p>
+            「サトシがあんな所に行くからでちゅ！」
+            </p>
+            </div>
+            <div class="mem3 left">
+            <span>宵宮 晶咲</span>
+            <p>
+            「いや、チャンスだけくれるのでもいいってことなのか…」
+            </p>
+            </div>
+            <div class="mem3 left">
+            <span>宵宮 晶咲</span>
+            <p>
+            「ちゃんと責任はサトシが取ってくれるんだろ……？」
+            </p>
+            </div>
+            <div class="satosi satosi_ase right">
+            <span>秋永 サトシ</span>
+            <p>
+            「エッボクが悪いのカナ？？そうかな、そうかも……？」
+            </p>
+            </div>
+            <div class="mem3 left">
+            <span>宵宮 晶咲</span>
+            <p>
+            「一発でボス戦直行したやつが何を言うか！」
+            </p>
+            </div>
+            <div class="satosi satosi_ase right">
+            <span>秋永 サトシ</span>
+            <p>
+            「（理不尽過ぎない？？3択ジャン？）」
+            </p>
+            </div>
+            <div class="mem3 left">
+            <span>宵宮 晶咲</span>
+            <p>
+            「これどうするよ？あーるてぃーえーを越えるのをなんとかすると同時に秘密をなんとかしないといけないんだろ？」
+            </p>
+            </div>
+            <div class="mem6 mem6_batu right">
+            <span>尾ノ後 辰俊</span>
+            <p>
+            「なんで早く解決したのにこんな面倒なことになるでちゅ！？」
+            </p>
+            </div>
+            <div class="mem2 right">
+            <span>GM</span>
+            <p>
+            メインフェイズ開始
+            </p>
+            </div>
+            <div class="kp">
+            活力
+            </div>
+            <div class="mem3 left">
+            <span>宵宮 晶咲</span>
+            <p>
+            1D6 (1D6) ＞ 3
+                  
+            </p>
+            </div>
+            <div class="satosi right">
+            <span>秋永 サトシ</span>
+            <p>
+            2d6 (2D6) ＞ 8[3,5] ＞ 8
+                  
+            </p>
+            </div>
+            <div class="mem6 right">
+            <span>尾ノ後 辰俊</span>
+            <p>
+            1d6 (1D6) ＞ 2
+                  
+            </p>
+            </div>
+            <div class="kp">
+            [ 宵宮 晶咲 ] 活力 : 0 → 3
+            </div>
+            <div class="kp">
+            [ 尾ノ後 辰俊 ] 活力 : 0 → 2
+            </div>
+            <div class="kp">
+            [ 秋永 サトシ ] 活力 : 0 → 8
+            </div>
+
+        </div></div>
+
+        <div class="bg-sp">
+            <div class="bg-over"><div class="bg-inner bg2"></div></div>
+        <div class="log">
+
+            <div class="mem2 right">
+            <span>GM</span>
+            <p>
+            シーン１　PC3
+            </p>
+            </div>
+            <div class="mem6 right">
+            <span>尾ノ後 辰俊</span>
+            <p>
+            →移動なし
+            </p>
+            </div>
+            <div class="mem6 right">
+            <span>尾ノ後 辰俊</span>
+            <p>
+            カウントダウンを調べるでちゅ
+            </p>
+            </div>
+            <div class="mem6 right">
+            <span>尾ノ後 辰俊</span>
+            <p>
+            RB+1-0+0 (RB+1&gt;=4) ＞ [4,2]+1 ＞ 5_成功[4緑] / 3_失敗[2赤]
+                  
+            </p>
+            </div>
+            <div class="mem6 right">
+            <span>尾ノ後 辰俊</span>
+            <p>
+            アクション4　ムード2
+            </p>
+            </div>
+
+        </div></div>
+
+        <div class="bg-sp">
+            <div class="bg-over"><div class="bg-inner bg6"></div></div>
+        <div class="log">
+
+            <div class="mem2 right">
+            <span>GM</span>
+            <p>
+            シーン2　PC2
+            </p>
+            </div>
+            <div class="mem2 right">
+            <span>GM</span>
+            <p>
+            ※言及がなければ基本的に全員登場
+            </p>
+            </div>
+            <div class="mem3 left">
+            <span>宵宮 晶咲</span>
+            <p>
+            スサノヲの本殿に向かう
+            </p>
+            </div>
+            <div class="kp">
+            スサノヲの本殿に訪れたあなた達の目には宙に浮かぶ剣が目に映った
+            </div>
+            <div class="kp">
+            スサノヲの剣、草薙剣
+            </div>
+            <div class="mem3 left">
+            <span>宵宮 晶咲</span>
+            <p>
+            「あれぇ？」
+            </p>
+            </div>
+            <div class="kp">
+            それが宙を舞い勝手に暴れ狂っているのだ
+            </div>
+            <div class="kp">
+            シーンの登場PC全員で【武勇】判定を行い、失敗したPCは変調【臆病1】を受ける。
+            </div>
+            <div class="mem3 left">
+            <span>宵宮 晶咲</span>
+            <p>
+            「アタシ、何か間違えたか？また間違えたか？」
+            </p>
+            </div>
+            <div class="mem3 left">
+            <span>宵宮 晶咲</span>
+            <p>
+            RS-0+0 (RS&gt;=4) ＞ [6,6,4,4] ＞ 6_スペシャル！[6任意] / 6_スペシャル！[6任意] / 4_成功[4緑] / 4_成功[4緑]
+                  
+            </p>
+            </div>
+            <div class="mem6 right">
+            <span>尾ノ後 辰俊</span>
+            <p>
+            「誰もいないでちゅか」
+            </p>
+            </div>
+            <div class="satosi right">
+            <span>秋永 サトシ</span>
+            <p>
+            「どうしたのアサキさん？大丈夫ですよ」
+            </p>
+            </div>
+            <div class="mem6 mem6_batu right">
+            <span>尾ノ後 辰俊</span>
+            <p>
+            「でちゅー！？」
+            </p>
+            </div>
+            <div class="mem3 left">
+            <span>宵宮 晶咲</span>
+            <p>
+            アクション6 ムード6（緑）
+            </p>
+            </div>
+            <div class="satosi right">
+            <span>秋永 サトシ</span>
+            <p>
+            「ちょっと剣が狂ってるだけ……」
+            </p>
+            </div>
+            <div class="satosi satosi_ase right">
+            <span>秋永 サトシ</span>
+            <p>
+            「エ？」
+            </p>
+            </div>
+            <div class="mem3 left">
+            <span>宵宮 晶咲</span>
+            <p>
+            「こんなの、怖くねーぜ」
+            </p>
+            </div>
+            <div class="satosi right">
+            <span>秋永 サトシ</span>
+            <p>
+            RB+2-0+0 (RB+2&gt;=4) ＞ [3,5]+2 ＞ 5_成功[3青] / 7_成功[5白]
+                  
+            </p>
+            </div>
+            <div class="satosi right">
+            <span>秋永 サトシ</span>
+            <p>
+            アクション3　ムード5
+            </p>
+            </div>
+            <div class="mem6 right">
+            <span>尾ノ後 辰俊</span>
+            <p>
+            RB-0 【武勇】 (RB&gt;=4) ＞ [3,4] ＞ 3_失敗[3青] / 4_成功[4緑]
+                  
+            </p>
+            </div>
+            <div class="mem6 right">
+            <span>尾ノ後 辰俊</span>
+            <p>
+            アクション4　ムード3
+            </p>
+            </div>
+            <div class="mem3 left">
+            <span>宵宮 晶咲</span>
+            <p>
+            槍と取り出して、草薙剣を叩き落とす。
+            </p>
+            </div>
+            <div class="mem3 left">
+            <span>宵宮 晶咲</span>
+            <p>
+            「せやぁ！！」
+            </p>
+            </div>
+            <div class="mem6 mem6_batu right">
+            <span>尾ノ後 辰俊</span>
+            <p>
+            「危ないでちゅー！」
+            </p>
+            </div>
+            <div class="satosi satosi_bikkuri right">
+            <span>秋永 サトシ</span>
+            <p>
+            「！？」
+            </p>
+            </div>
+            <div class="mem3 left">
+            <span>宵宮 晶咲</span>
+            <p>
+            「こんぐらいじゃびっくりしかしねーっての」
+            </p>
+            </div>
+            <div class="kp">
+            槍に弾かれた草薙剣は鞘に納まり、おとなしくなった
+            </div>
+            <div class="mem6 right">
+            <span>尾ノ後 辰俊</span>
+            <p>
+            カウントダウンを公開
+            </p>
+            </div>
+            <div class="mem2 right">
+            <span>GM</span>
+            <p>
+            　真実：<br>そういえばスサノヲの本殿とツクヨミの本殿は見た目が似ている……。<br>これを利用して過去の自分たちを騙すことはできないだろうか？<br>両者の本殿の位置を入れ替えた後、<br>ツクヨミ（１月１日）に協力してもらい、彼にスサノヲの本殿にて過去のあなた達の相手をしてもらうのだ。<br><br>この【真実】が公開された場合、PC全員は移動判定（技術）を行う。<br><br>この【真実】公開されないまま１サイクル目が終了した場合、このセッションは強制終了する。<br><br>トリガー：スサノヲの本殿を舞台としたシーンに登場している時
+            </p>
+            </div>
+            <div class="mem3 left">
+            <span>宵宮 晶咲</span>
+            <p>
+            判定しまーす
+            </p>
+            </div>
+            <div class="mem3 left">
+            <span>宵宮 晶咲</span>
+            <p>
+            RB+2-0+0 (RB+2&gt;=4) ＞ [1,5]+2 ＞ 3_ファンブル！[1黒] / 7_成功[5白]
+                  
+            </p>
+            </div>
+            <div class="mem3 left">
+            <span>宵宮 晶咲</span>
+            <p>
+            アクション5 ムード1
+            </p>
+            </div>
+            <div class="kp">
+            絶望の闇 : 0 → 1
+            </div>
+            <div class="mem6 right">
+            <span>尾ノ後 辰俊</span>
+            <p>
+            RB+1-0 【技術】 (RB+1&gt;=4) ＞ [4,1]+1 ＞ 5_成功[4緑] / 2_ファンブル！[1黒]
+                  
+            </p>
+            </div>
+            <div class="mem6 right">
+            <span>尾ノ後 辰俊</span>
+            <p>
+            アクション４　ムード１
+            </p>
+            </div>
+            <div class="satosi right">
+            <span>秋永 サトシ</span>
+            <p>
+            乗り物使います
+            </p>
+            </div>
+            <div class="kp">
+            [ 秋永 サトシ ] 神貨 : 5 → 0
+            </div>
+            <div class="mem5 left">
+            <span>ヤタガラス</span>
+            <p>
+            「ガッー！てやんでい！またおいらの出番ってｶｧ！」
+            </p>
+            </div>
+            <div class="satosi right">
+            <span>秋永 サトシ</span>
+            <p>
+            「ヤタガラス先輩ッ！」
+            </p>
+            </div>
+            <div class="mem6 right">
+            <span>尾ノ後 辰俊</span>
+            <p>
+            「生きてたんでちゅか！？」
+            </p>
+            </div>
+            <div class="mem3 left">
+            <span>宵宮 晶咲</span>
+            <p>
+            「ヤタガラスぅ！」
+            </p>
+            </div>
+            <div class="mem5 left">
+            <span>ヤタガラス</span>
+            <p>
+            「おいらは一緒に付いてきた方だからな！過去のおいらは知らねぇぜ！」
+            </p>
+            </div>
+            <div class="kp">
+            ３人は策を実行に移すため、社を移動させる
+            </div>
+            <div class="kp">
+            全員、移動判定に成功
+            </div>
+            <div class="satosi right">
+            <span>秋永 サトシ</span>
+            <p>
+            「これでRTAと同時並行で進めるというわけだ！？」
+            </p>
+            </div>
+            <div class="mem3 left">
+            <span>宵宮 晶咲</span>
+            <p>
+            「これで、時間稼ぎが出来る……！？」
+            </p>
+            </div>
+            <div class="kp">
+            中央のツクヨミの社が右に。スサノヲの社が中央に。
+            </div>
+            <div class="mem9 left">
+            <span>ツクヨミ</span>
+            <p>
+            「それで、ボクが中央にいればいいんだね？」
+            </p>
+            </div>
+            <div class="mem6 right">
+            <span>尾ノ後 辰俊</span>
+            <p>
+            「そうでちゅ」
+            </p>
+            </div>
+            <div class="mem3 left">
+            <span>宵宮 晶咲</span>
+            <p>
+            「時間稼ぎよろしくな！」
+            </p>
+            </div>
+            <div class="mem9 left">
+            <span>ツクヨミ</span>
+            <p>
+            「神使いが荒いね……けど、いいよ」
+            </p>
+            </div>
+            <div class="mem9 left">
+            <span>ツクヨミ</span>
+            <p>
+            「元々ボクはバックアップ、何かの間を埋める。そういう性質だし」
+            </p>
+            </div>
+            <div class="satosi right">
+            <span>秋永 サトシ</span>
+            <p>
+            「……？よろしくお願いします」
+            </p>
+            </div>
+            <div class="mem9 left">
+            <span>ツクヨミ</span>
+            <p>
+            「もしかすれば、君の友人も……」
+            </p>
+            </div>
+            <div class="mem3 left">
+            <span>宵宮 晶咲</span>
+            <p>
+            「え？どういうことだ？」
+            </p>
+            </div>
+            <div class="mem6 right">
+            <span>尾ノ後 辰俊</span>
+            <p>
+            「ぼくたち強いから気をつけるでちゅ」
+            </p>
+            </div>
+            <div class="kp">
+            その時、声が聞こえる
+            </div>
+            <div class="kp">
+            「おきるでちゅ！」
+            </div>
+            <div class="kp">
+            どうやら過去のあなた達が絶界を訪れたようだ
+            </div>
+            <div class="mem6 right">
+            <span>尾ノ後 辰俊</span>
+            <p>
+            「でちゅ？」
+            </p>
+            </div>
+            <div class="satosi right">
+            <span>秋永 サトシ</span>
+            <p>
+            「ーー！」
+            </p>
+            </div>
+            <div class="kp">
+            見つからないようにしておいた方がいいだろう
+            </div>
+            <div class="satosi satosi_sinken right">
+            <span>秋永 サトシ</span>
+            <p>
+            「ばれたらよくあるタイムパラドックス的なものに……なるかも？見つからないように行動しましょう」
+            </p>
+            </div>
+            <div class="mem3 left">
+            <span>宵宮 晶咲</span>
+            <p>
+            「たいむ、ぱらど……わかんねぇけどわかった！」
+            </p>
+            </div>
+            <div class="mem6 right">
+            <span>尾ノ後 辰俊</span>
+            <p>
+            「真っ直ぐ真ん中に進むだけだから分かりやすいでちゅね」
+            </p>
+            </div>
+            <div class="mem3 left">
+            <span>宵宮 晶咲</span>
+            <p>
+            「とにかく、早くここからずらかった方がいいんだよな？」
+            </p>
+            </div>
+            <div class="mem3 left">
+            <span>宵宮 晶咲</span>
+            <p>
+            「ここに来るってわけだし」
+            </p>
+            </div>
+            <div class="mem3 left">
+            <span>宵宮 晶咲</span>
+            <p>
+            大晦日を調べます
+            </p>
+            </div>
+            <div class="mem3 left">
+            <span>宵宮 晶咲</span>
+            <p>
+            RB-1+0 (RB-1&gt;=4) ＞ [4,2]-1 ＞ 3_失敗[4緑] / 1_失敗[2赤]
+                  
+            </p>
+            </div>
+            <div class="mem3 left">
+            <span>宵宮 晶咲</span>
+            <p>
+            アクション4 ムード2
+            </p>
+            </div>
+            <div class="mem3 left">
+            <span>宵宮 晶咲</span>
+            <p>
+            「くそっ、わからねぇ」
+            </p>
+            </div>
+            <div class="mem2 right">
+            <span>GM</span>
+            <p>
+            シーン終了
+            </p>
+            </div>
+
+        </div></div>
+
+        <div class="bg-sp">
+            <div class="bg-over"><div class="bg-inner bg5"></div></div>
+        <div class="log">
+
+            <div class="mem2 right">
+            <span>GM</span>
+            <p>
+            シーン3　PC1
+            </p>
+            </div>
+            <div class="satosi right">
+            <span>秋永 サトシ</span>
+            <p>
+            アマテラスの本殿向かう
+            </p>
+            </div>
+            <div class="satosi right">
+            <span>秋永 サトシ</span>
+            <p>
+            「そういえば自分の本殿になんでこないのかって」
+            </p>
+            </div>
+            <div class="kp">
+            アマテラスの本殿にたどり着いた３人
+            </div>
+            <div class="satosi right">
+            <span>秋永 サトシ</span>
+            <p>
+            「アマテラスが言っていたよな？」
+            </p>
+            </div>
+            <div class="kp">
+            扉を開けるとそこには本や漫画や雑誌、テレビにゲーム機に人をダメにするソファなど完全引きこもり体制ができている。
+            </div>
+            <div class="kp">
+            シーンの登場PC全員で【日常】判定を行い、失敗したPCは変調【堕落】を受ける。
+            </div>
+            <div class="satosi right">
+            <span>秋永 サトシ</span>
+            <p>
+            RB-1+0 (RB-1&gt;=4) ＞ [2,4]-1 ＞ 1_失敗[2赤] / 3_失敗[4緑]
+                  
+            </p>
+            </div>
+            <div class="satosi right">
+            <span>秋永 サトシ</span>
+            <p>
+            アクション４　ムード２
+            </p>
+            </div>
+            <div class="mem6 right">
+            <span>尾ノ後 辰俊</span>
+            <p>
+            RC-1+0 (RC-1&gt;=4) ＞ [2]-1 ＞ 1_失敗[2]
+                  
+            </p>
+            </div>
+            <div class="mem3 left">
+            <span>宵宮 晶咲</span>
+            <p>
+            RC-1+0 (RC-1&gt;=4) ＞ [6]-1 ＞ 5_スペシャル！[6]
+                  
+            </p>
+            </div>
+            <div class="mem12 right">
+            <span>アマテラス（大晦日）</span>
+            <p>
+            「ﾓｶﾞ……ん？あによ？あんたたち」
+            </p>
+            </div>
+            <div class="mem6 right">
+            <span>尾ノ後 辰俊</span>
+            <p>
+            「これは」
+            </p>
+            </div>
+            <div class="mem3 left">
+            <span>宵宮 晶咲</span>
+            <p>
+            「くっ。こんな部屋って……ソラが大変な目に合ってるはずなのに……！」
+            </p>
+            </div>
+            <div class="satosi right">
+            <span>秋永 サトシ</span>
+            <p>
+            「……」
+            </p>
+            </div>
+            <div class="satosi satosi_ase right">
+            <span>秋永 サトシ</span>
+            <p>
+            「駄女神ィ……デスヨネ」
+            </p>
+            </div>
+            <div class="mem3 left">
+            <span>宵宮 晶咲</span>
+            <p>
+            「仕事しやがれー！！」
+            </p>
+            </div>
+            <div class="mem10 mem10_D right">
+            <span>アマテラス</span>
+            <p>
+            「(*´Д｀)？」
+            </p>
+            </div>
+            <div class="mem6 mem6_batu right">
+            <span>尾ノ後 辰俊</span>
+            <p>
+            「これはダメでちゅ、動けないでちゅ」
+            </p>
+            </div>
+            <div class="mem3 left">
+            <span>宵宮 晶咲</span>
+            <p>
+            「おい、サトシ？！タツトシまで！？」
+            </p>
+            </div>
+            <div class="mem10 mem10_D right">
+            <span>アマテラス</span>
+            <p>
+            「急に何よアンタたち……第一さっき絶界に入ってきたばっかでしょうに」
+            </p>
+            </div>
+            <div class="satosi satosi_warai right">
+            <span>秋永 サトシ</span>
+            <p>
+            「おこた入りたイ……」
+            </p>
+            </div>
+            <div class="mem3 left">
+            <span>宵宮 晶咲</span>
+            <p>
+            「さっき来たなら今ここに来たって問題ないだろ！」
+            </p>
+            </div>
+            <div class="mem12 right">
+            <span>アマテラス（大晦日）</span>
+            <p>
+            「ならゆっくりしていきなさい、すぐにどうとはならないでしょ」（※なる）
+            </p>
+            </div>
+            <div class="mem12 right">
+            <span>アマテラス（大晦日）</span>
+            <p>
+            「みかんたべる？」
+            </p>
+            </div>
+            <div class="mem6 right">
+            <span>尾ノ後 辰俊</span>
+            <p>
+            「ぼくたちは仕事が早いんでちゅ」
+            </p>
+            </div>
+            <div class="mem6 right">
+            <span>尾ノ後 辰俊</span>
+            <p>
+            「いただきまちゅ」
+            </p>
+            </div>
+            <div class="satosi right">
+            <span>秋永 サトシ</span>
+            <p>
+            「そうだよネ、食べる食べる」モゾォ
+            </p>
+            </div>
+            <div class="kp">
+            PC1とPC3は堕落の変調を受けた
+            </div>
+            <div class="mem3 left">
+            <span>宵宮 晶咲</span>
+            <p>
+            「まてまてまて。そんななるなって二人とも、早くしないといけないだろ！」
+            </p>
+            </div>
+            <div class="mem12 right">
+            <span>アマテラス（大晦日）</span>
+            <p>
+            「そうそう、こうやってあったかいおこたでのんびりアンタら見とくからさ」
+            </p>
+            </div>
+            <div class="mem3 left">
+            <span>宵宮 晶咲</span>
+            <p>
+            「アタシらにはやるべきことあるだろ？忘れるなよ」
+            </p>
+            </div>
+            <div class="satosi right">
+            <span>秋永 サトシ</span>
+            <p>
+            「タツトシさんはミカン下から向く派デスか、ボクは上から派ッス」
+            </p>
+            </div>
+            <div class="mem3 left">
+            <span>宵宮 晶咲</span>
+            <p>
+            「サトシー！！」
+            </p>
+            </div>
+            <div class="mem12 right">
+            <span>アマテラス（大晦日）</span>
+            <p>
+            「あっ、早いけど先にお年玉あげようかしら」
+            </p>
+            </div>
+            <div class="mem3 left">
+            <span>宵宮 晶咲</span>
+            <p>
+            「タツトシー！！」
+            </p>
+            </div>
+            <div class="satosi satosi_warai right">
+            <span>秋永 サトシ</span>
+            <p>
+            「ワァイ！」
+            </p>
+            </div>
+            <div class="mem6 right">
+            <span>尾ノ後 辰俊</span>
+            <p>
+            「ぼくは下からの吸いまちゅ」
+            </p>
+            </div>
+            <div class="satosi satosi_bikkuri right">
+            <span>秋永 サトシ</span>
+            <p>
+            「吸ってる！？」
+            </p>
+            </div>
+            <div class="kp">
+            PCは倹約判定を行ってください
+            </div>
+            <div class="mem6 right">
+            <span>尾ノ後 辰俊</span>
+            <p>
+            RC-1 【日常】 (RC-1&gt;=4) ＞ [6]-1 ＞ 5_スペシャル！[6]
+                  
+            </p>
+            </div>
+            <div class="mem3 left">
+            <span>宵宮 晶咲</span>
+            <p>
+            RC-1+0 (RC-1&gt;=4) ＞ [1]-1 ＞ 0_ファンブル！[1]
+                  
+            </p>
+            </div>
+            <div class="satosi right">
+            <span>秋永 サトシ</span>
+            <p>
+            甘露使って堕落を直す
+            </p>
+            </div>
+            <div class="kp">
+            [ 尾ノ後 辰俊 ] 神貨 : 6 → 11
+            </div>
+            <div class="mem3 left">
+            <span>宵宮 晶咲</span>
+            <p>
+            FT ファンブル表(1) ＞ 運命の輪が回転する。運命の輪の上にある赤の領域のインガを青の領域に、青の領域のインガを緑の領域に、緑の領域のインガを白の領域に、白の領域のインガを赤の領域に、それぞれ同時に移動させる。
+                  
+            </p>
+            </div>
+            <div class="satosi satosi_ase right">
+            <span>秋永 サトシ</span>
+            <p>
+            「ーーハッ、堕落してる場合じゃないよな！？ツッコミで正気に戻れた！」
+            </p>
+            </div>
+            <div class="satosi right">
+            <span>秋永 サトシ</span>
+            <p>
+            RB-1+0 (RB-1&gt;=4) ＞ [5,2]-1 ＞ 4_成功[5白] / 1_失敗[2赤]
+                  
+            </p>
+            </div>
+            <div class="mem6 right">
+            <span>尾ノ後 辰俊</span>
+            <p>
+            「おいしいでちゅ」
+            </p>
+            </div>
+            <div class="satosi right">
+            <span>秋永 サトシ</span>
+            <p>
+            アクション5　ムード２
+            </p>
+            </div>
+            <div class="kp">
+            [ 秋永 サトシ ] 神貨 : 0 → 4
+            </div>
+            <div class="mem3 left">
+            <span>宵宮 晶咲</span>
+            <p>
+            「お小遣いなんかより、ソラを返してほしい！」
+            </p>
+            </div>
+            <div class="mem3 left">
+            <span>宵宮 晶咲</span>
+            <p>
+            「お前ら！探しにいくぞ！！」
+            </p>
+            </div>
+            <div class="mem12 right">
+            <span>アマテラス（大晦日）</span>
+            <p>
+            「あら、不敬」
+            </p>
+            </div>
+            <div class="satosi satosi_bikkuri right">
+            <span>秋永 サトシ</span>
+            <p>
+            「アッハイ！」
+            </p>
+            </div>
+            <div class="satosi right">
+            <span>秋永 サトシ</span>
+            <p>
+            ここで休憩します
+                  
+            </p>
+            </div>
+            <div class="satosi right">
+            <span>秋永 サトシ</span>
+            <p>
+            BT 休憩表(23) ＞ 奇妙な商人に出会う。このシーンに登場したキャラクターは、アイテムを購入することができる。
+                  
+            </p>
+            </div>
+            <div class="mem3 left">
+            <span>宵宮 晶咲</span>
+            <p>
+            「アタシは、ほるすが親だからお前と違うんだー！」
+            </p>
+            </div>
+            <div class="mem6 right">
+            <span>尾ノ後 辰俊</span>
+            <p>
+            bt 休憩表(15) ＞ 周囲の空気が変わった。運命の輪が動き出す予感！運命の輪の上にある赤の領域のインガを青の領域に、青の領域のインガを緑の領域に、緑の領域のインガを白の領域に、白の領域のインガを赤の領域に、それぞれ同時に移動させる。
+                  
+            </p>
+            </div>
+            <div class="mem3 left">
+            <span>宵宮 晶咲</span>
+            <p>
+            BT 休憩表(12) ＞ 美女の沐浴をのぞいてしまった。1D6を振る。1～2なら「堕落」、3～4なら「恥辱」、5～6なら「重傷1」の変調を受ける。
+                  
+            </p>
+            </div>
+            <div class="mem3 left">
+            <span>宵宮 晶咲</span>
+            <p>
+            1D6 (1D6) ＞ 6
+                  
+            </p>
+            </div>
+
+        </div></div>
+
+        <div class="bg-sp">
+            <div class="bg-over"><div class="bg-inner bg8"></div></div>
+        <div class="log">
+
+            <div class="kp">
+            宵宮が社の扉をあけ、外に出ようとするとそこは浴室であった
+            </div>
+            <div class="mem13 left">
+            <span>龍吉公主（大晦日）</span>
+            <p>
+            「……」
+            </p>
+            </div>
+            <div class="mem3 left">
+            <span>宵宮 晶咲</span>
+            <p>
+            「なっ……なっ…なっ」
+            </p>
+            </div>
+            <div class="mem13 left">
+            <span>龍吉公主（大晦日）</span>
+            <p>
+            「不敬ッ！」ﾊﾞﾁﾝ
+            </p>
+            </div>
+            <div class="mem3 left">
+            <span>宵宮 晶咲</span>
+            <p>
+            「いったぁあああああああああ」
+            </p>
+            </div>
+            <div class="kp">
+            神の一撃により重傷を負った
+            </div>
+            <div class="mem3 left">
+            <span>宵宮 晶咲</span>
+            <p>
+            「事故なんだ……てか女だからいいだろ……」
+            </p>
+            </div>
+
+        </div></div>
+
+        <div class="bg-sp">
+            <div class="bg-over"><div class="bg-inner bg5"></div></div>
+        <div class="log">
+
+            <div class="mem12 right">
+            <span>アマテラス（大晦日）</span>
+            <p>
+            「神だからねぇ」
+            </p>
+            </div>
+            <div class="mem6 right">
+            <span>尾ノ後 辰俊</span>
+            <p>
+            「あれ？龍吉公主様の声がしたでちゅ」
+            </p>
+            </div>
+            <div class="mem3 left">
+            <span>宵宮 晶咲</span>
+            <p>
+            「てか変なところに繋げんなよぉ」
+            </p>
+            </div>
+            <div class="mem14 right">
+            <span>ヤタガラス（大晦日）</span>
+            <p>
+            「ガァー！テメェら！来るのが早いぜ！」
+            </p>
+            </div>
+            <div class="mem12 right">
+            <span>アマテラス（大晦日）</span>
+            <p>
+            「龍りゃんが湯浴みしたいっていってたから」
+            </p>
+            </div>
+            <div class="mem14 right">
+            <span>ヤタガラス（大晦日）</span>
+            <p>
+            「本当はもうちょい後に向かう予定だったが……てやんでい！」
+            </p>
+            </div>
+            <div class="satosi right">
+            <span>秋永 サトシ</span>
+            <p>
+            「どうせすぐいく羽目になるんだよなァ……」
+            </p>
+            </div>
+            <div class="mem14 right">
+            <span>ヤタガラス（大晦日）</span>
+            <p>
+            「しゃらくせぇからここで売ってやるぜ！何でも言いな！神貸と交換でい！」
+            </p>
+            </div>
+            <div class="mem14 right">
+            <span>ヤタガラス（大晦日）</span>
+            <p>
+            「おっ！アンタが俺の相棒か！よろしく頼むぜ！」
+            </p>
+            </div>
+            <div class="mem6 right">
+            <span>尾ノ後 辰俊</span>
+            <p>
+            甘露を使い甘露を購入
+            </p>
+            </div>
+            <div class="kp">
+            [ 尾ノ後 辰俊 ] 神貨 : 11 → 7
+            </div>
+            <div class="satosi right">
+            <span>秋永 サトシ</span>
+            <p>
+            「大変お世話になります、大変……」
+            </p>
+            </div>
+            <div class="satosi right">
+            <span>秋永 サトシ</span>
+            <p>
+            さっきのファンブルに対して災いの種
+            </p>
+            </div>
+            <div class="satosi right">
+            <span>秋永 サトシ</span>
+            <p>
+            1d6 (1D6) ＞ 2
+                  
+            </p>
+            </div>
+            <div class="kp">
+            [ 秋永 サトシ ] 生命力 : 15 → 17
+            </div>
+            <div class="mem3 left">
+            <span>宵宮 晶咲</span>
+            <p>
+            「いてーよーいてーよー」
+            </p>
+            </div>
+            <div class="mem14 right">
+            <span>ヤタガラス（大晦日）</span>
+            <p>
+            「おっ！海産物！甘いのが好きかい！持ってきな！」
+            </p>
+            </div>
+            <div class="mem6 right">
+            <span>尾ノ後 辰俊</span>
+            <p>
+            「海産物……」
+            </p>
+            </div>
+            <div class="satosi right">
+            <span>秋永 サトシ</span>
+            <p>
+            さっきのムードで数珠回復
+            </p>
+            </div>
+            <div class="kp">
+            [ 秋永 サトシ ] 生命力 : 17 → 19
+            </div>
+            <div class="satosi right">
+            <span>秋永 サトシ</span>
+            <p>
+            「甘露買います！」
+            </p>
+            </div>
+            <div class="kp">
+            [ 秋永 サトシ ] 神貨 : 4 → 0
+            </div>
+            <div class="satosi right">
+            <span>秋永 サトシ</span>
+            <p>
+            「お年玉早速使お」
+            </p>
+            </div>
+            <div class="mem14 right">
+            <span>ヤタガラス（大晦日）</span>
+            <p>
+            「まだまだ青い坊ちゃん方！気張っていきな！」
+            </p>
+            </div>
+            <div class="kp">
+            ――彼はこの後に焼き鳥となる事を知らない
+            </div>
+            <div class="satosi right">
+            <span>秋永 サトシ</span>
+            <p>
+            食料３つアサキさんに渡す
+            </p>
+            </div>
+            <div class="mem12 right">
+            <span>アマテラス（大晦日）</span>
+            <p>
+            「よしよし、ウケモチのお餅よ。美味しい？」
+            </p>
+            </div>
+            <div class="mem3 left">
+            <span>宵宮 晶咲</span>
+            <p>
+            「ありがとー！」
+            </p>
+            </div>
+            <div class="mem3 left">
+            <span>宵宮 晶咲</span>
+            <p>
+            もぐもぐもぐ
+            </p>
+            </div>
+            <div class="mem3 left">
+            <span>宵宮 晶咲</span>
+            <p>
+            食べます
+            </p>
+            </div>
+            <div class="satosi satosi_warai right">
+            <span>秋永 サトシ</span>
+            <p>
+            「痛そうだったね、よく食べてお癒し……」
+            </p>
+            </div>
+            <div class="mem3 left">
+            <span>宵宮 晶咲</span>
+            <p>
+            「ありがとぅ……ありがとうぅ」
+            </p>
+            </div>
+            <div class="kp">
+            [ 宵宮 晶咲 ] 生命力 : 14 → 17
+            </div>
+            <div class="mem12 right">
+            <span>アマテラス（大晦日）</span>
+            <p>
+            「ん？いまアンタ食べてなかった？」
+            </p>
+            </div>
+            <div class="mem3 left">
+            <span>宵宮 晶咲</span>
+            <p>
+            「おいしい……」
+            </p>
+            </div>
+            <div class="mem6 mem6_batu right">
+            <span>尾ノ後 辰俊</span>
+            <p>
+            「やっぱりカップルでちゅ」
+            </p>
+            </div>
+            <div class="mem3 left">
+            <span>宵宮 晶咲</span>
+            <p>
+            「（ぎろっ」
+            </p>
+            </div>
+            <div class="mem2 right">
+            <span>GM</span>
+            <p>
+            シーン終了
+            </p>
+            </div>
+            <div class="mem3 left">
+            <span>宵宮 晶咲</span>
+            <p>
+            重症
+            </p>
+            </div>
+            <div class="kp">
+            [ 宵宮 晶咲 ] 生命力 : 17 → 16
+            </div>
+
+        </div></div>
+
+        <div class="bg-sp">
+            <div class="bg-over"><div class="bg-inner bg5"></div></div>
+        <div class="log">
+
+            <div class="mem2 right">
+            <span>GM</span>
+            <p>
+            １サイクル目終了
+            </p>
+            </div>
+            <div class="mem12 right">
+            <span>アマテラス（大晦日）</span>
+            <p>
+            「ほら、アンタ達。そろそろ行きなさいさっさと解決して私を楽にしなさい」
+            </p>
+            </div>
+            <div class="kp">
+            1つのサイクルが終了する度にアマテラスが事件の解決を迫る。【頭脳】か【愛】どちらかで全員が一回ずつ判定を行い、誰か一人でも成功すればPCらやその親神による言いくるめが成功する。
+            </div>
+            <div class="mem3 left">
+            <span>宵宮 晶咲</span>
+            <p>
+            「今調べものしてて忙しいですよ」
+            </p>
+            </div>
+            <div class="satosi right">
+            <span>秋永 サトシ</span>
+            <p>
+            「そういえば僕たちにやらせてますけど、神は自分で行動できないとか制約でもあるんですか？」
+            </p>
+            </div>
+            <div class="satosi right">
+            <span>秋永 サトシ</span>
+            <p>
+            RB+2-1+0 (RB+1&gt;=4) ＞ [3,6]+1 ＞ 4_成功[3青] / 7_スペシャル！[6任意]
+                  
+            </p>
+            </div>
+            <div class="satosi right">
+            <span>秋永 サトシ</span>
+            <p>
+            アクション３　ムード２
+            </p>
+            </div>
+            <div class="satosi right">
+            <span>秋永 サトシ</span>
+            <p>
+            数珠回復
+            </p>
+            </div>
+            <div class="kp">
+            [ 秋永 サトシ ] 生命力 : 19 → 20
+            </div>
+            <div class="mem6 right">
+            <span>尾ノ後 辰俊</span>
+            <p>
+            RB+1-1 【頭脳】 (RB&gt;=4) ＞ [4,3] ＞ 4_成功[4緑] / 3_失敗[3青]
+                  
+            </p>
+            </div>
+            <div class="mem6 right">
+            <span>尾ノ後 辰俊</span>
+            <p>
+            アクション４　ムード3
+            </p>
+            </div>
+            <div class="mem3 left">
+            <span>宵宮 晶咲</span>
+            <p>
+            RB-1+0 (RB-1&gt;=4) ＞ [4,3]-1 ＞ 3_失敗[4緑] / 2_失敗[3青]
+                  
+            </p>
+            </div>
+            <div class="mem3 left">
+            <span>宵宮 晶咲</span>
+            <p>
+            アクション3 ムード4
+            </p>
+            </div>
+            <div class="mem12 right">
+            <span>アマテラス（大晦日）</span>
+            <p>
+            「当たり前でしょう？私たちが自分でいろいろやると収拾がつかなくなるのよ」
+            </p>
+            </div>
+            <div class="mem3 left">
+            <span>宵宮 晶咲</span>
+            <p>
+            「わいのわいの」
+            </p>
+            </div>
+            <div class="satosi right">
+            <span>秋永 サトシ</span>
+            <p>
+            「収拾がつかなくなる？」
+            </p>
+            </div>
+            <div class="mem12 right">
+            <span>アマテラス（大晦日）</span>
+            <p>
+            「そうよ～私ら神は――うんたらかんたら」
+            </p>
+            </div>
+            <div class="kp">
+            アマテラスの興味は別に移ったようだ
+            </div>
+
+        </div></div>
+
+        <div class="bg-sp">
+            <div class="bg-over"><div class="bg-inner bg4"></div></div>
+        <div class="log">
+
+            <div class="mem2 right">
+            <span>GM</span>
+            <p>
+            サイクル2
+            </p>
+            </div>
+            <div class="mem2 right">
+            <span>GM</span>
+            <p>
+            シーン4　PC3
+            </p>
+            </div>
+            <div class="kp">
+            舞台：外
+            </div>
+            <div class="kp">
+            君たちが外に出ると、中央の本殿――今はスサノヲの本殿――に過去のあなた達が足を踏み入れていく様子が目に入った
+            </div>
+            <div class="mem6 right">
+            <span>尾ノ後 辰俊</span>
+            <p>
+            PC③の真実を公開
+            </p>
+            </div>
+            <div class="mem2 mem2_PC3 right">
+            <span>GM</span>
+            <p>
+            ●PC3<br>真実：<br>　あなたは一度、別の任務に失敗した。損傷こそ癒えたが、親神からの信頼を損なった、とあなたは考えている。<br>　だから今度は成功させたい。自分のために、親神のために。<br>　この【真実】が公開された時、任意のインガを3つ増やすことができる。<br>トリガー：1サイクルが終了したとき。
+            </p>
+            </div>
+            <div class="mem6 right">
+            <span>尾ノ後 辰俊</span>
+            <p>
+            赤に2つ青に1つおきます
+            </p>
+            </div>
+            <div class="mem6 right">
+            <span>尾ノ後 辰俊</span>
+            <p>
+            「あっ……」
+            </p>
+            </div>
+            <div class="satosi right">
+            <span>秋永 サトシ</span>
+            <p>
+            「RTAもいよいよ終盤ですねェ……」
+            </p>
+            </div>
+            <div class="mem3 left">
+            <span>宵宮 晶咲</span>
+            <p>
+            「タツトシ……お前そんなことを考えていたのか…」
+            </p>
+            </div>
+            <div class="kp">
+            あなた達が出てきたアマテラスの本殿から声が聞こえる
+            </div>
+            <div class="mem12 mem12_F right">
+            <span>アマテラス（大晦日）</span>
+            <p>
+            「ﾌｧｯ！！？！」
+            </p>
+            </div>
+            <div class="mem3 left">
+            <span>宵宮 晶咲</span>
+            <p>
+            「あっ」
+            </p>
+            </div>
+            <div class="kp">
+            どうやら過去のあなた達の戦いが始まった様子だ
+            </div>
+            <div class="mem6 right">
+            <span>尾ノ後 辰俊</span>
+            <p>
+            「あの後完勝するはずなのになぜこんなことに……」
+            </p>
+            </div>
+            <div class="mem6 mem6_batu right">
+            <span>尾ノ後 辰俊</span>
+            <p>
+            「もう失敗（？）できないでちゅ」
+            </p>
+            </div>
+            <div class="mem6 right">
+            <span>尾ノ後 辰俊</span>
+            <p>
+            大晦日を調査
+            </p>
+            </div>
+            <div class="mem6 right">
+            <span>尾ノ後 辰俊</span>
+            <p>
+            RB+1-1 【頭脳】 (RB&gt;=4) ＞ [6,3] ＞ 6_スペシャル！[6任意] / 3_失敗[3青]
+                  
+            </p>
+            </div>
+            <div class="mem6 right">
+            <span>尾ノ後 辰俊</span>
+            <p>
+            アクション６　ムード３
+            </p>
+            </div>
+            <div class="satosi right">
+            <span>秋永 サトシ</span>
+            <p>
+            「今度は１００パーセント達成してやりましょう！」
+            </p>
+            </div>
+            <div class="mem3 left">
+            <span>宵宮 晶咲</span>
+            <p>
+            「ソラを取り戻してみんなで生還だ！」
+            </p>
+            </div>
+            <div class="mem6 right">
+            <span>尾ノ後 辰俊</span>
+            <p>
+            大晦日の真実を公開
+            </p>
+            </div>
+            <div class="mem2 right">
+            <span>GM</span>
+            <p>
+            真実：<br>　明日は新年、ということはヤマト神群にとって最も忙しい時期となる。<br>　何もしたくない、引きこもりたい。<br>　そんな想いが影霊となりこの空間を作った――のではない。<br>　これは全く真逆の感情が齎したもの。三人の中で最も忙しくない神が他を羨んだ結果。<br>　自分は代用品ではない。<br>　己は己であるのに、どうして代理としか見てくれないのか。<br>　――二つの声が重なった。<br>　この【真実】が公開されないまま決戦フェイズに突入した場合、憑依された人間は助からない。<br>トリガー：いつでも公開できる。
+            </p>
+            </div>
+            <div class="mem3 left">
+            <span>宵宮 晶咲</span>
+            <p>
+            「はぁああああん？」
+            </p>
+            </div>
+            <div class="mem3 left">
+            <span>宵宮 晶咲</span>
+            <p>
+            「あぁあああああああん？」
+            </p>
+            </div>
+            <div class="mem6 right">
+            <span>尾ノ後 辰俊</span>
+            <p>
+            「そういう事でちゅたか……」
+            </p>
+            </div>
+            <div class="mem3 left">
+            <span>宵宮 晶咲</span>
+            <p>
+            「そんなソラ……ソラ…」
+            </p>
+            </div>
+            <div class="satosi right">
+            <span>秋永 サトシ</span>
+            <p>
+            「ア、アサキさん……」
+            </p>
+            </div>
+            <div class="mem3 left">
+            <span>宵宮 晶咲</span>
+            <p>
+            「なんて…ことだよ」
+            </p>
+            </div>
+            <div class="mem3 left">
+            <span>宵宮 晶咲</span>
+            <p>
+            「そんなことって……」
+            </p>
+            </div>
+            <div class="satosi right">
+            <span>秋永 サトシ</span>
+            <p>
+            「（……ン？）」
+            </p>
+            </div>
+            <div class="mem3 left">
+            <span>宵宮 晶咲</span>
+            <p>
+            「RTAは悪だ…」
+            </p>
+            </div>
+            <div class="mem3 left">
+            <span>宵宮 晶咲</span>
+            <p>
+            「RTAは悪い文明だ……」
+            </p>
+            </div>
+            <div class="satosi satosi_ase right">
+            <span>秋永 サトシ</span>
+            <p>
+            「ジャ、ジャア僕が前回倒してしまったのは――ツクヨミがとりついたソラさんてコト！？」
+            </p>
+            </div>
+            <div class="mem15 left">
+            <span>ホルス</span>
+            <p>
+            「そういうことだね」
+            </p>
+            </div>
+            <div class="mem6 right">
+            <span>尾ノ後 辰俊</span>
+            <p>
+            「お悔やみ申し上げまちゅ……」
+            </p>
+            </div>
+            <div class="satosi satosi_bikkuri right">
+            <span>秋永 サトシ</span>
+            <p>
+            「ボ、僕は知らず知らずのうちに殺人を――！？」
+            </p>
+            </div>
+            <div class="mem3 left">
+            <span>宵宮 晶咲</span>
+            <p>
+            「…………」
+            </p>
+            </div>
+            <div class="satosi right">
+            <span>秋永 サトシ</span>
+            <p>
+            「ていうか誰ェ！？」
+            </p>
+            </div>
+            <div class="kp">
+            不意に宵宮の親神が顕現する
+            </div>
+            <div class="mem3 left">
+            <span>宵宮 晶咲</span>
+            <p>
+            「ホルス……」
+            </p>
+            </div>
+            <div class="mem3 left">
+            <span>宵宮 晶咲</span>
+            <p>
+            「どうすれば、助けられる？どうすれば分離できる？」
+            </p>
+            </div>
+            <div class="mem3 left">
+            <span>宵宮 晶咲</span>
+            <p>
+            「どうすれば、――ソラは帰ってこれる」
+            </p>
+            </div>
+            <div class="mem15 left">
+            <span>ホルス</span>
+            <p>
+            「この真実を知った以上、その答えは自ずとわかっているだろう？」
+            </p>
+            </div>
+            <div class="mem15 left">
+            <span>ホルス</span>
+            <p>
+            「キミが救うんだ。彼女を」
+            </p>
+            </div>
+            <div class="mem3 left">
+            <span>宵宮 晶咲</span>
+            <p>
+            「……あぁ。今度こそ、救ってみせる」
+            </p>
+            </div>
+            <div class="mem3 left">
+            <span>宵宮 晶咲</span>
+            <p>
+            「そのためにも、力を貸してくれ」
+            </p>
+            </div>
+            <div class="mem3 left">
+            <span>宵宮 晶咲</span>
+            <p>
+            「みんな」
+            </p>
+            </div>
+            <div class="mem6 right">
+            <span>尾ノ後 辰俊</span>
+            <p>
+            「先輩にまかせるでちゅ！」
+            </p>
+            </div>
+            <div class="satosi right">
+            <span>秋永 サトシ</span>
+            <p>
+            「ア、ハイ……。スンマセンやります、やらせてくだサイ」
+            </p>
+            </div>
+            <div class="mem3 left">
+            <span>宵宮 晶咲</span>
+            <p>
+            「……さすが、せんぱい」
+            </p>
+            </div>
+            <div class="mem3 left">
+            <span>宵宮 晶咲</span>
+            <p>
+            「ありがとう、サトシ」
+            </p>
+            </div>
+            <div class="kp">
+            「合点っ！」
+            </div>
+            <div class="mem3 left">
+            <span>宵宮 晶咲</span>
+            <p>
+            「承知の助」
+            </p>
+            </div>
+            <div class="mem3 left">
+            <span>宵宮 晶咲</span>
+            <p>
+            「くそっ」
+            </p>
+            </div>
+            <div class="kp">
+            ――アマテラスの本殿から一羽の鴉が飛び出す
+            </div>
+            <div class="satosi right">
+            <span>秋永 サトシ</span>
+            <p>
+            「そろそろ、片を付けないとまずいみたいですね」
+            </p>
+            </div>
+            <div class="mem6 mem6_batu right">
+            <span>尾ノ後 辰俊</span>
+            <p>
+            「ヤタガラチュぅぅぅ！」
+            </p>
+            </div>
+            <div class="mem3 left">
+            <span>宵宮 晶咲</span>
+            <p>
+            「さらば、やたがらす」
+            </p>
+            </div>
+            <div class="satosi satosi_sinken right">
+            <span>秋永 サトシ</span>
+            <p>
+            「ソラさんの為に気合いを入れなおして挑みますよ！」
+            </p>
+            </div>
+            <div class="satosi satosi_sinken right">
+            <span>秋永 サトシ</span>
+            <p>
+            真実公開します
+            </p>
+            </div>
+            <div class="mem3 left">
+            <span>宵宮 晶咲</span>
+            <p>
+            「そろそろカタをつけるしかないな」
+            </p>
+            </div>
+            <div class="mem2 mem2_PC1 right">
+            <span>GM</span>
+            <p>
+            ●PC1<br>真実：<br>　あなたと親神の相性は良いので問題はないらしい。だからこそ目をつけられたのだが……。<br>　「いきなりRTAとはお見逸れしたわ。せっかくだから次は100％でお願いできる？」<br>　無茶ぶりが過ぎる！<br>　この【真実】が公開されたとき、自分以外のPC1人と「両想い」になる。更に、黒のインガを1つ取り除く。<br>トリガー：赤の覚醒段階が第2段階になる。
+            </p>
+            </div>
+            <div class="satosi satosi_sinken right">
+            <span>秋永 サトシ</span>
+            <p>
+            アサキさんと両想いに
+            </p>
+            </div>
+            <div class="mem3 left">
+            <span>宵宮 晶咲</span>
+            <p>
+            「さ、サトシ……」
+            </p>
+            </div>
+            <div class="satosi right">
+            <span>秋永 サトシ</span>
+            <p>
+            RT 関係表(4) ＞ 信頼（プラス）／疑い（マイナス）
+                  
+            </p>
+            </div>
+            <div class="mem3 left">
+            <span>宵宮 晶咲</span>
+            <p>
+            RT 関係表(4) ＞ 信頼（プラス）／疑い（マイナス）
+                  
+            </p>
+            </div>
+            <div class="mem6 mem6_batu right">
+            <span>尾ノ後 辰俊</span>
+            <p>
+            「やっぱりカップルでちゅ」
+            </p>
+            </div>
+            <div class="satosi right">
+            <span>秋永 サトシ</span>
+            <p>
+            信頼→アサキ
+            </p>
+            </div>
+            <div class="mem3 left">
+            <span>宵宮 晶咲</span>
+            <p>
+            信頼→サトシ
+            </p>
+            </div>
+            <div class="mem3 left">
+            <span>宵宮 晶咲</span>
+            <p>
+            「サトシの想い伝わったぜ！」
+            </p>
+            </div>
+            <div class="satosi right">
+            <span>秋永 サトシ</span>
+            <p>
+            「前科者になりたくないし……ネ！」
+            </p>
+            </div>
+            <div class="mem2 right">
+            <span>GM</span>
+            <p>
+            シーン終了
+            </p>
+            </div>
+            <div class="mem3 left">
+            <span>宵宮 晶咲</span>
+            <p>
+            重症
+            </p>
+            </div>
+            <div class="kp">
+            [ 宵宮 晶咲 ] 生命力 : 16 → 15
+            </div>
+
+        </div></div>
+
+        <div class="bg-sp">
+            <div class="bg-over"><div class="bg-inner bg6"></div></div>
+        <div class="log">
+
+            <div class="mem2 right">
+            <span>GM</span>
+            <p>
+            シーン5 PC2
+            </p>
+            </div>
+            <div class="mem3 left">
+            <span>宵宮 晶咲</span>
+            <p>
+            ツクヨミの本殿に突入
+            </p>
+            </div>
+            <div class="kp">
+            本殿に入る。
+            </div>
+            <div class="kp">
+            板張りの四角い空間の中央に、こちらに背を向けて座す者がある。
+            </div>
+            <div class="mem16 right">
+            <span>月読尊（つくよみのみこと）</span>
+            <p>
+            「……よく来たね」
+            </p>
+            </div>
+            <div class="kp">
+            振り返ってこちらを見たのは――ツクヨミの影霊だった。
+            </div>
+            <div class="mem3 left">
+            <span>宵宮 晶咲</span>
+            <p>
+            「……」
+            </p>
+            </div>
+            <div class="mem3 left">
+            <span>宵宮 晶咲</span>
+            <p>
+            「ソラを返してもらう」
+            </p>
+            </div>
+            <div class="mem16 right">
+            <span>月読尊（つくよみのみこと）</span>
+            <p>
+            「……返す、か」
+            </p>
+            </div>
+            <div class="mem16 right">
+            <span>月読尊（つくよみのみこと）</span>
+            <p>
+            「それは少し違うよ、彼女はボクであり、ボクは彼女なんだ」
+            </p>
+            </div>
+            <div class="mem3 left">
+            <span>宵宮 晶咲</span>
+            <p>
+            「なら、ソラの姿に戻って……こちらの世界に戻ってきてもらうまでだ」
+            </p>
+            </div>
+            <div class="mem3 left">
+            <span>宵宮 晶咲</span>
+            <p>
+            「アタシは気づいたんだよ……失ってからな」
+            </p>
+            </div>
+            <div class="mem3 left">
+            <span>宵宮 晶咲</span>
+            <p>
+            「本当に大切なものは、すぐ近くにいたって」
+            </p>
+            </div>
+            <div class="mem16 right">
+            <span>月読尊（つくよみのみこと）</span>
+            <p>
+            「大切なもの……か」
+            </p>
+            </div>
+            <div class="mem3 left">
+            <span>宵宮 晶咲</span>
+            <p>
+            「気づくのがほんと……遅くなってごめんな」
+            </p>
+            </div>
+            <div class="mem16 right">
+            <span>月読尊（つくよみのみこと）</span>
+            <p>
+            「……」
+            </p>
+            </div>
+            <div class="mem16 right">
+            <span>月読尊（つくよみのみこと）</span>
+            <p>
+            「本当かな？それって……実は誰でもいいんじゃない？」
+            </p>
+            </div>
+            <div class="mem3 left">
+            <span>宵宮 晶咲</span>
+            <p>
+            「違う！！」
+            </p>
+            </div>
+            <div class="mem16 right">
+            <span>月読尊（つくよみのみこと）</span>
+            <p>
+            「ボクは覚えているよ、ご覧」
+            </p>
+            </div>
+            <div class="mem3 left">
+            <span>宵宮 晶咲</span>
+            <p>
+            「アタシは、闇雲ソラだからこそいいんだ！」
+            </p>
+            </div>
+            <div class="kp">
+            彼が手に持つ鏡には宵宮の姿が映る
+            </div>
+            <div class="mem3 left">
+            <span>宵宮 晶咲</span>
+            <p>
+            「！？」
+            </p>
+            </div>
+            <div class="kp">
+            そこにはソラの事を忘れて他の神子と仲良く談笑しているあなたの姿が映っていた
+            </div>
+            <div class="mem3 left">
+            <span>宵宮 晶咲</span>
+            <p>
+            「………」
+            </p>
+            </div>
+            <div class="mem16 right">
+            <span>月読尊（つくよみのみこと）</span>
+            <p>
+            「忘れていたなんて言ってるけど……君の本質はこれだ」
+            </p>
+            </div>
+            <div class="mem16 right">
+            <span>月読尊（つくよみのみこと）</span>
+            <p>
+            「いや、違うか」
+            </p>
+            </div>
+            <div class="mem16 right">
+            <span>月読尊（つくよみのみこと）</span>
+            <p>
+            「これがボクの――」
+            </p>
+            </div>
+            <div class="mem17 left">
+            <span>闇雲 ソラ</span>
+            <p>
+            「私の価値はこの程度ってことね」
+            </p>
+            </div>
+            <div class="mem3 left">
+            <span>宵宮 晶咲</span>
+            <p>
+            「……！！」
+            </p>
+            </div>
+            <div class="mem3 left">
+            <span>宵宮 晶咲</span>
+            <p>
+            「違う！違う違う違う」
+            </p>
+            </div>
+            <div class="mem3 left">
+            <span>宵宮 晶咲</span>
+            <p>
+            「アタシは、そんな器用な女じゃねえ！」
+            </p>
+            </div>
+            <div class="mem17 left">
+            <span>闇雲 ソラ</span>
+            <p>
+            「父さんも母さんも、皆して姉さんばっかり……私の事なんていざという時の代用品」
+            </p>
+            </div>
+            <div class="mem3 left">
+            <span>宵宮 晶咲</span>
+            <p>
+            「今は、大切な者を見誤らない」
+            </p>
+            </div>
+            <div class="mem3 left">
+            <span>宵宮 晶咲</span>
+            <p>
+            「ソラ」
+            </p>
+            </div>
+            <div class="mem17 left">
+            <span>闇雲 ソラ</span>
+            <p>
+            「……見誤らない？」
+            </p>
+            </div>
+            <div class="mem16 right">
+            <span>月読尊（つくよみのみこと）</span>
+            <p>
+            「一度は、殺したのに？」
+            </p>
+            </div>
+            <div class="mem3 left">
+            <span>宵宮 晶咲</span>
+            <p>
+            「そうだ。アタシの大切な者は、今はもう――」
+            </p>
+            </div>
+            <div class="mem3 left">
+            <span>宵宮 晶咲</span>
+            <p>
+            「大事なんだよ。ソラっ！」
+            </p>
+            </div>
+            <div class="mem3 left">
+            <span>宵宮 晶咲</span>
+            <p>
+            「っ！！」
+            </p>
+            </div>
+            <div class="mem16 right">
+            <span>月読尊（つくよみのみこと）</span>
+            <p>
+            「――そっくりだ」
+            </p>
+            </div>
+            <div class="mem3 left">
+            <span>宵宮 晶咲</span>
+            <p>
+            「アタシは、アタシは……！」
+            </p>
+            </div>
+            <div class="mem17 left">
+            <span>闇雲 ソラ</span>
+            <p>
+            「父さんと母さんも、軽々しく」
+            </p>
+            </div>
+            <div class="mem17 left">
+            <span>闇雲 ソラ</span>
+            <p>
+            「大事だ、なんだと」
+            </p>
+            </div>
+            <div class="mem3 left">
+            <span>宵宮 晶咲</span>
+            <p>
+            「ソラ……」
+            </p>
+            </div>
+            <div class="mem17 left">
+            <span>闇雲 ソラ</span>
+            <p>
+            「そんな空虚な言葉じゃなくて……もっと私を――」
+            </p>
+            </div>
+            <div class="mem3 left">
+            <span>宵宮 晶咲</span>
+            <p>
+            「アタシはさ、」
+            </p>
+            </div>
+            <div class="mem3 left">
+            <span>宵宮 晶咲</span>
+            <p>
+            「ホントの親が、実は違ったって最近知ったんだぜ？」
+            </p>
+            </div>
+            <div class="mem3 left">
+            <span>宵宮 晶咲</span>
+            <p>
+            「しかも、ホルスときた」
+            </p>
+            </div>
+            <div class="mem3 left">
+            <span>宵宮 晶咲</span>
+            <p>
+            「今までの生活に嘘が混じってたんだ」
+            </p>
+            </div>
+            <div class="mem3 left">
+            <span>宵宮 晶咲</span>
+            <p>
+            「笑えるよなぁ」
+            </p>
+            </div>
+            <div class="mem3 left">
+            <span>宵宮 晶咲</span>
+            <p>
+            「けど、今でもアタシはお前の事を大切に思ってる」
+            </p>
+            </div>
+            <div class="mem3 left">
+            <span>宵宮 晶咲</span>
+            <p>
+            「これだけは嘘とは言わせねぇ」
+            </p>
+            </div>
+            <div class="mem3 left">
+            <span>宵宮 晶咲</span>
+            <p>
+            「だからさ――」
+            </p>
+            </div>
+            <div class="mem3 left">
+            <span>宵宮 晶咲</span>
+            <p>
+            「もっかい信じてくれよ」
+            </p>
+            </div>
+            <div class="mem16 right">
+            <span>月読尊（つくよみのみこと）</span>
+            <p>
+            「……ほら、それだ」
+            </p>
+            </div>
+            <div class="mem16 right">
+            <span>月読尊（つくよみのみこと）</span>
+            <p>
+            「これだけ言っているのに」
+            </p>
+            </div>
+            <div class="mem3 left">
+            <span>宵宮 晶咲</span>
+            <p>
+            「アタシは”お前”に言ってるわけじゃなえよ」
+            </p>
+            </div>
+            <div class="mem3 left">
+            <span>宵宮 晶咲</span>
+            <p>
+            「”ソラ”に言ってんだ」
+            </p>
+            </div>
+            <div class="mem3 left">
+            <span>宵宮 晶咲</span>
+            <p>
+            「アタシの大切な大切な親友にな」
+            </p>
+            </div>
+            <div class="mem16 right">
+            <span>月読尊（つくよみのみこと）</span>
+            <p>
+            「あぁ、そう」
+            </p>
+            </div>
+            <div class="mem16 right">
+            <span>月読尊（つくよみのみこと）</span>
+            <p>
+            「まぁいいよ。きっと何を言っても聞いてくれないだろうし」
+            </p>
+            </div>
+            <div class="mem3 left">
+            <span>宵宮 晶咲</span>
+            <p>
+            「わかった。わかったよ」
+            </p>
+            </div>
+            <div class="mem16 right">
+            <span>月読尊（つくよみのみこと）</span>
+            <p>
+            「寧ろ黙って聞いてくれている後ろの二人の方がありがたい」
+            </p>
+            </div>
+            <div class="mem3 left">
+            <span>宵宮 晶咲</span>
+            <p>
+            「”お前”の思いのたけを全部ぶちまけろ！」
+            </p>
+            </div>
+            <div class="mem3 left">
+            <span>宵宮 晶咲</span>
+            <p>
+            「受け止めて打ち返してやるからよ！！」
+            </p>
+            </div>
+            <div class="mem3 left">
+            <span>宵宮 晶咲</span>
+            <p>
+            「あぁ、そうだったよな。アタシは喧嘩で分かり合うタイプだったもんな！」
+            </p>
+            </div>
+            <div class="mem16 right">
+            <span>月読尊（つくよみのみこと）</span>
+            <p>
+            「……」
+            </p>
+            </div>
+            <div class="mem3 left">
+            <span>宵宮 晶咲</span>
+            <p>
+            「珍しく頭使って話してたけど、やっぱり拳で話し合うのが一番はやいよなぁ！？」
+            </p>
+            </div>
+            <div class="mem16 right">
+            <span>月読尊（つくよみのみこと）</span>
+            <p>
+            「そういうところだよ、キミたち」
+            </p>
+            </div>
+            <div class="mem3 left">
+            <span>宵宮 晶咲</span>
+            <p>
+            「こいよ！お前の考えも、想いも全部受け止めてやる！」
+            </p>
+            </div>
+            <div class="mem17 left">
+            <span>闇雲 ソラ</span>
+            <p>
+            「たった今の数瞬でさえ、話を聞いてくれなかったのに？」
+            </p>
+            </div>
+            <div class="mem3 left">
+            <span>宵宮 晶咲</span>
+            <p>
+            「アタシがそう気が回るタイプじゃないの知ってるだろ？」
+            </p>
+            </div>
+            <div class="mem17 left">
+            <span>闇雲 ソラ</span>
+            <p>
+            「そう。だから、相談もできなかった」
+            </p>
+            </div>
+            <div class="mem6 right">
+            <span>尾ノ後 辰俊</span>
+            <p>
+            「結局誰かに成りすましてるでちゅね」
+            </p>
+            </div>
+            <div class="mem3 left">
+            <span>宵宮 晶咲</span>
+            <p>
+            「ちゃんと相談したいです！って言ってくれねえと分からねえよ！」
+            </p>
+            </div>
+            <div class="mem3 left">
+            <span>宵宮 晶咲</span>
+            <p>
+            「馬鹿だからよぉ！」
+            </p>
+            </div>
+            <div class="mem3 left">
+            <span>宵宮 晶咲</span>
+            <p>
+            真実を公開するぜ
+            </p>
+            </div>
+            <div class="mem2 mem2_PC2 right">
+            <span>GM</span>
+            <p>
+            ●PC2<br>真実：<br>　友人はずっと何かを相談したそうにしていた。だから、今年のうちに話してしまえとばかりに神社へと連れ出したのは、あなた。<br>　そして、友人は怪物に憑依されてしまったのをあなたは見た。<br>　助けたい。その気持ちに神が答えた結果、あなたは神子となった。<br>　この【真実】が公開された時、あなたの決意はより固まる。以降あなたによる怪物へのダメージが3追加される。<br>トリガー：神話災害を起こしている怪物と会う。
+            </p>
+            </div>
+            <div class="mem17 left">
+            <span>闇雲 ソラ</span>
+            <p>
+            「だから今！相談しようとした！」
+            </p>
+            </div>
+            <div class="mem17 left">
+            <span>闇雲 ソラ</span>
+            <p>
+            「それを遮って……何！？」
+            </p>
+            </div>
+            <div class="mem3 left">
+            <span>宵宮 晶咲</span>
+            <p>
+            「あぁ、そうかい！そりゃ悪かったな！」
+            </p>
+            </div>
+            <div class="mem17 left">
+            <span>闇雲 ソラ</span>
+            <p>
+            「知らないわよ！相談してる相手にマウントとらないでよ！」
+            </p>
+            </div>
+            <div class="mem3 left">
+            <span>宵宮 晶咲</span>
+            <p>
+            「アタシだって色々ありすぎて頭がパニックなんだよ」
+            </p>
+            </div>
+            <div class="mem17 left">
+            <span>闇雲 ソラ</span>
+            <p>
+            「言い訳して！だから相談できなかったって――」
+            </p>
+            </div>
+            <div class="mem16 right">
+            <span>月読尊（つくよみのみこと）</span>
+            <p>
+            「そこまでだ、ソラ」
+            </p>
+            </div>
+            <div class="mem3 left">
+            <span>宵宮 晶咲</span>
+            <p>
+            「だから、それは悪いって思ってるけどよ」
+            </p>
+            </div>
+            <div class="mem3 left">
+            <span>宵宮 晶咲</span>
+            <p>
+            「アタシにはわかりやすく、手を握って「相談したいです」ってアピールがないとわからないだよ」
+            </p>
+            </div>
+            <div class="mem16 right">
+            <span>月読尊（つくよみのみこと）</span>
+            <p>
+            「……」
+            </p>
+            </div>
+            <div class="mem8 right">
+            <span>？？？</span>
+            <p>
+            「なるほどね」
+            </p>
+            </div>
+            <div class="mem10 right">
+            <span>アマテラス</span>
+            <p>
+            「大体わかってきたわ」
+            </p>
+            </div>
+            <div class="satosi satosi_bikkuri right">
+            <span>秋永 サトシ</span>
+            <p>
+            「不器用すぎでしょ！？何を相談したかったの！？」
+            </p>
+            </div>
+            <div class="mem10 right">
+            <span>アマテラス</span>
+            <p>
+            「そうそう、こう聞いてほしかったのよね？ツクヨミ」
+            </p>
+            </div>
+            <div class="satosi satosi_bikkuri right">
+            <span>秋永 サトシ</span>
+            <p>
+            （グラ更新しててツッコミできなかった……！何！？女子の喧嘩入りづらい！）」
+            </p>
+            </div>
+            <div class="mem16 right">
+            <span>月読尊（つくよみのみこと）</span>
+            <p>
+            「……姉さん」
+            </p>
+            </div>
+            <div class="mem3 left">
+            <span>宵宮 晶咲</span>
+            <p>
+            「……？」
+            </p>
+            </div>
+            <div class="mem3 left">
+            <span>宵宮 晶咲</span>
+            <p>
+            「あぁ、そう聞けばいいのか。」
+            </p>
+            </div>
+            <div class="satosi right">
+            <span>秋永 サトシ</span>
+            <p>
+            「そう！きいてあげてぇ！」
+            </p>
+            </div>
+            <div class="mem10 right">
+            <span>アマテラス</span>
+            <p>
+            「傍から見ていてよくわかったわ。アタシ、こんな感じだったのね」
+            </p>
+            </div>
+            <div class="mem3 left">
+            <span>宵宮 晶咲</span>
+            <p>
+            「何を相談したかったんだ？」
+            </p>
+            </div>
+            <div class="mem10 right">
+            <span>アマテラス</span>
+            <p>
+            「人の話も聞かずに隙を見せれば自分語り」
+            </p>
+            </div>
+            <div class="mem3 left">
+            <span>宵宮 晶咲</span>
+            <p>
+            「？」
+            </p>
+            </div>
+            <div class="mem10 right">
+            <span>アマテラス</span>
+            <p>
+            「いざ相談を聞くとか言いながら、聞かなかった言い訳を並べてのんべんだらり、と」
+            </p>
+            </div>
+            <div class="mem16 right">
+            <span>月読尊（つくよみのみこと）</span>
+            <p>
+            「……」
+            </p>
+            </div>
+            <div class="mem10 right">
+            <span>アマテラス</span>
+            <p>
+            「……うん、まぁ全然悪いとは思ってないけれど。ようやくわかってきたわよ」
+            </p>
+            </div>
+            <div class="mem16 right">
+            <span>月読尊（つくよみのみこと）</span>
+            <p>
+            ｲﾗｯ
+            </p>
+            </div>
+            <div class="mem10 right">
+            <span>アマテラス</span>
+            <p>
+            「境遇があんまりにそっくりだったから、その子を憑代に選んだのね」
+            </p>
+            </div>
+            <div class="mem10 right">
+            <span>アマテラス</span>
+            <p>
+            「けど今、憑代の子を引っ込めたのはなんでかしら？」
+            </p>
+            </div>
+            <div class="mem16 right">
+            <span>月読尊（つくよみのみこと）</span>
+            <p>
+            「……」
+            </p>
+            </div>
+            <div class="satosi satosi_bikkuri right">
+            <span>秋永 サトシ</span>
+            <p>
+            「都合のいいとこだけ切り抜くなんて、悪質！デスヨネ！？」
+            </p>
+            </div>
+            <div class="mem10 right">
+            <span>アマテラス</span>
+            <p>
+            「うーん……あっ！わかった！口喧嘩させてるうちになんやかんや解決しそうだったからでしょう？」
+            </p>
+            </div>
+            <div class="mem10 right">
+            <span>アマテラス</span>
+            <p>
+            「だってそうでしょう？そっくりとか言ってけど二人はまだ学生。ぶつかり合いで解決できちゃうものね？」
+            </p>
+            </div>
+            <div class="mem10 right">
+            <span>アマテラス</span>
+            <p>
+            「陰気なのはあなただけ！あっはっは！ウケる！」
+            </p>
+            </div>
+            <div class="mem16 right">
+            <span>月読尊（つくよみのみこと）</span>
+            <p>
+            ﾌﾞﾁｯ
+            </p>
+            </div>
+            <div class="mem3 left">
+            <span>宵宮 晶咲</span>
+            <p>
+            「（何かが切れた音が聞こえた気がする）」
+            </p>
+            </div>
+            <div class="satosi satosi_ase right">
+            <span>秋永 サトシ</span>
+            <p>
+            「ひどい煽りをみた……」
+            </p>
+            </div>
+            <div class="satosi satosi_bikkuri right">
+            <span>秋永 サトシ</span>
+            <p>
+            「（なんで僕はこの駄女神と相性よかったんだ！？いやだなあ……！）」
+            </p>
+            </div>
+            <div class="mem16 right">
+            <span>月読尊（つくよみのみこと）</span>
+            <p>
+            「本当に……なんで姉さんみたいなのが主神なのか……」
+            </p>
+            </div>
+            <div class="mem16 right">
+            <span>月読尊（つくよみのみこと）</span>
+            <p>
+            「ボクも我慢の限界だ」
+            </p>
+            </div>
+            <div class="mem2 right">
+            <span>GM</span>
+            <p>
+            戦闘開始
+            </p>
+            </div>
+            <div class="kp">
+            偵察ラウンド
+            </div>
+            <div class="kp">
+            奮起
+            </div>
+            <div class="mem6 right">
+            <span>尾ノ後 辰俊</span>
+            <p>
+            「お前は既に一度倒したでちゅ！諦めるでちゅ！」
+            </p>
+            </div>
+            <div class="satosi satosi_bikkuri right">
+            <span>秋永 サトシ</span>
+            <p>
+            「殺意マシマシなんだけどォ！これ受けるの僕たちだからねアマテラスゥ！？」
+            </p>
+            </div>
+            <div class="mem6 right">
+            <span>尾ノ後 辰俊</span>
+            <p>
+            奮起
+            </p>
+            </div>
+            <div class="mem6 right">
+            <span>尾ノ後 辰俊</span>
+            <p>
+            1d6 (1D6) ＞ 2
+                  
+            </p>
+            </div>
+            <div class="kp">
+            [ 尾ノ後 辰俊 ] 生命力 : 15 → 17
+            </div>
+            <div class="mem10 right">
+            <span>アマテラス</span>
+            <p>
+            「あ～笑える……いや～すっきりスッキリ！」
+            </p>
+            </div>
+            <div class="mem3 left">
+            <span>宵宮 晶咲</span>
+            <p>
+            「………」
+            </p>
+            </div>
+            <div class="satosi satosi_bikkuri right">
+            <span>秋永 サトシ</span>
+            <p>
+            「レスバ勝ってスッキリしてんじゃねーぞ！？」
+            </p>
+            </div>
+            <div class="mem10 right">
+            <span>アマテラス</span>
+            <p>
+            「わざわざあんた達を過去に戻したかいがあったもんよ」
+            </p>
+            </div>
+            <div class="satosi satosi_sinken right">
+            <span>秋永 サトシ</span>
+            <p>
+            草薙剣を偵察
+            </p>
+            </div>
+            <div class="satosi satosi_sinken right">
+            <span>秋永 サトシ</span>
+            <p>
+            RB+2-1+0 (RB+1&gt;=4) ＞ [2,4]+1 ＞ 3_失敗[2赤] / 5_成功[4緑]
+                  
+            </p>
+            </div>
+            <div class="satosi satosi_sinken right">
+            <span>秋永 サトシ</span>
+            <p>
+            アクションを4　ムード２
+            </p>
+            </div>
+            <div class="satosi right">
+            <span>秋永 サトシ</span>
+            <p>
+            数珠回復
+            </p>
+            </div>
+            <div class="kp">
+            [ 秋永 サトシ ] 生命力 : 20 → 21
+            </div>
+            <div class="mem6 right">
+            <span>尾ノ後 辰俊</span>
+            <p>
+            岩刻隠れを調査
+            </p>
+            </div>
+            <div class="mem6 right">
+            <span>尾ノ後 辰俊</span>
+            <p>
+            RB+1-1 【頭脳】 (RB&gt;=4) ＞ [5,3] ＞ 5_成功[5白] / 3_失敗[3青]
+                  
+            </p>
+            </div>
+            <div class="mem6 right">
+            <span>尾ノ後 辰俊</span>
+            <p>
+            アクション５　ムード３
+            </p>
+            </div>
+            <div class="mem3 left">
+            <span>宵宮 晶咲</span>
+            <p>
+            蝕む月の波動を調査
+            </p>
+            </div>
+            <div class="mem3 left">
+            <span>宵宮 晶咲</span>
+            <p>
+            RB-1+0 (RB-1&gt;=4) ＞ [5,6]-1 ＞ 4_成功[5白] / 5_スペシャル！[6任意]
+                  
+            </p>
+            </div>
+            <div class="mem3 left">
+            <span>宵宮 晶咲</span>
+            <p>
+            アクション5 ムード6（白）
+            </p>
+            </div>
+            <div class="kp">
+            プロット
+            </div>
+            <div class="kp">
+            公開
+            </div>
+            <div class="kp">
+            [ 秋永 サトシ ] がダイスシンボルを公開。出目は 2 です。
+            </div>
+            <div class="kp">
+            [ 尾ノ後 辰俊 ] がダイスシンボルを公開。出目は 1 です。
+            </div>
+            <div class="kp">
+            [ 宵宮 晶咲 ] がダイスシンボルを公開。出目は 1 です。
+            </div>
+            <div class="kp">
+            パラグラフ : 0 → 1
+            </div>
+            <div class="mem3 left">
+            <span>宵宮 晶咲</span>
+            <p>
+            岩刻隠れを槍で攻撃します
+            </p>
+            </div>
+            <div class="mem3 left">
+            <span>宵宮 晶咲</span>
+            <p>
+            RS-1+0 (RS-1&gt;=4) ＞ [6,2,6,1]-1 ＞ 5_スペシャル！[6任意] / 1_失敗[2赤] / 5_スペシャル！[6任意] / 0_ファンブル！[1黒]
+                  
+            </p>
+            </div>
+            <div class="mem3 left">
+            <span>宵宮 晶咲</span>
+            <p>
+            アクション6 ムード6（白）
+            </p>
+            </div>
+            <div class="mem3 left">
+            <span>宵宮 晶咲</span>
+            <p>
+            2d6+1+1D6+3 槍スペ (2D6+1+1D6+3) ＞ 6[2,4]+1+6[6]+3 ＞ 16
+                  
+            </p>
+            </div>
+            <div class="mem3 left">
+            <span>宵宮 晶咲</span>
+            <p>
+            「せりゃ！！」
+            </p>
+            </div>
+            <div class="kp">
+            [ 月読尊（つくよみのみこと） ] 本体生命力 : 55 → 42
+            </div>
+            <div class="mem16 right">
+            <span>月読尊（つくよみのみこと）</span>
+            <p>
+            「ﾁｯ」
+            </p>
+            </div>
+            <div class="mem3 left">
+            <span>宵宮 晶咲</span>
+            <p>
+            ホルスの火で 岩刻隠れの防御下げる
+            </p>
+            </div>
+            <div class="mem6 right">
+            <span>尾ノ後 辰俊</span>
+            <p>
+            曲刀で草薙剣を攻撃
+            </p>
+            </div>
+            <div class="mem6 right">
+            <span>尾ノ後 辰俊</span>
+            <p>
+            ・二龍剣（補助・赤青青・なし）呪具、刃
+            </p>
+            </div>
+            <div class="mem6 right">
+            <span>尾ノ後 辰俊</span>
+            <p>
+            自分が命中判定か防御判定を行う直前 に使用できる。自分の【生命力】 を1D6点消費 すると、その命中判定や防御判定を 【霊力】で 行うことができるようになる。 武器:威力2D6 パリィ1 安定性4
+            </p>
+            </div>
+            <div class="mem6 right">
+            <span>尾ノ後 辰俊</span>
+            <p>
+            １ｄ６ (1D6) ＞ 1
+                  
+            </p>
+            </div>
+            <div class="kp">
+            [ 尾ノ後 辰俊 ] 生命力 : 17 → 16
+            </div>
+            <div class="mem6 right">
+            <span>尾ノ後 辰俊</span>
+            <p>
+            RA+2-1 【霊力】 (RA+1&gt;=4) ＞ [1,5,4]+1 ＞ 2_ファンブル！[1黒] / 6_成功[5白] / 5_成功[4緑]
+                  
+            </p>
+            </div>
+            <div class="mem6 right">
+            <span>尾ノ後 辰俊</span>
+            <p>
+            アクション4　ムード５
+            </p>
+            </div>
+            <div class="mem6 right">
+            <span>尾ノ後 辰俊</span>
+            <p>
+            2d6+1+1+1 (2D6+1+1+1) ＞ 3[1,2]+1+1+1 ＞ 6
+                  
+            </p>
+            </div>
+            <div class="kp">
+            パラグラフ : 1 → 2
+            </div>
+            <div class="satosi satosi_warai right">
+            <span>秋永 サトシ</span>
+            <p>
+            「ワッ今回は、ギフトがたくさん使える！」
+            </p>
+            </div>
+            <div class="satosi satosi_sinken right">
+            <span>秋永 サトシ</span>
+            <p>
+            槍で草薙剣を攻撃
+            </p>
+            </div>
+            <div class="mem10 right">
+            <span>アマテラス</span>
+            <p>
+            「それが神子の特権よ（本来は）」
+            </p>
+            </div>
+            <div class="satosi satosi_sinken right">
+            <span>秋永 サトシ</span>
+            <p>
+            「行きましょう八咫烏センパイ！」
+            </p>
+            </div>
+            <div class="satosi satosi_sinken right">
+            <span>秋永 サトシ</span>
+            <p>
+            八咫烏
+            </p>
+            </div>
+            <div class="mem5 left">
+            <span>ヤタガラス</span>
+            <p>
+            「てやんでい！まかせな坊主！！」
+            </p>
+            </div>
+            <div class="kp">
+            [ 秋永 サトシ ] 生命力 : 21 → 18
+            </div>
+            <div class="satosi right">
+            <span>秋永 サトシ</span>
+            <p>
+            RA-1+0 (RA-1&gt;=4) ＞ [5,5,3]-1 ＞ 4_成功[5白] / 4_成功[5白] / 2_失敗[3青]
+                  
+            </p>
+            </div>
+            <div class="satosi right">
+            <span>秋永 サトシ</span>
+            <p>
+            アクション５　ムード５
+            </p>
+            </div>
+            <div class="mem14 right">
+            <span>ヤタガラス（大晦日）</span>
+            <p>
+            「ぐええええええ！！」
+            </p>
+            </div>
+            <div class="kp">
+            ちょうど向こうも佳境の様子だ
+            </div>
+            <div class="satosi right">
+            <span>秋永 サトシ</span>
+            <p>
+            2d6+2+1+0 槍 (2D6+2+1+0) ＞ 6[1,5]+2+1+0 ＞ 9
+                  
+            </p>
+            </div>
+            <div class="satosi satosi_sinken right">
+            <span>秋永 サトシ</span>
+            <p>
+            「オラァッ」
+            </p>
+            </div>
+            <div class="kp">
+            [ 月読尊（つくよみのみこと） ] 本体生命力 : 42 → 30
+            </div>
+            <div class="kp">
+            パラグラフ : 2 → 3
+            </div>
+            <div class="mem16 right">
+            <span>月読尊（つくよみのみこと）</span>
+            <p>
+            P3脅威：蝕む月の波動
+            </p>
+            </div>
+            <div class="satosi right">
+            <span>秋永 サトシ</span>
+            <p>
+            RA-1+0 (RA-1&gt;=4) ＞ [3,1,5]-1 ＞ 2_失敗[3青] / 0_ファンブル！[1黒] / 4_成功[5白]
+                  
+            </p>
+            </div>
+            <div class="satosi right">
+            <span>秋永 サトシ</span>
+            <p>
+            アクション５　ムード3
+            </p>
+            </div>
+            <div class="mem3 left">
+            <span>宵宮 晶咲</span>
+            <p>
+            RC+1-1 (RC&gt;=4) ＞ [3] ＞ 3_失敗[3青]
+                  
+            </p>
+            </div>
+            <div class="mem6 right">
+            <span>尾ノ後 辰俊</span>
+            <p>
+            RA+2-1 【霊力】 (RA+1&gt;=4) ＞ [3,4,4]+1 ＞ 4_成功[3青] / 5_成功[4緑] / 5_成功[4緑]
+                  
+            </p>
+            </div>
+            <div class="mem6 right">
+            <span>尾ノ後 辰俊</span>
+            <p>
+            アクション４　ムード４
+            </p>
+            </div>
+            <div class="mem16 right">
+            <span>月読尊（つくよみのみこと）</span>
+            <p>
+            1d6+1+(1*2) 蝕む月の波動 (1D6+1+(1*2)) ＞ 4[4]+1+(1*2) ＞ 7
+                  
+            </p>
+            </div>
+            <div class="satosi right">
+            <span>秋永 サトシ</span>
+            <p>
+            岩戸隠れ
+            </p>
+            </div>
+            <div class="satosi right">
+            <span>秋永 サトシ</span>
+            <p>
+            2d6 (2D6) ＞ 7[1,6] ＞ 7
+                  
+            </p>
+            </div>
+            <div class="satosi satosi_sinken right">
+            <span>秋永 サトシ</span>
+            <p>
+            「アサキさん！」
+            </p>
+            </div>
+            <div class="mem16 right">
+            <span>月読尊（つくよみのみこと）</span>
+            <p>
+            ダメージ０
+            </p>
+            </div>
+            <div class="mem3 left">
+            <span>宵宮 晶咲</span>
+            <p>
+            「っ！ありがとう、サトシ！」
+            </p>
+            </div>
+            <div class="mem16 right">
+            <span>月読尊（つくよみのみこと）</span>
+            <p>
+            「ﾁｯ！姉さんの神子か！」
+            </p>
+            </div>
+            <div class="mem10 right">
+            <span>アマテラス</span>
+            <p>
+            「よっしゃぁ！」
+            </p>
+            </div>
+            <div class="kp">
+            パラグラフ : 3 → 4
+            </div>
+            <div class="satosi satosi_warai right">
+            <span>秋永 サトシ</span>
+            <p>
+            「サンキューアマテラス！」
+            </p>
+            </div>
+            <div class="mem16 right">
+            <span>月読尊（つくよみのみこと）</span>
+            <p>
+            P1脅威：岩刻隠れ
+            </p>
+            </div>
+            <div class="mem16 right">
+            <span>月読尊（つくよみのみこと）</span>
+            <p>
+            P4脅威：八尺瓊勾玉
+            </p>
+            </div>
+            <div class="mem16 right">
+            <span>月読尊（つくよみのみこと）</span>
+            <p>
+            1d6 回復 (1D6) ＞ 3
+                  
+            </p>
+            </div>
+            <div class="kp">
+            [ 月読尊（つくよみのみこと） ] 本体生命力 : 30 → 33
+            </div>
+            <div class="mem16 right">
+            <span>月読尊（つくよみのみこと）</span>
+            <p>
+            P5脅威：岩刻隠れ
+            </p>
+            </div>
+            <div class="mem3 left">
+            <span>宵宮 晶咲</span>
+            <p>
+            妨害判定
+            </p>
+            </div>
+            <div class="mem3 left">
+            <span>宵宮 晶咲</span>
+            <p>
+            RB+2-1+0 (RB+1&gt;=4) ＞ [4,2]+1 ＞ 5_成功[4緑] / 3_失敗[2赤]
+                  
+            </p>
+            </div>
+            <div class="mem3 left">
+            <span>宵宮 晶咲</span>
+            <p>
+            アクション4 ムード2
+            </p>
+            </div>
+            <div class="kp">
+            ラウンド終了
+            </div>
+            <div class="mem3 left">
+            <span>宵宮 晶咲</span>
+            <p>
+            重症
+            </p>
+            </div>
+            <div class="kp">
+            [ 宵宮 晶咲 ] 生命力 : 15 → 14
+            </div>
+            <div class="kp">
+            
+                   パラグラフ : 0 → 1
+            </div>
+            <div class="mem3 left">
+            <span>宵宮 晶咲</span>
+            <p>
+            岩刻隠れをホルスの火で攻撃
+            </p>
+            </div>
+            <div class="mem3 left">
+            <span>宵宮 晶咲</span>
+            <p>
+            RS-1+0 (RS-1&gt;=4) ＞ [2,2,6,5]-1 ＞ 1_失敗[2赤] / 1_失敗[2赤] / 5_スペシャル！[6任意] / 4_成功[5白]
+                  
+            </p>
+            </div>
+            <div class="mem3 left">
+            <span>宵宮 晶咲</span>
+            <p>
+            アクション6 ムード5
+            </p>
+            </div>
+            <div class="mem3 left">
+            <span>宵宮 晶咲</span>
+            <p>
+            2d6+1+1D6+3 槍スペ (2D6+1+1D6+3) ＞ 10[4,6]+1+2[2]+3 ＞ 16
+                  
+            </p>
+            </div>
+            <div class="mem3 left">
+            <span>宵宮 晶咲</span>
+            <p>
+            そのままで
+            </p>
+            </div>
+            <div class="kp">
+            [ 月読尊（つくよみのみこと） ] 本体生命力 : 33 → 20
+            </div>
+            <div class="satosi right">
+            <span>秋永 サトシ</span>
+            <p>
+            「ヨシ！いい調子だ」
+            </p>
+            </div>
+            <div class="mem3 left">
+            <span>宵宮 晶咲</span>
+            <p>
+            「任せた！」
+            </p>
+            </div>
+            <div class="mem6 right">
+            <span>尾ノ後 辰俊</span>
+            <p>
+            勾玉に曲刀
+            </p>
+            </div>
+            <div class="mem6 right">
+            <span>尾ノ後 辰俊</span>
+            <p>
+            ・二龍剣（補助・赤青青・なし）呪具、刃
+            </p>
+            </div>
+            <div class="mem6 right">
+            <span>尾ノ後 辰俊</span>
+            <p>
+            1d6 (1D6) ＞ 6
+                  
+            </p>
+            </div>
+            <div class="kp">
+            [ 尾ノ後 辰俊 ] 生命力 : 16 → 10
+            </div>
+            <div class="mem6 right">
+            <span>尾ノ後 辰俊</span>
+            <p>
+            RA+2-1 【霊力】 (RA+1&gt;=4) ＞ [2,6,2]+1 ＞ 3_失敗[2赤] / 7_スペシャル！[6任意] / 3_失敗[2赤]
+                  
+            </p>
+            </div>
+            <div class="mem6 right">
+            <span>尾ノ後 辰俊</span>
+            <p>
+            ４ｄ６＋２ (4D6+2) ＞ 12[1,3,4,4]+2 ＞ 14
+                  
+            </p>
+            </div>
+            <div class="mem6 right">
+            <span>尾ノ後 辰俊</span>
+            <p>
+            アクション６　ムード２
+            </p>
+            </div>
+            <div class="mem6 right">
+            <span>尾ノ後 辰俊</span>
+            <p>
+            華麗で4
+            </p>
+            </div>
+            <div class="kp">
+            パラグラフ : 1 → 2
+            </div>
+            <div class="kp">
+            [ 月読尊（つくよみのみこと） ] 本体生命力 : 20 → 12
+            </div>
+            <div class="satosi right">
+            <span>秋永 サトシ</span>
+            <p>
+            槍で草薙剣を攻撃
+            </p>
+            </div>
+            <div class="mem16 right">
+            <span>月読尊（つくよみのみこと）</span>
+            <p>
+            「チッ！こいつら……！昨日の今日で！」
+            </p>
+            </div>
+            <div class="satosi right">
+            <span>秋永 サトシ</span>
+            <p>
+            八咫烏
+            </p>
+            </div>
+            <div class="kp">
+            [ 秋永 サトシ ] 生命力 : 18 → 15
+            </div>
+            <div class="satosi satosi_sinken right">
+            <span>秋永 サトシ</span>
+            <p>
+            「ウォォオ！行きますよォ！」
+            </p>
+            </div>
+            <div class="satosi satosi_ase right">
+            <span>秋永 サトシ</span>
+            <p>
+            RA-1+0 (RA-1&gt;=4) ＞ [2,3,3]-1 ＞ 1_失敗[2赤] / 2_失敗[3青] / 2_失敗[3青]
+                  
+            </p>
+            </div>
+            <div class="mem3 left">
+            <span>宵宮 晶咲</span>
+            <p>
+            判定に+1の介入します
+            </p>
+            </div>
+            <div class="satosi satosi_sinken right">
+            <span>秋永 サトシ</span>
+            <p>
+            「――オォ！？」
+            </p>
+            </div>
+            <div class="mem16 right">
+            <span>月読尊（つくよみのみこと）</span>
+            <p>
+            「甘いッ！」
+            </p>
+            </div>
+            <div class="mem3 left">
+            <span>宵宮 晶咲</span>
+            <p>
+            「負けないで、サトシ！」
+            </p>
+            </div>
+            <div class="mem6 right">
+            <span>尾ノ後 辰俊</span>
+            <p>
+            「昨日も今日も勝つのはぼくたちでちゅー！！」
+            </p>
+            </div>
+            <div class="mem3 left">
+            <span>宵宮 晶咲</span>
+            <p>
+            「あんたが負けたら、これからのみんなはどうなるのさ！」
+            </p>
+            </div>
+            <div class="satosi satosi_sinken right">
+            <span>秋永 サトシ</span>
+            <p>
+            「……！」
+            </p>
+            </div>
+            <div class="mem5 left">
+            <span>ヤタガラス</span>
+            <p>
+            「やっちまえ！坊主！」
+            </p>
+            </div>
+            <div class="satosi satosi_ase right">
+            <span>秋永 サトシ</span>
+            <p>
+            2d6+2+1+0 槍 (2D6+2+1+0) ＞ 8[2,6]+2+1+0 ＞ 11
+                  
+            </p>
+            </div>
+            <div class="satosi right">
+            <span>秋永 サトシ</span>
+            <p>
+            「できらぁ！」
+            </p>
+            </div>
+            <div class="mem16 right">
+            <span>月読尊（つくよみのみこと）</span>
+            <p>
+            「ぐっ……だが！」
+            </p>
+            </div>
+            <div class="satosi satosi_sinken right">
+            <span>秋永 サトシ</span>
+            <p>
+            「力を貸してくれ……！」
+            </p>
+            </div>
+            <div class="kp">
+            [ 月読尊（つくよみのみこと） ] 本体生命力 : 12 → 1
+            </div>
+            <div class="mem16 right">
+            <span>月読尊（つくよみのみこと）</span>
+            <p>
+            「まだ足りない……！」
+            </p>
+            </div>
+            <div class="mem3 left">
+            <span>宵宮 晶咲</span>
+            <p>
+            「いっけー！」
+            </p>
+            </div>
+            <div class="mem6 right">
+            <span>尾ノ後 辰俊</span>
+            <p>
+            「いくでちゅー！！」
+            </p>
+            </div>
+            <div class="mem10 right">
+            <span>アマテラス</span>
+            <p>
+            「……行きなさい我が子よ」
+            </p>
+            </div>
+            <div class="mem10 right">
+            <span>アマテラス</span>
+            <p>
+            介入⇒ダメージ+1
+            </p>
+            </div>
+            <div class="satosi satosi_sinken right">
+            <span>秋永 サトシ</span>
+            <p>
+            「……！」
+            </p>
+            </div>
+            <div class="satosi satosi_sinken right">
+            <span>秋永 サトシ</span>
+            <p>
+            「オォリャァーーッ！」
+            </p>
+            </div>
+            <div class="satosi satosi_sinken right">
+            <span>秋永 サトシ</span>
+            <p>
+            槍で月読を貫く
+            </p>
+            </div>
+            <div class="mem16 right">
+            <span>月読尊（つくよみのみこと）</span>
+            <p>
+            「な、何！？こいつ……急に、動きが――」
+            </p>
+            </div>
+            <div class="mem16 right">
+            <span>月読尊（つくよみのみこと）</span>
+            <p>
+            「ぐあぁあああああああ！！」
+            </p>
+            </div>
+            <div class="mem16 right">
+            <span>月読尊（つくよみのみこと）</span>
+            <p>
+            「こんな新米達にぃいいいいい！！」
+            </p>
+            </div>
+            <div class="mem3 left">
+            <span>宵宮 晶咲</span>
+            <p>
+            「それ、二回目だぜ？」
+            </p>
+            </div>
+            <div class="kp">
+            過去は変えられない。
+            </div>
+            <div class="kp">
+            だからこそこの結末は決まっていたのだろう
+            </div>
+            <div class="kp">
+            君たちは見事に怪物を討ち果たした！
+            </div>
+            <div class="mem6 right">
+            <span>尾ノ後 辰俊</span>
+            <p>
+            「やったでちゅー！」
+            </p>
+            </div>
+            <div class="kp">
+            [ 月読尊（つくよみのみこと） ] 本体生命力 : 1 → 0
+            </div>
+            <div class="kp">
+            戦闘終了
+            </div>
+
+        </div></div>
+
+        <div class="bg-sp">
+            <div class="bg-over"><div class="bg-inner bg4"></div></div>
+        <div class="log">
+
+            <div class="kp">
+            終了フェイズ
+            </div>
+            <div class="kp">
+            気がつくと、あなたたちは元の神社の境内に居た。
+            </div>
+            <div class="kp">
+            夕暮れとなり、人々もまばらになってきている。
+            </div>
+            <div class="kp">
+            あれは夢だったのか。否、神々の声がする。
+            </div>
+            <div class="satosi satosi_warai right">
+            <span>秋永 サトシ</span>
+            <p>
+            「ハッ――今度こそやったんですか！？」
+            </p>
+            </div>
+            <div class="mem3 left">
+            <span>宵宮 晶咲</span>
+            <p>
+            「ソラ！？ソラ！」
+            </p>
+            </div>
+            <div class="satosi satosi_ase right">
+            <span>秋永 サトシ</span>
+            <p>
+            「今度は殺ってない！？大丈夫？！多分感触的に違うと思うんだケド？！」
+            </p>
+            </div>
+            <div class="mem10 right">
+            <span>アマテラス</span>
+            <p>
+            「よくやったわ、上出来よ」
+            </p>
+            </div>
+            <div class="kp">
+            ――ソラ？
+            </div>
+            <div class="mem6 right">
+            <span>尾ノ後 辰俊</span>
+            <p>
+            「今度は忘れてないでちゅ」
+            </p>
+            </div>
+            <div class="kp">
+            ――ソラとは誰の事か、あなたは覚えている
+            </div>
+            <div class="mem3 left">
+            <span>宵宮 晶咲</span>
+            <p>
+            「ソラ！ソラ！！」
+            </p>
+            </div>
+            <div class="kp">
+            境内を駆け回るあなたは、呆然として立っている友人の姿を見つける
+            </div>
+            <div class="mem3 left">
+            <span>宵宮 晶咲</span>
+            <p>
+            「ソラ！ソラソラソラソラソラ」
+            </p>
+            </div>
+            <div class="mem3 left">
+            <span>宵宮 晶咲</span>
+            <p>
+            ぎゅーっと抱きしめます
+            </p>
+            </div>
+            <div class="mem17 left">
+            <span>闇雲 ソラ</span>
+            <p>
+            「いたた！ちょっと、もう！やめてよ！」
+            </p>
+            </div>
+            <div class="mem3 left">
+            <span>宵宮 晶咲</span>
+            <p>
+            「よがったぁあああああ」
+            </p>
+            </div>
+            <div class="mem3 left">
+            <span>宵宮 晶咲</span>
+            <p>
+            「よかったよぉおおおおおおおお」
+            </p>
+            </div>
+            <div class="mem17 left">
+            <span>闇雲 ソラ</span>
+            <p>
+            「ちょ、ちょっとアサキ！泣かないでよ～もう！」
+            </p>
+            </div>
+            <div class="mem3 left">
+            <span>宵宮 晶咲</span>
+            <p>
+            「だっでぇえええ」
+            </p>
+            </div>
+            <div class="mem3 left">
+            <span>宵宮 晶咲</span>
+            <p>
+            「アタシの事嫌いになったんじゃないがってぇええ」
+            </p>
+            </div>
+            <div class="mem3 left">
+            <span>宵宮 晶咲</span>
+            <p>
+            うぉおおおんうぉおおおん
+            </p>
+            </div>
+            <div class="mem17 left">
+            <span>闇雲 ソラ</span>
+            <p>
+            「そんなこと……いや、まぁちょっとは」
+            </p>
+            </div>
+            <div class="mem3 left">
+            <span>宵宮 晶咲</span>
+            <p>
+            「うぐっ……」
+            </p>
+            </div>
+            <div class="mem17 left">
+            <span>闇雲 ソラ</span>
+            <p>
+            「……ふふっ！なんてね！うっそ～！」
+            </p>
+            </div>
+            <div class="mem3 left">
+            <span>宵宮 晶咲</span>
+            <p>
+            「ひっどーい！………ははっ。――おかえり、ソラ」
+            </p>
+            </div>
+            <div class="mem3 left">
+            <span>宵宮 晶咲</span>
+            <p>
+            「また会えてほんとにほんとによかった」
+            </p>
+            </div>
+            <div class="mem17 left">
+            <span>闇雲 ソラ</span>
+            <p>
+            「うん、ただいま。アサキ！」
+            </p>
+            </div>
+            <div class="kp">
+            ――――
+            </div>
+            <div class="kp">
+            ――
+            </div>
+
+        </div></div>
+
+        <div class="bg-sp">
+            <div class="bg-over"><div class="bg-inner bg4"></div></div>
+        <div class="log">
+
+            <div class="mem10 right">
+            <span>アマテラス</span>
+            <p>
+            「めでたしめでたし、と。そうそう、これがみたかったってワケ」
+            </p>
+            </div>
+            <div class="mem10 mem10_D right">
+            <span>アマテラス</span>
+            <p>
+            「よっこらせ」
+            </p>
+            </div>
+            <div class="mem10 mem10_D right">
+            <span>アマテラス</span>
+            <p>
+            「よくやったわね貴方たち。褒めて使わすわ」
+            </p>
+            </div>
+            <div class="mem6 right">
+            <span>尾ノ後 辰俊</span>
+            <p>
+            「縁結びの神様でちゅたか」
+            </p>
+            </div>
+            <div class="satosi satosi_bikkuri right">
+            <span>秋永 サトシ</span>
+            <p>
+            「早速引きこもる体制入ってない？！早！」
+            </p>
+            </div>
+            <div class="mem6 right">
+            <span>尾ノ後 辰俊</span>
+            <p>
+            「まるでオオクニヌシ殿でちゅね」
+            </p>
+            </div>
+            <div class="mem10 mem10_D right">
+            <span>アマテラス</span>
+            <p>
+            「まぁ主神だし多少はね？」
+            </p>
+            </div>
+            <div class="mem9 left">
+            <span>ツクヨミ</span>
+            <p>
+            「まったくめでたしじゃないよ姉さん」
+            </p>
+            </div>
+            <div class="mem10 mem10_D right">
+            <span>アマテラス</span>
+            <p>
+            「あっ、お疲れ。おみかん食べる？」
+            </p>
+            </div>
+            <div class="mem9 left">
+            <span>ツクヨミ</span>
+            <p>
+            「はぁ……ほんとに話を聞かない」
+            </p>
+            </div>
+            <div class="mem6 right">
+            <span>尾ノ後 辰俊</span>
+            <p>
+            （いや全部あんたのせいじゃないでちゅか……）
+            </p>
+            </div>
+            <div class="satosi right">
+            <span>秋永 サトシ</span>
+            <p>
+            「……また影生まれちゃうよォ！態度改めようよォ！」
+            </p>
+            </div>
+            <div class="mem7 left">
+            <span>龍吉公主</span>
+            <p>
+            「不敬ッ！」ﾊﾞｼｯ（タツノオトシゴをしばく音）
+            </p>
+            </div>
+            <div class="mem6 mem6_batu right">
+            <span>尾ノ後 辰俊</span>
+            <p>
+            「でちゅっ！！」
+            </p>
+            </div>
+            <div class="mem7 left">
+            <span>龍吉公主</span>
+            <p>
+            「他所神にその態度とは……まだまだ修行がたりないようですね？」
+            </p>
+            </div>
+            <div class="mem6 mem6_batu right">
+            <span>尾ノ後 辰俊</span>
+            <p>
+            「そんな……ぼくは今度こそ完璧に使命を果たしたはずでちゅのに」
+            </p>
+            </div>
+            <div class="mem7 left">
+            <span>龍吉公主</span>
+            <p>
+            「心の在り様の話をしているのです。結果主義では足元をすくわれると学ばなかったのですか？」
+            </p>
+            </div>
+            <div class="mem7 left">
+            <span>龍吉公主</span>
+            <p>
+            「まだまだ、一人前には程遠いですね」
+            </p>
+            </div>
+            <div class="mem6 mem6_batu right">
+            <span>尾ノ後 辰俊</span>
+            <p>
+            「はいでちゅ……」
+            </p>
+            </div>
+            <div class="satosi satosi_ase right">
+            <span>秋永 サトシ</span>
+            <p>
+            「（真面目な神様だなぁ、僕もあっちが良かったなあ……）」
+            </p>
+            </div>
+            <div class="satosi satosi_warai right">
+            <span>秋永 サトシ</span>
+            <p>
+            「（いやでもさっきも助けてくれたしアマテラスだって結構いいところも――）」
+            </p>
+            </div>
+            <div class="mem10 mem10_D right">
+            <span>アマテラス</span>
+            <p>
+            「いや～あたしってホントやればできる神」
+            </p>
+            </div>
+            <div class="mem10 mem10_D right">
+            <span>アマテラス</span>
+            <p>
+            「マジ有能よねぇ～」
+            </p>
+            </div>
+            <div class="satosi right">
+            <span>秋永 サトシ</span>
+            <p>
+            「……」
+            </p>
+            </div>
+            <div class="mem9 left">
+            <span>ツクヨミ</span>
+            <p>
+            「……姉さんの子。キミもこれから大変だと思うけどよろしく頼むよ」
+            </p>
+            </div>
+            <div class="satosi satosi_ase right">
+            <span>秋永 サトシ</span>
+            <p>
+            「アッハイ！」
+            </p>
+            </div>
+            <div class="satosi satosi_ase right">
+            <span>秋永 サトシ</span>
+            <p>
+            「ふぅ……、これで前科は取り下げ！デスヨネ」
+            </p>
+            </div>
+            <div class="mem9 left">
+            <span>ツクヨミ</span>
+            <p>
+            「前科とはなないと思うけど……けどほんとによくやってくれた。ボクからも礼を述べたい」
+            </p>
+            </div>
+            <div class="mem9 left">
+            <span>ツクヨミ</span>
+            <p>
+            「新たなボクの神子の事もよろしく頼むよ」
+            </p>
+            </div>
+            <div class="mem6 right">
+            <span>尾ノ後 辰俊</span>
+            <p>
+            「？？」
+            </p>
+            </div>
+            <div class="satosi satosi_warai right">
+            <span>秋永 サトシ</span>
+            <p>
+            「新たなーーそうか」
+            </p>
+            </div>
+            <div class="satosi right">
+            <span>秋永 サトシ</span>
+            <p>
+            再開した2人をみてこれからの展開に少し胸を高鳴らせる
+            </p>
+            </div>
+            <div class="kp">
+            ――年が明けた。
+            </div>
+            <div class="kp">
+            新たなる年の幕開けに、新たなる神子達
+            </div>
+            <div class="kp">
+            彼らの戦いは続く。 <br><br>
+                  
+            </div>
+
+        </div></div>
+
+        <div class="bg-sp">
+            <div class="bg-over"><div class="bg-inner bg7"></div></div>
+        <div class="log">
+
+            <div class="kp">
+            神話創世RPGアマデウス<br>『アマテラスは引きこもりたい@2』
+            </div>
+            <div class="kp">
+            Fin
+            </div>
+            <div class="kp">
+            ――――――――――――――――――――――――
+                  
+            </div>
+            <div class="mem2 right">
+            <span>GM</span>
+            <p>
+            
+                   琴線
+                  
+            </p>
+            </div>
+            <div class="kp">
+            [ 秋永 サトシ ] がダイスシンボルを公開。出目は 3 です。
+            </div>
+            <div class="kp">
+            [ 宵宮 晶咲 ] がダイスシンボルを公開。出目は 1 です。
+            </div>
+            <div class="kp">
+            [ 尾ノ後 辰俊 ] がダイスシンボルを公開。出目は 2 です。
+            </div>
+            <div class="mem2 right">
+            <span>GM</span>
+            <p>
+            全員+130点
+            </p>
+            </div>
+            </div>
+
+<br><br>
+</div></div>
+<script src="../logCon_Respon.js"></script>
+</body></html>
