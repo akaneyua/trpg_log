@@ -1,0 +1,5556 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<title>log</title>
+<meta http-equiv="content-type" charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+<link rel="stylesheet" href="../logCon_Respon.css">
+<style>
+    /* main css */
+    .bg-inner.bg1{background:url('./The_3rd_Seal/Steampunk_room06.png') no-repeat center/cover;}
+    
+    /* member */
+    .mem1 p{border:2px solid rgb(233, 30, 99);box-shadow:5px 5px 0 rgb(233, 30, 99);}
+.mem1 p:after{border-right-color:rgb(233, 30, 99);}
+.mem1 span{background:rgb(233, 30, 99);color:#000;}
+.mem1:before{content:'';background-image:url('./The_3rd_Seal/星丸\ モモ.png');background-size:contain;background-repeat:no-repeat;background-position:center center;width:90px;height:90px;}
+.mem2 p{border:2px solid rgb(76, 175, 80);box-shadow:5px 5px 0 rgb(76, 175, 80);}
+.mem2 p:after{border-left-color:rgb(76, 175, 80);}
+.mem2 span{background:rgb(76, 175, 80);color:#fff;}
+.mem2:before{content:'';background-image:url('./The_3rd_Seal/煉\ 子龍.png');background-size:contain;background-repeat:no-repeat;background-position:center center;width:90px;height:90px;}
+.mem3 p{border:2px solid rgb(39, 146, 195);box-shadow:5px 5px 0 rgb(39, 146, 195);}
+.mem3 p:after{border-right-color:rgb(39, 146, 195);}
+.mem3 span{background:rgb(39, 146, 195);color:#fff;}
+.mem3:before{content:'';background-image:url('./The_3rd_Seal/シージウ.png');background-size:contain;background-repeat:no-repeat;background-position:center center;width:90px;height:90px;}
+.mem4 p{border:2px solid rgb(234, 85, 57);box-shadow:5px 5px 0 rgb(234, 85, 57);}
+.mem4 p:after{border-left-color:rgb(234, 85, 57);}
+.mem4 span{background:rgb(234, 85, 57);color:#000;}
+.mem4:before{content:'';background-image:url('./The_3rd_Seal/シトリー・スカーレット.png');background-size:contain;background-repeat:no-repeat;background-position:center center;width:90px;height:90px;}
+.mem5 p{border:2px solid rgb(136, 136, 136);box-shadow:5px 5px 0 rgb(136, 136, 136);}
+.mem5 p:after{border-right-color:rgb(136, 136, 136);}
+.mem5 span{background:rgb(136, 136, 136);color:#fff;}
+.mem5:before{content:'';background-image:url('5.png');background-size:contain;background-repeat:no-repeat;background-position:center center;width:90px;height:90px;}
+.mem6 p{border:2px solid rgb(136, 136, 136);box-shadow:5px 5px 0 rgb(136, 136, 136);}
+.mem6 p:after{border-left-color:rgb(136, 136, 136);}
+.mem6 span{background:rgb(136, 136, 136);color:#fff;}
+.mem6:before{content:'';background-image:url('./The_3rd_Seal/赤羽くれは.jpeg');background-size:contain;background-repeat:no-repeat;background-position:center center;width:90px;height:90px;}
+.mem7 p{border:2px solid rgb(136, 136, 136);box-shadow:5px 5px 0 rgb(136, 136, 136);}
+.mem7 p:after{border-right-color:rgb(136, 136, 136);}
+.mem7 span{background:rgb(136, 136, 136);color:#fff;}
+.mem7:before{content:'';background-image:url('7.png');background-size:contain;background-repeat:no-repeat;background-position:center center;width:90px;height:90px;}
+.mem8 p{border:2px solid rgb(136, 136, 136);box-shadow:5px 5px 0 rgb(136, 136, 136);}
+.mem8 p:after{border-left-color:rgb(136, 136, 136);}
+.mem8 span{background:rgb(136, 136, 136);color:#fff;}
+.mem8:before{content:'';background-image:url('8.png');background-size:contain;background-repeat:no-repeat;background-position:center center;width:90px;height:90px;}
+.mem9 p{border:2px solid rgb(136, 136, 136);box-shadow:5px 5px 0 rgb(136, 136, 136);}
+.mem9 p:after{border-right-color:rgb(136, 136, 136);}
+.mem9 span{background:rgb(136, 136, 136);color:#fff;}
+.mem9:before{content:'';background-image:url('./The_3rd_Seal/水上\ 聖.jpg');background-size:contain;background-repeat:no-repeat;background-position:center center;width:90px;height:90px;}
+.mem10 p{border:2px solid rgb(136, 136, 136);box-shadow:5px 5px 0 rgb(136, 136, 136);}
+.mem10 p:after{border-left-color:rgb(136, 136, 136);}
+.mem10 span{background:rgb(136, 136, 136);color:#fff;}
+.mem10:before{content:'';background-image:url('10.png');background-size:contain;background-repeat:no-repeat;background-position:center center;width:90px;height:90px;}
+.mem11 p{border:2px solid rgb(136, 136, 136);box-shadow:5px 5px 0 rgb(136, 136, 136);}
+.mem11 p:after{border-right-color:rgb(136, 136, 136);}
+.mem11 span{background:rgb(136, 136, 136);color:#fff;}
+.mem11:before{content:'';background-image:url('11.png');background-size:contain;background-repeat:no-repeat;background-position:center center;width:90px;height:90px;}
+.mem12 p{border:2px solid rgb(136, 136, 136);box-shadow:5px 5px 0 rgb(136, 136, 136);}
+.mem12 p:after{border-left-color:rgb(136, 136, 136);}
+.mem12 span{background:rgb(136, 136, 136);color:#fff;}
+.mem12:before{content:'';background-image:url('12.png');background-size:contain;background-repeat:no-repeat;background-position:center center;width:90px;height:90px;}
+.mem13 p{border:2px solid rgb(136, 136, 136);box-shadow:5px 5px 0 rgb(136, 136, 136);}
+.mem13 p:after{border-right-color:rgb(136, 136, 136);}
+.mem13 span{background:rgb(136, 136, 136);color:#fff;}
+.mem13:before{content:'';background-image:url('13.png');background-size:contain;background-repeat:no-repeat;background-position:center center;width:90px;height:90px;}
+.mem14 p{border:2px solid rgb(136, 136, 136);box-shadow:5px 5px 0 rgb(136, 136, 136);}
+.mem14 p:after{border-left-color:rgb(136, 136, 136);}
+.mem14 span{background:rgb(136, 136, 136);color:#fff;}
+.mem14:before{content:'';background-image:url('14.png');background-size:contain;background-repeat:no-repeat;background-position:center center;width:90px;height:90px;}
+.mem15 p{border:2px solid rgb(136, 136, 136);box-shadow:5px 5px 0 rgb(136, 136, 136);}
+.mem15 p:after{border-right-color:rgb(136, 136, 136);}
+.mem15 span{background:rgb(136, 136, 136);color:#fff;}
+.mem15:before{content:'';background-image:url('./The_3rd_Seal/ベール＝ゼファー.png');background-size:contain;background-repeat:no-repeat;background-position:center center;width:90px;height:90px;}
+.mem16 p{border:2px solid rgb(136, 136, 136);box-shadow:5px 5px 0 rgb(136, 136, 136);}
+.mem16 p:after{border-left-color:rgb(136, 136, 136);}
+.mem16 span{background:rgb(136, 136, 136);color:#fff;}
+.mem16:before{content:'';background-image:url('16.png');background-size:contain;background-repeat:no-repeat;background-position:center center;width:90px;height:90px;}
+.mem17 p{border:2px solid rgb(136, 136, 136);box-shadow:5px 5px 0 rgb(136, 136, 136);}
+.mem17 p:after{border-right-color:rgb(136, 136, 136);}
+.mem17 span{background:rgb(136, 136, 136);color:#fff;}
+.mem17:before{content:'';background-image:url('17.png');background-size:contain;background-repeat:no-repeat;background-position:center center;width:90px;height:90px;}
+.mem18 p{border:2px solid rgb(136, 136, 136);box-shadow:5px 5px 0 rgb(136, 136, 136);}
+.mem18 p:after{border-left-color:rgb(136, 136, 136);}
+.mem18 span{background:rgb(136, 136, 136);color:#fff;}
+.mem18:before{content:'';background-image:url('18.png');background-size:contain;background-repeat:no-repeat;background-position:center center;width:90px;height:90px;}
+.mem19 p{border:2px solid rgb(136, 136, 136);box-shadow:5px 5px 0 rgb(136, 136, 136);}
+.mem19 p:after{border-right-color:rgb(136, 136, 136);}
+.mem19 span{background:rgb(136, 136, 136);color:#fff;}
+.mem19:before{content:'';background-image:url('19.png');background-size:contain;background-repeat:no-repeat;background-position:center center;width:90px;height:90px;}
+.mem20 p{border:2px solid rgb(136, 136, 136);box-shadow:5px 5px 0 rgb(136, 136, 136);}
+.mem20 p:after{border-left-color:rgb(136, 136, 136);}
+.mem20 span{background:rgb(136, 136, 136);color:#fff;}
+.mem20:before{content:'';background-image:url('20.png');background-size:contain;background-repeat:no-repeat;background-position:center center;width:90px;height:90px;}
+.mem21 p{border:2px solid rgb(136, 136, 136);box-shadow:5px 5px 0 rgb(136, 136, 136);}
+.mem21 p:after{border-right-color:rgb(136, 136, 136);}
+.mem21 span{background:rgb(136, 136, 136);color:#fff;}
+.mem21:before{content:'';background-image:url('21.png');background-size:contain;background-repeat:no-repeat;background-position:center center;width:90px;height:90px;}
+.mem22 p{border:2px solid rgb(136, 136, 136);box-shadow:5px 5px 0 rgb(136, 136, 136);}
+.mem22 p:after{border-left-color:rgb(136, 136, 136);}
+.mem22 span{background:rgb(136, 136, 136);color:#fff;}
+.mem22:before{content:'';background-image:url('22.png');background-size:contain;background-repeat:no-repeat;background-position:center center;width:90px;height:90px;}
+    
+    @media only screen and (max-width: 768px) {
+        .mem1 p:after{border-right-color:rgb(233, 30, 99);border-left-color:transparent;}
+        .mem2 p:after{border-right-color:rgb(76, 175, 80);border-left-color:transparent;}
+        .mem3 p:after{border-right-color:rgb(39, 146, 195);border-left-color:transparent;}
+        .mem4 p:after{border-right-color:rgb(234, 85, 57);border-left-color:transparent;}
+        .mem5 p:after{border-right-color:rgb(136, 136, 136);border-left-color:transparent;}
+        .mem6 p:after{border-right-color:rgb(136, 136, 136);border-left-color:transparent;}
+        .mem7 p:after{border-right-color:rgb(136, 136, 136);border-left-color:transparent;}
+        .mem8 p:after{border-right-color:rgb(136, 136, 136);border-left-color:transparent;}
+        .mem9 p:after{border-right-color:rgb(136, 136, 136);border-left-color:transparent;}
+        .mem10 p:after{border-right-color:rgb(136, 136, 136);border-left-color:transparent;}
+        .mem11 p:after{border-right-color:rgb(136, 136, 136);border-left-color:transparent;}
+        .mem12 p:after{border-right-color:rgb(136, 136, 136);border-left-color:transparent;}
+        .mem13 p:after{border-right-color:rgb(136, 136, 136);border-left-color:transparent;}
+        .mem14 p:after{border-right-color:rgb(136, 136, 136);border-left-color:transparent;}
+        .mem15 p:after{border-right-color:rgb(136, 136, 136);border-left-color:transparent;}
+        .mem16 p:after{border-right-color:rgb(136, 136, 136);border-left-color:transparent;}
+        .mem17 p:after{border-right-color:rgb(136, 136, 136);border-left-color:transparent;}
+        .mem18 p:after{border-right-color:rgb(136, 136, 136);border-left-color:transparent;}
+        .mem19 p:after{border-right-color:rgb(136, 136, 136);border-left-color:transparent;}
+        .mem20 p:after{border-right-color:rgb(136, 136, 136);border-left-color:transparent;}
+        .mem21 p:after{border-right-color:rgb(136, 136, 136);border-left-color:transparent;}
+        .mem22 p:after{border-right-color:rgb(136, 136, 136);border-left-color:transparent;}
+
+        .mem1:before,.mem2:before,.mem3:before,
+        .mem4:before,.mem5:before,.mem6:before,
+        .mem7:before,.mem8:before,.mem9:before,
+        .mem10:before,.mem11:before,.mem12:before,
+        .mem13:before,.mem14:before,.mem15:before,
+        .mem16:before,.mem17:before,.mem18:before,
+        .mem19:before,.mem20:before,.mem21:before,
+        .mem22:before{width:70px;height:70px;}
+    }
+</style>
+</head>
+<body>
+    <p id="page-top"><a href="#"><i class="page-top__arrow"></i></a></p>
+	<div class="leftwhite"></div>
+	<div class="rightwhite"></div>
+	<div class="bg-sp">
+    <div class="bg-over"><div class="bg-inner bg1"></div></div>
+	<div class="log">
+    
+        <div class="kp LtoR-early">
+
+            ■今回予告<br>　かつて神や悪魔の仕業とされた流行病の訪れ――それは実際に、古代より続くある陰謀のあらわれを示した。その恐るべき真実は、今では世界結界の作り出した"常識の壁"により、迷信として忘れ去られつつある。<br>　だが、現代、疫病が潰えたわけではない。今なお陰謀は続いているのだ。すべての疫病の祖たる侵魔復活をかけて。<br>　そして今、陰謀が再動する。世界を破滅に導く侵魔の復活を止められるのは、世界の真実を知る者――ウィザードだけだ。<br><br>ナイトウィザードThe_3rd_Edition<br>　　　　『The_3rd_Seal』<br>紅き月が昇る時、異界の門が開かれる。
+      </div>
+      <div class="kp LtoR-early">
+      
+            ■シナリオハンドアウト<br>各PCには以下の設定がつく。<br>PC①：ネット上のアイドル<br>PC②：電脳使い<br>PC③：指定なし<br>PC④：指定なし
+      </div>
+      <div class="mem1 left">
+      <span>星丸 モモ</span>
+      <p>
+      
+            ・PC①　星丸 モモ<br>コネクション：WEB上のフォロワーたち<br>関係：庇護<br>　キミはネット上の活動で、ファンを獲得したちょっとした有名人だ。<br>だがある日なんと、キミのブログが荒らされていた！覚えのない不可解な投稿がなされ、常連はアンチに変わり、コメント欄は散々たる有様だ。いったい何が起きたのか。とにかく事態はキミの手に負えなかった。パソコンにくわしい者を探さねば。
+      </p>
+      </div>
+      <div class="mem2 right">
+      <span>煉 子龍</span>
+      <p>
+      
+            ・PC②　煉 子龍<br>コネクション：水上 聖（p205）<br>関係：ビジネス<br>　キミは医療科学研究所に雇われるエージェントだ。現在、研究所に異変が起こっている。所員が次々と倒れたり、辞職を願い出ており、機能停止に陥ったのだ。研究所を狙った何者かの攻撃の可能性もある。水上 聖から研究所の危機を知らされたキミは、事件の原因を追って調査を開始した。
+      </p>
+      </div>
+      <div class="mem3 left">
+      <span>シージウ</span>
+      <p>
+      
+            ・PC③　シージウ<br>コネクション：バロン・スレイト<br>関係：ライバル<br>　キミは、アフリカで疫病をまき散らそうとする侵魔と戦い、勝利した。だが侵魔には、別件で策動してる仲間がいるようだ。新たな敵の名は、バロンスレイト。どうやら敵は、何か共通の目的を持って疫病を伝染させているようだ。だが、詳細は分からない。バロン・スレイトを追えば、何か分かるかもしれない。
+      </p>
+      </div>
+      <div class="mem4 right">
+      <span>シトリー・スカーレット</span>
+      <p>
+      
+            ・PC④　シトリー・スカーレット<br>コネクション：赤羽くれは（p201）<br>関係：友人<br>　ある日、赤羽くれはが、自宅から電話をかけてきた。「何もしていないのに、パソコンが動かなくなった。助けて！」と。キミは、くれはの家に呼び出された。だが、到着してみると、くれはが倒れている。何者かの攻撃か。くれは程のウィザードがやられるとは尋常ではない。君は調査を開始した。
+      </p>
+      </div>
+      <div class="mem1 left">
+      <span>星丸 モモ</span>
+      <p>
+      
+            2ｄ6 (2D6) ＞ 11[5,6] ＞ 11
+            
+      </p>
+      </div>
+      <div class="mem1 left">
+      <span>星丸 モモ</span>
+      <p>
+      
+            2ｄ6 (2D6) ＞ 8[3,5] ＞ 8
+            
+      </p>
+      </div>
+      <div class="kp LtoR-early">
+      
+            星丸 モモ C値11 F値10
+      </div>
+      <div class="mem2 right">
+      <span>煉 子龍</span>
+      <p>
+      
+            2d6 C値 (2D6) ＞ 5[1,4] ＞ 5
+            
+      </p>
+      </div>
+      <div class="mem2 right">
+      <span>煉 子龍</span>
+      <p>
+      
+            2d6 F値 (2D6) ＞ 9[5,4] ＞ 9
+            
+      </p>
+      </div>
+      <div class="kp LtoR-early">
+      
+            煉 子龍 C値7 F値9
+      </div>
+      <div class="mem3 left">
+      <span>シージウ</span>
+      <p>
+      
+            2d6 (2D6) ＞ 8[6,2] ＞ 8
+            
+      </p>
+      </div>
+      <div class="mem3 left">
+      <span>シージウ</span>
+      <p>
+      
+            2d6 (2D6) ＞ 7[6,1] ＞ 7
+            
+      </p>
+      </div>
+      <div class="kp LtoR-early">
+      
+            シージウ　C値8　Ｆ値5
+      </div>
+      <div class="mem4 right">
+      <span>シトリー・スカーレット</span>
+      <p>
+      
+            2d6 C値 (2D6) ＞ 5[2,3] ＞ 5
+            
+      </p>
+      </div>
+      <div class="mem4 right">
+      <span>シトリー・スカーレット</span>
+      <p>
+      
+            2d6 F値 (2D6) ＞ 12[6,6] ＞ 12
+            
+      </p>
+      </div>
+      <div class="kp LtoR-early">
+      
+            シトリー・スカーレット　C値7 F値12
+      </div>
+      <div class="mem5 left">
+      <span>GM</span>
+      <p>
+      
+            オープニングフェイズ
+      </p>
+      </div>
+      <div class="mem5 left">
+      <span>GM</span>
+      <p>
+      
+            ●シーン1:パソコン初心者<br>シーンプレイヤー:PC④
+      </p>
+      </div>
+      <div class="kp LtoR-early">
+      
+            赤羽くれはが自宅から電話をかけてきた。 
+      </div>
+      <div class="mem6 right">
+      <span>赤羽くれは</span>
+      <p>
+      
+            「はわわ、パソコンが動かなくなっちゃったよ、 何にもしていないのに!」
+      </p>
+      </div>
+      <div class="mem4 right">
+      <span>シトリー・スカーレット</span>
+      <p>
+      
+            「本当になにもやってないの、ですか？」
+      </p>
+      </div>
+      <div class="mem6 right">
+      <span>赤羽くれは</span>
+      <p>
+      
+            「本当だって～」
+      </p>
+      </div>
+      <div class="mem4 right">
+      <span>シトリー・スカーレット</span>
+      <p>
+      
+            「あ、はい。わかりました。一応、見るために行きますか？」
+      </p>
+      </div>
+      <div class="mem6 right">
+      <span>赤羽くれは</span>
+      <p>
+      
+            「とにかく来て。 来て、見て、直して」
+      </p>
+      </div>
+      <div class="mem4 right">
+      <span>シトリー・スカーレット</span>
+      <p>
+      
+            「は、はい。わかりました。今から向かいますね」
+      </p>
+      </div>
+      <div class="mem6 right">
+      <span>赤羽くれは</span>
+      <p>
+      
+            「ありがとー」
+      </p>
+      </div>
+      <div class="kp LtoR-early">
+      
+            そんなわけで、キミはくれはの家へ呼び出された。 が、どこか様子がおかしい。 パソコンの前で、くれはは青ざめた顔で倒れ伏している。 機械オンチをこじらせて失神したわけではなさそうだ。 
+      </div>
+      <div class="mem4 right">
+      <span>シトリー・スカーレット</span>
+      <p>
+      
+            「え、あ。くれは…さん？」
+      </p>
+      </div>
+      <div class="mem6 right">
+      <span>赤羽くれは</span>
+      <p>
+      
+            「急に····力が抜けて…」
+      </p>
+      </div>
+      <div class="mem4 right">
+      <span>シトリー・スカーレット</span>
+      <p>
+      
+            「あ、大丈夫ですか？呼吸できますか？」
+      </p>
+      </div>
+      <div class="mem6 right">
+      <span>赤羽くれは</span>
+      <p>
+      
+            「うう……」
+      </p>
+      </div>
+      <div class="mem6 right">
+      <span>赤羽くれは</span>
+      <p>
+      
+            「気をつけてシトリーちゃん。 嫌な予感がする。これは、 侵魔の、 攻撃……調べなきゃ……」 
+      </p>
+      </div>
+      <div class="mem4 right">
+      <span>シトリー・スカーレット</span>
+      <p>
+      
+            「く、くれはさんは休んいてください。わ、わたしが少し調べてみます」
+      </p>
+      </div>
+      <div class="mem6 right">
+      <span>赤羽くれは</span>
+      <p>
+      
+            「はわぁ あとは頼んだ (気絶)」 
+      </p>
+      </div>
+      <div class="mem4 right">
+      <span>シトリー・スカーレット</span>
+      <p>
+      
+            「わかりました。」くれはさんを布団までは運んでおきましょう。
+      </p>
+      </div>
+      <div class="kp LtoR-early">
+      
+            赤羽くれはと言えばかつて守護者代行を務めた凄腕だ。くれは程のウィザードがやられるとは尋常ではない。
+      </div>
+      <div class="mem4 right">
+      <span>シトリー・スカーレット</span>
+      <p>
+      
+            とても厄介なことになりそうですね。
+      </p>
+      </div>
+      <div class="mem7 left">
+      <span>パソコンモニタに表示される文字 </span>
+      <p>
+      
+            「(紅い月の映ったスクリーンセーバーに)第三の封印開く時、 黒き騎士現わる」
+      </p>
+      </div>
+      <div class="mem4 right">
+      <span>シトリー・スカーレット</span>
+      <p>
+      
+            「何かの、暗示でしょうか…」
+      </p>
+      </div>
+      <div class="mem4 right">
+      <span>シトリー・スカーレット</span>
+      <p>
+      
+            箒に座りながら、考えてシーンが終わる感じですかね？
+      </p>
+      </div>
+      <div class="mem5 left">
+      <span>GM</span>
+      <p>
+      
+            シーン終
+      </p>
+      </div>
+      <div class="mem5 left">
+      <span>GM</span>
+      <p>
+      
+            ●シーン2:疫病の侵魔<br>シーンプレイヤー:PC③ 
+      </p>
+      </div>
+      <div class="kp LtoR-early">
+      
+            ナイル川上流。 アスワン・ハイダムが河水 を堰き止めてできた湖上に、1体の侵魔が出現する。水を汚染し、 疫病をまき散らそうとしているのだ。 だが、 危機一髪のところでキミは追いついた。
+      </div>
+      <div class="mem8 right">
+      <span>侵魔</span>
+      <p>
+      
+            「ケケケ、この湖を汚染しちまえば、 またたく間に疫病と飢饉が人類を襲うはずだ」 
+      </p>
+      </div>
+      <div class="mem3 left">
+      <span>シージウ</span>
+      <p>
+      
+            「きょうのおしごとをはじめます。貴方はシージウの敵ですね」
+      </p>
+      </div>
+      <div class="kp LtoR-early">
+      
+             このシーンに登場する侵魔は、名もなきエキストラだ。 PCが好きに演出して倒してかまわない。
+      </div>
+      <div class="mem3 left">
+      <span>シージウ</span>
+      <p>
+      
+            じゃあ殴ってころします
+      </p>
+      </div>
+      <div class="mem8 right">
+      <span>侵魔</span>
+      <p>
+      
+            「げぇっ、 ウィザード!?」
+      </p>
+      </div>
+      <div class="mem3 left">
+      <span>シージウ</span>
+      <p>
+      
+            「えい」
+      </p>
+      </div>
+      <div class="mem8 right">
+      <span>侵魔</span>
+      <p>
+      
+            「ぐはあっ、おのれ・・・・・・ウィザード」
+      </p>
+      </div>
+      <div class="mem8 right">
+      <span>侵魔</span>
+      <p>
+      
+            「銃だと思ってたのに……不意をつかれたぁ……」
+      </p>
+      </div>
+      <div class="mem3 left">
+      <span>シージウ</span>
+      <p>
+      
+            「これで川もきれいですね。めでたしめでたし」
+      </p>
+      </div>
+      <div class="mem8 right">
+      <span>侵魔</span>
+      <p>
+      
+             「ははは……っ、コレで終わりではないぞ、 ウィザード。 仲間が別口で必ずや世界を恐怖に陥れてくれる。 バロン・スレイトあとは頼んだ･･････」
+      </p>
+      </div>
+      <div class="mem3 left">
+      <span>シージウ</span>
+      <p>
+      
+            「あなたのオトモダチですね。バロン・スレイト…オトウサンに聞いて会いに行きましょう」
+      </p>
+      </div>
+      <div class="kp LtoR-early">
+      
+            シージウの任務はまだ終わらないようだ
+      </div>
+      <div class="mem5 left">
+      <span>GM</span>
+      <p>
+      
+            シーン終
+      </p>
+      </div>
+      <div class="mem5 left">
+      <span>GM</span>
+      <p>
+      
+            シーン3:研究所の危機<br>シーンプレイヤー: PC②
+      </p>
+      </div>
+      <div class="kp LtoR-early">
+      
+            医療科学研究所が有する東京都内のオフィス。 キミは水上聖と面会している。<br>水上は深刻な顔で、研究所に起こっている事について話し始める。
+      </div>
+      <div class="mem9 left">
+      <span>水上 聖</span>
+      <p>
+      
+            「最近、各地の所員に異変が起こっています。 みな体調不良を訴えているのです。 入院する者や、精神的な理由で辞職する者があとを絶たない。何人かは……自殺したとのこと、残念なことだ」
+      </p>
+      </div>
+      <div class="mem2 right">
+      <span>煉 子龍</span>
+      <p>
+      
+            「自殺……メンタルヘルスが必要なのでは？」
+      </p>
+      </div>
+      <div class="mem9 left">
+      <span>水上 聖</span>
+      <p>
+      
+            「いえ」
+      </p>
+      </div>
+      <div class="mem9 left">
+      <span>水上 聖</span>
+      <p>
+      
+            「調査の結果、 原因はおそらく、プラーナにあると考えられます。 プラーナを奪われることにより、 所員たちは存在の力を失った。 結果、死を選ぶ者さえでた」
+      </p>
+      </div>
+      <div class="mem2 right">
+      <span>煉 子龍</span>
+      <p>
+      
+            「何！？プラーナだと！？」
+      </p>
+      </div>
+      <div class="mem9 left">
+      <span>水上 聖</span>
+      <p>
+      
+            「はい」
+      </p>
+      </div>
+      <div class="mem9 left">
+      <span>水上 聖</span>
+      <p>
+      
+            「われわれはすでに侵魔の攻撃を受けています。 このまま無為に過ごしては、事態は悪化するばかりです。 どこの何者の仕業なのか、調査と対策をお願いします」
+      </p>
+      </div>
+      <div class="mem2 right">
+      <span>煉 子龍</span>
+      <p>
+      
+            「プラーナとは……この世界に存在し続けるためにすべての人間が持っている力の事……」
+      </p>
+      </div>
+      <div class="mem2 right">
+      <span>煉 子龍</span>
+      <p>
+      
+            「侵魔が狙っていることは間違いないようだな」
+      </p>
+      </div>
+      <div class="mem2 right">
+      <span>煉 子龍</span>
+      <p>
+      
+            「明白了！！（了解）この煉に任せておけ！」
+      </p>
+      </div>
+      <div class="mem9 left">
+      <span>水上 聖</span>
+      <p>
+      
+            「ええ、イノセント、ただの人間である私では太刀打ちできない。ウィザードであるあなたが頼りです」
+      </p>
+      </div>
+      <div class="mem2 right">
+      <span>煉 子龍</span>
+      <p>
+      
+            「まずは手掛かりを探すために……外をぶらついてみるとしよう」
+      </p>
+      </div>
+      <div class="mem5 left">
+      <span>GM</span>
+      <p>
+      
+            シーン終
+      </p>
+      </div>
+      <div class="mem5 left">
+      <span>GM</span>
+      <p>
+      
+            ●シーン4: サイバー攻撃!?<br>シーンプレイヤー:PC①
+      </p>
+      </div>
+      <div class="kp LtoR-early">
+      
+            ある日、いつものようにブログを覗くと、 身に覚えのない怪文書めいた文章や、不快な画像がキミ名義で投稿されていた。 それに戸惑うコメントが相次ぎ、閲覧したらパソコンがクラッシュしたなどの報告すらある。 そのことで怒り露わにキミを責める者もいる。<br>さらには、キミの本名・住所などの個人情報が、知らぬ間にブログにエントリされている。 削除しようにも、削除用のバスワードが不明でどうにもならない。 家の外に人が集まっている気配がする。 ここに逗まっているのすら危険かもしれない。
+      </div>
+      <div class="mem10 right">
+      <span>身に覚えのないブログの投稿</span>
+      <p>
+      
+            「第三の封印開く時、 黒き騎士現わる (紅い月の画像つきで日記に投稿されている)」 
+      </p>
+      </div>
+      <div class="mem11 left">
+      <span>コメント欄の書き込み</span>
+      <p>
+      
+            「このブログを見たら、こっちのマシンもおかしくなりました。 二度と来ません」
+      </p>
+      </div>
+      <div class="mem11 left">
+      <span>コメント欄の書き込み</span>
+      <p>
+      
+            「最悪～」
+      </p>
+      </div>
+      <div class="mem11 left">
+      <span>コメント欄の書き込み</span>
+      <p>
+      
+            「ファン止めます」
+      </p>
+      </div>
+      <div class="mem1 left">
+      <span>星丸 モモ</span>
+      <p>
+      
+            「どどどどうしたらいい！？なにこれ！？」とりあえず裏口から家を出てマネージャーかなんかに連絡してからSNSに書き込む
+      </p>
+      </div>
+      <div class="mem11 left">
+      <span>コメント欄の書き込み</span>
+      <p>
+      
+             「モモさん、パソコンがウィルスに感染しているのではありませんか? 分からなければくわしい人に見てもらってください」 
+      </p>
+      </div>
+      <div class="mem1 left">
+      <span>星丸 モモ</span>
+      <p>
+      
+            『みんな！なんかよくわかんないけどアタシのパソコン壊れちゃったかも！かもじゃない！詳しい人いたらDMで教えてください＞＜』
+      </p>
+      </div>
+      <div class="mem11 left">
+      <span>コメント欄の書き込み</span>
+      <p>
+      
+            『最近妙なネット被害が多いみたいです。。。うっ……意識が。。。』
+      </p>
+      </div>
+      <div class="mem1 left">
+      <span>星丸 モモ</span>
+      <p>
+      
+            『そうなんだ！？大丈夫かな！？みんなも何かあったら警察とかに頼ってね！』
+      </p>
+      </div>
+      <div class="mem11 left">
+      <span>コメント欄の書き込み</span>
+      <p>
+      
+            『はい。。。星丸さんも気をつけて。。。』
+      </p>
+      </div>
+      <div class="mem10 right">
+      <span>身に覚えのないブログの投稿</span>
+      <p>
+      
+            「第三の封印開く時、 黒き騎士現わる (紅い月の画像つきで日記に投稿されている)」 
+      </p>
+      </div>
+      <div class="mem1 left">
+      <span>星丸 モモ</span>
+      <p>
+      
+            『でもとりあえずアタシを助けてほしい＞＜』車で拾われてどっか安全な場所に行きつつ
+      </p>
+      </div>
+      <div class="mem5 left">
+      <span>GM</span>
+      <p>
+      
+            シーン終
+      </p>
+      </div>
+      <div class="kp LtoR-early">
+      
+            コネクション
+      </div>
+      <div class="kp LtoR-early">
+      
+            ①→②→③→④→①
+      </div>
+      <div class="mem1 left">
+      <span>星丸 モモ</span>
+      <p>
+      
+            ｄ66 (D66) ＞ 24
+            
+      </p>
+      </div>
+      <div class="kp LtoR-early">
+      
+            星丸 モモ→煉 子龍（師匠）
+      </div>
+      <div class="mem2 right">
+      <span>煉 子龍</span>
+      <p>
+      
+            d66 (D66) ＞ 33
+            
+      </p>
+      </div>
+      <div class="kp LtoR-early">
+      
+            煉 子龍→シージウ（兄弟子）
+      </div>
+      <div class="mem3 left">
+      <span>シージウ</span>
+      <p>
+      
+            ｄ66 (D66) ＞ 62
+            
+      </p>
+      </div>
+      <div class="kp LtoR-early">
+      
+            シージウ→シトリー（ビジネス）
+      </div>
+      <div class="mem4 right">
+      <span>シトリー・スカーレット</span>
+      <p>
+      
+            D66 (D66) ＞ 66
+            
+      </p>
+      </div>
+      <div class="kp LtoR-early">
+      
+            シトリー→星丸 モモ（くされ縁）
+      </div>
+      <div class="mem5 left">
+      <span>GM</span>
+      <p>
+      
+            ミドルフェイズ
+      </p>
+      </div>
+      <div class="mem5 left">
+      <span>GM</span>
+      <p>
+      
+            ●シーン5:広がる異変<br>シーンプレイヤー:PC②
+      </p>
+      </div>
+      <div class="kp LtoR-early">
+      
+            駅前。 人びとがビルに設置された広告用の外モニタに目をやっている。と、モニタに一瞬ノイズが走り、 紅い月が映し出された。 その途端、人びとが倒れ始める。
+      </div>
+      <div class="mem12 right">
+      <span>倒れた人</span>
+      <p>
+      
+            「何だ? 急に力が抜けて」
+      </p>
+      </div>
+      <div class="mem2 right">
+      <span>煉 子龍</span>
+      <p>
+      
+            「吃驚！？（どうした！？）大丈夫か？しっかりしろ！」
+      </p>
+      </div>
+      <div class="mem12 right">
+      <span>倒れた人</span>
+      <p>
+      
+            「うぅ……」
+      </p>
+      </div>
+      <div class="kp LtoR-early">
+      
+            道行く人がプラーナを吸われて卒倒する。
+      </div>
+      <div class="mem2 right">
+      <span>煉 子龍</span>
+      <p>
+      
+            「これは……研究所の症状と同じか」
+      </p>
+      </div>
+      <div class="mem2 right">
+      <span>煉 子龍</span>
+      <p>
+      
+            「他に……他に無事なものはいるか！？」
+      </p>
+      </div>
+      <div class="mem1 left">
+      <span>星丸 モモ</span>
+      <p>
+      
+            「ししょー！」車から降りて駆け寄ってくる
+      </p>
+      </div>
+      <div class="mem12 right">
+      <span>倒れた人</span>
+      <p>
+      
+            「……」
+      </p>
+      </div>
+      <div class="mem2 right">
+      <span>煉 子龍</span>
+      <p>
+      
+            「この声……星丸君か！？」
+      </p>
+      </div>
+      <div class="mem1 left">
+      <span>星丸 モモ</span>
+      <p>
+      
+            「そうだよ！どうしたの頭のそれ！？ていうかみんなが！」
+      </p>
+      </div>
+      <div class="mem2 right">
+      <span>煉 子龍</span>
+      <p>
+      
+            「頭？私ハセイジョウだガ？」
+      </p>
+      </div>
+      <div class="mem2 right">
+      <span>煉 子龍</span>
+      <p>
+      
+            「それより見ろ！あのモニターを！」
+      </p>
+      </div>
+      <div class="mem2 right">
+      <span>煉 子龍</span>
+      <p>
+      
+            「東京都知事だ！」
+      </p>
+      </div>
+      <div class="mem1 left">
+      <span>星丸 モモ</span>
+      <p>
+      
+            「う、うん？脳みそ出てるけど……覆われてるしいっか……」
+      </p>
+      </div>
+      <div class="mem2 right">
+      <span>煉 子龍</span>
+      <p>
+      
+            「いや違う！赤い月だ！！」
+      </p>
+      </div>
+      <div class="mem1 left">
+      <span>星丸 モモ</span>
+      <p>
+      
+            「都知事さん……じゃなくて！みんなが！へろへろで！アタシのパソコンも！よくわかんなくて！」
+      </p>
+      </div>
+      <div class="mem1 left">
+      <span>星丸 モモ</span>
+      <p>
+      
+            「そうだね！」
+      </p>
+      </div>
+      <div class="mem4 right">
+      <span>シトリー・スカーレット</span>
+      <p>
+      
+            「あ、あのこれは…一体何事でしょう？くれは、さんみたいな方が大勢…」<br>箒で移動してきました。
+      </p>
+      </div>
+      <div class="mem3 left">
+      <span>シージウ</span>
+      <p>
+      
+            「こんばんわみなさん。おしごとの時間のようですね。」同じく箒で降りてくる
+      </p>
+      </div>
+      <div class="mem4 right">
+      <span>シトリー・スカーレット</span>
+      <p>
+      
+            「あ。シージウさん、おひさし、ぶりです」
+      </p>
+      </div>
+      <div class="mem2 right">
+      <span>煉 子龍</span>
+      <p>
+      
+            「兄弟子（シージウ）！！と見知らぬウィザード！」
+      </p>
+      </div>
+      <div class="mem1 left">
+      <span>星丸 モモ</span>
+      <p>
+      
+            「シトリーちゃん！と知らない子！」
+      </p>
+      </div>
+      <div class="mem3 left">
+      <span>シージウ</span>
+      <p>
+      
+            「こんばんわ、シトリー・スカーレット。この間は箒の整備を手伝ってれてありがとうございます」
+      </p>
+      </div>
+      <div class="mem4 right">
+      <span>シトリー・スカーレット</span>
+      <p>
+      
+            「も、モモさんもお久しぶりです」
+      </p>
+      </div>
+      <div class="mem3 left">
+      <span>シージウ</span>
+      <p>
+      
+            「煉 子龍。晩上好」
+      </p>
+      </div>
+      <div class="mem2 right">
+      <span>煉 子龍</span>
+      <p>
+      
+            「赤い月にウィザード……つまりこれは…明白了（わかったぞ）！！」
+      </p>
+      </div>
+      <div class="mem1 left">
+      <span>星丸 モモ</span>
+      <p>
+      
+            「そっか、自己紹介！星丸モモです、よろしくね！」
+      </p>
+      </div>
+      <div class="mem3 left">
+      <span>シージウ</span>
+      <p>
+      
+            「星丸モモ。よろしくおねがいします。シージウはシージウ。今日のお仕事はバロン・スレイヴをたおすことです」
+      </p>
+      </div>
+      <div class="mem4 right">
+      <span>シトリー・スカーレット</span>
+      <p>
+      
+            「あ、そこの方はお二人のお知り合い、なのですね。わたしも挨拶します。シトリー・スカーレット、なのです」
+      </p>
+      </div>
+      <div class="mem2 right">
+      <span>煉 子龍</span>
+      <p>
+      
+            （あんまり聞いてない）
+      </p>
+      </div>
+      <div class="mem2 right">
+      <span>煉 子龍</span>
+      <p>
+      
+            「皆聞け！！この騒動……これは侵魔の仕業だったんだよ！！」
+      </p>
+      </div>
+      <div class="mem1 left">
+      <span>星丸 モモ</span>
+      <p>
+      
+            「侵魔かー。じゃぁ……そういうことだね？」
+      </p>
+      </div>
+      <div class="mem4 right">
+      <span>シトリー・スカーレット</span>
+      <p>
+      
+            「と、ということは、あのくれはさんもこれで…」
+      </p>
+      </div>
+      <div class="mem1 left">
+      <span>星丸 モモ</span>
+      <p>
+      
+            「……とってもすっごくヤバいやつ、だったりする？」
+      </p>
+      </div>
+      <div class="mem4 right">
+      <span>シトリー・スカーレット</span>
+      <p>
+      
+            「と、思います」
+      </p>
+      </div>
+      <div class="mem2 right">
+      <span>煉 子龍</span>
+      <p>
+      
+            「くれは……？何！？あの世界の守護者代行を務めていた赤羽くれはが既にやられたのか！？」
+      </p>
+      </div>
+      <div class="mem4 right">
+      <span>シトリー・スカーレット</span>
+      <p>
+      
+            「は、はい。先ほど…倒れてしまった、のです」
+      </p>
+      </div>
+      <div class="mem3 left">
+      <span>シージウ</span>
+      <p>
+      
+            「シージウ知っています。弔い合戦というのですね」
+      </p>
+      </div>
+      <div class="mem1 left">
+      <span>星丸 モモ</span>
+      <p>
+      
+            「死んでないよね！？」
+      </p>
+      </div>
+      <div class="mem4 right">
+      <span>シトリー・スカーレット</span>
+      <p>
+      
+            「一応、部屋で、寝かせてます」
+      </p>
+      </div>
+      <div class="mem6 right">
+      <span>赤羽くれは</span>
+      <p>
+      
+            「……」
+      </p>
+      </div>
+      <div class="mem2 right">
+      <span>煉 子龍</span>
+      <p>
+      
+            「彼女のレベルは12……なんということだ我々の手に負えるのか……！？」
+      </p>
+      </div>
+      <div class="mem1 left">
+      <span>星丸 モモ</span>
+      <p>
+      
+            「でもやるしかない……ってことだよね？」
+      </p>
+      </div>
+      <div class="mem3 left">
+      <span>シージウ</span>
+      <p>
+      
+            「それがおしごとです。オトモダチと協力して敵を倒しましょう」
+      </p>
+      </div>
+      <div class="mem2 right">
+      <span>煉 子龍</span>
+      <p>
+      
+            「兄弟子……星丸君……フッ、どうやら心配することはなかったようだな」
+      </p>
+      </div>
+      <div class="mem1 left">
+      <span>星丸 モモ</span>
+      <p>
+      
+            「そうだよぅ！どうにかなるよ、ねっ？」
+      </p>
+      </div>
+      <div class="mem5 left">
+      <span>GM</span>
+      <p>
+      
+            シーン終
+      </p>
+      </div>
+      <div class="mem5 left">
+      <span>GM</span>
+      <p>
+      
+            ●シーン6: 黒騎士の鳴動<br>シーンプレイヤー:PC①
+      </p>
+      </div>
+      <div class="kp LtoR-early">
+      
+            辺りはやけに静かだ。 街は機能停止し、公園で子どもの笑い声だけが、虚しく響く。と、建物の影から黒い騎士が生まれ、公園で動いている子どもたちに狙いを定めて動き出す。
+      </div>
+      <div class="mem13 left">
+      <span>黒い騎士</span>
+      <p>
+      
+            「……」
+      </p>
+      </div>
+      <div class="mem14 right">
+      <span>子供</span>
+      <p>
+      
+            「？？」
+      </p>
+      </div>
+      <div class="mem13 left">
+      <span>黒い騎士</span>
+      <p>
+      
+            「足りぬ・・・・・もっとブラーナを奪うのだ」
+      </p>
+      </div>
+      <div class="mem2 right">
+      <span>煉 子龍</span>
+      <p>
+      
+            「不妙（まずい）！子供が！！」
+      </p>
+      </div>
+      <div class="mem1 left">
+      <span>星丸 モモ</span>
+      <p>
+      
+            「……あーっ！こら！小っちゃい子に手出ししちゃメッ！だよ！」
+      </p>
+      </div>
+      <div class="mem4 right">
+      <span>シトリー・スカーレット</span>
+      <p>
+      
+            「く、くれはさんなら…助けるんですよね」
+      </p>
+      </div>
+      <div class="mem3 left">
+      <span>シージウ</span>
+      <p>
+      
+            「敵ですね。おしごとをはじめましょう」
+      </p>
+      </div>
+      <div class="mem4 right">
+      <span>シトリー・スカーレット</span>
+      <p>
+      
+            「――戦闘を実行します」
+      </p>
+      </div>
+      <div class="kp LtoR-early">
+      
+            戦闘開始！！
+      </div>
+      <div class="mem2 right">
+      <span>煉 子龍</span>
+      <p>
+      
+            「この煉に任せろ！《アナライズ》！！」
+      </p>
+      </div>
+      <div class="mem2 right">
+      <span>煉 子龍</span>
+      <p>
+      
+            アナライズ/〇/セットアップ/自動/単体/近/8MP/デッキ装備/エネミー識別ジャッジ（p241）を行う。
+      </p>
+      </div>
+      <div class="mem13 left">
+      <span>黒い騎士</span>
+      <p>
+      
+            識別値:１２
+      </p>
+      </div>
+      <div class="mem2 right">
+      <span>煉 子龍</span>
+      <p>
+      
+            6NW@7#9 理知ジャッジ (6NW@7#9) ＞ 6+10[6,1]+11[6,5] ＞ クリティカル ＞ 27
+            
+      </p>
+      </div>
+      <div class="mem13 left">
+      <span>黒い騎士</span>
+      <p>
+      
+            「……！？」
+      </p>
+      </div>
+      <div class="kp LtoR-early">
+      
+            [ 煉 子龍 ] MP : 28 → 20
+      </div>
+      <div class="mem1 left">
+      <span>星丸 モモ</span>
+      <p>
+      
+            《ミュージックスタート》1/セットアップ/自動成功/場面選択/場面/10MP/なし/シーン中、命中判定+2
+      </p>
+      </div>
+      <div class="mem2 right">
+      <span>煉 子龍</span>
+      <p>
+      
+            「フッ……貴様らのデータなど中国4000年のデータにかかればお見通しだ！」
+      </p>
+      </div>
+      <div class="mem2 right">
+      <span>煉 子龍</span>
+      <p>
+      
+            14NW@7#9 行動値ジャッジ (14NW@7#9) ＞ 14+6[4,2] ＞ 20
+            
+      </p>
+      </div>
+      <div class="mem3 left">
+      <span>シージウ</span>
+      <p>
+      
+            13NW@8#5 行動値ジャッジ (13NW@8#5) ＞ 13+9[6,3] ＞ 22
+            
+      </p>
+      </div>
+      <div class="mem1 left">
+      <span>星丸 モモ</span>
+      <p>
+      
+            11NW@11#10 行動値ジャッジ (11NW@11#10) ＞ 11+8[3,5] ＞ 19
+            
+      </p>
+      </div>
+      <div class="mem4 right">
+      <span>シトリー・スカーレット</span>
+      <p>
+      
+            10NW@7#12 行動値ジャッジ (10NW@7#12) ＞ 10+8[5,3] ＞ 18
+            
+      </p>
+      </div>
+      <div class="mem3 left">
+      <span>シージウ</span>
+      <p>
+      
+            《ファニング》1/ムーブ/自動成功/自身/なし/なし/魔銃使用/対象を「範囲選択（2）」に
+      </p>
+      </div>
+      <div class="mem3 left">
+      <span>シージウ</span>
+      <p>
+      
+            12NW@8#5 命中ジャッジ (12NW@8#5) ＞ 12+12[6,6] ＞ 24
+            
+      </p>
+      </div>
+      <div class="mem3 left">
+      <span>シージウ</span>
+      <p>
+      
+            「えい」
+      </p>
+      </div>
+      <div class="mem13 left">
+      <span>黒い騎士</span>
+      <p>
+      
+            命中
+      </p>
+      </div>
+      <div class="mem3 left">
+      <span>シージウ</span>
+      <p>
+      
+            20NW@8#5 物攻ジャッジ (20NW@8#5) ＞ 20-10[2,3] ＞ ファンブル ＞ 10
+            
+      </p>
+      </div>
+      <div class="mem13 left">
+      <span>黒い騎士</span>
+      <p>
+      
+            「「！！」」
+      </p>
+      </div>
+      <div class="kp LtoR-early">
+      
+            [ シージウ ] プラーナ : 5 → 4
+      </div>
+      <div class="mem3 left">
+      <span>シージウ</span>
+      <p>
+      
+            ファンブルをうちけします
+      </p>
+      </div>
+      <div class="mem13 left">
+      <span>黒い騎士</span>
+      <p>
+      
+            「「ぐおお！！」」9ダメージ
+      </p>
+      </div>
+      <div class="mem3 left">
+      <span>シージウ</span>
+      <p>
+      
+            「かちかちですね」
+      </p>
+      </div>
+      <div class="mem2 right">
+      <span>煉 子龍</span>
+      <p>
+      
+            「兄弟子！援護する！」
+      </p>
+      </div>
+      <div class="mem2 right">
+      <span>煉 子龍</span>
+      <p>
+      
+            ムーブ：なし<br>マイナー：なし<br>メジャー：物理攻撃→黒い騎士（無傷）
+      </p>
+      </div>
+      <div class="mem2 right">
+      <span>煉 子龍</span>
+      <p>
+      
+            5NW@7#9 命中ジャッジ (5NW@7#9) ＞ 5+4[1,3] ＞ 9
+            
+      </p>
+      </div>
+      <div class="mem2 right">
+      <span>煉 子龍</span>
+      <p>
+      
+            「何！？」
+      </p>
+      </div>
+      <div class="mem1 left">
+      <span>星丸 モモ</span>
+      <p>
+      
+            《ワンフォーオール》1/ムーヴ/自動成功/自身/なし/なし/シーン1回/魔法を「範囲選択」に
+      </p>
+      </div>
+      <div class="mem1 left">
+      <span>星丸 モモ</span>
+      <p>
+      
+            《シューティングスター》1/メジャー/命中判定/単体/武器/なし/なし/魔法攻撃。【魔導】-2【魔攻】+5
+      </p>
+      </div>
+      <div class="mem1 left">
+      <span>星丸 モモ</span>
+      <p>
+      
+            12NW@11#10 魔導ジャッジ (12NW@11#10) ＞ 12+2[1,1] ＞ 14
+            
+      </p>
+      </div>
+      <div class="mem1 left">
+      <span>星丸 モモ</span>
+      <p>
+      
+            13NW+5@11#10 魔攻ジャッジ (13NW+5@11#10) ＞ 18+9[5,4] ＞ 27
+            
+      </p>
+      </div>
+      <div class="mem13 left">
+      <span>黒い騎士</span>
+      <p>
+      
+            「グアアアア！」18ダメージ
+      </p>
+      </div>
+      <div class="mem1 left">
+      <span>星丸 モモ</span>
+      <p>
+      
+            「あげる！星のきらめき！」
+      </p>
+      </div>
+      <div class="mem4 right">
+      <span>シトリー・スカーレット</span>
+      <p>
+      
+            《グランドスラム》1/ムーブ/自動成功/自身/なし/なし/兵器装備、シーン1回/物理攻撃を「対象：範囲選択」に
+      </p>
+      </div>
+      <div class="mem4 right">
+      <span>シトリー・スカーレット</span>
+      <p>
+      
+            《サイコポインター》2/マイナー/自動成功/自身/なし/7MP/兵器装備/【命中】+4
+      </p>
+      </div>
+      <div class="kp LtoR-early">
+      
+            [ シトリー・スカーレット ] MP : 21 → 14
+      </div>
+      <div class="mem4 right">
+      <span>シトリー・スカーレット</span>
+      <p>
+      
+            《ソニックアサルト》2/メジャー/命中判定/単体/武器/なし/搭載兵器使用、飛行状態/物理攻撃。【命中】-2、【物攻】+12
+      </p>
+      </div>
+      <div class="mem4 right">
+      <span>シトリー・スカーレット</span>
+      <p>
+      
+            9NW+4@7#12 命中ジャッジ (9NW+4@7#12) ＞ 13+10[6,4] ＞ 23
+            
+      </p>
+      </div>
+      <div class="mem4 right">
+      <span>シトリー・スカーレット</span>
+      <p>
+      
+            20NW+12@7#12 物攻ジャッジ (20NW+12@7#12) ＞ 32+8[2,6] ＞ 40
+            
+      </p>
+      </div>
+      <div class="mem4 right">
+      <span>シトリー・スカーレット</span>
+      <p>
+      
+            「――いきます」
+      </p>
+      </div>
+      <div class="mem13 left">
+      <span>黒い騎士</span>
+      <p>
+      
+            「「「「ギャアアアアアアアアアア！！！！！」」」」
+      </p>
+      </div>
+      <div class="mem2 right">
+      <span>煉 子龍</span>
+      <p>
+      
+            「フン、雑魚か」
+      </p>
+      </div>
+      <div class="mem4 right">
+      <span>シトリー・スカーレット</span>
+      <p>
+      
+            「――敵影消滅」
+      </p>
+      </div>
+      <div class="mem3 left">
+      <span>シージウ</span>
+      <p>
+      
+            「おつかれさまでした」
+      </p>
+      </div>
+      <div class="mem1 left">
+      <span>星丸 モモ</span>
+      <p>
+      
+            「さっすが！」
+      </p>
+      </div>
+      <div class="mem2 right">
+      <span>煉 子龍</span>
+      <p>
+      
+            「今の一撃、見事だったぞ……えーとスカーレット氏だったか」
+      </p>
+      </div>
+      <div class="mem4 right">
+      <span>シトリー・スカーレット</span>
+      <p>
+      
+            「お、おつかれさました」
+      </p>
+      </div>
+      <div class="mem4 right">
+      <span>シトリー・スカーレット</span>
+      <p>
+      
+            「シトリー・スカーレットと申し、ます」
+      </p>
+      </div>
+      <div class="mem2 right">
+      <span>煉 子龍</span>
+      <p>
+      
+            「そうか、私は煉。姓は子龍。よろしく頼む」
+      </p>
+      </div>
+      <div class="mem4 right">
+      <span>シトリー・スカーレット</span>
+      <p>
+      
+            「えっと、よろしくお願い、します。えっと、煉さん？」
+      </p>
+      </div>
+      <div class="mem2 right">
+      <span>煉 子龍</span>
+      <p>
+      
+            「煉でいい。それより先ほど、くれは氏が倒れたと聞いたが……詳しく聞かせてくれないか？」
+      </p>
+      </div>
+      <div class="mem4 right">
+      <span>シトリー・スカーレット</span>
+      <p>
+      
+            「わか、りました。えっと、くれはさんから、「パソコンが壊れた」と、聞きまして、それで行きましたら、倒れていて…」
+      </p>
+      </div>
+      <div class="mem4 right">
+      <span>シトリー・スカーレット</span>
+      <p>
+      
+            「画面には先ほどの赤い月とメッセージが…」
+      </p>
+      </div>
+      <div class="mem1 left">
+      <span>星丸 モモ</span>
+      <p>
+      
+            「赤い月！メッセージ！アタシのパソコンもそう！」
+      </p>
+      </div>
+      <div class="mem4 right">
+      <span>シトリー・スカーレット</span>
+      <p>
+      
+            「モモさんも、何か、パソコンで被害が…？」
+      </p>
+      </div>
+      <div class="mem2 right">
+      <span>煉 子龍</span>
+      <p>
+      
+            「なるほど……つまりPCないしTVなどの画面からあの赤い月の画像をみたウィザードや一般人（イノセント）が次々と倒れている……という事だな」
+      </p>
+      </div>
+      <div class="mem1 left">
+      <span>星丸 モモ</span>
+      <p>
+      
+            「侵魔のせいだったんだね……」
+      </p>
+      </div>
+      <div class="mem2 right">
+      <span>煉 子龍</span>
+      <p>
+      
+            「さらには今現れた黒い騎士……画像に書いてあったものと関係しているのだろう……」
+      </p>
+      </div>
+      <div class="mem1 left">
+      <span>星丸 モモ</span>
+      <p>
+      
+            「じゃぁ倒せばパソコン直るかな？炎上もなかったことになる？」
+      </p>
+      </div>
+      <div class="mem2 right">
+      <span>煉 子龍</span>
+      <p>
+      
+            「喂（こら）！PCは大切にするんだ！」
+      </p>
+      </div>
+      <div class="mem1 left">
+      <span>星丸 モモ</span>
+      <p>
+      
+            「大事にしてたよ！でもおかしくなったんだもん！」ぷく
+      </p>
+      </div>
+      <div class="mem2 right">
+      <span>煉 子龍</span>
+      <p>
+      
+            「それは侵魔の仕業だ。つまり原因の侵魔を倒せば無問題だ」
+      </p>
+      </div>
+      <div class="mem14 right">
+      <span>子供</span>
+      <p>
+      
+            「？？」
+      </p>
+      </div>
+      <div class="mem5 left">
+      <span>GM</span>
+      <p>
+      
+            シーン終
+      </p>
+      </div>
+      <div class="mem5 left">
+      <span>GM</span>
+      <p>
+      
+            ●シーン7:戦闘の直後。<br>シーンプレイヤー:PC③
+      </p>
+      </div>
+      <div class="kp LtoR-early">
+      
+            キミたちが敵を蹴散らした頃。 公園の外でも爆撃のような音が響く。 敵はそこら中で湧き出ており、何者かが戦っているのだ。<br> 向こうもキミたちに気づき、 空を舞って、ふわりとキミたちの前に降り立つ。ポンチョ姿の少女ーー魔王ベール=ゼファーだ。
+      </div>
+      <div class="mem15 left">
+      <span>魔王ベール＝ゼファー</span>
+      <p>
+      
+            「ウィザードも異変に感づいたようね」 
+      </p>
+      </div>
+      <div class="mem15 left">
+      <span>魔王ベール＝ゼファー</span>
+      <p>
+      
+            「沸いて出ているのは黙示録の四騎士の1体、 黒騎士の力の一部よ。何者かが、 黒騎士を復活させようとしているのね」
+      </p>
+      </div>
+      <div class="mem2 right">
+      <span>煉 子龍</span>
+      <p>
+      
+            「貴様は！？魔王ベール＝ゼファー！！裏界の重鎮がなぜここに！！」
+      </p>
+      </div>
+      <div class="mem2 right">
+      <span>煉 子龍</span>
+      <p>
+      
+            「黙示録の黒騎士だと！？あの3番目に現れるとされる疫病をつかさどる超級侵魔の事か！？」
+      </p>
+      </div>
+      <div class="mem1 left">
+      <span>星丸 モモ</span>
+      <p>
+      
+            「ベールさまは今回は敵？味方？」
+      </p>
+      </div>
+      <div class="mem15 left">
+      <span>魔王ベール＝ゼファー</span>
+      <p>
+      
+            「どうかしらね」
+      </p>
+      </div>
+      <div class="mem15 left">
+      <span>魔王ベール＝ゼファー</span>
+      <p>
+      
+             「黒騎士は飢餓、疫病の騎士。 歴史上の飢饉、 疫病の話はこの侵魔が封印を解こうとした徴よ。飢饉や疫病が起こるとその場のプラーナが少なくなる。 その隙に黒騎士は復活を企む。 今回も、誰かがブラーナの過疎地帯を作り上げている。 そいつを見つけて めあげなきゃこの茶番は終わらないわ」 
+      </p>
+      </div>
+      <div class="mem1 left">
+      <span>星丸 モモ</span>
+      <p>
+      
+            「なんか手っ取り早く見つけてどうにかできないのぉ？」
+      </p>
+      </div>
+      <div class="mem15 left">
+      <span>魔王ベール＝ゼファー</span>
+      <p>
+      
+            「そうね、表界で行動するのは、あなたたちウィザー ドの方が都合がいい……どう? 沸いて出る雑魚の足止めはこの私がするから、あなたたちが元凶を探して倒すってのは」 
+      </p>
+      </div>
+      <div class="mem2 right">
+      <span>煉 子龍</span>
+      <p>
+      
+            「病を克服するには大元を断つに限る……言われずとも我々で対処する！」
+      </p>
+      </div>
+      <div class="mem1 left">
+      <span>星丸 モモ</span>
+      <p>
+      
+            「まぁそう簡単にはいかないよね……たはぁ」
+      </p>
+      </div>
+      <div class="mem4 right">
+      <span>シトリー・スカーレット</span>
+      <p>
+      
+            「わ、わたしも、何とかしないととは、思いますから、ね」
+      </p>
+      </div>
+      <div class="mem3 left">
+      <span>シージウ</span>
+      <p>
+      
+            「シージウはおしごとをするためにきました。みなさんについていきましょう」
+      </p>
+      </div>
+      <div class="mem15 left">
+      <span>魔王ベール＝ゼファー</span>
+      <p>
+      
+            「話は早くて助かるわ、じゃあ行きなさい」
+      </p>
+      </div>
+      <div class="mem1 left">
+      <span>星丸 モモ</span>
+      <p>
+      
+            「はーい。……ししょーがリーダーね！」
+      </p>
+      </div>
+      <div class="mem2 right">
+      <span>煉 子龍</span>
+      <p>
+      
+            「リーダー？柄ではないが……まぁいい皆、行くぞ！！」
+      </p>
+      </div>
+      <div class="mem4 right">
+      <span>シトリー・スカーレット</span>
+      <p>
+      
+            「は、はい」
+      </p>
+      </div>
+      <div class="mem1 left">
+      <span>星丸 モモ</span>
+      <p>
+      
+            「やったー！はーい♪」
+      </p>
+      </div>
+      <div class="mem3 left">
+      <span>シージウ</span>
+      <p>
+      
+            「はい」
+      </p>
+      </div>
+      <div class="kp LtoR-early">
+      
+            魔王が足止めしている内に情報を集めよう
+      </div>
+      <div class="kp LtoR-early">
+      
+            ▼情報項目<br>・事件の原因【器用】<br>・バロン・スレイト【意思】<br>・ The_3rd_Seal【理知】<br>・侵魔のデータサーバ【幸運】
+      </div>
+      <div class="mem3 left">
+      <span>シージウ</span>
+      <p>
+      
+            バロン・スレイトを情報ソースを使用し感覚で
+      </p>
+      </div>
+      <div class="mem3 left">
+      <span>シージウ</span>
+      <p>
+      
+            9NW@8#5 感覚ジャッジ (9NW@8#5) ＞ 9+7[4,3] ＞ 16
+            
+      </p>
+      </div>
+      <div class="kp LtoR-early">
+      
+            [ シージウ ] 情報ソース:調査 : 1 → 0
+      </div>
+      <div class="kp LtoR-early">
+      
+            ●バロン・スレイト<br>事件を起こした侵魔、バロン・スレイトにつ<br>いて調べると得られる情報。<br>▼難易度 10<br>黒騎士の配下。 疫病をまき散らし、ブラーナの少ない地域を作り出すことで、黒騎士を復活させようとしている。<br>▼難易度13 ※必須情報<br>The_3rd Seal というコンピュータウィルスを媒介にプラーナを搾取している。 電子ネット ワーク内に根城を持っており、プラーナを集積したデータサーバを隠し持っている。データサーバについて調査可能となる。 <br>▼難易度15<br>パロン・スレイトは電子網に住み着く侵魔。 物理世界に姿を現わすことはない。 魔法攻撃を得意とし、物理的な防御力が高い。 BS: 邪毒を与えるスキルを持つ。
+      </div>
+      <div class="mem3 left">
+      <span>シージウ</span>
+      <p>
+      
+            「いんたーねっとに住んでいるようです。でーたさーばーを調べなければいけないようですね」
+      </p>
+      </div>
+      <div class="mem2 right">
+      <span>煉 子龍</span>
+      <p>
+      
+            「データサーバーか…フッどうやら私の得意分野のようだ」
+      </p>
+      </div>
+      <div class="mem1 left">
+      <span>星丸 モモ</span>
+      <p>
+      
+            「だからパソコンおかしくなっちゃったのかぁ」
+      </p>
+      </div>
+      <div class="mem2 right">
+      <span>煉 子龍</span>
+      <p>
+      
+            「兄弟子、サーバーの件は私に任せてほしい」
+      </p>
+      </div>
+      <div class="mem4 right">
+      <span>シトリー・スカーレット</span>
+      <p>
+      
+            「それが、原因、ということ、ですね」
+      </p>
+      </div>
+      <div class="mem2 right">
+      <span>煉 子龍</span>
+      <p>
+      
+            ・侵魔のデータサーバ【幸運】→【意思】<br>情報ソース：交渉
+      </p>
+      </div>
+      <div class="mem3 left">
+      <span>シージウ</span>
+      <p>
+      
+            「煉 子龍 加油（がんばってください」
+      </p>
+      </div>
+      <div class="mem2 right">
+      <span>煉 子龍</span>
+      <p>
+      
+            9NW@7#9 意思ジャッジ (9NW@7#9) ＞ 9+3[2,1] ＞ 12
+            
+      </p>
+      </div>
+      <div class="kp LtoR-early">
+      
+            何も得られなかった……
+      </div>
+      <div class="mem2 right">
+      <span>煉 子龍</span>
+      <p>
+      
+            「馬鹿な！？中国4000年のデータにないだとぉ！？」
+      </p>
+      </div>
+      <div class="mem4 right">
+      <span>シトリー・スカーレット</span>
+      <p>
+      
+            事件の原因を調べましょう。
+      </p>
+      </div>
+      <div class="mem4 right">
+      <span>シトリー・スカーレット</span>
+      <p>
+      
+            9NW@7#12 器用ジャッジ (9NW@7#12) ＞ 9+11[6,5] ＞ 20
+            
+      </p>
+      </div>
+      <div class="kp LtoR-early">
+      
+            ●事件の原因<br>人びとが倒れる原因、 パソコンが壊れた原因などについて調べると得られる情報。<br>▼難易度10<br>バロン・スレイトと呼ばれる侵魔の仕業のようだ。 人びとがプラーナを吸われている<br> ▼難易度13 (※必須情報)<br>The_3rd_Seal というコンピュータ・ウィルス が蔓延している。 感染端末が人びとのプラーナを吸い取っている。<br> The_3rd_Seal について調査可能となる。<br>▼難易度 15<br>プラーナを吸い取る機構に関してはイノセン トの技術ではどうにもならない。一般的なセキュリティソフトがこの新たなウィルスの対策を始めているが、対策はうわべだけで、プラーナを搾取される被害は拡大している。
+      </div>
+      <div class="mem5 left">
+      <span>GM</span>
+      <p>
+      
+            ▼情報項目<br>・事件の原因【器用】〆<br>・バロン・スレイト【意思】〆<br>・ The_3rd_Seal【理知】<br>・侵魔のデータサーバ【幸運】
+      </p>
+      </div>
+      <div class="mem1 left">
+      <span>星丸 モモ</span>
+      <p>
+      
+            ・ The_3rd_Sealについて【理知】
+      </p>
+      </div>
+      <div class="mem1 left">
+      <span>星丸 モモ</span>
+      <p>
+      
+            9NW@11#10 理知ジャッジ (9NW@11#10) ＞ 9+6[5,1] ＞ 15
+            
+      </p>
+      </div>
+      <div class="mem5 left">
+      <span>GM</span>
+      <p>
+      
+            ●The_3rd_Seal<br>ウィルスについて調べると得られる情報。<br>▼難易度12 (※必須情報) P 273 に書かれた基本的な情報を得る。<br>コンピュータ・ウィルス<br>バロン・スレイトのコンピュータ・ウィルス感染端末のプログラムを書き換え、 自身の複製をメール送信するなど、勝手な操作をする。 添付ファイル、ソフトウェア、ウェブサイトのソースなど多様な形で仕組まれており、爆発的に感染する。 挙動の大半は単なる撹乱で、真の目的は侵魔が持つデータサーバとの通信経路を形成、そこを経由してプラーナを集積することにある。<br> 感染端末は月匣内のデータサーバにつながって、そこから呪術を送り込まれている。<br>▼難易度15 (※必須情報) ウィルスに対するワクチンをデータサーバに送り込めれば対策できる。 侵魔のデータサーバについて調査可能となる。侵魔のウィルスに対抗するワクチンには、 多くの魔術師を必要とする魔術儀式により、呪的な術式を施す必要がある。 世界魔術協会ならばそれが可能だ。<br> ▼ 難易度 17<br>The_3rd_Sealの構造についての知識を得る。 ワクチンを作る時のジャッジの判定値を+2を得る。
+      </p>
+      </div>
+      <div class="mem1 left">
+      <span>星丸 モモ</span>
+      <p>
+      
+            「パソコンどうにかなるかも！」
+      </p>
+      </div>
+      <div class="mem2 right">
+      <span>煉 子龍</span>
+      <p>
+      
+            「フッ、しかし……この煉子龍を嘗めるなよ！」
+      </p>
+      </div>
+      <div class="mem2 right">
+      <span>煉 子龍</span>
+      <p>
+      
+            「4000年のデータにないのなら400”1”年目のデータを紡ぐまで！」
+      </p>
+      </div>
+      <div class="mem2 right">
+      <span>煉 子龍</span>
+      <p>
+      
+            6NW@7#9 幸運ジャッジ (6NW@7#9) ＞ 6+6[3,3] ＞ 12
+            
+      </p>
+      </div>
+      <div class="mem2 right">
+      <span>煉 子龍</span>
+      <p>
+      
+            プラーナを使用する！出目操作+1
+      </p>
+      </div>
+      <div class="mem2 right">
+      <span>煉 子龍</span>
+      <p>
+      
+            2d6 (2D6) ＞ 4[1,3] ＞ 4
+            
+      </p>
+      </div>
+      <div class="mem2 right">
+      <span>煉 子龍</span>
+      <p>
+      
+            20
+      </p>
+      </div>
+      <div class="kp LtoR-early">
+      
+            ●侵魔のデータサーバ 侵魔のデータサーバについて調べると得られる情<br>▼難易度15 (※必須情報)<br>ネットワーク上にある侵魔の月の中にデータサーバは保存されている。 外部からではアクセスできない。もちろん物理的な手段でたどり着くこともできない。 ウィザードが直接、電脳世界に入り込むしかないだろう。<br>電脳世界に入り込む技術は医療科学研究所が持っている。<br>▼難易度 17<br>データサーバにワクチンを投与しようとする。 と、サーバに仕掛けられたトラップが発動することがわかる。 このトラップに対するトラップ対処ジャッジの判定値に+2を得る。
+      </div>
+      <div class="mem2 right">
+      <span>煉 子龍</span>
+      <p>
+      
+            「この煉子龍！容赦せん！」
+      </p>
+      </div>
+      <div class="mem1 left">
+      <span>星丸 モモ</span>
+      <p>
+      
+            ・ The_3rd_Sealを【理知】
+      </p>
+      </div>
+      <div class="mem1 left">
+      <span>星丸 モモ</span>
+      <p>
+      
+            9NW@11#10 理知ジャッジ (9NW@11#10) ＞ 9+7[3,4] ＞ 16
+            
+      </p>
+      </div>
+      <div class="mem3 left">
+      <span>シージウ</span>
+      <p>
+      
+             The_3rd_Sealを【理知】
+      </p>
+      </div>
+      <div class="mem3 left">
+      <span>シージウ</span>
+      <p>
+      
+            6NW@8#5 理知ジャッジ (6NW@8#5) ＞ 6+10[5,3]+5[4,1] ＞ クリティカル ＞ 21
+            
+      </p>
+      </div>
+      <div class="mem5 left">
+      <span>GM</span>
+      <p>
+      
+             ▼ 難易度 17<br>The_3rd_Seal の構造についての知識を得る。 ワクチンを作る時のジャッジの判定値を+2を得る。
+      </p>
+      </div>
+      <div class="mem3 left">
+      <span>シージウ</span>
+      <p>
+      
+            「おしごとの内容は理解しました。」
+      </p>
+      </div>
+      <div class="mem4 right">
+      <span>シトリー・スカーレット</span>
+      <p>
+      
+            「さすが、です」
+      </p>
+      </div>
+      <div class="mem5 left">
+      <span>GM</span>
+      <p>
+      
+            シーン終
+      </p>
+      </div>
+      <div class="mem5 left">
+      <span>GM</span>
+      <p>
+      
+            ●シーン8: ワクチン作製 <br>シーンプレイヤー: PC②
+      </p>
+      </div>
+      <div class="kp LtoR-early">
+      
+            キミたちは世界魔術協会の協力を得てワクチンプログラムを製作する
+      </div>
+      <div class="mem16 right">
+      <span>世界の守護者アンゼロット</span>
+      <p>
+      
+            「ワクチンをデータサーバに送り込めばよいのは分かりました。 しかし、月匣に侵入できるのはウィザードのみ。 つまり、 プログラムを持ち込むには、すべてのコードを誰かの脳に刷り込むしかない。いわばウィザード自身がワクチンとなるのです」
+      </p>
+      </div>
+      <div class="mem16 right">
+      <span>世界の守護者アンゼロット</span>
+      <p>
+      
+             侵魔のウィルスに対抗するワクチンプログラムを製作する。 ネットワーク上にある侵魔のデータサーバには、物理的な記憶媒体にコードを記入して持ち込めない。 月匣内に進入するPCの脳に魔術をもって直接プログラムを書き込む必要がある。 PCは【意思】で難易度14のジャッジを行なう。ジャッジは何人挑戦してもよいし、 何回挑戦してもよいが、ジャッジに失敗するたび、 精神的疲弊により2D6点のMPダメージを受ける。 ひとり以上が成功すればワクチンは完成する。The_3rd_Seal情報収集の結果次第で判定値に+2できる。
+      </p>
+      </div>
+      <div class="mem2 right">
+      <span>煉 子龍</span>
+      <p>
+      
+            「アンゼロット氏、世界の守護者たるあなた直々に対応していただけるとは……」
+      </p>
+      </div>
+      <div class="mem2 right">
+      <span>煉 子龍</span>
+      <p>
+      
+            「おや？このお茶は？」
+      </p>
+      </div>
+      <div class="mem16 right">
+      <span>世界の守護者アンゼロット</span>
+      <p>
+      
+            「アールグレイです。まずはこれでリラックスして下さい」
+      </p>
+      </div>
+      <div class="mem2 right">
+      <span>煉 子龍</span>
+      <p>
+      
+            「これはありがたい、ちょうどのどが渇いていたところで……ｺﾞｸﾘ」
+      </p>
+      </div>
+      <div class="mem2 right">
+      <span>煉 子龍</span>
+      <p>
+      
+            「………ｸﾞｯ！？ｸﾞｱｧｧｧ！！ﾋﾟｰｯ（ワクチンが刷り込まれる音）」
+      </p>
+      </div>
+      <div class="mem2 right">
+      <span>煉 子龍</span>
+      <p>
+      
+            9NW+2@7#9 意思ジャッジ (9NW+2@7#9) ＞ 11+8[3,5] ＞ 19
+            
+      </p>
+      </div>
+      <div class="mem16 right">
+      <span>世界の守護者アンゼロット</span>
+      <p>
+      
+            「成功しましたね」
+      </p>
+      </div>
+      <div class="mem3 left">
+      <span>シージウ</span>
+      <p>
+      
+            「煉 子龍　要不要紧？（大丈夫ですか？」
+      </p>
+      </div>
+      <div class="mem16 right">
+      <span>世界の守護者アンゼロット</span>
+      <p>
+      
+            「煉 子龍さんあなたはワクチンになりました」
+      </p>
+      </div>
+      <div class="mem1 left">
+      <span>星丸 モモ</span>
+      <p>
+      
+            「ししょーがワクチンになっちゃった」
+      </p>
+      </div>
+      <div class="mem2 right">
+      <span>煉 子龍</span>
+      <p>
+      
+            「……辟｡蝠城｡」
+      </p>
+      </div>
+      <div class="mem2 right">
+      <span>煉 子龍</span>
+      <p>
+      
+            「縺ゅｌ縺ｯ縺?▲縺溘＞菴輔□縺｣縺溘ｓ縺??溘Ρ繧ｯ繝√Φ縺具ｼ」
+      </p>
+      </div>
+      <div class="mem1 left">
+      <span>星丸 モモ</span>
+      <p>
+      
+            「ワクチンになった人は帰ってこられるの？……ししょー？」
+      </p>
+      </div>
+      <div class="mem4 right">
+      <span>シトリー・スカーレット</span>
+      <p>
+      
+            「ワクチンとは、恐ろしいものなの、ですね」
+      </p>
+      </div>
+      <div class="mem16 right">
+      <span>世界の守護者アンゼロット</span>
+      <p>
+      
+            「次は医療科学研究所で侵魔のサーバにアクセスしてください」
+      </p>
+      </div>
+      <div class="mem1 left">
+      <span>星丸 モモ</span>
+      <p>
+      
+            「あっ答えてくれないんだ」
+      </p>
+      </div>
+      <div class="mem2 right">
+      <span>煉 子龍</span>
+      <p>
+      
+            「縺薙ｌ縺ｧ蟇ｾ謚礼ｭ悶?蠕励◆縺ｪ?∬｡後￥縺橸ｼ∫嚀?（これで対抗策は得たな！行くぞ！皆！）」
+      </p>
+      </div>
+      <div class="mem16 right">
+      <span>世界の守護者アンゼロット</span>
+      <p>
+      
+            「これは……副反応ですかね？」
+      </p>
+      </div>
+      <div class="mem4 right">
+      <span>シトリー・スカーレット</span>
+      <p>
+      
+            「えっと、なにを…えっと？」
+      </p>
+      </div>
+      <div class="mem1 left">
+      <span>星丸 モモ</span>
+      <p>
+      
+            「ししょー？何しゃべってるの？これ大丈夫なやつ……？」
+      </p>
+      </div>
+      <div class="mem3 left">
+      <span>シージウ</span>
+      <p>
+      
+            「しらない言葉です。日本語か中国語でないと理解ができません」
+      </p>
+      </div>
+      <div class="mem2 right">
+      <span>煉 子龍</span>
+      <p>
+      
+            「?溘←縺?＠縺滂ｼ溽嚀縲√∪繧九〒莠ｺ繧貞｣翫ｌ縺溘?繝?ヱ繝ｼ蜷帙ｒ隕九ｋ繧医≧縺ｪ逶ｮ縺ｧ窶ｦ窶ｦ<br>（？どうした？皆、まるで人を壊れたペッパー君を見るような目で……）」
+      </p>
+      </div>
+      <div class="mem1 left">
+      <span>星丸 モモ</span>
+      <p>
+      
+            「ペッパーくんはそんなふうに壊れないよ？」
+      </p>
+      </div>
+      <div class="mem4 right">
+      <span>シトリー・スカーレット</span>
+      <p>
+      
+            「わ、わかるのですか？」
+      </p>
+      </div>
+      <div class="mem1 left">
+      <span>星丸 モモ</span>
+      <p>
+      
+            「たたけば直る？」
+      </p>
+      </div>
+      <div class="mem1 left">
+      <span>星丸 モモ</span>
+      <p>
+      
+            「ペッパーくんがどうのって言ってるのは、なんか、わかったけど」
+      </p>
+      </div>
+      <div class="mem2 right">
+      <span>煉 子龍</span>
+      <p>
+      
+            「蜿ｩ縺擾ｼ溘％繧会ｼ∵弌荳ｸ蜷帙?∵ｩ滓｢ｰ縺ｯ螟ｧ蛻?↓縺励ｍ縺ｨ窶ｦ窶ｦ<br>（叩く？こら！星丸君、機械は大切にしろと……）」
+      </p>
+      </div>
+      <div class="mem1 left">
+      <span>星丸 モモ</span>
+      <p>
+      
+            「直るー？なおれー」背伸びしてあたまぺちぺち
+      </p>
+      </div>
+      <div class="mem2 right">
+      <span>煉 子龍</span>
+      <p>
+      
+            「ｺﾞｯ！ｸﾞｯ！ﾋﾟｰｯｶﾞｶﾞｶﾞｶﾞ（何かが読み込まれる音）」
+      </p>
+      </div>
+      <div class="mem1 left">
+      <span>星丸 モモ</span>
+      <p>
+      
+            「あっかたぁい。なにこれガラス？プラスチック？」
+      </p>
+      </div>
+      <div class="mem1 left">
+      <span>星丸 モモ</span>
+      <p>
+      
+            「ししょー、ちょっと見ない間に人工物で頭守るようになっちゃってたんだねぇ」しみじみとぺちぺち
+      </p>
+      </div>
+      <div class="mem2 right">
+      <span>煉 子龍</span>
+      <p>
+      
+            「ハッ！私はいったい何を……喂（こら！）！止めないか」
+      </p>
+      </div>
+      <div class="mem1 left">
+      <span>星丸 モモ</span>
+      <p>
+      
+            「あっ直ったー。よかったー」
+      </p>
+      </div>
+      <div class="mem16 right">
+      <span>世界の守護者アンゼロット</span>
+      <p>
+      
+            「あ、大丈夫みたいですね」
+      </p>
+      </div>
+      <div class="mem3 left">
+      <span>シージウ</span>
+      <p>
+      
+            「なるほど。こわれたものは叩けばいいのですね。覚えました」
+      </p>
+      </div>
+      <div class="mem4 right">
+      <span>シトリー・スカーレット</span>
+      <p>
+      
+            「さ、先ほどまでは、…治ったのならばよい、ですが」
+      </p>
+      </div>
+      <div class="mem1 left">
+      <span>星丸 モモ</span>
+      <p>
+      
+            「ホントに壊さないようにねー」
+      </p>
+      </div>
+      <div class="mem16 right">
+      <span>世界の守護者アンゼロット</span>
+      <p>
+      
+            「では行ってらっしゃい」
+      </p>
+      </div>
+      <div class="mem3 left">
+      <span>シージウ</span>
+      <p>
+      
+            「いってきます」
+      </p>
+      </div>
+      <div class="mem4 right">
+      <span>シトリー・スカーレット</span>
+      <p>
+      
+            「い、いって、きます」
+      </p>
+      </div>
+      <div class="mem1 left">
+      <span>星丸 モモ</span>
+      <p>
+      
+            「いってきまーす」
+      </p>
+      </div>
+      <div class="mem2 right">
+      <span>煉 子龍</span>
+      <p>
+      
+            「全く……再见いってきます！」
+      </p>
+      </div>
+      <div class="mem5 left">
+      <span>GM</span>
+      <p>
+      
+            シーン終
+      </p>
+      </div>
+      <div class="mem5 left">
+      <span>GM</span>
+      <p>
+      
+            ●シーン9: 医療科学研究所<br>シーンプレイヤー:PC③
+      </p>
+      </div>
+      <div class="kp LtoR-early">
+      
+            インターネットに潜む侵魔の月匣へ向かう方法を求め、 医療科学研究所にやって来た。 
+      </div>
+      <div class="mem9 left">
+      <span>水上 聖</span>
+      <p>
+      
+            「この装置を用いれば、ウィザードである皆さんなら電脳世界に侵入できます。 使うんですか?(瞳を輝かせながら)」
+      </p>
+      </div>
+      <div class="mem3 left">
+      <span>シージウ</span>
+      <p>
+      
+            「こんにちわ。敵がこちらにでてこないですから、シージウ達がむかいます」
+      </p>
+      </div>
+      <div class="mem2 right">
+      <span>煉 子龍</span>
+      <p>
+      
+            「なんだかデスゲームに参加させられそうな装置だが……この上からつけられるのか？」
+      </p>
+      </div>
+      <div class="mem9 left">
+      <span>水上 聖</span>
+      <p>
+      
+            「煉さんなら大丈夫ですよ」
+      </p>
+      </div>
+      <div class="mem2 right">
+      <span>煉 子龍</span>
+      <p>
+      
+            「フッ……当然か……」
+      </p>
+      </div>
+      <div class="mem1 left">
+      <span>星丸 モモ</span>
+      <p>
+      
+            「寝てネットに入るってこと？すごいけどよくわかんないね」
+      </p>
+      </div>
+      <div class="mem4 right">
+      <span>シトリー・スカーレット</span>
+      <p>
+      
+            「なるほど、これで…なんとかするんです、ね」
+      </p>
+      </div>
+      <div class="mem1 left">
+      <span>星丸 モモ</span>
+      <p>
+      
+            「ネットが夢ってことかな？まぁある意味そうかー」
+      </p>
+      </div>
+      <div class="mem9 left">
+      <span>水上 聖</span>
+      <p>
+      
+            「技術的な話は置いておいて、 電子ネットワークという異世界に行くようなものです。月匣に慣れているあなたがたなら大丈夫ですよ!(嬉しそうに)ただし―」
+      </p>
+      </div>
+      <div class="mem9 left">
+      <span>水上 聖</span>
+      <p>
+      
+             「無事に敵の月匣から脱出できなければ、あなた方の意識はウェブの中に漂ったまま。 肉体は目覚めることなく衰弱死するでしょう」
+      </p>
+      </div>
+      <div class="mem1 left">
+      <span>星丸 モモ</span>
+      <p>
+      
+            「わぁ。死因インターネットはやだな！」
+      </p>
+      </div>
+      <div class="mem2 right">
+      <span>煉 子龍</span>
+      <p>
+      
+            「”できなければ”だろう？どのみち失敗すれば一般人（イノセント）たちも危ない」
+      </p>
+      </div>
+      <div class="mem9 left">
+      <span>水上 聖</span>
+      <p>
+      
+            「ええ、そのとおりです……」
+      </p>
+      </div>
+      <div class="mem1 left">
+      <span>星丸 モモ</span>
+      <p>
+      
+            「まぁ帰ってこれるよ！たぶんだけど」
+      </p>
+      </div>
+      <div class="mem4 right">
+      <span>シトリー・スカーレット</span>
+      <p>
+      
+            「そ、その場の適応で、なんとか、なると、思いましょう」
+      </p>
+      </div>
+      <div class="mem3 left">
+      <span>シージウ</span>
+      <p>
+      
+            「敵を殲滅するのがシージウのおしごとです。敵がいるのならいきましょう」
+      </p>
+      </div>
+      <div class="kp LtoR-early">
+      
+            キミたちは寝台へ寝そべり、頭部に器具を取りつけられた。 器具はコンピュータへとつながっている。 スイッチひとつでキミたちの意識は飛び、 電脳世界へとダイブするのだ。
+      </div>
+      <div class="mem9 left">
+      <span>水上 聖</span>
+      <p>
+      
+            「それでは、よい旅を・・・・・」
+      </p>
+      </div>
+      <div class="kp LtoR-early">
+      
+            キミたちは電脳世界へと旅立った――
+      </div>
+      <div class="mem5 left">
+      <span>GM</span>
+      <p>
+      
+            シーン終
+      </p>
+      </div>
+      <div class="mem2 right">
+      <span>煉 子龍</span>
+      <p>
+      
+            「ここが電脳世界か……」
+      </p>
+      </div>
+      <div class="kp LtoR-early">
+      
+            ●エリア1: エントランス <br>◆解説<br>エントランスエリア。 次のエリアへ進むためのゲートが扉で閉じられている。 扉を開くには、誰かひとりが難易度13の【器用】 ジャッジに成功する必要がある(*)。ジャッジを行ない失敗したPCは扉の防御機構が働き、2D点のHPダメージを受ける。<br>(*) エリア1: 成功する必要がある<br>開く代わりに、破壊してもよい。扉はHP50 【物防】 【魔防】 はそれぞれ5とする。
+      </div>
+      <div class="kp LtoR-early">
+      
+            電子の海を泳ぎ、侵魔の月へとたどり着く。ネズミの顔が描かれた禍々しい扉がキミたちの眼前にある。この扉が、この先にアクセスしようとする通信を遮断しているようだ。
+      </div>
+      <div class="mem1 left">
+      <span>星丸 モモ</span>
+      <p>
+      
+            「おぉーすごいね！ネットの中にもドアあるんだね！」
+      </p>
+      </div>
+      <div class="mem3 left">
+      <span>シージウ</span>
+      <p>
+      
+            9NW@8#5 器用ジャッジ (9NW@8#5) ＞ 9+6[2,4] ＞ 15
+            
+      </p>
+      </div>
+      <div class="mem3 left">
+      <span>シージウ</span>
+      <p>
+      
+            「いきましょう」
+      </p>
+      </div>
+      <div class="kp LtoR-early">
+      
+            扉は開いたーー
+      </div>
+      <div class="mem4 right">
+      <span>シトリー・スカーレット</span>
+      <p>
+      
+            「まず、ひとつ。といったところでしょうか。
+      </p>
+      </div>
+      <div class="mem2 right">
+      <span>煉 子龍</span>
+      <p>
+      
+            「顔色一つ変えずに電脳世界に適応するとは……さすがだな兄弟子」
+      </p>
+      </div>
+      <div class="mem1 left">
+      <span>星丸 モモ</span>
+      <p>
+      
+            「あいたー！シージウちゃんナイス！」
+      </p>
+      </div>
+      <div class="kp LtoR-early">
+      
+            ●エリア2:ファイアウォール・ロード<br>◆解說<br>　トラップエリア。 《ダメージトラップ》 (*) が仕掛けられている。 トラップがあることは、ジャッジなしで判明する。<br>　このエリアには、先に進む扉がふたつある。 いずれも通常ゲートとして扱う。<br>《ダメージトラップ》：エリア内のキャラクターに2d6点のHPダメージを与える。この効果を避けるためには、難易度12の【幸運】ジャッジに成功する必要がある。<br>その後、難易度12の【器用】ジャッジに成功することで、このトラップは解除できる。
+      </div>
+      <div class="kp LtoR-early">
+      
+            扉の先は、 光のグリッドで構成された通廊に続く。壁や天井から炎の柱が吹き出て、 余計な“データ”を焼き払おうと伸縮している。
+      </div>
+      <div class="mem4 right">
+      <span>シトリー・スカーレット</span>
+      <p>
+      
+            7NW@7#12 幸運ジャッジ (7NW@7#12) ＞ 7+6[2,4] ＞ 13
+            
+      </p>
+      </div>
+      <div class="mem4 right">
+      <span>シトリー・スカーレット</span>
+      <p>
+      
+            9NW@7#12 器用ジャッジ (9NW@7#12) ＞ 9+5[4,1] ＞ 14
+            
+      </p>
+      </div>
+      <div class="mem4 right">
+      <span>シトリー・スカーレット</span>
+      <p>
+      
+            「こ、これで…いけます」
+      </p>
+      </div>
+      <div class="mem2 right">
+      <span>煉 子龍</span>
+      <p>
+      
+            「ほう、スカーレット氏はもしや機械に詳しいのか？」
+      </p>
+      </div>
+      <div class="kp LtoR-early">
+      
+            ファイアウォールは解除された
+      </div>
+      <div class="mem1 left">
+      <span>星丸 モモ</span>
+      <p>
+      
+            「ありがとー！」
+      </p>
+      </div>
+      <div class="mem3 left">
+      <span>シージウ</span>
+      <p>
+      
+            「シトリー・スカーレットありがとうございます。ケガせず進めますね」
+      </p>
+      </div>
+      <div class="mem4 right">
+      <span>シトリー・スカーレット</span>
+      <p>
+      
+            「一応、少しは機械がいけます」
+      </p>
+      </div>
+      <div class="kp LtoR-early">
+      
+            エリア4へ
+      </div>
+      <div class="mem1 left">
+      <span>星丸 モモ</span>
+      <p>
+      
+            「火ぃ吹いてるの、ビックリハウスみたいだねぇ」
+      </p>
+      </div>
+      <div class="mem2 right">
+      <span>煉 子龍</span>
+      <p>
+      
+            「データによるとこちらの方角が吉だと出ている」
+      </p>
+      </div>
+      <div class="mem4 right">
+      <span>シトリー・スカーレット</span>
+      <p>
+      
+            「それなら、向かいましょう、か」
+      </p>
+      </div>
+      <div class="mem1 left">
+      <span>星丸 モモ</span>
+      <p>
+      
+            「ししょーが言うならきっと正しいね！」
+      </p>
+      </div>
+      <div class="mem3 left">
+      <span>シージウ</span>
+      <p>
+      
+            「ではいきましょう」
+      </p>
+      </div>
+      <div class="kp LtoR-early">
+      
+            ●エリア4: 暗号化された部屋 <br>◆解説<br>イベントエリア。このエリアは迷宮化されており、エリア5への扉へ進むには、難易度12の【理知】 ジャッジに成功する必要がある。 成功した者のみが次のゲートへゆける。 失敗したら1D6点のMPダメージを被り、再度ジャッジを行なうかエリア2へ戻ること(*)。
+      </div>
+      <div class="kp LtoR-early">
+      
+            　細い道が迷路状にた空間に出る。 奥に道が続いていると見えるが、正解の道を進むにはかなり頭を使いそうだ。
+      </div>
+      <div class="mem4 right">
+      <span>シトリー・スカーレット</span>
+      <p>
+      
+            「や、ややこしそう、です」
+      </p>
+      </div>
+      <div class="mem3 left">
+      <span>シージウ</span>
+      <p>
+      
+            「めいろがありました。どうしましょう」
+      </p>
+      </div>
+      <div class="mem1 left">
+      <span>星丸 モモ</span>
+      <p>
+      
+            「完全にビックリハウスだ」完全に観光気分
+      </p>
+      </div>
+      <div class="mem2 right">
+      <span>煉 子龍</span>
+      <p>
+      
+            「これは迷路か……フッ、中国4000年のデータをもってすれば他愛なし！」
+      </p>
+      </div>
+      <div class="mem2 right">
+      <span>煉 子龍</span>
+      <p>
+      
+            6NW@7#9 理知ジャッジ (6NW@7#9) ＞ 6+5[4,1] ＞ 11
+            
+      </p>
+      </div>
+      <div class="mem2 right">
+      <span>煉 子龍</span>
+      <p>
+      
+            1d6 ダメージ (1D6) ＞ 6
+            
+      </p>
+      </div>
+      <div class="kp LtoR-early">
+      
+            [ 煉 子龍 ] MP : 20 → 14
+      </div>
+      <div class="mem3 left">
+      <span>シージウ</span>
+      <p>
+      
+            6NW@8#5 理知ジャッジ (6NW@8#5) ＞ 6+7[6,1] ＞ 13
+            
+      </p>
+      </div>
+      <div class="mem2 right">
+      <span>煉 子龍</span>
+      <p>
+      
+            「ム？ここは？ん？この火炎放射器は……ｸﾞｧｱｧｧｧｱ！」
+      </p>
+      </div>
+      <div class="mem3 left">
+      <span>シージウ</span>
+      <p>
+      
+            「さきにいっていますね」
+      </p>
+      </div>
+      <div class="mem1 left">
+      <span>星丸 モモ</span>
+      <p>
+      
+            「ししょー！」
+      </p>
+      </div>
+      <div class="mem4 right">
+      <span>シトリー・スカーレット</span>
+      <p>
+      
+            6NW@7#12 理知ジャッジ (6NW@7#12) ＞ 6+3[2,1] ＞ 9
+            
+      </p>
+      </div>
+      <div class="mem2 right">
+      <span>煉 子龍</span>
+      <p>
+      
+            「ｸﾞｯ……無問題（ﾓｰﾏﾝﾀｲ）だ」
+      </p>
+      </div>
+      <div class="mem4 right">
+      <span>シトリー・スカーレット</span>
+      <p>
+      
+            1D6 (1D6) ＞ 1
+            
+      </p>
+      </div>
+      <div class="kp LtoR-early">
+      
+            [ シトリー・スカーレット ] MP : 14 → 13
+      </div>
+      <div class="mem4 right">
+      <span>シトリー・スカーレット</span>
+      <p>
+      
+            「わけわからないです」
+      </p>
+      </div>
+      <div class="mem1 left">
+      <span>星丸 モモ</span>
+      <p>
+      
+            9NW@11#10 理知ジャッジ (9NW@11#10) ＞ 9+9[5,4] ＞ 18
+            
+      </p>
+      </div>
+      <div class="mem2 right">
+      <span>煉 子龍</span>
+      <p>
+      
+            6NW@7#9 理知ジャッジ (6NW@7#9) ＞ 6+11[6,5] ＞ 17
+            
+      </p>
+      </div>
+      <div class="mem2 right">
+      <span>煉 子龍</span>
+      <p>
+      
+            「データに誤りがあったか……」
+      </p>
+      </div>
+      <div class="mem1 left">
+      <span>星丸 モモ</span>
+      <p>
+      
+            「大丈夫？脳みそ焦げてない？」
+      </p>
+      </div>
+      <div class="mem2 right">
+      <span>煉 子龍</span>
+      <p>
+      
+            「少し煮立ったかな」
+      </p>
+      </div>
+      <div class="mem1 left">
+      <span>星丸 モモ</span>
+      <p>
+      
+            「煮立った！？」
+      </p>
+      </div>
+      <div class="mem2 right">
+      <span>煉 子龍</span>
+      <p>
+      
+            「ハッハッハッ！ジョークだ」
+      </p>
+      </div>
+      <div class="mem4 right">
+      <span>シトリー・スカーレット</span>
+      <p>
+      
+            6NW@7#12 理知ジャッジ (6NW@7#12) ＞ 6+9[4,5] ＞ 15
+            
+      </p>
+      </div>
+      <div class="mem4 right">
+      <span>シトリー・スカーレット</span>
+      <p>
+      
+            「あ、ここ、だったのですね」
+      </p>
+      </div>
+      <div class="mem3 left">
+      <span>シージウ</span>
+      <p>
+      
+            「そろいましたね」
+      </p>
+      </div>
+      <div class="mem1 left">
+      <span>星丸 モモ</span>
+      <p>
+      
+            「急に壊れたり煮立ったり忙しいなもー……」
+      </p>
+      </div>
+      <div class="mem2 right">
+      <span>煉 子龍</span>
+      <p>
+      
+            「待たせてしまったか、对不起（すまない）」
+      </p>
+      </div>
+      <div class="mem4 right">
+      <span>シトリー・スカーレット</span>
+      <p>
+      
+            「お、またせ、しました」
+      </p>
+      </div>
+      <div class="kp LtoR-early">
+      
+            エリア5へ
+      </div>
+      <div class="kp LtoR-early">
+      
+            ●エリア5: サーバエリア<br>◆解説1<br>　フォートレスコアエリア。 小部屋に安置されたデータサーバをフォートレスコアとして扱う。 ワクチンを組み込めばコアは破壊されるが、 そのためにサーバを操作できるよう暗号を解かねばならない。 PCひとりが【理知】で難易度15のジャッジに成功する必要がある。 情報収集シーンで得た侵魔データサーバに関する情報次第で、判定値に+2する。成功するまで(*)ジャッジを行なうこと。 
+      </div>
+      <div class="kp LtoR-early">
+      
+            データサーバの安置された場所へたどり着いた。 あとはワクチンを入力するだけだが、 サーバはロックされており、 容易ではない。
+      </div>
+      <div class="mem3 left">
+      <span>シージウ</span>
+      <p>
+      
+            「あれがでーたさーばーですね」
+      </p>
+      </div>
+      <div class="mem1 left">
+      <span>星丸 モモ</span>
+      <p>
+      
+            9NW@11#10 理知ジャッジ (9NW@11#10) ＞ 9+10[5,6]+4[3,1] ＞ クリティカル ＞ 23
+            
+      </p>
+      </div>
+      <div class="mem2 right">
+      <span>煉 子龍</span>
+      <p>
+      
+            「任せろ」
+      </p>
+      </div>
+      <div class="mem1 left">
+      <span>星丸 モモ</span>
+      <p>
+      
+            「よっし！ししょー！」
+      </p>
+      </div>
+      <div class="mem2 right">
+      <span>煉 子龍</span>
+      <p>
+      
+            （酒瓶を取り出す）
+      </p>
+      </div>
+      <div class="mem2 right">
+      <span>煉 子龍</span>
+      <p>
+      
+            （少量を口に含む）
+      </p>
+      </div>
+      <div class="mem2 right">
+      <span>煉 子龍</span>
+      <p>
+      
+            「くらえ！ワクチン消毒液！！」
+      </p>
+      </div>
+      <div class="mem1 left">
+      <span>星丸 モモ</span>
+      <p>
+      
+            「きちゃないよ！」
+      </p>
+      </div>
+      <div class="mem2 right">
+      <span>煉 子龍</span>
+      <p>
+      
+            「他愛なし」
+      </p>
+      </div>
+      <div class="mem1 left">
+      <span>星丸 モモ</span>
+      <p>
+      
+            「ほんとぉ？」
+      </p>
+      </div>
+      <div class="mem17 left">
+      <span>コア</span>
+      <p>
+      
+            「ｸﾞｵｵｵｵｵｵｵｵｵｵ！！！！」
+      </p>
+      </div>
+      <div class="mem2 right">
+      <span>煉 子龍</span>
+      <p>
+      
+            「さらにもう一発！！」
+      </p>
+      </div>
+      <div class="mem17 left">
+      <span>コア</span>
+      <p>
+      
+            「ｷﾞｬｱｱｱｱｱｱｱｱｱｱ！！！！！」
+      </p>
+      </div>
+      <div class="mem1 left">
+      <span>星丸 モモ</span>
+      <p>
+      
+            「ほら！目に入ったって！」
+      </p>
+      </div>
+      <div class="mem3 left">
+      <span>シージウ</span>
+      <p>
+      
+            「目」
+      </p>
+      </div>
+      <div class="mem2 right">
+      <span>煉 子龍</span>
+      <p>
+      
+            「これが中国4000年の力だ！」
+      </p>
+      </div>
+      <div class="mem4 right">
+      <span>シトリー・スカーレット</span>
+      <p>
+      
+            「め？」
+      </p>
+      </div>
+      <div class="mem1 left">
+      <span>星丸 モモ</span>
+      <p>
+      
+            「ほんとにぃ？」
+      </p>
+      </div>
+      <div class="mem5 left">
+      <span>GM</span>
+      <p>
+      
+            ワクチンプログラムを入力した。 ワクチンは、世界中の感染端末へ伝播してゆく。同時に時限式でサーバ崩壊プログラムが発動する。 あとは放っておけば月匣は崩れ去る。 だが、それまでに脱出しなければ、 月匣もろとも電子の波に呑まれて現実に戻れなくなる。
+      </p>
+      </div>
+      <div class="mem2 right">
+      <span>煉 子龍</span>
+      <p>
+      
+            「まずい！このままでは爆発するぞ！！」
+      </p>
+      </div>
+      <div class="mem4 right">
+      <span>シトリー・スカーレット</span>
+      <p>
+      
+            「ば、爆発ですか！？」
+      </p>
+      </div>
+      <div class="mem1 left">
+      <span>星丸 モモ</span>
+      <p>
+      
+            「うそでしょぉ！？ししょーのせいじゃん！？」
+      </p>
+      </div>
+      <div class="mem3 left">
+      <span>シージウ</span>
+      <p>
+      
+            「煉 子龍こわしたんですか？」
+      </p>
+      </div>
+      <div class="mem1 left">
+      <span>星丸 モモ</span>
+      <p>
+      
+            「やだー！こわしたー！」
+      </p>
+      </div>
+      <div class="mem5 left">
+      <span>GM</span>
+      <p>
+      
+            シーン終－－－
+      </p>
+      </div>
+      <div class="mem5 left">
+      <span>GM</span>
+      <p>
+      
+            クライマックスフェイズ<br>●シーン10: 立ちふさがる敵<br>シーンプレイヤー: PC③ 
+      </p>
+      </div>
+      <div class="kp LtoR-early">
+      
+            ワクチンを入力した直後。 帰り道が塞がれ、 その場にネズミのような侵魔が無数に現われる。うち、もっとも大きな個体が口を開く。
+      </div>
+      <div class="mem18 right">
+      <span>バロン・スレイト</span>
+      <p>
+      
+            「我輩のサーバにどんな仕掛けをしたか知らんが、キサマらをここで殺せば復旧はわけない。死ね。ウィザード。断片化されたデータとしてこの異界に漂うがいい」
+      </p>
+      </div>
+      <div class="mem1 left">
+      <span>星丸 モモ</span>
+      <p>
+      
+            「喋る光る爆発するみたいになってきてない？」
+      </p>
+      </div>
+      <div class="mem2 right">
+      <span>煉 子龍</span>
+      <p>
+      
+            「負けネズミの遠吠えか……フッ」
+      </p>
+      </div>
+      <div class="mem3 left">
+      <span>シージウ</span>
+      <p>
+      
+            「あなたがバロン・スレイトですね。爆発する前に終わらせましょう」
+      </p>
+      </div>
+      <div class="mem4 right">
+      <span>シトリー・スカーレット</span>
+      <p>
+      
+            「そ、そう、ですね。爆発する、前に…終わらせ、てしまいましょう」
+      </p>
+      </div>
+      <div class="mem2 right">
+      <span>煉 子龍</span>
+      <p>
+      
+            「この煉子龍！容赦せん！！」
+      </p>
+      </div>
+      <div class="mem18 right">
+      <span>バロン・スレイト</span>
+      <p>
+      
+            「終わるのは貴様らだ！」
+      </p>
+      </div>
+      <div class="mem4 right">
+      <span>シトリー・スカーレット</span>
+      <p>
+      
+            「――戦闘を実行します」
+      </p>
+      </div>
+      <div class="mem2 right">
+      <span>煉 子龍</span>
+      <p>
+      
+            アナライズ/〇/セットアップ/自動/単体/近/8MP/デッキ装備/エネミー識別ジャッジ（p241）を行う。
+      </p>
+      </div>
+      <div class="kp LtoR-early">
+      
+            [ 煉 子龍 ] MP : 14 → 6
+      </div>
+      <div class="mem1 left">
+      <span>星丸 モモ</span>
+      <p>
+      
+            「こんなとこで終わりたくないよぉ……」
+      </p>
+      </div>
+      <div class="mem1 left">
+      <span>星丸 モモ</span>
+      <p>
+      
+            《ミュージックスタート》1/セットアップ/自動成功/場面選択/場面/10MP/なし/シーン中、命中判定+2
+      </p>
+      </div>
+      <div class="mem2 right">
+      <span>煉 子龍</span>
+      <p>
+      
+            6NW@7#9 理知ジャッジ (6NW@7#9) ＞ 6+10[5,5] ＞ 16
+            
+      </p>
+      </div>
+      <div class="mem18 right">
+      <span>バロン・スレイト</span>
+      <p>
+      
+            「無駄だ」
+      </p>
+      </div>
+      <div class="mem18 right">
+      <span>バロン・スレイト</span>
+      <p>
+      
+            バロン・スレイト　識別値:18
+      </p>
+      </div>
+      <div class="mem2 right">
+      <span>煉 子龍</span>
+      <p>
+      
+            「何！？」
+      </p>
+      </div>
+      <div class="mem2 right">
+      <span>煉 子龍</span>
+      <p>
+      
+            「馬鹿な！？中国４０００年のデータにないだとぉ！？」
+      </p>
+      </div>
+      <div class="mem1 left">
+      <span>星丸 モモ</span>
+      <p>
+      
+            「ししょーそれに頼りすぎじゃない……？」
+      </p>
+      </div>
+      <div class="mem18 right">
+      <span>バロン・スレイト</span>
+      <p>
+      
+            ふははははは！
+      </p>
+      </div>
+      <div class="mem18 right">
+      <span>バロン・スレイト</span>
+      <p>
+      
+            《プラーナ大飢餓》このラウンドの間、行動値を決めるジャッジにプラーナを使用できない
+      </p>
+      </div>
+      <div class="mem2 right">
+      <span>煉 子龍</span>
+      <p>
+      
+            14NW@7#9 行動値ジャッジ (14NW@7#9) ＞ 14+2[1,1] ＞ 16
+            
+      </p>
+      </div>
+      <div class="mem3 left">
+      <span>シージウ</span>
+      <p>
+      
+            13NW@8#5 行動値ジャッジ (13NW@8#5) ＞ 13+4[2,2] ＞ 17
+            
+      </p>
+      </div>
+      <div class="mem4 right">
+      <span>シトリー・スカーレット</span>
+      <p>
+      
+            10NW@7#12 行動値ジャッジ (10NW@7#12) ＞ 10+5[3,2] ＞ 15
+            
+      </p>
+      </div>
+      <div class="mem1 left">
+      <span>星丸 モモ</span>
+      <p>
+      
+            11NW@11#10 行動値ジャッジ (11NW@11#10) ＞ 11+7[4,3] ＞ 18
+            
+      </p>
+      </div>
+      <div class="mem18 right">
+      <span>バロン・スレイト</span>
+      <p>
+      
+            18NW@10#5 行動値ジャッジ (18NW@10#5) ＞ 18+8[3,5] ＞ 26
+            
+      </p>
+      </div>
+      <div class="mem18 right">
+      <span>バロン・スレイト</span>
+      <p>
+      
+            《エレクトロ・ペスティレンス》黒い波動を別々の二体の対象へと飛ばし魔法攻撃を行う。この攻撃でHPダメージを受けたキャラクターは、同時に[邪毒（1）]を受ける。
+      </p>
+      </div>
+      <div class="mem18 right">
+      <span>バロン・スレイト</span>
+      <p>
+      
+            choice[星丸 モモ,シージウ,シトリー・スカーレット] (choice[星丸 モモ,シージウ,シトリー・スカーレット]) ＞ シトリー・スカーレット
+            
+      </p>
+      </div>
+      <div class="mem18 right">
+      <span>バロン・スレイト</span>
+      <p>
+      
+            煉 子龍、シトリー・スカーレットへ魔法攻撃
+      </p>
+      </div>
+      <div class="mem18 right">
+      <span>バロン・スレイト</span>
+      <p>
+      
+            15NW@10#5 魔導ジャッジ (15NW@10#5) ＞ 15+9[6,3] ＞ 24
+            
+      </p>
+      </div>
+      <div class="mem2 right">
+      <span>煉 子龍</span>
+      <p>
+      
+            8NW@7#9 回避ジャッジ (8NW@7#9) ＞ 8+10[2,5]+2[1,1] ＞ クリティカル ＞ 20
+            
+      </p>
+      </div>
+      <div class="mem4 right">
+      <span>シトリー・スカーレット</span>
+      <p>
+      
+            9NW@7#12 回避ジャッジ (9NW@7#12) ＞ 9+8[3,5] ＞ 17
+            
+      </p>
+      </div>
+      <div class="mem18 right">
+      <span>バロン・スレイト</span>
+      <p>
+      
+            「くらえぇ！！」
+      </p>
+      </div>
+      <div class="mem2 right">
+      <span>煉 子龍</span>
+      <p>
+      
+            守護龍/〇/ダメージロール直前/自動/単体/至近/5MP/なし/カバーアップを行う。行動済みでも使用可、行動終了にならない
+      </p>
+      </div>
+      <div class="kp LtoR-early">
+      
+            [ 煉 子龍 ] MP : 6 → 1
+      </div>
+      <div class="mem18 right">
+      <span>バロン・スレイト</span>
+      <p>
+      
+            20NW@10#5 魔攻ジャッジ (20NW@10#5) ＞ 20+4[2,2] ＞ 24
+            
+      </p>
+      </div>
+      <div class="mem2 right">
+      <span>煉 子龍</span>
+      <p>
+      
+            4NW@7#9 魔防ジャッジ (4NW@7#9) ＞ 4+5[2,3] ＞ 9
+            
+      </p>
+      </div>
+      <div class="mem2 right">
+      <span>煉 子龍</span>
+      <p>
+      
+            「グアアアァァアァア！！！」
+      </p>
+      </div>
+      <div class="mem4 right">
+      <span>シトリー・スカーレット</span>
+      <p>
+      
+            「な、なんで…かわりにっ」
+      </p>
+      </div>
+      <div class="mem18 right">
+      <span>バロン・スレイト</span>
+      <p>
+      
+            「ふん、小娘をかばったか」
+      </p>
+      </div>
+      <div class="mem1 left">
+      <span>星丸 モモ</span>
+      <p>
+      
+            「ししょー！！」
+      </p>
+      </div>
+      <div class="mem1 left">
+      <span>星丸 モモ</span>
+      <p>
+      
+            《逆境のリブート》1/オート/自動成功/単体/近距離/1プラーナ/シーン1回/戦闘不能回復。HPは1
+      </p>
+      </div>
+      <div class="mem3 left">
+      <span>シージウ</span>
+      <p>
+      
+            「煉 子龍…」
+      </p>
+      </div>
+      <div class="kp LtoR-early">
+      
+            [ 星丸 モモ ] プラーナ : 5 → 4
+      </div>
+      <div class="mem2 right">
+      <span>煉 子龍</span>
+      <p>
+      
+            「フッ……データによると我々の中で最も打撃力があるのはスカーレット氏だ……」
+      </p>
+      </div>
+      <div class="mem2 right">
+      <span>煉 子龍</span>
+      <p>
+      
+            「それに……こちらには治癒にたけた我が弟子がいる！！」
+      </p>
+      </div>
+      <div class="mem18 right">
+      <span>バロン・スレイト</span>
+      <p>
+      
+            「ふん……」
+      </p>
+      </div>
+      <div class="mem2 right">
+      <span>煉 子龍</span>
+      <p>
+      
+            「星丸君！今こそパワーを！！」
+      </p>
+      </div>
+      <div class="mem4 right">
+      <span>シトリー・スカーレット</span>
+      <p>
+      
+            「っ…、やらせていただきます」
+      </p>
+      </div>
+      <div class="mem1 left">
+      <span>星丸 モモ</span>
+      <p>
+      
+            「弟子だけど！やるけど！」
+      </p>
+      </div>
+      <div class="mem18 right">
+      <span>バロン・スレイト</span>
+      <p>
+      
+            「だが我がしもべが先ぃ！」
+      </p>
+      </div>
+      <div class="mem1 left">
+      <span>星丸 モモ</span>
+      <p>
+      
+            「ほら回復！大事に使ってね！」
+      </p>
+      </div>
+      <div class="mem19 left">
+      <span>電子妖魔</span>
+      <p>
+      
+            「「「「ﾁｭｳ!!!」」」」
+      </p>
+      </div>
+      <div class="mem2 right">
+      <span>煉 子龍</span>
+      <p>
+      
+            「うぉおおおおお！」HP0→1
+      </p>
+      </div>
+      <div class="kp LtoR-early">
+      
+            [ 煉 子龍 ] HP : 28 → 1
+      </div>
+      <div class="kp LtoR-early">
+      
+            [ 煉 子龍 ] 情報ソース:交渉 : 1 → 0
+      </div>
+      <div class="mem19 left">
+      <span>電子妖魔</span>
+      <p>
+      
+            《16バイト》
+      </p>
+      </div>
+      <div class="mem19 left">
+      <span>電子妖魔</span>
+      <p>
+      
+            星丸　モモから
+      </p>
+      </div>
+      <div class="mem19 left">
+      <span>電子妖魔</span>
+      <p>
+      
+            命中:１９
+      </p>
+      </div>
+      <div class="mem1 left">
+      <span>星丸 モモ</span>
+      <p>
+      
+            6NW@11#10 回避ジャッジ (6NW@11#10) ＞ 6+6[2,4] ＞ 12
+            
+      </p>
+      </div>
+      <div class="mem19 left">
+      <span>電子妖魔</span>
+      <p>
+      
+            22ダメージ（物攻）
+      </p>
+      </div>
+      <div class="mem1 left">
+      <span>星丸 モモ</span>
+      <p>
+      
+            2NW@11#10 物防ジャッジ (2NW@11#10) ＞ 2+10[6,5]+10[6,5]+12[6,6] ＞ クリティカル ＞ 34
+            
+      </p>
+      </div>
+      <div class="mem2 right">
+      <span>煉 子龍</span>
+      <p>
+      
+            「あ、あれこそ少林寺に伝わる奥義！鉄塊！」
+      </p>
+      </div>
+      <div class="mem20 right">
+      <span>電子妖魔V2</span>
+      <p>
+      
+            煉 子龍 へ《16バイト》
+      </p>
+      </div>
+      <div class="mem1 left">
+      <span>星丸 モモ</span>
+      <p>
+      
+            「そんなわけなくない！？」
+      </p>
+      </div>
+      <div class="mem20 right">
+      <span>電子妖魔V2</span>
+      <p>
+      
+            「チュウ！」
+      </p>
+      </div>
+      <div class="mem2 right">
+      <span>煉 子龍</span>
+      <p>
+      
+            「さすが星丸君、既に使いこなしていたか」
+      </p>
+      </div>
+      <div class="mem20 right">
+      <span>電子妖魔V2</span>
+      <p>
+      
+            命中:１９
+      </p>
+      </div>
+      <div class="mem2 right">
+      <span>煉 子龍</span>
+      <p>
+      
+            8NW@7#9 回避ジャッジ (8NW@7#9) ＞ 8+10[3,4]+10[6,1]+8[4,4] ＞ クリティカル ＞ 36
+            
+      </p>
+      </div>
+      <div class="mem20 right">
+      <span>電子妖魔V2</span>
+      <p>
+      
+            「「チュウ！？」」
+      </p>
+      </div>
+      <div class="mem2 right">
+      <span>煉 子龍</span>
+      <p>
+      
+            「そしてこれが！攻撃を受け流す奥義！消力！！！」
+      </p>
+      </div>
+      <div class="mem2 right">
+      <span>煉 子龍</span>
+      <p>
+      
+            「これが中国4000年の力だ！」
+      </p>
+      </div>
+      <div class="mem3 left">
+      <span>シージウ</span>
+      <p>
+      
+            「真了不起（すばらしい」
+      </p>
+      </div>
+      <div class="mem21 left">
+      <span>電子妖魔V3</span>
+      <p>
+      
+            シージウへ《16バイト》
+      </p>
+      </div>
+      <div class="mem3 left">
+      <span>シージウ</span>
+      <p>
+      
+            10NW@8#5 回避ジャッジ (10NW@8#5) ＞ 10+10[2,6]+10[3,5]+7[5,2] ＞ クリティカル ＞ 37
+            
+      </p>
+      </div>
+      <div class="mem21 left">
+      <span>電子妖魔V3</span>
+      <p>
+      
+            命中:１９
+      </p>
+      </div>
+      <div class="mem21 left">
+      <span>電子妖魔V3</span>
+      <p>
+      
+            「チュウ……」
+      </p>
+      </div>
+      <div class="mem22 right">
+      <span>電子妖魔V4</span>
+      <p>
+      
+            シトリーへ《16バイト》
+      </p>
+      </div>
+      <div class="mem2 right">
+      <span>煉 子龍</span>
+      <p>
+      
+            「ﾌｯ……さすがは兄弟子ご存じでしたか」
+      </p>
+      </div>
+      <div class="mem22 right">
+      <span>電子妖魔V4</span>
+      <p>
+      
+            命中:１９
+      </p>
+      </div>
+      <div class="mem4 right">
+      <span>シトリー・スカーレット</span>
+      <p>
+      
+            9NW@7#12 回避ジャッジ (9NW@7#12) ＞ 9+8[4,4] ＞ 17
+            
+      </p>
+      </div>
+      <div class="mem22 right">
+      <span>電子妖魔V4</span>
+      <p>
+      
+            22ダメージ（物攻）
+      </p>
+      </div>
+      <div class="mem4 right">
+      <span>シトリー・スカーレット</span>
+      <p>
+      
+            5NW@7#12 物防ジャッジ (5NW@7#12) ＞ 5+8[3,5] ＞ 13
+            
+      </p>
+      </div>
+      <div class="kp LtoR-early">
+      
+            [ シトリー・スカーレット ] HP : 30 → 21
+      </div>
+      <div class="kp LtoR-early">
+      
+            　戦闘には時間制限がある。 3ラウンド目のクリンナッププロセスまでに戦闘終了しない場合、 月匣が崩壊し、 その時点でシーンから退場していないPCは死亡する。 この時間制限は、 情報収集シーンでかかった余分な1シーンごとに、1ラウンド短くなる (*)。<br>　帰り道のゲートは閉じられており、エネミーを無視して逃走はできない。 ただしバロン・スレ イトを倒すとゲートが開く。 電子妖魔が残っている場合でも、エリア外に [移動] できる。 エリア外に出たキャラクターは、シーンから退場する(*)。 エネミーが全滅するか、 PC全員が退場したら戦闘終了(*)。
+      </div>
+      <div class="mem1 left">
+      <span>星丸 モモ</span>
+      <p>
+      
+            《シューティングスター》1/メジャー/命中判定/単体/武器/なし/なし/魔法攻撃。【魔導】-2【魔攻】+5
+      </p>
+      </div>
+      <div class="mem1 left">
+      <span>星丸 モモ</span>
+      <p>
+      
+            12NW@11#10 魔導ジャッジ (12NW@11#10) ＞ 12+5[3,2] ＞ 17
+            
+      </p>
+      </div>
+      <div class="mem1 left">
+      <span>星丸 モモ</span>
+      <p>
+      
+            バロンに
+      </p>
+      </div>
+      <div class="mem18 right">
+      <span>バロン・スレイト</span>
+      <p>
+      
+            5NW@10#5 回避ジャッジ (5NW@10#5) ＞ 5+7[6,1] ＞ 12
+            
+      </p>
+      </div>
+      <div class="mem1 left">
+      <span>星丸 モモ</span>
+      <p>
+      
+            13NW@11#10 魔攻ジャッジ (13NW@11#10) ＞ 13+8[2,6] ＞ 21
+            
+      </p>
+      </div>
+      <div class="mem18 right">
+      <span>バロン・スレイト</span>
+      <p>
+      
+            2NW@10#5 魔防ジャッジ (2NW@10#5) ＞ 2+10[5,5]+6[3,3] ＞ クリティカル ＞ 18
+            
+      </p>
+      </div>
+      <div class="mem18 right">
+      <span>バロン・スレイト</span>
+      <p>
+      
+            「ふははははは！！」
+      </p>
+      </div>
+      <div class="mem1 left">
+      <span>星丸 モモ</span>
+      <p>
+      
+            「えっなんか高笑いしてる……こわ……当たったよね……？」
+      </p>
+      </div>
+      <div class="mem18 right">
+      <span>バロン・スレイト</span>
+      <p>
+      
+            「効かぬ！」
+      </p>
+      </div>
+      <div class="mem3 left">
+      <span>シージウ</span>
+      <p>
+      
+            特殊弾：魔力水晶弾マイナー。【物攻】＋3
+      </p>
+      </div>
+      <div class="kp LtoR-early">
+      
+            [ シージウ ] 魔力水晶弾 : 3 → 2
+      </div>
+      <div class="mem3 left">
+      <span>シージウ</span>
+      <p>
+      
+            12NW@8#5 命中ジャッジ (12NW@8#5) ＞ 12+10[6,4] ＞ 22
+            
+      </p>
+      </div>
+      <div class="mem18 right">
+      <span>バロン・スレイト</span>
+      <p>
+      
+            5NW@10#5 回避ジャッジ (5NW@10#5) ＞ 5+2[1,1] ＞ 7
+            
+      </p>
+      </div>
+      <div class="mem3 left">
+      <span>シージウ</span>
+      <p>
+      
+            20NW+3@8#5 物攻ジャッジ (20NW+3@8#5) ＞ 23+7[5,2] ＞ 30
+            
+      </p>
+      </div>
+      <div class="mem3 left">
+      <span>シージウ</span>
+      <p>
+      
+            20NW+13@8#5 物攻ジャッジ (20NW+13@8#5) ＞ 33+2[1,1] ＞ 35
+            
+      </p>
+      </div>
+      <div class="kp LtoR-early">
+      
+            [ シージウ ] プラーナ : 4 → 3
+      </div>
+      <div class="mem18 right">
+      <span>バロン・スレイト</span>
+      <p>
+      
+            10NW@10#5 物防ジャッジ (10NW@10#5) ＞ 10+6[2,4] ＞ 16
+            
+      </p>
+      </div>
+      <div class="mem18 right">
+      <span>バロン・スレイト</span>
+      <p>
+      
+            「ぬぅぅ！」
+      </p>
+      </div>
+      <div class="mem3 left">
+      <span>シージウ</span>
+      <p>
+      
+            「あなたもかちかちですね」
+      </p>
+      </div>
+      <div class="kp LtoR-early">
+      
+            [ 煉 子龍 ] プラーナ : 5 → 4
+      </div>
+      <div class="mem4 right">
+      <span>シトリー・スカーレット</span>
+      <p>
+      
+            「――標的。捕捉」
+      </p>
+      </div>
+      <div class="mem4 right">
+      <span>シトリー・スカーレット</span>
+      <p>
+      
+            《グランドスラム》1/ムーブ/自動成功/自身/なし/なし/兵器装備、シーン1回/物理攻撃を「対象：範囲選択」に
+      </p>
+      </div>
+      <div class="mem4 right">
+      <span>シトリー・スカーレット</span>
+      <p>
+      
+            《サイコポインター》2/マイナー/自動成功/自身/なし/7MP/兵器装備/【命中】+4
+      </p>
+      </div>
+      <div class="kp LtoR-early">
+      
+            [ シトリー・スカーレット ] MP : 13 → 6
+      </div>
+      <div class="mem4 right">
+      <span>シトリー・スカーレット</span>
+      <p>
+      
+            《ソニックアサルト》2/メジャー/命中判定/単体/武器/なし/搭載兵器使用、飛行状態/物理攻撃。【命中】-2、【物攻】+12
+      </p>
+      </div>
+      <div class="mem4 right">
+      <span>シトリー・スカーレット</span>
+      <p>
+      
+            ねずみ達に向けて
+      </p>
+      </div>
+      <div class="mem4 right">
+      <span>シトリー・スカーレット</span>
+      <p>
+      
+            9NW+4@7#12 命中ジャッジ (9NW+4@7#12) ＞ 13+11[6,5] ＞ 24
+            
+      </p>
+      </div>
+      <div class="mem19 left">
+      <span>電子妖魔</span>
+      <p>
+      
+            回避12
+      </p>
+      </div>
+      <div class="mem19 left">
+      <span>電子妖魔</span>
+      <p>
+      
+            命チュウ
+      </p>
+      </div>
+      <div class="mem4 right">
+      <span>シトリー・スカーレット</span>
+      <p>
+      
+            20NW+12@7#12 物攻ジャッジ (20NW+12@7#12) ＞ 32+3[1,2] ＞ 35
+            
+      </p>
+      </div>
+      <div class="mem4 right">
+      <span>シトリー・スカーレット</span>
+      <p>
+      
+            1プラーナ消費して、ダイスロールやり直しを選択
+      </p>
+      </div>
+      <div class="kp LtoR-early">
+      
+            [ シトリー・スカーレット ] プラーナ : 5 → 4
+      </div>
+      <div class="mem4 right">
+      <span>シトリー・スカーレット</span>
+      <p>
+      
+            20NW+12@7#12 物攻ジャッジ (20NW+12@7#12) ＞ 32+5[4,1] ＞ 37
+            
+      </p>
+      </div>
+      <div class="mem4 right">
+      <span>シトリー・スカーレット</span>
+      <p>
+      
+            プラーナ追加で2点使って、達成値の上昇させます
+      </p>
+      </div>
+      <div class="kp LtoR-early">
+      
+            [ シトリー・スカーレット ] プラーナ : 4 → 2
+      </div>
+      <div class="mem4 right">
+      <span>シトリー・スカーレット</span>
+      <p>
+      
+            4D6 (4D6) ＞ 16[3,5,2,6] ＞ 16
+            
+      </p>
+      </div>
+      <div class="mem19 left">
+      <span>電子妖魔</span>
+      <p>
+      
+            物防７
+      </p>
+      </div>
+      <div class="mem4 right">
+      <span>シトリー・スカーレット</span>
+      <p>
+      
+            「――これで始末です」
+      </p>
+      </div>
+      <div class="mem3 left">
+      <span>シージウ</span>
+      <p>
+      
+            「すっきりしましたね」
+      </p>
+      </div>
+      <div class="mem19 left">
+      <span>電子妖魔</span>
+      <p>
+      
+            「「「「チュウウウウウウウ！！！！！！」」」」
+      </p>
+      </div>
+      <div class="mem2 right">
+      <span>煉 子龍</span>
+      <p>
+      
+            ムーブ：なし<br>マイナー：MPヒールポーション<br>メジャー：MPヒールポーション
+      </p>
+      </div>
+      <div class="kp LtoR-early">
+      
+            [ 煉 子龍 ] MPヒールポーション : 2 → 0
+      </div>
+      <div class="mem2 right">
+      <span>煉 子龍</span>
+      <p>
+      
+            2d6 (2D6) ＞ 4[1,3] ＞ 4
+            
+      </p>
+      </div>
+      <div class="mem2 right">
+      <span>煉 子龍</span>
+      <p>
+      
+            2d6 (2D6) ＞ 10[6,4] ＞ 10
+            
+      </p>
+      </div>
+      <div class="kp LtoR-early">
+      
+            [ 煉 子龍 ] MP : 1 → 15
+      </div>
+      <div class="mem2 right">
+      <span>煉 子龍</span>
+      <p>
+      
+            「」ｺﾞｸｺﾞｸ
+      </p>
+      </div>
+      <div class="mem18 right">
+      <span>バロン・スレイト</span>
+      <p>
+      
+            「俺のしもべが全滅……だと……」
+      </p>
+      </div>
+      <div class="mem2 right">
+      <span>煉 子龍</span>
+      <p>
+      
+            医龍/1/クリンナップ/自動/単体☆/至近/なし/魔装所持/治癒力:5でHP回復。ラウンド進行時でない場合、シーン終了時に使用できる。
+      </p>
+      </div>
+      <div class="mem2 right">
+      <span>煉 子龍</span>
+      <p>
+      
+            NW+5 (NW+5@7#9) ＞ 5+10[4,3]+10[4,6] ＞ クリティカル ＞ 25
+            
+      </p>
+      </div>
+      <div class="mem2 right">
+      <span>煉 子龍</span>
+      <p>
+      
+            「スカーレット氏、これを」
+      </p>
+      </div>
+      <div class="mem4 right">
+      <span>シトリー・スカーレット</span>
+      <p>
+      
+            「あ、ありがとう、ございます」
+      </p>
+      </div>
+      <div class="kp LtoR-early">
+      
+            [ シトリー・スカーレット ] HP : 21 → 30
+      </div>
+      <div class="mem2 right">
+      <span>煉 子龍</span>
+      <p>
+      
+            「電脳空間に持ち込んだ甲斐があったようだ」
+      </p>
+      </div>
+      <div class="mem2 right">
+      <span>煉 子龍</span>
+      <p>
+      
+            アナライズ/〇/セットアップ/自動/単体/近/8MP/デッキ装備/エネミー識別ジャッジ（p241）を行う。
+      </p>
+      </div>
+      <div class="kp LtoR-early">
+      
+            [ 煉 子龍 ] MP : 15 → 7
+      </div>
+      <div class="kp LtoR-early">
+      
+            [ 星丸 モモ ] MP : 28 → 8
+      </div>
+      <div class="mem18 right">
+      <span>バロン・スレイト</span>
+      <p>
+      
+            セットアップ
+      </p>
+      </div>
+      <div class="mem2 right">
+      <span>煉 子龍</span>
+      <p>
+      
+            「バロン・スレイト……すでに貴様のデータは見切った！」
+      </p>
+      </div>
+      <div class="mem2 right">
+      <span>煉 子龍</span>
+      <p>
+      
+            6NW@7#9 理知ジャッジ (6NW@7#9) ＞ 6+8[4,4] ＞ 14
+            
+      </p>
+      </div>
+      <div class="mem2 right">
+      <span>煉 子龍</span>
+      <p>
+      
+            プラーナで-1
+      </p>
+      </div>
+      <div class="kp LtoR-early">
+      
+            [ 煉 子龍 ] プラーナ : 4 → 3
+      </div>
+      <div class="mem2 right">
+      <span>煉 子龍</span>
+      <p>
+      
+            「フッ……見切ったぞ！」
+      </p>
+      </div>
+      <div class="mem18 right">
+      <span>バロン・スレイト</span>
+      <p>
+      
+            「ぬ……！？まあいい……」
+      </p>
+      </div>
+      <div class="mem18 right">
+      <span>バロン・スレイト</span>
+      <p>
+      
+            18NW@10#5 行動値ジャッジ (18NW@10#5) ＞ 18+8[2,6] ＞ 26
+            
+      </p>
+      </div>
+      <div class="mem2 right">
+      <span>煉 子龍</span>
+      <p>
+      
+            14NW@7#9 行動値ジャッジ (14NW@7#9) ＞ 14+10[6,4] ＞ 24
+            
+      </p>
+      </div>
+      <div class="mem3 left">
+      <span>シージウ</span>
+      <p>
+      
+            13NW@8#5 行動値ジャッジ (13NW@8#5) ＞ 13+4[1,3] ＞ 17
+            
+      </p>
+      </div>
+      <div class="mem1 left">
+      <span>星丸 モモ</span>
+      <p>
+      
+            11NW@11#10 行動値ジャッジ (11NW@11#10) ＞ 11+2[1,1] ＞ 13
+            
+      </p>
+      </div>
+      <div class="mem4 right">
+      <span>シトリー・スカーレット</span>
+      <p>
+      
+            10NW@7#12 行動値ジャッジ (10NW@7#12) ＞ 10+10[4,3]+10[3,4]+8[2,6] ＞ クリティカル ＞ 38
+            
+      </p>
+      </div>
+      <div class="mem4 right">
+      <span>シトリー・スカーレット</span>
+      <p>
+      
+            ムーブ：なし<br>マイナー：MP回復
+      </p>
+      </div>
+      <div class="kp LtoR-early">
+      
+            [ シトリー・スカーレット ] MPヒールポーション : 2 → 1
+      </div>
+      <div class="mem4 right">
+      <span>シトリー・スカーレット</span>
+      <p>
+      
+            2D6 (2D6) ＞ 6[2,4] ＞ 6
+            
+      </p>
+      </div>
+      <div class="kp LtoR-early">
+      
+            [ シトリー・スカーレット ] MP : 6 → 12
+      </div>
+      <div class="mem4 right">
+      <span>シトリー・スカーレット</span>
+      <p>
+      
+            メジャーでソニックアサルト
+      </p>
+      </div>
+      <div class="mem4 right">
+      <span>シトリー・スカーレット</span>
+      <p>
+      
+            《ソニックアサルト》2/メジャー/命中判定/単体/武器/なし/搭載兵器使用、飛行状態/物理攻撃。【命中】-2、【物攻】+12
+      </p>
+      </div>
+      <div class="mem4 right">
+      <span>シトリー・スカーレット</span>
+      <p>
+      
+            9NW@7#12 命中ジャッジ (9NW@7#12) ＞ 9+5[3,2] ＞ 14
+            
+      </p>
+      </div>
+      <div class="mem18 right">
+      <span>バロン・スレイト</span>
+      <p>
+      
+            5NW@10#5 回避ジャッジ (5NW@10#5) ＞ 5-10[4,1] ＞ ファンブル ＞ -5
+            
+      </p>
+      </div>
+      <div class="mem18 right">
+      <span>バロン・スレイト</span>
+      <p>
+      
+            「なにぃ！？」
+      </p>
+      </div>
+      <div class="mem4 right">
+      <span>シトリー・スカーレット</span>
+      <p>
+      
+            「――ターゲット、ロックオン」
+      </p>
+      </div>
+      <div class="mem2 right">
+      <span>煉 子龍</span>
+      <p>
+      
+            「あれは！？」
+      </p>
+      </div>
+      <div class="mem4 right">
+      <span>シトリー・スカーレット</span>
+      <p>
+      
+            20NW+12@7#12 物攻ジャッジ (20NW+12@7#12) ＞ 32+6[5,1] ＞ 38
+            
+      </p>
+      </div>
+      <div class="mem4 right">
+      <span>シトリー・スカーレット</span>
+      <p>
+      
+            じゃそのままで
+      </p>
+      </div>
+      <div class="mem18 right">
+      <span>バロン・スレイト</span>
+      <p>
+      
+            10NW@10#5 物防ジャッジ (10NW@10#5) ＞ 10+8[5,3] ＞ 18
+            
+      </p>
+      </div>
+      <div class="kp LtoR-early">
+      
+            [ バロン・スレイト ] HP : 98 → 78
+            
+      </div>
+      <div class="mem4 right">
+      <span>シトリー・スカーレット</span>
+      <p>
+      
+            「喰らってください」
+      </p>
+      </div>
+      <div class="mem18 right">
+      <span>バロン・スレイト</span>
+      <p>
+      
+            「ぐおおおおお！！」
+      </p>
+      </div>
+      <div class="mem18 right">
+      <span>バロン・スレイト</span>
+      <p>
+      
+            「おのれぇ！」
+      </p>
+      </div>
+      <div class="mem18 right">
+      <span>バロン・スレイト</span>
+      <p>
+      
+            《デッドリー・スティング》耐え難い悪臭とともに体力を奪う魔法を放つ。至近の敵全体に魔法攻撃を行うこの攻撃でHPダメージを受けたキャラクターは、同時に[マヒ]を受ける。
+      </p>
+      </div>
+      <div class="mem2 right">
+      <span>煉 子龍</span>
+      <p>
+      
+            「あの構え！《デッドリー・スティング》を放つつもりか！？」
+      </p>
+      </div>
+      <div class="mem18 right">
+      <span>バロン・スレイト</span>
+      <p>
+      
+            対象全員
+      </p>
+      </div>
+      <div class="mem18 right">
+      <span>バロン・スレイト</span>
+      <p>
+      
+            15NW@10#5 魔導ジャッジ (15NW@10#5) ＞ 15+7[4,3] ＞ 22
+            
+      </p>
+      </div>
+      <div class="mem2 right">
+      <span>煉 子龍</span>
+      <p>
+      
+            8NW@7#9 回避ジャッジ (8NW@7#9) ＞ 8+6[4,2] ＞ 14
+            
+      </p>
+      </div>
+      <div class="kp LtoR-early">
+      
+            [ 煉 子龍 ] プラーナ : 3 → 2
+      </div>
+      <div class="mem2 right">
+      <span>煉 子龍</span>
+      <p>
+      
+            +1
+      </p>
+      </div>
+      <div class="mem3 left">
+      <span>シージウ</span>
+      <p>
+      
+            10NW@8#5 回避ジャッジ (10NW@8#5) ＞ 10+10[4,4]+7[6,1] ＞ クリティカル ＞ 27
+            
+      </p>
+      </div>
+      <div class="mem2 right">
+      <span>煉 子龍</span>
+      <p>
+      
+            8NW+10@7#9 回避ジャッジ  (8NW+10@7#9) ＞ 18+10[4,6] ＞ 28
+            
+      </p>
+      </div>
+      <div class="mem18 right">
+      <span>バロン・スレイト</span>
+      <p>
+      
+            「くらえぇ！《デッドリー・スティング》！！！！！」
+      </p>
+      </div>
+      <div class="mem1 left">
+      <span>星丸 モモ</span>
+      <p>
+      
+            6NW@11#10 回避ジャッジ (6NW@11#10) ＞ 6+9[4,5] ＞ 15
+            
+      </p>
+      </div>
+      <div class="mem4 right">
+      <span>シトリー・スカーレット</span>
+      <p>
+      
+            9NW@7#12 回避ジャッジ (9NW@7#12) ＞ 9+5[1,4] ＞ 14
+            
+      </p>
+      </div>
+      <div class="mem2 right">
+      <span>煉 子龍</span>
+      <p>
+      
+            「兄弟子！あれをやるぞ！」
+      </p>
+      </div>
+      <div class="mem3 left">
+      <span>シージウ</span>
+      <p>
+      
+            「？はやくお逃げなさい煉 子龍 」
+      </p>
+      </div>
+      <div class="mem2 right">
+      <span>煉 子龍</span>
+      <p>
+      
+            「クソッ！通じてない！」
+      </p>
+      </div>
+      <div class="mem18 right">
+      <span>バロン・スレイト</span>
+      <p>
+      
+            20NW@10#5 魔攻ジャッジ (20NW@10#5) ＞ 20+3[1,2] ＞ 23
+            
+      </p>
+      </div>
+      <div class="mem4 right">
+      <span>シトリー・スカーレット</span>
+      <p>
+      
+            4NW@7#12 魔防ジャッジ (4NW@7#12) ＞ 4+8[2,6] ＞ 12
+            
+      </p>
+      </div>
+      <div class="mem1 left">
+      <span>星丸 モモ</span>
+      <p>
+      
+            4NW@11#10 魔防ジャッジ (4NW@11#10) ＞ 4+7[3,4] ＞ 11
+            
+      </p>
+      </div>
+      <div class="mem2 right">
+      <span>煉 子龍</span>
+      <p>
+      
+            「ええい！消力（ｼｬｵﾘｰ）！」
+      </p>
+      </div>
+      <div class="kp LtoR-early">
+      
+            [ 星丸 モモ ] HP : 20 → 8
+      </div>
+      <div class="kp LtoR-early">
+      
+            [ シトリー・スカーレット ] HP : 30 → 19
+      </div>
+      <div class="mem2 right">
+      <span>煉 子龍</span>
+      <p>
+      
+            マイナー：HPヒールポーション<br>メジャー：攻撃
+      </p>
+      </div>
+      <div class="mem2 right">
+      <span>煉 子龍</span>
+      <p>
+      
+            2d6 回復 (2D6) ＞ 5[3,2] ＞ 5
+            
+      </p>
+      </div>
+      <div class="kp LtoR-early">
+      
+            [ 煉 子龍 ] HP : 1 → 6
+      </div>
+      <div class="kp LtoR-early">
+      
+            [ 煉 子龍 ] HPヒールポーション : 2 → 1
+      </div>
+      <div class="mem2 right">
+      <span>煉 子龍</span>
+      <p>
+      
+            5NW@7#9 命中ジャッジ (5NW@7#9) ＞ 5+10[1,6]+3[2,1] ＞ クリティカル ＞ 18
+            
+      </p>
+      </div>
+      <div class="mem18 right">
+      <span>バロン・スレイト</span>
+      <p>
+      
+            5NW@10#5 回避ジャッジ (5NW@10#5) ＞ 5+6[1,5] ＞ 11
+            
+      </p>
+      </div>
+      <div class="mem2 right">
+      <span>煉 子龍</span>
+      <p>
+      
+            13NW@7#9 物攻ジャッジ (13NW@7#9) ＞ 13+3[2,1] ＞ 16
+            
+      </p>
+      </div>
+      <div class="mem18 right">
+      <span>バロン・スレイト</span>
+      <p>
+      
+            10NW@10#5 物防ジャッジ (10NW@10#5) ＞ 10+9[4,5] ＞ 19
+            
+      </p>
+      </div>
+      <div class="mem3 left">
+      <span>シージウ</span>
+      <p>
+      
+            魔力水晶弾【物攻】＋3
+      </p>
+      </div>
+      <div class="mem2 right">
+      <span>煉 子龍</span>
+      <p>
+      
+            「何！わが吹火に動じないというのか！？」
+      </p>
+      </div>
+      <div class="kp LtoR-early">
+      
+            [ シージウ ] 魔力水晶弾 : 2 → 1
+      </div>
+      <div class="mem18 right">
+      <span>バロン・スレイト</span>
+      <p>
+      
+            「ふん……」
+      </p>
+      </div>
+      <div class="mem3 left">
+      <span>シージウ</span>
+      <p>
+      
+            12NW@8#5 命中ジャッジ (12NW@8#5) ＞ 12+9[3,6] ＞ 21
+            
+      </p>
+      </div>
+      <div class="mem18 right">
+      <span>バロン・スレイト</span>
+      <p>
+      
+            5NW@10#5 回避ジャッジ (5NW@10#5) ＞ 5+7[4,3] ＞ 12
+            
+      </p>
+      </div>
+      <div class="mem3 left">
+      <span>シージウ</span>
+      <p>
+      
+            《フライトマニューバ》1/ムーブ/自動成功/自身/なし/なし/飛行状態/離脱後、マイナーアクションが可能
+      </p>
+      </div>
+      <div class="mem3 left">
+      <span>シージウ</span>
+      <p>
+      
+            20NW+3@8#5 物攻ジャッジ (20NW+3@8#5) ＞ 23+7[4,3] ＞ 30
+            
+      </p>
+      </div>
+      <div class="mem18 right">
+      <span>バロン・スレイト</span>
+      <p>
+      
+            10NW@10#5 物防ジャッジ (10NW@10#5) ＞ 10+10[5,5]+6[2,4] ＞ クリティカル ＞ 26
+            
+      </p>
+      </div>
+      <div class="kp LtoR-early">
+      
+            [ バロン・スレイト ] HP : 78 → 74
+      </div>
+      <div class="mem3 left">
+      <span>シージウ</span>
+      <p>
+      
+            「なかなかたおれません」
+      </p>
+      </div>
+      <div class="mem1 left">
+      <span>星丸 モモ</span>
+      <p>
+      
+            《シューティングスター》1/メジャー/命中判定/単体/武器/なし/なし/魔法攻撃。【魔導】-2【魔攻】+5
+      </p>
+      </div>
+      <div class="mem1 left">
+      <span>星丸 モモ</span>
+      <p>
+      
+            12NW@11#10 魔導ジャッジ (12NW@11#10) ＞ 12+4[1,3] ＞ 16
+            
+      </p>
+      </div>
+      <div class="mem18 right">
+      <span>バロン・スレイト</span>
+      <p>
+      
+            5NW@10#5 回避ジャッジ (5NW@10#5) ＞ 5+6[2,4] ＞ 11
+            
+      </p>
+      </div>
+      <div class="mem1 left">
+      <span>星丸 モモ</span>
+      <p>
+      
+            13NW+5@11#10 魔攻ジャッジ (13NW+5@11#10) ＞ 18+7[5,2] ＞ 25
+            
+      </p>
+      </div>
+      <div class="mem18 right">
+      <span>バロン・スレイト</span>
+      <p>
+      
+            2NW@10#5 魔防ジャッジ (2NW@10#5) ＞ 2+7[3,4] ＞ 9
+            
+      </p>
+      </div>
+      <div class="kp LtoR-early">
+      
+            [ バロン・スレイト ] HP : 74 → 58
+      </div>
+      <div class="mem2 right">
+      <span>煉 子龍</span>
+      <p>
+      
+            医龍/1/クリンナップ/自動/単体☆/至近/なし/魔装所持/治癒力:5でHP回復。ラウンド進行時でない場合、シーン終了時に使用できる。
+      </p>
+      </div>
+      <div class="mem18 right">
+      <span>バロン・スレイト</span>
+      <p>
+      
+            「ガアアアアア！」
+      </p>
+      </div>
+      <div class="mem2 right">
+      <span>煉 子龍</span>
+      <p>
+      
+            NW+5 (NW+5@7#9) ＞ 5+11[5,6] ＞ 16
+            
+      </p>
+      </div>
+      <div class="kp LtoR-early">
+      
+            [ 星丸 モモ ] HP : 8 → 20
+      </div>
+      <div class="mem2 right">
+      <span>煉 子龍</span>
+      <p>
+      
+            「星丸君、これを」
+      </p>
+      </div>
+      <div class="mem1 left">
+      <span>星丸 モモ</span>
+      <p>
+      
+            「ありがとー……」
+      </p>
+      </div>
+      <div class="mem1 left">
+      <span>星丸 モモ</span>
+      <p>
+      
+            もきゅもきゅ
+      </p>
+      </div>
+      <div class="mem2 right">
+      <span>煉 子龍</span>
+      <p>
+      
+            「あと少しだ、最後まで気を抜くな」
+      </p>
+      </div>
+      <div class="kp LtoR-early">
+      
+            セットアップ
+      </div>
+      <div class="mem2 right">
+      <span>煉 子龍</span>
+      <p>
+      
+            14NW@7#9 行動値ジャッジ (14NW@7#9) ＞ 14+8[5,3] ＞ 22
+            
+      </p>
+      </div>
+      <div class="mem1 left">
+      <span>星丸 モモ</span>
+      <p>
+      
+            「はーい！あー！がんばる！」
+      </p>
+      </div>
+      <div class="mem3 left">
+      <span>シージウ</span>
+      <p>
+      
+            13NW@8#5 行動値ジャッジ (13NW@8#5) ＞ 13+9[5,4] ＞ 22
+            
+      </p>
+      </div>
+      <div class="mem18 right">
+      <span>バロン・スレイト</span>
+      <p>
+      
+            18NW@10#5 行動値ジャッジ (18NW@10#5) ＞ 18+11[6,5] ＞ 29
+            
+      </p>
+      </div>
+      <div class="mem1 left">
+      <span>星丸 モモ</span>
+      <p>
+      
+            11NW@11#10 行動値ジャッジ (11NW@11#10) ＞ 11+7[2,5] ＞ 18
+            
+      </p>
+      </div>
+      <div class="mem4 right">
+      <span>シトリー・スカーレット</span>
+      <p>
+      
+            10NW@7#12 行動値ジャッジ (10NW@7#12) ＞ 10+9[5,4] ＞ 19
+            
+      </p>
+      </div>
+      <div class="mem18 right">
+      <span>バロン・スレイト</span>
+      <p>
+      
+            《デッドリー・スティング》耐え難い悪臭とともに体力を奪う魔法を放つ。至近の敵全体に魔法攻撃を行うこの攻撃でHPダメージを受けたキャラクターは、同時に[マヒ]を受ける。
+      </p>
+      </div>
+      <div class="mem18 right">
+      <span>バロン・スレイト</span>
+      <p>
+      
+            「しねえええええ！！！」
+      </p>
+      </div>
+      <div class="mem18 right">
+      <span>バロン・スレイト</span>
+      <p>
+      
+            シージウ以外
+      </p>
+      </div>
+      <div class="mem2 right">
+      <span>煉 子龍</span>
+      <p>
+      
+            プロテクトウォール/SL1/オート/【回避】/単体/至近/なし/デッキ装備/魔法攻撃に対しての回避判定を代わりに行う。そのジャッジでは【回避】+2
+      </p>
+      </div>
+      <div class="mem2 right">
+      <span>煉 子龍</span>
+      <p>
+      
+            シトリーのを代わりに回避する
+      </p>
+      </div>
+      <div class="mem18 right">
+      <span>バロン・スレイト</span>
+      <p>
+      
+            15NW@10#5 魔導ジャッジ (15NW@10#5) ＞ 15-10[2,3] ＞ ファンブル ＞ 5
+            
+      </p>
+      </div>
+      <div class="mem2 right">
+      <span>煉 子龍</span>
+      <p>
+      
+            8NW@7#9 回避ジャッジ (8NW@7#9) ＞ 8+12[6,6] ＞ 20
+            
+      </p>
+      </div>
+      <div class="mem2 right">
+      <span>煉 子龍</span>
+      <p>
+      
+            8NW+2@7#9 回避ジャッジ (8NW+2@7#9) ＞ 10+5[3,2] ＞ 15
+            
+      </p>
+      </div>
+      <div class="mem1 left">
+      <span>星丸 モモ</span>
+      <p>
+      
+            6NW@11#10 回避ジャッジ (6NW@11#10) ＞ 6+3[1,2] ＞ 9
+            
+      </p>
+      </div>
+      <div class="mem18 right">
+      <span>バロン・スレイト</span>
+      <p>
+      
+            「な……っ！？」
+      </p>
+      </div>
+      <div class="mem2 right">
+      <span>煉 子龍</span>
+      <p>
+      
+            「（先ほどの動き……）スカーレット氏！私の動きに合わせるんだ！」
+      </p>
+      </div>
+      <div class="mem4 right">
+      <span>シトリー・スカーレット</span>
+      <p>
+      
+            「は、はい」
+      </p>
+      </div>
+      <div class="mem3 left">
+      <span>シージウ</span>
+      <p>
+      
+            魔力水晶弾【物攻】＋3
+      </p>
+      </div>
+      <div class="mem2 right">
+      <span>煉 子龍</span>
+      <p>
+      
+            「敵の攻撃に合わせて……身体を羽根のように……避ける！！」
+      </p>
+      </div>
+      <div class="kp LtoR-early">
+      
+            [ シージウ ] 魔力水晶弾 : 1 → 0
+      </div>
+      <div class="mem3 left">
+      <span>シージウ</span>
+      <p>
+      
+            12NW@8#5 命中ジャッジ (12NW@8#5) ＞ 12+9[4,5] ＞ 21
+            
+      </p>
+      </div>
+      <div class="mem18 right">
+      <span>バロン・スレイト</span>
+      <p>
+      
+            5NW@10#5 回避ジャッジ (5NW@10#5) ＞ 5+7[4,3] ＞ 12
+            
+      </p>
+      </div>
+      <div class="mem3 left">
+      <span>シージウ</span>
+      <p>
+      
+            20NW+3@8#5 物攻ジャッジ (20NW+3@8#5) ＞ 23-10[2,3] ＞ ファンブル ＞ 13
+            
+      </p>
+      </div>
+      <div class="mem3 left">
+      <span>シージウ</span>
+      <p>
+      
+            《幻想舞踏》1/ジャッジの直後/自動成功/自身/なし/1プラーナ/シーン1回/ダイスをC値に（F値でも使用可）
+      </p>
+      </div>
+      <div class="mem3 left">
+      <span>シージウ</span>
+      <p>
+      
+            20NW+13@8#5 物攻ジャッジ (20NW+13@8#5) ＞ 33+12[6,6] ＞ 45
+            
+      </p>
+      </div>
+      <div class="mem2 right">
+      <span>煉 子龍</span>
+      <p>
+      
+            「これぞ中国4000年の技！消力（ｼｬｵﾘｰ）！」
+      </p>
+      </div>
+      <div class="mem18 right">
+      <span>バロン・スレイト</span>
+      <p>
+      
+            10NW@10#5 物防ジャッジ (10NW@10#5) ＞ 10+10[4,6]+4[2,2] ＞ クリティカル ＞ 24
+            
+      </p>
+      </div>
+      <div class="kp LtoR-early">
+      
+            [ バロン・スレイト ] HP : 58 → 37
+      </div>
+      <div class="mem3 left">
+      <span>シージウ</span>
+      <p>
+      
+            「…見切られていますね」
+      </p>
+      </div>
+      <div class="kp LtoR-early">
+      
+            [ シージウ ] プラーナ : 3 → 2
+      </div>
+      <div class="kp LtoR-early">
+      
+            [ シージウ ] プラーナ : 2 → 0
+      </div>
+      <div class="mem3 left">
+      <span>シージウ</span>
+      <p>
+      
+            4ｄ6 (4D6) ＞ 14[2,5,2,5] ＞ 14
+            
+      </p>
+      </div>
+      <div class="mem18 right">
+      <span>バロン・スレイト</span>
+      <p>
+      
+            《窮鼠の身のこなし》受ける予定のダメージを-１０
+      </p>
+      </div>
+      <div class="kp LtoR-early">
+      
+            [ バロン・スレイト ] HP : 37 → 33
+      </div>
+      <div class="mem3 left">
+      <span>シージウ</span>
+      <p>
+      
+            「あとはまかせます」
+      </p>
+      </div>
+      <div class="mem2 right">
+      <span>煉 子龍</span>
+      <p>
+      
+            5NW@7#9 命中ジャッジ (5NW@7#9) ＞ 5+6[3,3] ＞ 11
+            
+      </p>
+      </div>
+      <div class="mem18 right">
+      <span>バロン・スレイト</span>
+      <p>
+      
+            5NW@10#5 回避ジャッジ (5NW@10#5) ＞ 5+9[6,3] ＞ 14
+            
+      </p>
+      </div>
+      <div class="mem18 right">
+      <span>バロン・スレイト</span>
+      <p>
+      
+            「俺にこれを使わせるとは」
+      </p>
+      </div>
+      <div class="mem2 right">
+      <span>煉 子龍</span>
+      <p>
+      
+            「何！？中国4000年の攻撃が効かないだと！？」
+      </p>
+      </div>
+      <div class="mem4 right">
+      <span>シトリー・スカーレット</span>
+      <p>
+      
+            《ソニックアサルト》2/メジャー/命中判定/単体/武器/なし/搭載兵器使用、飛行状態/物理攻撃。【命中】-2、【物攻】+12
+      </p>
+      </div>
+      <div class="mem4 right">
+      <span>シトリー・スカーレット</span>
+      <p>
+      
+            9NW@7#12 命中ジャッジ (9NW@7#12) ＞ 9+8[6,2] ＞ 17
+            
+      </p>
+      </div>
+      <div class="mem18 right">
+      <span>バロン・スレイト</span>
+      <p>
+      
+            5NW@10#5 回避ジャッジ (5NW@10#5) ＞ 5+7[2,5] ＞ 12
+            
+      </p>
+      </div>
+      <div class="mem4 right">
+      <span>シトリー・スカーレット</span>
+      <p>
+      
+            20NW+12@7#12 物攻ジャッジ (20NW+12@7#12) ＞ 32+6[2,4] ＞ 38
+            
+      </p>
+      </div>
+      <div class="mem4 right">
+      <span>シトリー・スカーレット</span>
+      <p>
+      
+            1点プラーナを使って、クリティカルに
+      </p>
+      </div>
+      <div class="kp LtoR-early">
+      
+            [ シトリー・スカーレット ] プラーナ : 2 → 1
+      </div>
+      <div class="mem4 right">
+      <span>シトリー・スカーレット</span>
+      <p>
+      
+            20NW+22@7#12 物攻ジャッジ (20NW+22@7#12) ＞ 42+4[2,2] ＞ 46
+            
+      </p>
+      </div>
+      <div class="mem4 right">
+      <span>シトリー・スカーレット</span>
+      <p>
+      
+            プラーナを使って達成値足します。
+      </p>
+      </div>
+      <div class="kp LtoR-early">
+      
+            [ シトリー・スカーレット ] プラーナ : 1 → 0
+      </div>
+      <div class="mem4 right">
+      <span>シトリー・スカーレット</span>
+      <p>
+      
+            2D6 (2D6) ＞ 9[6,3] ＞ 9
+            
+      </p>
+      </div>
+      <div class="mem1 left">
+      <span>星丸 モモ</span>
+      <p>
+      
+            じゃあ歌ってます
+      </p>
+      </div>
+      <div class="mem18 right">
+      <span>バロン・スレイト</span>
+      <p>
+      
+            10NW@10#5 物防ジャッジ (10NW@10#5) ＞ 10+3[1,2] ＞ 13
+            
+      </p>
+      </div>
+      <div class="kp LtoR-early">
+      
+            [ バロン・スレイト ] HP : 33 → 0
+      </div>
+      <div class="mem4 right">
+      <span>シトリー・スカーレット</span>
+      <p>
+      
+            「――とどめだ」
+      </p>
+      </div>
+      <div class="mem2 right">
+      <span>煉 子龍</span>
+      <p>
+      
+            「これが……中国4000年の力だ！！」
+      </p>
+      </div>
+      <div class="mem1 left">
+      <span>星丸 モモ</span>
+      <p>
+      
+            「ほんとに？」
+      </p>
+      </div>
+      <div class="mem18 right">
+      <span>バロン・スレイト</span>
+      <p>
+      
+            「ウアアアアアアアアアアア！！！！！」
+      </p>
+      </div>
+      <div class="mem18 right">
+      <span>バロン・スレイト</span>
+      <p>
+      
+            「おのれウィザードォっ！！黒騎士様ぁ……申し訳、ありません……」
+      </p>
+      </div>
+      <div class="mem2 right">
+      <span>煉 子龍</span>
+      <p>
+      
+            「電子の藻屑へ帰るがいい！」
+      </p>
+      </div>
+      <div class="mem18 right">
+      <span>バロン・スレイト</span>
+      <p>
+      
+            「あああああああ！！！」
+      </p>
+      </div>
+      <div class="kp LtoR-early">
+      
+            バロン・スレイトは死んだ
+      </div>
+      <div class="mem2 right">
+      <span>煉 子龍</span>
+      <p>
+      
+            「フッ……他愛なし。皆の勝利だ！」
+      </p>
+      </div>
+      <div class="mem3 left">
+      <span>シージウ</span>
+      <p>
+      
+            「たおれましたね。早く出ましょう」
+      </p>
+      </div>
+      <div class="mem4 right">
+      <span>シトリー・スカーレット</span>
+      <p>
+      
+            「――戦闘終了」
+      </p>
+      </div>
+      <div class="mem1 left">
+      <span>星丸 モモ</span>
+      <p>
+      
+            「最後にかっこよく決めたかったのになー。まぁいいや。えいえい」ダメ押しに死体蹴り
+      </p>
+      </div>
+      <div class="kp LtoR-early">
+      
+            キミたちは無事に任務を達成したーー
+      </div>
+      <div class="mem5 left">
+      <span>GM</span>
+      <p>
+      
+            シーン終
+      </p>
+      </div>
+      <div class="mem5 left">
+      <span>GM</span>
+      <p>
+      
+            エンディングフェイズ
+      </p>
+      </div>
+      <div class="mem5 left">
+      <span>GM</span>
+      <p>
+      
+            ●シーン11: くれはの無事を確認 <br>シーンプレイヤー4
+      </p>
+      </div>
+      <div class="kp LtoR-early">
+      
+            事件後、 赤羽くれはを訪ねると、すっかり元気を取り戻している。茶菓子を振る舞いながらキミに礼を言う。
+      </div>
+      <div class="mem4 right">
+      <span>シトリー・スカーレット</span>
+      <p>
+      
+            「げ、元気になられて、よかったです」
+      </p>
+      </div>
+      <div class="mem6 right">
+      <span>赤羽くれは</span>
+      <p>
+      
+            「ありがとうシトリーちゃん。おかげで助かったよ」
+      </p>
+      </div>
+      <div class="mem4 right">
+      <span>シトリー・スカーレット</span>
+      <p>
+      
+            「今後も、パソコンのメンテナンスは行ってください、ね。また、こんなことがないように…」
+      </p>
+      </div>
+      <div class="mem6 right">
+      <span>赤羽くれは</span>
+      <p>
+      
+            「はわわ、りょうかいー」
+      </p>
+      </div>
+      <div class="mem15 left">
+      <span>魔王ベール＝ゼファー</span>
+      <p>
+      
+            「まったく、あんなやつにやられてんじゃないわよ」
+      </p>
+      </div>
+      <div class="mem4 right">
+      <span>シトリー・スカーレット</span>
+      <p>
+      
+            「あ、遊びにきて、たんですね」
+      </p>
+      </div>
+      <div class="mem15 left">
+      <span>魔王ベール＝ゼファー</span>
+      <p>
+      
+            「お見舞いにきてやったのよ」
+      </p>
+      </div>
+      <div class="mem4 right">
+      <span>シトリー・スカーレット</span>
+      <p>
+      
+            「友達、思いなのですね」
+      </p>
+      </div>
+      <div class="mem15 left">
+      <span>魔王ベール＝ゼファー</span>
+      <p>
+      
+            「べつにそんなんじゃないし」
+      </p>
+      </div>
+      <div class="mem4 right">
+      <span>シトリー・スカーレット</span>
+      <p>
+      
+            「そう、なんですね」
+      </p>
+      </div>
+      <div class="mem6 right">
+      <span>赤羽くれは</span>
+      <p>
+      
+            「はわわ、二人ともありがとうー」
+      </p>
+      </div>
+      <div class="mem6 right">
+      <span>赤羽くれは</span>
+      <p>
+      
+            「まあゆっくりお茶で も飲んでいってよ」
+      </p>
+      </div>
+      <div class="mem4 right">
+      <span>シトリー・スカーレット</span>
+      <p>
+      
+            「では、失礼、して」
+      </p>
+      </div>
+      <div class="mem5 left">
+      <span>GM</span>
+      <p>
+      
+            ●シーン 12:黒騎士復活ならず<br>シーンプレイヤー: PC③ 
+      </p>
+      </div>
+      <div class="kp LtoR-early">
+      
+            事件後、街の片隅で黒騎士の力の一部が 顕現した影の騎士の生き残りを見つける。だが、もう人を襲う力は残っていない。 口惜しそうに身を震わせながら、力尽きつつある。
+      </div>
+      <div class="mem13 left">
+      <span>黒い騎士</span>
+      <p>
+      
+            「おのれ ウィザード・・・・・・」
+      </p>
+      </div>
+      <div class="mem3 left">
+      <span>シージウ</span>
+      <p>
+      
+            「残っていました。…おそうじしておきましょうか」
+      </p>
+      </div>
+      <div class="mem13 left">
+      <span>黒い騎士</span>
+      <p>
+      
+            「ぐぁぁぁぁ……」
+      </p>
+      </div>
+      <div class="mem3 left">
+      <span>シージウ</span>
+      <p>
+      
+            「さて、久々にオトウトにも会えました。オトウサンにおはなしがたくさんできますね」
+      </p>
+      </div>
+      <div class="mem13 left">
+      <span>黒い騎士</span>
+      <p>
+      
+            「これで終わりだとおもうな……いつか四騎士様は復活し、この世界を……」
+      </p>
+      </div>
+      <div class="mem13 left">
+      <span>黒い騎士</span>
+      <p>
+      
+            「…………」
+      </p>
+      </div>
+      <div class="mem3 left">
+      <span>シージウ</span>
+      <p>
+      
+            「めでたしめでたし」立ち去ります
+      </p>
+      </div>
+      <div class="mem5 left">
+      <span>GM</span>
+      <p>
+      
+            ●シーン13:研究所の再生 <br>シーンプレイヤー: PC②
+      </p>
+      </div>
+      <div class="kp LtoR-early">
+      
+            事件後、 医療科学研究所を訪れると、 水上はほっと肩をなでおろしている。
+      </div>
+      <div class="mem9 left">
+      <span>水上 聖</span>
+      <p>
+      
+             「研究所の異変は、すべてコンピュータ・ウィルスのせいだったようです」 
+      </p>
+      </div>
+      <div class="mem9 left">
+      <span>水上 聖</span>
+      <p>
+      
+            「現在はマシンも復旧し、所員も健康を取り戻しています。 これで安心でしょう」
+      </p>
+      </div>
+      <div class="mem2 right">
+      <span>煉 子龍</span>
+      <p>
+      
+            「フッ、当然だな。私の薬膳料理も振舞っておいた」
+      </p>
+      </div>
+      <div class="mem9 left">
+      <span>水上 聖</span>
+      <p>
+      
+            「ほう、中国4000年の？」
+      </p>
+      </div>
+      <div class="mem2 right">
+      <span>煉 子龍</span>
+      <p>
+      
+            「彼らもすぐに良くなるだろう……この煉に掛かれば造作もないことだった」
+      </p>
+      </div>
+      <div class="mem2 right">
+      <span>煉 子龍</span>
+      <p>
+      
+            「当然！……だが今回の件で私も反省すべきところはある」
+      </p>
+      </div>
+      <div class="mem9 left">
+      <span>水上 聖</span>
+      <p>
+      
+            「それはいったい……？」
+      </p>
+      </div>
+      <div class="mem2 right">
+      <span>煉 子龍</span>
+      <p>
+      
+            「中国4000年のデータに頼り切り、データにない事柄に対する事態に後手を取ってしまったことだ」
+      </p>
+      </div>
+      <div class="mem9 left">
+      <span>水上 聖</span>
+      <p>
+      
+            「科学は常に進化をしている……」
+      </p>
+      </div>
+      <div class="mem2 right">
+      <span>煉 子龍</span>
+      <p>
+      
+            「その通りだな。くしくも今回の事件で多くの縁が生まれた……これからはこの煉が紡ぐ400”1”年目を御覧に入れよう」
+      </p>
+      </div>
+      <div class="mem9 left">
+      <span>水上 聖</span>
+      <p>
+      
+            「ふふ、期待していますよ」
+      </p>
+      </div>
+      <div class="mem2 right">
+      <span>煉 子龍</span>
+      <p>
+      
+            「さて、ではこれで失礼する。これから早速修練なのでね」
+      </p>
+      </div>
+      <div class="mem9 left">
+      <span>水上 聖</span>
+      <p>
+      
+             「ご苦労さまです煉 子龍 。 あなたのおかげで、危機は去りました。 すばらしい成果です」
+      </p>
+      </div>
+      <div class="mem2 right">
+      <span>煉 子龍</span>
+      <p>
+      
+            「また用事があったら呼んでくれ。再见（また会おう）！」
+      </p>
+      </div>
+      <div class="mem9 left">
+      <span>水上 聖</span>
+      <p>
+      
+            「ええ、今後の活躍も祈っていますよ」
+      </p>
+      </div>
+      <div class="mem5 left">
+      <span>GM</span>
+      <p>
+      
+            ●シーン14: 平穏の訪れ <br>シーンプレイヤー:PC①
+      </p>
+      </div>
+      <div class="kp LtoR-early">
+      
+            事件後、キミの日常は平穏に戻った。 ウェ ブを覗けば、 何もかも元どおりになっている。
+      </div>
+      <div class="kp LtoR-early">
+      
+            星丸 モモのブログは事件前の状態に戻っている。誰も異常が起こったことに気づいてい ない。 世界結界が “非常識” な事態を修正し、 イノセントには星丸 モモのブログに起こったことが記憶されていない。
+      </div>
+      <div class="mem11 left">
+      <span>コメント欄の書き込み</span>
+      <p>
+      
+            「こんにちは。 いつも見ています」 
+      </p>
+      </div>
+      <div class="mem11 left">
+      <span>コメント欄の書き込み</span>
+      <p>
+      
+            「モモさんのブログが荒れているというニュースを見て覗きにきましたが、 別に荒れてないですね。 やっぱりデマでしたか」 
+      </p>
+      </div>
+      <div class="mem1 left">
+      <span>星丸 モモ</span>
+      <p>
+      
+            「よかったー元通り！炎上もしてない！えーと……」
+      </p>
+      </div>
+      <div class="mem1 left">
+      <span>星丸 モモ</span>
+      <p>
+      
+            『そんなニュースがあったんだね！？大丈夫、アタシはいつも通り元気にここにいるよ！』大嘘
+      </p>
+      </div>
+      <div class="mem11 left">
+      <span>コメント欄の書き込み</span>
+      <p>
+      
+            「これからも頑張ってください」 
+      </p>
+      </div>
+      <div class="mem1 left">
+      <span>星丸 モモ</span>
+      <p>
+      
+            『もちろん！これからもみんなよろしくね☆もし荒れちゃったとしても、みんなは味方でいてくれるとうれしいかなぁ……えへへっ』
+      </p>
+      </div>
+      <div class="mem11 left">
+      <span>コメント欄の書き込み</span>
+      <p>
+      
+            「もちろんです！！」
+      </p>
+      </div>
+      <div class="mem11 left">
+      <span>コメント欄の書き込み</span>
+      <p>
+      
+            「星丸 モモしか勝たん」
+      </p>
+      </div>
+      <div class="mem11 left">
+      <span>コメント欄の書き込み</span>
+      <p>
+      
+            「応援してます。。。」
+      </p>
+      </div>
+      <div class="mem1 left">
+      <span>星丸 モモ</span>
+      <p>
+      
+            「みんながいるから頑張れちゃうよ～！いつもほんとにありがとー！またいっぱいライブとかもするから、よかったらみんな見にきてね♡」
+      </p>
+      </div>
+      <div class="mem1 left">
+      <span>星丸 モモ</span>
+      <p>
+      
+            自撮りを載せます
+      </p>
+      </div>
+      <div class="mem11 left">
+      <span>コメント欄の書き込み</span>
+      <p>
+      
+            「「「うおおおお！！！」」」
+      </p>
+      </div>
+      <div class="mem1 left">
+      <span>星丸 モモ</span>
+      <p>
+      
+            ひとつひとつに返信しつつ「やっぱ平和がいちばんだねー。ふふ、いつかイノセントも侵魔もみーんな虜にしちゃうから！」
+      </p>
+      </div>
+      <div class="mem1 left">
+      <span>星丸 モモ</span>
+      <p>
+      
+            「せかい、まぁるく、しあわせにー」
+      </p>
+      </div>
+      <div class="kp LtoR-early">
+      
+            ナイトウィザード3rd『The_3rd_Seal』ー完ー
+      </div>
+      <div class="mem3 left">
+      <span>シージウ</span>
+      <p>
+      
+            おつかれさまでした！！
+      </p>
+      </div>
+      <div class="mem4 right">
+      <span>シトリー・スカーレット</span>
+      <p>
+      
+            おつかれさまでした！！
+      </p>
+      </div>
+      <div class="mem1 left">
+      <span>星丸 モモ</span>
+      <p>
+      
+            おつかれさまでした！！
+      </p>
+      </div>
+      <div class="kp LtoR-early">
+      
+            おつかれさまでした
+      </div>
+      <div class="mem2 right">
+      <span>煉 子龍</span>
+      <p>
+      
+            乙
+      </p>
+      </div>
+      <div class="kp LtoR-early">
+      
+            経験点：10点
+      </div>
+      </div>
+      
+
+<br><br>
+</div></div>
+<script src="../logCon_Respon.js"></script>
+</body></html>
