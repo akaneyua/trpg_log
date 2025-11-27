@@ -1,0 +1,14392 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<title>log</title>
+<meta http-equiv="content-type" charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+<link rel="stylesheet" href="../logCon_Respon.css">
+<style>
+    /* main css */
+    .bg-inner.bg1{background:url('./朝晨星sideT/背景：主題.jpeg') no-repeat center/cover;}
+    .bg-inner.bg2{background:url('./朝晨星sideT/背景：桟橋.png') no-repeat center/cover;}
+    .bg-inner.bg3{background:url('./朝晨星sideT/背景：始星源.png') no-repeat center/cover;}
+    .bg-inner.bg4{background:url('./朝晨星sideT/背景：平地.png') no-repeat center/cover;}
+    .bg-inner.bg5{background:url('./朝晨星sideT/背景：水中.png') no-repeat center/cover;}
+    .bg-inner.bg6{background:url('./朝晨星sideT/背景：高所.png') no-repeat center/cover;}
+    .bg-inner.bg7{background:url('./朝晨星sideT/背景：悪天候.png') no-repeat center/cover;}
+    .bg-inner.bg8{background:url('./朝晨星sideT/背景：雑踏.png') no-repeat center/cover;}
+    .bg-inner.bg9{background:url('./朝晨星sideT/背景：極地.png') no-repeat center/cover;}
+    .bg-inner.bg10{background:url('./朝晨星sideT/背景：マスターシーン.png') no-repeat center/cover;}
+    .bg-inner.bg11{background:url('./朝晨星sideT/背景：題名.png') no-repeat center/cover;}
+   
+    /* member */
+    .mem1 p{border:2px solid rgb(136, 136, 136);box-shadow:5px 5px 0 rgb(136, 136, 136);}
+.mem1 p:after{border-right-color:rgb(136, 136, 136);}
+.mem1 span{background:rgb(136, 136, 136);color:#fff;}
+.mem1:before{content:'';background-image:url('./朝晨星sideT/GM.png');background-size:contain;background-repeat:no-repeat;background-position:center center;width:90px;height:90px;}
+.mem2 p{border:2px solid rgb(224, 224, 224);box-shadow:5px 5px 0 rgb(224, 224, 224);}
+.mem2 p:after{border-left-color:rgb(224, 224, 224);}
+.mem2 span{background:rgb(224, 224, 224);color:#000;}
+.mem2:before{content:'';background-image:url('./朝晨星sideT/参\ 宿七。通常.png');background-size:contain;background-repeat:no-repeat;background-position:center center;width:90px;height:90px;}
+.mem2-1:before{content:'';background-image:url('./朝晨星sideT/参\ 宿七。怒り.png');background-size:contain;background-repeat:no-repeat;background-position:center center;width:90px;height:90px;}
+.mem2-2:before{content:'';background-image:url('./朝晨星sideT/参\ 宿七。微笑み.png');background-size:contain;background-repeat:no-repeat;background-position:center center;width:90px;height:90px;}
+.mem2-3:before{content:'';background-image:url('./朝晨星sideT/参\ 宿七。目閉じ.png');background-size:contain;background-repeat:no-repeat;background-position:center center;width:90px;height:90px;}
+.mem3 p{border:2px solid rgb(0, 150, 136);box-shadow:5px 5px 0 rgb(0, 150, 136);}
+.mem3 p:after{border-right-color:rgb(0, 150, 136);}
+.mem3 span{background:rgb(0, 150, 136);color:#fff;}
+.mem3:before{content:'';background-image:url('./朝晨星sideT/白蓮。哀.png');background-size:contain;background-repeat:no-repeat;background-position:center center;width:90px;height:90px;}
+.mem3-1:before{content:'';background-image:url('./朝晨星sideT/白蓮。楽.png');background-size:contain;background-repeat:no-repeat;background-position:center center;width:90px;height:90px;}
+.mem3-2:before{content:'';background-image:url('./朝晨星sideT/白蓮。喜.png');background-size:contain;background-repeat:no-repeat;background-position:center center;width:90px;height:90px;}
+.mem3-3:before{content:'';background-image:url('./朝晨星sideT/白蓮。癇癪.png');background-size:contain;background-repeat:no-repeat;background-position:center center;width:90px;height:90px;}
+.mem3-4:before{content:'';background-image:url('./朝晨星sideT/白蓮。奥義.png');background-size:contain;background-repeat:no-repeat;background-position:center center;width:90px;height:90px;}
+.mem4 p{border:2px solid rgb(255, 255, 0);box-shadow:5px 5px 0 rgb(255, 255, 0);}
+.mem4 p:after{border-left-color:rgb(255, 255, 0);}
+.mem4 span{background:rgb(255, 255, 0);color:#000;}
+.mem4:before{content:'';background-image:url('./朝晨星sideT/蓮四。通常.png');background-size:contain;background-repeat:no-repeat;background-position:center center;width:90px;height:90px;}
+.mem4-1:before{content:'';background-image:url('./朝晨星sideT/蓮四。挑発.png');background-size:contain;background-repeat:no-repeat;background-position:center center;width:90px;height:90px;}
+.mem4-2:before{content:'';background-image:url('./朝晨星sideT/蓮四。おこ.png');background-size:contain;background-repeat:no-repeat;background-position:center center;width:90px;height:90px;}
+.mem4-3:before{content:'';background-image:url('./朝晨星sideT/蓮四。おそう.png');background-size:contain;background-repeat:no-repeat;background-position:center center;width:90px;height:90px;}
+.mem4-4:before{content:'';background-image:url('./朝晨星sideT/蓮四。魔血.png');background-size:contain;background-repeat:no-repeat;background-position:center center;width:90px;height:90px;}
+.mem4-5:before{content:'';background-image:url('./朝晨星sideT/蓮四。獣通常.png');background-size:contain;background-repeat:no-repeat;background-position:center center;width:90px;height:90px;}
+.mem4-6:before{content:'';background-image:url('./朝晨星sideT/蓮四。獣奥義.png');background-size:contain;background-repeat:no-repeat;background-position:center center;width:90px;height:90px;}
+.mem4-7:before{content:'';background-image:url('./朝晨星sideT/蓮四。うれしい.png');background-size:contain;background-repeat:no-repeat;background-position:center center;width:90px;height:90px;}
+.mem5 p{border:2px solid rgb(233, 30, 99);box-shadow:5px 5px 0 rgb(233, 30, 99);}
+.mem5 p:after{border-right-color:rgb(233, 30, 99);}
+.mem5 span{background:rgb(233, 30, 99);color:#000;}
+.mem5:before{content:'';background-image:url('./朝晨星sideT/雲樵。通常.png');background-size:contain;background-repeat:no-repeat;background-position:center center;width:90px;height:90px;}
+.mem5-1:before{content:'';background-image:url('./朝晨星sideT/雲樵。全身.png');background-size:contain;background-repeat:no-repeat;background-position:center center;width:90px;height:90px;}
+.mem5-2:before{content:'';background-image:url('./朝晨星sideT/雲樵。喜び.png');background-size:contain;background-repeat:no-repeat;background-position:center center;width:90px;height:90px;}
+.mem5-3:before{content:'';background-image:url('./朝晨星sideT/雲樵。焦り.png');background-size:contain;background-repeat:no-repeat;background-position:center center;width:90px;height:90px;}
+.mem5-4:before{content:'';background-image:url('./朝晨星sideT/雲樵。怒り.png');background-size:contain;background-repeat:no-repeat;background-position:center center;width:90px;height:90px;}
+.mem5-5:before{content:'';background-image:url('./朝晨星sideT/雲樵。落ち込み.png');background-size:contain;background-repeat:no-repeat;background-position:center center;width:90px;height:90px;}
+.mem5-6:before{content:'';background-image:url('./朝晨星sideT/雲樵。さっぱり.png');background-size:contain;background-repeat:no-repeat;background-position:center center;width:90px;height:90px;}
+.mem6 p{border:2px solid rgb(136, 136, 136);box-shadow:5px 5px 0 rgb(136, 136, 136);}
+.mem6 p:after{border-left-color:rgb(136, 136, 136);}
+.mem6 span{background:rgb(136, 136, 136);color:#fff;}
+.mem6:before{content:'';background-image:url('6.png');background-size:contain;background-repeat:no-repeat;background-position:center center;width:90px;height:90px;}
+.mem7 p{border:2px solid rgb(136, 136, 136);box-shadow:5px 5px 0 rgb(136, 136, 136);}
+.mem7 p:after{border-right-color:rgb(136, 136, 136);}
+.mem7 span{background:rgb(136, 136, 136);color:#fff;}
+.mem7:before{content:'';background-image:url('./朝晨星sideT/GM.png');background-size:contain;background-repeat:no-repeat;background-position:center center;width:90px;height:90px;}
+    
+    @media only screen and (max-width: 768px) {
+        .mem1 p:after{border-right-color:rgb(136, 136, 136);border-left-color:transparent;}
+        .mem2 p:after{border-right-color:rgb(224, 224, 224);border-left-color:transparent;}
+        .mem3 p:after{border-right-color:rgb(0, 150, 136);border-left-color:transparent;}
+        .mem4 p:after{border-right-color:rgb(255, 255, 0);border-left-color:transparent;}
+        .mem5 p:after{border-right-color:rgb(233, 30, 99);border-left-color:transparent;}
+        .mem6 p:after{border-right-color:rgb(136, 136, 136);border-left-color:transparent;}
+        .mem7 p:after{border-right-color:rgb(136, 136, 136);border-left-color:transparent;}
+    
+        .mem1:before,.mem2:before,.mem3:before,
+        .mem4:before,.mem5:before,.mem6:before,.mem7:before{width:70px;height:70px;}
+    }
+</style>
+</head>
+<body>
+    <p id="page-top"><a href="#"><i class="page-top__arrow"></i></a></p>
+	<div class="leftwhite"></div>
+	<div class="rightwhite"></div>
+	<div class="bg-sp">
+    <div class="bg-over"><div class="bg-inner bg1"></div></div>
+	<div class="log">
+    
+
+<div class="kp">
+
+     
+    巨星墜つ―― 
+  
+</div>
+<div class="kp">
+
+     
+    春風がまだ寒さを孕む季節、天光流が頭領"朱赫"がその命を終えた。<br>この知らせは瞬く間に広がり、忍界を賑わせると同時にある疑問が囁かれた。<br>門外不出の究極奥義【超新星】は誰に継承されたのかと。 
+  
+</div>
+<div class="kp">
+
+     
+    時を同じくして日本海沖、結界により巧妙に隠された小群島、始星源。<br>天光流の手ほどきを受けた継承資格者達がこの地を目指し上陸を待ちわびていた。 
+  
+</div>
+<div class="kp">
+
+     
+    忍術バトルRPG シノビガミ<br>『朝晨星』 
+  
+</div>
+<div class="kp">
+
+     
+    命瞬き、星を紡ぐ。 
+  
+</div>
+<div class="kp">
+
+     
+    ――――――――――― 
+  
+</div>
+<div class="kp">
+
+     
+    ――――――― 
+  
+</div>
+<div class="kp">
+
+     
+    ―――― 
+  
+</div>
+
+</div></div>
+
+<div class="bg-sp">
+    <div class="bg-over"><div class="bg-inner bg3"></div></div>
+<div class="log">
+
+
+<div class="kp">
+
+     
+    あなたは天光流の下で兄弟弟子と共に師事していた経験がある。 
+  
+</div>
+<div class="kp">
+
+     
+    一連の教えを受けた後、師の言いつけに従い修行の旅を続けていた。 
+  
+</div>
+<div class="kp">
+
+     
+    『老星死す時、新星好光に瞬かん』 
+  
+</div>
+<div class="kp">
+
+     
+    そんな折、師匠"朱赫"の訃報を知る事となる。<br>以前より伝えられていた通り、嘗ての修行の地"始星源"へ向かう為、水先人の下を訪ねた。 
+  
+</div>
+
+</div></div>
+
+<div class="bg-sp">
+    <div class="bg-over"><div class="bg-inner bg2"></div></div>
+<div class="log">
+
+<div class="kp">
+
+     
+    ――１隻の小舟が湖に浮かんでいる。 
+  
+</div>
+<div class="kp">
+
+     
+    舟を操る女性は器用に舵を取りながら、行く手を阻む岩山を軽やかにかわし、霧の中を進む。<br>この舟に乗って何日経ったのだろう。師の訃報を知ったあなた達は、事情を知る姉弟子のもとを訪ねた。 
+  
+</div>
+<div class="kp">
+
+     
+    彼女はあなたたち３人が揃ったのを確認するや否や船に乗るよう捲し立て、気が付けばこの通り波に揺られている状況だ。<br>大した説明もされず、我慢の限界を迎えようという頃、姉弟子"参宿七"から声がかかる。 
+  
+</div>
+
+
+<div class="mem2 right"> 
+<span>参 宿七</span>
+<p>
+
+     
+    「――見えましたね。あなたたち！起きなさい！いつまで寝ているのですか！」 
+  
+</p>
+</div>
+
+
+<div class="mem2 right">
+<span>参 宿七</span>
+<p>
+
+     
+        NPC『参宿七』<br>秘密〇：感情〇：居所×<br><br>あなたは光を掲げる者だ。<br><br>あなたは天光流頭領"朱赫"の一番弟子である。<br>かねてより天光流に師事し、数多くの弟妹弟子と共に研鑽の日々を送っていた。<br><br>師が息を引き取る間際、奥義継承の儀式を執り行う水先人を託された。<br>その意を汲んだあなたは、初めに訪れた3人の弟子を連れ、"始星源"へと向かった。<br><br>使命：奥義継承の儀式を執り行うこと 
+  
+</p>
+</div>
+
+<div class="mem2 right">
+<span>参 宿七</span>
+<p>
+
+     参 宿七 [サン スゥチィ]
+<br>天光流
+<br>年齢：3～40
+<br>表の顔：天光流師範代
+<br>信念：忠
+<br><br>
+天光流の門下生。"朱赫"が一番弟子。
+<br>他の兄弟弟子からすると姉弟子の関係となるが、
+<br>"朱赫"は彼女にほぼ全ての修行を任せていた為、
+<br>実質的に彼女が師匠と考える者もいる。
+<br>技の手ほどきから心の鍛錬、果ては身の回りの世話まで焼いてくる
+  
+</p>
+</div>
+
+
+<div class="mem5 left">
+<span>李 雲樵</span>
+<p>
+
+     
+    むにゃむにゃ…z…zzz 
+  
+</p>
+</div>
+
+
+<div class="mem5 left">
+<span>李 雲樵</span>
+<p>
+
+     PC3：あなたは煌めく者だ。
+     <br>李 雲樵 [リ ウンショウ]
+     <br>ハグレモノ 【世界忍者連合】
+     <br>年齢：23歳？
+     <br>表の顔：旅人
+     <br>信念：凶
+<br><br>
+     特技：砲術、変装術、第六感、罠術、人脈、封術
+     <br>忍法：接近戦攻撃、【影武者】、【火計】、【忍道】、【怪士】（【背水】、【裂牙】、【雷鳥】）
+<br><br>
+     背景：【時の旅人】、【末裔】 / 【抜け忍】（私立御斎学園）
+<br><br>
+     あなたの使命は『【超新星】を継ぐこと』だ
+  
+</p>
+</div>
+
+
+<div class="mem5 left">
+<span>李 雲樵</span>
+<p>
+［設定］
+ <br><br> 古今東西の武術・忍術・暗殺術などの技術・知識を探求するため放浪の旅をしている。
+<br>見た目より長く生きているようだが歳は定かではない。
+<br>豊富な技の知識から私立御斎学園で教員をしていた事もあるが、過剰な模擬戦などの実習や教員の立場を利用し生徒や他の教員から忍法や奥義の情報を集めていた事が発覚し、学園から追放される。
+<br>天光流の奥義、超新星の「天上天下並ぶ者無し」の口伝を知り、天光流へと入った。
+  
+    
+  
+</p>
+</div>
+
+
+<div class="mem4 mem4-2 right">
+<span>玄蓮四</span>
+<p>
+
+     
+    「なによ・・もう」 
+  
+</p>
+</div>
+
+<div class="mem4 right">
+<span>玄蓮四</span>
+<p>
+
+     PC2：あなたは探求する者だ。
+<br>玄 蓮四 [シュエン・リェンスー]
+<br>鞍馬神流 【魔王流】
+<br>年齢：不明
+<br>表の顔：流浪の剣士
+<br>信念：我
+<br><br>
+特技：手裏剣術、刀術、兵糧術、用兵術、異形化、呪術
+<br>忍法：接近戦攻撃、【戦酔】、【神槍】、【剣気】、【魔血】（【悪食】、【獣化】）
+<br><br>
+背景：【日々の鍛錬】、【家宝】（加護） / 【不忍】
+<br><br>
+     あなたの使命は『【超新星】を継ぐこと』だ      
+</p>
+</div>
+
+<div class="mem4 right">
+<span>玄蓮四</span>
+<p>
+
+    ［設定］
+ <br><br>    
+      旅する剣士。
+<br>戦を愛し、戦に恋い焦がれる。
+<br>天光流で手ほどきを受けたが留まらず、
+<br>流浪の身となり各地で道場破りを繰り返す。
+<br>勝利そのものよりも「最後に戦場に立っていた者こそが真の勝者」という信念を抱き、泥臭く血にまみれることを厭わない。
+<br>悪知恵も働くタイプで、時には勝利よりも生き残ることを優先する。
+<br><br>
+「その程度なの？ もっと見せてよ」
+<br>「フフフ……血が滾るわ……」
+<br>「倒すんじゃない、斬り結び続けるために斬るの」
+</p>
+</div>
+
+<div class="mem2 right">
+<span>参 宿七</span>
+<p>
+
+     
+    「雲樵、おきなさい」 
+  
+</p>
+</div>
+
+
+<div class="mem3 left">
+<span>文清・白蓮</span>
+<p>
+
+     
+    「この状況でよく寝れますね」 
+  
+</p>
+</div>
+
+<div class="mem3 left">
+<span>文清・白蓮</span>
+<p>
+
+     PC2：あなたは焼き焦がす者だ。
+<br>文清･白蓮 [ウェンチェン･ハクレン]
+<br>斜歯忍軍 【指矩班】
+<br>年齢：26
+<br>表の顔：-
+<br>信念：我
+<br><br>
+特技：絡繰術、掘削術、身体操術、分身の術、記憶術、暗号術
+<br>忍法：接近戦攻撃、【土竜吼】、【裏コード】、【流転】、【揺音】
+<br><br>
+背景：【師匠】 / 【死者の声】
+<br><br>
+     あなたの使命は『【超新星】を継ぐこと』だ  
+  
+</p>
+</div>
+
+<div class="mem3 left">
+<span>文清・白蓮</span>
+<p>
+
+     ［設定］
+<br><br>•中華地方の古い忍家に生まれる。家族は代々情報収集や策略を得意とする忍者の家系。
+<br>•幼いころから読み書きや古典、暗号解読、策略の訓練を受け、同年代の子供たちより知的能力が高かった為、他人と感情を素直に表すことが少なく、孤独な時間が多かった。だが、その分観察力や心理読みの力を磨いた。
+<br>•家族の希望で斜歯忍軍に加入。潜入・情報収集の任務をこなす中で、策略や心理操作の技術をさらに高める。
+<br>•同僚や上司からの信頼は厚いが、距離を置いた冷静な態度ゆえに「近寄りがたい天才」と評されることもある。
+<br>•幼少期からの読書や研究習慣により、情報戦や暗号解析で数々の任務を成功に導く。
+<br>•自身の能力に自信を持つ一方で、上手くいかないと癇癪を起こす一面を持っている。
+  
+  
+</p>
+</div>
+
+
+
+<div class="mem5 left">
+<span>李 雲樵</span>
+<p>
+
+     
+    「ん？ここどこですか～」 
+  
+</p>
+</div>
+
+
+<div class="mem2 right">
+<span>参 宿七</span>
+<p>
+
+     
+    「まったく……コホン！つきましたよ、懐かしき修行の地です」 
+  
+</p>
+</div>
+
+</div></div>
+
+<div class="bg-sp">
+    <div class="bg-over"><div class="bg-inner bg3"></div></div>
+<div class="log">
+
+
+
+<div class="kp">
+
+     
+    船外に出ると、見覚えのある切り立った山々が目に映る。ここは始星源。天光流が保有する絶海の秘境だ。<br>川沿いにしばらく進むと、かつての賑わいが感じられる廃墟が姿を現した。<br>そこから伸びる桟橋に舟を寄せ、着船する。 
+  
+</div>
+
+
+</div></div>
+
+<div class="bg-sp">
+    <div class="bg-over"><div class="bg-inner bg2"></div></div>
+<div class="log">
+
+
+
+
+<div class="mem4 right">
+<span>玄蓮四</span>
+<p>
+
+     
+    「や～～っと着いたのね！」 
+  
+</p>
+</div>
+
+
+<div class="mem4 right">
+<span>玄蓮四</span>
+<p>
+
+     
+    「疲れちゃったわ」 
+  
+</p>
+</div>
+
+
+<div class="mem5 mem5-2 left">
+<span>李 雲樵</span>
+<p>
+
+     
+    「あ～よく寝た」 
+  
+</p>
+</div>
+
+
+<div class="mem2 mem2-3 right">
+<span>参 宿七</span>
+<p>
+
+     
+    「ここまでの距離はだいぶありますからね」 
+  
+</p>
+</div>
+
+<div class="mem3 left">
+<span>文清・白蓮</span>
+<p>
+
+     
+    「やっとか．．」 
+  
+</p>
+</div>
+
+
+<div class="mem2 right">
+<span>参 宿七</span>
+<p>
+
+     
+    「雲樵はずっと寝ていましたね」 
+  
+</p>
+</div>
+
+
+<div class="mem5 mem5-2 left">
+<span>李 雲樵</span>
+<p>
+
+     
+    「暇だったからね～」 
+  
+</p>
+</div>
+
+
+<div class="mem2 right">
+<span>参 宿七</span>
+<p>
+
+     
+    「さてあなた達、師匠から頂戴した振り子は持っていますよね？」 
+  
+</p>
+</div>
+
+
+
+
+
+
+<div class="kp">
+
+     
+    みなさん、それぞれどこかにきっと振り子を持っていることでしょう 
+  
+</div>
+
+
+<div class="mem4 right">
+<span>玄蓮四</span>
+<p>
+
+     
+    「これね？」 
+  
+</p>
+</div>
+
+
+<div class="mem5 left">
+<span>李 雲樵</span>
+<p>
+
+     
+    「あるよ～」 
+  
+</p>
+</div>
+
+
+<div class="mem3 left">
+<span>文清・白蓮</span>
+<p>
+
+     
+    「えぇ」 
+  
+</p>
+</div>
+
+
+<div class="mem4 right">
+<span>玄蓮四</span>
+<p>
+
+     
+    首元から取り出す 
+  
+</p>
+</div>
+
+
+<div class="mem5 left">
+<span>李 雲樵</span>
+<p>
+
+     
+    「へぇ～そこにあるんだぁ～」 
+  
+</p>
+</div>
+
+
+
+<div class="mem4 mem4-1 right">
+<span>玄蓮四</span>
+<p>
+
+     
+    「あら？襲う気？」 
+  
+</p>
+</div>
+
+
+
+<div class="mem5 mem5-2 left">
+<span>李 雲樵</span>
+<p>
+
+     
+    「さあどうかな～ヒヒッ」 
+  
+</p>
+</div>
+
+
+
+<div class="mem5 mem5-2 left">
+<span>李 雲樵</span>
+<p>
+
+     
+    「白蓮君はどこどこ～？」 
+  
+</p>
+</div>
+
+
+
+<div class="mem3 left">
+<span>文清・白蓮</span>
+<p>
+
+     
+    「ふん。こっちは簡単に教える訳ないだろう」 
+  
+</p>
+</div>
+
+
+
+<div class="mem4 right">
+<span>玄蓮四</span>
+<p>
+
+     
+    「あらつまんない」 
+  
+</p>
+</div>
+
+
+
+<div class="mem5 mem5-2 left">
+<span>李 雲樵</span>
+<p>
+
+     
+    「ケチだね～」白蓮 
+  
+</p>
+</div>
+
+
+
+<div class="mem4 right">
+<span>玄蓮四</span>
+<p>
+
+     
+    「もっと血気盛んに行きましょうよ」 
+  
+</p>
+</div>
+
+
+
+<div class="mem3 left">
+<span>文清・白蓮</span>
+<p>
+
+     
+    「仲良しごっこをしにきた訳じゃないんでね」 
+  
+</p>
+</div>
+
+
+
+<div class="mem5 mem5-3 left">
+<span>李 雲樵</span>
+<p>
+
+     
+    「おーこわ」 
+  
+</p>
+</div>
+
+
+<div class="mem2 mem2-1 right">
+<span>参 宿七</span>
+<p>
+
+     
+    「そこまで」 
+  
+</p>
+</div>
+
+
+
+<div class="mem2 right">
+<span>参 宿七</span>
+<p>
+
+     
+    「それは『冬星の振り子』。天光流が奥義【超新星】の継承の鍵になります」 
+  
+</p>
+</div>
+
+
+
+<div class="mem2 right">
+<span>参 宿七</span>
+<p>
+
+     
+    「つまり、それを師から授かった時点であなた方には見込みがあるという事です」 
+  
+</p>
+</div>
+
+
+
+<div class="mem2 right">
+<span>参 宿七</span>
+<p>
+
+     
+    「……この儀式について、私もすべてを知りません。ですが過酷なものであることは違いないでしょう」 
+  
+</p>
+</div>
+
+
+
+<div class="mem2 mem2-3 right">
+<span>参 宿七</span>
+<p>
+
+     
+    「率直に言えば……私としては不安です。あなた達のような、まだ経験が浅い……」 
+  
+</p>
+</div>
+
+
+
+<div class="mem4 right">
+<span>玄蓮四</span>
+<p>
+
+     
+    「そういうあなたは立候補しないのかしら」 
+  
+</p>
+</div>
+
+
+
+<div class="mem2 mem2-2 right">
+<span>参 宿七</span>
+<p>
+
+     
+    「ふふ、私にはまだその資格がないのですよ」 
+  
+</p>
+</div>
+
+
+
+<div class="mem4 mem4-1 right">
+<span>玄蓮四</span>
+<p>
+
+     
+    「なかったんだぁ～？」 
+  
+</p>
+</div>
+
+
+
+<div class="mem4 mem4-1 right">
+<span>玄蓮四</span>
+<p>
+
+     
+    「無い人に不安と言われても・・・ね？」 
+  
+</p>
+</div>
+
+
+
+<div class="mem5 mem5-2 left">
+<span>李 雲樵</span>
+<p>
+
+     
+    「へ～そうなんだ～へ～」 
+  
+</p>
+</div>
+
+
+
+<div class="mem4 right">
+<span>玄蓮四</span>
+<p>
+
+     
+    「この間屠ったどっかの国の教皇の後任選びのときは水先人も候補の一人だったわよ」 
+  
+</p>
+</div>
+
+
+
+<div class="mem2 right">
+<span>参 宿七</span>
+<p>
+
+     
+    「私は全てを知るわけではありません。なので、不安…心配するのは姉弟子としては当然だと思いますが？」 
+  
+</p>
+</div>
+
+
+
+<div class="mem4 right">
+<span>玄蓮四</span>
+<p>
+
+     
+    「フフ・・・まあいいわ」 
+  
+</p>
+</div>
+
+
+
+<div class="mem3 left">
+<span>文清・白蓮</span>
+<p>
+
+     
+    「候補が少ない分にはかまわない。」 
+  
+</p>
+</div>
+
+
+
+
+<div class="mem4 right">
+<span>玄蓮四</span>
+<p>
+
+     
+    「クールね」 
+  
+</p>
+</div>
+
+
+
+
+<div class="mem5 mem5-2 left">
+<span>李 雲樵</span>
+<p>
+
+     
+    「え～！いっぱいいた方が楽しんだけどな～」 
+  
+</p>
+</div>
+
+
+
+
+<div class="mem3 left">
+<span>文清・白蓮</span>
+<p>
+
+     
+    「楽しんでどうする」 
+  
+</p>
+</div>
+
+
+
+
+<div class="mem2 mem2-3 right">
+<span>参 宿七</span>
+<p>
+
+     
+    「こほん」 
+  
+</p>
+</div>
+
+
+
+
+<div class="mem2 right">
+<span>参 宿七</span>
+<p>
+
+     
+    「――儀式はこの地で行い、振り子がすべて導くと聞いています」 
+  
+</p>
+</div>
+
+
+
+<div class="mem2 right">
+<span>参 宿七</span>
+<p>
+
+     
+    「まずは『冬星の振り子』について探るといいでしょう」
+  
+</p>
+</div>
+
+
+
+<div class="mem2 right">
+<span>参 宿七</span>
+<p>
+
+     
+    「それが終わるまで何人たりとも始星源から出ることは叶いません」 
+  
+</p>
+</div>
+
+
+
+<div class="mem2 right">
+<span>参 宿七</span>
+<p>
+
+     
+    「私は儀式の邪魔にならないよう、この地を移動しながら隠れています」 
+  
+</p>
+</div>
+
+
+
+<div class="mem2 right">
+<span>参 宿七</span>
+<p>
+
+     
+    「 基本的に儀式は当事者以外の者が手を加えてはならないのです」 
+  
+</p>
+</div>
+
+
+
+<div class="mem2 right">
+<span>参 宿七</span>
+<p>
+
+     
+    「……質問がなければ、行きなさい」 
+  
+</p>
+</div>
+
+
+
+<div class="mem5 mem5-2 left">
+<span>李 雲樵</span>
+<p>
+
+     
+    「は～い」 
+  
+</p>
+</div>
+
+
+
+<div class="mem4 right">
+<span>玄蓮四</span>
+<p>
+
+     
+    「は～～～い、お、ね、え、さ、ま（笑）」 
+  
+</p>
+</div>
+
+
+
+<div class="mem5 mem5-2 left">
+<span>李 雲樵</span>
+<p>
+
+     
+    「ぷ、ぷぷぷ」 
+  
+</p>
+</div>
+
+
+
+<div class="mem2 mem2-3 right">
+<span>参 宿七</span>
+<p>
+
+     
+    「……」 
+  
+</p>
+</div>
+
+
+
+<div class="mem3 left">
+<span>文清・白蓮</span>
+<p>
+
+     
+    「………ふん」 
+  
+</p>
+</div>
+
+
+
+<div class="kp">
+
+     
+    三人が去った後 
+  
+</div>
+
+
+
+<div class="mem2 right">
+<span>参 宿七</span>
+<p>
+
+     
+    「……行きましたか」 
+  
+</p>
+</div>
+
+
+
+<div class="mem2 mem2-3 right">
+<span>参 宿七</span>
+<p>
+
+     
+    「どうか、どうか皆……」 
+  
+</p>
+</div>
+
+
+
+<div class="kp">
+
+     
+    試練に挑む弟妹弟子の後姿を、彼女は不安な表情を浮かべて見送った。 
+  
+</div>
+
+
+
+<div class="kp">
+
+     
+    シーン終了 
+  
+</div>
+
+
+
+
+<div class="mem1 left">
+<span>GM</span>
+<p>
+
+     
+    HO『始星源』<br>秘密〇：感情×：居所×<br><br><br>日本海沖にある小群島。切り立った岩山が立ち並び、常に霞に覆われている。<br>どこかの大陸から切り取られて来たかのような、異質な空気を感じとれる。<br>その所在は結界によって秘匿され、特殊な手順を踏まないとたどり着けない。 
+  
+</p>
+</div>
+
+
+
+<div class="mem1 left">
+<span>GM</span>
+<p>
+
+     
+    プライズ『冬星の振り子』<br>秘密〇：感情×：居所×<br><br><br>天光流にて一人前と認められた弟子に渡されるペンデュラム。<br>歩みに迷いが生じた時、進むべき道を指し示してくれる。<br><br>所持しているプレイヤー１サイクルに１度、下記の効果を使用できる。<br>●自身のドラマシーンに補助判定を行うことでPC1人の【居所】を取得できる。 
+  
+</p>
+</div>
+
+
+</div></div>
+
+<div class="bg-sp">
+    <div class="bg-over"><div class="bg-inner bg1"></div></div>
+<div class="log">
+
+
+
+<div class="kp">
+
+     
+    [ GM ] サイクル : 0 → 1 
+  
+</div>
+
+
+
+<div class="mem4 right">
+<span>玄蓮四</span>
+<p>
+
+     
+    d66 (D66) ＞ 12
+  
+</p>
+</div>
+
+
+
+<div class="mem5 left">
+<span>李 雲樵</span>
+<p>
+
+     
+    d66 (D66) ＞ 56
+  
+</p>
+</div>
+
+
+
+<div class="mem3 left">
+<span>文清・白蓮</span>
+<p>
+
+     
+    d66 (D66) ＞ 34
+  
+</p>
+</div>
+
+
+
+<div class="mem1 left">
+<span>GM</span>
+<p>
+
+     
+    雲樵 、白蓮、蓮四 
+  
+</p>
+</div>
+
+
+
+
+<div class="kp">
+
+     
+    [ GM ] シーン : 0 → 1 
+  
+</div>
+
+</div></div>
+
+<div class="bg-sp">
+    <div class="bg-over"><div class="bg-inner bg6"></div></div>
+<div class="log">
+
+
+<div class="mem5 left">
+<span>李 雲樵</span>
+<p>
+
+     
+    bt 戦場表(3) ＞ 高所:ビルの谷間や樹上、断崖絶壁など。この戦場でファンブルすると接近戦ダメージを１点受ける。
+  
+</p>
+</div>
+
+
+
+<div class="kp">
+
+     
+    切り立った山々を見下ろす。霧に阻まれて下界の様子は伺えない。 
+  
+</div>
+
+
+
+<div class="mem5 left">
+<span>李 雲樵</span>
+<p>
+
+     
+    「お～絶景だね！」 
+  
+</p>
+</div>
+
+
+
+<div class="mem1 left">
+<span>GM</span>
+<p>
+
+     
+    登場人物： 雲樵 
+  
+</p>
+</div>
+
+
+
+<div class="mem5 left">
+<span>李 雲樵</span>
+<p>
+
+     
+    情報判定：第六感で蓮四の居所を探る 
+  
+</p>
+</div>
+
+
+
+<div class="mem5 mem5-5 left">
+<span>李 雲樵</span>
+<p>
+
+     
+    2D6&gt;=5 (2D6&gt;=5) ＞ 4[1,3] ＞ 4 ＞ 失敗
+  
+</p>
+</div>
+
+
+
+<div class="mem5 mem5-5 left">
+<span>李 雲樵</span>
+<p>
+
+     
+    「霧で全然見えないね～…」 
+  
+</p>
+</div>
+
+
+
+<div class="mem5 mem5-5 left">
+<span>李 雲樵</span>
+<p>
+
+     
+    補助判定で蓮四の居所を第六感で 
+  
+</p>
+</div>
+
+
+
+<div class="mem5 left">
+<span>李 雲樵</span>
+<p>
+
+     
+    2D6&gt;=5 (2D6&gt;=5) ＞ 5[1,4] ＞ 5 ＞ 成功
+  
+</p>
+</div>
+
+
+
+<div class="mem5 mem5-2 left">
+<span>李 雲樵</span>
+<p>
+
+     
+    「みーつけた♥」 
+  
+</p>
+</div>
+
+
+
+<div class="mem5 mem5-2 left">
+<span>李 雲樵</span>
+<p>
+
+     
+    「これでちょっかい出せるね～」 
+  
+</p>
+</div>
+
+
+
+<div class="mem5 mem5-2 left">
+<span>李 雲樵</span>
+<p>
+
+     
+    影武者→蓮四 
+  
+</p>
+</div>
+
+
+
+<div class="mem5 mem5-2 left">
+<span>李 雲樵</span>
+<p>
+
+     
+    2D6&gt;=5 (2D6&gt;=5) ＞ 8[2,6] ＞ 8 ＞ 成功
+  
+</p>
+</div>
+
+
+
+<div class="mem4 right">
+<span>玄蓮四</span>
+<p>
+
+     
+    「あら？視線が・・？」 
+  
+</p>
+</div>
+
+
+
+<div class="kp">
+
+     
+    [ 玄蓮四 ] 鍛錬 : 1 → 0 
+  
+</div>
+
+
+
+<div class="mem4 right">
+<span>玄蓮四</span>
+<p>
+
+     
+    「痛いわね・・・さてはあの顔なしね？」 
+  
+</p>
+</div>
+
+
+
+<div class="mem5 mem5-2 left">
+<span>李 雲樵</span>
+<p>
+
+     
+    「当たった当った」 
+  
+</p>
+</div>
+
+
+
+<div class="mem5 left">
+<span>李 雲樵</span>
+<p>
+
+     
+    シーン終了 
+  
+</p>
+</div>
+
+
+</div></div>
+
+<div class="bg-sp">
+    <div class="bg-over"><div class="bg-inner bg4"></div></div>
+<div class="log">
+
+
+
+<div class="kp">
+
+     
+    [ GM ] シーン : 1 → 2 
+  
+</div>
+
+
+
+<div class="mem1 left">
+<span>GM</span>
+<p>
+
+     
+    登場人物：白蓮、蓮四、雲樵  
+  
+</p>
+</div>
+
+
+
+<div class="mem3 left">
+<span>文清・白蓮</span>
+<p>
+
+     
+    BT 戦場表(1) ＞ 平地:特になし。
+  
+</p>
+</div>
+
+
+
+<div class="kp">
+
+     
+    渓流、水の流れが穏やかで木々の合間に小鳥の鳴き声が聞こえる。 
+  
+</div>
+
+
+
+<div class="mem3 left">
+<span>文清・白蓮</span>
+<p>
+
+     
+    「もう始めたのか？」 
+  
+</p>
+</div>
+
+
+
+<div class="mem1 left">
+<span>GM</span>
+<p>
+
+     
+    蓮四の【不忍】効果で全員に居所配布 
+  
+</p>
+</div>
+
+
+
+
+<div class="mem5 mem5-2 left">
+<span>李 雲樵</span>
+<p>
+
+     
+    「ん～なにが～？」 
+  
+</p>
+</div>
+
+
+
+<div class="mem4 right">
+<span>玄蓮四</span>
+<p>
+
+     
+    「フフ・・・私は逃げも隠れもしないわよ？そこのカオナシくん」 
+  
+</p>
+</div>
+
+
+
+<div class="mem4 mem4-1 right">
+<span>玄蓮四</span>
+<p>
+
+     
+    「わざわざ時間を浪費して探さなくてもよかったのに」 
+  
+</p>
+</div>
+
+
+
+<div class="mem5 mem5-2 left">
+<span>李 雲樵</span>
+<p>
+
+     
+    「え？なになに？何のこと～ヒヒッ」 
+  
+</p>
+</div>
+
+
+
+<div class="mem4 mem4-1 right">
+<span>玄蓮四</span>
+<p>
+
+     
+    「白々しいわね～そういうのも嫌いじゃないわ」 
+  
+</p>
+</div>
+
+
+
+
+<div class="mem3 left">
+<span>文清・白蓮</span>
+<p>
+
+     
+    「まったく……騒々しいな。ここにあいつが居なくて本当に良かった。」 
+  
+</p>
+</div>
+
+
+
+<div class="mem4 mem4-1 right">
+<span>玄蓮四</span>
+<p>
+
+     
+    「なに、彼女でも連れてきたかったの？」 
+  
+</p>
+</div>
+
+
+
+
+<div class="mem3 left">
+<span>文清・白蓮</span>
+<p>
+
+     
+    「……なわけ無いだろう。……兄だ。認めたく無いがな。」 
+  
+</p>
+</div>
+
+
+
+<div class="mem4 right">
+<span>玄蓮四</span>
+<p>
+
+     
+    「なーんだ、つまんないわね」 
+  
+</p>
+</div>
+
+
+
+<div class="mem5 mem5-2 left">
+<span>李 雲樵</span>
+<p>
+
+     
+    「兄弟仲良くしなよ～」 
+  
+</p>
+</div>
+
+
+
+<div class="mem3 left">
+<span>文清・白蓮</span>
+<p>
+
+     
+    「……好きにはなれないがな。」 
+  
+</p>
+</div>
+
+
+
+<div class="mem4 mem4-1 right">
+<span>玄蓮四</span>
+<p>
+
+     
+    「なら殺しちゃえば？」 
+  
+</p>
+</div>
+
+
+
+<div class="mem3 left">
+<span>文清・白蓮</span>
+<p>
+
+     
+    ー白蓮の記憶の中ー 
+  
+</p>
+</div>
+
+
+
+<div class="mem6 right">
+<span>白雀</span>
+<p>
+
+     
+    「白蓮！もうちょっと肩の力抜いておけよ！そんなんじゃ友達できないぞ！」 
+  
+</p>
+</div>
+
+
+
+<div class="mem3 left">
+<span>文清・白蓮</span>
+<p>
+
+     
+    昔からあいつは人に甘すぎるやつなんだ。 
+  
+</p>
+</div>
+
+
+
+<div class="mem3 left">
+<span>文清・白蓮</span>
+<p>
+
+     
+    人に甘くしていいことなんて何も無い。自分を護れるのは自分だけだ。 
+  
+</p>
+</div>
+
+
+
+<div class="mem3 left">
+<span>文清・白蓮</span>
+<p>
+
+     
+    ー記憶終了ー 
+  
+</p>
+</div>
+
+
+
+<div class="mem3 left">
+<span>文清・白蓮</span>
+<p>
+
+     
+    裏コード→ウンショウ 
+  
+</p>
+</div>
+
+
+
+<div class="mem3 left">
+<span>文清・白蓮</span>
+<p>
+
+     
+    2D6&gt;=5 （判定：暗号術） (2D6&gt;=5) ＞ 7[1,6] ＞ 7 ＞ 成功
+  
+</p>
+</div>
+
+
+
+<div class="kp">
+
+     
+    [ 李 雲樵 ] 器術 : 1 → 0 
+  
+</div>
+
+
+
+<div class="mem5 mem5-3 left">
+<span>李 雲樵</span>
+<p>
+
+     
+    「痛った！！なに？なに？？」 
+  
+</p>
+</div>
+
+
+
+<div class="mem4 right">
+<span>玄蓮四</span>
+<p>
+
+     
+    「あら、そっちもなのね？」 
+  
+</p>
+</div>
+
+
+
+<div class="mem3 left">
+<span>文清・白蓮</span>
+<p>
+
+     
+    絡繰術で冬星の振り子を調べる 
+  
+</p>
+</div>
+
+
+
+<div class="mem3 left">
+<span>文清・白蓮</span>
+<p>
+
+     
+    2D6&gt;=5 （判定：絡繰術） (2D6&gt;=5) ＞ 9[3,6] ＞ 9 ＞ 成功
+  
+</p>
+</div>
+
+
+
+<div class="mem1 left">
+<span>GM</span>
+<p>
+
+     
+    ■プライズ『冬星の振り子』秘密：<br><br>※公開情報（この秘密を誰かが獲得した場合、全体に公開する）<br><br>下記の条件の内、３つを１度でも満たした場合、奥義【超新星】の情報を獲得する。（この獲得による情報共有はされず、受け渡しもできない）<br><br>・この秘密を最初に公開情報にする。<br>・戦果を２回獲得する。（クライマックス含む）<br>・戦闘を５回行う。（クライマックス含む）<br>・自分が誰かに対しマイナスの感情を２つ獲得する。<br>・誰かからプラスの感情を１つ獲得される。<br>・クライマックス戦闘にて、自身の【生命力】が3以下になる。 
+  
+</p>
+</div>
+
+
+
+<div class="mem3 left">
+<span>文清・白蓮</span>
+<p>
+
+     
+    「ほう……。まずひとつか。」 
+  
+</p>
+</div>
+
+
+
+<div class="mem4 right">
+<span>玄蓮四</span>
+<p>
+
+     
+    「なにかわかったの？」 
+  
+</p>
+</div>
+
+
+
+<div class="mem3 left">
+<span>文清・白蓮</span>
+<p>
+
+     
+    「そう簡単に教えるわけないだろう」 
+  
+</p>
+</div>
+
+
+
+<div class="mem4 right">
+<span>玄蓮四</span>
+<p>
+
+     
+    「ツレナイわね～」 
+  
+</p>
+</div>
+
+
+
+<div class="mem5 mem5-3 left">
+<span>李 雲樵</span>
+<p>
+
+     
+    「ケチ～」 
+  
+</p>
+</div>
+
+
+
+<div class="mem3 left">
+<span>文清・白蓮</span>
+<p>
+
+     
+    居所→ウンショウ 
+  
+</p>
+</div>
+
+
+
+<div class="mem3 left">
+<span>文清・白蓮</span>
+<p>
+
+     
+    記憶術でウンショウの情報を思い出す。 
+  
+</p>
+</div>
+
+
+
+<div class="mem3 left">
+<span>文清・白蓮</span>
+<p>
+
+     
+    2D6&gt;=5 （判定：記憶術） (2D6&gt;=5) ＞ 2[1,1] ＞ 2 ＞ ファンブル
+  
+</p>
+</div>
+
+
+
+<div class="mem3 left">
+<span>文清・白蓮</span>
+<p>
+
+     
+    ft ファンブル表(6) ＞ ふう。危ないところだった。特に何も起こらない。
+  
+</p>
+</div>
+
+
+<div class="mem3 mem3-2 left">
+<span>文清・白蓮</span>
+<p>
+
+     
+    「……ふう。」 
+  
+</p>
+</div>
+
+
+
+<div class="mem3 left">
+<span>文清・白蓮</span>
+<p>
+
+     
+    シーン終了 
+  
+</p>
+</div>
+
+
+</div></div>
+
+<div class="bg-sp">
+    <div class="bg-over"><div class="bg-inner bg8"></div></div>
+<div class="log">
+
+
+
+<div class="kp">
+
+     
+    [ GM ] シーン : 2 → 3 
+  
+</div>
+
+
+
+
+<div class="mem4 right">
+<span>玄蓮四</span>
+<p>
+
+     
+    BT 戦場表(5) ＞ 雑踏:人混みや教室、渋滞中の車道など。この戦場では、この戦場では、行為判定のとき、ファンブル値が１上昇する。
+  
+</p>
+</div>
+
+
+
+<div class="kp">
+
+     
+    嘗ての栄華が伺える廃墟郡。時たまに囁き声が聞こえてくる…… 
+  
+</div>
+
+
+
+<div class="mem4 right">
+<span>玄蓮四</span>
+<p>
+
+     
+    「あら、ついてきたの？」 
+  
+</p>
+</div>
+
+
+
+
+<div class="mem4 right">
+<span>玄蓮四</span>
+<p>
+
+     
+    振り返らずに声を掛ける 
+  
+</p>
+</div>
+
+
+
+<div class="mem1 left">
+<span>GM</span>
+<p>
+
+     
+    登場人物：蓮四、雲樵  
+  
+</p>
+</div>
+
+
+
+
+<div class="mem5 mem5-3 left">
+<span>李 雲樵</span>
+<p>
+
+     
+    「なんか面白い事起きるかもだからね～」 
+  
+</p>
+</div>
+
+
+
+<div class="mem4 right">
+<span>玄蓮四</span>
+<p>
+
+     
+    「好きものね？」 
+  
+</p>
+</div>
+
+
+
+<div class="mem4 right">
+<span>玄蓮四</span>
+<p>
+
+     
+    「まぁいいわ、それならあなたの話を聞かせなさい」刀を構える 
+  
+</p>
+</div>
+
+
+
+<div class="mem5 mem5-3 left">
+<span>李 雲樵</span>
+<p>
+
+     
+    「え～どうしようかな～」 
+  
+</p>
+</div>
+
+
+
+<div class="mem4 mem4-3 right">
+<span>玄蓮四</span>
+<p>
+
+     
+    「ここで切られたくなかったら、ね！！」 
+  
+</p>
+</div>
+
+
+
+<div class="mem5 mem5-2 left">
+<span>李 雲樵</span>
+<p>
+
+     
+    「しょうがないなあ～」 
+  
+</p>
+</div>
+
+
+
+<div class="mem4 mem4-1 right">
+<span>玄蓮四</span>
+<p>
+
+     
+    「お利口さんね」 
+  
+</p>
+</div>
+
+
+
+<div class="mem4 mem4-1 right">
+<span>玄蓮四</span>
+<p>
+
+     
+    「フフ・・・」 
+  
+</p>
+</div>
+
+
+
+<div class="mem4 mem4-1 right">
+<span>玄蓮四</span>
+<p>
+
+     
+    雲樵を《刀術》で情報判定 
+  
+</p>
+</div>
+
+
+
+<div class="mem4 mem4-1 right">
+<span>玄蓮四</span>
+<p>
+
+     
+    2D6&gt;=5 （判定：刀術） (2D6&gt;=5) ＞ 6[1,5] ＞ 6 ＞ 成功
+  
+</p>
+</div>
+
+
+
+<div class="mem1 left">
+<span>GM</span>
+<p>
+
+     
+    ■PC3秘密：<br>あなたは嘗て姉弟子に尋ねたことがある。<br>何故この地を離れずに"朱赫"の下に居続けるのか。【超新星】は欲しくないのか？<br><br>すると彼女は珍しく、困ったような照れたような表情を浮かべて答えた。<br>曰く、【超新星】の継承に挑んだものの、失敗したという。<br>それ以降、奥義の情報を漏らさぬために"朱赫"の下で生きる事を言い渡されたそうだ。<br><br>その時の表情が、今も脳裏で煌めいている。<br>この想いを何と言うのか、その答えは【超新星】の中にある。<br> 
+  
+</p>
+</div>
+
+
+
+<div class="mem4 mem4-1 right">
+<span>玄蓮四</span>
+<p>
+
+     
+    「そういえば、さっきあなたーー居所をどうやって掴んだのかしら？」 
+  
+</p>
+</div>
+
+
+
+<div class="mem5 mem5-2 left">
+<span>李 雲樵</span>
+<p>
+
+     
+    「実はこれで居場所わかるんだよね～」 
+  
+</p>
+</div>
+
+
+
+<div class="mem4 mem4-1 right">
+<span>玄蓮四</span>
+<p>
+
+     
+    「その振り子？」 
+  
+</p>
+</div>
+
+
+
+<div class="mem5 mem5-2 left">
+<span>李 雲樵</span>
+<p>
+
+     
+    「そうそう」 
+  
+</p>
+</div>
+
+
+
+<div class="mem4 right">
+<span>玄蓮四</span>
+<p>
+
+     
+    「へぇ～、試してみようかしら」 
+  
+</p>
+</div>
+
+
+
+<div class="mem5 mem5-2 left">
+<span>李 雲樵</span>
+<p>
+
+     
+    「教えてあげたんだから仲良くしてよね～」 
+  
+</p>
+</div>
+
+
+
+<div class="mem4 mem4-1 right">
+<span>玄蓮四</span>
+<p>
+
+     
+    「あなたが正々堂々ヤってくれるならいいわよ？」 
+  
+</p>
+</div>
+
+
+
+<div class="mem5 left">
+<span>李 雲樵</span>
+<p>
+
+     
+    「僕はいつだって正々堂々だよ～？戦いにルールなんてないからね」 
+  
+</p>
+</div>
+
+
+
+<div class="mem4 mem4-3 right">
+<span>玄蓮四</span>
+<p>
+
+     
+    「じゃあ、この場でシちゃう？」 
+  
+</p>
+</div>
+
+
+
+<div class="mem4 mem4-3 right">
+<span>玄蓮四</span>
+<p>
+
+     
+    刀を振りかぶる 
+  
+</p>
+</div>
+
+
+
+<div class="mem5 mem5-2 left">
+<span>李 雲樵</span>
+<p>
+
+     
+    「まぁまだ始まったばかりだからね～、また今度ね♡」 
+  
+</p>
+</div>
+
+
+
+<div class="mem5 mem5-2 left">
+<span>李 雲樵</span>
+<p>
+
+     
+    廃墟の暗がりに向かうといつの間にか姿を消す 
+  
+</p>
+</div>
+
+
+
+<div class="mem4 mem4-2 right">
+<span>玄蓮四</span>
+<p>
+
+     
+    「・・・・」 
+  
+</p>
+</div>
+
+
+
+<div class="mem4 mem4-2 right">
+<span>玄蓮四</span>
+<p>
+
+     
+    「フン、つまんないやつね」 
+  
+</p>
+</div>
+
+
+
+<div class="mem4 right">
+<span>玄蓮四</span>
+<p>
+
+     
+    「そうだ、これがあったわ」 
+  
+</p>
+</div>
+
+
+
+<div class="mem4 right">
+<span>玄蓮四</span>
+<p>
+
+     
+    残り香がないか探す（プライズの効果で雲樵の居所を呪術判定） 
+  
+</p>
+</div>
+
+
+
+<div class="mem4 right">
+<span>玄蓮四</span>
+<p>
+
+     
+    2D6&gt;=5 （判定：呪術） (2D6&gt;=5) ＞ 11[5,6] ＞ 11 ＞ 成功
+  
+</p>
+</div>
+
+
+
+<div class="mem4 right">
+<span>玄蓮四</span>
+<p>
+
+     
+    &gt;居所を獲得 
+  
+</p>
+</div>
+
+
+
+<div class="mem4 right">
+<span>玄蓮四</span>
+<p>
+
+     
+    「まあ、次のお楽しみね」 
+  
+</p>
+</div>
+
+
+
+<div class="mem4 mem4-1 right">
+<span>玄蓮四</span>
+<p>
+
+     
+    「待ってなさい？カオナシ」 
+  
+</p>
+</div>
+
+
+
+<div class="mem4 right">
+<span>玄蓮四</span>
+<p>
+
+     
+    -シーン終了- 
+  
+</p>
+</div>
+
+
+
+</div></div>
+
+<div class="bg-sp">
+    <div class="bg-over"><div class="bg-inner bg1"></div></div>
+<div class="log">
+
+
+<div class="kp">
+
+     
+    [ GM ] サイクル : 1 → 2 
+  
+</div>
+
+
+
+<div class="mem4 right">
+<span>玄蓮四</span>
+<p>
+
+     
+    d66 (D66) ＞ 25
+  
+</p>
+</div>
+
+
+
+<div class="mem5 left">
+<span>李 雲樵</span>
+<p>
+
+     
+    d66 (D66) ＞ 56
+  
+</p>
+</div>
+
+
+
+<div class="mem3 left">
+<span>文清・白蓮</span>
+<p>
+
+     
+    d66 (D66) ＞ 24
+  
+</p>
+</div>
+
+
+
+<div class="mem1 left">
+<span>GM</span>
+<p>
+
+     
+    雲樵、蓮四、白蓮 
+  
+</p>
+</div>
+
+
+
+
+</div></div>
+
+<div class="bg-sp">
+    <div class="bg-over"><div class="bg-inner bg4"></div></div>
+<div class="log">
+
+
+<div class="kp">
+
+     
+    [ GM ] シーン : 3 → 4 
+  
+</div>
+
+
+
+<div class="mem5 left">
+<span>李 雲樵</span>
+<p>
+
+     
+    BT 戦場表(1) ＞ 平地:特になし。
+  
+</p>
+</div>
+
+
+
+<div class="kp">
+
+     
+    渓流、水の流れが穏やかで木々の合間に小鳥の鳴き声が聞こえる。 
+  
+</div>
+
+
+
+<div class="mem1 left">
+<span>GM</span>
+<p>
+
+     
+    登場人物：雲樵 
+  
+</p>
+</div>
+
+
+
+<div class="mem5 mem5-2 left">
+<span>李 雲樵</span>
+<p>
+
+     
+    封術の知識で始星源の結界など情報を探る 
+  
+</p>
+</div>
+
+
+
+<div class="mem5 mem5-2 left">
+<span>李 雲樵</span>
+<p>
+
+     
+    2D6&gt;=5 （判定：封術） (2D6&gt;=5) ＞ 7[2,5] ＞ 7 ＞ 成功
+  
+</p>
+</div>
+
+
+
+<div class="mem1 left">
+<span>GM</span>
+<p>
+
+     
+    ■HO『始星源』秘密：<br>始星源には多くの死霊怨霊が渦巻いている。<br>その正体は【超新星】の継承儀式を行った者のなれの果てだ。<br>継承儀式とは、それほど過酷極まるものなのだろうか？<br><br>天光流頭首は代々、見込みのある門下生をこの場所に連れてくると、<br>継承の儀と称し、奥義を用いた殺し合いを行わせた。<br>こうして命懸けで研ぎ澄まされた奥義こそ【超新星】なのである。 
+  
+</p>
+</div>
+
+
+
+<div class="mem5 mem5-2 left">
+<span>李 雲樵</span>
+<p>
+
+     
+    「ふーん…まぁそうなるよね～」 
+  
+</p>
+</div>
+
+
+
+<div class="mem5 mem5-2 left">
+<span>李 雲樵</span>
+<p>
+
+     
+    「これ使お～っと」 
+  
+</p>
+</div>
+
+
+
+<div class="mem5 mem5-2 left">
+<span>李 雲樵</span>
+<p>
+
+     
+    第六感を働かせプライズで白蓮の居場所を探る 
+  
+</p>
+</div>
+
+
+
+<div class="mem5 mem5-2 left">
+<span>李 雲樵</span>
+<p>
+
+     
+    2D6&gt;=5 （判定：第六感） (2D6&gt;=5) ＞ 6[1,5] ＞ 6 ＞ 成功
+  
+</p>
+</div>
+
+
+
+<div class="mem5 mem5-2 left">
+<span>李 雲樵</span>
+<p>
+
+     
+    「ここにいたんだ～♡」 
+  
+</p>
+</div>
+
+
+
+<div class="mem5 mem5-2 left">
+<span>李 雲樵</span>
+<p>
+
+     
+    影武者→白蓮 
+  
+</p>
+</div>
+
+
+
+<div class="mem5 mem5-2 left">
+<span>李 雲樵</span>
+<p>
+
+     
+    2D6&gt;=5 （判定：変装術） (2D6&gt;=5) ＞ 6[1,5] ＞ 6 ＞ 成功
+  
+</p>
+</div>
+
+
+
+<div class="mem3 left">
+<span>文清・白蓮</span>
+<p>
+
+     
+    rct ランダム分野表(1) ＞ 器術
+  
+</p>
+</div>
+
+
+
+<div class="kp">
+
+     
+    [ 文清・白蓮 ] 器術 : 1 → 0 
+  
+</div>
+
+
+
+<div class="mem5 mem5-2 left">
+<span>李 雲樵</span>
+<p>
+
+     
+    「にやにや」 
+  
+</p>
+</div>
+
+
+
+<div class="mem5 mem5-2 left">
+<span>李 雲樵</span>
+<p>
+
+     
+    「当った～」 
+  
+</p>
+</div>
+
+
+
+<div class="mem3 mem3-3 left">
+<span>文清・白蓮</span>
+<p>
+
+     
+    「クソ！！」 
+  
+</p>
+</div>
+
+
+
+<div class="mem5 mem5-2 left">
+<span>李 雲樵</span>
+<p>
+
+     
+    「怒ってる怒ってる」 
+  
+</p>
+</div>
+
+
+
+<div class="mem5 left">
+<span>李 雲樵</span>
+<p>
+
+     
+    シーン終了 
+  
+</p>
+</div>
+
+
+</div></div>
+
+<div class="bg-sp">
+    <div class="bg-over"><div class="bg-inner bg4"></div></div>
+<div class="log">
+
+
+<div class="kp">
+
+     
+    [ GM ] シーン : 4 → 5 
+  
+</div>
+
+
+
+<div class="mem4 right">
+<span>玄蓮四</span>
+<p>
+
+     
+    BT 戦場表(1) ＞ 平地:特になし。
+  
+</p>
+</div>
+
+
+
+<div class="kp">
+
+     
+    渓流、水の流れが穏やかで木々の合間に小鳥の鳴き声が聞こえる。 
+  
+</div>
+
+
+
+<div class="mem4 mem4-3 right">
+<span>玄蓮四</span>
+<p>
+
+     
+    「”イイ”性格してるわねあなた！」 
+  
+</p>
+</div>
+
+
+
+<div class="mem4 mem4-3 right">
+<span>玄蓮四</span>
+<p>
+
+     
+    白蓮を襲っている雲樵の背後からおそいかかる 
+  
+</p>
+</div>
+
+
+
+<div class="mem5 mem5-2 left">
+<span>李 雲樵</span>
+<p>
+
+     
+    「みてたの～？覗きは良くないよ～」 
+  
+</p>
+</div>
+
+
+
+<div class="mem4 mem4-3 right">
+<span>玄蓮四</span>
+<p>
+
+     
+    「あら、これを使っただけよ？」 
+  
+</p>
+</div>
+
+
+
+<div class="mem5 mem5-2 left">
+<span>李 雲樵</span>
+<p>
+
+     
+    袖から暗器を取り出す 
+  
+</p>
+</div>
+
+
+
+<div class="mem1 left">
+<span>GM</span>
+<p>
+
+     
+    戦闘開始！！ 
+  
+</p>
+</div>
+
+
+
+<div class="mem1 left">
+<span>GM</span>
+<p>
+
+     
+    戦闘乱入 
+  
+</p>
+</div>
+
+
+
+<div class="mem1 left">
+<span>GM</span>
+<p>
+
+     
+    乱入なし 
+  
+</p>
+</div>
+
+
+
+<div class="mem1 left">
+<span>GM</span>
+<p>
+
+     
+    メイン戦闘<br>・1点ダメージ食らった時点で終了<br>・2ラウンドで終了 
+  
+</p>
+</div>
+
+
+
+<div class="kp">
+
+     
+    [ GM ] ラウンド : 0 → 1 
+  
+</div>
+
+
+
+<div class="mem1 left">
+<span>GM</span>
+<p>
+
+     
+    プロット 
+  
+</p>
+</div>
+
+
+
+<div class="mem5 mem5-2 left">
+<span>李 雲樵</span>
+<p>
+
+     
+    火計→蓮四 
+  
+</p>
+</div>
+
+
+
+<div class="mem5 mem5-2 left">
+<span>李 雲樵</span>
+<p>
+
+     
+    2D6&gt;=5 （判定：人脈） (2D6&gt;=5) ＞ 7[1,6] ＞ 7 ＞ 成功
+  
+</p>
+</div>
+
+
+
+<div class="mem4 mem4-2 right">
+<span>玄蓮四</span>
+<p>
+
+     
+    &gt;火達磨 
+  
+</p>
+</div>
+
+
+
+<div class="mem1 left">
+<span>GM</span>
+<p>
+
+     
+    プロットオープン 
+  
+</p>
+</div>
+
+
+
+<div class="kp">
+
+     
+    [ 李 雲樵 ] がダイスシンボルを公開。出目は 2 です。 
+  
+</div>
+
+
+
+<div class="kp">
+
+     
+    [ 玄蓮四 ] がダイスシンボルを公開。出目は 4 です。 
+  
+</div>
+
+
+
+<div class="mem4 mem4-3 right">
+<span>玄蓮四</span>
+<p>
+
+     
+    【神槍】しんそう 
+  
+</p>
+</div>
+
+
+
+<div class="mem4 mem4-3 right">
+<span>玄蓮四</span>
+<p>
+
+     
+    「ご挨拶ね！！」 
+  
+</p>
+</div>
+
+
+
+<div class="mem4 mem4-3 right">
+<span>玄蓮四</span>
+<p>
+
+     
+    「私からもお返しッ！！」 
+  
+</p>
+</div>
+
+
+
+<div class="mem4 mem4-3 right">
+<span>玄蓮四</span>
+<p>
+
+     
+    2D6&gt;=5 （判定：手裏剣術） (2D6&gt;=5) ＞ 5[2,3] ＞ 5 ＞ ファンブル
+  
+</p>
+</div>
+
+
+<div class="mem4 mem4-3 right">
+<span>玄蓮四</span>
+<p>
+
+     
+    神通丸 
+  
+</p>
+</div>
+
+
+
+
+<div class="kp">
+
+     
+    [ 玄蓮四 ] 忍具 : 4 → 3 
+  
+</div>
+
+
+
+
+
+<div class="mem4 mem4-3 right">
+<span>玄蓮四</span>
+<p>
+
+     
+    2D6&gt;=5 （判定：手裏剣術） (2D6&gt;=5) ＞ 10[5,5] ＞ 10 ＞ 成功
+  
+</p>
+</div>
+
+
+
+<div class="mem5 mem5-2 left">
+<span>李 雲樵</span>
+<p>
+
+     
+    2D6&gt;=6 （判定：砲術） (2D6&gt;=6) ＞ 9[3,6] ＞ 9 ＞ 成功
+  
+</p>
+</div>
+
+
+
+<div class="mem5 mem5-2 left">
+<span>李 雲樵</span>
+<p>
+
+     
+    「みえみえだよ～」 
+  
+</p>
+</div>
+
+
+
+<div class="mem5 mem5-2 left">
+<span>李 雲樵</span>
+<p>
+
+     
+    なにもしない 
+  
+</p>
+</div>
+
+
+
+<div class="mem4 mem4-3 right">
+<span>玄蓮四</span>
+<p>
+
+     
+    「すばしっこいわね！」 
+  
+</p>
+</div>
+
+
+
+<div class="mem5 mem5-2 left">
+<span>李 雲樵</span>
+<p>
+
+     
+    「次はどうするの～？」 
+  
+</p>
+</div>
+
+
+
+<div class="kp">
+
+     
+    [ GM ] ラウンド : 1 → 2 
+  
+</div>
+
+
+
+<div class="mem1 left">
+<span>GM</span>
+<p>
+
+     
+    プロット 
+  
+</p>
+</div>
+
+
+
+<div class="mem1 left">
+<span>GM</span>
+<p>
+
+     
+    プロットオープン 
+  
+</p>
+</div>
+
+
+
+<div class="kp">
+
+     
+    [ 李 雲樵 ] がダイスシンボルを公開。出目は 2 です。 
+  
+</div>
+
+
+
+<div class="kp">
+
+     
+    [ 玄蓮四 ] がダイスシンボルを公開。出目は 5 です。 
+  
+</div>
+
+
+
+<div class="mem4 mem4-3 right">
+<span>玄蓮四</span>
+<p>
+
+     
+    【神槍】しんそう 
+  
+</p>
+</div>
+
+
+
+<div class="mem4 mem4-3 right">
+<span>玄蓮四</span>
+<p>
+
+     
+    SG@12#5&gt;=5 （判定：手裏剣術） (SG@12#5&gt;=5) ＞ 6[3,3] ＞ 6 ＞ ファンブル
+  
+</p>
+</div>
+
+
+
+<div class="kp">
+
+     
+    [ 玄蓮四 ] 忍具 : 3 → 2 
+  
+</div>
+
+
+
+<div class="mem4 mem4-3 right">
+<span>玄蓮四</span>
+<p>
+
+     
+    神通丸使用 
+  
+</p>
+</div>
+
+
+
+<div class="mem4 mem4-3 right">
+<span>玄蓮四</span>
+<p>
+
+     
+    SG@12#5&gt;=5 （判定：手裏剣術） (SG@12#5&gt;=5) ＞ 6[1,5] ＞ 6 ＞ ファンブル
+  
+</p>
+</div>
+
+
+
+<div class="mem4 mem4-3 right">
+<span>玄蓮四</span>
+<p>
+
+     
+    攻撃を外す 
+  
+</p>
+</div>
+
+
+
+<div class="mem5 mem5-2 left">
+<span>李 雲樵</span>
+<p>
+
+     
+    「うまく術中にハマったようですね」 
+  
+</p>
+</div>
+
+
+
+<div class="mem4 mem4-3 right">
+<span>玄蓮四</span>
+<p>
+
+     
+    &gt;火達磨：接近戦ダメージ1点 
+  
+</p>
+</div>
+
+
+
+<div class="mem4 mem4-3 right">
+<span>玄蓮四</span>
+<p>
+
+     
+    RCT ランダム分野表(4) ＞ 謀術
+  
+</p>
+</div>
+
+
+
+<div class="kp">
+
+     
+    [ 文清・白蓮 ] 謀術 : 1 → 0 
+  
+</div>
+
+
+
+<div class="mem4 mem4-3 right">
+<span>玄蓮四</span>
+<p>
+
+     
+    「ハァァァァァ！？」 
+  
+</p>
+</div>
+
+
+
+<div class="mem1 left">
+<span>GM</span>
+<p>
+
+     
+    戦闘終了 
+  
+</p>
+</div>
+
+
+
+<div class="mem4 mem4-2 right">
+<span>玄蓮四</span>
+<p>
+
+     
+    不服の顔 
+  
+</p>
+</div>
+
+
+
+<div class="mem1 left">
+<span>GM</span>
+<p>
+
+     
+    勝者：雲樵 
+  
+</p>
+</div>
+
+
+
+<div class="mem5 mem5-2 left">
+<span>李 雲樵</span>
+<p>
+
+     
+    にやにや 
+  
+</p>
+</div>
+
+
+
+<div class="kp">
+
+     
+    [ 玄蓮四 ] 謀術 : 1 → 0 
+  
+</div>
+
+
+
+<div class="mem4 mem4-2 right">
+<span>玄蓮四</span>
+<p>
+
+     
+    「ちょっとあんた！剣を構えなさいよ！！」 
+  
+</p>
+</div>
+
+
+
+<div class="mem1 left">
+<span>GM</span>
+<p>
+
+     
+    戦果： 
+  
+</p>
+</div>
+
+
+
+<div class="mem5 mem5-2 left">
+<span>李 雲樵</span>
+<p>
+
+     
+    「あれ～どうしたんですか～」 
+  
+</p>
+</div>
+
+
+
+<div class="mem5 mem5-2 left">
+<span>李 雲樵</span>
+<p>
+
+     
+    蓮四からプラスの感情を獲得 
+  
+</p>
+</div>
+
+
+
+<div class="mem5 mem5-2 left">
+<span>李 雲樵</span>
+<p>
+
+     
+    et 感情表(1) ＞ 共感（プラス）／不信（マイナス）
+  
+</p>
+</div>
+
+
+
+<div class="mem5 mem5-2 left">
+<span>李 雲樵</span>
+<p>
+
+     
+     共感
+  
+</p>
+</div>
+
+
+
+<div class="mem4 mem4-2 right">
+<span>玄蓮四</span>
+<p>
+
+     
+    「なんなのよ！」 
+  
+</p>
+</div>
+
+
+
+<div class="mem5 mem5-2 left">
+<span>李 雲樵</span>
+<p>
+
+     
+    「楽しかったですね～またやりましょうね～」 
+  
+</p>
+</div>
+
+
+
+<div class="mem4 mem4-2 right">
+<span>玄蓮四</span>
+<p>
+
+     
+    「ハァ、なんかつかれたわ」 
+  
+</p>
+</div>
+
+
+
+<div class="mem4 mem4-1 right">
+<span>玄蓮四</span>
+<p>
+
+     
+    「まぁいいわ！的あて楽しかったわよ！」 
+  
+</p>
+</div>
+
+
+
+<div class="mem5 mem5-2 left">
+<span>李 雲樵</span>
+<p>
+
+     
+    「的役ありがとうございました～」 
+  
+</p>
+</div>
+
+
+
+<div class="mem5 mem5-2 left">
+<span>李 雲樵</span>
+<p>
+
+     
+    にやにや 
+  
+</p>
+</div>
+
+
+
+<div class="mem4 mem4-1 right">
+<span>玄蓮四</span>
+<p>
+
+     
+    「やっぱりヤる（戦闘）のはいいわね」 &gt;共感 
+  
+</p>
+</div>
+
+
+
+<div class="mem4 mem4-3 right">
+<span>玄蓮四</span>
+<p>
+
+     
+    「そういうコなのはわかったわ、次は殺るからね」 
+  
+</p>
+</div>
+
+
+
+<div class="mem5 mem5-2 left">
+<span>李 雲樵</span>
+<p>
+
+     
+    「またね～」 
+  
+</p>
+</div>
+
+
+
+<div class="mem4 right">
+<span>玄蓮四</span>
+<p>
+
+     
+    「また逃げ足のはやいこと」 
+  
+</p>
+</div>
+
+
+
+<div class="mem4 right">
+<span>玄蓮四</span>
+<p>
+
+     
+    「まあいいわ・・・フフ」 
+  
+</p>
+</div>
+
+
+
+<div class="mem4 right">
+<span>玄蓮四</span>
+<p>
+
+     
+    -シーン終了- 
+  
+</p>
+</div>
+
+
+
+
+</div></div>
+
+<div class="bg-sp">
+    <div class="bg-over"><div class="bg-inner bg5"></div></div>
+<div class="log">
+
+
+<div class="kp">
+
+     
+    [ GM ] シーン : 5 → 6 
+  
+</div>
+
+
+
+<div class="mem3 left">
+<span>文清・白蓮</span>
+<p>
+
+     
+    BT 戦場表(2) ＞ 水中:海や川や、プール、血の池地獄など。この戦場では、回避判定にマイナス２の修正がつく。
+  
+</p>
+</div>
+
+
+
+<div class="kp">
+
+     
+    宝流湖、山岳の合間にできた美しい翠緑色の川を小舟で進む。 
+  
+</div>
+
+
+
+<div class="mem1 left">
+<span>GM</span>
+<p>
+
+     
+    登場人物：白蓮、白雀 
+  
+</p>
+</div>
+
+
+
+<div class="mem3 left">
+<span>文清・白蓮</span>
+<p>
+
+     
+    ー白蓮の記憶ー 
+  
+</p>
+</div>
+
+
+
+<div class="mem6 right">
+<span>白雀</span>
+<p>
+
+     
+    「白蓮！オレはこの家の奥義を継承した！」 
+  
+</p>
+</div>
+
+
+
+<div class="mem3 left">
+<span>文清・白蓮</span>
+<p>
+
+     
+    あいつはそう言って僕に奥義を見せてきた 
+  
+</p>
+</div>
+
+
+
+<div class="mem6 right">
+<span>白雀</span>
+<p>
+
+     
+    「奥義を見せた事は父さんたちには内緒だぞ」 
+  
+</p>
+</div>
+
+
+
+<div class="mem3 left">
+<span>文清・白蓮</span>
+<p>
+
+     
+    奥義を2つ受け取った 
+  
+</p>
+</div>
+
+
+
+<div class="mem3 left">
+<span>文清・白蓮</span>
+<p>
+
+     
+    暗号術でサンスゥチィの秘密を抜き取る 
+  
+</p>
+</div>
+
+
+
+<div class="mem3 mem3-4 left">
+<span>文清・白蓮</span>
+<p>
+
+     
+    奥義！！ 
+  
+</p>
+</div>
+
+
+
+<div class="mem3 mem3-4 left">
+<span>文清・白蓮</span>
+<p>
+
+     
+    《「静蓮の策」》<br>指定特技：絡繰術<br>効果　　：完全成功<br><br>演出　　：白蓮は微動だにせず、相手を見据える。<br>その瞬間、敵は悟る──すべての動き、すべての策はすでに読まれていたのだと。<br>逃げ道も、勝機もない。<br>「あなたの思考も行動も、すべて僕の計算通りです」<br>言葉と共に策略は完成し、抗う術もなく、勝利は白蓮の手中に収まる。 
+  
+</p>
+</div>
+
+
+
+<div class="mem1 left">
+<span>GM</span>
+<p>
+
+     
+    完全成功により成功 
+  
+</p>
+</div>
+
+
+
+<div class="mem1 left">
+<span>GM</span>
+<p>
+
+     
+    ■NPC『参宿七』秘密：<br>あなたはかつて、【超新星】継承の儀式を行ったことがある。<br>しかし、儀式は失敗し奥義を受け継ぐことはできなかった。<br>それ以降、師匠の下で飼い殺しにされていたが、奇しくもチャンスが巡ってきた。<br>以前は成し遂げる事叶わなかった、奥義修得の最終条件。<br>今ならそのことに迷いはない――筈だ。<br><br>あなたの本当の使命は『【超新星】を継ぐこと』だ。<br><br>※このキャラクターが戦闘に勝利した場合、他のキャラクターが持つすべてのプライズ『冬星の振り子』と【超新星】の情報は失われる。 
+  
+</p>
+</div>
+
+
+
+<div class="mem3 left">
+<span>文清・白蓮</span>
+<p>
+
+     
+    分身の術でウンショウの居所を分担して探す 
+  
+</p>
+</div>
+
+
+
+<div class="mem3 left">
+<span>文清・白蓮</span>
+<p>
+
+     
+    2D6&gt;=5 （判定：分身の術） (2D6&gt;=5) ＞ 8[4,4] ＞ 8 ＞ 成功
+  
+</p>
+</div>
+
+
+
+<div class="mem3 left">
+<span>文清・白蓮</span>
+<p>
+
+     
+    「やっとか」 
+  
+</p>
+</div>
+
+
+
+<div class="mem3 left">
+<span>文清・白蓮</span>
+<p>
+
+     
+    ーシーン終了ー 
+  
+</p>
+</div>
+
+
+</div></div>
+
+<div class="bg-sp">
+    <div class="bg-over"><div class="bg-inner bg1"></div></div>
+<div class="log">
+
+
+
+<div class="kp">
+
+     
+    [ GM ] サイクル : 2 → 3 
+  
+</div>
+
+
+
+<div class="mem3 left">
+<span>文清・白蓮</span>
+<p>
+
+     
+    d66 (D66) ＞ 25
+  
+</p>
+</div>
+
+
+
+<div class="mem4 right">
+<span>玄蓮四</span>
+<p>
+
+     
+    ｄ６６ (D66) ＞ 45
+  
+</p>
+</div>
+
+
+
+<div class="mem5 left">
+<span>李 雲樵</span>
+<p>
+
+     
+    d66 (D66) ＞ 15
+  
+</p>
+</div>
+
+
+
+<div class="mem1 left">
+<span>GM</span>
+<p>
+
+     
+    蓮四、白蓮、雲樵 
+  
+</p>
+</div>
+
+
+</div></div>
+
+<div class="bg-sp">
+    <div class="bg-over"><div class="bg-inner bg5"></div></div>
+<div class="log">
+
+
+
+
+<div class="mem4 right">
+<span>玄蓮四</span>
+<p>
+
+     
+    BT 戦場表(2) ＞ 水中:海や川や、プール、血の池地獄など。この戦場では、回避判定にマイナス２の修正がつく。
+  
+</p>
+</div>
+
+
+
+<div class="kp">
+
+     
+    宝流湖、山岳の合間にできた美しい翠緑色の川を小舟で進む。 
+  
+</div>
+
+
+
+<div class="kp">
+
+     
+    [ GM ] シーン : 6 → 7 
+  
+</div>
+
+
+
+<div class="mem4 right">
+<span>玄蓮四</span>
+<p>
+
+     
+    &gt;戦闘　雲樵 
+  
+</p>
+</div>
+
+
+
+<div class="mem5 mem5-2 left">
+<span>李 雲樵</span>
+<p>
+
+     
+    「またケガしに来たの～」にやにや 
+  
+</p>
+</div>
+
+
+
+<div class="mem4 mem4-3 right">
+<span>玄蓮四</span>
+<p>
+
+     
+    「えぇ、また来てあげたわよ！！！」 
+  
+</p>
+</div>
+
+
+
+<div class="mem5 mem5-2 left">
+<span>李 雲樵</span>
+<p>
+
+     
+    「じゃあ遊ぼっか～」 
+  
+</p>
+</div>
+
+
+
+<div class="mem4 mem4-3 right">
+<span>玄蓮四</span>
+<p>
+
+     
+    「次は当てるわ！」 
+  
+</p>
+</div>
+
+
+
+<div class="mem1 left">
+<span>GM</span>
+<p>
+
+     
+    戦闘開始！！ 
+  
+</p>
+</div>
+
+
+
+<div class="kp">
+
+     
+    [ GM ] ラウンド : 0 → 1 
+  
+</div>
+
+
+
+<div class="mem1 left">
+<span>GM</span>
+<p>
+
+     
+    プロット 
+  
+</p>
+</div>
+
+
+
+<div class="mem5 mem5-2 left">
+<span>李 雲樵</span>
+<p>
+
+     
+    火計 
+  
+</p>
+</div>
+
+
+
+<div class="mem5 mem5-2 left">
+<span>李 雲樵</span>
+<p>
+
+     
+    2D6&gt;=5 （判定：人脈） (2D6&gt;=5) ＞ 9[4,5] ＞ 9 ＞ 成功
+  
+</p>
+</div>
+
+
+
+<div class="mem4 right">
+<span>玄蓮四</span>
+<p>
+
+     
+    「またそれぇ？」 
+  
+</p>
+</div>
+
+
+
+<div class="mem1 left">
+<span>GM</span>
+<p>
+
+     
+    プロットオープン 
+  
+</p>
+</div>
+
+
+
+<div class="kp">
+
+     
+    [ 李 雲樵 ] がダイスシンボルを公開。出目は 4 です。 
+  
+</div>
+
+
+
+<div class="kp">
+
+     
+    [ 玄蓮四 ] がダイスシンボルを公開。出目は 3 です。 
+  
+</div>
+
+
+
+<div class="mem5 left">
+<span>李 雲樵</span>
+<p>
+
+     
+    怪士（裂牙）遁甲符消費 
+  
+</p>
+</div>
+
+
+
+<div class="kp">
+
+     
+    [ 李 雲樵 ] 忍具 : 4 → 3 
+  
+</div>
+
+
+
+<div class="mem5 mem5-2 left">
+<span>李 雲樵</span>
+<p>
+
+     
+    裂牙　居所を持っているので自動成功 
+  
+</p>
+</div>
+
+
+
+<div class="mem4 right">
+<span>玄蓮四</span>
+<p>
+
+     
+    SG@12#4&gt;=8 （判定：用兵術） (SG@12#4&gt;=8) ＞ 4[1,3] ＞ 4 ＞ ファンブル
+  
+</p>
+</div>
+
+
+
+<div class="mem4 right">
+<span>玄蓮四</span>
+<p>
+
+     
+    RCT ランダム分野表(1) ＞ 器術
+  
+</p>
+</div>
+
+
+
+<div class="mem4 right">
+<span>玄蓮四</span>
+<p>
+
+     
+    RCT ランダム分野表(5) ＞ 戦術
+  
+</p>
+</div>
+
+
+
+<div class="kp">
+
+     
+    [ 玄蓮四 ] 器術 : 1 → 0 
+  
+</div>
+
+
+
+<div class="kp">
+
+     
+    [ 玄蓮四 ] 戦術 : 1 → 0 
+  
+</div>
+
+
+
+<div class="mem5 mem5-2 left">
+<span>李 雲樵</span>
+<p>
+
+     
+    「あれ～あれれ～」にやにや 
+  
+</p>
+</div>
+
+
+
+<div class="mem4 right">
+<span>玄蓮四</span>
+<p>
+
+     
+    「・・・」 
+  
+</p>
+</div>
+
+
+
+<div class="mem4 right">
+<span>玄蓮四</span>
+<p>
+
+     
+    「たしかにヤれとは言ったけどぉ・・・」 
+  
+</p>
+</div>
+
+
+
+<div class="mem4 right">
+<span>玄蓮四</span>
+<p>
+
+     
+    「なんかずるくない？」 
+  
+</p>
+</div>
+
+
+
+<div class="mem5 mem5-2 left">
+<span>李 雲樵</span>
+<p>
+
+     
+    「今回はご褒美に隠し技出したんですけどね～」 
+  
+</p>
+</div>
+
+
+
+<div class="mem4 right">
+<span>玄蓮四</span>
+<p>
+
+     
+    「ホーミングしてたわよ」 
+  
+</p>
+</div>
+
+
+
+<div class="mem4 right">
+<span>玄蓮四</span>
+<p>
+
+     
+    「ちゃんと肉体で戦いなさいよ」 
+  
+</p>
+</div>
+
+
+
+<div class="mem4 right">
+<span>玄蓮四</span>
+<p>
+
+     
+    「それでも奥義継承者を目指してるの！？」 
+  
+</p>
+</div>
+
+
+
+<div class="mem5 mem5-2 left">
+<span>李 雲樵</span>
+<p>
+
+     
+    「この細身で肉弾戦はつらいんですよ～」 
+  
+</p>
+</div>
+
+
+
+<div class="mem4 right">
+<span>玄蓮四</span>
+<p>
+
+     
+    「そんなことばっかしてるからよ」 
+  
+</p>
+</div>
+
+
+
+<div class="mem5 mem5-2 left">
+<span>李 雲樵</span>
+<p>
+
+     
+    「こっちの方が面白いですし」 
+  
+</p>
+</div>
+
+
+
+<div class="mem4 right">
+<span>玄蓮四</span>
+<p>
+
+     
+    「ひねくれてるわねぇ」 
+  
+</p>
+</div>
+
+
+
+<div class="mem5 mem5-2 left">
+<span>李 雲樵</span>
+<p>
+
+     
+    「お褒めの言葉ありがとうございます～」 
+  
+</p>
+</div>
+
+
+
+<div class="mem1 left">
+<span>GM</span>
+<p>
+
+     
+    戦闘終了！！ 
+  
+</p>
+</div>
+
+
+
+<div class="mem1 left">
+<span>GM</span>
+<p>
+
+     
+    戦果 
+  
+</p>
+</div>
+
+
+
+<div class="mem5 mem5-2 left">
+<span>李 雲樵</span>
+<p>
+
+     
+    蓮四に対してマイナス感情を獲得 
+  
+</p>
+</div>
+
+
+
+<div class="mem5 mem5-2 left">
+<span>李 雲樵</span>
+<p>
+
+     
+    et 感情表(4) ＞ 忠誠（プラス）／侮蔑（マイナス）
+  
+</p>
+</div>
+
+
+
+<div class="mem5 mem5-2 left">
+<span>李 雲樵</span>
+<p>
+
+     
+    侮蔑 
+  
+</p>
+</div>
+
+
+
+<div class="mem5 mem5-2 left">
+<span>李 雲樵</span>
+<p>
+
+     
+    「なんだか残念でしたね～」 
+  
+</p>
+</div>
+
+
+
+<div class="mem4 right">
+<span>玄蓮四</span>
+<p>
+
+     
+    「なんかやな言い方ね・・・」 
+  
+</p>
+</div>
+
+
+
+<div class="mem5 left">
+<span>李 雲樵</span>
+<p>
+
+     
+    「いえいえなんでも」 
+  
+</p>
+</div>
+
+
+
+<div class="mem4 right">
+<span>玄蓮四</span>
+<p>
+
+     
+    （なんで射撃戦ダメージ持ってこないのよ・・！） 
+  
+</p>
+</div>
+
+
+
+<div class="mem4 right">
+<span>玄蓮四</span>
+<p>
+
+     
+    -シーン終了- 
+  
+</p>
+</div>
+
+
+
+</div></div>
+
+<div class="bg-sp">
+    <div class="bg-over"><div class="bg-inner bg6"></div></div>
+<div class="log">
+
+
+
+<div class="kp">
+
+     
+    [ GM ] シーン : 7 → 8 
+  
+</div>
+
+
+
+<div class="mem3 left">
+<span>文清・白蓮</span>
+<p>
+
+     
+    「蓮四。情報交換しないか？今危ないんだろう？ 」
+  
+</p>
+</div>
+
+
+
+<div class="mem3 left">
+<span>文清・白蓮</span>
+<p>
+
+     
+    「情報は多い方がいいだろう。」 
+  
+</p>
+</div>
+
+
+
+<div class="mem4 right">
+<span>玄蓮四</span>
+<p>
+
+     
+    （なんか情けをかけられた気がする・・・） 
+  
+</p>
+</div>
+
+
+
+<div class="mem4 mem4-1 right">
+<span>玄蓮四</span>
+<p>
+
+     
+    「えぇそうね！是非乗りたいところだわ」 
+  
+</p>
+</div>
+
+
+
+<div class="mem4 right">
+<span>玄蓮四</span>
+<p>
+
+     
+    （使えるものは、使わないと） 
+  
+</p>
+</div>
+
+
+
+<div class="mem1 left">
+<span>GM</span>
+<p>
+
+     
+    登場人物：白蓮、蓮四 
+  
+</p>
+</div>
+
+
+
+<div class="mem3 left">
+<span>文清・白蓮</span>
+<p>
+
+     
+    「なら、今新しい情報をとってくる。少しまっていろ。」 
+  
+</p>
+</div>
+
+
+
+<div class="mem3 left">
+<span>文清・白蓮</span>
+<p>
+
+     
+    BT 戦場表(3) ＞ 高所:ビルの谷間や樹上、断崖絶壁など。この戦場でファンブルすると接近戦ダメージを１点受ける。
+  
+</p>
+</div>
+
+
+
+<div class="kp">
+
+     
+    切り立った山々を見下ろす。霧に阻まれて下界の様子は伺えない。 
+  
+</div>
+
+
+
+<div class="mem3 left">
+<span>文清・白蓮</span>
+<p>
+
+     
+    身体操術で始星源の秘密を感じ取る 
+  
+</p>
+</div>
+
+
+
+<div class="mem3 left">
+<span>文清・白蓮</span>
+<p>
+
+     
+    2D6&gt;=5 （判定：身体操術） (2D6&gt;=5) ＞ 8[3,5] ＞ 8 ＞ 成功
+  
+</p>
+</div>
+
+
+
+<div class="mem3 left">
+<span>文清・白蓮</span>
+<p>
+
+     
+    「ほう……。これが大地の声」 
+  
+</p>
+</div>
+
+
+
+<div class="mem3 left">
+<span>文清・白蓮</span>
+<p>
+
+     
+    「蓮四、サンスゥチィの情報を渡そう。」 
+  
+</p>
+</div>
+
+
+
+<div class="mem4 right">
+<span>玄蓮四</span>
+<p>
+
+     
+    「あら、ありがとう」 
+  
+</p>
+</div>
+
+
+
+<div class="mem4 right">
+<span>玄蓮四</span>
+<p>
+
+     
+    「じゃあ、交換ね」 
+  
+</p>
+</div>
+
+
+
+<div class="mem4 right">
+<span>玄蓮四</span>
+<p>
+
+     
+    「私からはあのカオナシ野郎から聞いた話を教えてあげるわ」 
+  
+</p>
+</div>
+
+
+
+<div class="mem4 right">
+<span>玄蓮四</span>
+<p>
+
+     
+    白蓮（PC1）へ雲樵（PC3）の秘密を渡す 
+  
+</p>
+</div>
+
+
+
+<div class="mem3 left">
+<span>文清・白蓮</span>
+<p>
+
+     
+    蓮四→サンスゥチィの秘密を渡す 
+  
+</p>
+</div>
+
+
+
+<div class="mem1 left">
+<span>GM</span>
+<p>
+
+     
+    では、PC3は公開情報<br>姉弟子様はまだ非公開 
+  
+</p>
+</div>
+
+
+
+<div class="mem3 left">
+<span>文清・白蓮</span>
+<p>
+
+     
+    「あぁ。これでまた情報が増えたな。」 
+  
+</p>
+</div>
+
+
+
+<div class="mem3 left">
+<span>文清・白蓮</span>
+<p>
+
+     
+    「さて、次の準備でもしておくか」 
+  
+</p>
+</div>
+
+
+
+<div class="mem3 left">
+<span>文清・白蓮</span>
+<p>
+
+     
+    流転 
+  
+</p>
+</div>
+
+
+
+<div class="mem3 left">
+<span>文清・白蓮</span>
+<p>
+
+     
+    2D6&gt;=5 （判定：記憶術） (2D6&gt;=5) ＞ 7[1,6] ＞ 7 ＞ 成功
+  
+</p>
+</div>
+
+
+
+<div class="mem3 left">
+<span>文清・白蓮</span>
+<p>
+
+     
+    奥義Aに変更 
+  
+</p>
+</div>
+
+
+
+<div class="mem7 left">
+<span>GM 秘匿</span>
+<p>
+
+     
+    ここで「絶対防御」に変更されました。決定 
+  
+</p>
+</div>
+
+
+
+<div class="mem3 left">
+<span>文清・白蓮</span>
+<p>
+
+     
+    「準備はできた」 
+  
+</p>
+</div>
+
+
+
+<div class="mem4 right">
+<span>玄蓮四</span>
+<p>
+
+     
+    「？」 
+  
+</p>
+</div>
+
+
+
+<div class="mem3 left">
+<span>文清・白蓮</span>
+<p>
+
+     
+    ーシーン終了ー 
+  
+</p>
+</div>
+
+
+</div></div>
+
+<div class="bg-sp">
+    <div class="bg-over"><div class="bg-inner bg10"></div></div>
+<div class="log">
+
+
+
+<div class="mem1 left">
+<span>GM</span>
+<p>
+
+     
+    マスターシーン 
+  
+</p>
+</div>
+
+
+
+<div class="kp">
+
+     
+    互いに傷つけあう３人を遠目に、影が一つ木々の合間に姿を隠し、その雄姿を見守っていた。 
+  
+</div>
+
+
+
+<div class="mem2 mem2-3 right">
+<span>参 宿七</span>
+<p>
+
+     
+    「……」 
+  
+</p>
+</div>
+
+
+
+<div class="kp">
+
+     
+    彼女は自身の手に目を落とす。そこには『冬星の振り子』が３つ握られていた。 
+  
+</div>
+
+
+
+<div class="mem2 right">
+<span>参 宿七</span>
+<p>
+
+     
+    「……師匠……私は、迷いません……いや、迷うわけにはいきません」 
+  
+</p>
+</div>
+
+<div class="mem2 right">
+<span>参 宿七</span>
+<p>
+
+     
+    「あの人たちの……いえ、これは天光流を受け継ぐ者としての……覚悟……が」 
+  
+</p>
+</div>
+
+
+
+<div class="kp">
+
+     
+    口籠り震えた声を発する。誰に聞かせるでもなく、己を奮い立たせるための言霊を。<br>脳裏に浮かぶのは自身の過去。親しかった兄弟弟子たちの姿。<br>しかし彼らはもう――いや、あるいは未だこの地にいるのかもしれない。<br>だが、自身の使命は彼らの為ではない。<br>あくまで彼女は天光流を継ぐ者としての努めを果たすだけだ。 
+  
+</div>
+
+
+
+<div class="mem2 right">
+<span>参 宿七</span>
+<p>
+
+     
+    「白蓮……蓮四……雲樵……」 
+  
+</p>
+</div>
+
+
+
+<div class="mem2 mem2-3 right">
+<span>参 宿七</span>
+<p>
+
+     
+    「……」 
+  
+</p>
+</div>
+
+
+
+<div class="kp">
+
+     
+    手に収まる振り子を握りしめると、目を見開く。その顔に迷いはなかった。 
+  
+</div>
+
+
+
+<div class="kp">
+
+     
+    シーン終了 
+  
+</div>
+
+
+
+</div></div>
+
+<div class="bg-sp">
+    <div class="bg-over"><div class="bg-inner bg8"></div></div>
+<div class="log">
+
+
+<div class="kp">
+
+     
+    [ GM ] シーン : 8 → 9 
+  
+</div>
+
+
+
+<div class="mem5 left">
+<span>李 雲樵</span>
+<p>
+
+     
+    BT 戦場表(5) ＞ 雑踏:人混みや教室、渋滞中の車道など。この戦場では、この戦場では、行為判定のとき、ファンブル値が１上昇する。
+  
+</p>
+</div>
+
+
+
+<div class="kp">
+
+     
+    嘗ての栄華が伺える廃墟郡。時たまに囁き声が聞こえてくる…… 
+  
+</div>
+
+
+
+<div class="mem5 left">
+<span>李 雲樵</span>
+<p>
+
+     
+    「白～蓮～く～ん！あ～そ～ぼ～」 
+  
+</p>
+</div>
+
+
+
+<div class="mem3 left">
+<span>文清・白蓮</span>
+<p>
+
+     
+    「急になんだ！お前と遊んでどうなる」 
+  
+</p>
+</div>
+
+
+
+<div class="mem5 left">
+<span>李 雲樵</span>
+<p>
+
+     
+    「蓮四ちゃんとはいっぱい遊んだから次は白蓮君と遊ぼうかなって」 
+  
+</p>
+</div>
+
+
+
+<div class="mem5 left">
+<span>李 雲樵</span>
+<p>
+
+     
+    おもむろに暗器を振りかざす 
+  
+</p>
+</div>
+
+
+
+<div class="mem3 left">
+<span>文清・白蓮</span>
+<p>
+
+     
+    「いいのか？後悔するなよ」 
+  
+</p>
+</div>
+
+
+
+<div class="mem4 mem4-3 right">
+<span>玄蓮四</span>
+<p>
+
+     
+    「みつけたわよ！！」 
+  
+</p>
+</div>
+
+
+
+<div class="mem5 left">
+<span>李 雲樵</span>
+<p>
+
+     
+    「おっと邪魔がはいったね～」 
+  
+</p>
+</div>
+
+
+
+<div class="mem5 left">
+<span>李 雲樵</span>
+<p>
+
+     
+    「まぁまたすぐ会えるから！またね白蓮君」 
+  
+</p>
+</div>
+
+
+
+<div class="mem5 left">
+<span>李 雲樵</span>
+<p>
+
+     
+    この場から逃げ去る 
+  
+</p>
+</div>
+
+
+
+<div class="mem4 mem4-3 right">
+<span>玄蓮四</span>
+<p>
+
+     
+    「待ちなさい！！ッ！」手を抑える 
+  
+</p>
+</div>
+
+
+
+<div class="mem1 left">
+<span>GM</span>
+<p>
+
+     
+    登場人物：雲樵、蓮四、宿七 
+  
+</p>
+</div>
+
+
+
+<div class="mem5 left">
+<span>李 雲樵</span>
+<p>
+
+     
+    「あれ～宿七ちゃん？」 
+  
+</p>
+</div>
+
+
+
+<div class="mem2 right">
+<span>参 宿七</span>
+<p>
+
+     
+    「……雲樵」 
+  
+</p>
+</div>
+
+
+
+<div class="mem5 left">
+<span>李 雲樵</span>
+<p>
+
+     
+    「僕たちが心配になって来ちゃったんですか～？」 
+  
+</p>
+</div>
+
+
+
+<div class="mem2 right">
+<span>参 宿七</span>
+<p>
+
+     
+    「いっ、いやっ。監督者として見守る義務がだな」 
+  
+</p>
+</div>
+
+
+
+<div class="mem5 mem5-2 left">
+<span>李 雲樵</span>
+<p>
+
+     
+    「ふ～ん？ふ～～～ん？？」にやにや 
+  
+</p>
+</div>
+
+
+
+<div class="mem2 right">
+<span>参 宿七</span>
+<p>
+
+     
+    「……怪我は少なそうだな」 
+  
+</p>
+</div>
+
+
+
+<div class="mem4 mem4-3 right">
+<span>玄蓮四</span>
+<p>
+
+     
+    「待ちなさーーい！！！」 
+  
+</p>
+</div>
+
+
+
+<div class="mem4 mem4-3 right">
+<span>玄蓮四</span>
+<p>
+
+     
+    血だらけで追っかけてくる 
+  
+</p>
+</div>
+
+
+
+<div class="mem2 mem2-2 right">
+<span>参 宿七</span>
+<p>
+
+     
+    「……蓮四はボロボロだな」 
+  
+</p>
+</div>
+
+
+
+<div class="mem4 mem4-3 right">
+<span>玄蓮四</span>
+<p>
+
+     
+    「まだこれからよ！」 
+  
+</p>
+</div>
+
+
+
+<div class="mem5 left">
+<span>李 雲樵</span>
+<p>
+
+     
+    「蓮四ちゃん大丈夫ですか！？誰にやられたんですか？」 
+  
+</p>
+</div>
+
+
+
+<div class="mem4 mem4-3 right">
+<span>玄蓮四</span>
+<p>
+
+     
+    「あんたよ！！！！！！！！！！！」 
+  
+</p>
+</div>
+
+
+
+<div class="mem5 mem5-2 left">
+<span>李 雲樵</span>
+<p>
+
+     
+    「ぷっぷぷぷ」 
+  
+</p>
+</div>
+
+
+
+<div class="mem4 mem4-3 right">
+<span>玄蓮四</span>
+<p>
+
+     
+    「まだ負けてないわ！」 
+  
+</p>
+</div>
+
+
+
+<div class="mem2 right">
+<span>参 宿七</span>
+<p>
+
+     
+    「だが、元気そうではある、か」 
+  
+</p>
+</div>
+
+
+
+<div class="mem4 mem4-3 right">
+<span>玄蓮四</span>
+<p>
+
+     
+    「ほら、次もヤりましょう？」 
+  
+</p>
+</div>
+
+
+
+<div class="mem5 left">
+<span>李 雲樵</span>
+<p>
+
+     
+    「まぁまぁ宿七ちゃんもいることだしまた後でね」 
+  
+</p>
+</div>
+
+
+
+<div class="mem4 mem4-3 right">
+<span>玄蓮四</span>
+<p>
+
+     
+    「はァ？」 
+  
+</p>
+</div>
+
+
+
+<div class="mem5 left">
+<span>李 雲樵</span>
+<p>
+
+     
+    「宿七ちゃん、あなたはそのまま見ているだけでいいんですか？」 
+  
+</p>
+</div>
+
+
+
+<div class="mem2 mem2-3 right">
+<span>参 宿七</span>
+<p>
+
+     
+    「………」 
+  
+</p>
+</div>
+
+
+
+<div class="mem4 mem4-3 right">
+<span>玄蓮四</span>
+<p>
+
+     
+    雲樵に斬りかかる 
+  
+</p>
+</div>
+
+
+
+<div class="mem2 mem2-3 right">
+<span>参 宿七</span>
+<p>
+
+     
+    「それに対しては、今はどうとも言えないな」 
+  
+</p>
+</div>
+
+
+
+<div class="mem5 left">
+<span>李 雲樵</span>
+<p>
+
+     
+    ひょい 
+  
+</p>
+</div>
+
+
+
+<div class="mem4 mem4-3 right">
+<span>玄蓮四</span>
+<p>
+
+     
+    「あっ。」 
+  
+</p>
+</div>
+
+
+
+<div class="mem4 mem4-3 right">
+<span>玄蓮四</span>
+<p>
+
+     
+    ｽﾞｼｬｰｰｰｰｰｰｰｰ 
+  
+</p>
+</div>
+
+
+
+<div class="mem4 right">
+<span>玄蓮四</span>
+<p>
+
+     
+    「・・・」 
+  
+</p>
+</div>
+
+
+
+<div class="mem5 left">
+<span>李 雲樵</span>
+<p>
+
+     
+    「本当につまらない人ですね…」 
+  
+</p>
+</div>
+
+
+
+<div class="mem4 right">
+<span>玄蓮四</span>
+<p>
+
+     
+    ふてくされている 
+  
+</p>
+</div>
+
+
+
+<div class="mem2 mem2-3 right">
+<span>参 宿七</span>
+<p>
+
+     
+    「………二人は、」 
+  
+</p>
+</div>
+
+
+
+<div class="mem2 right">
+<span>参 宿七</span>
+<p>
+
+     
+    「この継承の儀をどう考えている」 
+  
+</p>
+</div>
+
+
+
+<div class="mem4 right">
+<span>玄蓮四</span>
+<p>
+
+     
+    「なに？急に興味を持ったの？」 
+  
+</p>
+</div>
+
+
+
+<div class="mem2 right">
+<span>参 宿七</span>
+<p>
+
+     
+    「い、いや…」 
+  
+</p>
+</div>
+
+
+
+<div class="mem4 right">
+<span>玄蓮四</span>
+<p>
+
+     
+    「フフ・・・ようやく気持ちに正直になったのかしら？」 
+  
+</p>
+</div>
+
+
+
+<div class="mem2 right">
+<span>参 宿七</span>
+<p>
+
+     
+    「……ならば、問おう」 
+  
+</p>
+</div>
+
+
+
+<div class="mem2 right">
+<span>参 宿七</span>
+<p>
+
+     
+    「お前たちは継承の儀を、今まで知り……どう感じる」 
+  
+</p>
+</div>
+
+
+
+<div class="mem4 right">
+<span>玄蓮四</span>
+<p>
+
+     
+    「う～～ん」 
+  
+</p>
+</div>
+
+
+
+<div class="mem5 left">
+<span>李 雲樵</span>
+<p>
+
+     
+    「そうですね～」 
+  
+</p>
+</div>
+
+
+
+<div class="mem4 right">
+<span>玄蓮四</span>
+<p>
+
+     
+    「それよりとりあえずそこのカオナシ野郎に一撃ヤッてやりたいわね今は」 
+  
+</p>
+</div>
+
+
+
+<div class="mem4 mem4-3 right">
+<span>玄蓮四</span>
+<p>
+
+     
+    「今だッ！！」 
+  
+</p>
+</div>
+
+
+
+<div class="mem5 left">
+<span>李 雲樵</span>
+<p>
+
+     
+    ひょい 
+  
+</p>
+</div>
+
+
+
+<div class="mem4 mem4-3 right">
+<span>玄蓮四</span>
+<p>
+
+     
+    ｽﾞｼｬｰｰｰｰｰｰｰｰ 
+  
+</p>
+</div>
+
+
+
+<div class="mem4 right">
+<span>玄蓮四</span>
+<p>
+
+     
+    「なんでぇ・・・」 
+  
+</p>
+</div>
+
+
+
+<div class="mem5 mem5-3 left">
+<span>李 雲樵</span>
+<p>
+
+     
+    「バカなんですか？」 
+  
+</p>
+</div>
+
+
+
+<div class="mem4 right">
+<span>玄蓮四</span>
+<p>
+
+     
+    「戦バカは褒め言葉よ！」 
+  
+</p>
+</div>
+
+
+
+<div class="mem5 mem5-3 left">
+<span>李 雲樵</span>
+<p>
+
+     
+    「僕は継承の儀式自体にはあまり興味はないんですよね～」 
+  
+</p>
+</div>
+
+
+
+<div class="mem5 mem5-2 left">
+<span>李 雲樵</span>
+<p>
+
+     
+    「この儀式を通して皆さんがどんな結果を迎えるのか…それが楽しみなんです」 
+  
+</p>
+</div>
+
+
+
+<div class="mem2 right">
+<span>参 宿七</span>
+<p>
+
+     
+    「そうか」 
+  
+</p>
+</div>
+
+
+
+<div class="mem5 left">
+<span>李 雲樵</span>
+<p>
+
+     
+    「あなたはどんな結末を迎えるんでしょうね～」 
+  
+</p>
+</div>
+
+
+
+<div class="mem2 mem2-3 right">
+<span>参 宿七</span>
+<p>
+
+     
+    「―――」 
+  
+</p>
+</div>
+
+
+
+<div class="mem2 right">
+<span>参 宿七</span>
+<p>
+
+     
+    「そうか、ならばお前の道を見定めるのも私の使命になることなのか…」 
+  
+</p>
+</div>
+
+
+
+<div class="mem5 left">
+<span>李 雲樵</span>
+<p>
+
+     
+    「折角ここにいるなら最後まで見届けてね、宿七ちゃん」 
+  
+</p>
+</div>
+
+
+
+<div class="mem5 left">
+<span>李 雲樵</span>
+<p>
+
+     
+    「じゃあまた」 
+  
+</p>
+</div>
+
+
+
+<div class="mem2 right">
+<span>参 宿七</span>
+<p>
+
+     
+    「――あぁ」 
+  
+</p>
+</div>
+
+
+
+<div class="mem2 right">
+<span>参 宿七</span>
+<p>
+
+     
+    「次会うときは」 
+  
+</p>
+</div>
+
+
+
+<div class="mem5 left">
+<span>李 雲樵</span>
+<p>
+
+     
+    その場を去る 
+  
+</p>
+</div>
+
+
+
+<div class="mem4 mem4-3 right">
+<span>玄蓮四</span>
+<p>
+
+     
+    「待ちなさーーーい！！」 
+  
+</p>
+</div>
+
+
+
+<div class="mem5 left">
+<span>李 雲樵</span>
+<p>
+
+     
+    「蓮四ちゃん行きますよ～！白蓮くんも退屈してそうですからね～」遠くから叫ぶ 
+  
+</p>
+</div>
+
+
+
+<div class="mem2 right">
+<span>参 宿七</span>
+<p>
+
+     
+    その二人の姿をそっと見送る 
+  
+</p>
+</div>
+
+
+
+<div class="mem2 mem2-1 right">
+<span>参 宿七</span>
+<p>
+
+     
+    「――やはり、まだまだ…だな」 
+  
+</p>
+</div>
+
+
+
+<div class="mem5 left">
+<span>李 雲樵</span>
+<p>
+
+     
+    宿七へ感情判定 
+  
+</p>
+</div>
+
+
+
+<div class="mem5 left">
+<span>李 雲樵</span>
+<p>
+
+     
+    意気で判定 
+  
+</p>
+</div>
+
+
+
+<div class="mem5 left">
+<span>李 雲樵</span>
+<p>
+
+     
+    2D6&gt;=7 （判定：封術） (2D6&gt;=7) ＞ 7[3,4] ＞ 7 ＞ 成功
+  
+</p>
+</div>
+
+
+
+<div class="mem2 right">
+<span>参 宿七</span>
+<p>
+
+     
+    ET 感情表(5) ＞ 憧憬（プラス）／劣等感（マイナス）
+  
+</p>
+</div>
+
+
+
+<div class="mem5 left">
+<span>李 雲樵</span>
+<p>
+
+     
+    et 感情表(3) ＞ 愛情（プラス）／妬み（マイナス）
+  
+</p>
+</div>
+
+
+
+<div class="mem5 left">
+<span>李 雲樵</span>
+<p>
+
+     
+    妬み 
+  
+</p>
+</div>
+
+
+
+<div class="mem2 right">
+<span>参 宿七</span>
+<p>
+
+     
+    劣等感 
+  
+</p>
+</div>
+
+
+
+<div class="mem2 mem2-3 right">
+<span>参 宿七</span>
+<p>
+
+     
+    ――私は、あの子たちのように…… 
+  
+</p>
+</div>
+
+
+
+<div class="mem2 right">
+<span>参 宿七</span>
+<p>
+
+     
+    この声はどこにも届かず 
+  
+</p>
+</div>
+
+
+
+<div class="mem5 left">
+<span>李 雲樵</span>
+<p>
+
+     
+    「・・・」 
+  
+</p>
+</div>
+
+
+
+<div class="mem5 left">
+<span>李 雲樵</span>
+<p>
+
+     
+    シーン終了 
+  
+</p>
+</div>
+
+
+
+<div class="mem1 left">
+<span>GM</span>
+<p>
+
+     
+    条件を満たしたPCのプライズ『冬星の振り子』に下記の効果を追加する。<br>●クライマックスフェイズに１度だけ、いつでも使用できる。<br>自身の奥義を、自身が【情報】を獲得している別の奥義に変更する事ができる。 
+  
+</p>
+</div>
+
+
+
+<div class="mem1 left">
+<span>GM</span>
+<p>
+
+     
+    同名の奥義はエフェクト、読み方にかかわらず、同じものとして扱い、【情報】を所持してるキャラクターは奥義破りを試みることができる。 
+  
+</p>
+</div>
+
+
+
+<div class="mem1 left">
+<span>GM</span>
+<p>
+
+     
+    ■奥義<br>《超新星[ﾁｮｳｼﾝｾｲ]》<br>指定特技　：変更前の元々の奥義と同じ<br>エフェクト：変更前の元々のエフェクト、強み、弱みと同様<br>（回数制限や不死身の回数はリセットされる）<br><br>効果・演出：<br>変更前の元々の奥義に下記の文章と追加する。<br><br>"天上天下 並ぶ者無し<br><br>其れ即ち 並びて二つと同じ技に非ず<br>命紡ぎ星は巡る<br>これぞ正しく 超新星" 
+  
+</p>
+</div>
+
+
+</div></div>
+
+<div class="bg-sp">
+    <div class="bg-over"><div class="bg-inner bg4"></div></div>
+<div class="log">
+
+
+
+<div class="mem1 left">
+<span>GM</span>
+<p>
+
+     
+    クライマックスフェイズ 
+  
+</p>
+</div>
+
+
+
+<div class="kp">
+
+     
+    PC達の間には一触即発の空気が流れる。じりじりと互いにけん制し合い、今にも襲い掛かろうかという瞬間。 
+  
+</div>
+
+
+
+<div class="kp">
+
+     
+    突如、姉弟子"参宿七"が姿を現す。その表情は険しく、これまでとは異なっていた。 
+  
+</div>
+
+
+
+<div class="kp">
+
+     
+    嘗て修業をつけていた時――否、それ以上の気迫を感じる。 
+  
+</div>
+
+
+
+<div class="mem2 mem2-2 right">
+<span>参 宿七</span>
+<p>
+
+     
+    「よく、頑張りましたね」 
+  
+</p>
+</div>
+
+
+
+<div class="mem2 right">
+<span>参 宿七</span>
+<p>
+
+     
+    「一人――貴方ですか、雲樵」 
+  
+</p>
+</div>
+
+
+
+<div class="mem5 left">
+<span>李 雲樵</span>
+<p>
+
+     
+    「みたいだね」 
+  
+</p>
+</div>
+
+
+
+<div class="mem2 mem2-1 right">
+<span>参 宿七</span>
+<p>
+
+     
+    「ですが、【超新星】を渡すわけにはいきません」 
+  
+</p>
+</div>
+
+
+
+<div class="mem4 right">
+<span>玄蓮四</span>
+<p>
+
+     
+    「！」 
+  
+</p>
+</div>
+
+
+
+<div class="mem5 left">
+<span>李 雲樵</span>
+<p>
+
+     
+    「！？」 
+  
+</p>
+</div>
+
+
+
+<div class="mem2 mem2-1 right">
+<span>参 宿七</span>
+<p>
+
+     
+    「それを継ぐべきはいつも一人。――それこそ、私が継ぐべきなのです！」 
+  
+</p>
+</div>
+
+
+
+<div class="kp">
+
+     
+    彼女は懐から『冬星の振り子』を取り出し、３人に見せる。
+  
+</div>
+
+
+
+<div class="mem4 right">
+<span>玄蓮四</span>
+<p>
+
+     
+    「やっぱり、あなたも参加するのね」 
+  
+</p>
+</div>
+
+
+
+<div class="mem5 left">
+<span>李 雲樵</span>
+<p>
+
+     
+    「宿七ちゃん…そうこなくっちゃ～」 
+  
+</p>
+</div>
+
+
+
+<div class="mem3 left">
+<span>文清・白蓮</span>
+<p>
+
+     
+    「やっとお出ましか」 
+  
+</p>
+</div>
+
+
+
+<div class="mem2 mem2-1 right">
+<span>参 宿七</span>
+<p>
+
+     
+    「えぇ、私はまだ。舞台から降りたわけではありません！」 
+  
+</p>
+</div>
+
+
+
+<div class="mem4 right">
+<span>玄蓮四</span>
+<p>
+
+     
+    「なんか言うのおそくない？」 
+  
+</p>
+</div>
+
+
+
+<div class="mem2 mem2-1 right">
+<span>参 宿七</span>
+<p>
+
+     
+    「貴方たちには、継承は諦めてもらいましょう」 
+  
+</p>
+</div>
+
+
+
+<div class="mem4 right">
+<span>玄蓮四</span>
+<p>
+
+     
+    「最初から殺気ムンムンだったわよ？」 
+  
+</p>
+</div>
+
+
+
+<div class="mem2 mem2-1 right">
+<span>参 宿七</span>
+<p>
+
+     
+    「それはまだ間に合うからですよ」 
+  
+</p>
+</div>
+
+
+
+<div class="mem2 mem2-1 right">
+<span>参 宿七</span>
+<p>
+
+     
+    「今、私が受け継げる条件がそろいましたからね」 
+  
+</p>
+</div>
+
+
+
+<div class="mem4 right">
+<span>玄蓮四</span>
+<p>
+
+     
+    「"人から奪う"ことで？」 
+  
+</p>
+</div>
+
+
+
+<div class="mem2 mem2-1 right">
+<span>参 宿七</span>
+<p>
+
+     
+    「えぇ」 
+  
+</p>
+</div>
+
+
+
+<div class="mem4 right">
+<span>玄蓮四</span>
+<p>
+
+     
+    「・・・あほらしい」 
+  
+</p>
+</div>
+
+
+
+<div class="mem2 mem2-1 right">
+<span>参 宿七</span>
+<p>
+
+     
+    「それを拒否するならば、その手に武器を持ちなさい！」 
+  
+</p>
+</div>
+
+
+
+<div class="mem3 left">
+<span>文清・白蓮</span>
+<p>
+
+     
+    「はなからそのつもりなんだろう。 」
+  
+</p>
+</div>
+
+
+
+<div class="kp">
+
+     
+    参 宿七は構える 
+  
+</div>
+
+
+
+<div class="mem5 left">
+<span>李 雲樵</span>
+<p>
+
+     
+    「これが欲しいの？宿七ちゃん」 
+  
+</p>
+</div>
+
+
+
+<div class="mem4 mem4-2 right">
+<span>玄蓮四</span>
+<p>
+
+     
+    「ねえ！この女、堂々と漁夫の利しようとしてるわよ」 
+  
+</p>
+</div>
+
+
+
+<div class="mem2 mem2-1 right">
+<span>参 宿七</span>
+<p>
+
+     
+    「えぇ。ほしいですね」 
+  
+</p>
+</div>
+
+
+
+<div class="mem5 mem5-2 left">
+<span>李 雲樵</span>
+<p>
+
+     
+    「あ～げない」 
+  
+</p>
+</div>
+
+
+
+<div class="mem5 mem5-2 left">
+<span>李 雲樵</span>
+<p>
+
+     
+    にやにや 
+  
+</p>
+</div>
+
+
+
+<div class="mem2 mem2-1 right">
+<span>参 宿七</span>
+<p>
+
+     
+    「渡さないのなら、奪うのみ」 
+  
+</p>
+</div>
+
+
+
+<div class="mem4 right">
+<span>玄蓮四</span>
+<p>
+
+     
+    「あら、なんか蚊帳の外みたい」 
+  
+</p>
+</div>
+
+
+
+<div class="mem2 mem2-1 right">
+<span>参 宿七</span>
+<p>
+
+     
+    「いざ、――来なさい！」 
+  
+</p>
+</div>
+
+
+
+<div class="mem4 mem4-3 right">
+<span>玄蓮四</span>
+<p>
+
+     
+    「アタシも混ぜなさいよッ！」 
+  
+</p>
+</div>
+
+
+
+<div class="mem5 mem5-2 left">
+<span>李 雲樵</span>
+<p>
+
+     
+    「楽しくなってきたね～」 
+  
+</p>
+</div>
+
+
+
+<div class="mem1 left">
+<span>GM</span>
+<p>
+
+     
+    戦闘開始！！ 
+  
+</p>
+</div>
+
+
+<div class="mem2 right">
+<span>参 宿七</span>
+<p>
+
+     
+    参 宿七 [サン スゥチィ]
+<br>天光流
+<br>年齢：3～40
+<br>表の顔：天光流師範代
+<br>信念：忠
+<br><br>
+特技：火術、水術、骨法術、盗聴術、見敵術、召喚術、呪術
+<br>忍法：接近戦攻撃、【龍星群】、【海原】、【戦場の極意】（水中）、【揺音】、【秘中の秘】（呪術）、【八重垣】
+  
+</p>
+</div>
+
+
+<div class="mem1 left">
+<span>GM</span>
+<p>
+
+     
+    戦場：平地<br>戦闘終了：勝負が決まるまで 
+  
+</p>
+</div>
+
+
+
+<div class="kp">
+
+     
+    [ GM ] ラウンド : 0 → 1 
+  
+</div>
+
+
+
+<div class="mem1 left">
+<span>GM</span>
+<p>
+
+     
+    プロット 
+  
+</p>
+</div>
+
+
+
+<div class="mem5 men5-2 left">
+<span>李 雲樵</span>
+<p>
+
+     
+    火計→白蓮 
+  
+</p>
+</div>
+
+
+
+<div class="mem5 mem-2 left">
+<span>李 雲樵</span>
+<p>
+
+     
+    2D6&gt;=5 （判定：人脈） (2D6&gt;=5) ＞ 7[2,5] ＞ 7 ＞ 成功
+  
+</p>
+</div>
+
+
+
+<div class="mem3 left">
+<span>文清・白蓮</span>
+<p>
+
+     
+    兵糧丸1つ消費 
+  
+</p>
+</div>
+
+
+
+<div class="kp">
+
+     
+    [ 文清・白蓮 ] 器術 : 0 → 1 
+  
+</div>
+
+
+
+<div class="kp">
+
+     
+    [ 文清・白蓮 ] 忍具 : 3 → 2 
+  
+</div>
+
+
+
+<div class="mem5 mem5-2 left">
+<span>李 雲樵</span>
+<p>
+
+     
+    「あら消されちゃった」 
+  
+</p>
+</div>
+
+
+
+<div class="mem4 mem4-3 right">
+<span>玄蓮四</span>
+<p>
+
+     
+    「まーたネチネチやってるの？」 
+  
+</p>
+</div>
+
+
+
+<div class="mem5 mem5-2 left">
+<span>李 雲樵</span>
+<p>
+
+     
+    にやにや 
+  
+</p>
+</div>
+
+
+
+<div class="mem1 left">
+<span>GM</span>
+<p>
+
+     
+    プロットオープン 
+  
+</p>
+</div>
+
+
+
+<div class="kp">
+
+     
+    [ 李 雲樵 ] がダイスシンボルを公開。出目は 3 です。 
+  
+</div>
+
+
+
+<div class="kp">
+
+     
+    [ 玄蓮四 ] がダイスシンボルを公開。出目は 6 です。 
+  
+</div>
+
+
+
+<div class="kp">
+
+     
+    [ 参 宿七 ] がダイスシンボルを公開。出目は 5 です。 
+  
+</div>
+
+
+
+<div class="kp">
+
+     
+    [ 文清・白蓮 ] がダイスシンボルを公開。出目は 3 です。 
+  
+</div>
+
+
+
+<div class="mem4 mem4-3 right">
+<span>玄蓮四</span>
+<p>
+
+     
+    【戦酔】&gt;宿七 
+  
+</p>
+</div>
+
+
+
+<div class="mem4 mem4-3 right">
+<span>玄蓮四</span>
+<p>
+
+     
+    SG@12#6&gt;=5 （判定：刀術） (SG@12#6&gt;=5) ＞ 7[2,5] ＞ 7 ＞ 成功
+  
+</p>
+</div>
+
+
+
+<div class="mem2 right">
+<span>参 宿七</span>
+<p>
+
+     
+    SG#5&gt;=6 （判定：骨法術） (SG@12#5&gt;=6) ＞ 6[2,4] ＞ 6 ＞ 成功
+  
+</p>
+</div>
+
+
+
+<div class="mem2 right">
+<span>参 宿七</span>
+<p>
+
+     
+    「まだまだ甘いですよ！」 
+  
+</p>
+</div>
+
+
+
+<div class="mem4 mem4-3 right">
+<span>玄蓮四</span>
+<p>
+
+     
+    「あらざんねん」 
+  
+</p>
+</div>
+
+
+
+<div class="mem4 mem4-1 right">
+<span>玄蓮四</span>
+<p>
+
+     
+    「意外とトロいと思ったらそうでもないのね？」 
+  
+</p>
+</div>
+
+
+
+<div class="mem2 mem2-3 right">
+<span>参 宿七</span>
+<p>
+
+     
+    「さて、私は導きましょう」 
+  
+</p>
+</div>
+
+
+
+<div class="mem2 mem2-2 right">
+<span>参 宿七</span>
+<p>
+
+     
+    「母なる海へ」 
+  
+</p>
+</div>
+
+
+
+<div class="mem2 mem2-2 right">
+<span>参 宿七</span>
+<p>
+
+     
+    「さまざまなものがいる水の中へ」 
+  
+</p>
+</div>
+
+
+
+<div class="mem2 right">
+<span>参 宿七</span>
+<p>
+
+     
+    海原[ｳﾅﾊﾞﾗ] 
+  
+</p>
+</div>
+
+
+
+<div class="mem2 right">
+<span>参 宿七</span>
+<p>
+
+     
+    SG#5&gt;=5 （判定：水術） (SG@12#5&gt;=5) ＞ 7[1,6] ＞ 7 ＞ 成功
+  
+</p>
+</div>
+
+</div></div>
+
+<div class="bg-sp">
+    <div class="bg-over"><div class="bg-inner bg5"></div></div>
+<div class="log">
+
+
+
+
+<div class="kp">
+
+     
+    宝流湖、山岳の合間にできた美しい翠緑色の川を小舟で進む。 
+  
+</div>
+
+
+
+<div class="mem2 right">
+<span>参 宿七</span>
+<p>
+
+     
+    プロット4以下の人は水術で判定 
+  
+</p>
+</div>
+
+
+
+<div class="mem5 mem5-3 left">
+<span>李 雲樵</span>
+<p>
+
+     
+    2D6&gt;=8 （判定：砲術） (2D6&gt;=8) ＞ 6[3,3] ＞ 6 ＞ 失敗
+  
+</p>
+</div>
+
+
+
+<div class="mem3 mem3-2 left">
+<span>文清・白蓮</span>
+<p>
+
+     
+    2D6&gt;=7 （判定：絡繰術） (2D6&gt;=7) ＞ 12[6,6] ＞ 12 ＞ スペシャル(【生命力】1点か変調一つを回復)
+  
+</p>
+</div>
+
+
+
+<div class="kp">
+
+     
+    [ 文清・白蓮 ] 火達磨 : -1 → 0 
+  
+</div>
+
+
+
+<div class="kp">
+
+     
+    [ 李 雲樵 ] 戦術 : 1 → 0 
+  
+</div>
+
+
+
+<div class="mem3 left">
+<span>文清・白蓮</span>
+<p>
+
+     
+    d66 (D66) ＞ 26
+  
+</p>
+</div>
+
+
+
+<div class="mem5 mem5-2 left">
+<span>李 雲樵</span>
+<p>
+
+     
+    d66 (D66) ＞ 56
+  
+</p>
+</div>
+
+
+
+<div class="mem5 mem5-2 left">
+<span>李 雲樵</span>
+<p>
+
+     
+    怪士（雷鳥）遁甲符消費 
+  
+</p>
+</div>
+
+
+
+<div class="kp">
+
+     
+    [ 李 雲樵 ] 忍具 : 3 → 2 
+  
+</div>
+
+
+
+<div class="mem5 mem5-2 left">
+<span>李 雲樵</span>
+<p>
+
+     
+    雷鳥→宿七 
+  
+</p>
+</div>
+
+
+
+<div class="mem5 mem5-2 left">
+<span>李 雲樵</span>
+<p>
+
+     
+    2D6&gt;=5 （判定：砲術） (2D6&gt;=5) ＞ 7[3,4] ＞ 7 ＞ 成功
+  
+</p>
+</div>
+
+
+
+<div class="mem2 right">
+<span>参 宿七</span>
+<p>
+
+     
+    八重垣[ﾔｴｶﾞｷ] 
+  
+</p>
+</div>
+
+
+
+<div class="mem2 right">
+<span>参 宿七</span>
+<p>
+
+     
+    SG#4+2&gt;=7 （判定：火術） (SG+2@12#4&gt;=7) ＞ 10[5,5]+2 ＞ 12 ＞ 成功
+  
+</p>
+</div>
+
+
+
+<div class="mem2 right">
+<span>参 宿七</span>
+<p>
+
+     
+    「あまいですよ！」 
+  
+</p>
+</div>
+
+
+
+<div class="mem3 left">
+<span>文清・白蓮</span>
+<p>
+
+     
+    接近戦攻撃→ウンショウ 
+  
+</p>
+</div>
+
+
+
+<div class="mem3 left">
+<span>文清・白蓮</span>
+<p>
+
+     
+    2D6&gt;=5 （判定：絡繰術） (2D6&gt;=5) ＞ 7[2,5] ＞ 7 ＞ 成功
+  
+</p>
+</div>
+
+
+
+<div class="mem5 mem5-3 left">
+<span>李 雲樵</span>
+<p>
+
+     
+    SG-2&gt;=8 （判定：砲術） (SG-2@12#2&gt;=8) ＞ 7[3,4]-2 ＞ 5 ＞ 失敗
+  
+</p>
+</div>
+
+
+
+<div class="mem5 left">
+<span>李 雲樵</span>
+<p>
+
+     
+    rct ランダム分野表(2) ＞ 体術
+  
+</p>
+</div>
+
+
+
+<div class="mem5 left">
+<span>李 雲樵</span>
+<p>
+
+     
+    奥義！！ 
+  
+</p>
+</div>
+
+
+
+<div class="mem5 left">
+<span>李 雲樵</span>
+<p>
+
+     
+    ■奥義<br>《見切りの極意》<br>指定特技：第六感<br>効果　　：絶対防御/くらまし/防御低下<br>演出　　：「その技は知ってるよ～」
+  
+</p>
+</div>
+
+
+
+<div class="mem1 left">
+<span>GM</span>
+<p>
+
+     
+    ラウンド終了 
+  
+</p>
+</div>
+
+
+
+<div class="kp">
+
+     
+    [ GM ] ラウンド : 1 → 2 
+  
+</div>
+
+
+
+<div class="mem1 left">
+<span>GM</span>
+<p>
+
+     
+    プロット 
+  
+</p>
+</div>
+
+
+
+<div class="mem1 left">
+<span>GM</span>
+<p>
+
+     
+    プロットオープン 
+  
+</p>
+</div>
+
+
+
+<div class="kp">
+
+     
+    [ 李 雲樵 ] がダイスシンボルを公開。出目は 1 です。 
+  
+</div>
+
+
+
+<div class="kp">
+
+     
+    [ 参 宿七 ] がダイスシンボルを公開。出目は 4 です。 
+  
+</div>
+
+
+
+<div class="kp">
+
+     
+    [ 玄蓮四 ] がダイスシンボルを公開。出目は 2 です。 
+  
+</div>
+
+
+
+<div class="kp">
+
+     
+    [ 文清・白蓮 ] がダイスシンボルを公開。出目は 4 です。 
+  
+</div>
+
+
+
+<div class="mem2 right">
+<span>参 宿七</span>
+<p>
+
+     
+    D66 (D66) ＞ 45
+  
+</p>
+</div>
+
+
+
+<div class="mem3 left">
+<span>文清・白蓮</span>
+<p>
+
+     
+    d66 (D66) ＞ 56
+  
+</p>
+</div>
+
+
+
+<div class="mem3 left">
+<span>文清・白蓮</span>
+<p>
+
+     
+    流転 
+  
+</p>
+</div>
+
+
+
+<div class="mem3 left">
+<span>文清・白蓮</span>
+<p>
+
+     
+    2D6&gt;=5 （判定：記憶術） (2D6&gt;=5) ＞ 10[4,6] ＞ 10 ＞ 成功
+  
+</p>
+</div>
+
+
+
+<div class="mem3 left">
+<span>文清・白蓮</span>
+<p>
+
+     
+    奥義→ 「静蓮の策」へ変更 
+  
+</p>
+</div>
+
+
+
+<div class="mem3 left">
+<span>文清・白蓮</span>
+<p>
+
+     
+    土竜吼→サンスゥチィ 
+  
+</p>
+</div>
+
+
+
+<div class="mem3 mem3-4 left">
+<span>文清・白蓮</span>
+<p>
+
+     
+    奥義！！ 
+  
+</p>
+</div>
+
+
+
+<div class="mem3 mem3-4 left">
+<span>文清・白蓮</span>
+<p>
+
+     
+    《「静蓮の策」》<br>指定特技：絡繰術<br>効果　　：完全成功<br><br>演出　　：白蓮は微動だにせず、相手を見据える。<br>その瞬間、敵は悟る──すべての動き、すべての策はすでに読まれていたのだと。<br>逃げ道も、勝機もない。<br>「あなたの思考も行動も、すべて僕の計算通りです」<br>言葉と共に策略は完成し、抗う術もなく、勝利は白蓮の手中に収まる。 
+  
+</p>
+</div>
+
+
+
+<div class="mem2 right">
+<span>参 宿七</span>
+<p>
+
+     
+    SG#4+1&gt;=5 （判定：見敵術） (SG+1@12#4&gt;=5) ＞ 11[5,6]+1 ＞ 12 ＞ 成功
+  
+</p>
+</div>
+
+
+<div class="kp">
+
+     
+    [ 参 宿七 ] 八重垣 : 0 → 1 
+  
+</div>
+
+
+
+<div class="mem5 left">
+<span>李 雲樵</span>
+<p>
+
+     
+    SG&gt;=9 見切り判定 （判定：変装術） (SG@12#2&gt;=9) ＞ 5[1,4] ＞ 5 ＞ 失敗
+  
+</p>
+</div>
+
+
+<div class="mem4 right">
+<span>玄蓮四</span>
+<p>
+
+     
+    兵糧丸 
+  
+</p>
+</div>
+
+
+
+<div class="kp">
+
+     
+    [ 玄蓮四 ] 戦術 : 0 → 1 
+  
+</div>
+
+
+
+<div class="kp">
+
+     
+    [ 玄蓮四 ] 忍具 : 2 → 1 
+  
+</div>
+
+
+
+
+
+<div class="mem4 right">
+<span>玄蓮四</span>
+<p>
+
+     
+    SG@12#2&gt;=7 見切り判定 （判定：用兵術） (SG@12#2&gt;=7) ＞ 7[1,6] ＞ 7 ＞ 成功
+  
+</p>
+</div>
+
+
+
+<div class="mem2 right">
+<span>参 宿七</span>
+<p>
+
+     
+    SG#4+1&gt;=9 見切り判定 （判定：骨法術） (SG+1@12#4&gt;=9) ＞ 8[2,6]+1 ＞ 9 ＞ 成功
+  
+</p>
+</div>
+
+
+
+<div class="mem2 right">
+<span>参 宿七</span>
+<p>
+
+     
+    「いきますよ！」 
+  
+</p>
+</div>
+
+
+
+<div class="mem2 right">
+<span>参 宿七</span>
+<p>
+
+     
+    「海の中に現れる星々を食らいなさい！」 
+  
+</p>
+</div>
+
+
+
+<div class="mem2 right">
+<span>参 宿七</span>
+<p>
+
+     
+    龍星群[ﾘｭｳｾｲｸﾞﾝ] 
+  
+</p>
+</div>
+
+
+
+<div class="mem2 right">
+<span>参 宿七</span>
+<p>
+
+     
+    SG#4+1&gt;=5 （判定：召喚術） (SG+1@12#4&gt;=5) ＞ 8[2,6]+1 ＞ 9 ＞ 成功
+  
+</p>
+</div>
+
+
+
+<div class="mem2 right">
+<span>参 宿七</span>
+<p>
+
+     
+    全員だ 
+  
+</p>
+</div>
+
+
+
+<div class="mem2 right">
+<span>参 宿七</span>
+<p>
+
+     
+    SG#3+2&gt;=5 （判定：召喚術） (SG+2@12#3&gt;=5) ＞ 7[2,5]+2 ＞ 9 ＞ 成功
+  
+</p>
+</div>
+
+
+<div class="kp">
+
+     
+    [ 参 宿七 ] 八重垣 : 1 → 2 
+  
+</div>
+
+
+
+
+<div class="mem4 right">
+<span>玄蓮四</span>
+<p>
+
+     
+    避けない 
+  
+</p>
+</div>
+
+
+
+<div class="mem5 mem5-6 left">
+<span>李 雲樵</span>
+<p>
+
+     
+    SG-2&gt;=8 （判定：封術） (SG-2@12#2&gt;=8) ＞ 6[2,4]-2 ＞ 4 ＞ 失敗
+  
+</p>
+</div>
+
+
+
+<div class="mem3 left">
+<span>文清・白蓮</span>
+<p>
+
+     
+    SG+0&gt;=12 （判定：記憶術） (SG@12#2&gt;=12) ＞ 10[5,5] ＞ 10 ＞ 失敗
+  
+</p>
+</div>
+
+
+
+<div class="mem4 mem4-4 right">
+<span>玄蓮四</span>
+<p>
+
+     
+    【悪食】（【魔血】により使用） 
+  
+</p>
+</div>
+
+
+
+<div class="kp">
+
+     
+    [ 玄蓮四 ] 忍術 : 1 → 0 
+  
+</div>
+
+
+
+<div class="mem4 mem4-4 right">
+<span>玄蓮四</span>
+<p>
+
+     
+    SG@12#2&gt;=5 （判定：兵糧術） (SG@12#2&gt;=5) ＞ 9[4,5] ＞ 9 ＞ 成功
+  
+</p>
+</div>
+
+
+
+<div class="kp">
+
+     
+    [ 文清・白蓮 ] 謀術 : 1 → 0 
+  
+</div>
+
+
+
+<div class="kp">
+
+     
+    [ 玄蓮四 ] 忍術 : 0 → 1 
+  
+</div>
+
+
+
+<div class="kp">
+
+     
+    [ 玄蓮四 ] 謀術 : 0 → 1 
+  
+</div>
+
+
+
+<div class="mem4 mem4-4 right">
+<span>玄蓮四</span>
+<p>
+
+     
+    「あぁ・・・・美味しい・・・！」 
+  
+</p>
+</div>
+
+
+
+<div class="mem4 mem4-4 right">
+<span>玄蓮四</span>
+<p>
+
+     
+    「ふふふふふふふふふ」 
+  
+</p>
+</div>
+
+
+
+<div class="mem2 right">
+<span>参 宿七</span>
+<p>
+
+     
+    「なるほど。喰らいますか。いいでしょう」 
+  
+</p>
+</div>
+
+
+
+<div class="mem5 mem5-6 left">
+<span>李 雲樵</span>
+<p>
+
+     
+    奥義！！ 
+  
+</p>
+</div>
+
+
+
+<div class="mem4 mem4-4 right">
+<span>玄蓮四</span>
+<p>
+
+     
+    「もっと！！もっとちょうだい！」 
+  
+</p>
+</div>
+
+
+
+<div class="mem5 mem5-6 left">
+<span>李 雲樵</span>
+<p>
+
+     
+    ■奥義<br>《見切りの極意》<br>指定特技：第六感<br>効果　　：絶対防御/くらまし/防御低下<br>演出　　：「その技は知ってるよ～」 
+  
+</p>
+</div>
+
+
+
+<div class="kp">
+
+     
+    [ 文清・白蓮 ] 戦術 : 1 → 0 
+  
+</div>
+
+
+
+<div class="mem2 right">
+<span>参 宿七</span>
+<p>
+
+     
+    奥義破り！ 
+  
+</p>
+</div>
+
+
+
+<div class="mem5 mem5-6 left">
+<span>李 雲樵</span>
+<p>
+
+     
+    「蓮四ちゃん生き生きしてるね～」 
+  
+</p>
+</div>
+
+
+
+<div class="mem4 mem4-4 right">
+<span>玄蓮四</span>
+<p>
+
+     
+    「あなたみたいな骨ガラもいいけど、やっぱりこういうのじゃなきゃ！」 
+  
+</p>
+</div>
+
+
+
+<div class="mem2 right">
+<span>参 宿七</span>
+<p>
+
+     
+    SG#4+1&gt;=9 （判定：骨法術） (SG+1@12#4&gt;=9) ＞ 9[3,6]+1 ＞ 10 ＞ 成功
+  
+</p>
+</div>
+
+
+
+<div class="mem4 mem4-1 right">
+<span>玄蓮四</span>
+<p>
+
+     
+    「あ～おいしかった」 
+  
+</p>
+</div>
+
+
+
+<div class="kp">
+
+     
+    [ 李 雲樵 ] 体術 : 1 → 0 
+  
+</div>
+
+
+
+<div class="kp">
+
+     
+    [ 李 雲樵 ] 忍術 : 1 → 0 
+  
+</div>
+
+
+
+<div class="mem4 right">
+<span>玄蓮四</span>
+<p>
+
+     
+    【神槍】しんそう &gt; 宿七 
+  
+</p>
+</div>
+
+
+
+<div class="mem4 right">
+<span>玄蓮四</span>
+<p>
+
+     
+    SG@12#2&gt;=5 （判定：手裏剣術） (SG@12#2&gt;=5) ＞ 7[2,5] ＞ 7 ＞ 成功
+  
+</p>
+</div>
+
+
+
+
+
+<div class="mem5 mem5-6 left">
+<span>李 雲樵</span>
+<p>
+
+     
+    宿七にマイナスの感情修正 
+  
+</p>
+</div>
+
+
+
+<div class="mem2 right">
+<span>参 宿七</span>
+<p>
+
+     
+    SG#2+2&gt;=7 （判定：水術） (SG+2@12#2&gt;=7) ＞ 5[2,3]+2 ＞ 7 ＞ 成功
+  
+</p>
+</div>
+
+
+
+<div class="kp">
+
+     
+    [ 参 宿七 ] 八重垣 : 2 → 3 
+  
+</div>
+
+
+
+<div class="mem5 left">
+<span>李 雲樵</span>
+<p>
+
+     
+    雷鳥→宿七 
+  
+</p>
+</div>
+
+
+
+<div class="mem5 mem5-6 left">
+<span>李 雲樵</span>
+<p>
+
+     
+    SG&gt;=8 （判定：罠術） (SG@12#2&gt;=8) ＞ 10[5,5] ＞ 10 ＞ 成功
+  
+</p>
+</div>
+
+
+
+<div class="mem2 right">
+<span>参 宿七</span>
+<p>
+
+     
+    SG#1+3&gt;=7 （判定：火術） (SG+3@12#1&gt;=7) ＞ 4[1,3]+3 ＞ 7 ＞ 成功
+  
+</p>
+</div>
+
+
+
+<div class="mem5 mem5-6 left">
+<span>李 雲樵</span>
+<p>
+
+     
+    怪士（背水）遁甲符消費 
+  
+</p>
+</div>
+
+
+
+<div class="kp">
+
+     
+    [ 李 雲樵 ] 忍具 : 2 → 1 
+  
+</div>
+
+
+
+<div class="mem5 mem5-6 left">
+<span>李 雲樵</span>
+<p>
+
+     
+    「これを使うしかないな～」 
+  
+</p>
+</div>
+
+
+
+<div class="mem4 right">
+<span>玄蓮四</span>
+<p>
+
+     
+    「あら、ようやく本気？」 
+  
+</p>
+</div>
+
+
+
+<div class="mem5 mem5-6 left">
+<span>李 雲樵</span>
+<p>
+
+     
+    「ここからだよ～ん」 
+  
+</p>
+</div>
+
+
+
+<div class="mem5 mem5-6 left">
+<span>李 雲樵</span>
+<p>
+
+     
+    背水（指定特技：医術） 
+  
+</p>
+</div>
+
+<div class="kp">
+
+     
+    [ 李 雲樵 ] 体術 : 0 → 1 
+  
+</div>
+
+
+
+<div class="kp">
+
+     
+    [ 李 雲樵 ] 忍術 : 0 → 1 
+  
+</div>
+
+
+
+
+<div class="mem1 left">
+<span>GM</span>
+<p>
+
+     
+    ラウンド終了 
+  
+</p>
+</div>
+
+
+
+<div class="kp">
+
+     
+    [ GM ] ラウンド : 2 → 3 
+  
+</div>
+
+
+
+<div class="mem1 left">
+<span>GM</span>
+<p>
+
+     
+    プロット 
+  
+</p>
+</div>
+
+
+
+<div class="mem1 left">
+<span>GM</span>
+<p>
+
+     
+    プロットオープン 
+  
+</p>
+</div>
+
+
+
+<div class="kp">
+
+     
+    [ 李 雲樵 ] がダイスシンボルを公開。出目は 4 です。 
+  
+</div>
+
+
+
+<div class="kp">
+
+     
+    [ 参 宿七 ] がダイスシンボルを公開。出目は 3 です。 
+  
+</div>
+
+
+
+<div class="kp">
+
+     
+    [ 玄蓮四 ] がダイスシンボルを公開。出目は 2 です。 
+  
+</div>
+
+
+
+<div class="kp">
+
+     
+    [ 文清・白蓮 ] がダイスシンボルを公開。出目は 5 です。 
+  
+</div>
+
+
+
+<div class="mem3 left">
+<span>文清・白蓮</span>
+<p>
+
+     
+    流転 
+  
+</p>
+</div>
+
+
+
+<div class="mem3 left">
+<span>文清・白蓮</span>
+<p>
+
+     
+    2D6&gt;=5 （判定：記憶術） (2D6&gt;=5) ＞ 6[2,4] ＞ 6 ＞ 成功
+  
+</p>
+</div>
+
+
+
+<div class="mem3 left">
+<span>文清・白蓮</span>
+<p>
+
+     
+    静蓮障壁に変更する 
+  
+</p>
+</div>
+
+
+
+<div class="mem3 left">
+<span>文清・白蓮</span>
+<p>
+
+     
+    土竜吼→サンスゥチィ 
+  
+</p>
+</div>
+
+
+
+<div class="mem3 left">
+<span>文清・白蓮</span>
+<p>
+
+     
+    「これを必ず決めたい。」 
+  
+</p>
+</div>
+
+
+
+
+<div class="mem3 left">
+<span>文清・白蓮</span>
+<p>
+
+     
+    2D6&gt;=5 （判定：掘削術） (2D6&gt;=5) ＞ 4[2,2] ＞ 4 ＞ 失敗
+  
+</p>
+</div>
+
+
+
+<div class="mem3 left">
+<span>文清・白蓮</span>
+<p>
+
+     
+    神通丸使用 
+  
+</p>
+</div>
+
+
+
+<div class="kp">
+
+     
+    [ 文清・白蓮 ] 忍具 : 2 → 1 
+  
+</div>
+
+
+
+<div class="mem3 left">
+<span>文清・白蓮</span>
+<p>
+
+     
+    2D6&gt;=5 （判定：掘削術） (2D6&gt;=5) ＞ 10[4,6] ＞ 10 ＞ 成功
+  
+</p>
+</div>
+
+
+
+<div class="mem3 left">
+<span>文清・白蓮</span>
+<p>
+
+     
+    「危なすぎる………」 
+  
+</p>
+</div>
+
+
+
+<div class="mem2 right">
+<span>参 宿七</span>
+<p>
+
+     
+    SG#3+1&gt;=9 （判定：骨法術） (SG+1@12#3&gt;=9) ＞ 7[3,4]+1 ＞ 8 ＞ 失敗
+  
+</p>
+</div>
+
+
+
+<div class="kp">
+
+     
+    [ 参 宿七 ] 生命力 : 6 → 5 
+  
+</div>
+
+
+
+<div class="kp">
+
+     
+    [ 参 宿七 ] 八重垣 : 0 → 1 
+  
+</div>
+
+
+
+<div class="mem5 left">
+<span>李 雲樵</span>
+<p>
+
+     
+    接近戦攻撃→宿七 
+  
+</p>
+</div>
+
+
+
+<div class="mem5 left">
+<span>李 雲樵</span>
+<p>
+
+     
+    SG&gt;=5 （判定：第六感） (SG@12#2&gt;=5) ＞ 10[4,6] ＞ 10 ＞ 成功
+  
+</p>
+</div>
+
+
+
+<div class="mem5 left">
+<span>李 雲樵</span>
+<p>
+
+     
+    宿七にマイナスの感情修正 
+  
+</p>
+</div>
+
+
+
+<div class="mem2 right">
+<span>参 宿七</span>
+<p>
+
+     
+    SG#2+1&gt;=9 （判定：骨法術） (SG+1@12#2&gt;=9) ＞ 8[4,4]+1 ＞ 9 ＞ 成功
+  
+</p>
+</div>
+
+
+
+<div class="kp">
+
+     
+    [ 参 宿七 ] 八重垣 : 1 → 2 
+  
+</div>
+
+
+
+<div class="mem5 mem5-3 left">
+<span>李 雲樵</span>
+<p>
+
+     
+    「ぐぬぬ」 
+  
+</p>
+</div>
+
+
+
+<div class="mem4 right">
+<span>玄蓮四</span>
+<p>
+
+     
+    「当たんないのも楽しいわよねぇ！？」 
+  
+</p>
+</div>
+
+
+
+<div class="mem2 right">
+<span>参 宿七</span>
+<p>
+
+     
+    D66 (D66) ＞ 46
+  
+</p>
+</div>
+
+
+
+<div class="mem3 left">
+<span>文清・白蓮</span>
+<p>
+
+     
+    d66 (D66) ＞ 56
+  
+</p>
+</div>
+
+
+
+<div class="mem3 mem3-1 left">
+<span>文清・白蓮</span>
+<p>
+
+     
+    「もう一度受けてもらうぞ」 
+  
+</p>
+</div>
+
+
+
+<div class="mem3 mem3-1 left">
+<span>文清・白蓮</span>
+<p>
+
+     
+    接近戦攻撃→サンスゥチィ 
+  
+</p>
+</div>
+
+
+
+<div class="mem3 mem3-1 left">
+<span>文清・白蓮</span>
+<p>
+
+     
+    2D6&gt;=5 （判定：絡繰術） (2D6&gt;=5) ＞ 5[1,4] ＞ 5 ＞ 成功
+  
+</p>
+</div>
+
+
+
+<div class="mem2 right">
+<span>参 宿七</span>
+<p>
+
+     
+    SG#1+3&gt;=6 （判定：火術） (SG+3@12#1&gt;=6) ＞ 7[1,6]+3 ＞ 10 ＞ 成功
+  
+</p>
+</div>
+
+
+
+<div class="kp">
+
+     
+    [ 参 宿七 ] 八重垣 : 2 → 3 
+  
+</div>
+
+
+
+<div class="mem2 right">
+<span>参 宿七</span>
+<p>
+
+     
+    龍星群[ﾘｭｳｾｲｸﾞﾝ] 
+  
+</p>
+</div>
+
+
+
+<div class="mem2 right">
+<span>参 宿七</span>
+<p>
+
+     
+    SG#3+1&gt;=5 （判定：召喚術） (SG+1@12#3&gt;=5) ＞ 5[1,4]+1 ＞ 6 ＞ 成功
+  
+</p>
+</div>
+
+
+
+<div class="mem4 right">
+<span>玄蓮四</span>
+<p>
+
+     
+    避けない 
+  
+</p>
+</div>
+
+
+
+<div class="mem2 right">
+<span>参 宿七</span>
+<p>
+
+     
+    「みなさん、星ですよ」 
+  
+</p>
+</div>
+
+
+
+<div class="mem5 mem5-5 left">
+<span>李 雲樵</span>
+<p>
+
+     
+    SG-2&gt;=8 （判定：封術、指定特技：召喚術） (SG-2@12#2&gt;=8) ＞ 7[1,6]-2 ＞ 5 ＞ 失敗
+  
+</p>
+</div>
+
+
+
+<div class="mem2 right">
+<span>参 宿七</span>
+<p>
+
+     
+    SG#3+4&gt;=5 （判定：召喚術） (SG+4@12#3&gt;=5) ＞ 8[2,6]+4 ＞ 12 ＞ 成功
+  
+</p>
+</div>
+
+
+
+<div class="kp">
+
+     
+    [ 参 宿七 ] 八重垣 : 3 → 4 
+  
+</div>
+
+
+
+<div class="mem3 left">
+<span>文清・白蓮</span>
+<p>
+
+     
+    2D6&gt;=12 （判定：記憶術） (2D6&gt;=12) ＞ 7[1,6] ＞ 7 ＞ 失敗
+  
+</p>
+</div>
+
+
+
+<div class="mem3 mem3-4 left">
+<span>文清・白蓮</span>
+<p>
+
+     
+    奥義！！ 
+  
+</p>
+</div>
+
+
+
+<div class="mem3 mem3-4 left">
+<span>文清・白蓮</span>
+<p>
+
+     
+    《静蓮障壁》<br>指定特技：掘削術<br>効果　　：絶対防御<br>演出　　：泥に染まらぬ蓮のように清らかであり、同時に緻密な計算に基づいた鉄壁の防御。<br>「静かに咲く蓮華は──けして揺るがない」<br>どんな攻撃も、蓮華の障壁に触れた瞬間に消え去り、彼の身には一片の傷も届かない。 
+  
+</p>
+</div>
+
+
+
+<div class="mem1 left">
+<span>GM</span>
+<p>
+
+     
+    見切り判定 
+  
+</p>
+</div>
+
+
+
+<div class="mem4 right">
+<span>玄蓮四</span>
+<p>
+
+     
+    SG@12#2&gt;=8 （判定：手裏剣術） (SG@12#2&gt;=8) ＞ 11[5,6] ＞ 11 ＞ 成功
+  
+</p>
+</div>
+
+
+
+<div class="mem2 right">
+<span>参 宿七</span>
+<p>
+
+     
+    SG#3+1&gt;=5 （判定：見敵術） (SG+1@12#3&gt;=5) ＞ 5[1,4]+1 ＞ 6 ＞ 成功
+  
+</p>
+</div>
+
+
+
+<div class="mem5 left">
+<span>李 雲樵</span>
+<p>
+
+     
+    SG&gt;=9 （判定：変装術、指定特技：見敵術） (SG@12#2&gt;=9) ＞ 7[3,4] ＞ 7 ＞ 失敗
+  
+</p>
+</div>
+
+
+
+<div class="mem4 right">
+<span>玄蓮四</span>
+<p>
+
+     
+    「なんかオイシイとこもってかれてる気がするわ」 
+  
+</p>
+</div>
+
+
+
+<div class="mem5 left">
+<span>李 雲樵</span>
+<p>
+
+     
+    奥義！！ 
+  
+</p>
+</div>
+
+
+
+<div class="mem5 left">
+<span>李 雲樵</span>
+<p>
+
+     
+    ■奥義<br>《見切りの極意》<br>指定特技：第六感<br>効果　　：絶対防御/くらまし/防御低下<br>演出　　：「その技は知ってるよ～」 
+  
+</p>
+</div>
+
+
+
+<div class="mem2 right">
+<span>参 宿七</span>
+<p>
+
+     
+    奥義破り 
+  
+</p>
+</div>
+
+
+
+<div class="mem2 right">
+<span>参 宿七</span>
+<p>
+
+     
+    SG#3-1&gt;=9 （判定：骨法術） (SG-1@12#3&gt;=9) ＞ 5[2,3]-1 ＞ 4 ＞ 失敗
+  
+</p>
+</div>
+
+
+
+<div class="mem4 mem4-4 right">
+<span>玄蓮四</span>
+<p>
+
+     
+    【悪食】あくじき（【魔血】） 
+  
+</p>
+</div>
+
+
+
+<div class="kp">
+
+     
+    [ 玄蓮四 ] 忍術 : 1 → 0 
+  
+</div>
+
+
+
+<div class="mem4 mem4-4 right">
+<span>玄蓮四</span>
+<p>
+
+     
+    SG@12#2&gt;=5 （判定：兵糧術） (SG@12#2&gt;=5) ＞ 4[1,3] ＞ 4 ＞ 失敗
+  
+</p>
+</div>
+
+
+
+<div class="mem2 right">
+<span>参 宿七</span>
+<p>
+
+     
+    「星を喰らうもの……さすがに貴方は至りませんでしたか」 
+  
+</p>
+</div>
+
+
+
+<div class="kp">
+
+     
+    [ 玄蓮四 ] 妖術 : 1 → 0 
+  
+</div>
+
+
+
+<div class="kp">
+
+     
+    [ 玄蓮四 ] 謀術 : 1 → 0 
+  
+</div>
+
+
+
+<div class="mem4 mem4-4 right">
+<span>玄蓮四</span>
+<p>
+
+     
+    「喰らい損ねたわ」 
+  
+</p>
+</div>
+
+
+
+<div class="mem4 mem4-4 right">
+<span>玄蓮四</span>
+<p>
+
+     
+    「ははは！！！！うまくいかないわね！！」 
+  
+</p>
+</div>
+
+
+
+<div class="mem4 mem4-4 right">
+<span>玄蓮四</span>
+<p>
+
+     
+    「たのっしいいい」 
+  
+</p>
+</div>
+
+
+
+<div class="mem2 right">
+<span>参 宿七</span>
+<p>
+
+     
+    「それは、本日のあなたを見てればわかりますよ」 
+  
+</p>
+</div>
+
+
+
+<div class="mem4 mem4-4 right">
+<span>玄蓮四</span>
+<p>
+
+     
+    「あはは！」 
+  
+</p>
+</div>
+
+
+
+<div class="mem4 mem4-4 right">
+<span>玄蓮四</span>
+<p>
+
+     
+    接近戦攻撃 &gt; 白蓮 
+  
+</p>
+</div>
+
+
+
+<div class="mem4 mem4-4 right">
+<span>玄蓮四</span>
+<p>
+
+     
+    SG@12#2&gt;=5 （判定：用兵術） (SG@12#2&gt;=5) ＞ 9[4,5] ＞ 9 ＞ 成功
+  
+</p>
+</div>
+
+
+
+<div class="mem4 mem4-4 right">
+<span>玄蓮四</span>
+<p>
+
+     
+    「ちょっと味見させてよ！」 
+  
+</p>
+</div>
+
+
+
+<div class="mem3 left">
+<span>文清・白蓮</span>
+<p>
+
+     
+    2D6&gt;=6 （判定：記憶術） (2D6&gt;=6) ＞ 9[3,6] ＞ 9 ＞ 成功
+  
+</p>
+</div>
+
+
+
+<div class="mem4 mem4-4 right">
+<span>玄蓮四</span>
+<p>
+
+     
+    「あらざんねん」 
+  
+</p>
+</div>
+
+
+
+<div class="mem3 mem3-2 left">
+<span>文清・白蓮</span>
+<p>
+
+     
+    「はっ！！見切れてるぞ！」 
+  
+</p>
+</div>
+
+
+
+<div class="mem1 left">
+<span>GM</span>
+<p>
+
+     
+    ラウンド終了 
+  
+</p>
+</div>
+
+
+
+<div class="kp">
+
+     
+    [ GM ] ラウンド : 3 → 4 
+  
+</div>
+
+
+
+<div class="mem1 left">
+<span>GM</span>
+<p>
+
+     
+    プロット 
+  
+</p>
+</div>
+
+
+
+<div class="mem1 left">
+<span>GM</span>
+<p>
+
+     
+    プロットオープン 
+  
+</p>
+</div>
+
+
+
+<div class="kp">
+
+     
+    [ 参 宿七 ] がダイスシンボルを公開。出目は 2 です。 
+  
+</div>
+
+
+
+<div class="kp">
+
+     
+    [ 李 雲樵 ] がダイスシンボルを公開。出目は 3 です。 
+  
+</div>
+
+
+
+<div class="kp">
+
+     
+    [ 玄蓮四 ] がダイスシンボルを公開。出目は 2 です。 
+  
+</div>
+
+
+
+<div class="kp">
+
+     
+    [ 文清・白蓮 ] がダイスシンボルを公開。出目は 5 です。 
+  
+</div>
+
+
+
+<div class="mem3 left">
+<span>文清・白蓮</span>
+<p>
+
+     
+    「これをするしかないか」 
+  
+</p>
+</div>
+
+
+
+<div class="mem3 left">
+<span>文清・白蓮</span>
+<p>
+
+     
+    流転 
+  
+</p>
+</div>
+
+
+
+<div class="mem3 left">
+<span>文清・白蓮</span>
+<p>
+
+     
+    2D6&gt;=5 （判定：記憶術） (2D6&gt;=5) ＞ 7[3,4] ＞ 7 ＞ 成功
+  
+</p>
+</div>
+
+
+
+<div class="mem3 left">
+<span>文清・白蓮</span>
+<p>
+
+     
+    奥義を蓮華陣へ変更 
+  
+</p>
+</div>
+
+
+
+<div class="mem3 mem3-4 left">
+<span>文清・白蓮</span>
+<p>
+
+     
+    奥義！！ 
+  
+</p>
+</div>
+
+
+
+<div class="mem3 mem3-4 left">
+<span>文清・白蓮</span>
+<p>
+
+     
+    《蓮華陣》<br>指定特技：絡繰術<br>効果　　：範囲攻撃<br>演出　　：「あなた方は僕の思考の盤上に並べられた駒にすぎません。<br>　一手先どころか、十手先まで読み切った策に…抗えるはずがない」<br><br>敵が何をしようと、その行動すらも利用される。<br>やがて策は連鎖し、広範囲に張り巡らされた罠が一斉に炸裂する。<br>抗う隙などなく、勝利は静かに手中に収まる。 
+  
+</p>
+</div>
+
+
+
+<div class="mem3 left">
+<span>文清・白蓮</span>
+<p>
+
+     
+    範囲攻撃→全員攻撃 
+  
+</p>
+</div>
+
+
+
+<div class="kp">
+
+     
+    [ 参 宿七 ] 生命力 : 5 → 3 
+  
+</div>
+
+
+
+<div class="kp">
+
+     
+    [ 玄蓮四 ] 体術 : 1 → 0 
+  
+</div>
+
+
+
+<div class="kp">
+
+     
+    [ 玄蓮四 ] 戦術 : 1 → 0 
+  
+</div>
+
+
+
+<div class="mem4 right">
+<span>玄蓮四</span>
+<p>
+
+     
+    奥義！！ 
+  
+</p>
+</div>
+
+
+
+<div class="mem4 right">
+<span>玄蓮四</span>
+<p>
+
+     
+    ■奥義<br>《《血戦楽土》けっせんらくど》<br>指定特技：兵糧術<br>効果　　：不死身/目覚め/体質異常<br>演出　　：無数の刃が肉を裂き、鮮血が大地を染める。しかし、その血に塗れた足元こそが楽園――。<br>倒れることは許されない。苦痛も、死も、すべて快楽に変わる。<br>倒すのではない、切り結び続けるために。<br> 
+  
+</p>
+</div>
+
+
+
+<div class="mem4 right">
+<span>玄蓮四</span>
+<p>
+
+     
+    1D6  (1D6) ＞ 2
+  
+</p>
+</div>
+
+
+
+<div class="mem5 left">
+<span>李 雲樵</span>
+<p>
+
+     
+    奥義！！ 
+  
+</p>
+</div>
+
+
+
+<div class="mem5 left">
+<span>李 雲樵</span>
+<p>
+
+     
+    ■奥義<br>《見切りの極意》<br>指定特技：第六感<br>効果　　：絶対防御/くらまし/防御低下<br>演出　　：「その技は知ってるよ～」 
+  
+</p>
+</div>
+
+
+
+<div class="mem2 right">
+<span>参 宿七</span>
+<p>
+
+     
+    奥義破り 
+  
+</p>
+</div>
+
+
+
+<div class="kp">
+
+     
+    [ 玄蓮四 ] 体術 : 0 → 1 
+  
+</div>
+
+
+
+<div class="mem4 right">
+<span>玄蓮四</span>
+<p>
+
+     
+    奥義破り 
+  
+</p>
+</div>
+
+
+
+<div class="mem4 mem4-4 right">
+<span>玄蓮四</span>
+<p>
+
+     
+    「ア・・・れ？」 
+  
+</p>
+</div>
+
+
+
+<div class="mem2 right">
+<span>参 宿七</span>
+<p>
+
+     
+    SG#2-1&gt;=9 （判定：骨法術） (SG-1@12#2&gt;=9) ＞ 4[1,3]-1 ＞ 3 ＞ 失敗
+  
+</p>
+</div>
+
+
+
+<div class="mem4 right">
+<span>玄蓮四</span>
+<p>
+
+     
+    SG@12#2-2&gt;=7 （判定：刀術） (SG-2@12#2&gt;=7) ＞ 10[4,6]-2 ＞ 8 ＞ 成功
+  
+</p>
+</div>
+
+
+
+<div class="kp">
+
+     
+    [ 李 雲樵 ] 体術 : 1 → 0 
+  
+</div>
+
+
+
+<div class="kp">
+
+     
+    [ 李 雲樵 ] 忍術 : 1 → 0 
+  
+</div>
+
+
+
+<div class="mem2 right">
+<span>参 宿七</span>
+<p>
+
+     
+    SG#2+1&gt;=5  見切り判定（判定：見敵術） (SG+1@12#2&gt;=5) ＞ 7[2,5]+1 ＞ 8 ＞ 成功
+  
+</p>
+</div>
+
+
+
+<div class="mem4 right">
+<span>玄蓮四</span>
+<p>
+
+     
+    SG@12#2&gt;=7  見切り判定（判定：用兵術） (SG@12#2&gt;=7) ＞ 8[3,5] ＞ 8 ＞ 成功
+  
+</p>
+</div>
+
+
+
+<div class="mem5 left">
+<span>李 雲樵</span>
+<p>
+
+     
+    SG&gt;=9  見切り判定（判定：変装術、指定特技：見敵術） (SG@12#2&gt;=9) ＞ 6[3,3] ＞ 6 ＞ 失敗
+  
+</p>
+</div>
+
+
+
+<div class="mem5 left">
+<span>李 雲樵</span>
+<p>
+
+     
+    背水→宿七 
+  
+</p>
+</div>
+
+
+
+<div class="mem2 right">
+<span>参 宿七</span>
+<p>
+
+     
+    マイナス修正 
+  
+</p>
+</div>
+
+
+
+<div class="mem5 left">
+<span>李 雲樵</span>
+<p>
+
+     
+    SG-1&gt;=7 （判定：罠術、指定特技：医術） (SG-1@12#2&gt;=7) ＞ 9[4,5]-1 ＞ 8 ＞ 成功
+  
+</p>
+</div>
+
+
+
+<div class="mem5 left">
+<span>李 雲樵</span>
+<p>
+
+     
+    マイナス修正 
+  
+</p>
+</div>
+
+
+
+<div class="mem2 right">
+<span>参 宿七</span>
+<p>
+
+     
+    SG#2&gt;=10 （判定：盗聴術） (SG@12#2&gt;=10) ＞ 5[2,3] ＞ 5 ＞ 失敗
+  
+</p>
+</div>
+
+
+
+<div class="mem2 right">
+<span>参 宿七</span>
+<p>
+
+     
+    奥義！！ 
+  
+</p>
+</div>
+
+
+
+<div class="mem2 right">
+<span>参 宿七</span>
+<p>
+
+     
+    ■奥義<br>《明けの明星[ｱｹﾉﾐｮｳｼﾞｮｳ]》<br>指定特技：火術<br>効果　　：絶対防御/張り/回数制限<br><br>(強)張り:1点多く【生命力】減少を軽減することができるようになる。（合計5点防げる）<br>(弱)回数制限:2回までしか使用できない。<br>演出　　：空気中の水分を操り、霧を発生させる水遁。<br>灼熱の熱気を体内から放ち、火花を散らす火遁。<br>両者を組み合わせ霧の中で光を乱反射させ、あらゆる攻撃を防ぐ。 
+  
+</p>
+</div>
+
+
+
+<div class="mem4 right">
+<span>玄蓮四</span>
+<p>
+
+     
+    SG@12#2&gt;=11 見切り判定 （判定：刀術） (SG@12#2&gt;=11) ＞ 9[4,5] ＞ 9 ＞ 失敗
+  
+</p>
+</div>
+
+
+
+<div class="mem5 left">
+<span>李 雲樵</span>
+<p>
+
+     
+    SG&gt;=11  見切り判定（判定：封術、指定特技：呪術） (SG@12#2&gt;=11) ＞ 10[4,6] ＞ 10 ＞ 失敗
+  
+</p>
+</div>
+
+
+
+<div class="mem3 left">
+<span>文清・白蓮</span>
+<p>
+
+     
+    2D6&gt;=9 見切り判定（判定：暗号術） (2D6&gt;=9) ＞ 3[1,2] ＞ 3 ＞ 失敗
+  
+</p>
+</div>
+
+
+
+<div class="mem2 right">
+<span>参 宿七</span>
+<p>
+
+     
+    D66 (D66) ＞ 11
+  
+</p>
+</div>
+
+
+
+<div class="mem4 right">
+<span>玄蓮四</span>
+<p>
+
+     
+    ｄ６６ (D66) ＞ 24
+  
+</p>
+</div>
+
+
+
+<div class="mem2 right">
+<span>参 宿七</span>
+<p>
+
+     
+    「この技は見切れませんね」 
+  
+</p>
+</div>
+
+
+
+<div class="mem4 mem4-4 right">
+<span>玄蓮四</span>
+<p>
+
+     
+    「ハハハ！見えなかったわ！」 
+  
+</p>
+</div>
+
+
+
+<div class="kp">
+
+     
+    [ 参 宿七 ] 八重垣 : 0 → 1 
+  
+</div>
+
+
+
+<div class="mem5 left">
+<span>李 雲樵</span>
+<p>
+
+     
+    「おしかったな～」 
+  
+</p>
+</div>
+
+
+
+<div class="mem4 mem4-4 right">
+<span>玄蓮四</span>
+<p>
+
+     
+    【戦酔】せんすい　&gt;　雲樵 
+  
+</p>
+</div>
+
+
+
+<div class="mem4 mem4-4 right">
+<span>玄蓮四</span>
+<p>
+
+     
+    「今ならいけるかしら？」 
+  
+</p>
+</div>
+
+
+
+<div class="mem4 mem4-4 right">
+<span>玄蓮四</span>
+<p>
+
+     
+    SG@12#2&gt;=5 （判定：刀術） (SG@12#2&gt;=5) ＞ 2[1,1] ＞ 2 ＞ ファンブル
+  
+</p>
+</div>
+
+
+
+<div class="mem2 mem2-3 right">
+<span>参 宿七</span>
+<p>
+
+     
+    「………」 
+  
+</p>
+</div>
+
+
+
+<div class="mem4 mem4-4 right">
+<span>玄蓮四</span>
+<p>
+
+     
+    ｺﾞﾎﾟ････ 
+  
+</p>
+</div>
+
+
+
+<div class="mem2 mem2-3 right">
+<span>参 宿七</span>
+<p>
+
+     
+    「貴方たち、よくここまで頑張りましたね」 
+  
+</p>
+</div>
+
+
+
+<div class="mem2 mem2-1 right">
+<span>参 宿七</span>
+<p>
+
+     
+    「ですが、ここで終いです」 
+  
+</p>
+</div>
+
+
+
+<div class="mem2 mem2-1 right">
+<span>参 宿七</span>
+<p>
+
+     
+    「行かせていきましょう」 
+  
+</p>
+</div>
+
+
+
+<div class="mem2 right">
+<span>参 宿七</span>
+<p>
+
+     
+    奥義！！ 
+  
+</p>
+</div>
+
+
+
+<div class="mem2 right">
+<span>参 宿七</span>
+<p>
+
+     
+    《超新星[ﾁｮｳｼﾝｾｲ ｲﾀﾗｽﾞ]》<br>指定特技：呪術<br>効果　　：範囲攻撃／撃ち／発動条件<br><br>(強)撃ち:射撃戦ダメージを１点追加。<br>(弱)発動条件:生命点が３点以下にならないと使用不可能。<br>演出　　："一撃にてあらゆる敵を滅し<br>無数の攻撃をも防ぎ<br>どのような傷さえ苦にせず<br>如何なる困難さえ突破し<br>相対する者の試みを挫く<br><br>天上天下 並ぶ者無し<br><br>其れ即ち 並びて二つと同じ技に非ず<br>命紡ぎ星は巡る<br>これぞ正しく 超新星" 
+  
+</p>
+</div>
+
+
+
+<div class="mem5 left">
+<span>李 雲樵</span>
+<p>
+
+     
+    「でましたね～」 
+  
+</p>
+</div>
+
+
+
+<div class="mem5 left">
+<span>李 雲樵</span>
+<p>
+
+     
+    奥義破り 
+  
+</p>
+</div>
+
+
+
+<div class="mem2 mem2-1 right">
+<span>参 宿七</span>
+<p>
+
+     
+    「破るなら破ってみなさい！」 
+  
+</p>
+</div>
+
+
+
+<div class="mem4 right">
+<span>玄蓮四</span>
+<p>
+
+     
+    感情補正 
+  
+</p>
+</div>
+
+
+
+<div class="mem5 left">
+<span>李 雲樵</span>
+<p>
+
+     
+    回想 
+  
+</p>
+</div>
+
+
+
+<div class="mem5 left">
+<span>李 雲樵</span>
+<p>
+
+     
+    ――― 
+  
+</p>
+</div>
+
+
+</div></div>
+
+<div class="bg-sp">
+    <div class="bg-over"><div class="bg-inner bg1"></div></div>
+<div class="log">
+
+
+<div class="mem5 left">
+<span>李 雲樵</span>
+<p>
+
+     
+    代々24歳になると寿命を迎える、呪われた短命の家系に生まれた雲樵は解呪や不老不死などの噂を求め旅をしてきた 
+  
+</p>
+</div>
+
+
+
+<div class="mem5 left">
+<span>李 雲樵</span>
+<p>
+
+     
+    そして23歳のときについに条件付きであるが不老不死の力を得る仙薬を手にする 
+  
+</p>
+</div>
+
+
+
+<div class="mem5 left">
+<span>李 雲樵</span>
+<p>
+
+     
+    その条件は 
+  
+</p>
+</div>
+
+
+
+<div class="mem5 left">
+<span>李 雲樵</span>
+<p>
+
+     
+    ①月に一度、他人の血を摂取する事。ただし同じ人の血では効果はなく、条件が、満たされなかったときこの薬の効果はなくなる 
+  
+</p>
+</div>
+
+
+
+<div class="mem5 left">
+<span>李 雲樵</span>
+<p>
+
+     
+    ②老いによっては死なず、見た目も変わることがないが、病気や怪我での死は変わらず起こる 
+  
+</p>
+</div>
+
+
+
+<div class="mem5 left">
+<span>李 雲樵</span>
+<p>
+
+     
+    ③死んだあとの魂は輪廻転生の輪から外れ無に帰す 
+  
+</p>
+</div>
+
+
+
+<div class="mem5 left">
+<span>李 雲樵</span>
+<p>
+
+     
+    ――― 
+  
+</p>
+</div>
+
+
+
+<div class="mem5 left">
+<span>李 雲樵</span>
+<p>
+
+     
+    この条件を満たすため雲樵は暗殺者の道を求め忍びとなる 
+  
+</p>
+</div>
+
+
+
+<div class="mem5 left">
+<span>李 雲樵</span>
+<p>
+
+     
+    ――― 
+  
+</p>
+</div>
+
+
+
+<div class="mem5 left">
+<span>李 雲樵</span>
+<p>
+
+     
+    ――― 
+  
+</p>
+</div>
+
+
+
+<div class="mem5 left">
+<span>李 雲樵</span>
+<p>
+
+     
+    そして長い年月が経ち、暗殺者よりも様々な流派に弟子入りするとこで少ないリスクで多くの人の血を手に入れることができるのを見つけ、転々と流派を渡ってきた 
+  
+</p>
+</div>
+
+
+
+<div class="mem5 left">
+<span>李 雲樵</span>
+<p>
+
+     
+    あるときは教員として働きながら実習と称して生徒の血を手に入れていた時期もあった 
+  
+</p>
+</div>
+
+
+
+<div class="mem5 left">
+<span>李 雲樵</span>
+<p>
+
+     
+    これからも生きるために多くの血を手に入れなければならない、誰よりも死を恐れる家系の血がこの悪しき定めを断ち切れないのだ 
+  
+</p>
+</div>
+
+
+
+<div class="mem5 left">
+<span>李 雲樵</span>
+<p>
+
+     
+    そんなとき、天光流の戸を叩き弟子入りした雲樵は、そこで超新星の継承に失敗し、ある意味命を握られている宿七に出会う 
+  
+</p>
+</div>
+
+
+
+<div class="mem5 left">
+<span>李 雲樵</span>
+<p>
+
+     
+    生きながら死んでいるかのような彼女の命と決められた死という自分の境遇が重なるとどこか煌きを感じる 
+  
+</p>
+</div>
+
+
+
+<div class="mem5 left">
+<span>李 雲樵</span>
+<p>
+
+     
+    もし自分が超新星を手にし、ここを去ったとき、この煌きはどう変わるのか… 
+  
+</p>
+</div>
+
+
+
+<div class="mem5 left">
+<span>李 雲樵</span>
+<p>
+
+     
+    歓喜し希望を抱くのか、はたまた絶望し、死を迎えるのか… 
+  
+</p>
+</div>
+
+
+
+<div class="mem5 left">
+<span>李 雲樵</span>
+<p>
+
+     
+    自分の運命もまた同じなのだろうか… 
+  
+</p>
+</div>
+
+
+
+<div class="mem5 left">
+<span>李 雲樵</span>
+<p>
+
+     
+    答えは超新星にある 
+  
+</p>
+</div>
+
+
+
+<div class="mem5 left">
+<span>李 雲樵</span>
+<p>
+
+     
+    ――― 
+  
+</p>
+</div>
+
+
+
+<div class="mem5 left">
+<span>李 雲樵</span>
+<p>
+
+     
+    回想終わり 
+  
+</p>
+</div>
+
+
+
+<div class="mem5 left">
+<span>李 雲樵</span>
+<p>
+
+     
+    ■PC3秘密：<br>あなたは嘗て姉弟子に尋ねたことがある。<br>何故この地を離れずに"朱赫"の下に居続けるのか。【超新星】は欲しくないのか？<br><br>すると彼女は珍しく、困ったような照れたような表情を浮かべて答えた。<br>曰く、【超新星】の継承に挑んだものの、失敗したという。<br>それ以降、奥義の情報を漏らさぬために"朱赫"の下で生きる事を言い渡されたそうだ。<br><br>その時の表情が、今も脳裏で煌めいている。<br>この想いを何と言うのか、その答えは【超新星】の中にある。 
+  
+</p>
+</div>
+
+</div></div>
+
+<div class="bg-sp">
+    <div class="bg-over"><div class="bg-inner bg5"></div></div>
+<div class="log">
+
+
+
+
+<div class="mem5 left">
+<span>李 雲樵</span>
+<p>
+
+     
+    SG+4&gt;=11 （判定：封術、指定特技：呪術） (SG+4@12#2&gt;=11) ＞ 10[4,6]+4 ＞ 14 ＞ 成功
+  
+</p>
+</div>
+
+
+
+<div class="mem2 mem2-2 right">
+<span>参 宿七</span>
+<p>
+
+     
+    「ふっ。破るものはやはり貴方でしたか、雲樵」 
+  
+</p>
+</div>
+
+
+
+<div class="mem5 left">
+<span>李 雲樵</span>
+<p>
+
+     
+    「楽しいね～宿七ちゃん、その命の煌めきもっとみせてよ」 
+  
+</p>
+</div>
+
+<div class="mem1 left">
+<span>GM</span>
+<p>
+
+     
+見切り判定
+  
+</p>
+</div>
+
+
+
+<div class="mem4 mem4-4 right">
+<span>玄蓮四</span>
+<p>
+
+     
+    回想シーン 
+  
+</p>
+</div>
+
+
+
+</div></div>
+
+<div class="bg-sp">
+    <div class="bg-over"><div class="bg-inner bg3"></div></div>
+<div class="log">
+
+
+<div class="mem4 right">
+<span>玄蓮四</span>
+<p>
+
+     
+    あなたはひたすらに強さを探求し続けている。<br>天光流に入ったのも【超新星】を継ぐためではない、破るためだ。 
+  
+</p>
+</div>
+
+
+
+<div class="mem4 right">
+<span>玄蓮四</span>
+<p>
+
+     
+    あれは数月前------ 
+  
+</p>
+</div>
+
+
+
+<div class="mem4 right">
+<span>玄蓮四</span>
+<p>
+
+     
+    「ふふふふ！！楽しいわねぇ！！」 
+  
+</p>
+</div>
+
+
+
+<div class="mem4 mem4-4 right">
+<span>玄蓮四</span>
+<p>
+
+     
+    「ほらほら！死んじゃうわよ！」 
+  
+</p>
+</div>
+
+
+
+<div class="mem4 mem4-4 right">
+<span>玄蓮四</span>
+<p>
+
+     
+    「どうしたの！？」 
+  
+</p>
+</div>
+
+
+
+<div class="mem4 mem4-4 right">
+<span>玄蓮四</span>
+<p>
+
+     
+    口うるさい姉弟子の目を盗み、"朱赫"との一騎打ちを行った。 
+  
+</p>
+</div>
+
+
+
+<div class="mem4 mem4-5 right">
+<span>玄蓮四</span>
+<p>
+
+     
+    「あら、もう死んじゃうの？」 
+  
+</p>
+</div>
+
+
+
+<div class="mem4 mem4-6 right">
+<span>玄蓮四</span>
+<p>
+
+     
+    「ネェ・・・ナンデ？」 
+  
+</p>
+</div>
+
+
+
+<div class="mem4 mem4-5 right">
+<span>玄蓮四</span>
+<p>
+
+     
+    だが"朱赫"は老い、終ぞ【超新星】を放つことなくこの世を去る事となった。<br>つまり、あなたが"朱赫"を殺したのだ。 
+  
+</p>
+</div>
+
+
+
+<div class="mem4 mem4-5 right">
+<span>玄蓮四</span>
+<p>
+
+     
+    だが、これでは勝ったとは言えない。<br>究極奥義を正面から切伏せ、己が最強を証明するのだ。 
+  
+</p>
+</div>
+
+
+
+<div class="mem4 mem4-7 right">
+<span>玄蓮四</span>
+<p>
+
+     
+    「アァ・・・まだ戦えるのね・・・楽しいわ！！」 
+  
+</p>
+</div>
+
+
+
+<div class="mem4 mem4-7 right">
+<span>玄蓮四</span>
+<p>
+
+     
+    「さァ・・・」 
+  
+</p>
+</div>
+
+
+
+<div class="mem4 right">
+<span>玄蓮四</span>
+<p>
+
+     
+    「次に行くわよ♪」 
+  
+</p>
+</div>
+
+
+
+<div class="mem4 right">
+<span>玄蓮四</span>
+<p>
+
+     
+    あなたの【本当の使命】は『【超新星】の奥義破りに成功すること』<br>あるいは『【超新星】の奥義を取得したものをこの手で倒すこと』だ。 
+  
+</p>
+</div>
+
+
+
+<div class="mem4 mem4-4 right">
+<span>玄蓮四</span>
+<p>
+
+     
+    「ミツケタミツケタ・・・・！！！！！」 
+  
+</p>
+</div>
+
+
+
+<div class="mem4 mem4-4 right">
+<span>玄蓮四</span>
+<p>
+
+     
+    「やっと会えた・・・！！！」 
+  
+</p>
+</div>
+
+
+
+<div class="mem4 mem4-4 right">
+<span>玄蓮四</span>
+<p>
+
+     
+    「ふふふふふふ！！！！あはははははははは！！！！」 
+  
+</p>
+</div>
+
+
+
+<div class="mem4 mem4-4 right">
+<span>玄蓮四</span>
+<p>
+
+     
+    あなたはひたすらに強さを探求し続けている。<br>天光流に入ったのも【超新星】を継ぐためではない、破るためだ。<br>その為に姉弟子の目を盗んで"朱赫"との一騎打ちを行った。<br>だが"朱赫"は老い、終ぞ【超新星】を放つことなくこの世を去る事となった。<br>つまり、あなたが"朱赫"を殺したのだ。<br><br>だが、これでは勝ったとは言えない。<br>究極奥義を正面から切伏せ、己が最強を証明するのだ。<br><br>あなたの【本当の使命】は『【超新星】の奥義破りに成功すること』<br>あるいは『【超新星】の奥義を取得したものをこの手で倒すこと』だ。 
+  
+</p>
+</div>
+
+
+
+<div class="mem4 mem4-4 right">
+<span>玄蓮四</span>
+<p>
+
+     
+    回想終わり 
+  
+</p>
+</div>
+
+</div></div>
+
+<div class="bg-sp">
+    <div class="bg-over"><div class="bg-inner bg5"></div></div>
+<div class="log">
+
+
+
+
+<div class="mem4 mem4-4 right">
+<span>玄蓮四</span>
+<p>
+
+     
+    SG@12#2+3&gt;=11 （判定：刀術） (SG+3@12#2&gt;=11) ＞ 4[1,3]+3 ＞ 7 ＞ 失敗
+  
+</p>
+</div>
+
+
+
+<div class="mem4 mem4-4 right">
+<span>玄蓮四</span>
+<p>
+
+     
+    「ハ・・ァ？」 
+  
+</p>
+</div>
+
+
+
+<div class="mem4 mem4-4 right">
+<span>玄蓮四</span>
+<p>
+
+     
+    目が霞む 
+  
+</p>
+</div>
+
+
+
+<div class="mem4 mem4-4 right">
+<span>玄蓮四</span>
+<p>
+
+     
+    血を、流しすぎた。 
+  
+</p>
+</div>
+
+
+
+<div class="mem2 mem2-3 right">
+<span>参 宿七</span>
+<p>
+
+     
+    「貴方はこの領域を見ることすらできないですね、蓮四」 
+  
+</p>
+</div>
+
+
+
+<div class="mem4 mem4-4 right">
+<span>玄蓮四</span>
+<p>
+
+     
+    「は？そんなわけが・・・」 
+  
+</p>
+</div>
+
+
+
+<div class="mem2 right">
+<span>参 宿七</span>
+<p>
+
+     
+    「師匠と戦ったようですが、そこで満足しなかったのは褒めましょう」 
+  
+</p>
+</div>
+
+
+
+<div class="mem2 right">
+<span>参 宿七</span>
+<p>
+
+     
+    「ですが、あの領域に至っていない私の奥義すら見破れないとは」 
+  
+</p>
+</div>
+
+
+
+<div class="mem4 mem4-4 right">
+<span>玄蓮四</span>
+<p>
+
+     
+    「あの老いぼれジジイよりなんかみんな強くない？」 
+  
+</p>
+</div>
+
+
+
+<div class="mem2 right">
+<span>参 宿七</span>
+<p>
+
+     
+    「その程度の存在なのですね」 
+  
+</p>
+</div>
+
+
+
+<div class="mem4 mem4-4 right">
+<span>玄蓮四</span>
+<p>
+
+     
+    「フフフフ！！！面白いわね！！」 
+  
+</p>
+</div>
+
+
+
+<div class="mem4 mem4-4 right">
+<span>玄蓮四</span>
+<p>
+
+     
+    「泥を綴って、血を綴って、生きるーーー」 
+  
+</p>
+</div>
+
+
+
+<div class="mem4 mem4-4 right">
+<span>玄蓮四</span>
+<p>
+
+     
+    「嗚呼、タノシイーー」 
+  
+</p>
+</div>
+
+
+
+<div class="mem1 left">
+<span>GM</span>
+<p>
+
+     
+    ラウンド終了 
+  
+</p>
+</div>
+
+
+
+<div class="kp">
+
+     
+    [ GM ] ラウンド : 4 → 5 
+  
+</div>
+
+
+
+<div class="mem1 left">
+<span>GM</span>
+<p>
+
+     
+    プロット 
+  
+</p>
+</div>
+
+
+
+<div class="mem1 left">
+<span>GM</span>
+<p>
+
+     
+    プロットオープン 
+  
+</p>
+</div>
+
+
+
+<div class="kp">
+
+     
+    [ 参 宿七 ] がダイスシンボルを公開。出目は 4 です。 
+  
+</div>
+
+
+
+<div class="kp">
+
+     
+    [ 文清・白蓮 ] がダイスシンボルを公開。出目は 4 です。 
+  
+</div>
+
+
+
+<div class="kp">
+
+     
+    [ 李 雲樵 ] がダイスシンボルを公開。出目は 3 です。 
+  
+</div>
+
+
+
+<div class="kp">
+
+     
+    [ 玄蓮四 ] がダイスシンボルを公開。出目は 6 です。 
+  
+</div>
+
+
+
+<div class="mem4 mem4-4 right">
+<span>玄蓮四</span>
+<p>
+
+     
+    「血・・・！」 
+  
+</p>
+</div>
+
+
+
+<div class="mem4 mem4-4 right">
+<span>玄蓮四</span>
+<p>
+
+     
+    奥義！！ 
+  
+</p>
+</div>
+
+
+
+<div class="mem2 right">
+<span>参 宿七</span>
+<p>
+
+     
+    奥義破り 
+  
+</p>
+</div>
+
+
+
+<div class="mem4 mem4-4 right">
+<span>玄蓮四</span>
+<p>
+
+     
+    ■奥義<br>《《血戦楽土》けっせんらくど》<br>指定特技：兵糧術<br>効果　　：不死身/目覚め/体質異常<br>演出　　：無数の刃が肉を裂き、鮮血が大地を染める。しかし、その血に塗れた足元こそが楽園――。<br>倒れることは許されない。苦痛も、死も、すべて快楽に変わる。<br>倒すのではない、切り結び続けるために。<br> 
+  
+</p>
+</div>
+
+
+
+<div class="mem5 left">
+<span>李 雲樵</span>
+<p>
+
+     
+    奥義破り 
+  
+</p>
+</div>
+
+
+
+<div class="mem3 left">
+<span>文清・白蓮</span>
+<p>
+
+     
+    奥義破り 
+  
+</p>
+</div>
+
+
+
+<div class="mem2 right">
+<span>参 宿七</span>
+<p>
+
+     
+    SG#4+1&gt;=8 （判定：召喚術） (SG+1@12#4&gt;=8) ＞ 7[3,4]+1 ＞ 8 ＞ 成功
+  
+</p>
+</div>
+
+
+
+<div class="mem4 right">
+<span>玄蓮四</span>
+<p>
+
+     
+    遁甲符 
+  
+</p>
+</div>
+
+
+
+<div class="mem2 right">
+<span>参 宿七</span>
+<p>
+
+     
+    SG#4+1&gt;=8 （判定：召喚術） (SG+1@12#4&gt;=8) ＞ 6[2,4]+1 ＞ 7 ＞ 失敗
+  
+</p>
+</div>
+
+
+
+<div class="mem2 right">
+<span>参 宿七</span>
+<p>
+
+     
+    神通丸 
+  
+</p>
+</div>
+
+
+
+<div class="mem2 right">
+<span>参 宿七</span>
+<p>
+
+     
+    SG#4+1&gt;=8 （判定：召喚術） (SG+1@12#4&gt;=8) ＞ 11[5,6]+1 ＞ 12 ＞ 成功
+  
+</p>
+</div>
+
+
+
+<div class="mem5 left">
+<span>李 雲樵</span>
+<p>
+
+     
+    SG&gt;=9 （判定：罠術、指定特技：兵糧術） (SG@12#2&gt;=9) ＞ 6[3,3] ＞ 6 ＞ 失敗
+  
+</p>
+</div>
+
+
+
+<div class="mem3 left">
+<span>文清・白蓮</span>
+<p>
+
+     
+    2D6&gt;=11 （判定：記憶術） (2D6&gt;=11) ＞ 9[3,6] ＞ 9 ＞ 失敗
+  
+</p>
+</div>
+
+
+
+<div class="kp">
+
+     
+    [ 玄蓮四 ] 忍具 : 1 → 0 
+  
+</div>
+
+
+
+<div class="kp">
+
+     
+    [ 参 宿七 ] 忍具 : 2 → 1 
+  
+</div>
+
+
+
+<div class="mem4 mem4-4 right">
+<span>玄蓮四</span>
+<p>
+
+     
+    「なんで止めるのォ！？」 
+  
+</p>
+</div>
+
+
+
+<div class="mem4 mem4-4 right">
+<span>玄蓮四</span>
+<p>
+
+     
+    ｶﾞﾊﾟｯ・・・ 
+  
+</p>
+</div>
+
+
+
+<div class="mem2 right">
+<span>参 宿七</span>
+<p>
+
+     
+    「貴方は頑張りすぎました」 
+  
+</p>
+</div>
+
+
+
+<div class="mem2 right">
+<span>参 宿七</span>
+<p>
+
+     
+    「ここで、やすみなさい」 
+  
+</p>
+</div>
+
+
+
+<div class="mem4 mem4-4 right">
+<span>玄蓮四</span>
+<p>
+
+     
+    【神槍】しんそう 
+  
+</p>
+</div>
+
+
+
+<div class="mem4 mem4-4 right">
+<span>玄蓮四</span>
+<p>
+
+     
+    &gt;参宿七 
+  
+</p>
+</div>
+
+
+
+<div class="mem4 mem4-4 right">
+<span>玄蓮四</span>
+<p>
+
+     
+    SG@12#2&gt;=5 （判定：手裏剣術） (SG@12#2&gt;=5) ＞ 7[3,4] ＞ 7 ＞ 成功
+  
+</p>
+</div>
+
+
+
+<div class="mem2 right">
+<span>参 宿七</span>
+<p>
+
+     
+    SG#4+1&gt;=7 （判定：水術） (SG+1@12#4&gt;=7) ＞ 6[3,3]+1 ＞ 7 ＞ 成功
+  
+</p>
+</div>
+
+
+
+<div class="mem4 mem4-2 right">
+<span>玄蓮四</span>
+<p>
+
+     
+    「なんでよ」 
+  
+</p>
+</div>
+
+
+
+<div class="mem4 mem4-2 right">
+<span>玄蓮四</span>
+<p>
+
+     
+    「死んでよ」 
+  
+</p>
+</div>
+
+
+
+<div class="mem4 mem4-4 right">
+<span>玄蓮四</span>
+<p>
+
+     
+    「一緒に死のう？」 
+  
+</p>
+</div>
+
+
+
+<div class="mem2 right">
+<span>参 宿七</span>
+<p>
+
+     
+    「私はここで死ぬわけにはいきませんよ」 
+  
+</p>
+</div>
+
+
+
+<div class="mem4 mem4-4 right">
+<span>玄蓮四</span>
+<p>
+
+     
+    「は？シネシネシネシネ」 
+  
+</p>
+</div>
+
+
+
+<div class="mem2 right">
+<span>参 宿七</span>
+<p>
+
+     
+    「貴方のために、死ぬわけにはいきません」 
+  
+</p>
+</div>
+
+
+
+<div class="mem4 right">
+<span>玄蓮四</span>
+<p>
+
+     
+    「？」 
+  
+</p>
+</div>
+
+
+
+<div class="mem2 right">
+<span>参 宿七</span>
+<p>
+
+     
+    D66 (D66) ＞ 24
+  
+</p>
+</div>
+
+
+
+<div class="mem3 left">
+<span>文清・白蓮</span>
+<p>
+
+     
+    d66 (D66) ＞ 46
+  
+</p>
+</div>
+
+
+
+<div class="kp">
+
+     
+    [ 参 宿七 ] 八重垣 : 0 → 1 
+  
+</div>
+
+
+
+<div class="mem3 mem3-4 left">
+<span>文清・白蓮</span>
+<p>
+
+     
+    奥義！！ 
+  
+</p>
+</div>
+
+
+
+<div class="mem3 mem3-4 left">
+<span>文清・白蓮</span>
+<p>
+
+     
+   《蓮華陣》<br>指定特技：絡繰術<br>効果　　：範囲攻撃<br>演出　　：「あなた方は僕の思考の盤上に並べられた駒にすぎません。<br>　一手先どころか、十手先まで読み切った策に…抗えるはずがない」<br><br>敵が何をしようと、その行動すらも利用される。<br>やがて策は連鎖し、広範囲に張り巡らされた罠が一斉に炸裂する。<br>抗う隙などなく、勝利は静かに手中に収まる。
+  
+</p>
+</div>
+
+
+
+<div class="mem2 right">
+<span>参 宿七</span>
+<p>
+
+     
+    奥義やぶり 
+  
+</p>
+</div>
+
+
+
+<div class="mem3 left">
+<span>文清・白蓮</span>
+<p>
+
+     
+    範囲攻撃→全員 
+  
+</p>
+</div>
+
+
+
+<div class="mem5 left">
+<span>李 雲樵</span>
+<p>
+
+     
+    奥義破り 
+  
+</p>
+</div>
+
+
+
+<div class="mem4 right">
+<span>玄蓮四</span>
+<p>
+
+     
+    奥義破り 
+  
+</p>
+</div>
+
+
+
+<div class="mem2 right">
+<span>参 宿七</span>
+<p>
+
+     
+    SG#4+1&gt;=6 （判定：火術） (SG+1@12#4&gt;=6) ＞ 8[3,5]+1 ＞ 9 ＞ 成功
+  
+</p>
+</div>
+
+
+
+<div class="mem4 right">
+<span>玄蓮四</span>
+<p>
+
+     
+    SG@12#2&gt;=8 （判定：手裏剣術） (SG@12#2&gt;=8) ＞ 5[1,4] ＞ 5 ＞ 失敗
+  
+</p>
+</div>
+
+
+
+<div class="mem5 left">
+<span>李 雲樵</span>
+<p>
+
+     
+    SG&gt;=11 （判定：罠術、指定特技：絡繰術） (SG@12#2&gt;=11) ＞ 4[1,3] ＞ 4 ＞ 失敗
+  
+</p>
+</div>
+
+
+
+<div class="mem3 left">
+<span>文清・白蓮</span>
+<p>
+
+     
+    流転 
+  
+</p>
+</div>
+
+
+
+<div class="mem3 left">
+<span>文清・白蓮</span>
+<p>
+
+     
+    2D6&gt;=5 （判定：記憶術） (2D6&gt;=5) ＞ 7[1,6] ＞ 7 ＞ 成功
+  
+</p>
+</div>
+
+
+
+<div class="mem3 left">
+<span>文清・白蓮</span>
+<p>
+
+     
+    奥義を絶対防御に変更 
+  
+</p>
+</div>
+
+
+
+<div class="mem3 left">
+<span>文清・白蓮</span>
+<p>
+
+     
+    「とりあえずこれしかないか」 
+  
+</p>
+</div>
+
+
+
+<div class="mem2 right">
+<span>参 宿七</span>
+<p>
+
+     
+    奥義！！ 
+  
+</p>
+</div>
+
+
+
+<div class="mem2 right">
+<span>参 宿七</span>
+<p>
+
+     
+    《超新星[ﾁｮｳｼﾝｾｲ ｲﾀﾗｽﾞ]》<br>指定特技：呪術<br>効果　　：範囲攻撃／撃ち／発動条件<br><br>(強)撃ち:射撃戦ダメージを１点追加。<br>(弱)発動条件:生命点が３点以下にならないと使用不可能。<br>演出　　："一撃にてあらゆる敵を滅し<br>無数の攻撃をも防ぎ<br>どのような傷さえ苦にせず<br>如何なる困難さえ突破し<br>相対する者の試みを挫く<br><br>天上天下 並ぶ者無し<br><br>其れ即ち 並びて二つと同じ技に非ず<br>命紡ぎ星は巡る<br>これぞ正しく 超新星" 
+  
+</p>
+</div>
+
+
+
+<div class="mem5 left">
+<span>李 雲樵</span>
+<p>
+
+     
+    奥義破り 
+  
+</p>
+</div>
+
+
+
+<div class="mem4 right">
+<span>玄蓮四</span>
+<p>
+
+     
+    感情補正&gt;雲樵 
+  
+</p>
+</div>
+
+
+
+<div class="mem2 right">
+<span>参 宿七</span>
+<p>
+
+     
+    感情修正 
+  
+</p>
+</div>
+
+
+
+<div class="mem5 left">
+<span>李 雲樵</span>
+<p>
+
+     
+    SG&gt;=11 （判定：封術、指定特技：呪術） (SG@12#2&gt;=11) ＞ 7[1,6] ＞ 7 ＞ 失敗
+  
+</p>
+</div>
+
+
+
+<div class="mem4 right">
+<span>玄蓮四</span>
+<p>
+
+     
+    SG@12#2&gt;=11 （判定：刀術） (SG@12#2&gt;=11) ＞ 7[1,6] ＞ 7 ＞ 失敗
+  
+</p>
+</div>
+
+
+
+<div class="mem4 right">
+<span>玄蓮四</span>
+<p>
+
+     
+    （見切り判定） 
+  
+</p>
+</div>
+
+
+
+<div class="mem3 left">
+<span>文清・白蓮</span>
+<p>
+
+     
+    2D6&gt;=9 （判定：暗号術） (2D6&gt;=9) ＞ 12[6,6] ＞ 12 ＞ スペシャル(【生命力】1点か変調一つを回復)
+  
+</p>
+</div>
+
+
+
+<div class="kp">
+
+     
+    [ 文清・白蓮 ] 戦術 : 0 → 1 
+  
+</div>
+
+
+
+<div class="mem3 mem3-4 left">
+<span>文清・白蓮</span>
+<p>
+
+     
+    奥義！！ 
+  
+</p>
+</div>
+
+
+
+<div class="mem2 right">
+<span>参 宿七</span>
+<p>
+
+     
+    奥義破り 
+  
+</p>
+</div>
+
+
+
+<div class="mem5 left">
+<span>李 雲樵</span>
+<p>
+
+     
+    奥義破り 
+  
+</p>
+</div>
+
+
+
+<div class="mem3 mem3-4 left">
+<span>文清・白蓮</span>
+<p>
+
+     
+    《静蓮障壁》<br>指定特技：掘削術<br>効果　　：絶対防御<br>演出　　：泥に染まらぬ蓮のように清らかであり、同時に緻密な計算に基づいた鉄壁の防御。<br>「静かに咲く蓮華は──けして揺るがない」<br>どんな攻撃も、蓮華の障壁に触れた瞬間に消え去り、彼の身には一片の傷も届かない。
+  
+</p>
+</div>
+
+
+
+<div class="mem2 right">
+<span>参 宿七</span>
+<p>
+
+     
+    SG#4+1&gt;=9 （判定：骨法術） (SG+1@12#4&gt;=9) ＞ 6[1,5]+1 ＞ 7 ＞ 失敗
+  
+</p>
+</div>
+
+
+
+<div class="mem5 left">
+<span>李 雲樵</span>
+<p>
+
+     
+    SG&gt;=17 （判定：罠術、指定特技：掘削術） (SG@12#2&gt;=17) ＞ 10[4,6] ＞ 10 ＞ 失敗
+  
+</p>
+</div>
+
+
+
+<div class="mem2 right">
+<span>参 宿七</span>
+<p>
+
+     
+    神通丸 
+  
+</p>
+</div>
+
+
+
+<div class="mem2 right">
+<span>参 宿七</span>
+<p>
+
+     
+    SG#4+1&gt;=9 （判定：骨法術） (SG+1@12#4&gt;=9) ＞ 9[3,6]+1 ＞ 10 ＞ 成功
+  
+</p>
+</div>
+
+
+
+<div class="kp">
+
+     
+    [ 参 宿七 ] 忍具 : 1 → 0 
+  
+</div>
+
+
+
+<div class="mem5 left">
+<span>李 雲樵</span>
+<p>
+
+     
+    プライズ『冬星の振り子』使用 
+  
+</p>
+</div>
+
+
+
+<div class="mem5 left">
+<span>李 雲樵</span>
+<p>
+
+     
+    条件を満たしたPCのプライズ『冬星の振り子』に下記の効果を追加する。<br>●クライマックスフェイズに１度だけ、いつでも使用できる。<br>自身の奥義を、自身が【情報】を獲得している別の奥義に変更する事ができる。 
+  
+</p>
+</div>
+
+
+
+<div class="mem5 left">
+<span>李 雲樵</span>
+<p>
+
+     
+    奥義！！ 
+  
+</p>
+</div>
+
+
+
+<div class="mem5 left">
+<span>李 雲樵</span>
+<p>
+
+     
+    「宿七ちゃん本物をみせてあげるよ～」 
+  
+</p>
+</div>
+
+
+
+<div class="mem5 left">
+<span>李 雲樵</span>
+<p>
+
+     
+    ■奥義<br>《超新星[ﾁｮｳｼﾝｾｲ]》<br>指定特技：第六感<br>効果　　：絶対防御/くらまし/防御低下<br>演出　　：「本物をみせてあげるよ～」<br><br>天上天下 並ぶ者無し<br><br>其れ即ち 並びて二つと同じ技に非ず<br>命紡ぎ星は巡る<br>これぞ正しく 超新星 
+  
+</p>
+</div>
+
+
+
+<div class="mem5 mem5-2 left">
+<span>李 雲樵</span>
+<p>
+
+     
+    「蓮四ちゃんも残念だったね～」にやにや 
+  
+</p>
+</div>
+
+
+
+<div class="mem2 right">
+<span>参 宿七</span>
+<p>
+
+     
+    「……それが、本物…か」 
+  
+</p>
+</div>
+
+
+
+<div class="mem4 mem4-4 right">
+<span>玄蓮四</span>
+<p>
+
+     
+    ｺﾎﾟ････ 
+  
+</p>
+</div>
+
+
+
+<div class="kp">
+
+     
+    [ 玄蓮四 ] 体術 : 1 → 0 
+  
+</div>
+
+
+
+<div class="kp">
+
+     
+    [ 文清・白蓮 ] 妖術 : 1 → 0 
+  
+</div>
+
+
+
+<div class="kp">
+
+     
+    [ 文清・白蓮 ] 体術 : 1 → 0 
+  
+</div>
+
+
+
+<div class="kp">
+
+     
+    [ 文清・白蓮 ] 忍術 : 1 → 0 
+  
+</div>
+
+
+
+<div class="mem3 mem3-3 left">
+<span>文清・白蓮</span>
+<p>
+
+     
+    「あああああああ！！クソがあああ！！」 
+  
+</p>
+</div>
+
+
+
+<div class="mem2 right">
+<span>参 宿七</span>
+<p>
+
+     
+    「これで、皆ボロボロというわけですね」 
+  
+</p>
+</div>
+
+
+
+<div class="mem2 right">
+<span>参 宿七</span>
+<p>
+
+     
+    「さて、」 
+  
+</p>
+</div>
+
+
+
+<div class="mem2 right">
+<span>参 宿七</span>
+<p>
+
+     
+    「私は、まだ戦いを続けますよ。――貴方たちは？」 
+  
+</p>
+</div>
+
+
+
+<div class="mem5 left">
+<span>李 雲樵</span>
+<p>
+
+     
+    「何を勘違いしてるのかな～？これを食らってからにしてね～」 
+  
+</p>
+</div>
+
+
+
+<div class="mem5 left">
+<span>李 雲樵</span>
+<p>
+
+     
+    背水→宿七 
+  
+</p>
+</div>
+
+
+
+<div class="mem5 left">
+<span>李 雲樵</span>
+<p>
+
+     
+    SG&gt;=7 （判定：罠術、指定特技：医術） (SG@12#2&gt;=7) ＞ 9[4,5] ＞ 9 ＞ 成功
+  
+</p>
+</div>
+
+
+
+<div class="mem5 left">
+<span>李 雲樵</span>
+<p>
+
+     
+    マイナス修正 
+  
+</p>
+</div>
+
+
+
+<div class="mem2 right">
+<span>参 宿七</span>
+<p>
+
+     
+    SG#3+1&gt;=10 （判定：盗聴術） (SG+1@12#3&gt;=10) ＞ 4[2,2]+1 ＞ 5 ＞ 失敗
+  
+</p>
+</div>
+
+
+
+<div class="mem2 right">
+<span>参 宿七</span>
+<p>
+
+     
+    奥義！！ 
+  
+</p>
+</div>
+
+
+
+<div class="mem2 right">
+<span>参 宿七</span>
+<p>
+
+     
+    ■奥義<br>《明けの明星[ｱｹﾉﾐｮｳｼﾞｮｳ]》<br>指定特技：火術<br>効果　　：絶対防御/張り/回数制限<br><br>(強)張り:1点多く【生命力】減少を軽減することができるようになる。（合計5点防げる）<br>(弱)回数制限:2回までしか使用できない。<br>演出　　：空気中の水分を操り、霧を発生させる水遁。<br>灼熱の熱気を体内から放ち、火花を散らす火遁。<br>両者を組み合わせ霧の中で光を乱反射させ、あらゆる攻撃を防ぐ。 
+  
+</p>
+</div>
+
+
+
+<div class="mem1 left">
+<span>GM</span>
+<p>
+
+     
+    見切り判定 
+  
+</p>
+</div>
+
+
+
+<div class="mem5 left">
+<span>李 雲樵</span>
+<p>
+
+     
+    SG&gt;=10 （判定：罠術、指定特技：火術） (SG@12#2&gt;=10) ＞ 10[4,6] ＞ 10 ＞ 成功
+  
+</p>
+</div>
+
+
+
+<div class="mem5 left">
+<span>李 雲樵</span>
+<p>
+
+     
+    呪術だったので失敗 
+  
+</p>
+</div>
+
+
+
+<div class="mem3 mem3-3 left">
+<span>文清・白蓮</span>
+<p>
+
+     
+    SG-2&gt;=9 （判定：暗号術） (SG-2@12#2&gt;=9) ＞ 8[2,6]-2 ＞ 6 ＞ 失敗
+  
+</p>
+</div>
+
+
+
+<div class="mem1 left">
+<span>GM</span>
+<p>
+
+     
+    ラウンド終了 
+  
+</p>
+</div>
+
+
+
+<div class="kp">
+
+     
+    [ GM ] ラウンド : 5 → 6 
+  
+</div>
+
+
+
+<div class="mem1 left">
+<span>GM</span>
+<p>
+
+     
+    プロット 
+  
+</p>
+</div>
+
+
+
+<div class="mem1 left">
+<span>GM</span>
+<p>
+
+     
+    プロットオープン 
+  
+</p>
+</div>
+
+
+
+<div class="kp">
+
+     
+    [ 文清・白蓮 ] がダイスシンボルを公開。出目は 3 です。 
+  
+</div>
+
+
+
+<div class="kp">
+
+     
+    [ 李 雲樵 ] がダイスシンボルを公開。出目は 4 です。 
+  
+</div>
+
+
+
+<div class="kp">
+
+     
+    [ 参 宿七 ] がダイスシンボルを公開。出目は 4 です。 
+  
+</div>
+
+
+
+<div class="mem5 left">
+<span>李 雲樵</span>
+<p>
+
+     
+    d66 (D66) ＞ 36
+  
+</p>
+</div>
+
+
+
+<div class="mem2 right">
+<span>参 宿七</span>
+<p>
+
+     
+    D66 (D66) ＞ 14
+  
+</p>
+</div>
+
+
+
+<div class="mem5 left">
+<span>李 雲樵</span>
+<p>
+
+     
+    背水→宿七 
+  
+</p>
+</div>
+
+
+
+<div class="mem2 right">
+<span>参 宿七</span>
+<p>
+
+     
+    まいなす 
+  
+</p>
+</div>
+
+
+
+<div class="mem5 left">
+<span>李 雲樵</span>
+<p>
+
+     
+    SG-1&gt;=7 （判定：罠術、指定特技：医術） (SG-1@12#2&gt;=7) ＞ 7[3,4]-1 ＞ 6 ＞ 失敗
+  
+</p>
+</div>
+
+
+
+<div class="mem2 mem2-3 right">
+<span>参 宿七</span>
+<p>
+
+     
+    「―――」 
+  
+</p>
+</div>
+
+
+
+<div class="mem2 mem2-3 right">
+<span>参 宿七</span>
+<p>
+
+     
+    目を閉じる 
+  
+</p>
+</div>
+
+
+
+<div class="mem2 mem2-3 right">
+<span>参 宿七</span>
+<p>
+
+     
+    「私も、まだ至れていないですね」 
+  
+</p>
+</div>
+
+
+
+<div class="mem2 right">
+<span>参 宿七</span>
+<p>
+
+     
+    「なので」 
+  
+</p>
+</div>
+
+
+
+<div class="mem2 right">
+<span>参 宿七</span>
+<p>
+
+     
+    「決着はこれでいきましょう」 
+  
+</p>
+</div>
+
+
+
+<div class="mem2 right">
+<span>参 宿七</span>
+<p>
+
+     
+    龍星群[ﾘｭｳｾｲｸﾞﾝ] 
+  
+</p>
+</div>
+
+
+
+<div class="mem2 right">
+<span>参 宿七</span>
+<p>
+
+     
+    SG#4+1&gt;=5 （判定：召喚術） (SG+1@12#4&gt;=5) ＞ 6[1,5]+1 ＞ 7 ＞ 成功
+  
+</p>
+</div>
+
+
+
+<div class="mem2 right">
+<span>参 宿七</span>
+<p>
+
+     
+    SG#4+1&gt;=5 （判定：召喚術） (SG+1@12#4&gt;=5) ＞ 11[5,6]+1 ＞ 12 ＞ 成功
+  
+</p>
+</div>
+
+
+
+<div class="mem5 mem5-5 left">
+<span>李 雲樵</span>
+<p>
+
+     
+    SG-2&gt;=8 （判定：封術、指定特技：召喚術） (SG-2@12#2&gt;=8) ＞ 7[3,4]-2 ＞ 5 ＞ 失敗
+  
+</p>
+</div>
+
+
+
+<div class="mem3 mem3-4 left">
+<span>文清・白蓮</span>
+<p>
+
+     
+    SG+0&gt;=12 （判定：記憶術） (SG@12#2&gt;=12) ＞ 11[5,6] ＞ 11 ＞ 失敗
+  
+</p>
+</div>
+
+
+
+<div class="mem3 mem3-3 left">
+<span>文清・白蓮</span>
+<p>
+
+     
+    奥義！！ 
+  
+</p>
+</div>
+
+
+
+<div class="mem3 mem3-3 left">
+<span>文清・白蓮</span>
+<p>
+
+     
+    絶対防御 
+  
+</p>
+</div>
+
+
+
+<div class="mem2 right">
+<span>参 宿七</span>
+<p>
+
+     
+    奥義破り 
+  
+</p>
+</div>
+
+
+
+<div class="mem5 left">
+<span>李 雲樵</span>
+<p>
+
+     
+    奥義破り 
+  
+</p>
+</div>
+
+
+
+<div class="mem2 right">
+<span>参 宿七</span>
+<p>
+
+     
+    SG#4+1&gt;=9 （判定：骨法術） (SG+1@12#4&gt;=9) ＞ 7[3,4]+1 ＞ 8 ＞ 失敗
+  
+</p>
+</div>
+
+
+
+<div class="mem5 left">
+<span>李 雲樵</span>
+<p>
+
+     
+    SG&gt;=17 （判定：罠術、指定特技：掘削術） (SG@12#2&gt;=17) ＞ 8[4,4] ＞ 8 ＞ 失敗
+  
+</p>
+</div>
+
+
+
+<div class="mem3 mem3-3 left">
+<span>文清・白蓮</span>
+<p>
+
+     
+    「静蓮障壁！！」 
+  
+</p>
+</div>
+
+
+
+<div class="mem3 mem3-3 left">
+<span>文清・白蓮</span>
+<p>
+
+     
+    「ここであいつの奥義が役に立つのか！！」 
+  
+</p>
+</div>
+
+
+
+<div class="mem5 left">
+<span>李 雲樵</span>
+<p>
+
+     
+    奥義！！ 
+  
+</p>
+</div>
+
+
+
+<div class="mem2 right">
+<span>参 宿七</span>
+<p>
+
+     
+    奥義破り 
+  
+</p>
+</div>
+
+
+
+<div class="mem5 left">
+<span>李 雲樵</span>
+<p>
+
+     
+    ■奥義<br>《超新星[ﾁｮｳｼﾝｾｲ]》<br>指定特技：第六感<br>効果　　：絶対防御/くらまし/防御低下<br>演出　　：「本物をみせてあげるよ～」<br><br>天上天下 並ぶ者無し<br><br>其れ即ち 並びて二つと同じ技に非ず<br>命紡ぎ星は巡る<br>これぞ正しく 超新星 
+  
+</p>
+</div>
+
+
+
+<div class="mem3 mem3-3 left">
+<span>文清・白蓮</span>
+<p>
+
+     
+    奥義破り 
+  
+</p>
+</div>
+
+
+
+<div class="mem2 right">
+<span>参 宿七</span>
+<p>
+
+     
+    SG#4+1&gt;=9 （判定：骨法術） (SG+1@12#4&gt;=9) ＞ 7[3,4]+1 ＞ 8 ＞ 失敗
+  
+</p>
+</div>
+
+
+
+<div class="mem3 mem3-3 left">
+<span>文清・白蓮</span>
+<p>
+
+     
+    SG+0&gt;=7 （判定：分身の術） (SG@12#2&gt;=7) ＞ 4[1,3] ＞ 4 ＞ 失敗
+  
+</p>
+</div>
+
+
+
+
+<div class="mem3 left">
+<span>文清・白蓮</span>
+<p>
+
+     
+    流転 
+  
+</p>
+</div>
+
+
+
+<div class="mem3 left">
+<span>文清・白蓮</span>
+<p>
+
+     
+    2D6&gt;=5 （判定：記憶術） (2D6&gt;=5) ＞ 9[3,6] ＞ 9 ＞ 成功
+  
+</p>
+</div>
+
+
+
+<div class="mem3 left">
+<span>文清・白蓮</span>
+<p>
+
+     
+    奥義を血戦楽土に変更 
+  
+</p>
+</div>
+
+
+
+<div class="mem3 mem3-4 left">
+<span>文清・白蓮</span>
+<p>
+
+     
+    奥義！！ 
+  
+</p>
+</div>
+
+
+
+<div class="mem2 right">
+<span>参 宿七</span>
+<p>
+
+     
+    奥義破り 
+  
+</p>
+</div>
+
+
+
+<div class="mem5 left">
+<span>李 雲樵</span>
+<p>
+
+     
+    奥義破り 
+  
+</p>
+</div>
+
+
+
+<div class="mem3 mem3-4 left">
+<span>文清・白蓮</span>
+<p>
+
+     
+    ■奥義<br>《《血戦楽土》けっせんらくど》<br>指定特技：兵糧術<br>効果　　：不死身/目覚め/体質異常<br>演出　　：無数の刃が肉を裂き、鮮血が大地を染める。しかし、その血に塗れた足元こそが楽園――。<br>倒れることは許されない。苦痛も、死も、すべて快楽に変わる。<br>倒すのではない、切り結び続けるために。 
+  
+</p>
+</div>
+
+
+
+<div class="mem2 right">
+<span>参 宿七</span>
+<p>
+
+     
+    SG#4+1&gt;=8 （判定：召喚術） (SG+1@12#4&gt;=8) ＞ 7[1,6]+1 ＞ 8 ＞ 成功
+  
+</p>
+</div>
+
+
+
+<div class="mem5 left">
+<span>李 雲樵</span>
+<p>
+
+     
+    SG&gt;=9 （判定：罠術、指定特技：兵糧術） (SG@12#2&gt;=9) ＞ 7[1,6] ＞ 7 ＞ 失敗
+  
+</p>
+</div>
+
+
+
+
+<div class="mem3 left">
+<span>文清・白蓮</span>
+<p>
+
+     
+    土竜吼→サンスゥチィ 
+  
+</p>
+</div>
+
+
+
+<div class="kp">
+
+     
+    [ 参 宿七 ] 八重垣 : 0 → 1 
+  
+</div>
+
+
+
+<div class="mem3 left">
+<span>文清・白蓮</span>
+<p>
+
+     
+    2D6&gt;=5 （判定：掘削術） (2D6&gt;=5) ＞ 8[2,6] ＞ 8 ＞ 成功
+  
+</p>
+</div>
+
+
+
+<div class="mem2 right">
+<span>参 宿七</span>
+<p>
+
+     
+    SG#3+2&gt;=9 （判定：骨法術） (SG+2@12#3&gt;=9) ＞ 7[1,6]+2 ＞ 9 ＞ 成功
+  
+</p>
+</div>
+
+
+
+<div class="mem1 left">
+<span>GM</span>
+<p>
+
+     
+    ラウンド終了 
+  
+</p>
+</div>
+
+
+
+<div class="kp">
+
+     
+    [ GM ] ラウンド : 6 → 7 
+  
+</div>
+
+
+
+<div class="mem1 left">
+<span>GM</span>
+<p>
+
+     
+    プロット 
+  
+</p>
+</div>
+
+
+
+<div class="mem1 left">
+<span>GM</span>
+<p>
+
+     
+    プロットオープン 
+  
+</p>
+</div>
+
+
+
+<div class="kp">
+
+     
+    [ 李 雲樵 ] がダイスシンボルを公開。出目は 3 です。 
+  
+</div>
+
+
+
+<div class="kp">
+
+     
+    [ 文清・白蓮 ] がダイスシンボルを公開。出目は 5 です。 
+  
+</div>
+
+
+
+<div class="kp">
+
+     
+    [ 参 宿七 ] がダイスシンボルを公開。出目は 6 です。 
+  
+</div>
+
+
+
+<div class="mem2 right">
+<span>参 宿七</span>
+<p>
+
+     
+    奥義！！ 
+  
+</p>
+</div>
+
+
+
+<div class="mem2 right">
+<span>参 宿七</span>
+<p>
+
+     
+    対象は二人 
+  
+</p>
+</div>
+
+
+
+<div class="mem5 left">
+<span>李 雲樵</span>
+<p>
+
+     
+    奥義破り 
+  
+</p>
+</div>
+
+
+
+<div class="mem2 right">
+<span>参 宿七</span>
+<p>
+
+     
+    指定特技：呪術 
+  
+</p>
+</div>
+
+
+
+<div class="mem3 left">
+<span>文清・白蓮</span>
+<p>
+
+     
+    奥義破り 
+  
+</p>
+</div>
+
+
+
+<div class="mem5 left">
+<span>李 雲樵</span>
+<p>
+
+     
+    SG&gt;=11 （判定：封術、指定特技：呪術） (SG@12#2&gt;=11) ＞ 9[3,6] ＞ 9 ＞ 失敗
+  
+</p>
+</div>
+
+
+
+<div class="mem3 left">
+<span>文清・白蓮</span>
+<p>
+
+     
+    2D6&gt;=9 （判定：暗号術） (2D6&gt;=9) ＞ 10[4,6] ＞ 10 ＞ 成功
+  
+</p>
+</div>
+
+
+
+<div class="mem2 right">
+<span>参 宿七</span>
+<p>
+
+     
+    「くっ」 
+  
+</p>
+</div>
+
+
+
+<div class="mem3 left">
+<span>文清・白蓮</span>
+<p>
+
+     
+    奥義！！ 
+  
+</p>
+</div>
+
+
+
+
+
+<div class="mem3 left">
+<span>文清・白蓮</span>
+<p>
+
+     
+    ■奥義<br>《《血戦楽土》けっせんらくど》<br>指定特技：兵糧術<br>効果　　：不死身/目覚め/体質異常<br>演出　　：無数の刃が肉を裂き、鮮血が大地を染める。しかし、その血に塗れた足元こそが楽園――。<br>倒れることは許されない。苦痛も、死も、すべて快楽に変わる。<br>倒すのではない、切り結び続けるために。 
+  
+</p>
+</div>
+
+
+
+<div class="mem5 left">
+<span>李 雲樵</span>
+<p>
+
+     
+    奥義破り 
+  
+</p>
+</div>
+
+
+
+<div class="mem2 right">
+<span>参 宿七</span>
+<p>
+
+     
+    奥義破りしない 
+  
+</p>
+</div>
+
+
+
+<div class="mem5 left">
+<span>李 雲樵</span>
+<p>
+
+     
+    SG&gt;=9 （判定：罠術、指定特技：兵糧術） (SG@12#2&gt;=9) ＞ 10[4,6] ＞ 10 ＞ 成功
+  
+</p>
+</div>
+
+
+
+<div class="mem3 left">
+<span>文清・白蓮</span>
+<p>
+
+     
+    流転 
+  
+</p>
+</div>
+
+
+
+<div class="mem3 left">
+<span>文清・白蓮</span>
+<p>
+
+     
+    2D6&gt;=5 （判定：記憶術） (2D6&gt;=5) ＞ 9[3,6] ＞ 9 ＞ 成功
+  
+</p>
+</div>
+
+
+
+<div class="mem3 left">
+<span>文清・白蓮</span>
+<p>
+
+     
+    絶対防御（超新星）に奥義を変更 
+  
+</p>
+</div>
+
+
+
+<div class="mem3 left">
+<span>文清・白蓮</span>
+<p>
+
+     
+    土竜吼→サンスゥチィ 
+  
+</p>
+</div>
+
+
+
+<div class="mem3 left">
+<span>文清・白蓮</span>
+<p>
+
+     
+    2D6&gt;=5 （判定：掘削術） (2D6&gt;=5) ＞ 9[4,5] ＞ 9 ＞ 成功
+  
+</p>
+</div>
+
+
+
+<div class="mem2 right">
+<span>参 宿七</span>
+<p>
+
+     
+    SG#6+1&gt;=9 （判定：骨法術） (SG+1@12#6&gt;=9) ＞ 4[1,3]+1 ＞ 5 ＞ ファンブル
+  
+</p>
+</div>
+
+
+
+<div class="mem3 left">
+<span>文清・白蓮</span>
+<p>
+
+     
+    回想シーン 
+  
+</p>
+</div>
+
+</div></div>
+
+<div class="bg-sp">
+    <div class="bg-over"><div class="bg-inner bg10"></div></div>
+<div class="log">
+
+
+
+
+<div class="mem3 left">
+<span>文清・白蓮</span>
+<p>
+
+     
+    薄暗い書院の中。蝋燭の明かりに照らされた机には、墨で書き連ねた無数の巻物と走り書きの計算式。<br><br>白蓮は筆を置き、深く息を吐いた。<br><br>「……また、行き詰まったか。」<br> 
+  
+</p>
+</div>
+
+
+
+<div class="mem3 left">
+<span>文清・白蓮</span>
+<p>
+
+     
+    幾度試みても、辿り着けない答え。<br>それはただの奥義ではない。常識を凌駕する秘技──【超新星】。<br><br>かつて師は笑みを浮かべて言った。 
+  
+</p>
+</div>
+
+
+
+<div class="mem3 left">
+<span>文清・白蓮</span>
+<p>
+
+     
+    「白蓮。お前ほどの頭脳でも、その奥義には届かぬだろう。」 
+  
+</p>
+</div>
+
+
+
+<div class="mem3 left">
+<span>文清・白蓮</span>
+<p>
+
+     
+    その言葉は彼の胸に刺さり続けた。<br>努力も、計算も、策略も、その奥義の前では無力なのか。 
+  
+</p>
+</div>
+
+
+
+<div class="mem3 left">
+<span>文清・白蓮</span>
+<p>
+
+     
+    苛立ちを抑え、机に散らばった紙を握りつぶす。<br>求めれば求めるほど、手のひらから零れ落ちる光。<br>だが、それこそが白蓮を突き動かす。<br><br>──そして、今。<br>斜歯忍軍の密命により巡ってきた、再びの機会。<br><br>白蓮の瞳に、静かに執念の光が宿る。<br><br>「【超新星】……必ず解き明かし、この手に収めてみせる。」 
+  
+</p>
+</div>
+
+
+
+<div class="mem3 left">
+<span>文清・白蓮</span>
+<p>
+
+     
+    ■PC1秘密：<br>あなたは元々、究極とまで呼ばれる奥義に興味を持ち、天光流の門を叩いた。<br>口伝に伝えられるその技は従来の常識をはるかに凌駕している。<br>世に伝え広めれば、まさしく超新星となるだろう。<br><br>しかし、一人前と認められ巣立ちを迎えようとも、一向に【超新星】の詳細を掴めず苛立ちと焦りを覚えた。<br>いくら想い焦がそうとも、手中に得られないそれに、興味は増すばかりだった。<br><br>そして今回、いよいよその機会が巡ってきたのだ。<br><br>あなたの【本当の使命】は『【超新星】の情報を持ち帰ること』だ。 
+  
+</p>
+</div>
+
+
+
+<div class="kp">
+
+     
+    [ 参 宿七 ] 生命力 : 3 → 1 
+  
+</div>
+
+</div></div>
+
+<div class="bg-sp">
+    <div class="bg-over"><div class="bg-inner bg5"></div></div>
+<div class="log">
+
+<div class="mem2 right">
+<span>参 宿七</span>
+<p>
+
+     
+    「ぐっ！！！なかなか……ですね」 
+  
+</p>
+</div>
+
+
+
+<div class="mem5 left">
+<span>李 雲樵</span>
+<p>
+
+     
+    雷鳥→宿七 
+  
+</p>
+</div>
+
+
+
+<div class="mem2 right">
+<span>参 宿七</span>
+<p>
+
+     
+    まいなすだ！ 
+  
+</p>
+</div>
+
+
+
+<div class="mem5 left">
+<span>李 雲樵</span>
+<p>
+
+     
+    SG-1&gt;=8 （判定：罠術、指定特技：砲術） (SG-1@12#2&gt;=8) ＞ 9[4,5]-1 ＞ 8 ＞ 成功
+  
+</p>
+</div>
+
+
+
+<div class="mem5 left">
+<span>李 雲樵</span>
+<p>
+
+     
+    「宿七ちゃんばいばい～」 
+  
+</p>
+</div>
+
+
+
+<div class="mem2 right">
+<span>参 宿七</span>
+<p>
+
+     
+    「………これも、私の定めか」 
+  
+</p>
+</div>
+
+
+
+<div class="kp">
+
+     
+    目の前に迫る、雷を纏わせた暗器がぶつかるのを受け入れるように目をつむる 
+  
+</div>
+
+
+
+<div class="kp">
+
+     
+    そして、――つらぬかれた 
+  
+</div>
+
+
+
+<div class="mem2 right">
+<span>参 宿七</span>
+<p>
+
+     
+    「………つよく、なりましたね。さんにんとも」 
+  
+</p>
+</div>
+
+
+
+<div class="kp">
+
+     
+    [ 参 宿七 ] 生命力 : 1 → 0 
+  
+</div>
+
+
+
+<div class="mem5 left">
+<span>李 雲樵</span>
+<p>
+
+     
+    「さぁこの後君はどうするのかな？君の結末をみせてもうよ」 
+  
+</p>
+</div>
+
+
+
+<div class="mem1 left">
+<span>GM</span>
+<p>
+
+     
+    ラウンド終了 
+  
+</p>
+</div>
+
+
+
+<div class="mem3 left">
+<span>文清・白蓮</span>
+<p>
+
+     
+    「これで……！」 
+  
+</p>
+</div>
+
+
+
+<div class="kp">
+
+     
+    [ GM ] ラウンド : 7 → 8 
+  
+</div>
+
+
+
+<div class="mem1 left">
+<span>GM</span>
+<p>
+
+     
+    プロット 
+  
+</p>
+</div>
+
+
+
+<div class="mem5 left">
+<span>李 雲樵</span>
+<p>
+
+     
+    「じゃあ白蓮君、やろっか～」 
+  
+</p>
+</div>
+
+
+
+<div class="mem3 left">
+<span>文清・白蓮</span>
+<p>
+
+     
+    「どっちが上か決めようか」 
+  
+</p>
+</div>
+
+
+
+<div class="mem1 left">
+<span>GM</span>
+<p>
+
+     
+    プロットオープン 
+  
+</p>
+</div>
+
+
+
+<div class="kp">
+
+     
+    [ 李 雲樵 ] がダイスシンボルを公開。出目は 5 です。 
+  
+</div>
+
+
+
+<div class="kp">
+
+     
+    [ 文清・白蓮 ] がダイスシンボルを公開。出目は 4 です。 
+  
+</div>
+
+
+
+<div class="mem5 left">
+<span>李 雲樵</span>
+<p>
+
+     
+    背水 
+  
+</p>
+</div>
+
+
+
+<div class="mem5 left">
+<span>李 雲樵</span>
+<p>
+
+     
+    SG&gt;=7 （判定：罠術、指定特技：医術） (SG@12#2&gt;=7) ＞ 7[2,5] ＞ 7 ＞ 成功
+  
+</p>
+</div>
+
+
+
+<div class="mem3 left">
+<span>文清・白蓮</span>
+<p>
+
+     
+    SG-2&gt;=10 （判定：絡繰術） (SG-2@12#2&gt;=10) ＞ 12[6,6]-2 ＞ 10 ＞ スペシャル(【生命力】1点か変調一つを回復)
+  
+</p>
+</div>
+
+
+
+<div class="kp">
+
+     
+    [ 文清・白蓮 ] 体術 : 0 → 1 
+  
+</div>
+
+
+
+<div class="mem3 left">
+<span>文清・白蓮</span>
+<p>
+
+     
+    流転 
+  
+</p>
+</div>
+
+
+
+<div class="mem3 left">
+<span>文清・白蓮</span>
+<p>
+
+     
+    SG&gt;=5 （判定：記憶術） (SG@12#2&gt;=5) ＞ 6[1,5] ＞ 6 ＞ 成功
+  
+</p>
+</div>
+
+
+
+
+<div class="mem3 left">
+<span>文清・白蓮</span>
+<p>
+
+     
+    奥義を不死身に変更 
+  
+</p>
+</div>
+
+
+
+<div class="mem3 mem3-4 left">
+<span>文清・白蓮</span>
+<p>
+
+     
+    奥義！！ 
+  
+</p>
+</div>
+
+
+
+<div class="mem5 left">
+<span>李 雲樵</span>
+<p>
+
+     
+    奥義破り 
+  
+</p>
+</div>
+
+
+
+<div class="mem3 mem3-4 left">
+<span>文清・白蓮</span>
+<p>
+
+     
+    ■奥義<br>《《血戦楽土》けっせんらくど》<br>指定特技：兵糧術<br>効果　　：不死身/目覚め/体質異常<br>演出　　：無数の刃が肉を裂き、鮮血が大地を染める。しかし、その血に塗れた足元こそが楽園――。<br>倒れることは許されない。苦痛も、死も、すべて快楽に変わる。<br>倒すのではない、切り結び続けるために。 
+  
+</p>
+</div>
+
+
+
+<div class="mem5 left">
+<span>李 雲樵</span>
+<p>
+
+     
+    SG&gt;=9 （判定：罠術、指定特技：兵糧術） (SG@12#2&gt;=9) ＞ 10[4,6] ＞ 10 ＞ 成功
+  
+</p>
+</div>
+
+
+
+<div class="mem3 left">
+<span>文清・白蓮</span>
+<p>
+
+     
+    土竜吼→ウンショウ 
+  
+</p>
+</div>
+
+
+
+<div class="mem3 left">
+<span>文清・白蓮</span>
+<p>
+
+     
+    SG&gt;=5 （判定：掘削術） (SG@12#2&gt;=5) ＞ 9[4,5] ＞ 9 ＞ 成功
+  
+</p>
+</div>
+
+
+
+<div class="mem5 left">
+<span>李 雲樵</span>
+<p>
+
+     
+    回避しない 
+  
+</p>
+</div>
+
+
+
+<div class="mem5 left">
+<span>李 雲樵</span>
+<p>
+
+     
+    rct ランダム分野表(1) ＞ 器術
+  
+</p>
+</div>
+
+
+
+<div class="kp">
+
+     
+    [ 李 雲樵 ] 妖術 : 1 → 0 
+  
+</div>
+
+
+
+<div class="mem5 left">
+<span>李 雲樵</span>
+<p>
+
+     
+    「こっからこっから～」 
+  
+</p>
+</div>
+
+
+
+<div class="mem3 left">
+<span>文清・白蓮</span>
+<p>
+
+     
+    「さっさと終わらせよう」 
+  
+</p>
+</div>
+
+
+
+<div class="mem1 left">
+<span>GM</span>
+<p>
+
+     
+    ラウンド終了 
+  
+</p>
+</div>
+
+
+
+<div class="kp">
+
+     
+    [ GM ] ラウンド : 8 → 9 
+  
+</div>
+
+
+
+<div class="mem1 left">
+<span>GM</span>
+<p>
+
+     
+    プロット 
+  
+</p>
+</div>
+
+
+
+<div class="mem1 left">
+<span>GM</span>
+<p>
+
+     
+    プロットオープン 
+  
+</p>
+</div>
+
+
+
+<div class="kp">
+
+     
+    [ 李 雲樵 ] がダイスシンボルを公開。出目は 4 です。 
+  
+</div>
+
+
+
+<div class="kp">
+
+     
+    [ 文清・白蓮 ] がダイスシンボルを公開。出目は 5 です。 
+  
+</div>
+
+
+
+<div class="mem3 left">
+<span>文清・白蓮</span>
+<p>
+
+     
+    「これで終わらせるぞ」 
+  
+</p>
+</div>
+
+
+
+<div class="mem3 left">
+<span>文清・白蓮</span>
+<p>
+
+     
+    流転 
+  
+</p>
+</div>
+
+
+
+<div class="mem3 left">
+<span>文清・白蓮</span>
+<p>
+
+     
+    SG&gt;=5 （判定：記憶術） (SG@12#2&gt;=5) ＞ 11[5,6] ＞ 11 ＞ 成功
+  
+</p>
+</div>
+
+
+
+<div class="mem3 left">
+<span>文清・白蓮</span>
+<p>
+
+     
+    奥義を絶対防御（超新星）に変更 
+  
+</p>
+</div>
+
+
+
+<div class="mem3 left">
+<span>文清・白蓮</span>
+<p>
+
+     
+    土竜吼→ウンショウ 
+  
+</p>
+</div>
+
+
+
+<div class="mem3 left">
+<span>文清・白蓮</span>
+<p>
+
+     
+    SG&gt;=5 （判定：掘削術） (SG@12#2&gt;=5) ＞ 7[1,6] ＞ 7 ＞ 成功
+  
+</p>
+</div>
+
+
+
+<div class="mem5 left">
+<span>李 雲樵</span>
+<p>
+
+     
+    回避しない 
+  
+</p>
+</div>
+
+
+
+<div class="mem5 left">
+<span>李 雲樵</span>
+<p>
+
+     
+    奥義！！ 
+  
+</p>
+</div>
+
+
+
+<div class="mem3 left">
+<span>文清・白蓮</span>
+<p>
+
+     
+    奥義破り 
+  
+</p>
+</div>
+
+
+
+<div class="mem3 left">
+<span>文清・白蓮</span>
+<p>
+
+     
+    SG-2&gt;=7 （判定：分身の術） (SG-2@12#2&gt;=7) ＞ 6[1,5]-2 ＞ 4 ＞ 失敗
+  
+</p>
+</div>
+
+
+
+<div class="mem5 left">
+<span>李 雲樵</span>
+<p>
+
+     
+    「これで終わらせるぞ～」 
+  
+</p>
+</div>
+
+
+
+<div class="mem5 left">
+<span>李 雲樵</span>
+<p>
+
+     
+    背水 
+  
+</p>
+</div>
+
+
+
+<div class="mem3 left">
+<span>文清・白蓮</span>
+<p>
+
+     
+    「まだだ」 
+  
+</p>
+</div>
+
+
+
+<div class="mem5 left">
+<span>李 雲樵</span>
+<p>
+
+     
+    SG+2&gt;=7 （判定：罠術、指定特技：医術） (SG+2@12#2&gt;=7) ＞ 2[1,1]+2 ＞ 4 ＞ ファンブル
+  
+</p>
+</div>
+
+
+
+<div class="mem5 left">
+<span>李 雲樵</span>
+<p>
+
+     
+    神通丸 
+  
+</p>
+</div>
+
+
+
+<div class="kp">
+
+     
+    [ 李 雲樵 ] 忍具 : 1 → 0 
+  
+</div>
+
+
+
+<div class="mem5 left">
+<span>李 雲樵</span>
+<p>
+
+     
+    SG+2&gt;=7 （判定：罠術、指定特技：医術） (SG+2@12#2&gt;=7) ＞ 12[6,6]+2 ＞ 14 ＞ スペシャル(【生命力】1点か変調一つを回復)
+  
+</p>
+</div>
+
+
+
+<div class="mem5 left">
+<span>李 雲樵</span>
+<p>
+
+     
+    回復しない 
+  
+</p>
+</div>
+
+
+<div class="mem5 left">
+<span>李 雲樵</span>
+<p>
+
+     
+    1d6 (1D6) ＞ 2
+  
+</p>
+</div>
+
+
+<div class="mem3 left">
+<span>文清・白蓮</span>
+<p>
+
+     
+    SG-2&gt;=10 （判定：絡繰術） (SG-2@12#2&gt;=10) ＞ 12[6,6]-2 ＞ 10 ＞ スペシャル(【生命力】1点か変調一つを回復)
+  
+</p>
+</div>
+
+
+
+<div class="kp">
+
+     
+    [ 文清・白蓮 ] 忍術 : 0 → 1 
+  
+</div>
+
+
+
+<div class="mem3 mem3-3 left">
+<span>文清・白蓮</span>
+<p>
+
+     
+    「危ないじゃないか！？」 
+  
+</p>
+</div>
+
+
+
+
+
+
+
+<div class="mem1 left">
+<span>GM</span>
+<p>
+
+     
+    ラウンド終了 
+  
+</p>
+</div>
+
+
+
+<div class="kp">
+
+     
+    [ GM ] ラウンド : 9 → 10 
+  
+</div>
+
+
+
+<div class="mem1 left">
+<span>GM</span>
+<p>
+
+     
+    プロット 
+  
+</p>
+</div>
+
+
+
+<div class="mem1 left">
+<span>GM</span>
+<p>
+
+     
+    プロットオープン 
+  
+</p>
+</div>
+
+
+
+<div class="kp">
+
+     
+    [ 李 雲樵 ] がダイスシンボルを公開。出目は 6 です。 
+  
+</div>
+
+
+
+<div class="kp">
+
+     
+    [ 文清・白蓮 ] がダイスシンボルを公開。出目は 6 です。 
+  
+</div>
+
+
+
+<div class="mem5 left">
+<span>李 雲樵</span>
+<p>
+
+     
+    d66 (D66) ＞ 12
+  
+</p>
+</div>
+
+
+
+<div class="mem3 left">
+<span>文清・白蓮</span>
+<p>
+
+     
+    d66 (D66) ＞ 24
+  
+</p>
+</div>
+
+
+
+<div class="mem3 left">
+<span>文清・白蓮</span>
+<p>
+
+     
+    土竜吼→ウンショウ 
+  
+</p>
+</div>
+
+
+
+<div class="mem3 left">
+<span>文清・白蓮</span>
+<p>
+
+     
+    「必ずこれで終らせてやるよ」 
+  
+</p>
+</div>
+
+
+
+<div class="mem5 left">
+<span>李 雲樵</span>
+<p>
+
+     
+    「終わるといいですね～」 
+  
+</p>
+</div>
+
+
+
+<div class="mem3 left">
+<span>文清・白蓮</span>
+<p>
+
+     
+    SG&gt;=5 （判定：掘削術） (SG@12#2&gt;=5) ＞ 3[1,2] ＞ 3 ＞ 失敗
+  
+</p>
+</div>
+
+
+
+<div class="mem5 left">
+<span>李 雲樵</span>
+<p>
+
+     
+    背水 
+  
+</p>
+</div>
+
+
+
+<div class="mem3 mem3-3 left">
+<span>文清・白蓮</span>
+<p>
+
+     
+    「ああああ！！もう！！！なんで！！」 
+  
+</p>
+</div>
+
+
+
+<div class="mem5 left">
+<span>李 雲樵</span>
+<p>
+
+     
+    SG+2&gt;=7 （判定：罠術、指定特技：医術） (SG+2@12#2&gt;=7) ＞ 8[3,5]+2 ＞ 10 ＞ 成功
+  
+</p>
+</div>
+
+
+
+
+
+<div class="mem5 left">
+<span>李 雲樵</span>
+<p>
+
+     
+    「これでお～わり～」 
+  
+</p>
+</div>
+
+
+
+<div class="mem3 mem3-3 left">
+<span>文清・白蓮</span>
+<p>
+
+     
+    SG-2&gt;=10 （判定：絡繰術） (SG-2@12#2&gt;=10) ＞ 8[4,4]-2 ＞ 6 ＞ 失敗
+  
+</p>
+</div>
+
+
+
+<div class="mem3 mem3-4 left">
+<span>文清・白蓮</span>
+<p>
+
+     
+    奥義！！ 
+  
+</p>
+</div>
+
+
+
+<div class="mem5 left">
+<span>李 雲樵</span>
+<p>
+
+     
+    奥義破り 
+  
+</p>
+</div>
+
+
+
+<div class="mem5 left">
+<span>李 雲樵</span>
+<p>
+
+     
+    SG&gt;=14 （判定：罠術、指定特技：第六感） (SG@12#2&gt;=14) ＞ 11[5,6] ＞ 11 ＞ 失敗
+  
+</p>
+</div>
+
+
+
+<div class="mem1 left">
+<span>GM</span>
+<p>
+
+     
+    3点の接近戦ダメージと3点の射撃戦ダメージ 
+  
+</p>
+</div>
+
+
+
+<div class="mem1 left">
+<span>GM</span>
+<p>
+
+     
+    4点を封じると思いますが・・・ 
+  
+</p>
+</div>
+
+
+
+<div class="mem1 left">
+<span>GM</span>
+<p>
+
+     
+    3点の接近戦を防いだ 
+  
+</p>
+</div>
+
+
+
+<div class="kp">
+
+     
+    [ 文清・白蓮 ] 体術 : 1 → 0 
+  
+</div>
+
+
+
+<div class="mem1 left">
+<span>GM</span>
+<p>
+
+     
+    ３点の射撃戦ダメージ 
+  
+</p>
+</div>
+
+
+
+<div class="kp">
+
+     
+    [ 文清・白蓮 ] 忍術 : 1 → 0 
+  
+</div>
+
+
+
+<div class="kp">
+
+     
+    [ 文清・白蓮 ] 戦術 : 1 → 0 
+  
+</div>
+
+
+
+<div class="mem3 mem3-3 left">
+<span>文清・白蓮</span>
+<p>
+
+     
+    「ふざけるな！ふざけるな！」 
+  
+</p>
+</div>
+
+
+
+<div class="mem5 left">
+<span>李 雲樵</span>
+<p>
+
+     
+    「僕のとっておきだからね～」 
+  
+</p>
+</div>
+
+
+
+<div class="mem3 mem3-3 left">
+<span>文清・白蓮</span>
+<p>
+
+     
+    兵糧丸 
+  
+</p>
+</div>
+
+
+
+
+<div class="kp">
+
+     
+    [ 文清・白蓮 ] 忍術 : 0 → 1 
+  
+</div>
+
+
+
+<div class="mem1 left">
+<span>GM</span>
+<p>
+
+     
+    ラウンド終了 
+  
+</p>
+</div>
+
+
+
+<div class="kp">
+
+     
+    [ GM ] ラウンド : 10 → 11 
+  
+</div>
+
+
+
+<div class="mem1 left">
+<span>GM</span>
+<p>
+
+     
+    プロット 
+  
+</p>
+</div>
+
+
+
+<div class="mem1 left">
+<span>GM</span>
+<p>
+
+     
+    プロットオープン 
+  
+</p>
+</div>
+
+
+
+<div class="kp">
+
+     
+    [ 文清・白蓮 ] がダイスシンボルを公開。出目は 5 です。 
+  
+</div>
+
+
+
+<div class="kp">
+
+     
+    [ 李 雲樵 ] がダイスシンボルを公開。出目は 6 です。 
+  
+</div>
+
+
+
+<div class="mem5 left">
+<span>李 雲樵</span>
+<p>
+
+     
+    背水 
+  
+</p>
+</div>
+
+
+
+<div class="mem5 left">
+<span>李 雲樵</span>
+<p>
+
+     
+    SG+2&gt;=7 （判定：罠術、指定特技：医術） (SG+2@12#2&gt;=7) ＞ 8[3,5]+2 ＞ 10 ＞ 成功
+  
+</p>
+</div>
+
+
+
+<div class="mem3 mem3-3 left">
+<span>文清・白蓮</span>
+<p>
+
+     
+    SG-2&gt;=10 （判定：絡繰術） (SG-2@12#2&gt;=10) ＞ 7[2,5]-2 ＞ 5 ＞ 失敗
+  
+</p>
+</div>
+
+
+
+<div class="mem3 mem3-3 left">
+<span>文清・白蓮</span>
+<p>
+
+     
+    「くそっ！！」 
+  
+</p>
+</div>
+
+
+
+<div class="mem5 left">
+<span>李 雲樵</span>
+<p>
+
+     
+    「これでおわりだね～」 
+  
+</p>
+</div>
+
+
+
+<div class="mem3 mem3-3 left">
+<span>文清・白蓮</span>
+<p>
+
+     
+    「うるさいぞ！！」 
+  
+</p>
+</div>
+
+
+
+<div class="mem5 left">
+<span>李 雲樵</span>
+<p>
+
+     
+    「勝った～勝った～」 
+  
+</p>
+</div>
+
+
+
+<div class="mem3 mem3-3 left">
+<span>文清・白蓮</span>
+<p>
+
+     
+    「いいんだ！この奥義の情報さえ手に入れられれば」 
+  
+</p>
+</div>
+
+
+
+<div class="mem1 left">
+<span>GM</span>
+<p>
+
+     
+    戦闘終了！！ 
+  
+</p>
+</div>
+
+
+
+<div class="mem1 left">
+<span>GM</span>
+<p>
+
+     
+    勝者：雲樵 
+  
+</p>
+</div>
+
+
+
+<div class="mem1 left">
+<span>GM</span>
+<p>
+
+     
+    戦果： 
+  
+</p>
+</div>
+
+
+
+<div class="mem5 left">
+<span>李 雲樵</span>
+<p>
+
+     
+    プライズ加護を獲得 
+  
+</p>
+</div>
+
+
+
+<div class="mem5 left">
+<span>李 雲樵</span>
+<p>
+
+     
+    「これは使えそうですね～」 
+  
+</p>
+</div>
+
+
+
+<div class="mem3 mem3-3 left">
+<span>文清・白蓮</span>
+<p>
+
+     
+    「次は負けないからな！！」 
+  
+</p>
+</div>
+
+
+<div class="kp">
+
+     
+    ―――――― 
+  
+</div>
+
+
+
+<div class="kp">
+
+     
+    ――― 
+  
+</div>
+
+
+<div class="kp">
+
+     
+        戦いは終わった―― 
+ 
+  
+</div>
+
+
+
+<div class="kp">
+
+     
+     水中での戦いは終わり、平地へと戻っていった 
+ 
+  
+</div>
+
+
+
+</div></div>
+
+<div class="bg-sp">
+    <div class="bg-over"><div class="bg-inner bg4"></div></div>
+<div class="log">
+
+
+<div class="mem1 left">
+<span>GM</span>
+<p>
+
+     
+    ――数日後 
+  
+</p>
+</div>
+
+
+<div class="kp">
+
+     
+    それぞれが、元の生活に戻った。 
+ 
+  
+</div>
+
+
+
+
+<div class="mem4 mem4-3 right">
+<span>玄蓮四</span>
+<p>
+
+     
+    「みつけたわよ！！」 
+  
+</p>
+</div>
+
+
+
+<div class="mem5 mem5-6 left">
+<span>李 雲樵</span>
+<p>
+
+     
+    「こっちですよ～」 
+  
+</p>
+</div>
+
+
+
+<div class="mem4 mem4-6 right">
+<span>玄蓮四</span>
+<p>
+
+     
+    「かえしなさい！！！」【奥義】発動 
+  
+</p>
+</div>
+
+
+
+<div class="mem5 mem5-6 left">
+<span>李 雲樵</span>
+<p>
+
+     
+    ヒョイ 
+  
+</p>
+</div>
+
+
+
+<div class="mem4 mem4-6 right">
+<span>玄蓮四</span>
+<p>
+
+     
+    ｽﾞｻﾞｰｰｰｰｰｰｰ 
+  
+</p>
+</div>
+
+
+
+<div class="mem5 mem5-6 left">
+<span>李 雲樵</span>
+<p>
+
+     
+    「これが欲しいんですか～」 
+  
+</p>
+</div>
+
+
+
+<div class="mem4 mem4-6 right">
+<span>玄蓮四</span>
+<p>
+
+     
+    「それ返して！！！」 
+  
+</p>
+</div>
+
+
+
+<div class="mem5 mem5-6 left">
+<span>李 雲樵</span>
+<p>
+
+     
+    「家宝ですもんね！ね！」 
+  
+</p>
+</div>
+
+
+
+<div class="mem4 mem4-6 right">
+<span>玄蓮四</span>
+<p>
+
+     
+    「後ついでに死んで！！」 
+  
+</p>
+</div>
+
+
+
+<div class="mem4 mem4-6 right">
+<span>玄蓮四</span>
+<p>
+
+     
+    「いくわよ！！ハァッ！！」 
+  
+</p>
+</div>
+
+
+
+<div class="mem5 mem5-6 left">
+<span>李 雲樵</span>
+<p>
+
+     
+    「や～だよ～」 
+  
+</p>
+</div>
+
+
+
+<div class="mem5 mem5-6 left">
+<span>李 雲樵</span>
+<p>
+
+     
+    ひらりひらりと避けて逃げていく 
+  
+</p>
+</div>
+
+
+
+<div class="mem4 right">
+<span>玄蓮四</span>
+<p>
+
+     
+    「・・・」 
+  
+</p>
+</div>
+
+
+
+<div class="mem4 right">
+<span>玄蓮四</span>
+<p>
+
+     
+    「絶対に許さない・・・超晨星ッ！！」 
+  
+</p>
+</div>
+
+
+
+<div class="mem5 mem5-6 left">
+<span>李 雲樵</span>
+<p>
+
+     
+    「ああ…これはイタラズですね～」 
+  
+</p>
+</div>
+
+
+
+<div class="mem5 mem5-6 left">
+<span>李 雲樵</span>
+<p>
+
+     
+    「ざんねん」 
+  
+</p>
+</div>
+
+
+
+<div class="kp">
+
+     
+    ―――――――――― 
+  
+</div>
+
+
+
+<div class="kp">
+
+     
+    ――――― 
+  
+</div>
+
+
+
+<div class="kp">
+
+     
+    ―― 
+  
+</div>
+
+
+</div></div>
+
+<div class="bg-sp">
+    <div class="bg-over"><div class="bg-inner bg10"></div></div>
+<div class="log">
+
+
+
+
+<div class="mem3 mem3-3 left">
+<span>文清・白蓮</span>
+<p>
+
+     
+    （ひとまず奥義情報だけでも持って帰ってこれたか………） 
+  
+</p>
+</div>
+
+
+
+<div class="mem3 mem3-3 left">
+<span>文清・白蓮</span>
+<p>
+
+     
+    （最後の最後にウンショウのやつ……！） 
+  
+</p>
+</div>
+
+
+
+<div class="mem3 mem3-2left">
+<span>文清・白蓮</span>
+<p>
+
+     
+    （まぁこれです白雀よりも上にいけたと言うことか！） 
+  
+</p>
+</div>
+
+
+
+<div class="mem3 mem3-2 left">
+<span>文清・白蓮</span>
+<p>
+
+     
+    （そう考えれば気分は悪くないな！…フッ） 
+  
+</p>
+</div>
+
+
+
+<div class="mem3 mem3-2 left">
+<span>文清・白蓮</span>
+<p>
+
+     
+    「ボス！奥義情報手に入れました！この僕が！！」 
+  
+</p>
+</div>
+
+
+
+<div class="kp">
+
+     
+    ――――――― 
+  
+</div>
+
+
+
+<div class="kp">
+
+     
+    ――― 
+  
+</div>
+
+
+
+<div class="kp">
+
+     
+    ―― 
+  
+</div>
+
+
+
+</div></div>
+
+<div class="bg-sp">
+    <div class="bg-over"><div class="bg-inner bg1"></div></div>
+<div class="log">
+
+
+
+<div class="mem1 left">
+<span>GM</span>
+<p>
+
+     
+    ――文清･白蓮という男がいた。<br>彼は、超新星を解き明かしたという。<br>それは真実かは、現在検討されている。<br><br>彼は、表情が豊かで…いまだに彼の兄弟子とは接点があるかと言われたらどうだろうという話しかできないが、きっとその人はどこかで活躍する機会があるだろう。<br>その時は、楽しみですね
+  
+</p>
+</div>
+
+
+
+<div class="mem1 left">
+<span>GM</span>
+<p>
+
+     
+    ――玄蓮四という女がいた。<br>彼女は師匠を倒したと言っているが、寿命で死んだのか、どうだったのかは定かではない。<br><br>彼女は実力はあるが、実戦でできるかといえばとても大変なのかもしれない。<br>今は、打倒雲樵で頑張ってるみたいですが、……どうなるのやら 
+  
+</p>
+</div>
+
+
+
+<div class="mem1 left">
+<span>GM</span>
+<p>
+
+     
+    ――李 雲樵という男がいた。<br>彼は、超新星を継いだ。<br>それは、相手の攻撃を防ぐ絶対の護りだと言われている。<br><br>あの子は、少し私と似ているようで似ていない。<br>あの子は、独自の立場から相手を見るようだけど…私としてはもう少し兄妹弟子で仲良くしてほしいとは思う。 
+  
+</p>
+</div>
+
+
+
+<div class="mem1 mem1-9 left">
+<span>GM</span>
+<p>
+
+     
+    ――私は、私は 
+  
+</p>
+</div>
+
+
+
+</div></div>
+
+<div class="bg-sp">
+    <div class="bg-over"><div class="bg-inner bg2"></div></div>
+<div class="log">
+
+
+
+<div class="kp">
+
+     
+    ――パタン 
+  
+</div>
+
+
+
+<div class="mem2 right">
+<span>参 宿七</span>
+<p>
+
+     
+    「私は、この場所であなた達を見守ります」 
+  
+</p>
+</div>
+
+
+
+<div class="mem2 right">
+<span>参 宿七</span>
+<p>
+
+     
+    「いつでも帰ってきてください。私は貴方たちの帰る場所になりましょう」 
+  
+</p>
+</div>
+
+
+
+<div class="mem2 mem2-2 right">
+<span>参 宿七</span>
+<p>
+
+     
+    「さあ、あなた達の新しい世界を……楽しみにしています」 
+  
+</p>
+</div>
+
+
+
+<div class="kp">
+
+     
+    立ち込める霧の中微かにだが光が差し込む。<br>それは一筋の天光である。 
+  
+</div>
+
+
+
+<div class="mem2 mem2-2 right">
+<span>参 宿七</span>
+<p>
+
+     
+    「"朱赫"師匠。これは、貴方の望む結果となったのでしょうか。これが本来の形の継承になるのですかね。ですが――」 
+  
+</p>
+</div>
+
+
+
+<div class="mem2 mem2-2 right">
+<span>参 宿七</span>
+<p>
+
+     
+    「これからは、時代の変化を大切にするべきだと思いますよ」 
+  
+</p>
+</div>
+
+
+
+<div class="mem2 mem2-2 right">
+<span>参 宿七</span>
+<p>
+
+     
+    「ねぇ、そうでしょう？――」 
+  
+</p>
+</div>
+
+
+
+<div class="kp">
+
+     
+    ――――――――――― 
+  
+</div>
+
+
+
+<div class="kp">
+
+     
+    ―――― 
+  
+</div>
+
+</div></div>
+
+<div class="bg-sp">
+    <div class="bg-over"><div class="bg-inner bg1"></div></div>
+<div class="log">
+
+
+
+
+<div class="kp">
+
+     
+    乱世に生まれ、戦の中で成長し、数多の死体の上に築きあげられた古流流派、天光流。 
+  
+</div>
+
+
+
+<div class="kp">
+
+     
+    超新星を継ぎし者はただ一人―― 
+  
+</div>
+
+
+
+<div class="kp">
+
+     
+    それは、"無数の攻撃をも防ぐ"と言われた存在。 
+  
+</div>
+
+
+
+<div class="kp">
+
+     
+    だが、昔言われていたことがある 
+  
+</div>
+
+
+
+<div class="kp">
+
+     
+    超新星―― 
+  
+</div>
+
+
+
+<div class="kp">
+
+     
+    それは、天光流に伝わる究極奥義。一目見たものは須らくその一生を終えている。 
+  
+</div>
+
+
+
+<div class="kp">
+
+     
+    口伝によると下記のように伝えられている。 
+  
+</div>
+
+
+
+<div class="kp">
+
+     
+    "一撃にてあらゆる敵を滅し 
+  
+</div>
+
+
+
+<div class="kp">
+
+     
+    無数の攻撃をも防ぎ 
+  
+</div>
+
+
+
+<div class="kp">
+
+     
+    どのような傷さえ苦にせず 
+  
+</div>
+
+
+
+<div class="kp">
+
+     
+    如何なる困難さえ突破し 
+  
+</div>
+
+
+
+<div class="kp">
+
+     
+    相対する者の試みを挫く 
+  
+</div>
+
+
+
+<div class="kp">
+
+     
+    　 
+  
+</div>
+
+
+
+<div class="kp">
+
+     
+    　 
+  
+</div>
+
+
+
+<div class="kp">
+
+     
+    天上天下並ぶ者無し" 
+  
+</div>
+
+
+
+<div class="kp">
+
+     
+    そんな、昔から続く奥義があった 
+  
+</div>
+
+
+
+<div class="kp">
+
+     
+    ――さて、あなた達の超新星はどうなるのかな 
+  
+</div>
+
+
+
+</div></div>
+
+<div class="bg-sp">
+    <div class="bg-over"><div class="bg-inner bg11"></div></div>
+<div class="log">
+
+
+
+
+<div class="kp">
+
+     
+    これにてENDでございます 
+  
+</div>
+
+
+
+<div class="mem1 left">
+<span>GM</span>
+<p>
+
+     
+    功績点 
+  
+</p>
+</div>
+
+
+
+<div class="mem1 left">
+<span>GM</span>
+<p>
+
+     
+    1.流儀の達成 
+  
+</p>
+</div>
+
+
+
+<div class="mem1 left">
+<span>GM</span>
+<p>
+
+     
+    PC1.PC3 
+  
+</p>
+</div>
+
+
+
+<div class="mem1 left">
+<span>GM</span>
+<p>
+
+     
+    2.セッションに最後まで参加した 
+  
+</p>
+</div>
+
+
+
+<div class="mem1 left">
+<span>GM</span>
+<p>
+
+     
+    PC1～3 
+  
+</p>
+</div>
+
+
+
+<div class="mem1 left">
+<span>GM</span>
+<p>
+
+     
+    3.ロールプレイ 
+  
+</p>
+</div>
+
+
+
+<div class="mem1 left">
+<span>GM</span>
+<p>
+
+     
+    PC1～3 
+  
+</p>
+</div>
+
+
+
+<div class="mem1 left">
+<span>GM</span>
+<p>
+
+     
+    4.プライズの獲得 
+  
+</p>
+</div>
+
+
+
+<div class="mem1 left">
+<span>GM</span>
+<p>
+
+     
+    PC3 
+  
+</p>
+</div>
+
+
+
+<div class="mem1 left">
+<span>GM</span>
+<p>
+
+     
+    5.琴線に触れた 
+  
+</p>
+</div>
+
+
+
+<div class="kp">
+
+     
+    [ 玄蓮四 ] がダイスシンボルを公開。出目は 3 です。 
+  
+</div>
+
+
+
+<div class="kp">
+
+     
+    [ 李 雲樵 ] がダイスシンボルを公開。出目は 2 です。 
+  
+</div>
+
+
+
+<div class="kp">
+
+     
+    [ 文清・白蓮 ] がダイスシンボルを公開。出目は 3 です。 
+  
+</div>
+
+
+
+<div class="mem1 left">
+<span>GM</span>
+<p>
+
+     
+    PC2：1<br>PC3：2 
+  
+</p>
+</div>
+
+
+
+<div class="mem1 left">
+<span>GM</span>
+<p>
+
+     
+    6.使命の達成（3） 
+  
+</p>
+</div>
+
+
+
+<div class="mem1 left">
+<span>GM</span>
+<p>
+
+     
+    PC1、PC3 
+  
+</p>
+</div>
+
+
+
+<div class="mem1 left">
+<span>GM</span>
+<p>
+
+     
+    PC1：1.1.1.0.0.3.→6.<br>PC2：0.1.1.0.1.0.→3.<br>PC3：1.1.1.1.2.3.→9 
+  
+</p>
+</div>
+</div>
+
+
+<br><br><br><br><br><br><br><br><br>
+</div></div>
+<script src="../logCon_Respon.js"></script>
+</body></html>
