@@ -1,0 +1,9076 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<title>log</title>
+<meta http-equiv="content-type" charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+<link rel="stylesheet" href="../logCon_Respon.css">
+<style>
+    /* main css */
+    .bg-inner.bg1{background:url('./湖の底に花沈む/S__51994636_0.jpg') no-repeat center/cover;}
+    .bg-inner.bg2{background:url('./湖の底に花沈む/S__51994638_0.jpg') no-repeat center/cover;}
+    .bg-inner.bg3{background:url('./湖の底に花沈む/S__51683330.jpg') no-repeat center/cover;}
+    .bg-inner.bg4{background:url('./湖の底に花沈む/nc284747.png') no-repeat center/cover;}
+    .bg-inner.bg5{background:url('./湖の底に花沈む/38f297e056d08904596ceaa4450a080a0f5ea2f98d5af78ee1785e93f79ab92a.png') no-repeat center/cover;}
+    .bg-inner.bg6{background:url('./湖の底に花沈む/7a389db467a18015.png') no-repeat center/cover;}
+
+
+    /* member */
+.mem1 p{border:2px solid rgb(136, 136, 136);box-shadow:5px 5px 0 rgb(136, 136, 136);}
+.mem1 p:after{border-right-color:rgb(136, 136, 136);}
+.mem1 span{background:rgb(136, 136, 136);color:#fff;}
+.mem1:before{content:'';background-image:url('./湖の底に花沈む/GM.png');background-size:contain;background-repeat:no-repeat;background-position:center center;width:90px;height:90px;}
+.mem2 p{border:2px solid rgb(136, 136, 136);box-shadow:5px 5px 0 rgb(136, 136, 136);}
+.mem2 p:after{border-left-color:rgb(136, 136, 136);}
+.mem2 span{background:rgb(136, 136, 136);color:#fff;}
+.mem2:before{content:'';background-image:url('./湖の底に花沈む/aaaa.png');background-size:contain;background-repeat:no-repeat;background-position:center center;width:90px;height:90px;}
+.mem3 p{border:2px solid rgb(224, 224, 224);box-shadow:5px 5px 0 rgb(224, 224, 224);}
+.mem3 p:after{border-right-color:rgb(224, 224, 224);}
+.mem3 span{background:rgb(224, 224, 224);color:#000;}
+.mem3:before{content:'';background-image:url('./湖の底に花沈む/剱\ 琳太郎_楽.png');background-size:contain;background-repeat:no-repeat;background-position:center center;width:90px;height:90px;}
+.mem3-1:before{content:'';background-image:url('./湖の底に花沈む/剱\ 琳太郎_マスク.png');background-size:contain;background-repeat:no-repeat;background-position:center center;width:90px;height:90px;}
+.mem3-2:before{content:'';background-image:url('./湖の底に花沈む/剱\ 琳太郎_汗.png');background-size:contain;background-repeat:no-repeat;background-position:center center;width:90px;height:90px;}
+.mem3-3:before{content:'';background-image:url('./湖の底に花沈む/剱\ 琳太郎_怒り.png');background-size:contain;background-repeat:no-repeat;background-position:center center;width:90px;height:90px;}
+.mem3-4:before{content:'';background-image:url('./湖の底に花沈む/icon2.png');background-size:contain;background-repeat:no-repeat;background-position:center center;width:90px;height:90px;}
+.mem3-5:before{content:'';background-image:url('./湖の底に花沈む/ドヤ.png');background-size:contain;background-repeat:no-repeat;background-position:center center;width:90px;height:90px;}
+.mem3-6:before{content:'';background-image:url('./湖の底に花沈む/泳ぎ.png');background-size:contain;background-repeat:no-repeat;background-position:center center;width:90px;height:90px;}
+.mem3-7:before{content:'';background-image:url('./湖の底に花沈む/奥義.png');background-size:contain;background-repeat:no-repeat;background-position:center center;width:90px;height:90px;}
+.mem3-8:before{content:'';background-image:url('./湖の底に花沈む/真剣.png');background-size:contain;background-repeat:no-repeat;background-position:center center;width:90px;height:90px;}
+.mem3-9:before{content:'';background-image:url('./湖の底に花沈む/戦闘.png');background-size:contain;background-repeat:no-repeat;background-position:center center;width:90px;height:90px;}
+.mem3-10:before{content:'';background-image:url('./湖の底に花沈む/琳太郎_iog.gif');background-size:contain;background-repeat:no-repeat;background-position:center center;width:90px;height:90px;}
+.mem4 p{border:2px solid rgb(218, 112, 214);box-shadow:5px 5px 0 rgb(218, 112, 214);}
+.mem4 p:after{border-left-color:rgb(218, 112, 214);}
+.mem4 span{background:rgb(218, 112, 214);color:#000;}
+.mem4:before{content:'';background-image:url('./湖の底に花沈む/阿頼耶_立ち絵.png');background-size:contain;background-repeat:no-repeat;background-position:center center;width:90px;height:90px;}
+.mem4-1:before{content:'';background-image:url('./湖の底に花沈む/阿頼耶_差分1.png');background-size:contain;background-repeat:no-repeat;background-position:center center;width:90px;height:90px;}
+.mem4-2:before{content:'';background-image:url('./湖の底に花沈む/阿頼耶_差分2.png');background-size:contain;background-repeat:no-repeat;background-position:center center;width:90px;height:90px;}
+.mem4-3:before{content:'';background-image:url('./湖の底に花沈む/阿頼耶_差分3.png');background-size:contain;background-repeat:no-repeat;background-position:center center;width:90px;height:90px;}
+.mem4-4:before{content:'';background-image:url('./湖の底に花沈む/阿頼耶_差分4.png');background-size:contain;background-repeat:no-repeat;background-position:center center;width:90px;height:90px;}
+.mem4-5:before{content:'';background-image:url('./湖の底に花沈む/阿頼耶_差分5.png');background-size:contain;background-repeat:no-repeat;background-position:center center;width:90px;height:90px;}
+.mem4-6:before{content:'';background-image:url('./湖の底に花沈む/阿頼耶_戦闘1.png');background-size:contain;background-repeat:no-repeat;background-position:center center;width:90px;height:90px;}
+.mem4-7:before{content:'';background-image:url('./湖の底に花沈む/阿頼耶_戦闘2.png');background-size:contain;background-repeat:no-repeat;background-position:center center;width:90px;height:90px;}
+.mem4-8:before{content:'';background-image:url('./湖の底に花沈む/阿頼耶_log.gif');background-size:contain;background-repeat:no-repeat;background-position:center center;width:90px;height:90px;}
+.mem4-9:before{content:'';background-image:url('./湖の底に花沈む/icon.png');background-size:contain;background-repeat:no-repeat;background-position:center center;width:90px;height:90px;}
+.mem5 p{border:2px solid rgb(136, 136, 136);box-shadow:5px 5px 0 rgb(136, 136, 136);}
+.mem5 p:after{border-right-color:rgb(136, 136, 136);}
+.mem5 span{background:rgb(136, 136, 136);color:#fff;}
+.mem5:before{content:'';background-image:url('./湖の底に花沈む/S__51666947.png');background-size:contain;background-repeat:no-repeat;background-position:center center;width:90px;height:90px;}
+.mem6 p{border:2px solid rgb(136, 136, 136);box-shadow:5px 5px 0 rgb(136, 136, 136);}
+.mem6 p:after{border-left-color:rgb(136, 136, 136);}
+.mem6 span{background:rgb(136, 136, 136);color:#fff;}
+.mem6:before{content:'';background-image:url('./湖の底に花沈む/SGCF02_S1_NPC2.png');background-size:contain;background-repeat:no-repeat;background-position:center center;width:90px;height:90px;}
+.mem7 p{border:2px solid rgb(162, 80, 255, 0.808);box-shadow:5px 5px 0 rgb(162, 80, 255, 0.808);}
+.mem7 p:after{border-right-color:rgba(162, 80, 255, 0.808);}
+.mem7 span{background:rgb(162, 80, 255, 0.808);color:#fff;}
+.mem7:before{content:'';background-image:url('./湖の底に花沈む/SGCF02_S1_NPC1.png');background-size:contain;background-repeat:no-repeat;background-position:center center;width:90px;height:90px;}
+.mem8 p{border:2px solid rgb(136, 136, 136);box-shadow:5px 5px 0 rgb(136, 136, 136);}
+.mem8 p:after{border-left-color:rgb(136, 136, 136);}
+.mem8 span{background:rgb(136, 136, 136);color:#fff;}
+.mem8:before{content:'';background-image:url('./湖の底に花沈む/SGCF02_S1_NPC3.png');background-size:contain;background-repeat:no-repeat;background-position:center center;width:90px;height:90px;}
+.mem9 p{border:2px solid rgb(136, 136, 136);box-shadow:5px 5px 0 rgb(136, 136, 136);}
+.mem9 p:after{border-right-color:rgb(136, 136, 136);}
+.mem9 span{background:rgb(136, 136, 136);color:#fff;}
+.mem9:before{content:'';background-image:url('./湖の底に花沈む/父.png');background-size:contain;background-repeat:no-repeat;background-position:center center;width:90px;height:90px;}
+.mem10 p{border:2px solid rgb(136, 136, 136);box-shadow:5px 5px 0 rgb(136, 136, 136);}
+.mem10 p:after{border-left-color:rgb(136, 136, 136);}
+.mem10 span{background:rgb(136, 136, 136);color:#fff;}
+.mem10:before{content:'';background-image:url('10.png');background-size:contain;background-repeat:no-repeat;background-position:center center;width:90px;height:90px;}
+    
+    @media only screen and (max-width: 768px) {
+        .mem1 p:after{border-right-color:rgb(136, 136, 136);border-left-color:transparent;}
+        .mem2 p:after{border-right-color:rgb(136, 136, 136);border-left-color:transparent;}
+        .mem3 p:after{border-right-color:rgb(224, 224, 224);border-left-color:transparent;}
+        .mem4 p:after{border-right-color:rgb(218, 112, 214);border-left-color:transparent;}
+        .mem5 p:after{border-right-color:rgb(136, 136, 136);border-left-color:transparent;}
+        .mem6 p:after{border-right-color:rgb(136, 136, 136);border-left-color:transparent;}
+        .mem7 p:after{border-right-color:rgb(162, 80, 255, 0.808);border-left-color:transparent;}
+        .mem8 p:after{border-right-color:rgb(136, 136, 136);border-left-color:transparent;}
+        .mem9 p:after{border-right-color:rgb(136, 136, 136);border-left-color:transparent;}
+        .mem10 p:after{border-right-color:rgb(136, 136, 136);border-left-color:transparent;}
+
+    　　.mem1:before,.mem2:before,.mem3:before,
+        .mem4:before,.mem5:before,.mem6:before,
+        .mem7:before,.mem8:before,.mem9:before,
+        .mem10:before{width:70px;height:70px;}
+
+    }
+</style>
+</head>
+<body>
+    <p id="page-top"><a href="#"><i class="page-top__arrow"></i></a></p>
+	<div class="leftwhite"></div>
+	<div class="rightwhite"></div>
+	<div class="bg-sp">
+    <div class="bg-over"><div class="bg-inner bg1"></div></div>
+	<div class="log">
+    
+<div class="mem1 left">
+<span>GM</span>
+<p>
+
+     
+    ●伝説 
+  
+</p>
+</div>
+
+
+
+<div class="kp LtoR-early">
+
+     
+    PCたちは、今、皐月湖のほとりにいます。山中の湖を、満月だけが照らし出しています。深夜であり、周囲に人の気配はありません 
+  
+</div>
+
+
+
+
+<div class="kp LtoR-early">
+
+     
+    目の前に、湖にまつわる伝説を書いた看板があるだけです 
+  
+</div>
+
+</div></div>
+
+<div class="bg-sp">
+    <div class="bg-over"><div class="bg-inner bg2"></div></div>
+<div class="log">
+
+
+<div class="kp LtoR-early">
+
+     
+    戦国の頃。水無瀬の国と呼ばれていたこの地に、一振りの太刀がありました。「花切の太刀」と呼ばれるこの太刀は、手にした者に力を与える代わりに、周囲の者をことごとくを斬らせてしまう妖刀でした。<br>ある若侍が「花切の太刀」を手にしたため、多くの者が斬られました。若侍は心を寄せていた、領主の娘、菖蒲姫も斬ろうとします。<br>菖蒲姫は逃げ続け、ついに湖へと身を投げました。そして、姫を追い、若侍もこの湖へと身を投げたのでした。<br>この皐月湖が、姫と若侍が沈んだと言われる湖です。 
+  
+</div>
+
+
+
+
+<div class="kp LtoR-early">
+
+     
+    PCたちは今からこの湖に潜ろうとしているところです。PCたちは、ここに来ることになった理由を思い出します。 
+  
+</div>
+
+
+
+
+</div></div>
+
+<div class="bg-sp">
+    <div class="bg-over"><div class="bg-inner bg3"></div></div>
+<div class="log">
+
+<div class="mem1 left">
+<span>GM</span>
+<p>
+
+     
+    ●古文書の発見 
+  
+</p>
+</div>
+
+
+
+
+<div class="kp LtoR-early">
+
+     
+    PCたちは、密蔵番の管理する密蔵のひとつにいます。<br>密蔵番の中でも、古文書や伝承の研究をしているチームに呼び出されたためです。研究チームによると、異界遺産らしいものの位置が分かったというのです。研究チームはPC①に以下の話をします。 
+  
+</div>
+
+
+
+
+<div class="mem2 right">
+<span>研究チームの一人</span>
+<p>
+
+     
+    「ってなわけで、今回の異界遺産は渡来人が人間を素材にした魔仭だ。名前は「花切の太刀」。分類としては二星だ」 
+  
+</p>
+</div>
+
+
+
+
+<div class="mem2 right">
+<span>研究チームの一人</span>
+<p>
+
+     
+    「それがあるのは「花切の太刀」は皐月湖の底にあるって「菖蒲の洞」にあるんだ」 
+  
+</p>
+</div>
+
+
+
+
+<div class="mem3 mem3-1 left">
+<span>剱 琳太郎</span>
+<p>
+
+     
+    「――！」 
+  
+</p>
+</div>
+
+
+
+
+<div class="mem2 right">
+<span>研究チームの一人</span>
+<p>
+
+     
+    「緊急性の高いやつじゃないが、斜歯忍軍や他の流派に取られる前に回収したい」 
+  
+</p>
+</div>
+
+
+
+
+<div class="mem2 right">
+<span>研究チームの一人</span>
+<p>
+
+     
+    「何が質問はあるか？」 
+  
+</p>
+</div>
+
+
+
+
+<div class="mem3 mem3-1 left">
+<span>剱 琳太郎</span>
+<p>
+
+     
+    「そうですか、花切りの太刀……」 
+  
+</p>
+</div>
+
+
+
+
+<div class="mem4 right">
+<span>阿頼耶</span>
+<p>
+
+     
+    「知っているのかい？琳太郎クン」 
+  
+</p>
+</div>
+
+
+
+
+<div class="mem3 mem3-1 left">
+<span>剱 琳太郎</span>
+<p>
+
+     
+    「いや……似た話を聞いたことがあっただけで、違ったようだ」 
+  
+</p>
+</div>
+
+
+
+
+<div class="mem4 mem4-1 right">
+<span>阿頼耶</span>
+<p>
+
+     
+    「ふぅん……君にわからないのなら小生もお手上げだ」 
+  
+</p>
+</div>
+
+
+
+
+<div class="mem4 mem4-1 right">
+<span>阿頼耶</span>
+<p>
+
+     
+    「精々足を引っ張らないよう気を付けるよぉ（自省）」 
+  
+</p>
+</div>
+
+
+
+
+<div class="mem3 mem3-1 left">
+<span>剱 琳太郎</span>
+<p>
+
+     
+    「異界遺産の妖刀となれば私の専売だ、任せてください」 
+  
+</p>
+</div>
+
+
+
+
+<div class="mem3 mem3-1 left">
+<span>剱 琳太郎</span>
+<p>
+
+     
+    あなたは異界遺産を回収するという役割を持つ封剣士だ。今まで、いくつもの異界遺産を回収してきた腕利きだ。PC②とは、何度か忍務を共にしたことがある。<br>　皐月湖（さつきこ）の底にある洞窟「菖蒲（あやめ）の洞（ほら）」には、「花切（はなきり）の太刀」という二星の異界遺産があるという。今までの経験からしても、さほど手強い忍務ではないだろう。<br>あなたの【使命】は「花切の太刀」を回収することだ。 
+  
+</p>
+</div>
+
+
+
+
+<div class="mem4 right">
+<span>阿頼耶</span>
+<p>
+
+     
+    PC2【使命】<br>　あなたは、妖魔を倒す役割を持つ凄腕の降魔忍者だ。PC①とは何度か忍務を共にしたことがある。<br>　異界遺産の周囲には妖魔が出現する可能性が高い。皐月湖（さつきこ）の底にある洞窟を探索するには、妖魔に相対する力が必要だろう。<br>　あなたの【使命】は、PC①の【使命】を達成させることだ。 
+  
+</p>
+</div>
+
+
+
+
+<div class="mem2 right">
+<span>研究チームの一人</span>
+<p>
+
+     
+    「それでそこで笑ってるのが妖魔のことなら任せろってやつだ。名前は阿頼耶だったか？」 
+  
+</p>
+</div>
+
+
+
+
+<div class="mem4 right">
+<span>阿頼耶</span>
+<p>
+
+     
+    「その通りだ、研究員殿。それで、話は終わりかい？」 
+  
+</p>
+</div>
+
+
+
+
+<div class="mem2 right">
+<span>研究チームの一人</span>
+<p>
+
+     
+    「そうだな。君たちなら余裕の忍務だな。さっさと終わらせて回収してきてくれ」 
+  
+</p>
+</div>
+
+
+
+
+<div class="mem4 right">
+<span>阿頼耶</span>
+<p>
+
+     
+    「琳太郎クンの手助けをすればいいんだろう？容易いことだ。任せてくれ」 
+  
+</p>
+</div>
+
+
+
+
+<div class="mem4 right">
+<span>阿頼耶</span>
+<p>
+
+     
+    「という訳だ。改めて、よろしく。琳太郎クン」 
+  
+</p>
+</div>
+
+
+
+
+<div class="mem3 mem3-1 left">
+<span>剱 琳太郎</span>
+<p>
+
+     
+    「ああ、アラヤ殿と一緒ならなにも心配はない。行こう」 
+  
+</p>
+</div>
+
+
+
+</div></div>
+
+<div class="bg-sp">
+    <div class="bg-over"><div class="bg-inner bg1"></div></div>
+<div class="log">
+
+<div class="mem1 left">
+<span>GM</span>
+<p>
+
+     
+    ●湖の底へ 
+  
+</p>
+</div>
+
+
+
+
+<div class="kp LtoR-early">
+
+     
+    PCたちは「菖蒲の洞」を目指し、皐月湖へと潜ります。 
+  
+</div>
+
+
+
+
+<div class="mem4 right">
+<span>阿頼耶</span>
+<p>
+
+     
+    「水泳か？ランプは好きか？明かりはつかないという意味だが……」 
+  
+</p>
+</div>
+
+
+
+
+<div class="mem3 mem3-1 left">
+<span>剱 琳太郎</span>
+<p>
+
+     
+    「うん？」 
+  
+</p>
+</div>
+
+
+
+
+<div class="mem4 right">
+<span>阿頼耶</span>
+<p>
+
+     
+    「ちなみに小生は泳ぎはできない。落ちるだけだ」 
+  
+</p>
+</div>
+
+
+
+
+<div class="mem3 mem3-1 left">
+<span>剱 琳太郎</span>
+<p>
+
+     
+    「私も得意じゃない、というか濡れるのが嫌だ」 
+  
+</p>
+</div>
+
+
+
+
+<div class="mem3 mem3-1 left">
+<span>剱 琳太郎</span>
+<p>
+
+     
+    「だが行こう！そこに異界遺産があるのならば！」 
+  
+</p>
+</div>
+
+
+
+
+<div class="mem3 mem3-1 left">
+<span>剱 琳太郎</span>
+<p>
+
+     
+    「うおぉぉ！」 
+  
+</p>
+</div>
+
+
+
+
+<div class="mem3 mem3-6 left">
+<span>剱 琳太郎</span>
+<p>
+
+     
+    ざばーー 
+  
+</p>
+</div>
+
+
+
+
+<div class="mem4 mem4-1 right">
+<span>阿頼耶</span>
+<p>
+
+     
+    「おぉ！目の色が変わったな！見えないが」 
+  
+</p>
+</div>
+
+
+
+
+<div class="mem4 mem4-3 right">
+<span>阿頼耶</span>
+<p>
+
+     
+    「ﾄｩ！」 
+  
+</p>
+</div>
+
+
+
+
+<div class="mem3 mem3-6 left">
+<span>剱 琳太郎</span>
+<p>
+
+     
+    「ごぼごぼ・・・！（目が細いのはうまれつきだ！）」 
+  
+</p>
+</div>
+
+
+
+
+<div class="kp LtoR-early">
+
+     
+    湖は深く、限りなく暗く、水は身を切る冷たさだ。<br>だが、忍者であるPCたちは、苦も無く進むことができる。<br>やがて、目的である菖蒲の洞が近づき……PCたちは、何者かがそこにいるのを感じる。 
+  
+</div>
+
+
+
+
+<div class="kp LtoR-early">
+
+     <br><br><br><br><br>
+    ―――湖の底に花沈む 
+  <br><br><br><br><br>
+</div>
+
+
+
+</div></div>
+
+<div class="bg-sp">
+    <div class="bg-over"><div class="bg-inner bg4"></div></div>
+<div class="log">
+
+
+<div class="mem1 left">
+<span>GM</span>
+<p>
+
+     
+    ●別口 
+  
+</p>
+</div>
+
+
+
+
+<div class="kp LtoR-early">
+
+     
+    菖蒲の洞の入り口に近づいたPCたちは、そこに一人の人間がいることに気づきます。 
+  
+</div>
+
+
+
+
+<div class="kp LtoR-early">
+
+     
+    酸素ボンベを背負い、暗視ゴーグルを付けている人物は、PCたちを見るとなにかを察したように襲いかかってきます。 
+  
+</div>
+
+
+
+
+<div class="mem3 mem3-6 left">
+<span>剱 琳太郎</span>
+<p>
+
+     
+    「ーー！」 
+  
+</p>
+</div>
+
+
+
+
+<div class="mem3 mem3-6 left">
+<span>剱 琳太郎</span>
+<p>
+
+     
+    「（何者だ！？）」 
+  
+</p>
+</div>
+
+
+
+
+<div class="mem5 left">
+<span>工作員</span>
+<p>
+
+     
+    「ｼｭｺｰ。ｼｭｺｰ」 
+  
+</p>
+</div>
+
+
+
+
+<div class="mem5 left">
+<span>工作員</span>
+<p>
+
+     
+    「ｼｭｺｰ！」 
+  
+</p>
+</div>
+
+
+
+
+<div class="mem4 mem4-3 right">
+<span>阿頼耶</span>
+<p>
+
+     
+    「その身なり……斜歯の者か？手加減は出来んぞ？（忍語）」 
+  
+</p>
+</div>
+
+
+
+
+<div class="kp LtoR-early">
+
+     
+    メインフェイズでの戦闘シーンとして扱います。戦場は水中・甲となります。 
+  
+</div>
+
+
+
+
+<div class="mem3 mem4-3 left">
+<span>剱 琳太郎</span>
+<p>
+
+     
+    「（水中では呼吸ができないな……）」 
+  
+</p>
+</div>
+
+
+
+
+<div class="kp LtoR-early">
+
+     
+    プロットオープン 
+  
+</div>
+
+
+
+
+<div class="kp LtoR-early">
+
+     
+    [ 剱 琳太郎 ] がダイスシンボルを公開。出目は 4 です。 
+  
+</div>
+
+
+
+
+<div class="kp LtoR-early">
+
+     
+    [ 阿頼耶 ] がダイスシンボルを公開。出目は 4 です。 
+  
+</div>
+
+
+
+
+<div class="kp LtoR-early">
+
+     
+    [ 工作員 ] がダイスシンボルを公開。出目は 4 です。 
+  
+</div>
+
+
+
+
+<div class="kp LtoR-early">
+
+     
+    [ 阿頼耶 ] がダイスシンボルを 1 に変更しました。 
+  
+</div>
+
+
+
+
+<div class="mem4 mem4-3 right">
+<span>阿頼耶</span>
+<p>
+
+     
+    インチキしたのでお手つきでプロット0に行きます 
+  
+</p>
+</div>
+
+
+
+
+<div class="kp LtoR-early">
+
+     
+    プロット4 
+  
+</div>
+
+
+
+
+<div class="mem3 mem3-6 left">
+<span>剱 琳太郎</span>
+<p>
+
+     
+    d66 (D66) ＞ 33
+  
+</p>
+</div>
+
+
+
+
+<div class="mem5 left">
+<span>工作員</span>
+<p>
+
+     
+    D66 (D66) ＞ 36
+  
+</p>
+</div>
+
+
+
+
+<div class="mem5 left">
+<span>工作員</span>
+<p>
+
+     
+    リンタロウに爆破 
+  
+</p>
+</div>
+
+
+
+
+<div class="mem5 left">
+<span>工作員</span>
+<p>
+
+     
+    2D6&gt;=5 （判定：火術） (2D6&gt;=5) ＞ 6[1,5] ＞ 6 ＞ 成功
+  
+</p>
+</div>
+
+
+
+
+<div class="mem3 mem3-6 left">
+<span>剱 琳太郎</span>
+<p>
+
+     
+    「残っている体内の空気で何とかする！」 
+  
+</p>
+</div>
+
+
+
+
+<div class="mem3 mem3-8 left">
+<span>剱 琳太郎</span>
+<p>
+
+     
+    2D6&gt;=6 （判定：砲術） (2D6&gt;=6) ＞ 3[1,2] ＞ 3 ＞ 失敗
+  
+</p>
+</div>
+
+
+
+
+<div class="mem3 mem3-8 left">
+<span>剱 琳太郎</span>
+<p>
+
+     
+    「ごぼ！」 
+  
+</p>
+</div>
+
+
+
+
+<div class="mem4 mem4-1 right">
+<span>阿頼耶</span>
+<p>
+
+     
+    「琳太郎！死ぬ！死んでしまうぞ！」 
+  
+</p>
+</div>
+
+
+
+
+<div class="kp LtoR-early">
+
+     
+    [ 阿頼耶 ] 地獄札 : 3 → 2 
+  
+</div>
+
+
+
+
+<div class="mem4 mem4-1 right">
+<span>阿頼耶</span>
+<p>
+
+     
+    地獄札で振り直し 
+  
+</p>
+</div>
+
+
+
+
+<div class="mem3 mem3-1 left">
+<span>剱 琳太郎</span>
+<p>
+
+     
+    「！」 
+  
+</p>
+</div>
+
+
+
+
+<div class="mem3 mem3-8 left">
+<span>剱 琳太郎</span>
+<p>
+
+     
+    2D6&gt;=6 （判定：砲術） (2D6&gt;=6) ＞ 8[4,4] ＞ 8 ＞ 成功
+  
+</p>
+</div>
+
+
+
+
+<div class="mem3 mem3-8 left">
+<span>剱 琳太郎</span>
+<p>
+
+     
+    「（助かる！アラヤ殿！）」 
+  
+</p>
+</div>
+
+
+
+
+<div class="mem3 mem3-8 left">
+<span>剱 琳太郎</span>
+<p>
+
+     
+    妖魔化 
+  
+</p>
+</div>
+
+
+
+
+<div class="kp LtoR-early">
+
+     
+    [ 剱 琳太郎 ] 戦術 : 1 → -1 
+  
+</div>
+
+
+
+
+<div class="mem3 mem3-8 left">
+<span>剱 琳太郎</span>
+<p>
+
+     
+    NMT 新異形表(1) ＞ 異霊態。「妖魔忍法表・異霊」を使用し、妖魔化している間、その妖魔忍法を修得する。 ＞ 妖魔忍法表・異霊(4) ＞ 【木魂】(基本 p172)／【朽縄】（隠忍 p28）
+  
+</p>
+</div>
+
+
+
+
+<div class="mem3 mem3-8 left">
+<span>剱 琳太郎</span>
+<p>
+
+     
+    【朽縄】くちなわを習得 
+  
+</p>
+</div>
+
+
+
+
+<div class="mem3 mem3-8 left">
+<span>剱 琳太郎</span>
+<p>
+
+     
+    【刀狩】 
+  
+</p>
+</div>
+
+
+
+
+<div class="mem3 mem3-8 left">
+<span>剱 琳太郎</span>
+<p>
+
+     
+    2D6&gt;=5 （判定：身体操術） (2D6&gt;=5) ＞ 7[3,4] ＞ 7 ＞ 成功
+  
+</p>
+</div>
+
+
+
+
+<div class="mem3 mem3-8 left">
+<span>剱 琳太郎</span>
+<p>
+
+     
+    接近戦攻撃→結界術に変更<br>接近戦攻撃 
+  
+</p>
+</div>
+
+
+
+
+<div class="mem3 mem3-8 left">
+<span>剱 琳太郎</span>
+<p>
+
+     
+    2D6&gt;=5 （判定：結界術） (2D6&gt;=5) ＞ 9[4,5] ＞ 9 ＞ 成功
+  
+</p>
+</div>
+
+
+
+
+<div class="mem3 mem3-8 left">
+<span>剱 琳太郎</span>
+<p>
+
+     
+    「剱の呼吸 陸ノ刀ーー」 
+  
+</p>
+</div>
+
+
+
+
+<div class="mem5 left">
+<span>工作員</span>
+<p>
+
+     
+    2D6&gt;=15 （判定：流言の術） (2D6&gt;=15) ＞ 11[5,6] ＞ 11 ＞ 失敗
+  
+</p>
+</div>
+
+
+
+
+<div class="mem3 mem3-8 left">
+<span>剱 琳太郎</span>
+<p>
+
+     
+    「悟りの太刀！」 
+  
+</p>
+</div>
+
+
+
+
+<div class="mem5 left">
+<span>工作員</span>
+<p>
+
+     
+    「ｼｭｺﾞｰ」 
+  
+</p>
+</div>
+
+
+
+
+<div class="kp LtoR-early">
+
+     
+    [ 工作員 ] 生命力 : 2 → 1 
+  
+</div>
+
+
+
+
+<div class="mem1 left">
+<span>GM</span>
+<p>
+
+     
+    戦闘終了 
+  
+</p>
+</div>
+
+
+
+
+<div class="mem5 left">
+<span>工作員</span>
+<p>
+
+     
+    「ｼｭｺｰｼｭｺｰ」 
+  
+</p>
+</div>
+
+
+
+
+<div class="kp LtoR-early">
+
+     
+    今回の戦闘で戦果は得られません 
+  
+</div>
+
+
+
+
+<div class="kp LtoR-early">
+
+     
+    が、「兵糧丸」を1個獲得します 
+  
+</div>
+
+
+
+
+<div class="kp LtoR-early">
+
+     
+    [ 阿頼耶 ] 兵糧丸 : 1 → 2 
+  
+</div>
+
+
+
+
+<div class="mem4 mem4-1 right">
+<span>阿頼耶</span>
+<p>
+
+     
+    戦果貰います～ 
+  
+</p>
+</div>
+
+
+
+
+<div class="mem4 mem4-1 right">
+<span>阿頼耶</span>
+<p>
+
+     
+    「おぉ！あれぞ剱の呼吸！」 
+  
+</p>
+</div>
+
+
+
+
+<div class="mem4 mem4-1 right">
+<span>阿頼耶</span>
+<p>
+
+     
+    「流石の太刀筋……いい切れ味だ……（豹変）」 
+  
+</p>
+</div>
+
+
+
+
+<div class="kp LtoR-early">
+
+     
+    工作員は、逃げて行った。<br>追う必要はないだろう。 
+  
+</div>
+
+
+
+
+<div class="kp LtoR-early">
+
+     
+    PCたちは、工作員が斜歯忍軍に属する下忍であることに気づきます。 
+  
+</div>
+
+
+
+
+<div class="mem1 left">
+<span>GM</span>
+<p>
+
+     
+    ■ハンドアウト<br>菖蒲の洞（秘密あり）<br>【概要】<br>　皐月湖の底にある洞窟。<br>　「花切の太刀」はこの中にあるという。 
+  
+</p>
+</div>
+
+
+
+
+<div class="mem1 left">
+<span>GM</span>
+<p>
+
+     
+    ■ハンドアウト<br>釘打火花（くぎうちひばな）（秘密あり）<br>【使命】<br>　斜歯忍軍の異界遺産回収班を率いる中忍で、PC①、②共に、何度か忍務で敵対している。どんな忍務だったのか、どんな関係だったのかは、PCが好きに設定していい。<br>　逃亡した下忍は、彼の部下だ。<br>　火花は、菖蒲の洞の中に侵入しているに違いない。<br>　火花の【使命】は菖蒲の洞にある異界遺産を回収することだ。 
+  
+</p>
+</div>
+
+
+
+
+<div class="mem4 mem4-1 right">
+<span>阿頼耶</span>
+<p>
+
+     
+    「思うにあれは斜歯の手の者」 
+  
+</p>
+</div>
+
+
+
+
+<div class="mem3 mem3-1 left">
+<span>剱 琳太郎</span>
+<p>
+
+     
+    「……そのようだ」 
+  
+</p>
+</div>
+
+
+
+
+<div class="mem4 mem4-1 right">
+<span>阿頼耶</span>
+<p>
+
+     
+    「然れば……例の御仁も来ているやもしれないな」 
+  
+</p>
+</div>
+
+
+
+
+<div class="mem3 mem3-1 left">
+<span>剱 琳太郎</span>
+<p>
+
+     
+    「む？」 
+  
+</p>
+</div>
+
+
+
+
+<div class="mem4 right">
+<span>阿頼耶</span>
+<p>
+
+     
+    「なんといったか……そう！釘打の火花といった男」 
+  
+</p>
+</div>
+
+
+
+
+<div class="mem4 right">
+<span>阿頼耶</span>
+<p>
+
+     
+    「幾度か琳太郎クンと衝突していた記憶があるが」 
+  
+</p>
+</div>
+
+
+
+
+<div class="mem3 mem3-1 left">
+<span>剱 琳太郎</span>
+<p>
+
+     
+    「ハハ、流石にはすばだからってそんなに毎回かち合うわけ――」 
+  
+</p>
+</div>
+
+
+
+
+<div class="mem4 right">
+<span>阿頼耶</span>
+<p>
+
+     
+    「フフ……まぁ小生が居れば些末事……それより――」 
+  
+</p>
+</div>
+
+
+
+
+<div class="mem3 mem3-6 left">
+<span>剱 琳太郎</span>
+<p>
+
+     
+    「うん、さっきは助かった！先に進もう」 
+  
+</p>
+</div>
+
+
+
+
+<div class="mem4 mem4-3 right">
+<span>阿頼耶</span>
+<p>
+
+     
+    「ごぼごぼ！」 
+  
+</p>
+</div>
+
+
+
+
+<div class="mem1 left">
+<span>GM</span>
+<p>
+
+     
+    ●区画「菖蒲の洞入り口」 
+  
+</p>
+</div>
+
+
+
+
+<div class="kp LtoR-early">
+
+     
+    湖底に穿たれた穴から水の中を進むと、洞窟の上部に向かって伸びている。さらに進むと、そこには空気のある空間が存在していた。どうやら、ここからが本当の「菖蒲の洞」であるらしい。洞窟の中は暗く、足場はゴツゴツとしている。岩肌のあちこちからは、水滴がしたたっている。奥には細い通路が続いているのが分かる。 
+  
+</div>
+
+
+
+
+<div class="kp LtoR-early">
+
+     
+    [ GM ] サイクル : 0 → 1 
+  
+</div>
+
+
+
+
+<div class="kp LtoR-early">
+
+     
+    メインフェイズスタート 
+  
+</div>
+
+
+
+
+<div class="mem4 mem4-2 right">
+<span>阿頼耶</span>
+<p>
+
+     
+    ｻﾞﾊﾟｧ 
+  
+</p>
+</div>
+
+
+
+
+<div class="mem4 mem4-9 right">
+<span>阿頼耶</span>
+<p>
+
+     
+    シーン1<br>区画は入口の隣を選択 
+  
+</p>
+</div>
+
+
+
+
+<div class="mem4 mem4-9 right">
+<span>阿頼耶</span>
+<p>
+
+     
+    登場チェック成功 
+  
+</p>
+</div>
+
+
+
+
+<div class="mem4 mem4-9 right">
+<span>阿頼耶</span>
+<p>
+
+     
+    登場人物：PC全員（今後は省略） 
+  
+</p>
+</div>
+
+
+
+
+<div class="mem3 mem3-1 left">
+<span>剱 琳太郎</span>
+<p>
+
+     
+    「プハァッ」 
+  
+</p>
+</div>
+
+
+
+
+<div class="mem3 mem3-1 left">
+<span>剱 琳太郎</span>
+<p>
+
+     
+    「ずぶ濡れ……着物が重い、濡れて気持ち悪い」 
+  
+</p>
+</div>
+
+
+
+
+<div class="mem1 left">
+<span>GM</span>
+<p>
+
+     
+    ●区画「水牢」 
+  
+</p>
+</div>
+
+
+
+
+<div class="kp LtoR-early">
+
+     
+    通路を抜けると、そこは明らかに人工的な空間だった。床は平らにならされ、北の壁には篝火を灯した跡があり、東壁にはさらに続く扉がある。南の壁にはなにもなく、つるりとしている。背後でガコンと音がした。今通ってきた通路は閉ざされ、壁に開いた穴から、ものすごい勢いで水が流れ込んでくる。 
+  
+</div>
+
+
+
+
+<div class="mem4 mem4-2 right">
+<span>阿頼耶</span>
+<p>
+
+     
+    「この気配は……？」 
+  
+</p>
+</div>
+
+
+
+
+<div class="kp LtoR-early">
+
+     
+    指定特技は《水術》、判定者は全員、奥義は可です。 
+  
+</div>
+
+
+
+
+<div class="mem3 mem3-1 left">
+<span>剱 琳太郎</span>
+<p>
+
+     
+    「水流…！」 
+  
+</p>
+</div>
+
+
+
+
+<div class="kp LtoR-early">
+
+     
+    効果は、撃退判定に失敗すると、射撃戦ダメージ1点を受けるというものです。 
+  
+</div>
+
+
+
+
+<div class="mem4 mem4-2 right">
+<span>阿頼耶</span>
+<p>
+
+     
+    2D6&gt;=7 （判定：砲術） (2D6&gt;=7) ＞ 8[2,6] ＞ 8 ＞ 成功
+  
+</p>
+</div>
+
+
+
+
+<div class="mem3 mem3-8 left">
+<span>剱 琳太郎</span>
+<p>
+
+     
+    2D6&gt;=7 （判定：砲術） (2D6&gt;=7) ＞ 4[1,3] ＞ 4 ＞ 失敗
+  
+</p>
+</div>
+
+
+
+
+<div class="mem3 mem3-10 left">
+<span>剱 琳太郎</span>
+<p>
+
+     
+    奥義！ 
+  
+</p>
+</div>
+
+
+
+
+<div class="mem3 mem3-10 left">
+<span>剱 琳太郎</span>
+<p>
+
+     
+    ■奥義<br>《剱の呼吸 漆ノ刀》<br>指定特技：罠術<br>効果　　：絶対防御/くらまし/警護情報<br>【くらまし】が追加された奥義を使用したとき、その奥義の奥義破り判定にはマイナス2の修正がつく。<br>【警護情報】が追加された奥義は、自分が【秘密】か【居所】か【奥義】を獲得しているキャラクターしか目標に選ぶことができなくなる。<br>演出　　：間合いに入った攻撃を精密な予測で撃ち落とす斬撃結界。<br>火花から発生する轟音と爆炎が周囲に舞い散る。 
+  
+</p>
+</div>
+
+
+
+
+<div class="mem3 mem3-7 left">
+<span>剱 琳太郎</span>
+<p>
+
+     
+    「剱の呼吸 漆ノ刀――」 
+  
+</p>
+</div>
+
+
+
+
+<div class="mem3 mem3-7 left">
+<span>剱 琳太郎</span>
+<p>
+
+     
+    「煉獄、守りの太刀！」 
+  
+</p>
+</div>
+
+
+
+
+<div class="mem3 mem3-1 left">
+<span>剱 琳太郎</span>
+<p>
+
+     
+    「ふう…びっくりした」 
+  
+</p>
+</div>
+
+
+
+
+<div class="mem4 mem4-1 right">
+<span>阿頼耶</span>
+<p>
+
+     
+    「おぉ！絶好調だな琳太郎クン」 
+  
+</p>
+</div>
+
+
+
+
+<div class="mem4 right">
+<span>阿頼耶</span>
+<p>
+
+     
+    「調子がよさそうで何より……」 
+  
+</p>
+</div>
+
+
+
+
+<div class="kp LtoR-early">
+
+     
+    撃退判定が終了すると、水は部屋から引いていきます。 
+  
+</div>
+
+
+
+
+<div class="mem3 mem3-1 left">
+<span>剱 琳太郎</span>
+<p>
+
+     
+    「うん、良い？」 
+  
+</p>
+</div>
+
+
+
+
+<div class="mem1 left">
+<span>GM</span>
+<p>
+
+     
+    ■ハンドアウト<br>水牢<br>【概要】<br>　水攻めの仕掛けのある区画。<br>　このハンドアウトは「水牢」に登場しているキャラクターだけが、情報判定の対象にすることができる。 
+  
+</p>
+</div>
+
+
+
+
+<div class="mem3 mem3-1 left">
+<span>剱 琳太郎</span>
+<p>
+
+     
+    「そうかな、そうかも」 
+  
+</p>
+</div>
+
+
+
+
+<div class="mem4 right">
+<span>阿頼耶</span>
+<p>
+
+     
+    感情判定 
+  
+</p>
+</div>
+
+
+
+
+<div class="mem4 right">
+<span>阿頼耶</span>
+<p>
+
+     
+    2D6&gt;=5 （判定：野戦術） (2D6&gt;=5) ＞ 5[2,3] ＞ 5 ＞ 成功
+  
+</p>
+</div>
+
+
+
+
+<div class="mem4 right">
+<span>阿頼耶</span>
+<p>
+
+     
+    ET 感情表(3) ＞ 愛情（プラス）／妬み（マイナス）
+  
+</p>
+</div>
+
+
+
+
+<div class="mem3 mem3-1 left">
+<span>剱 琳太郎</span>
+<p>
+
+     
+    ET 感情表(6) ＞ 狂信（プラス）／殺意（マイナス）
+  
+</p>
+</div>
+
+
+
+
+<div class="mem4 right">
+<span>阿頼耶</span>
+<p>
+
+     
+    琳太郎→愛情 
+  
+</p>
+</div>
+
+
+
+
+<div class="mem3 mem3-1 left">
+<span>剱 琳太郎</span>
+<p>
+
+     
+    阿頼耶→狂信 
+  
+</p>
+</div>
+
+
+
+
+<div class="mem4 right">
+<span>阿頼耶</span>
+<p>
+
+     
+    【居所】交換 
+  
+</p>
+</div>
+
+
+
+
+<div class="mem4 right">
+<span>阿頼耶</span>
+<p>
+
+     
+    「逸れないよう、お互いの【居所】を知らせる方法を決めておかないかい？」 
+  
+</p>
+</div>
+
+
+
+
+<div class="mem3 mem3-1 left">
+<span>剱 琳太郎</span>
+<p>
+
+     
+    「ーーン、ああ。分かった」 
+  
+</p>
+</div>
+
+
+
+
+<div class="mem3 mem3-1 left">
+<span>剱 琳太郎</span>
+<p>
+
+     
+    「……調子がいいか、でもアラヤ殿といるときはいつもそんなきはするよ」 
+  
+</p>
+</div>
+
+
+
+
+<div class="mem4 mem4-1 right">
+<span>阿頼耶</span>
+<p>
+
+     
+    「そうなのかい？」 
+  
+</p>
+</div>
+
+
+
+
+<div class="mem4 mem4-1 right">
+<span>阿頼耶</span>
+<p>
+
+     
+    「では、今後は小生と共にいるといい！」 
+  
+</p>
+</div>
+
+
+
+
+<div class="mem3 mem3-1 left">
+<span>剱 琳太郎</span>
+<p>
+
+     
+    「？」 
+  
+</p>
+</div>
+
+
+
+
+<div class="mem4 mem4-9 right">
+<span>阿頼耶</span>
+<p>
+
+     
+    シーン終了 
+  
+</p>
+</div>
+
+
+
+
+<div class="mem3 mem3-4 left">
+<span>剱 琳太郎</span>
+<p>
+
+     
+    シーン２<br>●区画「水牢」 
+  
+</p>
+</div>
+
+
+
+
+<div class="mem3 mem3-1 left">
+<span>剱 琳太郎</span>
+<p>
+
+     
+    「うーむ濡れたマスクをつけていては、呼吸法が使いづらいな…仕方ない」 
+  
+</p>
+</div>
+
+
+
+
+<div class="mem3 left">
+<span>剱 琳太郎</span>
+<p>
+
+     
+    マスクを外す 
+  
+</p>
+</div>
+
+
+
+
+<div class="kp LtoR-early">
+
+     
+    遭遇イベント 
+  
+</div>
+
+
+
+
+<div class="kp LtoR-early">
+
+     
+    指定特技は《水術》、判定者は全員、奥義は可 
+  
+</div>
+
+
+
+
+<div class="mem4 mem4-1 right">
+<span>阿頼耶</span>
+<p>
+
+     
+    2D6&gt;=7 （判定：砲術） (2D6&gt;=7) ＞ 6[3,3] ＞ 6 ＞ 失敗
+  
+</p>
+</div>
+
+
+
+
+<div class="mem3 mem3-8 left">
+<span>剱 琳太郎</span>
+<p>
+
+     
+    自動失敗 
+  
+</p>
+</div>
+
+
+
+
+<div class="mem4 mem4-8 right">
+<span>阿頼耶</span>
+<p>
+
+     
+    奥義！ 
+  
+</p>
+</div>
+
+
+
+
+<div class="mem4 mem4-8 right">
+<span>阿頼耶</span>
+<p>
+
+     
+    ■奥義<br>《地獄殺・凪》<br>指定特技：《見敵術》<br>効果　　：絶対防御/護り/警護情報<br>演出　　：抜拳しての自然体から無拍子で繰り出される無数の打撃。両腕の届く範囲内に入った対象全てを縦横無尽に叩き落す。<br>殺忍拳の奥義。それすなわち、あらゆる脅威を無に帰す慈悲の拳である。 
+  
+</p>
+</div>
+
+
+
+
+<div class="mem4 mem4-8 right">
+<span>阿頼耶</span>
+<p>
+
+     
+    二人を守る 
+  
+</p>
+</div>
+
+
+
+
+<div class="mem4 mem4-7 right">
+<span>阿頼耶</span>
+<p>
+
+     
+    「地獄殺――凪！」 
+  
+</p>
+</div>
+
+
+
+
+<div class="mem4 mem4-1 right">
+<span>阿頼耶</span>
+<p>
+
+     
+    「フ――ここの仕掛けはさっき見たからね、容易い容易い」 
+  
+</p>
+</div>
+
+
+
+
+<div class="mem3 mem3-8 left">
+<span>剱 琳太郎</span>
+<p>
+
+     
+    「！」 
+  
+</p>
+</div>
+
+
+<div class="mem3 mem3-8 left">
+<span>剱 琳太郎</span>
+<p>
+
+     
+    「む、この部屋の罠を調べたほうがよさそうだな」 
+  
+</p>
+</div>
+
+
+<div class="mem4 mem4-1 right">
+<span>阿頼耶</span>
+<p>
+
+     
+    感情修正　[琳太郎] → [感情]+ 
+  
+</p>
+</div>
+
+
+
+
+
+
+
+
+
+<div class="mem3 mem3-8 left">
+<span>剱 琳太郎</span>
+<p>
+
+     
+    2D6&gt;=4 （判定：罠術） (2D6&gt;=4) ＞ 9[4,5] ＞ 9 ＞ 成功
+  
+</p>
+</div>
+
+
+
+
+<div class="mem1 left">
+<span>GM</span>
+<p>
+
+     
+    水牢<br>【秘密】<br>　この部屋の南側には、隠し扉がある。<br>　扉には「我が血を継ぐ者のみ、この扉を通ること叶う」と書かれている。<br>　条件を満たしているキャラクターは、探索者になったとき、区画の決定で、隠し扉に続く区画を選ぶことができる。 
+  
+</p>
+</div>
+
+
+
+
+<div class="mem4 mem4-4 right">
+<span>阿頼耶</span>
+<p>
+
+     
+    「フム……何のことかさっぱりだな」 
+  
+</p>
+</div>
+
+
+
+
+<div class="mem3 mem3-8 left">
+<span>剱 琳太郎</span>
+<p>
+
+     
+    「ム…」 
+  
+</p>
+</div>
+
+
+
+
+<div class="mem4 mem4-1 right">
+<span>阿頼耶</span>
+<p>
+
+     
+    「いかがした？」 
+  
+</p>
+</div>
+
+
+
+
+<div class="mem3 mem3-8 left">
+<span>剱 琳太郎</span>
+<p>
+
+     
+    「血を継ぐものか…」 
+  
+</p>
+</div>
+
+
+
+
+<div class="mem3 mem3-4 left">
+<span>剱 琳太郎</span>
+<p>
+
+     
+    シーン終了 
+  
+</p>
+</div>
+
+
+
+
+<div class="kp LtoR-early">
+
+     
+    [ GM ] サイクル : 1 → 2 
+  
+</div>
+
+
+
+
+<div class="mem3 mem3-4 left">
+<span>剱 琳太郎</span>
+<p>
+
+     
+    シーン３ 
+  
+</p>
+</div>
+
+
+
+
+<div class="mem3 mem3-4 left">
+<span>剱 琳太郎</span>
+<p>
+
+     
+    秘門に向かう 
+  
+</p>
+</div>
+
+
+
+
+<div class="mem3 mem3-8 left">
+<span>剱 琳太郎</span>
+<p>
+
+     
+    「これ、もしかしたら――」 
+  
+</p>
+</div>
+
+
+
+
+<div class="mem3 mem3-8 left">
+<span>剱 琳太郎</span>
+<p>
+
+     
+    扉に手をかける 
+  
+</p>
+</div>
+
+
+
+
+<div class="kp LtoR-early">
+
+     
+    すると、琳太郎は部屋に吸い込まれていく 
+  
+</div>
+
+
+
+
+<div class="mem3 mem3-8 left">
+<span>剱 琳太郎</span>
+<p>
+
+     
+    「！」 
+  
+</p>
+</div>
+
+
+
+
+<div class="mem4 mem4-4 right">
+<span>阿頼耶</span>
+<p>
+
+     
+    「何？！琳太郎クン！……クッ！通れないか……」 
+  
+</p>
+</div>
+
+
+
+
+<div class="mem1 left">
+<span>GM</span>
+<p>
+
+     
+    守護者戦闘シーンに移行します 
+  
+</p>
+</div>
+
+
+
+
+<div class="kp LtoR-early">
+
+     
+    小さな部屋の中はうっすらと明るかった。その中央にいるものが、光っているためだ。光るものは口を開く。 
+  
+</div>
+
+
+
+
+<div class="mem6 right">
+<span>刀鍛冶</span>
+<p>
+
+     
+    「我は刀鍛冶。この間に入る資格を持つおまえは、我が子孫に違いない」 
+  
+</p>
+</div>
+
+
+
+
+<div class="mem3 mem3-8 left">
+<span>剱 琳太郎</span>
+<p>
+
+     
+    「ーー！」 
+  
+</p>
+</div>
+
+
+
+
+<div class="mem6 right">
+<span>刀鍛冶</span>
+<p>
+
+     
+    「私を打ち倒し、その力を見せてみよ！」 
+  
+</p>
+</div>
+
+
+
+
+<div class="mem3 mem3-8 left">
+<span>剱 琳太郎</span>
+<p>
+
+     
+    「まさか、始まりの呼吸…？」 
+  
+</p>
+</div>
+
+
+
+
+<div class="kp LtoR-early">
+
+     
+    メインフェイズ戦闘と同じ戦闘方法です 
+  
+</div>
+
+
+
+
+<div class="mem3 mem3-8 left">
+<span>剱 琳太郎</span>
+<p>
+
+     
+    「剱の呼吸の開祖だというならば、私は――」 
+  
+</p>
+</div>
+
+
+
+
+<div class="mem3 mem3-8 left">
+<span>剱 琳太郎</span>
+<p>
+
+     
+    「しかし私では…」 
+  
+</p>
+</div>
+
+
+
+
+<div class="mem3 mem3-8 left">
+<span>剱 琳太郎</span>
+<p>
+
+     
+    「継承者として…ふさわしいのか」 
+  
+</p>
+</div>
+
+
+
+
+<div class="mem3 mem3-8 left">
+<span>剱 琳太郎</span>
+<p>
+
+     
+    額に汗が流れる 
+  
+</p>
+</div>
+
+
+
+
+<div class="kp LtoR-early">
+
+     
+    その時である！洞窟の頭上が砕け、何者かが部屋に割り込んできた！ 
+  
+</div>
+
+
+
+
+<div class="mem3 mem3-8 left">
+<span>剱 琳太郎</span>
+<p>
+
+     
+    「！？」 
+  
+</p>
+</div>
+
+
+
+
+<div class="mem6 right">
+<span>刀鍛冶</span>
+<p>
+
+     
+    「なっ、何奴？！」 
+  
+</p>
+</div>
+
+
+
+
+<div class="mem4 right">
+<span>阿頼耶</span>
+<p>
+
+     
+    「仲間外れとは寂しいなぁ……琳太郎クン」 
+  
+</p>
+</div>
+
+
+
+
+<div class="mem3 left">
+<span>剱 琳太郎</span>
+<p>
+
+     
+    「よくこれたな…！」 
+  
+</p>
+</div>
+
+
+
+
+<div class="mem6 right">
+<span>刀鍛冶</span>
+<p>
+
+     
+    「……これが絆の力か…！」 
+  
+</p>
+</div>
+
+
+
+
+<div class="mem4 mem4-1 right">
+<span>阿頼耶</span>
+<p>
+
+     
+    「引っ張るわけにはいかないからねぇ」 
+  
+</p>
+</div>
+
+
+
+<div class="mem3 left">
+<span>剱 琳太郎</span>
+<p>
+
+     
+    「心強い！」 
+  
+</p>
+</div>
+
+
+
+
+<div class="mem1 left">
+<span>GM</span>
+<p>
+
+     
+    戦闘開始！ 
+  
+</p>
+</div>
+
+
+
+
+
+
+
+
+
+<div class="kp LtoR-early">
+
+     
+    プロットオープン 
+  
+</div>
+
+
+
+
+<div class="kp LtoR-early">
+
+     
+    [ 阿頼耶 ] がダイスシンボルを公開。出目は 6 です。 
+  
+</div>
+
+
+
+
+<div class="kp LtoR-early">
+
+     
+    [ 剱 琳太郎 ] がダイスシンボルを公開。出目は 4 です。 
+  
+</div>
+
+
+
+
+<div class="kp LtoR-early">
+
+     
+    [ 刀鍛冶 ] がダイスシンボルを公開。出目は 5 です。 
+  
+</div>
+
+
+
+
+<div class="kp LtoR-early">
+
+     
+    ６プロ 
+  
+</div>
+
+
+
+
+<div class="mem4 mem4-1 right">
+<span>阿頼耶</span>
+<p>
+
+     
+    【接近戦攻撃】　攻撃　特技:《骨法術》　間合:1　コスト:0　効果:接近戦ダメージを１点与える。
+  
+</p>
+</div>
+
+
+
+
+<div class="mem4 mem4-1 right">
+<span>阿頼耶</span>
+<p>
+
+     
+    SG#6&gt;=5 （判定：骨法術） (SG@12#6&gt;=5) ＞ 2[1,1] ＞ 2 ＞ ファンブル
+  
+</p>
+</div>
+
+
+
+
+<div class="mem4 mem4-1 right">
+<span>阿頼耶</span>
+<p>
+
+     
+    「おっと失敬！」 
+  
+</p>
+</div>
+
+
+
+
+<div class="kp LtoR-early">
+
+     
+    5プロ 
+  
+</div>
+
+
+
+
+<div class="mem6 right">
+<span>刀鍛冶</span>
+<p>
+
+     
+    接近戦、リンタロウ 
+  
+</p>
+</div>
+
+
+
+
+<div class="mem6 right">
+<span>刀鍛冶</span>
+<p>
+
+     
+    2D6&gt;=5 （判定：死霊術） (2D6&gt;=5) ＞ 10[4,6] ＞ 10 ＞ 成功
+  
+</p>
+</div>
+
+
+
+
+<div class="mem4 mem4-1 right">
+<span>阿頼耶</span>
+<p>
+
+     
+    感情修正　[琳太郎] → [感情]+ 
+  
+</p>
+</div>
+
+
+
+
+<div class="mem3 mem3-8 left">
+<span>剱 琳太郎</span>
+<p>
+
+     
+    2D6&gt;=5 （判定：結界術） (2D6&gt;=5) ＞ 9[3,6] ＞ 9 ＞ 成功
+  
+</p>
+</div>
+
+
+
+
+<div class="kp LtoR-early">
+
+     
+    4プロ 
+  
+</div>
+
+
+
+
+<div class="mem3 mem3-8 left">
+<span>剱 琳太郎</span>
+<p>
+
+     
+    「剱の呼吸――伍ノ刀 「鬼門の刄！」 
+  
+</p>
+</div>
+
+
+
+
+<div class="mem3 mem3-8 left">
+<span>剱 琳太郎</span>
+<p>
+
+     
+    妖魔化 
+  
+</p>
+</div>
+
+
+
+
+<div class="mem3 mem3-8 left">
+<span>剱 琳太郎</span>
+<p>
+
+     
+    NMT 新異形表(2) ＞ 凶身態。「妖魔忍法表・凶身」を使用し、妖魔化している間、その妖魔忍法を修得する。 ＞ 妖魔忍法表・凶身(5) ＞ 【百眼】(基本 p173)／【鬼胎】（隠忍 p29）
+  
+</p>
+</div>
+
+
+
+
+<div class="kp LtoR-early">
+
+     
+    [ 剱 琳太郎 ] 忍術 : 1 → -1 
+  
+</div>
+
+
+
+
+<div class="mem3 mem3-8 left">
+<span>剱 琳太郎</span>
+<p>
+
+     
+    【百眼】修得 
+  
+</p>
+</div>
+
+
+
+
+<div class="mem3 mem3-8 left">
+<span>剱 琳太郎</span>
+<p>
+
+     
+    【刀狩】 
+  
+</p>
+</div>
+
+
+
+
+<div class="mem3 mem3-8 left">
+<span>剱 琳太郎</span>
+<p>
+
+     
+    2D6&gt;=5 （判定：身体操術） (2D6&gt;=5) ＞ 6[3,3] ＞ 6 ＞ 成功
+  
+</p>
+</div>
+
+
+
+
+<div class="mem3 mem3-8 left">
+<span>剱 琳太郎</span>
+<p>
+
+     
+    【接近戦攻撃】を砲術に変更 
+  
+</p>
+</div>
+
+
+
+
+<div class="mem3 mem3-8 left">
+<span>剱 琳太郎</span>
+<p>
+
+     
+    「剱の呼吸 ―― 壱ノ刀」 
+  
+</p>
+</div>
+
+
+
+
+<div class="mem3 mem3-8 left">
+<span>剱 琳太郎</span>
+<p>
+
+     
+    【接近戦攻撃】 
+  
+</p>
+</div>
+
+
+
+
+<div class="mem3 mem3-8 left">
+<span>剱 琳太郎</span>
+<p>
+
+     
+    2D6&gt;=5 （判定：砲術） (2D6&gt;=5) ＞ 9[3,6] ＞ 9 ＞ 成功
+  
+</p>
+</div>
+
+
+
+
+<div class="mem6 right">
+<span>刀鍛冶</span>
+<p>
+
+     
+    2D6&gt;=11 （判定：隠形術） (2D6&gt;=11) ＞ 3[1,2] ＞ 3 ＞ 失敗
+  
+</p>
+</div>
+
+
+
+
+<div class="mem3 mem3-8 left">
+<span>剱 琳太郎</span>
+<p>
+
+     
+    「直刀、花炬（はなかがり）！」 
+  
+</p>
+</div>
+
+
+
+
+<div class="mem6 right">
+<span>刀鍛冶</span>
+<p>
+
+     
+    「くっ」 
+  
+</p>
+</div>
+
+
+
+
+<div class="kp LtoR-early">
+
+     
+    [ 刀鍛冶 ] 生命力 : 2 → 1 
+  
+</div>
+
+
+
+
+<div class="mem6 right">
+<span>刀鍛冶</span>
+<p>
+
+     
+    「その力、確かに認めよう」 
+  
+</p>
+</div>
+
+
+
+
+<div class="mem4 mem4-1 right">
+<span>阿頼耶</span>
+<p>
+
+     
+    「お見事！剣筋に迷い無しだな！」 
+  
+</p>
+</div>
+
+
+
+
+<div class="mem1 left">
+<span>GM</span>
+<p>
+
+     
+    戦闘終了 
+  
+</p>
+</div>
+
+
+
+
+<div class="mem6 right">
+<span>刀鍛冶</span>
+<p>
+
+     
+    「これが絆の力か……！」 
+  
+</p>
+</div>
+
+
+
+
+<div class="mem6 right">
+<span>刀鍛冶</span>
+<p>
+
+     
+    「子孫よ。」 
+  
+</p>
+</div>
+
+
+
+
+<div class="mem6 right">
+<span>刀鍛冶</span>
+<p>
+
+     
+    「太刀、花切は、妖魔・菖蒲姫を倒すために我が鍛えたもなり」 
+  
+</p>
+</div>
+
+
+
+
+<div class="mem3 mem3-9 left">
+<span>剱 琳太郎</span>
+<p>
+
+     
+    「――」 
+  
+</p>
+</div>
+
+
+
+
+<div class="mem6 right">
+<span>刀鍛冶</span>
+<p>
+
+     
+    「菖蒲姫は、人を惑わし、操る力を持つ恐るべき妖魔であり、この洞の奥に封じられている」 
+  
+</p>
+</div>
+
+
+
+
+<div class="mem6 right">
+<span>刀鍛冶</span>
+<p>
+
+     
+    「我は、菖蒲姫を倒す力を持つ者を待っていた」 
+  
+</p>
+</div>
+
+
+
+
+<div class="mem6 right">
+<span>刀鍛冶</span>
+<p>
+
+     
+    「この太刀をもって、菖蒲姫を撃ち倒すべし」 
+  
+</p>
+</div>
+
+
+
+
+<div class="kp LtoR-early">
+
+     
+    と言って、消えていきます 
+  
+</div>
+
+
+
+
+<div class="mem3 left">
+<span>剱 琳太郎</span>
+<p>
+
+     
+    「それが、花切りの太刀……」 
+  
+</p>
+</div>
+
+
+
+
+<div class="mem3 left">
+<span>剱 琳太郎</span>
+<p>
+
+     
+    「私は認められたのか……？」 
+  
+</p>
+</div>
+
+
+
+
+<div class="mem1 left">
+<span>GM</span>
+<p>
+
+     
+    ■ハンドアウト<br>花切の間<br>【概要】<br>　幽霊が守護する間。<br>　このハンドアウトへの情報判定は「花切の間」に登場しているキャラクターだけが行うことができる。 
+  
+</p>
+</div>
+
+
+
+
+<div class="mem4 right">
+<span>阿頼耶</span>
+<p>
+
+     
+    「菖蒲姫が？伝え聞いていた話とは違うようだ」 
+  
+</p>
+</div>
+
+
+
+
+<div class="mem3 left">
+<span>剱 琳太郎</span>
+<p>
+
+     
+    「確かにそうだね」 
+  
+</p>
+</div>
+
+
+
+
+<div class="mem4 right">
+<span>阿頼耶</span>
+<p>
+
+     
+    「話では太刀を手にした若侍が狂って菖蒲姫を襲ったと言っていたが……」 
+  
+</p>
+</div>
+
+
+
+
+<div class="mem4 right">
+<span>阿頼耶</span>
+<p>
+
+     
+    「実態は逆――妖魔”菖蒲姫”を討つためにその刀を手にしたという事か」 
+  
+</p>
+</div>
+
+
+
+
+<div class="mem4 mem4-1 right">
+<span>阿頼耶</span>
+<p>
+
+     
+    「流石は琳太郎クン！謎解明だね！」 
+  
+</p>
+</div>
+
+
+
+
+<div class="mem3 left">
+<span>剱 琳太郎</span>
+<p>
+
+     
+    「いや、私は何もそこまでは……」 
+  
+</p>
+</div>
+
+
+
+
+<div class="mem3 left">
+<span>剱 琳太郎</span>
+<p>
+
+     
+    「でも確かに、そうかな、そうかも……」 
+  
+</p>
+</div>
+
+
+
+
+<div class="mem4 mem4-1 right">
+<span>阿頼耶</span>
+<p>
+
+     
+    「マクファーデンに従事したことでもあるのかい？」 
+  
+</p>
+</div>
+
+
+
+
+<div class="mem3 left">
+<span>剱 琳太郎</span>
+<p>
+
+     
+    「はは、何それ……」 
+  
+</p>
+</div>
+
+
+
+
+<div class="mem4 right">
+<span>阿頼耶</span>
+<p>
+
+     
+    「センスがあるということさ。誇っていい」 
+  
+</p>
+</div>
+
+
+
+
+<div class="mem3 left">
+<span>剱 琳太郎</span>
+<p>
+
+     
+    「ではこの名探偵がこの部屋のからくりを解き明かそう」 
+  
+</p>
+</div>
+
+
+
+
+<div class="mem3 left">
+<span>剱 琳太郎</span>
+<p>
+
+     
+    「結界術で張り巡らされたこの部屋に仕掛けられた謎をね」 
+  
+</p>
+</div>
+
+
+
+
+<div class="mem4 mem4-1 right">
+<span>阿頼耶</span>
+<p>
+
+     
+    「拝聴しよう」 
+  
+</p>
+</div>
+
+
+<div class="mem3 left">
+<span>剱 琳太郎</span>
+<p>
+
+     
+    花切りの間の秘密を探る 
+  
+</p>
+</div>
+
+
+<div class="mem4 mem4-1 right">
+<span>阿頼耶</span>
+<p>
+
+     
+    感情修正　[琳太郎] → [感情]+ 
+  
+</p>
+</div>
+
+
+
+
+<div class="mem3 left">
+<span>剱 琳太郎</span>
+<p>
+
+     
+    2D6&gt;=4 （判定：結界術） (2D6&gt;=4) ＞ 10[5,5] ＞ 10 ＞ 成功
+  
+</p>
+</div>
+
+
+
+
+<div class="kp LtoR-early">
+
+     
+    ――では、 
+  
+</div>
+
+
+
+
+<div class="kp LtoR-early">
+
+     
+    ――ここに絡繰りのような仕掛けはなかった！ 
+  
+</div>
+
+
+
+
+<div class="mem1 left">
+<span>GM</span>
+<p>
+
+     
+    ■ハンドアウト<br>花切の間<br>【秘密】<br>　守護者の後ろには、一振りの太刀が飾られている。<br>　この【秘密】を最初に獲得したキャラクターは、プライズ「花切の太刀」を獲得する。 
+  
+</p>
+</div>
+
+
+
+
+<div class="mem4 mem4-1 right">
+<span>阿頼耶</span>
+<p>
+
+     
+    「ところで、そこの刀は何かな？」 
+  
+</p>
+</div>
+
+
+
+
+<div class="mem3 left">
+<span>剱 琳太郎</span>
+<p>
+
+     
+    「えっ」 
+  
+</p>
+</div>
+
+
+
+
+<div class="mem4 mem4-1 right">
+<span>阿頼耶</span>
+<p>
+
+     
+    「さっきから気になってたんだ」 
+  
+</p>
+</div>
+
+
+
+
+<div class="mem3 left">
+<span>剱 琳太郎</span>
+<p>
+
+     
+    「……」 
+  
+</p>
+</div>
+
+
+
+
+<div class="mem3 mem3-2 left">
+<span>剱 琳太郎</span>
+<p>
+
+     
+    「勿論、分かっていたとも」 
+  
+</p>
+</div>
+
+
+
+
+<div class="mem3 left">
+<span>剱 琳太郎</span>
+<p>
+
+     
+    「そう、この刀そのものが結界その者を生んでいたわけさ」 
+  
+</p>
+</div>
+
+
+
+
+<div class="mem3 left">
+<span>剱 琳太郎</span>
+<p>
+
+     
+    刀を手に取る 
+  
+</p>
+</div>
+
+
+
+
+<div class="mem1 left">
+<span>GM</span>
+<p>
+
+     
+    ■プライズ<br>花切の太刀<br>【概要】<br>　凜とした光を放つ刃を持つ太刀。青を基調とした拵えが美しい。<br>　渡来人の技術によって鍛えられた魔仭であると伝えられる妖刀。<br>　このプライズを所持しているキャラクターは、命中判定にプラス１の修正を受ける。<br>　また、このプライズを所持しているキャラクターは、このプライズの【秘密】を獲得する。 
+  
+</p>
+</div>
+
+
+
+
+<div class="mem3 left">
+<span>剱 琳太郎</span>
+<p>
+
+     
+    刀を抜き、刀身にに目を細らせる 
+  
+</p>
+</div>
+
+
+
+
+<div class="mem3 left">
+<span>剱 琳太郎</span>
+<p>
+
+     
+    「花切りの太刀」 
+  
+</p>
+</div>
+
+
+
+
+<div class="mem3 left">
+<span>剱 琳太郎</span>
+<p>
+
+     
+    「この剣光、違いない。」 
+  
+</p>
+</div>
+
+
+
+
+<div class="mem3 left">
+<span>剱 琳太郎</span>
+<p>
+
+     
+    「これだけが菖蒲姫を撃つことができる」 
+  
+</p>
+</div>
+
+
+
+<div class="mem4 mem4-1 right">
+<span>阿頼耶</span>
+<p>
+
+     
+    「なるほど、先ほどの亡霊の話に違いはないという事か」 
+  
+</p>
+</div>
+
+
+
+
+<div class="mem3 left">
+<span>剱 琳太郎</span>
+<p>
+
+     
+    「ただ一人を滅ぼすためだけにこれほどの執念を刀に込めるとは…」 
+  
+</p>
+</div>
+
+
+
+
+<div class="mem4 right">
+<span>阿頼耶</span>
+<p>
+
+     
+    「しかし花切……花切か」 
+  
+</p>
+</div>
+
+
+
+
+<div class="mem4 right">
+<span>阿頼耶</span>
+<p>
+
+     
+    「先ほどの話と合わせて、菖蒲姫を討つこと自体が目的のようだね」 
+  
+</p>
+</div>
+
+
+
+
+<div class="mem4 mem4-4 right">
+<span>阿頼耶</span>
+<p>
+
+     
+    「しかしそれがどうしてあのような話として語り継がれているのか……いささか疑問だな」 
+  
+</p>
+</div>
+
+
+
+
+<div class="mem3 left">
+<span>剱 琳太郎</span>
+<p>
+
+     
+    「うん。凄い刀匠だったのだろうに、役目半ばに死んで、話も歪んでは辛いだろう……」 
+  
+</p>
+</div>
+
+
+
+
+<div class="mem4 right">
+<span>阿頼耶</span>
+<p>
+
+     
+    「ならばその本懐。我らが遂げて差し上げようではないか」 
+  
+</p>
+</div>
+
+
+
+
+<div class="mem3 left">
+<span>剱 琳太郎</span>
+<p>
+
+     
+    「うん」 
+  
+</p>
+</div>
+
+
+
+
+<div class="mem3 mem3-4 left">
+<span>剱 琳太郎</span>
+<p>
+
+     
+    シーン終了 
+  
+</p>
+</div>
+
+
+
+
+<div class="mem4 mem4-9 right">
+<span>阿頼耶</span>
+<p>
+
+     
+    シーン4<br>●区画「水牢」の右横の常門 
+  
+</p>
+</div>
+
+
+
+
+<div class="mem1 left">
+<span>GM</span>
+<p>
+
+     
+    ●区画「前室」 
+  
+</p>
+</div>
+
+
+
+
+<div class="kp LtoR-early">
+
+     
+    小さな部屋。奥には、巨大で重そうな扉が見える。その扉の向こうからは、かぐわしい花のような香りが漂ってくる。しかし、この部屋の中から怪しい気配が満ちている……。 
+  
+</div>
+
+
+
+
+<div class="kp LtoR-early">
+
+     
+    遭遇イベント 
+  
+</div>
+
+
+<div class="kp LtoR-early">
+
+     
+    「妖魔たち」 
+  
+</div>
+
+
+
+
+<div class="kp LtoR-early">
+
+     
+    判定：封術<br>対象：全員<br>奥義：可 
+  
+</div>
+
+
+
+
+<div class="kp LtoR-early">
+
+     
+    判定に失敗すると接近戦1点 
+  
+</div>
+
+
+
+
+<div class="mem4 right">
+<span>阿頼耶</span>
+<p>
+
+     
+    SG#2&gt;=9 （判定：異形化、指定特技：封術） (SG@12#2&gt;=9) ＞ 6[3,3] ＞ 6 ＞ 失敗
+  
+</p>
+</div>
+
+
+
+
+<div class="mem3 left">
+<span>剱 琳太郎</span>
+<p>
+
+     
+    2D6&gt;=5 （判定：結界術） (2D6&gt;=5) ＞ 7[2,5] ＞ 7 ＞ 成功
+  
+</p>
+</div>
+
+
+
+
+<div class="mem3 mem3-10 left">
+<span>剱 琳太郎</span>
+<p>
+
+     
+    奥義！ 
+  
+</p>
+</div>
+
+
+
+
+<div class="mem3 mem3-9 left">
+<span>剱 琳太郎</span>
+<p>
+
+     
+    「煉獄！」 
+  
+</p>
+</div>
+
+
+
+
+<div class="mem4 mem4-4 right">
+<span>阿頼耶</span>
+<p>
+
+     
+    「おっと！かたじけない！」 
+  
+</p>
+</div>
+
+
+
+
+<div class="kp LtoR-early">
+
+     
+    妖魔たちの猛攻を防ぐことができた 
+  
+</div>
+
+
+
+
+<div class="mem3 mem3-9 left">
+<span>剱 琳太郎</span>
+<p>
+
+     
+    「気は抜けないね」 
+  
+</p>
+</div>
+
+
+
+
+<div class="kp LtoR-early">
+
+     
+    この区画の東側に常門がある 
+  
+</div>
+
+
+
+
+<div class="mem1 left">
+<span>GM</span>
+<p>
+
+     
+    ■ハンドアウト<br>前室<br>【概要】<br>　甘い香りの漂う部屋。<br>　奥へと続く扉には、なにか文字のようなものが書かれているが、古くかすれている。<br>　このハンドアウトへの情報判定は「前室」に登場しているキャラクターだけが行うことができる。 
+  
+</p>
+</div>
+
+
+
+
+<div class="mem4 mem4-4 right">
+<span>阿頼耶</span>
+<p>
+
+     
+    前室の秘密を調べる 
+  
+</p>
+</div>
+
+
+
+
+<div class="mem3 left">
+<span>剱 琳太郎</span>
+<p>
+
+     
+    感情修正 
+  
+</p>
+</div>
+
+
+
+
+<div class="mem4 mem4-4 right">
+<span>阿頼耶</span>
+<p>
+
+     
+    SG#2+1&gt;=5 （判定：見敵術） (SG+1@12#2&gt;=5) ＞ 9[4,5]+1 ＞ 10 ＞ 成功
+  
+</p>
+</div>
+
+
+
+
+<div class="mem1 left">
+<span>GM</span>
+<p>
+
+     
+    ■ハンドアウト<br>前室<br>【秘密】<br>　扉には「これより先に妖魔を封じたり。妖魔はこの扉を開くことあたわず」と書かれている。<br>　扉の下の床を調べると、つい最近開いた痕跡があることがわかる。 
+  
+</p>
+</div>
+
+
+
+
+<div class="mem4 right">
+<span>阿頼耶</span>
+<p>
+
+     
+    「この先に”菖蒲姫”がいるのは間違いない」 
+  
+</p>
+</div>
+
+
+
+
+<div class="mem4 right">
+<span>阿頼耶</span>
+<p>
+
+     
+    「だが、最近何者かが侵入した形跡がある」 
+  
+</p>
+</div>
+
+
+
+
+<div class="mem3 left">
+<span>剱 琳太郎</span>
+<p>
+
+     
+    「匂いがすごい！」 
+  
+</p>
+</div>
+
+
+
+
+<div class="mem4 mem4-1 right">
+<span>阿頼耶</span>
+<p>
+
+     
+    「小生の羅盤によれば……やはり見知った顔が待ち受けていそうだぞ」 
+  
+</p>
+</div>
+
+
+
+
+<div class="mem3 left">
+<span>剱 琳太郎</span>
+<p>
+
+     
+    「ひばなにがし…」 
+  
+</p>
+</div>
+
+
+
+
+<div class="mem4 mem4-1 right">
+<span>阿頼耶</span>
+<p>
+
+     
+    「一度入口に戻って情報を整理してもいいやもしれぬな」 
+  
+</p>
+</div>
+
+
+
+
+<div class="mem4 mem4-1 right">
+<span>阿頼耶</span>
+<p>
+
+     
+    「どちらにしても敵は逃げない……気がかりなのは、火花殿が妖魔と相対して仏になっていないかだ」 
+  
+</p>
+</div>
+
+
+
+
+<div class="mem3 left">
+<span>剱 琳太郎</span>
+<p>
+
+     
+    「はは、悪運強いし大丈夫だろう」 
+  
+</p>
+</div>
+
+
+
+
+<div class="mem4 mem4-5 right">
+<span>阿頼耶</span>
+<p>
+
+     
+    「……ふむ、まぁそうかもしれないが死なれても目覚めが悪い」 
+  
+</p>
+</div>
+
+
+
+
+<div class="mem4 mem4-1 right">
+<span>阿頼耶</span>
+<p>
+
+     
+    「機を見て踏み込むとしよう」 
+  
+</p>
+</div>
+
+
+
+
+<div class="mem4 mem4-1 right">
+<span>阿頼耶</span>
+<p>
+
+     
+    シーン終了 
+  
+</p>
+</div>
+
+
+
+
+<div class="kp LtoR-early">
+
+     
+    [ GM ] サイクル : 2 → 3 
+  
+</div>
+
+
+
+
+<div class="mem4 mem4-9 right">
+<span>阿頼耶</span>
+<p>
+
+     
+    シーン5<br>●区画「菖蒲の洞入り口」 
+  
+</p>
+</div>
+
+
+
+
+<div class="mem4 mem4-1 right">
+<span>阿頼耶</span>
+<p>
+
+     
+    NPCの秘密を《見敵術》で調べます 
+  
+</p>
+</div>
+
+
+
+
+<div class="mem4 mem4-1 right">
+<span>阿頼耶</span>
+<p>
+
+     
+    「ひとまず、彼の目的を探ってみるとしよう」 
+  
+</p>
+</div>
+
+
+
+
+<div class="mem3 left">
+<span>剱 琳太郎</span>
+<p>
+
+     
+    感情修正 
+  
+</p>
+</div>
+
+
+
+
+<div class="mem4 mem4-1 right">
+<span>阿頼耶</span>
+<p>
+
+     
+    2D6+1&gt;=5 （判定：見敵術） (2D6+1&gt;=5) ＞ 12[6,6]+1 ＞ 13 ＞ スペシャル(【生命力】1点か変調一つを回復)
+  
+</p>
+</div>
+
+
+
+
+<div class="mem3 left">
+<span>剱 琳太郎</span>
+<p>
+
+     
+    「やはり噂がたった花切りの太刀だろうか」 
+  
+</p>
+</div>
+
+
+
+
+<div class="mem1 left">
+<span>GM</span>
+<p>
+
+     
+    ■ハンドアウト<br>釘打火花（くぎうちひばな）<br>【秘密】<br>　この【秘密】を獲得すると、釘打火花の【奥義】の【情報】（【判定妨害】／指定特技《火術》）を獲得する。<br>　釘打火花は、うっかりしたところもあり、どこか憎めない人物だ。<br>　PCが火花を助けることがあれば、追加で【功績点】を1点獲得する。 
+  
+</p>
+</div>
+
+
+
+
+<div class="mem4 mem4-4 right">
+<span>阿頼耶</span>
+<p>
+
+     
+    「うむ……しかし、太刀は此処にあるわけだが」 
+  
+</p>
+</div>
+
+
+
+
+<div class="mem4 mem4-5 right">
+<span>阿頼耶</span>
+<p>
+
+     
+    「隠し扉に気づかず、妖魔の部屋に入ってしまったのかもしれないね」 
+  
+</p>
+</div>
+
+
+
+
+<div class="mem3 left">
+<span>剱 琳太郎</span>
+<p>
+
+     
+    「気づいても普通は入れなはずだが…」 
+  
+</p>
+</div>
+
+
+
+
+<div class="mem3 left">
+<span>剱 琳太郎</span>
+<p>
+
+     
+    「いや君が入れたし頑張れば入れるのかな・・…」 
+  
+</p>
+</div>
+
+
+
+
+<div class="mem3 left">
+<span>剱 琳太郎</span>
+<p>
+
+     
+    「まぁ刀が目的ならばこれは鞘にしまっておこうかな」 
+  
+</p>
+</div>
+
+
+
+
+<div class="mem3 left">
+<span>剱 琳太郎</span>
+<p>
+
+     
+    怪厨子に花切りの太刀をしまう 
+  
+</p>
+</div>
+
+
+
+
+<div class="mem4 mem4-4 right">
+<span>阿頼耶</span>
+<p>
+
+     
+    「どうだろうねぇ。それに関しては琳太郎クンが入った後だったから結界が緩んでいたんじゃないかな？」 
+  
+</p>
+</div>
+
+
+
+
+<div class="mem4 right">
+<span>阿頼耶</span>
+<p>
+
+     
+    「大事大事だからね」 
+  
+</p>
+</div>
+
+
+
+
+<div class="mem4 right">
+<span>阿頼耶</span>
+<p>
+
+     
+    「いずれにせよ、あぁ見えて彼にそう悪意はない。死ぬ前に助けてやろう」 
+  
+</p>
+</div>
+
+
+
+
+<div class="mem4 right">
+<span>阿頼耶</span>
+<p>
+
+     
+    シーン終了 
+  
+</p>
+</div>
+
+
+
+
+<div class="mem3 mem3-4 left">
+<span>剱 琳太郎</span>
+<p>
+
+     
+    シーン6<br>●区画「菖蒲の洞入り口」 
+  
+</p>
+</div>
+
+
+
+
+<div class="mem3 left">
+<span>剱 琳太郎</span>
+<p>
+
+     
+    「結界の話で思い出したけど、血筋の者といいアラヤ殿には黙っていたことがいくつかあった」 
+  
+</p>
+</div>
+
+
+
+
+<div class="mem4 mem4-1 right">
+<span>阿頼耶</span>
+<p>
+
+     
+    「なんだい？」 
+  
+</p>
+</div>
+
+
+
+
+<div class="mem3 left">
+<span>剱 琳太郎</span>
+<p>
+
+     
+    「菖蒲姫の話も、話の祖語はあったけど我が劔家に伝わる話で聞いたことがあったんだ」 
+  
+</p>
+</div>
+
+
+
+
+<div class="mem4 mem4-1 right">
+<span>阿頼耶</span>
+<p>
+
+     
+    「ほぉ！では初めから知っていたのかい？」 
+  
+</p>
+</div>
+
+
+
+
+<div class="mem3 left">
+<span>剱 琳太郎</span>
+<p>
+
+     
+    「うん、伽話のようなものかと思っていたんだけどこうして本物の刀に出会うなんてね」 
+  
+</p>
+</div>
+
+
+
+
+<div class="mem3 left">
+<span>剱 琳太郎</span>
+<p>
+
+     
+    「でも、どこまで本当だったんだろうな」 
+  
+</p>
+</div>
+
+
+
+
+<div class="mem3 left">
+<span>剱 琳太郎</span>
+<p>
+
+     
+    「菖蒲姫と刀鍛冶が恋に落ちていたっていうのは本当かもしれない」 
+  
+</p>
+</div>
+
+
+
+
+<div class="mem3 left">
+<span>剱 琳太郎</span>
+<p>
+
+     
+    「隠忍狩りの君なら気づいていたかもしれないけれど、私の血には妖魔の血が色濃く残っている」 
+  
+</p>
+</div>
+
+
+
+
+<div class="mem3 left">
+<span>剱 琳太郎</span>
+<p>
+
+     
+    「だとしたら……何故姫たちは仲をたがえることになったんだろう」 
+  
+</p>
+</div>
+
+
+
+
+<div class="mem4 right">
+<span>阿頼耶</span>
+<p>
+
+     
+    「……」 
+  
+</p>
+</div>
+
+
+
+
+<div class="mem4 right">
+<span>阿頼耶</span>
+<p>
+
+     
+    「その真相は本人に聞いてみないと分からないが……」 
+  
+</p>
+</div>
+
+
+
+
+<div class="mem4 right">
+<span>阿頼耶</span>
+<p>
+
+     
+    「あるいは愛ゆえの行動だったのかもしれないね」 
+  
+</p>
+</div>
+
+
+
+
+<div class="mem4 right">
+<span>阿頼耶</span>
+<p>
+
+     
+    「君も気づいているだろう？妖魔の力を使えばその身が外道に近づいていくのを」 
+  
+</p>
+</div>
+
+
+
+
+<div class="mem4 right">
+<span>阿頼耶</span>
+<p>
+
+     
+    「菖蒲姫も生まれながらの妖魔ではなく、元は君の様にだったのかもしれない」 
+  
+</p>
+</div>
+
+
+
+
+<div class="mem4 right">
+<span>阿頼耶</span>
+<p>
+
+     
+    「それが何かの拍子に妖魔の力に侵食され、正気を失った」 
+  
+</p>
+</div>
+
+
+
+
+<div class="mem3 left">
+<span>剱 琳太郎</span>
+<p>
+
+     
+    「ーー」 
+  
+</p>
+</div>
+
+
+
+
+<div class="mem4 mem4-1 right">
+<span>阿頼耶</span>
+<p>
+
+     
+    「そんな時、愛する人はどうすると思う？」 
+  
+</p>
+</div>
+
+
+
+
+<div class="mem3 left">
+<span>剱 琳太郎</span>
+<p>
+
+     
+    「それは……」 
+  
+</p>
+</div>
+
+
+
+
+<div class="mem4 mem4-1 right">
+<span>阿頼耶</span>
+<p>
+
+     
+    「その人が誰かを殺す前に――真の畜生になる前に、それを止めようとするのではないかな？」 
+  
+</p>
+</div>
+
+
+
+
+<div class="mem3 left">
+<span>剱 琳太郎</span>
+<p>
+
+     
+    「うん……そうだね」 
+  
+</p>
+</div>
+
+
+
+
+<div class="mem4 right">
+<span>阿頼耶</span>
+<p>
+
+     
+    「”花切”はそのために打たれた……いわば愛の太刀」 
+  
+</p>
+</div>
+
+
+
+
+<div class="mem4 mem4-1 right">
+<span>阿頼耶</span>
+<p>
+
+     
+    「――と、小生の想像にすぎないが」 
+  
+</p>
+</div>
+
+
+
+
+<div class="mem3 left">
+<span>剱 琳太郎</span>
+<p>
+
+     
+    「私もいつかそうなってしまうかもしれない」 
+  
+</p>
+</div>
+
+
+
+
+<div class="mem3 left">
+<span>剱 琳太郎</span>
+<p>
+
+     
+    「その時は、アラヤ殿が私を殺してくれるといいな」 
+  
+</p>
+</div>
+
+
+
+
+<div class="mem3 left">
+<span>剱 琳太郎</span>
+<p>
+
+     
+    「……」 
+  
+</p>
+</div>
+
+
+
+
+<div class="mem4 mem4-1 right">
+<span>阿頼耶</span>
+<p>
+
+     
+    「おいおい、縁起でもないことを言わないでくれ」 
+  
+</p>
+</div>
+
+
+
+
+<div class="mem3 mem3-8 left">
+<span>剱 琳太郎</span>
+<p>
+
+     
+    「愛の告白みたいになってしまった…！」 
+  
+</p>
+</div>
+
+
+
+
+<div class="mem3 mem3-8 left">
+<span>剱 琳太郎</span>
+<p>
+
+     
+    「そういう意味ではないから、悪しからず！」 
+  
+</p>
+</div>
+
+
+
+
+<div class="mem4 mem4-1 right">
+<span>阿頼耶</span>
+<p>
+
+     
+    「フフ……その辺も含めて考えておくよぉ」 
+  
+</p>
+</div>
+
+
+
+
+<div class="mem3 left">
+<span>剱 琳太郎</span>
+<p>
+
+     
+    「仲間が道を踏み外したなら、止めるというだけだ。逆の立場だとしてもね」 
+  
+</p>
+</div>
+
+
+
+
+<div class="mem3 left">
+<span>剱 琳太郎</span>
+<p>
+
+     
+    妖魔化 
+  
+</p>
+</div>
+
+
+
+
+<div class="kp LtoR-early">
+
+     
+    [ 剱 琳太郎 ] 器術 : 1 → -1 
+  
+</div>
+
+
+
+
+<div class="mem3 left">
+<span>剱 琳太郎</span>
+<p>
+
+     
+    NMT 新異形表(3) ＞ 神化態。「妖魔忍法表・神化」を使用し、妖魔化している間、その妖魔忍法を修得する。 ＞ 妖魔忍法表・神化(2) ＞ 【野衾】(基本 p172)／【長壁】（隠忍 p29）
+  
+</p>
+</div>
+
+
+
+
+<div class="mem3 left">
+<span>剱 琳太郎</span>
+<p>
+
+     
+    【長壁】を習得<br>菖蒲の洞を調べる 
+  
+</p>
+</div>
+
+
+
+
+<div class="mem4 right">
+<span>阿頼耶</span>
+<p>
+
+     
+    感情修正　[琳太郎] → [感情]+ 
+  
+</p>
+</div>
+
+
+
+
+<div class="mem3 left">
+<span>剱 琳太郎</span>
+<p>
+
+     
+    2D6&gt;=4 （判定：罠術） (2D6&gt;=4) ＞ 8[3,5] ＞ 8 ＞ 成功
+  
+</p>
+</div>
+
+
+
+
+<div class="mem1 left">
+<span>GM</span>
+<p>
+
+     
+    ■ハンドアウト<br>【秘密】<br>　菖蒲の洞のある地域は、近年、地殻変動が起きている。<br>　5サイクル目が終了すると、菖蒲の洞は崩壊し始める。<br>　この【秘密】を最初に獲得したPCは、「兵糧丸」を1個、獲得する。
+  
+</p>
+</div>
+
+
+
+
+<div class="mem3 left">
+<span>剱 琳太郎</span>
+<p>
+
+     
+    地獄札をわたす 
+  
+</p>
+</div>
+
+
+
+
+<div class="kp LtoR-early">
+
+     
+    [ 阿頼耶 ] 地獄札 : 2 → 3 
+  
+</div>
+
+
+
+
+<div class="kp LtoR-early">
+
+     
+    [ 剱 琳太郎 ] 地獄札 : 1 → 0 
+  
+</div>
+
+
+
+
+<div class="mem4 right">
+<span>阿頼耶</span>
+<p>
+
+     
+    「さて、そろそろ向かおうか。火花殿が少し心配になってきた」 
+  
+</p>
+</div>
+
+
+
+
+<div class="mem3 left">
+<span>剱 琳太郎</span>
+<p>
+
+     
+    「そうだね、地脈も不安定になってきたようだ。早く終わらせよう」 
+  
+</p>
+</div>
+
+
+
+
+<div class="mem3 left">
+<span>剱 琳太郎</span>
+<p>
+
+     
+    シーン終了 
+  
+</p>
+</div>
+
+
+
+
+<div class="kp LtoR-early">
+
+     
+    [ GM ] サイクル : 3 → 4 
+  
+</div>
+
+
+
+
+<div class="mem4 mem4-9 right">
+<span>阿頼耶</span>
+<p>
+
+     
+    シーン7<br>●区画：前室の隣の部屋 
+  
+</p>
+</div>
+
+
+
+
+<div class="mem4 mem4-1 right">
+<span>阿頼耶</span>
+<p>
+
+     
+    「頼もう！」 
+  
+</p>
+</div>
+
+
+
+
+<div class="mem1 left">
+<span>GM</span>
+<p>
+
+     
+    ●菖蒲姫の間 
+  
+</p>
+</div>
+
+
+
+
+<div class="kp LtoR-early">
+
+     
+    部屋の中央に、きらびやかな衣を身に纏った、美しい少女がいる。前室に漂っていた、花のような香りがいっそう濃密に漂う。 
+  
+</div>
+
+
+
+
+<div class="mem7 left">
+<span>菖蒲姫</span>
+<p>
+
+     
+    「ああ、嬉しや。ついにわらわを救う者が現れたか」 
+  
+</p>
+</div>
+
+
+
+
+<div class="kp LtoR-early">
+
+     
+    そう言って少女はうっとりするような微笑みを見せた。 
+  
+</div>
+
+
+
+
+<div class="mem4 mem4-1 right">
+<span>阿頼耶</span>
+<p>
+
+     
+    「あなたが噂の菖蒲姫？」 
+  
+</p>
+</div>
+
+
+
+
+<div class="mem7 left">
+<span>菖蒲姫</span>
+<p>
+
+     
+    「噂はしらぬが、わらわは菖蒲姫よ」 
+  
+</p>
+</div>
+
+
+
+
+<div class="mem3 left">
+<span>剱 琳太郎</span>
+<p>
+
+     
+    「（刀が奮えている……）」 
+  
+</p>
+</div>
+
+
+
+
+<div class="mem3 left">
+<span>剱 琳太郎</span>
+<p>
+
+     
+    「間違いなく妖魔、祖の仇討ちもある、今から貴殿の首を斬る」 
+  
+</p>
+</div>
+
+
+
+
+<div class="mem4 right">
+<span>阿頼耶</span>
+<p>
+
+     
+    「まぁ待て琳太郎クン」 
+  
+</p>
+</div>
+
+
+
+
+<div class="mem7 left">
+<span>菖蒲姫</span>
+<p>
+
+     
+    「ほう、ほう。そなたが……」 
+  
+</p>
+</div>
+
+
+
+
+<div class="mem4 right">
+<span>阿頼耶</span>
+<p>
+
+     
+    「君がそう判断するなら間違いはないだろうがその前に話がしたい」 
+  
+</p>
+</div>
+
+
+
+
+<div class="mem4 right">
+<span>阿頼耶</span>
+<p>
+
+     
+    「まず一つ、小生らの他に、この部屋へと入ってきたものは？」 
+  
+</p>
+</div>
+
+
+
+
+<div class="mem7 left">
+<span>菖蒲姫</span>
+<p>
+
+     
+    「それはこの者かえ？」 
+  
+</p>
+</div>
+
+
+
+
+<div class="mem3 left">
+<span>剱 琳太郎</span>
+<p>
+
+     
+    「！」 
+  
+</p>
+</div>
+
+
+
+
+<div class="kp LtoR-early">
+
+     
+    その傍らには、目を爛々と輝かせた男が一人立っている。 
+  
+</div>
+
+
+
+
+<div class="mem7 left">
+<span>菖蒲姫</span>
+<p>
+
+     
+    「この者はもう、扉を開けられなくなってしまったからのう」 
+  
+</p>
+</div>
+
+
+
+
+<div class="kp LtoR-early">
+
+     
+    斜歯忍軍の釘打火花は、妖魔化しているようだ 
+  
+</div>
+
+
+
+
+<div class="mem3 left">
+<span>剱 琳太郎</span>
+<p>
+
+     
+    「妖魔化……！」 
+  
+</p>
+</div>
+
+
+
+
+<div class="mem8 right">
+<span>釘打 火花</span>
+<p>
+
+     
+    「……」 
+  
+</p>
+</div>
+
+
+
+
+<div class="mem4 right">
+<span>阿頼耶</span>
+<p>
+
+     
+    「というと……妖魔に落とされたか」 
+  
+</p>
+</div>
+
+
+
+
+<div class="mem4 right">
+<span>阿頼耶</span>
+<p>
+
+     
+    「次に、あなたはかつて刀匠に追われてここに来た筈」 
+  
+</p>
+</div>
+
+
+
+
+<div class="mem4 right">
+<span>阿頼耶</span>
+<p>
+
+     
+    「何故（なにゆえ）？」 
+  
+</p>
+</div>
+
+
+
+
+<div class="mem7 left">
+<span>菖蒲姫</span>
+<p>
+
+     
+    「そうよのう」 
+  
+</p>
+</div>
+
+
+
+
+<div class="mem7 left">
+<span>菖蒲姫</span>
+<p>
+
+     
+    「――少し、遊びすぎただけであろう」 
+  
+</p>
+</div>
+
+
+
+
+<div class="mem7 left">
+<span>菖蒲姫</span>
+<p>
+
+     
+    「それを討伐やなんやと、ここに封じられただけやのう」 
+  
+</p>
+</div>
+
+
+
+
+<div class="mem3 left">
+<span>剱 琳太郎</span>
+<p>
+
+     
+    「祖と混じり合ったのも遊びだったというのか」 
+  
+</p>
+</div>
+
+
+
+
+<div class="mem7 left">
+<span>菖蒲姫</span>
+<p>
+
+     
+    「あやつ…あやつのぅ」 
+  
+</p>
+</div>
+
+
+
+
+<div class="mem7 left">
+<span>菖蒲姫</span>
+<p>
+
+     
+    「ただ遊びあっただけであろうに、このような檻に閉じ込めよって」 
+  
+</p>
+</div>
+
+
+
+
+<div class="mem3 left">
+<span>剱 琳太郎</span>
+<p>
+
+     
+    「そうか、では慈悲もなし――迷わず首をはねられる」 
+  
+</p>
+</div>
+
+
+
+
+<div class="mem7 left">
+<span>菖蒲姫</span>
+<p>
+
+     
+    「そうかそうか、」 
+  
+</p>
+</div>
+
+
+
+
+<div class="mem7 left">
+<span>菖蒲姫</span>
+<p>
+
+     
+    「――ならば、わらわは前と変わらぬように露を払えばよいのであろう」 
+  
+</p>
+</div>
+
+
+
+
+<div class="mem4 right">
+<span>阿頼耶</span>
+<p>
+
+     
+    「今宵はその因果を穿つ為に小生らは参上した」 
+  
+</p>
+</div>
+
+
+
+
+<div class="mem4 right">
+<span>阿頼耶</span>
+<p>
+
+     
+    「では最後だ」 
+  
+</p>
+</div>
+
+
+
+
+<div class="mem4 mem4-6 right">
+<span>阿頼耶</span>
+<p>
+
+     
+    「この技を――覚えているな！」 
+  
+</p>
+</div>
+
+
+
+
+<div class="mem7 left">
+<span>菖蒲姫</span>
+<p>
+
+     
+    「ふむ。なるほどなるほど」 
+  
+</p>
+</div>
+
+
+
+
+<div class="mem7 left">
+<span>菖蒲姫</span>
+<p>
+
+     
+    「これも因果というやつかのお」 
+  
+</p>
+</div>
+
+
+
+
+<div class="mem3 left">
+<span>剱 琳太郎</span>
+<p>
+
+     
+    「（……？）」 
+  
+</p>
+</div>
+
+
+
+
+<div class="mem4 mem4-6 right">
+<span>阿頼耶</span>
+<p>
+
+     
+    「いざ――」 
+  
+</p>
+</div>
+
+
+
+
+<div class="mem3 mem3-9 left">
+<span>剱 琳太郎</span>
+<p>
+
+     
+    「参る！」 
+  
+</p>
+</div>
+
+
+
+
+<div class="mem7 left">
+<span>菖蒲姫</span>
+<p>
+
+     
+    「させぬがよ！」 
+  
+</p>
+</div>
+
+
+
+
+<div class="mem1 left">
+<span>GM</span>
+<p>
+
+     
+    戦闘開始 
+  
+</p>
+</div>
+
+
+
+
+<div class="kp LtoR-early">
+
+     
+    一人の妖魔と操られる者。<br>その戦いが始まる 
+  
+</div>
+
+
+
+
+<div class="kp LtoR-early">
+
+     
+    ――と思われた矢先 
+  
+</div>
+
+
+
+
+<div class="kp LtoR-early">
+
+     
+    洞窟そのものが揺れ、壁から水が噴き出してきます。 
+  
+</div>
+
+
+
+
+<div class="kp LtoR-early">
+
+     
+    PCには、この洞窟そのものが崩れようとしていることが分かります。 
+  
+</div>
+
+
+
+
+<div class="kp LtoR-early">
+
+     
+    戦場：1ラウンド目は平地・乙<br>2ラウンド目から水中・乙 
+  
+</div>
+
+
+
+
+<div class="kp LtoR-early">
+
+     
+    戦闘終了<br>・相手の戦闘意思をなくすこと<br>・一定のラウンド終了した場合 
+  
+</div>
+
+
+
+
+<div class="mem4 mem4-6 right">
+<span>阿頼耶</span>
+<p>
+
+     
+    「術式展開―地獄殺・羅盤―」 
+  
+</p>
+</div>
+
+
+
+
+<div class="kp LtoR-early">
+
+     
+    プロット 
+  
+</div>
+
+
+
+
+<div class="mem4 mem4-6 right">
+<span>阿頼耶</span>
+<p>
+
+     
+    プロット・0 
+  
+</p>
+</div>
+
+
+
+
+<div class="kp LtoR-early">
+
+     
+    [ 剱 琳太郎 ] がダイスシンボルを公開。出目は 4 です。 
+  
+</div>
+
+
+
+
+<div class="kp LtoR-early">
+
+     
+    [ 釘打 火花 ] がダイスシンボルを公開。出目は 4 です。 
+  
+</div>
+
+
+
+
+<div class="kp LtoR-early">
+
+     
+    [ 菖蒲姫 ] がダイスシンボルを公開。出目は 3 です。 
+  
+</div>
+
+
+
+
+<div class="mem3 left">
+<span>剱 琳太郎</span>
+<p>
+
+     
+    d66 (D66) ＞ 45
+  
+</p>
+</div>
+
+
+
+
+<div class="mem8 right">
+<span>釘打 火花</span>
+<p>
+
+     
+    D66 (D66) ＞ 36
+  
+</p>
+</div>
+
+
+
+
+<div class="mem3 left">
+<span>剱 琳太郎</span>
+<p>
+
+     
+    妖魔化 
+  
+</p>
+</div>
+
+
+
+
+<div class="mem3 mem3-7 left">
+<span>剱 琳太郎</span>
+<p>
+
+     
+    「はぁぁあ！」 
+  
+</p>
+</div>
+
+
+
+
+<div class="mem3 mem3-7 left">
+<span>剱 琳太郎</span>
+<p>
+
+     
+    NMT 新異形表(2) ＞ 凶身態。「妖魔忍法表・凶身」を使用し、妖魔化している間、その妖魔忍法を修得する。 ＞ 妖魔忍法表・凶身(3) ＞ 【怨霊】(基本 p173)／【白面】（隠忍 p29）
+  
+</p>
+</div>
+
+
+
+
+<div class="mem3 mem3-7 left">
+<span>剱 琳太郎</span>
+<p>
+
+     
+    【怨霊】を修得 
+  
+</p>
+</div>
+
+
+
+
+<div class="kp LtoR-early">
+
+     
+    [ 剱 琳太郎 ] 謀術 : 1 → -1 
+  
+</div>
+
+
+
+
+<div class="mem3 mem3-9 left">
+<span>剱 琳太郎</span>
+<p>
+
+     
+    「剣の呼吸――参ノ刀」 
+  
+</p>
+</div>
+
+
+
+
+<div class="mem3 mem3-9 left">
+<span>剱 琳太郎</span>
+<p>
+
+     
+    【刀狩】 
+  
+</p>
+</div>
+
+
+
+
+<div class="mem3 mem3-9 left">
+<span>剱 琳太郎</span>
+<p>
+
+     
+    2D6&gt;=5 （判定：身体操術） (2D6&gt;=5) ＞ 5[1,4] ＞ 5 ＞ 成功
+  
+</p>
+</div>
+
+
+
+
+<div class="mem3 mem3-9 left">
+<span>剱 琳太郎</span>
+<p>
+
+     
+    指定特技を刀術に変更 
+  
+</p>
+</div>
+
+
+
+
+<div class="mem4 mem4-6 right">
+<span>阿頼耶</span>
+<p>
+
+     
+    感情修正　[琳太郎] → [感情]+ 
+  
+</p>
+</div>
+
+
+
+
+<div class="mem3 mem3-9 left">
+<span>剱 琳太郎</span>
+<p>
+
+     
+    「華裂きの太刀」 
+  
+</p>
+</div>
+
+
+
+
+<div class="mem3 left">
+<span>剱 琳太郎</span>
+<p>
+
+     
+    2D6&gt;=7-2 （判定：飛術） (2D6&gt;=5) ＞ 9[4,5] ＞ 9 ＞ 成功
+  
+</p>
+</div>
+
+
+
+
+<div class="mem8 right">
+<span>釘打 火花</span>
+<p>
+
+     
+    2D6&gt;=8 （判定：千里眼の術） (2D6&gt;=8) ＞ 12[6,6] ＞ 12 ＞ スペシャル(【生命力】1点か変調一つを回復)
+  
+</p>
+</div>
+
+
+
+
+<div class="mem8 right">
+<span>釘打 火花</span>
+<p>
+
+     
+    【逆運】 
+  
+</p>
+</div>
+
+
+
+
+<div class="mem8 right">
+<span>釘打 火花</span>
+<p>
+
+     
+    【痛打】 
+  
+</p>
+</div>
+
+
+
+
+<div class="mem8 right">
+<span>釘打 火花</span>
+<p>
+
+     
+    2D6&gt;=5 （判定：衣装術） (2D6&gt;=5) ＞ 8[3,5] ＞ 8 ＞ 成功
+  
+</p>
+</div>
+
+
+
+
+<div class="mem8 right">
+<span>釘打 火花</span>
+<p>
+
+     
+    2D6&gt;=5 （判定：千里眼の術） (2D6&gt;=5) ＞ 9[4,5] ＞ 9 ＞ 成功
+  
+</p>
+</div>
+
+
+
+
+<div class="mem3 mem3-9 left">
+<span>剱 琳太郎</span>
+<p>
+
+     
+    「劔の呼吸――陸の刀」 
+  
+</p>
+</div>
+
+
+
+
+<div class="mem3 mem3-9 left">
+<span>剱 琳太郎</span>
+<p>
+
+     
+    2D6&gt;=5 （判定：千里眼の術） (2D6&gt;=5) ＞ 6[1,5] ＞ 6 ＞ 成功
+  
+</p>
+</div>
+
+
+
+
+<div class="mem3 mem3-9 left">
+<span>剱 琳太郎</span>
+<p>
+
+     
+    　「悟りの太刀！」 
+  
+</p>
+</div>
+
+
+
+
+<div class="mem8 right">
+<span>釘打 火花</span>
+<p>
+
+     
+    奥義！ 
+  
+</p>
+</div>
+
+
+
+
+<div class="mem8 right">
+<span>釘打 火花</span>
+<p>
+
+     
+    ■奥義<br>《踊り花火》<br>指定特技：火術<br>効果　　：判定妨害<br>演出　　：判定を行う者の周りで激しい火花が飛び散る 
+  
+</p>
+</div>
+
+
+
+
+<div class="mem3 mem3-9 left">
+<span>剱 琳太郎</span>
+<p>
+
+     
+    「――！」 
+  
+</p>
+</div>
+
+
+
+
+<div class="mem4 mem4-6 right">
+<span>阿頼耶</span>
+<p>
+
+     
+    奥義破り 
+  
+</p>
+</div>
+
+
+
+
+<div class="mem3 mem3-9 left">
+<span>剱 琳太郎</span>
+<p>
+
+     
+    奥義破り 
+  
+</p>
+</div>
+
+
+
+
+<div class="mem4 mem4-6 right">
+<span>阿頼耶</span>
+<p>
+
+     
+    2D6&gt;=6 （判定：砲術） (2D6&gt;=6) ＞ 7[2,5] ＞ 7 ＞ 成功
+  
+</p>
+</div>
+
+
+
+
+<div class="mem3 mem3-9 left">
+<span>剱 琳太郎</span>
+<p>
+
+     
+    2D6&gt;=4 （判定：砲術） (2D6&gt;=4) ＞ 7[2,5] ＞ 7 ＞ 成功
+  
+</p>
+</div>
+
+
+
+
+<div class="mem3 left">
+<span>剱 琳太郎</span>
+<p>
+
+     
+    「見慣れた技だね……」 
+  
+</p>
+</div>
+
+
+
+
+<div class="mem7 left">
+<span>菖蒲姫</span>
+<p>
+
+     
+    【修羅】 
+  
+</p>
+</div>
+
+
+
+
+<div class="mem3 mem3-9 left">
+<span>剱 琳太郎</span>
+<p>
+
+     
+    「まだ人に戻る余地はあるかもしれない」 
+  
+</p>
+</div>
+
+
+
+
+<div class="mem7 left">
+<span>菖蒲姫</span>
+<p>
+
+     
+    対象はPC二人 
+  
+</p>
+</div>
+
+
+
+
+<div class="mem7 left">
+<span>菖蒲姫</span>
+<p>
+
+     
+    2D6&gt;=5 （判定：衣装術） (2D6&gt;=5) ＞ 5[1,4] ＞ 5 ＞ 成功
+  
+</p>
+</div>
+
+
+
+
+<div class="mem3 mem3-9 left">
+<span>剱 琳太郎</span>
+<p>
+
+     
+    【跳域】 
+  
+</p>
+</div>
+
+
+
+
+<div class="mem4 mem4-6 right">
+<span>阿頼耶</span>
+<p>
+
+     
+    【抜討】　サポート　特技:《なし》　間合:なし　コスト:1　効果:プロット値が高いキャラクターから攻撃を受け、回避判定を行うときに使用。 その回避判定にマイナス2の修正をつけ、成功した場合、使用可能な接近戦の攻撃忍法で目標に攻撃することができる。
+  
+</p>
+</div>
+
+
+
+
+<div class="mem3 mem3-9 left">
+<span>剱 琳太郎</span>
+<p>
+
+     
+    2D6&gt;=5 （判定：飛術） (2D6&gt;=5) ＞ 8[2,6] ＞ 8 ＞ 成功
+  
+</p>
+</div>
+
+
+
+
+<div class="mem4 mem4-6 right">
+<span>阿頼耶</span>
+<p>
+
+     
+    【防御訓練】受け 
+  
+</p>
+</div>
+
+
+
+
+<div class="mem3 mem3-9 left">
+<span>剱 琳太郎</span>
+<p>
+
+     
+    BNT 戦場新効果表(1) ＞ 平地　甲：特になし。／乙：この戦場では、射撃戦の命中判定にプラス１の修正がつく。
+  
+</p>
+</div>
+
+
+
+
+<div class="mem4 mem4-6 right">
+<span>阿頼耶</span>
+<p>
+
+     
+    回避 
+  
+</p>
+</div>
+
+
+
+
+<div class="mem3 mem3-9 left">
+<span>剱 琳太郎</span>
+<p>
+
+     
+    2D6&gt;=7 （判定：身体操術） (2D6&gt;=7) ＞ 9[3,6] ＞ 9 ＞ 成功
+  
+</p>
+</div>
+
+
+
+
+<div class="mem4 mem4-6 right">
+<span>阿頼耶</span>
+<p>
+
+     
+    2D6&gt;=7 （判定：身体操術） (2D6&gt;=7) ＞ 6[1,5] ＞ 6 ＞ 失敗
+  
+</p>
+</div>
+
+
+
+
+<div class="mem3 mem3-9 left">
+<span>剱 琳太郎</span>
+<p>
+
+     
+    「 弐ノ刀――打刀、車花火」 
+  
+</p>
+</div>
+
+
+
+
+<div class="mem4 mem4-6 right">
+<span>阿頼耶</span>
+<p>
+
+     
+    rct ランダム分野表(2) ＞ 体術
+  
+</p>
+</div>
+
+
+
+
+<div class="kp LtoR-early">
+
+     
+    [ 阿頼耶 ] 体術 : 1 → 0 
+  
+</div>
+
+
+
+
+<div class="mem4 mem4-6 right">
+<span>阿頼耶</span>
+<p>
+
+     
+    「おっと、これはまずい」 
+  
+</p>
+</div>
+
+
+
+
+<div class="mem3 mem3-9 left">
+<span>剱 琳太郎</span>
+<p>
+
+     
+    「大丈夫？」 
+  
+</p>
+</div>
+
+
+
+
+<div class="kp LtoR-early">
+
+     
+    [ 阿頼耶 ] 兵糧丸 : 2 → 1 
+  
+</div>
+
+
+
+
+<div class="kp LtoR-early">
+
+     
+    [ 阿頼耶 ] 体術 : 0 → 1 
+  
+</div>
+
+
+
+
+<div class="mem4 mem4-1 right">
+<span>阿頼耶</span>
+<p>
+
+     
+    「琳太郎クンの心配には及ばないよぉ」 
+  
+</p>
+</div>
+
+
+
+
+<div class="mem4 mem4-1 right">
+<span>阿頼耶</span>
+<p>
+
+     
+    「ほらこの通り」（再生） 
+  
+</p>
+</div>
+
+
+
+
+<div class="mem4 mem4-1 right">
+<span>阿頼耶</span>
+<p>
+
+     
+    【這剣】　攻撃　特技:《身体操術》　間合:1　コスト:1　効果:接近戦ダメージを１点与える。 戦闘中、目標は回避判定-1。(最大マイナス3)　  
+  
+</p>
+</div>
+
+
+
+
+<div class="mem4 mem4-1 right">
+<span>阿頼耶</span>
+<p>
+
+     
+    →菖蒲姫 
+  
+</p>
+</div>
+
+
+
+
+<div class="mem3 mem3-9 left">
+<span>剱 琳太郎</span>
+<p>
+
+     
+    感情修正 
+  
+</p>
+</div>
+
+
+
+
+<div class="mem4 mem4-1 right">
+<span>阿頼耶</span>
+<p>
+
+     
+    SG+1&gt;=5 （判定：身体操術） (SG+1@12#2&gt;=5) ＞ 7[3,4]+1 ＞ 8 ＞ 成功
+  
+</p>
+</div>
+
+
+
+
+<div class="mem4 mem4-7 right">
+<span>阿頼耶</span>
+<p>
+
+     
+    「受けよ――地獄殺・這剣！」 
+  
+</p>
+</div>
+
+
+
+
+<div class="mem7 left">
+<span>菖蒲姫</span>
+<p>
+
+     
+    2D6&gt;=8 （判定：衣装術） (2D6&gt;=8) ＞ 6[2,4] ＞ 6 ＞ 失敗
+  
+</p>
+</div>
+
+
+
+
+<div class="mem4 mem4-6 right">
+<span>阿頼耶</span>
+<p>
+
+     
+    回想シーン 
+  
+</p>
+</div>
+
+
+
+
+<div class="mem4 mem4-6 right">
+<span>阿頼耶</span>
+<p>
+
+     
+    PC2<br>【秘密】<br>　あなたは「菖蒲の洞」について、別の伝承を知っている。その伝承は、あなたの先祖が倒そうとし、果たせなかった強力な妖魔が、「菖蒲の洞」に封印されているというものだ。妖魔は復活の機会を窺っているという。<br>　あなたの【本当の使命】はこの妖魔を見つけだし、倒すことだ。 
+  
+</p>
+</div>
+
+
+
+
+<div class="mem4 mem4-7 right">
+<span>阿頼耶</span>
+<p>
+
+     
+    「この技！かつての祖が貴様に見せたであろう！」 
+  
+</p>
+</div>
+
+
+
+
+<div class="kp LtoR-early">
+
+     
+    [ 菖蒲姫 ] 這剣 : 0 → -1 
+  
+</div>
+
+
+
+
+<div class="kp LtoR-early">
+
+     
+    [ 菖蒲姫 ] 生命力 : 8 → 5 
+  
+</div>
+
+
+
+
+<div class="mem7 left">
+<span>菖蒲姫</span>
+<p>
+
+     
+    鬼火 
+  
+</p>
+</div>
+
+
+
+
+<div class="mem4 mem4-6 right">
+<span>阿頼耶</span>
+<p>
+
+     
+    SG&gt;=6 （判定：砲術） (SG@12#2&gt;=6) ＞ 10[4,6] ＞ 10 ＞ 成功
+  
+</p>
+</div>
+
+
+
+
+<div class="mem4 mem4-6 right">
+<span>阿頼耶</span>
+<p>
+
+     
+    「その無念！ここで果たそうぞ！」 
+  
+</p>
+</div>
+
+
+
+
+<div class="kp LtoR-early">
+
+     
+    [ GM ] ラウンド : 1 → 2 
+  
+</div>
+
+
+
+
+<div class="kp LtoR-early">
+
+     
+    ――ﾄﾞｼｬｱｱｱｱｱｱｱｱ 
+  
+</div>
+
+
+
+
+<div class="kp LtoR-early">
+
+     
+    溢れ出していた水に勢いが増し 
+  
+</div>
+
+
+
+
+<div class="kp LtoR-early">
+
+     
+    戦場が水中になった 
+  
+</div>
+
+
+
+
+<div class="mem3 mem3-6 left">
+<span>剱 琳太郎</span>
+<p>
+
+     
+    「……ごぼ！」 
+  
+</p>
+</div>
+
+
+
+
+<div class="mem3 mem3-6 left">
+<span>剱 琳太郎</span>
+<p>
+
+     
+    「（水中は厄介だな）」 
+  
+</p>
+</div>
+
+
+
+
+<div class="kp LtoR-early">
+
+     
+    プロット 
+  
+</div>
+
+
+
+
+<div class="mem4 mem4-3 right">
+<span>阿頼耶</span>
+<p>
+
+     
+    「ばびろん（フム……琳太郎クン。例の技でなんとかならないか？）」 
+  
+</p>
+</div>
+
+
+
+
+<div class="mem4 mem4-3 right">
+<span>阿頼耶</span>
+<p>
+
+     
+    プロット・0 
+  
+</p>
+</div>
+
+
+
+
+<div class="mem3 mem3-6 left">
+<span>剱 琳太郎</span>
+<p>
+
+     
+    「（うん、期を狙ってやってみよう）」 
+  
+</p>
+</div>
+
+
+
+
+<div class="kp LtoR-early">
+
+     
+    [ 剱 琳太郎 ] がダイスシンボルを公開。出目は 4 です。 
+  
+</div>
+
+
+
+
+<div class="kp LtoR-early">
+
+     
+    [ 菖蒲姫 ] がダイスシンボルを公開。出目は 4 です。 
+  
+</div>
+
+
+
+
+<div class="kp LtoR-early">
+
+     
+    [ 釘打 火花 ] がダイスシンボルを公開。出目は 3 です。 
+  
+</div>
+
+
+
+
+<div class="mem3 mem3-6 left">
+<span>剱 琳太郎</span>
+<p>
+
+     
+    d66 (D66) ＞ 34
+  
+</p>
+</div>
+
+
+
+
+<div class="mem7 left">
+<span>菖蒲姫</span>
+<p>
+
+     
+    D66 (D66) ＞ 46
+  
+</p>
+</div>
+
+
+
+
+<div class="mem7 left">
+<span>菖蒲姫</span>
+<p>
+
+     
+    奥義！ 
+  
+</p>
+</div>
+
+
+
+
+<div class="mem7 left">
+<span>菖蒲姫</span>
+<p>
+
+     
+    ■奥義<br>《妖花薫風》<br>指定特技：衣装術<br>効果　　：範囲攻撃<br>演出　　：香しい花が周囲を切り裂く 
+  
+</p>
+</div>
+
+
+
+
+<div class="mem7 left">
+<span>菖蒲姫</span>
+<p>
+
+     
+    PC二人 
+  
+</p>
+</div>
+
+
+
+
+<div class="mem4 mem4-8 right">
+<span>阿頼耶</span>
+<p>
+
+     
+    奥義！ 
+  
+</p>
+</div>
+
+
+
+
+<div class="mem3 mem3-6 left">
+<span>剱 琳太郎</span>
+<p>
+
+     
+    「ーー！」 
+  
+</p>
+</div>
+
+
+
+
+<div class="mem4 mem4-8 right">
+<span>阿頼耶</span>
+<p>
+
+     
+    どちらも無効 
+  
+</p>
+</div>
+
+
+
+
+<div class="mem7 left">
+<span>菖蒲姫</span>
+<p>
+
+     
+    「ぐぅう」 
+  
+</p>
+</div>
+
+
+
+
+<div class="mem4 mem4-6 right">
+<span>阿頼耶</span>
+<p>
+
+     
+    「――地獄殺・凪！」 
+  
+</p>
+</div>
+
+
+
+
+<div class="mem3 mem3-6 left">
+<span>剱 琳太郎</span>
+<p>
+
+     
+    「（……よく初見であの技を、流石だ）」 
+  
+</p>
+</div>
+
+
+
+
+<div class="mem3 mem3-6 left">
+<span>剱 琳太郎</span>
+<p>
+
+     
+    「剱の呼吸 肆ノ刀――」 
+  
+</p>
+</div>
+
+
+
+
+<div class="mem3 mem3-6 left">
+<span>剱 琳太郎</span>
+<p>
+
+     
+    【刀狩】→背水の指定特技を医術に 
+  
+</p>
+</div>
+
+
+
+
+<div class="mem3 mem3-6 left">
+<span>剱 琳太郎</span>
+<p>
+
+     
+    2D6&gt;=5 （判定：身体操術） (2D6&gt;=5) ＞ 7[1,6] ＞ 7 ＞ 成功
+  
+</p>
+</div>
+
+
+
+
+<div class="mem4 mem4-6 right">
+<span>阿頼耶</span>
+<p>
+
+     
+    感情修正　[琳太郎] → [感情]+ 
+  
+</p>
+</div>
+
+
+
+
+<div class="mem3 mem3-6 left">
+<span>剱 琳太郎</span>
+<p>
+
+     
+    「曲刀、風閂」火花に攻撃 
+  
+</p>
+</div>
+
+
+
+
+<div class="mem3 mem3-6 left">
+<span>剱 琳太郎</span>
+<p>
+
+     
+    2D6&gt;=7-2 （医術の代用判定：罠術） (2D6&gt;=5) ＞ 9[4,5] ＞ 9 ＞ 成功
+  
+</p>
+</div>
+
+
+
+
+<div class="mem8 right">
+<span>釘打 火花</span>
+<p>
+
+     
+    2D6&gt;=10 （判定：盗聴術） (2D6&gt;=10) ＞ 7[1,6] ＞ 7 ＞ 失敗
+  
+</p>
+</div>
+
+
+
+
+<div class="mem8 right">
+<span>釘打 火花</span>
+<p>
+
+     
+    神通丸 
+  
+</p>
+</div>
+
+
+
+
+<div class="kp LtoR-early">
+
+     
+    [ 釘打 火花 ] 忍具 : 1 → 0 
+  
+</div>
+
+
+
+
+<div class="mem8 right">
+<span>釘打 火花</span>
+<p>
+
+     
+    2D6&gt;=10 （判定：盗聴術） (2D6&gt;=10) ＞ 6[1,5] ＞ 6 ＞ 失敗
+  
+</p>
+</div>
+
+
+
+
+<div class="mem3 mem3-6 left">
+<span>剱 琳太郎</span>
+<p>
+
+     
+    回想シーン 
+  
+</p>
+</div>
+
+
+
+
+<div class="mem3 left">
+<span>剱 琳太郎</span>
+<p>
+
+     
+    PC1<br>【秘密】<br>　あなたは異界遺産を回収するという役割を持つ封剣士だ。今まで、いくつもの異界遺産を回収してきた腕利きだ。PC②とは、何度か忍務を共にしたことがある。<br>　皐月湖（さつきこ）の底にある洞窟「菖蒲（あやめ）の洞（ほら）」には、「花切（はなきり）の太刀」という二星の異界遺産があるという。今までの経験からしても、さほど手強い忍務ではないだろう。<br>　あなたの【使命】は「花切の太刀」を回収することだ。 
+  
+</p>
+</div>
+
+
+
+
+<div class="mem3 mem3-6 left">
+<span>剱 琳太郎</span>
+<p>
+
+     
+    「（火花、貴殿とは相いれなかったけれど――こんな最後は君も望んでいないはずだ）」 
+  
+</p>
+</div>
+
+
+
+
+<div class="mem3 mem3-6 left">
+<span>剱 琳太郎</span>
+<p>
+
+     
+    「（私と違ってーー君は純粋な人間なのだから）」 
+  
+</p>
+</div>
+
+
+
+
+<div class="kp LtoR-early">
+
+     
+    ―――― 
+  
+</div>
+
+
+
+
+<div class="kp LtoR-early">
+
+     
+    ーー 
+  
+</div>
+
+
+
+
+<div class="kp LtoR-early">
+
+     
+    カーン……！ 
+  
+</div>
+
+
+
+
+<div class="kp LtoR-early">
+
+     
+    カーン……ッ、カーン……ッ 
+  
+</div>
+
+
+
+
+<div class="mem9 left">
+<span>琳太郎の父</span>
+<p>
+
+     
+    「分かったか、琳太郎」 
+  
+</p>
+</div>
+
+
+
+
+<div class="mem9 left">
+<span>琳太郎の父</span>
+<p>
+
+     
+    「剱の一族は呪われた血筋なのだ」 
+  
+</p>
+</div>
+
+
+
+
+<div class="mem9 left">
+<span>琳太郎の父</span>
+<p>
+
+     
+    「つまり退魔の剣を作る使命を授かりながら、我らの祖は妖魔との間に子を成した」 
+  
+</p>
+</div>
+
+
+
+
+<div class="mem9 left">
+<span>琳太郎の父</span>
+<p>
+
+     
+    「――以来一族では男が生まれれば剱を鍛えることに魂を奪われ、生涯を注ぐことを余儀なくされ」 
+  
+</p>
+</div>
+
+
+
+
+<div class="mem9 left">
+<span>琳太郎の父</span>
+<p>
+
+     
+    「女であれば成人する前に妖魔になって死ぬ運命ーー」 
+  
+</p>
+</div>
+
+
+
+
+<div class="mem10 right">
+<span>幼き琳太郎</span>
+<p>
+
+     
+    「うぁ……ぁああ」 
+  
+</p>
+</div>
+
+
+
+
+<div class="kp LtoR-early">
+
+     
+    琳太郎の頬は火傷でひどく焼け爛れている 
+  
+</div>
+
+
+
+
+<div class="kp LtoR-early">
+
+     
+    父が握っている鍛えている途中の刀身は明々と燃え滾っている 
+  
+</div>
+
+
+
+
+<div class="mem9 left">
+<span>琳太郎の父</span>
+<p>
+
+     
+    「故に淋太郎、お前は男して生きなければならんのだ」 
+  
+</p>
+</div>
+
+
+
+
+<div class="mem9 left">
+<span>琳太郎の父</span>
+<p>
+
+     
+    「女のお前は今、私が殺した。」 
+  
+</p>
+</div>
+
+
+
+
+<div class="mem9 left">
+<span>琳太郎の父</span>
+<p>
+
+     
+    「お前は己の剱に生涯を捧げると誓え――！」 
+  
+</p>
+</div>
+
+
+
+
+<div class="kp LtoR-early">
+
+     
+    ―――― 
+  
+</div>
+
+
+
+
+<div class="kp LtoR-early">
+
+     
+    ーー 
+  
+</div>
+
+
+
+
+<div class="mem3 mem3-6 left">
+<span>剱 琳太郎</span>
+<p>
+
+     
+    ――脳裏に幼き日の記憶が蘇る 
+  
+</p>
+</div>
+
+
+
+
+<div class="mem3 mem3-6 left">
+<span>剱 琳太郎</span>
+<p>
+
+     
+    「人で在れ、生き続けろ。心は鋼でできている――」 
+  
+</p>
+</div>
+
+
+
+
+<div class="mem3 mem3-6 left">
+<span>剱 琳太郎</span>
+<p>
+
+     
+    刀を握る手に力が入る 
+  
+</p>
+</div>
+
+
+
+
+<div class="mem3 mem3-6 left">
+<span>剱 琳太郎</span>
+<p>
+
+     
+    「はぁあああ！！」 
+  
+</p>
+</div>
+
+
+
+
+<div class="mem8 right">
+<span>釘打 火花</span>
+<p>
+
+     
+    「ぐっううううう」 
+  
+</p>
+</div>
+
+
+
+
+<div class="mem8 right">
+<span>釘打 火花</span>
+<p>
+
+     
+    戦闘脱落 
+  
+</p>
+</div>
+
+
+
+
+<div class="kp LtoR-early">
+
+     
+    [ 釘打 火花 ] 生命力 : 5 → 0 
+  
+</div>
+
+
+
+
+<div class="kp LtoR-early">
+
+     
+    魔刃による一撃で意識を失った火花は力なく項垂れ、水上へと浮上していく 
+  
+</div>
+
+
+
+
+<div class="mem4 mem4-6 right">
+<span>阿頼耶</span>
+<p>
+
+     
+    【這剣】　攻撃　特技:《身体操術》　間合:1　コスト:1　効果:接近戦ダメージを１点与える。 戦闘中、目標は回避判定-1。(最大マイナス3)  
+  
+</p>
+</div>
+
+
+
+
+<div class="mem3 mem3-6 left">
+<span>剱 琳太郎</span>
+<p>
+
+     
+    感情修正 
+  
+</p>
+</div>
+
+
+
+
+<div class="mem4 mem4-6 right">
+<span>阿頼耶</span>
+<p>
+
+     
+    SG+1&gt;=5 （判定：身体操術） (SG+1@12#2&gt;=5) ＞ 8[4,4]+1 ＞ 9 ＞ 成功
+  
+</p>
+</div>
+
+
+
+
+<div class="mem7 left">
+<span>菖蒲姫</span>
+<p>
+
+     
+    SG-1&gt;=8 （判定：衣装術） (SG-1@12#2&gt;=8) ＞ 8[2,6]-1 ＞ 7 ＞ 失敗
+  
+</p>
+</div>
+
+
+
+
+<div class="mem7 left">
+<span>菖蒲姫</span>
+<p>
+
+     
+    神通丸よ 
+  
+</p>
+</div>
+
+
+
+
+<div class="mem7 left">
+<span>菖蒲姫</span>
+<p>
+
+     
+    SG-1&gt;=8 （判定：衣装術） (SG-1@12#2&gt;=8) ＞ 7[1,6]-1 ＞ 6 ＞ 失敗
+  
+</p>
+</div>
+
+
+
+
+<div class="kp LtoR-early">
+
+     
+    [ 菖蒲姫 ] 這剣 : -1 → -2 
+  
+</div>
+
+
+
+
+<div class="kp LtoR-early">
+
+     
+    [ 菖蒲姫 ] 生命力 : 5 → 3 
+  
+</div>
+
+
+
+
+<div class="kp LtoR-early">
+
+     
+    [ 菖蒲姫 ] 忍具 : 2 → 1 
+  
+</div>
+
+
+
+
+<div class="mem4 mem4-6 right">
+<span>阿頼耶</span>
+<p>
+
+     
+    【鬼火】 
+  
+</p>
+</div>
+
+
+
+
+<div class="mem4 mem4-6 right">
+<span>阿頼耶</span>
+<p>
+
+     
+    SG&gt;=6 （判定：砲術） (SG@12#2&gt;=6) ＞ 7[2,5] ＞ 7 ＞ 成功
+  
+</p>
+</div>
+
+
+
+
+<div class="kp LtoR-early">
+
+     
+    [ GM ] ラウンド : 2 → 3 
+  
+</div>
+
+
+
+
+<div class="kp LtoR-early">
+
+     
+    プロット 
+  
+</div>
+
+
+
+
+<div class="kp LtoR-early">
+
+     
+    [ 菖蒲姫 ] がダイスシンボルを公開。出目は 2 です。 
+  
+</div>
+
+
+
+
+<div class="kp LtoR-early">
+
+     
+    [ 剱 琳太郎 ] がダイスシンボルを公開。出目は 4 です。 
+  
+</div>
+
+
+
+
+<div class="mem4 mem4-6 right">
+<span>阿頼耶</span>
+<p>
+
+     
+    プロット0 
+  
+</p>
+</div>
+
+
+
+
+<div class="mem4 mem4-6 right">
+<span>阿頼耶</span>
+<p>
+
+     
+    「今だ！琳太郎クン！」 
+  
+</p>
+</div>
+
+
+
+
+<div class="mem3 mem3-9 left">
+<span>剱 琳太郎</span>
+<p>
+
+     
+    「剱の呼吸 参ノ刀――」 
+  
+</p>
+</div>
+
+
+
+
+<div class="mem3 mem3-9 left">
+<span>剱 琳太郎</span>
+<p>
+
+     
+    【刀狩】 
+  
+</p>
+</div>
+
+
+
+
+<div class="mem3 mem3-9 left">
+<span>剱 琳太郎</span>
+<p>
+
+     
+    2D6&gt;=5 （判定：身体操術） (2D6&gt;=5) ＞ 4[1,3] ＞ 4 ＞ 失敗
+  
+</p>
+</div>
+
+
+
+
+<div class="kp LtoR-early">
+
+     
+    [ 阿頼耶 ] 地獄札 : 3 → 2 
+  
+</div>
+
+
+
+
+<div class="mem4 mem4-6 right">
+<span>阿頼耶</span>
+<p>
+
+     
+    振り直し 
+  
+</p>
+</div>
+
+
+
+
+<div class="mem3 mem3-9 left">
+<span>剱 琳太郎</span>
+<p>
+
+     
+    「！」 
+  
+</p>
+</div>
+
+
+
+
+<div class="mem4 mem4-6 right">
+<span>阿頼耶</span>
+<p>
+
+     
+    「地獄札・再転！」 
+  
+</p>
+</div>
+
+
+
+
+<div class="mem3 mem3-9 left">
+<span>剱 琳太郎</span>
+<p>
+
+     
+    2D6&gt;=5 （判定：身体操術） (2D6&gt;=5) ＞ 8[4,4] ＞ 8 ＞ 成功
+  
+</p>
+</div>
+
+
+
+
+<div class="mem3 mem3-9 left">
+<span>剱 琳太郎</span>
+<p>
+
+     
+    背水の指定特技を刀術に変更 
+  
+</p>
+</div>
+
+
+
+
+<div class="mem4 mem4-6 right">
+<span>阿頼耶</span>
+<p>
+
+     
+    感情修正　[琳太郎] → [感情]+ 
+  
+</p>
+</div>
+
+
+
+
+<div class="mem3 mem3-9 left">
+<span>剱 琳太郎</span>
+<p>
+
+     
+    【背水】→菖蒲姫 
+  
+</p>
+</div>
+
+
+
+
+<div class="mem3 mem3-9 left">
+<span>剱 琳太郎</span>
+<p>
+
+     
+    「剱の呼吸 参ノ刀――」 
+  
+</p>
+</div>
+
+
+
+
+<div class="mem3 mem3-9 left">
+<span>剱 琳太郎</span>
+<p>
+
+     
+    「華裂きの太刀！」 
+  
+</p>
+</div>
+
+
+
+
+<div class="mem3 mem3-9 left">
+<span>剱 琳太郎</span>
+<p>
+
+     
+    2D6&gt;=7 （判定：飛術、指定特技：刀術） (2D6&gt;=7) ＞ 7[1,6] ＞ 7 ＞ 成功
+  
+</p>
+</div>
+
+
+
+
+<div class="mem7 left">
+<span>菖蒲姫</span>
+<p>
+
+     
+    SG-1&gt;=11 （判定：九ノ一の術） (SG-1@12#2&gt;=11) ＞ 12[6,6]-1 ＞ 11 ＞ スペシャル(【生命力】1点か変調一つを回復)
+  
+</p>
+</div>
+
+
+
+
+<div class="mem3 mem3-9 left">
+<span>剱 琳太郎</span>
+<p>
+
+     
+    「！？」 
+  
+</p>
+</div>
+
+
+
+
+<div class="kp LtoR-early">
+
+     
+    [ 阿頼耶 ] 遁甲符 : 1 → 0 
+  
+</div>
+
+
+
+
+<div class="mem4 mem4-6 right">
+<span>阿頼耶</span>
+<p>
+
+     
+    「それはどうかな？」 
+  
+</p>
+</div>
+
+
+
+
+<div class="mem7 left">
+<span>菖蒲姫</span>
+<p>
+
+     
+    SG-1&gt;=11 （判定：九ノ一の術） (SG-1@12#2&gt;=11) ＞ 2[1,1]-1 ＞ 1 ＞ ファンブル
+  
+</p>
+</div>
+
+
+
+
+<div class="mem4 mem4-6 right">
+<span>阿頼耶</span>
+<p>
+
+     
+    「見えたぞ――その傷だ！」 
+  
+</p>
+</div>
+
+
+
+
+<div class="mem3 mem3-9 left">
+<span>剱 琳太郎</span>
+<p>
+
+     
+    「はぁア――！」 
+  
+</p>
+</div>
+
+
+
+
+<div class="mem7 left">
+<span>菖蒲姫</span>
+<p>
+
+     
+    「ぐぅうううううう」 
+  
+</p>
+</div>
+
+
+
+
+<div class="kp LtoR-early">
+
+     
+    [ 菖蒲姫 ] 生命力 : 3 → 0 
+  
+</div>
+
+
+
+
+<div class="mem7 left">
+<span>菖蒲姫</span>
+<p>
+
+     
+    奥義！ 
+  
+</p>
+</div>
+
+
+
+
+<div class="mem7 left">
+<span>菖蒲姫</span>
+<p>
+
+     
+    《血華転生》<br>指定特技：異形化<br>効果　　：不死身<br>演出　　：赤い花の中から蘇る 
+  
+</p>
+</div>
+
+
+
+
+<div class="mem7 left">
+<span>菖蒲姫</span>
+<p>
+
+     
+    1D6 (1D6) ＞ 4
+  
+</p>
+</div>
+
+
+
+
+<div class="kp LtoR-early">
+
+     
+    [ 菖蒲姫 ] 生命力 : 0 → 3 
+  
+</div>
+
+
+
+
+<div class="mem3 mem3-9 left">
+<span>剱 琳太郎</span>
+<p>
+
+     
+    「！」 
+  
+</p>
+</div>
+
+
+
+
+<div class="mem7 left">
+<span>菖蒲姫</span>
+<p>
+
+     
+    「まだだ…」 
+  
+</p>
+</div>
+
+
+
+
+<div class="mem7 left">
+<span>菖蒲姫</span>
+<p>
+
+     
+    「わらわはまだ倒れるかぁ！」 
+  
+</p>
+</div>
+
+
+
+
+<div class="mem3 mem3-9 left">
+<span>剱 琳太郎</span>
+<p>
+
+     
+    「首を落とさなければ駄目か、しかし確かに応えてるとみえる」 
+  
+</p>
+</div>
+
+
+
+
+<div class="mem7 left">
+<span>菖蒲姫</span>
+<p>
+
+     
+    奥義！ 
+  
+</p>
+</div>
+
+
+
+
+<div class="mem7 left">
+<span>菖蒲姫</span>
+<p>
+
+     
+    ■奥義<br>《妖花薫風》<br>指定特技：衣装術<br>効果　　：範囲攻撃<br>演出　　：香しい花が周囲を切り裂く 
+  
+</p>
+</div>
+
+
+
+
+<div class="mem4 mem4-6 right">
+<span>阿頼耶</span>
+<p>
+
+     
+    奥義破り 
+  
+</p>
+</div>
+
+
+
+
+<div class="mem3 mem3-9 left">
+<span>剱 琳太郎</span>
+<p>
+
+     
+    奥義破り 
+  
+</p>
+</div>
+
+
+
+
+<div class="mem3 mem3-9 left">
+<span>剱 琳太郎</span>
+<p>
+
+     
+    2D6&gt;=7-2 （判定：身体操術、指定特技：衣装術） (2D6&gt;=5) ＞ 10[4,6] ＞ 10 ＞ 成功
+  
+</p>
+</div>
+
+
+
+
+<div class="mem4 mem4-6 right">
+<span>阿頼耶</span>
+<p>
+
+     
+    SG&gt;=7 （判定：身体操術） (SG@12#2&gt;=7) ＞ 5[1,4] ＞ 5 ＞ 失敗
+  
+</p>
+</div>
+
+
+
+
+<div class="mem7 left">
+<span>菖蒲姫</span>
+<p>
+
+     
+    「ぐぬぬぬぬ」 
+  
+</p>
+</div>
+
+
+
+
+<div class="mem4 mem4-6 right">
+<span>阿頼耶</span>
+<p>
+
+     
+    何もしない 
+  
+</p>
+</div>
+
+
+
+
+<div class="kp LtoR-early">
+
+     
+    [ GM ] ラウンド : 3 → 4 
+  
+</div>
+
+
+
+
+<div class="mem1 left">
+<span>GM</span>
+<p>
+
+     
+    プロット 
+  
+</p>
+</div>
+
+
+
+
+<div class="mem4 mem4-6 right">
+<span>阿頼耶</span>
+<p>
+
+     
+    プロット0 
+  
+</p>
+</div>
+
+
+
+
+<div class="kp LtoR-early">
+
+     
+    [ 菖蒲姫 ] がダイスシンボルを公開。出目は 2 です。 
+  
+</div>
+
+
+
+
+<div class="kp LtoR-early">
+
+     
+    [ 剱 琳太郎 ] がダイスシンボルを公開。出目は 4 です。 
+  
+</div>
+
+
+
+
+<div class="mem3 mem3-9 left">
+<span>剱 琳太郎</span>
+<p>
+
+     
+    【背水】→菖蒲姫 
+  
+</p>
+</div>
+
+
+
+
+<div class="mem4 mem4-6 right">
+<span>阿頼耶</span>
+<p>
+
+     
+    感情修正　[琳太郎] → [感情]+ 
+  
+</p>
+</div>
+
+
+
+
+<div class="mem3 mem3-9 left">
+<span>剱 琳太郎</span>
+<p>
+
+     
+    2D6&gt;=7-2 （判定：飛術、指定特技：刀術） (2D6&gt;=5) ＞ 8[3,5] ＞ 8 ＞ 成功
+  
+</p>
+</div>
+
+
+
+
+<div class="mem3 mem3-9 left">
+<span>剱 琳太郎</span>
+<p>
+
+     
+    「此処だ！」 
+  
+</p>
+</div>
+
+
+
+
+<div class="mem7 left">
+<span>菖蒲姫</span>
+<p>
+
+     
+    SG-1&gt;=11 （判定：九ノ一の術） (SG-1@12#2&gt;=11) ＞ 10[5,5]-1 ＞ 9 ＞ 失敗
+  
+</p>
+</div>
+
+
+
+
+<div class="kp LtoR-early">
+
+     
+    [ 菖蒲姫 ] 生命力 : 3 → 0 
+  
+</div>
+
+
+
+
+<div class="mem7 left">
+<span>菖蒲姫</span>
+<p>
+
+     
+    「ぐぬぬぬぬ」 
+  
+</p>
+</div>
+
+
+
+
+<div class="mem7 left">
+<span>菖蒲姫</span>
+<p>
+
+     
+    奥義！ 
+  
+</p>
+</div>
+
+
+
+
+<div class="mem7 left">
+<span>菖蒲姫</span>
+<p>
+
+     
+    《血華転生》<br>指定特技：異形化<br>効果　　：不死身<br>演出　　：赤い花の中から蘇る 
+  
+</p>
+</div>
+
+
+
+
+<div class="mem4 mem4-6 right">
+<span>阿頼耶</span>
+<p>
+
+     
+    奥義破り 
+  
+</p>
+</div>
+
+
+
+
+<div class="mem3 mem3-9 left">
+<span>剱 琳太郎</span>
+<p>
+
+     
+    感情修正 
+  
+</p>
+</div>
+
+
+
+
+<div class="mem3 mem3-9 left">
+<span>剱 琳太郎</span>
+<p>
+
+     
+    奥義破り 
+  
+</p>
+</div>
+
+
+
+
+<div class="mem4 mem4-6 right">
+<span>阿頼耶</span>
+<p>
+
+     
+    SG+1&gt;=5 （判定：異形化） (SG+1@12#2&gt;=5) ＞ 9[4,5]+1 ＞ 10 ＞ 成功
+  
+</p>
+</div>
+
+
+
+
+<div class="mem3 mem3-9 left">
+<span>剱 琳太郎</span>
+<p>
+
+     
+    2D6&gt;=8 （判定：結界術、指定特技：異形化） (2D6&gt;=8) ＞ 11[5,6] ＞ 11 ＞ 成功
+  
+</p>
+</div>
+
+
+
+
+<div class="mem7 left">
+<span>菖蒲姫</span>
+<p>
+
+     
+    「一つ言っておくがなぁ！！」 
+  
+</p>
+</div>
+
+
+
+
+<div class="mem7 left">
+<span>菖蒲姫</span>
+<p>
+
+     
+    「お前の祖先とは変な関係になったわけないわ！！」 
+  
+</p>
+</div>
+
+
+
+
+<div class="mem7 left">
+<span>菖蒲姫</span>
+<p>
+
+     
+    「勝手な妄想にわらわは巻き込むなぁ！！」 
+  
+</p>
+</div>
+
+
+
+
+<div class="mem7 left">
+<span>菖蒲姫</span>
+<p>
+
+     
+    「わらわを閉じ込めたのが、そのような戯けどもとは……」 
+  
+</p>
+</div>
+
+
+
+
+<div class="mem7 left">
+<span>菖蒲姫</span>
+<p>
+
+     
+    「おもわなんだ」 
+  
+</p>
+</div>
+
+
+
+
+<div class="mem7 left">
+<span>菖蒲姫</span>
+<p>
+
+     
+    戦闘脱落です 
+  
+</p>
+</div>
+
+
+
+
+<div class="mem3 mem3-9 left">
+<span>剱 琳太郎</span>
+<p>
+
+     
+    「剱の呼吸 始ノ刀――花切りの太刀！」 
+  
+</p>
+</div>
+
+
+
+
+<div class="mem4 mem4-6 right">
+<span>阿頼耶</span>
+<p>
+
+     
+    「何故偽る？貴様が犯した罪は覚えているぞ」 
+  
+</p>
+</div>
+
+
+
+
+<div class="mem7 left">
+<span>菖蒲姫</span>
+<p>
+
+     
+    「（ちょっと、国を滅ぼそうとしただけだわ）」 
+  
+</p>
+</div>
+
+
+
+
+<div class="mem4 mem4-7 right">
+<span>阿頼耶</span>
+<p>
+
+     
+    「いずれの罪も――地獄の底で悔い改めよ！」 
+  
+</p>
+</div>
+
+
+
+
+<div class="kp LtoR-early">
+
+     
+    戦闘終了 
+  
+</div>
+
+
+
+
+<div class="kp LtoR-early">
+
+     
+    では、崩落する中…湖底洞窟から脱出する 
+  
+</div>
+
+
+
+
+<div class="kp LtoR-early">
+
+     
+    泳ぐ 
+  
+</div>
+
+
+
+
+<div class="kp LtoR-early">
+
+     
+    泳ぐ 
+  
+</div>
+
+
+
+
+<div class="kp LtoR-early">
+
+     
+    泳ぐ 
+  
+</div>
+
+
+
+
+
+</div></div>
+
+<div class="bg-sp">
+    <div class="bg-over"><div class="bg-inner bg5"></div></div>
+<div class="log">
+
+<div class="kp LtoR-early">
+
+     
+    PCたちが湖から出ると、今まさに登ろうとしている朝日が美しく湖面を照らし出します。 
+  
+</div>
+
+
+
+
+<div class="mem4 mem4-2 right">
+<span>阿頼耶</span>
+<p>
+
+     
+    「うぉ、まぶし」 
+  
+</p>
+</div>
+
+
+
+
+<div class="mem3 left">
+<span>剱 琳太郎</span>
+<p>
+
+     
+    「ぶはぁ……」 
+  
+</p>
+</div>
+
+
+
+
+<div class="kp LtoR-early">
+
+     
+    では、湖から出てきた貴方たちの背後から声がする 
+  
+</div>
+
+
+
+
+<div class="mem6 right">
+<span>刀鍛冶</span>
+<p>
+
+     
+    「我が子孫よ、ありがとう」 
+  
+</p>
+</div>
+
+
+
+
+<div class="kp LtoR-early">
+
+     
+    湖面にキラキラと輝くものが現れ、一際眩い光を放った後に消えていきます。 
+  
+</div>
+
+
+
+
+<div class="mem3 left">
+<span>剱 琳太郎</span>
+<p>
+
+     
+    「――！」 
+  
+</p>
+</div>
+
+
+
+
+<div class="mem3 left">
+<span>剱 琳太郎</span>
+<p>
+
+     
+    「役目は果たせただろうか……」 
+  
+</p>
+</div>
+
+
+
+
+<div class="kp LtoR-early">
+
+     
+    その少し先で火花が自力で洞窟から出てきた姿が見える 
+  
+</div>
+
+
+
+
+<div class="mem4 mem4-2 right">
+<span>阿頼耶</span>
+<p>
+
+     
+    「どうやら祖達の憂いも晴れたようだな」 
+  
+</p>
+</div>
+
+
+
+
+<div class="mem3 left">
+<span>剱 琳太郎</span>
+<p>
+
+     
+    「うん！」 
+  
+</p>
+</div>
+
+
+
+
+<div class="mem4 mem-1 right">
+<span>阿頼耶</span>
+<p>
+
+     
+    「火花殿も無事だ。さすがの腕前といったところか」 
+  
+</p>
+</div>
+
+
+
+
+<div class="mem8 right">
+<span>釘打 火花</span>
+<p>
+
+     
+    「（なんかいい雰囲気だしちゃって～。礼でもって思ったが、やんな）」 
+  
+</p>
+</div>
+
+
+
+
+<div class="mem8 right">
+<span>釘打 火花</span>
+<p>
+
+     
+    「あ、お。おう。……その、さんきゅーな」 
+  
+</p>
+</div>
+
+
+
+
+<div class="mem8 right">
+<span>釘打 火花</span>
+<p>
+
+     
+    「今回は完全にこっちのミスだ。この借りはちゃんと返すわ」 
+  
+</p>
+</div>
+
+
+
+
+<div class="mem3 left">
+<span>剱 琳太郎</span>
+<p>
+
+     
+    「貸した！」 
+  
+</p>
+</div>
+
+
+
+
+<div class="mem8 right">
+<span>釘打 火花</span>
+<p>
+
+     
+    「だから、返す前に誰かにやられるんじゃねーぞ」 
+  
+</p>
+</div>
+
+
+
+
+<div class="mem4 right">
+<span>阿頼耶</span>
+<p>
+
+     
+    「そちらこそ。次は危険をよく確かめてから死地に踏み入ることだねぇ」 
+  
+</p>
+</div>
+
+
+
+
+<div class="mem4 mem4-1 right">
+<span>阿頼耶</span>
+<p>
+
+     
+    「達者でなぁ～」 
+  
+</p>
+</div>
+
+
+
+
+<div class="mem8 right">
+<span>釘打 火花</span>
+<p>
+
+     
+    「いやぁ。今回は俺の血筋の問題もあるってか、～～～って」 
+  
+</p>
+</div>
+
+
+
+
+<div class="mem8 right">
+<span>釘打 火花</span>
+<p>
+
+     
+    「しゃーね、帰るか」 
+  
+</p>
+</div>
+
+
+
+
+<div class="mem4 right">
+<span>阿頼耶</span>
+<p>
+
+     
+    「……さて、これにて一件落着といった次第か」 
+  
+</p>
+</div>
+
+
+
+
+<div class="mem3 left">
+<span>剱 琳太郎</span>
+<p>
+
+     
+    「――」 
+  
+</p>
+</div>
+
+
+
+
+<div class="mem3 left">
+<span>剱 琳太郎</span>
+<p>
+
+     
+    「ウッ」 
+  
+</p>
+</div>
+
+
+
+
+<div class="mem3 left">
+<span>剱 琳太郎</span>
+<p>
+
+     
+    「ウワァアアーーーーッ！」 
+  
+</p>
+</div>
+
+
+
+
+<div class="mem4 right">
+<span>阿頼耶</span>
+<p>
+
+     
+    「！……」 
+  
+</p>
+</div>
+
+
+
+
+<div class="mem3 left">
+<span>剱 琳太郎</span>
+<p>
+
+     
+    突如、琳太郎の身体から妖魔の瘴気が漏れ出す 
+  
+</p>
+</div>
+
+
+
+
+<div class="mem4 right">
+<span>阿頼耶</span>
+<p>
+
+     
+    功績点：1+1+1+0+1+3+1=8点 
+  
+</p>
+</div>
+
+
+
+
+<div class="mem3 left">
+<span>剱 琳太郎</span>
+<p>
+
+     
+   功績点： ９点 
+  
+</p>
+</div>
+
+
+
+
+<div class="mem3 left">
+<span>剱 琳太郎</span>
+<p>
+
+     
+    制御判定 
+  
+</p>
+</div>
+
+
+
+
+<div class="mem3 left">
+<span>剱 琳太郎</span>
+<p>
+
+     
+    RTT6 妖術分野ランダム特技表(4) ＞ 『妖術』死霊術
+  
+</p>
+</div>
+
+
+
+
+<div class="mem3 left">
+<span>剱 琳太郎</span>
+<p>
+
+     
+    功績を-5消費して判定 
+  
+</p>
+</div>
+
+
+
+
+<div class="mem3 left">
+<span>剱 琳太郎</span>
+<p>
+
+     
+    2D6&gt;=5 （判定：千里眼の術） (2D6&gt;=5) ＞ 10[4,6] ＞ 10 ＞ 成功
+  
+</p>
+</div>
+
+
+
+
+<div class="mem3 left">
+<span>剱 琳太郎</span>
+<p>
+
+     
+    「アァーーッ」 
+  
+</p>
+</div>
+
+
+
+
+<div class="mem4 right">
+<span>阿頼耶</span>
+<p>
+
+     
+    「――れ！」 
+  
+</p>
+</div>
+
+
+
+
+<div class="mem3 left">
+<span>剱 琳太郎</span>
+<p>
+
+     
+    「血がッ」 
+  
+</p>
+</div>
+
+
+
+
+<div class="mem3 left">
+<span>剱 琳太郎</span>
+<p>
+
+     
+    「（駄目なのか！私は――）」 
+  
+</p>
+</div>
+
+
+
+
+<div class="mem4 right">
+<span>阿頼耶</span>
+<p>
+
+     
+    「頑張れ！琳太郎！頑張れ！君は今までよくやってきた！君はできるやつだ！」 
+  
+</p>
+</div>
+
+
+
+
+<div class="mem4 right">
+<span>阿頼耶</span>
+<p>
+
+     
+    「そして今日も！これからも！」 
+  
+</p>
+</div>
+
+
+
+
+<div class="mem3 left">
+<span>剱 琳太郎</span>
+<p>
+
+     
+    「アラヤ……ッ」 
+  
+</p>
+</div>
+
+
+
+
+<div class="mem3 left">
+<span>剱 琳太郎</span>
+<p>
+
+     
+    「（負けたくない――！）」 
+  
+</p>
+</div>
+
+
+
+
+<div class="mem4 right">
+<span>阿頼耶</span>
+<p>
+
+     
+    「君が妖魔に堕ちることは絶対にない！」 
+  
+</p>
+</div>
+
+
+
+
+<div class="mem3 left">
+<span>剱 琳太郎</span>
+<p>
+
+     
+    瘴気が身体から霧散していく 
+  
+</p>
+</div>
+
+
+
+
+<div class="mem3 left">
+<span>剱 琳太郎</span>
+<p>
+
+     
+    「ハァ……ッ」 
+  
+</p>
+</div>
+
+
+
+
+<div class="mem4 right">
+<span>阿頼耶</span>
+<p>
+
+     
+    「琳太郎クン……！」 
+  
+</p>
+</div>
+
+
+
+
+<div class="mem3 left">
+<span>剱 琳太郎</span>
+<p>
+
+     
+    「アラヤ……殿……」 
+  
+</p>
+</div>
+
+
+
+
+<div class="mem4 mem4-1 right">
+<span>阿頼耶</span>
+<p>
+
+     
+    「……どうやら打ち勝ったようだね。信じていたよ」 
+  
+</p>
+</div>
+
+
+
+
+<div class="mem3 left">
+<span>剱 琳太郎</span>
+<p>
+
+     
+    「ハァ……ハァ……憑き物が、落ちたみたいだ」 
+  
+</p>
+</div>
+
+
+
+
+<div class="mem4 right">
+<span>阿頼耶</span>
+<p>
+
+     
+    「そうか……それはめでたい」 
+  
+</p>
+</div>
+
+
+
+
+<div class="mem3 left">
+<span>剱 琳太郎</span>
+<p>
+
+     
+    「ありがとう、アラヤ殿、貴殿がいなければ私は……」 
+  
+</p>
+</div>
+
+
+
+
+<div class="mem4 right">
+<span>阿頼耶</span>
+<p>
+
+     
+    「なに、小生はただ傍にあっただけのこと」 
+  
+</p>
+</div>
+
+
+
+
+<div class="mem3 left">
+<span>剱 琳太郎</span>
+<p>
+
+     
+    「（それがどれだけの助けになるか、貴方は知るまい）」 
+  
+</p>
+</div>
+
+
+
+
+<div class="mem4 mem4-1 right">
+<span>阿頼耶</span>
+<p>
+
+     
+    「それに――琳太郎クンが打ち勝つのはわかっていたことだ」 
+  
+</p>
+</div>
+
+
+
+
+<div class="mem3 left">
+<span>剱 琳太郎</span>
+<p>
+
+     
+    「はは」 
+  
+</p>
+</div>
+
+
+
+
+<div class="mem3 left">
+<span>剱 琳太郎</span>
+<p>
+
+     
+    「？」 
+  
+</p>
+</div>
+
+
+
+
+<div class="mem4 right">
+<span>阿頼耶</span>
+<p>
+
+     
+    「忘れたのかい？小生と共に居れば調子がいいと言っていたじゃないか」 
+  
+</p>
+</div>
+
+
+
+
+<div class="mem3 left">
+<span>剱 琳太郎</span>
+<p>
+
+     
+    「それは――」 
+  
+</p>
+</div>
+
+
+
+
+<div class="mem3 left">
+<span>剱 琳太郎</span>
+<p>
+
+     
+    「そうだけど」 
+  
+</p>
+</div>
+
+
+
+
+<div class="mem4 right">
+<span>阿頼耶</span>
+<p>
+
+     
+    「故にこれは必然なのだ……我らは今日、先祖代々より続く因縁に終止符を打ち、新たな一歩を踏み出す」 
+  
+</p>
+</div>
+
+
+
+
+<div class="mem3 left">
+<span>剱 琳太郎</span>
+<p>
+
+     
+    「うん……！」 
+  
+</p>
+</div>
+
+
+
+
+<div class="mem4 right">
+<span>阿頼耶</span>
+<p>
+
+     
+    「あらたなる門出だ！そんな日に不幸など起こるはずもない！」 
+  
+</p>
+</div>
+
+
+
+
+<div class="mem3 left">
+<span>剱 琳太郎</span>
+<p>
+
+     
+    「じゃあ、これからもよろしく――」 
+  
+</p>
+</div>
+
+
+
+
+<div class="mem4 mem4-1 right">
+<span>阿頼耶</span>
+<p>
+
+     
+    「”次の忍務”でも！また共になることを願っているよ！琳太郎クン！」 
+  
+</p>
+</div>
+
+
+
+
+<div class="mem3 left">
+<span>剱 琳太郎</span>
+<p>
+
+     
+    「あぇ！」 
+  
+</p>
+</div>
+
+
+
+
+<div class="mem4 mem4-1 right">
+<span>阿頼耶</span>
+<p>
+
+     
+    「では、達者でな！」 
+  
+</p>
+</div>
+
+
+
+
+<div class="mem3 left">
+<span>剱 琳太郎</span>
+<p>
+
+     
+    「（いつでも一緒にいればいいみたいなこといってた癖に！）」 
+  
+</p>
+</div>
+
+
+
+
+<div class="kp LtoR-early">
+
+     
+    相棒の安否を確認した男は、再会を願いながら去っていく 
+  
+</div>
+
+
+
+
+<div class="kp LtoR-early">
+
+     
+    こうして、一つの物語が終わり…別の物語へと続くのであった 
+  
+</div>
+
+
+
+
+<div class="kp LtoR-early">
+
+     
+    END 
+  
+</div>
+</div>
+
+</div></div>
+
+<div class="bg-sp">
+    <div class="bg-over"><div class="bg-inner bg6"></div></div>
+<div class="log">
+
+
+
+<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+</div></div>
+<script src="../logCon_Respon.js"></script>
+</body></html>
