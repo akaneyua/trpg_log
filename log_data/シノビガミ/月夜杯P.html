@@ -1,0 +1,6780 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<title>log</title>
+<meta http-equiv="content-type" charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+<link rel="stylesheet" href="../logCon_Respon.css">
+<style>
+     /* main css */
+    .bg-inner.bg1{background:url('./月夜杯P/背景：月夜.png') no-repeat center/cover;}
+    .bg-inner.bg2{background:url('./月夜杯P/背景：中庭.png') no-repeat center/cover;}
+    .bg-inner.bg3{background:url('./月夜杯P/背景：洋館前.png') no-repeat center/cover;}
+    .bg-inner.bg4{background:url('./月夜杯P/背景_シノビ_舞踏会の会場_モブなし.jpg') no-repeat center/cover;}
+    .bg-inner.bg5{background:url('./月夜杯P/背景_シノビガミ_洋館の廊下と階段.jpg') no-repeat center/cover;}
+    .bg-inner.bg6{background:url('./月夜杯P/背景：カフェテリア.png') no-repeat center/cover;}
+    .bg-inner.bg7{background:url('./月夜杯P/背景：教室.png') no-repeat center/cover;}
+    .bg-inner.bg8{background:url('./月夜杯P/夜の中庭.png') no-repeat center/cover;}
+    
+    /* member */
+    .mem1 p{border:2px solid rgb(136, 136, 136);box-shadow:5px 5px 0 rgb(136, 136, 136);}
+.mem1 p:after{border-right-color:rgb(136, 136, 136);}
+.mem1 span{background:rgb(136, 136, 136);color:#fff;}
+.mem1:before{content:'';background-image:url('./月夜杯P/GM.png');background-size:contain;background-repeat:no-repeat;background-position:center center;width:90px;height:90px;}
+.mem2 p{border:2px solid rgb(136, 136, 136);box-shadow:5px 5px 0 rgb(136, 136, 136);}
+.mem2 p:after{border-left-color:rgb(136, 136, 136);}
+.mem2 span{background:rgb(136, 136, 136);color:#fff;}
+.mem2:before{content:'';background-image:url('2.png');background-size:contain;background-repeat:no-repeat;background-position:center center;width:90px;height:90px;}
+.mem3 p{border:2px solid rgb(226, 66, 31);box-shadow:5px 5px 0 rgb(226, 66, 31);}
+.mem3 p:after{border-right-color:rgb(226, 66, 31);}
+.mem3 span{background:rgb(226, 66, 31);color:#ffffff;}
+.mem3:before{content:'';background-image:url('./月夜杯P/下野\ 椛1-1.png');background-size:contain;background-repeat:no-repeat;background-position:center center;width:90px;height:90px;}
+.mem3-1:before{content:'';background-image:url('./月夜杯P/下野\ 椛1.png');background-size:contain;background-repeat:no-repeat;background-position:center center;width:90px;height:90px;}
+.mem3-2:before{content:'';background-image:url('./月夜杯P/下野\ 椛2-2.png');background-size:contain;background-repeat:no-repeat;background-position:center center;width:90px;height:90px;}
+.mem3-3:before{content:'';background-image:url('./月夜杯P/下野\ 椛2.png');background-size:contain;background-repeat:no-repeat;background-position:center center;width:90px;height:90px;}
+.mem4 p{border:2px solid rgb(33, 150, 243);box-shadow:5px 5px 0 rgb(33, 150, 243);}
+.mem4 p:after{border-left-color:rgb(33, 150, 243);}
+.mem4 span{background:rgb(33, 150, 243);color:#000;}
+.mem4:before{content:'';background-image:url('./月夜杯P/前川\ 和輔1-1.png');background-size:contain;background-repeat:no-repeat;background-position:center center;width:90px;height:90px;}
+.mem4-1:before{content:'';background-image:url('./月夜杯P/前川\ 和輔1-2.png');background-size:contain;background-repeat:no-repeat;background-position:center center;width:90px;height:90px;}
+.mem4-2:before{content:'';background-image:url('./月夜杯P/前川\ 和輔1-4.png');background-size:contain;background-repeat:no-repeat;background-position:center center;width:90px;height:90px;}
+.mem4-3:before{content:'';background-image:url('./月夜杯P/前川\ 和輔1-3.png');background-size:contain;background-repeat:no-repeat;background-position:center center;width:90px;height:90px;}
+.mem4-4:before{content:'';background-image:url('./月夜杯P/前川\ 和輔2-2.png');background-size:contain;background-repeat:no-repeat;background-position:center center;width:90px;height:90px;}
+.mem4-5:before{content:'';background-image:url('./月夜杯P/前川\ 和輔2.png');background-size:contain;background-repeat:no-repeat;background-position:center center;width:90px;height:90px;}
+.mem4-6:before{content:'';background-image:url('./月夜杯P/前川\ 和輔1.png');background-size:contain;background-repeat:no-repeat;background-position:center center;width:90px;height:90px;}
+.mem5 p{border:2px solid rgb(103, 58, 183);box-shadow:5px 5px 0 rgb(103, 58, 183);}
+.mem5 p:after{border-right-color:rgb(103, 58, 183);}
+.mem5 span{background:rgb(103, 58, 183);color:#fff;}
+.mem5:before{content:'';background-image:url('./月夜杯P/メイコ1-1.png');background-size:contain;background-repeat:no-repeat;background-position:center center;width:90px;height:90px;}
+.mem5-1:before{content:'';background-image:url('./月夜杯P/メイコ1.png');background-size:contain;background-repeat:no-repeat;background-position:center center;width:90px;height:90px;}
+.mem5-2:before{content:'';background-image:url('./月夜杯P/メイコ2-2.png');background-size:contain;background-repeat:no-repeat;background-position:center center;width:90px;height:90px;}
+.mem5-3:before{content:'';background-image:url('./月夜杯P/メイコ2.png');background-size:contain;background-repeat:no-repeat;background-position:center center;width:90px;height:90px;}
+.mem6 p{border:2px solid rgb(224, 224, 224);box-shadow:5px 5px 0 rgb(224, 224, 224);}
+.mem6 p:after{border-left-color:rgb(224, 224, 224);}
+.mem6 span{background:rgb(224, 224, 224);color:#000;}
+.mem6:before{content:'';background-image:url('./月夜杯P/イチズ1-1.png');background-size:contain;background-repeat:no-repeat;background-position:center center;width:90px;height:90px;}
+.mem6-1:before{content:'';background-image:url('./月夜杯P/イチズ1.png');background-size:contain;background-repeat:no-repeat;background-position:center center;width:90px;height:90px;}
+.mem6-2:before{content:'';background-image:url('./月夜杯P/イチズ2-2.png');background-size:contain;background-repeat:no-repeat;background-position:center center;width:90px;height:90px;}
+.mem6-3:before{content:'';background-image:url('./月夜杯P/イチズ2.png');background-size:contain;background-repeat:no-repeat;background-position:center center;width:90px;height:90px;}
+.mem7 p{border:2px solid rgb(241, 182, 94);box-shadow:5px 5px 0 rgb(241, 182, 94);}
+.mem7 p:after{border-right-color:rgb(241, 182, 94);}
+.mem7 span{background:rgb(241, 182, 94);color:#000;}
+.mem7:before{content:'';background-image:url('./月夜杯P/オウジ1-1.png');background-size:contain;background-repeat:no-repeat;background-position:center center;width:90px;height:90px;}
+.mem7-1:before{content:'';background-image:url('./月夜杯P/オウジ1.png');background-size:contain;background-repeat:no-repeat;background-position:center center;width:90px;height:90px;}
+.mem8 p{border:2px solid rgb(136, 136, 136);box-shadow:5px 5px 0 rgb(136, 136, 136);}
+.mem8 p:after{border-left-color:rgb(136, 136, 136);}
+.mem8 span{background:rgb(136, 136, 136);color:#fff;}
+.mem8:before{content:'';background-image:url('8.png');background-size:contain;background-repeat:no-repeat;background-position:center center;width:90px;height:90px;}
+.mem9 p{border:2px solid rgb(96, 125, 139);box-shadow:5px 5px 0 rgb(96, 125, 139);}
+.mem9 p:after{border-right-color:rgb(96, 125, 139);}
+.mem9 span{background:rgb(96, 125, 139);color:#fff;}
+.mem9:before{content:'';background-image:url('./月夜杯P/ヨウタ1-1.png');background-size:contain;background-repeat:no-repeat;background-position:center center;width:90px;height:90px;}
+.mem9-1:before{content:'';background-image:url('./月夜杯P/ヨウタ1.png');background-size:contain;background-repeat:no-repeat;background-position:center center;width:90px;height:90px;}
+.mem10 p{border:2px solid rgb(136, 136, 136);box-shadow:5px 5px 0 rgb(136, 136, 136);}
+.mem10 p:after{border-left-color:rgb(136, 136, 136);}
+.mem10 span{background:rgb(136, 136, 136);color:#fff;}
+.mem10:before{content:'';background-image:url('10.png');background-size:contain;background-repeat:no-repeat;background-position:center center;width:90px;height:90px;}
+.mem11 p{border:2px solid rgb(96, 125, 139);box-shadow:5px 5px 0 rgb(96, 125, 139);}
+.mem11 p:after{border-right-color:rgb(96, 125, 139);}
+.mem11 span{background:rgb(96, 125, 139);color:#fff;}
+.mem11:before{content:'';background-image:url('./月夜杯P/ヨウタ1-1.png');background-size:contain;background-repeat:no-repeat;background-position:center center;width:90px;height:90px;}
+    
+    @media only screen and (max-width: 768px) {
+        .mem1 p:after{border-right-color:rgb(136, 136, 136);border-left-color:transparent;}
+        .mem2 p:after{border-right-color:rgb(136, 136, 136);border-left-color:transparent;}
+        .mem3 p:after{border-right-color:rgb(226, 66, 31);border-left-color:transparent;}
+        .mem4 p:after{border-right-color:rgb(33, 150, 243);border-left-color:transparent;}
+        .mem5 p:after{border-right-color:rgb(103, 58, 183);border-left-color:transparent;}
+        .mem6 p:after{border-right-color:rgb(224, 224, 224);border-left-color:transparent;}
+        .mem7 p:after{border-right-color:rgb(241, 182, 94);border-left-color:transparent;}
+        .mem8 p:after{border-right-color:rgb(136, 136, 136);border-left-color:transparent;}
+        .mem9 p:after{border-right-color:rgb(96, 125, 139);border-left-color:transparent;}
+        .mem10 p:after{border-right-color:rgb(136, 136, 136);border-left-color:transparent;}
+        .mem11 p:after{border-right-color:rgb(96, 125, 139);border-left-color:transparent;}
+
+        .mem1:before,.mem2:before,.mem3:before,
+        .mem4:before,.mem5:before,.mem6:before
+        .mem7:before,.mem8:before,.mem9:before,
+        .mem10:before,.mem11:before{width:70px;height:70px;}
+    }
+</style>
+</head>
+
+<body>
+    <p id="page-top"><a href="#"><i class="page-top__arrow"></i></a></p>
+	<div class="leftwhite"></div>
+	<div class="rightwhite"></div>
+	<div class="bg-sp">
+    <div class="bg-over"><div class="bg-inner bg1"></div></div>
+	<div class="log">
+    
+<div class="kp LtoR-early">
+
+    ●トレーラー<br>私立御斎学園で毎年行われる舞踏会「月夜杯」。2名一組のデュオで、息のあった動き、優雅さを競います。<br>　しかし、これは単なるダンスのお披露目会ではありません。この学園は忍者育成機関。一般生徒たち観衆の前で、ダンスをしながら秘かにライバルたちと戦う忍法合戦、死闘の場でもあるのです。そしてアナタに下った密命は月夜杯での優勝と……。<br>　パートナー選びから、すでに戦いの火蓋は切って落とされています。
+
+</div>
+
+
+<div class="kp LtoR-early">
+
+シノビガミ『月夜杯』
+
+</div>
+
+
+</div></div>
+
+<div class="bg-sp">
+    <div class="bg-over"><div class="bg-inner bg2"></div></div>
+<div class="log">
+
+
+
+<div class="kp LtoR-early">
+
+    ――午後の光が差し込む御斎学園の中庭。<br>紅葉の影が芝生を染め、遠くでは吹奏楽部の練習音が風に乗って聞こえてくる。<br>広大な学園の敷地の中で、二人の影が偶然に交差した。
+
+</div>
+
+
+<div class="mem3 left">
+<span>下野 椛</span>
+<p>
+
+      
+    「ふぁあ～～」 
+  
+</p>
+</div>
+<div class="mem4 right">
+<span>前川 和輔</span>
+<p>
+
+      
+    「ウェーイwwww椛先輩じゃん、おはざーすｗｗｗｗ」 
+  
+</p>
+</div>
+<div class="mem3 left">
+<span>下野 椛</span>
+<p>
+
+      
+    「こんにちわ、だよ」 
+  
+</p>
+</div>
+<div class="mem3 left">
+<span>下野 椛</span>
+<p>
+
+      
+    「元気がいいね、前川くん」 
+  
+</p>
+</div>
+<div class="mem4 right">
+<span>前川 和輔</span>
+<p>
+
+      
+    「俺スッか？ｗｗｗｗまぁ元気が一番って言うじゃないっすか」 
+  
+</p>
+</div>
+<div class="mem3 left">
+<span>下野 椛</span>
+<p>
+
+      
+    「確かに、元気が一番だね」 
+  
+</p>
+</div>
+
+<div class="mem3 mem3-1 left">
+<span>下野 椛</span>
+<p>
+
+PC1： 下野 椛（シモノ モミジ）<br>
+比良坂機関/【外事N課】<br>
+年齢：17歳<br>
+信念：義
+
+ 
+  
+</p>
+</div>
+
+<div class="mem1 mem3-1 left">
+<span>GM</span>
+<p>
+
+      
+    ■PC1　推奨：比良坂機関<br>あなたは最近編入したばかりの比良坂機関の外部聴講生だ。<br>入寮した比良坂寮の先輩に推薦され、今年の「月夜杯」の代表者に選ばれた。<br>寮の仲間の信頼に応えるためにも優勝しなければならない。<br>　あなたの【使命】は、「月夜杯」に優勝することだ。
+
+</p>
+</div>
+
+<div class="mem3 mem3-1 left">
+<span>下野 椛</span>
+<p>
+
+特技：登術、砲術、隠蔽術、罠術、遊芸、憑依術<br>
+忍法：接近戦攻撃、【必中】、【禁術】、【黒笠】、【月影】
+<br><br>
+背景：【末裔】、【影響力】/【内務調査】、【派閥】
+</p>
+</div>
+
+<div class="mem3 mem3-1 left">
+<span>下野 椛</span>
+<p>
+
+学園に、外部聴講生として編入してきた。<br><br>
+
+冷静なキャラでありながら、すっとぼけたキャラをしているがそれは天然なのか演じているかはわからない。
+<br>
+先輩の「釘宮 アニマ」推薦により、代表者に選ばれたわけだが…。<br>
+普通、最近来たばかりの私に勧めるわけぇ？？
+
+ 
+  
+</p>
+</div>
+
+<div class="mem4 mem4-6 right">
+<span>前川 和輔</span>
+<p>
+
+      
+PC2： 前川 和輔（まえかわ わすけ）<br>
+斜歯忍軍/【鍔鑿組】<br>
+年齢：16歳<br>
+信念：和
+  
+</p>
+</div>
+
+<div class="mem1 mem4-6 left">
+<span>GM</span>
+<p>
+
+■PC2　推奨：斜歯忍軍<br>あなたは斜歯寮の寮生だ。斜歯忍軍の外部聴講生で、今年の「月夜杯」の代表者に選ばれた。<br>寮の仲間の信頼に応えるためにも優勝しなければならない。<br>　あなたの【使命】は、「月夜杯」に優勝することだ。 
+  
+</p>
+</div>
+
+<div class="mem4 mem4-6 right">
+<span>前川 和輔</span>
+<p>
+
+      
+特技：絡繰術、針術、壊器術、調査術、流言の術、召喚術<br>
+忍法：接近戦攻撃、【極針】、【機忍】、【換装】（【望郷】）、【法盤】（【沈黙】、【闇景色】）
+<br><br>
+背景：【四天脳候補】/【守秘義務】、【派閥】
+  
+</p>
+</div>
+
+<div class="mem4 mem4-6 right">
+<span>前川 和輔</span>
+<p>
+
+      
+言葉遣いこそ猛烈にチャラいパリピ口調だが、根っからのお婆ちゃん子でその実明るく真面目で人に気を遣う、きわめて気立てのいい少年。
+<br><br>
+相手にノリを拒絶される場合、きちんとした喋り方も弁えることができ、ちょっとしたトラブルでも相手を怒ったりしないいい奴。
+<br>友人たちと一緒に騒ぐことが好きで、祭りやイベントになるとテンションが上がる。
+<br><br>
+戦闘時には忍びの力を増幅させる服に着替える事で戦えるようになる、普段の能力は下忍程度。
+<br><br><br>
+
+奔放な日々を送る自由人は麗しき女性と運命の出会いを果たす。心を射抜いた女性をおいかけて、今日も愉快に学園を賑やかす。
+  
+</p>
+</div>
+
+
+
+<div class="mem4 right">
+<span>前川 和輔</span>
+<p>
+
+      
+    「それにもうすぐ祭りだしｗｗｗｗテンションブチ上がりまくりっすｗｗｗｗ」 
+  
+</p>
+</div>
+<div class="mem3 left">
+<span>下野 椛</span>
+<p>
+
+      
+    「月夜杯、簡単な話でしか聞いてないからどんなかは知らないのよね」 
+  
+</p>
+</div>
+<div class="mem4 right">
+<span>前川 和輔</span>
+<p>
+
+      
+    「Do感、代表になったはいいけど何するんすかねｗｗ？」 
+  
+</p>
+</div>
+<div class="mem3 left">
+<span>下野 椛</span>
+<p>
+
+      
+    「舞踏会っていうのだから、ダンスだと思うけど…あまり踊れない気がするわ」 
+  
+</p>
+</div>
+<div class="mem4 right">
+<span>前川 和輔</span>
+<p>
+
+      
+    「先輩と俺とで朝までダンスっちゃいます？ｗｗｗｗｗ」 
+  
+</p>
+</div>
+<div class="mem3 left">
+<span>下野 椛</span>
+<p>
+
+      
+    「よし、集合場所にいこう」 
+  
+</p>
+</div>
+
+
+</div></div>
+
+<div class="bg-sp">
+    <div class="bg-over"><div class="bg-inner bg3"></div></div>
+<div class="log">
+
+
+<div class="kp LtoR-early">
+
+   二人が向かう先は「金羊館（きんようかん）」。<br>学外からの賓客をもてなすために建てられたアール・ヌーヴォー様式の洋館だ。<br>白磁のような壁面、緩やかな曲線を描く鉄柵、そしてステンドグラス越しに揺れる秋の陽光。<br>生徒たちの間では「一度は入ってみたい憧れの社交場」として名高い場所である。 
+
+</div>
+
+<div class="kp LtoR-early">
+
+    2人が並木道を抜け、金羊館の前に辿り着いたとき、その玄関先で所在なげに立ち尽くすひとりの少女の姿があった。制服の袖を握りしめ、そわそわと足元を見つめている。
+
+</div>
+
+<div class="mem5 left">
+<span>メイコ</span>
+<p>
+
+      
+    「はぅ……うぅ……」 
+  
+</p>
+</div>
+
+<div class="kp LtoR-early">
+
+    彼女は二人に気づくと、驚いたように顔を上げ、小動物のように慌てて言葉を紡ぐ。 
+
+
+</div>
+
+<div class="mem5 left">
+<span>メイコ</span>
+<p>
+
+      
+    「……あ、あのっ、月夜杯の説明会って……ここで、あってますでしょうか？」 
+  
+</p>
+</div>
+<div class="mem3 left">
+<span>下野 椛</span>
+<p>
+
+      
+    「そのようですよ。貴方も代表者ですか？」 
+  
+</p>
+</div>
+<div class="mem5 left">
+<span>メイコ</span>
+<p>
+
+      
+    「す、すみません、スミマセン！」 
+  
+</p>
+</div>
+<div class="mem5 left">
+<span>メイコ</span>
+<p>
+
+      
+    「あ、あたしみたいなのが、いきなり話しかけちゃってスミマセン！」 
+  
+</p>
+</div>
+
+<div class="kp LtoR-early">
+
+その声はやけに早口で、どこか落ち着かない。 
+
+</div>
+
+<div class="mem3 left">
+<span>下野 椛</span>
+<p>
+
+      
+    「いいえ。知らないことは人に聞くのが正しいですから」 
+  
+</p>
+</div>
+<div class="mem4 right">
+<span>前川 和輔</span>
+<p>
+
+      
+    「何で謝んのｗｗｗｗむしろい嬉しいっつーかｗｗｗ役得ｗｗｗ」 
+  
+</p>
+</div>
+<div class="mem5 left">
+<span>メイコ</span>
+<p>
+
+      
+    「ヒィ……！」 
+  
+</p>
+</div>
+<div class="mem3 left">
+<span>下野 椛</span>
+<p>
+
+      
+    「怖がらせてますよ、前川くん」 
+  
+</p>
+</div>
+
+<div class="kp LtoR-early">
+
+  恐れおののきながら彼女は自分に言い聞かせるように呟く。 
+
+</div>
+
+<div class="mem5 left">
+<span>メイコ</span>
+<p>
+
+      
+    「……あたしなんかが、こんな晴れがましい建物に足を踏み入れるなんて……」 
+  
+</p>
+</div>
+<div class="mem4 mem4-2 right">
+<span>前川 和輔</span>
+<p>
+
+      
+    「え、あ、このノリ嫌い？？ごめんなさい」 
+  
+</p>
+</div>
+<div class="mem5 left">
+<span>メイコ</span>
+<p>
+
+      
+    「参加する方たちも”陽”ですし……」 
+  
+</p>
+</div>
+<div class="mem5 left">
+<span>メイコ</span>
+<p>
+
+      
+    「ああ、でも、ここで帰ったら寮の先輩たちに何をされるか分からないし……ああああっ……」 
+  
+</p>
+</div>
+<div class="mem3 left">
+<span>下野 椛</span>
+<p>
+
+      
+    「陽、ですか。」 
+  
+</p>
+</div>
+<div class="mem4 mem4-3 right">
+<span>前川 和輔</span>
+<p>
+
+      
+    「と、とりあえず中入ってみればいいんじゃね……ないっすかね？」 
+  
+</p>
+</div>
+<div class="mem3 left">
+<span>下野 椛</span>
+<p>
+
+      
+    「一人で怖いというなら、一緒に行きましょう。そこの人は放置してもいいですよ」 
+  
+</p>
+</div>
+<div class="mem5 left">
+<span>メイコ</span>
+<p>
+
+      
+    「あぁ……でもぉ……」 
+  
+</p>
+</div>
+
+<div class="kp LtoR-early">
+
+ そのとき――凛とした声が、秋風の中に澄んで響いた。
+
+</div>
+
+
+<div class="mem4 right">
+<span>前川 和輔</span>
+<p>
+
+      
+    「ちょｗｗｗ椛パイセンひどいっすｗｗｗ」 
+  
+</p>
+</div>
+<div class="mem6 right">
+<span>イチズ</span>
+<p>
+
+      
+    「あなたたちも月夜杯の参加者かしら？何かお困りごとでも？」 
+  
+</p>
+</div>
+
+<div class="kp LtoR-early">
+
+    振り向くと、そこには長身の少女が立っていた。まっすぐな瞳でこちらを見つめている。<br>鞍馬寮の外部聴講生――上泉イチズ。その立ち姿にはどこか気品がある。 
+
+</div>
+
+<div class="mem3 left">
+<span>下野 椛</span>
+<p>
+
+      
+    「彼女が、代表として不安を感じているようです」 
+  
+</p>
+</div>
+<div class="mem6 right">
+<span>イチズ</span>
+<p>
+
+      
+    「あなた達……月夜杯の参加者ね？彼女も？」 
+  
+</p>
+</div>
+<div class="mem3 left">
+<span>下野 椛</span>
+<p>
+
+      
+    「はい。全員参加者です」 
+  
+</p>
+</div>
+<div class="mem5 left">
+<span>メイコ</span>
+<p>
+
+      
+    「ひゃばっ！」（まぶしさに顔を逸らす 
+  
+</p>
+</div>
+<div class="mem3 left">
+<span>下野 椛</span>
+<p>
+
+      
+    「改めて、名前を伺ってもいいですか？（メイコに対して）」 
+  
+</p>
+</div>
+<div class="mem4 mem4-1 right">
+<span>前川 和輔</span>
+<p>
+
+      
+    「はい！よろしくです！イチズ先輩！！」 
+  
+</p>
+</div>
+<div class="mem5 left">
+<span>メイコ</span>
+<p>
+
+      
+    「め、メイコ……安達ヶ原ですぅ……」 
+  
+</p>
+</div>
+
+
+<div class="mem5  mem5-1 left">
+<span>メイコ</span>
+<p>
+
+      NPC4：安達ヶ原メイコ（あだちがはら・めいこ）<br>
+隠忍の血統<br>
+年齢：14歳　中等部三年<br>
+信念：凶 
+ <br><br>
+妖魔の血を引く特別監視対象の少女。<br>
+友人が少ない。
+
+</p>
+</div>
+
+
+<div class="mem3 left">
+<span>下野 椛</span>
+<p>
+
+      
+    「メイコさんですね。よろしくお願いします」 
+  
+</p>
+</div>
+<div class="mem6 right">
+<span>イチズ</span>
+<p>
+
+      
+    「あら？ワタクシの名前を知っているのね？」 
+  
+</p>
+</div>
+<div class="mem4 mem4-1 right">
+<span>前川 和輔</span>
+<p>
+
+      
+    「はい！そりゃあ有名ッスから！！」 
+  
+</p>
+</div>
+<div class="mem6 right">
+<span>イチズ</span>
+<p>
+
+      
+    「改めてワタクシは上泉（かみいずみ）イチズ。みんなよろしくお願いね」 
+  
+</p>
+</div>
+
+
+<div class="mem6 mem6-1 right">
+<span>イチズ</span>
+<p>
+
+   NPC3：上泉 イチズ（かみいずみ・いちず）<br>
+  鞍馬神流<br>
+年齢：18歳　高等部三年<br>
+信念：律<br>
+<br>
+女生徒から慕われる女剣士。<br>
+頼りがいがあるが、ときおり天然ボケ
+  
+</p>
+</div>
+
+
+<div class="mem6 right">
+<span>イチズ</span>
+<p>
+
+      
+    「さぁ、一緒に入りましょう。案内しますわ」 
+  
+</p>
+</div>
+<div class="mem4 mem4-1 right">
+<span>前川 和輔</span>
+<p>
+
+      
+    「は……はい！」 
+  
+</p>
+</div>
+<div class="mem3 left">
+<span>下野 椛</span>
+<p>
+
+      
+    「はい」 
+  
+</p>
+</div>
+
+<div class="kp LtoR-early">
+
+ためらう間もなく、イチズはくるりと踵を返し、金羊館の扉へと歩き出す。 
+
+</div>
+
+
+
+
+</div></div>
+
+<div class="bg-sp">
+    <div class="bg-over"><div class="bg-inner bg4"></div></div>
+<div class="log">
+
+
+
+<div class="kp LtoR-early">
+
+扉をくぐると、足元には深紅の絨毯がどこまでも伸びている。<br>そこには、鏡のような床が広がる壮麗なダンスホールがあった。
+
+</div>
+
+
+<div class="kp LtoR-early">
+
+   光り輝くシャンデリアが頭上にきらめき、磨き抜かれた床には無数の足音と笑い声が反射している。<br>すでに三十人以上の生徒が集まっており、それぞれがペア候補を探して談笑していた。 
+
+</div>
+
+
+<div class="kp LtoR-early">
+
+そんな中、ひときわ目立つ存在がいた。<br>女生徒たちに囲まれ、あちこちから歓声を浴びる少年――榊原オウジ。 
+
+</div>
+
+<div class="kp LtoR-early">
+
+きらりと光る茶髪に、柔らかな笑み。制服の着こなしもどこか洗練されており、その佇まいは学園の王子様と呼ぶにふさわしい。 
+
+</div>
+
+
+<div class="kp LtoR-early">
+
+人波の中で苦笑いを浮かべながら、オウジは逃げるように身を翻し、イチズ――あなたのもとへと駆け寄ってきた。
+
+</div>
+
+
+<div class="mem7 left">
+<span>オウジ</span>
+<p>
+
+      
+    「先輩も参加されるんですね！」 
+  
+</p>
+</div>
+
+<div class="kp LtoR-early">
+
+彼はイチズに気づくと、ぱっと表情を明るくする。 
+
+</div>
+
+<div class="mem6 right">
+<span>イチズ</span>
+<p>
+
+      
+    「ごきげんよう、榊原くん。この子たちは今年初参加の子たちなの」 
+  
+</p>
+</div>
+<div class="mem7 left">
+<span>オウジ</span>
+<p>
+
+      
+    「そうなんですね！ボクは榊原オウジと申します。お手柔らかによろしくお願いいたします！」 
+  
+</p>
+</div>
+
+
+<div class="mem7 mem7-1 left">
+<span>オウジ</span>
+<p>
+
+      
+  NPC1：榊原オウジ（さかきばら・おうじ）<br>
+一般人<br>
+高等部一年
+  
+</p>
+</div>
+
+<div class="mem3 left">
+<span>下野 椛</span>
+<p>
+
+      
+    「初めまして、下野椛と申します」 
+  
+</p>
+</div>
+
+<div class="kp LtoR-early">
+
+その笑顔はあまりに爽やかで、まるでスポットライトを浴びた俳優のようだ。 
+
+</div>
+
+<div class="mem4 right">
+<span>前川 和輔</span>
+<p>
+
+      
+    「どうもーｗｗよろしくっすｗｗｗ前川和輔ですｗｗｗ」 
+  
+</p>
+</div>
+<div class="mem3 left">
+<span>下野 椛</span>
+<p>
+
+      
+    「（はっ。これが陽の気！？）メイコさん、大丈夫ですか？」 
+  
+</p>
+</div>
+<div class="mem7 left">
+<span>オウジ</span>
+<p>
+
+      
+    「モミジさんですね！もしや灯蛾寮に編入してきた」 
+  
+</p>
+</div>
+<div class="mem3 left">
+<span>下野 椛</span>
+<p>
+
+      
+    「あ、はい。オウジさんはどこの寮の……」 
+  
+</p>
+</div>
+<div class="mem7 left">
+<span>オウジ</span>
+<p>
+
+      
+    「ワスケくん！お噂はかねがね……よろしくおねがいします」 
+  
+</p>
+</div>
+<div class="mem7 left">
+<span>オウジ</span>
+<p>
+
+      
+    「ボクは吉丁寮です。お隣ですね」 
+  
+</p>
+</div>
+<div class="mem3 left">
+<span>下野 椛</span>
+<p>
+
+      
+    「そうですね、お隣さんです」 
+  
+</p>
+</div>
+<div class="mem4 right">
+<span>前川 和輔</span>
+<p>
+
+      
+    「ちょっｗｗ俺って有名人じゃんｗｗ」 
+  
+</p>
+</div>
+<div class="mem7 left">
+<span>オウジ</span>
+<p>
+
+      
+    「はい！いつも賑やかに過ごしていらしているとか」 
+  
+</p>
+</div>
+<div class="mem3 left">
+<span>下野 椛</span>
+<p>
+
+      
+    「よかったじゃない。有名人」 
+  
+</p>
+</div>
+<div class="mem4 right">
+<span>前川 和輔</span>
+<p>
+
+      
+    「照れますなｗｗｗｗ」 
+  
+</p>
+</div>
+<div class="mem3 left">
+<span>下野 椛</span>
+<p>
+
+      
+    「ﾊｲﾊｲ」 
+  
+</p>
+</div>
+<div class="mem6 right">
+<span>イチズ</span>
+<p>
+
+      
+    「そういえば角逆寮の生徒がこのまえ指導されていたような……」 
+  
+</p>
+</div>
+<div class="mem4 mem4-2 right">
+<span>前川 和輔</span>
+<p>
+
+      
+    「あ……ッスー……俺じゃないっ……すよ？？？」 
+  
+</p>
+</div>
+<div class="mem3 left">
+<span>下野 椛</span>
+<p>
+
+      
+    「なにやったんですか」 
+  
+</p>
+</div>
+<div class="mem5 left">
+<span>メイコ</span>
+<p>
+
+      
+    「……」 
+  
+</p>
+</div>
+
+<div class="kp LtoR-early">
+
+ ――キィンッ 
+
+</div>
+
+
+
+<div class="kp LtoR-early">
+
+ ホールの空気が静まり返った。<br>マイクのハウリング音が、全員の注意を引く。<br>舞台の上に立っていたのは、祭事委員会の生徒だった。彼女は丁寧に一礼すると、透き通る声で告げる。
+
+</div>
+
+<div class="mem8 right">
+<span>祭事委員</span>
+<p>
+
+      
+    「各寮の代表の方々、ようこそお集まりいただきました。これより、今年の『月夜杯』についてご説明いたします」 
+  
+</p>
+</div>
+
+<div class="kp LtoR-early">
+
+煌びやかな光の中、忍びたちの視線が一点に集まる。<br>――華やかな舞踏会の幕が、静かに上がろうとしていた。 
+
+</div>
+
+
+<div class="mem2 right">
+<span>？？？</span>
+<p>
+
+      
+    「ちょっとまった─────！！！」 
+  
+</p>
+</div>
+
+<div class="kp LtoR-early">
+
+祭事委員の説明が始まろうとしたその瞬間――<br>ホールの扉が勢いよく開かれ、乾いた音が広間に響き渡った。 
+
+</div>
+
+
+<div class="kp LtoR-early">
+突然の叫びに、ざわついていた参加者たちの視線が一斉に入口へと向かう。<br>そこに立っていたのは、一人の少年――岡野ヨウタだった。 
+
+
+
+</div>
+
+<div class="mem9 left">
+<span>ヨウタ</span>
+<p>
+
+      
+    「悪い悪い、助っ人の用事が立て込んでてよ。でも、ギリギリ遅刻じゃないよな？」 
+  
+</p>
+</div>
+
+<div class="kp LtoR-early">
+
+飄々とした態度――それでいて芯の強さを感じさせるその姿は、忍法特待生の名に恥じぬものだった。 
+
+</div>
+
+<div class="mem9 left">
+<span>ヨウタ</span>
+<p>
+
+      
+    「さ、オレに遠慮しないで説明を始めてくれよ」 
+  
+</p>
+</div>
+
+<div class="kp LtoR-early">
+
+  肩をすくめながら軽口を叩くヨウタに、周囲の生徒たちは苦笑を漏らす。
+
+</div>
+
+
+<div class="mem3 left">
+<span>下野 椛</span>
+<p>
+
+      
+    「（遮って、進めてくれ、か）」 
+  
+</p>
+</div>
+
+<div class="kp LtoR-early">
+
+    場の空気が少し和らぐ中、彼は当然のようにあなたたちの方へ歩み寄った。
+
+</div>
+
+
+<div class="mem9 left">
+<span>ヨウタ</span>
+<p>
+
+      
+    「へぇ、おたくらも出場者か。いいじゃん、楽しみになってきたな」 
+  
+</p>
+</div>
+<div class="mem3 left">
+<span>下野 椛</span>
+<p>
+
+      
+    「どーも」 
+  
+</p>
+</div>
+<div class="mem4 right">
+<span>前川 和輔</span>
+<p>
+
+      
+    「よろピッピｗｗｗｗ」 
+  
+</p>
+</div>
+
+
+<div class="mem9 mem9-1 left">
+<span>ヨウタ</span>
+<p>
+
+      
+   NPC2：岡野 ヨウタ（おかの・ようた）<br>
+ハグレモノ<br>
+年齢：16歳　高等部二年<br>
+信念：情<br>
+<br>
+金にがめつい忍法特待生。<br>
+実際貧乏。<br>
+約束は守る性格のようだ。
+
+  
+</p>
+</div>
+
+<div class="kp LtoR-early">
+
+その瞳に浮かぶのは、勝負師のような鋭い光。<br>岡野ヨウタの登場により、華やかな舞踏会の空気は、ほんの少しだけ戦いの匂いを帯びはじめた。
+
+</div>
+
+<div class="mem8 right">
+<span>祭事委員</span>
+<p>
+
+      
+    「――コホン。では、これより『月夜杯』のルールを説明します」 
+  
+</p>
+</div>
+
+<div class="kp LtoR-early">
+
+その声がマイクを通して響くと、ホールの照明がやや落とされ、<br>会場全体が一瞬、静寂に包まれる。<br>煌めく照明の中、誰もが次の言葉を待っていた。 
+
+
+</div>
+
+
+<div class="kp LtoR-early">
+
+  祭事委員は、淡々と一般生徒向けのルールを読み上げていく。<br>――だが、その合間に忍者たちの耳へだけ、別の“声”が届いた。<br>それは、忍び語りの術による密やかな伝達。 
+
+</div>
+
+
+<div class="kp LtoR-early">
+
+「忍びに課されたもう一つの月夜杯ルール」が、彼らの脳裏に刻まれる。 
+
+</div>
+
+<div class="mem1 left">
+<span>GM</span>
+<p>
+
+      
+    □HO：月夜杯<br>私立御斎学園で例年、秋になると開かれる舞踏会。<br>各寮の代表が二人一組（男性同士、女性同士もＯＫ）で参加し、優雅さやどれだけ二人の息があっているのかを競う。<br>優勝者には、学園でもっとも優雅なカップルであるという栄誉に加え、賞金が送られる。<br>また、優勝者が所属している寮の生徒たちには、豪華サロン「金羊館」の特別貴賓室の使用が一年間許可される。<br>優勝者は永遠の絆で結ばれるという伝説も残っている。<br>※このハンドアウトに【秘密】はない 
+  
+</p>
+</div>
+<div class="mem1 left">
+<span>GM</span>
+<p>
+
+      
+    ●大会ルール<br>・舞踏会は、これより一週間後（2サイクル後）、満月の夜に開かれる。<br>・舞踏会までにパートナーを見つけること。すでに成立したペアのいずれかをパートナーにすることはできない。<br>・舞踏会中、忍者生徒は、一般生徒に直接手を出してはいけない。<br>・舞踏会中、審査員は参加者の舞踏を審査し、残りペアが三組になるまで、落選させていく。落選したペアは観客席に戻る。<br>・最終的にホールに残った三組で衆人環視の中、一般生徒に気づかれないよう、踊りながら戦闘を行う。<br>・戦闘から誰かが脱落すると、そのペアごと脱落する。<br>・プロット時、ペアは同じプロットになる。プレイヤーとペアを組んでいるNPCは、そのプレイヤーが行ったプロットと同じ値になる。PC同士がペアになった場合、二人で相談してプロットを行う。<br>・NPCは「心を開いている」状態だと、パートナーの望むタイミングで奥義を使用してくれる。心を開く条件は、各NPCの【秘密】に書いてある。<br>・優勝したペアは互いに好きな【感情】を獲得できる。 
+  
+</p>
+</div>
+
+<div class="kp LtoR-early">
+
+ 
+    やがて説明が終わると、ざわめきが戻る。<br>参加者たちは視線を交わしながら、自然と周囲を見渡した。<br>――おそらく、最後まで勝ち残るのはこの中の三組。
+
+</div>
+
+
+<div class="mem8 right">
+<span>祭事委員</span>
+<p>
+
+      
+    「月夜杯までの間、このダンスホールは代表選手のために開放します」 
+  
+</p>
+</div>
+<div class="mem8 right">
+<span>祭事委員</span>
+<p>
+
+      
+    「各位、練習にはげんでください。それでは一週間後、御斎学園生徒にふさわしい活躍を期待します」 
+  
+</p>
+</div>
+
+<div class="kp LtoR-early">
+  祭事委員の言葉を最後に、拍手が湧き起こる。<br>光がゆっくりと戻り、音楽が再び流れ始めた。 
+
+
+</div>
+
+
+
+<div class="kp LtoR-early">
+
+こうして、「月夜杯」へ向けた一週間が始まる。 
+
+</div>
+
+<div class="mem1 mem7-1 left">
+<span>GM</span>
+<p>
+
+      ■NPC1：榊原オウジ（さかきばら・おうじ）<br>あなたは高等部一年の御斎寮の寮生だ。<br>名家の生まれの一般生徒で忍者としての力はもたない。<br>性格は王子様系で物腰は柔らかく、多くの生徒たちから好かれている。<br>次期生徒会長候補だという噂もある。<br>　あなたの【使命】は、「月夜杯」に優勝することだ。    
+  
+</p>
+</div>
+<div class="mem1 mem9-1 left">
+<span>GM</span>
+<p>
+
+       ■NPC2：岡野ヨウタ（おかの・ようた）<br>あなたは高等部二年のハグレモノ寮の寮生だ。<br>とても貧乏だが、忍法特待生としてスカウトされた。<br>金に困っているようで、金銭とひきかえに様々な部活の助っ人を行っている。<br>守銭奴として知られるが、かわした約束は守るという評判だ。<br>　あなたの【使命】は、「月夜杯」の優勝賞金を手に入れることだ。
+    
+  
+</p>
+</div>
+
+<div class="mem1 mem6-1 left">
+<span>GM</span>
+<p>
+
+      ■NPC3：上泉イチズ（かみいずみ・いちず）<br>あなたは高等部三年の鞍馬寮の寮生だ。<br>鞍馬神流からの外部聴講生で、後輩の女子生徒にファンが多い。<br>少し脳筋気味な武道一直線の女子である。<br>武道会だと勘違いして参加したが、参加したからには優勝しなければと思っている。<br>　あなたの【使命】は、「月夜杯」に優勝することだ。
+    
+  
+</p>
+</div>
+
+<div class="mem1 mem5-1 left">
+<span>GM</span>
+<p>
+
+      
+   ■NPC4：安達ヶ原メイコ（あだちがはら・めいこ）<br>あなたは中等部三年の隠忍寮の寮生だ。<br>妖魔の血を引いており、特別な力の持ち主として御斎学園に保護された。<br>特別監視対象。内向的な性格で舞踏会のようなイベントは苦手だが、無理矢理代表に選ばれたようだ。<br>友だちを欲しがっている。<br>　あなたの【使命】は、「月夜杯」に優勝することだ。 
+  
+</p>
+</div>
+
+</div></div>
+
+<div class="bg-sp">
+    <div class="bg-over"><div class="bg-inner bg1"></div></div>
+<div class="log">
+
+<div class="kp LtoR-early">
+
+[ GM ] サイクル : 0 → 1 
+
+</div>
+
+<div class="mem3 left">
+<span>下野 椛</span>
+<p>
+
+      
+    D66 (D66) ＞ 33
+  
+</p>
+</div>
+<div class="mem4 right">
+<span>前川 和輔</span>
+<p>
+
+      
+    D66 (D66) ＞ 46
+  
+</p>
+</div>
+
+</div></div>
+
+<div class="bg-sp">
+    <div class="bg-over"><div class="bg-inner bg5"></div></div>
+<div class="log">
+
+<div class="mem3 left">
+<span>下野 椛</span>
+<p>
+
+      
+    月夜杯シーン表 1D6 月夜杯シーン表(4) ＞ 金羊館。学外からの賓客をもてなすための洋館。赤い絨毯にマホガニー色の腰壁などアールヌーボー風の調度が美しい。
+  
+</p>
+</div>
+<div class="mem3 left">
+<span>下野 椛</span>
+<p>
+
+      
+    登場人物：下野モミジ、榊原オウジ 
+  
+</p>
+</div>
+<div class="mem3 left">
+<span>下野 椛</span>
+<p>
+
+      
+    「……ふぅ」 
+  
+</p>
+</div>
+<div class="mem3 left">
+<span>下野 椛</span>
+<p>
+
+      
+    「まさか、こんなシステムだったとは…」 
+  
+</p>
+</div>
+<div class="mem3 left">
+<span>下野 椛</span>
+<p>
+
+      
+    「おや、そこにいるのは」 
+  
+</p>
+</div>
+<div class="mem7 left">
+<span>オウジ</span>
+<p>
+
+      
+    「モミジさん！……あ、先輩の方がよろしかったでしょうか？」 
+  
+</p>
+</div>
+<div class="mem3 left">
+<span>下野 椛</span>
+<p>
+
+      
+    「いえ、さんの方が親しみがあっていいですよ」 
+  
+</p>
+</div>
+<div class="mem3 left">
+<span>下野 椛</span>
+<p>
+
+      
+    「オウジさん、でいいかしら」 
+  
+</p>
+</div>
+<div class="mem3 left">
+<span>下野 椛</span>
+<p>
+
+      
+    「くんの方がいいのかな？」 
+  
+</p>
+</div>
+<div class="mem7 left">
+<span>オウジ</span>
+<p>
+
+      
+    「ははっ、オウジでいいですよ。モミジさんは月夜杯は初めてでしたよね」 
+  
+</p>
+</div>
+<div class="mem3 left">
+<span>下野 椛</span>
+<p>
+
+      
+    「えぇ。オウジは何回もやっているの？」 
+  
+</p>
+</div>
+<div class="mem7 left">
+<span>オウジ</span>
+<p>
+
+      
+    「はい！初等部のころから何度か」 
+  
+</p>
+</div>
+<div class="mem7 left">
+<span>オウジ</span>
+<p>
+
+      
+    「何かお困りのことがあればいつでもボクに聞いてくださいね」 
+  
+</p>
+</div>
+<div class="mem3 left">
+<span>下野 椛</span>
+<p>
+
+      
+    「そうなんだ。私は最近来たばかりだからわからないことはお願いね」 
+  
+</p>
+</div>
+<div class="mem3 left">
+<span>下野 椛</span>
+<p>
+
+      
+    「ここって軽食とかとれるのかな」 
+  
+</p>
+</div>
+<div class="mem7 left">
+<span>オウジ</span>
+<p>
+
+      
+    「えぇ、何か淹れましょうか？」 
+  
+</p>
+</div>
+<div class="mem3 left">
+<span>下野 椛</span>
+<p>
+
+      
+    「それじゃあ、紅茶をお願いしたいわ」 
+  
+</p>
+</div>
+<div class="mem7 left">
+<span>オウジ</span>
+<p>
+
+      
+    「承知しました！そこに掛けて待っていてください！」 
+  
+</p>
+</div>
+
+<div class="kp LtoR-early">
+
+お茶を入れるために走り去る 
+
+</div>
+
+
+<div class="mem3 left">
+<span>下野 椛</span>
+<p>
+
+      
+    『情報判定』誰か一人を選んで判定に使用する特技を指定！ 
+  
+</p>
+</div>
+<div class="mem3 left">
+<span>下野 椛</span>
+<p>
+
+      
+    オウジに対して調査術 
+  
+</p>
+</div>
+<div class="mem3 left">
+<span>下野 椛</span>
+<p>
+
+      
+    2D6&gt;=6 （判定：罠術） (2D6&gt;=6) ＞ 4[2,2] ＞ 4 ＞ 失敗
+  
+</p>
+</div>
+<div class="mem3 left">
+<span>下野 椛</span>
+<p>
+
+      
+    神通丸！ 
+  
+</p>
+</div>
+
+<div class="kp LtoR-early">
+
+ [ 下野 椛  ] 忍具 : 6 → 5 
+
+</div>
+
+
+<div class="mem3 left">
+<span>下野 椛</span>
+<p>
+
+      
+    2D6&gt;=6 （判定：罠術） (2D6&gt;=6) ＞ 7[3,4] ＞ 7 ＞ 成功
+  
+</p>
+</div>
+<div class="mem3 left">
+<span>下野 椛</span>
+<p>
+
+      
+    「あらあら、なんともかわいらしい」 
+  
+</p>
+</div>
+<div class="mem7 left">
+<span>オウジ</span>
+<p>
+
+      
+    「お待たせしました～はい、どうぞ」 
+  
+</p>
+</div>
+<div class="mem3 left">
+<span>下野 椛</span>
+<p>
+
+      
+    「ありがとう」 
+  
+</p>
+</div>
+<div class="mem3 left">
+<span>下野 椛</span>
+<p>
+
+      
+    匂いを楽しんでからひとくち 
+  
+</p>
+</div>
+<div class="mem3 left">
+<span>下野 椛</span>
+<p>
+
+      
+    「おいしい」 
+  
+</p>
+</div>
+<div class="mem7 left">
+<span>オウジ</span>
+<p>
+
+      
+    「……そうですか～」 
+  
+</p>
+</div>
+<div class="mem3 left">
+<span>下野 椛</span>
+<p>
+
+      
+    では茶会を楽しみながらえんど 
+  
+</p>
+</div>
+
+<div class="mem3 left">
+<span>下野 椛</span>
+<p>
+
+      
+    派閥
+  
+</p>
+</div>
+
+<div class="mem3 left">
+<span>下野 椛</span>
+<p>
+
+      
+    RTT4 謀術分野ランダム特技表(6) ＞ 『謀術』詐術
+  
+</p>
+</div>
+
+
+<div class="mem3 left">
+<span>下野 椛</span>
+<p>
+
+      
+    2D6&gt;=7 （判定：罠術） (2D6&gt;=7) ＞ 6[1,5] ＞ 6 ＞ 失敗
+  
+</p>
+</div>
+
+
+
+<div class="mem3 left">
+<span>下野 椛</span>
+<p>
+
+      
+    WT 変調表(2) ＞ マヒ:修得している特技の中からランダムに一つを選び、その特技が使用不能になる。この効果は、修得している特技の数だけ累積する。各サイクルの終了時に、《身体操術》で行為判定を行い、成功するとこの変調はすべて無効化される。
+  
+</p>
+</div>
+
+
+<div class="mem3 left">
+<span>下野 椛</span>
+<p>
+
+      
+    choice[砲術,隠蔽術,罠術,遊芸,憑依術,登術] (choice[砲術,隠蔽術,罠術,遊芸,憑依術,登術]) ＞ 罠術
+  
+</p>
+</div>
+
+
+
+<div class="kp LtoR-early">
+
+
+   シーン終了 
+</div>
+
+
+</div></div>
+
+<div class="bg-sp">
+    <div class="bg-over"><div class="bg-inner bg6"></div></div>
+<div class="log">
+
+
+
+<div class="mem4 right">
+<span>前川 和輔</span>
+<p>
+
+      
+    月夜杯シーン表 1D6 月夜杯シーン表(2) ＞ 学食のカフェテリア。生徒たちがまばらに席につき、思い思い談笑している。
+  
+</p>
+</div>
+<div class="mem4 right">
+<span>前川 和輔</span>
+<p>
+
+      
+    登場人物：前川ワスケ、上泉イチズ 
+  
+</p>
+</div>
+<div class="mem4 mem4-1 right">
+<span>前川 和輔</span>
+<p>
+
+      
+    「あ、こ……こんにちは！イチズ先輩！」 
+  
+</p>
+</div>
+<div class="mem6 right">
+<span>イチズ</span>
+<p>
+
+      
+    「ごきげんよう、前川君」 
+  
+</p>
+</div>
+<div class="mem6 right">
+<span>イチズ</span>
+<p>
+
+      
+    「前川君も休憩かしら？よろしければご一緒にいかが？」 
+  
+</p>
+</div>
+<div class="mem4 right">
+<span>前川 和輔</span>
+<p>
+
+      
+    「え！？良いんですか！？」 
+  
+</p>
+</div>
+<div class="mem6 right">
+<span>イチズ</span>
+<p>
+
+      
+    「えぇ、もちろん。さぁ、こっちに」 
+  
+</p>
+</div>
+
+<div class="kp LtoR-early">
+
+ 中庭が見渡せる窓際のカウンターに2人は並んで席についた 
+
+</div>
+
+<div class="mem6 right">
+<span>イチズ</span>
+<p>
+
+      
+    「前川君は月夜杯の練習はどう？」 
+  
+</p>
+</div>
+<div class="mem4 right">
+<span>前川 和輔</span>
+<p>
+
+      
+    「え、まぁ……ぼちぼちっすかね？先輩はどんな感じっすか？」 
+  
+</p>
+</div>
+<div class="mem4 right">
+<span>前川 和輔</span>
+<p>
+
+      
+    「まぁ、先輩は何度か参加されてるからもう慣れたって感じっすかね？」 
+  
+</p>
+</div>
+<div class="mem6 right">
+<span>イチズ</span>
+<p>
+
+      
+    「そうね……ワタクシは何度か参加してるけど未だに慣れませんわ」 
+  
+</p>
+</div>
+<div class="mem6 right">
+<span>イチズ</span>
+<p>
+
+      
+    「あぁいう舞踏会の場というのは格式張っていて……少し苦手なの」 
+  
+</p>
+</div>
+<div class="mem4 mem4-1 right">
+<span>前川 和輔</span>
+<p>
+
+      
+    「え？そうなんすか？なんというか……意外っすね」 
+  
+</p>
+</div>
+<div class="mem6 right">
+<span>イチズ</span>
+<p>
+
+      
+    「ふふっ、そうかしら？」 
+  
+</p>
+</div>
+<div class="mem4 mem4-1 right">
+<span>前川 和輔</span>
+<p>
+
+      
+    「はい！いつも頼りがいというかなんというか……凛々しいっ！ってオーラ？を出してるじゃないっすか」 
+  
+</p>
+</div>
+<div class="mem6 right">
+<span>イチズ</span>
+<p>
+
+      
+    「ありがとう。そう見えるようには務めているけど……実は本当は結構ズボラなの」 
+  
+</p>
+</div>
+<div class="mem6 right">
+<span>イチズ</span>
+<p>
+
+      
+    「さっきも洗濯ものを溜めっぱなしで寮長に怒られちゃった」 
+  
+</p>
+</div>
+
+<div class="kp LtoR-early">
+
+  少し舌を出しながら悪戯っぽく笑みを浮かべた 
+
+</div>
+
+<div class="mem4 right">
+<span>前川 和輔</span>
+<p>
+
+      
+    （かわいい） 
+  
+</p>
+</div>
+
+<div class="kp LtoR-early">
+
+暮れかかった日差しが髪に反射し陶器のような肌を照らしている 
+
+</div>
+
+<div class="mem4 mem4-1 right">
+<span>前川 和輔</span>
+<p>
+
+      
+    「あ……あの急で申し訳ないんすけど良かったら俺とペア組んでくれませんか！？」 
+  
+</p>
+</div>
+<div class="mem6 right">
+<span>イチズ</span>
+<p>
+
+      
+    「えっ……！ワタクシと？」 
+  
+</p>
+</div>
+<div class="mem4 mem4-1 right">
+<span>前川 和輔</span>
+<p>
+
+      
+    「はい、こんな俺で良ければ……ですけど」 
+  
+</p>
+</div>
+<div class="mem6 right">
+<span>イチズ</span>
+<p>
+
+      
+    「……」 
+  
+</p>
+</div>
+
+<div class="kp LtoR-early">
+
+しばし沈黙して和輔を見つめると恥ずかしそうに目線を逸らす 
+
+</div>
+
+
+<div class="mem6 right">
+<span>イチズ</span>
+<p>
+
+      
+    「い、いえ、前川君がいいなら喜んで」 
+  
+</p>
+</div>
+<div class="mem4 right">
+<span>前川 和輔</span>
+<p>
+
+      
+    「……やっ……やったー！！！」 
+  
+</p>
+</div>
+<div class="mem1 left">
+<span>GM</span>
+<p>
+
+      
+    ワスケ＆イチズ　ペアが成立しました 
+  
+</p>
+</div>
+<div class="mem4 right">
+<span>前川 和輔</span>
+<p>
+
+      
+    『情報判定』誰か一人を選んで判定に使用する特技を指定！ 
+  
+</p>
+</div>
+<div class="mem4 right">
+<span>前川 和輔</span>
+<p>
+
+      
+    イチズ先輩の秘密を調査術で判定します 
+  
+</p>
+</div>
+<div class="mem4 right">
+<span>前川 和輔</span>
+<p>
+
+      
+    2D6&gt;=5 （判定：調査術） (2D6&gt;=5) ＞ 8[3,5] ＞ 8 ＞ 成功
+  
+</p>
+</div>
+<div class="mem4 right">
+<span>前川 和輔</span>
+<p>
+
+      
+    派閥
+  
+</p>
+</div>
+<div class="mem4 right">
+<span>前川 和輔</span>
+<p>
+
+      
+    rtt1 器術分野ランダム特技表(8) ＞ 『器術』縄術
+  
+</p>
+</div>
+
+<div class="mem4 right">
+<span>前川 和輔</span>
+<p>
+
+      
+    2D6&gt;=8 （判定：壊器術） (2D6&gt;=8) ＞ 4[1,3] ＞ 4 ＞ 失敗
+  
+</p>
+</div>
+
+<div class="mem4 right">
+<span>前川 和輔</span>
+<p>
+
+      
+    WT 変調表(5) ＞ 忘却:修得している【感情】の中からランダムに一つを選び、その【感情】を持っていないものとして扱う。この効果は、修得している【感情】の数だけ累積する。各サイクルの終了時に、《記憶術》で行為判定を行い、成功するとこの変調はすべて無効化される。
+  
+</p>
+</div>
+
+<div class="mem6 right">
+<span>イチズ</span>
+<p>
+
+      
+    【愛情】を前川ワスケに対して獲得 
+  
+</p>
+</div>
+
+<div class="mem1 left">
+<span>GM</span>
+<p>
+
+      
+    イチズの秘密は【守秘義務】 
+  
+</p>
+</div>
+
+<div class="kp LtoR-early">
+
+    シーン終了 
+
+</div>
+
+
+<div class="kp LtoR-early">
+
+    サイクル終了の処理 
+
+</div>
+
+<div class="mem3 left">
+<span>下野 椛</span>
+<p>
+
+      
+    麻痺解除判定 
+  
+</p>
+</div>
+<div class="mem3 left">
+<span>下野 椛</span>
+<p>
+
+      
+    2D6&gt;=8 （判定：砲術） (2D6&gt;=8) ＞ 8[4,4] ＞ 8 ＞ 成功
+  
+</p>
+</div>
+
+
+</div></div>
+
+<div class="bg-sp">
+    <div class="bg-over"><div class="bg-inner bg1"></div></div>
+<div class="log">
+
+<div class="kp LtoR-early">
+
+ [ GM ] サイクル : 1 → 2 
+
+</div>
+
+<div class="mem4 right">
+<span>前川 和輔</span>
+<p>
+
+      
+    D66 (D66) ＞ 26
+  
+</p>
+</div>
+<div class="mem3 left">
+<span>下野 椛</span>
+<p>
+
+      
+    D66 (D66) ＞ 56
+  
+</p>
+</div>
+
+</div></div>
+
+<div class="bg-sp">
+    <div class="bg-over"><div class="bg-inner bg6"></div></div>
+<div class="log">
+
+
+<div class="mem4 right">
+<span>前川 和輔</span>
+<p>
+
+      
+    月夜杯シーン表 1D6 月夜杯シーン表(2) ＞ 学食のカフェテリア。生徒たちがまばらに席につき、思い思い談笑している。
+  
+</p>
+</div>
+<div class="mem4 right">
+<span>前川 和輔</span>
+<p>
+
+      
+    登場人物：下野モミジ、前川ワスケ 
+  
+</p>
+</div>
+<div class="mem4 right">
+<span>前川 和輔</span>
+<p>
+
+      
+    「あwww椛先輩お疲れーッスｗｗｗｗ」 
+  
+</p>
+</div>
+<div class="mem3 left">
+<span>下野 椛</span>
+<p>
+
+      
+    「なんか煽られてる気がする」 
+  
+</p>
+</div>
+<div class="mem4 right">
+<span>前川 和輔</span>
+<p>
+
+      
+    「そんなつもりはなかったんすけど……もしかしてまだペアきめてない感じっすかｗｗｗ」 
+  
+</p>
+</div>
+<div class="mem3 left">
+<span>下野 椛</span>
+<p>
+
+      
+    「まだ時間があるのにさっさと手を出す人とは違うわよ」 
+  
+</p>
+</div>
+<div class="mem4 right">
+<span>前川 和輔</span>
+<p>
+
+      
+    「ちょ…酷いっすよｗｗｗこう見えて一途なんすよｗｗｗ俺」 
+  
+</p>
+</div>
+<div class="mem3 left">
+<span>下野 椛</span>
+<p>
+
+      
+    「へぇ、そんな一途な人が私と話してていいのかしら？」 
+  
+</p>
+</div>
+<div class="mem3 left">
+<span>下野 椛</span>
+<p>
+
+      
+    「嫉妬されて刺されるかもよ？」 
+  
+</p>
+</div>
+<div class="mem4 right">
+<span>前川 和輔</span>
+<p>
+
+      
+    「ちょっと怖いこと言わないでくださいよｗｗｗ」 
+  
+</p>
+</div>
+<div class="mem4 right">
+<span>前川 和輔</span>
+<p>
+
+      
+    『情報判定』誰か一人を選んで判定に使用する特技を指定！ 
+  
+</p>
+</div>
+<div class="mem4 right">
+<span>前川 和輔</span>
+<p>
+
+      
+    pc1の秘密を調査術で判定します 
+  
+</p>
+</div>
+<div class="mem4 right">
+<span>前川 和輔</span>
+<p>
+
+      
+    2D6&gt;=5 （判定：調査術） (2D6&gt;=5) ＞ 8[4,4] ＞ 8 ＞ 成功
+  
+</p>
+</div>
+<div class="mem1 mem3-1 left">
+<span>GM</span>
+<p>
+
+      
+    ■PC1の秘密3：<br>あなたは比良坂機関から特命を受けている。「月夜杯」に表の世に危害をもたらそうとする危険分子が紛れていることが判明しており、その人物の討伐命令を受けているのだ。<br>　あなたの【本当の使命】は、危険分子の【使命】を妨害することである。 
+  
+</p>
+</div>
+<div class="mem1 left">
+<span>GM</span>
+<p>
+
+      
+    PC1の秘密が公開情報になります 
+  
+</p>
+</div>
+<div class="mem4 right">
+<span>前川 和輔</span>
+<p>
+
+      
+    「椛先輩はあのハグレモノと組んでみてはいかがっすかｗｗｗｗ困ってる人はほっとけないみたいなんでｗｗｗｗ」 
+  
+</p>
+</div>
+<div class="mem3 left">
+<span>下野 椛</span>
+<p>
+
+      
+    「そうね。検討だけはするわ。ムカつくから前川くんの意見を聞いてやったわけじゃないけどね」 
+  
+</p>
+</div>
+
+<div class="mem4 right">
+<span>前川 和輔</span>
+<p>
+
+      
+    派閥
+  
+</p>
+</div>
+
+
+<div class="mem4 right">
+<span>前川 和輔</span>
+<p>
+
+      
+    rtt1 器術分野ランダム特技表(4) ＞ 『器術』水術
+  
+</p>
+</div>
+
+
+<div class="mem4 right">
+<span>前川 和輔</span>
+<p>
+
+      
+    2D6&gt;=6 （判定：針術） (2D6&gt;=6) ＞ 6[1,5] ＞ 6 ＞ 成功
+  
+</p>
+</div>
+
+
+<div class="kp LtoR-early">
+
+    シーン終了 
+
+</div>
+
+
+
+</div></div>
+
+<div class="bg-sp">
+    <div class="bg-over"><div class="bg-inner bg7"></div></div>
+<div class="log">
+
+
+<div class="mem3 left">
+<span>下野 椛</span>
+<p>
+
+      
+    月夜杯シーン表 1D6 月夜杯シーン表(3) ＞ 教室。休憩時間か放課後か。生徒たちが、楽しそうにはしゃいでいる。
+  
+</p>
+</div>
+<div class="mem3 left">
+<span>下野 椛</span>
+<p>
+
+      
+    登場人物：下野モミジ、榊原オウジ、岡野ヨウタ、安達ヶ原メイコ 
+  
+</p>
+</div>
+<div class="mem5 left">
+<span>メイコ</span>
+<p>
+
+      
+    「うぅ……直前になってもペアがみつかりません……」 
+  
+</p>
+</div>
+<div class="mem3 left">
+<span>下野 椛</span>
+<p>
+
+      
+    「あら、メイコさん」 
+  
+</p>
+</div>
+<div class="mem3 left">
+<span>下野 椛</span>
+<p>
+
+      
+    「貴方も見つかってないの？一緒ね」 
+  
+</p>
+</div>
+<div class="mem5 left">
+<span>メイコ</span>
+<p>
+
+      
+    「はうぁ！……あ、あなたは前に会った……」 
+  
+</p>
+</div>
+<div class="mem3 left">
+<span>下野 椛</span>
+<p>
+
+      
+    「モミジよ」 
+  
+</p>
+</div>
+<div class="mem9 left">
+<span>ヨウタ</span>
+<p>
+
+      
+    「なんだ、アンタらフリーか？」 
+  
+</p>
+</div>
+<div class="mem3 left">
+<span>下野 椛</span>
+<p>
+
+      
+    「フリーだけど、なぁに？」 
+  
+</p>
+</div>
+<div class="mem9 left">
+<span>ヨウタ</span>
+<p>
+
+      
+    「いやいや！オレもバイトしてたらいつの間にかこんな時期でな困ってるわけよ」 
+  
+</p>
+</div>
+<div class="mem3 left">
+<span>下野 椛</span>
+<p>
+
+      
+    「そうなんだぁ」 
+  
+</p>
+</div>
+<div class="mem9 left">
+<span>ヨウタ</span>
+<p>
+
+      
+    「んーしかし……」（品定めするような目 
+  
+</p>
+</div>
+<div class="mem3 left">
+<span>下野 椛</span>
+<p>
+
+      
+    「私も調べ事があって、忙しかったのよ」 
+  
+</p>
+</div>
+<div class="mem5 left">
+<span>メイコ</span>
+<p>
+
+      
+    「そ、そうでしたか……」 
+  
+</p>
+</div>
+<div class="mem9 left">
+<span>ヨウタ</span>
+<p>
+
+      
+    「（ため息）なんだかなぁ……」 
+  
+</p>
+</div>
+<div class="mem7 left">
+<span>オウジ</span>
+<p>
+
+      
+    「モミジさん！……もしかして取り込み中でしたか？」 
+  
+</p>
+</div>
+<div class="mem3 left">
+<span>下野 椛</span>
+<p>
+
+      
+    「ううん、ちょっとペアがいない同士の話って感じ？」 
+  
+</p>
+</div>
+<div class="mem3 left">
+<span>下野 椛</span>
+<p>
+
+      
+    「そうね、オウジは誰と組むの？」 
+  
+</p>
+</div>
+
+<div class="mem7 left">
+<span>オウジ</span>
+<p>
+
+      
+    「え？あ～いや、実はまだ……それでもしよければ……」 
+  
+</p>
+</div>
+<div class="mem9 left">
+<span>ヨウタ</span>
+<p>
+
+      
+    「いや、ちょっと待てこいつは先約がある」 
+  
+</p>
+</div>
+<div class="mem7 left">
+<span>オウジ</span>
+<p>
+
+      
+    「え？」 
+  
+</p>
+</div>
+<div class="mem3 left">
+<span>下野 椛</span>
+<p>
+
+      
+    「え？」 
+  
+</p>
+</div>
+<div class="mem9 left">
+<span>ヨウタ</span>
+<p>
+
+      
+    「同じクラスのよしみでオレと組むんだ。だろ？」 
+  
+</p>
+</div>
+<div class="mem3 left">
+<span>下野 椛</span>
+<p>
+
+      
+    「え？」 
+  
+</p>
+</div>
+<div class="mem9 left">
+<span>ヨウタ</span>
+<p>
+
+      
+    「（ぶっちゃけあんまり興味はなかったが目の前で攫われるのもなんか癪だな）」 
+  
+</p>
+</div>
+<div class="mem3 left">
+<span>下野 椛</span>
+<p>
+
+      
+    「えぇ？？？？」 
+  
+</p>
+</div>
+<div class="mem5 left">
+<span>メイコ</span>
+<p>
+
+      
+    「そ、そんなこといってましたか……？」 
+  
+</p>
+</div>
+<div class="mem3 left">
+<span>下野 椛</span>
+<p>
+
+      
+    「いってないいってない」 
+  
+</p>
+</div>
+<div class="mem5 left">
+<span>メイコ</span>
+<p>
+
+      
+    「そ、そうです……先輩？……はあたしと組んでくださるんですよね」 
+  
+</p>
+</div>
+<div class="mem7 left">
+<span>オウジ</span>
+<p>
+
+      
+    「そ、そんな……モミジさん！」 
+  
+</p>
+</div>
+<div class="mem3 left">
+<span>下野 椛</span>
+<p>
+
+      
+    「なんかすごいモテモテなんだけどぉ…」 
+  
+</p>
+</div>
+<div class="mem3 left">
+<span>下野 椛</span>
+<p>
+
+      
+    「はわっ。どうしよぉ～」 
+  
+</p>
+</div>
+<div class="mem3 left">
+<span>下野 椛</span>
+<p>
+
+      
+    「って頭がなってるんだけど」 
+  
+</p>
+</div>
+<div class="mem9 left">
+<span>ヨウタ</span>
+<p>
+
+      
+    「よかったじゃねぇの。モテ期ってやつだな」 
+  
+</p>
+</div>
+<div class="mem3 left">
+<span>下野 椛</span>
+<p>
+
+      
+    「ねえ、モテ期って何回あるんだっけ」 
+  
+</p>
+</div>
+<div class="mem9 left">
+<span>ヨウタ</span>
+<p>
+
+      
+    「あ？二度とこねぇだろ」 
+  
+</p>
+</div>
+<div class="mem3 left">
+<span>下野 椛</span>
+<p>
+
+      
+    「あん？」 
+  
+</p>
+</div>
+<div class="mem3 left">
+<span>下野 椛</span>
+<p>
+
+      
+    『情報判定』誰か一人を選んで判定に使用する特技を指定！ 
+  
+</p>
+</div>
+<div class="mem3 left">
+<span>下野 椛</span>
+<p>
+
+      
+    メイコに対して対人術で判定 
+  
+</p>
+</div>
+<div class="mem3 left">
+<span>下野 椛</span>
+<p>
+
+      
+    2D6&gt;=6 （判定：遊芸） (2D6&gt;=6) ＞ 8[2,6] ＞ 8 ＞ 成功
+  
+</p>
+</div>
+<div class="mem3 left">
+<span>下野 椛</span>
+<p>
+
+      
+    「オウジ」 
+  
+</p>
+</div>
+<div class="mem3 left">
+<span>下野 椛</span>
+<p>
+
+      
+    「あのバカは、相手にしたくない」 
+  
+</p>
+</div>
+<div class="mem3 left">
+<span>下野 椛</span>
+<p>
+
+      
+    「メイコちゃん？うん、かわいいけど……私は仇敵だ」 
+  
+</p>
+</div>
+<div class="mem9 left">
+<span>ヨウタ</span>
+<p>
+
+      
+    「馬鹿って……」 
+  
+</p>
+</div>
+<div class="mem3 left">
+<span>下野 椛</span>
+<p>
+
+      
+    「あんたしかいない」 
+  
+</p>
+</div>
+<div class="mem3 left">
+<span>下野 椛</span>
+<p>
+
+      
+    「オウジ、ペアになってくれ」 
+  
+</p>
+</div>
+<div class="mem7 left">
+<span>オウジ</span>
+<p>
+
+      
+    「……え？消去法で選びました？」 
+  
+</p>
+</div>
+<div class="mem3 left">
+<span>下野 椛</span>
+<p>
+
+      
+    「いや、そんなことないよ」 
+  
+</p>
+</div>
+<div class="mem7 left">
+<span>オウジ</span>
+<p>
+
+      
+    「……まぁいいですよ。もともとそのつもりもありましたし」 
+  
+</p>
+</div>
+<div class="mem5 left">
+<span>メイコ</span>
+<p>
+
+      
+    「……」 
+  
+</p>
+</div>
+<div class="mem3 left">
+<span>下野 椛</span>
+<p>
+
+      
+    「……メイコ、私は……」 
+  
+</p>
+</div>
+<div class="mem9 left">
+<span>ヨウタ</span>
+<p>
+
+      
+    「？含みのある言い方だな」 
+  
+</p>
+</div>
+<div class="mem3 left">
+<span>下野 椛</span>
+<p>
+
+      
+    「っ」 
+  
+</p>
+</div>
+<div class="mem3 left">
+<span>下野 椛</span>
+<p>
+
+      
+    「黙れバカ」 
+  
+</p>
+</div>
+<div class="mem9 left">
+<span>ヨウタ</span>
+<p>
+
+      
+    「まぁいいやじゃあ俺はこのチビもらってくからな」 
+  
+</p>
+</div>
+<div class="mem5 left">
+<span>メイコ</span>
+<p>
+
+      
+    「はぇ？……あっ！お、おろしてぇ～」 
+  
+</p>
+</div>
+<div class="mem3 left">
+<span>下野 椛</span>
+<p>
+
+      
+    「まぁ、一番のバカはあの前川ってやつだけどな」 
+  
+</p>
+</div>
+
+<div class="kp LtoR-early">
+
+メイコはヨウタに担がれて去っていきました 
+
+</div>
+
+
+<div class="mem7 left">
+<span>オウジ</span>
+<p>
+
+      
+    「……さて、じゃあよろしく頼むよ？」 
+  
+</p>
+</div>
+<div class="mem3 left">
+<span>下野 椛</span>
+<p>
+
+      
+    「行ってしまったわね」 
+  
+</p>
+</div>
+<div class="mem3 left">
+<span>下野 椛</span>
+<p>
+
+      
+    「えぇ。よろしく、ね？」 
+  
+</p>
+</div>
+<div class="mem3 left">
+<span>下野 椛</span>
+<p>
+
+      
+    「でも、理解してね。これは互いのため。でしょ？」 
+  
+</p>
+</div>
+
+<div class="kp LtoR-early">
+
+    2人きりになったとたん態度を豹変させたオウジは見下すような視線をパートナーに向ける 
+
+</div>
+
+<div class="mem7 left">
+<span>オウジ</span>
+<p>
+
+      
+    「手下から聞いたけどボクの事を調べたらしいね。全く油断も隙もない」 
+  
+</p>
+</div>
+<div class="mem3 left">
+<span>下野 椛</span>
+<p>
+
+      
+    「ふふっ。貴方の秘密を知らずにいたら、こんな風に思わなかったにね」 
+  
+</p>
+</div>
+<div class="mem7 left">
+<span>オウジ</span>
+<p>
+
+      
+    「互いの為？まるで立場を理解してない物言いだね」 
+  
+</p>
+</div>
+<div class="mem3 left">
+<span>下野 椛</span>
+<p>
+
+      
+    「それはお前も理解してないんだよ」 
+  
+</p>
+</div>
+<div class="mem7 left">
+<span>オウジ</span>
+<p>
+
+      
+    「いきなり雇用主に楯突くとは……これだから外様の犬は」 
+  
+</p>
+</div>
+<div class="mem3 left">
+<span>下野 椛</span>
+<p>
+
+      
+    「ははっ。誰が雇用主だよ」 
+  
+</p>
+</div>
+<div class="mem7 left">
+<span>オウジ</span>
+<p>
+
+      
+    「君は比良坂の人間だろう？将来的にはボクたちに使われる側の人間だ」 
+  
+</p>
+</div>
+<div class="mem7 left">
+<span>オウジ</span>
+<p>
+
+      
+    「立場ってものを理解して欲しいね」 
+  
+</p>
+</div>
+<div class="mem3 left">
+<span>下野 椛</span>
+<p>
+
+      
+    「お前は、未来を語るが……それを語れるのは今があるからだ」 
+  
+</p>
+</div>
+<div class="mem3 left">
+<span>下野 椛</span>
+<p>
+
+      
+    「その今をなんとかする人間がいることを忘れるなよ」 
+  
+</p>
+</div>
+<div class="mem7 left">
+<span>オウジ</span>
+<p>
+
+      
+    「ははっ！頼もしい限りだ。その大口に見合うだけの戦果を期待するよ」 
+  
+</p>
+</div>
+<div class="mem3 left">
+<span>下野 椛</span>
+<p>
+
+      
+    「私はね、国のためって思うけどさぁ。結局は、えらい人間を守るためって思ってないのよ。私欲なんてくそくらえだ」 
+  
+</p>
+</div>
+<div class="mem3 left">
+<span>下野 椛</span>
+<p>
+
+      
+    「そんな代表みたいなオウジは、だれかにまもってもらってなぁいとなにもできないんでしょ？」 
+  
+</p>
+</div>
+<div class="mem7 left">
+<span>オウジ</span>
+<p>
+
+      
+    「減らず口を……」 
+  
+</p>
+</div>
+
+
+<div class="mem3 left">
+<span>下野 椛</span>
+<p>
+
+      
+    「大丈夫。私が守ってあげるから。誰が、君みたいな弱い存在を守ってあげてるか、この戦いでちゃぁんとみてね？」 
+  
+</p>
+</div>
+<div class="mem7 left">
+<span>オウジ</span>
+<p>
+
+      
+    「……フン。何のたくらみがあるかしらないが、精々頑張ってくれ」 
+  
+</p>
+</div>
+<div class="mem3 left">
+<span>下野 椛</span>
+<p>
+
+      
+    「はいはい。私は私のためにやらせてもらいますよぉ～」 
+  
+</p>
+</div>
+<div class="mem7 left">
+<span>オウジ</span>
+<p>
+
+      
+    「……では、月夜杯で会いましょう。モミジさん」 
+  
+</p>
+</div>
+<div class="mem3 left">
+<span>下野 椛</span>
+<p>
+
+      
+    「また、月夜杯で…オウジ」 
+  
+</p>
+</div>
+
+<div class="kp LtoR-early">
+
+   人が来たのを察した彼はすぐに対面を取り繕いその場を後にした 
+
+</div>
+
+
+<div class="kp LtoR-early">
+
+舞踏会の場に陰謀の気配を残して―― 
+
+</div>
+
+
+
+<div class="kp LtoR-early">
+
+シーン終了 
+
+</div>
+
+
+<div class="mem3 left">
+<span>下野 椛</span>
+<p>
+
+      
+    派閥判定 
+  
+</p>
+</div>
+<div class="mem3 left">
+<span>下野 椛</span>
+<p>
+
+      
+    RTT4 謀術分野ランダム特技表(11) ＞ 『謀術』流言の術
+  
+</p>
+</div>
+
+<div class="mem3 left">
+<span>下野 椛</span>
+<p>
+
+      
+    2D6&gt;=6 （判定：隠蔽術） (2D6&gt;=6) ＞ 10[4,6] ＞ 10 ＞ 成功
+  
+</p>
+</div>
+
+
+</div></div>
+
+<div class="bg-sp">
+    <div class="bg-over"><div class="bg-inner bg4"></div></div>
+<div class="log">
+
+
+
+<div class="kp LtoR-early">
+
+クライマックス
+
+</div>
+
+<div class="mem1 left">
+<span>GM</span>
+<p>
+
+      
+    ・戦闘から誰かが脱落すると、そのペアごと脱落する。<br>・プロット時、ペアは二人で一つのプロットを行う。プレイヤーとペアを組んでいるNPCは、そのプレイヤーが行ったプロットと同じ値になる。【無拍子】などをパートナーのNPCが使った場合、<br>そのプロット値を変更できる。PC同士がペアになった場合、二人で相談してプロットを行う。<br>・N P C は「心を開いている」状態だと、パートナーの望むタイミングで奥義を使用してくれる。 
+  
+</p>
+</div>
+<div class="kp LtoR-early">
+
+    煌びやかなシャンデリアの光が、ダンスホールの床を照らしていた。<br>磨き上げられた大理石の床には、天井の光が幾重にも反射し、<br>その中央に、今年の代表たちが集う。 
+
+</div>
+
+
+
+
+<div class="kp LtoR-early">
+
+    観客席は吹き抜けの上階にまでぎっしりと埋まり、<br>生徒たちが息をのんで見下ろしていた。 
+
+</div>
+
+
+<div class="kp LtoR-early">
+
+    ――優勝杯の返還が始まる。<br>昨年の覇者たちが壇上に上がり、銀の杯を祭事委員へと手渡すと、<br>ホール全体に拍手が湧き上がった。 
+
+</div>
+
+
+<div class="mem8 right">
+<span>祭事委員</span>
+<p>
+
+      
+    「――これより、御斎学園月夜杯を開催します！」 
+  
+</p>
+</div>
+
+<div class="kp LtoR-early">
+
+  宣言と同時に、オーケストラの弦が弾ける。<br>ホールに満ちる旋律は、まるで夜を照らす月光そのもの。<br>リズムに導かれるように、少年少女たちが舞い始めた。 
+
+</div>
+
+
+<div class="mem3 mem3-2 left">
+<span>下野 椛</span>
+<p>
+
+      
+    「きっちりリードしてくださいね」 
+  
+</p>
+</div>
+<div class="mem7 left">
+<span>オウジ</span>
+<p>
+
+      
+    「はいモミジさん。さぁ、手を」 
+  
+</p>
+</div>
+<div class="mem3 mem3-2 left">
+<span>下野 椛</span>
+<p>
+
+      
+    手を重ねる 
+  
+</p>
+</div>
+<div class="mem7 left">
+<span>オウジ</span>
+<p>
+
+      
+    慣れた手つきで手を取り踊りを始める 
+  
+</p>
+</div>
+<div class="mem4 mem4-4 right">
+<span>前川 和輔</span>
+<p>
+
+      
+    「イチズ先輩……！俺等の練習の成果見せましょう！！」 
+  
+</p>
+</div>
+<div class="mem6 mem6-2 right">
+<span>イチズ</span>
+<p>
+
+      
+    「えぇ、よろしくね。前川君」 
+  
+</p>
+</div>
+<div class="mem9 left">
+<span>ヨウタ</span>
+<p>
+
+      
+    「ほっ！よっ！」 
+  
+</p>
+</div>
+<div class="mem5 mem5-2 left">
+<span>メイコ</span>
+<p>
+
+      
+    「あ、あわああわ」 
+  
+</p>
+</div>
+
+<div class="kp LtoR-early">
+
+    絹の裾が揺れ、靴音が重なり合う。<br>一組、また一組と、音楽の波に溶けていくように踊る。<br>華やかな笑顔の裏に、競い合う心の火がちらついていた。 
+
+</div>
+
+<div class="kp LtoR-early">
+
+      
+    やがて――審査員の札が上がる。<br>ひとつ、またひとつ。<br>札が上がるたびに、ペアは静かに退場していく。<br>歓声とため息が交錯し、ホールの熱はさらに高まる。 
+
+</div>
+
+
+
+<div class="kp LtoR-early">
+
+    そして、残ったのは三組。<br>舞台に立つのは、PCたちと、名を馳せるNPCたち。<br>光の中、視線が交わり、微かな緊張が走る。<br>誰もが感じていた――ここからが本当の「舞踏会」だ、と。 
+
+</div>
+
+
+<div class="kp LtoR-early">
+
+   オーケストラが再び高らかに鳴り響く。<br>月夜杯の夜、真なる勝負が幕を開けた。 
+
+</div>
+
+<div class="mem7 left">
+<span>オウジ</span>
+<p>
+
+      
+    「権謀術数」 
+  
+</p>
+</div>
+
+<div class="mem3 mem3-2 left">
+<span>下野 椛</span>
+<p>
+
+      
+    神通丸獲得 
+  
+</p>
+</div>
+
+<div class="kp LtoR-early">
+
+    [ 下野 椛  ] 忍具 : 5 → 6 
+
+</div>
+
+
+
+<div class="mem7 left">
+<span>オウジ</span>
+<p>
+
+      
+    choice[ヨウタ,メイコ] (choice[ヨウタ,メイコ]) ＞ メイコ
+  
+</p>
+</div>
+<div class="mem7 left">
+<span>オウジ</span>
+<p>
+
+      
+    ワスケとメイコはマヒを受けます 
+  
+</p>
+</div>
+<div class="mem4 mem4-4 right">
+<span>前川 和輔</span>
+<p>
+
+      
+    1D6  (1D6) ＞ 5　流言の術
+  
+</p>
+</div>
+<div class="mem5 mem5-2 left">
+<span>メイコ</span>
+<p>
+
+      
+    1d6 (1D6) ＞ 5　言霊術
+  
+</p>
+</div>
+<div class="mem5 mem5-2 left">
+<span>メイコ</span>
+<p>
+
+      
+    「ヒッ……あ、朝から調子が……」 
+  
+</p>
+</div>
+<div class="mem4 mem4-4 right">
+<span>前川 和輔</span>
+<p>
+
+      
+    「緊張では……腹が……」 
+  
+</p>
+</div>
+<div class="mem6 mem6-2 right">
+<span>イチズ</span>
+<p>
+
+      
+    「前川君大丈夫……？」 
+  
+</p>
+</div>
+<div class="mem4 mem4-4 right">
+<span>前川 和輔</span>
+<p>
+
+      
+    「こんくらいヘーキ！っす」 
+  
+</p>
+</div>
+
+<div class="kp LtoR-early">
+
+ 戦闘開始！！ 
+
+</div>
+
+
+<div class="kp LtoR-early">
+
+    [ GM ] ラウンド : 0 → 1 
+
+</div>
+
+
+
+<div class="kp LtoR-early">
+
+ プロット 
+
+</div>
+
+
+<div class="kp LtoR-early">
+
+    プロット公開 
+
+</div>
+
+
+
+<div class="kp LtoR-early">
+
+ [ 前川 和輔 ] がダイスシンボルを公開。出目は 2 です。 
+
+</div>
+
+
+<div class="kp LtoR-early">
+
+    [ 下野 椛 ] がダイスシンボルを公開。出目は 5 です。 
+
+</div>
+
+
+<div class="kp LtoR-early">
+
+    [ ヨウタ ] がダイスシンボルを公開。出目は 4 です。 
+
+</div>
+
+
+<div class="kp LtoR-early">
+
+   プロット5 
+
+</div>
+
+<div class="mem3 mem3-2 left">
+<span>下野 椛</span>
+<p>
+
+      
+    【禁術】 
+  
+</p>
+</div>
+<div class="mem3 mem3-2 left">
+<span>下野 椛</span>
+<p>
+
+      
+    流星雨 
+  
+</p>
+</div>
+<div class="mem3 mem3-2 left">
+<span>下野 椛</span>
+<p>
+
+      
+    2D6&gt;=5 （判定：罠術） (2D6&gt;=5) ＞ 3[1,2] ＞ 3 ＞ 失敗
+  
+</p>
+</div>
+<div class="mem3 mem3-2 left">
+<span>下野 椛</span>
+<p>
+
+      
+    神通丸 
+  
+</p>
+</div>
+
+<div class="kp LtoR-early">
+
+    [ 下野 椛  ] 忍具 : 6 → 5 
+
+</div>
+
+<div class="mem7 left">
+<span>オウジ</span>
+<p>
+
+      
+    「感謝するんだな」 
+  
+</p>
+</div>
+<div class="mem3 mem3-2 left">
+<span>下野 椛</span>
+<p>
+
+      
+    「ありがとうなぁ～～～」 
+  
+</p>
+</div>
+<div class="mem3 mem3-2 left">
+<span>下野 椛</span>
+<p>
+
+      
+    2D6&gt;=5 （判定：罠術） (2D6&gt;=5) ＞ 8[2,6] ＞ 8 ＞ 成功
+  
+</p>
+</div>
+<div class="mem3 mem3-2 left">
+<span>下野 椛</span>
+<p>
+
+      
+    【必中】をメイコに 
+  
+</p>
+</div>
+<div class="mem3 mem3-2 left">
+<span>下野 椛</span>
+<p>
+
+      
+    SG#5-2&gt;=5 （判定：砲術） (SG-2@12#5&gt;=5) ＞ 9[3,6]-2 ＞ 7 ＞ 成功
+  
+</p>
+</div>
+
+<div class="mem5 mem5-2 left">
+<span>メイコ</span>
+<p>
+
+      
+    遁甲符→モミジ 
+  
+</p>
+</div>
+
+<div class="kp LtoR-early">
+
+      
+    [ 安達ヶ原メイコ ] 忍具 : 2 → 1 
+
+</div>
+
+
+<div class="mem3 mem3-2 left">
+<span>下野 椛</span>
+<p>
+
+      
+    SG#5-2&gt;=5 （判定：砲術） (SG-2@12#5&gt;=5) ＞ 8[2,6]-2 ＞ 6 ＞ 成功
+  
+</p>
+</div>
+<div class="mem5 mem5-2 left">
+<span>メイコ</span>
+<p>
+
+      
+    SG#4&gt;=9 （判定：針術） (SG@12#4&gt;=9) ＞ 7[2,5] ＞ 7 ＞ 失敗
+  
+</p>
+</div>
+<div class="mem3 mem3-2 left">
+<span>下野 椛</span>
+<p>
+
+      
+    奥義！！ 
+  
+</p>
+</div>
+<div class="mem3 mem3-2 left">
+<span>下野 椛</span>
+<p>
+
+      
+    ■奥義<br>《暴飲暴食&lt;オラクルフィースト&gt;》<br>指定特技：遊芸<br>効果　　：暴神/くらまし/神への供物<br><br>戦闘中、自分の攻撃が成功したら使用できる。攻撃が成功した目標の中から一人を選び、奥義の目標に選ぶ。その目標に対して与えるダメージを1D6-3点上昇する(最低1点)。この効果によって上昇するダメージは、各攻撃忍法の最初に書いてあるもののみである。<br><br>【くらまし】が追加された奥義を使用したとき、その奥義の奥義破り判定にはマイナス2の修正がつく。<br><br>【神への供物】が追加された惟神を使うためには、何らかの忍具(特殊忍具を含む)を一個消費しなければいけなくなる。<br>演出　　：神への供物をささげる<br><br>それにより力を授かり、力へと還元する。<br>それは「神々の晩餐」と呼ぶべきか「暴飲暴食」と呼ぶべきか 
+  
+</p>
+</div>
+
+<div class="mem3 mem3-2 left">
+<span>下野 椛</span>
+<p>
+
+      
+    「神よ、遁甲符を受け取り給え」 
+  
+</p>
+</div>
+<div class="mem3 mem3-2 left">
+<span>下野 椛</span>
+<p>
+
+      
+    「そして、我に力を」 
+  
+</p>
+</div>
+<div class="mem3 mem3-2 left">
+<span>下野 椛</span>
+<p>
+
+      
+    1D6-3 (1D6-3) ＞ 1[1]-3 ＞ -2
+  
+</p>
+</div>
+
+<div class="kp LtoR-early">
+  [ 安達ヶ原メイコ ] 生命力 : 6 → 3 
+
+
+</div>
+
+<div class="mem3 mem3-2 left">
+<span>下野 椛</span>
+<p>
+
+      
+    「くっ」 
+  
+</p>
+</div>
+<div class="mem5 mem5-2 left">
+<span>メイコ</span>
+<p>
+
+      
+    「うぅ……！」 
+  
+</p>
+</div>
+
+<div class="kp LtoR-early">
+
+    [ 下野 椛  ] 忍具 : 5 → 4 
+
+</div>
+
+<div class="kp LtoR-early">
+
+    プロット4 
+
+</div>
+
+<div class="mem5 mem5-2 left">
+<span>メイコ</span>
+<p>
+
+      
+    D66 (D66) ＞ 26
+  
+</p>
+</div>
+<div class="mem9 left">
+<span>ヨウタ</span>
+<p>
+
+      
+    D66 (D66) ＞ 26
+  
+</p>
+</div>
+<div class="mem9 left">
+<span>ヨウタ</span>
+<p>
+
+      
+    D66 (D66) ＞ 56
+  
+</p>
+</div>
+<div class="mem5 mem5-2 left">
+<span>メイコ</span>
+<p>
+
+      
+    D66 (D66) ＞ 24
+  
+</p>
+</div>
+<div class="mem9 left">
+<span>ヨウタ</span>
+<p>
+
+      
+    爆破→モミジ 
+  
+</p>
+</div>
+<div class="mem9 left">
+<span>ヨウタ</span>
+<p>
+
+      
+    2D6&gt;=5 （判定：火術） (2D6&gt;=5) ＞ 12[6,6] ＞ 12 ＞ スペシャル(【生命力】1点か変調一つを回復)
+  
+</p>
+</div>
+<div class="mem3 mem3-2 left">
+<span>下野 椛</span>
+<p>
+
+      
+    遁甲符！ 
+  
+</p>
+</div>
+
+<div class="kp LtoR-early">
+
+    [ 下野 椛  ] 忍具 : 4 → 3 
+
+</div>
+
+
+<div class="mem9 left">
+<span>ヨウタ</span>
+<p>
+
+      
+    「チッ！」 
+  
+</p>
+</div>
+<div class="mem9 left">
+<span>ヨウタ</span>
+<p>
+
+      
+    2D6&gt;=5 （判定：火術） (2D6&gt;=5) ＞ 10[5,5] ＞ 10 ＞ 成功
+  
+</p>
+</div>
+<div class="mem3 mem3-2 left">
+<span>下野 椛</span>
+<p>
+
+      
+    SG#5&gt;=7 （判定：砲術） (SG@12#5&gt;=7) ＞ 8[2,6] ＞ 8 ＞ 成功
+  
+</p>
+</div>
+<div class="mem9 left">
+<span>ヨウタ</span>
+<p>
+
+      
+    連撃 
+  
+</p>
+</div>
+<div class="mem9 left">
+<span>ヨウタ</span>
+<p>
+
+      
+    爆破再び 
+  
+</p>
+</div>
+<div class="mem9 left">
+<span>ヨウタ</span>
+<p>
+
+      
+    2D6&gt;=5 （判定：火術） (2D6&gt;=5) ＞ 6[1,5] ＞ 6 ＞ 成功
+  
+</p>
+</div>
+<div class="mem3 mem3-2 left">
+<span>下野 椛</span>
+<p>
+
+      
+    SG#5&gt;=7 （判定：砲術） (SG@12#5&gt;=7) ＞ 6[1,5] ＞ 6 ＞ 失敗
+  
+</p>
+</div>
+<div class="mem5 mem5-2 left">
+<span>メイコ</span>
+<p>
+
+      
+    奥義！！ 
+  
+</p>
+</div>
+<div class="mem5 mem5-2 left">
+<span>メイコ</span>
+<p>
+
+      
+    《群針角》<br>指定特技：針術<br>効果　　：範囲攻撃<br>演出　　：額から伸びた角が無数の針に分裂し<br>て周囲に降り注ぐ。 
+  
+</p>
+</div>
+<div class="mem5 mem5-2 left">
+<span>メイコ</span>
+<p>
+
+      
+    →モミジ、イチズ、ワスケ 
+  
+</p>
+</div>
+
+<div class="kp LtoR-early">
+
+    [ 下野 椛  ] 追加生命 : 1 → 0 <br>
+    [ 下野 椛  ] 戦術 : 1 → 0 
+
+</div>
+
+
+
+<div class="kp LtoR-early">
+
+    [ 上泉イチズ ] 生命力 : 6 → 4 
+
+</div>
+
+
+
+<div class="kp LtoR-early">
+
+    [ 前川 和輔 ] 体術 : 1 → 0 <br>
+    [ 前川 和輔 ] 忍術 : 1 → 0 
+
+</div>
+
+
+<div class="kp LtoR-early">
+
+    [ 下野 椛  ] 忍術 : 1 → 0 <br>
+    [ 下野 椛  ] 妖術 : 1 → 0 
+
+</div>
+
+
+<div class="kp LtoR-early">
+
+    プロット2 
+
+</div>
+
+<div class="mem4  mem4-4 right">
+<span>前川 和輔</span>
+<p>
+
+      
+    D66 (D66) ＞ 35
+  
+</p>
+</div>
+<div class="mem6 mem6-2 right">
+<span>イチズ</span>
+<p>
+
+      
+    D66 (D66) ＞ 16
+  
+</p>
+</div>
+<div class="mem4 mem4-4 right">
+<span>前川 和輔</span>
+<p>
+
+      
+    【極針】きょくしんを使用、対象はメイコ 
+  
+</p>
+</div>
+<div class="mem4 mem4-4 right">
+<span>前川 和輔</span>
+<p>
+
+      
+    SG#2-2&gt;=5 （判定：針術） (SG-2@12#2&gt;=5) ＞ 10[5,5]-2 ＞ 8 ＞ 成功
+  
+</p>
+</div>
+<div class="mem9 left">
+<span>ヨウタ</span>
+<p>
+
+      
+    奥義！！ 
+  
+</p>
+</div>
+<div class="mem9 left">
+<span>ヨウタ</span>
+<p>
+
+      
+    ■奥義<br>《目は口ほどにモノを言い》<br>指定特技：瞳術<br>効果　　：判定妨害<br>演出　　：にらみつけた対象の心的外傷を思い出させ、集中を途切れさせる。 
+  
+</p>
+</div>
+<div class="mem4 mem4-4 right">
+<span>前川 和輔</span>
+<p>
+
+      
+    神通丸使用 
+  
+</p>
+</div>
+
+<div class="kp LtoR-early">
+
+    [ 前川 和輔 ] 忍具 : 3 → 2 
+
+</div>
+
+
+<div class="mem4 mem4-4 right">
+<span>前川 和輔</span>
+<p>
+
+      
+    SG#2-2&gt;=5 （判定：針術） (SG-2@12#2&gt;=5) ＞ 5[2,3]-2 ＞ 3 ＞ 失敗
+  
+</p>
+</div>
+<div class="mem3 mem3-2 left">
+<span>下野 椛</span>
+<p>
+
+      
+    「あなたは、メイコを倒しますか？」 
+  
+</p>
+</div>
+<div class="mem4 mem4-4 right">
+<span>前川 和輔</span>
+<p>
+
+      
+    「倒すつもりでした」 
+  
+</p>
+</div>
+<div class="mem3 mem3-2 left">
+<span>下野 椛</span>
+<p>
+
+      
+    「では、頑張りなさい」 
+  
+</p>
+</div>
+<div class="mem3 mem3-2 left">
+<span>下野 椛</span>
+<p>
+
+      
+    遁甲符 
+  
+</p>
+</div>
+
+<div class="kp LtoR-early">
+
+    [ 下野 椛  ] 忍具 : 3 → 2 
+
+</div>
+
+<div class="mem4 mem4-4 right">
+<span>前川 和輔</span>
+<p>
+
+      
+    「サンキューパイセン！！」 
+  
+</p>
+</div>
+<div class="mem4 mem4-4 right">
+<span>前川 和輔</span>
+<p>
+
+      
+    SG#2-2&gt;=5 （判定：針術） (SG-2@12#2&gt;=5) ＞ 3[1,2]-2 ＞ 1 ＞ 失敗
+  
+</p>
+</div>
+<div class="mem3 mem3-2 left">
+<span>下野 椛</span>
+<p>
+
+      
+    「くそが」 
+  
+</p>
+</div>
+<div class="mem6 mem6-2 right">
+<span>イチズ</span>
+<p>
+
+      
+    「前川君？！」 
+  
+</p>
+</div>
+<div class="mem4 mem4-4 right">
+<span>前川 和輔</span>
+<p>
+
+      
+    「イチズ先輩にかっこいいところ見せたいのにー！」 
+  
+</p>
+</div>
+<div class="mem9 left">
+<span>ヨウタ</span>
+<p>
+
+      
+    「硬くなってんぜ1年！」 
+  
+</p>
+</div>
+<div class="mem6 mem6-2 right">
+<span>イチズ</span>
+<p>
+
+      
+    【時雨】→メイコ、ヨウタ 
+  
+</p>
+</div>
+<div class="mem6 mem6-2 right">
+<span>イチズ</span>
+<p>
+
+      
+    陽炎 
+  
+</p>
+</div>
+<div class="mem6 mem6-2 right">
+<span>イチズ</span>
+<p>
+
+      
+    2D6&gt;=5 （判定：刀術） (2D6&gt;=5) ＞ 6[2,4] ＞ 6 ＞ 成功
+  
+</p>
+</div>
+<div class="mem6 mem6-2 right">
+<span>イチズ</span>
+<p>
+
+      
+    2D6&gt;=5 （判定：砲術） (2D6&gt;=5) ＞ 6[1,5] ＞ 6 ＞ 成功
+  
+</p>
+</div>
+<div class="mem6 mem6-2 right">
+<span>イチズ</span>
+<p>
+
+      
+    メイコに失敗 
+  
+</p>
+</div>
+<div class="mem9 left">
+<span>ヨウタ</span>
+<p>
+
+      
+    SG-2&gt;=7 （判定：遁走術、指定特技：砲術） (SG-2@12#2&gt;=7) ＞ 3[1,2]-2 ＞ 1 ＞ 失敗
+  
+</p>
+</div>
+
+<div class="kp LtoR-early">
+
+    [ 岡野ヨウタ ] 生命力 : 6 → 4 
+
+</div>
+
+
+<div class="kp LtoR-early">
+
+    ラウンド終了 
+
+</div>
+
+
+<div class="kp LtoR-early">
+
+    [ GM ] ラウンド : 1 → 2 
+
+</div>
+
+
+<div class="kp LtoR-early">
+
+    プロット 
+
+</div>
+
+
+<div class="kp LtoR-early">
+
+    プロット公開 
+
+</div>
+
+
+<div class="kp LtoR-early">
+
+    [ メイコ ] がダイスシンボルを公開。出目は 5 です。 
+
+</div>
+
+
+<div class="kp LtoR-early">
+
+    [ 下野 椛 ] がダイスシンボルを公開。出目は 4 です。 
+
+</div>
+
+
+<div class="kp LtoR-early">
+
+    [ 前川 和輔 ] がダイスシンボルを公開。出目は 2 です。
+
+</div>
+
+
+
+
+<div class="kp LtoR-early">
+
+    プロット5 
+
+</div>
+
+<div class="mem5 mem5-2 left">
+<span>メイコ</span>
+<p>
+
+      
+    D66 (D66) ＞ 56
+  
+</p>
+</div>
+<div class="mem9 left">
+<span>ヨウタ</span>
+<p>
+
+      
+    D66 (D66) ＞ 15
+  
+</p>
+</div>
+<div class="mem5 mem5-2 left">
+<span>メイコ</span>
+<p>
+
+      
+    流星雨 
+  
+</p>
+</div>
+<div class="mem5 mem5-2 left">
+<span>メイコ</span>
+<p>
+
+      
+    【禁術】の効果でダメ 
+  
+</p>
+</div>
+
+<div class="kp LtoR-early">
+
+    [ 安達ヶ原メイコ ] 生命力 : 3 → 2 
+
+</div>
+
+<div class="mem5 mem5-2 left">
+<span>メイコ</span>
+<p>
+
+      
+    痛打 
+  
+</p>
+</div>
+<div class="mem5 mem5-2 left">
+<span>メイコ</span>
+<p>
+
+      
+    SG#5&gt;=5 （判定：針術） (SG@12#5&gt;=5) ＞ 2[1,1] ＞ 2 ＞ ファンブル
+  
+</p>
+</div>
+<div class="mem5 mem5-2 left">
+<span>メイコ</span>
+<p>
+
+      
+    神通丸 
+  
+</p>
+</div>
+<div class="mem5 mem5-2 left">
+<span>メイコ</span>
+<p>
+
+      
+    SG#5&gt;=5 （判定：針術） (SG@12#5&gt;=5) ＞ 12[6,6] ＞ 12 ＞ スペシャル(【生命力】1点か変調一つを回復)
+  
+</p>
+</div>
+
+<div class="kp LtoR-early">
+
+    [ 安達ヶ原メイコ ] 忍具 : 1 → 0 
+
+</div>
+
+<div class="kp LtoR-early">
+
+    [ 安達ヶ原メイコ ] 生命力 : 2 → 3 
+
+</div>
+
+<div class="mem5 mem5-2 left">
+<span>メイコ</span>
+<p>
+
+      
+    流星雨の判定 
+  
+</p>
+</div>
+<div class="mem5 mem5-2 left">
+<span>メイコ</span>
+<p>
+
+      
+    SG#5&gt;=5 （判定：召喚術） (SG@12#5&gt;=5) ＞ 5[2,3] ＞ 5 ＞ ファンブル
+  
+</p>
+</div>
+
+<div class="mem11 left">
+<span>ヨウタ</span>
+<p>
+
+      
+    遁甲符 
+  
+</p>
+</div>
+
+<div class="kp LtoR-early">
+
+    [ 岡野ヨウタ ] 忍具 : 2 → 1 
+
+</div>
+
+<div class="mem5 mem5-2 left">
+<span>メイコ</span>
+<p>
+
+      
+    SG#5&gt;=5 （判定：召喚術） (SG@12#5&gt;=5) ＞ 8[2,6] ＞ 8 ＞ 成功
+  
+</p>
+</div>
+<div class="mem4 mem4-4 right">
+<span>前川 和輔</span>
+<p>
+
+      
+    2D6&gt;=5 （判定：召喚術） (2D6&gt;=5) ＞ 8[2,6] ＞ 8 ＞ 成功
+  
+</p>
+</div>
+<div class="mem5 mem5-2 left">
+<span>メイコ</span>
+<p>
+
+      
+    回避判定 
+  
+</p>
+</div>
+<div class="mem5 mem5-2 left">
+<span>メイコ</span>
+<p>
+
+      
+    SG#5&gt;=5 （判定：召喚術） (SG@12#5&gt;=5) ＞ 5[2,3] ＞ 5 ＞ ファンブル
+  
+</p>
+</div>
+<div class="mem3 mem3-2 left">
+<span>下野 椛</span>
+<p>
+
+      
+    SG#4&gt;=9 （判定：罠術） (SG@12#4&gt;=9) ＞ 10[4,6] ＞ 10 ＞ 成功
+  
+</p>
+</div>
+<div class="mem11 left">
+<span>ヨウタ</span>
+<p>
+
+      
+    SG&gt;=8 （判定：野戦術、指定特技：召喚術） (SG@12#2&gt;=8) ＞ 7[2,5] ＞ 7 ＞ 失敗
+  
+</p>
+</div>
+
+<div class="kp LtoR-early">
+
+    [ 岡野ヨウタ ] 生命力 : 4 → 2 
+
+</div>
+
+
+
+<div class="kp LtoR-early">
+
+    [ 安達ヶ原メイコ ] 生命力 : 3 → 1 
+
+</div>
+
+<div class="mem11 left">
+<span>ヨウタ</span>
+<p>
+
+      
+    奥義！！ 
+  
+</p>
+</div>
+<div class="mem9 left">
+<span>ヨウタ</span>
+<p>
+
+      
+    モミジに対して判定妨害 
+  
+</p>
+</div>
+<div class="mem3 mem3-2 left">
+<span>下野 椛</span>
+<p>
+
+      
+    兵糧丸 
+  
+</p>
+</div>
+
+
+<div class="kp LtoR-early">
+
+    [ 下野 椛  ] 忍具 : 2 → 1 
+
+</div>
+
+
+
+
+<div class="kp LtoR-early">
+
+    [ 下野 椛  ] 妖術 : 0 → 1 
+
+</div>
+
+<div class="mem3 mem3-2 left">
+<span>下野 椛</span>
+<p>
+
+      
+    奥義破り 
+  
+</p>
+</div>
+<div class="mem3 mem3-2 left">
+<span>下野 椛</span>
+<p>
+
+      
+    SG#4&gt;=7 （判定：憑依術） (SG@12#4&gt;=7) ＞ 11[5,6] ＞ 11 ＞ 成功
+  
+</p>
+</div>
+<div class="mem5 mem5-2 left">
+<span>メイコ</span>
+<p>
+
+      
+    「ッ！」 
+  
+</p>
+</div>
+<div class="mem3 mem3-2 left">
+<span>下野 椛</span>
+<p>
+
+      
+    「させっかよ！」 
+  
+</p>
+</div>
+<div class="mem9 left">
+<span>ヨウタ</span>
+<p>
+
+      
+    「へッ！やるじゃねぇの！」 
+  
+</p>
+</div>
+<div class="mem7 left">
+<span>オウジ</span>
+<p>
+
+      
+    「品性に欠ける物言いはよしてくれ」 
+  
+</p>
+</div>
+<div class="mem3 mem3-2 left">
+<span>下野 椛</span>
+<p>
+
+      
+    「オウジ、うるさい」 
+  
+</p>
+</div>
+<div class="mem9 left">
+<span>ヨウタ</span>
+<p>
+
+      
+    爆破→モミジ 
+  
+</p>
+</div>
+<div class="mem9 left">
+<span>ヨウタ</span>
+<p>
+
+      
+    SG#5&gt;=5 （判定：火術） (SG@12#5&gt;=5) ＞ 7[3,4] ＞ 7 ＞ 成功
+  
+</p>
+</div>
+<div class="mem3 mem3-2 left">
+<span>下野 椛</span>
+<p>
+
+      
+    SG#4&gt;=7 （判定：砲術） (SG@12#4&gt;=7) ＞ 8[3,5] ＞ 8 ＞ 成功
+  
+</p>
+</div>
+<div class="mem9 left">
+<span>ヨウタ</span>
+<p>
+
+      
+    連撃 
+  
+</p>
+</div>
+<div class="mem9 left">
+<span>ヨウタ</span>
+<p>
+
+      
+    爆破 
+  
+</p>
+</div>
+<div class="mem9 left">
+<span>ヨウタ</span>
+<p>
+
+      
+    SG#5&gt;=5 （判定：火術） (SG@12#5&gt;=5) ＞ 4[1,3] ＞ 4 ＞ ファンブル
+  
+</p>
+</div>
+<div class="mem9 left">
+<span>ヨウタ</span>
+<p>
+
+      
+    神通丸 
+  
+</p>
+</div>
+
+
+<div class="kp LtoR-early">
+
+    [ 岡野ヨウタ ] 忍具 : 1 → 0 
+
+</div>
+
+<div class="mem9 left">
+<span>ヨウタ</span>
+<p>
+
+      
+    SG#5&gt;=5 （判定：火術） (SG@12#5&gt;=5) ＞ 10[4,6] ＞ 10 ＞ 成功
+  
+</p>
+</div>
+<div class="mem3 mem3-2 left">
+<span>下野 椛</span>
+<p>
+
+      
+    SG#4&gt;=7 （判定：砲術） (SG@12#4&gt;=7) ＞ 5[2,3] ＞ 5 ＞ 失敗
+  
+</p>
+</div>
+
+
+<div class="kp LtoR-early">
+
+    [ 下野 椛  ] 妖術 : 1 → 0 <br>
+    [ 下野 椛  ] 謀術 : 1 → 0 
+
+</div>
+
+<div class="mem3 mem3-2 left">
+<span>下野 椛</span>
+<p>
+
+      
+    【必中】をメイコに 
+  
+</p>
+</div>
+<div class="mem3 mem3-2 left">
+<span>下野 椛</span>
+<p>
+
+      
+    SG#4-2&gt;=5 （判定：砲術） (SG-2@12#4&gt;=5) ＞ 3[1,2]-2 ＞ 1 ＞ ファンブル
+  
+</p>
+</div>
+<div class="mem3 mem3-2 left">
+<span>下野 椛</span>
+<p>
+
+      
+    「くっ」 
+  
+</p>
+</div>
+<div class="mem3 mem3-2 left">
+<span>下野 椛</span>
+<p>
+
+      
+    「神への供物が…」 
+  
+</p>
+</div>
+<div class="mem3 mem3-2 left">
+<span>下野 椛</span>
+<p>
+
+      
+    「しかたなし！」 
+  
+</p>
+</div>
+<div class="mem3 mem3-2 left">
+<span>下野 椛</span>
+<p>
+
+      
+    神通丸！ 
+  
+</p>
+</div>
+
+<div class="kp LtoR-early">
+
+    [ 下野 椛  ] 忍具 : 1 → 0 
+
+</div>
+
+<div class="mem3 mem3-2 left">
+<span>下野 椛</span>
+<p>
+
+      
+    SG#4-2&gt;=5 （判定：砲術） (SG-2@12#4&gt;=5) ＞ 2[1,1]-2 ＞ 0 ＞ ファンブル
+  
+</p>
+</div>
+<div class="mem3 mem3-2 left">
+<span>下野 椛</span>
+<p>
+
+      
+    「なんでぇえええええええええええ」 
+  
+</p>
+</div>
+<div class="mem3 mem3-2 left">
+<span>下野 椛</span>
+<p>
+
+      
+    「もう、おわりだぁ」 
+  
+</p>
+</div>
+<div class="mem9 left">
+<span>ヨウタ</span>
+<p>
+
+      
+    「おいおいお転婆かぁ？」 
+  
+</p>
+</div>
+<div class="mem3 mem3-2 left">
+<span>下野 椛</span>
+<p>
+
+      
+    「しくしく」 
+  
+</p>
+</div>
+<div class="mem7 left">
+<span>オウジ</span>
+<p>
+
+      
+    「おい？！どうした？！」 
+  
+</p>
+</div>
+<div class="mem3 mem3-2 left">
+<span>下野 椛</span>
+<p>
+
+      
+    「神様の供物が足りない…」 
+  
+</p>
+</div>
+
+
+<div class="kp LtoR-early">
+
+    プロット2 
+
+</div>
+
+<div class="mem4 mem4-4 right">
+<span>前川 和輔</span>
+<p>
+
+      
+    D66 (D66) ＞ 66
+  
+</p>
+</div>
+<div class="mem6 mem6-2 right">
+<span>イチズ</span>
+<p>
+
+      
+    D66 (D66) ＞ 13
+  
+</p>
+</div>
+<div class="mem4 mem4-4 right">
+<span>前川 和輔</span>
+<p>
+
+      
+    【極針】きょくしんを使用、対象は椛先輩 
+  
+</p>
+</div>
+<div class="mem4 mem4-4 right">
+<span>前川 和輔</span>
+<p>
+
+      
+    2D6&gt;=5 （判定：針術） (2D6&gt;=5) ＞ 7[3,4] ＞ 7 ＞ 成功
+  
+</p>
+</div>
+<div class="mem3 mem3-2 left">
+<span>下野 椛</span>
+<p>
+
+      
+    ばいばい 
+  
+</p>
+</div>
+
+
+<div class="kp LtoR-early">
+
+    [ 下野 椛  ] 器術 : 1 → 0 <br>
+    [ 下野 椛  ] 体術 : 1 → 0 
+
+</div>
+
+
+<div class="kp LtoR-early">
+
+    脱落 
+
+</div>
+
+<div class="mem4 mem4-4 right">
+<span>前川 和輔</span>
+<p>
+
+      
+    「すんません、先輩……」 
+  
+</p>
+</div>
+<div class="mem7 left">
+<span>オウジ</span>
+<p>
+
+      
+    脱落 
+  
+</p>
+</div>
+<div class="mem3 mem3-2 left">
+<span>下野 椛</span>
+<p>
+
+      
+    「前川……ﾕﾙｻﾈｪ」 
+  
+</p>
+</div>
+<div class="mem4 mem4-4 right">
+<span>前川 和輔</span>
+<p>
+
+      
+    「俺はオウジが（個人的に）気に入らないから……！！」 
+  
+</p>
+</div>
+
+
+<div class="kp LtoR-early">
+
+    モミジの足がもつれ体勢を崩してしまう。審査員はそれを見逃さない 
+
+</div>
+
+
+<div class="mem7 left">
+<span>オウジ</span>
+<p>
+
+      
+    「おい！なにをしている！」 
+  
+</p>
+</div>
+<div class="mem7 left">
+<span>オウジ</span>
+<p>
+
+      
+    「負けてしまったじゃないか！」 
+  
+</p>
+</div>
+<div class="mem3 mem3-2 left">
+<span>下野 椛</span>
+<p>
+
+      
+    「うっさい！こっちはそれどころじゃ」 
+  
+</p>
+</div>
+<div class="mem3 mem3-2 left">
+<span>下野 椛</span>
+<p>
+
+      
+    「あぁもう。」 
+  
+</p>
+</div>
+<div class="mem3 mem3-2 left">
+<span>下野 椛</span>
+<p>
+
+      
+    「やっぱり、私はまだまだか」 
+  
+</p>
+</div>
+<div class="mem3 mem3-2 left">
+<span>下野 椛</span>
+<p>
+
+      
+    「ごめんね、アニマ先輩」 
+  
+</p>
+</div>
+
+
+<div class="kp LtoR-early">
+
+    ラウンド終了 
+
+</div>
+
+
+<div class="kp LtoR-early">
+
+    [ GM ] ラウンド : 2 → 3 
+
+</div>
+
+
+<div class="kp LtoR-early">
+
+    プロット 
+
+</div>
+
+<div class="kp LtoR-early">
+
+    プロット公開 
+
+</div>
+
+
+<div class="kp LtoR-early">
+
+    [ 前川 和輔 ] がダイスシンボルを公開。出目は 4 です。 
+
+</div>
+
+
+<div class="kp LtoR-early">
+
+    [ ヨウタ ] がダイスシンボルを公開。出目は 2 です。 
+
+</div>
+
+<div class="mem6 mem6-2 right">
+<span>イチズ</span>
+<p>
+
+      
+    無拍子 
+  
+</p>
+</div>
+<div class="mem6 mem6-2 right">
+<span>イチズ</span>
+<p>
+
+      
+    2D6&gt;=5 （判定：盗聴術） (2D6&gt;=5) ＞ 12[6,6] ＞ 12 ＞ スペシャル(【生命力】1点か変調一つを回復)
+  
+</p>
+</div>
+
+<div class="kp LtoR-early">
+
+    [ 上泉イチズ ] 生命力 : 4 → 5 
+
+</div>
+
+
+<div class="mem6 mem6-2 right">
+<span>イチズ</span>
+<p>
+
+      
+    「こちらですわ」 
+  
+</p>
+</div>
+<div class="mem4 mem4-4 right">
+<span>前川 和輔</span>
+<p>
+
+      
+    「ありがとうございます！！」 
+  
+</p>
+</div>
+
+
+<div class="kp LtoR-early">
+
+    プロット3 
+
+</div>
+
+<div class="mem6 mem6-2 right">
+<span>イチズ</span>
+<p>
+
+      
+    D66 (D66) ＞ 34
+  
+</p>
+</div>
+<div class="mem4 mem4-4 right">
+<span>前川 和輔</span>
+<p>
+
+      
+    D66 (D66) ＞ 25
+  
+</p>
+</div>
+<div class="mem6 mem6-2 right">
+<span>イチズ</span>
+<p>
+
+      
+    時雨→メイコ、ヨウタ 
+  
+</p>
+</div>
+<div class="mem6 mem6-2 right">
+<span>イチズ</span>
+<p>
+
+      
+    陽炎 
+  
+</p>
+</div>
+<div class="mem6 mem6-2 right">
+<span>イチズ</span>
+<p>
+
+      
+    2D6&gt;=5 （判定：刀術） (2D6&gt;=5) ＞ 6[2,4] ＞ 6 ＞ 成功
+  
+</p>
+</div>
+<div class="mem6 mem6-2 right">
+<span>イチズ</span>
+<p>
+
+      
+    時雨の判定 
+  
+</p>
+</div>
+<div class="mem6 mem6-2 right">
+<span>イチズ</span>
+<p>
+
+      
+    2D6&gt;=5 （判定：砲術） (2D6&gt;=5) ＞ 5[1,4] ＞ 5 ＞ 成功
+  
+</p>
+</div>
+<div class="mem6 mem6-2 right">
+<span>イチズ</span>
+<p>
+
+      
+    神通丸 
+  
+</p>
+</div>
+
+<div class="kp LtoR-early">
+
+  [ 上泉イチズ ] 忍具 : 2 → 1 
+
+</div>
+
+
+<div class="mem6 mem6-2 right">
+<span>イチズ</span>
+<p>
+
+      
+    2D6&gt;=5 （判定：砲術） (2D6&gt;=5) ＞ 7[2,5] ＞ 7 ＞ 成功
+  
+</p>
+</div>
+<div class="mem9 left">
+<span>ヨウタ</span>
+<p>
+
+      
+    奥義！！ 
+  
+</p>
+</div>
+<div class="mem6 mem6-2 right">
+<span>イチズ</span>
+<p>
+
+      
+    奥義破り 
+  
+</p>
+</div>
+<div class="mem6 mem6-2 right">
+<span>イチズ</span>
+<p>
+
+      
+    2D6&gt;=7 （判定：見敵術、指定特技：瞳術） (2D6&gt;=7) ＞ 7[1,6] ＞ 7 ＞ 成功
+  
+</p>
+</div>
+<div class="mem9 left">
+<span>ヨウタ</span>
+<p>
+
+      
+    SG#2-2&gt;=7 （判定：遁走術、指定特技：砲術） (SG-2@12#2&gt;=7) ＞ 10[5,5]-2 ＞ 8 ＞ 成功
+  
+</p>
+</div>
+<div class="mem5 mem5-2 left">
+<span>メイコ</span>
+<p>
+
+      
+    SG#2-2&gt;=9 （判定：針術、指定特技：砲術） (SG-2@12#2&gt;=9) ＞ 3[1,2]-2 ＞ 1 ＞ 失敗
+  
+</p>
+</div>
+<div class="mem4 mem4-4 right">
+<span>前川 和輔</span>
+<p>
+
+      
+    奥義！！ 
+  
+</p>
+</div>
+<div class="mem4 mem4-4 right">
+<span>前川 和輔</span>
+<p>
+
+      
+    ■奥義<br>《綺羅星✩.*˚》<br>指定特技：針術<br>効果　　：クリティカルヒット/立ち会い/断ち/増幅装置/術式開示<br><br>【立ち会い】が追加された奥義は、その目標以外のキャラクターは、奥義破り判定を行うことができなくなる。<br><br><br>【断ち】が追加された奥義は、目標に選んだキャラクターに、さらに接近戦ダメージを1点与えることができる。<br><br>【増幅装置】が追加された奥義は、「器術」に対応する【生命力】が減少していないか、「汚れ」を受けていないときのみ使用できる。<br><br>【術式開示】が追加された奥義を使用するとき、そのシーンに、その【奥義】の【情報】を獲得していない者が一人以上いる場合、奥義の使用の直前に【術式開示】を宣言しなければならない。【術式開示】を宣言すると、そのシーンに登場しているキャラクター全員が、その【奥義】の【情報】を獲得する。<br>演出　　：基本形は右手の小指と薬指をたたみ、他の指はくっつけず、人差し指と中指の間に右目を挟むというポーズをした瞬間シュピンッ！という音と共に眩い光が放たれる。<br>  
+  
+</p>
+</div>
+
+<div class="mem4 mem4-4 right">
+<span>前川 和輔</span>
+<p>
+
+      
+    対象はヨウタ 
+  
+</p>
+</div>
+<div class="mem9 left">
+<span>ヨウタ</span>
+<p>
+
+      
+    「チィ！」 
+  
+</p>
+</div>
+<div class="mem9 left">
+<span>ヨウタ</span>
+<p>
+
+      
+    SG#2-3&gt;=7 （判定：火術、指定特技：針術） (SG-3@12#2&gt;=7) ＞ 8[3,5]-3 ＞ 5 ＞ 失敗
+  
+</p>
+</div>
+
+<div class="kp LtoR-early">
+
+    [ 岡野ヨウタ ] 生命力 : 2 → 0 
+
+</div>
+
+<div class="kp LtoR-early">
+
+    [ 安達ヶ原メイコ ] 生命力 : 1 → 0 
+
+</div>
+
+<div class="mem4 mem4-4 right">
+<span>前川 和輔</span>
+<p>
+
+      
+    「綺羅星っ！！！」 
+  
+</p>
+</div>
+<div class="mem9 left">
+<span>ヨウタ</span>
+<p>
+
+      
+    「チクショウ！」 
+  
+</p>
+</div>
+<div class="mem5 mem5-2 left">
+<span>メイコ</span>
+<p>
+
+      
+    「……」 
+  
+</p>
+</div>
+
+
+<div class="kp LtoR-early">
+
+    戦闘終了！ 
+
+</div>
+
+
+<div class="kp LtoR-early">
+
+    勝者：ワスケ＆イチズペア！ 
+
+</div>
+
+<div class="mem4 mem4-4 right">
+<span>前川 和輔</span>
+<p>
+
+      
+    「やりましたよ！先輩！」 
+  
+</p>
+</div>
+<div class="mem6 mem6-2 right">
+<span>イチズ</span>
+<p>
+
+      
+    「ワタクシたちの勝利……ありがとう、前川君」 
+  
+</p>
+</div>
+
+<div class="mem1 left">
+<span>GM</span>
+<p>
+
+      
+    戦果：お互いに好きな【感情】を得ることができます 
+  
+</p>
+</div>
+<div class="mem4 mem4-4 right">
+<span>前川 和輔</span>
+<p>
+
+      
+    「いえいえ、俺なんかは先輩の足ひっぱってばっかで……」 
+  
+</p>
+</div>
+<div class="mem6 mem6-2 right">
+<span>イチズ</span>
+<p>
+
+      
+    「……実はね、ここまで残っていたのは初めてなの」 
+  
+</p>
+</div>
+<div class="mem6 mem6-2 right">
+<span>イチズ</span>
+<p>
+
+      
+    「優勝できたのも……」 
+  
+</p>
+</div>
+<div class="mem6 mem6-2 right">
+<span>イチズ</span>
+<p>
+
+      
+    「卒業の前に良い思い出ができましたわ」 
+  
+</p>
+</div>
+<div class="mem4 mem4-4 right">
+<span>前川 和輔</span>
+<p>
+
+      
+    「えぇ……先輩のお力になれたのなら本望ですよ！」 
+  
+</p>
+</div>
+<div class="mem4 mem4-4 right">
+<span>前川 和輔</span>
+<p>
+
+      
+    （本当はもっとかっこいいところみせたかったけど……） 
+  
+</p>
+</div>
+
+
+<div class="kp LtoR-early">
+
+    興奮か感動してか、彼女の目元は潤んでいる 
+
+</div>
+
+
+<div class="kp LtoR-early">
+
+    彼ら、彼女らの栄誉が称えられ、<br>優勝の杯が授与される。<br>割れんばかりの拍手の中、二人は月光のようなスポットライトを浴び、静かに礼をする。 
+
+</div>
+
+<div class="mem8 right">
+<span>祭事委員</span>
+<p>
+
+      
+    「お二人とも優勝おめでとうございます。特別貴賓室へとお越しください」 
+  
+</p>
+</div>
+<div class="mem4 mem4-4 right">
+<span>前川 和輔</span>
+<p>
+
+      
+    「先輩！呼ばれてるんで行きましょう！」 
+  
+</p>
+</div>
+<div class="mem6 mem6-2 right">
+<span>イチズ</span>
+<p>
+
+      
+    「えぇ……」 
+  
+</p>
+</div>
+
+
+<div class="kp LtoR-early">
+
+    返事をした彼女は立ち止まりワスケに対して微笑みかえかけ手を差し出す 
+
+</div>
+
+<div class="mem6 mem6-2 right">
+<span>イチズ</span>
+<p>
+
+      
+    「前川君……リードしてくださる？」 
+  
+</p>
+</div>
+<div class="mem4 mem4-4 right">
+<span>前川 和輔</span>
+<p>
+
+      
+    「……！もちろん！」 
+  
+</p>
+</div>
+
+
+<div class="kp LtoR-early">
+
+    その後、優勝ペアは特別貴賓室へと案内されていく。<br>扉の向こうで待つものが祝福か、それとも――。<br><br>月夜杯の幕は、静かに降りた。
+
+</div>
+
+<div class="mem9 left">
+<span>ヨウタ</span>
+<p>
+
+      
+    「……貴賓室か」 
+  
+</p>
+</div>
+<div class="mem9 left">
+<span>ヨウタ</span>
+<p>
+
+      
+    「チッ！まぁまだ来年があるからなそん時リベンジすりゃいいか」 
+  
+</p>
+</div>
+<div class="mem9 left">
+<span>ヨウタ</span>
+<p>
+
+      
+    「な！チビ……ん？」 
+  
+</p>
+</div>
+
+
+<div class="kp LtoR-early">
+
+    優勝者を見送る人々の中で悔しさをにじませていたヨウタだったが、気が付くのそのパートナーの女性は姿を消していた 
+
+</div>
+
+<div class="mem9 left">
+<span>ヨウタ</span>
+<p>
+
+      
+    「あり……怒らせちまったか？」 
+  
+</p>
+</div>
+<div class="mem7 left">
+<span>オウジ</span>
+<p>
+
+      
+    「全く……大口をたたいたのになんてザマだ」 
+  
+</p>
+</div>
+<div class="mem3 mem3-2 left">
+<span>下野 椛</span>
+<p>
+
+      
+    「えぇ。我ながら情けない」 
+  
+</p>
+</div>
+<div class="mem3 mem3-2 left">
+<span>下野 椛</span>
+<p>
+
+      
+    「けどさ、私が君を守れなかったってことはね――」 
+  
+</p>
+</div>
+<div class="mem3 mem3-2 left">
+<span>下野 椛</span>
+<p>
+
+      
+    「危険が君のすぐ近くにいても、なんともならないってことだよ」 
+  
+</p>
+</div>
+<div class="mem7 left">
+<span>オウジ</span>
+<p>
+
+      
+    「……クク何を言っているんだきみは？」 
+  
+</p>
+</div>
+<div class="mem3 mem3-2 left">
+<span>下野 椛</span>
+<p>
+
+      
+    「おわりのベルはそろそろかな」 
+  
+</p>
+</div>
+<div class="mem7 left">
+<span>オウジ</span>
+<p>
+
+      
+    「まさか護衛のつもりだったのか？馬鹿らしい……君なんかよりよっぽど頼りになる部下がついているさ」 
+  
+</p>
+</div>
+<div class="mem3 mem3-2 left">
+<span>下野 椛</span>
+<p>
+
+      
+    「危険分子を排除出来てないのに？」 
+  
+</p>
+</div>
+
+<div class="kp LtoR-early">
+
+    人込みの中にオウジを守るように動く姿がある 
+
+</div>
+
+<div class="mem3 mem3-2 left">
+<span>下野 椛</span>
+<p>
+
+      
+    「私と一緒でダメな人たちだなぁ」 
+  
+</p>
+</div>
+<div class="mem7 left">
+<span>オウジ</span>
+<p>
+
+      
+    「排除と言ったり護衛と言ったり……忙しいなキミは」 
+  
+</p>
+</div>
+<div class="mem3 mem3-2 left">
+<span>下野 椛</span>
+<p>
+
+      
+    「護衛とは言ってないけどね」 
+  
+</p>
+</div>
+<div class="mem7 left">
+<span>オウジ</span>
+<p>
+
+      
+    「おあいにく様、ボクの部下は優秀なのでね」 
+  
+</p>
+</div>
+<div class="mem3 mem3-2 left">
+<span>下野 椛</span>
+<p>
+
+      
+    「ただ、私は危険分子の排除を目的にしてただけ。ただ、それが、必然とあなたとのかかわりを必要としたからそうしただけ」 
+  
+</p>
+</div>
+<div class="mem3 mem3-2 left">
+<span>下野 椛</span>
+<p>
+
+      
+    「でもさ」 
+  
+</p>
+</div>
+<div class="mem3 mem3-2 left">
+<span>下野 椛</span>
+<p>
+
+      
+    「……あれ、御釘衆みたいに未来見ちゃったり？」 
+  
+</p>
+</div>
+<div class="mem3 mem3-2 left">
+<span>下野 椛</span>
+<p>
+
+      
+    「ははっ。ばっかみたい。」 
+  
+</p>
+</div>
+<div class="mem7 left">
+<span>オウジ</span>
+<p>
+
+      
+    「？何を言ってるんだキミは」 
+  
+</p>
+</div>
+<div class="mem7 left">
+<span>オウジ</span>
+<p>
+
+      
+    「まぁいい。ボクの見込み違いだった。来年は別のを誘うよ」 
+  
+</p>
+</div>
+<div class="mem7 left">
+<span>オウジ</span>
+<p>
+
+      
+    「じゃあねモミジ”さん”」 
+  
+</p>
+</div>
+<div class="mem3 mem3-2 left">
+<span>下野 椛</span>
+<p>
+
+      
+    「そもそも、君に来年はあるのかな」 
+  
+</p>
+</div>
+<div class="mem3 mem3-2 left">
+<span>下野 椛</span>
+<p>
+
+      
+    「さようなら、"オウジさん"」 
+  
+</p>
+</div>
+
+<div class="kp LtoR-early">
+
+    オウジは部下を引き連れ会場を後にした 
+
+</div>
+
+
+
+<div class="kp LtoR-early">
+
+    一人残されたモミジの下にクラスメイトの男が近寄ってくる 
+
+</div>
+
+<div class="mem9 left">
+<span>ヨウタ</span>
+<p>
+
+      
+    「よう3位」 
+  
+</p>
+</div>
+<div class="mem3 mem3-2 left">
+<span>下野 椛</span>
+<p>
+
+      
+    「どうも、2位」 
+  
+</p>
+</div>
+<div class="mem9 left">
+<span>ヨウタ</span>
+<p>
+
+      
+    「なんだ不機嫌そうだな？あいつとは合わなかったらしいな」 
+  
+</p>
+</div>
+<div class="mem3 mem3-2 left">
+<span>下野 椛</span>
+<p>
+
+      
+    「合わない。もともとの関係が相容れない存在みたいなものだよ」 
+  
+</p>
+</div>
+<div class="mem9 left">
+<span>ヨウタ</span>
+<p>
+
+      
+    「ハハッ！ガキの戯言だほっとけほっとけ」 
+  
+</p>
+</div>
+<div class="mem3 mem3-2 left">
+<span>下野 椛</span>
+<p>
+
+      
+    「ははっ」 
+  
+</p>
+</div>
+<div class="mem3 mem3-2 left">
+<span>下野 椛</span>
+<p>
+
+      
+    「――今回の任務がなければ、あんたみたいにお気楽にやれてたのかね」 
+  
+</p>
+</div>
+<div class="mem9 left">
+<span>ヨウタ</span>
+<p>
+
+      
+    「たらればを語ると鬼が笑うぜ？」 
+  
+</p>
+</div>
+<div class="mem9 left">
+<span>ヨウタ</span>
+<p>
+
+      
+    「いやそんなことより俺のペア見てねぇか？」 
+  
+</p>
+</div>
+<div class="mem3 mem3-2 left">
+<span>下野 椛</span>
+<p>
+
+      
+    「ははっ。私は神様に一途なんだよ」 
+  
+</p>
+</div>
+<div class="mem3 mem3-2 left">
+<span>下野 椛</span>
+<p>
+
+      
+    「ペア？それなら――」 
+  
+</p>
+</div>
+<div class="mem3 mem3-2 left">
+<span>下野 椛</span>
+<p>
+
+      
+    「"お仕事"をしに行ったんじゃないかな」 
+  
+</p>
+</div>
+<div class="mem9 left">
+<span>ヨウタ</span>
+<p>
+
+      
+    「はぁ？」 
+  
+</p>
+</div>
+
+
+</div></div>
+
+<div class="bg-sp">
+    <div class="bg-over"><div class="bg-inner bg8"></div></div>
+<div class="log">
+
+<div class="kp LtoR-early">
+
+    ―――― 
+
+</div>
+
+
+
+<div class="kp LtoR-early">
+
+    ―― 
+
+</div>
+
+
+<div class="kp LtoR-early">
+
+    舞踏会の喧騒を背に、廊下には静けさが満ちていた。<br>煌びやかな光が消え、月明かりだけが床を照らしている。<br>足音が一つ、響く。 
+
+</div>
+
+<div class="mem7 left">
+<span>オウジ</span>
+<p>
+
+      
+    「まったくとんだ辱をかいた……」 
+  
+</p>
+</div>
+<div class="mem7 left">
+<span>オウジ</span>
+<p>
+
+      
+    「やはり忍者なんて信用のおけるものじゃないな」 
+  
+</p>
+</div>
+<div class="mem7 left">
+<span>オウジ</span>
+<p>
+
+      
+    「やはり改革が必要だ……必ずボクの代で」 
+  
+</p>
+</div>
+
+
+<div class="kp LtoR-early">
+
+    オウジが吐き捨てるように言った。<br>怒気を含んだ声が、白い壁に反響する。<br>その顔は舞踏会での爽やかな笑みとは似ても似つかない。<br>拳を握りしめ、歯を食いしばりながら歩き出す。 
+
+</div>
+
+
+
+<div class="kp LtoR-early">
+
+    だが、すぐに足が止まった。 
+
+</div>
+
+
+
+<div class="kp LtoR-early">
+
+    鼻をかすめたのは、血の匂いだった。<br>冷たい空気が張りつめる。 
+
+</div>
+
+<div class="mem7 left">
+<span>オウジ</span>
+<p>
+
+      
+    「なんだ――？」 
+  
+</p>
+</div>
+
+
+<div class="kp LtoR-early">
+
+    視線を動かすと――そこに、護衛の忍びたちが倒れていた。 
+
+</div>
+
+
+<div class="mem7 left">
+<span>オウジ</span>
+<p>
+
+      
+    「な、なっ……！？！」 
+  
+</p>
+</div>
+
+
+<div class="kp LtoR-early">
+
+    何が起きたのか、理解するより早く、背後に影が立つ。 
+
+</div>
+
+<div class="mem7 left">
+<span>オウジ</span>
+<p>
+
+      
+    「――！お、おまえは……！」 
+  
+</p>
+</div>
+
+<div class="kp LtoR-early">
+
+      
+    その言葉と同時に、影が揺れる。<br>音はほとんどなかった。<br>ただ、月の光がひと筋、赤に染まっただけだった。 
+
+</div>
+
+<div class="mem7 left">
+<span>オウジ</span>
+<p>
+
+      
+    「ぐぅ……！？」 
+  
+</p>
+</div>
+<div class="mem5 mem5-2 left">
+<span>メイコ</span>
+<p>
+
+      
+    「あっ……はずした」 
+  
+</p>
+</div>
+<div class="mem7 left">
+<span>オウジ</span>
+<p>
+
+      
+    「ぼ、僕の右手がぁあああ！」 
+  
+</p>
+</div>
+
+
+<div class="kp LtoR-early">
+
+    足を踏み外し僅かに延命したオウジはしかしその右腕を失っていた 
+
+</div>
+
+<div class="mem7 left">
+<span>オウジ</span>
+<p>
+
+      
+    「な、なんだ？！おまえ踊っていた芋女！」 
+  
+</p>
+</div>
+<div class="mem5 mem5-2 left">
+<span>メイコ</span>
+<p>
+
+      
+    「いも……」 
+  
+</p>
+</div>
+<div class="mem7 left">
+<span>オウジ</span>
+<p>
+
+      
+    「ご、護衛は……？！護衛はどうした？！こいつを殺せぇ！」 
+  
+</p>
+</div>
+<div class="mem5 mem5-2 left">
+<span>メイコ</span>
+<p>
+
+      
+    「全員、殺しておきました」 
+  
+</p>
+</div>
+<div class="mem7 left">
+<span>オウジ</span>
+<p>
+
+      
+    「なっ……？！なにを言っている！」 
+  
+</p>
+</div>
+<div class="mem5 mem5-2 left">
+<span>メイコ</span>
+<p>
+
+      
+    「全員弱っちかったですよ……つよかったのはあなたと一緒に踊っていた人くらい」 
+  
+</p>
+</div>
+<div class="mem7 left">
+<span>オウジ</span>
+<p>
+
+      
+    「！？お、お前……」 
+  
+</p>
+</div>
+
+
+<div class="kp LtoR-early">
+
+    その瞬間、オウジの脳裏に先ほどのモミジとのやり取りが思い出された 
+
+</div>
+
+<div class="mem7 left">
+<span>オウジ</span>
+<p>
+
+      
+    「あ、ああ……あいつは」 
+  
+</p>
+</div>
+<div class="mem5 mem5-2 left">
+<span>メイコ</span>
+<p>
+
+      
+    「だけど、あなたが彼女を切り捨ててくれたので簡単でした」 
+  
+</p>
+</div>
+<div class="mem7 left">
+<span>オウジ</span>
+<p>
+
+      
+    「う……うわぁあああ！だ、誰か！誰かいないか！」 
+  
+</p>
+</div>
+
+
+<div class="kp LtoR-early">
+
+    モミジから聞いていた不吉な言葉がすべて彼の中でかみ合い、自身の最悪の未来を予期してしまう 
+
+</div>
+
+
+
+<div class="kp LtoR-early">
+
+    見苦しくも足をもたつかせながら廊下を走る 
+
+</div>
+
+<div class="mem7 left">
+<span>オウジ</span>
+<p>
+
+      
+    「誰か……！ヨウタくん！ワスケさん！イチズ先輩……！モミジィ！僕を助けろぉ！！！」 
+  
+</p>
+</div>
+<div class="mem5 mem5-2 left">
+<span>メイコ</span>
+<p>
+
+      
+    「もう、あなたのそばには誰もいませんよ」 
+  
+</p>
+</div>
+
+
+<div class="kp LtoR-early">
+
+    風が吹く。<br>外への扉を開いた瞬間、背後からの一撃が命を奪う。
+
+</div>
+
+
+
+
+<div class="kp LtoR-early">
+
+    オウジの身体が崩れ落ちる。<br>手を伸ばすが、もう何も掴めない。<br>彼の唇が何かを言おうと動いたが、声にはならなかった。
+
+</div>
+
+<div class="mem5 mem5-2 left">
+<span>メイコ</span>
+<p>
+
+      
+    「さよなら」 
+  
+</p>
+</div>
+
+<div class="kp LtoR-early">
+
+    月光が彼女の頬を照らすころには、もう誰も動かなかった。 
+
+</div>
+
+
+<div class="mem3 mem3-2 left">
+<span>下野 椛</span>
+<p>
+
+      
+    「あらあら、オウジさんはもう亡くなりましたか」 
+  
+</p>
+</div>
+<div class="mem5 mem5-2 left">
+<span>メイコ</span>
+<p>
+
+      
+    「……あなたの忍務は失敗ね」 
+  
+</p>
+</div>
+<div class="mem3 mem3-2 left">
+<span>下野 椛</span>
+<p>
+
+      
+    「えぇ。今回はそちらの勝ちでしたね」 
+  
+</p>
+</div>
+<div class="mem3 mem3-2 left">
+<span>下野 椛</span>
+<p>
+
+      
+    「これで、私は失敗物の出来損ないです」 
+  
+</p>
+</div>
+<div class="mem5 mem5-2 left">
+<span>メイコ</span>
+<p>
+
+      
+    「そう」 
+  
+</p>
+</div>
+<div class="mem3 mem3-2 left">
+<span>下野 椛</span>
+<p>
+
+      
+    「あぁ。でも、忍務と関係なしで言うのなら……すっきりした、って表現になるのでしょうか」 
+  
+</p>
+</div>
+<div class="mem5 mem5-2 left">
+<span>メイコ</span>
+<p>
+
+      
+    「こういう人も守るのがあなた達だと思うけど」 
+  
+</p>
+</div>
+<div class="mem3 mem3-2 left">
+<span>下野 椛</span>
+<p>
+
+      
+    「私は、お国は護りますがこういった私欲にまぎれた権力者はだいっきらいなんです」 
+  
+</p>
+</div>
+<div class="mem5 mem5-2 left">
+<span>メイコ</span>
+<p>
+
+      
+    「ふーん」 
+  
+</p>
+</div>
+<div class="mem5 mem5-2 left">
+<span>メイコ</span>
+<p>
+
+      
+    「けど国の中枢は大体これに似たり寄ったりだとおもうよ」 
+  
+</p>
+</div>
+<div class="mem3 mem3-2 left">
+<span>下野 椛</span>
+<p>
+
+      
+    「なので、少しどうするか悩んでたりしてますよ」 
+  
+</p>
+</div>
+<div class="mem5 mem5-2 left">
+<span>メイコ</span>
+<p>
+
+      
+    「なら、あたしたちとこない？」 
+  
+</p>
+</div>
+<div class="mem3 mem3-2 left">
+<span>下野 椛</span>
+<p>
+
+      
+    「別に隠忍ではないですよ？」 
+  
+</p>
+</div>
+<div class="mem3 mem3-2 left">
+<span>下野 椛</span>
+<p>
+
+      
+    「あぁ、でも人間でも妖魔を操るところはありましたね」 
+  
+</p>
+</div>
+<div class="mem5 mem5-2 left">
+<span>メイコ</span>
+<p>
+
+      
+    「夜獣の裔（やじゅうのすえ）は今の人間社会を破壊しようとしている人の集まり」 
+  
+</p>
+</div>
+<div class="mem5 mem5-2 left">
+<span>メイコ</span>
+<p>
+
+      
+    「出身は……それほど関係ないんじゃないかな」 
+  
+</p>
+</div>
+<div class="mem3 mem3-2 left">
+<span>下野 椛</span>
+<p>
+
+      
+    「なるほど。それは一興」 
+  
+</p>
+</div>
+<div class="mem3 mem3-2 left">
+<span>下野 椛</span>
+<p>
+
+      
+    「ははっ。それはそれで面白そうね」 
+  
+</p>
+</div>
+<div class="mem5 mem5-2 left">
+<span>メイコ</span>
+<p>
+
+      
+    「あたしも友達欲しいから」 
+  
+</p>
+</div>
+<div class="mem3 mem3-2 left">
+<span>下野 椛</span>
+<p>
+
+      
+    「えぇ。この忍務がなければメイコさんをお誘いしていたところでしたよ」 
+  
+</p>
+</div>
+<div class="mem3 mem3-2 left">
+<span>下野 椛</span>
+<p>
+
+      
+    「貴方のこと知って、「さすがになぁ」って思ってあの人を守りに行ったまではよかったんですが」 
+  
+</p>
+</div>
+<div class="mem3 mem3-2 left">
+<span>下野 椛</span>
+<p>
+
+      
+    「まぁ、カミサマに愛されなかったわけですし」 
+  
+</p>
+</div>
+
+
+<div class="kp LtoR-early">
+
+    月光の下で少女があなたに対して手を伸ばす 
+
+</div>
+
+
+
+<div class="kp LtoR-early">
+
+    ――静寂の中、聞き覚えのある下駄の音が聞こえてきた 
+
+</div>
+
+<div class="mem3 mem3-2 left">
+<span>下野 椛</span>
+<p>
+
+      
+    「……」 
+  
+</p>
+</div>
+<div class="mem9 left">
+<span>ヨウタ</span>
+<p>
+
+      
+    「おいお前ら！――うぉっ！」 
+  
+</p>
+</div>
+<div class="mem9 left">
+<span>ヨウタ</span>
+<p>
+
+      
+    「なんじゃこりぁああああ！」 
+  
+</p>
+</div>
+
+
+<div class="kp LtoR-early">
+
+    男の声が響き渡る 
+
+</div>
+
+<div class="mem3 mem3-2 left">
+<span>下野 椛</span>
+<p>
+
+      
+    「忍者なんだから、その程度で驚かないの」 
+  
+</p>
+</div>
+<div class="mem9 left">
+<span>ヨウタ</span>
+<p>
+
+      
+    「いやその前に学生だから」 
+  
+</p>
+</div>
+<div class="mem3 mem3-2 left">
+<span>下野 椛</span>
+<p>
+
+      
+    「そうだったね」 
+  
+</p>
+</div>
+<div class="mem9 left">
+<span>ヨウタ</span>
+<p>
+
+      
+    「てか、何やってんだ！おい下野！お前知ってたのか？」 
+  
+</p>
+</div>
+<div class="mem5 mem5-2 left">
+<span>メイコ</span>
+<p>
+
+      
+    「うるさい……」 
+  
+</p>
+</div>
+<div class="mem3 mem3-2 left">
+<span>下野 椛</span>
+<p>
+
+      
+    「あぁ。知っていたさ。守ろうとした、けど……ダメだったんだよ」 
+  
+</p>
+</div>
+<div class="mem3 mem3-2 left">
+<span>下野 椛</span>
+<p>
+
+      
+    「それが、失敗のなれの果てさ」 
+  
+</p>
+</div>
+<div class="mem9 left">
+<span>ヨウタ</span>
+<p>
+
+      
+    「お前それは……」 
+  
+</p>
+</div>
+
+
+<div class="kp LtoR-early">
+
+    メイコはその男の声量に顔をしかめて背を向ける
+
+</div>
+
+<div class="mem5 mem5-2 left">
+<span>メイコ</span>
+<p>
+
+      
+    「じゃ、考えといて」 
+  
+</p>
+</div>
+<div class="mem3 mem3-2 left">
+<span>下野 椛</span>
+<p>
+
+      
+    「――うん」 
+  
+</p>
+</div>
+
+<div class="kp LtoR-early">
+
+    その言葉と同時に姿を消す。<br>ヨウタの声を聞きつけて人が近づいてくる 
+
+</div>
+
+<div class="mem3 mem3-2 left">
+<span>下野 椛</span>
+<p>
+
+      
+    「それじゃ、ヨウタ」 
+  
+</p>
+</div>
+<div class="mem9 left">
+<span>ヨウタ</span>
+<p>
+
+      
+    「あぁ？」 
+  
+</p>
+</div>
+<div class="mem3 mem3-2 left">
+<span>下野 椛</span>
+<p>
+
+      
+    「私は、もうそちら側に戻れない」 
+  
+</p>
+</div>
+<div class="mem9 left">
+<span>ヨウタ</span>
+<p>
+
+      
+    「はぁ？何言ってんだ？」 
+  
+</p>
+</div>
+<div class="mem3 mem3-2 left">
+<span>下野 椛</span>
+<p>
+
+      
+    「だって、私のような失敗物の失格者はいらないだろう」 
+  
+</p>
+</div>
+<div class="mem3 mem3-2 left">
+<span>下野 椛</span>
+<p>
+
+      
+    「って、なんかさっきも似たようなことをいったな」 
+  
+</p>
+</div>
+<div class="mem9 left">
+<span>ヨウタ</span>
+<p>
+
+      
+    「馬鹿言ってねぇでさっさと先生呼ぶぞ」 
+  
+</p>
+</div>
+<div class="mem9 left">
+<span>ヨウタ</span>
+<p>
+
+      
+    「学生にそこまで求められてるわけねぇだろ！」 
+  
+</p>
+</div>
+<div class="mem9 left">
+<span>ヨウタ</span>
+<p>
+
+      
+    「よしんば失敗したとしても上のやつらの責任だろそんなもん！」 
+  
+</p>
+</div>
+<div class="mem3 mem3-2 left">
+<span>下野 椛</span>
+<p>
+
+      
+    「私には求められていた。だから、忍務を果たそうと思った。それが失敗だ」 
+  
+</p>
+</div>
+<div class="mem3 mem3-2 left">
+<span>下野 椛</span>
+<p>
+
+      
+    「もう戻れる場所などない」 
+  
+</p>
+</div>
+<div class="mem3 mem3-2 left">
+<span>下野 椛</span>
+<p>
+
+      
+    「だから、帰る場所を変えるしかない」 
+  
+</p>
+</div>
+<div class="mem3 mem3-2 left">
+<span>下野 椛</span>
+<p>
+
+      
+    「そうやって生きていくしかないんだ」 
+  
+</p>
+</div>
+<div class="mem9 left">
+<span>ヨウタ</span>
+<p>
+
+      
+    「うるせぇな！失敗したならやりなおせよ！」 
+  
+</p>
+</div>
+<div class="mem3 mem3-2 left">
+<span>下野 椛</span>
+<p>
+
+      
+    「ははっ。難しいことをいう」 
+  
+</p>
+</div>
+<div class="mem9 left">
+<span>ヨウタ</span>
+<p>
+
+      
+    「バイトじゃねぇんだからバックれんなよ？！」 
+  
+</p>
+</div>
+<div class="mem3 mem3-2 left">
+<span>下野 椛</span>
+<p>
+
+      
+    「バイトって……そういう考えなのがハグレなのか」 
+  
+</p>
+</div>
+<div class="mem9 left">
+<span>ヨウタ</span>
+<p>
+
+      
+    「バイトでもお前より責任感あるって話してんだよ？！」 
+  
+</p>
+</div>
+<div class="mem3 mem3-2 left">
+<span>下野 椛</span>
+<p>
+
+      
+    「そうか」 
+  
+</p>
+</div>
+<div class="mem3 mem3-2 left">
+<span>下野 椛</span>
+<p>
+
+      
+    「私は、押しつぶされてしまいそうなんだ」 
+  
+</p>
+</div>
+<div class="mem3 mem3-2 left">
+<span>下野 椛</span>
+<p>
+
+      
+    「だから、逃げることで自分を生かす」 
+  
+</p>
+</div>
+<div class="mem9 left">
+<span>ヨウタ</span>
+<p>
+
+      
+    「……まぁ別にいいけどよ」 
+  
+</p>
+</div>
+<div class="mem9 left">
+<span>ヨウタ</span>
+<p>
+
+      
+    「よくわからんが変なとこ行くんじゃねーぞ？」 
+  
+</p>
+</div>
+<div class="mem3 mem3-2 left">
+<span>下野 椛</span>
+<p>
+
+      
+    「さあ、どうかな」 
+  
+</p>
+</div>
+<div class="mem9 left">
+<span>ヨウタ</span>
+<p>
+
+      
+    「多分だけど、お前やぶれかぶれになってるだけだし……」 
+  
+</p>
+</div>
+<div class="mem9 left">
+<span>ヨウタ</span>
+<p>
+
+      
+    「適当なとこでいったん頭冷やしてから考えてもいいんじゃねーのか？」 
+  
+</p>
+</div>
+<div class="mem3 mem3-2 left">
+<span>下野 椛</span>
+<p>
+
+      
+    「そうか。だが、私の行く先がそんな簡単に戻れない場所なら…？」 
+  
+</p>
+</div>
+<div class="mem3 mem3-2 left">
+<span>下野 椛</span>
+<p>
+
+      
+    「いや、戯言だな」 
+  
+</p>
+</div>
+<div class="mem3 mem3-2 left">
+<span>下野 椛</span>
+<p>
+
+      
+    「じゃあな」 
+  
+</p>
+</div>
+
+<div class="kp LtoR-early">
+
+    モミジが一陣の風と共に去っていく 
+
+</div>
+
+
+
+
+</div></div>
+
+<div class="bg-sp">
+    <div class="bg-over"><div class="bg-inner bg1"></div></div>
+<div class="log">
+
+
+<div class="kp LtoR-early">
+
+
+    あと残されたものを月だが見守っている 
+</div>
+
+
+
+<div class="kp LtoR-early">
+      
+    ―――― 
+
+
+</div>
+
+
+
+<div class="kp LtoR-early">
+
+    ―― 
+
+</div>
+
+
+
+<div class="kp LtoR-early">
+
+    シノビガミ『月夜杯』fin 
+
+</div>
+
+
+<div class="mem1 left">
+<span>GM</span>
+<p>
+
+      
+    功績点 
+  
+</p>
+</div>
+<div class="mem1 left">
+<span>GM</span>
+<p>
+
+      
+    琴線はお互いなので1点ずつ 
+  
+</p>
+</div>
+<div class="mem3 left">
+<span>下野 椛</span>
+<p>
+
+      
+    3 
+  
+</p>
+</div>
+<div class="mem4 right">
+<span>前川 和輔</span>
+<p>
+
+      
+    6 
+  
+</p>
+</div>
+<div class="mem4 right">
+<span>前川 和輔</span>
+<p>
+
+      
+    ■PC2の秘密3：<br>あなたはある人物に恋している。<br>導入フェイズ終了時に、NPCの中から好きなキャラクター一人を選び、その人物の名前をこっそりGMに伝えること。<br>あなたは「月夜杯」を通して、その人物と仲良くなりたいと思っている。<br>　あなたの【本当の使命】は、選んだNPCとペアを組み、<br>パートナーの【使命】（あれば【本当の使命】）を達成することだ。<br>もしPC①があなたより先にそのNPCとペアを組んだ場合、【本当の使命】は「月夜杯」でPC①を脱落させることになる。 
+  
+</p>
+</div>
+<div class="mem1 left">
+<span>GM</span>
+<p>
+
+      
+    ■NPC1の秘密：オウジ<br>あなたは一般生徒の一人として、私立御斎学園における忍者の影響力を低下させようと思っている。<br>忍者は、あくまで自分たちエリートに使われる存在であるべきだと考えているのだ。<br>オウジは、クライマックスフェイズで戦闘に参加することはないが脱落もしない。<br>この【秘密】を獲得したPCが、オウジとペアになった場合、クライマックスフェイズ開始時に、以下の二つの「権謀術数」の効果を発動する。<br>・好きな忍具を二つ獲得する。<br>・この【秘密】を知らないキャラクターの中から二人を選び「マヒ」の変調を与える。<br>オウジとペアになったPCが優勝すると、そのPCは追加で功績点を1点獲得する。 
+  
+</p>
+</div>
+
+<div class="mem1 left">
+<span>GM</span>
+<p>
+
+      
+    ■NPC2の秘密：ヨウタ<br>あなたの一族には「覇王眼」と呼ばれる家宝が伝わっていた。<br>しかし、過去にある忍者に奪われ、今は「金羊館」の特別貴賓室に隠されている。<br>あなたの【本当の使命】は、優勝して特別貴賓室に入り「覇王眼」を取り返すことだ。<br>あなたは【判定妨害】の奥義を持っており、自分に何らかの忍具をくれたキャラクターに心を開く。  
+</p>
+</div>
+
+
+<div class="mem1 left">
+<span>GM</span>
+<p>
+
+■NPC3の秘密：イチズ<br>あなたは恋愛に憧れており、この機会にステディな関係の彼氏をつくりたいと思っている。<br>あなたは、この【秘密】を一番最初に見た男性キャラクターに対して「愛情」の【感情】を獲得する。<br>あなたは【絶対防御】の奥義を持っており、自分がプラスの【感情】を持っているキャラクターに心を開く。  
+</p>
+</div>
+
+
+<div class="mem1 left">
+<span>GM</span>
+<p>
+
+      
+■NPC4の秘密：メイコ<br>あなたは人間社会に混乱をもたらそうとする危険分子「夜獣の裔（やじゅうのすえ）」の一員だ。<br>あなたは結社から「月夜杯」の舞台上で、榊原オウジを暗殺せよという忍務を受けている。<br>あなたの【本当の使命】は、榊原オウジを暗殺することである。榊原オウジは以下のいずれかの条件を満たすと暗殺される。<br>・榊原のペアが脱落したとき、まだあなたが戦場にいる。<br>・あなたが榊原とペアを組む。<br>あなたは【範囲攻撃】の奥義を持っており、自分と同じような危険分子のキャラクターに心を開く。
+  
+</p>
+</div>
+
+<div class="mem1 left">
+<span>GM</span>
+<p>
+
+      
+    PC1の秘密（いずれか一つを選ぶこと）<br>――――――――――――――――――――――――――――<br><br><br>■PC1の秘密1：<br>あなたは代々続く名門忍者の家系に生まれた。あなたの親はPC②の家をライバル視しており、PC②には負けないようにと厳しく育てられてきた。PC②も月夜杯に参加するなら、絶対に負けるわけにはいかない。<br>　あなたの【本当の使命】は、「月夜杯」でPC②を脱落させることだ。<br><br><br>――――――――――――――――――――――――――――<br><br><br>■PC1の秘密2：<br>あなたは代々続く名門忍者の家系に生まれた。あなたの親はPC②の家をライバル視しており、PC②には負けないようにと厳しく育てられてきた。しかし、あなたはそんなPC②のことを憎からず想っており、秘かに仲良くなりたいと願っている。<br>　あなたの【本当の使命】は、PC②とペアを組み「月夜杯」で優勝することだ。もしPC②とペアを組めなかった場合、【本当の使命】は「月夜杯」でPC②とペアを組んだNPCを脱落させることになる。<br><br><br>――――――――――――――――――――――――――――<br><br><br>■PC1の秘密3：<br>あなたは比良坂機関から特命を受けている。「月夜杯」に表の世に危害をもたらそうとする危険分子が紛れていることが判明しており、その人物の討伐命令を受けているのだ。<br>　あなたの【本当の使命】は、危険分子の【使命】を妨害することである。<br><br>―――――――――――――――――――――――――――― 
+  
+</p>
+</div>
+<div class="mem1 left">
+<span>GM</span>
+<p>
+
+      
+    PC2の秘密（いずれか一つを選ぶこと）<br>――――――――――――――――――――――――――――<br><br><br>■PC2の秘密1：<br>あなたは代々続く名門忍者の家系に生まれた。あなたの親はPC①の家をライバル視しており、PC①には負けないようにと厳しく育てられてきた。PC①も月夜杯に参加するなら、絶対に負けるわけにはいかない。<br>　あなたの【本当の使命】は、「月夜杯」でPC①を脱落させることだ。<br><br><br>――――――――――――――――――――――――――――<br><br><br>■PC2の秘密2：<br>あなたは忍者による世界征服を企んでいる危険分子、世界征服同好会の一員である。「金羊館」に隠された秘宝「覇王眼」を入手するため大会に参加した。この「覇王眼」の持ち主は、人の心を自在に操ることができると言われている。<br>　あなたの【本当の使命】は、「覇王眼」のありかに関する【情報】を獲得し、それを入手することである。<br><br><br>――――――――――――――――――――――――――――<br><br><br>■PC2の秘密3：<br>あなたはある人物に恋している。導入フェイズ終了時に、NPCの中から好きなキャラクター一人を選び、その人物の名前をこっそりGMに伝えること。あなたは「月夜杯」を通して、その人物と仲良くなりたいと思っている。<br>　あなたの【本当の使命】は、選んだNPCとペアを組み、パートナーの【使命】（あれば【本当の使命】）を達成することだ。もしPC①があなたより先にそのNPCとペアを組んだ場合、【本当の使命】は「月夜杯」でPC①を脱落させることになる。<br><br>―――――――――――――――――――――――――――― 
+  
+</p>
+</div>
+</div>
+
+
+
+
+</div></div>
+<script src="../logCon_Respon.js"></script>
+</body></html>
